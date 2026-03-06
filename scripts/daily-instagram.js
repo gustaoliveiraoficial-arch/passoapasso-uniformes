@@ -854,6 +854,290 @@ function formatarData(data) {
 // ===========================
 // ENVIAR EMAIL
 // ===========================
+// ===========================
+// BANCO DE 100 STORIES
+// 50 por dia, rotacao semanal
+// ===========================
+const STORIES_BANK = [
+  // ── VENDAS (30 stories) ──
+  { cat:'VENDAS', icon:'💰', tipo:'CTA Direto',
+    copy:'Fecha o uniforme hoje e garante o melhor prazo! Responde aqui com SIM e a gente entra em contato 👇',
+    acao:'Caixa de resposta com "SIM quero meu uniforme"' },
+  { cat:'VENDAS', icon:'💰', tipo:'Oferta',
+    copy:'Você sabia que com só 10 peças já consegue uniforme 100% personalizado? Arrasta pra ver como funciona 👆',
+    acao:'Arrasta pra cima → link da landing page' },
+  { cat:'VENDAS', icon:'💰', tipo:'Urgência',
+    copy:'⏰ DESAFIO FORMANDOS 2026 — Faltam X dias! Feche agora e concorra a uma festa com salgados e refrigerante 🎉',
+    acao:'Contagem regressiva animada + link na bio' },
+  { cat:'VENDAS', icon:'💰', tipo:'Social Proof',
+    copy:'Beira Rio, Mônaco Atacado e Ortobom já confiaram na Passo a Passo. Sua empresa também pode. Chama no WhatsApp 📲',
+    acao:'Sticker de WhatsApp direto para contato' },
+  { cat:'VENDAS', icon:'💰', tipo:'Segmento',
+    copy:'ACADEMIA E CROSSFIT 💪 — Uniforme que representa sua marca e aguenta o treino mais pesado. Orçamento em 2 cliques 👇',
+    acao:'Link direto para WhatsApp com mensagem pré-preenchida' },
+  { cat:'VENDAS', icon:'💰', tipo:'Segmento',
+    copy:'FORMANDOS 2026 🎓 — O uniforme que vai marcar essa data. Personalizado, do jeito que a turma quer. Chama a gente!',
+    acao:'Figurinha de coração + CTA para DM' },
+  { cat:'VENDAS', icon:'💰', tipo:'Segmento',
+    copy:'EMPRESAS 🏢 — Equipe bem vestida = profissionalismo na primeira impressão. Solicite seu orçamento agora!',
+    acao:'Botão de link para WhatsApp Business' },
+  { cat:'VENDAS', icon:'💰', tipo:'Segmento',
+    copy:'ESCOLAS 🏫 — Uniforme padronizado que dura o ano todo. Qualidade que pais e coordenação aprovam 👍',
+    acao:'Enquete: Você é diretor, coordenador ou pai/mãe?' },
+  { cat:'VENDAS', icon:'💰', tipo:'Benefício',
+    copy:'30 anos no mercado = zero improviso no seu pedido. Prazo cumprido. Qualidade garantida. Simples assim. 🧡',
+    acao:'Sticker de localização: Novo Hamburgo, RS' },
+  { cat:'VENDAS', icon:'💰', tipo:'CTA',
+    copy:'Ainda em dúvida? Usa nosso SIMULADOR de uniforme e veja como fica ANTES de fechar. Link na bio! 👆',
+    acao:'Arrasta pra cima → simulador de uniforme' },
+  { cat:'VENDAS', icon:'💰', tipo:'Prova',
+    copy:'Pedido mínimo: 10 peças. Personalização: 100%. Prazo: a combinar. Qualidade: garantida. Fala com a gente! 📲',
+    acao:'Caixa de perguntas: "Quantas peças você precisa?"' },
+  { cat:'VENDAS', icon:'💰', tipo:'Campanha',
+    copy:'🏆 DESAFIO FORMANDOS — Regras simples: fecha o pedido + posta foto com a turma + mais curtidas = FESTA! 🎉',
+    acao:'Link na bio + contagem regressiva' },
+  { cat:'VENDAS', icon:'💰', tipo:'Urgência',
+    copy:'Quem fecha AGORA garante melhor prazo de entrega. Deixa pra última hora e o prazo aperta! ⏰ Chama a gente hoje.',
+    acao:'Sticker de cronômetro animado' },
+  { cat:'VENDAS', icon:'💰', tipo:'Desconto',
+    copy:'Grupo grande = condições especiais. Tem uma turma ou empresa com muitas peças? Chama no privado pra gente conversar 💬',
+    acao:'Botão "Enviar mensagem" no DM' },
+  { cat:'VENDAS', icon:'💰', tipo:'Reativação',
+    copy:'Faz tempo que você não pede uniforme com a gente? Manda oi — temos novidades que você vai amar! 🧡',
+    acao:'Caixa de resposta: "Manda um oi!"' },
+
+  // ── BASTIDOR (25 stories) ──
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Produção',
+    copy:'Olha só como começa um uniforme aqui na Passo a Passo 👀 Cada detalhe é pensado com cuidado antes de qualquer corte.',
+    acao:'Vídeo curto do processo de corte do tecido (15s)' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Materiais',
+    copy:'Chegou tecido novo por aqui! 🧡 A qualidade a gente sente antes mesmo de cortar. Quer saber qual vira uniforme?',
+    acao:'Enquete: A) Esporte B) Corporativo — qual vai ser?' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Equipe',
+    copy:'Quem faz a magia acontecer aqui na Passo a Passo 🧡 Apresenta a equipe por trás de cada uniforme!',
+    acao:'Fotos ou vídeo rápido da equipe sorrindo' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Processo',
+    copy:'Sabia que cada uniforme passa por pelo menos X etapas antes de chegar pra você? Mostrando o processo completo 👇',
+    acao:'Série de 5-7 stories mostrando cada etapa' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Personalização',
+    copy:'Bordado ou sublimação? Olha o detalhe de perto 🔍 A diferença que só quem faz com cuidado consegue entregar.',
+    acao:'Close no detalhe do bordado ou estampa — foto macro' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Entrega',
+    copy:'Pedido pronto para entrega! 📦🧡 Essa é a parte que a gente mais gosta — ver o resultado nas mãos de quem pediu.',
+    acao:'Vídeo do pacote sendo preparado' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Máquinas',
+    copy:'Você conhece as máquinas que fazem seus uniformes? Dá uma olhada no que temos por aqui 👀',
+    acao:'Tour rápido pelo ateliê em vídeo' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Antes/Depois',
+    copy:'Do tecido cru ao uniforme finalizado. Olha que transformação incrível! 🧡 [antes e depois]',
+    acao:'Story com formato "antes/depois" ou duas fotos' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Dia a dia',
+    copy:'Segunda de manhã aqui na Passo a Passo 💪 Enquanto você lê isso, a gente já está produzindo seu próximo uniforme.',
+    acao:'Vídeo rápido da abertura do ateliê' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Qualidade',
+    copy:'Controle de qualidade antes de embalar 🔍 Cada peça é inspecionada. Nada sai daqui sem aprovação da equipe.',
+    acao:'Foto ou vídeo da inspeção final das peças' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'História',
+    copy:'30 anos nesse mesmo espaço. Muita história por aqui... 🧡 Quer saber como tudo começou?',
+    acao:'Caixa de resposta: "Conta a história!"' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Fornecedores',
+    copy:'Qualidade começa na matéria-prima. A gente escolhe cada tecido com muito cuidado 🧵 Olha o que chegou hoje!',
+    acao:'Vídeo abrindo pacote de tecido novo' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Enchente',
+    copy:'Em 2024, paramos tudo e fizemos cobertores para as vítimas da enchente no RS 🧡 Porque somos parte desse povo.',
+    acao:'Foto do momento + localização NH, RS' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Satisfação',
+    copy:'Esse sorriso quando o cliente recebe o pedido... não tem preço! 🧡 Obrigada pela confiança de sempre.',
+    acao:'Foto ou repost do cliente com o uniforme' },
+  { cat:'BASTIDOR', icon:'🎬', tipo:'Curiosidade',
+    copy:'Curiosidade: você sabe quantas peças saem daqui por mês? Manda seu palpite! 👇',
+    acao:'Caixa de resposta com palpite' },
+
+  // ── AÇÃO: ENQUETES (15 stories) ──
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Enquete rápida para você! 👇',
+    acao:'Enquete: A) Prefiro uniforme escuro  B) Prefiro uniforme claro' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Qual segmento você representa? 👇',
+    acao:'Enquete: A) Escola / Empresa  B) Academia / Esporte' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Para você, o mais importante no uniforme é:',
+    acao:'Enquete: A) Qualidade do tecido  B) Design personalizado' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Você já pediu uniforme com a Passo a Passo antes?',
+    acao:'Enquete: A) Sim, já sou cliente!  B) Não, mas quero conhecer' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Formandos: qual é a prioridade da turma no uniforme?',
+    acao:'Enquete: A) Estilo / design  B) Prazo de entrega' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Slider',
+    copy:'Arrasta o coração: o quanto você precisa de um uniforme novo? 🧡',
+    acao:'Figurinha de slider de emoji (coração de fogo)' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Slider',
+    copy:'Quanto você curte esse modelo de uniforme? Arrasta para avaliar! 👇',
+    acao:'Figurinha de slider com estrela' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Bordado ou estampa? Qual você prefere no uniforme da sua equipe?',
+    acao:'Enquete: A) Bordado  B) Estampa / sublimação' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Com qual rapidez você precisa do uniforme?',
+    acao:'Enquete: A) Urgente (menos de 2 semanas)  B) Tenho prazo tranquilo' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Quiz',
+    copy:'QUIZ: Qual tecido é mais indicado para uniforme de academia?',
+    acao:'Enquete: A) Algodão  B) Dry-fit / poliéster ← correto' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Quiz',
+    copy:'QUIZ: Qual é o pedido mínimo da Passo a Passo?',
+    acao:'Enquete: A) 5 peças  B) 10 peças ← correto  C) 20 peças' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Você conhece alguém que precisa de uniforme? Marca nos comentários! 🧡',
+    acao:'Enquete: A) Conheço sim!  B) Vou pensar...' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Quiz',
+    copy:'QUIZ: Em que cidade fica a Passo a Passo?',
+    acao:'Enquete: A) Porto Alegre  B) Novo Hamburgo ← correto  C) Caxias do Sul' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Slider',
+    copy:'Quanto você amaria ter um uniforme personalizado pro seu time? Mostra! 👇',
+    acao:'Figurinha de slider com troféu 🏆' },
+  { cat:'AÇÃO', icon:'📊', tipo:'Enquete',
+    copy:'Turma formanda: já escolheram o modelo do uniforme?',
+    acao:'Enquete: A) Sim, já escolhemos!  B) Ainda não, me ajuda!' },
+
+  // ── AÇÃO: CAIXA DE PERGUNTAS (15 stories) ──
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'📬 CAIXA ABERTA! Manda sua dúvida sobre uniformes — preço, prazo, tecido, personalização... respondo tudo!',
+    acao:'Sticker de caixa de perguntas aberta' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Me conta: qual é sua maior dificuldade na hora de pedir uniforme? Vou responder e quem sabe te ajudar! 👇',
+    acao:'Caixa de resposta livre' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'FORMANDOS 🎓 — Me manda sua dúvida sobre o uniforme de formatura! Prazo, preço, personalização... é só perguntar!',
+    acao:'Caixa de resposta com "Sua dúvida aqui"' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Você tem alguma história com uniforme? Pode ser engraçada, emocionante... conta pra gente! 🧡',
+    acao:'Caixa de resposta: "Sua história aqui"' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Me manda o nome da sua empresa, academia ou escola que eu crio um uniforme conceito pra você aqui nos stories! 👇',
+    acao:'Caixa de resposta: "Nome da minha empresa/escola"' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Qual cor de uniforme combina mais com a sua equipe? Me desafia a criar algo incrível com ela! 🎨',
+    acao:'Caixa de resposta: "Minha cor é..."' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'TURMAS FORMANDAS: me conta o nome da turma que vou criar uma arte especial para vocês nos stories! 🎓',
+    acao:'Caixa de resposta: "Nome da turma"' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Já fechou uniforme com a gente? Me conta como foi a experiência! 🧡 Sua resposta pode aparecer aqui!',
+    acao:'Caixa de resposta livre para depoimento' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Qual é o MAIOR erro que você já cometeu ao pedir uniforme? Conta aqui pra gente aprender junto! 😅',
+    acao:'Caixa de resposta: "Meu erro foi..."' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Me indica um colega ou empresa que precisa de uniforme e ganhe prioridade no próximo pedido! 👇 Nome aqui:',
+    acao:'Caixa de resposta para indicação' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Figurinha',
+    copy:'Adiciona um emoji que representa sua equipe! Vou repostar os mais criativos 🧡',
+    acao:'Sticker de emoji livre nos comentários' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Figurinha',
+    copy:'Manda um coração 🧡 se já usou uniforme da Passo a Passo! Vou contar quantos somos!',
+    acao:'Sticker de coração para resposta rápida' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Pergunta de negócio: você prefere fornecedor local (nos conhecemos pessoalmente) ou online? Conta o motivo! 👇',
+    acao:'Caixa de resposta livre' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Figurinha',
+    copy:'Marca um amigo que PRECISA ver isso! 👇 (pode ser o gestor de RH da empresa ou o líder da comissão de formatura)',
+    acao:'Sticker de "marca um amigo" nos comentários' },
+  { cat:'AÇÃO', icon:'💬', tipo:'Caixa de Perguntas',
+    copy:'Qual modelo de uniforme você mais gosta de usar no dia a dia? Camiseta, polo, jaleco? Me conta! 👕',
+    acao:'Caixa de resposta: "Meu preferido é..."' },
+
+  // ── EDUCAÇÃO (15 stories) ──
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Dica',
+    copy:'DICA DO DIA 💡 Sempre peça uma amostra antes de fechar o pedido completo. Assim você garante que cor e tecido são exatamente o que você esperava!',
+    acao:'Story estático com texto + ícone de dica' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Dica',
+    copy:'Dry-fit vs Algodão: dry-fit seca 3x mais rápido e é ideal para atividade física. Algodão é mais confortável para uso corporativo diário.',
+    acao:'Comparativo visual simples' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Fato',
+    copy:'Sabia que uniforme padronizado aumenta em até 40% a percepção de profissionalismo da equipe? 🤯 Um dado que todo gestor deveria saber!',
+    acao:'Sticker de surpresa/espanto' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Processo',
+    copy:'Como funciona a sublimação? A cor entra no tecido — não fica por cima. Por isso não descasca nem desbota! 🔥',
+    acao:'Vídeo ou gif explicativo' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Dica',
+    copy:'Na hora de escolher a cor do uniforme: cores escuras disfarçam manchas. Cores claras transmitem mais higiene. Cada contexto tem a cor certa!',
+    acao:'Paleta de cores visual' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Erro comum',
+    copy:'ERRO COMUM ❌ Deixar o pedido para a última hora. Produção leva tempo — planeje com pelo menos 3-4 semanas de antecedência!',
+    acao:'Sticker de alerta vermelho' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Dica',
+    copy:'Para uniforme de time esportivo: escolha sempre tecido 100% poliéster com tratamento UV. Aguenta sol, suor e lavagens intensas! ⚽',
+    acao:'Enquete: Você já sabia disso? A) Sim  B) Não!' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Fato',
+    copy:'Um uniforme de qualidade dura em média 2-3 anos com uso diário e lavagem correta. Quer dicas de como conservar? 👇',
+    acao:'Caixa de resposta: "Sim, quero as dicas!"' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Dica',
+    copy:'Para bordado ficar bonito: use fontes simples e logo com pelo menos 3cm. Detalhes muito pequenos se perdem no bordado!',
+    acao:'Foto de close no bordado mostrando qualidade' },
+  { cat:'EDUCAÇÃO', icon:'💡', tipo:'Processo',
+    copy:'Passo a passo do pedido na Passo a Passo: 1) Contato → 2) Escolha do modelo → 3) Aprovação da arte → 4) Produção → 5) Entrega! 📦',
+    acao:'Story sequencial com cada etapa' },
+];
+
+function getStoriesHoje(dataObj) {
+  const semanaDoAno = Math.floor((dataObj - new Date(dataObj.getFullYear(), 0, 1)) / (7 * 24 * 60 * 60 * 1000));
+  const diaSemana  = dataObj.getDay();
+  const seed       = (semanaDoAno * 7 + diaSemana) % STORIES_BANK.length;
+
+  // Embaralha deterministicamente baseado no seed
+  const shuffled = [...STORIES_BANK];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = (seed * (i + 1) + i * 13) % (i + 1);
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, 50);
+}
+
+function renderStoriesHtml(stories) {
+  const cats = { 'VENDAS':'💰','BASTIDOR':'🎬','AÇÃO':'⚡','EDUCAÇÃO':'💡' };
+  const cores = { 'VENDAS':'#C85A00','BASTIDOR':'#1A6B3C','AÇÃO':'#1A4A8B','EDUCAÇÃO':'#6B1A8B' };
+
+  let html = `<div style="margin-top:20px;">
+    <div style="font-size:10px;color:#C85A00;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;">
+      📱 50 IDEAS DE STORIES — COPIE E USE HOJE
+    </div>`;
+
+  let numero = 1;
+  const grupos = ['VENDAS','BASTIDOR','AÇÃO','EDUCAÇÃO'];
+
+  for (const grupo of grupos) {
+    const lista = stories.filter(s => s.cat === grupo);
+    if (!lista.length) continue;
+    const cor  = cores[grupo] || '#C85A00';
+    const icon = cats[grupo]  || '⚡';
+
+    html += `<div style="margin-bottom:16px;">
+      <div style="background:${cor};color:#fff;font-size:11px;font-weight:800;padding:6px 12px;border-radius:6px 6px 0 0;letter-spacing:1px;text-transform:uppercase;">
+        ${icon} ${grupo} (${lista.length} stories)
+      </div>
+      <div style="background:#1A1A1A;border-radius:0 0 8px 8px;overflow:hidden;">`;
+
+    for (const s of lista) {
+      html += `<div style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <div style="display:flex;gap:8px;align-items:flex-start;">
+          <div style="background:${cor};color:#fff;font-size:10px;font-weight:800;padding:2px 7px;border-radius:4px;white-space:nowrap;min-width:22px;text-align:center;">${numero}</div>
+          <div style="flex:1;">
+            <div style="font-size:11px;color:rgba(200,90,0,0.8);font-weight:600;margin-bottom:3px;">${s.tipo}</div>
+            <div style="font-size:13px;color:#E0E0E0;line-height:1.5;margin-bottom:5px;">${s.copy}</div>
+            <div style="font-size:11px;color:#4A9A6A;font-weight:600;">▶ ${s.acao}</div>
+          </div>
+        </div>
+      </div>`;
+      numero++;
+    }
+    html += `</div></div>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
 async function enviarEmail(template, dataInfo) {
   const { dia, mes, ano, diaSemana } = formatarData(dataInfo);
 
@@ -945,6 +1229,8 @@ async function enviarEmail(template, dataInfo) {
       <div class="dica-label">💡 Dica Estratégica do Dia</div>
       <div class="dica-text">${template.dica}</div>
     </div>
+
+    ${renderStoriesHtml(getStoriesHoje(dataInfo))}
   </div>
   <div class="footer">
     Passo a Passo Uniformes · Novo Hamburgo, RS<br/>
