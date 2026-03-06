@@ -1,0 +1,31 @@
+name: Rex — Sugestao Diaria de Instagram
+
+on:
+  schedule:
+    # Todo dia as 08:00 horario de Brasilia (11:00 UTC)
+    - cron: '0 11 * * *'
+  workflow_dispatch: # Permite rodar manualmente pelo GitHub
+
+jobs:
+  gerar-conteudo:
+    runs-on: ubuntu-latest
+    name: Gerar e enviar sugestao de conteudo
+
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
+        run: npm install nodemailer
+
+      - name: Executar Rex — Geracao de conteudo
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: node scripts/daily-instagram.js
