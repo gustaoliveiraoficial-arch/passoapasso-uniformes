@@ -857,7 +857,7 @@ function formatarData(data) {
 async function enviarEmail(template, dataInfo) {
   const { dia, mes, ano, diaSemana } = formatarData(dataInfo);
 
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.GMAIL_USER,
