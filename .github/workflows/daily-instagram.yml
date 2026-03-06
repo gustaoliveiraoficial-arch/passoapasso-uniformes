@@ -21,7 +21,7 @@ jobs:
           node-version: '20'
 
       - name: Instalar dependencias
-        run: npm install nodemailer
+        run: npm install
 
       - name: Executar Rex — Geracao de conteudo
         env:
