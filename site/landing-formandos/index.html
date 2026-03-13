@@ -972,7 +972,8 @@
         <h3>Quero participar do Desafio 🏆</h3>
         <p>Preencha os dados da sua turma</p>
 
-        <form id="lead-form" onsubmit="submitForm(event)">
+        <form id="lead-form" name="lead-formandos" method="POST" data-netlify="true" onsubmit="submitForm(event)">
+          <input type="hidden" name="form-name" value="lead-formandos" />
           <div class="form-group">
             <label>Seu nome</label>
             <input type="text" name="nome" placeholder="Nome do responsável da comissão" required />
@@ -1004,7 +1005,7 @@
             </select>
           </div>
 
-          <button type="submit" class="form-submit">
+          <button type="submit" class="form-submit" id="submit-btn">
             Quero participar do Desafio 🏆
           </button>
         </form>
@@ -1073,18 +1074,34 @@
     setInterval(updateCountdown, 1000);
 
     // ===========================
-    // FORM SUBMIT → WHATSAPP
+    // FORM SUBMIT → NETLIFY FORMS + WHATSAPP
     // ===========================
-    function submitForm(e) {
+    async function submitForm(e) {
       e.preventDefault();
-      const form = e.target;
+      const form    = e.target;
+      const btn     = document.getElementById('submit-btn');
       const nome    = form.nome.value.trim();
       const wp      = form.whatsapp.value.trim();
       const escola  = form.escola.value.trim();
       const serie   = form.serie.value;
       const tamanho = form.tamanho.value;
 
-      const serieLabel  = serie === '8ano' ? '8º Ano' : '3º Ano do Ensino Médio';
+      btn.disabled     = true;
+      btn.textContent  = 'Enviando...';
+
+      // Salva lead no Netlify Forms
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        });
+      } catch (err) {
+        console.error('Netlify Forms:', err);
+      }
+
+      // Abre WhatsApp com os dados preenchidos
+      const serieLabel = serie === '8ano' ? '8º Ano — Ensino Fundamental' : '3º Ano — Ensino Médio';
       const msg = encodeURIComponent(
         `Olá! Quero participar do Desafio Formandos 2026 🏆\n\n` +
         `Nome: ${nome}\n` +
@@ -1092,11 +1109,21 @@
         `Série: ${serieLabel}\n` +
         `Turma: ${tamanho} alunos\n` +
         `WhatsApp: ${wp}\n\n` +
-        `Vi a oferta e quero fechar o pedido e participar do desafio!`
+        `Vi a landing page e quero fechar o pedido para participar do desafio!`
       );
-
-      // Substitua SEUNUMERO pelo número real (apenas dígitos com DDD)
       window.open(`https://wa.me/5551985600893?text=${msg}`, '_blank');
+
+      // Mostra mensagem de sucesso no lugar do formulário
+      form.innerHTML = `
+        <div style="text-align:center; padding:32px 0;">
+          <div style="font-size:52px; margin-bottom:16px;">🎉</div>
+          <h3 style="font-size:22px; font-weight:800; margin-bottom:10px;">Inscrição enviada!</h3>
+          <p style="color:var(--gray-300); line-height:1.6;">
+            Abrimos o WhatsApp para você finalizar com nossa equipe.<br/>
+            Entraremos em contato em até <strong>2 horas</strong>. Boa sorte! 🏆
+          </p>
+        </div>
+      `;
     }
 
     // ===========================
