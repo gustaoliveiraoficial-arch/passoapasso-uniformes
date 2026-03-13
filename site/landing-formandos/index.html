@@ -74,13 +74,11 @@
       margin: 0 auto;
     }
 
-    .nav-logo {
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
+    .nav-logo img {
+      height: 40px;
+      width: auto;
+      display: block;
     }
-
-    .nav-logo span { color: var(--orange); }
 
     .nav-cta {
       background: var(--orange);
@@ -362,13 +360,13 @@
     .prize-section .section-label { color: rgba(255,255,255,0.7); }
     .prize-section .section-title { color: var(--white); margin: 0 auto 16px; }
 
-    .prize-value {
-      font-size: clamp(56px, 12vw, 96px);
-      font-weight: 900;
-      color: var(--white);
-      letter-spacing: -3px;
-      line-height: 1;
-      margin: 24px 0 16px;
+    .prize-img {
+      max-width: 420px;
+      width: 100%;
+      margin: 28px auto 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+      display: block;
     }
 
     .prize-desc {
@@ -515,6 +513,24 @@
       height: 100%;
       object-fit: cover;
       border-radius: 14px;
+    }
+
+    .gallery-photo {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-photo:hover img {
+      transform: scale(1.04);
     }
 
     /* ===========================
@@ -670,13 +686,13 @@
       text-align: center;
     }
 
-    .footer-logo {
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 8px;
+    .footer-logo img {
+      height: 48px;
+      width: auto;
+      margin: 0 auto 12px;
+      display: block;
+      opacity: 0.9;
     }
-
-    .footer-logo span { color: var(--orange); }
 
     .footer-info {
       font-size: 14px;
@@ -758,7 +774,9 @@
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <div class="nav-logo">Passo<span>a</span>Passo</div>
+      <div class="nav-logo">
+        <img src="img/logotipo.png" alt="Passo a Passo Uniformes" />
+      </div>
       <a href="#formulario" class="nav-cta">Quero Participar</a>
     </div>
   </nav>
@@ -856,7 +874,7 @@
     <div class="container">
       <p class="section-label">O prêmio</p>
       <h2 class="section-title">A turma vencedora<br/>ganha uma festa! 🎉</h2>
-      <div class="prize-value">🥂🥨</div>
+      <img src="img/premio.png" alt="Prêmio: coquetel de salgados e refrigerante" class="prize-img" />
       <p class="prize-desc" style="font-size:22px; font-weight:700; color:#fff; margin-bottom:12px;">
         Coquetel de salgados + refrigerante
       </p>
@@ -912,20 +930,14 @@
       <h2 class="section-title fade-in">Uniformes que<br/>marcam a data</h2>
 
       <div class="gallery-grid">
-        <!-- FOTO 1: adicionar src quando disponível -->
-        <div class="gallery-placeholder fade-in" id="foto-1">
-          <span>📷</span>
-          <p>Foto em breve</p>
+        <div class="gallery-photo fade-in">
+          <img src="img/uniforme-01.png" alt="Uniforme formandos Passo a Passo" loading="lazy" />
         </div>
-        <!-- FOTO 2 -->
-        <div class="gallery-placeholder fade-in" id="foto-2">
-          <span>📷</span>
-          <p>Foto em breve</p>
+        <div class="gallery-photo fade-in">
+          <img src="img/uniforme-02.png" alt="Uniforme formandos Passo a Passo" loading="lazy" />
         </div>
-        <!-- FOTO 3 -->
-        <div class="gallery-placeholder fade-in" id="foto-3">
-          <span>📷</span>
-          <p>Foto em breve</p>
+        <div class="gallery-photo fade-in">
+          <img src="img/uniforme-03.png" alt="Uniforme formandos Passo a Passo" loading="lazy" />
         </div>
       </div>
     </div>
@@ -1025,7 +1037,9 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-logo">Passo<span>a</span>Passo Uniformes</div>
+      <div class="footer-logo">
+        <img src="img/logotipo.png" alt="Passo a Passo Uniformes" />
+      </div>
       <p class="footer-info">Novo Hamburgo, Rio Grande do Sul</p>
       <p class="footer-info">+30 anos vestindo quem faz o Vale dos Sinos acontecer</p>
       <p class="footer-legal">
