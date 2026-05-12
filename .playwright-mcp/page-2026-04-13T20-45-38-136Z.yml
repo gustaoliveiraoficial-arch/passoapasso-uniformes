@@ -1,0 +1,73 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: 🏆 Painel de Vendas Castel
+    - generic [ref=e4]:
+      - button "📊 Ranking" [ref=e5] [cursor=pointer]
+      - button "🎡 Campanhas" [active] [ref=e6] [cursor=pointer]
+      - button "📈 Dashboard" [ref=e7] [cursor=pointer]
+    - button "⚙️" [ref=e9] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: 🎁 Prêmios da Roleta
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e111]: 🍕 Almoço grátis
+            - button "✕" [ref=e112] [cursor=pointer]
+          - generic [ref=e113]:
+            - generic [ref=e115]: 💰 Bônus R$ 50
+            - button "✕" [ref=e116] [cursor=pointer]
+          - generic [ref=e117]:
+            - generic [ref=e119]: ⏰ Sai 1h mais cedo
+            - button "✕" [ref=e120] [cursor=pointer]
+          - generic [ref=e121]:
+            - generic [ref=e123]: 🎁 Vale-presente R$ 100
+            - button "✕" [ref=e124] [cursor=pointer]
+          - generic [ref=e125]:
+            - generic [ref=e127]: 🍺 Happy hour pago
+            - button "✕" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]:
+            - generic [ref=e131]: 🎯 Escolhe a próxima meta
+            - button "✕" [ref=e132] [cursor=pointer]
+          - generic [ref=e133]:
+            - generic [ref=e135]: 🌟 Prêmio surpresa
+            - button "✕" [ref=e136] [cursor=pointer]
+          - generic [ref=e137]:
+            - generic [ref=e139]: ☕ Café da manhã
+            - button "✕" [ref=e140] [cursor=pointer]
+        - generic [ref=e141]:
+          - textbox "Novo prêmio..." [ref=e142]
+          - button "+ Add" [ref=e143] [cursor=pointer]
+      - generic [ref=e146]: ▼
+      - generic [ref=e149]:
+        - generic [ref=e150]: 🎯 Girar para
+        - generic [ref=e151]: Vendedores qualificados hoje (≥ R$ 1.000)
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - img "Wellington" [ref=e155]
+            - generic [ref=e156]:
+              - generic [ref=e157]: Wellington ✅
+              - generic [ref=e158]: Já girou hoje
+          - generic [ref=e159] [cursor=pointer]:
+            - img "Israel" [ref=e161]
+            - generic [ref=e162]:
+              - generic [ref=e163]: Israel
+              - generic [ref=e164]: R$ 4.088 hoje ✅
+          - generic [ref=e165] [cursor=pointer]:
+            - img "Andreza" [ref=e167]
+            - generic [ref=e168]:
+              - generic [ref=e169]: Andreza
+              - generic [ref=e170]: R$ 2.376 hoje ✅
+          - generic [ref=e171] [cursor=pointer]:
+            - generic [ref=e172]: VA
+            - generic [ref=e173]:
+              - generic [ref=e174]: Vanessa
+              - generic [ref=e175]: R$ 1.020 hoje ✅
+        - button "🎡 GIRAR ROLETA" [disabled] [ref=e176]
+        - generic [ref=e177]: 📜 Histórico
+        - generic [ref=e179]:
+          - img "Wellington" [ref=e181]
+          - generic [ref=e182]:
+            - generic [ref=e183]: Wellington
+            - generic [ref=e184]: ⏰ Sai 1h mais cedo
+          - generic [ref=e185]: 12/04/2026, 22:02:41

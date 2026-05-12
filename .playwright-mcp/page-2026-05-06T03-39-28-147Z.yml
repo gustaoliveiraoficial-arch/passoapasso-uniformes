@@ -1,0 +1,101 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "Arquivos" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: Arquivos
+    - generic [ref=e10]:
+      - button "Nova pasta" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: Nova pasta
+      - button "Novo arquivo" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: Novo arquivo
+    - link "Lixeira" [ref=e16] [cursor=pointer]:
+      - /url: /39ba8012f5b9ed97/files/.trash
+      - generic [ref=e17]: delete
+      - text: Lixeira
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Espaço
+        - generic [ref=e24]: 0.83%
+        - generic [ref=e25]: 424.64 MiB / 50 GiB
+      - generic [ref=e26]:
+        - generic [ref=e27]: Inodes
+        - generic [ref=e31]: 3.48%
+        - generic [ref=e32]: 20872 / 600000
+    - button "Sair" [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: exit_to_app
+      - text: Sair
+    - paragraph [ref=e35]:
+      - generic [ref=e36]: File Browser v2.63.2-h2
+      - generic [ref=e37]: Ajuda
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - link "Início" [ref=e41] [cursor=pointer]:
+        - /url: /39ba8012f5b9ed97/files
+        - generic [ref=e42]: home
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - button "Alternar barra lateral" [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]: menu
+          - button "Pesquisar" [ref=e47] [cursor=pointer]:
+            - generic [ref=e48]: search
+          - generic:
+            - button "Alterar visualização":
+              - generic: view_module
+              - generic: Alterar visualização
+            - button "Baixar":
+              - generic: file_download
+              - generic: Baixar
+              - generic: "1"
+            - button "Enviar":
+              - generic: file_upload
+              - generic: Enviar
+            - button "Calcular tamanho dos diretórios":
+              - generic: assessment
+              - generic: Calcular tamanho dos diretórios
+            - button "Informações":
+              - generic: info
+              - generic: Informações
+            - button "Selecionar múltiplos":
+              - generic: check_circle
+              - generic: Selecionar múltiplos
+          - button "Mais" [ref=e49] [cursor=pointer]:
+            - generic [ref=e50]: more_vert
+        - generic [ref=e79]:
+          - generic [ref=e80]: 1 arquivos selecionados.
+          - button "Renomear" [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: mode_edit
+          - button "Copiar arquivo" [ref=e83] [cursor=pointer]:
+            - generic [ref=e84]: content_copy
+          - button "Mover arquivo" [ref=e85] [cursor=pointer]:
+            - generic [ref=e86]: forward
+          - button "Deletar" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]: delete
+        - generic [ref=e51]:
+          - generic [ref=e54] [cursor=pointer]:
+            - button "Ordenar pelo nome" [ref=e55]:
+              - text: Nome
+              - generic [ref=e56]: arrow_upward
+            - button "Ordenar pela última modificação" [ref=e57]:
+              - text: Última modificação
+              - generic [ref=e58]: arrow_upward
+          - button "public_html" [active] [ref=e60] [cursor=pointer]:
+            - generic [ref=e62]: folder
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: public_html
+              - paragraph [ref=e65]:
+                - time [ref=e66]: há 2 dias
+          - button "DO_NOT_UPLOAD_HERE" [ref=e68] [cursor=pointer]:
+            - generic [ref=e70]: description
+            - generic [ref=e71]:
+              - paragraph [ref=e72]: DO_NOT_UPLOAD_HERE
+              - paragraph [ref=e73]:
+                - time [ref=e74]: há 3 meses
+          - generic [ref=e75]:
+            - paragraph [ref=e76]: Seleção múltipla ativada
+            - button "Limpar" [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: clear

@@ -1,0 +1,768 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - img [ref=e38]
+          - listitem [ref=e40]:
+            - list [ref=e41]:
+              - listitem [ref=e43] [cursor=pointer]:
+                - link "Inbox de chat" [ref=e45]:
+                  - /url: /chats/
+                  - generic [ref=e47]: Inbox de chat
+              - listitem [ref=e48]:
+                - link "Inbox de email" [ref=e50] [cursor=pointer]:
+                  - /url: /mail/inbox/
+                  - generic [ref=e52]: Inbox de email
+                  - img [ref=e55]
+              - listitem [ref=e58] [cursor=pointer]:
+                - link "Chats da equipe" [ref=e60]:
+                  - /url: /teams/
+                  - generic [ref=e62]: Chats da equipe
+          - listitem [ref=e63]:
+            - link "Funis" [ref=e65] [cursor=pointer]:
+              - /url: /leads/list/pipeline/13368211
+              - img [ref=e67]
+              - generic [ref=e76]: Funis
+              - img [ref=e79]
+          - listitem [ref=e82] [cursor=pointer]:
+            - link "Calendário" [ref=e84]:
+              - /url: /todo
+              - img [ref=e86]
+              - generic [ref=e88]: Calendário
+          - listitem [ref=e89]:
+            - link "Listas" [ref=e91] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e93]
+              - generic [ref=e95]: Listas
+              - img [ref=e98]
+          - listitem [ref=e101] [cursor=pointer]:
+            - link "Agente de IA" [ref=e103]:
+              - /url: /settings/ai-agent/
+              - img [ref=e105]
+              - generic [ref=e107]: Agente de IA
+          - listitem [ref=e108]:
+            - link "Automações" [ref=e110] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e112]
+              - generic [ref=e114]: Automações
+              - img [ref=e117]
+          - listitem [ref=e119]:
+            - link "Insights" [ref=e121] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e123]
+              - generic [ref=e126]: Insights
+              - img [ref=e129]
+        - generic [ref=e131]: Integrações fixadas
+        - list [ref=e132]:
+          - listitem [ref=e134] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e136]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e139]
+              - generic [ref=e140]: WhatsApp Business
+          - listitem [ref=e142] [cursor=pointer]:
+            - link "TikTok" [ref=e144]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e147]
+              - generic [ref=e148]: TikTok
+      - list [ref=e150]:
+        - listitem [ref=e152] [cursor=pointer]:
+          - link "Configurações" [ref=e154]:
+            - /url: /settings/profile/
+            - img [ref=e156]
+            - generic [ref=e159]: Configurações
+        - listitem [ref=e160]:
+          - link "Ajuda" [ref=e162] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e164]
+            - generic [ref=e166]: Ajuda
+            - img [ref=e169]
+        - listitem [ref=e172] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e174]:
+            - /url: ""
+            - img [ref=e176]
+            - generic [ref=e178]: Enviar feedback
+        - listitem [ref=e180] [cursor=pointer]:
+          - link "Centro de Notificação 1" [ref=e182]:
+            - /url: /settings/profile/notifications
+            - img [ref=e184]
+            - generic [ref=e186]: Centro de Notificação
+            - generic [ref=e190]: "1"
+      - separator [ref=e191]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e193] [cursor=pointer]:
+        - img "Avatar" [ref=e196]
+        - generic [ref=e197]:
+          - generic [ref=e198]: Passo a passo uniformes
+          - generic [ref=e199]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e204]:
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - generic "Leads" [ref=e208]:
+            - generic [ref=e209]: Leads
+          - generic [ref=e210]:
+            - link "Leads" [ref=e211] [cursor=pointer]:
+              - /url: /leads/pipeline/
+              - img [ref=e212]
+            - link "Lista" [ref=e214] [cursor=pointer]:
+              - /url: /leads/list/pipeline/
+              - img [ref=e215]
+        - generic [ref=e217]:
+          - button "Mais" [ref=e220] [cursor=pointer]:
+            - img [ref=e222]
+          - link "Automatize" [ref=e224] [cursor=pointer]:
+            - /url: /settings/pipeline/leads/13368211
+            - generic [ref=e225]:
+              - img [ref=e226]
+              - generic [ref=e228]: Automatize
+          - link "Novo lead" [ref=e229] [cursor=pointer]:
+            - /url: /leads/add/?pipeline_id=13368211
+            - img [ref=e230]
+            - generic [ref=e232]: Novo lead
+        - generic [ref=e233]:
+          - generic [ref=e235] [cursor=pointer]: Leads ativos
+          - generic [ref=e237]:
+            - textbox "Busca e filtro" [ref=e238]
+            - generic [ref=e239]:
+              - generic [ref=e240]: "619 leads:"
+              - generic [ref=e241]: R$4.685
+          - text: "Criada Fechadas Ativas Lead de entrada tipo: Lead fonte: Usuários Criado por Modificado por Tarefas: Método de pagamento: Desconto: Motivo de perda: Pagamento: Status das conversas: Progresso da conversa: Direção da última mensagem: Criado Modificado Tarefas: Criado Modificado Tarefas: Produtos"
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - generic [ref=e244]: Colunas disponíveis
+          - generic [ref=e246]:
+            - generic [ref=e250]: Arquivo
+            - generic [ref=e254]: Criado por
+            - generic [ref=e258]: Criado por (empresa)
+            - generic [ref=e262]: Data Criada
+            - generic [ref=e266]: Data Criada (empresa)
+            - generic [ref=e270]: Data do contrato
+            - generic [ref=e274]: Desconto
+            - generic [ref=e278]: E-mail (contato)
+            - generic [ref=e282]: Empresa
+            - generic [ref=e286]: Endereço (empresa)
+            - generic [ref=e290]: Endereço de entrega
+            - generic [ref=e294]: fbclid
+            - generic [ref=e298]: Fechada em
+            - generic [ref=e302]: gclid
+            - generic [ref=e306]: gclientid
+            - generic [ref=e310]: Lead usuário responsável
+            - generic [ref=e314]: Modificado por
+            - generic [ref=e318]: Modificado por (empresa)
+            - generic [ref=e322]: Motivo de perda
+            - generic [ref=e326]: Método de pagamento
+            - generic [ref=e330]: Número de rastreamento
+            - generic [ref=e334]: Número do contrato
+            - generic [ref=e338]: Pagamento
+            - generic [ref=e342]: Posição (contato)
+            - generic [ref=e346]: Próxima consulta
+            - generic [ref=e350]: Próxima tarefa
+            - generic [ref=e354]: referrer
+            - generic [ref=e358]: Site (empresa)
+            - generic [ref=e362]: Telefone (contato)
+            - generic [ref=e366]: ttad_id
+            - generic [ref=e370]: ttad_name
+            - generic [ref=e374]: utm_campaign
+            - generic [ref=e378]: utm_content
+            - generic [ref=e382]: utm_medium
+            - generic [ref=e386]: utm_referrer
+            - generic [ref=e390]: utm_source
+            - generic [ref=e394]: utm_term
+            - generic [ref=e398]: WhatsappLid_WZ (contato)
+            - generic [ref=e402]: WhatsappUsername_WZ (contato)
+            - generic [ref=e406]: Whatsgroup_WZ (contato)
+            - generic [ref=e410]: Última modificação
+            - generic [ref=e414]: Última modificação (empresa)
+          - generic [ref=e415]:
+            - button "Feito" [ref=e416]:
+              - generic [ref=e418]: Feito
+            - button "Cancelar" [ref=e419] [cursor=pointer]
+            - generic [ref=e421] [cursor=pointer]:
+              - checkbox "Para todos os usuários da conta" [ref=e423]
+              - generic "Para todos os usuários da conta" [ref=e425]
+        - generic [ref=e427]:
+          - generic [ref=e435]:
+            - checkbox [ref=e439] [cursor=pointer]
+            - generic [ref=e444] [cursor=pointer]: Lead título
+            - generic [ref=e449] [cursor=pointer]: Contato principal
+            - generic [ref=e454]: Empresa do contato
+            - generic [ref=e459] [cursor=pointer]: Etapa do lead
+            - generic [ref=e464] [cursor=pointer]: Venda, R$
+          - generic [ref=e466]:
+            - checkbox [ref=e471] [cursor=pointer]
+            - generic [ref=e474]:
+              - 'link "Lead #27296465" [ref=e476] [cursor=pointer]':
+                - /url: /leads/detail/27296465
+              - generic [ref=e477]:
+                - img [ref=e478]
+                - generic [ref=e480]: Bate-papo
+            - generic [ref=e483]: Tulio Moraes
+            - generic [ref=e490]: Etapa de leads de entrada
+            - generic [ref=e492]:
+              - img [ref=e494] [cursor=pointer]
+              - img [ref=e497] [cursor=pointer]
+              - img [ref=e500] [cursor=pointer]
+          - generic [ref=e502]:
+            - checkbox [ref=e507] [cursor=pointer]
+            - generic [ref=e510]:
+              - 'link "Lead #27296061" [ref=e512] [cursor=pointer]':
+                - /url: /leads/detail/27296061
+              - generic [ref=e513]:
+                - img [ref=e514]
+                - generic [ref=e516]: Bate-papo
+            - generic [ref=e519]: Matheus H
+            - generic [ref=e526]: Etapa de leads de entrada
+            - generic [ref=e528]:
+              - img [ref=e530] [cursor=pointer]
+              - img [ref=e533] [cursor=pointer]
+              - img [ref=e536] [cursor=pointer]
+          - generic [ref=e538]:
+            - checkbox [ref=e543] [cursor=pointer]
+            - generic [ref=e546]:
+              - 'link "Lead #27295655" [ref=e548] [cursor=pointer]':
+                - /url: /leads/detail/27295655
+              - generic [ref=e549]:
+                - img [ref=e550]
+                - generic [ref=e552]: Bate-papo
+            - generic [ref=e555]: Vitor João
+            - generic [ref=e562]: Etapa de leads de entrada
+            - generic [ref=e564]:
+              - img [ref=e566] [cursor=pointer]
+              - img [ref=e569] [cursor=pointer]
+              - img [ref=e572] [cursor=pointer]
+          - generic [ref=e574]:
+            - checkbox [ref=e579] [cursor=pointer]
+            - generic [ref=e583]:
+              - generic "Nenhuma tarefa atribuída" [ref=e585]
+              - 'link "Lead #27295643" [ref=e586] [cursor=pointer]':
+                - /url: /leads/detail/27295643
+            - link "+555197022669" [ref=e592] [cursor=pointer]:
+              - /url: /contacts/detail/32202597
+            - generic [ref=e599]: Lead Frio
+            - generic [ref=e602]: "0"
+          - generic [ref=e603]:
+            - checkbox [ref=e608] [cursor=pointer]
+            - generic [ref=e612]:
+              - generic "Nenhuma tarefa atribuída" [ref=e614]
+              - 'link "Lead #27295641" [ref=e615] [cursor=pointer]':
+                - /url: /leads/detail/27295641
+            - link "+555199415877" [ref=e621] [cursor=pointer]:
+              - /url: /contacts/detail/32202595
+            - generic [ref=e628]: Lead Frio
+            - generic [ref=e631]: "0"
+          - generic [ref=e632]:
+            - checkbox [ref=e637] [cursor=pointer]
+            - generic [ref=e641]:
+              - generic "Nenhuma tarefa atribuída" [ref=e643]
+              - 'link "Lead #27295639" [ref=e644] [cursor=pointer]':
+                - /url: /leads/detail/27295639
+            - link "Paloma Souza" [ref=e650] [cursor=pointer]:
+              - /url: /contacts/detail/32202593
+            - generic [ref=e657]: Lead Frio
+            - generic [ref=e660]: "0"
+          - generic [ref=e661]:
+            - checkbox [ref=e666] [cursor=pointer]
+            - generic [ref=e670]:
+              - generic "Nenhuma tarefa atribuída" [ref=e672]
+              - 'link "Lead #27295637" [ref=e673] [cursor=pointer]':
+                - /url: /leads/detail/27295637
+            - link "Ane ✨" [ref=e679] [cursor=pointer]:
+              - /url: /contacts/detail/32202591
+            - generic [ref=e686]: Lead Frio
+            - generic [ref=e689]: "0"
+          - generic [ref=e690]:
+            - checkbox [ref=e695] [cursor=pointer]
+            - generic [ref=e699]:
+              - generic "Nenhuma tarefa atribuída" [ref=e701]
+              - 'link "Lead #27295635" [ref=e702] [cursor=pointer]':
+                - /url: /leads/detail/27295635
+            - link "Naty Je De Praia" [ref=e708] [cursor=pointer]:
+              - /url: /contacts/detail/32202587
+            - generic [ref=e715]: Lead Frio
+            - generic [ref=e718]: "0"
+          - generic [ref=e719]:
+            - checkbox [ref=e724] [cursor=pointer]
+            - generic [ref=e728]:
+              - generic "Nenhuma tarefa atribuída" [ref=e730]
+              - 'link "Lead #27295633" [ref=e731] [cursor=pointer]':
+                - /url: /leads/detail/27295633
+            - link "+555189007846" [ref=e737] [cursor=pointer]:
+              - /url: /contacts/detail/32202589
+            - generic [ref=e744]: Lead Frio
+            - generic [ref=e747]: "0"
+          - generic [ref=e748]:
+            - checkbox [ref=e753] [cursor=pointer]
+            - generic [ref=e757]:
+              - generic "Nenhuma tarefa atribuída" [ref=e759]
+              - 'link "Lead #27295631" [ref=e760] [cursor=pointer]':
+                - /url: /leads/detail/27295631
+            - link "Prof Quel❤️" [ref=e766] [cursor=pointer]:
+              - /url: /contacts/detail/32202585
+            - generic [ref=e773]: Lead Frio
+            - generic [ref=e776]: "0"
+          - generic [ref=e777]:
+            - checkbox [ref=e782] [cursor=pointer]
+            - generic [ref=e786]:
+              - generic "Nenhuma tarefa atribuída" [ref=e788]
+              - 'link "Lead #27295629" [ref=e789] [cursor=pointer]':
+                - /url: /leads/detail/27295629
+            - link "+553196666082" [ref=e795] [cursor=pointer]:
+              - /url: /contacts/detail/32202583
+            - generic [ref=e802]: Lead Frio
+            - generic [ref=e805]: "0"
+          - generic [ref=e806]:
+            - checkbox [ref=e811] [cursor=pointer]
+            - generic [ref=e815]:
+              - generic "Nenhuma tarefa atribuída" [ref=e817]
+              - 'link "Lead #27295627" [ref=e818] [cursor=pointer]':
+                - /url: /leads/detail/27295627
+            - link "Laura Sena" [ref=e824] [cursor=pointer]:
+              - /url: /contacts/detail/32202581
+            - generic [ref=e831]: Lead Frio
+            - generic [ref=e834]: "0"
+          - generic [ref=e835]:
+            - checkbox [ref=e840] [cursor=pointer]
+            - generic [ref=e844]:
+              - generic "Nenhuma tarefa atribuída" [ref=e846]
+              - 'link "Lead #27295625" [ref=e847] [cursor=pointer]':
+                - /url: /leads/detail/27295625
+            - link "+5527996711897" [ref=e853] [cursor=pointer]:
+              - /url: /contacts/detail/32202579
+            - generic [ref=e860]: Lead Frio
+            - generic [ref=e863]: "0"
+          - generic [ref=e864]:
+            - checkbox [ref=e869] [cursor=pointer]
+            - generic [ref=e873]:
+              - generic "Nenhuma tarefa atribuída" [ref=e875]
+              - 'link "Lead #27295623" [ref=e876] [cursor=pointer]':
+                - /url: /leads/detail/27295623
+            - link "Júlia" [ref=e882] [cursor=pointer]:
+              - /url: /contacts/detail/32202577
+            - generic [ref=e889]: Lead Frio
+            - generic [ref=e892]: "0"
+          - generic [ref=e893]:
+            - checkbox [ref=e898] [cursor=pointer]
+            - generic [ref=e902]:
+              - generic "Nenhuma tarefa atribuída" [ref=e904]
+              - 'link "Lead #27295621" [ref=e905] [cursor=pointer]':
+                - /url: /leads/detail/27295621
+            - link "+555592343759" [ref=e911] [cursor=pointer]:
+              - /url: /contacts/detail/32202575
+            - generic [ref=e918]: Lead Frio
+            - generic [ref=e921]: "0"
+          - generic [ref=e922]:
+            - checkbox [ref=e927] [cursor=pointer]
+            - generic [ref=e931]:
+              - generic "Nenhuma tarefa atribuída" [ref=e933]
+              - 'link "Lead #27295619" [ref=e934] [cursor=pointer]':
+                - /url: /leads/detail/27295619
+            - link "+555189126532" [ref=e940] [cursor=pointer]:
+              - /url: /contacts/detail/32202571
+            - generic [ref=e947]: Lead Frio
+            - generic [ref=e950]: "0"
+          - generic [ref=e951]:
+            - checkbox [ref=e956] [cursor=pointer]
+            - generic [ref=e960]:
+              - generic "Nenhuma tarefa atribuída" [ref=e962]
+              - 'link "Lead #27295617" [ref=e963] [cursor=pointer]':
+                - /url: /leads/detail/27295617
+            - link "Tatiane | Pivetta Injeção Diesel" [ref=e969] [cursor=pointer]:
+              - /url: /contacts/detail/32202573
+            - generic [ref=e976]: Lead Frio
+            - generic [ref=e979]: "0"
+          - generic [ref=e980]:
+            - checkbox [ref=e985] [cursor=pointer]
+            - generic [ref=e989]:
+              - generic "Nenhuma tarefa atribuída" [ref=e991]
+              - 'link "Lead #27295613" [ref=e992] [cursor=pointer]':
+                - /url: /leads/detail/27295613
+            - link "+555185373657" [ref=e998] [cursor=pointer]:
+              - /url: /contacts/detail/32202567
+            - generic [ref=e1005]: Lead Frio
+            - generic [ref=e1008]: "0"
+          - generic [ref=e1009]:
+            - checkbox [ref=e1014] [cursor=pointer]
+            - generic [ref=e1018]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1020]
+              - 'link "Lead #27295611" [ref=e1021] [cursor=pointer]':
+                - /url: /leads/detail/27295611
+            - link "Andrea Site" [ref=e1027] [cursor=pointer]:
+              - /url: /contacts/detail/32202565
+            - generic [ref=e1034]: Lead Frio
+            - generic [ref=e1037]: "0"
+          - generic [ref=e1038]:
+            - checkbox [ref=e1043] [cursor=pointer]
+            - generic [ref=e1047]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1049]
+              - 'link "Lead #27295609" [ref=e1050] [cursor=pointer]':
+                - /url: /leads/detail/27295609
+            - link "Leticia" [ref=e1056] [cursor=pointer]:
+              - /url: /contacts/detail/32202563
+            - generic [ref=e1063]: Lead Frio
+            - generic [ref=e1066]: "0"
+          - generic [ref=e1067]:
+            - checkbox [ref=e1072] [cursor=pointer]
+            - generic [ref=e1076]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1078]
+              - 'link "Lead #27295607" [ref=e1079] [cursor=pointer]':
+                - /url: /leads/detail/27295607
+            - link "+555183281572" [ref=e1085] [cursor=pointer]:
+              - /url: /contacts/detail/32202561
+            - generic [ref=e1092]: Lead Frio
+            - generic [ref=e1095]: "0"
+          - generic [ref=e1096]:
+            - checkbox [ref=e1101] [cursor=pointer]
+            - generic [ref=e1105]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1107]
+              - 'link "Lead #27295605" [ref=e1108] [cursor=pointer]':
+                - /url: /leads/detail/27295605
+            - link "Victor Uber/Blablacar" [ref=e1114] [cursor=pointer]:
+              - /url: /contacts/detail/32202559
+            - generic [ref=e1121]: Lead Frio
+            - generic [ref=e1124]: "0"
+          - generic [ref=e1125]:
+            - checkbox [ref=e1130] [cursor=pointer]
+            - generic [ref=e1134]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1136]
+              - 'link "Lead #27295603" [ref=e1137] [cursor=pointer]':
+                - /url: /leads/detail/27295603
+            - link "Nicoly" [ref=e1143] [cursor=pointer]:
+              - /url: /contacts/detail/32202557
+            - generic [ref=e1150]: Lead Frio
+            - generic [ref=e1153]: "0"
+          - generic [ref=e1154]:
+            - checkbox [ref=e1159] [cursor=pointer]
+            - generic [ref=e1163]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1165]
+              - 'link "Lead #27295601" [ref=e1166] [cursor=pointer]':
+                - /url: /leads/detail/27295601
+            - link "Ana Júlia Silva" [ref=e1172] [cursor=pointer]:
+              - /url: /contacts/detail/32202553
+            - generic [ref=e1179]: Lead Frio
+            - generic [ref=e1182]: "0"
+          - generic [ref=e1183]:
+            - checkbox [ref=e1188] [cursor=pointer]
+            - generic [ref=e1192]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1194]
+              - 'link "Lead #27295599" [ref=e1195] [cursor=pointer]':
+                - /url: /leads/detail/27295599
+            - link "+555191867266" [ref=e1201] [cursor=pointer]:
+              - /url: /contacts/detail/32202555
+            - generic [ref=e1208]: Lead Frio
+            - generic [ref=e1211]: "0"
+          - generic [ref=e1212]:
+            - checkbox [ref=e1217] [cursor=pointer]
+            - generic [ref=e1221]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1223]
+              - 'link "Lead #27295595" [ref=e1224] [cursor=pointer]':
+                - /url: /leads/detail/27295595
+            - link "+555186900813" [ref=e1230] [cursor=pointer]:
+              - /url: /contacts/detail/32202549
+            - generic [ref=e1237]: Lead Frio
+            - generic [ref=e1240]: "0"
+          - generic [ref=e1241]:
+            - checkbox [ref=e1246] [cursor=pointer]
+            - generic [ref=e1250]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1252]
+              - 'link "Lead #27295593" [ref=e1253] [cursor=pointer]':
+                - /url: /leads/detail/27295593
+            - link "‪51999585289‬" [ref=e1259] [cursor=pointer]:
+              - /url: /contacts/detail/32202547
+            - generic [ref=e1266]: Lead Frio
+            - generic [ref=e1269]: "0"
+          - generic [ref=e1270]:
+            - checkbox [ref=e1275] [cursor=pointer]
+            - generic [ref=e1279]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1281]
+              - 'link "Lead #27295591" [ref=e1282] [cursor=pointer]':
+                - /url: /leads/detail/27295591
+            - link "KAUANNA VIEIRA - K A AGENCY" [ref=e1288] [cursor=pointer]:
+              - /url: /contacts/detail/32202543
+            - generic [ref=e1295]: Lead Frio
+            - generic [ref=e1298]: "0"
+          - generic [ref=e1299]:
+            - checkbox [ref=e1304] [cursor=pointer]
+            - generic [ref=e1308]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1310]
+              - 'link "Lead #27295589" [ref=e1311] [cursor=pointer]':
+                - /url: /leads/detail/27295589
+            - link "..." [ref=e1317] [cursor=pointer]:
+              - /url: /contacts/detail/32202545
+            - generic [ref=e1324]: Lead Frio
+            - generic [ref=e1327]: "0"
+          - generic [ref=e1328]:
+            - checkbox [ref=e1333] [cursor=pointer]
+            - generic [ref=e1337]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1339]
+              - 'link "Lead #27295585" [ref=e1340] [cursor=pointer]':
+                - /url: /leads/detail/27295585
+            - link "+558182549340" [ref=e1346] [cursor=pointer]:
+              - /url: /contacts/detail/32202539
+            - generic [ref=e1353]: Lead Frio
+            - generic [ref=e1356]: "0"
+          - generic [ref=e1357]:
+            - checkbox [ref=e1362] [cursor=pointer]
+            - generic [ref=e1366]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1368]
+              - 'link "Lead #27295583" [ref=e1369] [cursor=pointer]':
+                - /url: /leads/detail/27295583
+            - link "Gaby Glatt" [ref=e1375] [cursor=pointer]:
+              - /url: /contacts/detail/32202537
+            - generic [ref=e1382]: Lead Frio
+            - generic [ref=e1385]: "0"
+          - generic [ref=e1386]:
+            - checkbox [ref=e1391] [cursor=pointer]
+            - generic [ref=e1395]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1397]
+              - 'link "Lead #27295581" [ref=e1398] [cursor=pointer]':
+                - /url: /leads/detail/27295581
+            - link "+555196251247" [ref=e1404] [cursor=pointer]:
+              - /url: /contacts/detail/32202535
+            - generic [ref=e1411]: Lead Frio
+            - generic [ref=e1414]: "0"
+          - generic [ref=e1415]:
+            - checkbox [ref=e1420] [cursor=pointer]
+            - generic [ref=e1424]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1426]
+              - 'link "Lead #27295579" [ref=e1427] [cursor=pointer]':
+                - /url: /leads/detail/27295579
+            - link "+555198181988" [ref=e1433] [cursor=pointer]:
+              - /url: /contacts/detail/32202533
+            - generic [ref=e1440]: Lead Frio
+            - generic [ref=e1443]: "0"
+          - generic [ref=e1444]:
+            - checkbox [ref=e1449] [cursor=pointer]
+            - generic [ref=e1453]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1455]
+              - 'link "Lead #27295577" [ref=e1456] [cursor=pointer]':
+                - /url: /leads/detail/27295577
+            - link "Leila" [ref=e1462] [cursor=pointer]:
+              - /url: /contacts/detail/32202531
+            - generic [ref=e1469]: Lead Frio
+            - generic [ref=e1472]: "0"
+          - generic [ref=e1473]:
+            - checkbox [ref=e1478] [cursor=pointer]
+            - generic [ref=e1482]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1484]
+              - 'link "Lead #27295575" [ref=e1485] [cursor=pointer]':
+                - /url: /leads/detail/27295575
+            - link "Dani Simonn" [ref=e1491] [cursor=pointer]:
+              - /url: /contacts/detail/32202529
+            - generic [ref=e1498]: Lead Frio
+            - generic [ref=e1501]: "0"
+          - generic [ref=e1502]:
+            - checkbox [ref=e1507] [cursor=pointer]
+            - generic [ref=e1511]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1513]
+              - 'link "Lead #27295573" [ref=e1514] [cursor=pointer]':
+                - /url: /leads/detail/27295573
+            - link "+555191428891" [ref=e1520] [cursor=pointer]:
+              - /url: /contacts/detail/32202527
+            - generic [ref=e1527]: Lead Frio
+            - generic [ref=e1530]: "0"
+          - generic [ref=e1531]:
+            - checkbox [ref=e1536] [cursor=pointer]
+            - generic [ref=e1540]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1542]
+              - 'link "Lead #27295571" [ref=e1543] [cursor=pointer]':
+                - /url: /leads/detail/27295571
+            - link "Joel" [ref=e1549] [cursor=pointer]:
+              - /url: /contacts/detail/32202525
+            - generic [ref=e1556]: Lead Frio
+            - generic [ref=e1559]: "0"
+          - generic [ref=e1560]:
+            - checkbox [ref=e1565] [cursor=pointer]
+            - generic [ref=e1569]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1571]
+              - 'link "Lead #27295569" [ref=e1572] [cursor=pointer]':
+                - /url: /leads/detail/27295569
+            - link "Vinicius Bitencourt" [ref=e1578] [cursor=pointer]:
+              - /url: /contacts/detail/32202523
+            - generic [ref=e1585]: Lead Frio
+            - generic [ref=e1588]: "0"
+          - generic [ref=e1589]:
+            - checkbox [ref=e1594] [cursor=pointer]
+            - generic [ref=e1598]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1600]
+              - 'link "Lead #27295567" [ref=e1601] [cursor=pointer]':
+                - /url: /leads/detail/27295567
+            - link "Rayssa" [ref=e1607] [cursor=pointer]:
+              - /url: /contacts/detail/32202521
+            - generic [ref=e1614]: Lead Frio
+            - generic [ref=e1617]: "0"
+          - generic [ref=e1618]:
+            - checkbox [ref=e1623] [cursor=pointer]
+            - generic [ref=e1627]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1629]
+              - 'link "Lead #27295565" [ref=e1630] [cursor=pointer]':
+                - /url: /leads/detail/27295565
+            - link "Aline Alves" [ref=e1636] [cursor=pointer]:
+              - /url: /contacts/detail/32202519
+            - generic [ref=e1643]: Lead Frio
+            - generic [ref=e1646]: "0"
+          - generic [ref=e1647]:
+            - checkbox [ref=e1652] [cursor=pointer]
+            - generic [ref=e1656]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1658]
+              - 'link "Lead #27295563" [ref=e1659] [cursor=pointer]':
+                - /url: /leads/detail/27295563
+            - link "Suzana" [ref=e1665] [cursor=pointer]:
+              - /url: /contacts/detail/32202517
+            - generic [ref=e1672]: Lead Frio
+            - generic [ref=e1675]: "0"
+          - generic [ref=e1676]:
+            - checkbox [ref=e1681] [cursor=pointer]
+            - generic [ref=e1685]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1687]
+              - 'link "Lead #27295561" [ref=e1688] [cursor=pointer]':
+                - /url: /leads/detail/27295561
+            - link "Claudia Dra" [ref=e1694] [cursor=pointer]:
+              - /url: /contacts/detail/32202515
+            - generic [ref=e1701]: Lead Frio
+            - generic [ref=e1704]: "0"
+          - generic [ref=e1705]:
+            - checkbox [ref=e1710] [cursor=pointer]
+            - generic [ref=e1714]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1716]
+              - 'link "Lead #27295559" [ref=e1717] [cursor=pointer]':
+                - /url: /leads/detail/27295559
+            - link "Aldrem Da Conceição" [ref=e1723] [cursor=pointer]:
+              - /url: /contacts/detail/32202513
+            - generic [ref=e1730]: Lead Frio
+            - generic [ref=e1733]: "0"
+          - generic [ref=e1734]:
+            - checkbox [ref=e1739] [cursor=pointer]
+            - generic [ref=e1743]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1745]
+              - 'link "Lead #27295557" [ref=e1746] [cursor=pointer]':
+                - /url: /leads/detail/27295557
+            - link "..." [ref=e1752] [cursor=pointer]:
+              - /url: /contacts/detail/32202511
+            - generic [ref=e1759]: Lead Frio
+            - generic [ref=e1762]: "0"
+          - generic [ref=e1763]:
+            - checkbox [ref=e1768] [cursor=pointer]
+            - generic [ref=e1772]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1774]
+              - 'link "Lead #27295555" [ref=e1775] [cursor=pointer]':
+                - /url: /leads/detail/27295555
+            - link "+555180815793" [ref=e1781] [cursor=pointer]:
+              - /url: /contacts/detail/32202509
+            - generic [ref=e1788]: Lead Frio
+            - generic [ref=e1791]: "0"
+          - generic [ref=e1792]:
+            - checkbox [ref=e1797] [cursor=pointer]
+            - generic [ref=e1801]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1803]
+              - 'link "Lead #27295553" [ref=e1804] [cursor=pointer]':
+                - /url: /leads/detail/27295553
+            - link "Luiz Aguiar" [ref=e1810] [cursor=pointer]:
+              - /url: /contacts/detail/32202507
+            - generic [ref=e1817]: Lead Frio
+            - generic [ref=e1820]: "0"
+          - generic [ref=e1821]:
+            - checkbox [ref=e1826] [cursor=pointer]
+            - generic [ref=e1830]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1832]
+              - 'link "Lead #27295551" [ref=e1833] [cursor=pointer]':
+                - /url: /leads/detail/27295551
+            - link "..." [ref=e1839] [cursor=pointer]:
+              - /url: /contacts/detail/32202505
+            - generic [ref=e1846]: Lead Frio
+            - generic [ref=e1849]: "0"
+          - generic [ref=e1850]:
+            - checkbox [ref=e1855] [cursor=pointer]
+            - generic [ref=e1859]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1861]
+              - 'link "Lead #27295549" [ref=e1862] [cursor=pointer]':
+                - /url: /leads/detail/27295549
+            - link "+555189330076" [ref=e1868] [cursor=pointer]:
+              - /url: /contacts/detail/32202503
+            - generic [ref=e1875]: Lead Frio
+            - generic [ref=e1878]: "0"
+          - generic [ref=e1879]:
+            - checkbox [ref=e1884] [cursor=pointer]
+            - generic [ref=e1888]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1890]
+              - 'link "Lead #27295547" [ref=e1891] [cursor=pointer]':
+                - /url: /leads/detail/27295547
+            - link "Schmidt Pizzaria" [ref=e1897] [cursor=pointer]:
+              - /url: /contacts/detail/32202501
+            - generic [ref=e1904]: Lead Frio
+            - generic [ref=e1907]: "0"
+          - generic [ref=e1908]:
+            - checkbox [ref=e1913] [cursor=pointer]
+            - generic [ref=e1917]:
+              - generic "Nenhuma tarefa atribuída" [ref=e1919]
+              - 'link "Lead #27295545" [ref=e1920] [cursor=pointer]':
+                - /url: /leads/detail/27295545
+            - link "Vandeco" [ref=e1926] [cursor=pointer]:
+              - /url: /contacts/detail/32202499
+            - generic [ref=e1933]: Lead Frio
+            - generic [ref=e1936]: "0"
+      - generic [ref=e1938]:
+        - generic [ref=e1939]:
+          - img [ref=e1941] [cursor=pointer]
+          - img [ref=e1944] [cursor=pointer]
+        - generic [ref=e1946]:
+          - link "1" [ref=e1948] [cursor=pointer]:
+            - /url: "#"
+          - link "2" [ref=e1950] [cursor=pointer]:
+            - /url: "#"
+          - link "3" [ref=e1952] [cursor=pointer]:
+            - /url: "#"
+          - link "4" [ref=e1954] [cursor=pointer]:
+            - /url: "#"
+          - link "5" [ref=e1956] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e1957]: ...
+          - link "13" [ref=e1959] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e1961]: ← Ctrl →
+        - generic [ref=e1962]:
+          - paragraph [ref=e1964]: "Mostrar linhas:"
+          - button "50" [ref=e1967] [cursor=pointer]
+    - generic [ref=e1970]:
+      - img
+      - button [ref=e1971]:
+        - img [ref=e1972]
+        - img [ref=e1974]
+        - img [ref=e1978]
+      - generic [ref=e1980]:
+        - generic [ref=e1981]:
+          - generic [ref=e1982]:
+            - img [ref=e1983]
+            - generic [ref=e1985]: Kommo Copilot
+          - generic [ref=e1986]:
+            - button [ref=e1987] [cursor=pointer]:
+              - img [ref=e1990]
+            - button [ref=e1992] [cursor=pointer]:
+              - img [ref=e1995]
+            - button [ref=e1997] [cursor=pointer]:
+              - img [ref=e2000]
+        - button "Novo chat" [ref=e2002]:
+          - generic [ref=e2003]:
+            - generic [ref=e2004]: Novo chat
+            - img [ref=e2005]
+        - generic [ref=e2030]:
+          - generic [ref=e2031]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e2034]
+            - button [disabled] [ref=e2037]:
+              - img [ref=e2040]
+          - generic [ref=e2042]: O conteúdo gerado por IA pode ser impreciso

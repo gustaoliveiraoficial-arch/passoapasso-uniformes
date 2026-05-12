@@ -1,0 +1,396 @@
+- generic [active] [ref=e1]:
+  - img
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - banner:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - link [ref=e10] [cursor=pointer]:
+              - /url: /referrals
+              - img [ref=e11]
+            - button "Pergunte" [ref=e14] [cursor=pointer]:
+              - img [ref=e15]
+              - generic [ref=e17]: Pergunte
+            - generic [ref=e19]:
+              - button [ref=e20] [cursor=pointer]:
+                - img [ref=e22]
+              - button [ref=e24] [cursor=pointer]:
+                - img [ref=e26]
+            - button "Pesquisar" [ref=e32] [cursor=pointer]:
+              - img [ref=e33]
+            - button "Open menu" [ref=e37] [cursor=pointer]:
+              - img [ref=e38]
+          - button [ref=e43] [cursor=pointer]:
+            - img [ref=e45]
+      - generic [ref=e54]:
+        - heading "Boas-vindas ao hPanel, Jessica!" [level=1] [ref=e57]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - heading "Suas tarefas" [level=2] [ref=e60]
+            - generic [ref=e61]: "2"
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e64]:
+                - img [ref=e67]
+                - generic [ref=e69]:
+                  - generic [ref=e70]: Resgate seu e-mail grátis
+                  - generic [ref=e71]: Configure seu e-mail profissional para aumentar a confiança dos seus clientes.
+              - generic [ref=e72]:
+                - button "Aproveite" [ref=e74] [cursor=pointer]:
+                  - generic [ref=e75]: Aproveite
+                - button "Close nudge" [ref=e76] [cursor=pointer]:
+                  - img [ref=e77]
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - img [ref=e83]
+                - generic [ref=e85]:
+                  - generic [ref=e86]: Resgate seu plano de e-mail marketing grátis
+                  - generic [ref=e87]: Envie campanhas de marketing e newsletters grátis por um ano. Confira o que está incluído.
+              - generic [ref=e88]:
+                - button "Começar" [ref=e90] [cursor=pointer]:
+                  - generic [ref=e91]: Começar
+                - button "Close nudge" [ref=e92] [cursor=pointer]:
+                  - img [ref=e93]
+        - generic [ref=e96]:
+          - button "Close" [ref=e97] [cursor=pointer]:
+            - img [ref=e98]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - heading "Transforme sua ideia em um site ou web app – em minutos" [level=1] [ref=e103]
+                - paragraph [ref=e104]: Converse com IA e publique com um clique, sem escrever nenhum código.
+              - button "Começar" [ref=e105] [cursor=pointer]:
+                - generic [ref=e106]: Começar
+            - img [ref=e108]
+        - generic [ref=e111]:
+          - heading "Seu negócio" [level=2] [ref=e112]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - img [ref=e121]
+              - generic [ref=e123]:
+                - link "passoapassouniformes.com" [ref=e124] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com
+                  - generic [ref=e125]: passoapassouniformes.com
+                  - img [ref=e126]
+                - generic [ref=e128]:
+                  - button "Gerenciar domínio" [ref=e129] [cursor=pointer]:
+                    - generic [ref=e130]:
+                      - img [ref=e131]
+                      - generic [ref=e133]: Gerenciar domínio
+                  - button "Configurar e-mail" [pressed] [ref=e134] [cursor=pointer]:
+                    - generic [ref=e135]:
+                      - img [ref=e136]
+                      - generic [ref=e138]: Configurar e-mail
+                  - button "Adicionar e-mail marketing" [pressed] [ref=e139] [cursor=pointer]:
+                    - generic [ref=e140]:
+                      - img [ref=e141]
+                      - generic [ref=e143]: Adicionar e-mail marketing
+            - generic [ref=e144]:
+              - button "WordPress Admin" [ref=e145] [cursor=pointer]:
+                - generic [ref=e146]: WordPress Admin
+                - img [ref=e147]
+              - button "Painel" [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]: Painel
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "hostinger"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - navigation:
+                      - list:
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Página Inicial":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Página Inicial
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Sites":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Sites
+                                - generic:
+                                  - img
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Todos os sites":
+                                      - generic:
+                                        - generic: Todos os sites
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "WordPress":
+                                      - generic:
+                                        - generic: WordPress
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Horizons":
+                                      - generic:
+                                        - generic: Horizons
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Website Builder":
+                                      - generic:
+                                        - generic: Website Builder
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Node.js":
+                                      - generic:
+                                        - generic: Node.js
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "PHP/HTML":
+                                      - generic:
+                                        - generic: PHP/HTML
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Migrações":
+                                      - generic:
+                                        - generic: Migrações
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Domínios":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Domínios
+                                - generic:
+                                  - img
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Meus domínios":
+                                      - generic:
+                                        - generic: Meus domínios
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Registrar novo domínio":
+                                      - generic:
+                                        - generic: Registrar novo domínio
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Transferências":
+                                      - generic:
+                                        - generic: Transferências
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Horizons Vibe coding":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Horizons
+                                - generic:
+                                  - generic:
+                                    - generic: Vibe coding
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "E-mails":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: E-mails
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Reach":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Reach
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "ecommerce Novo":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: ecommerce
+                                - generic:
+                                  - generic:
+                                    - generic: Novo
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "VPS":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: VPS
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "OpenClaw":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: OpenClaw
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Agentes Beta":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Agentes
+                                - generic:
+                                  - generic:
+                                    - generic: Beta
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Faturas":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Faturas
+                                - generic:
+                                  - img
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Assinaturas":
+                                      - generic:
+                                        - generic: Assinaturas
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Histórico de pagamentos":
+                                      - generic:
+                                        - generic: Histórico de pagamentos
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Formas de pagamento":
+                                      - generic:
+                                        - generic: Formas de pagamento
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Mais serviços":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Mais serviços
+                                - generic:
+                                  - img
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Loja":
+                                      - generic:
+                                        - generic: Loja
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Add-ons WordPress":
+                                      - generic:
+                                        - generic: Add-ons WordPress
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Ferramentas de IA":
+                                      - generic:
+                                        - generic: Ferramentas de IA
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Monitoramento da dark web":
+                                      - generic:
+                                        - generic: Monitoramento da dark web
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Créditos da nexos.ai":
+                                      - generic:
+                                        - generic: Créditos da nexos.ai
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Créditos de Oxylabs AI Studio":
+                                      - generic:
+                                        - generic: Créditos de Oxylabs AI Studio
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "API":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: API
+                        - generic:
+                          - listitem:
+                            - list
+              - generic:
+                - generic:
+                  - navigation:
+                    - list:
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - menuitem "Compartilhamento de conta":
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Compartilhamento de conta
+                      - generic:
+                        - listitem:
+                          - list

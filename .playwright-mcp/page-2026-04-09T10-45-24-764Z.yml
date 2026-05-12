@@ -1,0 +1,116 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Google Apps Script" [ref=e296] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e14]
+          - generic [ref=e15]: Apps Script
+        - generic [ref=e16]:
+          - generic [ref=e346]: cloud_done
+          - button "Suporte" [ref=e348] [cursor=pointer]:
+            - generic [ref=e351]: help_outline
+        - generic [ref=e45]:
+          - button "Google Apps" [ref=e300] [cursor=pointer]:
+            - img [ref=e50]
+          - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e301] [cursor=pointer]':
+            - img [ref=e57]
+    - generic [ref=e354]:
+      - navigation [ref=e356]:
+        - link [ref=e357] [cursor=pointer]:
+          - generic [ref=e359]: info_outline
+          - generic [ref=e360]: Visão geral
+        - link [ref=e361] [cursor=pointer]:
+          - generic [ref=e363]: code
+          - generic [ref=e364]: Editor
+        - link [ref=e365] [cursor=pointer]:
+          - generic [ref=e367]: history
+          - generic [ref=e368]: Histórico do projeto
+        - link [ref=e369] [cursor=pointer]:
+          - generic [ref=e371]: alarm
+          - generic [ref=e372]: Acionadores
+        - link [ref=e373] [cursor=pointer]:
+          - generic [ref=e375]: playlist_play
+          - generic [ref=e376]: Execuções
+        - link [ref=e377] [cursor=pointer]:
+          - generic [ref=e379]: settings
+          - generic [ref=e380]: Configurações do projeto
+      - generic [ref=e381]:
+        - heading [level=1] [ref=e382]: Editor
+        - generic [ref=e383]:
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - heading [level=2] [ref=e387]: Arquivos
+              - generic [ref=e389]:
+                - button [disabled] [ref=e391]:
+                  - generic [ref=e394]: sort_by_alpha
+                - button [ref=e396] [cursor=pointer]:
+                  - generic [ref=e399]: add
+            - listbox [ref=e401]:
+              - option [ref=e402] [cursor=pointer]:
+                - generic [ref=e403]: Código.gs
+                - button [ref=e404]:
+                  - button [ref=e405]:
+                    - generic [ref=e408]: 
+            - generic [ref=e409]:
+              - heading [level=2] [ref=e410]: Bibliotecas
+              - button [ref=e413] [cursor=pointer]:
+                - generic [ref=e416]: add
+            - generic [ref=e417]:
+              - heading [level=2] [ref=e418]: Serviços
+              - button [ref=e421] [cursor=pointer]:
+                - generic [ref=e424]: add
+          - generic [ref=e431]:
+            - region [ref=e432]:
+              - generic [ref=e433]:
+                - generic [ref=e434]:
+                  - generic [ref=e437]:
+                    - button [disabled]:
+                      - generic: undo
+                  - generic [ref=e440]:
+                    - button [disabled]:
+                      - generic: redo
+                - generic [ref=e444]:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e445]:
+                  - generic [ref=e448]:
+                    - button [disabled]:
+                      - generic: play_arrow
+                      - generic: Executar
+                  - generic [ref=e451]:
+                    - button [disabled]:
+                      - img
+                      - generic: Depuração
+                  - generic [ref=e452]: Nenhuma função
+                - button [ref=e457]:
+                  - generic [ref=e460]: Registro de execução
+            - generic [ref=e462]:
+              - main [ref=e466]:
+                - generic [ref=e467]: .
+                - generic [ref=e469]:
+                  - iframe [ref=e470]:
+                    
+                  - code [ref=e472]:
+                    - generic [ref=e473]:
+                      - generic [ref=e476]:
+                        - generic [ref=e478]: "1"
+                        - generic [ref=e481]: "2"
+                        - generic [ref=e483]: "3"
+                        - generic [ref=e485]: "4"
+                      - generic [ref=e493]:
+                        - generic [ref=e495]: "function myFunction() {"
+                        - generic [ref=e499]: "}"
+                      - textbox [active] [ref=e503]: "function myFunction() { }"
+              - button [ref=e504] [cursor=pointer]:
+                - generic [ref=e505]: close
+              - tooltip [ref=e506]: Fechar registros de execução
+  - generic: "Classificação: Última modificação, Decrescente. Inverter classificação."
+  - generic [ref=e507]: Carregando...
+  - generic [ref=e508]:
+    - alert
+    - alert
+    - complementary
+    - complementary

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Leads Sem Resposta — Passo a Passo Uniformes</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',Arial,sans-serif; background:#fff; color:#1a1a2e; font-size:12px; }
+  .page { max-width:860px; margin:0 auto; padding:32px 40px; }
+
+  .header { border-bottom:3px solid #2d6a4f; padding-bottom:14px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:flex-end; }
+  .header h1 { font-size:20px; font-weight:700; color:#2d6a4f; }
+  .header p { font-size:11px; color:#666; margin-top:3px; }
+  .badge { background:#2d6a4f; color:#fff; font-size:11px; font-weight:600; padding:5px 14px; border-radius:20px; white-space:nowrap; }
+
+  .stats { display:flex; gap:16px; margin-bottom:20px; }
+  .stat { background:#f0faf3; border:1px solid #c3e6cb; border-radius:8px; padding:10px 18px; text-align:center; flex:1; }
+  .stat-val { font-size:26px; font-weight:800; color:#2d6a4f; }
+  .stat-lbl { font-size:10px; color:#555; margin-top:2px; }
+
+  .note { background:#fff8e1; border-left:4px solid #ffc107; padding:10px 14px; border-radius:4px; font-size:11px; color:#5d4037; margin-bottom:20px; line-height:1.5; }
+
+  table { width:100%; border-collapse:collapse; font-size:11.5px; }
+  thead th { background:#2d6a4f; color:#fff; padding:9px 12px; text-align:left; font-size:11px; font-weight:600; letter-spacing:0.3px; }
+  thead th.center { text-align:center; }
+  tbody tr:nth-child(even) { background:#f8fdf9; }
+  tbody tr:hover { background:#eaf6ee; }
+  tbody td { padding:7px 12px; border-bottom:1px solid #e8f0ec; vertical-align:middle; }
+  td.num { text-align:center; color:#888; font-size:11px; }
+  td.lead { color:#2d6a4f; font-weight:600; text-align:center; }
+  td.name { font-weight:500; }
+  td.no-name { color:#aaa; font-style:italic; }
+  td.phone { font-family:monospace; letter-spacing:0.5px; }
+
+  .footer { margin-top:24px; border-top:1px solid #ddd; padding-top:10px; text-align:center; font-size:10px; color:#aaa; }
+
+  @media print { body{background:#fff;} .page{padding:16px 24px;} }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <h1>Leads Sem Resposta</h1>
+      <p>Passo a Passo Uniformes &nbsp;|&nbsp; Gerado em 13/04/2026 &nbsp;|&nbsp; Fonte: Kommo CRM</p>
+    </div>
+    <span class="badge">SEM RESPOSTA</span>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-val">63</div><div class="stat-lbl">Conversas não lidas</div></div>
+    <div class="stat"><div class="stat-val">48</div><div class="stat-lbl">Contatos identificados</div></div>
+    <div class="stat"><div class="stat-val">15</div><div class="stat-lbl">Sem nome (só número)</div></div>
+  </div>
+
+  <div class="note">
+    ⚠️ <strong>Ação necessária:</strong> Todos os leads abaixo enviaram mensagem e aguardam resposta da equipe. Priorize o contato para evitar perda de vendas. Leads sem nome cadastrado aparecem identificados apenas pelo número WhatsApp.
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="center">#</th>
+        <th>Nome do Contato</th>
+        <th>Número WhatsApp</th>
+        <th class="center">Lead ID</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <div class="footer">
+    Passo a Passo Uniformes — passoapassouniformes2025 &nbsp;|&nbsp; Kommo CRM &nbsp;|&nbsp; 13/04/2026
+  </div>
+
+</div>
+<script>
+const data = [{"name":"—","phone":"+555197449399","leadId":27295439},{"name":"—","phone":"+556696973497","leadId":27295437},{"name":"—","phone":"+555198460803","leadId":27295455},{"name":"—","phone":"+555190068421","leadId":27295487},{"name":"—","phone":"+555196587220","leadId":27295493},{"name":"—","phone":"+555191559245","leadId":27295499},{"name":"—","phone":"+555198880199","leadId":27295521},{"name":"—","phone":"+555186900813","leadId":27295595},{"name":"—","phone":"+555189126532","leadId":27295619},{"name":"—","phone":"+555197022669","leadId":27295643},{"name":"—","phone":"+555199400124","leadId":27295347},{"name":"—","phone":"+554792304145","leadId":27295349},{"name":"—","phone":"+558008002005","leadId":27295381},{"name":"—","phone":"+555180495566","leadId":27295391},{"name":"—","phone":"+555184045553","leadId":27295417},{"name":"51 9857-2843","phone":"+555198572843","leadId":27295513},{"name":"Aline Alves","phone":"+555181891464","leadId":27295565},{"name":"Almiro Oliveira Da Silvei","phone":"+555198264016","leadId":27697511},{"name":"Ariane ACR TÊXTIL","phone":"+5512997480773","leadId":27295447},{"name":"Bellus Sorrisos Janaína","phone":"+555191155598","leadId":27814421},{"name":"Betina Berghan","phone":"+555197777931","leadId":27579669},{"name":"Bruno RAZ KERB","phone":"+555196666755","leadId":27295449},{"name":"Carlos Magnus RECH","phone":"+555195465880","leadId":27811609},{"name":"Caroline Westphal","phone":"+555196162233","leadId":27788503},{"name":"Clara Marli de Lima Barriquel","phone":"+555197610247","leadId":27295405},{"name":"Claudia Dra","phone":"+555199051331","leadId":27295561},{"name":"Eduarda Konrad","phone":"+555192159980","leadId":27295327},{"name":"Emporio Gastronomico","phone":"+555198027171","leadId":27572743},{"name":"Fernanda Pedron","phone":"+555199958583","leadId":27506387},{"name":"Fernando Baum","phone":"+555135995542","leadId":27295467},{"name":"Gabi","phone":"+555199922928","leadId":27902213},{"name":"Gean","phone":"+555195947268","leadId":27339079},{"name":"Gih.","phone":"+553171636004","leadId":27295497},{"name":"Gregori Mengue","phone":"+555185557001","leadId":27295357},{"name":"Guilherme Paim","phone":"+555497123205","leadId":27845721},{"name":"Gustavo","phone":"+555182730878","leadId":27997555},{"name":"Jana","phone":"+555181241686","leadId":27295389},{"name":"Jennifer Martins","phone":"+556292223253","leadId":27295413},{"name":"Joel","phone":"+555184930972","leadId":27295571},{"name":"Jordana Godoy - Financeiro","phone":"+555189057242","leadId":27789061},{"name":"Jorge Policar","phone":"+555199762435","leadId":27295475},{"name":"Júlia","phone":"+555192310664","leadId":27295623},{"name":"Leticia Studio M","phone":"+555198809754","leadId":27579839},{"name":"Luiz Aguiar","phone":"+555197763401","leadId":27295553},{"name":"mandy","phone":"+555198424937","leadId":27295505},{"name":"Mateus Magro","phone":"+555197191895","leadId":27585347},{"name":"Matheus H","phone":"+555198993788","leadId":27296061},{"name":"Nat Peniche","phone":"+554884532590","leadId":27295363},{"name":"Navarro Heloísa","phone":"+5511993981963","leadId":27295359},{"name":"Ortobom Sarandi","phone":"+555499917399","leadId":27621507},{"name":"Paloma Santos","phone":"+5511973077291","leadId":27295489},{"name":"Pet Mimosos","phone":"+555197599495","leadId":27679546},{"name":"Priscila Damiani","phone":"+555596043334","leadId":27978879},{"name":"Rica Fantoni Personal","phone":"+555196975996","leadId":27295525},{"name":"Ronise","phone":"+555180442740","leadId":27680530},{"name":"Rosana","phone":"+555184143730","leadId":27295371},{"name":"Roteiro Comercial","phone":"+555182844484","leadId":27462535},{"name":"Sarah","phone":"+555195357607","leadId":27310171},{"name":"Schmidt Pizzaria","phone":"+555196108009","leadId":27295547},{"name":"Tatiane | Pivetta Injeção Diesel","phone":"+554936221885","leadId":27295617},{"name":"USN Máquinas","phone":"+555131919968","leadId":27460733},{"name":"Vinicius Bitencourt","phone":"+555197299565","leadId":27295569},{"name":"Vitor","phone":"+555196323346","leadId":27476037}];
+
+const tbody = document.getElementById('rows');
+data.forEach((item, i) => {
+  const isNoName = item.name === '—';
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td class="num">${i+1}</td>
+    <td class="${isNoName ? 'no-name' : 'name'}">${isNoName ? 'Sem nome' : item.name}</td>
+    <td class="phone">${item.phone}</td>
+    <td class="lead">#${item.leadId}</td>
+  `;
+  tbody.appendChild(tr);
+});
+</script>
+</body>
+</html>

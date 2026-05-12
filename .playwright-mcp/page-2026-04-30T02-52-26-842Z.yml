@@ -1,0 +1,818 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FSamurAIGPT%2FGenerative-Media-Skills
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - link "SamurAIGPT" [ref=e36] [cursor=pointer]:
+          - /url: /SamurAIGPT
+        - generic [ref=e37]: /
+        - strong [ref=e38]:
+          - link "Generative-Media-Skills" [ref=e39] [cursor=pointer]:
+            - /url: /SamurAIGPT/Generative-Media-Skills
+        - generic [ref=e40]: Public
+      - navigation "Repository" [ref=e41]:
+        - list [ref=e42]:
+          - listitem [ref=e43]:
+            - link "Code" [ref=e44] [cursor=pointer]:
+              - /url: /SamurAIGPT/Generative-Media-Skills
+              - img [ref=e45]
+              - generic [ref=e47]: Code
+          - listitem [ref=e48]:
+            - link "Issues" [ref=e49] [cursor=pointer]:
+              - /url: /SamurAIGPT/Generative-Media-Skills/issues
+              - img [ref=e50]
+              - generic [ref=e53]: Issues
+          - listitem [ref=e54]:
+            - link "Pull requests" [ref=e55] [cursor=pointer]:
+              - /url: /SamurAIGPT/Generative-Media-Skills/pulls
+              - img [ref=e56]
+              - generic [ref=e58]: Pull requests
+          - listitem [ref=e59]:
+            - link "Actions" [ref=e60] [cursor=pointer]:
+              - /url: /SamurAIGPT/Generative-Media-Skills/actions
+              - img [ref=e61]
+              - generic [ref=e63]: Actions
+          - listitem [ref=e64]:
+            - link "Projects" [ref=e65] [cursor=pointer]:
+              - /url: /SamurAIGPT/Generative-Media-Skills/projects
+              - img [ref=e66]
+              - generic [ref=e68]: Projects
+          - listitem [ref=e69]
+          - listitem [ref=e70]
+        - button "Additional navigation options" [ref=e74] [cursor=pointer]:
+          - img
+    - generic [ref=e87]:
+      - heading "SamurAIGPT/Generative-Media-Skills" [level=1] [ref=e89]
+      - generic [ref=e90]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - button "main branch" [ref=e97] [cursor=pointer]:
+                - generic [ref=e98]:
+                  - generic [ref=e100]:
+                    - img [ref=e102]
+                    - generic [ref=e105]: main
+                  - generic:
+                    - img
+              - generic [ref=e106]:
+                - link "Go to Branches page" [ref=e107] [cursor=pointer]:
+                  - /url: /SamurAIGPT/Generative-Media-Skills/branches
+                  - img [ref=e108]
+                - link "Go to Tags page" [ref=e110] [cursor=pointer]:
+                  - /url: /SamurAIGPT/Generative-Media-Skills/tags
+                  - img [ref=e111]
+            - generic [ref=e113]:
+              - button "Go to file" [ref=e116] [cursor=pointer]:
+                - generic [ref=e118]: Go to file
+              - button "Code" [ref=e119] [cursor=pointer]:
+                - generic [ref=e120]:
+                  - generic:
+                    - img
+                  - generic [ref=e121]: Code
+                  - generic:
+                    - img
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - heading "Folders and files" [level=2] [ref=e124]
+              - table "Folders and files" [ref=e125]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e126]:
+                  - 'row "Latest commit Anil-matcha claude commits by Anil-matcha and commits by claude chore: untrack .env and add .gitignore Open commit details Commit 2a9132e · Apr 27, 20263 days ago History View commit history for this file." [ref=e127]':
+                    - 'cell "Latest commit Anil-matcha claude commits by Anil-matcha and commits by claude chore: untrack .env and add .gitignore Open commit details Commit 2a9132e · Apr 27, 20263 days ago History View commit history for this file." [ref=e128]':
+                      - generic [ref=e129]:
+                        - heading "Latest commit" [level=2] [ref=e130]
+                        - generic [ref=e131]:
+                          - generic [ref=e132]:
+                            - generic [ref=e134]:
+                              - img "Anil-matcha" [ref=e135]
+                              - img "claude" [ref=e136]
+                            - link "commits by Anil-matcha" [ref=e138] [cursor=pointer]:
+                              - /url: /SamurAIGPT/Generative-Media-Skills/commits?author=Anil-matcha
+                              - text: Anil-matcha
+                            - generic [ref=e139]: and
+                            - link "commits by claude" [ref=e141] [cursor=pointer]:
+                              - /url: /SamurAIGPT/Generative-Media-Skills/commits?author=claude
+                              - text: claude
+                          - generic [ref=e142]:
+                            - 'link "chore: untrack .env and add .gitignore" [ref=e145] [cursor=pointer]':
+                              - /url: /SamurAIGPT/Generative-Media-Skills/commit/2a9132e4e1cbf4c676619706dba13feb1ec44d8c
+                            - button "Open commit details" [ref=e146] [cursor=pointer]:
+                              - img [ref=e147]
+                        - generic [ref=e149]:
+                          - generic [ref=e151]:
+                            - link "Commit 2a9132e" [ref=e152] [cursor=pointer]:
+                              - /url: /SamurAIGPT/Generative-Media-Skills/commit/2a9132e4e1cbf4c676619706dba13feb1ec44d8c
+                              - text: 2a9132e
+                            - text: ·
+                            - generic "Apr 27, 2026, 9:47 AM GMT-3" [ref=e153]: Apr 27, 20263 days ago
+                          - generic [ref=e154]:
+                            - heading "History" [level=2] [ref=e155]
+                            - link "View commit history for this file." [ref=e157] [cursor=pointer]:
+                              - /url: /SamurAIGPT/Generative-Media-Skills/commits/main/
+                              - generic [ref=e158]:
+                                - generic:
+                                  - img
+                  - row "core, (Directory) Add version metadata to SKILL.md files for ClawHub publishing Mar 12, 2026last month" [ref=e159]:
+                    - cell "core, (Directory)" [ref=e160]:
+                      - generic [ref=e161]:
+                        - img [ref=e162]
+                        - link "core, (Directory)" [ref=e167] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/tree/main/core
+                          - text: core
+                    - cell "Add version metadata to SKILL.md files for ClawHub publishing" [ref=e168]:
+                      - link "Add version metadata to SKILL.md files for ClawHub publishing" [ref=e171] [cursor=pointer]:
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/44924c5a7c8de668576d655fc590dbc815998ff1
+                    - cell "Mar 12, 2026last month" [ref=e172]:
+                      - generic [ref=e173]: Mar 12, 2026last month
+                  - 'row "library, (Directory) feat: add youtube-shorts skill for long-video → vertical clip pipeline Apr 25, 20264 days ago" [ref=e174]':
+                    - cell "library, (Directory)" [ref=e175]:
+                      - generic [ref=e176]:
+                        - img [ref=e177]
+                        - link "library, (Directory)" [ref=e182] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/tree/main/library
+                          - text: library
+                    - 'cell "feat: add youtube-shorts skill for long-video → vertical clip pipeline" [ref=e183]':
+                      - 'link "feat: add youtube-shorts skill for long-video → vertical clip pipeline" [ref=e186] [cursor=pointer]':
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/89e3fcfe6acc7b701446929d321c94c143c6b914
+                    - cell "Apr 25, 20264 days ago" [ref=e187]:
+                      - generic [ref=e188]: Apr 25, 20264 days ago
+                  - row "media_outputs, (Directory) Added demo video Feb 25, 20262 months ago" [ref=e189]:
+                    - cell "media_outputs, (Directory)" [ref=e190]:
+                      - generic [ref=e191]:
+                        - img [ref=e192]
+                        - link "media_outputs, (Directory)" [ref=e197] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/tree/main/media_outputs
+                          - text: media_outputs
+                    - cell "Added demo video" [ref=e198]:
+                      - link "Added demo video" [ref=e201] [cursor=pointer]:
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/1fdec7e744146a965d1488fe3f6cb13ef32b58e6
+                    - cell "Feb 25, 20262 months ago" [ref=e202]:
+                      - generic [ref=e203]: Feb 25, 20262 months ago
+                  - 'row ".gitignore, (File) chore: untrack .env and add .gitignore Apr 27, 20263 days ago" [ref=e204]':
+                    - cell ".gitignore, (File)" [ref=e205]:
+                      - generic [ref=e206]:
+                        - img [ref=e207]
+                        - link ".gitignore, (File)" [ref=e212] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/blob/main/.gitignore
+                          - text: .gitignore
+                    - 'cell "chore: untrack .env and add .gitignore" [ref=e213]':
+                      - 'link "chore: untrack .env and add .gitignore" [ref=e216] [cursor=pointer]':
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/2a9132e4e1cbf4c676619706dba13feb1ec44d8c
+                    - cell "Apr 27, 20263 days ago" [ref=e217]:
+                      - generic [ref=e218]: Apr 27, 20263 days ago
+                  - 'row "LICENSE, (File) chore: update project name to Generative-Media-Skills, add MIT licens… Feb 25, 20262 months ago" [ref=e219]':
+                    - cell "LICENSE, (File)" [ref=e220]:
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - link "LICENSE, (File)" [ref=e227] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/blob/main/LICENSE
+                          - text: LICENSE
+                    - 'cell "chore: update project name to Generative-Media-Skills, add MIT licens…" [ref=e228]':
+                      - 'link "chore: update project name to Generative-Media-Skills, add MIT licens…" [ref=e231] [cursor=pointer]':
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/a8ebfa583a9ca2f3779cb7788e48ade2aa59e575
+                    - cell "Feb 25, 20262 months ago" [ref=e232]:
+                      - generic [ref=e233]: Feb 25, 20262 months ago
+                  - 'row "README.md, (File) fix: remove demo mode from seedance-2 script, update MCP tool count t… Mar 6, 2026last month" [ref=e234]':
+                    - cell "README.md, (File)" [ref=e235]:
+                      - generic [ref=e236]:
+                        - img [ref=e237]
+                        - link "README.md, (File)" [ref=e242] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/blob/main/README.md
+                          - text: README.md
+                    - 'cell "fix: remove demo mode from seedance-2 script, update MCP tool count t…" [ref=e243]':
+                      - 'link "fix: remove demo mode from seedance-2 script, update MCP tool count t…" [ref=e246] [cursor=pointer]':
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/ce98d55437c176ac90968ffdaf0c66f286a24af7
+                    - cell "Mar 6, 2026last month" [ref=e247]:
+                      - generic [ref=e248]: Mar 6, 2026last month
+                  - row "schema_data.json, (File) Seedance 2 skill added Mar 3, 2026last month" [ref=e249]:
+                    - cell "schema_data.json, (File)" [ref=e250]:
+                      - generic [ref=e251]:
+                        - img [ref=e252]
+                        - link "schema_data.json, (File)" [ref=e257] [cursor=pointer]:
+                          - /url: /SamurAIGPT/Generative-Media-Skills/blob/main/schema_data.json
+                          - text: schema_data.json
+                    - cell "Seedance 2 skill added" [ref=e258]:
+                      - link "Seedance 2 skill added" [ref=e261] [cursor=pointer]:
+                        - /url: /SamurAIGPT/Generative-Media-Skills/commit/f88f5a9e792df896393c27e0d4bf3ccd65c98673
+                    - cell "Mar 3, 2026last month" [ref=e262]:
+                      - generic [ref=e263]: Mar 3, 2026last month
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - heading "Repository files navigation" [level=2] [ref=e267]
+                - navigation "Repository files" [ref=e268]:
+                  - list [ref=e269]:
+                    - listitem [ref=e270]:
+                      - link "README" [ref=e271] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e273]
+                        - generic [ref=e275]: README
+                    - listitem [ref=e276]:
+                      - link "MIT license" [ref=e277] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e279]
+                        - generic [ref=e281]: MIT license
+                - button "Outline" [ref=e282] [cursor=pointer]:
+                  - img [ref=e283]
+              - article [ref=e286]:
+                - generic [ref=e287]:
+                  - heading "🎭 Generative Media Skills for AI Agents" [level=1] [ref=e288]
+                  - 'link "Permalink: 🎭 Generative Media Skills for AI Agents" [ref=e289] [cursor=pointer]':
+                    - /url: "#-generative-media-skills-for-ai-agents"
+                    - img [ref=e290]
+                - paragraph [ref=e292]:
+                  - strong [ref=e293]: The Ultimate Multimodal Toolset for Claude Code, Cursor, and Gemini CLI.
+                  - text: A high-performance, schema-driven architecture for AI agents to generate, edit, and display professional-grade images, videos, and audio — powered by the
+                  - link "muapi-cli" [ref=e294] [cursor=pointer]:
+                    - /url: https://github.com/SamurAIGPT/muapi-cli
+                  - text: .
+                - paragraph [ref=e295]:
+                  - link "🚀 Get Started" [ref=e296] [cursor=pointer]:
+                    - /url: "#-quick-start"
+                  - text: "|"
+                  - link "🎨 Expert Library" [ref=e297] [cursor=pointer]:
+                    - /url: "#-expert-library"
+                  - text: "|"
+                  - link "⚙️ Core Primitives" [ref=e298] [cursor=pointer]:
+                    - /url: "#-core-primitives"
+                  - text: "|"
+                  - link "🤖 MCP Server" [ref=e299] [cursor=pointer]:
+                    - /url: "#-mcp-server"
+                  - text: "|"
+                  - link "📖 Reference" [ref=e300] [cursor=pointer]:
+                    - /url: "#-schema-reference"
+                - separator [ref=e301]
+                - generic [ref=e302]:
+                  - heading "✨ Key Features" [level=2] [ref=e303]
+                  - 'link "Permalink: ✨ Key Features" [ref=e304] [cursor=pointer]':
+                    - /url: "#-key-features"
+                    - img [ref=e305]
+                - list [ref=e307]:
+                  - listitem [ref=e308]:
+                    - strong [ref=e309]: 🤖 Agent-Native Design
+                    - text: — CLI-powered scripts with structured JSON outputs, semantic exit codes, and
+                    - code [ref=e310]: "--jq"
+                    - text: filtering for seamless agentic pipelines.
+                  - listitem [ref=e311]:
+                    - strong [ref=e312]: 🧠 Expert Knowledge Layer
+                    - text: — Domain-specific skills that bake in professional cinematography, atomic design, and branding logic.
+                  - listitem [ref=e313]:
+                    - strong [ref=e314]: ⚡ CLI-Powered Core
+                    - text: — All primitives delegate to
+                    - link "muapi-cli" [ref=e315] [cursor=pointer]:
+                      - /url: https://www.npmjs.com/package/muapi-cli
+                      - code [ref=e316]: muapi-cli
+                    - text: — no curl, no JSON parsing, no boilerplate.
+                  - listitem [ref=e317]:
+                    - strong [ref=e318]: 🖼️ Direct Media Display
+                    - text: — Use the
+                    - code [ref=e319]: "--view"
+                    - text: flag to automatically download and open generated media in your system viewer.
+                  - listitem [ref=e320]:
+                    - strong [ref=e321]: 📁 Local File Support
+                    - text: — Auto-upload images, videos, faces, and audio from your local machine to the CDN for processing.
+                  - listitem [ref=e322]:
+                    - strong [ref=e323]: 🌈 100+ AI Models
+                    - text: — One-click access to
+                    - strong [ref=e324]: Midjourney v7, Flux Kontext, Seedance 2.0, Kling 3.0, Veo3
+                    - text: ", and more."
+                  - listitem [ref=e325]:
+                    - strong [ref=e326]: 🔌 MCP Server
+                    - text: — Run
+                    - code [ref=e327]: muapi mcp serve
+                    - text: to expose all 19 tools directly to Claude Desktop, Cursor, or any MCP-compatible agent.
+                - separator [ref=e328]
+                - generic [ref=e329]:
+                  - heading "🏗️ Scalable Architecture" [level=2] [ref=e330]
+                  - 'link "Permalink: 🏗️ Scalable Architecture" [ref=e331] [cursor=pointer]':
+                    - /url: "#️-scalable-architecture"
+                    - img [ref=e332]
+                - paragraph [ref=e334]:
+                  - text: This repository uses a
+                  - strong [ref=e335]: Core/Library
+                  - text: "split to ensure efficiency and high-signal discovery for LLMs:"
+                - generic [ref=e336]:
+                  - heading "⚙️ Core Primitives (/core)" [level=3] [ref=e337]:
+                    - text: ⚙️ Core Primitives (
+                    - code [ref=e338]: /core
+                    - text: )
+                  - 'link "Permalink: ⚙️ Core Primitives (/core)" [ref=e339] [cursor=pointer]':
+                    - /url: "#️-core-primitives-core"
+                    - img [ref=e340]
+                - paragraph [ref=e342]:
+                  - text: Thin wrappers around
+                  - link "muapi-cli" [ref=e343] [cursor=pointer]:
+                    - /url: https://github.com/SamurAIGPT/muapi-cli
+                    - code [ref=e344]: muapi-cli
+                  - text: for raw API access.
+                - list [ref=e345]:
+                  - listitem [ref=e346]:
+                    - code [ref=e347]: core/media/
+                    - text: — File upload
+                  - listitem [ref=e348]:
+                    - code [ref=e349]: core/edit/
+                    - text: — Image editing (prompt-based)
+                  - listitem [ref=e350]:
+                    - code [ref=e351]: core/platform/
+                    - text: — Setup, auth & result polling
+                - generic [ref=e352]:
+                  - heading "📚 Expert Library (/library)" [level=3] [ref=e353]:
+                    - text: 📚 Expert Library (
+                    - code [ref=e354]: /library
+                    - text: )
+                  - 'link "Permalink: 📚 Expert Library (/library)" [ref=e355] [cursor=pointer]':
+                    - /url: "#-expert-library-library"
+                    - img [ref=e356]
+                - paragraph [ref=e358]: High-value skills that translate creative intent into technical directives.
+                - list [ref=e359]:
+                  - listitem [ref=e360]:
+                    - strong [ref=e361]: Cinema Director
+                    - text: (
+                    - code [ref=e362]: /library/motion/cinema-director/
+                    - text: ) — Technical film direction & cinematography.
+                  - listitem [ref=e363]:
+                    - strong [ref=e364]: Nano-Banana
+                    - text: (
+                    - code [ref=e365]: /library/visual/nano-banana/
+                    - text: ) — Reasoning-driven image generation (Gemini 3 Style).
+                  - listitem [ref=e366]:
+                    - strong [ref=e367]: UI Designer
+                    - text: (
+                    - code [ref=e368]: /library/visual/ui-design/
+                    - text: ) — High-fidelity mobile/web mockups (Atomic Design).
+                  - listitem [ref=e369]:
+                    - strong [ref=e370]: Logo Creator
+                    - text: (
+                    - code [ref=e371]: /library/visual/logo-creator/
+                    - text: ) — Minimalist vector branding (Geometric Primitives).
+                  - listitem [ref=e372]:
+                    - strong [ref=e373]: Seedance 2 (Doubao Video)
+                    - text: (
+                    - code [ref=e374]: /library/motion/seedance-2/
+                    - text: ) — Director-level cinematic video generation with text-to-video, image-to-video, and video extension with native audio-video sync.
+                - separator [ref=e375]
+                - generic [ref=e376]:
+                  - heading "🚀 Quick Start" [level=2] [ref=e377]
+                  - 'link "Permalink: 🚀 Quick Start" [ref=e378] [cursor=pointer]':
+                    - /url: "#-quick-start"
+                    - img [ref=e379]
+                - generic [ref=e381]:
+                  - heading "1. Install the muapi CLI" [level=3] [ref=e382]
+                  - 'link "Permalink: 1. Install the muapi CLI" [ref=e383] [cursor=pointer]':
+                    - /url: "#1-install-the-muapi-cli"
+                    - img [ref=e384]
+                - paragraph [ref=e386]:
+                  - text: The core scripts require
+                  - link "muapi-cli" [ref=e387] [cursor=pointer]:
+                    - /url: https://www.npmjs.com/package/muapi-cli
+                    - code [ref=e388]: muapi-cli
+                  - text: ". Install it once:"
+                - generic [ref=e389]:
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: "# via npm (recommended — no Python required)"
+                    - text: npm install -g muapi-cli
+                    - generic [ref=e392]: "# via pip"
+                    - text: pip install muapi-cli
+                    - generic [ref=e393]: "# or run without installing"
+                    - text: npx muapi-cli --help
+                  - button "Copy" [ref=e395] [cursor=pointer]:
+                    - img [ref=e396]
+                - generic [ref=e399]:
+                  - heading "2. Configure Your API Key" [level=3] [ref=e400]
+                  - 'link "Permalink: 2. Configure Your API Key" [ref=e401] [cursor=pointer]':
+                    - /url: "#2-configure-your-api-key"
+                    - img [ref=e402]
+                - generic [ref=e404]:
+                  - generic [ref=e405]:
+                    - generic [ref=e406]: "# Interactive setup"
+                    - text: muapi auth configure
+                    - generic [ref=e407]: "# Or pass directly"
+                    - text: muapi auth configure --api-key
+                    - generic [ref=e408]: "\"YOUR_MUAPI_KEY\""
+                    - generic [ref=e409]: "# Get your key at https://muapi.ai/dashboard"
+                  - button "Copy" [ref=e411] [cursor=pointer]:
+                    - img [ref=e412]
+                - generic [ref=e415]:
+                  - heading "3. Install the Skills" [level=3] [ref=e416]
+                  - 'link "Permalink: 3. Install the Skills" [ref=e417] [cursor=pointer]':
+                    - /url: "#3-install-the-skills"
+                    - img [ref=e418]
+                - generic [ref=e420]:
+                  - generic [ref=e421]:
+                    - generic [ref=e422]: "# Install all skills to your AI agent"
+                    - text: npx skills add SamurAIGPT/Generative-Media-Skills --all
+                    - generic [ref=e423]: "# Or install a specific skill"
+                    - text: npx skills add SamurAIGPT/Generative-Media-Skills --skill muapi-media-generation
+                    - generic [ref=e424]: "# Install to specific agents"
+                    - text: npx skills add SamurAIGPT/Generative-Media-Skills --all -a claude-code -a cursor
+                  - button "Copy" [ref=e426] [cursor=pointer]:
+                    - img [ref=e427]
+                - generic [ref=e430]:
+                  - heading "4. Generate Your First Image" [level=3] [ref=e431]
+                  - 'link "Permalink: 4. Generate Your First Image" [ref=e432] [cursor=pointer]':
+                    - /url: "#4-generate-your-first-image"
+                    - img [ref=e433]
+                - generic [ref=e435]:
+                  - generic [ref=e436]:
+                    - text: muapi image generate
+                    - generic [ref=e437]: "\"a cyberpunk city at night\""
+                    - text: "--model flux-dev"
+                    - generic [ref=e438]: "# Download the result automatically"
+                    - text: muapi image generate
+                    - generic [ref=e439]: "\"a sunset over mountains\""
+                    - text: "--model hidream-fast --download ./outputs"
+                    - generic [ref=e440]: "# Extract just the URL (agent-friendly)"
+                    - text: muapi image generate
+                    - generic [ref=e441]: "\"product on white bg\""
+                    - text: "--model flux-schnell --output-json --jq"
+                    - generic [ref=e442]: "'.outputs[0]'"
+                  - button "Copy" [ref=e444] [cursor=pointer]:
+                    - img [ref=e445]
+                - generic [ref=e448]:
+                  - heading "5. Run an Expert Skill" [level=3] [ref=e449]
+                  - 'link "Permalink: 5. Run an Expert Skill" [ref=e450] [cursor=pointer]':
+                    - /url: "#5-run-an-expert-skill"
+                    - img [ref=e451]
+                - generic [ref=e453]:
+                  - generic [ref=e454]:
+                    - generic [ref=e455]: "# Use Nano-Banana reasoning to generate a 2K masterpiece"
+                    - text: bash library/visual/nano-banana/scripts/generate-nano-art.sh \ --file ./my-source-image.jpg \ --subject
+                    - generic [ref=e456]: "\"a glass hummingbird\""
+                    - text: \ --style
+                    - generic [ref=e457]: "\"macro photography\""
+                    - text: \ --resolution
+                    - generic [ref=e458]: "\"2k\""
+                    - text: \ --view
+                  - button "Copy" [ref=e460] [cursor=pointer]:
+                    - img [ref=e461]
+                - generic [ref=e464]:
+                  - heading "6. Direct a Cinematic Scene" [level=3] [ref=e465]
+                  - 'link "Permalink: 6. Direct a Cinematic Scene" [ref=e466] [cursor=pointer]':
+                    - /url: "#6-direct-a-cinematic-scene"
+                    - img [ref=e467]
+                - generic [ref=e469]:
+                  - generic [ref=e470]:
+                    - text: cd library/motion/cinema-director
+                    - generic [ref=e471]: "# Create a 10-second epic reveal"
+                    - text: bash scripts/generate-film.sh \ --subject
+                    - generic [ref=e472]: "\"a cybernetic dragon over Tokyo\""
+                    - text: \ --intent
+                    - generic [ref=e473]: "\"epic\""
+                    - text: \ --model
+                    - generic [ref=e474]: "\"kling-v3.0-pro\""
+                    - text: \ --duration 10 \ --view
+                    - generic [ref=e475]: "# Animate a reference image into video"
+                    - text: bash library/motion/seedance-2/scripts/generate-seedance.sh \ --mode i2v \ --file ./concept.jpg \ --subject
+                    - generic [ref=e476]: "\"camera slowly pulls back to reveal the full landscape\""
+                    - text: \ --intent
+                    - generic [ref=e477]: "\"reveal\""
+                    - text: \ --view
+                    - generic [ref=e478]: "# Extend an existing video"
+                    - text: bash library/motion/seedance-2/scripts/generate-seedance.sh \ --mode extend \ --request-id
+                    - generic [ref=e479]: "\"YOUR_REQUEST_ID\""
+                    - text: \ --subject
+                    - generic [ref=e480]: "\"camera continues pulling back to reveal the vast city\""
+                    - text: \ --duration 10
+                  - button "Copy" [ref=e482] [cursor=pointer]:
+                    - img [ref=e483]
+                - separator [ref=e486]
+                - generic [ref=e487]:
+                  - heading "🤖 MCP Server" [level=2] [ref=e488]
+                  - 'link "Permalink: 🤖 MCP Server" [ref=e489] [cursor=pointer]':
+                    - /url: "#-mcp-server"
+                    - img [ref=e490]
+                - paragraph [ref=e492]:
+                  - text: Run muapi as a
+                  - strong [ref=e493]: Model Context Protocol server
+                  - text: so Claude Desktop, Cursor, or any MCP-compatible agent can call generation tools directly — no shell scripts needed.
+                - generic [ref=e494]:
+                  - generic [ref=e495]: muapi mcp serve
+                  - button "Copy" [ref=e497] [cursor=pointer]:
+                    - img [ref=e498]
+                - paragraph [ref=e501]:
+                  - strong [ref=e502]: Claude Desktop config
+                  - text: (
+                  - code [ref=e503]: ~/Library/Application Support/Claude/claude_desktop_config.json
+                  - text: "):"
+                - generic [ref=e504]:
+                  - generic [ref=e505]:
+                    - text: "{ \"mcpServers\": { \"muapi\": { \"command\":"
+                    - generic [ref=e506]: "\"muapi\""
+                    - text: ", \"args\": ["
+                    - generic [ref=e507]: "\"mcp\""
+                    - text: ","
+                    - generic [ref=e508]: "\"serve\""
+                    - text: "], \"env\": { \"MUAPI_API_KEY\":"
+                    - generic [ref=e509]: "\"your-key-here\""
+                    - text: "} } } }"
+                  - button "Copy" [ref=e511] [cursor=pointer]:
+                    - img [ref=e512]
+                - paragraph [ref=e515]:
+                  - text: This exposes
+                  - strong [ref=e516]: 19 structured tools
+                  - text: "with full JSON Schema input/output definitions:"
+                - table [ref=e518]:
+                  - rowgroup [ref=e519]:
+                    - row "Tool Description" [ref=e520]:
+                      - columnheader "Tool" [ref=e521]
+                      - columnheader "Description" [ref=e522]
+                  - rowgroup [ref=e523]:
+                    - row "muapi_image_generate Text-to-image (14 models)" [ref=e524]:
+                      - cell "muapi_image_generate" [ref=e525]:
+                        - code [ref=e526]: muapi_image_generate
+                      - cell "Text-to-image (14 models)" [ref=e527]
+                    - row "muapi_image_edit Image-to-image editing (11 models)" [ref=e528]:
+                      - cell "muapi_image_edit" [ref=e529]:
+                        - code [ref=e530]: muapi_image_edit
+                      - cell "Image-to-image editing (11 models)" [ref=e531]
+                    - row "muapi_video_generate Text-to-video (13 models)" [ref=e532]:
+                      - cell "muapi_video_generate" [ref=e533]:
+                        - code [ref=e534]: muapi_video_generate
+                      - cell "Text-to-video (13 models)" [ref=e535]
+                    - row "muapi_video_from_image Image-to-video (16 models)" [ref=e536]:
+                      - cell "muapi_video_from_image" [ref=e537]:
+                        - code [ref=e538]: muapi_video_from_image
+                      - cell "Image-to-video (16 models)" [ref=e539]
+                    - row "muapi_audio_create Music generation (Suno)" [ref=e540]:
+                      - cell "muapi_audio_create" [ref=e541]:
+                        - code [ref=e542]: muapi_audio_create
+                      - cell "Music generation (Suno)" [ref=e543]
+                    - row "muapi_audio_from_text Sound effects (MMAudio)" [ref=e544]:
+                      - cell "muapi_audio_from_text" [ref=e545]:
+                        - code [ref=e546]: muapi_audio_from_text
+                      - cell "Sound effects (MMAudio)" [ref=e547]
+                    - row "muapi_enhance_upscale AI upscaling" [ref=e548]:
+                      - cell "muapi_enhance_upscale" [ref=e549]:
+                        - code [ref=e550]: muapi_enhance_upscale
+                      - cell "AI upscaling" [ref=e551]
+                    - row "muapi_enhance_bg_remove Background removal" [ref=e552]:
+                      - cell "muapi_enhance_bg_remove" [ref=e553]:
+                        - code [ref=e554]: muapi_enhance_bg_remove
+                      - cell "Background removal" [ref=e555]
+                    - row "muapi_enhance_face_swap Face swap image/video" [ref=e556]:
+                      - cell "muapi_enhance_face_swap" [ref=e557]:
+                        - code [ref=e558]: muapi_enhance_face_swap
+                      - cell "Face swap image/video" [ref=e559]
+                    - row "muapi_enhance_ghibli Ghibli style transfer" [ref=e560]:
+                      - cell "muapi_enhance_ghibli" [ref=e561]:
+                        - code [ref=e562]: muapi_enhance_ghibli
+                      - cell "Ghibli style transfer" [ref=e563]
+                    - row "muapi_edit_lipsync Lip sync to audio" [ref=e564]:
+                      - cell "muapi_edit_lipsync" [ref=e565]:
+                        - code [ref=e566]: muapi_edit_lipsync
+                      - cell "Lip sync to audio" [ref=e567]
+                    - row "muapi_edit_clipping AI highlight extraction" [ref=e568]:
+                      - cell "muapi_edit_clipping" [ref=e569]:
+                        - code [ref=e570]: muapi_edit_clipping
+                      - cell "AI highlight extraction" [ref=e571]
+                    - row "muapi_predict_result Poll prediction status" [ref=e572]:
+                      - cell "muapi_predict_result" [ref=e573]:
+                        - code [ref=e574]: muapi_predict_result
+                      - cell "Poll prediction status" [ref=e575]
+                    - row "muapi_upload_file Upload local file → URL" [ref=e576]:
+                      - cell "muapi_upload_file" [ref=e577]:
+                        - code [ref=e578]: muapi_upload_file
+                      - cell "Upload local file → URL" [ref=e579]
+                    - row "muapi_keys_list List API keys" [ref=e580]:
+                      - cell "muapi_keys_list" [ref=e581]:
+                        - code [ref=e582]: muapi_keys_list
+                      - cell "List API keys" [ref=e583]
+                    - row "muapi_keys_create Create API key" [ref=e584]:
+                      - cell "muapi_keys_create" [ref=e585]:
+                        - code [ref=e586]: muapi_keys_create
+                      - cell "Create API key" [ref=e587]
+                    - row "muapi_keys_delete Delete API key" [ref=e588]:
+                      - cell "muapi_keys_delete" [ref=e589]:
+                        - code [ref=e590]: muapi_keys_delete
+                      - cell "Delete API key" [ref=e591]
+                    - row "muapi_account_balance Get credit balance" [ref=e592]:
+                      - cell "muapi_account_balance" [ref=e593]:
+                        - code [ref=e594]: muapi_account_balance
+                      - cell "Get credit balance" [ref=e595]
+                    - row "muapi_account_topup Add credits (Stripe checkout)" [ref=e596]:
+                      - cell "muapi_account_topup" [ref=e597]:
+                        - code [ref=e598]: muapi_account_topup
+                      - cell "Add credits (Stripe checkout)" [ref=e599]
+                - separator [ref=e600]
+                - generic [ref=e601]:
+                  - heading "⚡ Agentic Pipeline Examples" [level=2] [ref=e602]
+                  - 'link "Permalink: ⚡ Agentic Pipeline Examples" [ref=e603] [cursor=pointer]':
+                    - /url: "#-agentic-pipeline-examples"
+                    - img [ref=e604]
+                - generic [ref=e606]:
+                  - generic [ref=e607]:
+                    - generic [ref=e608]: "# Submit async, capture request_id, poll when ready"
+                    - text: REQUEST_ID=
+                    - generic [ref=e609]:
+                      - text: $(muapi video generate
+                      - generic [ref=e610]: "\"a dog running on a beach\""
+                      - text: \
+                    - generic [ref=e611]:
+                      - text: "--model kling-master --no-wait --output-json --jq"
+                      - generic [ref=e612]: "'.request_id'"
+                      - text: "| tr -d"
+                      - generic [ref=e613]: "'\"'"
+                      - text: )
+                    - generic [ref=e614]: "# ... do other work ..."
+                    - text: muapi predict wait
+                    - generic [ref=e615]: "\"$REQUEST_ID\""
+                    - text: "--download ./outputs"
+                    - generic [ref=e616]: "# Pipe a prompt from another command"
+                    - text: generate_prompt | muapi image generate - --model flux-dev
+                    - generic [ref=e617]: "# Chain: upload → edit → download"
+                    - text: URL=
+                    - generic [ref=e618]:
+                      - text: $(muapi upload file ./photo.jpg --output-json --jq
+                      - generic [ref=e619]: "'.url'"
+                      - text: "| tr -d"
+                      - generic [ref=e620]: "'\"'"
+                      - text: )
+                    - text: muapi image edit
+                    - generic [ref=e621]: "\"make it look like a painting\""
+                    - text: "--image"
+                    - generic [ref=e622]: "\"$URL\""
+                    - text: \ --model flux-kontext-pro --download ./outputs
+                  - button "Copy" [ref=e624] [cursor=pointer]:
+                    - img [ref=e625]
+                - separator [ref=e628]
+                - generic [ref=e629]:
+                  - heading "📖 Schema Reference" [level=2] [ref=e630]
+                  - 'link "Permalink: 📖 Schema Reference" [ref=e631] [cursor=pointer]':
+                    - /url: "#-schema-reference"
+                    - img [ref=e632]
+                - paragraph [ref=e634]:
+                  - text: This repository includes a streamlined
+                  - code [ref=e635]: schema_data.json
+                  - text: "that core scripts use at runtime to:"
+                - list [ref=e636]:
+                  - listitem [ref=e637]:
+                    - strong [ref=e638]: Validate Model IDs
+                    - text: ": Ensures the requested model exists."
+                  - listitem [ref=e639]:
+                    - strong [ref=e640]: Resolve Endpoints
+                    - text: ": Automatically maps model names to API endpoints."
+                  - listitem [ref=e641]:
+                    - strong [ref=e642]: Check Parameters
+                    - text: ": Validates supported"
+                    - code [ref=e643]: aspect_ratio
+                    - text: ","
+                    - code [ref=e644]: resolution
+                    - text: ", and"
+                    - code [ref=e645]: duration
+                    - text: values.
+                - paragraph [ref=e646]: "Discover all available models via the CLI:"
+                - generic [ref=e647]:
+                  - generic [ref=e648]: muapi models list muapi models list --category video --output-json
+                  - button "Copy" [ref=e650] [cursor=pointer]:
+                    - img [ref=e651]
+                - separator [ref=e654]
+                - generic [ref=e655]:
+                  - heading "🔧 Compatibility" [level=2] [ref=e656]
+                  - 'link "Permalink: 🔧 Compatibility" [ref=e657] [cursor=pointer]':
+                    - /url: "#-compatibility"
+                    - img [ref=e658]
+                - paragraph [ref=e660]: "Optimized for the next generation of AI development environments:"
+                - list [ref=e661]:
+                  - listitem [ref=e662]:
+                    - strong [ref=e663]: Claude Code
+                    - text: — Direct terminal execution via tools + MCP server mode.
+                  - listitem [ref=e664]:
+                    - strong [ref=e665]: Gemini CLI / Cursor / Windsurf
+                    - text: — Seamless integration as local scripts.
+                  - listitem [ref=e666]:
+                    - strong [ref=e667]: MCP
+                    - text: — Full Model Context Protocol server with typed input/output schemas.
+                  - listitem [ref=e668]:
+                    - strong [ref=e669]: CI/CD
+                    - text: —
+                    - code [ref=e670]: "--output-json"
+                    - text: ","
+                    - code [ref=e671]: "--jq"
+                    - text: ", semantic exit codes for scripting."
+                - separator [ref=e672]
+                - generic [ref=e673]:
+                  - heading "📄 License" [level=2] [ref=e674]
+                  - 'link "Permalink: 📄 License" [ref=e675] [cursor=pointer]':
+                    - /url: "#-license"
+                    - img [ref=e676]
+                - paragraph [ref=e678]: MIT © 2026
+        - generic [ref=e682]:
+          - generic [ref=e686]:
+            - heading "Releases" [level=2] [ref=e687]:
+              - link "Releases" [ref=e688] [cursor=pointer]:
+                - /url: /SamurAIGPT/Generative-Media-Skills/releases
+            - generic [ref=e689]: No releases published
+          - generic [ref=e691]:
+            - heading "Packages" [level=2] [ref=e692]:
+              - link "Packages" [ref=e693] [cursor=pointer]:
+                - /url: /orgs/SamurAIGPT/packages?repo_name=Generative-Media-Skills
+            - generic [ref=e694]: No packages published
+          - generic [ref=e696]:
+            - heading "Contributors 9" [level=2] [ref=e697]:
+              - link "Contributors 9" [ref=e698] [cursor=pointer]:
+                - /url: /SamurAIGPT/Generative-Media-Skills/graphs/contributors
+                - text: Contributors
+                - generic "9" [ref=e699]
+            - list [ref=e700]:
+              - listitem [ref=e701]:
+                - link "@Anil-matcha" [ref=e702] [cursor=pointer]:
+                  - /url: https://github.com/Anil-matcha
+                  - img "@Anil-matcha" [ref=e703]
+              - listitem [ref=e704]:
+                - link "@vadootvpeer" [ref=e705] [cursor=pointer]:
+                  - /url: https://github.com/vadootvpeer
+                  - img "@vadootvpeer" [ref=e706]
+              - listitem [ref=e707]:
+                - link "@claude" [ref=e708] [cursor=pointer]:
+                  - /url: https://github.com/claude
+                  - img "@claude" [ref=e709]
+              - listitem [ref=e710]:
+                - link "@ncodepro" [ref=e711] [cursor=pointer]:
+                  - /url: https://github.com/ncodepro
+                  - img "@ncodepro" [ref=e712]
+              - listitem [ref=e713]:
+                - link "@joemccann" [ref=e714] [cursor=pointer]:
+                  - /url: https://github.com/joemccann
+                  - img "@joemccann" [ref=e715]
+              - listitem [ref=e716]:
+                - link "@djibe" [ref=e717] [cursor=pointer]:
+                  - /url: https://github.com/djibe
+                  - img "@djibe" [ref=e718]
+              - listitem [ref=e719]:
+                - link "@revskill10" [ref=e720] [cursor=pointer]:
+                  - /url: https://github.com/revskill10
+                  - img "@revskill10" [ref=e721]
+              - listitem [ref=e722]:
+                - link "@staeiou" [ref=e723] [cursor=pointer]:
+                  - /url: https://github.com/staeiou
+                  - img "@staeiou" [ref=e724]
+              - listitem [ref=e725]:
+                - link "@thephabulousphantom" [ref=e726] [cursor=pointer]:
+                  - /url: https://github.com/thephabulousphantom
+                  - img "@thephabulousphantom" [ref=e727]
+          - generic [ref=e729]:
+            - heading "Languages" [level=2] [ref=e730]
+            - list [ref=e734]:
+              - listitem [ref=e735]:
+                - link "Shell 100.0%" [ref=e736] [cursor=pointer]:
+                  - /url: /SamurAIGPT/Generative-Media-Skills/search?l=shell
+                  - img [ref=e737]
+                  - generic [ref=e739]: Shell
+                  - generic [ref=e740]: 100.0%
+  - contentinfo [ref=e742]:
+    - heading "Footer" [level=2] [ref=e743]
+    - generic [ref=e744]:
+      - generic [ref=e745]:
+        - link "GitHub Homepage" [ref=e746] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e747]
+        - generic [ref=e749]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e750]:
+        - heading "Footer navigation" [level=3] [ref=e751]
+        - list "Footer navigation" [ref=e752]:
+          - listitem [ref=e753]:
+            - link "Terms" [ref=e754] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e755]:
+            - link "Privacy" [ref=e756] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e757]:
+            - link "Security" [ref=e758] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e759]:
+            - link "Status" [ref=e760] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e761]:
+            - link "Community" [ref=e762] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e763]:
+            - link "Docs" [ref=e764] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e765]:
+            - link "Contact" [ref=e766] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e767]:
+            - button "Manage cookies" [ref=e769] [cursor=pointer]
+          - listitem [ref=e770]:
+            - button "Do not share my personal information" [ref=e772] [cursor=pointer]

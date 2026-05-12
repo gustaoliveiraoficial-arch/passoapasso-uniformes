@@ -1,0 +1,159 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Recapio" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img [ref=e8]
+        - generic [ref=e12]: Recapio
+      - button "Toggle menu" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - link "Recapio":
+            - /url: /
+            - img
+            - generic: Recapio
+          - button "Close menu":
+            - img
+        - generic:
+          - link "Daily Digest":
+            - /url: /daily-digest
+          - link "Chat with YouTube Video":
+            - /url: /chat-with-youtube
+          - link "YouTube Transcript":
+            - /url: /youtube-transcript
+          - link "YouTube Summarizer":
+            - /url: /youtube-summarizer
+          - link "YouTube to Whiteboard":
+            - /url: /youtube-to-whiteboard
+          - link "Chat with Experts":
+            - /url: /experts
+          - link "Chat with Channel":
+            - /url: /channels
+          - link "Pricing":
+            - /url: /pricing
+          - link "Blog":
+            - /url: /blog
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - main [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - button "Back" [ref=e23] [cursor=pointer]:
+              - img [ref=e24]
+            - heading "Loading video details..." [level=1] [ref=e26]
+          - generic [ref=e27]:
+            - button "Share" [ref=e29] [cursor=pointer]:
+              - img [ref=e30]
+              - generic [ref=e36]: Share
+            - button "Save to Memory" [disabled]:
+              - img
+              - generic: Save to Memory
+        - generic [ref=e39]:
+          - generic [ref=e42]:
+            - paragraph [ref=e46]: Generating AI summary...
+            - paragraph [ref=e47]: Almost ready
+          - generic [ref=e48]:
+            - heading "Top Questions" [level=2] [ref=e49]
+            - generic [ref=e51]:
+              - paragraph [ref=e55]: Generating top questions...
+              - paragraph [ref=e56]: Almost ready
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - img [ref=e63]
+            - generic [ref=e70]: See All Videos
+          - generic [ref=e71]:
+            - heading "Get Transcript" [level=3] [ref=e72]
+            - paragraph [ref=e73]: View and copy transcript of this video.
+            - link "Get transcript" [ref=e74] [cursor=pointer]:
+              - /url: https://youtubetotranscript.com/transcript?v=undefined
+              - generic [ref=e75]: Get transcript
+              - img [ref=e76]
+      - button "Close player" [ref=e82] [cursor=pointer]:
+        - img [ref=e83]
+  - contentinfo [ref=e88]:
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - link "Recapio" [ref=e92] [cursor=pointer]:
+            - /url: /
+            - img [ref=e93]
+            - generic [ref=e97]: Recapio
+          - paragraph [ref=e98]: AI-powered YouTube insights
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - heading "Tools" [level=3] [ref=e101]
+            - list [ref=e102]:
+              - listitem [ref=e103]:
+                - link "Chat with YouTube Video" [ref=e104] [cursor=pointer]:
+                  - /url: /chat-with-youtube
+              - listitem [ref=e105]:
+                - link "YouTube Transcript" [ref=e106] [cursor=pointer]:
+                  - /url: /youtube-transcript
+              - listitem [ref=e107]:
+                - link "YouTube Summarizer" [ref=e108] [cursor=pointer]:
+                  - /url: /youtube-summarizer
+              - listitem [ref=e109]:
+                - link "YouTube to Text" [ref=e110] [cursor=pointer]:
+                  - /url: /youtube-to-text
+              - listitem [ref=e111]:
+                - link "YouTube to Whiteboard" [ref=e112] [cursor=pointer]:
+                  - /url: /youtube-to-whiteboard
+              - listitem [ref=e113]:
+                - link "AI Note Taking" [ref=e114] [cursor=pointer]:
+                  - /url: /ai-note-taking
+          - list [ref=e116]:
+            - listitem [ref=e117]:
+              - link "Podcast Summaries" [ref=e118] [cursor=pointer]:
+                - /url: /youtube-podcast-summaries
+            - listitem [ref=e119]:
+              - link "Daily YouTube Digest" [ref=e120] [cursor=pointer]:
+                - /url: /daily-digest
+            - listitem [ref=e121]:
+              - link "Organize YouTube" [ref=e122] [cursor=pointer]:
+                - /url: /organize-youtube
+            - listitem [ref=e123]:
+              - link "Chat with Experts" [ref=e124] [cursor=pointer]:
+                - /url: /experts
+            - listitem [ref=e125]:
+              - link "Chat with Channel" [ref=e126] [cursor=pointer]:
+                - /url: /channels
+            - listitem [ref=e127]:
+              - link "Best YouTube Channels" [ref=e128] [cursor=pointer]:
+                - /url: /best-youtube-channels
+          - generic [ref=e129]:
+            - heading "Company" [level=3] [ref=e130]
+            - list [ref=e131]:
+              - listitem [ref=e132]:
+                - link "How it works" [ref=e133] [cursor=pointer]:
+                  - /url: /#how-it-works
+              - listitem [ref=e134]:
+                - link "Pricing" [ref=e135] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e136]:
+                - link "Blog" [ref=e137] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e138]:
+                - link "Help Center" [ref=e139] [cursor=pointer]:
+                  - /url: /help
+          - generic [ref=e140]:
+            - heading "Follow" [level=3] [ref=e141]
+            - list [ref=e142]:
+              - listitem [ref=e143]:
+                - link "X (Twitter)" [ref=e144] [cursor=pointer]:
+                  - /url: https://x.com/recapioGPT
+                  - generic [ref=e145]: 𝕏
+                  - text: Twitter
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: © 2026 Recapio. All rights reserved.
+        - generic [ref=e148]:
+          - link "Teams" [ref=e149] [cursor=pointer]:
+            - /url: /teams
+          - link "Communities" [ref=e150] [cursor=pointer]:
+            - /url: /for-communities
+          - link "Privacy" [ref=e151] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms" [ref=e152] [cursor=pointer]:
+            - /url: /terms

@@ -1,0 +1,1117 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: PP
+    - generic [ref=e4]:
+      - heading "Ficha Técnica do Pedido" [level=1] [ref=e5]
+      - paragraph [ref=e6]: Passo a Passo Uniformes
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Dados do Pedido
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - generic [ref=e13]: Nome do Cliente *
+            - 'textbox "Ex: Empresa ABC" [ref=e14]': Sarah Pilates
+          - generic [ref=e15]:
+            - generic [ref=e16]: Telefone / WhatsApp
+            - textbox "(00) 00000-0000" [ref=e17]
+          - generic [ref=e18]:
+            - generic [ref=e19]: Vendedor Responsável
+            - textbox "Nome do vendedor" [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]: Número do Pedido
+            - 'textbox "Ex: PED-2026-001" [ref=e23]'
+          - generic [ref=e24]:
+            - generic [ref=e25]: Data de Entrega *
+            - textbox [ref=e26]: 2026-05-08
+          - generic [ref=e27]:
+            - generic [ref=e28]: E-mail
+            - textbox "cliente@email.com" [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - heading "Camiseta Rosa" [level=3] [ref=e131]
+            - button "✕ Remover" [ref=e132] [cursor=pointer]
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: Nome do Modelo *
+                - 'textbox "Ex: Jaqueta, Moletom..." [ref=e137]': Camiseta Rosa
+              - generic [ref=e138]:
+                - generic [ref=e139]: Material
+                - combobox [ref=e140]:
+                  - option "Selecionar..."
+                  - option "Malha PV (Poliéster/Viscose)"
+                  - option "Malha Piquet"
+                  - option "100% Poliéster"
+                  - option "100% Algodão"
+                  - option "Dry Fit" [selected]
+                  - option "Nylon"
+                  - option "Oxford"
+                  - option "Outro"
+              - generic [ref=e141]:
+                - generic [ref=e142]: Fornecedor
+                - textbox "Nome do fornecedor" [ref=e143]
+              - generic [ref=e144]:
+                - generic [ref=e145]: Cor Principal
+                - 'textbox "Ex: Azul Royal, Preto..." [ref=e146]': Rosa
+              - generic [ref=e147]:
+                - generic [ref=e148]: Tipo de Estampa
+                - generic [ref=e149]:
+                  - generic [ref=e151] [cursor=pointer]: 🖨️ Serigrafia
+                  - generic [ref=e153] [cursor=pointer]: 🎨 DTF
+                  - generic [ref=e155] [cursor=pointer]: 🧵 Bordado
+                  - generic [ref=e157] [cursor=pointer]: 🌈 Sublimação
+                  - generic [ref=e159] [cursor=pointer]: — Sem estampa
+            - generic [ref=e160]:
+              - generic [ref=e161]: Posição / Detalhes da Estampa
+              - 'textbox "Ex: Logo peito esquerdo bordado..." [ref=e162]'
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - generic [ref=e165]: Portadores
+                - button "+ Portador" [ref=e166] [cursor=pointer]
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - generic [ref=e169]: Nome
+                  - generic [ref=e170]: Modelagem
+                  - generic [ref=e171]: Tamanho
+                  - generic [ref=e172]: Qtd
+                  - generic [ref=e173]: Obs Individual
+                - generic [ref=e175]:
+                  - generic [ref=e176]:
+                    - textbox "Nome do portador" [ref=e177]
+                    - combobox [ref=e178]:
+                      - option "—" [selected]
+                      - option "Unissex"
+                      - option "Babylook"
+                    - combobox [ref=e179]:
+                      - option "—" [selected]
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e180]: "1"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e181]'
+                    - button "✕" [ref=e182] [cursor=pointer]
+                  - generic [ref=e183]:
+                    - textbox "Nome do portador" [ref=e184]
+                    - combobox [ref=e185]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e186]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e187]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e188]'
+                    - button "✕" [ref=e189] [cursor=pointer]
+                  - generic [ref=e190]:
+                    - textbox "Nome do portador" [ref=e191]
+                    - combobox [ref=e192]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e193]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e194]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e195]'
+                    - button "✕" [ref=e196] [cursor=pointer]
+                  - generic [ref=e197]:
+                    - textbox "Nome do portador" [ref=e198]
+                    - combobox [ref=e199]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e200]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e201]: "3"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e202]'
+                    - button "✕" [ref=e203] [cursor=pointer]
+                  - generic [ref=e204]:
+                    - textbox "Nome do portador" [ref=e205]
+                    - combobox [ref=e206]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e207]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e208]: "2"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e209]'
+                    - button "✕" [ref=e210] [cursor=pointer]
+            - generic [ref=e211]:
+              - generic [ref=e212]: Grade de Tamanhos
+              - generic [ref=e213]:
+                - generic [ref=e214]: "Unissex M: 3"
+                - generic [ref=e215]: "Unissex G: 2"
+                - generic [ref=e216]: "Babylook M: 5"
+                - generic [ref=e217]: "Babylook G: 5"
+              - generic [ref=e218]:
+                - text: "Total:"
+                - strong [ref=e219]: "15"
+                - text: peças
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - generic [ref=e222]: Valor Unitário (R$)
+                - spinbutton [ref=e223]: "55.9"
+              - generic [ref=e224]:
+                - generic [ref=e225]: Total de Peças
+                - strong [ref=e226]: "15"
+              - generic [ref=e227]:
+                - generic [ref=e228]: Subtotal deste Modelo
+                - strong [ref=e229]: R$ 838,50
+        - generic [ref=e230]:
+          - generic [ref=e231]:
+            - heading "Camiseta Preta" [level=3] [ref=e232]
+            - button "✕ Remover" [ref=e233] [cursor=pointer]
+          - generic [ref=e234]:
+            - generic [ref=e235]:
+              - generic [ref=e236]:
+                - generic [ref=e237]: Nome do Modelo *
+                - 'textbox "Ex: Jaqueta, Moletom..." [ref=e238]': Camiseta Preta
+              - generic [ref=e239]:
+                - generic [ref=e240]: Material
+                - combobox [ref=e241]:
+                  - option "Selecionar..."
+                  - option "Malha PV (Poliéster/Viscose)"
+                  - option "Malha Piquet"
+                  - option "100% Poliéster"
+                  - option "100% Algodão"
+                  - option "Dry Fit" [selected]
+                  - option "Nylon"
+                  - option "Oxford"
+                  - option "Outro"
+              - generic [ref=e242]:
+                - generic [ref=e243]: Fornecedor
+                - textbox "Nome do fornecedor" [ref=e244]
+              - generic [ref=e245]:
+                - generic [ref=e246]: Cor Principal
+                - 'textbox "Ex: Azul Royal, Preto..." [ref=e247]': Preta
+              - generic [ref=e248]:
+                - generic [ref=e249]: Tipo de Estampa
+                - generic [ref=e250]:
+                  - generic [ref=e252] [cursor=pointer]: 🖨️ Serigrafia
+                  - generic [ref=e254] [cursor=pointer]: 🎨 DTF
+                  - generic [ref=e256] [cursor=pointer]: 🧵 Bordado
+                  - generic [ref=e258] [cursor=pointer]: 🌈 Sublimação
+                  - generic [ref=e260] [cursor=pointer]: — Sem estampa
+            - generic [ref=e261]:
+              - generic [ref=e262]: Posição / Detalhes da Estampa
+              - 'textbox "Ex: Logo peito esquerdo bordado..." [ref=e263]'
+            - generic [ref=e264]:
+              - generic [ref=e265]:
+                - generic [ref=e266]: Portadores
+                - button "+ Portador" [ref=e267] [cursor=pointer]
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - generic [ref=e270]: Nome
+                  - generic [ref=e271]: Modelagem
+                  - generic [ref=e272]: Tamanho
+                  - generic [ref=e273]: Qtd
+                  - generic [ref=e274]: Obs Individual
+                - generic [ref=e276]:
+                  - generic [ref=e277]:
+                    - textbox "Nome do portador" [ref=e278]
+                    - combobox [ref=e279]:
+                      - option "—" [selected]
+                      - option "Unissex"
+                      - option "Babylook"
+                    - combobox [ref=e280]:
+                      - option "—" [selected]
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e281]: "1"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e282]'
+                    - button "✕" [ref=e283] [cursor=pointer]
+                  - generic [ref=e284]:
+                    - textbox "Nome do portador" [ref=e285]
+                    - combobox [ref=e286]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e287]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e288]: "3"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e289]'
+                    - button "✕" [ref=e290] [cursor=pointer]
+                  - generic [ref=e291]:
+                    - textbox "Nome do portador" [ref=e292]
+                    - combobox [ref=e293]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e294]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e295]: "2"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e296]'
+                    - button "✕" [ref=e297] [cursor=pointer]
+                  - generic [ref=e298]:
+                    - textbox "Nome do portador" [ref=e299]
+                    - combobox [ref=e300]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e301]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e302]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e303]'
+                    - button "✕" [ref=e304] [cursor=pointer]
+                  - generic [ref=e305]:
+                    - textbox "Nome do portador" [ref=e306]
+                    - combobox [ref=e307]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e308]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e309]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e310]'
+                    - button "✕" [ref=e311] [cursor=pointer]
+            - generic [ref=e312]:
+              - generic [ref=e313]: Grade de Tamanhos
+              - generic [ref=e314]:
+                - generic [ref=e315]: "Unissex M: 5"
+                - generic [ref=e316]: "Unissex G: 5"
+                - generic [ref=e317]: "Babylook M: 3"
+                - generic [ref=e318]: "Babylook G: 2"
+              - generic [ref=e319]:
+                - text: "Total:"
+                - strong [ref=e320]: "15"
+                - text: peças
+            - generic [ref=e321]:
+              - generic [ref=e322]:
+                - generic [ref=e323]: Valor Unitário (R$)
+                - spinbutton [ref=e324]: "55.9"
+              - generic [ref=e325]:
+                - generic [ref=e326]: Total de Peças
+                - strong [ref=e327]: "15"
+              - generic [ref=e328]:
+                - generic [ref=e329]: Subtotal deste Modelo
+                - strong [ref=e330]: R$ 838,50
+        - generic [ref=e331]:
+          - generic [ref=e332]:
+            - heading "Camiseta Branca" [level=3] [ref=e333]
+            - button "✕ Remover" [ref=e334] [cursor=pointer]
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - generic [ref=e337]:
+                - generic [ref=e338]: Nome do Modelo *
+                - 'textbox "Ex: Jaqueta, Moletom..." [ref=e339]': Camiseta Branca
+              - generic [ref=e340]:
+                - generic [ref=e341]: Material
+                - combobox [ref=e342]:
+                  - option "Selecionar..."
+                  - option "Malha PV (Poliéster/Viscose)"
+                  - option "Malha Piquet"
+                  - option "100% Poliéster"
+                  - option "100% Algodão"
+                  - option "Dry Fit" [selected]
+                  - option "Nylon"
+                  - option "Oxford"
+                  - option "Outro"
+              - generic [ref=e343]:
+                - generic [ref=e344]: Fornecedor
+                - textbox "Nome do fornecedor" [ref=e345]
+              - generic [ref=e346]:
+                - generic [ref=e347]: Cor Principal
+                - 'textbox "Ex: Azul Royal, Preto..." [ref=e348]': Branca
+              - generic [ref=e349]:
+                - generic [ref=e350]: Tipo de Estampa
+                - generic [ref=e351]:
+                  - generic [ref=e353] [cursor=pointer]: 🖨️ Serigrafia
+                  - generic [ref=e355] [cursor=pointer]: 🎨 DTF
+                  - generic [ref=e357] [cursor=pointer]: 🧵 Bordado
+                  - generic [ref=e359] [cursor=pointer]: 🌈 Sublimação
+                  - generic [ref=e361] [cursor=pointer]: — Sem estampa
+            - generic [ref=e362]:
+              - generic [ref=e363]: Posição / Detalhes da Estampa
+              - 'textbox "Ex: Logo peito esquerdo bordado..." [ref=e364]'
+            - generic [ref=e365]:
+              - generic [ref=e366]:
+                - generic [ref=e367]: Portadores
+                - button "+ Portador" [ref=e368] [cursor=pointer]
+              - generic [ref=e369]:
+                - generic [ref=e370]:
+                  - generic [ref=e371]: Nome
+                  - generic [ref=e372]: Modelagem
+                  - generic [ref=e373]: Tamanho
+                  - generic [ref=e374]: Qtd
+                  - generic [ref=e375]: Obs Individual
+                - generic [ref=e377]:
+                  - generic [ref=e378]:
+                    - textbox "Nome do portador" [ref=e379]
+                    - combobox [ref=e380]:
+                      - option "—" [selected]
+                      - option "Unissex"
+                      - option "Babylook"
+                    - combobox [ref=e381]:
+                      - option "—" [selected]
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e382]: "1"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e383]'
+                    - button "✕" [ref=e384] [cursor=pointer]
+                  - generic [ref=e385]:
+                    - textbox "Nome do portador" [ref=e386]
+                    - combobox [ref=e387]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e388]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e389]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e390]'
+                    - button "✕" [ref=e391] [cursor=pointer]
+                  - generic [ref=e392]:
+                    - textbox "Nome do portador" [ref=e393]
+                    - combobox [ref=e394]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e395]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e396]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e397]'
+                    - button "✕" [ref=e398] [cursor=pointer]
+                  - generic [ref=e399]:
+                    - textbox "Nome do portador" [ref=e400]
+                    - combobox [ref=e401]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e402]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e403]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e404]'
+                    - button "✕" [ref=e405] [cursor=pointer]
+                  - generic [ref=e406]:
+                    - textbox "Nome do portador" [ref=e407]
+                    - combobox [ref=e408]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e409]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e410]: "4"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e411]'
+                    - button "✕" [ref=e412] [cursor=pointer]
+                  - generic [ref=e413]:
+                    - textbox "Nome do portador" [ref=e414]
+                    - combobox [ref=e415]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e416]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e417]: "1"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e418]': Gola V
+                    - button "✕" [ref=e419] [cursor=pointer]
+            - generic [ref=e420]:
+              - generic [ref=e421]: Grade de Tamanhos
+              - generic [ref=e422]:
+                - generic [ref=e423]: "Unissex M: 5"
+                - generic [ref=e424]: "Unissex G: 5"
+                - generic [ref=e425]: "Babylook M: 5"
+                - generic [ref=e426]: "Babylook G: 5"
+              - generic [ref=e427]:
+                - text: "Total:"
+                - strong [ref=e428]: "20"
+                - text: peças
+            - generic [ref=e429]:
+              - generic [ref=e430]:
+                - generic [ref=e431]: Valor Unitário (R$)
+                - spinbutton [ref=e432]: "55.9"
+              - generic [ref=e433]:
+                - generic [ref=e434]: Total de Peças
+                - strong [ref=e435]: "20"
+              - generic [ref=e436]:
+                - generic [ref=e437]: Subtotal deste Modelo
+                - strong [ref=e438]: R$ 1.118,00
+        - generic [ref=e439]:
+          - generic [ref=e440]:
+            - heading "Camiseta Verde" [level=3] [ref=e441]
+            - button "✕ Remover" [ref=e442] [cursor=pointer]
+          - generic [ref=e443]:
+            - generic [ref=e444]:
+              - generic [ref=e445]:
+                - generic [ref=e446]: Nome do Modelo *
+                - 'textbox "Ex: Jaqueta, Moletom..." [ref=e447]': Camiseta Verde
+              - generic [ref=e448]:
+                - generic [ref=e449]: Material
+                - combobox [ref=e450]:
+                  - option "Selecionar..."
+                  - option "Malha PV (Poliéster/Viscose)"
+                  - option "Malha Piquet"
+                  - option "100% Poliéster"
+                  - option "100% Algodão"
+                  - option "Dry Fit" [selected]
+                  - option "Nylon"
+                  - option "Oxford"
+                  - option "Outro"
+              - generic [ref=e451]:
+                - generic [ref=e452]: Fornecedor
+                - textbox "Nome do fornecedor" [ref=e453]
+              - generic [ref=e454]:
+                - generic [ref=e455]: Cor Principal
+                - 'textbox "Ex: Azul Royal, Preto..." [ref=e456]': Verde
+              - generic [ref=e457]:
+                - generic [ref=e458]: Tipo de Estampa
+                - generic [ref=e459]:
+                  - generic [ref=e461] [cursor=pointer]: 🖨️ Serigrafia
+                  - generic [ref=e463] [cursor=pointer]: 🎨 DTF
+                  - generic [ref=e465] [cursor=pointer]: 🧵 Bordado
+                  - generic [ref=e467] [cursor=pointer]: 🌈 Sublimação
+                  - generic [ref=e469] [cursor=pointer]: — Sem estampa
+            - generic [ref=e470]:
+              - generic [ref=e471]: Posição / Detalhes da Estampa
+              - 'textbox "Ex: Logo peito esquerdo bordado..." [ref=e472]'
+            - generic [ref=e473]:
+              - generic [ref=e474]:
+                - generic [ref=e475]: Portadores
+                - button "+ Portador" [ref=e476] [cursor=pointer]
+              - generic [ref=e477]:
+                - generic [ref=e478]:
+                  - generic [ref=e479]: Nome
+                  - generic [ref=e480]: Modelagem
+                  - generic [ref=e481]: Tamanho
+                  - generic [ref=e482]: Qtd
+                  - generic [ref=e483]: Obs Individual
+                - generic [ref=e485]:
+                  - generic [ref=e486]:
+                    - textbox "Nome do portador" [ref=e487]
+                    - combobox [ref=e488]:
+                      - option "—" [selected]
+                      - option "Unissex"
+                      - option "Babylook"
+                    - combobox [ref=e489]:
+                      - option "—" [selected]
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e490]: "1"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e491]'
+                    - button "✕" [ref=e492] [cursor=pointer]
+                  - generic [ref=e493]:
+                    - textbox "Nome do portador" [ref=e494]
+                    - combobox [ref=e495]:
+                      - option "—"
+                      - option "Unissex"
+                      - option "Babylook" [selected]
+                    - combobox [ref=e496]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e497]: "5"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e498]'
+                    - button "✕" [ref=e499] [cursor=pointer]
+                  - generic [ref=e500]:
+                    - textbox "Nome do portador" [ref=e501]
+                    - combobox [ref=e502]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e503]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M" [selected]
+                      - option "G"
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e504]: "3"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e505]'
+                    - button "✕" [ref=e506] [cursor=pointer]
+                  - generic [ref=e507]:
+                    - textbox "Nome do portador" [ref=e508]
+                    - combobox [ref=e509]:
+                      - option "—"
+                      - option "Unissex" [selected]
+                      - option "Babylook"
+                    - combobox [ref=e510]:
+                      - option "—"
+                      - option "PP"
+                      - option "P"
+                      - option "M"
+                      - option "G" [selected]
+                      - option "GG"
+                      - option "XG (+30%)"
+                      - option "XXG (+30%)"
+                      - option "XXXG (+30%)"
+                      - option "XGG (+30%)"
+                      - option "FXG (+30%)"
+                      - option "G1 (+30%)"
+                      - option "G2 (+30%)"
+                      - option "G3 (+30%)"
+                      - option "Outro"
+                    - spinbutton [ref=e511]: "2"
+                    - 'textbox "Obs (ex: alongar manga 3cm)" [ref=e512]'
+                    - button "✕" [ref=e513] [cursor=pointer]
+            - generic [ref=e514]:
+              - generic [ref=e515]: Grade de Tamanhos
+              - generic [ref=e516]:
+                - generic [ref=e517]: "Unissex M: 3"
+                - generic [ref=e518]: "Unissex G: 2"
+                - generic [ref=e519]: "Babylook M: 5"
+              - generic [ref=e520]:
+                - text: "Total:"
+                - strong [ref=e521]: "10"
+                - text: peças
+            - generic [ref=e522]:
+              - generic [ref=e523]:
+                - generic [ref=e524]: Valor Unitário (R$)
+                - spinbutton [ref=e525]: "55.9"
+              - generic [ref=e526]:
+                - generic [ref=e527]: Total de Peças
+                - strong [ref=e528]: "10"
+              - generic [ref=e529]:
+                - generic [ref=e530]: Subtotal deste Modelo
+                - strong [ref=e531]: R$ 559,00
+      - button "+ Adicionar Modelo" [ref=e101] [cursor=pointer]
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]: VALOR TOTAL DO PEDIDO
+          - generic [ref=e105]: 4 modelos · 60 peças
+        - generic [ref=e106]: R$ 3.354,00
+      - generic [ref=e107]:
+        - generic [ref=e108]: Observações Gerais
+        - textbox "Condições de pagamento, prazo de produção, informações adicionais..." [ref=e110]: Tecido Dry Fit liso sublimado. Valor unitário R$ 55,90 (todos os modelos).
+      - generic [ref=e111]:
+        - button "Limpar" [ref=e112] [cursor=pointer]
+        - button "📱 Copiar para WhatsApp" [ref=e113] [cursor=pointer]
+        - button "+ Salvar Ficha" [active] [ref=e114] [cursor=pointer]
+    - generic [ref=e116]:
+      - generic [ref=e117]: Fichas Salvas
+      - generic [ref=e118]:
+        - generic [ref=e533]:
+          - generic [ref=e534]:
+            - strong [ref=e535]: Sarah Pilates
+            - generic [ref=e536]: "Camiseta Rosa + Camiseta Preta + Camiseta Branca + Camiseta Verde · 60 peças · Entrega: 08/05/2026"
+            - generic [ref=e537]: PED-1776268211089 · 15/04/2026
+          - generic [ref=e538]: R$ 3.354,00
+          - generic [ref=e539]:
+            - button "Ver / PDF" [ref=e540] [cursor=pointer]
+            - button "📱" [ref=e541] [cursor=pointer]
+            - button "Excluir" [ref=e542] [cursor=pointer]
+        - generic [ref=e543]:
+          - generic [ref=e544]:
+            - strong [ref=e545]: Mireli Alves
+            - generic [ref=e546]: "Jaqueta + Moletom com capuz e bolso · 26 peças · Entrega: 15/05/2026"
+            - generic [ref=e547]: PED-1776265646002 · 15/04/2026
+          - generic [ref=e548]: R$ 5.237,40
+          - generic [ref=e549]:
+            - button "Ver / PDF" [ref=e550] [cursor=pointer]
+            - button "📱" [ref=e551] [cursor=pointer]
+            - button "Excluir" [ref=e552] [cursor=pointer]
+  - generic [ref=e554]:
+    - generic [ref=e555]:
+      - generic [ref=e556]:
+        - generic [ref=e557]:
+          - heading "Ficha Técnica · PED-1776268211089" [level=2] [ref=e558]
+          - text: Passo a Passo Uniformes
+        - generic [ref=e559]: 15/04/2026
+      - generic [ref=e560]:
+        - heading "Dados do Pedido" [level=3] [ref=e561]
+        - generic [ref=e562]:
+          - generic [ref=e563]:
+            - generic [ref=e564]: Cliente
+            - text: Sarah Pilates
+          - generic [ref=e565]:
+            - generic [ref=e566]: Entrega
+            - text: 08/05/2026
+      - generic [ref=e567]:
+        - generic [ref=e568]: 👕 1. Camiseta Rosa
+        - generic [ref=e569]:
+          - generic [ref=e570]:
+            - generic [ref=e571]: Material
+            - text: Dry Fit
+          - generic [ref=e572]:
+            - generic [ref=e573]: Cor
+            - text: Rosa
+          - generic [ref=e574]:
+            - generic [ref=e575]: Fornecedor
+            - text: —
+          - generic [ref=e576]:
+            - generic [ref=e577]: Estampa
+            - text: Sublimação
+        - table [ref=e578]:
+          - rowgroup [ref=e579]:
+            - row "Nome Modelagem Tamanho Qtd Obs" [ref=e580]:
+              - columnheader "Nome" [ref=e581]
+              - columnheader "Modelagem" [ref=e582]
+              - columnheader "Tamanho" [ref=e583]
+              - columnheader "Qtd" [ref=e584]
+              - columnheader "Obs" [ref=e585]
+          - rowgroup [ref=e586]:
+            - row "— — — 1 —" [ref=e587]:
+              - cell "—" [ref=e588]
+              - cell "—" [ref=e589]
+              - cell "—" [ref=e590]
+              - cell "1" [ref=e591]
+              - cell "—" [ref=e592]
+            - row "— Babylook M 5 —" [ref=e593]:
+              - cell "—" [ref=e594]
+              - cell "Babylook" [ref=e595]
+              - cell "M" [ref=e596]
+              - cell "5" [ref=e597]
+              - cell "—" [ref=e598]
+            - row "— Babylook G 5 —" [ref=e599]:
+              - cell "—" [ref=e600]
+              - cell "Babylook" [ref=e601]
+              - cell "G" [ref=e602]
+              - cell "5" [ref=e603]
+              - cell "—" [ref=e604]
+            - row "— Unissex M 3 —" [ref=e605]:
+              - cell "—" [ref=e606]
+              - cell "Unissex" [ref=e607]
+              - cell "M" [ref=e608]
+              - cell "3" [ref=e609]
+              - cell "—" [ref=e610]
+            - row "— Unissex G 2 —" [ref=e611]:
+              - cell "—" [ref=e612]
+              - cell "Unissex" [ref=e613]
+              - cell "G" [ref=e614]
+              - cell "2" [ref=e615]
+              - cell "—" [ref=e616]
+        - generic [ref=e617]:
+          - strong [ref=e618]: "Grade:"
+          - text: "Unissex M: 3 · Unissex G: 2 · Babylook M: 5 · Babylook G: 5 |"
+          - strong [ref=e619]: 15 peças
+          - text: · R$ 55,90 un. =
+          - strong [ref=e620]: R$ 838,50
+      - generic [ref=e621]:
+        - generic [ref=e622]: 👕 2. Camiseta Preta
+        - generic [ref=e623]:
+          - generic [ref=e624]:
+            - generic [ref=e625]: Material
+            - text: Dry Fit
+          - generic [ref=e626]:
+            - generic [ref=e627]: Cor
+            - text: Preta
+          - generic [ref=e628]:
+            - generic [ref=e629]: Fornecedor
+            - text: —
+          - generic [ref=e630]:
+            - generic [ref=e631]: Estampa
+            - text: Sublimação
+        - table [ref=e632]:
+          - rowgroup [ref=e633]:
+            - row "Nome Modelagem Tamanho Qtd Obs" [ref=e634]:
+              - columnheader "Nome" [ref=e635]
+              - columnheader "Modelagem" [ref=e636]
+              - columnheader "Tamanho" [ref=e637]
+              - columnheader "Qtd" [ref=e638]
+              - columnheader "Obs" [ref=e639]
+          - rowgroup [ref=e640]:
+            - row "— — — 1 —" [ref=e641]:
+              - cell "—" [ref=e642]
+              - cell "—" [ref=e643]
+              - cell "—" [ref=e644]
+              - cell "1" [ref=e645]
+              - cell "—" [ref=e646]
+            - row "— Babylook M 3 —" [ref=e647]:
+              - cell "—" [ref=e648]
+              - cell "Babylook" [ref=e649]
+              - cell "M" [ref=e650]
+              - cell "3" [ref=e651]
+              - cell "—" [ref=e652]
+            - row "— Babylook G 2 —" [ref=e653]:
+              - cell "—" [ref=e654]
+              - cell "Babylook" [ref=e655]
+              - cell "G" [ref=e656]
+              - cell "2" [ref=e657]
+              - cell "—" [ref=e658]
+            - row "— Unissex M 5 —" [ref=e659]:
+              - cell "—" [ref=e660]
+              - cell "Unissex" [ref=e661]
+              - cell "M" [ref=e662]
+              - cell "5" [ref=e663]
+              - cell "—" [ref=e664]
+            - row "— Unissex G 5 —" [ref=e665]:
+              - cell "—" [ref=e666]
+              - cell "Unissex" [ref=e667]
+              - cell "G" [ref=e668]
+              - cell "5" [ref=e669]
+              - cell "—" [ref=e670]
+        - generic [ref=e671]:
+          - strong [ref=e672]: "Grade:"
+          - text: "Unissex M: 5 · Unissex G: 5 · Babylook M: 3 · Babylook G: 2 |"
+          - strong [ref=e673]: 15 peças
+          - text: · R$ 55,90 un. =
+          - strong [ref=e674]: R$ 838,50
+      - generic [ref=e675]:
+        - generic [ref=e676]: 👕 3. Camiseta Branca
+        - generic [ref=e677]:
+          - generic [ref=e678]:
+            - generic [ref=e679]: Material
+            - text: Dry Fit
+          - generic [ref=e680]:
+            - generic [ref=e681]: Cor
+            - text: Branca
+          - generic [ref=e682]:
+            - generic [ref=e683]: Fornecedor
+            - text: —
+          - generic [ref=e684]:
+            - generic [ref=e685]: Estampa
+            - text: Sublimação
+        - table [ref=e686]:
+          - rowgroup [ref=e687]:
+            - row "Nome Modelagem Tamanho Qtd Obs" [ref=e688]:
+              - columnheader "Nome" [ref=e689]
+              - columnheader "Modelagem" [ref=e690]
+              - columnheader "Tamanho" [ref=e691]
+              - columnheader "Qtd" [ref=e692]
+              - columnheader "Obs" [ref=e693]
+          - rowgroup [ref=e694]:
+            - row "— — — 1 —" [ref=e695]:
+              - cell "—" [ref=e696]
+              - cell "—" [ref=e697]
+              - cell "—" [ref=e698]
+              - cell "1" [ref=e699]
+              - cell "—" [ref=e700]
+            - row "— Babylook M 5 —" [ref=e701]:
+              - cell "—" [ref=e702]
+              - cell "Babylook" [ref=e703]
+              - cell "M" [ref=e704]
+              - cell "5" [ref=e705]
+              - cell "—" [ref=e706]
+            - row "— Babylook G 5 —" [ref=e707]:
+              - cell "—" [ref=e708]
+              - cell "Babylook" [ref=e709]
+              - cell "G" [ref=e710]
+              - cell "5" [ref=e711]
+              - cell "—" [ref=e712]
+            - row "— Unissex M 5 —" [ref=e713]:
+              - cell "—" [ref=e714]
+              - cell "Unissex" [ref=e715]
+              - cell "M" [ref=e716]
+              - cell "5" [ref=e717]
+              - cell "—" [ref=e718]
+            - row "— Unissex G 4 —" [ref=e719]:
+              - cell "—" [ref=e720]
+              - cell "Unissex" [ref=e721]
+              - cell "G" [ref=e722]
+              - cell "4" [ref=e723]
+              - cell "—" [ref=e724]
+            - row "— Unissex G 1 Gola V" [ref=e725]:
+              - cell "—" [ref=e726]
+              - cell "Unissex" [ref=e727]
+              - cell "G" [ref=e728]
+              - cell "1" [ref=e729]
+              - cell "Gola V" [ref=e730]
+        - generic [ref=e731]:
+          - strong [ref=e732]: "Grade:"
+          - text: "Unissex M: 5 · Unissex G: 5 · Babylook M: 5 · Babylook G: 5 |"
+          - strong [ref=e733]: 20 peças
+          - text: · R$ 55,90 un. =
+          - strong [ref=e734]: R$ 1.118,00
+      - generic [ref=e735]:
+        - generic [ref=e736]: 👕 4. Camiseta Verde
+        - generic [ref=e737]:
+          - generic [ref=e738]:
+            - generic [ref=e739]: Material
+            - text: Dry Fit
+          - generic [ref=e740]:
+            - generic [ref=e741]: Cor
+            - text: Verde
+          - generic [ref=e742]:
+            - generic [ref=e743]: Fornecedor
+            - text: —
+          - generic [ref=e744]:
+            - generic [ref=e745]: Estampa
+            - text: Sublimação
+        - table [ref=e746]:
+          - rowgroup [ref=e747]:
+            - row "Nome Modelagem Tamanho Qtd Obs" [ref=e748]:
+              - columnheader "Nome" [ref=e749]
+              - columnheader "Modelagem" [ref=e750]
+              - columnheader "Tamanho" [ref=e751]
+              - columnheader "Qtd" [ref=e752]
+              - columnheader "Obs" [ref=e753]
+          - rowgroup [ref=e754]:
+            - row "— — — 1 —" [ref=e755]:
+              - cell "—" [ref=e756]
+              - cell "—" [ref=e757]
+              - cell "—" [ref=e758]
+              - cell "1" [ref=e759]
+              - cell "—" [ref=e760]
+            - row "— Babylook M 5 —" [ref=e761]:
+              - cell "—" [ref=e762]
+              - cell "Babylook" [ref=e763]
+              - cell "M" [ref=e764]
+              - cell "5" [ref=e765]
+              - cell "—" [ref=e766]
+            - row "— Unissex M 3 —" [ref=e767]:
+              - cell "—" [ref=e768]
+              - cell "Unissex" [ref=e769]
+              - cell "M" [ref=e770]
+              - cell "3" [ref=e771]
+              - cell "—" [ref=e772]
+            - row "— Unissex G 2 —" [ref=e773]:
+              - cell "—" [ref=e774]
+              - cell "Unissex" [ref=e775]
+              - cell "G" [ref=e776]
+              - cell "2" [ref=e777]
+              - cell "—" [ref=e778]
+        - generic [ref=e779]:
+          - strong [ref=e780]: "Grade:"
+          - text: "Unissex M: 3 · Unissex G: 2 · Babylook M: 5 |"
+          - strong [ref=e781]: 10 peças
+          - text: · R$ 55,90 un. =
+          - strong [ref=e782]: R$ 559,00
+      - generic [ref=e783]:
+        - heading "Observações" [level=3] [ref=e784]
+        - paragraph [ref=e785]: Tecido Dry Fit liso sublimado. Valor unitário R$ 55,90 (todos os modelos).
+      - generic [ref=e786]:
+        - generic [ref=e787]: TOTAL GERAL · 60 peças · 4 modelos
+        - strong [ref=e788]: R$ 3.354,00
+    - generic [ref=e789]:
+      - button "Fechar" [ref=e790] [cursor=pointer]
+      - button "📱 Copiar WhatsApp" [ref=e791] [cursor=pointer]
+      - button "🖨️ Imprimir" [ref=e792] [cursor=pointer]
+      - button "⬇️ PDF" [ref=e793] [cursor=pointer]
+  - generic [ref=e794]: ✅ Ficha salva com sucesso!

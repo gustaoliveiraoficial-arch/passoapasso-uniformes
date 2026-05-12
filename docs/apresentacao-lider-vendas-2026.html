@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta: Liderança de Vendas — Passo a Passo Uniformes 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+  :root {
+    --preto: #0a0a0a;
+    --escuro: #111827;
+    --card: #1f2937;
+    --borda: #374151;
+    --ouro: #f59e0b;
+    --ouro-claro: #fcd34d;
+    --laranja: #f97316;
+    --vermelho: #ef4444;
+    --verde: #10b981;
+    --azul: #3b82f6;
+    --cinza: #6b7280;
+    --texto: #f9fafb;
+    --texto-suave: #d1d5db;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--preto);
+    color: var(--texto);
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  /* SLIDES */
+  .slide {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide.ativo { display: flex; flex-direction: column; }
+
+  /* BARRA DE PROGRESSO */
+  #progresso-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ouro), var(--laranja));
+    transition: width .4s ease;
+    z-index: 100;
+  }
+
+  /* NAVEGAÇÃO */
+  .nav {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 100;
+    background: rgba(17,24,39,.85);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--borda);
+  }
+  .nav button {
+    background: none;
+    border: 1.5px solid var(--borda);
+    color: var(--texto-suave);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all .2s;
+    letter-spacing: .5px;
+  }
+  .nav button:hover { border-color: var(--ouro); color: var(--ouro); }
+  .nav button:disabled { opacity: .3; cursor: not-allowed; }
+  #contador {
+    font-size: 12px;
+    color: var(--cinza);
+    min-width: 60px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  /* ATALHO TECLADO */
+  .hint-teclado {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    font-size: 11px;
+    color: var(--cinza);
+    z-index: 100;
+  }
+
+  /* ── COMPONENTES REUTILIZÁVEIS ── */
+
+  .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .badge-ouro { background: rgba(245,158,11,.15); color: var(--ouro); border: 1px solid rgba(245,158,11,.3); }
+  .badge-verde { background: rgba(16,185,129,.15); color: var(--verde); border: 1px solid rgba(16,185,129,.3); }
+  .badge-azul  { background: rgba(59,130,246,.15);  color: var(--azul);  border: 1px solid rgba(59,130,246,.3); }
+  .badge-laranja { background: rgba(249,115,22,.15); color: var(--laranja); border: 1px solid rgba(249,115,22,.3); }
+
+  .tag-mes {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ouro), var(--laranja));
+    border-radius: 2px;
+    margin: 16px 0;
+  }
+
+  h1 { font-size: clamp(32px, 5vw, 56px); font-weight: 900; line-height: 1.05; }
+  h2 { font-size: clamp(22px, 3.5vw, 36px); font-weight: 800; line-height: 1.15; }
+  h3 { font-size: clamp(16px, 2vw, 22px); font-weight: 700; }
+
+  .text-ouro { color: var(--ouro); }
+  .text-laranja { color: var(--laranja); }
+  .text-verde  { color: var(--verde); }
+  .text-suave  { color: var(--texto-suave); }
+  .text-cinza  { color: var(--cinza); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+  .card-destaque {
+    background: linear-gradient(135deg, rgba(245,158,11,.12), rgba(249,115,22,.08));
+    border: 1px solid rgba(245,158,11,.25);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+  .numero-grande {
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .pill {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .icone-circulo {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  /* BARRA DE PROGRESSO DE VALOR */
+  .barra-prog {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--borda);
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .barra-prog-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease;
+  }
+
+  /* ── SLIDE 1 — CAPA ── */
+  #s1 {
+    background: radial-gradient(ellipse at 30% 50%, rgba(245,158,11,.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(249,115,22,.08) 0%, transparent 50%),
+                var(--preto);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+  }
+  #s1 .lion { font-size: 80px; margin-bottom: 24px; filter: drop-shadow(0 0 30px rgba(245,158,11,.4)); }
+  #s1 .empresa { font-size: 13px; letter-spacing: 4px; color: var(--cinza); text-transform: uppercase; margin-bottom: 16px; }
+  #s1 h1 { margin-bottom: 8px; }
+  #s1 .subtitulo { font-size: 18px; color: var(--texto-suave); margin: 16px 0 32px; font-weight: 400; }
+  #s1 .linha-info {
+    display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+    margin-top: 40px;
+    font-size: 13px; color: var(--cinza);
+  }
+  #s1 .linha-info span { display: flex; align-items: center; gap: 6px; }
+
+  /* ── SLIDE 2 — DIAGNÓSTICO ── */
+  #s2 { padding: 50px 60px; justify-content: center; gap: 28px; }
+  #s2 .problema-box {
+    background: rgba(239,68,68,.08);
+    border: 1px solid rgba(239,68,68,.25);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: var(--texto-suave);
+    border-left: 4px solid var(--vermelho);
+  }
+
+  /* ── SLIDE 3 — OPORTUNIDADE ── */
+  #s3 {
+    background: radial-gradient(ellipse at 70% 30%, rgba(16,185,129,.08) 0%, transparent 50%),
+                var(--preto);
+    padding: 50px 60px;
+    justify-content: center;
+    gap: 24px;
+  }
+  #s3 .seta-crescimento {
+    font-size: 40px;
+    color: var(--verde);
+    text-align: center;
+    line-height: 1;
+  }
+
+  /* ── SLIDE 4 — CULTURA ── */
+  #s4 {
+    background: radial-gradient(ellipse at 20% 50%, rgba(249,115,22,.1) 0%, transparent 50%),
+                var(--preto);
+    padding: 50px 60px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* ── SLIDE 5 — RITMO DIÁRIO ── */
+  #s5 { padding: 50px 60px; justify-content: center; gap: 20px; }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .timeline-hora {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--ouro);
+    min-width: 52px;
+    padding-top: 2px;
+    letter-spacing: .5px;
+  }
+  .timeline-linha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-top: 4px;
+  }
+  .timeline-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--ouro);
+    flex-shrink: 0;
+  }
+  .timeline-conector {
+    width: 2px;
+    flex: 1;
+    background: var(--borda);
+    min-height: 24px;
+  }
+  .timeline-texto { font-size: 13px; color: var(--texto-suave); padding-bottom: 4px; }
+  .timeline-texto strong { color: var(--texto); font-weight: 700; }
+
+  /* ── SLIDE 6 — NOVOS CANAIS ── */
+  #s6 { padding: 50px 60px; justify-content: center; gap: 20px; }
+  .canal-card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .canal-card .canal-titulo {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 700;
+  }
+  .canal-card .canal-meta {
+    font-size: 12px; color: var(--cinza);
+  }
+
+  /* ── SLIDE 7 — METAS E COMISSÕES ── */
+  #s7 { padding: 50px 60px; justify-content: center; gap: 20px; }
+  table.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  table.tabela th {
+    background: rgba(245,158,11,.1);
+    color: var(--ouro);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(245,158,11,.2);
+  }
+  table.tabela td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--borda);
+    color: var(--texto-suave);
+    vertical-align: middle;
+  }
+  table.tabela tr:last-child td { border-bottom: none; }
+  table.tabela tr:hover td { background: rgba(255,255,255,.02); }
+  table.tabela td:first-child { color: var(--texto); font-weight: 600; }
+
+  /* ── SLIDE 8 — PROJEÇÃO FINANCEIRA ── */
+  #s8 {
+    background: radial-gradient(ellipse at 50% 80%, rgba(16,185,129,.07) 0%, transparent 50%),
+                var(--preto);
+    padding: 50px 60px;
+    justify-content: center;
+    gap: 24px;
+  }
+  .mes-card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .mes-card.destaque {
+    background: linear-gradient(135deg, rgba(16,185,129,.12), rgba(16,185,129,.06));
+    border-color: rgba(16,185,129,.3);
+  }
+  .mes-card .mes-nome { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--cinza); font-weight: 700; }
+  .mes-card .mes-valor { font-size: clamp(24px, 3vw, 36px); font-weight: 900; }
+  .mes-card .mes-crescimento { font-size: 12px; font-weight: 700; }
+  .mes-card .barra-prog { width: 100%; }
+
+  /* ── SLIDE 9 — SINO E PREMIAÇÃO ── */
+  #s9 {
+    background: radial-gradient(ellipse at 50% 30%, rgba(245,158,11,.1) 0%, transparent 50%),
+                var(--preto);
+    padding: 50px 60px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* ── SLIDE 10 — O QUE EU PRECISO ── */
+  #s10 { padding: 50px 60px; justify-content: center; gap: 24px; }
+
+  /* ── SLIDE 11 — FECHAMENTO ── */
+  #s11 {
+    background: radial-gradient(ellipse at 50% 50%, rgba(245,158,11,.15) 0%, transparent 60%),
+                var(--preto);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    gap: 24px;
+  }
+  #s11 .lion-final { font-size: 100px; filter: drop-shadow(0 0 40px rgba(245,158,11,.5)); }
+
+</style>
+</head>
+<body>
+
+<div id="progresso-bar" style="width:9.09%"></div>
+<div class="hint-teclado">← → ou clique nos botões</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 1 — CAPA -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide ativo" id="s1">
+  <div class="lion">🦁</div>
+  <div class="empresa">Passo a Passo Uniformes · 2026</div>
+  <h1><span class="text-ouro">Proposta de</span><br>Liderança de Vendas</h1>
+  <p class="subtitulo">Como vamos de R$80k para R$200k em 30 dias<br>e construir a cultura que vai durar anos.</p>
+
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
+    <span class="badge badge-ouro">Abril → Junho 2026</span>
+    <span class="badge badge-laranja">3 Novos Canais</span>
+    <span class="badge badge-verde">+150% Crescimento</span>
+  </div>
+
+  <div class="linha-info">
+    <span>📅 Reunião de Alinhamento · Março 2026</span>
+    <span>🏢 Novo Hamburgo, RS</span>
+    <span>👥 Equipe de ~10 pessoas</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 2 — DIAGNÓSTICO -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s2">
+  <div>
+    <span class="badge badge-laranja">Diagnóstico Honesto</span>
+    <div class="divider"></div>
+    <h2>Onde estamos <span class="text-ouro">hoje</span></h2>
+  </div>
+
+  <div class="grid-2" style="gap:20px;">
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div class="card">
+        <div class="text-cinza" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Faturamento Atual</div>
+        <div class="numero-grande text-ouro">R$80k</div>
+        <div class="text-cinza" style="font-size:12px;margin-top:4px;">por mês · Março 2026</div>
+      </div>
+      <div class="card">
+        <div class="text-cinza" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Meta Nova</div>
+        <div class="numero-grande text-verde">R$200k</div>
+        <div class="text-cinza" style="font-size:12px;margin-top:4px;">Abril 2026 · +150% de crescimento</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div class="problema-box">
+        <strong>🔴 Problema 1 —</strong> 90% dos leads chegam só pelo WhatsApp + Instagram. Sem diversificação = sem escala.
+      </div>
+      <div class="problema-box">
+        <strong>🔴 Problema 2 —</strong> Sem CRM, leads somem. Sem follow-up estruturado, dinheiro fica na mesa.
+      </div>
+      <div class="problema-box">
+        <strong>🔴 Problema 3 —</strong> Sem cultura de vendas, o resultado depende do humor do dia — não de processo.
+      </div>
+      <div class="problema-box">
+        <strong>🔴 Problema 4 —</strong> Nenhum canal digital além das redes. Mercado Livre, site e visitas = zero explorado.
+      </div>
+    </div>
+  </div>
+
+  <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:10px;padding:14px 18px;">
+    <p style="font-size:14px;color:var(--texto-suave);">
+      <strong style="color:var(--ouro);">A boa notícia:</strong> A Passo a Passo tem 30 anos de reputação, qualidade comprovada e uma base de clientes fiel. O produto já é bom. O que falta é uma <strong>máquina de vendas</strong> trabalhando por cima disso.
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 3 — OPORTUNIDADE -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s3">
+  <div>
+    <span class="badge badge-verde">A Oportunidade</span>
+    <div class="divider"></div>
+    <h2>O mercado está <span class="text-verde">esperando</span> por nós</h2>
+  </div>
+
+  <div class="grid-3" style="gap:16px;">
+    <div class="card-destaque" style="text-align:center;padding:24px 16px;">
+      <div style="font-size:32px;margin-bottom:8px;">🏫</div>
+      <div class="numero-grande text-ouro" style="font-size:32px;">R$18k</div>
+      <div class="text-cinza" style="font-size:12px;margin-top:4px;">por escola conquistada</div>
+      <div style="font-size:12px;color:var(--texto-suave);margin-top:8px;">Escolas públicas e privadas num raio de 40km — mercado estimado de 200+ escolas.</div>
+    </div>
+    <div class="card-destaque" style="text-align:center;padding:24px 16px;">
+      <div style="font-size:32px;margin-bottom:8px;">🏢</div>
+      <div class="numero-grande text-ouro" style="font-size:32px;">R$5k</div>
+      <div class="text-cinza" style="font-size:12px;margin-top:4px;">ticket médio empresa</div>
+      <div style="font-size:12px;color:var(--texto-suave);margin-top:8px;">Empresas de 20-200 funcionários no Vale dos Sinos. Renovação anual garante recorrência.</div>
+    </div>
+    <div class="card-destaque" style="text-align:center;padding:24px 16px;">
+      <div style="font-size:32px;margin-bottom:8px;">🎓</div>
+      <div class="numero-grande text-ouro" style="font-size:32px;">R$8k</div>
+      <div class="text-cinza" style="font-size:12px;margin-top:4px;">por turma de formandos</div>
+      <div style="font-size:12px;color:var(--texto-suave);margin-top:8px;">Temporada 2026: turmas do 9º ano e 3º ano do Ensino Médio. Urgência natural.</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:4px;">
+    <h3 style="margin-bottom:12px;font-size:14px;color:var(--texto-suave);">O que os maiores e-commerces do Brasil nos ensinam:</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(249,115,22,.15);">🛒</div>
+        <div><strong style="font-size:12px;">Shopee</strong><br><span style="font-size:11px;color:var(--cinza);">Flash sales criam urgência</span></div>
+      </div>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(245,158,11,.15);">⭐</div>
+        <div><strong style="font-size:12px;">Mercado Livre</strong><br><span style="font-size:11px;color:var(--cinza);">Reputação = confiança</span></div>
+      </div>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(59,130,246,.15);">💬</div>
+        <div><strong style="font-size:12px;">Magazine Luiza</strong><br><span style="font-size:11px;color:var(--cinza);">Vendedor = consultor</span></div>
+      </div>
+    </div>
+    <div style="margin-top:12px;padding:10px 14px;background:rgba(16,185,129,.08);border-radius:8px;border:1px solid rgba(16,185,129,.2);">
+      <p style="font-size:13px;color:var(--verde);font-weight:600;">💡 Lição #1: Resposta em menos de 5 minutos = conversão 3x maior. Isso vale mais que qualquer anúncio.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 4 — CULTURA LEÕES -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s4">
+  <div>
+    <span class="badge badge-ouro">A Cultura</span>
+    <div class="divider"></div>
+    <h2>🦁 <span class="text-ouro">Leões na Selva</span></h2>
+    <p class="text-suave" style="font-size:14px;margin-top:8px;">Uma empresa de 30 anos com alma de startup de vendas.</p>
+  </div>
+
+  <div class="grid-2" style="gap:16px;">
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:14px;color:var(--ouro);letter-spacing:1px;text-transform:uppercase;">O que define um Leão</h3>
+      <div class="pill"><span style="font-size:20px;">🎯</span> <div><strong>Leões caçam — não esperam.</strong><br><span class="text-cinza" style="font-size:12px;">Prospecção ativa: visitas, ligações, broadcast</span></div></div>
+      <div class="pill"><span style="font-size:20px;">⚡</span> <div><strong>Resposta em menos de 5 min.</strong><br><span class="text-cinza" style="font-size:12px;">Quem responde primeiro, vende.</span></div></div>
+      <div class="pill"><span style="font-size:20px;">📋</span> <div><strong>CRM antes de fechar o WhatsApp.</strong><br><span class="text-cinza" style="font-size:12px;">Todo lead cadastrado. Nenhum escapa.</span></div></div>
+      <div class="pill"><span style="font-size:20px;">🔔</span> <div><strong>Celebra cada venda.</strong><br><span class="text-cinza" style="font-size:12px;">O sino toca. Todo mundo para e ouve.</span></div></div>
+      <div class="pill"><span style="font-size:20px;">🤝</span> <div><strong>Pede indicação após cada venda.</strong><br><span class="text-cinza" style="font-size:12px;">Uma venda bem-feita traz outras duas.</span></div></div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:14px;color:var(--ouro);letter-spacing:1px;text-transform:uppercase;">Os 3 Pilares da Nova Cultura</h3>
+      <div class="card-destaque">
+        <div style="font-size:28px;margin-bottom:8px;">🔔</div>
+        <h3 style="margin-bottom:4px;">O Sino</h3>
+        <p class="text-suave" style="font-size:13px;">Toda venda fechada = sino toca. O valor vai no placar. O time vibra junto. Isso cria energia coletiva que nenhum treinamento substitui.</p>
+      </div>
+      <div class="card-destaque">
+        <div style="font-size:28px;margin-bottom:8px;">📊</div>
+        <h3 style="margin-bottom:4px;">O Placar</h3>
+        <p class="text-suave" style="font-size:13px;">Quadro branco visível para todos: meta do dia (R$ 7.000), total realizado, quem vendeu. Transparência cria competição saudável.</p>
+      </div>
+      <div class="card-destaque">
+        <div style="font-size:28px;margin-bottom:8px;">🏆</div>
+        <h3 style="margin-bottom:4px;">Mural dos Campeões</h3>
+        <p class="text-suave" style="font-size:13px;">Na parede da loja: maior venda do mês, sequência de metas batidas, hall da fama. Reconhecimento público vale mais que bônus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 5 — RITMO DIÁRIO -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s5">
+  <div>
+    <span class="badge badge-azul">Processo</span>
+    <div class="divider"></div>
+    <h2>A Rotina do <span class="text-ouro">Leão</span></h2>
+    <p class="text-suave" style="font-size:13px;margin-top:6px;">Resultado consistente vem de rotina consistente. Todo dia, sem exceção.</p>
+  </div>
+
+  <div class="grid-2" style="gap:24px;align-items:start;">
+    <div>
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;">Rotina Diária</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-hora">08:00</div>
+          <div class="timeline-linha"><div class="timeline-dot"></div><div class="timeline-conector"></div></div>
+          <div class="timeline-texto"><strong>Reunião de Abertura (15 min)</strong><br>Resultado ontem · meta hoje · campanha do dia · técnica da semana</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-hora">08:15</div>
+          <div class="timeline-linha"><div class="timeline-dot" style="background:var(--laranja)"></div><div class="timeline-conector"></div></div>
+          <div class="timeline-texto"><strong>Ataque Matinal</strong><br>Todos os leads do Kommo respondidos. WhatsApps pendentes resolvidos.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-hora">11:00</div>
+          <div class="timeline-linha"><div class="timeline-dot" style="background:var(--azul)"></div><div class="timeline-conector"></div></div>
+          <div class="timeline-texto"><strong>Check-in Rápido (5 min)</strong><br>Orçamentos enviados? Alguém precisa de ajuda para fechar?</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-hora">14:00</div>
+          <div class="timeline-linha"><div class="timeline-dot" style="background:var(--verde)"></div><div class="timeline-conector"></div></div>
+          <div class="timeline-texto"><strong>Campanha da Tarde</strong><br>Broadcast no WhatsApp. Stories com oferta/urgência no Instagram.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-hora">17:30</div>
+          <div class="timeline-linha"><div class="timeline-dot" style="background:var(--ouro)"></div></div>
+          <div class="timeline-texto"><strong>Fechamento do Dia</strong><br>Atualizar Kommo. Registrar no placar. Planejar amanhã.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Campanhas por Dia da Semana</h3>
+      <div class="card" style="padding:14px 16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <strong style="font-size:13px;">Segunda</strong>
+          <span class="badge badge-laranja" style="font-size:10px;padding:2px 8px;">URGÊNCIA</span>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">"Prazo fechando — garanta sua produção essa semana"</p>
+      </div>
+      <div class="card" style="padding:14px 16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <strong style="font-size:13px;">Terça</strong>
+          <span class="badge badge-verde" style="font-size:10px;padding:2px 8px;">PROVA SOCIAL</span>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Foto de cliente satisfeito + depoimento real</p>
+      </div>
+      <div class="card" style="padding:14px 16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <strong style="font-size:13px;">Quarta</strong>
+          <span class="badge badge-ouro" style="font-size:10px;padding:2px 8px;">OFERTA</span>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">"Pedidos acima de 20 peças: frete grátis no Vale dos Sinos"</p>
+      </div>
+      <div class="card" style="padding:14px 16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <strong style="font-size:13px;">Quinta</strong>
+          <span class="badge badge-azul" style="font-size:10px;padding:2px 8px;">EDUCAÇÃO</span>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">"Você sabia que dá pra personalizar até o número na manga?"</p>
+      </div>
+      <div class="card" style="padding:14px 16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <strong style="font-size:13px;">Sexta</strong>
+          <span class="badge badge-laranja" style="font-size:10px;padding:2px 8px;">FECHAMENTO</span>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">"Última chance de garantir produção nessa semana"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 6 — NOVOS CANAIS -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s6">
+  <div>
+    <span class="badge badge-ouro">Expansão</span>
+    <div class="divider"></div>
+    <h2>3 Novos Canais de <span class="text-ouro">Receita</span></h2>
+    <p class="text-suave" style="font-size:13px;margin-top:6px;">Hoje: 100% WhatsApp + Instagram. Em 90 dias: 5 canais gerando receita.</p>
+  </div>
+
+  <div class="grid-3" style="gap:16px;">
+    <div class="canal-card" style="border-left:3px solid var(--ouro);">
+      <div class="canal-titulo">
+        <span style="font-size:24px;">🛒</span>
+        <div>
+          <div>Mercado Livre</div>
+          <span class="badge badge-laranja" style="font-size:9px;padding:2px 8px;margin-top:4px;display:inline-block;">GO-LIVE: SEMANA 3 ABR</span>
+        </div>
+      </div>
+      <p class="text-cinza" style="font-size:12px;">100M usuários ativos no Brasil. Busca por "uniforme personalizado" = demanda sem atendimento.</p>
+      <div style="border-top:1px solid var(--borda);padding-top:10px;margin-top:4px;">
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px;"><span class="text-cinza">Abril</span><span class="text-ouro font-bold">R$5.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px;"><span class="text-cinza">Maio</span><span class="text-ouro font-bold">R$12.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;"><span class="text-cinza">Junho</span><span class="text-verde font-bold">R$20.000</span></div>
+      </div>
+    </div>
+
+    <div class="canal-card" style="border-left:3px solid var(--azul);">
+      <div class="canal-titulo">
+        <span style="font-size:24px;">🌐</span>
+        <div>
+          <div>E-commerce / Shopify</div>
+          <span class="badge badge-azul" style="font-size:9px;padding:2px 8px;margin-top:4px;display:inline-block;">GO-LIVE: MAIO</span>
+        </div>
+      </div>
+      <p class="text-cinza" style="font-size:12px;">Simulador de uniforme + formulário de orçamento. SEO local: "uniforme Novo Hamburgo".</p>
+      <div style="border-top:1px solid var(--borda);padding-top:10px;margin-top:4px;">
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px;"><span class="text-cinza">Abril</span><span class="text-cinza">—</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px;"><span class="text-cinza">Maio</span><span class="text-ouro font-bold">R$8.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;"><span class="text-cinza">Junho</span><span class="text-verde font-bold">R$20.000</span></div>
+      </div>
+    </div>
+
+    <div class="canal-card" style="border-left:3px solid var(--verde);">
+      <div class="canal-titulo">
+        <span style="font-size:24px;">🤝</span>
+        <div>
+          <div>Visitas Externas</div>
+          <span class="badge badge-verde" style="font-size:9px;padding:2px 8px;margin-top:4px;display:inline-block;">INÍCIO: SEMANA 1 ABR</span>
+        </div>
+      </div>
+      <p class="text-cinza" style="font-size:12px;">Maior ROI de todos: 5 visitas/semana = 1 fechamento/semana. Escolas, empresas e academias.</p>
+      <div style="border-top:1px solid var(--borda);padding-top:10px;margin-top:4px;">
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px;"><span class="text-cinza">Abril</span><span class="text-ouro font-bold">R$14.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px;"><span class="text-cinza">Maio</span><span class="text-ouro font-bold">R$20.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;"><span class="text-cinza">Junho</span><span class="text-verde font-bold">R$25.000</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:4px;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;">
+      <div><div class="numero-grande text-ouro" style="font-size:28px;">5min</div><div class="text-cinza" style="font-size:11px;">Tempo máximo<br>de resposta</div></div>
+      <div><div class="numero-grande text-verde" style="font-size:28px;">20</div><div class="text-cinza" style="font-size:11px;">Visitas externas<br>por mês</div></div>
+      <div><div class="numero-grande text-azul" style="font-size:28px;">5</div><div class="text-cinza" style="font-size:11px;">Canais de receita<br>em Junho</div></div>
+      <div><div class="numero-grande text-laranja" style="font-size:28px;">30%</div><div class="text-cinza" style="font-size:11px;">Taxa de conversão<br>orçamento → venda</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 7 — METAS E COMISSÕES -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s7">
+  <div>
+    <span class="badge badge-verde">Motivação</span>
+    <div class="divider"></div>
+    <h2>Estrutura de <span class="text-verde">Metas</span> e <span class="text-ouro">Comissões</span></h2>
+    <p class="text-suave" style="font-size:13px;margin-top:6px;">Vendedor que sabe exatamente o que ganha por cada venda vende mais. Simples assim.</p>
+  </div>
+
+  <div class="grid-2" style="gap:20px;align-items:start;">
+    <div>
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;">Comissão por Canal</h3>
+      <table class="tabela">
+        <thead>
+          <tr><th>Canal</th><th>Comissão</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Venda direta (WhatsApp / visita)</td><td><span class="text-verde">3,5%</span></td></tr>
+          <tr><td>Lead Meta Ads convertido</td><td><span class="text-ouro">3,0%</span></td></tr>
+          <tr><td>Indicação de cliente antigo</td><td><span class="text-verde">4,0% ⭐</span></td></tr>
+          <tr><td>Mercado Livre</td><td><span class="text-cinza">2,0%</span></td></tr>
+          <tr><td>Renovação / Recorrente</td><td><span class="text-verde">4,0% ⭐</span></td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:12px;padding:10px 14px;background:rgba(239,68,68,.08);border-radius:8px;border:1px solid rgba(239,68,68,.2);">
+        <p style="font-size:12px;color:var(--texto-suave);">⚠️ <strong>Regra de Ouro:</strong> Comissão paga após entrega confirmada — não no fechamento. Isso garante qualidade no pós-venda.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Bônus Mensais</h3>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(245,158,11,.15);">🥇</div>
+        <div><strong style="font-size:13px;">Maior venda do mês</strong><br><span class="text-verde" style="font-size:13px;font-weight:700;">R$500</span> <span class="text-cinza" style="font-size:11px;">+ foto no Mural dos Campeões</span></div>
+      </div>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(59,130,246,.15);">📦</div>
+        <div><strong style="font-size:13px;">Mais pedidos novos</strong><br><span class="text-verde" style="font-size:13px;font-weight:700;">R$300</span> <span class="text-cinza" style="font-size:11px;">+ 1 dia de folga</span></div>
+      </div>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(16,185,129,.15);">🎯</div>
+        <div><strong style="font-size:13px;">Equipe bate meta coletiva</strong><br><span class="text-verde" style="font-size:13px;font-weight:700;">Churrasco</span> <span class="text-cinza" style="font-size:11px;">pago pela empresa para todos</span></div>
+      </div>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(245,158,11,.15);">🤝</div>
+        <div><strong style="font-size:13px;">Indicação que fecha</strong><br><span class="text-verde" style="font-size:13px;font-weight:700;">R$100 extra</span> <span class="text-cinza" style="font-size:11px;">por indicação convertida</span></div>
+      </div>
+      <div class="pill">
+        <div class="icone-circulo" style="background:rgba(249,115,22,.15);">💎</div>
+        <div><strong style="font-size:13px;">Zero cancelamentos no mês</strong><br><span class="text-verde" style="font-size:13px;font-weight:700;">R$200 extra</span> <span class="text-cinza" style="font-size:11px;">— qualidade recompensada</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 8 — PROJEÇÃO FINANCEIRA -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s8">
+  <div>
+    <span class="badge badge-verde">Resultados Projetados</span>
+    <div class="divider"></div>
+    <h2>Crescimento em <span class="text-verde">3 Meses</span></h2>
+    <p class="text-suave" style="font-size:13px;margin-top:6px;">Projeção conservadora. Com execução consistente, os números podem ser maiores.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:120px 1fr 1fr 1fr 1fr;gap:14px;align-items:start;">
+    <!-- Cabeçalho -->
+    <div></div>
+    <div class="card" style="text-align:center;padding:14px 10px;">
+      <div class="mes-nome" style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--cinza);font-weight:700;">MARÇO</div>
+      <div class="text-cinza" style="font-size:10px;margin-top:2px;">atual</div>
+    </div>
+    <div class="card" style="text-align:center;padding:14px 10px;border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.06);">
+      <div class="mes-nome" style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);font-weight:700;">ABRIL</div>
+      <div style="font-size:10px;color:var(--ouro);margin-top:2px;">mês 1</div>
+    </div>
+    <div class="card" style="text-align:center;padding:14px 10px;">
+      <div class="mes-nome" style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--cinza);font-weight:700;">MAIO</div>
+      <div class="text-cinza" style="font-size:10px;margin-top:2px;">mês 2</div>
+    </div>
+    <div class="card" style="text-align:center;padding:14px 10px;border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.06);">
+      <div class="mes-nome" style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--verde);font-weight:700;">JUNHO</div>
+      <div style="font-size:10px;color:var(--verde);margin-top:2px;">mês 3</div>
+    </div>
+
+    <!-- Linhas -->
+    <div class="text-cinza" style="font-size:11px;padding-top:12px;">WhatsApp direto</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$80k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(245,158,11,.2);">R$130k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$130k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(16,185,129,.2);">R$130k</div>
+
+    <div class="text-cinza" style="font-size:11px;padding-top:12px;">Meta Ads → CRM</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$0</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(245,158,11,.2);">R$40k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$45k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(16,185,129,.2);">R$45k</div>
+
+    <div class="text-cinza" style="font-size:11px;padding-top:12px;">Visitas externas</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$0</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(245,158,11,.2);">R$14k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$20k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(16,185,129,.2);">R$25k</div>
+
+    <div class="text-cinza" style="font-size:11px;padding-top:12px;">ML + E-commerce</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$0</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(245,158,11,.2);">R$5k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;">R$20k</div>
+    <div class="card" style="padding:10px;font-size:12px;text-align:center;border-color:rgba(16,185,129,.2);">R$40k</div>
+
+    <div class="text-suave" style="font-size:12px;font-weight:700;padding-top:12px;">TOTAL</div>
+    <div class="card" style="padding:10px;font-size:13px;font-weight:800;text-align:center;color:var(--cinza);">R$80k</div>
+    <div class="card" style="padding:10px;font-size:13px;font-weight:800;text-align:center;color:var(--ouro);border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.08);">R$200k</div>
+    <div class="card" style="padding:10px;font-size:13px;font-weight:800;text-align:center;color:var(--texto);">R$220k</div>
+    <div class="card" style="padding:10px;font-size:13px;font-weight:800;text-align:center;color:var(--verde);border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.08);">R$250k</div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px;">
+    <div class="card" style="text-align:center;">
+      <div class="numero-grande text-ouro" style="font-size:32px;">R$670k</div>
+      <div class="text-cinza" style="font-size:11px;">total em 3 meses</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="numero-grande text-verde" style="font-size:32px;">R$12,2k</div>
+      <div class="text-cinza" style="font-size:11px;">investimento total</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="numero-grande text-laranja" style="font-size:32px;">55x</div>
+      <div class="text-cinza" style="font-size:11px;">retorno sobre investimento</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 9 — TREINAMENTO -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s9">
+  <div>
+    <span class="badge badge-azul">Capacitação</span>
+    <div class="divider"></div>
+    <h2>Academia do <span class="text-ouro">Leão</span></h2>
+    <p class="text-suave" style="font-size:13px;margin-top:6px;">30 minutos por semana. Toda segunda. Equipe que treina, vende mais.</p>
+  </div>
+
+  <div class="grid-2" style="gap:20px;">
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Calendário Mensal de Treinamento</h3>
+      <div class="card" style="border-left:3px solid var(--ouro);">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span class="badge badge-ouro" style="font-size:9px;">SEMANA 1</span>
+          <strong style="font-size:13px;">Técnica de Vendas</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Como contornar "tá caro" · Script de primeiro contato · Follow-up sem parecer chato</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--azul);">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span class="badge badge-azul" style="font-size:9px;">SEMANA 2</span>
+          <strong style="font-size:13px;">Produto e Conhecimento</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Novidades da coleção · Comparação com concorrentes · Cases de sucesso da semana</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--verde);">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span class="badge badge-verde" style="font-size:9px;">SEMANA 3</span>
+          <strong style="font-size:13px;">Roleplay</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Simulação de atendimento ao vivo · Feedback coletivo · Melhores práticas do mês</p>
+      </div>
+      <div class="card" style="border-left:3px solid var(--laranja);">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span class="badge badge-laranja" style="font-size:9px;">SEMANA 4</span>
+          <strong style="font-size:13px;">Resultados e Metas</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Análise do mês · O que funcionou / não funcionou · Metas do próximo mês · Reconhecimento</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Material de Apoio (Google Drive da Equipe)</h3>
+      <div class="pill"><span style="font-size:18px;">📝</span> <div><strong>Scripts por segmento</strong><br><span class="text-cinza" style="font-size:11px;">Escola, empresa, academia, formandos, saúde</span></div></div>
+      <div class="pill"><span style="font-size:18px;">🛡️</span> <div><strong>10 objeções + respostas</strong><br><span class="text-cinza" style="font-size:11px;">"Tá caro", "Vou pensar", "Depois eu vejo"...</span></div></div>
+      <div class="pill"><span style="font-size:18px;">💰</span> <div><strong>Tabela de preços e pacotes</strong><br><span class="text-cinza" style="font-size:11px;">Sempre atualizada, acessível pelo celular</span></div></div>
+      <div class="pill"><span style="font-size:18px;">📱</span> <div><strong>Guia do Kommo</strong><br><span class="text-cinza" style="font-size:11px;">Passo a passo de como usar o CRM no dia a dia</span></div></div>
+      <div class="pill"><span style="font-size:18px;">📸</span> <div><strong>Fotos e artes prontas</strong><br><span class="text-cinza" style="font-size:11px;">Para disparos de WhatsApp e Instagram Stories</span></div></div>
+
+      <div class="card-destaque" style="margin-top:4px;">
+        <p style="font-size:13px;color:var(--texto-suave);">
+          <strong style="color:var(--ouro);">Frases da Cultura — para o dia a dia:</strong>
+        </p>
+        <p style="font-size:12px;color:var(--cinza);margin-top:8px;font-style:italic;">"Cada não nos aproxima de um sim."</p>
+        <p style="font-size:12px;color:var(--cinza);margin-top:4px;font-style:italic;">"O cliente que fica em espera, vai para o concorrente."</p>
+        <p style="font-size:12px;color:var(--cinza);margin-top:4px;font-style:italic;">"30 anos de história, mas nossa melhor venda é hoje."</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 10 — O QUE EU PRECISO -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s10">
+  <div>
+    <span class="badge badge-ouro">Para Executar</span>
+    <div class="divider"></div>
+    <h2>O que preciso da <span class="text-ouro">liderança</span></h2>
+    <p class="text-suave" style="font-size:13px;margin-top:6px;">Itens simples, baixo custo. O retorno é 55x sobre o investimento.</p>
+  </div>
+
+  <div class="grid-2" style="gap:20px;">
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Infraestrutura Necessária</h3>
+
+      <div class="card" style="display:flex;align-items:center;gap:14px;">
+        <span style="font-size:28px;">🔔</span>
+        <div>
+          <strong>Sino físico para a loja</strong>
+          <p class="text-cinza" style="font-size:12px;margin-top:2px;">Cowbell ou campainha · R$50 · Coração da cultura de vendas</p>
+        </div>
+        <span class="badge badge-verde" style="margin-left:auto;font-size:9px;white-space:nowrap;">R$50</span>
+      </div>
+
+      <div class="card" style="display:flex;align-items:center;gap:14px;">
+        <span style="font-size:28px;">📊</span>
+        <div>
+          <strong>Quadro branco + marcadores</strong>
+          <p class="text-cinza" style="font-size:12px;margin-top:2px;">Placar diário de vendas visível para toda a equipe</p>
+        </div>
+        <span class="badge badge-verde" style="margin-left:auto;font-size:9px;white-space:nowrap;">R$150</span>
+      </div>
+
+      <div class="card" style="display:flex;align-items:center;gap:14px;">
+        <span style="font-size:28px;">💻</span>
+        <div>
+          <strong>Kommo CRM ativo</strong>
+          <p class="text-cinza" style="font-size:12px;margin-top:2px;">Já em configuração · ~R$400/mês · Funil configurado</p>
+        </div>
+        <span class="badge badge-ouro" style="margin-left:auto;font-size:9px;white-space:nowrap;">Em andamento</span>
+      </div>
+
+      <div class="card" style="display:flex;align-items:center;gap:14px;">
+        <span style="font-size:28px;">📸</span>
+        <div>
+          <strong>Sessão de fotos dos produtos</strong>
+          <p class="text-cinza" style="font-size:12px;margin-top:2px;">10 produtos · fundo branco + detalhe · Para ML e Shopify</p>
+        </div>
+        <span class="badge badge-laranja" style="margin-left:auto;font-size:9px;white-space:nowrap;">R$300-500</span>
+      </div>
+
+      <div class="card" style="display:flex;align-items:center;gap:14px;">
+        <span style="font-size:28px;">📣</span>
+        <div>
+          <strong>Meta Ads: R$3.000 em Abril</strong>
+          <p class="text-cinza" style="font-size:12px;margin-top:2px;">Dobrar investimento para escalar leads no mês de lançamento</p>
+        </div>
+        <span class="badge badge-ouro" style="margin-left:auto;font-size:9px;white-space:nowrap;">R$3.000</span>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <h3 style="font-size:13px;color:var(--ouro);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Autoridade para Executar</h3>
+
+      <div class="pill" style="flex-direction:column;align-items:flex-start;gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">✅</span>
+          <strong>Autonomia para visitas externas</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Autorização para visitar escolas e empresas em nome da Passo a Passo</p>
+      </div>
+
+      <div class="pill" style="flex-direction:column;align-items:flex-start;gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">✅</span>
+          <strong>Aprovação das tabelas de comissão</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Definir os percentuais finais junto com a diretoria antes de Abril</p>
+      </div>
+
+      <div class="pill" style="flex-direction:column;align-items:flex-start;gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">✅</span>
+          <strong>Reunião de kickoff com a equipe</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">01/Abril · Apresentar o plano, instalar o sino, definir metas individuais</p>
+      </div>
+
+      <div class="pill" style="flex-direction:column;align-items:flex-start;gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">✅</span>
+          <strong>Acesso ao Mercado Livre e Shopify</strong>
+        </div>
+        <p class="text-cinza" style="font-size:12px;">Criar e gerenciar os canais digitais em nome da empresa</p>
+      </div>
+
+      <div class="card-destaque" style="margin-top:4px;">
+        <h3 style="margin-bottom:8px;font-size:14px;">Resumo do Investimento</h3>
+        <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;"><span class="text-suave">Infraestrutura (único)</span><span class="text-ouro">R$1.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;"><span class="text-suave">Meta Ads Abril</span><span class="text-ouro">R$3.000</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;"><span class="text-suave">CRM (Kommo)</span><span class="text-ouro">R$400/mês</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;border-top:1px solid var(--borda);padding-top:8px;margin-top:8px;">
+          <span class="text-texto font-bold">Retorno esperado (Abril)</span>
+          <span class="text-verde" style="font-weight:800;">R$200.000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SLIDE 11 — FECHAMENTO -->
+<!-- ══════════════════════════════════════════ -->
+<div class="slide" id="s11">
+  <div class="lion-final">🦁</div>
+  <h1>A Passo a Passo tem<br><span class="text-ouro">30 anos de produto.</span><br>Agora vamos ter<br><span class="text-laranja">uma máquina de vendas.</span></h1>
+
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
+    <span class="badge badge-ouro">R$200k em Abril</span>
+    <span class="badge badge-verde">R$670k em 3 meses</span>
+    <span class="badge badge-azul">5 Canais ativos em Junho</span>
+  </div>
+
+  <p style="font-size:18px;color:var(--texto-suave);max-width:600px;line-height:1.6;font-weight:400;">
+    Não precisamos de sorte. Precisamos de <strong>processo, disciplina e cultura.</strong><br>
+    Eu estou pronto para liderar essa transformação.
+  </p>
+
+  <div style="margin-top:8px;padding:20px 32px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:12px;display:inline-block;">
+    <p style="font-size:22px;font-weight:800;color:var(--ouro);">Quando começamos?</p>
+    <p style="font-size:14px;color:var(--cinza);margin-top:4px;">01 de Abril de 2026 · Reunião de kickoff · Sino instalado.</p>
+  </div>
+</div>
+
+<!-- NAVEGAÇÃO -->
+<div class="nav">
+  <button id="btnAnterior" onclick="mudarSlide(-1)" disabled>← Anterior</button>
+  <span id="contador">1 / 11</span>
+  <button id="btnProximo" onclick="mudarSlide(1)">Próximo →</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  let atual = 0;
+
+  function mudarSlide(dir) {
+    slides[atual].classList.remove('ativo');
+    atual = Math.max(0, Math.min(total - 1, atual + dir));
+    slides[atual].classList.add('ativo');
+    document.getElementById('contador').textContent = `${atual + 1} / ${total}`;
+    document.getElementById('btnAnterior').disabled = atual === 0;
+    document.getElementById('btnProximo').disabled = atual === total - 1;
+    document.getElementById('progresso-bar').style.width = `${((atual + 1) / total) * 100}%`;
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') mudarSlide(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   mudarSlide(-1);
+  });
+</script>
+</body>
+</html>

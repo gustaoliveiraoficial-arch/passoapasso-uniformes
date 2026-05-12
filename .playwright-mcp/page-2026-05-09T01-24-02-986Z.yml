@@ -1,0 +1,40 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - button [ref=e7] [cursor=pointer]:
+        - img [ref=e9]
+      - generic [ref=e11]:
+        - button [ref=e12] [cursor=pointer]:
+          - img [ref=e14]
+        - link [ref=e16] [cursor=pointer]:
+          - /url: /app/settings
+          - button [ref=e17]:
+            - img [ref=e19]
+        - button [ref=e21] [cursor=pointer]:
+          - img [ref=e23]
+        - button "PA" [ref=e25] [cursor=pointer]:
+          - generic [ref=e27]: PA
+    - generic [ref=e33]:
+      - heading "Tailoring your experience" [level=2] [ref=e35]
+      - heading "What are you trying to do?" [level=3] [ref=e38]
+      - list [ref=e40]:
+        - generic [ref=e41]:
+          - generic:
+            - img
+          - textbox "Optimize images for my eCommerce site..." [ref=e42]
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: Or choose one of the following
+          - generic [ref=e45]:
+            - button "Store & manage assets" [active] [ref=e46] [cursor=pointer]
+            - button "Optimize assets" [ref=e47] [cursor=pointer]
+            - button "Transform images" [ref=e48] [cursor=pointer]
+            - button "Deliver video" [ref=e49] [cursor=pointer]
+            - button "Build media workflows" [ref=e50] [cursor=pointer]
+      - button "Next" [ref=e55] [cursor=pointer]:
+        - generic [ref=e56]: Next
+  - iframe [ref=e51]:
+    
+  - iframe [ref=e54]:
+    - generic [ref=f88e6]:
+      - text: protegido por
+      - strong [ref=f88e7]: reCAPTCHA

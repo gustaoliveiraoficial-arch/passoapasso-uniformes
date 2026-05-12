@@ -1,0 +1,66 @@
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - link "Supabase" [ref=e10] [cursor=pointer]:
+            - /url: /dashboard/organizations
+            - img "Supabase" [ref=e11]
+          - generic [ref=e12]:
+            - img [ref=e14]
+            - generic [ref=e16]: New organization
+        - generic [ref=e17]:
+          - generic [ref=e19] [cursor=pointer]: Feedback
+          - generic [ref=e20]:
+            - button "Search..." [ref=e21] [cursor=pointer]:
+              - generic [ref=e22]:
+                - img [ref=e23]
+                - paragraph [ref=e26]: Search...
+              - generic [ref=e28]:
+                - img [ref=e29]
+                - generic [ref=e31]: K
+            - button [ref=e32] [cursor=pointer]:
+              - img [ref=e34]
+            - button [ref=e38] [cursor=pointer]:
+              - img [ref=e40]
+          - button [ref=e42] [cursor=pointer]:
+            - figure [ref=e44]:
+              - img [ref=e45]
+    - generic [ref=e58]:
+      - generic [ref=e60]:
+        - heading "Create a new organization" [level=3] [ref=e61]
+        - paragraph [ref=e62]: Organizations are a way to group your projects. Each organization can be configured with different team members and billing settings.
+      - generic [ref=e63]:
+        - generic [ref=e66]:
+          - generic [ref=e69]: Name
+          - generic [ref=e70]:
+            - textbox "Organization name" [active] [ref=e72]: passoapassouniformes2025@gmail.com's Org
+            - generic [ref=e73]: What's the name of your company or team? You can change this later.
+        - generic [ref=e76]:
+          - generic [ref=e79]: Type
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - combobox [ref=e82] [cursor=pointer]:
+                - generic: Personal
+                - img [ref=e83]
+              - combobox [ref=e85]
+            - generic [ref=e86]: What best describes your organization?
+        - generic [ref=e89]:
+          - generic [ref=e92]: Plan
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - combobox [ref=e95] [cursor=pointer]:
+                - generic: Free - $0/month
+                - img [ref=e96]
+              - combobox [ref=e98]
+            - generic [ref=e99]:
+              - text: Which plan fits your organization's needs best?
+              - link "Learn more" [ref=e100] [cursor=pointer]:
+                - /url: https://supabase.com/pricing
+              - text: .
+      - generic [ref=e103]:
+        - button "Cancel" [ref=e104] [cursor=pointer]:
+          - generic [ref=e105]: Cancel
+        - button "Create organization" [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]: Create organization
+  - alert [ref=e108]: Supabase

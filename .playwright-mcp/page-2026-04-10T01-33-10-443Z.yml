@@ -1,0 +1,397 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Opções de tela" [ref=e37] [cursor=pointer]
+            - button "Ajuda" [ref=e39] [cursor=pointer]
+          - generic [ref=e40]:
+            - heading "Plugins" [level=1] [ref=e41]
+            - link "Adicionar plugin" [ref=e42] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: Todos os caches foram limpos.
+              - button "Dispensar este aviso." [ref=e45] [cursor=pointer]:
+                - generic [ref=e46]: Dispensar este aviso.
+            - generic [ref=e47]:
+              - generic [ref=e49]:
+                - 'heading "LiteSpeed Cache: Nova versão disponível!" [level=3] [ref=e50]'
+                - generic [ref=e51]:
+                  - paragraph [ref=e53]: Nova versão v7.8.0.1 está disponível agora.
+                  - generic [ref=e54]:
+                    - link " Atualizar" [ref=e56] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/plugins.php?activate=true&plugin_status=all&paged=1&s=&LSCWP_CTRL=activation&LSCWP_NONCE=b522695586&litespeed_type=upgrade
+                      - generic [ref=e57]: 
+                      - text: Atualizar
+                    - link " Ativar atualização automática" [ref=e59] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/plugins.php?activate=true&plugin_status=all&paged=1&s=&LSCWP_CTRL=conf&LSCWP_NONCE=7bfb070c74&litespeed_type=set&set%5Bauto_upgrade%5D=1
+                      - generic [ref=e60]: 
+                      - text: Ativar atualização automática
+                    - link "Talvez mais tarde" [ref=e62] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/plugins.php?activate=true&plugin_status=all&paged=1&s=&LSCWP_CTRL=dismiss&LSCWP_NONCE=f909b12d8b&litespeed_type=promo&promo_tag=new_version
+              - generic:
+                - generic [ref=e63]: Dispensar esta notificação.
+                - link "Dispensar" [ref=e64] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugins.php?activate=true&plugin_status=all&paged=1&s=&LSCWP_CTRL=dismiss&LSCWP_NONCE=f909b12d8b&litespeed_type=promo&promo_tag=new_version&later=1
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: Plugin ativado.
+              - button "Dispensar este aviso." [ref=e67] [cursor=pointer]:
+                - generic [ref=e68]: Dispensar este aviso.
+            - generic [ref=e71]:
+              - button "Dismiss this notice." [ref=e72] [cursor=pointer]:
+                - generic [ref=e73]: Dismiss this notice.
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - heading "Welcome to Hello Biz" [level=6] [ref=e76]
+                  - paragraph [ref=e77]: Access the full suite of features, including website templates, header and footer templates, and extra widgets.
+                  - link "Begin setup" [ref=e78] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hello-biz&start-install=true
+                  - paragraph [ref=e79]: By clicking "Begin setup" I agree to install and activate the Hello+ plugin.
+                - img [ref=e80]
+            - heading "Filtrar lista de plugins" [level=2] [ref=e81]
+            - list [ref=e82]:
+              - listitem [ref=e83]:
+                - link "Todos (7)" [ref=e84] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=all
+                - text: "|"
+              - listitem [ref=e85]:
+                - link "Ativos (7)" [ref=e86] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=active
+                - text: "|"
+              - listitem [ref=e87]:
+                - link "Atualizações disponíveis (6)" [ref=e88] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=upgrade
+                - text: "|"
+              - listitem [ref=e89]:
+                - link "Indispensáveis (2)" [ref=e90] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=mustuse
+                - text: "|"
+              - listitem [ref=e91]:
+                - link "Avançado (1)" [ref=e92] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=dropins
+            - paragraph [ref=e94]:
+              - generic [ref=e95]: Pesquisar plugins instalados
+              - searchbox "Pesquisar plugins instalados" [ref=e96]
+            - generic [ref=e97]:
+              - heading "Lista de plugins" [level=2] [ref=e99]
+              - table [ref=e100]:
+                - rowgroup [ref=e101]:
+                  - row "Selecionar todos Plugin" [ref=e102]:
+                    - cell "Selecionar todos" [ref=e103]:
+                      - checkbox "Selecionar todos" [ref=e104] [cursor=pointer]
+                      - generic [ref=e106]: Selecionar todos
+                    - columnheader "Plugin" [ref=e107]
+                - rowgroup [ref=e108]:
+                  - 'row "Selecionar Elementor Elementor Configurações | Desativar Elementor | Obter o Elementor Pro O construtor de sites Elementor tem tudo: construtor de páginas do tipo arrastar e soltar, design perfeito em pixels, edição responsiva para dispositivos móveis e muito mais. Comece agora! Versão 3.35.0 | Por Elementor.com | Mais informações sobre Elementor | Ver a documentação do Elementor | Ver tutoriais em vídeo do Elementor" [ref=e109]':
+                    - rowheader "Selecionar Elementor" [ref=e110]:
+                      - generic [ref=e112]: Selecionar Elementor
+                      - checkbox "Selecionar Elementor" [ref=e113] [cursor=pointer]
+                    - cell "Elementor Configurações | Desativar Elementor | Obter o Elementor Pro" [ref=e114]:
+                      - strong [ref=e115]: Elementor
+                      - generic [ref=e116]:
+                        - generic:
+                          - link "Configurações" [ref=e117] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=elementor
+                          - text: "|"
+                        - generic:
+                          - link "Desativar Elementor" [ref=e118] [cursor=pointer]:
+                            - /url: plugins.php?action=deactivate&plugin=elementor%2Felementor.php&plugin_status=all&paged=1&s&_wpnonce=4654564de3
+                            - text: Desativar
+                          - text: "|"
+                        - link "Obter o Elementor Pro" [ref=e119] [cursor=pointer]:
+                          - /url: https://go.elementor.com/go-pro-wp-plugins/
+                    - 'cell "O construtor de sites Elementor tem tudo: construtor de páginas do tipo arrastar e soltar, design perfeito em pixels, edição responsiva para dispositivos móveis e muito mais. Comece agora! Versão 3.35.0 | Por Elementor.com | Mais informações sobre Elementor | Ver a documentação do Elementor | Ver tutoriais em vídeo do Elementor" [ref=e120]':
+                      - paragraph [ref=e122]: "O construtor de sites Elementor tem tudo: construtor de páginas do tipo arrastar e soltar, design perfeito em pixels, edição responsiva para dispositivos móveis e muito mais. Comece agora!"
+                      - generic [ref=e123]:
+                        - text: Versão 3.35.0 | Por
+                        - link "Elementor.com" [ref=e124] [cursor=pointer]:
+                          - /url: https://elementor.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
+                        - text: "|"
+                        - link "Mais informações sobre Elementor" [ref=e125] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                        - text: "|"
+                        - link "Ver a documentação do Elementor" [ref=e126] [cursor=pointer]:
+                          - /url: https://go.elementor.com/docs-admin-plugins/
+                          - text: Documentação e perguntas frequentes
+                        - text: "|"
+                        - link "Ver tutoriais em vídeo do Elementor" [ref=e127] [cursor=pointer]:
+                          - /url: https://go.elementor.com/yt-admin-plugins/
+                          - text: Tutoriais em vídeo
+                  - row "Há uma nova versão do Elementor disponível. Veja detalhes de Elementor versão 4.0.1 ou Atualizar Elementor agora.  Atenção, faça backup antes de atualizar! A atualização mais recente inclui algumas alterações substanciais em diferentes áreas do plugin. É altamente recomendável que você faça um backup do seu site antes de atualizar e certifique-se de atualizar primeiro em um ambiente de teste" [ref=e128]:
+                    - cell "Há uma nova versão do Elementor disponível. Veja detalhes de Elementor versão 4.0.1 ou Atualizar Elementor agora.  Atenção, faça backup antes de atualizar! A atualização mais recente inclui algumas alterações substanciais em diferentes áreas do plugin. É altamente recomendável que você faça um backup do seu site antes de atualizar e certifique-se de atualizar primeiro em um ambiente de teste" [ref=e129]:
+                      - generic [ref=e130]:
+                        - paragraph [ref=e131]:
+                          - text: Há uma nova versão do Elementor disponível.
+                          - link "Veja detalhes de Elementor versão 4.0.1" [ref=e132] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&section=changelog&TB_iframe=true&width=600&height=800
+                            - text: Ver detalhes da versão 4.0.1
+                          - text: ou
+                          - link "Atualizar Elementor agora" [ref=e133] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/update.php?action=upgrade-plugin&plugin=elementor%2Felementor.php&_wpnonce=2b653dd142
+                            - text: atualize agora
+                          - text: .
+                        - separator [ref=e134]
+                        - generic [ref=e135]:
+                          - generic [ref=e137]: 
+                          - generic [ref=e138]:
+                            - generic [ref=e139]: Atenção, faça backup antes de atualizar!
+                            - generic [ref=e140]:
+                              - text: A atualização mais recente inclui algumas alterações substanciais em diferentes áreas do plugin. É altamente recomendável que você faça um
+                              - link "backup do seu site antes de atualizar" [ref=e141] [cursor=pointer]:
+                                - /url: https://go.elementor.com/wp-dash-update-backup/
+                              - text: e certifique-se de atualizar primeiro em um ambiente de teste
+                  - row "Selecionar Hostinger Integração Fácil Hostinger Integração Fácil Desativar Hostinger Integração Fácil Plugin Hostinger Integração Fácil para WordPress Versão 2.1.6 | Por Hostinger | Mais informações sobre Hostinger Integração Fácil | Verificar Atualizações" [ref=e142]:
+                    - rowheader "Selecionar Hostinger Integração Fácil" [ref=e143]:
+                      - generic [ref=e145]: Selecionar Hostinger Integração Fácil
+                      - checkbox "Selecionar Hostinger Integração Fácil" [ref=e146] [cursor=pointer]
+                    - cell "Hostinger Integração Fácil Desativar Hostinger Integração Fácil" [ref=e147]:
+                      - strong [ref=e148]: Hostinger Integração Fácil
+                      - link "Desativar Hostinger Integração Fácil" [ref=e150] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=hostinger-easy-onboarding%2Fhostinger-easy-onboarding.php&plugin_status=all&paged=1&s&_wpnonce=9ce6a6299c
+                        - text: Desativar
+                    - cell "Plugin Hostinger Integração Fácil para WordPress Versão 2.1.6 | Por Hostinger | Mais informações sobre Hostinger Integração Fácil | Verificar Atualizações" [ref=e151]:
+                      - paragraph [ref=e153]: Plugin Hostinger Integração Fácil para WordPress
+                      - generic [ref=e154]:
+                        - text: Versão 2.1.6 | Por
+                        - link "Hostinger" [ref=e155] [cursor=pointer]:
+                          - /url: https://www.hostinger.com.br
+                        - text: "|"
+                        - link "Mais informações sobre Hostinger Integração Fácil" [ref=e156] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger-easy-onboarding&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                        - text: "|"
+                        - link "Verificar Atualizações" [ref=e157] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugins.php?puc_check_for_updates=1&puc_slug=hostinger-easy-onboarding&_wpnonce=06b758ffb7
+                  - row "Há uma nova versão do Hostinger Integração Fácil disponível. Veja detalhes de Hostinger Integração Fácil versão 2.1.16 ou Atualizar Hostinger Integração Fácil agora." [ref=e158]:
+                    - cell "Há uma nova versão do Hostinger Integração Fácil disponível. Veja detalhes de Hostinger Integração Fácil versão 2.1.16 ou Atualizar Hostinger Integração Fácil agora." [ref=e159]:
+                      - paragraph [ref=e161]:
+                        - text: Há uma nova versão do Hostinger Integração Fácil disponível.
+                        - link "Veja detalhes de Hostinger Integração Fácil versão 2.1.16" [ref=e162] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger-easy-onboarding&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: Ver detalhes da versão 2.1.16
+                        - text: ou
+                        - link "Atualizar Hostinger Integração Fácil agora" [ref=e163] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/update.php?action=upgrade-plugin&plugin=hostinger-easy-onboarding%2Fhostinger-easy-onboarding.php&_wpnonce=5d6a4418e7
+                          - text: atualize agora
+                        - text: .
+                  - row "Selecionar Hostinger Reach Hostinger Reach Desativar Hostinger Reach Integre seu site WordPress à Hostinger Reach. Versão 1.3.4 | Por Hostinger | Mais informações sobre Hostinger Reach" [ref=e164]:
+                    - rowheader "Selecionar Hostinger Reach" [ref=e165]:
+                      - generic [ref=e167]: Selecionar Hostinger Reach
+                      - checkbox "Selecionar Hostinger Reach" [ref=e168] [cursor=pointer]
+                    - cell "Hostinger Reach Desativar Hostinger Reach" [ref=e169]:
+                      - strong [ref=e170]: Hostinger Reach
+                      - link "Desativar Hostinger Reach" [ref=e172] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=hostinger-reach%2Fhostinger-reach.php&plugin_status=all&paged=1&s&_wpnonce=3eb0c88549
+                        - text: Desativar
+                    - cell "Integre seu site WordPress à Hostinger Reach. Versão 1.3.4 | Por Hostinger | Mais informações sobre Hostinger Reach" [ref=e173]:
+                      - paragraph [ref=e175]: Integre seu site WordPress à Hostinger Reach.
+                      - generic [ref=e176]:
+                        - text: Versão 1.3.4 | Por
+                        - link "Hostinger" [ref=e177] [cursor=pointer]:
+                          - /url: https://www.hostinger.com/br/email-marketing
+                        - text: "|"
+                        - link "Mais informações sobre Hostinger Reach" [ref=e178] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger-reach&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                  - row "Há uma nova versão do Hostinger Reach disponível. Veja detalhes de Hostinger Reach versão 1.4.6 ou Atualizar Hostinger Reach agora." [ref=e179]:
+                    - cell "Há uma nova versão do Hostinger Reach disponível. Veja detalhes de Hostinger Reach versão 1.4.6 ou Atualizar Hostinger Reach agora." [ref=e180]:
+                      - paragraph [ref=e182]:
+                        - text: Há uma nova versão do Hostinger Reach disponível.
+                        - link "Veja detalhes de Hostinger Reach versão 1.4.6" [ref=e183] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger-reach&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: Ver detalhes da versão 1.4.6
+                        - text: ou
+                        - link "Atualizar Hostinger Reach agora" [ref=e184] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/update.php?action=upgrade-plugin&plugin=hostinger-reach%2Fhostinger-reach.php&_wpnonce=9f841f47e3
+                          - text: atualize agora
+                        - text: .
+                  - row "Selecionar Hostinger Tools Hostinger Tools Desativar Hostinger Tools Plugin WordPress da Hostinger. Versão 3.0.57 | Por Hostinger | Mais informações sobre Hostinger Tools" [ref=e185]:
+                    - rowheader "Selecionar Hostinger Tools" [ref=e186]:
+                      - generic [ref=e188]: Selecionar Hostinger Tools
+                      - checkbox "Selecionar Hostinger Tools" [ref=e189] [cursor=pointer]
+                    - cell "Hostinger Tools Desativar Hostinger Tools" [ref=e190]:
+                      - strong [ref=e191]: Hostinger Tools
+                      - link "Desativar Hostinger Tools" [ref=e193] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=hostinger%2Fhostinger.php&plugin_status=all&paged=1&s&_wpnonce=0a88cf1025
+                        - text: Desativar
+                    - cell "Plugin WordPress da Hostinger. Versão 3.0.57 | Por Hostinger | Mais informações sobre Hostinger Tools" [ref=e194]:
+                      - paragraph [ref=e196]: Plugin WordPress da Hostinger.
+                      - generic [ref=e197]:
+                        - text: Versão 3.0.57 | Por
+                        - link "Hostinger" [ref=e198] [cursor=pointer]:
+                          - /url: https://www.hostinger.com
+                        - text: "|"
+                        - link "Mais informações sobre Hostinger Tools" [ref=e199] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                  - row "Há uma nova versão do Hostinger Tools disponível. Veja detalhes de Hostinger Tools versão 3.0.65 ou Atualizar Hostinger Tools agora." [ref=e200]:
+                    - cell "Há uma nova versão do Hostinger Tools disponível. Veja detalhes de Hostinger Tools versão 3.0.65 ou Atualizar Hostinger Tools agora." [ref=e201]:
+                      - paragraph [ref=e203]:
+                        - text: Há uma nova versão do Hostinger Tools disponível.
+                        - link "Veja detalhes de Hostinger Tools versão 3.0.65" [ref=e204] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: Ver detalhes da versão 3.0.65
+                        - text: ou
+                        - link "Atualizar Hostinger Tools agora" [ref=e205] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/update.php?action=upgrade-plugin&plugin=hostinger%2Fhostinger.php&_wpnonce=db4ca18347
+                          - text: atualize agora
+                        - text: .
+                  - row "Selecionar IA Hostinger IA Hostinger Desativar IA Hostinger Plugin de IA Hostinger para WordPress. Versão 3.0.25 | Por Hostinger | Mais informações sobre IA Hostinger | Verificar Atualizações" [ref=e206]:
+                    - rowheader "Selecionar IA Hostinger" [ref=e207]:
+                      - generic [ref=e209]: Selecionar IA Hostinger
+                      - checkbox "Selecionar IA Hostinger" [ref=e210] [cursor=pointer]
+                    - cell "IA Hostinger Desativar IA Hostinger" [ref=e211]:
+                      - strong [ref=e212]: IA Hostinger
+                      - link "Desativar IA Hostinger" [ref=e214] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=hostinger-ai-assistant%2Fhostinger-ai-assistant.php&plugin_status=all&paged=1&s&_wpnonce=c38b4c81b1
+                        - text: Desativar
+                    - cell "Plugin de IA Hostinger para WordPress. Versão 3.0.25 | Por Hostinger | Mais informações sobre IA Hostinger | Verificar Atualizações" [ref=e215]:
+                      - paragraph [ref=e217]: Plugin de IA Hostinger para WordPress.
+                      - generic [ref=e218]:
+                        - text: Versão 3.0.25 | Por
+                        - link "Hostinger" [ref=e219] [cursor=pointer]:
+                          - /url: https://hostinger.com.br
+                        - text: "|"
+                        - link "Mais informações sobre IA Hostinger" [ref=e220] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger-ai-assistant&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                        - text: "|"
+                        - link "Verificar Atualizações" [ref=e221] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugins.php?puc_check_for_updates=1&puc_slug=hostinger-ai-assistant&_wpnonce=06b758ffb7
+                  - row "Há uma nova versão do IA Hostinger disponível. Veja detalhes de IA Hostinger versão 3.0.33 ou Atualizar IA Hostinger agora." [ref=e222]:
+                    - cell "Há uma nova versão do IA Hostinger disponível. Veja detalhes de IA Hostinger versão 3.0.33 ou Atualizar IA Hostinger agora." [ref=e223]:
+                      - paragraph [ref=e225]:
+                        - text: Há uma nova versão do IA Hostinger disponível.
+                        - link "Veja detalhes de IA Hostinger versão 3.0.33" [ref=e226] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=hostinger-ai-assistant&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: Ver detalhes da versão 3.0.33
+                        - text: ou
+                        - link "Atualizar IA Hostinger agora" [ref=e227] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/update.php?action=upgrade-plugin&plugin=hostinger-ai-assistant%2Fhostinger-ai-assistant.php&_wpnonce=ed59011044
+                          - text: atualize agora
+                        - text: .
+                  - row "Selecionar LiteSpeed Cache LiteSpeed Cache Desativar LiteSpeed Cache | Configurações Cache de página de alto desempenho e otimização de site da LiteSpeed Versão 7.7 | Por LiteSpeed Technologies | Mais informações sobre LiteSpeed Cache" [ref=e228]:
+                    - rowheader "Selecionar LiteSpeed Cache" [ref=e229]:
+                      - generic [ref=e231]: Selecionar LiteSpeed Cache
+                      - checkbox "Selecionar LiteSpeed Cache" [ref=e232] [cursor=pointer]
+                    - cell "LiteSpeed Cache Desativar LiteSpeed Cache | Configurações" [ref=e233]:
+                      - strong [ref=e234]: LiteSpeed Cache
+                      - generic [ref=e235]:
+                        - generic:
+                          - link "Desativar LiteSpeed Cache" [ref=e236] [cursor=pointer]:
+                            - /url: plugins.php?action=deactivate&plugin=litespeed-cache%2Flitespeed-cache.php&plugin_status=all&paged=1&s&_wpnonce=374ff8efb6
+                            - text: Desativar
+                          - text: "|"
+                        - link "Configurações" [ref=e237] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=litespeed-cache
+                    - cell "Cache de página de alto desempenho e otimização de site da LiteSpeed Versão 7.7 | Por LiteSpeed Technologies | Mais informações sobre LiteSpeed Cache" [ref=e238]:
+                      - paragraph [ref=e240]: Cache de página de alto desempenho e otimização de site da LiteSpeed
+                      - generic [ref=e241]:
+                        - text: Versão 7.7 | Por
+                        - link "LiteSpeed Technologies" [ref=e242] [cursor=pointer]:
+                          - /url: https://www.litespeedtech.com
+                        - text: "|"
+                        - link "Mais informações sobre LiteSpeed Cache" [ref=e243] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=litespeed-cache&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                  - row "Há uma nova versão do LiteSpeed Cache disponível. Veja detalhes de LiteSpeed Cache versão 7.8.1 ou Atualizar LiteSpeed Cache agora." [ref=e244]:
+                    - cell "Há uma nova versão do LiteSpeed Cache disponível. Veja detalhes de LiteSpeed Cache versão 7.8.1 ou Atualizar LiteSpeed Cache agora." [ref=e245]:
+                      - paragraph [ref=e247]:
+                        - text: Há uma nova versão do LiteSpeed Cache disponível.
+                        - link "Veja detalhes de LiteSpeed Cache versão 7.8.1" [ref=e248] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=litespeed-cache&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: Ver detalhes da versão 7.8.1
+                        - text: ou
+                        - link "Atualizar LiteSpeed Cache agora" [ref=e249] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/update.php?action=upgrade-plugin&plugin=litespeed-cache%2Flitespeed-cache.php&_wpnonce=f691a83e83
+                          - text: atualize agora
+                        - text: .
+                  - row "Selecionar WooCommerce WooCommerce Ver as configurações do WooCommerce | Desativar WooCommerce Um conjunto de ferramentas de e-commerce que ajuda a vender qualquer coisa. Lindamente. Versão 10.6.2 | Por Automattic | Mais informações sobre WooCommerce | Ver a documentação do WooCommerce | Ver a documentação da API do WooCommerce | Visite os fóruns da comunidade" [ref=e250]:
+                    - rowheader "Selecionar WooCommerce" [ref=e251]:
+                      - generic [ref=e253]: Selecionar WooCommerce
+                      - checkbox "Selecionar WooCommerce" [ref=e254] [cursor=pointer]
+                    - cell "WooCommerce Ver as configurações do WooCommerce | Desativar WooCommerce" [ref=e255]:
+                      - strong [ref=e256]: WooCommerce
+                      - generic [ref=e257]:
+                        - generic:
+                          - link "Ver as configurações do WooCommerce" [ref=e258] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings
+                            - text: Configurações
+                          - text: "|"
+                        - link "Desativar WooCommerce" [ref=e259] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=woocommerce%2Fwoocommerce.php&plugin_status=all&paged=1&s&_wpnonce=fccbac39c8
+                          - text: Desativar
+                    - cell "Um conjunto de ferramentas de e-commerce que ajuda a vender qualquer coisa. Lindamente. Versão 10.6.2 | Por Automattic | Mais informações sobre WooCommerce | Ver a documentação do WooCommerce | Ver a documentação da API do WooCommerce | Visite os fóruns da comunidade" [ref=e260]:
+                      - paragraph [ref=e262]: Um conjunto de ferramentas de e-commerce que ajuda a vender qualquer coisa. Lindamente.
+                      - generic [ref=e263]:
+                        - text: Versão 10.6.2 | Por
+                        - link "Automattic" [ref=e264] [cursor=pointer]:
+                          - /url: https://woocommerce.com
+                        - text: "|"
+                        - link "Mais informações sobre WooCommerce" [ref=e265] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=woocommerce&TB_iframe=true&width=600&height=550
+                          - text: Ver detalhes
+                        - text: "|"
+                        - link "Ver a documentação do WooCommerce" [ref=e266] [cursor=pointer]:
+                          - /url: https://woocommerce.com/documentation/plugins/woocommerce/
+                          - text: Documentação
+                        - text: "|"
+                        - link "Ver a documentação da API do WooCommerce" [ref=e267] [cursor=pointer]:
+                          - /url: https://woocommerce.com/wc-apidocs/
+                          - text: Documentação da API
+                        - text: "|"
+                        - link "Visite os fóruns da comunidade" [ref=e268] [cursor=pointer]:
+                          - /url: https://wordpress.org/support/plugin/woocommerce/
+                          - text: Suporte da comunidade
+                - rowgroup [ref=e269]:
+                  - row "Selecionar todos Plugin" [ref=e270]:
+                    - cell "Selecionar todos" [ref=e271]:
+                      - checkbox "Selecionar todos" [ref=e272] [cursor=pointer]
+                      - generic [ref=e274]: Selecionar todos
+                    - columnheader "Plugin" [ref=e275]
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - generic [ref=e278]: Selecionar ação em massa
+                  - combobox "Selecionar ação em massa" [ref=e279] [cursor=pointer]:
+                    - option "Ações em massa" [selected]
+                    - option "Ativar"
+                    - option "Desativar"
+                    - option "Atualizar"
+                    - option "Excluir"
+                  - button "Aplicar" [ref=e280] [cursor=pointer]
+                - generic [ref=e281]: 7 itens
+    - text: 
+  - img

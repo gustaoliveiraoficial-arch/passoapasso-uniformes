@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabela de Preços — Colégio Príncipe da Paz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --orange:       #C85A00;
+      --orange-dark:  #A84A00;
+      --orange-light: #E06A10;
+      --orange-pale:  #FDF0E6;
+      --black:        #0A0A0A;
+      --gray-900:     #111111;
+      --gray-800:     #1A1A1A;
+      --gray-600:     #4A4A4A;
+      --gray-300:     #CACACA;
+      --gray-100:     #F5F5F5;
+      --white:        #FFFFFF;
+      --radius:       12px;
+      --shadow:       0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--gray-100);
+      color: var(--gray-800);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Top decoration bar */
+    .container::before {
+      content: "";
+      display: block;
+      height: 6px;
+      width: 100%;
+      background: linear-gradient(90deg, var(--orange), #EAA83A);
+    }
+
+    /* Header */
+    header {
+      padding: 36px 40px 24px;
+      text-align: center;
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--orange-pale);
+      color: var(--orange-dark);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--black);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* Content Area */
+    .content {
+      padding: 32px 40px;
+    }
+
+    /* Table/List Styles */
+    .item-group {
+      margin-bottom: 30px;
+    }
+
+    .item-group-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--black);
+      border-bottom: 2px solid var(--gray-100);
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      background: var(--gray-100);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .item-row:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: #FAFAFA;
+      border: 1px solid var(--gray-300);
+    }
+
+    .item-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .item-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--black);
+    }
+
+    .item-desc {
+      font-size: 0.8rem;
+      color: var(--gray-600);
+      font-weight: 500;
+    }
+
+    .item-price {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--orange-dark);
+      white-space: nowrap;
+    }
+
+    /* Terms Section */
+    .terms-box {
+      background: var(--orange-pale);
+      border: 1px solid rgba(200, 90, 0, 0.2);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .terms-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--orange-dark);
+      margin-bottom: 16px;
+    }
+
+    .term-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .term-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .term-icon {
+      background: rgba(200, 90, 0, 0.15);
+      color: var(--orange-dark);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .term-text {
+      font-size: 0.9rem;
+      color: var(--gray-800);
+      line-height: 1.5;
+    }
+
+    .term-text strong {
+      font-weight: 700;
+      color: var(--black);
+    }
+
+    /* Footer actions */
+    .actions {
+      display: flex;
+      gap: 16px;
+      padding: 0 40px 32px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-primary {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--gray-900);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--black);
+      border: 1px solid var(--gray-300);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--black);
+      background: var(--gray-100);
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: var(--white);
+        padding: 0;
+      }
+      .container {
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      .actions {
+        display: none !important;
+      }
+      .item-row {
+        break-inside: avoid;
+        border: 1px solid #eee;
+        background: #fff;
+      }
+      .terms-box {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .actions {
+        flex-direction: column;
+      }
+      header {
+        padding: 28px 20px 20px;
+      }
+      .content {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo-badge">PassoaPasso Uniformes</div>
+      <h1>Colégio Príncipe da Paz</h1>
+      <p>Tabela de valores atualizada de uniformes. Confira abaixo os modelos e numerações disponíveis.</p>
+    </header>
+
+    <div class="content">
+
+      <!-- Calças -->
+      <div class="item-group">
+        <div class="item-group-title">
+          👖 Calças e Opções Inferiores
+        </div>
+        
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Calça de Moletom</span>
+            <span class="item-desc">Tamanhos Variados</span>
+          </div>
+          <div class="item-price">R$ 124,90</div>
+        </div>
+
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Calça Dry Leve</span>
+            <span class="item-desc">Infantil até o tamanho 16</span>
+          </div>
+          <div class="item-price">R$ 124,90</div>
+        </div>
+
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Calça Dry Leve</span>
+            <span class="item-desc">Adulto do P ao GG</span>
+          </div>
+          <div class="item-price">R$ 129,90</div>
+        </div>
+      </div>
+
+      <!-- Casacos e Blusas -->
+      <div class="item-group">
+        <div class="item-group-title">
+          🧥 Casacos e Cima
+        </div>
+
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Camiseta Manga Longa</span>
+            <span class="item-desc">Tamanhos Variados</span>
+          </div>
+          <div class="item-price">R$ 69,90</div>
+        </div>
+
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Casaco Canguru</span>
+            <span class="item-desc">Infantil até o tamanho 16</span>
+          </div>
+          <div class="item-price">R$ 129,90</div>
+        </div>
+
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Casaco Canguru</span>
+            <span class="item-desc">Adulto do PP ao GG</span>
+          </div>
+          <div class="item-price">R$ 139,90</div>
+        </div>
+
+        <div class="item-row">
+          <div class="item-info">
+            <span class="item-name">Puffer</span>
+            <span class="item-desc">Colete/Casaco Puffer</span>
+          </div>
+          <div class="item-price">R$ 189,90</div>
+        </div>
+      </div>
+
+      <!-- Termos -->
+      <div class="terms-box">
+        <div class="terms-title">Informações do Pedido</div>
+        
+        <div class="term-item">
+          <div class="term-icon">📦</div>
+          <div class="term-text">
+            <strong>Prazo de Entrega:</strong> Depende da quantidade solicitada do lote. Prazo estipulado de <strong>30 a 60 dias</strong> (máximo).
+          </div>
+        </div>
+
+        <div class="term-item">
+          <div class="term-icon">💳</div>
+          <div class="term-text">
+            <strong>Formas de Pagamento:</strong> 50% de entrada no ato do pedido, e o restante será acertado na retirada (ou sujeito a avaliação para boleto).
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="btn btn-secondary" onclick="window.print()">
+        🖨️ Imprimir Pedido
+      </button>
+      <a href="https://wa.me/55" target="_blank" class="btn btn-primary" onclick="alert('Funcionalidade de contato para personalização pelo WhatsApp.')">
+        💬 Solicitar via WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

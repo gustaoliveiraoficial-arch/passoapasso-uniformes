@@ -1,0 +1,105 @@
+- generic [active] [ref=e1]:
+  - button "Pular para o conteúdo principal" [ref=e5] [cursor=pointer]:
+    - generic [ref=e7]: Pular para o conteúdo principal
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - link "Configurações da Conta do Google" [ref=e13] [cursor=pointer]:
+        - /url: /?tab=kk&authuser=0
+        - generic [ref=e15]: Conta
+      - generic [ref=e16]:
+        - search [ref=e18]:
+          - generic [ref=e24]:
+            - textbox [disabled] [ref=e25]: Pesquisar na Conta do Google
+            - combobox "Pesquisar na Conta do Google" [ref=e26]
+          - button [ref=e27] [cursor=pointer]:
+            - img [ref=e28]
+        - generic [ref=e36]:
+          - button "Ajuda" [ref=e37] [cursor=pointer]:
+            - img [ref=e40]
+          - tooltip [ref=e43]: Ajuda
+      - generic [ref=e45]:
+        - button "Google Apps" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e55] [cursor=pointer]':
+          - img [ref=e57]
+  - generic [ref=e58]:
+    - main [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - button "Mudar foto do perfil" [ref=e70]:
+            - img [ref=e72]
+          - generic [ref=e74]:
+            - heading "Passo a passo uniformes" [level=1] [ref=e75]
+            - generic [ref=e76]: passoapassouniformes2025@gmail.com
+        - generic [ref=e80]:
+          - generic [ref=e81]: O armazenamento da conta está quase cheio
+          - generic [ref=e83]:
+            - progressbar "14,98 GB de 15 GB (99%) usado(s)" [ref=e86]
+            - generic [ref=e92]: 14,98 GB de 15 GB (99%) usado(s)
+          - generic [ref=e93]:
+            - button "Dispensar" [ref=e96] [cursor=pointer]:
+              - generic [ref=e98]: Dispensar
+            - generic [ref=e100] [cursor=pointer]:
+              - generic [ref=e101]: Gerenciar armazenamento
+              - link "Gerenciar armazenamento" [ref=e102]:
+                - /url: https://drive.google.com/settings/storage?hl=pt-BR&utm_source=google-account&utm_medium=web
+        - link "Informações pessoais Nome, e-mail, telefone, endereço" [ref=e107] [cursor=pointer]:
+          - /url: personal-info
+          - generic [ref=e111]:
+            - generic [ref=e112]: Informações pessoais
+            - generic [ref=e113]: Nome, e-mail, telefone, endereço
+        - generic [ref=e116]:
+          - link "Segurança e login Ocorrências de segurança recentes, Gerenciador de Senhas, Verificação de Segurança" [ref=e118] [cursor=pointer]:
+            - /url: security
+            - generic [ref=e122]:
+              - generic [ref=e123]: Segurança e login
+              - generic [ref=e124]: Ocorrências de segurança recentes, Gerenciador de Senhas, Verificação de Segurança
+          - 'link "Senha do Google Última alteração: 25 de mar." [ref=e126] [cursor=pointer]':
+            - /url: signinoptions/password?continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1
+            - generic [ref=e130]:
+              - generic [ref=e131]: Senha do Google
+              - generic [ref=e132]: "Última alteração: 25 de mar."
+          - link "Apps e serviços de terceiros Gerenciar conexões da sua Conta do Google e outras contas" [ref=e134] [cursor=pointer]:
+            - /url: connections?continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1
+            - generic [ref=e138]:
+              - generic [ref=e139]: Apps e serviços de terceiros
+              - generic [ref=e140]: Gerenciar conexões da sua Conta do Google e outras contas
+        - link "Dados e privacidade Configurações do histórico, apps e serviços, exclusão de dados" [ref=e145] [cursor=pointer]:
+          - /url: data-and-privacy
+          - generic [ref=e149]:
+            - generic [ref=e150]: Dados e privacidade
+            - generic [ref=e151]: Configurações do histórico, apps e serviços, exclusão de dados
+        - link "Pessoas e compartilhamento Contatos, usuários bloqueados, compartilhamento de local, perfis" [ref=e156] [cursor=pointer]:
+          - /url: people-and-sharing
+          - generic [ref=e160]:
+            - generic [ref=e161]: Pessoas e compartilhamento
+            - generic [ref=e162]: Contatos, usuários bloqueados, compartilhamento de local, perfis
+        - link "Carteira e assinaturas Compras, armazenamento da conta, formas de pagamento" [ref=e167] [cursor=pointer]:
+          - /url: payments-and-subscriptions
+          - generic [ref=e171]:
+            - generic [ref=e172]: Carteira e assinaturas
+            - generic [ref=e173]: Compras, armazenamento da conta, formas de pagamento
+        - toolbar [ref=e180]:
+          - button "Pesquisar na Conta do Google" [ref=e184] [cursor=pointer]:
+            - generic [ref=e186]: Pesquisar na Conta do Google
+          - button "Ajuda" [ref=e190] [cursor=pointer]:
+            - generic [ref=e192]: Ajuda
+        - paragraph [ref=e194]:
+          - text: Só você pode ver suas configurações. Você também pode querer revisar as configurações do Maps, da Pesquisa e de outros serviços do Google usados com frequência. O Google mantém seus dados privados, seguros e protegidos.
+          - link "Saiba mais sobre as opções de privacidade e segurança" [ref=e195] [cursor=pointer]:
+            - /url: https://privacy.google.com?utm_source=google&utm_medium=referral&utm_campaign=myaccount&hl=pt-BR
+            - text: Saiba mais
+    - iframe [ref=e197]:
+      
+  - contentinfo [ref=e199]:
+    - link "Consulte a Política de Privacidade do Google" [ref=e200] [cursor=pointer]:
+      - /url: https://policies.google.com/privacy
+      - text: Privacidade
+    - link "Consulte os Termos de Serviço do Google" [ref=e201] [cursor=pointer]:
+      - /url: https://policies.google.com/terms
+      - text: Termos
+    - link "Ajuda" [ref=e202] [cursor=pointer]:
+      - /url: https://support.google.com/accounts
+    - link "Saiba mais sobre a Conta do Google" [ref=e203] [cursor=pointer]:
+      - /url: https://www.google.com/account/about
+      - text: Sobre

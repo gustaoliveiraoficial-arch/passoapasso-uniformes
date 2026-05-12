@@ -1,0 +1,806 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - button "Menu principal" [ref=e5] [cursor=pointer]:
+          - img [ref=e6]
+        - link "Trends" [ref=e10] [cursor=pointer]:
+          - /url: /home
+          - generic [ref=e12]: Trends
+      - generic [ref=e16]:
+        - button "Início" [ref=e19]:
+          - generic: Início
+        - button "Explorar" [ref=e24]:
+          - generic: Explorar
+        - button "Em alta" [pressed] [ref=e29]:
+          - generic: Em alta
+      - generic [ref=e35]:
+        - button "Google Apps" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]
+        - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e45] [cursor=pointer]':
+          - img [ref=e47]
+  - generic [ref=e49]:
+    - generic:
+      - navigation
+    - generic [ref=e52]:
+      - main [ref=e53]:
+        - heading "Em alta – Google Trends" [level=1] [ref=e54]
+        - generic [ref=e56]:
+          - heading "Em alta" [level=1]
+          - generic [ref=e57]:
+            - generic [ref=e59]:
+              - button "Brasil, selecione o local" [ref=e66] [cursor=pointer]:
+                - generic [ref=e69]: location_on
+                - generic [ref=e70]: Brasil
+                - img [ref=e72]
+              - button "Últimas 24 horas, selecione o período" [ref=e79] [cursor=pointer]:
+                - generic [ref=e82]: calendar_month
+                - generic [ref=e83]: Últimas 24 horas
+                - img [ref=e85]
+              - button "Todas as categorias, escolha uma categoria" [ref=e92] [cursor=pointer]:
+                - generic [ref=e95]: category
+                - generic [ref=e96]: Todas as categorias
+                - img [ref=e98]
+              - button "Todas as tendências, selecione o status da tendência" [ref=e105] [cursor=pointer]:
+                - generic [ref=e108]: grid_3x3
+                - generic [ref=e109]: Todas as tendências
+                - img [ref=e111]
+              - button "Relevância, selecione o critério de classificação" [ref=e118] [cursor=pointer]:
+                - generic [ref=e121]: sort
+                - generic [ref=e122]: Por relevância
+                - img [ref=e124]
+            - button "Exportar" [ref=e132] [cursor=pointer]:
+              - generic [ref=e135]: ios_share
+              - generic [ref=e136]: Exportar
+              - img [ref=e138]
+          - generic [ref=e143]:
+            - grid [ref=e145]:
+              - rowgroup [ref=e146]:
+                - row "Tendências de pesquisa Tendências (Atualizado em 9 de abr., 00:27) Volume de pesquisa Iniciado Mais informações Detalhamento da tendência Mais informações Últimas 24 horas" [ref=e147]:
+                  - gridcell [ref=e148]
+                  - columnheader "Tendências de pesquisa Tendências (Atualizado em 9 de abr., 00:27)" [ref=e150]:
+                    - generic [ref=e151]:
+                      - generic [ref=e153]:
+                        - button "Tendências de pesquisa" [ref=e154] [cursor=pointer]:
+                          - generic [ref=e156]: search
+                        - tooltip [ref=e158]: Tendências de pesquisa
+                      - generic [ref=e160]:
+                        - button "Tendências" [ref=e162] [cursor=pointer]:
+                          - generic [ref=e164]: Tendências
+                        - tooltip [ref=e165]: Ordenar por título
+                      - generic [ref=e166]: (Atualizado em 9 de abr., 00:27)
+                  - columnheader "Volume de pesquisa" [ref=e167]:
+                    - generic [ref=e169]:
+                      - button "Volume de pesquisa" [ref=e171] [cursor=pointer]:
+                        - generic [ref=e173]: Volume de pesquisa
+                      - tooltip [ref=e174]: Ordenar por volume de pesquisas
+                  - columnheader "Iniciado Mais informações" [ref=e175]:
+                    - generic [ref=e176]:
+                      - generic [ref=e178]:
+                        - button "Iniciado" [ref=e180] [cursor=pointer]:
+                          - generic [ref=e182]: Iniciado
+                        - tooltip [ref=e183]: Ordenar por mais recentes
+                      - button "Mais informações" [ref=e186] [cursor=pointer]:
+                        - generic [ref=e188]: info
+                  - columnheader "Detalhamento da tendência Mais informações" [ref=e190]:
+                    - generic [ref=e191]:
+                      - text: Detalhamento da tendência
+                      - button "Mais informações" [ref=e194] [cursor=pointer]:
+                        - generic [ref=e196]: info
+                  - columnheader "Últimas 24 horas" [ref=e198]
+              - rowgroup [ref=e199]:
+                - row "Selecionar linha junior x palmeiras 500 mil+ 1.000% há 6 horas Ativa palmeiras palmeiras x palmeiras hoje Veja mais 75 itens Gráfico \"Interesse em pesquisar\"" [ref=e200] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e201]:
+                    - generic [ref=e203]:
+                      - checkbox "Selecionar linha" [ref=e204]
+                      - generic:
+                        - img
+                  - gridcell "junior x palmeiras" [ref=e205]:
+                    - generic [ref=e206]: junior x palmeiras
+                  - gridcell "500 mil+ 1.000%" [ref=e207]:
+                    - generic [ref=e208]:
+                      - generic [ref=e209]: 500 mil+
+                      - generic [ref=e210]:
+                        - generic [ref=e211]: arrow_upward
+                        - generic [ref=e212]: 1.000%
+                  - gridcell "há 6 horas Ativa" [ref=e213]:
+                    - button "há 6 horas" [ref=e214]
+                    - generic [ref=e216]:
+                      - generic [ref=e217]: trending_up
+                      - generic [ref=e218]: Ativa
+                  - gridcell "palmeiras palmeiras x palmeiras hoje Veja mais 75 itens" [ref=e219]:
+                    - generic [ref=e220]:
+                      - button "palmeiras" [ref=e224]:
+                        - generic [ref=e225]: palmeiras
+                      - button "palmeiras x" [ref=e229]:
+                        - generic [ref=e230]: palmeiras x
+                      - button "palmeiras hoje" [ref=e234]:
+                        - generic [ref=e235]: palmeiras hoje
+                      - button "Veja mais 75 itens" [ref=e236]: Mais 75
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e237]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e238]
+                - row "Selecionar linha deportivo cuenca x santos 500 mil+ 1.000% há 6 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e239] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e240]:
+                    - generic [ref=e242]:
+                      - checkbox "Selecionar linha" [ref=e243]
+                      - generic:
+                        - img
+                  - gridcell "deportivo cuenca x santos" [ref=e244]:
+                    - generic [ref=e245]: deportivo cuenca x santos
+                  - gridcell "500 mil+ 1.000%" [ref=e246]:
+                    - generic [ref=e247]:
+                      - generic [ref=e248]: 500 mil+
+                      - generic [ref=e249]:
+                        - generic [ref=e250]: arrow_upward
+                        - generic [ref=e251]: 1.000%
+                  - gridcell "há 6 horas Ativa" [ref=e252]:
+                    - button "há 6 horas" [ref=e253]
+                    - generic [ref=e255]:
+                      - generic [ref=e256]: trending_up
+                      - generic [ref=e257]: Ativa
+                  - gridcell [ref=e258]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e259]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e260]
+                - row "Selecionar linha puerto cabello x atlético-mg 100 mil+ 1.000% há 2 horas Ativa atletico mg atletico puerto cabello Veja mais 30 itens Gráfico \"Interesse em pesquisar\"" [ref=e261] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e262]:
+                    - generic [ref=e264]:
+                      - checkbox "Selecionar linha" [ref=e265]
+                      - generic:
+                        - img
+                  - gridcell "puerto cabello x atlético-mg" [ref=e266]:
+                    - generic [ref=e267]: puerto cabello x atlético-mg
+                  - gridcell "100 mil+ 1.000%" [ref=e268]:
+                    - generic [ref=e269]:
+                      - generic [ref=e270]: 100 mil+
+                      - generic [ref=e271]:
+                        - generic [ref=e272]: arrow_upward
+                        - generic [ref=e273]: 1.000%
+                  - gridcell "há 2 horas Ativa" [ref=e274]:
+                    - button "há 2 horas" [ref=e275]
+                    - generic [ref=e277]:
+                      - generic [ref=e278]: trending_up
+                      - generic [ref=e279]: Ativa
+                  - gridcell "atletico mg atletico puerto cabello Veja mais 30 itens" [ref=e280]:
+                    - generic [ref=e281]:
+                      - button "atletico mg" [ref=e285]:
+                        - generic [ref=e286]: atletico mg
+                      - button "atletico" [ref=e290]:
+                        - generic [ref=e291]: atletico
+                      - button "puerto cabello" [ref=e295]:
+                        - generic [ref=e296]: puerto cabello
+                      - button "Veja mais 30 itens" [ref=e297]: Mais 30
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e298]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e299]
+                - row "Selecionar linha torque x grêmio 200 mil+ 1.000% há 4 horas Ativa gremio gremio hoje grêmio Veja mais 46 itens Gráfico \"Interesse em pesquisar\"" [ref=e300] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e301]:
+                    - generic [ref=e303]:
+                      - checkbox "Selecionar linha" [ref=e304]
+                      - generic:
+                        - img
+                  - gridcell "torque x grêmio" [ref=e305]:
+                    - generic [ref=e306]: torque x grêmio
+                  - gridcell "200 mil+ 1.000%" [ref=e307]:
+                    - generic [ref=e308]:
+                      - generic [ref=e309]: 200 mil+
+                      - generic [ref=e310]:
+                        - generic [ref=e311]: arrow_upward
+                        - generic [ref=e312]: 1.000%
+                  - gridcell "há 4 horas Ativa" [ref=e313]:
+                    - button "há 4 horas" [ref=e314]
+                    - generic [ref=e316]:
+                      - generic [ref=e317]: trending_up
+                      - generic [ref=e318]: Ativa
+                  - gridcell "gremio gremio hoje grêmio Veja mais 46 itens" [ref=e319]:
+                    - generic [ref=e320]:
+                      - button "gremio" [ref=e324]:
+                        - generic [ref=e325]: gremio
+                      - button "gremio hoje" [ref=e329]:
+                        - generic [ref=e330]: gremio hoje
+                      - button "grêmio" [ref=e334]:
+                        - generic [ref=e335]: grêmio
+                      - button "Veja mais 46 itens" [ref=e336]: Mais 46
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e337]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e338]
+                - row "Selecionar linha flamengo 500 mil+ 1.000% há 2 horas Ativa flamengo x flamengo hoje flamengo x cusco Veja mais 75 itens Gráfico \"Interesse em pesquisar\"" [ref=e339] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e340]:
+                    - generic [ref=e342]:
+                      - checkbox "Selecionar linha" [ref=e343]
+                      - generic:
+                        - img
+                  - gridcell "flamengo" [ref=e344]:
+                    - generic [ref=e345]: flamengo
+                  - gridcell "500 mil+ 1.000%" [ref=e346]:
+                    - generic [ref=e347]:
+                      - generic [ref=e348]: 500 mil+
+                      - generic [ref=e349]:
+                        - generic [ref=e350]: arrow_upward
+                        - generic [ref=e351]: 1.000%
+                  - gridcell "há 2 horas Ativa" [ref=e352]:
+                    - button "há 2 horas" [ref=e353]
+                    - generic [ref=e355]:
+                      - generic [ref=e356]: trending_up
+                      - generic [ref=e357]: Ativa
+                  - gridcell "flamengo x flamengo hoje flamengo x cusco Veja mais 75 itens" [ref=e358]:
+                    - generic [ref=e359]:
+                      - button "flamengo x" [ref=e363]:
+                        - generic [ref=e364]: flamengo x
+                      - button "flamengo hoje" [ref=e368]:
+                        - generic [ref=e369]: flamengo hoje
+                      - button "flamengo x cusco" [ref=e373]:
+                        - generic [ref=e374]: flamengo x cusco
+                      - button "Veja mais 75 itens" [ref=e375]: Mais 75
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e376]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e377]
+                - row "Selecionar linha barcelona x atlético madrid 500 mil+ 1.000% há 11 horas Ativa atlético barcelona x jogo do barcelona Veja mais 43 itens Gráfico \"Interesse em pesquisar\"" [ref=e378] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e379]:
+                    - generic [ref=e381]:
+                      - checkbox "Selecionar linha" [ref=e382]
+                      - generic:
+                        - img
+                  - gridcell "barcelona x atlético madrid" [ref=e383]:
+                    - generic [ref=e384]: barcelona x atlético madrid
+                  - gridcell "500 mil+ 1.000%" [ref=e385]:
+                    - generic [ref=e386]:
+                      - generic [ref=e387]: 500 mil+
+                      - generic [ref=e388]:
+                        - generic [ref=e389]: arrow_upward
+                        - generic [ref=e390]: 1.000%
+                  - gridcell "há 11 horas Ativa" [ref=e391]:
+                    - button "há 11 horas" [ref=e392]
+                    - generic [ref=e394]:
+                      - generic [ref=e395]: trending_up
+                      - generic [ref=e396]: Ativa
+                  - gridcell "atlético barcelona x jogo do barcelona Veja mais 43 itens" [ref=e397]:
+                    - generic [ref=e398]:
+                      - button "atlético" [ref=e402]:
+                        - generic [ref=e403]: atlético
+                      - button "barcelona x" [ref=e407]:
+                        - generic [ref=e408]: barcelona x
+                      - button "jogo do barcelona" [ref=e412]:
+                        - generic [ref=e413]: jogo do barcelona
+                      - button "Veja mais 43 itens" [ref=e414]: Mais 43
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e415]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e416]
+                - row "Selecionar linha ceará sc x fortaleza 100 mil+ 1.000% há 3 horas Ativa copa do nordeste ceara x fortaleza Veja mais 18 itens Gráfico \"Interesse em pesquisar\"" [ref=e417] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e418]:
+                    - generic [ref=e420]:
+                      - checkbox "Selecionar linha" [ref=e421]
+                      - generic:
+                        - img
+                  - gridcell "ceará sc x fortaleza" [ref=e422]:
+                    - generic [ref=e423]: ceará sc x fortaleza
+                  - gridcell "100 mil+ 1.000%" [ref=e424]:
+                    - generic [ref=e425]:
+                      - generic [ref=e426]: 100 mil+
+                      - generic [ref=e427]:
+                        - generic [ref=e428]: arrow_upward
+                        - generic [ref=e429]: 1.000%
+                  - gridcell "há 3 horas Ativa" [ref=e430]:
+                    - button "há 3 horas" [ref=e431]
+                    - generic [ref=e433]:
+                      - generic [ref=e434]: trending_up
+                      - generic [ref=e435]: Ativa
+                  - gridcell "copa do nordeste ceara x fortaleza Veja mais 18 itens" [ref=e436]:
+                    - generic [ref=e437]:
+                      - button "copa do nordeste" [ref=e441]:
+                        - generic [ref=e442]: copa do nordeste
+                      - button "ceara x fortaleza" [ref=e446]:
+                        - generic [ref=e447]: ceara x fortaleza
+                      - button "Veja mais 18 itens" [ref=e448]: Mais 18
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e449]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e450]
+                - row "Selecionar linha ec vitória x juazeirense 100 mil+ 1.000% há 6 horas Ativa copa do nordeste 2026 Veja mais 4 itens Gráfico \"Interesse em pesquisar\"" [ref=e451] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e452]:
+                    - generic [ref=e454]:
+                      - checkbox "Selecionar linha" [ref=e455]
+                      - generic:
+                        - img
+                  - gridcell "ec vitória x juazeirense" [ref=e456]:
+                    - generic [ref=e457]: ec vitória x juazeirense
+                  - gridcell "100 mil+ 1.000%" [ref=e458]:
+                    - generic [ref=e459]:
+                      - generic [ref=e460]: 100 mil+
+                      - generic [ref=e461]:
+                        - generic [ref=e462]: arrow_upward
+                        - generic [ref=e463]: 1.000%
+                  - gridcell "há 6 horas Ativa" [ref=e464]:
+                    - button "há 6 horas" [ref=e465]
+                    - generic [ref=e467]:
+                      - generic [ref=e468]: trending_up
+                      - generic [ref=e469]: Ativa
+                  - gridcell "copa do nordeste 2026 Veja mais 4 itens" [ref=e470]:
+                    - generic [ref=e471]:
+                      - button "copa do nordeste 2026" [ref=e475]:
+                        - generic [ref=e476]: copa do nordeste 2026
+                      - button "Veja mais 4 itens" [ref=e477]: Mais 4
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e478]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e479]
+                - row "Selecionar linha mirassol 100 mil+ 1.000% há 5 horas Ativa mirassol x mirassol futebol clube Veja mais 31 itens Gráfico \"Interesse em pesquisar\"" [ref=e480] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e481]:
+                    - generic [ref=e483]:
+                      - checkbox "Selecionar linha" [ref=e484]
+                      - generic:
+                        - img
+                  - gridcell "mirassol" [ref=e485]:
+                    - generic [ref=e486]: mirassol
+                  - gridcell "100 mil+ 1.000%" [ref=e487]:
+                    - generic [ref=e488]:
+                      - generic [ref=e489]: 100 mil+
+                      - generic [ref=e490]:
+                        - generic [ref=e491]: arrow_upward
+                        - generic [ref=e492]: 1.000%
+                  - gridcell "há 5 horas Ativa" [ref=e493]:
+                    - button "há 5 horas" [ref=e494]
+                    - generic [ref=e496]:
+                      - generic [ref=e497]: trending_up
+                      - generic [ref=e498]: Ativa
+                  - gridcell "mirassol x mirassol futebol clube Veja mais 31 itens" [ref=e499]:
+                    - generic [ref=e500]:
+                      - button "mirassol x" [ref=e504]:
+                        - generic [ref=e505]: mirassol x
+                      - button "mirassol futebol clube" [ref=e509]:
+                        - generic [ref=e510]: mirassol futebol clube
+                      - button "Veja mais 31 itens" [ref=e511]: Mais 31
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e512]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e513]
+                - row "Selecionar linha sport recife x retrô 20 mil+ 1.000% há 3 horas Ativa sport x retro Veja mais 1 itens Gráfico \"Interesse em pesquisar\"" [ref=e514] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e515]:
+                    - generic [ref=e517]:
+                      - checkbox "Selecionar linha" [ref=e518]
+                      - generic:
+                        - img
+                  - gridcell "sport recife x retrô" [ref=e519]:
+                    - generic [ref=e520]: sport recife x retrô
+                  - gridcell "20 mil+ 1.000%" [ref=e521]:
+                    - generic [ref=e522]:
+                      - generic [ref=e523]: 20 mil+
+                      - generic [ref=e524]:
+                        - generic [ref=e525]: arrow_upward
+                        - generic [ref=e526]: 1.000%
+                  - gridcell "há 3 horas Ativa" [ref=e527]:
+                    - button "há 3 horas" [ref=e528]
+                    - generic [ref=e530]:
+                      - generic [ref=e531]: trending_up
+                      - generic [ref=e532]: Ativa
+                  - gridcell "sport x retro Veja mais 1 itens" [ref=e533]:
+                    - generic [ref=e534]:
+                      - button "sport x retro" [ref=e538]:
+                        - generic [ref=e539]: sport x retro
+                      - button "Veja mais 1 itens" [ref=e540]: Mais 1
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e541]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e542]
+                - row "Selecionar linha leandro boneco 50 mil+ 1.000% há 11 horas Ativa leandro boneco bbb26 boneco bbb Veja mais 4 itens Gráfico \"Interesse em pesquisar\"" [ref=e543] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e544]:
+                    - generic [ref=e546]:
+                      - checkbox "Selecionar linha" [ref=e547]
+                      - generic:
+                        - img
+                  - gridcell "leandro boneco" [ref=e548]:
+                    - generic [ref=e549]: leandro boneco
+                  - gridcell "50 mil+ 1.000%" [ref=e550]:
+                    - generic [ref=e551]:
+                      - generic [ref=e552]: 50 mil+
+                      - generic [ref=e553]:
+                        - generic [ref=e554]: arrow_upward
+                        - generic [ref=e555]: 1.000%
+                  - gridcell "há 11 horas Ativa" [ref=e556]:
+                    - button "há 11 horas" [ref=e557]
+                    - generic [ref=e559]:
+                      - generic [ref=e560]: trending_up
+                      - generic [ref=e561]: Ativa
+                  - gridcell "leandro boneco bbb26 boneco bbb Veja mais 4 itens" [ref=e562]:
+                    - generic [ref=e563]:
+                      - button "leandro boneco bbb26" [ref=e567]:
+                        - generic [ref=e568]: leandro boneco bbb26
+                      - button "boneco bbb" [ref=e572]:
+                        - generic [ref=e573]: boneco bbb
+                      - button "Veja mais 4 itens" [ref=e574]: Mais 4
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e575]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e576]
+                - row "Selecionar linha angelo coronel 20 mil+ 1.000% há 10 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e577] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e578]:
+                    - generic [ref=e580]:
+                      - checkbox "Selecionar linha" [ref=e581]
+                      - generic:
+                        - img
+                  - gridcell "angelo coronel" [ref=e582]:
+                    - generic [ref=e583]: angelo coronel
+                  - gridcell "20 mil+ 1.000%" [ref=e584]:
+                    - generic [ref=e585]:
+                      - generic [ref=e586]: 20 mil+
+                      - generic [ref=e587]:
+                        - generic [ref=e588]: arrow_upward
+                        - generic [ref=e589]: 1.000%
+                  - gridcell "há 10 horas Ativa" [ref=e590]:
+                    - button "há 10 horas" [ref=e591]
+                    - generic [ref=e593]:
+                      - generic [ref=e594]: trending_up
+                      - generic [ref=e595]: Ativa
+                  - gridcell [ref=e596]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e597]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e598]
+                - row "Selecionar linha alexandre de moraes 100 mil+ 1.000% há 12 horas Ativa delação premiada Gráfico \"Interesse em pesquisar\"" [ref=e599] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e600]:
+                    - generic [ref=e602]:
+                      - checkbox "Selecionar linha" [ref=e603]
+                      - generic:
+                        - img
+                  - gridcell "alexandre de moraes" [ref=e604]:
+                    - generic [ref=e605]: alexandre de moraes
+                  - gridcell "100 mil+ 1.000%" [ref=e606]:
+                    - generic [ref=e607]:
+                      - generic [ref=e608]: 100 mil+
+                      - generic [ref=e609]:
+                        - generic [ref=e610]: arrow_upward
+                        - generic [ref=e611]: 1.000%
+                  - gridcell "há 12 horas Ativa" [ref=e612]:
+                    - button "há 12 horas" [ref=e613]
+                    - generic [ref=e615]:
+                      - generic [ref=e616]: trending_up
+                      - generic [ref=e617]: Ativa
+                  - gridcell "delação premiada" [ref=e618]:
+                    - button "delação premiada" [ref=e623]:
+                      - generic [ref=e624]: delação premiada
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e625]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e626]
+                - row "Selecionar linha braga x betis 50 mil+ 1.000% há 11 horas Ativa braga fc braga braga x Veja mais 3 itens Gráfico \"Interesse em pesquisar\"" [ref=e627] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e628]:
+                    - generic [ref=e630]:
+                      - checkbox "Selecionar linha" [ref=e631]
+                      - generic:
+                        - img
+                  - gridcell "braga x betis" [ref=e632]:
+                    - generic [ref=e633]: braga x betis
+                  - gridcell "50 mil+ 1.000%" [ref=e634]:
+                    - generic [ref=e635]:
+                      - generic [ref=e636]: 50 mil+
+                      - generic [ref=e637]:
+                        - generic [ref=e638]: arrow_upward
+                        - generic [ref=e639]: 1.000%
+                  - gridcell "há 11 horas Ativa" [ref=e640]:
+                    - button "há 11 horas" [ref=e641]
+                    - generic [ref=e643]:
+                      - generic [ref=e644]: trending_up
+                      - generic [ref=e645]: Ativa
+                  - gridcell "braga fc braga braga x Veja mais 3 itens" [ref=e646]:
+                    - generic [ref=e647]:
+                      - button "braga fc" [ref=e651]:
+                        - generic [ref=e652]: braga fc
+                      - button "braga" [ref=e656]:
+                        - generic [ref=e657]: braga
+                      - button "braga x" [ref=e661]:
+                        - generic [ref=e662]: braga x
+                      - button "Veja mais 3 itens" [ref=e663]: Mais 3
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e664]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e665]
+                - row "Selecionar linha jogo do flamengo 50 mil+ 1.000% há 2 horas Ativa jogo do flamengo hoje jogo flamengo hoje Veja mais 3 itens Gráfico \"Interesse em pesquisar\"" [ref=e666] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e667]:
+                    - generic [ref=e669]:
+                      - checkbox "Selecionar linha" [ref=e670]
+                      - generic:
+                        - img
+                  - gridcell "jogo do flamengo" [ref=e671]:
+                    - generic [ref=e672]: jogo do flamengo
+                  - gridcell "50 mil+ 1.000%" [ref=e673]:
+                    - generic [ref=e674]:
+                      - generic [ref=e675]: 50 mil+
+                      - generic [ref=e676]:
+                        - generic [ref=e677]: arrow_upward
+                        - generic [ref=e678]: 1.000%
+                  - gridcell "há 2 horas Ativa" [ref=e679]:
+                    - button "há 2 horas" [ref=e680]
+                    - generic [ref=e682]:
+                      - generic [ref=e683]: trending_up
+                      - generic [ref=e684]: Ativa
+                  - gridcell "jogo do flamengo hoje jogo flamengo hoje Veja mais 3 itens" [ref=e685]:
+                    - generic [ref=e686]:
+                      - button "jogo do flamengo hoje" [ref=e690]:
+                        - generic [ref=e691]: jogo do flamengo hoje
+                      - button "jogo flamengo hoje" [ref=e695]:
+                        - generic [ref=e696]: jogo flamengo hoje
+                      - button "Veja mais 3 itens" [ref=e697]: Mais 3
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e698]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e699]
+                - row "Selecionar linha carolina ferraz 20 mil+ 1.000% há 5 horas Ativa camila busnello Gráfico \"Interesse em pesquisar\"" [ref=e700] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e701]:
+                    - generic [ref=e703]:
+                      - checkbox "Selecionar linha" [ref=e704]
+                      - generic:
+                        - img
+                  - gridcell "carolina ferraz" [ref=e705]:
+                    - generic [ref=e706]: carolina ferraz
+                  - gridcell "20 mil+ 1.000%" [ref=e707]:
+                    - generic [ref=e708]:
+                      - generic [ref=e709]: 20 mil+
+                      - generic [ref=e710]:
+                        - generic [ref=e711]: arrow_upward
+                        - generic [ref=e712]: 1.000%
+                  - gridcell "há 5 horas Ativa" [ref=e713]:
+                    - button "há 5 horas" [ref=e714]
+                    - generic [ref=e716]:
+                      - generic [ref=e717]: trending_up
+                      - generic [ref=e718]: Ativa
+                  - gridcell "camila busnello" [ref=e719]:
+                    - button "camila busnello" [ref=e724]:
+                      - generic [ref=e725]: camila busnello
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e726]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e727]
+                - row "Selecionar linha secretário de guerra dos estados unidos 20 mil+ 1.000% há 15 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e728] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e729]:
+                    - generic [ref=e731]:
+                      - checkbox "Selecionar linha" [ref=e732]
+                      - generic:
+                        - img
+                  - gridcell "secretário de guerra dos estados unidos" [ref=e733]:
+                    - generic [ref=e734]: secretário de guerra dos estados unidos
+                  - gridcell "20 mil+ 1.000%" [ref=e735]:
+                    - generic [ref=e736]:
+                      - generic [ref=e737]: 20 mil+
+                      - generic [ref=e738]:
+                        - generic [ref=e739]: arrow_upward
+                        - generic [ref=e740]: 1.000%
+                  - gridcell "há 15 horas Ativa" [ref=e741]:
+                    - button "há 15 horas" [ref=e742]
+                    - generic [ref=e744]:
+                      - generic [ref=e745]: trending_up
+                      - generic [ref=e746]: Ativa
+                  - gridcell [ref=e747]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e748]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e749]
+                - row "Selecionar linha exército 20 mil+ 1.000% há 6 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e750] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e751]:
+                    - generic [ref=e753]:
+                      - checkbox "Selecionar linha" [ref=e754]
+                      - generic:
+                        - img
+                  - gridcell "exército" [ref=e755]:
+                    - generic [ref=e756]: exército
+                  - gridcell "20 mil+ 1.000%" [ref=e757]:
+                    - generic [ref=e758]:
+                      - generic [ref=e759]: 20 mil+
+                      - generic [ref=e760]:
+                        - generic [ref=e761]: arrow_upward
+                        - generic [ref=e762]: 1.000%
+                  - gridcell "há 6 horas Ativa" [ref=e763]:
+                    - button "há 6 horas" [ref=e764]
+                    - generic [ref=e766]:
+                      - generic [ref=e767]: trending_up
+                      - generic [ref=e768]: Ativa
+                  - gridcell [ref=e769]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e770]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e771]
+                - row "Selecionar linha al-hilal x al kholood 20 mil+ 1.000% há 10 horas Ativa al hilal al hilal x karim benzema Gráfico \"Interesse em pesquisar\"" [ref=e772] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e773]:
+                    - generic [ref=e775]:
+                      - checkbox "Selecionar linha" [ref=e776]
+                      - generic:
+                        - img
+                  - gridcell "al-hilal x al kholood" [ref=e777]:
+                    - generic [ref=e778]: al-hilal x al kholood
+                  - gridcell "20 mil+ 1.000%" [ref=e779]:
+                    - generic [ref=e780]:
+                      - generic [ref=e781]: 20 mil+
+                      - generic [ref=e782]:
+                        - generic [ref=e783]: arrow_upward
+                        - generic [ref=e784]: 1.000%
+                  - gridcell "há 10 horas Ativa" [ref=e785]:
+                    - button "há 10 horas" [ref=e786]
+                    - generic [ref=e788]:
+                      - generic [ref=e789]: trending_up
+                      - generic [ref=e790]: Ativa
+                  - gridcell "al hilal al hilal x karim benzema" [ref=e791]:
+                    - generic [ref=e792]:
+                      - button "al hilal" [ref=e796]:
+                        - generic [ref=e797]: al hilal
+                      - button "al hilal x" [ref=e801]:
+                        - generic [ref=e802]: al hilal x
+                      - button "karim benzema" [ref=e806]:
+                        - generic [ref=e807]: karim benzema
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e808]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e809]
+                - row "Selecionar linha pesquisa 20 mil+ 1.000% há 16 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e810] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e811]:
+                    - generic [ref=e813]:
+                      - checkbox "Selecionar linha" [ref=e814]
+                      - generic:
+                        - img
+                  - gridcell "pesquisa" [ref=e815]:
+                    - generic [ref=e816]: pesquisa
+                  - gridcell "20 mil+ 1.000%" [ref=e817]:
+                    - generic [ref=e818]:
+                      - generic [ref=e819]: 20 mil+
+                      - generic [ref=e820]:
+                        - generic [ref=e821]: arrow_upward
+                        - generic [ref=e822]: 1.000%
+                  - gridcell "há 16 horas Ativa" [ref=e823]:
+                    - button "há 16 horas" [ref=e824]
+                    - generic [ref=e826]:
+                      - generic [ref=e827]: trending_up
+                      - generic [ref=e828]: Ativa
+                  - gridcell [ref=e829]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e830]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e831]
+                - row "Selecionar linha nubank fora do ar 20 mil+ 900% há 11 horas Ativa instabilidade nubank nubank nubank fora do ar hoje Gráfico \"Interesse em pesquisar\"" [ref=e832] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e833]:
+                    - generic [ref=e835]:
+                      - checkbox "Selecionar linha" [ref=e836]
+                      - generic:
+                        - img
+                  - gridcell "nubank fora do ar" [ref=e837]:
+                    - generic [ref=e838]: nubank fora do ar
+                  - gridcell "20 mil+ 900%" [ref=e839]:
+                    - generic [ref=e840]:
+                      - generic [ref=e841]: 20 mil+
+                      - generic [ref=e842]:
+                        - generic [ref=e843]: arrow_upward
+                        - generic [ref=e844]: 900%
+                  - gridcell "há 11 horas Ativa" [ref=e845]:
+                    - button "há 11 horas" [ref=e846]
+                    - generic [ref=e848]:
+                      - generic [ref=e849]: trending_up
+                      - generic [ref=e850]: Ativa
+                  - gridcell "instabilidade nubank nubank nubank fora do ar hoje" [ref=e851]:
+                    - generic [ref=e852]:
+                      - button "instabilidade nubank" [ref=e856]:
+                        - generic [ref=e857]: instabilidade nubank
+                      - button "nubank" [ref=e861]:
+                        - generic [ref=e862]: nubank
+                      - button "nubank fora do ar hoje" [ref=e866]:
+                        - generic [ref=e867]: nubank fora do ar hoje
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e868]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e869]
+                - row "Selecionar linha dolar 100 mil+ 75% há 15 horas Ativa dólar dolar hoje dolar cai Veja mais 13 itens Gráfico \"Interesse em pesquisar\"" [ref=e870] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e871]:
+                    - generic [ref=e873]:
+                      - checkbox "Selecionar linha" [ref=e874]
+                      - generic:
+                        - img
+                  - gridcell "dolar" [ref=e875]:
+                    - generic [ref=e876]: dolar
+                  - gridcell "100 mil+ 75%" [ref=e877]:
+                    - generic [ref=e878]:
+                      - generic [ref=e879]: 100 mil+
+                      - generic [ref=e880]:
+                        - generic [ref=e881]: arrow_upward
+                        - generic [ref=e882]: 75%
+                  - gridcell "há 15 horas Ativa" [ref=e883]:
+                    - button "há 15 horas" [ref=e884]
+                    - generic [ref=e886]:
+                      - generic [ref=e887]: trending_up
+                      - generic [ref=e888]: Ativa
+                  - gridcell "dólar dolar hoje dolar cai Veja mais 13 itens" [ref=e889]:
+                    - generic [ref=e890]:
+                      - button "dólar" [ref=e894]:
+                        - generic [ref=e895]: dólar
+                      - button "dolar hoje" [ref=e899]:
+                        - generic [ref=e900]: dolar hoje
+                      - button "dolar cai" [ref=e904]:
+                        - generic [ref=e905]: dolar cai
+                      - button "Veja mais 13 itens" [ref=e906]: Mais 13
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e907]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e908]
+                - row "Selecionar linha prisão 10 mil+ 1.000% há 10 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e909] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e910]:
+                    - generic [ref=e912]:
+                      - checkbox "Selecionar linha" [ref=e913]
+                      - generic:
+                        - img
+                  - gridcell "prisão" [ref=e914]:
+                    - generic [ref=e915]: prisão
+                  - gridcell "10 mil+ 1.000%" [ref=e916]:
+                    - generic [ref=e917]:
+                      - generic [ref=e918]: 10 mil+
+                      - generic [ref=e919]:
+                        - generic [ref=e920]: arrow_upward
+                        - generic [ref=e921]: 1.000%
+                  - gridcell "há 10 horas Ativa" [ref=e922]:
+                    - button "há 10 horas" [ref=e923]
+                    - generic [ref=e925]:
+                      - generic [ref=e926]: trending_up
+                      - generic [ref=e927]: Ativa
+                  - gridcell [ref=e928]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e929]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e930]
+                - row "Selecionar linha covid variante cicada 10 mil+ 500% há 18 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e931] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e932]:
+                    - generic [ref=e934]:
+                      - checkbox "Selecionar linha" [ref=e935]
+                      - generic:
+                        - img
+                  - gridcell "covid variante cicada" [ref=e936]:
+                    - generic [ref=e937]: covid variante cicada
+                  - gridcell "10 mil+ 500%" [ref=e938]:
+                    - generic [ref=e939]:
+                      - generic [ref=e940]: 10 mil+
+                      - generic [ref=e941]:
+                        - generic [ref=e942]: arrow_upward
+                        - generic [ref=e943]: 500%
+                  - gridcell "há 18 horas Ativa" [ref=e944]:
+                    - button "há 18 horas" [ref=e945]
+                    - generic [ref=e947]:
+                      - generic [ref=e948]: trending_up
+                      - generic [ref=e949]: Ativa
+                  - gridcell [ref=e950]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e951]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e952]
+                - row "Selecionar linha amazon kindle 5 mil+ 600% há 11 horas Ativa Gráfico \"Interesse em pesquisar\"" [ref=e953] [cursor=pointer]:
+                  - gridcell "Selecionar linha" [ref=e954]:
+                    - generic [ref=e956]:
+                      - checkbox "Selecionar linha" [ref=e957]
+                      - generic:
+                        - img
+                  - gridcell "amazon kindle" [ref=e958]:
+                    - generic [ref=e959]: amazon kindle
+                  - gridcell "5 mil+ 600%" [ref=e960]:
+                    - generic [ref=e961]:
+                      - generic [ref=e962]: 5 mil+
+                      - generic [ref=e963]:
+                        - generic [ref=e964]: arrow_upward
+                        - generic [ref=e965]: 600%
+                  - gridcell "há 11 horas Ativa" [ref=e966]:
+                    - button "há 11 horas" [ref=e967]
+                    - generic [ref=e969]:
+                      - generic [ref=e970]: trending_up
+                      - generic [ref=e971]: Ativa
+                  - gridcell [ref=e972]
+                  - gridcell "Gráfico \"Interesse em pesquisar\"" [ref=e973]:
+                    - img "Gráfico \"Interesse em pesquisar\"" [ref=e974]
+            - generic [ref=e976]:
+              - generic [ref=e977]:
+                - generic [ref=e978]: Linhas por página
+                - combobox "Linhas por página" [ref=e981] [cursor=pointer]:
+                  - generic:
+                    - generic: "25"
+                  - generic:
+                    - img
+              - generic [ref=e983]:
+                - status "Exibindo linhas 1 a 25 de um total de 385" [ref=e984]:
+                  - generic [ref=e985]: 1–25 de 385
+                - generic [ref=e986]:
+                  - button "Acessar a primeira página" [disabled] [ref=e987]:
+                    - img [ref=e990]
+                  - tooltip [ref=e993]: Acessar a primeira página
+                - generic [ref=e994]:
+                  - button "Ir para a página anterior" [disabled] [ref=e995]:
+                    - img [ref=e998]
+                  - tooltip [ref=e1001]: Ir para a página anterior
+                - generic [ref=e1002]:
+                  - button "Ir para a próxima página" [ref=e1003] [cursor=pointer]:
+                    - img [ref=e1006]
+                  - tooltip [ref=e1009]: Ir para a próxima página
+                - generic [ref=e1010]:
+                  - button "Ir para a última página" [ref=e1011] [cursor=pointer]:
+                    - img [ref=e1014]
+                  - tooltip [ref=e1017]: Ir para a última página
+      - contentinfo [ref=e1019]:
+        - generic [ref=e1020]:
+          - img "Google" [ref=e1021]
+          - generic [ref=e1022]:
+            - link "Privacidade Abre uma nova guia" [ref=e1023] [cursor=pointer]:
+              - /url: https://policies.google.com/privacy?hl=pt
+              - text: Privacidade
+            - link "Termos Abre uma nova guia" [ref=e1024] [cursor=pointer]:
+              - /url: https://policies.google.com/terms?hl=pt
+              - text: Termos
+            - button "Enviar feedback" [ref=e1025] [cursor=pointer]
+            - link "Sobre Abre uma nova guia" [ref=e1026] [cursor=pointer]:
+              - /url: https://about.google?hl=pt
+              - text: Sobre
+        - generic [ref=e1027]:
+          - link "Ajuda Abre uma nova guia" [ref=e1028] [cursor=pointer]:
+            - /url: https://support.google.com/trends?hl=pt
+            - generic [ref=e1029]: help
+            - generic [ref=e1030]: Ajuda
+          - combobox "Selecionar idioma" [ref=e1034] [cursor=pointer]:
+            - generic [ref=e1035]: language
+            - generic:
+              - img
+      - generic [ref=e1037]:
+        - generic [ref=e1038]: Este site usa cookies do Google para prestar serviços e aprimorar a qualidade deles, além de analisar o tráfego
+        - generic [ref=e1039]:
+          - generic [ref=e1041] [cursor=pointer]:
+            - generic [ref=e1042]: Saiba mais
+            - link "Saiba mais" [ref=e1043]:
+              - /url: https://policies.google.com/technologies/cookies
+          - button "Entendi" [ref=e1045] [cursor=pointer]:
+            - generic [ref=e1047]: Entendi

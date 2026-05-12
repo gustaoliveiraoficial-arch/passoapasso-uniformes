@@ -1,0 +1,666 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - region
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - button "Skip to main content" [ref=e7] [cursor=pointer]:
+        - generic [ref=e9]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e11] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Accessibility feedback" [ref=e15] [cursor=pointer]:
+        - generic [ref=e17]: Accessibility feedback
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - link "Drive" [ref=e24] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo&authuser=0
+          - img [ref=e25]
+          - generic [ref=e26]: Drive
+        - generic [ref=e27]:
+          - search [ref=e29]:
+            - table [ref=e31]:
+              - rowgroup [ref=e32]:
+                - row [ref=e33]:
+                  - cell [ref=e34]:
+                    - textbox "Search in Drive" [ref=e35]
+            - button "Advanced search" [ref=e36] [cursor=pointer]:
+              - img [ref=e37]
+            - button "Search Google Drive" [ref=e39] [cursor=pointer]:
+              - img [ref=e40]
+          - generic [ref=e43]:
+            - button "Support" [ref=e46] [cursor=pointer]:
+              - img [ref=e47]
+            - button "Settings" [ref=e51] [cursor=pointer]:
+              - img [ref=e53]
+            - generic [ref=e60]:
+              - generic:
+                - button "Try Gemini" [ref=e63] [cursor=pointer]:
+                  - img [ref=e66]
+                - tooltip [ref=e69]: Try Gemini
+            - generic [ref=e77]:
+              - button "Upgrade" [ref=e79] [cursor=pointer]:
+                - generic [ref=e81]: Upgrade
+              - tooltip [ref=e82]: Upgrade for premium features
+        - generic [ref=e84]:
+          - button "Google apps" [ref=e88] [cursor=pointer]:
+            - img [ref=e89]
+          - 'button "Google Account: Gustavo Oliveira (gustaoliveiraoficial@gmail.com)" [ref=e94] [cursor=pointer]':
+            - img [ref=e96]
+    - button "New" [ref=e99] [cursor=pointer]:
+      - img [ref=e102]
+      - generic [ref=e104]: New
+    - navigation [ref=e110]:
+      - heading "Folders and views" [level=2] [ref=e111]
+      - tree "Folders and views" [ref=e112]:
+        - treeitem "Home" [ref=e113]:
+          - link "Home" [ref=e114] [cursor=pointer]:
+            - generic "Home" [ref=e117]:
+              - generic [ref=e119]:
+                - img [ref=e122]
+                - img [ref=e127]
+              - generic "Home" [ref=e132]
+          - group
+        - treeitem "My Drive" [ref=e133]:
+          - link "My Drive" [ref=e134] [cursor=pointer]:
+            - img [ref=e137]
+            - generic "My Drive" [ref=e140]:
+              - generic [ref=e142]:
+                - img [ref=e145]
+                - img [ref=e150]
+              - generic "My Drive" [ref=e152]
+        - treeitem "Computers" [ref=e153]:
+          - link "Computers" [ref=e154] [cursor=pointer]:
+            - img [ref=e157]
+            - generic "Computers" [ref=e160]:
+              - generic [ref=e162]:
+                - img [ref=e165]
+                - img [ref=e170]
+              - generic "Computers" [ref=e173]
+        - treeitem "Shared with me" [ref=e174]:
+          - link "Shared with me" [ref=e175] [cursor=pointer]:
+            - generic "Shared with me" [ref=e178]:
+              - generic [ref=e180]:
+                - img [ref=e183]
+                - img [ref=e188]
+              - generic "Items shared with me" [ref=e194]: Shared with me
+          - group
+        - treeitem "Recent" [ref=e195]:
+          - link "Recent" [ref=e196] [cursor=pointer]:
+            - generic "Recent" [ref=e199]:
+              - generic [ref=e201]:
+                - img [ref=e204]
+                - img [ref=e210]
+              - generic "Recent items" [ref=e215]: Recent
+          - group
+        - treeitem "Starred" [ref=e216]:
+          - link "Starred" [ref=e217] [cursor=pointer]:
+            - generic "Starred" [ref=e220]:
+              - generic [ref=e222]:
+                - img [ref=e224]
+                - img [ref=e227]
+              - generic "Starred items" [ref=e231]: Starred
+          - group
+        - treeitem "Spam" [ref=e232]:
+          - link "Spam" [ref=e233] [cursor=pointer]:
+            - generic "Spam" [ref=e236]:
+              - generic [ref=e238]:
+                - img [ref=e241]
+                - img [ref=e245]
+              - generic "Spam" [ref=e250]
+          - group
+        - treeitem "Trash" [ref=e251]:
+          - link "Trash" [ref=e252] [cursor=pointer]:
+            - generic "Trash" [ref=e255]:
+              - generic [ref=e257]:
+                - img [ref=e260]
+                - img [ref=e265]
+              - generic "Trashed items" [ref=e270]: Trash
+          - group
+        - treeitem "Storage" [ref=e271]:
+          - link "Storage" [ref=e272] [cursor=pointer]:
+            - generic "Storage" [ref=e275]:
+              - generic [ref=e277]:
+                - img [ref=e280]
+                - img [ref=e285]
+              - generic "Storage" [ref=e288]
+          - group
+      - generic [ref=e293]:
+        - 'generic "Storage Summary: 8.14 GB of 15 GB used" [ref=e297] [cursor=pointer]': 8.14 GB of 15 GB used
+        - generic [ref=e301] [cursor=pointer]:
+          - text: Get more storage
+          - link "Get more storage" [ref=e302]:
+            - /url: https://drive.google.com/settings/storage?authuser=0&i=m&utm_source=drive&utm_medium=web&utm_campaign=g1_widget_normal#upgrade
+    - generic [ref=e305]:
+      - generic [ref=e311]:
+        - generic [ref=e314]:
+          - generic [ref=e316]:
+            - navigation [ref=e318]:
+              - heading "Folder Path" [ref=e319]
+              - list "Folder Path" [ref=e320]:
+                - listitem [ref=e321]:
+                  - button "MATERIAL DO CATALOGO" [ref=e322] [cursor=pointer]:
+                    - generic [ref=e323]: MATERIAL DO CATALOGO
+                    - img [ref=e325]
+            - button "Shared" [ref=e328] [cursor=pointer]:
+              - img [ref=e330]
+          - toolbar [ref=e332]:
+            - generic [ref=e333]:
+              - radiogroup "List or Grid layout (Alt+V then L)" [ref=e337]:
+                - generic [ref=e338]:
+                  - radio "List" [ref=e339] [cursor=pointer]:
+                    - generic [ref=e340]:
+                      - img [ref=e341]
+                      - img [ref=e345]
+                  - radio "Grid" [checked] [ref=e348] [cursor=pointer]:
+                    - generic [ref=e349]:
+                      - img [ref=e350]
+                      - img [ref=e354]
+              - button "View details (Alt+V then D)" [ref=e357] [cursor=pointer]:
+                - img [ref=e359]
+        - generic [ref=e365]:
+          - generic [ref=e366]: No filters applied
+          - toolbar "Filters" [ref=e368]:
+            - generic [ref=e370]:
+              - button "Type" [ref=e371] [cursor=pointer]:
+                - generic [ref=e372]:
+                  - generic [ref=e373]: Type
+                  - img [ref=e375]
+              - button "People" [ref=e377] [cursor=pointer]:
+                - generic [ref=e378]:
+                  - generic [ref=e379]: People
+                  - img [ref=e381]
+              - button "Modified" [ref=e383] [cursor=pointer]:
+                - generic [ref=e384]:
+                  - generic [ref=e385]: Modified
+                  - img [ref=e387]
+              - button "Source" [ref=e389] [cursor=pointer]:
+                - generic [ref=e390]:
+                  - generic [ref=e391]: Source
+                  - img [ref=e393]
+      - main [ref=e396]:
+        - region [active] [ref=e402]:
+          - generic [ref=e403]:
+            - grid [ref=e405]:
+              - generic [ref=e411]:
+                - 'button "Sort by: A to Z" [ref=e413] [cursor=pointer]':
+                  - generic [ref=e415]: Name
+                  - img [ref=e419]
+                - tooltip [ref=e421]: "Sort by: A to Z"
+              - row [ref=e422]:
+                - gridcell "Bermudas Shared folder More info (Alt + →)" [ref=e423]:
+                  - generic [ref=e426]:
+                    - img [ref=e431]
+                    - generic [ref=e437]: Bermudas
+                    - generic [ref=e440]:
+                      - button [ref=e441] [cursor=pointer]:
+                        - img [ref=e444]
+                      - tooltip [ref=e447]: More actions
+                - gridcell "Blusinhas Bufante 6 botões Shared folder More info (Alt + →)" [ref=e448]:
+                  - generic [ref=e451]:
+                    - img [ref=e456]
+                    - generic [ref=e462]: Blusinhas Bufante 6 botões
+                    - generic [ref=e465]:
+                      - button [ref=e466] [cursor=pointer]:
+                        - img [ref=e469]
+                      - tooltip [ref=e472]: More actions
+                - gridcell "Boas Vindas Shared folder More info (Alt + →)" [ref=e473]:
+                  - generic [ref=e476]:
+                    - img [ref=e481]
+                    - generic [ref=e487]: Boas Vindas
+                    - generic [ref=e490]:
+                      - button [ref=e491] [cursor=pointer]:
+                        - img [ref=e494]
+                      - tooltip [ref=e497]: More actions
+                - gridcell "Calças Shared folder More info (Alt + →)" [ref=e498]:
+                  - generic [ref=e501]:
+                    - img [ref=e506]
+                    - generic [ref=e512]: Calças
+                    - generic [ref=e515]:
+                      - button [ref=e516] [cursor=pointer]:
+                        - img [ref=e519]
+                      - tooltip [ref=e522]: More actions
+                - gridcell "Camisa Social Shared folder More info (Alt + →)" [ref=e523]:
+                  - generic [ref=e526]:
+                    - img [ref=e531]
+                    - generic [ref=e537]: Camisa Social
+                    - generic [ref=e540]:
+                      - button [ref=e541] [cursor=pointer]:
+                        - img [ref=e544]
+                      - tooltip [ref=e547]: More actions
+                - gridcell "Camisetas Shared folder More info (Alt + →)" [ref=e548]:
+                  - generic [ref=e551]:
+                    - img [ref=e556]
+                    - generic [ref=e562]: Camisetas
+                    - generic [ref=e565]:
+                      - button [ref=e566] [cursor=pointer]:
+                        - img [ref=e569]
+                      - tooltip [ref=e572]: More actions
+                - gridcell "Camisetas Manga Longa Shared folder More info (Alt + →)" [ref=e573]:
+                  - generic [ref=e576]:
+                    - img [ref=e581]
+                    - generic [ref=e587]: Camisetas Manga Longa
+                    - generic [ref=e590]:
+                      - button [ref=e591] [cursor=pointer]:
+                        - img [ref=e594]
+                      - tooltip [ref=e597]: More actions
+                - gridcell "Camisetas Oversized Shared folder More info (Alt + →)" [ref=e598]:
+                  - generic [ref=e601]:
+                    - img [ref=e606]
+                    - generic [ref=e612]: Camisetas Oversized
+                    - generic [ref=e615]:
+                      - button [ref=e616] [cursor=pointer]:
+                        - img [ref=e619]
+                      - tooltip [ref=e622]: More actions
+                - gridcell "Camisetas Polo Shared folder More info (Alt + →)" [ref=e623]:
+                  - generic [ref=e626]:
+                    - img [ref=e631]
+                    - generic [ref=e637]: Camisetas Polo
+                    - generic [ref=e640]:
+                      - button [ref=e641] [cursor=pointer]:
+                        - img [ref=e644]
+                      - tooltip [ref=e647]: More actions
+                - gridcell "Casacos Shared folder More info (Alt + →)" [ref=e648]:
+                  - generic [ref=e651]:
+                    - img [ref=e656]
+                    - generic [ref=e662]: Casacos
+                    - generic [ref=e665]:
+                      - button [ref=e666] [cursor=pointer]:
+                        - img [ref=e669]
+                      - tooltip [ref=e672]: More actions
+                - gridcell "Coletes Shared folder More info (Alt + →)" [ref=e673]:
+                  - generic [ref=e676]:
+                    - img [ref=e681]
+                    - generic [ref=e687]: Coletes
+                    - generic [ref=e690]:
+                      - button [ref=e691] [cursor=pointer]:
+                        - img [ref=e694]
+                      - tooltip [ref=e697]: More actions
+                - gridcell "Cropped Shared folder More info (Alt + →)" [ref=e698]:
+                  - generic [ref=e701]:
+                    - img [ref=e706]
+                    - generic [ref=e712]: Cropped
+                    - generic [ref=e715]:
+                      - button [ref=e716] [cursor=pointer]:
+                        - img [ref=e719]
+                      - tooltip [ref=e722]: More actions
+                - gridcell "Fitness Shared folder More info (Alt + →)" [ref=e723]:
+                  - generic [ref=e726]:
+                    - img [ref=e731]
+                    - generic [ref=e737]: Fitness
+                    - generic [ref=e740]:
+                      - button [ref=e741] [cursor=pointer]:
+                        - img [ref=e744]
+                      - tooltip [ref=e747]: More actions
+                - gridcell "Jaquetas Shared folder More info (Alt + →)" [ref=e748]:
+                  - generic [ref=e751]:
+                    - img [ref=e756]
+                    - generic [ref=e762]: Jaquetas
+                    - generic [ref=e765]:
+                      - button [ref=e766] [cursor=pointer]:
+                        - img [ref=e769]
+                      - tooltip [ref=e772]: More actions
+                - gridcell "Moletons Shared folder More info (Alt + →)" [ref=e773]:
+                  - generic [ref=e776]:
+                    - img [ref=e781]
+                    - generic [ref=e787]: Moletons
+                    - generic [ref=e790]:
+                      - button [ref=e791] [cursor=pointer]:
+                        - img [ref=e794]
+                      - tooltip [ref=e797]: More actions
+                - gridcell "Outros Shared folder More info (Alt + →)" [ref=e798]:
+                  - generic [ref=e801]:
+                    - img [ref=e806]
+                    - generic [ref=e812]: Outros
+                    - generic [ref=e815]:
+                      - button [ref=e816] [cursor=pointer]:
+                        - img [ref=e819]
+                      - tooltip [ref=e822]: More actions
+                - gridcell "Regatas Shared folder More info (Alt + →)" [ref=e823]:
+                  - generic [ref=e826]:
+                    - img [ref=e831]
+                    - generic [ref=e837]: Regatas
+                    - generic [ref=e840]:
+                      - button [ref=e841] [cursor=pointer]:
+                        - img [ref=e844]
+                      - tooltip [ref=e847]: More actions
+                - gridcell "TERCEIRAO Shared folder More info (Alt + →)" [ref=e848]:
+                  - generic [ref=e851]:
+                    - img [ref=e856]
+                    - generic [ref=e862]: TERCEIRAO
+                    - generic [ref=e865]:
+                      - button [ref=e866] [cursor=pointer]:
+                        - img [ref=e869]
+                      - tooltip [ref=e872]: More actions
+                - gridcell "Tipos de Estampas Shared folder More info (Alt + →)" [ref=e873]:
+                  - generic [ref=e876]:
+                    - img [ref=e881]
+                    - generic [ref=e887]: Tipos de Estampas
+                    - generic [ref=e890]:
+                      - button [ref=e891] [cursor=pointer]:
+                        - img [ref=e894]
+                      - tooltip [ref=e897]: More actions
+                - gridcell "VIDEOS TERCEIRÃO 21.01.2026 Shared folder More info (Alt + →)" [ref=e898]:
+                  - generic [ref=e901]:
+                    - img [ref=e906]
+                    - generic [ref=e912]: VIDEOS TERCEIRÃO 21.01.2026
+                    - generic [ref=e915]:
+                      - button [ref=e916] [cursor=pointer]:
+                        - img [ref=e919]
+                      - tooltip [ref=e922]: More actions
+                - gridcell "_MG_0001.jpg Image More info (Alt + →)" [ref=e923]:
+                  - generic [ref=e924]:
+                    - generic [ref=e926]:
+                      - img [ref=e931]
+                      - generic [ref=e934]: _MG_0001.jpg
+                      - generic [ref=e937]:
+                        - button [ref=e938] [cursor=pointer]:
+                          - img [ref=e941]
+                        - tooltip [ref=e944]: More actions
+                    - img [ref=e948]
+                - gridcell "_MG_0005.jpg Image More info (Alt + →)" [ref=e949]:
+                  - generic [ref=e950]:
+                    - generic [ref=e952]:
+                      - img [ref=e957]
+                      - generic [ref=e960]: _MG_0005.jpg
+                      - generic [ref=e963]:
+                        - button [ref=e964] [cursor=pointer]:
+                          - img [ref=e967]
+                        - tooltip [ref=e970]: More actions
+                    - img [ref=e974]
+                - gridcell "_MG_0007.jpg Image More info (Alt + →)" [ref=e975]:
+                  - generic [ref=e976]:
+                    - generic [ref=e978]:
+                      - img [ref=e983]
+                      - generic [ref=e986]: _MG_0007.jpg
+                      - generic [ref=e989]:
+                        - button [ref=e990] [cursor=pointer]:
+                          - img [ref=e993]
+                        - tooltip [ref=e996]: More actions
+                    - img [ref=e1000]
+                - gridcell "_MG_0012.jpg Image More info (Alt + →)" [ref=e1001]:
+                  - generic [ref=e1002]:
+                    - generic [ref=e1004]:
+                      - img [ref=e1009]
+                      - generic [ref=e1012]: _MG_0012.jpg
+                      - generic [ref=e1015]:
+                        - button [ref=e1016] [cursor=pointer]:
+                          - img [ref=e1019]
+                        - tooltip [ref=e1022]: More actions
+                    - img [ref=e1026]
+                - gridcell "_MG_0014.jpg Image More info (Alt + →)" [ref=e1027]:
+                  - generic [ref=e1028]:
+                    - generic [ref=e1030]:
+                      - img [ref=e1035]
+                      - generic [ref=e1038]: _MG_0014.jpg
+                      - generic [ref=e1041]:
+                        - button [ref=e1042] [cursor=pointer]:
+                          - img [ref=e1045]
+                        - tooltip [ref=e1048]: More actions
+                    - img [ref=e1052]
+                - gridcell "_MG_0016.jpg Image More info (Alt + →)" [ref=e1053]:
+                  - generic [ref=e1054]:
+                    - generic [ref=e1056]:
+                      - img [ref=e1061]
+                      - generic [ref=e1064]: _MG_0016.jpg
+                      - generic [ref=e1067]:
+                        - button [ref=e1068] [cursor=pointer]:
+                          - img [ref=e1071]
+                        - tooltip [ref=e1074]: More actions
+                    - img [ref=e1078]
+                - gridcell "_MG_0020.jpg Image More info (Alt + →)" [ref=e1079]:
+                  - generic [ref=e1080]:
+                    - generic [ref=e1082]:
+                      - img [ref=e1087]
+                      - generic [ref=e1090]: _MG_0020.jpg
+                      - generic [ref=e1093]:
+                        - button [ref=e1094] [cursor=pointer]:
+                          - img [ref=e1097]
+                        - tooltip [ref=e1100]: More actions
+                    - img [ref=e1104]
+                - gridcell "_MG_0023.jpg Image More info (Alt + →)" [ref=e1105]:
+                  - generic [ref=e1106]:
+                    - generic [ref=e1108]:
+                      - img [ref=e1113]
+                      - generic [ref=e1116]: _MG_0023.jpg
+                      - generic [ref=e1119]:
+                        - button [ref=e1120] [cursor=pointer]:
+                          - img [ref=e1123]
+                        - tooltip [ref=e1126]: More actions
+                    - img [ref=e1130]
+                - gridcell "_MG_0026.jpg Image More info (Alt + →)" [ref=e1131]:
+                  - generic [ref=e1132]:
+                    - generic [ref=e1134]:
+                      - img [ref=e1139]
+                      - generic [ref=e1142]: _MG_0026.jpg
+                      - generic [ref=e1145]:
+                        - button [ref=e1146] [cursor=pointer]:
+                          - img [ref=e1149]
+                        - tooltip [ref=e1152]: More actions
+                    - img [ref=e1156]
+                - gridcell "_MG_0032.jpg Image More info (Alt + →)" [ref=e1157]:
+                  - generic [ref=e1158]:
+                    - generic [ref=e1160]:
+                      - img [ref=e1165]
+                      - generic [ref=e1168]: _MG_0032.jpg
+                      - generic [ref=e1171]:
+                        - button [ref=e1172] [cursor=pointer]:
+                          - img [ref=e1175]
+                        - tooltip [ref=e1178]: More actions
+                    - img [ref=e1182]
+                - gridcell "_MG_0034.jpg Image More info (Alt + →)" [ref=e1183]:
+                  - generic [ref=e1184]:
+                    - generic [ref=e1186]:
+                      - img [ref=e1191]
+                      - generic [ref=e1194]: _MG_0034.jpg
+                      - generic [ref=e1197]:
+                        - button [ref=e1198] [cursor=pointer]:
+                          - img [ref=e1201]
+                        - tooltip [ref=e1204]: More actions
+                    - img [ref=e1208]
+                - gridcell "_MG_0037.jpg Image More info (Alt + →)" [ref=e1209]:
+                  - generic [ref=e1210]:
+                    - generic [ref=e1212]:
+                      - img [ref=e1217]
+                      - generic [ref=e1220]: _MG_0037.jpg
+                      - generic [ref=e1223]:
+                        - button [ref=e1224] [cursor=pointer]:
+                          - img [ref=e1227]
+                        - tooltip [ref=e1230]: More actions
+                    - img [ref=e1234]
+                - gridcell "_MG_0039.jpg Image More info (Alt + →)" [ref=e1235]:
+                  - generic [ref=e1236]:
+                    - generic [ref=e1238]:
+                      - img [ref=e1243]
+                      - generic [ref=e1246]: _MG_0039.jpg
+                      - generic [ref=e1249]:
+                        - button [ref=e1250] [cursor=pointer]:
+                          - img [ref=e1253]
+                        - tooltip [ref=e1256]: More actions
+                    - img [ref=e1260]
+                - gridcell "_MG_3549.jpg Image More info (Alt + →)" [ref=e1261]:
+                  - generic [ref=e1262]:
+                    - generic [ref=e1264]:
+                      - img [ref=e1269]
+                      - generic [ref=e1272]: _MG_3549.jpg
+                      - generic [ref=e1275]:
+                        - button [ref=e1276] [cursor=pointer]:
+                          - img [ref=e1279]
+                        - tooltip [ref=e1282]: More actions
+                    - img [ref=e1286]
+                - gridcell "_MG_3552.jpg Image More info (Alt + →)" [ref=e1287]:
+                  - generic [ref=e1288]:
+                    - generic [ref=e1290]:
+                      - img [ref=e1295]
+                      - generic [ref=e1298]: _MG_3552.jpg
+                      - generic [ref=e1301]:
+                        - button [ref=e1302] [cursor=pointer]:
+                          - img [ref=e1305]
+                        - tooltip [ref=e1308]: More actions
+                    - img [ref=e1312]
+                - gridcell "_MG_3554.jpg Image More info (Alt + →)" [ref=e1313]:
+                  - generic [ref=e1314]:
+                    - generic [ref=e1316]:
+                      - img [ref=e1321]
+                      - generic [ref=e1324]: _MG_3554.jpg
+                      - generic [ref=e1327]:
+                        - button [ref=e1328] [cursor=pointer]:
+                          - img [ref=e1331]
+                        - tooltip [ref=e1334]: More actions
+                    - img [ref=e1338]
+                - gridcell "_MG_3556.jpg Image More info (Alt + →)" [ref=e1339]:
+                  - generic [ref=e1340]:
+                    - generic [ref=e1342]:
+                      - img [ref=e1347]
+                      - generic [ref=e1350]: _MG_3556.jpg
+                      - generic [ref=e1353]:
+                        - button [ref=e1354] [cursor=pointer]:
+                          - img [ref=e1357]
+                        - tooltip [ref=e1360]: More actions
+                    - img [ref=e1364]
+                - gridcell "_MG_3557.jpg Image More info (Alt + →)" [ref=e1365]:
+                  - generic [ref=e1366]:
+                    - generic [ref=e1368]:
+                      - img [ref=e1373]
+                      - generic [ref=e1376]: _MG_3557.jpg
+                      - generic [ref=e1379]:
+                        - button [ref=e1380] [cursor=pointer]:
+                          - img [ref=e1383]
+                        - tooltip [ref=e1386]: More actions
+                    - img [ref=e1390]
+                - gridcell "_MG_3559.jpg Image More info (Alt + →)" [ref=e1391]:
+                  - generic [ref=e1392]:
+                    - generic [ref=e1394]:
+                      - img [ref=e1399]
+                      - generic [ref=e1402]: _MG_3559.jpg
+                      - generic [ref=e1405]:
+                        - button [ref=e1406] [cursor=pointer]:
+                          - img [ref=e1409]
+                        - tooltip [ref=e1412]: More actions
+                    - img [ref=e1416]
+                - gridcell "_MG_9900-Editar.jpg Image More info (Alt + →)" [ref=e1417]:
+                  - generic [ref=e1418]:
+                    - generic [ref=e1420]:
+                      - img [ref=e1425]
+                      - generic [ref=e1428]: _MG_9900-Editar.jpg
+                      - generic [ref=e1431]:
+                        - button [ref=e1432] [cursor=pointer]:
+                          - img [ref=e1435]
+                        - tooltip [ref=e1438]: More actions
+                    - img [ref=e1442]
+                - gridcell "_MG_9900.jpg Image More info (Alt + →)" [ref=e1443]:
+                  - generic [ref=e1444]:
+                    - generic [ref=e1446]:
+                      - img [ref=e1451]
+                      - generic [ref=e1454]: _MG_9900.jpg
+                      - generic [ref=e1457]:
+                        - button [ref=e1458] [cursor=pointer]:
+                          - img [ref=e1461]
+                        - tooltip [ref=e1464]: More actions
+                    - img [ref=e1468]
+                - gridcell "_MG_9906.jpg Image More info (Alt + →)" [ref=e1469]:
+                  - generic [ref=e1470]:
+                    - generic [ref=e1472]:
+                      - img [ref=e1477]
+                      - generic [ref=e1480]: _MG_9906.jpg
+                      - generic [ref=e1483]:
+                        - button [ref=e1484] [cursor=pointer]:
+                          - img [ref=e1487]
+                        - tooltip [ref=e1490]: More actions
+                    - img [ref=e1494]
+                - gridcell "_MG_9908.jpg Image More info (Alt + →)" [ref=e1495]:
+                  - generic [ref=e1496]:
+                    - generic [ref=e1498]:
+                      - img [ref=e1503]
+                      - generic [ref=e1506]: _MG_9908.jpg
+                      - generic [ref=e1509]:
+                        - button [ref=e1510] [cursor=pointer]:
+                          - img [ref=e1513]
+                        - tooltip [ref=e1516]: More actions
+                    - img [ref=e1520]
+                - gridcell "_MG_9911.jpg Image More info (Alt + →)" [ref=e1521]:
+                  - generic [ref=e1522]:
+                    - generic [ref=e1524]:
+                      - img [ref=e1529]
+                      - generic [ref=e1532]: _MG_9911.jpg
+                      - generic [ref=e1535]:
+                        - button [ref=e1536] [cursor=pointer]:
+                          - img [ref=e1539]
+                        - tooltip [ref=e1542]: More actions
+                    - img [ref=e1546]
+                - gridcell "_MG_9934.jpg Image More info (Alt + →)" [ref=e1547]:
+                  - generic [ref=e1548]:
+                    - generic [ref=e1550]:
+                      - img [ref=e1555]
+                      - generic [ref=e1558]: _MG_9934.jpg
+                      - generic [ref=e1561]:
+                        - button [ref=e1562] [cursor=pointer]:
+                          - img [ref=e1565]
+                        - tooltip [ref=e1568]: More actions
+                    - img [ref=e1572]
+                - gridcell "_MG_9953.jpg Image More info (Alt + →)" [ref=e1573]:
+                  - generic [ref=e1574]:
+                    - generic [ref=e1576]:
+                      - img [ref=e1581]
+                      - generic [ref=e1584]: _MG_9953.jpg
+                      - generic [ref=e1587]:
+                        - button [ref=e1588] [cursor=pointer]:
+                          - img [ref=e1591]
+                        - tooltip [ref=e1594]: More actions
+                    - img [ref=e1598]
+                - gridcell "_MG_9959.jpg Image More info (Alt + →)" [ref=e1599]:
+                  - generic [ref=e1600]:
+                    - generic [ref=e1602]:
+                      - img [ref=e1607]
+                      - generic [ref=e1610]: _MG_9959.jpg
+                      - generic [ref=e1613]:
+                        - button [ref=e1614] [cursor=pointer]:
+                          - img [ref=e1617]
+                        - tooltip [ref=e1620]: More actions
+                    - img [ref=e1624]
+                - gridcell "_MG_9961.jpg Image More info (Alt + →)" [ref=e1625]:
+                  - generic [ref=e1626]:
+                    - generic [ref=e1628]:
+                      - img [ref=e1633]
+                      - generic [ref=e1636]: _MG_9961.jpg
+                      - generic [ref=e1639]:
+                        - button [ref=e1640] [cursor=pointer]:
+                          - img [ref=e1643]
+                        - tooltip [ref=e1646]: More actions
+                    - img [ref=e1650]
+                - gridcell "_MG_9963.jpg Image More info (Alt + →)" [ref=e1651]:
+                  - generic [ref=e1652]:
+                    - generic [ref=e1654]:
+                      - img [ref=e1659]
+                      - generic [ref=e1662]: _MG_9963.jpg
+                      - generic [ref=e1665]:
+                        - button [ref=e1666] [cursor=pointer]:
+                          - img [ref=e1669]
+                        - tooltip [ref=e1672]: More actions
+                    - img [ref=e1676]
+                - gridcell "_MG_9966.jpg Image More info (Alt + →)" [ref=e1677]:
+                  - generic [ref=e1678]:
+                    - generic [ref=e1680]:
+                      - img [ref=e1685]
+                      - generic [ref=e1688]: _MG_9966.jpg
+                      - generic [ref=e1691]:
+                        - button [ref=e1692] [cursor=pointer]:
+                          - img [ref=e1695]
+                        - tooltip [ref=e1698]: More actions
+                    - img [ref=e1702]
+            - progressbar [ref=e1705]:
+              - img [ref=e1707]
+      - generic:
+        - navigation
+    - generic [ref=e1710]:
+      - complementary "Side panel" [ref=e1711]:
+        - tablist [ref=e1713]:
+          - tab "Calendar"
+          - tab "Keep"
+          - tab "Tasks"
+          - tab "Contacts"
+          - separator [disabled] [ref=e1718]
+      - generic:
+        - button "Hide side panel":
+          - img [ref=e1724] [cursor=pointer]
+  - region
+  - img [ref=e1728]

@@ -1,0 +1,219 @@
+- generic [ref=e3]:
+  - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e93]:
+    - generic [ref=e94]:
+      - navigation "Produtos do Console do Firebase" [ref=e96]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e97]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e98] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e99]:
+              - img [ref=e100]
+              - img "Logotipo do Firebase" [ref=e101]
+        - img [ref=e106]: search
+        - link "Visão geral do projeto" [ref=e108] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e109]: gmp_nav20_overview
+        - menu [ref=e110]:
+          - menuitem "Configurações" [ref=e111]:
+            - img [ref=e113] [cursor=pointer]: settings
+      - separator [ref=e114]
+      - group [ref=e116]:
+        - link "Authentication" [ref=e118] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e119]: gmp_nav20_auth
+        - link "Realtime Database" [ref=e121] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e122]: gmp_nav20_database
+      - separator [ref=e123]
+    - button "Alternar barra lateral de navegação" [ref=e126] [cursor=pointer]:
+      - img [ref=e127]: chevron_left
+  - banner:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Abrir menu de navegação" [ref=e130] [cursor=pointer]:
+          - img [ref=e131]: menu
+        - button "painel-vendas-comercial (Abrir o menu \"Selecionar projeto\")" [ref=e135] [cursor=pointer]:
+          - text: painel-vendas-comercial
+          - img [ref=e136]: arrow_drop_down
+      - button "Mais opções" [ref=e139] [cursor=pointer]:
+        - img [ref=e140]: more_vert
+  - main [ref=e13]:
+    - generic [ref=e144]:
+      - region "Cabeçalho do produto" [ref=e239]:
+        - generic [ref=e241]:
+          - heading "Authentication" [level=2] [ref=e245]
+          - tablist "Recursos do Authentication" [ref=e249]:
+            - generic [ref=e252]:
+              - tab "Usuários" [ref=e253] [cursor=pointer]:
+                - generic [ref=e256]: Usuários
+              - 'tab "Guia selecionada: Método de login" [selected] [ref=e259] [cursor=pointer]':
+                - generic [ref=e262]: Método de login
+              - tab "Modelos" [ref=e265] [cursor=pointer]:
+                - generic [ref=e268]: Modelos
+              - tab "Uso" [ref=e271] [cursor=pointer]:
+                - generic [ref=e274]: Uso
+              - tab "Configurações" [ref=e277] [cursor=pointer]:
+                - generic [ref=e280]: Configurações
+              - tab "Extensions" [ref=e283] [cursor=pointer]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]: gmp_nav20_mods
+                  - text: Extensions
+      - generic [ref=e292]:
+        - heading "Provedores de login" [level=3] [ref=e297]
+        - generic [ref=e303]:
+          - heading "Comece a usar o Firebase Auth ao adicionar seu primeiro método de login" [level=3] [ref=e305]
+          - generic [ref=e306]:
+            - region "Provedores nativos" [ref=e307]:
+              - generic [ref=e308]: Provedores nativos
+              - list [ref=e310]:
+                - listitem [ref=e311]:
+                  - button "E-mail/senha" [ref=e312]:
+                    - button "E-mail/senha" [ref=e313] [cursor=pointer]:
+                      - generic [ref=e314]:
+                        - img [ref=e316]:
+                          - img [ref=e317]
+                        - generic [ref=e319]: E-mail/senha
+                - listitem [ref=e320]:
+                  - button "Smartphone" [ref=e321]:
+                    - button "Smartphone" [ref=e322] [cursor=pointer]:
+                      - generic [ref=e323]:
+                        - img [ref=e325]:
+                          - img [ref=e326]
+                        - generic [ref=e329]: Smartphone
+                - listitem [ref=e330]:
+                  - button "Anônimo" [ref=e331]:
+                    - button "Anônimo" [ref=e332] [cursor=pointer]:
+                      - generic [ref=e333]:
+                        - img [ref=e335]:
+                          - img [ref=e336]
+                        - generic [ref=e338]: Anônimo
+            - region "Outros provedores" [ref=e339]:
+              - generic [ref=e340]: Outros provedores
+              - list [ref=e342]:
+                - listitem [ref=e343]:
+                  - button "Google" [ref=e344]:
+                    - button "Google" [ref=e345] [cursor=pointer]:
+                      - generic [ref=e346]:
+                        - img [ref=e348]:
+                          - img [ref=e349]
+                        - generic [ref=e354]: Google
+                - listitem [ref=e355]:
+                  - button "Facebook" [ref=e356]:
+                    - button "Facebook" [ref=e357] [cursor=pointer]:
+                      - generic [ref=e358]:
+                        - img [ref=e360]:
+                          - img [ref=e361]
+                        - generic [ref=e363]: Facebook
+                - listitem [ref=e364]:
+                  - button "Play Games" [ref=e365]:
+                    - button "Play Games" [ref=e366] [cursor=pointer]:
+                      - generic [ref=e367]:
+                        - img [ref=e369]:
+                          - img [ref=e370]
+                        - generic [ref=e379]: Play Games
+                - listitem [ref=e380]:
+                  - button "Game Center" [ref=e381]:
+                    - button "Game Center" [ref=e382] [cursor=pointer]:
+                      - generic [ref=e385]: Game Center
+                - listitem [ref=e386]:
+                  - button "Apple" [ref=e387]:
+                    - button "Apple" [ref=e388] [cursor=pointer]:
+                      - generic [ref=e391]: Apple
+                - listitem [ref=e392]:
+                  - button "GitHub" [ref=e393]:
+                    - button "GitHub" [ref=e394] [cursor=pointer]:
+                      - generic [ref=e397]: GitHub
+                - listitem [ref=e398]:
+                  - button "Microsoft" [ref=e399]:
+                    - button "Microsoft" [ref=e400] [cursor=pointer]:
+                      - generic [ref=e401]:
+                        - img [ref=e403]:
+                          - img [ref=e404]
+                        - generic [ref=e410]: Microsoft
+                - listitem [ref=e411]:
+                  - button "Twitter" [ref=e412]:
+                    - button "Twitter" [ref=e413] [cursor=pointer]:
+                      - generic [ref=e414]:
+                        - img [ref=e416]:
+                          - img [ref=e417]
+                        - generic [ref=e419]: Twitter
+                - listitem [ref=e420]:
+                  - button "Yahoo" [ref=e421]:
+                    - button "Yahoo" [ref=e422] [cursor=pointer]:
+                      - generic [ref=e423]:
+                        - img [ref=e425]:
+                          - img [ref=e426]
+                        - generic [ref=e430]: Yahoo
+            - region "Provedores personalizados" [ref=e431]:
+              - generic [ref=e432]: Provedores personalizados
+              - list [ref=e434]:
+                - listitem [ref=e435]:
+                  - button "OpenID Connect Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform. Saiba mais (abre a documentação do Firebase em uma nova guia) Fazer upgrade" [ref=e436]:
+                    - button "OpenID Connect" [ref=e437] [cursor=pointer]:
+                      - generic [ref=e438]:
+                        - img [ref=e440]: lock
+                        - generic [ref=e441]: OpenID Connect
+                    - tooltip "Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform. Saiba mais (abre a documentação do Firebase em uma nova guia) Fazer upgrade" [ref=e442]:
+                      - generic [ref=e444]:
+                        - generic [ref=e445]:
+                          - text: Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform.
+                          - link "Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e446] [cursor=pointer]:
+                            - /url: https://firebase.google.com/docs/auth?hl=pt-BR&authuser=0#identity-platform
+                            - text: Saiba mais open_in_new
+                        - button "Fazer upgrade" [ref=e447]:
+                          - generic [ref=e448]: Fazer upgrade
+                - listitem [ref=e453]:
+                  - button "SAML Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform. Saiba mais (abre a documentação do Firebase em uma nova guia) Fazer upgrade" [ref=e454]:
+                    - button "SAML" [ref=e455] [cursor=pointer]:
+                      - generic [ref=e456]:
+                        - img [ref=e458]: lock
+                        - generic [ref=e459]: SAML
+                    - tooltip "Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform. Saiba mais (abre a documentação do Firebase em uma nova guia) Fazer upgrade" [ref=e460]:
+                      - generic [ref=e462]:
+                        - generic [ref=e463]:
+                          - text: Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform.
+                          - link "Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e464] [cursor=pointer]:
+                            - /url: https://firebase.google.com/docs/auth?hl=pt-BR&authuser=0#identity-platform
+                            - text: Saiba mais open_in_new
+                        - button "Fazer upgrade" [ref=e465]:
+                          - generic [ref=e466]: Fazer upgrade
+        - heading "Avançado" [level=3] [ref=e475]
+        - generic [ref=e478]:
+          - heading "Autenticação multifator por SMS" [level=4] [ref=e479]:
+            - img [ref=e481]: lock
+            - generic [ref=e482]: Autenticação multifator por SMS
+          - paragraph [ref=e483]:
+            - text: Permita que usuários incluam uma camada extra de segurança nas contas deles. Assim que essa autenticação for ativada, integrada e configurada, os usuários poderão fazer login com um processo de duas etapas por SMS.
+            - link "Saiba mais sobre a autenticação multifator por SMS (abre em uma nova guia)" [ref=e484] [cursor=pointer]:
+              - /url: https://firebase.google.com/docs/auth?hl=pt-BR&authuser=0#multi-factor
+              - text: Saiba mais open_in_new
+          - status [ref=e488]:
+            - img [ref=e489]: star
+            - generic [ref=e490]: "tip:"
+            - generic [ref=e492]:
+              - generic [ref=e493]: A MFA e outros recursos avançados estão disponíveis no Identity Platform, uma solução completa de identidade do cliente do Google Cloud, criada em parceria com o Firebase. Esse upgrade está disponível nos planos Spark e Blaze.
+              - button "Fazer o upgrade para o Firebase Auth com o Identity Platform" [ref=e495]:
+                - generic [ref=e496]: Fazer upgrade para ativar
+  - generic "Gemini no Firebase" [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e42] [cursor=pointer]':
+          - img [ref=e44]
+          - img [ref=e50]
+        - button "Abrir alertas" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e61] [cursor=pointer]:
+          - img [ref=e63]: spark
+        - button "Ajuda" [ref=e66] [cursor=pointer]:
+          - img [ref=e67]: contact_support
+        - separator [ref=e70]
+        - button "Ativar o Cloud Shell" [ref=e71] [cursor=pointer]:
+          - img [ref=e72]:
+            - img [ref=e73]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e77]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e80] [cursor=pointer]:
+          - img [ref=e81]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e85] [cursor=pointer]':
+        - img [ref=e86]: dark_mode

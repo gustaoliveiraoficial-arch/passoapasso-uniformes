@@ -1,0 +1,272 @@
+- generic [ref=e1]:
+  - generic:
+    - dialog "Guided Tour" [ref=e129]:
+      - group "1 of 1" [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - 'heading "credit_card Novidade: controle o custo da API" [level=2] [ref=e133]':
+              - generic [ref=e134]: "credit_card Novidade: controle o custo da API"
+            - generic [ref=e135]: Defina um limite mensal para evitar gastos excessivos acidentais
+          - button "Fechar tour guiado" [ref=e136] [cursor=pointer]:
+            - img [ref=e137]: close
+        - contentinfo [ref=e139]:
+          - link "Outros recursos" [ref=e141] [cursor=pointer]:
+            - /url: /spend
+            - generic [ref=e142]: Criar um limite de gastos
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]: error
+        - generic [ref=e158]: Failed to list models. Please try again.
+      - button "Dismiss" [ref=e159] [cursor=pointer]:
+        - generic [ref=e160]: close
+    - generic [ref=e305]:
+      - generic [ref=e306]:
+        - generic [ref=e308]: Detalhes da chave de API
+        - button "fechar" [active] [ref=e309] [cursor=pointer]:
+          - generic [ref=e310]: close
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - generic [ref=e313]: Chave de API
+          - generic [ref=e314]:
+            - generic [ref=e315]: AIzaSyBCK6j15u2kN91w8qergovGJHHHkLIHmEk
+            - button "Copiar chave para a área de transferência" [ref=e316] [cursor=pointer]:
+              - generic [ref=e317]: content_copy
+        - generic [ref=e318]:
+          - generic [ref=e319]: Nome
+          - generic [ref=e320]:
+            - generic [ref=e321]: Gemini API Key
+            - button "Copiar nome de exibição para a área de transferência" [ref=e322] [cursor=pointer]:
+              - generic [ref=e323]: content_copy
+        - generic [ref=e324]:
+          - generic [ref=e325]: Nome do projeto
+          - generic [ref=e326]:
+            - generic [ref=e327]: projects/876829516485
+            - button "Copiar nome do projeto para a área de transferência" [ref=e328] [cursor=pointer]:
+              - generic [ref=e329]: content_copy
+        - generic [ref=e330]:
+          - generic [ref=e331]: Número do projeto
+          - generic [ref=e332]:
+            - generic [ref=e333]: "876829516485"
+            - button "Copiar número do projeto para a área de transferência" [ref=e334] [cursor=pointer]:
+              - generic [ref=e335]: content_copy
+      - generic [ref=e336]:
+        - button "Excluir chave" [ref=e337] [cursor=pointer]:
+          - generic [ref=e338]: Excluir chave
+        - generic [ref=e339]:
+          - button "Copiar cURL do guia de início rápido" [ref=e340] [cursor=pointer]
+          - button "Copiar chave" [ref=e341] [cursor=pointer]
+  - generic [ref=e4]:
+    - button [ref=e343]: Skip to main content
+    - generic [ref=e7]:
+      - paragraph [ref=e8]:
+        - text: We have updated our
+        - link [ref=e344] [cursor=pointer]:
+          - /url: https://ai.google.dev/gemini-api/terms
+          - text: Terms of Service
+      - button [ref=e345] [cursor=pointer]: Dismiss
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - button [ref=e346] [cursor=pointer]:
+          - generic [ref=e14]: menu_open
+        - generic [ref=e15]:
+          - generic [ref=e17]:
+            - link [ref=e347] [cursor=pointer]:
+              - /url: /app/prompts/new_chat
+              - img [ref=e348]
+            - button [ref=e349] [cursor=pointer]:
+              - generic [ref=e36]: expand_more
+          - navigation [ref=e37]:
+            - generic [ref=e38]:
+              - link [ref=e350] [cursor=pointer]:
+                - /url: /app/prompts/new_chat
+                - generic [ref=e40]: chevron_left
+                - text: Dashboard
+              - list [ref=e42]:
+                - listitem [ref=e43]:
+                  - link [ref=e351] [cursor=pointer]:
+                    - /url: /app/api-keys
+                    - text: Chaves de API
+                - listitem [ref=e45]:
+                  - link [ref=e352] [cursor=pointer]:
+                    - /url: /app/projects
+                    - text: Projetos
+                - listitem [ref=e47]:
+                  - link [ref=e353] [cursor=pointer]:
+                    - /url: /app/usage
+                    - text: Uso
+                - listitem [ref=e49]:
+                  - link [ref=e354] [cursor=pointer]:
+                    - /url: /app/rate-limit
+                    - text: Limite de taxa
+                - listitem [ref=e51]:
+                  - link [ref=e355] [cursor=pointer]:
+                    - /url: /app/spend
+                    - text: Gasto
+                - listitem [ref=e53]:
+                  - link [ref=e356] [cursor=pointer]:
+                    - /url: /app/billing
+                    - text: Faturamento
+                - listitem [ref=e55]:
+                  - link [ref=e357] [cursor=pointer]:
+                    - /url: /app/logs
+                    - text: Registros e conjuntos de dados
+                - listitem [ref=e57]:
+                  - link [ref=e358] [cursor=pointer]:
+                    - /url: https://ai.google.dev/gemini-api/docs/changelog
+                    - text: Registro de alterações
+                    - generic [ref=e59]: arrow_outward
+            - generic [ref=e60]:
+              - button [ref=e359] [cursor=pointer]:
+                - generic [ref=e62]: search
+                - generic [ref=e63]: Search
+                - generic [ref=e64]: Ctrl /
+              - button [ref=e360] [cursor=pointer]:
+                - generic [ref=e67]: notifications
+                - text: What's new
+              - button [ref=e361] [cursor=pointer]:
+                - generic [ref=e70]: key
+                - text: Get API key
+              - button [ref=e362] [cursor=pointer]:
+                - generic [ref=e73]: settings
+                - text: Settings
+              - generic [ref=e74]:
+                - button [ref=e363] [cursor=pointer]:
+                  - generic [ref=e76]: passoapassouniformes2025@gmail.com
+                - button [ref=e364] [cursor=pointer]:
+                  - img [ref=e365]
+      - main [ref=e82]:
+        - generic [ref=e87]:
+          - generic [ref=e89]:
+            - heading [level=2] [ref=e366]: Chaves de API
+            - generic [ref=e91]:
+              - link [ref=e367] [cursor=pointer]:
+                - /url: https://ai.google.dev/gemini-api/docs/quickstart
+                - generic [ref=e93]: docs
+                - text: Guia de início rápido da API
+              - button [ref=e368] [cursor=pointer]:
+                - generic [ref=e95]: key
+                - text: Criar chave de API
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: Agrupar por
+              - generic [ref=e99]:
+                - button [ref=e369] [cursor=pointer]: Chave de API
+                - button [ref=e370] [cursor=pointer]: Projeto
+            - generic [ref=e102]:
+              - generic [ref=e103]: Filtrar por
+              - combobox [ref=e372] [cursor=pointer]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: Todos os projetos
+                  - generic [ref=e111]: expand_more
+          - table [ref=e166]:
+            - rowgroup [ref=e167]:
+              - row [ref=e373]:
+                - columnheader [ref=e374]: Chave
+                - columnheader [ref=e375]: Projeto
+                - columnheader [ref=e376] [cursor=pointer]:
+                  - button [ref=e377]:
+                    - generic [ref=e173]: Criado
+                    - img [ref=e175]
+                - columnheader [ref=e378]: Nível de faturamento
+                - columnheader [ref=e178]
+            - rowgroup [ref=e179]:
+              - row [ref=e379]:
+                - cell [ref=e380]:
+                  - button [ref=e381] [cursor=pointer]: ...HmEk
+                  - generic [ref=e185]: Gemini API Key
+                - cell [ref=e382]:
+                  - generic [ref=e187]:
+                    - button [ref=e383] [cursor=pointer]: Gemini Project
+                    - generic [ref=e189]: gen-lang-client-0857222414
+                - cell [ref=e384]: 4 de abr. de 2026
+                - cell [ref=e385]:
+                  - generic [ref=e192]:
+                    - button [ref=e386] [cursor=pointer]: Configurar faturamento
+                    - generic [ref=e194]: Nível gratuito
+                - cell [ref=e387]:
+                  - generic [ref=e196]:
+                    - button [ref=e388] [cursor=pointer]:
+                      - generic [ref=e199]: content_copy
+                    - button [ref=e389] [cursor=pointer]:
+                      - generic [ref=e202]: paid
+                    - button [ref=e390] [cursor=pointer]:
+                      - generic [ref=e205]: bar_chart
+                    - button [ref=e391] [cursor=pointer]:
+                      - generic [ref=e207]: more_vert
+              - row [ref=e392]:
+                - cell [ref=e393]:
+                  - button [ref=e394] [cursor=pointer]: ...v02A
+                  - generic [ref=e213]: teste02
+                - cell [ref=e395]:
+                  - generic [ref=e215]:
+                    - button [ref=e396] [cursor=pointer]: Default Gemini Project
+                    - generic [ref=e217]: gen-lang-client-0100271905
+                - cell [ref=e397]: 4 de abr. de 2026
+                - cell [ref=e398]:
+                  - generic [ref=e220]:
+                    - button [ref=e399] [cursor=pointer]: Configurar faturamento
+                    - generic [ref=e222]: Nível gratuito
+                - cell [ref=e400]:
+                  - generic [ref=e224]:
+                    - button [ref=e401] [cursor=pointer]:
+                      - generic [ref=e227]: content_copy
+                    - button [ref=e402] [cursor=pointer]:
+                      - generic [ref=e230]: paid
+                    - button [ref=e403] [cursor=pointer]:
+                      - generic [ref=e233]: bar_chart
+                    - button [ref=e404] [cursor=pointer]:
+                      - generic [ref=e235]: more_vert
+              - row [ref=e405]:
+                - cell [ref=e406]:
+                  - button [ref=e407] [cursor=pointer]: ...9kyk
+                  - generic [ref=e241]: Gemini API Key
+                - cell [ref=e408]:
+                  - generic [ref=e243]:
+                    - button [ref=e409] [cursor=pointer]: Default Gemini Project
+                    - generic [ref=e245]: gen-lang-client-0100271905
+                - cell [ref=e410]: 4 de abr. de 2026
+                - cell [ref=e411]:
+                  - generic [ref=e248]:
+                    - button [ref=e412] [cursor=pointer]: Configurar faturamento
+                    - generic [ref=e250]: Nível gratuito
+                - cell [ref=e413]:
+                  - generic [ref=e252]:
+                    - button [ref=e414] [cursor=pointer]:
+                      - generic [ref=e255]: content_copy
+                    - button [ref=e415] [cursor=pointer]:
+                      - generic [ref=e258]: paid
+                    - button [ref=e416] [cursor=pointer]:
+                      - generic [ref=e261]: bar_chart
+                    - button [ref=e417] [cursor=pointer]:
+                      - generic [ref=e263]: more_vert
+              - row [ref=e418]:
+                - cell [ref=e419]:
+                  - button [ref=e420] [cursor=pointer]: ...SFWw
+                  - generic [ref=e269]: Default Gemini API Key
+                - cell [ref=e421]:
+                  - generic [ref=e271]:
+                    - button [ref=e422] [cursor=pointer]: Default Gemini Project
+                    - generic [ref=e273]: gen-lang-client-0100271905
+                - cell [ref=e423]: 8 de dez. de 2025
+                - cell [ref=e424]:
+                  - generic [ref=e276]:
+                    - button [ref=e425] [cursor=pointer]: Configurar faturamento
+                    - generic [ref=e278]: Nível gratuito
+                - cell [ref=e426]:
+                  - generic [ref=e280]:
+                    - button [ref=e427] [cursor=pointer]:
+                      - generic [ref=e283]: content_copy
+                    - button [ref=e428] [cursor=pointer]:
+                      - generic [ref=e286]: paid
+                    - button [ref=e429] [cursor=pointer]:
+                      - generic [ref=e289]: bar_chart
+                    - button [ref=e430] [cursor=pointer]:
+                      - generic [ref=e291]: more_vert
+          - generic [ref=e293]:
+            - paragraph [ref=e294]: Não encontrou suas chaves de API aqui?
+            - paragraph [ref=e295]:
+              - text: Esta lista mostra apenas as chaves de API dos projetos importados para o Google AI Studio. Importe outros projetos para gerenciar as chaves de API associadas. Também é possível criar uma nova chave de API acima.
+              - link [ref=e431] [cursor=pointer]:
+                - /url: https://ai.google.dev/gemini-api/docs/api-key#import-projects
+                - text: Saiba mais
+            - button [ref=e432] [cursor=pointer]: Importar projetos

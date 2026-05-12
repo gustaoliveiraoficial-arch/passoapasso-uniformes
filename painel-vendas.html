@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏆 Painel de Vendas</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --card2: #1f2937;
+  --border: #30363d;
+  --gold: #f39c12;
+  --gold2: #f1c40f;
+  --silver: #bdc3c7;
+  --bronze: #cd7f32;
+  --blue: #3498db;
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --purple: #9b59b6;
+  --teal: #1abc9c;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ---- HEADER ---- */
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--gold), var(--gold2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.header-actions { display: flex; align-items: center; gap: 10px; }
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 9px 18px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab-btn:hover { background: var(--card2); color: var(--text); }
+.tab-btn.active {
+  background: var(--gold);
+  color: #000;
+  border-color: var(--gold);
+  font-weight: 700;
+}
+
+.icon-btn {
+  width: 36px; height: 36px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.icon-btn:hover { background: var(--card2); color: var(--text); }
+
+/* ---- MAIN ---- */
+.main { padding: 24px; max-width: 1400px; margin: 0 auto; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ---- CARDS ---- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+/* ---- DEMO BANNER ---- */
+.demo-banner {
+  background: linear-gradient(90deg, #1a2a1a, #162416);
+  border: 1px solid #2ecc7144;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--green);
+}
+.demo-banner span { flex: 1; }
+.demo-banner button {
+  padding: 6px 14px;
+  background: var(--green);
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* ---- REFRESH BAR ---- */
+.refresh-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.refresh-btn {
+  padding: 6px 14px;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all 0.2s;
+}
+.refresh-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ---- PODIUM ---- */
+.podium-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  padding: 24px 0 0;
+}
+
+.podium-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.podium-avatar {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  border: 3px solid transparent;
+  position: relative;
+}
+.podium-avatar .crown {
+  position: absolute;
+  top: -18px;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+.pos-1 .podium-avatar { border-color: var(--gold); box-shadow: 0 0 20px rgba(243,156,18,0.4); width: 80px; height: 80px; font-size: 1.8rem; }
+.pos-2 .podium-avatar { border-color: var(--silver); }
+.pos-3 .podium-avatar { border-color: var(--bronze); }
+
+.podium-name { font-size: 0.9rem; font-weight: 700; }
+.podium-value { font-size: 1rem; font-weight: 700; color: var(--gold); }
+
+.podium-block {
+  width: 90px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.2);
+}
+.pos-1 .podium-block { height: 80px; background: linear-gradient(180deg, #f39c1233, #f39c1211); border: 1px solid #f39c1244; font-size: 1.8rem; width: 110px; }
+.pos-2 .podium-block { height: 60px; background: linear-gradient(180deg, #bdc3c733, #bdc3c711); border: 1px solid #bdc3c744; }
+.pos-3 .podium-block { height: 44px; background: linear-gradient(180deg, #cd7f3233, #cd7f3211); border: 1px solid #cd7f3244; }
+
+/* ---- RANKING TABLE ---- */
+.ranking-list { display: flex; flex-direction: column; gap: 8px; }
+
+.rank-row {
+  display: grid;
+  grid-template-columns: 48px 40px 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: all 0.2s;
+}
+.rank-row:hover { border-color: var(--gold); background: #1a1a22; }
+
+.rank-pos {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+}
+.pos-gold { color: var(--gold); }
+.pos-silver { color: var(--silver); }
+.pos-bronze { color: var(--bronze); }
+.pos-default { color: var(--muted); }
+
+.rank-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.rank-info { display: flex; flex-direction: column; gap: 4px; }
+.rank-name { font-weight: 700; font-size: 0.95rem; }
+.rank-today { font-size: 0.78rem; color: var(--muted); }
+.rank-today span { color: var(--text); }
+
+.rank-bar-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; width: 140px; }
+.rank-bar-bg { width: 100%; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.rank-bar-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease; }
+.rank-pct { font-size: 0.75rem; color: var(--muted); }
+
+.rank-total { font-size: 1.1rem; font-weight: 800; text-align: right; white-space: nowrap; }
+
+/* ---- ROLETA ---- */
+.campanhas-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .campanhas-grid { grid-template-columns: 1fr; }
+}
+
+/* Prizes editor */
+.prize-list { display: flex; flex-direction: column; gap: 8px; max-height: 320px; overflow-y: auto; }
+.prize-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.88rem;
+}
+.prize-item span { flex: 1; }
+.prize-del {
+  background: none;
+  border: none;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.prize-del:hover { background: #e74c3c22; }
+
+.prize-add-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.prize-add-row input {
+  flex: 1;
+  padding: 8px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.88rem;
+}
+.prize-add-row input::placeholder { color: var(--muted); }
+.prize-add-row input:focus { outline: none; border-color: var(--gold); }
+.btn-add-prize {
+  padding: 8px 14px;
+  background: var(--gold);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: opacity 0.2s;
+}
+.btn-add-prize:hover { opacity: 0.85; }
+
+/* Wheel center */
+.wheel-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.wheel-container {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+#wheel-canvas {
+  border-radius: 50%;
+  filter: drop-shadow(0 0 20px rgba(243,156,18,0.3));
+}
+
+.wheel-pointer {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(243,156,18,0.8);
+  z-index: 10;
+  line-height: 1;
+}
+
+.wheel-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; height: 50px;
+  background: var(--bg);
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* Spin controls */
+.spin-controls { display: flex; flex-direction: column; gap: 12px; }
+
+.qualified-label { font-size: 0.82rem; color: var(--muted); margin-bottom: 4px; }
+
+.qualified-list { display: flex; flex-direction: column; gap: 8px; max-height: 200px; overflow-y: auto; }
+
+.qual-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.qual-item:hover, .qual-item.selected { border-color: var(--gold); background: #1a1810; }
+.qual-item .av { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+.qual-item .info { flex: 1; }
+.qual-item .qname { font-weight: 700; font-size: 0.88rem; }
+.qual-item .qval { font-size: 0.78rem; color: var(--green); }
+
+.no-qualified {
+  padding: 16px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.88rem;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+
+.btn-spin {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 800;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+.btn-spin:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(243,156,18,0.4); }
+.btn-spin:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+
+/* Winner modal */
+.winner-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+.winner-modal.hidden { display: none; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes popIn { from { transform: scale(0.7) translateY(30px); opacity: 0; } to { transform: scale(1) translateY(0); opacity: 1; } }
+
+.winner-box {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 0 60px rgba(243,156,18,0.3);
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.winner-trophy { font-size: 4rem; margin-bottom: 16px; }
+.winner-title { font-size: 0.9rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.winner-name { font-size: 1.8rem; font-weight: 800; color: var(--gold); margin-bottom: 12px; }
+.winner-prize-label { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
+.winner-prize { font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 28px; }
+.winner-close {
+  padding: 12px 32px;
+  background: var(--gold);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+.winner-close:hover { opacity: 0.85; }
+
+/* History */
+.history-list { display: flex; flex-direction: column; gap: 8px; max-height: 200px; overflow-y: auto; margin-top: 16px; }
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+}
+.history-item .av { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+.history-item .hinfo { flex: 1; }
+.history-item .hname { font-weight: 700; }
+.history-item .hprize { color: var(--gold); }
+.history-item .hdate { color: var(--muted); font-size: 0.75rem; }
+
+/* ---- DASHBOARD ---- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.2s;
+}
+.stat-card:hover { border-color: var(--gold); }
+
+.stat-icon { font-size: 1.8rem; }
+.stat-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.stat-value { font-size: 1.8rem; font-weight: 800; }
+.stat-sub { font-size: 0.8rem; color: var(--muted); }
+.stat-warn { color: var(--red); }
+.stat-ok { color: var(--green); }
+.stat-alert { color: var(--gold); }
+
+/* Progress bar */
+.progress-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.progress-label { font-weight: 700; font-size: 1.05rem; }
+.progress-pct { font-size: 1.5rem; font-weight: 800; color: var(--gold); }
+
+.progress-bg {
+  height: 20px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold2));
+  border-radius: 10px;
+  transition: width 1s ease;
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* Seller mini bars */
+.sellers-dash {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.seller-dash-row {
+  display: grid;
+  grid-template-columns: 40px 120px 1fr 100px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.seller-dash-row:last-child { border-bottom: none; }
+
+.sdr-av { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; color: #fff; }
+.sdr-name { font-weight: 600; font-size: 0.9rem; }
+.sdr-bar-bg { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.sdr-bar-fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+.sdr-val { font-weight: 700; font-size: 0.9rem; text-align: right; }
+
+/* ---- SETTINGS MODAL ---- */
+.settings-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+.settings-overlay.hidden { display: none; }
+
+.settings-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  width: 480px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.settings-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group { margin-bottom: 16px; }
+.form-label { font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; display: block; }
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+.form-input:focus { outline: none; border-color: var(--gold); }
+.form-input::placeholder { color: var(--muted); }
+.form-hint { font-size: 0.75rem; color: var(--muted); margin-top: 4px; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.settings-actions { display: flex; gap: 10px; margin-top: 20px; }
+.btn-save {
+  flex: 1;
+  padding: 12px;
+  background: var(--gold);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+.btn-save:hover { opacity: 0.85; }
+.btn-cancel {
+  flex: 1;
+  padding: 12px;
+  background: var(--card2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.setup-guide {
+  background: #0f2010;
+  border: 1px solid #2ecc7133;
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 16px;
+  font-size: 0.8rem;
+  color: var(--green);
+  line-height: 1.6;
+}
+.setup-guide a { color: var(--gold); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-title">🏆 Painel de Vendas</div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('vendas')">📊 Vendas Total</button>
+    <button class="tab-btn" onclick="switchTab('campanhas')">🎡 Campanhas</button>
+    <button class="tab-btn" onclick="switchTab('dashboard')">📈 Dashboard</button>
+  </div>
+  <div class="header-actions">
+    <button class="icon-btn" onclick="openSettings()" title="Configurações">⚙️</button>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ===================== TAB 1: VENDAS ===================== -->
+  <section id="tab-vendas" class="tab-content active">
+    <div id="demo-banner" class="demo-banner">
+      <span>📡 Exibindo dados de <strong>demonstração</strong>. Configure a URL do Google Sheets para dados reais.</span>
+      <button onclick="openSettings()">Configurar</button>
+    </div>
+    <div class="refresh-bar">
+      <button class="refresh-btn" onclick="loadData()">🔄 Atualizar</button>
+      <span id="last-update">Última atualização: —</span>
+      <span id="auto-refresh-status" style="margin-left:auto; color: var(--green); font-size:0.78rem;">● Auto-refresh ativo (30s)</span>
+    </div>
+
+    <!-- Podium -->
+    <div id="podium-wrap" class="podium-wrap"></div>
+
+    <!-- Full ranking -->
+    <div class="section-title">Ranking completo</div>
+    <div id="ranking-list" class="ranking-list"></div>
+  </section>
+
+  <!-- ===================== TAB 2: CAMPANHAS ===================== -->
+  <section id="tab-campanhas" class="tab-content">
+    <div class="campanhas-grid">
+
+      <!-- Left: Prize editor -->
+      <div class="card">
+        <div class="section-title">🎁 Prêmios da Roleta</div>
+        <div id="prize-list" class="prize-list"></div>
+        <div class="prize-add-row">
+          <input type="text" id="new-prize-input" placeholder="Novo prêmio..." maxlength="40" onkeydown="if(event.key==='Enter') addPrize()">
+          <button class="btn-add-prize" onclick="addPrize()">+ Add</button>
+        </div>
+      </div>
+
+      <!-- Center: Wheel -->
+      <div class="wheel-wrap">
+        <div class="wheel-container">
+          <div class="wheel-pointer">▼</div>
+          <canvas id="wheel-canvas" width="360" height="360"></canvas>
+          <div class="wheel-center"></div>
+        </div>
+        <div id="spin-status" style="font-size:0.85rem; color:var(--muted); text-align:center; min-height:20px;"></div>
+      </div>
+
+      <!-- Right: Spin controls -->
+      <div class="card spin-controls">
+        <div class="section-title">🎯 Girar para</div>
+        <div class="qualified-label">Vendedores qualificados hoje (≥ R$10.000)</div>
+        <div id="qualified-list" class="qualified-list"></div>
+        <button class="btn-spin" id="btn-spin" onclick="spinWheel()" disabled>🎡 GIRAR ROLETA</button>
+
+        <div class="section-title" style="margin-top:20px;">📜 Histórico</div>
+        <div id="history-list" class="history-list"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== TAB 3: DASHBOARD ===================== -->
+  <section id="tab-dashboard" class="tab-content">
+
+    <div id="stats-grid" class="stats-grid"></div>
+
+    <div class="progress-wrap">
+      <div class="progress-header">
+        <div class="progress-label">Progresso da Meta</div>
+        <div class="progress-pct" id="dash-pct">0%</div>
+      </div>
+      <div class="progress-bg">
+        <div class="progress-fill" id="dash-bar" style="width:0%"></div>
+      </div>
+      <div class="progress-meta">
+        <span id="dash-sold">Vendido: —</span>
+        <span id="dash-meta">Meta: —</span>
+      </div>
+    </div>
+
+    <div class="sellers-dash card">
+      <div class="section-title">📊 Desempenho por Vendedor</div>
+      <div id="sellers-dash-list"></div>
+    </div>
+
+  </section>
+</main>
+
+<!-- WINNER MODAL -->
+<div class="winner-modal hidden" id="winner-modal">
+  <div class="winner-box">
+    <div class="winner-trophy">🏆</div>
+    <div class="winner-title">Parabéns!</div>
+    <div class="winner-name" id="winner-name">—</div>
+    <div class="winner-prize-label">Ganhou o prêmio:</div>
+    <div class="winner-prize" id="winner-prize">—</div>
+    <button class="winner-close" onclick="closeWinner()">🎉 Fechar</button>
+  </div>
+</div>
+
+<!-- SETTINGS MODAL -->
+<div class="settings-overlay hidden" id="settings-overlay">
+  <div class="settings-box">
+    <div class="settings-title">⚙️ Configurações</div>
+
+    <div class="form-group">
+      <label class="form-label">URL do Google Apps Script</label>
+      <input class="form-input" type="url" id="cfg-script-url" placeholder="https://script.google.com/macros/s/...">
+      <div class="form-hint">Cole a URL do Web App publicado no Google Apps Script</div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Meta total do período (R$)</label>
+        <input class="form-input" type="number" id="cfg-meta" placeholder="200000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mínimo para Roleta (R$)</label>
+        <input class="form-input" type="number" id="cfg-spin-limit" placeholder="10000">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Data início</label>
+        <input class="form-input" type="date" id="cfg-data-inicio">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Data fim</label>
+        <input class="form-input" type="date" id="cfg-data-fim">
+      </div>
+    </div>
+
+    <div class="setup-guide">
+      <strong>Como configurar o Google Sheets:</strong><br>
+      1. Crie uma planilha Google com aba chamada <strong>"Vendas"</strong><br>
+      2. Cabeçalho: <code>Data | Greg | Iruã | Fran | Gustavo | Jessica</code><br>
+      3. Acesse <strong>Extensões → Apps Script</strong><br>
+      4. Cole o código do arquivo <code>google-apps-script.gs</code><br>
+      5. Publique como <strong>Web App</strong> (acesso: qualquer pessoa)<br>
+      6. Cole a URL acima e salve
+    </div>
+
+    <div class="settings-actions">
+      <button class="btn-cancel" onclick="closeSettings()">Cancelar</button>
+      <button class="btn-save" onclick="saveSettings()">💾 Salvar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// CONFIG & STATE
+// ============================================================
+const VENDEDORES = ['Greg', 'Iruã', 'Fran', 'Gustavo', 'Jessica'];
+const SELLER_COLORS = {
+  'Greg':    '#e74c3c',
+  'Iruã':    '#3498db',
+  'Fran':    '#2ecc71',
+  'Gustavo': '#f39c12',
+  'Jessica': '#9b59b6'
+};
+
+const SELLER_AVATARS = {
+  'Gustavo': 'C:/Users/gusta/Downloads/fotos vendas/gustavo.png',
+  'Greg':    'C:/Users/gusta/Downloads/fotos vendas/greg.png',
+  'Iruã':    'C:/Users/gusta/Downloads/fotos vendas/irua.png',
+  'Jessica': 'C:/Users/gusta/Downloads/fotos vendas/jessica.png',
+  'Fran':    'C:/Users/gusta/Downloads/fotos vendas/fran.png'
+};
+
+function getAvatarHtml(name, initials, color) {
+  const avatarUrl = SELLER_AVATARS[name];
+  if (avatarUrl) {
+    const safeUrl = avatarUrl.startsWith('C:') ? 'file:///' + avatarUrl.replace(/\\/g, '/') : avatarUrl;
+    return `
+      <div style="width:100%; height:100%; position:relative;">
+        <span style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; z-index:1;">${initials}</span>
+        <img src="${safeUrl}" alt="${name}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:50%; z-index:2; background:${color};" onerror="this.style.display='none'">
+      </div>`;
+  }
+  return initials;
+}
+
+const SEGMENT_COLORS = [
+  '#e74c3c','#3498db','#2ecc71','#f39c12',
+  '#9b59b6','#1abc9c','#e67e22','#c0392b',
+  '#2980b9','#27ae60','#8e44ad','#d35400'
+];
+
+const DEFAULT_PRIZES = [
+  '🍕 Almoço grátis',
+  '💰 Bônus R$ 50',
+  '⏰ Sai 1h mais cedo',
+  '🎁 Vale-presente R$ 100',
+  '🍺 Happy hour pago',
+  '🎯 Escolhe a próxima meta',
+  '🌟 Prêmio surpresa',
+  '☕ Café da manhã'
+];
+
+let cfg = loadCfg();
+let appData = null;
+let prizes = JSON.parse(localStorage.getItem('roulette-prizes') || 'null') || [...DEFAULT_PRIZES];
+let spinHistory = JSON.parse(localStorage.getItem('spin-history') || '[]');
+let dailySpins = JSON.parse(localStorage.getItem('daily-spins') || '{}');
+let selectedSeller = null;
+let isSpinning = false;
+let wheelRotation = 0;
+let rafId = null;
+let autoRefreshTimer = null;
+
+function loadCfg() {
+  const saved = localStorage.getItem('app-config');
+  const now = new Date();
+  const y = now.getFullYear(), m = now.getMonth();
+  const defaults = {
+    scriptUrl: 'https://script.google.com/macros/s/AKfycbwyh0F8t6BN1ChAyClBigAiz5AJy1MF0dobez-TIXYMvxahZ8FFg3p19fKGmHYL8jPTWw/exec',
+    meta: 200000,
+    spinLimit: 10000,
+    dataInicio: new Date(y, m, 1).toISOString().split('T')[0],
+    dataFim: new Date(y, m + 1, 0).toISOString().split('T')[0]
+  };
+  return saved ? { ...defaults, ...JSON.parse(saved) } : defaults;
+}
+
+function saveCfg() {
+  localStorage.setItem('app-config', JSON.stringify(cfg));
+}
+
+// ============================================================
+// DEMO DATA
+// ============================================================
+function generateDemoData() {
+  const todayStr = new Date().toISOString().split('T')[0];
+  const totals = {
+    'Greg':    Math.round(3800 + Math.random() * 2000),
+    'Iruã':    Math.round(5200 + Math.random() * 1500),
+    'Fran':    Math.round(4100 + Math.random() * 2500),
+    'Gustavo': Math.round(6800 + Math.random() * 1000),
+    'Jessica': Math.round(4900 + Math.random() * 2200)
+  };
+  const hoje = {
+    'Greg':    Math.round(Math.random() * 2000),
+    'Iruã':    Math.round(800 + Math.random() * 1200),
+    'Fran':    Math.round(Math.random() * 1800),
+    'Gustavo': Math.round(1000 + Math.random() * 1500),
+    'Jessica': Math.round(Math.random() * 900)
+  };
+  return {
+    vendedores: totals,
+    hoje,
+    ultimaAtualizacao: new Date().toISOString(),
+    isDemo: true
+  };
+}
+
+// ============================================================
+// GOOGLE SHEETS FETCH
+// ============================================================
+const newSaleAudio = new Audio("C:/Users/gusta/Downloads/WhatsApp-Video-2026-04-09-at-02.22.19.mp3");
+
+async function loadData() {
+  document.getElementById('last-update').textContent = 'Atualizando...';
+  try {
+    let newData;
+    if (cfg.scriptUrl) {
+      const res = await fetch(cfg.scriptUrl);
+      newData = await res.json();
+      newData.isDemo = false;
+      document.getElementById('demo-banner').style.display = 'none';
+
+      // Atualiza meta e datas dinamicamente se vierem da planilha
+      if (newData.meta) cfg.meta = newData.meta;
+      if (newData.dataInicio) cfg.dataInicio = newData.dataInicio;
+      if (newData.dataFim) cfg.dataFim = newData.dataFim;
+    } else {
+      newData = generateDemoData();
+      document.getElementById('demo-banner').style.display = 'flex';
+    }
+
+    // Verifica se houve uma nova venda antes de atualizar o appData atual
+    if (appData && !appData.isDemo) {
+      let hasNewSale = false;
+      for (const seller of VENDEDORES) {
+        const oldTotal = appData.vendedores?.[seller] || 0;
+        const newTotal = newData.vendedores?.[seller] || 0;
+        if (newTotal > oldTotal) {
+          hasNewSale = true;
+          break;
+        }
+      }
+      if (hasNewSale) {
+        newSaleAudio.play().catch(e => console.log("Bloqueio de auto-play pelo navegador ou erro:", e));
+      }
+    }
+
+    appData = newData;
+  } catch (e) {
+    appData = generateDemoData();
+    appData.isDemo = true;
+    document.getElementById('demo-banner').style.display = 'flex';
+  }
+  document.getElementById('last-update').textContent =
+    'Última atualização: ' + new Date().toLocaleTimeString('pt-BR');
+  renderAll();
+}
+
+// ============================================================
+// RENDER ALL
+// ============================================================
+function renderAll() {
+  renderRanking();
+  renderQualified();
+  renderDashboard();
+}
+
+// ============================================================
+// TAB 1: RANKING
+// ============================================================
+function renderRanking() {
+  if (!appData) return;
+  const d = appData.vendedores;
+  const sorted = VENDEDORES.slice().sort((a, b) => d[b] - d[a]);
+  const top = sorted.reduce((s, v) => s + d[v], 0) || 1;
+
+  // Podium (top 3)
+  const podiumWrap = document.getElementById('podium-wrap');
+  const p = [sorted[1], sorted[0], sorted[2]]; // silver, gold, bronze order
+  const podOrder = [2, 1, 3];
+  const podCls = ['pos-2', 'pos-1', 'pos-3'];
+  const podHeight = ['pos-2', 'pos-1', 'pos-3'];
+  const medals = ['🥈', '🥇', '🥉'];
+  const crowns = ['', '👑', ''];
+
+  podiumWrap.innerHTML = p.map((name, i) => {
+    if (!name) return '';
+    const val = d[name] || 0;
+    const initials = name.substring(0, 2).toUpperCase();
+    const color = SELLER_COLORS[name] || '#666';
+    return `
+      <div class="podium-item ${podCls[i]}">
+        <div class="podium-avatar" style="background:${color}20; border-color:${color}; overflow: hidden;">
+          ${crowns[i] ? `<span class="crown">${crowns[i]}</span>` : ''}
+          ${getAvatarHtml(name, initials, color)}
+        </div>
+        <div class="podium-name">${name}</div>
+        <div class="podium-value">${formatBRL(val)}</div>
+        <div class="podium-block">${medals[i]}</div>
+      </div>`;
+  }).join('');
+
+  // Full list
+  const rankList = document.getElementById('ranking-list');
+  const posLabels = ['🥇', '🥈', '🥉', '4º', '5º'];
+  const posColors = ['pos-gold', 'pos-silver', 'pos-bronze', 'pos-default', 'pos-default'];
+
+  const SELLER_GOALS = {
+    'Greg': 100000,
+    'Gustavo': 80000,
+    'Jessica': 50000,
+    'Iruã': 10000,
+    'Fran': 10000
+  };
+
+  rankList.innerHTML = sorted.map((name, i) => {
+    const val = d[name] || 0;
+    const today = appData.hoje?.[name] || 0;
+    const metaVendedor = SELLER_GOALS[name] || 1;
+    const pct = Math.min(100, Math.round(val / metaVendedor * 100));
+    const falta = Math.max(0, metaVendedor - val);
+    const color = SELLER_COLORS[name] || '#666';
+    const initials = name.substring(0, 2).toUpperCase();
+    const qualified = today >= cfg.spinLimit;
+    return `
+      <div class="rank-row">
+        <div class="rank-pos ${posColors[i]}">${posLabels[i]}</div>
+        <div class="rank-avatar" style="background:${color}; overflow: hidden;">${getAvatarHtml(name, initials, color)}</div>
+        <div class="rank-info">
+          <div class="rank-name">${name} ${qualified ? '⭐' : ''}</div>
+          <div class="rank-today">Hoje: <span>${formatBRL(today)}</span></div>
+        </div>
+        <div class="rank-bar-wrap" style="width: 180px;">
+          <div class="rank-bar-bg">
+            <div class="rank-bar-fill" style="width:${pct}%; background:${color};"></div>
+          </div>
+          <div class="rank-pct">Meta: ${formatBRL(metaVendedor)} | Falta: ${formatBRL(falta)}</div>
+        </div>
+        <div class="rank-total" style="color:${color};">${formatBRL(val)}</div>
+      </div>`;
+  }).join('');
+}
+
+// ============================================================
+// TAB 2: ROULETTE
+// ============================================================
+const canvas = document.getElementById('wheel-canvas');
+const ctx = canvas.getContext('2d');
+const CX = canvas.width / 2;
+const CY = canvas.height / 2;
+const RADIUS = CX - 10;
+
+function drawWheel() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  if (!prizes.length) {
+    ctx.fillStyle = '#333';
+    ctx.font = '16px sans-serif';
+    ctx.fillText('Adicione prêmios →', CX - 80, CY);
+    return;
+  }
+
+  const n = prizes.length;
+  const seg = (2 * Math.PI) / n;
+
+  ctx.save();
+  ctx.translate(CX, CY);
+  ctx.rotate(wheelRotation);
+
+  for (let i = 0; i < n; i++) {
+    const start = -Math.PI / 2 + i * seg;
+    const end = start + seg;
+
+    // Segment
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.arc(0, 0, RADIUS, start, end);
+    ctx.closePath();
+    ctx.fillStyle = SEGMENT_COLORS[i % SEGMENT_COLORS.length];
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(0,0,0,0.3)';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Text
+    ctx.save();
+    ctx.rotate(start + seg / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#fff';
+    ctx.font = `bold ${n > 8 ? 11 : 13}px Segoe UI, sans-serif`;
+    ctx.shadowColor = 'rgba(0,0,0,0.5)';
+    ctx.shadowBlur = 3;
+    // Truncate long text
+    const label = prizes[i].length > 20 ? prizes[i].substring(0, 18) + '…' : prizes[i];
+    ctx.fillText(label, RADIUS - 12, 5);
+    ctx.restore();
+  }
+
+  ctx.restore();
+
+  // Center cap
+  ctx.beginPath();
+  ctx.arc(CX, CY, 22, 0, 2 * Math.PI);
+  ctx.fillStyle = '#0d1117';
+  ctx.fill();
+  ctx.strokeStyle = '#f39c12';
+  ctx.lineWidth = 3;
+  ctx.stroke();
+}
+
+function getPrizeAtPointer() {
+  if (!prizes.length) return -1;
+  const seg = (2 * Math.PI) / prizes.length;
+  let angle = (-wheelRotation) % (2 * Math.PI);
+  if (angle < 0) angle += 2 * Math.PI;
+  return Math.floor(angle / seg) % prizes.length;
+}
+
+function spinWheel() {
+  if (isSpinning || !selectedSeller || !prizes.length) return;
+  isSpinning = true;
+  document.getElementById('btn-spin').disabled = true;
+  document.getElementById('spin-status').textContent = '🎡 Girando...';
+
+  // Random target prize
+  const targetIdx = Math.floor(Math.random() * prizes.length);
+  const seg = (2 * Math.PI) / prizes.length;
+
+  // Calculate final angle so targetIdx is at top (-PI/2)
+  const targetWheelAngle = -(targetIdx + 0.5) * seg;
+  const numFullSpins = (5 + Math.floor(Math.random() * 5)) * 2 * Math.PI;
+  const currentNorm = wheelRotation % (2 * Math.PI);
+  let diff = targetWheelAngle - currentNorm;
+  if (diff < 0) diff += 2 * Math.PI;
+  const totalSpin = numFullSpins + diff;
+
+  const start = performance.now();
+  const duration = 5000 + Math.random() * 2000;
+  const startRot = wheelRotation;
+
+  function animate(now) {
+    const elapsed = now - start;
+    const t = Math.min(elapsed / duration, 1);
+    // Ease out quart
+    const eased = 1 - Math.pow(1 - t, 4);
+    wheelRotation = startRot + totalSpin * eased;
+    drawWheel();
+
+    if (t < 1) {
+      rafId = requestAnimationFrame(animate);
+    } else {
+      wheelRotation = startRot + totalSpin;
+      drawWheel();
+      isSpinning = false;
+      const winner = prizes[getPrizeAtPointer()];
+      showWinner(selectedSeller, winner);
+      logSpin(selectedSeller, winner);
+      document.getElementById('spin-status').textContent = '';
+    }
+  }
+  rafId = requestAnimationFrame(animate);
+}
+
+function showWinner(seller, prize) {
+  document.getElementById('winner-name').textContent = seller;
+  document.getElementById('winner-prize').textContent = prize;
+  document.getElementById('winner-modal').classList.remove('hidden');
+}
+
+function closeWinner() {
+  document.getElementById('winner-modal').classList.add('hidden');
+  // Reset selection
+  selectedSeller = null;
+  document.querySelectorAll('.qual-item').forEach(el => el.classList.remove('selected'));
+  document.getElementById('btn-spin').disabled = true;
+}
+
+function logSpin(seller, prize) {
+  const today = new Date().toISOString().split('T')[0];
+  if (!dailySpins[today]) dailySpins[today] = [];
+  dailySpins[today].push(seller);
+  localStorage.setItem('daily-spins', JSON.stringify(dailySpins));
+
+  spinHistory.unshift({
+    seller, prize,
+    date: new Date().toLocaleString('pt-BR'),
+    color: SELLER_COLORS[seller] || '#666',
+    initials: seller.substring(0, 2).toUpperCase()
+  });
+  spinHistory = spinHistory.slice(0, 50); // keep last 50
+  localStorage.setItem('spin-history', JSON.stringify(spinHistory));
+  renderHistory();
+}
+
+function renderHistory() {
+  const el = document.getElementById('history-list');
+  if (!spinHistory.length) {
+    el.innerHTML = '<div style="color:var(--muted); font-size:0.82rem; text-align:center; padding:10px;">Nenhum giro ainda.</div>';
+    return;
+  }
+  el.innerHTML = spinHistory.slice(0, 10).map(h => `
+    <div class="history-item">
+      <div class="av" style="background:${h.color}; overflow: hidden;">${getAvatarHtml(h.seller, h.initials, h.color)}</div>
+      <div class="hinfo">
+        <div class="hname">${h.seller}</div>
+        <div class="hprize">${h.prize}</div>
+      </div>
+      <div class="hdate">${h.date}</div>
+    </div>`).join('');
+}
+
+function renderPrizes() {
+  const el = document.getElementById('prize-list');
+  el.innerHTML = prizes.map((p, i) => `
+    <div class="prize-item">
+      <div style="width:14px; height:14px; border-radius:3px; background:${SEGMENT_COLORS[i % SEGMENT_COLORS.length]}; flex-shrink:0;"></div>
+      <span>${p}</span>
+      <button class="prize-del" onclick="deletePrize(${i})">✕</button>
+    </div>`).join('');
+  drawWheel();
+}
+
+function addPrize() {
+  const input = document.getElementById('new-prize-input');
+  const val = input.value.trim();
+  if (!val) return;
+  prizes.push(val);
+  input.value = '';
+  localStorage.setItem('roulette-prizes', JSON.stringify(prizes));
+  renderPrizes();
+}
+
+function deletePrize(i) {
+  prizes.splice(i, 1);
+  localStorage.setItem('roulette-prizes', JSON.stringify(prizes));
+  renderPrizes();
+}
+
+function renderQualified() {
+  if (!appData) return;
+  const hoje = appData.hoje || {};
+  const qualified = VENDEDORES.filter(v => (hoje[v] || 0) >= cfg.spinLimit);
+  const el = document.getElementById('qualified-list');
+
+  if (!qualified.length) {
+    el.innerHTML = `<div class="no-qualified">Nenhum vendedor atingiu R$${cfg.spinLimit.toLocaleString('pt-BR')} hoje.</div>`;
+    document.getElementById('btn-spin').disabled = true;
+    return;
+  }
+
+  const todayDate = new Date().toISOString().split('T')[0];
+  const spinsToday = dailySpins[todayDate] || [];
+
+  el.innerHTML = qualified.map(name => {
+    const color = SELLER_COLORS[name] || '#666';
+    const initials = name.substring(0, 2).toUpperCase();
+    const val = hoje[name] || 0;
+    const alreadySpun = spinsToday.includes(name);
+
+    return `
+      <div class="qual-item ${alreadySpun ? 'disabled' : ''}" 
+           ${alreadySpun ? '' : `onclick="selectSeller('${name}', this)"`} 
+           data-seller="${name}" 
+           style="${alreadySpun ? 'opacity: 0.6; cursor: not-allowed;' : ''}">
+        <div class="av" style="background:${color}; overflow: hidden;">${getAvatarHtml(name, initials, color)}</div>
+        <div class="info">
+          <div class="qname">${name} ${alreadySpun ? '✅' : ''}</div>
+          <div class="qval">${alreadySpun ? 'Já girou hoje' : `${formatBRL(val)} hoje ✅`}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function selectSeller(name, el) {
+  selectedSeller = name;
+  document.querySelectorAll('.qual-item').forEach(e => e.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('btn-spin').disabled = false;
+}
+
+// ============================================================
+// TAB 3: DASHBOARD
+// ============================================================
+function renderDashboard() {
+  if (!appData) return;
+  const d = appData.vendedores;
+  const totalVendido = VENDEDORES.reduce((s, v) => s + (d[v] || 0), 0);
+  const meta = cfg.meta;
+  const pct = Math.min(100, Math.round(totalVendido / meta * 100));
+  const restante = Math.max(0, meta - totalVendido);
+  const diasUteis = getWorkingDaysRemaining(new Date(cfg.dataFim));
+  const porDia = diasUteis > 0 ? Math.ceil(restante / diasUteis) : 0;
+  const totalVendedores = VENDEDORES.length;
+  const mediaVendedor = Math.round(totalVendido / totalVendedores);
+
+  // Stats cards
+  const statsGrid = document.getElementById('stats-grid');
+  statsGrid.innerHTML = `
+    <div class="stat-card">
+      <div class="stat-icon">💰</div>
+      <div class="stat-label">Total vendido</div>
+      <div class="stat-value" style="color:var(--green);">${formatBRL(totalVendido)}</div>
+      <div class="stat-sub">${pct}% da meta atingida</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🎯</div>
+      <div class="stat-label">Meta do período</div>
+      <div class="stat-value" style="color:var(--gold);">${formatBRL(meta)}</div>
+      <div class="stat-sub">Faltam ${formatBRL(restante)}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">📅</div>
+      <div class="stat-label">Dias úteis restantes</div>
+      <div class="stat-value ${diasUteis <= 3 ? 'stat-warn' : diasUteis <= 7 ? 'stat-alert' : 'stat-ok'}">${diasUteis}</div>
+      <div class="stat-sub">Até ${new Date(cfg.dataFim).toLocaleDateString('pt-BR')}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">⚡</div>
+      <div class="stat-label">Necessário por dia</div>
+      <div class="stat-value ${porDia > 5000 ? 'stat-warn' : porDia > 2000 ? 'stat-alert' : 'stat-ok'}">${formatBRL(porDia)}</div>
+      <div class="stat-sub">Para bater a meta</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">👥</div>
+      <div class="stat-label">Média por vendedor</div>
+      <div class="stat-value" style="color:var(--blue);">${formatBRL(mediaVendedor)}</div>
+      <div class="stat-sub">Entre os ${totalVendedores} vendedores</div>
+    </div>`;
+
+  // Progress bar
+  const bar = document.getElementById('dash-bar');
+  const pctEl = document.getElementById('dash-pct');
+  setTimeout(() => {
+    bar.style.width = pct + '%';
+    pctEl.textContent = pct + '%';
+  }, 100);
+  document.getElementById('dash-sold').textContent = 'Vendido: ' + formatBRL(totalVendido);
+  document.getElementById('dash-meta').textContent = 'Meta: ' + formatBRL(meta);
+
+  // Seller bars
+  const SELLER_GOALS = {
+    'Greg': 100000,
+    'Gustavo': 80000,
+    'Jessica': 50000,
+    'Iruã': 10000,
+    'Fran': 10000
+  };
+  const sorted = VENDEDORES.slice().sort((a, b) => (d[b] || 0) - (d[a] || 0));
+  const sellerList = document.getElementById('sellers-dash-list');
+  sellerList.innerHTML = sorted.map(name => {
+    const val = d[name] || 0;
+    const metaVendedor = SELLER_GOALS[name] || 1;
+    const pctSeller = Math.min(100, Math.round(val / metaVendedor * 100));
+    const color = SELLER_COLORS[name] || '#666';
+    const initials = name.substring(0, 2).toUpperCase();
+    return `
+      <div class="seller-dash-row">
+        <div class="sdr-av" style="background:${color}; overflow: hidden;">${getAvatarHtml(name, initials, color)}</div>
+        <div class="sdr-name">${name}</div>
+        <div class="sdr-bar-bg">
+          <div class="sdr-bar-fill" style="width:${pctSeller}%; background:${color};"></div>
+        </div>
+        <div class="sdr-val" style="color:${color};">${formatBRL(val)}</div>
+      </div>`;
+  }).join('');
+}
+
+// ============================================================
+// WORKING DAYS CALCULATOR
+// ============================================================
+function getWorkingDaysRemaining(endDate) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const end = new Date(endDate);
+  end.setHours(0, 0, 0, 0);
+  let count = 0;
+  const cur = new Date(today);
+  while (cur <= end) {
+    const day = cur.getDay();
+    if (day !== 0 && day !== 6) count++;
+    cur.setDate(cur.getDate() + 1);
+  }
+  return count;
+}
+
+// ============================================================
+// SETTINGS
+// ============================================================
+function openSettings() {
+  document.getElementById('cfg-script-url').value = cfg.scriptUrl;
+  document.getElementById('cfg-meta').value = cfg.meta;
+  document.getElementById('cfg-spin-limit').value = cfg.spinLimit;
+  document.getElementById('cfg-data-inicio').value = cfg.dataInicio;
+  document.getElementById('cfg-data-fim').value = cfg.dataFim;
+  document.getElementById('settings-overlay').classList.remove('hidden');
+}
+
+function closeSettings() {
+  document.getElementById('settings-overlay').classList.add('hidden');
+}
+
+function saveSettings() {
+  cfg.scriptUrl = document.getElementById('cfg-script-url').value.trim();
+  cfg.meta = parseFloat(document.getElementById('cfg-meta').value) || 200000;
+  cfg.spinLimit = parseFloat(document.getElementById('cfg-spin-limit').value) || 10000;
+  cfg.dataInicio = document.getElementById('cfg-data-inicio').value;
+  cfg.dataFim = document.getElementById('cfg-data-fim').value;
+  saveCfg();
+  closeSettings();
+  loadData();
+}
+
+// ============================================================
+// TAB SWITCHING
+// ============================================================
+function switchTab(id) {
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    const tabs = ['vendas', 'campanhas', 'dashboard'];
+    btn.classList.toggle('active', tabs[i] === id);
+  });
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  if (id === 'dashboard') renderDashboard();
+}
+
+// ============================================================
+// HELPERS
+// ============================================================
+function formatBRL(val) {
+  return 'R$ ' + (val || 0).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+}
+
+// ============================================================
+// AUTO REFRESH
+// ============================================================
+function startAutoRefresh() {
+  autoRefreshTimer = setInterval(loadData, 30000);
+}
+
+// ============================================================
+// INIT
+// ============================================================
+window.addEventListener('load', () => {
+  renderPrizes();
+  renderHistory();
+  loadData();
+  startAutoRefresh();
+  drawWheel();
+});
+
+// Close modals on overlay click
+document.getElementById('settings-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeSettings();
+});
+document.getElementById('winner-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeWinner();
+});
+</script>
+</body>
+</html>

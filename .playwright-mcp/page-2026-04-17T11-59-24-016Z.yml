@@ -1,0 +1,133 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - banner:
+      - heading "Console do Firebase" [level=1] [ref=e10]:
+        - link "Console do Firebase" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e12]:
+            - img [ref=e13]
+            - img "Logotipo do Firebase" [ref=e14]
+    - main [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: Olá, shark
+          - heading "É ótimo ter você no Firebase!" [level=2] [ref=e22]
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - heading "Vamos começar" [level=3] [ref=e25]
+            - button "Comece configurando um Projeto do Firebase" [ref=e29] [cursor=pointer]:
+              - img [ref=e137]
+              - generic [ref=e30]: Comece configurando um Projeto do Firebase
+              - generic [ref=e31]: Integre produtos do Firebase para turbinar seu app
+          - generic [ref=e32]:
+            - heading "Testar um app de exemplo" [level=3] [ref=e33]
+            - generic [ref=e34]:
+              - button "Teste um app de planejamento de viagens com tecnologia de IA" [ref=e38] [cursor=pointer]:
+                - img [ref=e39]
+                - generic [ref=e40]: Teste um app de planejamento de viagens com tecnologia de IA
+                - generic [ref=e41]: Implante um app de exemplo que use o Firestore, o Firebase Authentication e a entrada multimodal no Firebase AI Logic. Depois disso, estude o código no Firebase Studio.
+              - button "Criar um app do Flutter com tecnologia de IA" [ref=e45] [cursor=pointer]:
+                - img [ref=e46]
+                - generic [ref=e47]: Criar um app do Flutter com tecnologia de IA
+                - generic [ref=e48]: Implante um app de exemplo que mostre como a API Gemini Live, os comandos multimodais e a criação de imagens com o Nano Banana funcionam no Flutter
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - img [ref=e51]: explore
+            - text: Confira nosso projeto de demonstração (somente leitura)
+          - button "Confira nosso projeto de demonstração (somente leitura)" [ref=e52]:
+            - generic [ref=e53]: Ver
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]: Idioma
+            - combobox "Idioma português (Brasil)" [ref=e60]:
+              - generic [ref=e61] [cursor=pointer]:
+                - generic [ref=e63]: português (Brasil)
+                - img [ref=e66]
+          - list [ref=e68]:
+            - listitem [ref=e69]:
+              - link "Ver o suporte do Firebase (abrir em nova guia)" [ref=e70] [cursor=pointer]:
+                - /url: https://firebase.google.com/support?hl=pt-BR&authuser=0
+                - text: Suporte
+            - listitem [ref=e71]:
+              - link "Ver os Termos e Serviços do Firebase (abrir em nova guia)" [ref=e72] [cursor=pointer]:
+                - /url: https://firebase.google.com/terms?hl=pt-BR&authuser=0
+                - text: Termos
+            - listitem [ref=e73]:
+              - link "Ver a Política de Privacidade do Google (abrir em nova guia)" [ref=e74] [cursor=pointer]:
+                - /url: https://www.google.com/policies/privacy/
+                - text: Política de Privacidade
+    - generic "Gemini no Firebase" [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e85] [cursor=pointer]':
+            - img [ref=e87]
+            - img [ref=e93]
+          - button "Abrir alertas" [ref=e95] [cursor=pointer]:
+            - img [ref=e96]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [disabled] [ref=e104]:
+            - img [ref=e106]: spark
+            - tooltip "Gemini no Firebase Selecione um projeto para usar o Gemini no Firebase" [ref=e109]:
+              - generic:
+                - text: Gemini no Firebase
+                - generic [ref=e110]: Selecione um projeto para usar o Gemini no Firebase
+          - button "Ajuda" [ref=e113] [cursor=pointer]:
+            - img [ref=e114]: contact_support
+          - separator [ref=e117]
+          - button "Ativar o Cloud Shell" [ref=e118] [cursor=pointer]:
+            - img [ref=e119]:
+              - img [ref=e120]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e124]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [disabled]:
+            - img: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e128] [cursor=pointer]':
+          - img [ref=e129]: dark_mode
+  - dialog "Criar um projeto" [ref=e185]:
+    - generic [ref=e187]:
+      - generic [ref=e188]:
+        - button "Fechar formulário" [ref=e189] [cursor=pointer]:
+          - img [ref=e190]: close
+        - heading "Criar um projeto" [level=1] [ref=e194]
+      - generic [ref=e199]:
+        - heading "Vamos começar nomeando o projeto Mais informações sobre os projetos do Firebase" [level=2] [ref=e200]:
+          - text: Vamos começar nomeando o projeto
+          - button "Mais informações sobre os projetos do Firebase" [ref=e202]:
+            - img [ref=e203]: help
+        - generic [ref=e205]:
+          - textbox "Nome do projeto" [ref=e242]: painel-vendas-comercial
+          - generic: Nome do projeto
+        - button "painel-vendas-comercial" [ref=e250]:
+          - generic [ref=e245]:
+            - img [ref=e251]: edit
+            - generic [ref=e247]: painel-vendas-comercial
+        - generic [ref=e213]:
+          - generic [ref=e214] [cursor=pointer]:
+            - checkbox "Aceito os Termos do Firebase (abre em uma nova guia)" [checked] [active] [ref=e216]
+            - generic:
+              - img
+          - generic [ref=e217] [cursor=pointer]:
+            - text: Aceito os
+            - link "Termos do Firebase (abre em uma nova guia)" [ref=e218]:
+              - /url: https://firebase.google.com/terms?hl=pt-BR&authuser=0
+              - text: Termos do Firebase open_in_new
+        - generic [ref=e219]:
+          - separator [ref=e220]
+          - generic [ref=e222]:
+            - switch "Participe do Programa para desenvolvedores do Google (abre em uma nova guia) para aperfeiçoar sua jornada com assistência de IA, recursos de aprendizado, selos de perfil e muito mais." [checked] [ref=e223] [cursor=pointer]:
+              - generic [ref=e229]:
+                - img [ref=e230]
+                - img [ref=e232]
+            - generic [ref=e235] [cursor=pointer]:
+              - text: Participe do
+              - link "Programa para desenvolvedores do Google (abre em uma nova guia)" [ref=e236]:
+                - /url: https://developers.google.com/profile/u/me/plans-and-pricing?utm_source=firebase
+                - text: Programa para desenvolvedores do Google open_in_new
+              - text: para aperfeiçoar sua jornada com assistência de IA, recursos de aprendizado, selos de perfil e muito mais.
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - text: Já tem um projeto do Google Cloud?
+            - button "Adicionar o Firebase ao projeto do Google Cloud" [ref=e239] [cursor=pointer]
+          - button "Continuar" [ref=e252]:
+            - generic [ref=e253]: Continuar

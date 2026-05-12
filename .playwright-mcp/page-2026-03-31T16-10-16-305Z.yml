@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Main menu" [ref=e8] [cursor=pointer]:
+            - img [ref=e9]
+          - link "Google Apps Script" [ref=e13] [cursor=pointer]:
+            - /url: /home
+            - img [ref=e14]
+            - generic [ref=e15]: Apps Script
+        - generic [ref=e16]:
+          - search [ref=e23]:
+            - button "Search" [ref=e24] [cursor=pointer]:
+              - img [ref=e25]
+          - button "Support" [ref=e32] [cursor=pointer]:
+            - generic [ref=e35]: help_outline
+        - generic [ref=e37]:
+          - button "Google apps" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+          - 'button "Google Account: Gustavo Oliveira (gustaoliveiraoficial@gmail.com)" [ref=e47] [cursor=pointer]':
+            - img [ref=e49]
+    - generic [ref=e50]:
+      - heading "My Projects" [level=1] [ref=e52]
+      - generic [ref=e58]:
+        - generic: Loading

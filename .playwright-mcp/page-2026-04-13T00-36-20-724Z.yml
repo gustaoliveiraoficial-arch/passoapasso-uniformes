@@ -1,0 +1,21 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: 🏆 SalesBoard Pro
+    - generic [ref=e4]:
+      - button "📊 Ranking" [ref=e5] [cursor=pointer]
+      - button "🎡 Campanhas" [ref=e6] [cursor=pointer]
+      - button "📈 Dashboard" [ref=e7] [cursor=pointer]
+    - button "⚙️" [ref=e9] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - text: 📡 Exibindo dados de
+          - strong [ref=e14]: demonstração
+          - text: . Configure a URL do Google Sheets para dados reais.
+        - button "Configurar" [ref=e15] [cursor=pointer]
+      - generic [ref=e16]:
+        - button "🔄 Atualizar" [ref=e17] [cursor=pointer]
+        - generic [ref=e18]: "Última atualização: —"
+        - generic [ref=e19]: ● Auto-refresh ativo (30s)
+      - generic [ref=e21]: Ranking completo

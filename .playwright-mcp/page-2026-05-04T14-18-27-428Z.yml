@@ -1,0 +1,501 @@
+- generic [active] [ref=e1]:
+  - img
+  - generic [ref=e4]:
+    - banner:
+      - generic [ref=e6]:
+        - link "hostinger" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "hostinger" [ref=e9]
+        - generic [ref=e11]:
+          - link "Indique e ganhe até $215" [ref=e13] [cursor=pointer]:
+            - /url: /referrals
+            - img [ref=e14]
+            - generic [ref=e16]: Indique e ganhe até $215
+          - button "Pergunte" [ref=e18] [cursor=pointer]:
+            - img [ref=e19]
+            - generic [ref=e21]: Pergunte
+          - generic [ref=e23]:
+            - button [ref=e24] [cursor=pointer]:
+              - img [ref=e26]
+            - button [ref=e28] [cursor=pointer]:
+              - img [ref=e30]
+          - button "Pesquisar" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+          - button "Open menu" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e48]:
+          - navigation [ref=e54]:
+            - list [ref=e55]:
+              - listitem [ref=e56]:
+                - link "Página Inicial Página Inicial" [ref=e59] [cursor=pointer]:
+                  - /url: /
+                  - button "Página Inicial" [ref=e60]:
+                    - img [ref=e61]
+                  - generic [ref=e63]: Página Inicial
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e64]:
+                - button "Sites Sites" [ref=e67] [cursor=pointer]:
+                  - button "Sites" [ref=e68]:
+                    - img [ref=e69]
+                  - generic [ref=e71]: Sites
+              - listitem [ref=e72]:
+                - list [ref=e73]:
+                  - listitem [ref=e74]:
+                    - link "Todos os sites" [ref=e77] [cursor=pointer]:
+                      - /url: /websites
+                      - generic [ref=e78]: Todos os sites
+                  - listitem [ref=e79]:
+                    - link "WordPress" [ref=e82] [cursor=pointer]:
+                      - /url: /websites?websiteType=wordpress
+                      - generic [ref=e83]: WordPress
+                  - listitem [ref=e84]:
+                    - link "Horizons" [ref=e87] [cursor=pointer]:
+                      - /url: /websites?websiteType=horizons
+                      - generic [ref=e88]: Horizons
+                  - listitem [ref=e89]:
+                    - link "Criador de Site" [ref=e92] [cursor=pointer]:
+                      - /url: /websites?websiteType=builder
+                      - generic [ref=e93]: Criador de Site
+                  - listitem [ref=e94]:
+                    - link "Node.js" [ref=e97] [cursor=pointer]:
+                      - /url: /websites?websiteType=nodejs
+                      - generic [ref=e98]: Node.js
+                  - listitem [ref=e99]:
+                    - link "PHP/HTML" [ref=e102] [cursor=pointer]:
+                      - /url: /websites?websiteType=other
+                      - generic [ref=e103]: PHP/HTML
+                  - listitem [ref=e104]:
+                    - link "Migrações" [ref=e107] [cursor=pointer]:
+                      - /url: /websites/migrations
+                      - generic [ref=e108]: Migrações
+              - listitem [ref=e109]:
+                - button "Domínios Domínios" [ref=e112] [cursor=pointer]:
+                  - button "Domínios" [ref=e113]:
+                    - img [ref=e114]
+                  - generic [ref=e116]: Domínios
+              - listitem [ref=e117]:
+                - list [ref=e118]:
+                  - listitem [ref=e119]:
+                    - link "Meus domínios" [ref=e122] [cursor=pointer]:
+                      - /url: /domains
+                      - generic [ref=e123]: Meus domínios
+                  - listitem [ref=e124]:
+                    - link "Registrar novo domínio" [ref=e127] [cursor=pointer]:
+                      - /url: /domains/domain-checker
+                      - generic [ref=e128]: Registrar novo domínio
+                  - listitem [ref=e129]:
+                    - link "Transferências" [ref=e132] [cursor=pointer]:
+                      - /url: /domains/transfers
+                      - generic [ref=e133]: Transferências
+              - listitem [ref=e134]:
+                - button "Horizons Horizons" [ref=e137] [cursor=pointer]:
+                  - button "Horizons" [ref=e138]:
+                    - img [ref=e139]
+                  - generic [ref=e141]: Horizons
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e142]:
+                - link "E-mails E-mails" [ref=e145] [cursor=pointer]:
+                  - /url: /emails
+                  - button "E-mails" [ref=e146]:
+                    - img [ref=e147]
+                  - generic [ref=e149]: E-mails
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e150]:
+                - link "Reach Reach" [ref=e153] [cursor=pointer]:
+                  - /url: /email-marketing
+                  - button "Reach" [ref=e154]:
+                    - img [ref=e155]
+                  - generic [ref=e157]: Reach
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e158]:
+                - link "ecommerce loja virtual" [ref=e161] [cursor=pointer]:
+                  - /url: /ecommerce
+                  - button "ecommerce" [ref=e162]:
+                    - img [ref=e163]
+                  - generic [ref=e165]: loja virtual
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e166]:
+                - link "VPS VPS" [ref=e169] [cursor=pointer]:
+                  - /url: /vps
+                  - button "VPS" [ref=e170]:
+                    - img [ref=e171]
+                  - generic [ref=e173]: VPS
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e174]:
+                - link "OpenClaw OpenClaw" [ref=e177] [cursor=pointer]:
+                  - /url: /applications
+                  - button "OpenClaw" [ref=e178]:
+                    - img [ref=e179]
+                  - generic [ref=e181]: OpenClaw
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e182]:
+                - button "Agentes Agentes" [ref=e185] [cursor=pointer]:
+                  - button "Agentes" [ref=e186]:
+                    - img [ref=e187]
+                  - generic [ref=e189]: Agentes
+              - generic:
+                - listitem:
+                  - list
+              - listitem [ref=e190]:
+                - button "Faturas Faturas" [ref=e193] [cursor=pointer]:
+                  - button "Faturas" [ref=e194]:
+                    - img [ref=e195]
+                  - generic [ref=e197]: Faturas
+              - listitem [ref=e198]:
+                - list [ref=e199]:
+                  - listitem [ref=e200]:
+                    - link "Assinaturas" [ref=e203] [cursor=pointer]:
+                      - /url: /billing/subscriptions
+                      - generic [ref=e204]: Assinaturas
+                  - listitem [ref=e205]:
+                    - link "Histórico de pagamentos" [ref=e208] [cursor=pointer]:
+                      - /url: /billing/payment-history/paid
+                      - generic [ref=e209]: Histórico de pagamentos
+                  - listitem [ref=e210]:
+                    - link "Formas de pagamento" [ref=e213] [cursor=pointer]:
+                      - /url: /billing/payment-methods
+                      - generic [ref=e214]: Formas de pagamento
+              - listitem [ref=e215]:
+                - button "Mais serviços Mais serviços" [ref=e218] [cursor=pointer]:
+                  - button "Mais serviços" [ref=e219]:
+                    - img [ref=e220]
+                  - generic [ref=e222]: Mais serviços
+              - listitem [ref=e223]:
+                - list [ref=e224]:
+                  - listitem [ref=e225]:
+                    - link "Loja" [ref=e228] [cursor=pointer]:
+                      - /url: /marketplace
+                      - generic [ref=e229]: Loja
+                  - listitem [ref=e230]:
+                    - link "Add-ons WordPress" [ref=e233] [cursor=pointer]:
+                      - /url: /addons/dashboard
+                      - generic [ref=e234]: Add-ons WordPress
+                  - listitem [ref=e235]:
+                    - link "Ferramentas de IA" [ref=e238] [cursor=pointer]:
+                      - /url: /ai-tools
+                      - generic [ref=e239]: Ferramentas de IA
+                  - listitem [ref=e240]:
+                    - link "Monitoramento da dark web Monitoramento da dark web" [ref=e243] [cursor=pointer]:
+                      - /url: /dark-web-monitor
+                      - button "Monitoramento da dark web" [ref=e244]:
+                        - img [ref=e245]
+                      - generic [ref=e247]: Monitoramento da dark web
+                  - listitem [ref=e248]:
+                    - link "Créditos da nexos.ai" [ref=e251] [cursor=pointer]:
+                      - /url: /nexos-credits
+                      - generic [ref=e252]: Créditos da nexos.ai
+                  - listitem [ref=e253]:
+                    - link "Créditos de Oxylabs AI Studio" [ref=e256] [cursor=pointer]:
+                      - /url: /oxylabs-credits
+                      - generic [ref=e257]: Créditos de Oxylabs AI Studio
+              - listitem [ref=e258]:
+                - link "API API" [ref=e261] [cursor=pointer]:
+                  - /url: /api
+                  - button "API" [ref=e262]:
+                    - img [ref=e263]
+                  - generic [ref=e265]: API
+              - generic:
+                - listitem:
+                  - list
+          - navigation [ref=e268]:
+            - list [ref=e269]:
+              - listitem [ref=e270]:
+                - link "Compartilhamento de conta Compartilhamento de conta" [ref=e273] [cursor=pointer]:
+                  - /url: /profile/account-access/account-sharing?amplitudeLocation=side_menu
+                  - button "Compartilhamento de conta" [ref=e274]:
+                    - img [ref=e275]
+                  - generic [ref=e277]: Compartilhamento de conta
+              - generic:
+                - listitem:
+                  - list
+        - complementary [ref=e280]:
+          - generic [ref=e282]:
+            - generic [ref=e285]:
+              - generic [ref=e287]:
+                - generic [ref=e288] [cursor=pointer]: Nome do site
+                - combobox [ref=e292] [cursor=pointer]:
+                  - generic [ref=e294]: passoapassouniformes.com
+                  - generic [ref=e295]:
+                    - img
+              - generic [ref=e297] [cursor=pointer]:
+                - img [ref=e298]
+                - textbox "Pesquisar" [ref=e301]
+            - navigation [ref=e307]:
+              - list [ref=e308]:
+                - listitem [ref=e309]:
+                  - menuitem "Painel de controle" [ref=e312] [cursor=pointer]:
+                    - img [ref=e314]
+                    - generic [ref=e317]: Painel de controle
+                - generic:
+                  - listitem:
+                    - list
+                - listitem [ref=e318]:
+                  - menuitem "WordPress" [ref=e321] [cursor=pointer]:
+                    - img [ref=e323]
+                    - generic [ref=e326]: WordPress
+                    - img [ref=e328]
+                - listitem [ref=e330]:
+                  - list [ref=e331]:
+                    - listitem [ref=e332]:
+                      - menuitem "Visão geral" [ref=e335] [cursor=pointer]:
+                        - generic [ref=e337]: Visão geral
+                    - listitem [ref=e338]:
+                      - menuitem "Segurança" [ref=e341] [cursor=pointer]:
+                        - generic [ref=e343]: Segurança
+                    - listitem [ref=e344]:
+                      - menuitem "Ferramenta de solução de problemas com IA" [ref=e347] [cursor=pointer]:
+                        - generic [ref=e349]: Ferramenta de solução de problemas com IA
+                    - listitem [ref=e350]:
+                      - menuitem "Ambiente de teste" [ref=e353] [cursor=pointer]:
+                        - generic [ref=e355]: Ambiente de teste
+                    - listitem [ref=e356]:
+                      - menuitem "Copiar site" [ref=e359] [cursor=pointer]:
+                        - generic [ref=e361]: Copiar site
+                    - listitem [ref=e362]:
+                      - menuitem "Predefinições" [ref=e365] [cursor=pointer]:
+                        - generic [ref=e367]: Predefinições
+                    - listitem [ref=e368]:
+                      - menuitem "Saiba mais" [ref=e371] [cursor=pointer]:
+                        - generic [ref=e373]: Saiba mais
+                - listitem [ref=e374]:
+                  - menuitem "Plano de hospedagem" [ref=e377] [cursor=pointer]:
+                    - img [ref=e379]
+                    - generic [ref=e382]: Plano de hospedagem
+                    - img [ref=e384]
+                - listitem [ref=e386]:
+                  - list [ref=e387]:
+                    - listitem [ref=e388]:
+                      - menuitem "Detalhes do plano" [ref=e391] [cursor=pointer]:
+                        - generic [ref=e393]: Detalhes do plano
+                    - listitem [ref=e394]:
+                      - menuitem "Consumo de recursos" [ref=e397] [cursor=pointer]:
+                        - generic [ref=e399]: Consumo de recursos
+                    - listitem [ref=e400]:
+                      - menuitem "Renovar" [ref=e403] [cursor=pointer]:
+                        - generic [ref=e405]: Renovar
+                    - listitem [ref=e406]:
+                      - menuitem "Fazer upgrade" [ref=e409] [cursor=pointer]:
+                        - generic [ref=e411]: Fazer upgrade
+                - listitem [ref=e412]:
+                  - menuitem "Desempenho" [ref=e415] [cursor=pointer]:
+                    - img [ref=e417]
+                    - generic [ref=e420]: Desempenho
+                    - img [ref=e422]
+                - listitem [ref=e424]:
+                  - list [ref=e425]:
+                    - listitem [ref=e426]:
+                      - menuitem "Ferramenta de solução de problemas com IA" [ref=e429] [cursor=pointer]:
+                        - generic [ref=e431]: Ferramenta de solução de problemas com IA
+                    - listitem [ref=e432]:
+                      - menuitem "Cache de objetos" [ref=e435] [cursor=pointer]:
+                        - generic [ref=e437]: Cache de objetos
+                    - listitem [ref=e438]:
+                      - menuitem "Velocidade da página" [ref=e441] [cursor=pointer]:
+                        - generic [ref=e443]: Velocidade da página
+                    - listitem [ref=e444]:
+                      - menuitem "CDN" [ref=e447] [cursor=pointer]:
+                        - generic [ref=e449]: CDN
+                - listitem [ref=e450]:
+                  - menuitem "Analytics" [ref=e453] [cursor=pointer]:
+                    - img [ref=e455]
+                    - generic [ref=e458]: Analytics
+                - generic:
+                  - listitem:
+                    - list
+                - listitem [ref=e459]:
+                  - menuitem "Segurança" [ref=e462] [cursor=pointer]:
+                    - img [ref=e464]
+                    - generic [ref=e467]: Segurança
+                    - img [ref=e469]
+                - listitem [ref=e471]:
+                  - list [ref=e472]:
+                    - listitem [ref=e473]:
+                      - menuitem "Detector de malware" [ref=e476] [cursor=pointer]:
+                        - generic [ref=e478]: Detector de malware
+                    - listitem [ref=e479]:
+                      - menuitem "Atualizações automáticas do WordPress" [ref=e482] [cursor=pointer]:
+                        - generic [ref=e484]: Atualizações automáticas do WordPress
+                    - listitem [ref=e485]:
+                      - menuitem "SSL" [ref=e488] [cursor=pointer]:
+                        - generic [ref=e490]: SSL
+                - listitem [ref=e491]:
+                  - menuitem "Domínios" [ref=e494] [cursor=pointer]:
+                    - img [ref=e496]
+                    - generic [ref=e499]: Domínios
+                    - img [ref=e501]
+                - listitem [ref=e503]:
+                  - list [ref=e504]:
+                    - listitem [ref=e505]:
+                      - menuitem "Subdomínios" [ref=e508] [cursor=pointer]:
+                        - generic [ref=e510]: Subdomínios
+                    - listitem [ref=e511]:
+                      - menuitem "Domínios estacionados" [ref=e514] [cursor=pointer]:
+                        - generic [ref=e516]: Domínios estacionados
+                    - listitem [ref=e517]:
+                      - menuitem "Redirecionamentos" [ref=e520] [cursor=pointer]:
+                        - generic [ref=e522]: Redirecionamentos
+                - listitem [ref=e523]:
+                  - menuitem "Site" [ref=e526] [cursor=pointer]:
+                    - img [ref=e528]
+                    - generic [ref=e531]: Site
+                    - img [ref=e533]
+                - listitem [ref=e535]:
+                  - list [ref=e536]:
+                    - listitem [ref=e537]:
+                      - menuitem "Instalador automático" [ref=e540] [cursor=pointer]:
+                        - generic [ref=e542]: Instalador automático
+                    - listitem [ref=e543]:
+                      - menuitem "Migrar site" [ref=e546] [cursor=pointer]:
+                        - generic [ref=e548]: Migrar site
+                    - listitem [ref=e549]:
+                      - menuitem "Copiar site" [ref=e552] [cursor=pointer]:
+                        - generic [ref=e554]: Copiar site
+                    - listitem [ref=e555]:
+                      - menuitem "Páginas de erro" [ref=e558] [cursor=pointer]:
+                        - generic [ref=e560]: Páginas de erro
+                    - listitem [ref=e561]:
+                      - menuitem "Criador de logos" [ref=e564] [cursor=pointer]:
+                        - generic [ref=e566]: Criador de logos
+                    - listitem [ref=e567]:
+                      - menuitem "Desenvolvimento de sites" [ref=e570] [cursor=pointer]:
+                        - generic [ref=e572]: Desenvolvimento de sites
+                - listitem [ref=e573]:
+                  - menuitem "Arquivos" [ref=e576] [cursor=pointer]:
+                    - img [ref=e578]
+                    - generic [ref=e581]: Arquivos
+                    - img [ref=e583]
+                - listitem [ref=e586]:
+                  - list [ref=e587]:
+                    - listitem [ref=e588]:
+                      - menuitem "Gerenciador de arquivos" [ref=e591] [cursor=pointer]:
+                        - generic [ref=e593]: Gerenciador de arquivos
+                    - listitem [ref=e594]:
+                      - menuitem "Backups" [ref=e597] [cursor=pointer]:
+                        - generic [ref=e599]: Backups
+                    - listitem [ref=e600]:
+                      - menuitem "Contas FTP" [ref=e603] [cursor=pointer]:
+                        - generic [ref=e605]: Contas FTP
+                    - listitem [ref=e606]:
+                      - menuitem "Alterar senha" [ref=e609] [cursor=pointer]:
+                        - generic [ref=e611]: Alterar senha
+                - listitem [ref=e612]:
+                  - menuitem "Bancos de dados" [ref=e615] [cursor=pointer]:
+                    - img [ref=e617]
+                    - generic [ref=e620]: Bancos de dados
+                    - img [ref=e622]
+                - listitem [ref=e624]:
+                  - list [ref=e625]:
+                    - listitem [ref=e626]:
+                      - menuitem "Gerenciamento" [ref=e629] [cursor=pointer]:
+                        - generic [ref=e631]: Gerenciamento
+                    - listitem [ref=e632]:
+                      - menuitem "phpMyAdmin" [ref=e635] [cursor=pointer]:
+                        - generic [ref=e637]: phpMyAdmin
+                    - listitem [ref=e638]:
+                      - menuitem "MySQL remoto" [ref=e641] [cursor=pointer]:
+                        - generic [ref=e643]: MySQL remoto
+                - listitem [ref=e644]:
+                  - menuitem "Avançado" [ref=e647] [cursor=pointer]:
+                    - img [ref=e649]
+                    - generic [ref=e652]: Avançado
+                    - img [ref=e654]
+                - listitem [ref=e656]:
+                  - list [ref=e657]:
+                    - listitem [ref=e658]:
+                      - menuitem "Acesso SSH" [ref=e661] [cursor=pointer]:
+                        - generic [ref=e663]: Acesso SSH
+                    - listitem [ref=e664]:
+                      - menuitem "Configuração de PHP" [ref=e667] [cursor=pointer]:
+                        - generic [ref=e669]: Configuração de PHP
+                    - listitem [ref=e670]:
+                      - menuitem "Editor de zona DNS" [ref=e673] [cursor=pointer]:
+                        - generic [ref=e675]: Editor de zona DNS
+                    - listitem [ref=e676]:
+                      - menuitem "Cron Jobs" [ref=e679] [cursor=pointer]:
+                        - generic [ref=e681]: Cron Jobs
+                    - listitem [ref=e682]:
+                      - menuitem "Informações de PHP" [ref=e685] [cursor=pointer]:
+                        - generic [ref=e687]: Informações de PHP
+                    - listitem [ref=e688]:
+                      - menuitem "Gerenciador de cache" [ref=e691] [cursor=pointer]:
+                        - generic [ref=e693]: Gerenciador de cache
+                    - listitem [ref=e694]:
+                      - menuitem "GIT" [ref=e697] [cursor=pointer]:
+                        - generic [ref=e699]: GIT
+                    - listitem [ref=e700]:
+                      - menuitem "Diretórios protegidos por senha" [ref=e703] [cursor=pointer]:
+                        - generic [ref=e705]: Diretórios protegidos por senha
+                    - listitem [ref=e706]:
+                      - menuitem "Gerenciador de IP" [ref=e709] [cursor=pointer]:
+                        - generic [ref=e711]: Gerenciador de IP
+                    - listitem [ref=e712]:
+                      - menuitem "Proteção Hotlink" [ref=e715] [cursor=pointer]:
+                        - generic [ref=e717]: Proteção Hotlink
+                    - listitem [ref=e718]:
+                      - menuitem "Gerenciador de índice de pastas" [ref=e721] [cursor=pointer]:
+                        - generic [ref=e723]: Gerenciador de índice de pastas
+                    - listitem [ref=e724]:
+                      - menuitem "Restaurar permissões de arquivos" [ref=e727] [cursor=pointer]:
+                        - generic [ref=e729]: Restaurar permissões de arquivos
+                    - listitem [ref=e730]:
+                      - menuitem "Registro de atividades" [ref=e733] [cursor=pointer]:
+                        - generic [ref=e735]: Registro de atividades
+            - listitem [ref=e738]:
+              - menuitem "Dar feedback" [ref=e741] [cursor=pointer]:
+                - img [ref=e743]
+                - generic [ref=e746]: Dar feedback
+      - generic [ref=e749]:
+        - banner [ref=e750]:
+          - navigation "Breadcrumb" [ref=e751]:
+            - list [ref=e752]:
+              - listitem [ref=e753]:
+                - link [ref=e754] [cursor=pointer]:
+                  - /url: /?amplitudeLocation=breadcrumbs
+                  - img [ref=e755]
+                - img [ref=e757]
+              - listitem [ref=e759]:
+                - link "Sites" [ref=e760] [cursor=pointer]:
+                  - /url: /websites?redirectLocation=breadcrumbs
+                  - generic [ref=e761]: Sites
+                - img [ref=e762]
+              - listitem [ref=e764]:
+                - link "passoapassouniformes.com" [ref=e765] [cursor=pointer]:
+                  - /url: /websites/passoapassouniformes.com?redirectLocation=breadcrumbs
+                  - generic [ref=e766]: passoapassouniformes.com
+                - img [ref=e767]
+              - listitem [ref=e769]:
+                - link "Arquivos" [ref=e770] [cursor=pointer]:
+                  - /url: /websites/passoapassouniformes.com/files?redirectLocation=breadcrumbs
+                  - generic [ref=e771]: Arquivos
+                - img [ref=e772]
+              - listitem [ref=e774]:
+                - generic [ref=e776]: Gerenciador de Arquivos
+          - heading "Gerenciador de Arquivos" [level=1] [ref=e780]
+        - main [ref=e782]:
+          - generic [ref=e784]:
+            - generic [ref=e786] [cursor=pointer]:
+              - generic [ref=e787]:
+                - heading "Acessar arquivos de passoapassouniformes.com" [level=3] [ref=e789]
+                - paragraph [ref=e790]: Acessar arquivos apenas deste site específico
+              - img [ref=e793]
+            - generic [ref=e797] [cursor=pointer]:
+              - generic [ref=e798]:
+                - heading "Acessar todos os arquivos de Business Web Hosting" [level=3] [ref=e800]
+                - paragraph [ref=e801]: Acesse todos os arquivos de seus sites do plano de hospedagem em um só lugar
+              - img [ref=e804]

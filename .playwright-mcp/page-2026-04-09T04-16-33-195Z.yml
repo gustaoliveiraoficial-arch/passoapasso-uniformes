@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Google Apps Script" [ref=e10] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - button "Renomear" [ref=e265] [cursor=pointer]: Projeto sem título
+            - generic [ref=e452]:
+              - generic [ref=e453]: cloud_done
+              - text: Salvo no Google Drive
+          - generic [ref=e21]:
+            - button "Implantar" [ref=e26] [cursor=pointer]:
+              - generic [ref=e29]:
+                - text: Implantar
+                - generic [ref=e30]: 
+            - button "Compartilhar este projeto com outros" [ref=e272] [cursor=pointer]:
+              - generic [ref=e273]: person_add
+            - button "Suporte" [ref=e103] [cursor=pointer]:
+              - generic [ref=e106]: help_outline
+        - generic [ref=e37]:
+          - button "Google Apps" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+          - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e47] [cursor=pointer]':
+            - img [ref=e49]
+    - generic [ref=e117]:
+      - navigation "Páginas do projeto do Apps Script" [ref=e119]:
+        - link "Visão geral" [ref=e120] [cursor=pointer]:
+          - generic [ref=e122]: info_outline
+          - generic [ref=e123]: Visão geral
+        - link "Editor" [ref=e124] [cursor=pointer]:
+          - generic [ref=e126]: code
+          - generic [ref=e127]: Editor
+        - link "Histórico do projeto" [ref=e128] [cursor=pointer]:
+          - generic [ref=e130]: history
+          - generic [ref=e131]: Histórico do projeto
+        - link "Acionadores" [ref=e132] [cursor=pointer]:
+          - generic [ref=e134]: alarm
+          - generic [ref=e135]: Acionadores
+        - link "Execuções" [ref=e136] [cursor=pointer]:
+          - generic [ref=e138]: playlist_play
+          - generic [ref=e139]: Execuções
+        - link "Configurações do projeto" [ref=e140] [cursor=pointer]:
+          - generic [ref=e142]: settings
+          - generic [ref=e143]: Configurações do projeto
+      - generic [ref=e144]:
+        - heading "Editor" [level=1] [ref=e145]
+        - generic [ref=e146]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - heading "Arquivos" [level=2] [ref=e150]
+              - generic [ref=e152]:
+                - button "Classificar os arquivos por ordem alfabética" [disabled] [ref=e154]:
+                  - generic [ref=e157]: sort_by_alpha
+                - button "Adicionar um arquivo" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e162]: add
+            - listbox "Arquivos do projeto" [ref=e164]:
+              - option "Código.gs" [ref=e165] [cursor=pointer]:
+                - generic "Código.gs" [ref=e166]
+                - button "Menu de operações de arquivos para Código.gs." [ref=e167]:
+                  - button "Menu de operações de arquivos para Código.gs." [ref=e168]:
+                    - generic [ref=e171]: 
+            - generic [ref=e172]:
+              - heading "Bibliotecas" [level=2] [ref=e173]
+              - button "Adicionar uma biblioteca" [ref=e176] [cursor=pointer]:
+                - generic [ref=e179]: add
+            - generic:
+              - listbox "Dependências de biblioteca"
+            - generic [ref=e180]:
+              - heading "Serviços" [level=2] [ref=e181]
+              - button "Adicionar um serviço" [ref=e184] [cursor=pointer]:
+                - generic [ref=e187]: add
+            - generic:
+              - listbox "Dependências do serviço"
+          - generic [ref=e194]:
+            - region [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]:
+                  - generic [ref=e200]:
+                    - button "Desfazer edição de código" [disabled]:
+                      - generic: undo
+                  - generic [ref=e203]:
+                    - button "Refazer edição de código" [disabled]:
+                      - generic: redo
+                - generic [ref=e207]:
+                  - button "Salvar projeto no Drive" [disabled]:
+                    - img
+                - generic [ref=e454]:
+                  - button "Executar a função selecionada" [ref=e458]:
+                    - generic [ref=e461]: play_arrow
+                    - generic [ref=e462]: Executar
+                  - button "Depurar a função selecionada" [ref=e466]:
+                    - img [ref=e469]
+                    - generic [ref=e472]: Depuração
+                  - listbox "Selecione a função para executar" [ref=e475] [cursor=pointer]:
+                    - option "criarPlanoVendas" [selected] [ref=e476]
+                - button "Abrir o painel de registros de execução" [ref=e220]:
+                  - generic [ref=e223]: Registro de execução
+            - generic [ref=e225]:
+              - main [ref=e229]:
+                - generic [ref=e230]: .
+                - generic [ref=e283]:
+                  - iframe [ref=e284]:
+                    
+                  - code [ref=e286]:
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - generic [ref=e331]:
+                          - generic [ref=e333] [cursor=pointer]: 
+                          - generic [ref=e334]: "1"
+                        - generic [ref=e336]: "2"
+                        - generic [ref=e340]: "3"
+                        - generic [ref=e342]: "4"
+                        - generic [ref=e344]: "5"
+                        - generic [ref=e350]: "6"
+                        - generic [ref=e356]: "7"
+                      - generic [ref=e307]:
+                        - generic [ref=e404]: "function criarPlanoVendas() {"
+                        - generic [ref=e406]: const doc = DocumentApp.create('📋
+                        - generic [ref=e408]: Plano de Vendas e Marketing — Abril
+                        - generic [ref=e410]: 2026');
+                        - generic [ref=e412]: const body = doc.getBody();
+                        - generic [ref=e415]: "const estiloTitulo = { [DocumentApp."
+                        - generic [ref=e417]: "Attribute.FONT_SIZE]: 22,"
+                        - generic [ref=e419]: "[DocumentApp.Attribute.BOLD]: true,"
+                        - generic [ref=e421]: "[DocumentApp.Attribute."
+                        - generic [ref=e423]: "FOREGROUND_COLOR]: '#1a1a2e' };"
+                        - generic [ref=e425]: "const estiloSecao = { [DocumentApp."
+                        - generic [ref=e427]: "Attribute.FONT_SIZE]: 16,"
+                        - generic [ref=e429]: "[DocumentApp.Attribute.BOLD]: true,"
+                        - generic [ref=e431]: "[DocumentApp.Attribute."
+                        - generic [ref=e433]: "FOREGROUND_COLOR]: '#16213e' };"
+                        - generic [ref=e435]: "const estiloSub = { [DocumentApp."
+                        - generic [ref=e437]: "Attribute.FONT_SIZE]: 13,"
+                        - generic [ref=e439]: "[DocumentApp.Attribute.BOLD]: true,"
+                        - generic [ref=e441]: "[DocumentApp.Attribute."
+                        - generic [ref=e443]: "FOREGROUND_COLOR]: '#0f3460' };"
+                      - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=e316]: "function criarPlanoVendas() { const doc = DocumentApp.create('📋 Plano de Vendas e Marketing — Abril 2026'); const body = doc.getBody(); const estiloTitulo = { [DocumentApp.Attribute.FONT_SIZE]: 22, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute."
+              - generic:
+                - generic:
+                  - button "Fechar painel de logs de execução" [ref=e261] [cursor=pointer]:
+                    - generic [ref=e262]: close
+                  - tooltip [ref=e263]: Fechar registros de execução
+  - generic: Salvando o projeto...
+  - generic [ref=e317]:
+    - alert
+    - alert
+    - complementary
+    - complementary
+  - generic [ref=e477]: Salvando o projeto...

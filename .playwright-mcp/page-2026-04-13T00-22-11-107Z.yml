@@ -1,0 +1,98 @@
+- application [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - iframe [ref=e3]:
+    
+  - banner "Barra de menus" [ref=e4]:
+    - generic [ref=e7]:
+      - link "Página inicial do Google Planilhas" [ref=e9] [cursor=pointer]:
+        - /url: https://docs.google.com/spreadsheets/u/0/?pli=1&authuser=0&usp=sheets_web
+      - generic [ref=e16]:
+        - generic "vendas castel" [ref=e18]:
+          - generic [ref=e19]:
+            - generic: vendas castel
+            - textbox "Renomear" [ref=e21]: vendas castel
+          - generic [ref=e22]:
+            - checkbox "Marcar com uma estrela" [ref=e24] [cursor=pointer]
+            - button "Mover" [ref=e28] [cursor=pointer]
+            - 'button "Status do documento: Alterações salvas no Drive." [ref=e32]'
+        - generic [ref=e40]:
+          - button "A última edição foi feita há 9 minutos" [ref=e275] [cursor=pointer]
+          - button "Mostrar todos os comentários" [ref=e46] [cursor=pointer]
+          - button "Use este link para entrar em uma chamada ou apresentar esta guia." [ref=e50] [cursor=pointer]
+          - button "Compartilhar. Qualquer pessoa com o link. Qualquer pessoa que tiver o link pode acessar. Não é necessário fazer login." [ref=e56] [cursor=pointer]
+          - generic [ref=e66]:
+            - button "Upgrade" [ref=e68] [cursor=pointer]:
+              - generic [ref=e70]: Upgrade
+            - tooltip [ref=e71]: Faça upgrade para ter acesso aos recursos premium
+          - generic [ref=e74]:
+            - generic:
+              - button "Teste o Gemini" [ref=e77] [cursor=pointer]:
+                - img [ref=e80]
+              - tooltip [ref=e83]: Teste o Gemini
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e86] [cursor=pointer]':
+            - img [ref=e88]
+            - img [ref=e93]
+    - generic [ref=e94]:
+      - menubar [ref=e96]:
+        - menuitem "Arquivo" [ref=e97] [cursor=pointer]
+        - menuitem "Editar" [ref=e98] [cursor=pointer]
+        - menuitem "Ver" [ref=e99] [cursor=pointer]
+        - menuitem "Inserir" [ref=e100] [cursor=pointer]
+        - menuitem "Formatar" [ref=e101] [cursor=pointer]
+        - menuitem "Dados" [ref=e102] [cursor=pointer]
+        - menuitem "Ferramentas" [ref=e103] [cursor=pointer]
+        - menuitem "Extensões" [ref=e104] [cursor=pointer]
+        - menuitem "Ajuda" [ref=e105] [cursor=pointer]
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - toolbar "Pesquisar os menus (Alt+/)" [ref=e108]:
+            - combobox "Menus" [ref=e110]
+          - toolbar "Principal" [ref=e111]:
+            - button "Desfazer (Ctrl+Z)" [ref=e112] [cursor=pointer]
+            - button "Refazer (Ctrl+Y)" [ref=e117] [cursor=pointer]
+            - button "Imprimir (Ctrl+P)" [ref=e122] [cursor=pointer]
+            - button "Pintar formatação" [ref=e127] [cursor=pointer]
+            - combobox "Zoom" [ref=e132] [cursor=pointer]:
+              - option "Lista Zoom. 100% selecionado." [selected] [ref=e135]:
+                - textbox "Zoom" [ref=e136]: 100%
+            - separator [disabled] [ref=e140]
+            - button "Formatar como moeda" [ref=e141] [cursor=pointer]:
+              - generic [ref=e143]: R$
+            - button "Formatar como porcentagem" [ref=e144] [cursor=pointer]:
+              - generic [ref=e146]: "%"
+            - button "Diminuir o número de casas decimais" [ref=e147] [cursor=pointer]
+            - button "Aumentar o número de casas decimais" [ref=e152] [cursor=pointer]
+            - button "Mais formatos" [ref=e157] [cursor=pointer]:
+              - generic [ref=e160]: "123"
+            - separator [disabled] [ref=e161]
+            - listbox "Fonte" [ref=e162] [cursor=pointer]:
+              - option "Lista Fonte. Padrão (Arial) selecionado." [selected] [ref=e165]: Padrão (Arial)
+            - separator [disabled] [ref=e169]
+            - button "Mais" [ref=e170] [cursor=pointer]
+        - toolbar "Modo e visualização" [ref=e177]:
+          - button "Ocultar os menus (Ctrl+Shift+F)" [ref=e178] [cursor=pointer]
+    - generic:
+      - generic:
+        - button "Mostrar painel lateral":
+          - img [ref=e184] [cursor=pointer]
+    - generic [ref=e189]:
+      - generic "Caixa de nome (Ctrl + J)" [ref=e190]:
+        - textbox [ref=e191]: C6
+        - button "Botão do menu da caixa de nome. Selecione um dos itens do menu para acessar o intervalo nomeado correspondente." [ref=e193] [cursor=pointer]
+      - textbox [ref=e209]
+  - navigation "Barra de guias da página" [ref=e245]:
+    - toolbar [ref=e246]:
+      - button "Adicionar página" [ref=e247] [cursor=pointer]
+      - button "Todas as páginas" [ref=e252] [cursor=pointer]
+    - toolbar [ref=e259]:
+      - button "Vendas" [ref=e260]:
+        - generic [ref=e264]: Vendas
+    - toolbar [ref=e268]
+  - generic [ref=e269]:
+    - textbox [active]
+  - link "Ativar a compatibilidade com o leitor de tela" [ref=e270] [cursor=pointer]:
+    - /url: "#"
+  - textbox [ref=e271]
+  - region [ref=e272]: Para ativar o suporte para leitor de tela, pressione Ctrl+Alt+Z Para saber mais sobre atalhos de teclado, pressione Ctrl+barra
+  - region

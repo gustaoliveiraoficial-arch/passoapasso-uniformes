@@ -1,0 +1,207 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - button [ref=e9]:
+            - img [ref=e12]
+        - separator [ref=e14]
+        - generic [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link [ref=e24]:
+                - /url: /home/
+                - img [ref=e26]
+            - listitem [ref=e28]:
+              - link "220" [ref=e30] [cursor=pointer]:
+                - /url: /chats/
+                - generic [ref=e31]:
+                  - img [ref=e32]
+                  - generic [ref=e35]: "220"
+            - listitem [ref=e36]:
+              - link [ref=e38] [cursor=pointer]:
+                - /url: /leads/pipeline/13368211
+                - img [ref=e40]
+            - listitem [ref=e43] [cursor=pointer]:
+              - link "6" [ref=e45]:
+                - /url: /todo
+                - generic [ref=e46]:
+                  - img [ref=e47]
+                  - generic [ref=e50]: "6"
+            - listitem [ref=e51]:
+              - link [ref=e53] [cursor=pointer]:
+                - /url: /contacts/list/contacts
+                - img [ref=e55]
+            - listitem [ref=e58] [cursor=pointer]:
+              - link [ref=e60]:
+                - /url: /settings/ai-agent/
+                - img [ref=e62]
+            - listitem [ref=e64]:
+              - link [ref=e66] [cursor=pointer]:
+                - /url: /chats/tools/bots/
+                - img [ref=e68]
+            - listitem [ref=e70]:
+              - link [ref=e72] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e74]
+          - separator [ref=e77]
+          - list [ref=e78]:
+            - listitem [ref=e80] [cursor=pointer]:
+              - link [ref=e82]:
+                - /url: /widget_page/whatsapp_cloud_api/hub
+                - img [ref=e85]
+            - listitem [ref=e87] [cursor=pointer]:
+              - link [ref=e89]:
+                - /url: /widget_page/tiktok_kommo/hub
+                - img [ref=e92]
+        - list [ref=e94]:
+          - listitem [ref=e96] [cursor=pointer]:
+            - link [ref=e98]:
+              - /url: /settings/profile/
+              - img [ref=e100]
+          - listitem [ref=e102]:
+            - link [ref=e104] [cursor=pointer]:
+              - /url: /settings/ai
+              - img [ref=e106]
+          - listitem [ref=e109] [cursor=pointer]:
+            - link [ref=e111]:
+              - /url: ""
+              - img [ref=e113]
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "12" [ref=e118]:
+              - /url: /settings/profile/notifications
+              - generic [ref=e119]:
+                - img [ref=e120]
+                - generic [ref=e123]: "12"
+        - separator [ref=e125]
+        - button "Avatar" [ref=e127] [cursor=pointer]:
+          - img "Avatar" [ref=e130]
+      - generic [ref=e131]:
+        - heading "Configurações" [level=2] [ref=e133]
+        - separator [ref=e134]
+        - generic [ref=e139]:
+          - generic [ref=e140]: Perfil
+          - list [ref=e141]:
+            - listitem [ref=e143] [cursor=pointer]:
+              - link "Configurações de perfil" [ref=e145]:
+                - /url: /settings/profile/
+                - generic [ref=e146]: Configurações de perfil
+          - generic [ref=e147]: Área de trabalho
+          - list [ref=e148]:
+            - listitem [ref=e150] [cursor=pointer]:
+              - link "Configurações de trabalho" [ref=e152]:
+                - /url: /settings/
+                - generic [ref=e153]: Configurações de trabalho
+            - listitem [ref=e155] [cursor=pointer]:
+              - link "Configurações de chat" [ref=e157]:
+                - /url: /settings/communications/
+                - generic [ref=e158]: Configurações de chat
+            - listitem [ref=e160] [cursor=pointer]:
+              - link "Configurações de email" [ref=e162]:
+                - /url: /mail/settings/
+                - generic [ref=e163]: Configurações de email
+            - listitem [ref=e165] [cursor=pointer]:
+              - link "Faturamento" [ref=e167]:
+                - /url: /settings/pay/
+                - generic [ref=e168]: Faturamento
+            - listitem [ref=e170] [cursor=pointer]:
+              - link "Gestão de usuários" [ref=e172]:
+                - /url: /settings/users/
+                - generic [ref=e173]: Gestão de usuários
+          - generic [ref=e174]: IA
+          - list [ref=e175]:
+            - listitem [ref=e177] [cursor=pointer]:
+              - link "Configurações de IA" [ref=e179]:
+                - /url: /settings/ai/
+                - generic [ref=e180]: Configurações de IA
+            - listitem [ref=e182] [cursor=pointer]:
+              - link "Fontes de conhecimento da IA" [ref=e184]:
+                - /url: /settings/ai-knowledge-sources/
+                - generic [ref=e185]: Fontes de conhecimento da IA
+          - generic [ref=e186]: Integrações e canais
+          - list [ref=e187]:
+            - listitem [ref=e189] [cursor=pointer]:
+              - link "Central de integrações" [ref=e191]:
+                - /url: /settings/widgets/
+                - generic [ref=e192]: Central de integrações
+  - generic:
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - textbox "Buscar" [ref=e203]
+          - img [ref=e204]
+        - generic [ref=e207]:
+          - button "Criar integração" [ref=e208] [cursor=pointer]:
+            - generic [ref=e209]:
+              - img [ref=e210]
+              - generic [ref=e212]: Criar integração
+          - button "Web hooks 2" [ref=e213]:
+            - generic [ref=e215]:
+              - text: Web hooks
+              - generic [ref=e216]: "2"
+      - generic [ref=e217]:
+        - generic [ref=e220]:
+          - img "WAB PT" [ref=e222] [cursor=pointer]
+          - img "Slide 1" [ref=e224] [cursor=pointer]
+          - img "Slide 2" [ref=e226] [cursor=pointer]
+        - generic [ref=e230]:
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e234]: Todos Todos
+              - generic [ref=e236]: Cx. Entrada
+              - generic [ref=e239] [cursor=pointer]: Mais coleções
+            - generic [ref=e240]:
+              - img [ref=e241]
+              - generic [ref=e243]: Instalado
+            - generic [ref=e245] [cursor=pointer]: Ordenar
+          - generic [ref=e248]: Mensageiros
+          - generic [ref=e288]: Provedores de WhatsApp
+          - generic [ref=e316]: Bate-papo ao vivo e outros mensageiros
+          - generic [ref=e352]: Formulários
+          - generic [ref=e392]: E-commerce
+          - generic [ref=e424]: Soluções para o setor
+          - generic [ref=e456]: Chatbots
+          - generic [ref=e492]: Chamadas
+          - generic [ref=e524]: Marketing e divulgação
+          - generic [ref=e548]: Pagamentos e faturamento
+          - generic [ref=e576]: Serviços de integração
+          - generic [ref=e608]: Fluxo de trabalho
+          - generic [ref=e648]: Análise e gestão de dados
+          - generic [ref=e672]: Gestão de documentos
+          - generic [ref=e704]: Personalização de leads
+          - generic [ref=e740]: Produtividade
+          - generic [ref=e780]: Personalização de campos
+          - generic [ref=e812]: Gestão de duplicatas
+          - generic [ref=e840]: Personalização de CRM
+          - generic [ref=e872]: Outros
+          - generic [ref=e912]: Escolhas da equipe
+    - generic [ref=e944]:
+      - img
+      - button [ref=e945]:
+        - img [ref=e946]
+        - img [ref=e948]
+        - img [ref=e952]
+      - generic [ref=e954]:
+        - generic [ref=e955]:
+          - generic [ref=e956]:
+            - img [ref=e957]
+            - generic [ref=e959]: Kommo Copilot
+          - generic [ref=e960]:
+            - button [ref=e961] [cursor=pointer]:
+              - img [ref=e964]
+            - button [ref=e966] [cursor=pointer]:
+              - img [ref=e969]
+            - button [ref=e971] [cursor=pointer]:
+              - img [ref=e974]
+        - button "Configuração do WhatsApp Business" [ref=e976] [cursor=pointer]:
+          - generic [ref=e977]:
+            - generic [ref=e978]: Configuração do WhatsApp Business
+            - img [ref=e979]
+        - generic [ref=e1004]:
+          - generic [ref=e1005]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e1008]
+            - button [disabled] [ref=e1011]:
+              - img [ref=e1014]
+          - generic [ref=e1016]: O conteúdo gerado por IA pode ser impreciso

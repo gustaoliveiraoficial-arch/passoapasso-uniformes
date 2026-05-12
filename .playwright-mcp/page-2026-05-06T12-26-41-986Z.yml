@@ -1,0 +1,139 @@
+- generic [ref=e8]:
+  - navigation [ref=e9]:
+    - button "person u723199063" [ref=e10] [cursor=pointer]:
+      - generic [ref=e11]: person
+      - text: u723199063
+    - button "My files" [ref=e12] [cursor=pointer]:
+      - generic [ref=e13]: folder
+      - text: My files
+    - generic [ref=e14]:
+      - button "New folder" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e20] [cursor=pointer]:
+      - /url: /ea808ec29a0c64aa/files/.trash
+      - generic [ref=e21]: delete
+      - text: Trash bin
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Space
+        - generic [ref=e28]: 0.84%
+        - generic [ref=e29]: 429.84 MiB / 50 GiB
+      - generic [ref=e30]:
+        - generic [ref=e31]: Inodes
+        - generic [ref=e35]: 3.48%
+        - generic [ref=e36]: 20884 / 600000
+    - button "Logout" [ref=e37] [cursor=pointer]:
+      - generic [ref=e38]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e39]:
+      - generic [ref=e40]: File Browser v2.63.2-h2
+      - generic [ref=e41]: Help
+  - main [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - link "Home" [ref=e45] [cursor=pointer]:
+          - /url: /ea808ec29a0c64aa/files
+          - generic [ref=e46]: home
+        - generic [ref=e47]:
+          - generic [ref=e49]: keyboard_arrow_right
+          - link "public_html" [ref=e50] [cursor=pointer]:
+            - /url: /ea808ec29a0c64aa/files/public_html/
+        - generic [ref=e51]:
+          - generic [ref=e53]: keyboard_arrow_right
+          - link "tabeladeprecos" [ref=e54] [cursor=pointer]:
+            - /url: /ea808ec29a0c64aa/files/public_html/tabeladeprecos/
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - button "Toggle sidebar" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: menu
+          - button "Search" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]: more_vert
+        - generic [ref=e63]:
+          - generic [ref=e66] [cursor=pointer]:
+            - button "Sort by name" [ref=e67]:
+              - text: Name
+              - generic [ref=e68]: arrow_upward
+            - button "Sort by last modified" [ref=e69]:
+              - text: Last modified
+              - generic [ref=e70]: arrow_upward
+          - button "assets" [ref=e72] [cursor=pointer]:
+            - generic [ref=e74]: folder
+            - generic [ref=e75]:
+              - paragraph [ref=e76]: assets
+              - paragraph [ref=e77]:
+                - time [ref=e78]: 8 hours ago
+          - generic [ref=e79]:
+            - button "favicon.svg" [ref=e80] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e83]:
+                - paragraph [ref=e84]: favicon.svg
+                - paragraph [ref=e85]:
+                  - time [ref=e86]: 9 hours ago
+            - button "icons.svg" [ref=e87] [cursor=pointer]:
+              - img [ref=e89]
+              - generic [ref=e90]:
+                - paragraph [ref=e91]: icons.svg
+                - paragraph [ref=e92]:
+                  - time [ref=e93]: 9 hours ago
+            - button "index.html" [ref=e94] [cursor=pointer]:
+              - generic [ref=e96]: code
+              - generic [ref=e97]:
+                - paragraph [ref=e98]: index.html
+                - paragraph [ref=e99]:
+                  - time [ref=e100]: 8 hours ago
+            - button "logo-pap.png" [ref=e101] [cursor=pointer]:
+              - img [ref=e103]
+              - generic [ref=e104]:
+                - paragraph [ref=e105]: logo-pap.png
+                - paragraph [ref=e106]:
+                  - time [ref=e107]: 9 hours ago
+            - button "tabeladeprecos-deploy-upload.zip" [ref=e108] [cursor=pointer]:
+              - generic [ref=e110]: folder_zip
+              - generic [ref=e111]:
+                - paragraph [ref=e112]: tabeladeprecos-deploy-upload.zip
+                - paragraph [ref=e113]:
+                  - time [ref=e114]: 2 days ago
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: Multiple selection enabled
+            - button "Clear" [ref=e117] [cursor=pointer]:
+              - generic [ref=e118]: clear
+  - generic [ref=e132]:
+    - heading "Replace or skip files" [level=2] [ref=e134]
+    - generic [ref=e135]:
+      - paragraph [ref=e136]: The destination folder there are 1 files with same name.
+      - generic [ref=e137]:
+        - button "done_all Replace all files in destination folder" [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]: done_all
+          - text: Replace all files in destination folder
+        - button "undo Skip all conflicting files" [ref=e140] [cursor=pointer]:
+          - generic [ref=e141]: undo
+          - text: Skip all conflicting files
+        - button "checklist Decide for each conflicting file" [ref=e142] [cursor=pointer]:
+          - generic [ref=e143]: checklist
+          - text: Decide for each conflicting file
+    - button "Cancel" [ref=e146] [cursor=pointer]

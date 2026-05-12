@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sprint Final Terceirão — PassoaPasso Uniformes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --orange: #C85A00;
+  --orange-dark: #A84A00;
+  --orange-light: #E06A10;
+  --orange-pale: #FDF0E6;
+  --black: #0A0A0A;
+  --gray-900: #111111;
+  --gray-800: #1A1A1A;
+  --gray-600: #4A4A4A;
+  --gray-300: #CACACA;
+  --gray-100: #F5F5F5;
+  --white: #FFFFFF;
+  --gold: #C49A30;
+  --green: #16a34a;
+  --red: #dc2626;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--gray-100); color: var(--gray-800); }
+
+/* ── SLIDE ── */
+.slide {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  page-break-after: always;
+}
+
+/* ── SLIDE 1 — CAPA ── */
+.slide-capa {
+  background: var(--black);
+  color: var(--white);
+  padding: 64px 56px;
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slide-capa::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: var(--orange);
+}
+.slide-capa .eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--orange);
+  margin-bottom: 16px;
+}
+.slide-capa h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.slide-capa h1 span { color: var(--orange); }
+.slide-capa .subtitle {
+  font-size: 1.1rem;
+  color: var(--gray-300);
+  max-width: 520px;
+}
+.slide-capa .meta-bar {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+.slide-capa .meta-item .label { font-size: 0.68rem; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+.slide-capa .meta-item .value { font-size: 1.3rem; font-weight: 800; }
+.slide-capa .meta-item .value.orange { color: var(--orange); }
+.slide-capa .meta-item .value.red { color: #f87171; }
+
+/* ── SLIDE GENERIC ── */
+.slide-inner { padding: 48px 56px; }
+.slide-header { margin-bottom: 32px; }
+.slide-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+.slide-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--black);
+  line-height: 1.15;
+}
+.slide-title span { color: var(--orange); }
+
+/* ── NÚMEROS ── */
+.numeros-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.numero-card {
+  background: var(--gray-100);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  border-top: 3px solid var(--gray-300);
+}
+.numero-card.destaque { border-top-color: var(--orange); background: var(--orange-pale); }
+.numero-card.alerta   { border-top-color: var(--red); background: #fef2f2; }
+.numero-card .val {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--black);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.numero-card.destaque .val { color: var(--orange); }
+.numero-card.alerta .val   { color: var(--red); }
+.numero-card .lbl { font-size: 0.78rem; color: var(--gray-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* ── BARRA DE PROGRESSO ── */
+.progress-bar-wrap { margin-bottom: 28px; }
+.progress-bar-wrap .label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 8px;
+}
+.progress-bar-bg {
+  background: var(--gray-100);
+  border-radius: 99px;
+  height: 18px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  background: linear-gradient(90deg, var(--orange), var(--orange-light));
+  height: 100%;
+  border-radius: 99px;
+  width: 30%;
+  position: relative;
+}
+.progress-bar-fill::after {
+  content: 'R$60k (30%)';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: white;
+  white-space: nowrap;
+}
+.progress-gap {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+/* ── ALAVANCAS ── */
+.alavanca-list { display: flex; flex-direction: column; gap: 14px; }
+.alavanca {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--gray-100);
+  border-radius: 10px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--gray-300);
+}
+.alavanca.top { border-left-color: var(--orange); background: var(--orange-pale); }
+.alavanca-num {
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  width: 28px; height: 28px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.alavanca-body { flex: 1; }
+.alavanca-body h3 { font-size: 0.95rem; font-weight: 700; color: var(--black); margin-bottom: 4px; }
+.alavanca-body p  { font-size: 0.83rem; color: var(--gray-600); line-height: 1.5; }
+.alavanca-potential {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--orange);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+/* ── SCRIPTS ── */
+.script-box {
+  background: var(--gray-900);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+.script-box .script-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+.script-box p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+.script-box .highlight { color: var(--orange-light); font-weight: 700; }
+
+/* ── SPRINT ── */
+.sprint-wrap { display: flex; flex-direction: column; gap: 20px; }
+.sprint-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--gray-100);
+}
+.sprint-header {
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sprint-1 .sprint-header { background: var(--black); color: white; }
+.sprint-2 .sprint-header { background: var(--orange); color: white; }
+.sprint-3 .sprint-header { background: var(--gold); color: white; }
+.sprint-header h3 { font-size: 1rem; font-weight: 800; }
+.sprint-header .sprint-periodo { font-size: 0.78rem; opacity: 0.8; }
+.sprint-header .sprint-meta { font-size: 0.9rem; font-weight: 700; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; }
+.sprint-body { padding: 20px; }
+.sprint-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.sprint-col h4 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); margin-bottom: 10px; display: flex; align-items: center; gap: 5px; }
+.sprint-col ul { list-style: none; }
+.sprint-col ul li {
+  font-size: 0.83rem;
+  color: var(--gray-800);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--gray-100);
+  line-height: 1.4;
+}
+.sprint-col ul li:last-child { border-bottom: none; }
+.sprint-col ul li::before { content: '→ '; color: var(--orange); font-weight: 700; }
+
+/* ── OBJEÇÕES ── */
+.objecao-list { display: flex; flex-direction: column; gap: 12px; }
+.objecao-item { background: var(--gray-100); border-radius: 10px; overflow: hidden; }
+.objecao-q {
+  background: #fef2f2;
+  border-left: 4px solid var(--red);
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #7f1d1d;
+}
+.objecao-a {
+  padding: 12px 16px;
+  font-size: 0.83rem;
+  color: var(--gray-800);
+  line-height: 1.6;
+  border-left: 4px solid var(--green);
+}
+
+/* ── TABELA META ── */
+.tabela-meta { width: 100%; border-collapse: collapse; }
+.tabela-meta thead tr { background: var(--black); color: white; }
+.tabela-meta thead th { padding: 10px 14px; text-align: left; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.tabela-meta tbody tr { border-bottom: 1px solid var(--gray-100); }
+.tabela-meta tbody tr:nth-child(even) { background: var(--gray-100); }
+.tabela-meta tbody td { padding: 9px 14px; font-size: 0.83rem; }
+.tabela-meta .acum { font-weight: 700; color: var(--orange); }
+.tabela-meta .sprint-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+}
+.badge-s1 { background: var(--black); }
+.badge-s2 { background: var(--orange); }
+.badge-s3 { background: var(--gold); }
+
+/* ── MENTALIDADE ── */
+.slide-final { background: var(--black); color: white; padding: 56px; min-height: 380px; display: flex; flex-direction: column; justify-content: space-between; }
+.principios { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin: 28px 0; }
+.principio {
+  background: rgba(200,90,0,0.12);
+  border: 1px solid rgba(200,90,0,0.3);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.principio .icon { font-size: 1.8rem; margin-bottom: 10px; }
+.principio h3 { font-size: 0.95rem; font-weight: 700; color: var(--orange-light); margin-bottom: 6px; }
+.principio p  { font-size: 0.78rem; color: #9ca3af; line-height: 1.5; }
+.checklist { display: flex; gap: 10px; flex-wrap: wrap; }
+.check-item {
+  background: rgba(255,255,255,0.07);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  color: #d1d5db;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.check-item::before { content: '☐'; color: var(--orange); font-size: 1rem; }
+
+/* ── NAV PRINT ── */
+.nav {
+  position: sticky;
+  top: 0;
+  background: var(--black);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.nav .logo { color: white; font-weight: 800; font-size: 0.9rem; }
+.nav .logo span { color: var(--orange); }
+.nav-btn {
+  background: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+.nav-btn:hover { opacity: 0.85; }
+.body-wrap { padding: 32px 24px; }
+
+@media print {
+  .nav { display: none !important; }
+  body { background: white; }
+  .slide { margin-bottom: 0; box-shadow: none; border-radius: 0; }
+  .slide-capa, .slide-final { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sprint-1 .sprint-header, .sprint-2 .sprint-header, .sprint-3 .sprint-header,
+  .alavanca-num, .tabela-meta thead tr, .nav-btn, .progress-bar-fill,
+  .script-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .body-wrap { padding: 0; }
+  .slide { page-break-after: always; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="logo">Passo<span>aPasso</span> Uniformes</span>
+  <button class="nav-btn" onclick="window.print()">⬇ Exportar PDF</button>
+</nav>
+
+<div class="body-wrap">
+
+<!-- ══════════════════════════════════════
+     SLIDE 1 — CAPA
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-capa">
+    <div>
+      <div class="eyebrow">PassoaPasso Uniformes · Março 2026</div>
+      <h1>Sprint Final<br/><span>Terceirão</span></h1>
+      <p class="subtitle">Plano de execução para fechar R$140.000 nos próximos 13 dias e bater a meta de R$200k.</p>
+    </div>
+    <div class="meta-bar">
+      <div class="meta-item">
+        <div class="label">Meta do Mês</div>
+        <div class="value">R$200k</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Realizado</div>
+        <div class="value orange">R$60k</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Gap</div>
+        <div class="value red">R$140k</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Dias Restantes</div>
+        <div class="value">13 dias</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Ritmo Necessário</div>
+        <div class="value orange">R$10.7k/dia</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 2 — O CENÁRIO
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">02 · Diagnóstico</div>
+      <h2 class="slide-title">O cenário <span>real</span></h2>
+    </div>
+
+    <div class="numeros-grid">
+      <div class="numero-card destaque">
+        <div class="val">R$60k</div>
+        <div class="lbl">Vendido até hoje</div>
+      </div>
+      <div class="numero-card alerta">
+        <div class="val">R$140k</div>
+        <div class="lbl">Falta fechar</div>
+      </div>
+      <div class="numero-card">
+        <div class="val">~40</div>
+        <div class="lbl">Turmas necessárias</div>
+      </div>
+      <div class="numero-card">
+        <div class="val">R$3.5k</div>
+        <div class="lbl">Ticket médio por turma</div>
+      </div>
+      <div class="numero-card alerta">
+        <div class="val">3/dia</div>
+        <div class="lbl">Turmas a fechar por dia</div>
+      </div>
+      <div class="numero-card destaque">
+        <div class="val">2</div>
+        <div class="lbl">Leads quentes AGORA</div>
+      </div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <div class="label-row">
+        <span>Progresso da meta</span>
+        <span>Meta: R$200.000</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <div class="progress-gap">⚠ Faltam R$140.000 — precisamos triplicar o ritmo atual.</div>
+    </div>
+
+    <p style="font-size:0.85rem;color:var(--gray-600);line-height:1.6;background:var(--orange-pale);border-left:3px solid var(--orange);padding:12px 16px;border-radius:0 8px 8px 0;">
+      <strong>Por que chegamos aqui?</strong> Ciclo de decisão coletiva de turma (1–3 semanas), falta de urgência nos anúncios, leads frios não reativados e pipeline sem visibilidade centralizada. Tudo isso tem solução — e começa hoje.
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 3 — 5 ALAVANCAS
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">03 · Estratégia</div>
+      <h2 class="slide-title">As <span>5 alavancas</span> para virar o jogo</h2>
+    </div>
+
+    <div class="alavanca-list">
+      <div class="alavanca top">
+        <div class="alavanca-num">1</div>
+        <div class="alavanca-body">
+          <h3>🔥 Fechar os leads quentes AGORA (hoje)</h3>
+          <p>Temos 2 leads com intenção de fechar. <strong>Jessica liga agora</strong>, não manda mensagem. Proposta com prazo de 48h + condição especial para quem fechar até sexta (20/03). Gustavo prepara o link de pagamento e a proposta antes das 10h.</p>
+        </div>
+        <div class="alavanca-potential">R$8k–R$20k</div>
+      </div>
+
+      <div class="alavanca top">
+        <div class="alavanca-num">2</div>
+        <div class="alavanca-body">
+          <h3>📱 Reativar pipeline existente (leads dos últimos 60 dias)</h3>
+          <p>Gustavo mapeia TODOS os leads no WhatsApp, Instagram DMs e Netlify Forms hoje. Jessica faz o contato. Foco em turmas que já têm representante ativo — essas fecham em 24–48h com o script certo.</p>
+        </div>
+        <div class="alavanca-potential">R$30k–R$50k</div>
+      </div>
+
+      <div class="alavanca top">
+        <div class="alavanca-num">3</div>
+        <div class="alavanca-body">
+          <h3>🏫 Visitas presenciais em escolas (a maior alavanca)</h3>
+          <p>Uma visita a uma escola pode fechar 3–5 turmas de uma vez. Levar amostras físicas, catálogo e ficha de pedido impressa. Falar com coordenador ou direto com alunos no intervalo. Meta: 2 visitas/dia nos próximos 5 dias úteis.</p>
+        </div>
+        <div class="alavanca-potential">R$30k–R$60k</div>
+      </div>
+
+      <div class="alavanca">
+        <div class="alavanca-num">4</div>
+        <div class="alavanca-body">
+          <h3>📣 Campanha Meta Ads com urgência real (data-limite 22/03)</h3>
+          <p>Criar anúncio específico: "Últimas vagas para camiseta de terceirão com entrega em março. Pedidos encerram dia 22/03." Concentrar 70% do orçamento nos próximos 5 dias. Todo lead que preencher recebe contato em até 1 hora.</p>
+        </div>
+        <div class="alavanca-potential">R$20k–R$40k</div>
+      </div>
+
+      <div class="alavanca">
+        <div class="alavanca-num">5</div>
+        <div class="alavanca-body">
+          <h3>🤝 Programa de indicação com representantes</h3>
+          <p>Cada turma que fecha tem um líder. Esse líder conhece outras turmas. Criar incentivo: "Indicou uma turma e ela fechou? Ganhe desconto ou brinde exclusivo." Transforma cada cliente em vendedor.</p>
+        </div>
+        <div class="alavanca-potential">R$15k–R$30k</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 4 — SCRIPT WHATSAPP
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">04 · Scripts de Vendas</div>
+      <h2 class="slide-title">Script <span>WhatsApp</span> — reativação de leads</h2>
+    </div>
+
+    <div class="script-box">
+      <div class="script-label">Mensagem 1 — Abertura (use no primeiro contato)</div>
+      <p>Oi <span class="highlight">[nome]</span>! Aqui é a Jessica da PassoaPasso Uniformes 😊<br/>
+      Vi que você tinha interesse nas camisetas do terceirão.<br/>
+      A gente ainda tem vagas para pedidos de março com <span class="highlight">entrega garantida antes do evento</span>.<br/>
+      Sua turma já definiu o modelo? Posso montar uma proposta pra você agora.</p>
+    </div>
+
+    <div class="script-box">
+      <div class="script-label">Mensagem 2 — Follow-up (se não respondeu em 6h)</div>
+      <p>Oi <span class="highlight">[nome]</span>, só passando pra lembrar 😊<br/>
+      Os pedidos de março encerram dia <span class="highlight">22/03</span> por conta do prazo de produção.<br/>
+      Quem fechar até sexta <span class="highlight">ganha condição especial</span> — posso te explicar rápido?</p>
+    </div>
+
+    <div class="script-box">
+      <div class="script-label">Mensagem 3 — Qualificação (quando responder)</div>
+      <p>Que ótimo! Me conta rapidinho:<br/>
+      → Quantos alunos na turma? (aproximado já resolve 👍)<br/>
+      → Têm data do evento em mente?<br/>
+      → Já escolheram algum modelo ou querem ver as opções?<br/><br/>
+      Com essas infos eu já mando uma proposta personalizada pra vocês 🎉</p>
+    </div>
+
+    <div class="script-box">
+      <div class="script-label">Mensagem 4 — Urgência final (se ainda não fechou após 2 dias)</div>
+      <p>Oi <span class="highlight">[nome]</span>! Último aviso sobre os pedidos de março 🙏<br/>
+      Amanhã é o prazo final pra garantir entrega antes do evento.<br/>
+      Se a turma topar, a gente resolve tudo hoje mesmo — ficha de pedido, modelo, tudo no WhatsApp.<br/>
+      Me fala: tá dentro? 🔥</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 5 — SCRIPT VISITA PRESENCIAL
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">05 · Scripts de Vendas</div>
+      <h2 class="slide-title">Script <span>visita presencial</span> em escola</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <div class="script-box">
+          <div class="script-label">Na recepção / coordenação</div>
+          <p>"Bom dia! Sou a Jessica da PassoaPasso Uniformes. Trabalhamos com camisetas personalizadas para turmas de formatura e terceirão. Gostaríamos de deixar algumas amostras e uma proposta para as turmas do 3º ano. Com quem posso falar?"</p>
+        </div>
+
+        <div class="script-box">
+          <div class="script-label">Com os alunos (se tiver acesso)</div>
+          <p>"Oi pessoal! Sou a Jessica da PassoaPasso. A gente faz camiseta de terceirão personalizada com o nome de cada um, bordado, tudo! Tem representante de turma aqui? Posso deixar as amostras pra vocês verem?"</p>
+        </div>
+      </div>
+      <div>
+        <div class="script-box">
+          <div class="script-label">Ao apresentar as amostras</div>
+          <p>"Esse aqui é o modelo unissex, essa é a babylook. Trabalho com todos os tamanhos, infantil também. O prazo de entrega é de [X dias] após fechar o pedido. Pra turma de 30 alunos, o pedido sai em torno de R$[X]. Quer que eu monte uma proposta oficial pra vocês?"</p>
+        </div>
+
+        <div class="script-box">
+          <div class="script-label">Saída — sempre com próximo passo marcado</div>
+          <p>"Vou deixar meu WhatsApp e o catálogo. Se a turma se interessar, me chama hoje ou amanhã que eu monto a proposta em minutos. Qual seu nome e contato pra eu mandar os modelos digitais?"<br/><br/><span class="highlight">→ Sair SEMPRE com um nome e número na mão.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 6 — OBJEÇÕES
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">06 · Fechamento</div>
+      <h2 class="slide-title">Objeções e <span>como responder</span></h2>
+    </div>
+
+    <div class="objecao-list">
+      <div class="objecao-item">
+        <div class="objecao-q">❝ Está caro, vi mais barato em outro lugar. ❞</div>
+        <div class="objecao-a">"Faz sentido comparar! O que a gente entrega vai além do preço: bordado de qualidade, atendimento personalizado, garantia de entrega no prazo e a gente resolve tudo pelo WhatsApp sem burocracia. Posso mostrar o que já entregamos pra outras turmas? A qualidade fala por si. Qual foi o preço que você viu?"</div>
+      </div>
+      <div class="objecao-item">
+        <div class="objecao-q">❝ A turma ainda não decidiu / estamos esperando todos. ❞</div>
+        <div class="objecao-a">"Entendo! Mas o prazo de produção exige que a gente feche o pedido até dia 22/03 pra garantir entrega antes do evento. Posso mandar uma ficha digital que você compartilha com a turma agora? Em 10 minutos vocês preenchem tudo e eu já monto a proposta."</div>
+      </div>
+      <div class="objecao-item">
+        <div class="objecao-q">❝ Vou pensar e te falo depois. ❞</div>
+        <div class="objecao-a">"Claro! Só um detalhe: fechar até sexta garante a condição especial e a entrega no prazo. Semana que vem pode não dar tempo. O que falta pra você decidir? Se for alguma dúvida, resolvo agora mesmo."</div>
+      </div>
+      <div class="objecao-item">
+        <div class="objecao-q">❝ Não sei o tamanho de todos ainda. ❞</div>
+        <div class="objecao-a">"Isso não precisa travar o processo! Você fecha o pedido com o total estimado, a gente manda a ficha digital e vocês têm X dias pra completar os tamanhos. Já começamos a produção do que tiver confirmado. Posso fechar com quantos você tem certeza agora?"</div>
+      </div>
+      <div class="objecao-item">
+        <div class="objecao-q">❝ Deixa eu ver com a turma e entro em contato. ❞</div>
+        <div class="objecao-a">"Perfeito! Pra facilitar, mando o catálogo digital e a ficha de pedido agora no seu WhatsApp. Você repassa pra turma e já coleta os dados. Quando você for falar com eles?"</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 7 — PLANO DE EXECUÇÃO 13 DIAS
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">07 · Execução</div>
+      <h2 class="slide-title">Plano <span>13 dias</span> — 3 sprints</h2>
+    </div>
+
+    <div class="sprint-wrap">
+
+      <div class="sprint-card sprint-1">
+        <div class="sprint-header">
+          <div>
+            <h3>🔥 SPRINT 1 — IGNIÇÃO</h3>
+            <div class="sprint-periodo">18, 19, 20 de março</div>
+          </div>
+          <div class="sprint-meta">Meta: R$19k–R$36k</div>
+        </div>
+        <div class="sprint-body">
+          <div class="sprint-cols">
+            <div class="sprint-col">
+              <h4>👨‍💻 Gustavo — Marketing</h4>
+              <ul>
+                <li>Mapear todos os leads (60 dias) em planilha</li>
+                <li>Confirmar prazo máximo de produção</li>
+                <li>Criar anúncio com urgência + data-limite 22/03</li>
+                <li>Concentrar 70% do orçamento Meta nesta semana</li>
+                <li>Preparar proposta dos 2 leads quentes + link pagamento</li>
+                <li>Criar campanha de remarketing (visitantes da LP)</li>
+              </ul>
+            </div>
+            <div class="sprint-col">
+              <h4>💼 Jessica — Comercial</h4>
+              <ul>
+                <li>Ligar para os 2 leads quentes AGORA (não mensagem)</li>
+                <li>Fechar pelo menos 1 pedido até hoje</li>
+                <li>Iniciar reativação de leads frios (WhatsApp)</li>
+                <li>Mapear 5–10 escolas para visitar</li>
+                <li>Fazer 1ª visita presencial em escola</li>
+                <li>Sair de cada contato com próximo passo marcado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sprint-card sprint-2">
+        <div class="sprint-header">
+          <div>
+            <h3>⚡ SPRINT 2 — ACELERAÇÃO</h3>
+            <div class="sprint-periodo">21, 22, 23, 24, 25 de março</div>
+          </div>
+          <div class="sprint-meta">Meta: +R$64k–R$112k</div>
+        </div>
+        <div class="sprint-body">
+          <div class="sprint-cols">
+            <div class="sprint-col">
+              <h4>👨‍💻 Gustavo — Marketing</h4>
+              <ul>
+                <li>Publicar Reels "por dentro da produção" (prova social)</li>
+                <li>Stories com enquete: "Sua turma já tem camiseta?"</li>
+                <li>Responder todos os DMs em até 1h</li>
+                <li>Lançar programa de indicação (representantes)</li>
+                <li>Monitorar custo por lead diariamente</li>
+                <li>Atualizar LP com contador de urgência se possível</li>
+              </ul>
+            </div>
+            <div class="sprint-col">
+              <h4>💼 Jessica — Comercial</h4>
+              <ul>
+                <li>2 visitas presenciais em escolas por dia</li>
+                <li>Follow-up em todos os leads do Sprint 1</li>
+                <li>Enviar ficha de pedido digital a cada turma interessada</li>
+                <li>Ligar (não mensagem) para leads sem resposta em 24h</li>
+                <li>Meta diária: 2–3 pedidos fechados</li>
+                <li>Reativar clientes B2B para complementar meta</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sprint-card sprint-3">
+        <div class="sprint-header">
+          <div>
+            <h3>🏆 SPRINT 3 — SPRINT FINAL</h3>
+            <div class="sprint-periodo">26, 27, 28, 29, 30, 31 de março</div>
+          </div>
+          <div class="sprint-meta">Meta: +R$32k–R$54k</div>
+        </div>
+        <div class="sprint-body">
+          <div class="sprint-cols">
+            <div class="sprint-col">
+              <h4>👨‍💻 Gustavo — Marketing</h4>
+              <ul>
+                <li>Conteúdo de urgência máxima: "Últimas vagas"</li>
+                <li>Remarketing agressivo para quem não converteu</li>
+                <li>Stories diários mostrando pedidos sendo produzidos</li>
+                <li>Notificar leads frios pela última vez</li>
+              </ul>
+            </div>
+            <div class="sprint-col">
+              <h4>💼 Jessica — Comercial</h4>
+              <ul>
+                <li>Fechar tudo que está no fundo do funil</li>
+                <li>Não iniciar novos leads — só finalizar abertos</li>
+                <li>Oferta de "última chance" para turmas em dúvida</li>
+                <li>Confirmar data de entrega de todos os pedidos fechados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 8 — TABELA DE ACOMPANHAMENTO
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-num">08 · Controle</div>
+      <h2 class="slide-title">Placar <span>diário</span> — preencher às 18h30</h2>
+    </div>
+
+    <table class="tabela-meta">
+      <thead>
+        <tr>
+          <th>Sprint</th>
+          <th>Dia</th>
+          <th>Data</th>
+          <th>Meta Diária</th>
+          <th>Turmas Fechadas</th>
+          <th>Faturamento do Dia</th>
+          <th>Acumulado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="sprint-badge badge-s1">S1</span></td><td>Dia 1</td><td>18/03 (ter)</td><td>R$9.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s1">S1</span></td><td>Dia 2</td><td>19/03 (qua)</td><td>R$9.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s1">S1</span></td><td>Dia 3</td><td>20/03 (qui)</td><td>R$12.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s2">S2</span></td><td>Dia 4</td><td>21/03 (sex)</td><td>R$12.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s2">S2</span></td><td>Dia 5</td><td>24/03 (seg)</td><td>R$14.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s2">S2</span></td><td>Dia 6</td><td>25/03 (ter)</td><td>R$14.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s2">S2</span></td><td>Dia 7</td><td>26/03 (qua)</td><td>R$14.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s2">S2</span></td><td>Dia 8</td><td>27/03 (qui)</td><td>R$14.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s3">S3</span></td><td>Dia 9</td><td>28/03 (sex)</td><td>R$10.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+        <tr><td><span class="sprint-badge badge-s3">S3</span></td><td>Dia 10</td><td>31/03 (seg)</td><td>R$12.000</td><td>____</td><td>R$__________</td><td class="acum">R$__________</td></tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+      <div style="background:var(--orange-pale);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:1.6rem;font-weight:900;color:var(--orange)">+R$60k</div>
+        <div style="font-size:0.75rem;color:var(--orange-dark);font-weight:600">Meta Sprint 1+2</div>
+      </div>
+      <div style="background:#f0fdf4;border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:1.6rem;font-weight:900;color:var(--green)">+R$80k</div>
+        <div style="font-size:0.75rem;color:#166534;font-weight:600">Meta Sprint 3</div>
+      </div>
+      <div style="background:#0A0A0A;border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:1.6rem;font-weight:900;color:var(--orange)">R$200k</div>
+        <div style="font-size:0.75rem;color:var(--gray-300);font-weight:600">Meta Final 🏆</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 9 — MENTALIDADE
+══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-final">
+    <div>
+      <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--orange);margin-bottom:12px;">09 · Mentalidade</div>
+      <h2 style="font-size:2.2rem;font-weight:900;line-height:1.1;">A conta que <span style="color:var(--orange)">motiva.</span></h2>
+      <p style="font-size:0.95rem;color:var(--gray-300);margin-top:12px;">3 turmas por dia × 13 dias × R$3.500 = <strong style="color:white;">R$136.500</strong>. Some com os R$60k já feitos: <strong style="color:var(--orange);">R$196.500</strong>. Falta apenas 1 pedido B2B pra bater os R$200k.</p>
+    </div>
+
+    <div class="principios">
+      <div class="principio">
+        <div class="icon">📞</div>
+        <h3>Liga, não manda</h3>
+        <p>Todo lead no fundo do funil merece uma ligação. Mensagem espera. Ligação fecha.</p>
+      </div>
+      <div class="principio">
+        <div class="icon">🏫</div>
+        <h3>Vai até a escola</h3>
+        <p>Nenhum anúncio converte mais do que uma amostra física na mão do representante.</p>
+      </div>
+      <div class="principio">
+        <div class="icon">⏰</div>
+        <h3>Urgência real</h3>
+        <p>A data de 22/03 não é blefe — é o prazo de produção. Use isso. O relógio está correndo.</p>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gray-600);margin-bottom:10px;">Checklist diário — antes de sair do trabalho</div>
+      <div class="checklist">
+        <span class="check-item">Falei com todos os leads abertos?</span>
+        <span class="check-item">Fiz pelo menos 1 visita presencial?</span>
+        <span class="check-item">Fechei pelo menos 1 pedido?</span>
+        <span class="check-item">Atualizei o placar do dia?</span>
+        <span class="check-item">Agendei próxima visita?</span>
+        <span class="check-item">Compartilhei resultado com o time?</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /body-wrap -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e226]
+  - generic [ref=e235]:
+    - img "Vadoo Logo" [ref=e237]
+    - generic [ref=e238]:
+      - button "Login with Google" [ref=e239] [cursor=pointer]:
+        - img [ref=e240]
+        - generic [ref=e245]: Login with Google
+      - generic [ref=e248]: OR CONTINUE WITH
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]: Email
+          - textbox "Email" [ref=e253]:
+            - /placeholder: Enter Email
+        - generic [ref=e254]:
+          - generic [ref=e255]: Password
+          - textbox "Password" [ref=e256]:
+            - /placeholder: Enter Password
+        - button "Submit" [ref=e257] [cursor=pointer]
+        - generic [ref=e258]:
+          - generic [ref=e259]:
+            - text: Forgot Password?
+            - link "Forgot Password" [ref=e260] [cursor=pointer]:
+              - /url: /reset-password
+          - generic [ref=e261]:
+            - text: Don't have an account?
+            - link "Sign up" [ref=e262] [cursor=pointer]:
+              - /url: /signup
+      - generic [ref=e263]:
+        - text: By clicking Submit, you agree to our
+        - link "Terms of Service" [ref=e264] [cursor=pointer]:
+          - /url: /api/app/pdf/terms.pdf
+        - text: and
+        - link "Privacy Policy" [ref=e265] [cursor=pointer]:
+          - /url: /api/app/pdf/privacy_policy.pdf

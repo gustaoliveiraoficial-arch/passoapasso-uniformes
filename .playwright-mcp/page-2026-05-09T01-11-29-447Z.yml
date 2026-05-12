@@ -1,0 +1,211 @@
+- generic [ref=e6]:
+  - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e98]:
+    - generic [ref=e99]:
+      - navigation "Produtos do Console do Firebase" [ref=e101]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e102]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e103] [cursor=pointer]:
+            - /url: /u/0/
+            - generic [ref=e104]:
+              - img [ref=e105]
+              - img "Logotipo do Firebase" [ref=e106]
+        - generic [ref=e110]:
+          - img [ref=e111]: search
+          - combobox "Pesquise produtos e recursos" [ref=e276]
+        - link "Visão geral do projeto" [ref=e113] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e114]: gmp_nav20_overview
+          - generic [ref=e277]: Visão geral do projeto
+        - menu [ref=e115]:
+          - menuitem "Configurações" [ref=e116]:
+            - generic [ref=e117] [cursor=pointer]:
+              - img [ref=e118]: settings
+              - generic [ref=e278]: Configurações
+              - img [ref=e279]: chevron_right
+      - separator [ref=e119]
+      - generic [ref=e280]:
+        - generic [ref=e281]: O que há de novo
+        - group "O que há de novo" [ref=e282]:
+          - link "SQL Connect" [ref=e284] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e285]: gmp_nav20_dataconnect
+            - generic [ref=e286]: SQL Connect
+            - generic [ref=e290]: Novo
+            - tooltip "O Data Connect agora se chama SQL Connect, nosso banco de dados PostgreSQL com tecnologia do Cloud SQL" [ref=e291]:
+              - generic: O Data Connect agora se chama SQL Connect, nosso banco de dados PostgreSQL com tecnologia do Cloud SQL
+          - link "Phone Verification" [ref=e295] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e296]: gmp_nav20_phone_verification
+            - generic [ref=e297]: Phone Verification
+            - generic [ref=e301]: Novo
+            - tooltip "A verificação de número de telefone é um método rápido e seguro para verificar os números de telefone dos usuários" [ref=e302]:
+              - generic: A verificação de número de telefone é um método rápido e seguro para verificar os números de telefone dos usuários
+      - separator [ref=e305]
+      - generic [ref=e120]:
+        - generic [ref=e306]: Atalhos do projeto
+        - group "Atalhos do projeto" [ref=e307]:
+          - link "Storage" [ref=e123] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e124]: gmp_nav20_storage
+            - generic [ref=e308]: Storage
+            - generic [ref=e309]:
+              - button "Ocultar Storage" [ref=e310]
+              - button "Fixar Storage" [ref=e311]
+          - link "Firestore" [ref=e126] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e127]: gmp_firestore
+            - generic [ref=e312]: Firestore
+      - separator [ref=e128]
+      - generic [ref=e313]:
+        - generic [ref=e314]: Categorias dos produtos
+        - menu "Categorias dos produtos" [ref=e315]:
+          - menuitem "Bancos de dados e armazenamento" [ref=e316]:
+            - generic [ref=e317] [cursor=pointer]:
+              - generic [ref=e318]: Bancos de dados e armazenamento
+              - img [ref=e319]: chevron_right
+          - menuitem "Segurança" [ref=e320]:
+            - generic [ref=e321] [cursor=pointer]:
+              - generic [ref=e322]: Segurança
+              - img [ref=e323]: chevron_right
+          - menuitem "Serviços de IA" [ref=e324]:
+            - generic [ref=e325] [cursor=pointer]:
+              - generic [ref=e326]: Serviços de IA
+              - img [ref=e327]: chevron_right
+          - menuitem "Hospedagem e sem servidor" [ref=e328]:
+            - generic [ref=e329] [cursor=pointer]:
+              - generic [ref=e330]: Hospedagem e sem servidor
+              - img [ref=e331]: chevron_right
+          - menuitem "DevOps e engajamento" [ref=e332]:
+            - generic [ref=e333] [cursor=pointer]:
+              - generic [ref=e334]: DevOps e engajamento
+              - img [ref=e335]: chevron_right
+          - menuitem "Analytics" [ref=e336]:
+            - generic [ref=e337] [cursor=pointer]:
+              - generic [ref=e338]: Analytics
+              - img [ref=e339]: chevron_right
+    - generic [ref=e129]:
+      - separator [ref=e340]
+      - 'group "Plano de faturamento: Spark" [ref=e341]':
+        - generic [ref=e342]:
+          - generic "Nome do plano de faturamento" [ref=e343]:
+            - generic [ref=e344]: "Plano de faturamento:"
+            - text: Spark
+          - generic "Descrição do plano de faturamento" [ref=e345]: Sem custos (US$ 0/mês)
+        - button "Fazer upgrade do plano de faturamento" [ref=e347]:
+          - generic [ref=e348]:
+            - generic [ref=e349]: Fazer upgrade
+            - generic [ref=e352]: Novo
+          - tooltip "Clique em \"Fazer upgrade\" para saber como ganhar um crédito gratuito de US$ 300." [ref=e355]:
+            - generic: Clique em "Fazer upgrade" para saber como ganhar um crédito gratuito de US$ 300.
+      - separator [ref=e358]
+      - button "Alternar barra lateral de navegação" [expanded] [ref=e131] [cursor=pointer]:
+        - img [ref=e132]: chevron_left
+  - banner:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button "Abrir menu de navegação" [active] [ref=e135] [cursor=pointer]:
+          - img [ref=e136]: menu
+        - button "pap-pedidos (Abrir o menu \"Selecionar projeto\")" [ref=e140] [cursor=pointer]:
+          - text: pap-pedidos
+          - img [ref=e141]: arrow_drop_down
+      - button "Mais opções" [ref=e143] [cursor=pointer]:
+        - img [ref=e144]: more_vert
+  - main [ref=e16]:
+    - generic [ref=e149]:
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - generic [ref=e153]: pap-pedidos
+          - button "Plano Spark" [ref=e155] [cursor=pointer]:
+            - generic [ref=e156]: Plano Spark
+        - button "Adicionar app" [ref=e162]:
+          - generic [ref=e164]:
+            - generic [ref=e165]: add
+            - generic [ref=e166]: Adicionar app
+      - generic [ref=e171]:
+        - heading "Analytics" [level=2] [ref=e172]
+        - img [ref=e173]: drag_handle
+        - generic [ref=e177]:
+          - link "Analytics (acessar a página)" [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]: gmp_analytics
+            - heading "Analytics" [level=2] [ref=e180]
+          - generic [ref=e182]:
+            - button "Abrir menu para ativar a visibilidade do gráfico de receita" [ref=e183] [cursor=pointer]:
+              - img [ref=e184]: more_vert
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - heading "Usuários ativos por dia" [level=3] [ref=e192]
+                  - generic [ref=e194]: "- - -"
+                - generic "Usuários ativos por dia" [ref=e195]:
+                  - generic [ref=e201]:
+                    - generic [ref=e202]: Sem dados
+                    - generic [ref=e203]: for the last 14 days
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - heading "Retenção no primeiro dia" [level=3] [ref=e209]
+                  - generic [ref=e211]: "- - -"
+                - generic "Retenção no primeiro dia" [ref=e212]:
+                  - generic [ref=e218]:
+                    - generic [ref=e219]: Sem dados
+                    - generic [ref=e220]: for the last 14 days
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - img [ref=e225]
+                - generic [ref=e226]: Esta semana
+              - generic [ref=e227]:
+                - img [ref=e228]
+                - generic [ref=e229]: Semana passada
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - generic [ref=e232]: Próximas etapas com o Gemini
+          - link "Ver documentos (abre a documentação do Firebase em uma nova guia)" [ref=e233] [cursor=pointer]:
+            - /url: https://firebase.google.com/docs?hl=pt-BR&authuser=0
+            - text: Ver documentos open_in_new
+        - generic [ref=e234]:
+          - button "Conte mais sobre seu app" [ref=e237] [cursor=pointer]:
+            - img [ref=e238]
+            - generic [ref=e239]: Conte mais sobre seu app
+            - generic [ref=e240]: Descreva seu app, e o Gemini vai sugerir outros produtos para ajudar você a refiná-lo
+          - button "Adicionar análises e monitoramento" [ref=e243] [cursor=pointer]:
+            - img [ref=e244]
+            - generic [ref=e245]: Adicionar análises e monitoramento
+            - generic [ref=e246]: Saiba mais sobre os produtos de monitoramento do Google Analytics e do Firebase
+          - button "Criar um back-end" [ref=e249] [cursor=pointer]:
+            - img [ref=e250]
+            - generic [ref=e251]: Criar um back-end
+            - generic [ref=e252]: O Firebase oferece muitos serviços de back-end, incluindo opções de bancos de dados SQL e NoSQL. Saiba quais serviços podem ser ideais para seu app.
+          - button "Adicione IA ao seu app" [ref=e255] [cursor=pointer]:
+            - img [ref=e256]
+            - generic [ref=e257]: Adicione IA ao seu app
+            - generic [ref=e258]: Saiba como integrar a IA ao seu app
+          - button "Hospedar um aplicativo da web" [ref=e261] [cursor=pointer]:
+            - img [ref=e262]
+            - generic [ref=e263]: Hospedar um aplicativo da web
+            - generic [ref=e264]: Crie e implante apps da Web modernos e full stack
+          - button "Saiba mais sobre as ferramentas de desenvolvimento do Firebase" [ref=e267] [cursor=pointer]:
+            - img [ref=e268]
+            - generic [ref=e269]: Saiba mais sobre as ferramentas de desenvolvimento do Firebase
+            - generic [ref=e270]: Saiba mais sobre o emulador do Firebase, a CLI do Firebase e o Firebase Studio para criar seu app
+  - generic "Gemini no Firebase" [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e45] [cursor=pointer]':
+          - img [ref=e47]
+          - img [ref=e53]
+        - button "Abrir alertas" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e64] [cursor=pointer]:
+          - img [ref=e66]: spark
+        - button "Ajuda" [ref=e73] [cursor=pointer]:
+          - img [ref=e74]: contact_support
+        - separator [ref=e77]
+        - button "Ativar o Cloud Shell" [ref=e78] [cursor=pointer]:
+          - img [ref=e79]:
+            - img [ref=e80]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e84]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e271] [cursor=pointer]:
+          - img [ref=e272]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e88] [cursor=pointer]':
+        - img [ref=e89]: dark_mode

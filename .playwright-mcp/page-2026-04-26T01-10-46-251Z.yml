@@ -1,0 +1,38 @@
+- generic [ref=e1]:
+  - link "Hostinger" [ref=e2] [cursor=pointer]:
+    - /url: https://www.hostinger.com/?_ga=GA1.1.508881189.1775784563
+    - img "Hostinger" [ref=e3]
+  - generic [ref=e8]:
+    - heading "Log in" [level=3] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - link "Google" [ref=e12] [cursor=pointer]:
+          - /url: https://auth.hostinger.com/api/external/v1/oauth/google/login/7d1b2028-d760-403c-8ce7-d7810e807674?redirect_back_url=https://auth.hostinger.com/login&_ga=GA1.1.508881189.1775784563&gsession_id=1777165784
+          - img "Google" [ref=e13]
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://auth.hostinger.com/api/external/v1/oauth/facebook/login/7d1b2028-d760-403c-8ce7-d7810e807674?redirect_back_url=https://auth.hostinger.com/login&_ga=GA1.1.508881189.1775784563&gsession_id=1777165784
+          - img "Facebook" [ref=e15]
+        - link "Github" [ref=e16] [cursor=pointer]:
+          - /url: https://auth.hostinger.com/api/external/v1/oauth/github/login/7d1b2028-d760-403c-8ce7-d7810e807674?redirect_back_url=https://auth.hostinger.com/login&_ga=GA1.1.508881189.1775784563&gsession_id=1777165784
+          - img "Github" [ref=e17]
+      - generic [ref=e18]:
+        - separator [ref=e19]
+        - paragraph [ref=e20]: or
+      - generic [ref=e22]: Seems like you are trying wrong log-in method. Try logging in with Google.
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - text: Email address
+        - textbox "Email address" [ref=e25]: passoapassouniformes2025@gmail.com
+      - generic [ref=e26]: Password
+      - generic [ref=e27]:
+        - textbox "Password" [active] [ref=e28]
+        - img [ref=e30] [cursor=pointer]
+      - link "Forgot password?" [ref=e32] [cursor=pointer]:
+        - /url: /forgot-password?_ga=GA1.1.508881189.1775784563
+      - button "Log in" [ref=e33] [cursor=pointer]
+      - link "Can't Access Your Account?" [ref=e34] [cursor=pointer]:
+        - /url: /account-recovery?_ga=GA1.1.508881189.1775784563
+    - generic [ref=e35]:
+      - text: Don't have an account?
+      - link "Sign Up" [ref=e36] [cursor=pointer]:
+        - /url: register?_ga=GA1.1.508881189.1775784563

@@ -3,7 +3,24 @@
   "version": "1.0.0",
   "description": "Passo a Passo Uniformes — Sistema digital",
   "private": true,
+  "scripts": {
+    "meta-bitrix": "node scripts/integrations/meta-bitrix/index.js",
+    "instagram": "node scripts/daily-instagram.js",
+    "stories": "node scripts/daily-stories.js"
+  },
   "dependencies": {
-    "nodemailer": "6.9.16"
+    "@google/design.md": "^0.1.1",
+    "@remotion/player": "^4.0.459",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "6.9.16",
+    "pdfkit": "^0.15.2",
+    "puppeteer-core": "^24.40.0",
+    "remotion": "^4.0.459",
+    "ssh2": "^1.17.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1"
   }
 }

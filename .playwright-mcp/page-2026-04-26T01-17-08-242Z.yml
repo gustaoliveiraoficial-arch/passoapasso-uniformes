@@ -1,0 +1,223 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - generic [ref=e34]:
+        - heading "Produtos" [level=1] [ref=e35]
+        - generic [ref=e36]:
+          - heading "Atividade da loja" [level=2] [ref=e37]
+          - complementary "Atividade da loja" [ref=e38]:
+            - tablist [ref=e39]:
+              - tab "Atividade atividade não lida" [ref=e40] [cursor=pointer]:
+                - img [ref=e41]
+                - text: Atividade
+                - generic [ref=e44]: atividade não lida
+      - main [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Opções de tela" [ref=e51] [cursor=pointer]
+            - button "Ajuda" [ref=e53] [cursor=pointer]
+          - generic [ref=e57]:
+            - heading "Produtos" [level=1] [ref=e58]
+            - link "Adicionar novo produto" [ref=e59] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/post-new.php?post_type=product
+            - link "Importar" [ref=e60] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&page=product_importer
+            - link "Exportar" [ref=e61] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&page=product_exporter
+            - heading "Filtrar produtos" [level=2] [ref=e62]
+            - list [ref=e63]:
+              - listitem [ref=e64]:
+                - link "Todos (3)" [ref=e65] [cursor=pointer]:
+                  - /url: edit.php?post_type=product
+                - text: "|"
+              - listitem [ref=e66]:
+                - link "Publicados (3)" [ref=e67] [cursor=pointer]:
+                  - /url: edit.php?post_status=publish&post_type=product
+                - text: "|"
+              - listitem [ref=e68]:
+                - link "Ordenação" [ref=e69] [cursor=pointer]:
+                  - /url: /wp-admin/edit.php?post_type=product&orderby=menu_order+title&order=ASC
+            - generic [ref=e70]:
+              - paragraph [ref=e71]:
+                - generic [ref=e72]: "Pesquisar produtos:"
+                - searchbox "Pesquisar produtos:" [ref=e73]
+                - button "Pesquisar produtos" [ref=e74] [cursor=pointer]
+              - heading "Lista de produtos" [level=2] [ref=e76]
+              - table [ref=e77]:
+                - rowgroup [ref=e78]:
+                  - row "Selecionar todos Nome Ordenar ascendente." [ref=e79]:
+                    - cell "Selecionar todos" [ref=e80]:
+                      - checkbox "Selecionar todos" [ref=e81] [cursor=pointer]
+                      - generic [ref=e83]: Selecionar todos
+                    - text: 
+                    - columnheader "Nome Ordenar ascendente." [ref=e84]:
+                      - link "Nome Ordenar ascendente." [ref=e85] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&orderby=title&order=asc
+                        - generic [ref=e86]: Nome
+                        - generic [ref=e90]: Ordenar ascendente.
+                    - text: 
+                - rowgroup [ref=e91]:
+                  - 'row "Selecionar Kit Camiseta PV Premium — 30 Peças Kit Camiseta PV Premium — 30 Peças ID: 80 | Editar “Kit Camiseta PV Premium — 30 Peças” | Editar diretamente “Kit Camiseta PV Premium — 30 Peças” | Mover “Kit Camiseta PV Premium — 30 Peças” para a lixeira | Ver “Kit Camiseta PV Premium — 30 Peças” | Duplicar este produto Mostrar mais detalhes" [ref=e92]':
+                    - rowheader "Selecionar Kit Camiseta PV Premium — 30 Peças" [ref=e93]:
+                      - checkbox "Selecionar Kit Camiseta PV Premium — 30 Peças" [ref=e94] [cursor=pointer]
+                      - generic [ref=e96]: Selecionar Kit Camiseta PV Premium — 30 Peças
+                    - 'cell "Kit Camiseta PV Premium — 30 Peças ID: 80 | Editar “Kit Camiseta PV Premium — 30 Peças” | Editar diretamente “Kit Camiseta PV Premium — 30 Peças” | Mover “Kit Camiseta PV Premium — 30 Peças” para a lixeira | Ver “Kit Camiseta PV Premium — 30 Peças” | Duplicar este produto Mostrar mais detalhes" [ref=e97]':
+                      - strong [ref=e98]:
+                        - link "Kit Camiseta PV Premium — 30 Peças" [ref=e99] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=80&action=edit
+                      - generic [ref=e100]:
+                        - generic: "ID: 80 |"
+                        - generic [ref=e101]:
+                          - link "Editar “Kit Camiseta PV Premium — 30 Peças”" [ref=e102] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=80&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e103]:
+                          - button "Editar diretamente “Kit Camiseta PV Premium — 30 Peças”" [ref=e104] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e105]:
+                          - link "Mover “Kit Camiseta PV Premium — 30 Peças” para a lixeira" [ref=e106] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=80&action=trash&_wpnonce=a35fb9851b
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - generic [ref=e107]:
+                          - link "Ver “Kit Camiseta PV Premium — 30 Peças”" [ref=e108] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/produto/kit-camiseta-pv-premium-30-pecas/
+                            - text: Ver
+                          - text: "|"
+                        - link "Duplicar este produto" [ref=e110] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&action=duplicate_product&post=80&_wpnonce=583e32d910
+                          - text: Duplicar
+                      - button "Mostrar mais detalhes" [ref=e111]:
+                        - generic [ref=e112]: Mostrar mais detalhes
+                    - text: SKU GTIN, UPC, EAN, ou ISBN Estoque Preço Categorias Tags Marcas Destaque  Data
+                  - 'row "Selecionar Kit Camiseta PV Premium — 10 Peças Kit Camiseta PV Premium — 10 Peças ID: 79 | Editar “Kit Camiseta PV Premium — 10 Peças” | Editar diretamente “Kit Camiseta PV Premium — 10 Peças” | Mover “Kit Camiseta PV Premium — 10 Peças” para a lixeira | Ver “Kit Camiseta PV Premium — 10 Peças” | Duplicar este produto Mostrar mais detalhes" [ref=e113]':
+                    - rowheader "Selecionar Kit Camiseta PV Premium — 10 Peças" [ref=e114]:
+                      - checkbox "Selecionar Kit Camiseta PV Premium — 10 Peças" [ref=e115] [cursor=pointer]
+                      - generic [ref=e117]: Selecionar Kit Camiseta PV Premium — 10 Peças
+                    - 'cell "Kit Camiseta PV Premium — 10 Peças ID: 79 | Editar “Kit Camiseta PV Premium — 10 Peças” | Editar diretamente “Kit Camiseta PV Premium — 10 Peças” | Mover “Kit Camiseta PV Premium — 10 Peças” para a lixeira | Ver “Kit Camiseta PV Premium — 10 Peças” | Duplicar este produto Mostrar mais detalhes" [ref=e118]':
+                      - strong [ref=e119]:
+                        - link "Kit Camiseta PV Premium — 10 Peças" [ref=e120] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=79&action=edit
+                      - generic [ref=e121]:
+                        - generic: "ID: 79 |"
+                        - generic [ref=e122]:
+                          - link "Editar “Kit Camiseta PV Premium — 10 Peças”" [ref=e123] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=79&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e124]:
+                          - button "Editar diretamente “Kit Camiseta PV Premium — 10 Peças”" [ref=e125] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e126]:
+                          - link "Mover “Kit Camiseta PV Premium — 10 Peças” para a lixeira" [ref=e127] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=79&action=trash&_wpnonce=8cc16bf616
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - generic [ref=e128]:
+                          - link "Ver “Kit Camiseta PV Premium — 10 Peças”" [ref=e129] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/produto/kit-camiseta-pv-premium-10-pecas/
+                            - text: Ver
+                          - text: "|"
+                        - link "Duplicar este produto" [ref=e131] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&action=duplicate_product&post=79&_wpnonce=faca15cfdd
+                          - text: Duplicar
+                      - button "Mostrar mais detalhes" [ref=e132]:
+                        - generic [ref=e133]: Mostrar mais detalhes
+                    - text: SKU GTIN, UPC, EAN, ou ISBN Estoque Preço Categorias Tags Marcas Destaque  Data
+                  - 'row "Selecionar Kit Camiseta PV Premium — 5 Peças Kit Camiseta PV Premium — 5 Peças ID: 78 | Editar “Kit Camiseta PV Premium — 5 Peças” | Editar diretamente “Kit Camiseta PV Premium — 5 Peças” | Mover “Kit Camiseta PV Premium — 5 Peças” para a lixeira | Ver “Kit Camiseta PV Premium — 5 Peças” | Duplicar este produto Mostrar mais detalhes" [ref=e134]':
+                    - rowheader "Selecionar Kit Camiseta PV Premium — 5 Peças" [ref=e135]:
+                      - checkbox "Selecionar Kit Camiseta PV Premium — 5 Peças" [ref=e136] [cursor=pointer]
+                      - generic [ref=e138]: Selecionar Kit Camiseta PV Premium — 5 Peças
+                    - 'cell "Kit Camiseta PV Premium — 5 Peças ID: 78 | Editar “Kit Camiseta PV Premium — 5 Peças” | Editar diretamente “Kit Camiseta PV Premium — 5 Peças” | Mover “Kit Camiseta PV Premium — 5 Peças” para a lixeira | Ver “Kit Camiseta PV Premium — 5 Peças” | Duplicar este produto Mostrar mais detalhes" [ref=e139]':
+                      - strong [ref=e140]:
+                        - link "Kit Camiseta PV Premium — 5 Peças" [ref=e141] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=78&action=edit
+                      - generic [ref=e142]:
+                        - generic: "ID: 78 |"
+                        - generic [ref=e143]:
+                          - link "Editar “Kit Camiseta PV Premium — 5 Peças”" [ref=e144] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=78&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e145]:
+                          - button "Editar diretamente “Kit Camiseta PV Premium — 5 Peças”" [ref=e146] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e147]:
+                          - link "Mover “Kit Camiseta PV Premium — 5 Peças” para a lixeira" [ref=e148] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=78&action=trash&_wpnonce=ccd5a93124
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - generic [ref=e149]:
+                          - link "Ver “Kit Camiseta PV Premium — 5 Peças”" [ref=e150] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/produto/kit-camiseta-pv-premium-5-pecas/
+                            - text: Ver
+                          - text: "|"
+                        - link "Duplicar este produto" [ref=e152] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&action=duplicate_product&post=78&_wpnonce=eb46cea3b7
+                          - text: Duplicar
+                      - button "Mostrar mais detalhes" [ref=e153]:
+                        - generic [ref=e154]: Mostrar mais detalhes
+                    - text: SKU GTIN, UPC, EAN, ou ISBN Estoque Preço Categorias Tags Marcas Destaque  Data
+                - rowgroup [ref=e155]:
+                  - row "Selecionar todos Nome Ordenar ascendente." [ref=e156]:
+                    - cell "Selecionar todos" [ref=e157]:
+                      - checkbox "Selecionar todos" [ref=e158] [cursor=pointer]
+                      - generic [ref=e160]: Selecionar todos
+                    - text: 
+                    - columnheader "Nome Ordenar ascendente." [ref=e161]:
+                      - link "Nome Ordenar ascendente." [ref=e162] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&orderby=title&order=asc
+                        - generic [ref=e163]: Nome
+                        - generic [ref=e167]: Ordenar ascendente.
+                    - text: 
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - generic [ref=e170]: Selecionar ação em massa
+                  - combobox "Selecionar ação em massa" [ref=e171] [cursor=pointer]:
+                    - option "Ações em massa" [selected]
+                    - option "Editar"
+                    - option "Mover para lixeira"
+                    - option "Unificar com a IA do Elementor"
+                  - button "Aplicar" [ref=e172] [cursor=pointer]
+                - generic [ref=e173]: 3 itens
+    - generic [ref=e175]:
+      - img [ref=e177]
+      - generic [ref=e179]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e181] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+    - button "Fale com o Kodee" [ref=e222] [cursor=pointer]:
+      - img [ref=e223]
+      - generic [ref=e225]: Fale com o Kodee
+  - img

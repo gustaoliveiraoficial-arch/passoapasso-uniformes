@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - text: 
+    - main [ref=e3]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Welcome to Cloudinary
+        - generic [ref=e10]: Get started - it's free.
+        - link "SIGN UP WITH EMAIL" [ref=e11] [cursor=pointer]:
+          - /url: /users/register_by_email
+        - generic [ref=e12]: Or
+        - link "Cdnlogo.com_google-icon SIGN UP WITH GOOGLE" [ref=e13] [cursor=pointer]:
+          - /url: https://cloudinary.com/auth/google_oauth2?flow=register&product=classic&state=%7B%22product_interest_product_name%22%3A%22none%22%7D
+          - img "Cdnlogo.com_google-icon" [ref=e14]
+          - text: SIGN UP WITH GOOGLE
+        - link "Github SIGN UP WITH GITHUB" [ref=e15] [cursor=pointer]:
+          - /url: https://cloudinary.com/auth/github?flow=register&product=classic&state=%7B%22product_interest_product_name%22%3A%22none%22%7D
+          - img "Github" [ref=e16]
+          - text: SIGN UP WITH GITHUB
+        - generic [ref=e17]:
+          - text: By signing up, you indicate that you have read, understood and agree to
+          - text: Cloudinary's
+          - link "Terms of Service" [ref=e18] [cursor=pointer]:
+            - /url: https://cloudinary.com/tos
+          - text: and
+          - link "Privacy Policy" [ref=e19] [cursor=pointer]:
+            - /url: https://cloudinary.com/privacy
+        - generic [ref=e20]:
+          - text: Already have an account?
+          - link "Log in" [ref=e21] [cursor=pointer]:
+            - /url: /users/login
+    - text: 
+  - iframe [ref=e22]:
+    
+  - iframe [ref=e23]:
+    

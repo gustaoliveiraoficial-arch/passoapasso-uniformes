@@ -1,0 +1,92 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e93]:
+    - navigation [ref=e95]:
+      - link "Supabase Logo" [ref=e98] [cursor=pointer]:
+        - /url: /dashboard/organizations
+        - img "Supabase Logo" [ref=e99]
+      - link "Documentation" [ref=e101] [cursor=pointer]:
+        - /url: https://supabase.com/docs
+        - img [ref=e103]
+        - generic [ref=e106]: Documentation
+    - generic [ref=e107]:
+      - main [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - heading "Get started" [level=1] [ref=e111]
+            - heading "Create a new account" [level=2] [ref=e112]
+          - generic [ref=e113]:
+            - button "Continue with GitHub" [ref=e116] [cursor=pointer]:
+              - img [ref=e118]
+              - generic [ref=e121]: Continue with GitHub
+            - generic [ref=e126]: or
+            - generic [ref=e127]:
+              - alert [ref=e193]:
+                - img [ref=e194]
+                - heading "Check your email to confirm" [level=5] [ref=e197]
+                - paragraph [ref=e199]: You've successfully signed up. Please check your email to confirm your account before signing in to the Supabase dashboard. The confirmation link expires in 10 minutes.
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Email
+                      - generic:
+                        - generic:
+                          - textbox "Email":
+                            - /placeholder: you@example.com
+                            - text: passoapassouniformes2025@gmail.com
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Password
+                      - generic:
+                        - generic:
+                          - generic:
+                            - textbox "Password":
+                              - /placeholder: ••••••••
+                              - text: PassoaPasso@2025!
+                            - button "Show password":
+                              - generic:
+                                - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - paragraph: Uppercase letter
+                      - generic:
+                        - img
+                        - paragraph: Lowercase letter
+                      - generic:
+                        - img
+                        - paragraph: Number
+                      - generic:
+                        - img
+                        - paragraph: Special character (e.g. !?<>@#$%)
+                      - generic:
+                        - img
+                        - paragraph: 8 characters or more
+                  - button "Sign up":
+                    - generic: Sign up
+          - generic [ref=e173]:
+            - text: Have an account?
+            - link "Sign in" [ref=e174] [cursor=pointer]:
+              - /url: /dashboard/sign-in
+        - paragraph [ref=e176]:
+          - text: By continuing, you agree to Supabase’s
+          - link "Terms of Service" [ref=e177] [cursor=pointer]:
+            - /url: https://supabase.com/terms
+          - text: and
+          - link "Privacy Policy" [ref=e178] [cursor=pointer]:
+            - /url: https://supabase.com/privacy
+          - text: ", and to receive periodic emails with updates."
+      - complementary [ref=e179]:
+        - generic [ref=e180]:
+          - generic [ref=e181]: “
+          - blockquote [ref=e182]: Supabase is the best product experience I've had in years. Not just tech - taste. From docs to latency to the URL structure that makes you think "oh, that's obvious" Feels like every other platform should study how they built it @supabase I love you
+          - link "yatsiv_yuriy @yatsiv_yuriy" [ref=e183] [cursor=pointer]:
+            - /url: https://x.com/yatsiv_yuriy/status/1979182362480071162
+            - img "yatsiv_yuriy" [ref=e184]
+            - generic [ref=e186]: "@yatsiv_yuriy"
+  - alert [ref=e92]: Supabase

@@ -1,0 +1,104 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "Groq" [ref=e5] [cursor=pointer]:
+          - /url: /home
+          - img "Groq" [ref=e6]
+        - generic [ref=e7]:
+          - button "Personal" [ref=e9] [cursor=pointer]:
+            - generic [ref=e10]: Personal
+            - img [ref=e11]
+          - generic [ref=e14]: /
+          - button "Default Project" [ref=e16] [cursor=pointer]:
+            - generic "Default Project" [ref=e17]
+            - img [ref=e18]
+      - generic [ref=e22]:
+        - button [ref=e23] [cursor=pointer]:
+          - img [ref=e24]
+        - generic:
+          - generic [ref=e25]:
+            - link "Groq":
+              - /url: /home
+              - img "Groq"
+            - button [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+          - navigation [ref=e30]:
+            - generic:
+              - link "Playground":
+                - /url: /playground
+                - img [ref=e33] [cursor=pointer]
+                - generic [ref=e35] [cursor=pointer]: Playground
+            - generic:
+              - link "API Keys":
+                - /url: /keys
+                - img [ref=e38] [cursor=pointer]
+                - generic [ref=e41] [cursor=pointer]: API Keys
+            - generic:
+              - link "Dashboard":
+                - /url: /dashboard
+                - img [ref=e44] [cursor=pointer]
+                - generic [ref=e47] [cursor=pointer]: Dashboard
+            - generic:
+              - link "Docs":
+                - /url: /docs
+                - img [ref=e50] [cursor=pointer]
+                - generic [ref=e52] [cursor=pointer]: Docs
+            - generic:
+              - link "Settings":
+                - /url: /settings
+                - img [ref=e55] [cursor=pointer]
+                - generic [ref=e58] [cursor=pointer]: Settings
+          - generic [ref=e59]:
+            - generic:
+              - button "P Passo a passo uniformes passoapassouniformes2025@gmail.com" [ref=e61] [cursor=pointer]:
+                - generic [ref=e62]:
+                  - generic [ref=e64]: P
+                  - generic [ref=e65]:
+                    - generic [ref=e66]: Passo a passo uniformes
+                    - generic [ref=e67]: passoapassouniformes2025@gmail.com
+              - generic [ref=e68]:
+                - button [ref=e69] [cursor=pointer]:
+                  - img [ref=e70]
+                - button [ref=e76] [cursor=pointer]:
+                  - img [ref=e77]
+                - button [ref=e79] [cursor=pointer]:
+                  - img [ref=e80]
+            - button "Sign Out" [ref=e84] [cursor=pointer]: Sign Out
+    - main [ref=e87]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - heading "API Keys" [level=1] [ref=e93]
+            - generic [ref=e94]: Manage your project API keys. Remember to keep your API keys safe to prevent unauthorized access.
+          - button "Create API Key" [active] [ref=e96] [cursor=pointer]:
+            - img [ref=e97]
+            - generic [ref=e98]: Create API Key
+        - table [ref=e104]:
+          - rowgroup [ref=e105]:
+            - row "Name" [ref=e106]:
+              - columnheader "Name" [ref=e107]
+              - columnheader [ref=e108]
+          - rowgroup [ref=e109]:
+            - row "Passo a Passo Uniformes" [ref=e110]:
+              - cell "Passo a Passo Uniformes" [ref=e111]:
+                - generic [ref=e112]: Passo a Passo Uniformes
+              - cell [ref=e113]:
+                - generic [ref=e114]:
+                  - button [ref=e115] [cursor=pointer]:
+                    - img [ref=e116]
+                  - button [ref=e118] [cursor=pointer]:
+                    - img [ref=e119]
+            - row "Tabela Precos App" [ref=e167]:
+              - cell "Tabela Precos App" [ref=e168]:
+                - generic [ref=e169]: Tabela Precos App
+              - cell [ref=e170]:
+                - generic [ref=e171]:
+                  - button [ref=e172] [cursor=pointer]:
+                    - img [ref=e173]
+                  - button [ref=e175] [cursor=pointer]:
+                    - img [ref=e176]
+  - region "Notifications alt+T"
+  - alert [ref=e122]
+  - iframe [ref=e123]:
+    

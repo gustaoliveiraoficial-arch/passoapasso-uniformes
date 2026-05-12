@@ -1,0 +1,340 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 269" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "269"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e51]:
+            - list [ref=e52]:
+              - listitem [ref=e54] [cursor=pointer]:
+                - link "Funil de vendas" [ref=e56]:
+                  - /url: /leads/pipeline/13368211
+                  - generic [ref=e58]: Funil de vendas
+              - listitem [ref=e60] [cursor=pointer]:
+                - link "Todos os leads" [ref=e62]:
+                  - /url: /leads/list/
+                  - generic [ref=e64]: Todos os leads
+          - listitem [ref=e66] [cursor=pointer]:
+            - link "Calendário 131" [ref=e68]:
+              - /url: /todo
+              - img [ref=e70]
+              - generic [ref=e72]: Calendário
+              - generic [ref=e76]: "131"
+          - listitem [ref=e77]:
+            - link "Listas" [ref=e79] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e81]
+              - generic [ref=e83]: Listas
+              - img [ref=e86]
+          - listitem [ref=e89] [cursor=pointer]:
+            - link "Agente de IA" [ref=e91]:
+              - /url: /settings/ai-agent/
+              - img [ref=e93]
+              - generic [ref=e95]: Agente de IA
+          - listitem [ref=e96]:
+            - link "Automações" [ref=e98] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e100]
+              - generic [ref=e102]: Automações
+              - img [ref=e105]
+          - listitem [ref=e107]:
+            - link "Insights" [ref=e109] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e111]
+              - generic [ref=e114]: Insights
+              - img [ref=e117]
+        - generic [ref=e119]: Integrações fixadas
+        - list [ref=e120]:
+          - listitem [ref=e122] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e124]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e127]
+              - generic [ref=e128]: WhatsApp Business
+          - listitem [ref=e130] [cursor=pointer]:
+            - link "TikTok" [ref=e132]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e135]
+              - generic [ref=e136]: TikTok
+      - list [ref=e138]:
+        - listitem [ref=e140] [cursor=pointer]:
+          - link "Configurações" [ref=e142]:
+            - /url: /settings/profile/
+            - img [ref=e144]
+            - generic [ref=e147]: Configurações
+        - listitem [ref=e148]:
+          - link "Ajuda" [ref=e150] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e152]
+            - generic [ref=e154]: Ajuda
+            - img [ref=e157]
+        - listitem [ref=e160] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e162]:
+            - /url: ""
+            - img [ref=e164]
+            - generic [ref=e166]: Enviar feedback
+        - listitem [ref=e168] [cursor=pointer]:
+          - link "Centro de Notificação 249" [ref=e170]:
+            - /url: /settings/profile/notifications
+            - img [ref=e172]
+            - generic [ref=e174]: Centro de Notificação
+            - generic [ref=e178]: "249"
+      - separator [ref=e179]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e181] [cursor=pointer]:
+        - img "Avatar" [ref=e184]
+        - generic [ref=e185]:
+          - generic [ref=e186]: Passo a passo uniformes
+          - generic [ref=e187]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - generic [ref=e196]:
+          - img [ref=e197]
+          - textbox [ref=e199]:
+            - /placeholder: Buscar
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - generic [ref=e209] [cursor=pointer]: Conversas abertas
+              - generic [ref=e211]: "Total: 810"
+              - button "Button_more" [ref=e214] [cursor=pointer]:
+                - img [ref=e216]
+            - generic: Criada Fechadas Ativas Funil de vendas, etapas Usuário responsável Inscritos de leads Participantes Remetente da última mensagem Tags
+          - generic [ref=e220]:
+            - 'link "avatar icon Júlia A795 06/04/2026 10:02 Lead #27295623 ah sim, obrigada" [ref=e222] [cursor=pointer]':
+              - /url: /chats/795/leads/detail/27295623?t=1773018850.2484
+              - generic [ref=e224]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e226]
+              - generic [ref=e227]:
+                - generic [ref=e228]:
+                  - heading "Júlia A795" [level=2] [ref=e229]:
+                    - generic [ref=e230]: Júlia
+                    - generic "A795" [ref=e231]
+                    - img [ref=e233]
+                  - generic [ref=e234]: 06/04/2026 10:02
+                - 'heading "Lead #27295623" [level=3] [ref=e236]':
+                  - generic [ref=e237]: "Lead #27295623"
+                - heading "ah sim, obrigada" [level=3] [ref=e239]:
+                  - generic [ref=e240]: ah sim, obrigada
+            - 'link "avatar icon +555197022669 A791 06/04/2026 10:02 Lead #27295643 This message contains media and was received over 14 days before you connected WhatsApp to Kommo. You can view..." [ref=e242] [cursor=pointer]':
+              - /url: /chats/791/leads/detail/27295643?t=1773055203.4776
+              - generic [ref=e244]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e246]
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - heading "+555197022669 A791" [level=2] [ref=e249]:
+                    - generic [ref=e250]: "+555197022669"
+                    - generic "A791" [ref=e251]
+                    - img [ref=e253]
+                  - generic [ref=e254]: 06/04/2026 10:02
+                - 'heading "Lead #27295643" [level=3] [ref=e256]':
+                  - generic [ref=e257]: "Lead #27295643"
+                - heading "This message contains media and was received over 14 days before you connected WhatsApp to Kommo. You can view..." [level=3] [ref=e259]:
+                  - generic [ref=e260]: This message contains media and was received over 14 days before you connected WhatsApp to Kommo. You can view...
+            - 'link "avatar icon Tatiane | Pivetta Injeção Diesel A783 06/04/2026 10:02 Lead #27295617 Acabamos de descobrir" [ref=e262] [cursor=pointer]':
+              - /url: /chats/783/leads/detail/27295617?t=1773063625.9682
+              - generic [ref=e264]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e266]
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - heading "Tatiane | Pivetta Injeção Diesel A783" [level=2] [ref=e269]:
+                    - generic [ref=e270]: Tatiane | Pivetta Injeção Diesel
+                    - generic "A783" [ref=e271]
+                    - img [ref=e273]
+                  - generic [ref=e274]: 06/04/2026 10:02
+                - 'heading "Lead #27295617" [level=3] [ref=e276]':
+                  - generic [ref=e277]: "Lead #27295617"
+                - heading "Acabamos de descobrir" [level=3] [ref=e279]:
+                  - generic [ref=e280]: Acabamos de descobrir
+            - 'link "avatar icon Joel A756 06/04/2026 10:02 Lead #27295571 obrigado!" [ref=e282] [cursor=pointer]':
+              - /url: /chats/756/leads/detail/27295571?t=1773155415.6986
+              - generic [ref=e284]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e286]
+              - generic [ref=e287]:
+                - generic [ref=e288]:
+                  - heading "Joel A756" [level=2] [ref=e289]:
+                    - generic [ref=e290]: Joel
+                    - generic "A756" [ref=e291]
+                    - img [ref=e293]
+                  - generic [ref=e294]: 06/04/2026 10:02
+                - 'heading "Lead #27295571" [level=3] [ref=e296]':
+                  - generic [ref=e297]: "Lead #27295571"
+                - heading "obrigado!" [level=3] [ref=e299]:
+                  - generic [ref=e300]: obrigado!
+            - 'link "avatar icon Aline Alves A755 06/04/2026 10:02 Lead #27295565 trideckmodular@gmail.com" [ref=e302] [cursor=pointer]':
+              - /url: /chats/755/leads/detail/27295565?t=1773158725.2913
+              - generic [ref=e304]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e306]
+              - generic [ref=e307]:
+                - generic [ref=e308]:
+                  - heading "Aline Alves A755" [level=2] [ref=e309]:
+                    - generic [ref=e310]: Aline Alves
+                    - generic "A755" [ref=e311]
+                    - img [ref=e313]
+                  - generic [ref=e314]: 06/04/2026 10:02
+                - 'heading "Lead #27295565" [level=3] [ref=e316]':
+                  - generic [ref=e317]: "Lead #27295565"
+                - heading "trideckmodular@gmail.com" [level=3] [ref=e319]:
+                  - generic [ref=e320]: trideckmodular@gmail.com
+            - 'link "avatar icon Claudia Dra A752 06/04/2026 10:02 Lead #27295561 Certo. Muito obrigada pela,atenção" [ref=e322] [cursor=pointer]':
+              - /url: /chats/752/leads/detail/27295561?t=1773162627.1841
+              - generic [ref=e324]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e326]
+              - generic [ref=e327]:
+                - generic [ref=e328]:
+                  - heading "Claudia Dra A752" [level=2] [ref=e329]:
+                    - generic [ref=e330]: Claudia Dra
+                    - generic "A752" [ref=e331]
+                    - img [ref=e333]
+                  - generic [ref=e334]: 06/04/2026 10:02
+                - 'heading "Lead #27295561" [level=3] [ref=e336]':
+                  - generic [ref=e337]: "Lead #27295561"
+                - heading "Certo. Muito obrigada pela,atenção" [level=3] [ref=e339]:
+                  - generic [ref=e340]: Certo. Muito obrigada pela,atenção
+            - 'link "avatar icon Luiz Aguiar A747 06/04/2026 10:02 Lead #27295553 Ok, obrigado" [ref=e342] [cursor=pointer]':
+              - /url: /chats/747/leads/detail/27295553?t=1773165623.5985
+              - generic [ref=e344]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e346]
+              - generic [ref=e347]:
+                - generic [ref=e348]:
+                  - heading "Luiz Aguiar A747" [level=2] [ref=e349]:
+                    - generic [ref=e350]: Luiz Aguiar
+                    - generic "A747" [ref=e351]
+                    - img [ref=e353]
+                  - generic [ref=e354]: 06/04/2026 10:02
+                - 'heading "Lead #27295553" [level=3] [ref=e356]':
+                  - generic [ref=e357]: "Lead #27295553"
+                - heading "Ok, obrigado" [level=3] [ref=e359]:
+                  - generic [ref=e360]: Ok, obrigado
+            - 'link "avatar icon Schmidt Pizzaria A743 06/04/2026 10:02 Lead #27295547 Não, empresa" [ref=e362] [cursor=pointer]':
+              - /url: /chats/743/leads/detail/27295547?t=1773166932.9873
+              - generic [ref=e364]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e366]
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - heading "Schmidt Pizzaria A743" [level=2] [ref=e369]:
+                    - generic [ref=e370]: Schmidt Pizzaria
+                    - generic "A743" [ref=e371]
+                    - img [ref=e373]
+                  - generic [ref=e374]: 06/04/2026 10:02
+                - 'heading "Lead #27295547" [level=3] [ref=e376]':
+                  - generic [ref=e377]: "Lead #27295547"
+                - heading "Não, empresa" [level=3] [ref=e379]:
+                  - generic [ref=e380]: Não, empresa
+            - 'link "avatar icon Rica Fantoni Personal A736 06/04/2026 10:02 Lead #27295525 Obrigado" [ref=e382] [cursor=pointer]':
+              - /url: /chats/736/leads/detail/27295525?t=1773174563.413
+              - generic [ref=e384]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e386]
+              - generic [ref=e387]:
+                - generic [ref=e388]:
+                  - heading "Rica Fantoni Personal A736" [level=2] [ref=e389]:
+                    - generic [ref=e390]: Rica Fantoni Personal
+                    - generic "A736" [ref=e391]
+                    - img [ref=e393]
+                  - generic [ref=e394]: 06/04/2026 10:02
+                - 'heading "Lead #27295525" [level=3] [ref=e396]':
+                  - generic [ref=e397]: "Lead #27295525"
+                - heading "Obrigado" [level=3] [ref=e399]:
+                  - generic [ref=e400]: Obrigado
+            - 'link "avatar icon ... A735 06/04/2026 10:02 Lead #27295521 This message contains media and was received over 14 days before you connected WhatsApp to Kommo. You can view..." [ref=e402] [cursor=pointer]':
+              - /url: /chats/735/leads/detail/27295521?t=1773227002.7281
+              - generic [ref=e404]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e406]
+              - generic [ref=e407]:
+                - generic [ref=e408]:
+                  - heading "... A735" [level=2] [ref=e409]:
+                    - generic [ref=e410]: ...
+                    - generic "A735" [ref=e411]
+                    - img [ref=e413]
+                  - generic [ref=e414]: 06/04/2026 10:02
+                - 'heading "Lead #27295521" [level=3] [ref=e416]':
+                  - generic [ref=e417]: "Lead #27295521"
+                - heading "This message contains media and was received over 14 days before you connected WhatsApp to Kommo. You can view..." [level=3] [ref=e419]:
+                  - generic [ref=e420]: This message contains media and was received over 14 days before you connected WhatsApp to Kommo. You can view...
+            - 'link "avatar icon ‪51 9857‑2843‬ A731 06/04/2026 10:02 Lead #27295513 Sim" [ref=e422] [cursor=pointer]':
+              - /url: /chats/731/leads/detail/27295513?t=1773236517.5149
+              - generic [ref=e424]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e426]
+              - generic [ref=e427]:
+                - generic [ref=e428]:
+                  - heading "‪51 9857‑2843‬ A731" [level=2] [ref=e429]:
+                    - generic [ref=e430]: ‪51 9857‑2843‬
+                    - generic "A731" [ref=e431]
+                    - img [ref=e433]
+                  - generic [ref=e434]: 06/04/2026 10:02
+                - 'heading "Lead #27295513" [level=3] [ref=e436]':
+                  - generic [ref=e437]: "Lead #27295513"
+                - heading "Sim" [level=3] [ref=e439]:
+                  - generic [ref=e440]: Sim
+      - paragraph [ref=e446]: Selecione um tópico para começar a enviar mensagens
+    - generic [ref=e449]:
+      - img
+      - button [ref=e450]:
+        - img [ref=e451]
+        - img [ref=e453]
+        - img [ref=e457]
+      - generic [ref=e459]:
+        - generic [ref=e460]:
+          - generic [ref=e461]:
+            - img [ref=e462]
+            - generic [ref=e464]: Kommo Copilot
+          - generic [ref=e465]:
+            - button [ref=e466] [cursor=pointer]:
+              - img [ref=e469]
+            - button [ref=e471] [cursor=pointer]:
+              - img [ref=e474]
+            - button [ref=e476] [cursor=pointer]:
+              - img [ref=e479]
+        - button "Configuração do WhatsApp Business" [ref=e481] [cursor=pointer]:
+          - generic [ref=e482]:
+            - generic [ref=e483]: Configuração do WhatsApp Business
+            - img [ref=e484]
+        - generic [ref=e509]:
+          - generic [ref=e510]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e513]
+            - button [disabled] [ref=e516]:
+              - img [ref=e519]
+          - generic [ref=e521]: O conteúdo gerado por IA pode ser impreciso

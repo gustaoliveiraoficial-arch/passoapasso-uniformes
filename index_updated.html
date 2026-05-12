@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passo a Passo Uniformes — Uniformes Personalizados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #FF6600;
+      --orange-light: #FF8533;
+      --dark: #0a0a0a;
+      --dark-2: #111111;
+      --dark-card: #1a1a1a;
+      --white: #ffffff;
+      --gray: #888888;
+      --gray-light: #cccccc;
+      --bg-img: url('./black-tile-texture-with-white-seams-2022-12-16-21-46-44-utc.jpg');
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--white); overflow-x: hidden; }
+
+    .wa-icon { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+
+    /* ── FUNDO COM TEXTURA ── */
+    /* Todas as sections recebem o bg da loja com overlay escuro (70% opaco = img 30% visível) */
+    section {
+      position: relative;
+    }
+    section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--bg-img) center/cover no-repeat;
+      opacity: 0.10;
+      z-index: 0;
+      pointer-events: none;
+    }
+    section > * { position: relative; z-index: 1; }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(10,10,10,0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,102,0,0.25);
+      padding: 10px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .header-logo { height: 46px; width: auto; }
+    .btn-header-wa {
+      background: var(--orange); color: #fff; text-decoration: none;
+      padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; gap: 8px; transition: background .2s;
+    }
+    .btn-header-wa:hover { background: var(--orange-light); }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh; background: var(--dark);
+      display: flex; align-items: center; overflow: hidden; padding-top: 68px;
+    }
+    .hero-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      max-width: 1160px; margin: 0 auto; padding: 48px 24px;
+      gap: 48px; align-items: center; width: 100%;
+    }
+    .hero-badge { display: none; }
+    .hero-title { font-size: clamp(30px, 4.5vw, 54px); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+    .hero-title span { color: var(--orange); }
+    .hero-sub { font-size: 17px; line-height: 1.7; color: var(--gray-light); max-width: 460px; margin-bottom: 36px; }
+    .hero-stats { display: flex; gap: 36px; flex-wrap: wrap; }
+    .hero-stat strong { display: block; font-size: 28px; font-weight: 900; color: var(--orange); }
+    .hero-stat span { font-size: 13px; color: var(--gray); }
+    .hero-img-wrap { position: relative; display: flex; justify-content: center; }
+    .hero-img-wrap::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 60%, rgba(255,102,0,0.22) 0%, transparent 70%);
+      z-index: 1;
+    }
+    /* Degradê que funde a imagem hero com o fundo */
+    .hero-img-wrap::after {
+      content: ''; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+      background:
+        linear-gradient(to right, var(--dark) 0%, transparent 18%),
+        linear-gradient(to bottom, var(--dark) 0%, transparent 12%, transparent 70%, var(--dark) 100%);
+    }
+    .hero-img { width: 100%; max-width: 480px; height: 520px; object-fit: cover; border-radius: 0; position: relative; z-index: 2; }
+
+    /* ===== SECTION COMMONS ===== */
+    .section-center { text-align: center; margin-bottom: 48px; }
+    .s-badge { display: none; }
+    .s-title { font-size: clamp(26px, 4vw, 42px); font-weight: 900; line-height: 1.15; margin-bottom: 10px; }
+    .s-title span { color: var(--orange); }
+    .s-sub { font-size: 16px; color: #666; max-width: 540px; margin: 0 auto; }
+
+    /* ===== LINHAS ===== */
+    #linhas { padding: 88px 24px; background: rgba(243,243,243,0.92); color: var(--dark); }
+    #linhas .s-sub { color: #555; }
+    .linhas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
+    .linha-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
+    .linha-card:hover { transform: translateY(-5px); box-shadow: 0 14px 40px rgba(0,0,0,0.14); }
+    .linha-card-img { width: 100%; height: 220px; object-fit: cover; display: block; background: #ddd; }
+    .linha-card-body { padding: 18px; flex: 1; display: flex; flex-direction: column; }
+    .linha-card-title { font-size: 17px; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+    .linha-card-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 14px; flex: 1; }
+    .btn-wa {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: #25D366; color: #fff; text-decoration: none; cursor: pointer; border: none;
+      padding: 12px 14px; border-radius: 10px; font-weight: 700; font-size: 13px;
+      transition: background .2s; text-align: center; width: 100%; font-family: inherit;
+    }
+    .btn-wa:hover { background: #1bb85a; }
+
+    /* ===== MODAL LINHAS ===== */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 999;
+      background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+      align-items: center; justify-content: center;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      background: #1a1a1a; border: 1px solid rgba(255,102,0,0.3);
+      border-radius: 20px; padding: 36px 32px; max-width: 420px; width: 90%;
+      text-align: center; box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    }
+    .modal-icon { font-size: 40px; margin-bottom: 16px; }
+    .modal-title { font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 10px; }
+    .modal-desc { font-size: 15px; color: var(--gray-light); line-height: 1.6; margin-bottom: 28px; }
+    .modal-desc strong { color: var(--orange); }
+    .modal-btns { display: flex; flex-direction: column; gap: 12px; }
+    .modal-btn-sim {
+      background: #25D366; color: #fff; border: none; padding: 14px;
+      border-radius: 12px; font-weight: 700; font-size: 15px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background .2s; font-family: inherit;
+    }
+    .modal-btn-sim:hover { background: #1bb85a; }
+    .modal-btn-menos {
+      background: transparent; color: var(--gray-light); border: 1px solid rgba(255,255,255,0.15);
+      padding: 14px; border-radius: 12px; font-weight: 600; font-size: 15px;
+      cursor: pointer; transition: border-color .2s, color .2s; font-family: inherit;
+    }
+    .modal-btn-menos:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ===== INFO ===== */
+    #info { background: var(--dark-2); padding: 88px 24px; }
+    .info-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .info-img-wrap { position: relative; overflow: hidden; }
+    /* Degradê que funde a imagem info com o fundo */
+    .info-img-wrap::after {
+      content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background:
+        linear-gradient(to left, var(--dark-2) 0%, transparent 18%),
+        linear-gradient(to top, var(--dark-2) 0%, transparent 15%),
+        linear-gradient(to bottom, var(--dark-2) 0%, transparent 15%);
+    }
+    .info-img { width: 100%; height: 480px; object-fit: cover; border-radius: 0; position: relative; z-index: 1; display: block; }
+    .info-content .s-title { color: #fff; text-align: left; }
+    .info-cards { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+    .info-card {
+      background: rgba(26,26,26,0.92); border: 1px solid rgba(255,255,255,0.07);
+      border-left: 4px solid var(--orange); border-radius: 12px;
+      padding: 18px 22px; display: flex; gap: 16px; align-items: flex-start;
+    }
+    .info-card-icon { font-size: 26px; flex-shrink: 0; margin-top: 2px; }
+    .info-card-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--orange); margin-bottom: 3px; }
+    .info-card-title { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+    .info-card-desc { font-size: 13px; color: var(--gray); line-height: 1.5; }
+    .info-note { margin-top: 22px; background: rgba(255,102,0,0.08); border: 1px solid rgba(255,102,0,0.25); border-radius: 12px; padding: 16px 20px; font-size: 14px; color: var(--gray-light); line-height: 1.6; }
+    .info-note strong { color: var(--orange); }
+
+    /* ===== PEÇAS PRONTAS ===== */
+    #pecas { padding: 88px 24px; background: var(--dark); }
+    #pecas .s-title { color: #fff; }
+    #pecas .s-sub { color: #777; }
+    .pecas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+    .peca-card { background: rgba(26,26,26,0.92); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; overflow: hidden; position: relative; transition: transform .2s, border-color .2s; display: flex; flex-direction: column; }
+    .peca-card:hover:not(.esgotada) { transform: translateY(-5px); border-color: rgba(255,102,0,0.35); }
+    .peca-card.esgotada { opacity: .65; }
+    .peca-img-wrap { position: relative; overflow: hidden; }
+    .peca-img { width: 100%; height: 260px; object-fit: cover; display: block; }
+    .fita { position: absolute; top: 22px; right: -30px; background: #ef4444; color: #fff; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; padding: 6px 44px; transform: rotate(45deg); box-shadow: 0 2px 8px rgba(0,0,0,0.4); z-index: 2; }
+    .peca-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .peca-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; line-height: 1.3; }
+    .peca-desc { font-size: 12px; color: var(--gray); margin-bottom: 12px; }
+    .peca-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; flex-wrap: wrap; }
+    .price-old { font-size: 14px; color: var(--gray); text-decoration: line-through; }
+    .price-new { font-size: 26px; font-weight: 900; color: var(--orange); }
+    .price-note { font-size: 12px; color: #666; margin-bottom: 14px; }
+    .price-stack { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
+    .price-stack .price-new { font-size: 20px; }
+    .price-stack .price-note { margin: 0; }
+    .btn-esgotado { display: flex; align-items: center; justify-content: center; background: #2a2a2a; color: #555; padding: 12px; border-radius: 10px; font-weight: 700; font-size: 14px; margin-top: auto; }
+    .btn-wa-peca { display: flex; align-items: center; justify-content: center; gap: 8px; background: #25D366; color: #fff; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: 700; font-size: 14px; transition: background .2s; margin-top: auto; }
+    .btn-wa-peca:hover { background: #1bb85a; }
+
+    /* ===== SOBRE / FINAL ===== */
+    #sobre { background: var(--dark-2); padding: 88px 24px; }
+    .sobre-inner { max-width: 1100px; margin: 0 auto; }
+    .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 80px; }
+    .sobre-text .s-title { color: #fff; text-align: left; }
+    .sobre-text p { color: var(--gray-light); font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
+    .sobre-img-wrap { position: relative; overflow: hidden; border-radius: 0; }
+    /* Degradê que funde a imagem sobre com o fundo */
+    .sobre-img-wrap::after {
+      content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background:
+        linear-gradient(to right, var(--dark-2) 0%, transparent 18%),
+        linear-gradient(to top, var(--dark-2) 0%, transparent 15%),
+        linear-gradient(to bottom, var(--dark-2) 0%, transparent 15%);
+    }
+    .sobre-img { width: 100%; height: 400px; object-fit: cover; border-radius: 0; display: block; }
+    .pgto-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 24px; }
+    .pgto-item { background: rgba(26,26,26,0.92); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 16px; text-align: center; }
+    .pgto-icon { font-size: 24px; margin-bottom: 8px; }
+    .pgto-label { font-size: 13px; font-weight: 700; color: #fff; }
+    .frete-note { margin-top: 16px; background: rgba(255,102,0,0.08); border: 1px solid rgba(255,102,0,0.25); border-radius: 12px; padding: 14px 18px; font-size: 14px; color: var(--gray-light); line-height: 1.5; }
+    .frete-note strong { color: var(--orange); }
+    .faq-head { text-align: center; margin-bottom: 40px; }
+    .faq-head h3 { font-size: clamp(26px, 3vw, 38px); font-weight: 900; color: #fff; margin-bottom: 8px; }
+    .faq-head h3 span { color: var(--orange); }
+    .faq-head p { color: var(--gray); font-size: 15px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .faq-item { background: rgba(26,26,26,0.92); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 24px; }
+    .faq-num { font-size: 11px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .faq-q { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 10px; }
+    .faq-a { font-size: 14px; color: var(--gray); line-height: 1.65; }
+
+    /* ===== FOOTER ===== */
+    footer { background: #060606; border-top: 1px solid rgba(255,102,0,0.2); padding: 44px 24px 24px; text-align: center; }
+    .footer-logo { height: 52px; width: auto; margin-bottom: 20px; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-links a { color: var(--gray); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-copy { font-size: 12px; color: #333; }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; padding: 32px 16px; }
+      .hero-img-wrap { order: -1; }
+      .hero-img { height: 300px; max-width: 100%; }
+      .hero-sub { margin: 0 auto 28px; }
+      .hero-stats { justify-content: center; }
+      .info-inner { grid-template-columns: 1fr; gap: 36px; }
+      .info-img-wrap { display: none; }
+      .sobre-img-wrap { height: 260px; overflow: hidden; }
+      .info-content .s-title { text-align: center; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 48px; }
+      .sobre-img { height: 260px; }
+      .sobre-text .s-title { text-align: center; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .pgto-grid { grid-template-columns: repeat(3,1fr); }
+    }
+    @media (max-width: 600px) {
+      #linhas, #info, #pecas, #sobre { padding: 60px 16px; }
+      .linhas-grid { grid-template-columns: 1fr 1fr; }
+      .pecas-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+      .peca-img { height: 180px; }
+      .price-new { font-size: 20px; }
+      .btn-header-wa span { display: none; }
+      .pgto-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 420px) {
+      .linhas-grid { grid-template-columns: 1fr; }
+      .pecas-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== MODAL LINHAS ===== -->
+<div class="modal-overlay" id="modalLinhas">
+  <div class="modal-box">
+    <div class="modal-icon">📦</div>
+    <div class="modal-title">Pedido mínimo de 10 peças</div>
+    <p class="modal-desc">Nossos uniformes personalizados são produzidos a partir de <strong>10 peças idênticas</strong>. Deseja continuar?</p>
+    <div class="modal-btns">
+      <button class="modal-btn-sim" id="modalSim">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Sim, tenho 10 ou mais peças
+      </button>
+      <button class="modal-btn-menos" id="modalMenos">Gostaria de menos de 10 peças</button>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <img src="./logo pap sem fundo.png" alt="Passo a Passo Uniformes" class="header-logo">
+  <a href="https://wa.me/5551985600893?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20uniformes%20personalizados." class="btn-header-wa" target="_blank" rel="noopener">
+    <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Gostaria de um orçamento</span>
+  </a>
+</header>
+
+<!-- CONTAINER 01 — HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">✦ Uniformes Personalizados</div>
+      <h1 class="hero-title">Sua equipe merece uma <span>identidade que inspire.</span></h1>
+      <p class="hero-sub">Criamos uniformes para times, empresas, academias e formandos. Do layout à entrega, cada detalhe é feito para a sua marca.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>+30 anos</strong><span>no mercado</span></div>
+        <div class="hero-stat"><strong>+5.000</strong><span>clientes atendidos</span></div>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="container01/imagem destaque.png" alt="Uniforme personalizado Passo a Passo" class="hero-img">
+    </div>
+  </div>
+</section>
+
+<!-- CONTAINER 02 — LINHAS -->
+<section id="linhas">
+  <div class="section-center">
+    <div class="s-badge">🎽 Nosso Catálogo</div>
+    <h2 class="s-title">Escolha a <span>linha ideal</span> para o seu time</h2>
+    <p class="s-sub">Cada uniforme é desenvolvido para o seu segmento. Selecione a linha e converse com a nossa equipe.</p>
+  </div>
+  <div class="linhas-grid">
+
+    <div class="linha-card">
+      <img src="container02/linha empresarial.jpeg" alt="Linha Empresarial" class="linha-card-img">
+      <div class="linha-card-body">
+        <div class="linha-card-title">Linha Empresarial</div>
+        <p class="linha-card-desc">Polos, camisetas e uniformes com a identidade da sua empresa. Profissionalismo em cada detalhe.</p>
+        <button class="btn-wa" onclick="abrirModal('Linha Empresarial','https://wa.me/5551985600893?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Linha%20Empresarial%20da%20Passo%20a%20Passo%20Uniformes.','https://wa.me/5551985600893?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Linha%20Empresarial%2C%20por%C3%A9m%20preciso%20de%20menos%20de%2010%20pe%C3%A7as.%20Tem%20alguma%20op%C3%A7%C3%A3o%20para%20mim%3F')">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero saber mais
+        </button>
+      </div>
+    </div>
+
+    <div class="linha-card">
+      <img src="container02/linha fitness.jpg" alt="Linha Fitness" class="linha-card-img">
+      <div class="linha-card-body">
+        <div class="linha-card-title">Linha Fitness</div>
+        <p class="linha-card-desc">Tops, leggings, shorts e camisetas técnicas com sublimação total e a identidade da sua academia.</p>
+        <button class="btn-wa" onclick="abrirModal('Linha Fitness','https://wa.me/5551985600893?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Linha%20Fitness%20da%20Passo%20a%20Passo%20Uniformes.','https://wa.me/5551985600893?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Linha%20Fitness%2C%20por%C3%A9m%20preciso%20de%20menos%20de%2010%20pe%C3%A7as.%20Tem%20alguma%20op%C3%A7%C3%A3o%20para%20mim%3F')">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero saber mais
+        </button>
+      </div>
+    </div>
+
+    <div class="linha-card">
+      <img src="container02/linha formandos.png" alt="Linha Formandos" class="linha-card-img">
+      <div class="linha-card-body">
+        <div class="linha-card-title">Linha Formandos</div>
+        <p class="linha-card-desc">O uniforme da turma que todo mundo lembra. Personalize com a identidade da sua formatura.</p>
+        <button class="btn-wa" onclick="abrirModal('Linha Formandos','https://wa.me/5551985600893?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Linha%20Formandos%20da%20Passo%20a%20Passo%20Uniformes.','https://wa.me/5551985600893?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Linha%20Formandos%2C%20por%C3%A9m%20preciso%20de%20menos%20de%2010%20pe%C3%A7as.%20Tem%20alguma%20op%C3%A7%C3%A3o%20para%20mim%3F')">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero saber mais
+        </button>
+      </div>
+    </div>
+
+    <div class="linha-card">
+      <img src="container02/linha futebol.jpg" alt="Linha Futebol" class="linha-card-img">
+      <div class="linha-card-body">
+        <div class="linha-card-title">Linha Futebol</div>
+        <p class="linha-card-desc">Camisas, agasalhos e kits completos para o seu time entrar em campo com identidade e qualidade.</p>
+        <button class="btn-wa" onclick="abrirModal('Linha Futebol','https://wa.me/5551985600893?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Linha%20Futebol%20da%20Passo%20a%20Passo%20Uniformes.','https://wa.me/5551985600893?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Linha%20Futebol%2C%20por%C3%A9m%20preciso%20de%20menos%20de%2010%20pe%C3%A7as.%20Tem%20alguma%20op%C3%A7%C3%A3o%20para%20mim%3F')">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero saber mais
+        </button>
+      </div>
+    </div>
+
+    <div class="linha-card">
+      <img src="container02/linha inverno.jpeg" alt="Linha Inverno" class="linha-card-img">
+      <div class="linha-card-body">
+        <div class="linha-card-title">Linha Inverno</div>
+        <p class="linha-card-desc">Jaquetas, moletons e casacos com o logo e as cores da sua equipe. Qualidade para o frio com muito estilo.</p>
+        <button class="btn-wa" onclick="abrirModal('Linha Inverno','https://wa.me/5551985600893?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Linha%20Inverno%20da%20Passo%20a%20Passo%20Uniformes.','https://wa.me/5551985600893?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Linha%20Inverno%2C%20por%C3%A9m%20preciso%20de%20menos%20de%2010%20pe%C3%A7as.%20Tem%20alguma%20op%C3%A7%C3%A3o%20para%20mim%3F')">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero saber mais
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTAINER 03 — INFORMAÇÕES -->
+<section id="info">
+  <div class="info-inner">
+    <div class="info-img-wrap">
+      <img src="container03/imagem destaque.png" alt="Uniforme personalizado Passo a Passo" class="info-img">
+    </div>
+    <div class="info-content">
+      <div class="s-badge">⚠ Detalhes importantes</div>
+      <h2 class="s-title" style="color:#fff; text-align:left;">O que você <span>precisa saber</span> antes de fechar</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card-icon">📅</div>
+          <div>
+            <div class="info-card-label">Prazo de entrega</div>
+            <div class="info-card-title">40 dias úteis</div>
+            <p class="info-card-desc">A contagem começa após a aprovação do layout e a confirmação do pagamento.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">📦</div>
+          <div>
+            <div class="info-card-label">Pedido mínimo</div>
+            <div class="info-card-title">10 peças idênticas</div>
+            <p class="info-card-desc">Somente os tamanhos podem variar. Modelo, cor e estampa devem ser iguais em todo o pedido.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🎨</div>
+          <div>
+            <div class="info-card-label">Layout personalizado</div>
+            <div class="info-card-title">R$ 100,00 abatido no pedido</div>
+            <p class="info-card-desc">Desenvolvemos a arte da sua peça. Esse valor é descontado integralmente quando você fecha o pedido.</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-note">
+        <strong>Precisa de menos de 10 peças?</strong><br>
+        Temos peças prontas disponíveis com opção de personalização. Perfeito para quem precisa de poucas unidades com entrega rápida!
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTAINER 04 — PEÇAS PRONTAS -->
+<section id="pecas">
+  <div class="section-center">
+    <div class="s-badge">🏷 Promoção</div>
+    <h2 class="s-title" style="color:#fff;">Peças prontas com <span>preço especial</span></h2>
+    <p class="s-sub" style="color:#777;">Aproveite enquanto durar o estoque. Disponíveis para pronta entrega com personalização.</p>
+  </div>
+  <div class="pecas-grid">
+
+    <div class="peca-card">
+      <div class="peca-img-wrap">
+        <img src="conatiner04/camiseta pv premium preta de 51,90 por 39,90 com 1 estampa em até 2 cores.png" alt="Camiseta PV Premium Preta" class="peca-img">
+      </div>
+      <div class="peca-body">
+        <div class="peca-title">Camiseta PV Premium Preta</div>
+        <div class="peca-desc">1 estampa em até 2 cores</div>
+        <div class="peca-price-row"><span class="price-old">R$ 51,90</span><span class="price-new">R$ 39,90</span></div>
+        <p class="price-note">por unidade</p>
+        <a href="https://wa.me/5551999360975?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Camiseta%20PV%20Premium%20Preta%20por%20R%2439%2C90.%20Pode%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-wa-peca" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero essa peça
+        </a>
+      </div>
+    </div>
+
+    <div class="peca-card">
+      <div class="peca-img-wrap">
+        <img src="conatiner04/camiseta pv premium azul marinho de 51,90 por 39,90 com 1 estampa em até 2 cores.png" alt="Camiseta PV Premium Azul Marinho" class="peca-img">
+      </div>
+      <div class="peca-body">
+        <div class="peca-title">Camiseta PV Premium Azul Marinho</div>
+        <div class="peca-desc">1 estampa em até 2 cores</div>
+        <div class="peca-price-row"><span class="price-old">R$ 51,90</span><span class="price-new">R$ 39,90</span></div>
+        <p class="price-note">por unidade</p>
+        <a href="https://wa.me/5551999360975?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Camiseta%20PV%20Premium%20Azul%20Marinho%20por%20R%2439%2C90.%20Pode%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-wa-peca" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero essa peça
+        </a>
+      </div>
+    </div>
+
+    <div class="peca-card">
+      <div class="peca-img-wrap">
+        <img src="conatiner04/moletom por 99,90 sem estampa ou 129,90 com 1 estampa (consultar cores).png" alt="Moletom" class="peca-img">
+      </div>
+      <div class="peca-body">
+        <div class="peca-title">Moletom Personalizado</div>
+        <div class="peca-desc">Consultar cores disponíveis</div>
+        <div class="price-stack">
+          <span class="price-new">R$ 99,90</span><span class="price-note">sem estampa</span>
+          <span class="price-new" style="margin-top:6px;">R$ 129,90</span><span class="price-note">com 1 estampa</span>
+        </div>
+        <a href="https://wa.me/5551999360975?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Moletom.%20Quais%20cores%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-wa-peca" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultar disponibilidade
+        </a>
+      </div>
+    </div>
+
+    <div class="peca-card esgotada">
+      <div class="peca-img-wrap">
+        <img src="conatiner04/camiseta copa 01 com 2 estampas [esgotada].png" alt="Camiseta Copa" class="peca-img">
+        <div class="fita">ESGOTADA</div>
+      </div>
+      <div class="peca-body">
+        <div class="peca-title">Camiseta Copa 2 estampas</div>
+        <div class="peca-desc">Produto indisponível no momento</div>
+        <div class="btn-esgotado">Esgotado</div>
+      </div>
+    </div>
+
+    <div class="peca-card esgotada">
+      <div class="peca-img-wrap">
+        <img src="conatiner04/camiseta pv premium vermelha de 51,90 por 39,90 com 1 estampa em até 2 cores [esgotada].png" alt="Camiseta PV Vermelha" class="peca-img">
+        <div class="fita">ESGOTADA</div>
+      </div>
+      <div class="peca-body">
+        <div class="peca-title">Camiseta PV Premium Vermelha</div>
+        <div class="peca-desc">Produto indisponível no momento</div>
+        <div class="btn-esgotado">Esgotado</div>
+      </div>
+    </div>
+
+    <div class="peca-card esgotada">
+      <div class="peca-img-wrap">
+        <img src="conatiner04/camiseta pv amarela premium de 51,90 por 39,90 com 1 estampa em até 2 cores [esgotada].png" alt="Camiseta PV Amarela" class="peca-img">
+        <div class="fita">ESGOTADA</div>
+      </div>
+      <div class="peca-body">
+        <div class="peca-title">Camiseta PV Amarela Premium</div>
+        <div class="peca-desc">Produto indisponível no momento</div>
+        <div class="btn-esgotado">Esgotado</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTAINER FINAL — SOBRE + FAQ -->
+<section id="sobre">
+  <div class="sobre-inner">
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <div class="s-badge">🏆 Sobre nós</div>
+        <h2 class="s-title" style="color:#fff; text-align:left;">Quem está <span>por trás</span> dos seus uniformes</h2>
+        <p>A Passo a Passo Uniformes tem mais de 30 anos no mercado, nascida da paixão por unir identidade visual e qualidade têxtil. Atendemos times de futebol, empresas, academias e formandos em todo o Brasil.</p>
+        <p>Cada pedido é tratado com atenção personalizada. Do desenvolvimento do layout até a entrega no seu endereço, nossa equipe está pronta para transformar a identidade da sua equipe em realidade.</p>
+        <p>Trabalhamos com silk-screen, sublimação e bordado, garantindo o acabamento certo para cada tipo de peça e necessidade.</p>
+
+        <!-- Formas de pagamento -->
+        <div style="margin-top: 28px;">
+          <div class="s-badge" style="margin-bottom: 14px;">💳 Formas de Pagamento</div>
+          <div class="pgto-grid">
+            <div class="pgto-item">
+              <div class="pgto-icon">📱</div>
+              <div class="pgto-label">Pix</div>
+            </div>
+            <div class="pgto-item">
+              <div class="pgto-icon">💳</div>
+              <div class="pgto-label">Cartão de Crédito</div>
+            </div>
+            <div class="pgto-item">
+              <div class="pgto-icon">🔗</div>
+              <div class="pgto-label">Link de Pagamento</div>
+            </div>
+          </div>
+          <div class="frete-note">
+            <strong>⚠ Atenção:</strong> O frete é por conta do cliente e calculado conforme o endereço de entrega no fechamento do pedido.
+          </div>
+        </div>
+      </div>
+      <div class="sobre-img-wrap">
+        <img src="./images (2).jpg" alt="Passo a Passo Uniformes — Loja" class="sobre-img">
+      </div>
+    </div>
+
+    <div class="faq-head">
+      <h3>Dúvidas <span>frequentes</span></h3>
+      <p>Tudo o que você precisa saber antes de fazer o seu pedido</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-num">Pergunta 01</div>
+        <div class="faq-q">Qual é a quantidade mínima de peças?</div>
+        <p class="faq-a">O pedido mínimo é de 10 peças idênticas. Somente os tamanhos podem variar; modelo, cor e estampa devem ser iguais em todo o pedido.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-num">Pergunta 02</div>
+        <div class="faq-q">Como funciona o layout personalizado?</div>
+        <p class="faq-a">Desenvolvemos a arte da sua peça por R$100,00. Esse valor é descontado integralmente quando você fecha o pedido conosco.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-num">Pergunta 03</div>
+        <div class="faq-q">Qual é o prazo de entrega?</div>
+        <p class="faq-a">40 dias úteis após a aprovação do layout e confirmação do pagamento. Esse prazo garante qualidade em série em cada peça do seu pedido.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-num">Pergunta 04</div>
+        <div class="faq-q">Preciso de menos de 10 peças. O que faço?</div>
+        <p class="faq-a">Temos peças prontas em estoque com opção de personalização. Consulte nossa seção de promoções ou fale diretamente pelo WhatsApp.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-num">Pergunta 05</div>
+        <div class="faq-q">Quais as formas de pagamento?</div>
+        <p class="faq-a">Aceitamos Pix, cartão de crédito e link de pagamento. Para pedidos personalizados, trabalhamos com entrada e o restante na entrega ou conforme combinado.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-num">Pergunta 06</div>
+        <div class="faq-q">O frete está incluso no pedido?</div>
+        <p class="faq-a">Não. O frete é por conta do cliente e calculado conforme o endereço de entrega. Entregamos para todo o Brasil via transportadora ou Correios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="./logo pap sem fundo.png" alt="Passo a Passo Uniformes" class="footer-logo">
+  <div class="footer-links">
+    <a href="#hero">Início</a>
+    <a href="#linhas">Linhas</a>
+    <a href="#info">Como funciona</a>
+    <a href="#pecas">Promoções</a>
+    <a href="#sobre">Sobre nós</a>
+    <a href="https://wa.me/5551985600893" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="footer-copy">© 2026 Passo a Passo Uniformes. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  // ── MODAL LINHAS ──
+  let urlSim = '';
+  let urlMenos = '';
+
+  function abrirModal(linha, waUrlSim, waUrlMenos) {
+    urlSim = waUrlSim;
+    urlMenos = waUrlMenos;
+    document.getElementById('modalLinhas').classList.add('active');
+  }
+
+  document.getElementById('modalSim').addEventListener('click', function () {
+    fecharModal();
+    window.open(urlSim, '_blank');
+  });
+
+  document.getElementById('modalMenos').addEventListener('click', function () {
+    fecharModal();
+    window.open(urlMenos, '_blank');
+  });
+
+  // Fecha ao clicar fora do box
+  document.getElementById('modalLinhas').addEventListener('click', function (e) {
+    if (e.target === this) fecharModal();
+  });
+
+  function fecharModal() {
+    document.getElementById('modalLinhas').classList.remove('active');
+  }
+</script>
+</body>
+</html>

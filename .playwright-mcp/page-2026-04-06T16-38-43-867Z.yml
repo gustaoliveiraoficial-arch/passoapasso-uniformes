@@ -1,0 +1,1178 @@
+- generic [ref=e105]:
+  - banner [ref=e107]:
+    - generic [ref=e108]:
+      - generic [ref=e110]:
+        - button "Conversas" [pressed] [ref=e113] [cursor=pointer]:
+          - generic [ref=e115]:
+            - generic [ref=e117]:
+              - img
+            - generic "19 mensagens não lidas" [ref=e119]:
+              - generic [ref=e120]: "19"
+        - button "Atualizações no status" [ref=e123] [cursor=pointer]:
+          - generic [ref=e127]:
+            - img
+        - button "Canais" [ref=e132] [cursor=pointer]:
+          - generic [ref=e136]:
+            - img
+        - button "Comunidades" [ref=e139] [cursor=pointer]:
+          - generic [ref=e143]:
+            - img
+        - separator [ref=e144]
+        - button "Ferramentas" [ref=e147] [cursor=pointer]:
+          - generic [ref=e151]:
+            - img
+        - button "Anunciar" [ref=e154] [cursor=pointer]:
+          - generic [ref=e158]:
+            - img
+      - generic [ref=e160]:
+        - button "Mídia" [ref=e163] [cursor=pointer]:
+          - generic [ref=e167]:
+            - img
+        - button "Configurações" [ref=e170] [cursor=pointer]:
+          - generic [ref=e174]:
+            - img
+        - button "Perfil" [ref=e177] [cursor=pointer]:
+          - img [ref=e182]
+  - generic [ref=e183]:
+    - banner [ref=e184]:
+      - banner [ref=e185]:
+        - generic [ref=e186]:
+          - heading "WhatsApp" [level=2] [ref=e188]:
+            - generic "WhatsApp" [ref=e192]:
+              - img "wa-wordmark-refreshed"
+          - generic [ref=e194]:
+            - button "Nova conversa" [ref=e197] [cursor=pointer]:
+              - generic [ref=e201]:
+                - img
+            - button "Mais opções" [ref=e204] [cursor=pointer]:
+              - generic [ref=e208]:
+                - img
+    - generic [ref=e209]:
+      - generic [ref=e216]:
+        - generic [ref=e218]:
+          - img
+        - textbox "Pesquisar ou começar uma nova conversa" [ref=e220]
+      - tablist "chat-list-filters" [active] [ref=e221]:
+        - tab "Tudo" [ref=e223] [cursor=pointer]:
+          - generic [ref=e229]: Tudo
+        - tab "Não lidas" [ref=e231] [cursor=pointer]:
+          - generic [ref=e237]: Não lidas
+        - tab "Favoritas" [ref=e239] [cursor=pointer]:
+          - generic [ref=e245]: Favoritas
+        - tab "Grupos" [ref=e247] [cursor=pointer]:
+          - generic [ref=e253]: Grupos
+        - tab "Etiquetas" [ref=e256] [cursor=pointer]:
+          - generic [ref=e258]:
+            - generic [ref=e262]: Etiquetas
+            - generic [ref=e264]:
+              - img
+      - generic [ref=e267]:
+        - button "Fechar" [ref=e270] [cursor=pointer]:
+          - generic [ref=e274]:
+            - img
+        - generic [ref=e275]:
+          - generic [ref=e276]:
+            - img
+          - generic [ref=e279]:
+            - text: As notificações de mensagens estão desativadas.
+            - button "Ativar" [ref=e280] [cursor=pointer]
+      - grid "Lista de conversas" [ref=e284]:
+        - 'row "FRASES 11:35 Você : 51996128405 Conversa fixada" [ref=e285]':
+          - 'gridcell "FRASES 11:35 Você : 51996128405 Conversa fixada" [ref=e286]':
+            - generic [ref=e288] [cursor=pointer]:
+              - generic [ref=e294]:
+                - img
+              - generic [ref=e295]:
+                - gridcell "FRASES 11:35" [ref=e296]:
+                  - generic [ref=e298]:
+                    - generic "FRASES" [ref=e299]
+                    - generic [ref=e303]:
+                      - img
+                  - generic [ref=e305]: 11:35
+                - generic [ref=e306]:
+                  - generic "‪51996128405‬" [ref=e308]:
+                    - generic [ref=e310]:
+                      - img
+                    - generic [ref=e313]: Você
+                    - generic [ref=e314]: ":"
+                    - generic [ref=e315]: "51996128405"
+                  - gridcell "Conversa fixada" [ref=e316]:
+                    - generic "Conversa fixada" [ref=e318]:
+                      - generic [ref=e319]:
+                        - img
+        - 'row "Produção usina 13:38 Você : @Usina Têxtil" [ref=e2021]':
+          - 'gridcell "Produção usina 13:38 Você : @Usina Têxtil" [ref=e2022]':
+            - generic [ref=e814] [cursor=pointer]:
+              - generic [ref=e820]:
+                - img
+              - generic [ref=e821]:
+                - gridcell "Produção usina 13:38" [ref=e2023]:
+                  - generic "Produção usina" [ref=e824]
+                  - generic [ref=e826]: 13:38
+                - generic [ref=e827]:
+                  - generic "‪@Usina Têxtil‬" [ref=e2024]:
+                    - generic [ref=e2026]:
+                      - img
+                    - generic [ref=e834]: Você
+                    - generic [ref=e835]: ":"
+                    - generic [ref=e836]: "@Usina Têxtil"
+                  - gridcell
+        - row "2 mensagens não lidas +55 51 9658-5196 13:37 quais tamanho da pra fazer?" [ref=e320]:
+          - gridcell "2 mensagens não lidas +55 51 9658-5196 13:37 quais tamanho da pra fazer?" [ref=e321]:
+            - generic [ref=e323] [cursor=pointer]:
+              - img [ref=e328]
+              - generic [ref=e329]:
+                - gridcell "2 mensagens não lidas +55 51 9658-5196 13:37" [ref=e330]:
+                  - generic [ref=e331]:
+                    - generic [ref=e332]: 2 mensagens não lidas
+                    - generic "+55 51 9658-5196" [ref=e335]
+                  - generic [ref=e337]: 13:37
+                - generic [ref=e338]:
+                  - generic "‪quais tamanho da pra fazer?‬" [ref=e340]:
+                    - generic [ref=e341]: quais tamanho da pra fazer?
+                  - gridcell [ref=e342]:
+                    - generic [ref=e346]: "2"
+        - row "+55 51 8937-1512 13:28 Posso te chamar de Kethlyn mesmo??" [ref=e347]:
+          - gridcell "+55 51 8937-1512 13:28 Posso te chamar de Kethlyn mesmo??" [ref=e348]:
+            - generic [ref=e350] [cursor=pointer]:
+              - img [ref=e355]
+              - generic [ref=e356]:
+                - gridcell "+55 51 8937-1512 13:28" [ref=e357]:
+                  - generic "+55 51 8937-1512" [ref=e361]
+                  - generic [ref=e363]: 13:28
+                - generic [ref=e364]:
+                  - generic "‪Posso te chamar de Kethlyn mesmo??‬" [ref=e366]:
+                    - generic [ref=e368]:
+                      - img
+                    - generic [ref=e369]: Posso te chamar de Kethlyn mesmo??
+                  - gridcell
+        - row "Jessica Particular 13:22 a logo desta regata é essa mesma?? pedro me questionou" [ref=e370]:
+          - gridcell "Jessica Particular 13:22 a logo desta regata é essa mesma?? pedro me questionou" [ref=e371]:
+            - generic [ref=e373] [cursor=pointer]:
+              - img [ref=e378]
+              - generic [ref=e379]:
+                - gridcell "Jessica Particular 13:22" [ref=e380]:
+                  - generic "Jessica Particular" [ref=e384]
+                  - generic [ref=e386]: 13:22
+                - generic [ref=e387]:
+                  - generic "‪a logo desta regata é essa mesma?? pedro me questionou‬" [ref=e389]:
+                    - generic [ref=e391]:
+                      - img
+                    - generic [ref=e393]:
+                      - img
+                    - generic [ref=e394]: a logo desta regata é essa mesma?? pedro me questionou
+                  - gridcell
+        - row "Pedro Particular 13:20 Confere e pergunta pro vendedor pfv" [ref=e395]:
+          - gridcell "Pedro Particular 13:20 Confere e pergunta pro vendedor pfv" [ref=e396]:
+            - generic [ref=e398] [cursor=pointer]:
+              - img [ref=e403]
+              - generic [ref=e404]:
+                - gridcell "Pedro Particular 13:20" [ref=e405]:
+                  - generic "Pedro Particular" [ref=e409]
+                  - generic [ref=e411]: 13:20
+                - generic [ref=e412]:
+                  - generic "‪Confere e pergunta pro vendedor pfv‬" [ref=e414]:
+                    - generic [ref=e415]: Confere e pergunta pro vendedor pfv
+                  - gridcell
+        - row "+55 51 9255-2831 13:18 0:35" [ref=e416]:
+          - gridcell "+55 51 9255-2831 13:18 0:35" [ref=e417]:
+            - generic [ref=e419] [cursor=pointer]:
+              - generic [ref=e425]:
+                - img
+              - generic [ref=e426]:
+                - gridcell "+55 51 9255-2831 13:18" [ref=e427]:
+                  - generic [ref=e429]:
+                    - generic "+55 51 9255-2831" [ref=e431]
+                    - generic [ref=e435]:
+                      - img
+                  - generic [ref=e437]: 13:18
+                - generic [ref=e438]:
+                  - generic "‪0:35‬" [ref=e440]:
+                    - generic [ref=e442]:
+                      - img
+                    - generic [ref=e444]:
+                      - img
+                    - generic [ref=e445]: 0:35
+                  - gridcell
+        - row "1 mensagem não lida +55 51 9165-7695 13:11 qual material mesmo?" [ref=e446]:
+          - gridcell "1 mensagem não lida +55 51 9165-7695 13:11 qual material mesmo?" [ref=e447]:
+            - generic [ref=e449] [cursor=pointer]:
+              - img [ref=e454]
+              - generic [ref=e455]:
+                - gridcell "1 mensagem não lida +55 51 9165-7695 13:11" [ref=e456]:
+                  - generic [ref=e457]:
+                    - generic [ref=e458]: 1 mensagem não lida
+                    - generic "+55 51 9165-7695" [ref=e461]
+                  - generic [ref=e463]: 13:11
+                - generic [ref=e464]:
+                  - generic "‪qual material mesmo?‬" [ref=e466]:
+                    - generic [ref=e467]: qual material mesmo?
+                  - gridcell [ref=e468]:
+                    - generic [ref=e472]: "1"
+        - row "7 mensagens não lidas +55 51 9535-7607 13:07 E na frente poderia ser um 2026 com a mesma fonte das costas e um \"nono\" na vertical" [ref=e473]:
+          - gridcell "7 mensagens não lidas +55 51 9535-7607 13:07 E na frente poderia ser um 2026 com a mesma fonte das costas e um \"nono\" na vertical" [ref=e474]:
+            - generic [ref=e476] [cursor=pointer]:
+              - img [ref=e481]
+              - generic [ref=e482]:
+                - gridcell "7 mensagens não lidas +55 51 9535-7607 13:07" [ref=e483]:
+                  - generic [ref=e484]:
+                    - generic [ref=e485]: 7 mensagens não lidas
+                    - generic "+55 51 9535-7607" [ref=e488]
+                  - generic [ref=e490]: 13:07
+                - generic [ref=e491]:
+                  - generic "‪E na frente poderia ser um 2026 com a mesma fonte das costas e um \"nono\" na vertical‬" [ref=e493]:
+                    - generic [ref=e494]: E na frente poderia ser um 2026 com a mesma fonte das costas e um "nono" na vertical
+                  - gridcell [ref=e495]:
+                    - generic [ref=e499]: "7"
+        - row "10 mensagens não lidas Henrique GINASTICA NH (BOLÃO) 13:07 Teria a possibilidade de fazermos 5 unidades de cada camiseta e 5 bermudas?" [ref=e500]:
+          - gridcell "10 mensagens não lidas Henrique GINASTICA NH (BOLÃO) 13:07 Teria a possibilidade de fazermos 5 unidades de cada camiseta e 5 bermudas?" [ref=e501]:
+            - generic [ref=e503] [cursor=pointer]:
+              - img [ref=e508]
+              - generic [ref=e509]:
+                - gridcell "10 mensagens não lidas Henrique GINASTICA NH (BOLÃO) 13:07" [ref=e510]:
+                  - generic [ref=e511]:
+                    - generic [ref=e512]: 10 mensagens não lidas
+                    - generic "Henrique GINASTICA NH (BOLÃO)" [ref=e515]
+                  - generic [ref=e517]: 13:07
+                - generic [ref=e518]:
+                  - generic "‪Teria a possibilidade de fazermos 5 unidades de cada camiseta e 5 bermudas?‬" [ref=e520]:
+                    - generic [ref=e521]: Teria a possibilidade de fazermos 5 unidades de cada camiseta e 5 bermudas?
+                  - gridcell [ref=e522]:
+                    - generic [ref=e526]: "10"
+        - row "1 mensagem não lida Fernando Aquino Igotup 13:07 Amanha qual horario dai" [ref=e527]:
+          - gridcell "1 mensagem não lida Fernando Aquino Igotup 13:07 Amanha qual horario dai" [ref=e528]:
+            - generic [ref=e530] [cursor=pointer]:
+              - img [ref=e535]
+              - generic [ref=e536]:
+                - gridcell "1 mensagem não lida Fernando Aquino Igotup 13:07" [ref=e537]:
+                  - generic [ref=e538]:
+                    - generic [ref=e539]: 1 mensagem não lida
+                    - generic [ref=e540]:
+                      - generic "Fernando Aquino Igotup" [ref=e542]
+                      - generic [ref=e546]:
+                        - img
+                  - generic [ref=e548]: 13:07
+                - generic [ref=e549]:
+                  - generic "‪Amanha qual horario dai‬" [ref=e551]:
+                    - generic [ref=e552]: Amanha qual horario dai
+                  - gridcell [ref=e553]:
+                    - generic [ref=e557]: "1"
+        - row "1 mensagem não lida +55 55 9718-4342 13:07 obrigadaaa" [ref=e558]:
+          - gridcell "1 mensagem não lida +55 55 9718-4342 13:07 obrigadaaa" [ref=e559]:
+            - generic [ref=e561] [cursor=pointer]:
+              - img [ref=e566]
+              - generic [ref=e567]:
+                - gridcell "1 mensagem não lida +55 55 9718-4342 13:07" [ref=e568]:
+                  - generic [ref=e569]:
+                    - generic [ref=e570]: 1 mensagem não lida
+                    - generic "+55 55 9718-4342" [ref=e573]
+                  - generic [ref=e575]: 13:07
+                - generic [ref=e576]:
+                  - generic "‪obrigadaaa‬" [ref=e578]:
+                    - generic [ref=e579]: obrigadaaa
+                  - gridcell [ref=e580]:
+                    - generic [ref=e584]: "1"
+        - row "Não lida +55 51 9226-0608 13:04 Tudo bem?" [ref=e585]:
+          - gridcell "Não lida +55 51 9226-0608 13:04 Tudo bem?" [ref=e586]:
+            - generic [ref=e588] [cursor=pointer]:
+              - img [ref=e593]
+              - generic [ref=e594]:
+                - gridcell "Não lida +55 51 9226-0608 13:04" [ref=e595]:
+                  - generic [ref=e596]:
+                    - generic [ref=e597]: Não lida
+                    - generic [ref=e598]:
+                      - generic "+55 51 9226-0608" [ref=e600]
+                      - generic [ref=e604]:
+                        - img
+                  - generic [ref=e606]: 13:04
+                - generic [ref=e607]:
+                  - generic "‪Tudo bem?‬" [ref=e609]:
+                    - generic [ref=e610]: Tudo bem?
+                  - gridcell [ref=e611]
+        - row "Não lida +55 51 8301-7353 13:04 Tá bom" [ref=e615]:
+          - gridcell "Não lida +55 51 8301-7353 13:04 Tá bom" [ref=e616]:
+            - generic [ref=e618] [cursor=pointer]:
+              - generic [ref=e624]:
+                - img
+              - generic [ref=e625]:
+                - gridcell "Não lida +55 51 8301-7353 13:04" [ref=e626]:
+                  - generic [ref=e627]:
+                    - generic [ref=e628]: Não lida
+                    - generic "+55 51 8301-7353" [ref=e631]
+                  - generic [ref=e633]: 13:04
+                - generic [ref=e634]:
+                  - generic "‪Tá bom‬" [ref=e636]:
+                    - generic [ref=e637]: Tá bom
+                  - gridcell [ref=e638]
+        - row "1 mensagem não lida +55 51 9803-7471 13:01 Beleza" [ref=e642]:
+          - gridcell "1 mensagem não lida +55 51 9803-7471 13:01 Beleza" [ref=e643]:
+            - generic [ref=e645] [cursor=pointer]:
+              - img [ref=e650]
+              - generic [ref=e651]:
+                - gridcell "1 mensagem não lida +55 51 9803-7471 13:01" [ref=e652]:
+                  - generic [ref=e653]:
+                    - generic [ref=e654]: 1 mensagem não lida
+                    - generic "+55 51 9803-7471" [ref=e657]
+                  - generic [ref=e659]: 13:01
+                - generic [ref=e660]:
+                  - generic "‪Beleza‬" [ref=e662]:
+                    - generic [ref=e663]: Beleza
+                  - gridcell [ref=e664]:
+                    - generic [ref=e668]: "1"
+        - row "+55 51 8972-5763 12:55 Siim, siim, te avisamos sim Luis!!" [ref=e669]:
+          - gridcell "+55 51 8972-5763 12:55 Siim, siim, te avisamos sim Luis!!" [ref=e670]:
+            - generic [ref=e672] [cursor=pointer]:
+              - img [ref=e677]
+              - generic [ref=e678]:
+                - gridcell "+55 51 8972-5763 12:55" [ref=e679]:
+                  - generic "+55 51 8972-5763" [ref=e683]
+                  - generic [ref=e685]: 12:55
+                - generic [ref=e686]:
+                  - generic "‪Siim, siim, te avisamos sim Luis!!‬" [ref=e688]:
+                    - generic [ref=e690]:
+                      - img
+                    - generic [ref=e691]: Siim, siim, te avisamos sim Luis!!
+                  - gridcell
+        - row "+55 51 9243-6068 12:53 Ficou top hein Tulio!!" [ref=e692]:
+          - gridcell "+55 51 9243-6068 12:53 Ficou top hein Tulio!!" [ref=e693]:
+            - generic [ref=e695] [cursor=pointer]:
+              - img [ref=e700]
+              - generic [ref=e701]:
+                - gridcell "+55 51 9243-6068 12:53" [ref=e702]:
+                  - generic [ref=e704]:
+                    - generic "+55 51 9243-6068" [ref=e706]
+                    - generic [ref=e710]:
+                      - img
+                  - generic [ref=e712]: 12:53
+                - generic [ref=e713]:
+                  - generic "‪Ficou top hein Tulio!!‬" [ref=e715]:
+                    - generic [ref=e717]:
+                      - img
+                    - generic [ref=e718]: Ficou top hein Tulio!!
+                  - gridcell
+        - row "+55 51 9366-6862 11:51 Obrigada!" [ref=e719]:
+          - gridcell "+55 51 9366-6862 11:51 Obrigada!" [ref=e720]:
+            - generic [ref=e722] [cursor=pointer]:
+              - img [ref=e727]
+              - generic [ref=e728]:
+                - gridcell "+55 51 9366-6862 11:51" [ref=e729]:
+                  - generic "+55 51 9366-6862" [ref=e733]
+                  - generic [ref=e735]: 11:51
+                - generic [ref=e736]:
+                  - generic "‪Obrigada!‬" [ref=e738]:
+                    - generic [ref=e739]: Obrigada!
+                  - gridcell
+        - row "+55 51 9612-8405 11:35 bom dia Ananda" [ref=e740]:
+          - gridcell "+55 51 9612-8405 11:35 bom dia Ananda" [ref=e741]:
+            - generic [ref=e743] [cursor=pointer]:
+              - img [ref=e748]
+              - generic [ref=e749]:
+                - gridcell "+55 51 9612-8405 11:35" [ref=e750]:
+                  - generic "+55 51 9612-8405" [ref=e754]
+                  - generic [ref=e756]: 11:35
+                - generic [ref=e757]:
+                  - generic "‪bom dia Ananda‬" [ref=e759]:
+                    - generic [ref=e761]:
+                      - img
+                    - generic [ref=e762]: bom dia Ananda
+                  - gridcell
+        - row "+55 51 8948-9173 11:32 ceeertoo" [ref=e763]:
+          - gridcell "+55 51 8948-9173 11:32 ceeertoo" [ref=e764]:
+            - generic [ref=e766] [cursor=pointer]:
+              - img [ref=e771]
+              - generic [ref=e772]:
+                - gridcell "+55 51 8948-9173 11:32" [ref=e773]:
+                  - generic [ref=e775]:
+                    - generic "+55 51 8948-9173" [ref=e777]
+                    - generic [ref=e781]:
+                      - img
+                  - generic [ref=e783]: 11:32
+                - generic [ref=e784]:
+                  - generic "‪ceeertoo‬" [ref=e786]:
+                    - generic [ref=e787]: ceeertoo
+                  - gridcell
+        - row "+55 51 9538-8619 11:31 Referente a prazo estamos com o prazo de aproximadamente uns 20 a 30 dias após a confirmação do pedido!!" [ref=e788]:
+          - gridcell "+55 51 9538-8619 11:31 Referente a prazo estamos com o prazo de aproximadamente uns 20 a 30 dias após a confirmação do pedido!!" [ref=e789]:
+            - generic [ref=e791] [cursor=pointer]:
+              - img [ref=e796]
+              - generic [ref=e797]:
+                - gridcell "+55 51 9538-8619 11:31" [ref=e798]:
+                  - generic "+55 51 9538-8619" [ref=e802]
+                  - generic [ref=e804]: 11:31
+                - generic [ref=e805]:
+                  - generic "‪Referente a prazo estamos com o prazo de aproximadamente uns 20 a 30 dias após a confirmação do pedido!!‬" [ref=e807]:
+                    - generic [ref=e809]:
+                      - img
+                    - generic [ref=e810]: Referente a prazo estamos com o prazo de aproximadamente uns 20 a 30 dias após a confirmação do pedido!!
+                  - gridcell
+        - row "+55 51 8047-3900 11:22 Mas está 80% definido já" [ref=e837]:
+          - gridcell "+55 51 8047-3900 11:22 Mas está 80% definido já" [ref=e838]:
+            - generic [ref=e840] [cursor=pointer]:
+              - generic [ref=e846]:
+                - img
+              - generic [ref=e847]:
+                - gridcell "+55 51 8047-3900 11:22" [ref=e848]:
+                  - generic "+55 51 8047-3900" [ref=e852]
+                  - generic [ref=e854]: 11:22
+                - generic [ref=e855]:
+                  - generic "‪Mas está 80% definido já‬" [ref=e857]:
+                    - generic [ref=e858]: Mas está 80% definido já
+                  - gridcell
+        - row "1 mensagem não lida +55 51 9692-5318 11:19 Muito obrigada" [ref=e859]:
+          - gridcell "1 mensagem não lida +55 51 9692-5318 11:19 Muito obrigada" [ref=e860]:
+            - generic [ref=e862] [cursor=pointer]:
+              - img [ref=e867]
+              - generic [ref=e868]:
+                - gridcell "1 mensagem não lida +55 51 9692-5318 11:19" [ref=e869]:
+                  - generic [ref=e870]:
+                    - generic [ref=e871]: 1 mensagem não lida
+                    - generic [ref=e872]:
+                      - generic "+55 51 9692-5318" [ref=e874]
+                      - generic [ref=e878]:
+                        - img
+                  - generic [ref=e880]: 11:19
+                - generic [ref=e881]:
+                  - generic "‪Muito obrigada‬" [ref=e883]:
+                    - generic [ref=e884]: Muito obrigada
+                  - gridcell [ref=e885]:
+                    - generic [ref=e889]: "1"
+        - row "1 mensagem não lida +55 51 9916-0750 11:19 Ta bemm" [ref=e890]:
+          - gridcell "1 mensagem não lida +55 51 9916-0750 11:19 Ta bemm" [ref=e891]:
+            - generic [ref=e893] [cursor=pointer]:
+              - img [ref=e898]
+              - generic [ref=e899]:
+                - gridcell "1 mensagem não lida +55 51 9916-0750 11:19" [ref=e900]:
+                  - generic [ref=e901]:
+                    - generic [ref=e902]: 1 mensagem não lida
+                    - generic [ref=e903]:
+                      - generic "+55 51 9916-0750" [ref=e905]
+                      - generic [ref=e907]:
+                        - generic [ref=e908]:
+                          - img
+                        - generic [ref=e909]:
+                          - img
+                  - generic [ref=e911]: 11:19
+                - generic [ref=e912]:
+                  - generic "‪Ta bemm‬" [ref=e914]:
+                    - generic [ref=e915]: Ta bemm
+                  - gridcell [ref=e916]:
+                    - generic [ref=e920]: "1"
+        - row "Passo A Passo Comercial 11:17 data de entrega 22/05" [ref=e921]:
+          - gridcell "Passo A Passo Comercial 11:17 data de entrega 22/05" [ref=e922]:
+            - generic [ref=e924] [cursor=pointer]:
+              - img [ref=e929]
+              - generic [ref=e930]:
+                - gridcell "Passo A Passo Comercial 11:17" [ref=e931]:
+                  - generic "Passo A Passo Comercial" [ref=e935]
+                  - generic [ref=e937]: 11:17
+                - generic [ref=e938]:
+                  - generic "‪data de entrega 22/05‬" [ref=e940]:
+                    - generic [ref=e942]:
+                      - img
+                    - generic [ref=e943]: data de entrega 22/05
+                  - gridcell
+        - row "+55 51 9143-7661 11:06 2026-04-06_110549.pdf • 3 páginas" [ref=e944]:
+          - gridcell "+55 51 9143-7661 11:06 2026-04-06_110549.pdf • 3 páginas" [ref=e945]:
+            - generic [ref=e947] [cursor=pointer]:
+              - img [ref=e952]
+              - generic [ref=e953]:
+                - gridcell "+55 51 9143-7661 11:06" [ref=e954]:
+                  - generic [ref=e956]:
+                    - generic "+55 51 9143-7661" [ref=e958]
+                    - generic [ref=e962]:
+                      - img
+                  - generic [ref=e964]: 11:06
+                - generic [ref=e965]:
+                  - generic "‪2026-04-06_110549.pdf • 3 páginas‬" [ref=e967]:
+                    - generic [ref=e969]:
+                      - img
+                    - generic [ref=e970]: 2026-04-06_110549.pdf • 3 páginas
+                  - gridcell
+        - 'row "Expedição Passo a Passo 10:36 Talvez Produção Passo A Passo 🧡 : @Financeiro Passo A Passo Wellington pires (4137) 1 volume" [ref=e971]':
+          - 'gridcell "Expedição Passo a Passo 10:36 Talvez Produção Passo A Passo 🧡 : @Financeiro Passo A Passo Wellington pires (4137) 1 volume" [ref=e972]':
+            - generic [ref=e974] [cursor=pointer]:
+              - img [ref=e979]
+              - generic [ref=e980]:
+                - gridcell "Expedição Passo a Passo 10:36" [ref=e981]:
+                  - generic "Expedição Passo a Passo" [ref=e983]
+                  - generic [ref=e985]: 10:36
+                - generic [ref=e986]:
+                  - generic "‪@Financeiro Passo A Passo Wellington pires (4137) 1 volume‬" [ref=e988]:
+                    - generic "Talvez Produção Passo A Passo 🧡" [ref=e991]:
+                      - text: ~ Produção Passo A Passo
+                      - img "🧡" [ref=e992]
+                    - generic [ref=e993]: ":"
+                    - generic [ref=e994]: "@Financeiro Passo A Passo Wellington pires (4137) 1 volume"
+                  - gridcell
+        - row "+55 51 9899-3788 10:35 Nao" [ref=e995]:
+          - gridcell "+55 51 9899-3788 10:35 Nao" [ref=e996]:
+            - generic [ref=e998] [cursor=pointer]:
+              - generic [ref=e1004]:
+                - img
+              - generic [ref=e1005]:
+                - gridcell "+55 51 9899-3788 10:35" [ref=e1006]:
+                  - generic "+55 51 9899-3788" [ref=e1010]
+                  - generic [ref=e1012]: 10:35
+                - generic [ref=e1013]:
+                  - generic "‪Nao‬" [ref=e1015]:
+                    - generic [ref=e1016]: Nao
+                  - gridcell
+        - row "+55 54 9643-9494 10:28 Claro, pode sim!!" [ref=e1017]:
+          - gridcell "+55 54 9643-9494 10:28 Claro, pode sim!!" [ref=e1018]:
+            - generic [ref=e1020] [cursor=pointer]:
+              - img [ref=e1025]
+              - generic [ref=e1026]:
+                - gridcell "+55 54 9643-9494 10:28" [ref=e1027]:
+                  - generic "+55 54 9643-9494" [ref=e1031]
+                  - generic [ref=e1033]: 10:28
+                - generic [ref=e1034]:
+                  - generic "‪Claro, pode sim!!‬" [ref=e1036]:
+                    - generic [ref=e1038]:
+                      - img
+                    - generic [ref=e1039]: Claro, pode sim!!
+                  - gridcell
+        - row "DTF 10:20 Jessica Particular fixou uma mensagem" [ref=e1040]:
+          - gridcell "DTF 10:20 Jessica Particular fixou uma mensagem" [ref=e1041]:
+            - generic [ref=e1043] [cursor=pointer]:
+              - generic [ref=e1049]:
+                - img
+              - generic [ref=e1050]:
+                - gridcell "DTF 10:20" [ref=e1051]:
+                  - generic "DTF" [ref=e1053]
+                  - generic [ref=e1055]: 10:20
+                - generic [ref=e1056]:
+                  - generic "‪Jessica Particular fixou uma mensagem‬" [ref=e1058]:
+                    - generic [ref=e1059]: Jessica Particular fixou uma mensagem
+                  - gridcell
+        - row "+55 51 9994-4013 10:10 Tudo certo??" [ref=e1060]:
+          - gridcell "+55 51 9994-4013 10:10 Tudo certo??" [ref=e1061]:
+            - generic [ref=e1063] [cursor=pointer]:
+              - generic [ref=e1069]:
+                - img
+              - generic [ref=e1070]:
+                - gridcell "+55 51 9994-4013 10:10" [ref=e1071]:
+                  - generic "+55 51 9994-4013" [ref=e1075]
+                  - generic [ref=e1077]: 10:10
+                - generic [ref=e1078]:
+                  - generic "‪Tudo certo??‬" [ref=e1080]:
+                    - generic [ref=e1082]:
+                      - img
+                    - generic [ref=e1083]: Tudo certo??
+                  - gridcell
+        - 'row "MKT interno Passo a Passo 10:02 Jessica Particular : Tem aqueles outros também" [ref=e1084]':
+          - 'gridcell "MKT interno Passo a Passo 10:02 Jessica Particular : Tem aqueles outros também" [ref=e1085]':
+            - generic [ref=e1087] [cursor=pointer]:
+              - img [ref=e1092]
+              - generic [ref=e1093]:
+                - gridcell "MKT interno Passo a Passo 10:02" [ref=e1094]:
+                  - generic "MKT interno Passo a Passo" [ref=e1096]
+                  - generic [ref=e1098]: 10:02
+                - generic [ref=e1099]:
+                  - generic "‪Tem aqueles outros também‬" [ref=e1101]:
+                    - generic [ref=e1104]: Jessica Particular
+                    - generic [ref=e1105]: ":"
+                    - generic [ref=e1106]: Tem aqueles outros também
+                  - gridcell
+        - row "Gregory 10:02 Gráfica Rm Enfeites Dtf" [ref=e1107]:
+          - gridcell "Gregory 10:02 Gráfica Rm Enfeites Dtf" [ref=e1108]:
+            - generic [ref=e1110] [cursor=pointer]:
+              - img [ref=e1115]
+              - generic [ref=e1116]:
+                - gridcell "Gregory 10:02" [ref=e1117]:
+                  - generic [ref=e1119]:
+                    - generic "Gregory" [ref=e1121]
+                    - generic [ref=e1125]:
+                      - img
+                  - generic [ref=e1127]: 10:02
+                - generic [ref=e1128]:
+                  - generic "‪Gráfica Rm Enfeites Dtf‬" [ref=e1130]:
+                    - generic [ref=e1132]:
+                      - img
+                    - generic [ref=e1134]:
+                      - img
+                    - generic [ref=e1135]: Gráfica Rm Enfeites Dtf
+                  - gridcell
+        - row "1 mensagem não lida +55 51 8300-3814 09:54 Ok" [ref=e1136]:
+          - gridcell "1 mensagem não lida +55 51 8300-3814 09:54 Ok" [ref=e1137]:
+            - generic [ref=e1139] [cursor=pointer]:
+              - img [ref=e1144]
+              - generic [ref=e1145]:
+                - gridcell "1 mensagem não lida +55 51 8300-3814 09:54" [ref=e1146]:
+                  - generic [ref=e1147]:
+                    - generic [ref=e1148]: 1 mensagem não lida
+                    - generic [ref=e1149]:
+                      - generic "+55 51 8300-3814" [ref=e1151]
+                      - generic [ref=e1153]:
+                        - generic [ref=e1154]:
+                          - img
+                        - generic [ref=e1155]:
+                          - img
+                  - generic [ref=e1157]: 09:54
+                - generic [ref=e1158]:
+                  - generic "‪Ok‬" [ref=e1160]:
+                    - generic [ref=e1161]: Ok
+                  - gridcell [ref=e1162]:
+                    - generic [ref=e1166]: "1"
+        - row "+55 51 8010-0155 09:54 0:02" [ref=e1167]:
+          - gridcell "+55 51 8010-0155 09:54 0:02" [ref=e1168]:
+            - generic [ref=e1170] [cursor=pointer]:
+              - img [ref=e1175]
+              - generic [ref=e1176]:
+                - gridcell "+55 51 8010-0155 09:54" [ref=e1177]:
+                  - generic [ref=e1179]:
+                    - generic "+55 51 8010-0155" [ref=e1181]
+                    - generic [ref=e1185]:
+                      - img
+                  - generic [ref=e1187]: 09:54
+                - generic [ref=e1188]:
+                  - generic "‪0:02‬" [ref=e1190]:
+                    - generic [ref=e1192]:
+                      - img
+                    - generic [ref=e1193]: 0:02
+                  - gridcell
+        - row "+55 51 8054-7350 09:48 Fechando amanha a data fica para dia 22/05!!" [ref=e1194]:
+          - gridcell "+55 51 8054-7350 09:48 Fechando amanha a data fica para dia 22/05!!" [ref=e1195]:
+            - generic [ref=e1197] [cursor=pointer]:
+              - generic [ref=e1203]:
+                - img
+              - generic [ref=e1204]:
+                - gridcell "+55 51 8054-7350 09:48" [ref=e1205]:
+                  - generic [ref=e1207]:
+                    - generic "+55 51 8054-7350" [ref=e1209]
+                    - generic [ref=e1213]:
+                      - img
+                  - generic [ref=e1215]: 09:48
+                - generic [ref=e1216]:
+                  - generic "‪Fechando amanha a data fica para dia 22/05!!‬" [ref=e1218]:
+                    - generic [ref=e1220]:
+                      - img
+                    - generic [ref=e1221]: Fechando amanha a data fica para dia 22/05!!
+                  - gridcell
+        - row "iruã 09:34 bunda" [ref=e1222]:
+          - gridcell "iruã 09:34 bunda" [ref=e1223]:
+            - generic [ref=e1225] [cursor=pointer]:
+              - img [ref=e1230]
+              - generic [ref=e1231]:
+                - gridcell "iruã 09:34" [ref=e1232]:
+                  - generic [ref=e1234]:
+                    - generic "iruã" [ref=e1236]
+                    - generic [ref=e1240]:
+                      - img
+                  - generic [ref=e1242]: 09:34
+                - generic [ref=e1243]:
+                  - generic "‪bunda‬" [ref=e1245]:
+                    - generic [ref=e1246]: bunda
+                  - gridcell
+        - 'row "PASSO A PASSO FRITZ MOTOBOYS 09:30 Fritz Moto : Ok" [ref=e1247]':
+          - 'gridcell "PASSO A PASSO FRITZ MOTOBOYS 09:30 Fritz Moto : Ok" [ref=e1248]':
+            - generic [ref=e1250] [cursor=pointer]:
+              - generic [ref=e1256]:
+                - img
+              - generic [ref=e1257]:
+                - gridcell "PASSO A PASSO FRITZ MOTOBOYS 09:30" [ref=e1258]:
+                  - generic "PASSO A PASSO FRITZ MOTOBOYS" [ref=e1260]
+                  - generic [ref=e1262]: 09:30
+                - generic [ref=e1263]:
+                  - generic "‪Ok‬" [ref=e1265]:
+                    - generic [ref=e1268]: Fritz Moto
+                    - generic [ref=e1269]: ":"
+                    - generic [ref=e1270]: Ok
+                  - gridcell
+        - row "Facebook Business 09:27 Connect to the Business Platform Continue the process of sharing your WhatsApp contacts and chats to the Platform." [ref=e1271]:
+          - gridcell "Facebook Business 09:27 Connect to the Business Platform Continue the process of sharing your WhatsApp contacts and chats to the Platform." [ref=e1272]:
+            - generic [ref=e1274] [cursor=pointer]:
+              - img [ref=e1279]
+              - generic [ref=e1280]:
+                - gridcell "Facebook Business 09:27" [ref=e1281]:
+                  - generic "Facebook Business" [ref=e1285]
+                  - generic [ref=e1287]: 09:27
+                - generic [ref=e1288]:
+                  - generic "‪Connect to the Business Platform Continue the process of sharing your WhatsApp contacts and chats to the Platform.‬" [ref=e1290]:
+                    - generic [ref=e1291]: Connect to the Business Platform Continue the process of sharing your WhatsApp contacts and chats to the Platform.
+                  - gridcell
+        - row "+55 54 9223-0440 09:05 0:47" [ref=e1292]:
+          - gridcell "+55 54 9223-0440 09:05 0:47" [ref=e1293]:
+            - generic [ref=e1295] [cursor=pointer]:
+              - img [ref=e1300]
+              - generic [ref=e1301]:
+                - gridcell "+55 54 9223-0440 09:05" [ref=e1302]:
+                  - generic "+55 54 9223-0440" [ref=e1306]
+                  - generic [ref=e1308]: 09:05
+                - generic [ref=e1309]:
+                  - generic "‪0:47‬" [ref=e1311]:
+                    - generic [ref=e1313]:
+                      - img
+                    - generic [ref=e1315]:
+                      - img
+                    - generic [ref=e1316]: 0:47
+                  - gridcell
+        - row "Zapia Brasil 08:59 Áudio" [ref=e1317]:
+          - gridcell "Zapia Brasil 08:59 Áudio" [ref=e1318]:
+            - generic [ref=e1320] [cursor=pointer]:
+              - img [ref=e1325]
+              - generic [ref=e1326]:
+                - gridcell "Zapia Brasil 08:59" [ref=e1327]:
+                  - generic "Zapia Brasil" [ref=e1331]
+                  - generic [ref=e1333]: 08:59
+                - generic [ref=e1334]:
+                  - generic "‪Áudio‬" [ref=e1336]:
+                    - generic [ref=e1338]:
+                      - img
+                    - generic [ref=e1340]:
+                      - img
+                    - generic [ref=e1341]: Áudio
+                  - gridcell
+        - row "+55 51 8650-3553 08:58 Já estou separando as grades de tamanhos pra levar amanhã pra vocês experimentarem!!" [ref=e1342]:
+          - gridcell "+55 51 8650-3553 08:58 Já estou separando as grades de tamanhos pra levar amanhã pra vocês experimentarem!!" [ref=e1343]:
+            - generic [ref=e1345] [cursor=pointer]:
+              - img [ref=e1350]
+              - generic [ref=e1351]:
+                - gridcell "+55 51 8650-3553 08:58" [ref=e1352]:
+                  - generic [ref=e1354]:
+                    - generic "+55 51 8650-3553" [ref=e1356]
+                    - generic [ref=e1360]:
+                      - img
+                  - generic [ref=e1362]: 08:58
+                - generic [ref=e1363]:
+                  - generic "‪Já estou separando as grades de tamanhos pra levar amanhã pra vocês experimentarem!!‬" [ref=e1365]:
+                    - generic [ref=e1367]:
+                      - img
+                    - generic [ref=e1368]: Já estou separando as grades de tamanhos pra levar amanhã pra vocês experimentarem!!
+                  - gridcell
+        - row "Paulo OCM E GOLD BAG 08:56 Top Paulo, vou elaborar ago nessa tua ideia e vamos ajustando!! Conversa favorita" [ref=e1369]:
+          - gridcell "Paulo OCM E GOLD BAG 08:56 Top Paulo, vou elaborar ago nessa tua ideia e vamos ajustando!! Conversa favorita" [ref=e1370]:
+            - generic [ref=e1372] [cursor=pointer]:
+              - generic [ref=e1378]:
+                - img
+              - generic [ref=e1379]:
+                - gridcell "Paulo OCM E GOLD BAG 08:56" [ref=e1380]:
+                  - generic "Paulo OCM E GOLD BAG" [ref=e1384]
+                  - generic [ref=e1386]: 08:56
+                - generic [ref=e1387]:
+                  - generic "‪Top Paulo, vou elaborar ago nessa tua ideia e vamos ajustando!!‬" [ref=e1389]:
+                    - generic [ref=e1391]:
+                      - img
+                    - generic [ref=e1392]: Top Paulo, vou elaborar ago nessa tua ideia e vamos ajustando!!
+                  - gridcell "Conversa favorita":
+                    - generic:
+                      - generic "Conversa favorita"
+        - row "+55 51 8012-0945 08:49 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌" [ref=e1393]:
+          - gridcell "+55 51 8012-0945 08:49 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌" [ref=e1394]:
+            - generic [ref=e1396] [cursor=pointer]:
+              - generic [ref=e1402]:
+                - img
+              - generic [ref=e1403]:
+                - gridcell "+55 51 8012-0945 08:49" [ref=e1404]:
+                  - generic "+55 51 8012-0945" [ref=e1408]
+                  - generic [ref=e1410]: 08:49
+                - generic [ref=e1411]:
+                  - generic "‪Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌‬" [ref=e1413]:
+                    - generic [ref=e1415]:
+                      - img
+                    - generic [ref=e1416]:
+                      - text: Bom início de semana!
+                      - img "😄" [ref=e1417]
+                      - text: Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar
+                      - img "🙌" [ref=e1418]
+                  - gridcell
+        - row "+55 51 9604-3594 08:43 Ou melhor esperar elas chegarem" [ref=e1419]:
+          - gridcell "+55 51 9604-3594 08:43 Ou melhor esperar elas chegarem" [ref=e1420]:
+            - generic [ref=e1422] [cursor=pointer]:
+              - img [ref=e1427]
+              - generic [ref=e1428]:
+                - gridcell "+55 51 9604-3594 08:43" [ref=e1429]:
+                  - generic [ref=e1431]:
+                    - generic "+55 51 9604-3594" [ref=e1433]
+                    - generic [ref=e1437]:
+                      - img
+                  - generic [ref=e1439]: 08:43
+                - generic [ref=e1440]:
+                  - generic "‪Ou melhor esperar elas chegarem‬" [ref=e1442]:
+                    - generic [ref=e1443]: Ou melhor esperar elas chegarem
+                  - gridcell
+        - row "Gráfica Rm Enfeites Dtf 08:41 vou deixar aqui na recepçao" [ref=e1444]:
+          - gridcell "Gráfica Rm Enfeites Dtf 08:41 vou deixar aqui na recepçao" [ref=e1445]:
+            - generic [ref=e1447] [cursor=pointer]:
+              - img [ref=e1452]
+              - generic [ref=e1453]:
+                - gridcell "Gráfica Rm Enfeites Dtf 08:41" [ref=e1454]:
+                  - generic [ref=e1456]:
+                    - generic "Gráfica Rm Enfeites Dtf" [ref=e1458]
+                    - generic [ref=e1462]:
+                      - img
+                  - generic [ref=e1464]: 08:41
+                - generic [ref=e1465]:
+                  - generic "‪vou deixar aqui na recepçao‬" [ref=e1467]:
+                    - generic [ref=e1468]: vou deixar aqui na recepçao
+                  - gridcell
+        - row "+55 51 9752-3533 08:32 Olá, Gregory! Passando para saber se você ainda precisa de ajuda ou tem interesse em algum de nossos serviços, como a Tosa na tesoura ou a Tosa higiênica. Se precisar de algo, é só chamar! 😉" [ref=e1469]:
+          - gridcell "+55 51 9752-3533 08:32 Olá, Gregory! Passando para saber se você ainda precisa de ajuda ou tem interesse em algum de nossos serviços, como a Tosa na tesoura ou a Tosa higiênica. Se precisar de algo, é só chamar! 😉" [ref=e1470]:
+            - generic [ref=e1472] [cursor=pointer]:
+              - img [ref=e1477]
+              - generic [ref=e1478]:
+                - gridcell "+55 51 9752-3533 08:32" [ref=e1479]:
+                  - generic "+55 51 9752-3533" [ref=e1483]
+                  - generic [ref=e1485]: 08:32
+                - generic [ref=e1486]:
+                  - generic "‪Olá, Gregory! Passando para saber se você ainda precisa de ajuda ou tem interesse em algum de nossos serviços, como a Tosa na tesoura ou a Tosa higiênica. Se precisar de algo, é só chamar! 😉‬" [ref=e1488]:
+                    - generic [ref=e1489]:
+                      - text: Olá, Gregory! Passando para saber se você ainda precisa de ajuda ou tem interesse em algum de nossos serviços, como a Tosa na tesoura ou a Tosa higiênica. Se precisar de algo, é só chamar!
+                      - img "😉" [ref=e1490]
+                  - gridcell
+        - row "Francisco Tatím Máia 08:27 vamos dar sequencia no teu pedido" [ref=e1491]:
+          - gridcell "Francisco Tatím Máia 08:27 vamos dar sequencia no teu pedido" [ref=e1492]:
+            - generic [ref=e1494] [cursor=pointer]:
+              - img [ref=e1499]
+              - generic [ref=e1500]:
+                - gridcell "Francisco Tatím Máia 08:27" [ref=e1501]:
+                  - generic "Francisco Tatím Máia" [ref=e1505]
+                  - generic [ref=e1507]: 08:27
+                - generic [ref=e1508]:
+                  - generic "‪vamos dar sequencia no teu pedido‬" [ref=e1510]:
+                    - generic [ref=e1512]:
+                      - img
+                    - generic [ref=e1513]: vamos dar sequencia no teu pedido
+                  - gridcell
+        - row "+55 51 8509-0322 08:11 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌" [ref=e1514]:
+          - gridcell "+55 51 8509-0322 08:11 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌" [ref=e1515]:
+            - generic [ref=e1517] [cursor=pointer]:
+              - img [ref=e1522]
+              - generic [ref=e1523]:
+                - gridcell "+55 51 8509-0322 08:11" [ref=e1524]:
+                  - generic [ref=e1526]:
+                    - generic "+55 51 8509-0322" [ref=e1528]
+                    - generic [ref=e1532]:
+                      - img
+                  - generic [ref=e1534]: 08:11
+                - generic [ref=e1535]:
+                  - generic "‪Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌‬" [ref=e1537]:
+                    - generic [ref=e1539]:
+                      - img
+                    - generic [ref=e1540]:
+                      - text: Bom início de semana!
+                      - img "😄" [ref=e1541]
+                      - text: Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar
+                      - img "🙌" [ref=e1542]
+                  - gridcell
+        - 'row "+55 51 9578-5226 08:10 Reagiu com ❤️ a: \" Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí!\"" [ref=e1543]':
+          - 'gridcell "+55 51 9578-5226 08:10 Reagiu com ❤️ a: \" Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí!\"" [ref=e1544]':
+            - generic [ref=e1546] [cursor=pointer]:
+              - img [ref=e1551]
+              - generic [ref=e1552]:
+                - gridcell "+55 51 9578-5226 08:10" [ref=e1553]:
+                  - generic "+55 51 9578-5226" [ref=e1557]
+                  - generic [ref=e1559]: 08:10
+                - generic [ref=e1560]:
+                  - generic "‪Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí!‬" [ref=e1562]:
+                    - generic [ref=e1563]:
+                      - text: Reagiu com
+                      - img "❤️" [ref=e1564]
+                      - text: "a:"
+                    - text: "\""
+                    - generic [ref=e1566]:
+                      - text: Bom início de semana!
+                      - img "😄" [ref=e1567]
+                      - text: Que seja leve, produtiva e cheia de coisa boa por aí!"
+                  - gridcell
+        - row "+55 51 9752-1447 08:08 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí!" [ref=e1568]:
+          - gridcell "+55 51 9752-1447 08:08 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí!" [ref=e1569]:
+            - generic [ref=e1571] [cursor=pointer]:
+              - generic [ref=e1577]:
+                - img
+              - generic [ref=e1578]:
+                - gridcell "+55 51 9752-1447 08:08" [ref=e1579]:
+                  - generic "+55 51 9752-1447" [ref=e1583]
+                  - generic [ref=e1585]: 08:08
+                - generic [ref=e1586]:
+                  - generic "‪Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí!‬" [ref=e1588]:
+                    - generic [ref=e1590]:
+                      - img
+                    - generic [ref=e1591]:
+                      - text: Bom início de semana!
+                      - img "😄" [ref=e1592]
+                      - text: Que seja leve, produtiva e cheia de coisa boa por aí!
+                  - gridcell
+        - row "+55 51 9764-7682 08:06 TopConsigo fazer como tinha comentado contigo, o minimo de 5 peças de cada cor, se for no dry com elastano sublimado!!" [ref=e1593]:
+          - gridcell "+55 51 9764-7682 08:06 TopConsigo fazer como tinha comentado contigo, o minimo de 5 peças de cada cor, se for no dry com elastano sublimado!!" [ref=e1594]:
+            - generic [ref=e1596] [cursor=pointer]:
+              - img [ref=e1601]
+              - generic [ref=e1602]:
+                - gridcell "+55 51 9764-7682 08:06" [ref=e1603]:
+                  - generic [ref=e1605]:
+                    - generic "+55 51 9764-7682" [ref=e1607]
+                    - generic [ref=e1611]:
+                      - img
+                  - generic [ref=e1613]: 08:06
+                - generic [ref=e1614]:
+                  - generic "‪TopConsigo fazer como tinha comentado contigo, o minimo de 5 peças de cada cor, se for no dry com elastano sublimado!!‬" [ref=e1616]:
+                    - generic [ref=e1618]:
+                      - img
+                    - generic [ref=e1619]: TopConsigo fazer como tinha comentado contigo, o minimo de 5 peças de cada cor, se for no dry com elastano sublimado!!
+                  - gridcell
+        - row "+55 51 9933-8892 07:47 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌" [ref=e1620]:
+          - gridcell "+55 51 9933-8892 07:47 Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌" [ref=e1621]:
+            - generic [ref=e1623] [cursor=pointer]:
+              - generic [ref=e1629]:
+                - img
+              - generic [ref=e1630]:
+                - gridcell "+55 51 9933-8892 07:47" [ref=e1631]:
+                  - generic [ref=e1633]:
+                    - generic "+55 51 9933-8892" [ref=e1635]
+                    - generic [ref=e1639]:
+                      - img
+                  - generic [ref=e1641]: 07:47
+                - generic [ref=e1642]:
+                  - generic "‪Bom início de semana! 😄 Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar 🙌‬" [ref=e1644]:
+                    - generic [ref=e1646]:
+                      - img
+                    - generic [ref=e1647]:
+                      - text: Bom início de semana!
+                      - img "😄" [ref=e1648]
+                      - text: Que seja leve, produtiva e cheia de coisa boa por aí! Precisando, só chamar
+                      - img "🙌" [ref=e1649]
+                  - gridcell
+        - 'row "TIME PASSO A PASSO 👕 🧡 07:24 Jessica Particular : Só avisando q o responsável do lixo da semana passada não tirou o lixo da sala e nem do banheiro da Chefinha… vamos melhorar isso aí galera 🙏🏼" [ref=e1650]':
+          - 'gridcell "TIME PASSO A PASSO 👕 🧡 07:24 Jessica Particular : Só avisando q o responsável do lixo da semana passada não tirou o lixo da sala e nem do banheiro da Chefinha… vamos melhorar isso aí galera 🙏🏼" [ref=e1651]':
+            - generic [ref=e1653] [cursor=pointer]:
+              - img [ref=e1658]
+              - generic [ref=e1659]:
+                - gridcell "TIME PASSO A PASSO 👕 🧡 07:24" [ref=e1660]:
+                  - generic "TIME PASSO A PASSO👕🧡" [ref=e1662]:
+                    - text: TIME PASSO A PASSO
+                    - img "👕" [ref=e1663]
+                    - img "🧡" [ref=e1664]
+                  - generic [ref=e1666]: 07:24
+                - generic [ref=e1667]:
+                  - generic "‪Só avisando q o responsável do lixo da semana passada não tirou o lixo da sala e nem do banheiro da Chefinha… vamos melhorar isso aí galera🙏🏼‬" [ref=e1669]:
+                    - generic [ref=e1672]: Jessica Particular
+                    - generic [ref=e1673]: ":"
+                    - generic [ref=e1674]:
+                      - text: Só avisando q o responsável do lixo da semana passada não tirou o lixo da sala e nem do banheiro da Chefinha… vamos melhorar isso aí galera
+                      - img "🙏🏼" [ref=e1675]
+                  - gridcell
+        - 'row "EQUIPE COMERCIAL Ontem Jessica Particular : https://www.instagram.com/reel/DWwuEHcDLld/?igsh=MnllcGJvcHE0aHZ5 Conversa favorita" [ref=e1676]':
+          - 'gridcell "EQUIPE COMERCIAL Ontem Jessica Particular : https://www.instagram.com/reel/DWwuEHcDLld/?igsh=MnllcGJvcHE0aHZ5 Conversa favorita" [ref=e1677]':
+            - generic [ref=e1679] [cursor=pointer]:
+              - generic [ref=e1685]:
+                - img
+              - generic [ref=e1686]:
+                - gridcell "EQUIPE COMERCIAL Ontem" [ref=e1687]:
+                  - generic "EQUIPE COMERCIAL" [ref=e1689]
+                  - generic [ref=e1691]: Ontem
+                - generic [ref=e1692]:
+                  - generic "‪https://www.instagram.com/reel/DWwuEHcDLld/?igsh=MnllcGJvcHE0aHZ5‬" [ref=e1694]:
+                    - generic [ref=e1697]: Jessica Particular
+                    - generic [ref=e1698]: ":"
+                    - generic [ref=e1699]: https://www.instagram.com/reel/DWwuEHcDLld/?igsh=MnllcGJvcHE0aHZ5
+                  - gridcell "Conversa favorita":
+                    - generic:
+                      - generic "Conversa favorita"
+        - row "Rodrigo - Elio Car Ontem Foto" [ref=e1700]:
+          - gridcell "Rodrigo - Elio Car Ontem Foto" [ref=e1701]:
+            - generic [ref=e1703] [cursor=pointer]:
+              - img [ref=e1708]
+              - generic [ref=e1709]:
+                - gridcell "Rodrigo - Elio Car Ontem" [ref=e1710]:
+                  - generic "Rodrigo - Elio Car" [ref=e1714]
+                  - generic [ref=e1716]: Ontem
+                - generic [ref=e1717]:
+                  - generic "‪Foto‬" [ref=e1719]:
+                    - generic [ref=e1721]:
+                      - img
+                    - generic [ref=e1722]: Foto
+                  - gridcell
+        - row "+55 51 9949-9237 Saturday Segunda vou ver pra você" [ref=e1723]:
+          - gridcell "+55 51 9949-9237 Saturday Segunda vou ver pra você" [ref=e1724]:
+            - generic [ref=e1726] [cursor=pointer]:
+              - img [ref=e1731]
+              - generic [ref=e1732]:
+                - gridcell "+55 51 9949-9237 Saturday" [ref=e1733]:
+                  - generic "+55 51 9949-9237" [ref=e1737]
+                  - generic [ref=e1739]: Saturday
+                - generic [ref=e1740]:
+                  - generic "‪Segunda vou ver pra você‬" [ref=e1742]:
+                    - generic [ref=e1744]:
+                      - img
+                    - generic [ref=e1745]: Segunda vou ver pra você
+                  - gridcell
+        - row "+55 51 9262-7701 Saturday Como posso te ajudar hoje?" [ref=e1746]:
+          - gridcell "+55 51 9262-7701 Saturday Como posso te ajudar hoje?" [ref=e1747]:
+            - generic [ref=e1749] [cursor=pointer]:
+              - img [ref=e1754]
+              - generic [ref=e1755]:
+                - gridcell "+55 51 9262-7701 Saturday" [ref=e1756]:
+                  - generic "+55 51 9262-7701" [ref=e1760]
+                  - generic [ref=e1762]: Saturday
+                - generic [ref=e1763]:
+                  - generic "‪Como posso te ajudar hoje?‬" [ref=e1765]:
+                    - generic [ref=e1767]:
+                      - img
+                    - generic [ref=e1768]: Como posso te ajudar hoje?
+                  - gridcell
+        - row "+55 51 8639-2151 Saturday Então hoje nossa produção é para uniformes personalizados pedido mínimo de 10 peças, infelizmente uma peça só algo exclusivo assim não conseguimos atender" [ref=e1769]:
+          - gridcell "+55 51 8639-2151 Saturday Então hoje nossa produção é para uniformes personalizados pedido mínimo de 10 peças, infelizmente uma peça só algo exclusivo assim não conseguimos atender" [ref=e1770]:
+            - generic [ref=e1772] [cursor=pointer]:
+              - generic [ref=e1778]:
+                - img
+              - generic [ref=e1779]:
+                - gridcell "+55 51 8639-2151 Saturday" [ref=e1780]:
+                  - generic "+55 51 8639-2151" [ref=e1784]
+                  - generic [ref=e1786]: Saturday
+                - generic [ref=e1787]:
+                  - generic "‪Então hoje nossa produção é para uniformes personalizados pedido mínimo de 10 peças, infelizmente uma peça só algo exclusivo assim não conseguimos atender‬" [ref=e1789]:
+                    - generic [ref=e1791]:
+                      - img
+                    - generic [ref=e1792]: Então hoje nossa produção é para uniformes personalizados pedido mínimo de 10 peças, infelizmente uma peça só algo exclusivo assim não conseguimos atender
+                  - gridcell
+        - row "+55 51 8914-5737 Thursday Marcelle" [ref=e1793]:
+          - gridcell "+55 51 8914-5737 Thursday Marcelle" [ref=e1794]:
+            - generic [ref=e1796] [cursor=pointer]:
+              - img [ref=e1801]
+              - generic [ref=e1802]:
+                - gridcell "+55 51 8914-5737 Thursday" [ref=e1803]:
+                  - generic [ref=e1805]:
+                    - generic "+55 51 8914-5737" [ref=e1807]
+                    - generic [ref=e1811]:
+                      - img
+                  - generic [ref=e1813]: Thursday
+                - generic [ref=e1814]:
+                  - generic "‪Marcelle‬" [ref=e1816]:
+                    - generic [ref=e1817]: Marcelle
+                  - gridcell
+        - row "+55 51 8938-9391 Thursday Que fariam pouca quantidade!!" [ref=e1818]:
+          - gridcell "+55 51 8938-9391 Thursday Que fariam pouca quantidade!!" [ref=e1819]:
+            - generic [ref=e1821] [cursor=pointer]:
+              - generic [ref=e1827]:
+                - img
+              - generic [ref=e1828]:
+                - gridcell "+55 51 8938-9391 Thursday" [ref=e1829]:
+                  - generic "+55 51 8938-9391" [ref=e1833]
+                  - generic [ref=e1835]: Thursday
+                - generic [ref=e1836]:
+                  - generic "‪Que fariam pouca quantidade!!‬" [ref=e1838]:
+                    - generic [ref=e1839]: Que fariam pouca quantidade!!
+                  - gridcell
+        - row "Vendo.com Fernando Thursday Figurinha" [ref=e1840]:
+          - gridcell "Vendo.com Fernando Thursday Figurinha" [ref=e1841]:
+            - generic [ref=e1843] [cursor=pointer]:
+              - img [ref=e1848]
+              - generic [ref=e1849]:
+                - gridcell "Vendo.com Fernando Thursday" [ref=e1850]:
+                  - generic [ref=e1852]:
+                    - generic "Vendo.com Fernando" [ref=e1854]
+                    - generic [ref=e1856]:
+                      - generic [ref=e1857]:
+                        - img
+                      - generic [ref=e1858]:
+                        - img
+                  - generic [ref=e1860]: Thursday
+                - generic [ref=e1861]:
+                  - generic "‪Figurinha‬" [ref=e1863]:
+                    - generic [ref=e1865]:
+                      - img
+                    - generic [ref=e1866]: Figurinha
+                  - gridcell
+        - row "+55 51 9478-5440 Thursday Moletom canguru azul ou preto fica R$ 174,90 cada peça Calça preta ou azul marinho fica R$ 114,90 cada peça Moletom raglan preto com azul fica R$ 184,90 cada peça Calça preta com friso na lateral fica R$ 119,90 cada peça Valores até o tamanho GG, peças acima do GG tem o acrescimo de 30% por peça!!" [ref=e1867]:
+          - gridcell "+55 51 9478-5440 Thursday Moletom canguru azul ou preto fica R$ 174,90 cada peça Calça preta ou azul marinho fica R$ 114,90 cada peça Moletom raglan preto com azul fica R$ 184,90 cada peça Calça preta com friso na lateral fica R$ 119,90 cada peça Valores até o tamanho GG, peças acima do GG tem o acrescimo de 30% por peça!!" [ref=e1868]:
+            - generic [ref=e1870] [cursor=pointer]:
+              - img [ref=e1875]
+              - generic [ref=e1876]:
+                - gridcell "+55 51 9478-5440 Thursday" [ref=e1877]:
+                  - generic "+55 51 9478-5440" [ref=e1881]
+                  - generic [ref=e1883]: Thursday
+                - generic [ref=e1884]:
+                  - generic "‪Moletom canguru azul ou preto fica R$ 174,90 cada peça Calça preta ou azul marinho fica R$ 114,90 cada peça Moletom raglan preto com azul fica R$ 184,90 cada peça Calça preta com friso na lateral fica R$ 119,90 cada peça Valores até o tamanho GG, peças acima do GG tem o acrescimo de 30% por peça!!‬" [ref=e1886]:
+                    - generic [ref=e1888]:
+                      - img
+                    - generic [ref=e1889]: Moletom canguru azul ou preto fica R$ 174,90 cada peça Calça preta ou azul marinho fica R$ 114,90 cada peça Moletom raglan preto com azul fica R$ 184,90 cada peça Calça preta com friso na lateral fica R$ 119,90 cada peça Valores até o tamanho GG, peças acima do GG tem o acrescimo de 30% por peça!!
+                  - gridcell
+        - 'row "+55 48 9901-4640 Thursday Reagiu com ❤️ a: \" disponha qualquer duvida fica a vontade para perguntar\"" [ref=e1890]':
+          - 'gridcell "+55 48 9901-4640 Thursday Reagiu com ❤️ a: \" disponha qualquer duvida fica a vontade para perguntar\"" [ref=e1891]':
+            - generic [ref=e1893] [cursor=pointer]:
+              - img [ref=e1898]
+              - generic [ref=e1899]:
+                - gridcell "+55 48 9901-4640 Thursday" [ref=e1900]:
+                  - generic [ref=e1902]:
+                    - generic "+55 48 9901-4640" [ref=e1904]
+                    - generic [ref=e1908]:
+                      - img
+                  - generic [ref=e1910]: Thursday
+                - generic [ref=e1911]:
+                  - generic "‪disponha qualquer duvida fica a vontade para perguntar‬" [ref=e1913]:
+                    - generic [ref=e1914]:
+                      - text: Reagiu com
+                      - img "❤️" [ref=e1915]
+                      - text: "a:"
+                    - text: "\""
+                    - generic [ref=e1917]: disponha qualquer duvida fica a vontade para perguntar"
+                  - gridcell
+        - row "1 mensagem não lida Lucas Staudt Thursday Show" [ref=e1918]:
+          - gridcell "1 mensagem não lida Lucas Staudt Thursday Show" [ref=e1919]:
+            - generic [ref=e1921] [cursor=pointer]:
+              - img [ref=e1926]
+              - generic [ref=e1927]:
+                - gridcell "1 mensagem não lida Lucas Staudt Thursday" [ref=e1928]:
+                  - generic [ref=e1929]:
+                    - generic [ref=e1930]: 1 mensagem não lida
+                    - generic [ref=e1931]:
+                      - generic "Lucas Staudt" [ref=e1933]
+                      - generic [ref=e1937]:
+                        - img
+                  - generic [ref=e1939]: Thursday
+                - generic [ref=e1940]:
+                  - generic "‪Show‬" [ref=e1942]:
+                    - generic [ref=e1943]: Show
+                  - gridcell [ref=e1944]:
+                    - generic [ref=e1948]: "1"
+        - 'row "Pâmela Schroder CGP Brazil Thursday Você reagiu com 👍 a: \" Foto\"" [ref=e1949]':
+          - 'gridcell "Pâmela Schroder CGP Brazil Thursday Você reagiu com 👍 a: \" Foto\"" [ref=e1950]':
+            - generic [ref=e1952] [cursor=pointer]:
+              - img [ref=e1957]
+              - generic [ref=e1958]:
+                - gridcell "Pâmela Schroder CGP Brazil Thursday" [ref=e1959]:
+                  - generic [ref=e1961]:
+                    - generic "Pâmela Schroder CGP Brazil" [ref=e1963]
+                    - generic [ref=e1967]:
+                      - img
+                  - generic [ref=e1969]: Thursday
+                - generic [ref=e1970]:
+                  - generic "‪Foto‬" [ref=e1972]:
+                    - generic [ref=e1973]:
+                      - text: Você reagiu com
+                      - img "👍" [ref=e1974]
+                      - text: "a:"
+                    - text: "\""
+                    - generic [ref=e1977]:
+                      - img
+                    - generic [ref=e1978]: Foto"
+                  - gridcell
+        - row "+55 51 9752-7546 Thursday 0:24" [ref=e1979]:
+          - gridcell "+55 51 9752-7546 Thursday 0:24" [ref=e1980]:
+            - generic [ref=e1982] [cursor=pointer]:
+              - generic [ref=e1988]:
+                - img
+              - generic [ref=e1989]:
+                - gridcell "+55 51 9752-7546 Thursday" [ref=e1990]:
+                  - generic [ref=e1992]:
+                    - generic "+55 51 9752-7546" [ref=e1994]
+                    - generic [ref=e1998]:
+                      - img
+                  - generic [ref=e2000]: Thursday
+                - generic [ref=e2001]:
+                  - generic "‪0:24‬" [ref=e2003]:
+                    - generic [ref=e2005]:
+                      - img
+                    - generic [ref=e2007]:
+                      - img
+                    - generic [ref=e2008]: 0:24
+                  - gridcell
+  - generic [ref=e2011]:
+    - generic [ref=e2013]:
+      - img
+    - generic [ref=e2014]:
+      - heading "WhatsApp Business Web" [level=1] [ref=e2016]
+      - generic [ref=e2017]: Amplie, organize e gerencie sua conta comercial.
+    - generic [ref=e2018]:
+      - generic [ref=e2019]:
+        - img
+      - text: Suas mensagens pessoais são protegidas com a criptografia de ponta a ponta.

@@ -1,0 +1,146 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e478] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - button [ref=e479] [cursor=pointer]: Projeto sem título
+            - generic [ref=e482]: cloud_done
+          - generic [ref=e21]:
+            - button [ref=e483] [cursor=pointer]:
+              - generic [ref=e29]:
+                - text: Implantar
+                - generic [ref=e30]: 
+            - button [ref=e484] [cursor=pointer]:
+              - generic [ref=e273]: person_add
+            - button [ref=e485] [cursor=pointer]:
+              - generic [ref=e106]: help_outline
+        - generic [ref=e37]:
+          - button [ref=e486] [cursor=pointer]:
+            - img [ref=e42]
+          - button [ref=e487] [cursor=pointer]:
+            - img [ref=e49]
+    - generic [ref=e117]:
+      - navigation [ref=e488]:
+        - link [ref=e489] [cursor=pointer]:
+          - generic [ref=e122]: info_outline
+          - generic [ref=e123]: Visão geral
+        - link [ref=e490] [cursor=pointer]:
+          - generic [ref=e126]: code
+          - generic [ref=e127]: Editor
+        - link [ref=e491] [cursor=pointer]:
+          - generic [ref=e130]: history
+          - generic [ref=e131]: Histórico do projeto
+        - link [ref=e492] [cursor=pointer]:
+          - generic [ref=e134]: alarm
+          - generic [ref=e135]: Acionadores
+        - link [ref=e493] [cursor=pointer]:
+          - generic [ref=e138]: playlist_play
+          - generic [ref=e139]: Execuções
+        - link [ref=e494] [cursor=pointer]:
+          - generic [ref=e142]: settings
+          - generic [ref=e143]: Configurações do projeto
+      - generic [ref=e144]:
+        - heading [level=1] [ref=e495]: Editor
+        - generic [ref=e146]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - heading [level=2] [ref=e496]: Arquivos
+              - generic [ref=e152]:
+                - button [disabled] [ref=e497]:
+                  - generic [ref=e157]: sort_by_alpha
+                - button [ref=e498] [cursor=pointer]:
+                  - generic [ref=e162]: add
+            - listbox [ref=e499]:
+              - option [ref=e500] [cursor=pointer]:
+                - generic [ref=e501]: Código.gs
+                - button [ref=e502]:
+                  - button [ref=e503]:
+                    - generic [ref=e171]: 
+            - generic [ref=e172]:
+              - heading [level=2] [ref=e504]: Bibliotecas
+              - button [ref=e505] [cursor=pointer]:
+                - generic [ref=e179]: add
+            - generic [ref=e180]:
+              - heading [level=2] [ref=e506]: Serviços
+              - button [ref=e507] [cursor=pointer]:
+                - generic [ref=e187]: add
+          - generic [ref=e194]:
+            - region [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]:
+                  - generic [ref=e200]:
+                    - button [disabled]:
+                      - generic: undo
+                  - generic [ref=e203]:
+                    - button [disabled]:
+                      - generic: redo
+                - generic [ref=e207]:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e454]:
+                  - generic [ref=e457]:
+                    - button [disabled]:
+                      - generic: play_arrow
+                      - generic: Executar
+                  - generic [ref=e465]:
+                    - button [disabled]:
+                      - img
+                      - generic: Depuração
+                  - listbox [disabled] [ref=e508]:
+                    - option [disabled] [selected] [ref=e509]: criarPlanoVendas
+                  - button [ref=e513]:
+                    - generic [ref=e516]: stop
+                    - generic [ref=e517]: Parar
+                - button [ref=e518]:
+                  - generic [ref=e223]: Registro de execução
+            - generic [ref=e225]:
+              - main [ref=e229]:
+                - generic [ref=e230]: .
+                - generic [ref=e283]:
+                  - iframe [ref=e284]:
+                    
+                  - code [ref=e286]:
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - generic [ref=e519]:
+                          - generic [ref=e521] [cursor=pointer]: 
+                          - generic [ref=e522]: "1"
+                        - generic [ref=e524]: "2"
+                        - generic [ref=e527]: "3"
+                        - generic [ref=e529]: "4"
+                      - generic [ref=e307]:
+                        - generic [ref=e541]: "function criarPlanoVendas() {"
+                        - generic [ref=e543]: const doc = DocumentApp.create('📋 Plano de
+                        - generic [ref=e545]: Vendas e Marketing — Abril 2026');
+                        - generic [ref=e547]: const body = doc.getBody();
+                      - textbox [ref=e549]: "function criarPlanoVendas() { const doc = DocumentApp.create('📋 Plano de Vendas e Marketing — Abril 2026'); const body = doc.getBody(); const estiloTitulo = { [DocumentApp.Attribute.FONT_SIZE]: 22, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute.FOREGROUND_COLOR]: '#1a1a2e' }; const estiloSecao = { [DocumentApp."
+              - generic [ref=e551]:
+                - complementary [ref=e553]:
+                  - generic [ref=e555]: Registro de execução
+                - button [ref=e589] [cursor=pointer]:
+                  - generic [ref=e262]: close
+                - tooltip [ref=e263]: Fechar registros de execução
+    - dialog "Autorização obrigatória" [ref=e591]:
+      - heading "Autorização obrigatória" [level=2] [ref=e592]:
+        - generic [ref=e593]: Autorização obrigatória
+      - generic [ref=e594]:
+        - generic [ref=e595]: Este app pode não funcionar como esperado sem todas as permissões
+        - generic [ref=e596]: solicitadas.
+      - generic [ref=e597]:
+        - button "Cancelar" [active] [ref=e599] [cursor=pointer]:
+          - generic [ref=e601]: Cancelar
+        - button "Revisar permissões" [ref=e603] [cursor=pointer]:
+          - generic [ref=e605]: Revisar permissões
+  - generic: Salvando o projeto...
+  - generic [ref=e317]:
+    - alert
+    - alert
+    - complementary
+    - complementary

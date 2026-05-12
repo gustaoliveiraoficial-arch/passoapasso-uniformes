@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Barra de ferramentas":
+      - menu:
+        - group [ref=e3]:
+          - menuitem "Sobre o WordPress" [ref=e4] [cursor=pointer]:
+            - generic [ref=e6]: Sobre o WordPress
+        - group [ref=e7]:
+          - menuitem "Passo a Passo Uniformes" [ref=e8] [cursor=pointer]
+        - group [ref=e9]:
+          - menuitem "Personalizar" [ref=e10] [cursor=pointer]
+        - group [ref=e11]:
+          - menuitem "7 atualizações disponíveis" [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: "7"
+            - generic [ref=e15]: 7 atualizações disponíveis
+        - group [ref=e16]:
+          - menuitem "0 comentário esperando moderação" [ref=e17] [cursor=pointer]:
+            - generic [ref=e19]: "0"
+            - generic [ref=e20]: 0 comentário esperando moderação
+        - group [ref=e21]:
+          - menuitem "Novo" [ref=e22] [cursor=pointer]:
+            - generic [ref=e24]: Novo
+        - group [ref=e25]:
+          - menuitem "Editar página" [ref=e26] [cursor=pointer]
+        - text:  
+      - menu [ref=e27]:
+        - group [ref=e28]:
+          - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e29] [cursor=pointer]
+  - link "Skip to content" [ref=e30] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e31]:
+    - generic [ref=e32]:
+      - link "Passo a Passo Uniformes" [ref=e34] [cursor=pointer]:
+        - /url: https://passoapassouniformes.com/
+      - paragraph [ref=e35]: Uniformes Escolares Premium desde 1998
+  - main [ref=e36]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - heading "Kit PV Premium - 10 Pecas" [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - strong [ref=e43]: "10"
+            - text: pecas
+          - generic [ref=e44]: "Prazo: 30-40 dias uteis"
+          - generic [ref=e45]: 1 estampa inclusa
+      - generic [ref=e46]:
+        - generic [ref=e47]: 1. Dados
+        - generic [ref=e48]: 2. Cor
+        - generic [ref=e49]: 3. Tamanhos
+        - generic [ref=e50]: 4. Estampas
+        - generic [ref=e51]: 5. Revisao
+      - generic [ref=e52]:
+        - generic [ref=e53]: Seus Dados
+        - generic [ref=e54]: Nenhum pagamento cobrado agora. Nosso vendedor confirmara os valores pelo WhatsApp.
+        - generic [ref=e55]:
+          - text: Preencha o formulario. O vendedor entrara em contato para
+          - strong [ref=e56]: confirmar o valor final e fechar o pedido
+          - text: .
+        - generic [ref=e57]:
+          - generic [ref=e58]: Nome completo *
+          - textbox "Seu nome completo" [ref=e59]
+        - generic [ref=e60]:
+          - generic [ref=e61]: WhatsApp / Telefone *
+          - textbox "(00) 00000-0000" [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e64]: E-mail (opcional)
+          - textbox "seuemail@exemplo.com" [ref=e65]
+        - button "Proximo" [ref=e67] [cursor=pointer]
+  - contentinfo [ref=e68]
+  - status [ref=e69]

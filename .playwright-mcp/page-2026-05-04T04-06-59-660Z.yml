@@ -1,0 +1,934 @@
+- generic [active] [ref=e3]:
+  - img
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - banner:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - link [ref=e12] [cursor=pointer]:
+              - /url: /referrals
+              - img [ref=e13]
+            - button "Pergunte" [ref=e16] [cursor=pointer]:
+              - img [ref=e17]
+              - generic [ref=e19]: Pergunte
+            - generic [ref=e21]:
+              - button [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - button [ref=e26] [cursor=pointer]:
+                - img [ref=e28]
+            - button "Pesquisar" [ref=e34] [cursor=pointer]:
+              - img [ref=e35]
+            - button "Open menu" [ref=e39] [cursor=pointer]:
+              - img [ref=e40]
+          - button [ref=e45] [cursor=pointer]:
+            - img [ref=e47]
+      - generic [ref=e54]:
+        - banner [ref=e55]:
+          - navigation "Breadcrumb" [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - link [ref=e59] [cursor=pointer]:
+                  - /url: /?amplitudeLocation=breadcrumbs
+                  - img [ref=e60]
+                - img [ref=e62]
+              - listitem [ref=e181]:
+                - link "Sites" [ref=e182] [cursor=pointer]:
+                  - /url: /websites?redirectLocation=breadcrumbs
+                  - generic [ref=e183]: Sites
+                - img [ref=e184]
+              - listitem [ref=e341]:
+                - link "passoapassouniformes.com" [ref=e342] [cursor=pointer]:
+                  - /url: /websites/passoapassouniformes.com?redirectLocation=breadcrumbs
+                  - generic [ref=e343]: passoapassouniformes.com
+                - img [ref=e344]
+              - listitem [ref=e346]:
+                - link "Hospedagem" [ref=e347] [cursor=pointer]:
+                  - /url: /websites/passoapassouniformes.com/order?redirectLocation=breadcrumbs
+                  - generic [ref=e348]: Hospedagem
+                - img [ref=e349]
+              - listitem [ref=e351]:
+                - generic [ref=e353]: Informações do plano
+          - heading "Informações do plano" [level=1] [ref=e354]
+        - main [ref=e193]:
+          - generic [ref=e356]:
+            - generic [ref=e357]:
+              - region [ref=e358]:
+                - heading "Detalhes do site" [level=3] [ref=e360]
+                - generic [ref=e362]:
+                  - generic [ref=e363]:
+                    - generic [ref=e364]: Acesse seu site em
+                    - link "https://passoapassouniformes.com" [ref=e365] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com
+                      - generic [ref=e366]: https://passoapassouniformes.com
+                  - generic [ref=e367]:
+                    - generic [ref=e368]: Acesse seu site com www
+                    - link "https://www.passoapassouniformes.com" [ref=e369] [cursor=pointer]:
+                      - /url: https://www.passoapassouniformes.com
+                      - generic [ref=e370]: https://www.passoapassouniformes.com
+                  - generic [ref=e371]:
+                    - generic [ref=e372]: Endereço IP do site
+                    - generic [ref=e373] [cursor=pointer]:
+                      - generic [ref=e374]: 82.25.67.70
+                      - img [ref=e375]
+              - region [ref=e377]:
+                - generic [ref=e379]:
+                  - heading "Detalhes da hospedagem" [level=3] [ref=e380]
+                  - button "Fazer Upgrade" [ref=e381] [cursor=pointer]:
+                    - generic [ref=e382]: Fazer Upgrade
+                - generic [ref=e384]:
+                  - generic [ref=e385]:
+                    - generic [ref=e386]: Espaço em disco
+                    - generic [ref=e387]: 50 GB
+                  - generic [ref=e388]:
+                    - generic [ref=e389]: RAM
+                    - generic [ref=e390]: 3072 MB
+                  - generic [ref=e391]:
+                    - generic [ref=e392]: Núcleos de CPU
+                    - generic [ref=e393]: "2"
+                  - generic [ref=e394]:
+                    - generic [ref=e395]: Inodes
+                    - generic [ref=e396]: "600000"
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: Addons/Sites
+                    - generic [ref=e399]: "50"
+                  - generic [ref=e400]:
+                    - generic [ref=e401]: Máximo de processos
+                    - generic [ref=e402]: "120"
+                  - generic [ref=e403]:
+                    - generic [ref=e404]: PHP workers
+                    - generic [ref=e405]: "60"
+                  - generic [ref=e406]:
+                    - generic [ref=e407]: Largura de banda
+                    - generic [ref=e408]: Ilimitado
+            - generic [ref=e409]:
+              - region [ref=e410]:
+                - heading "Nameservers" [level=3] [ref=e413]
+                - generic [ref=e414]:
+                  - generic [ref=e415]:
+                    - generic [ref=e416]:
+                      - generic [ref=e417]: Nameserver atual 1
+                      - generic [ref=e419]: ns1.dns-parking.com
+                    - generic [ref=e420]:
+                      - generic [ref=e421]: Nameserver atual 2
+                      - generic [ref=e423]: ns2.dns-parking.com
+                  - 'region "info snackbar: snackbar" [ref=e424]':
+                    - generic [ref=e425]:
+                      - img [ref=e426]
+                      - generic [ref=e428]:
+                        - generic [ref=e429]: "Nameservers Hostinger:"
+                        - list [ref=e430]:
+                          - listitem [ref=e431]:
+                            - generic [ref=e432]: ns1.dns-parking.com
+                          - listitem [ref=e433]:
+                            - generic [ref=e434]: ns2.dns-parking.com
+              - region [ref=e435]:
+                - heading "Detalhes do servidor" [level=3] [ref=e437]
+                - generic [ref=e439]:
+                  - generic [ref=e440]:
+                    - generic [ref=e441]: Nome do servidor
+                    - generic [ref=e442]: server1938
+                  - generic [ref=e443]:
+                    - generic [ref=e444]: Localização do servidor
+                    - generic [ref=e445]:
+                      - generic [ref=e446]: South America (Brazil)
+                      - img [ref=e448] [cursor=pointer]
+                  - generic [ref=e450]:
+                    - generic [ref=e451]:
+                      - generic [ref=e452]: Localização dos backups
+                      - img [ref=e453] [cursor=pointer]
+                    - generic [ref=e455]: EUA
+              - region [ref=e456]:
+                - heading "Detalhes do FTP" [level=3] [ref=e458]
+                - generic [ref=e460]:
+                  - generic [ref=e461]:
+                    - generic [ref=e462]: IP do FTP
+                    - generic [ref=e463] [cursor=pointer]:
+                      - generic [ref=e464]: ftp://82.25.67.70
+                      - img [ref=e465]
+                  - generic [ref=e467]:
+                    - generic [ref=e468]: Nome do host FTP
+                    - generic [ref=e469] [cursor=pointer]:
+                      - generic [ref=e470]: ftp://passoapassouniformes.com
+                      - img [ref=e471]
+                  - generic [ref=e473]:
+                    - generic [ref=e474]: Nome de usuário FTP
+                    - generic [ref=e475] [cursor=pointer]:
+                      - generic [ref=e476]: u723199063
+                      - img [ref=e477]
+                  - generic [ref=e479]:
+                    - generic [ref=e480]: Caminho de upload de arquivo
+                    - generic [ref=e481]: public_html
+              - region [ref=e482]:
+                - heading "Detalhes do Node.js" [level=3] [ref=e484]
+                - generic [ref=e486]:
+                  - generic [ref=e487]:
+                    - generic [ref=e488]: Frameworks de frontend compatíveis
+                    - generic [ref=e489]: Angular, Astro, Next.js, Nuxt, Parcel, React, React Router, Svelte, SvelteKit, Vite, Vue.js
+                  - generic [ref=e490]:
+                    - generic [ref=e491]: Frameworks de backend compatíveis
+                    - generic [ref=e492]: Astro, Express, Fastify, Hono, NestJS, Next.js, Nuxt, React Router, SvelteKit
+                  - generic [ref=e493]:
+                    - generic [ref=e494]: Versões do Node.js suportadas
+                    - generic [ref=e495]: 24.x, 22.x, 20.x e 18.x
+                  - generic [ref=e496]:
+                    - generic [ref=e497]: Gerenciadores de pacotes compatíveis
+                    - generic [ref=e498]: npm (padrão), yarn e pnpm
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "hostinger"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - listitem:
+                    - generic:
+                      - generic:
+                        - button "Visão geral Visão geral":
+                          - button "Visão geral":
+                            - img
+                          - generic: Visão geral
+              - generic:
+                - generic:
+                  - generic:
+                    - navigation:
+                      - list:
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "Página Inicial Página Inicial":
+                                - /url: /
+                                - button "Página Inicial":
+                                  - img
+                                - generic: Página Inicial
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - button "Sites Sites":
+                                - button "Sites":
+                                  - img
+                                - generic: Sites
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Todos os sites":
+                                      - /url: /websites
+                                      - generic: Todos os sites
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "WordPress":
+                                      - /url: /websites?websiteType=wordpress
+                                      - generic: WordPress
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Horizons":
+                                      - /url: /websites?websiteType=horizons
+                                      - generic: Horizons
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Criador de Site":
+                                      - /url: /websites?websiteType=builder
+                                      - generic: Criador de Site
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Node.js":
+                                      - /url: /websites?websiteType=nodejs
+                                      - generic: Node.js
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "PHP/HTML":
+                                      - /url: /websites?websiteType=other
+                                      - generic: PHP/HTML
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Migrações":
+                                      - /url: /websites/migrations
+                                      - generic: Migrações
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - button "Domínios Domínios":
+                                - button "Domínios":
+                                  - img
+                                - generic: Domínios
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Meus domínios":
+                                      - /url: /domains
+                                      - generic: Meus domínios
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Registrar novo domínio":
+                                      - /url: /domains/domain-checker
+                                      - generic: Registrar novo domínio
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Transferências":
+                                      - /url: /domains/transfers
+                                      - generic: Transferências
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - button "Horizons Horizons":
+                                - button "Horizons":
+                                  - img
+                                - generic: Horizons
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "E-mails E-mails":
+                                - /url: /emails
+                                - button "E-mails":
+                                  - img
+                                - generic: E-mails
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "Reach Reach":
+                                - /url: /email-marketing
+                                - button "Reach":
+                                  - img
+                                - generic: Reach
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "ecommerce loja virtual":
+                                - /url: /ecommerce
+                                - button "ecommerce":
+                                  - img
+                                - generic: loja virtual
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "VPS VPS":
+                                - /url: /vps
+                                - button "VPS":
+                                  - img
+                                - generic: VPS
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "OpenClaw OpenClaw":
+                                - /url: /applications
+                                - button "OpenClaw":
+                                  - img
+                                - generic: OpenClaw
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - button "Agentes Agentes":
+                                - button "Agentes":
+                                  - img
+                                - generic: Agentes
+                        - generic:
+                          - listitem:
+                            - list
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - button "Faturas Faturas":
+                                - button "Faturas":
+                                  - img
+                                - generic: Faturas
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Assinaturas":
+                                      - /url: /billing/subscriptions
+                                      - generic: Assinaturas
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Histórico de pagamentos":
+                                      - /url: /billing/payment-history/paid
+                                      - generic: Histórico de pagamentos
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Formas de pagamento":
+                                      - /url: /billing/payment-methods
+                                      - generic: Formas de pagamento
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - button "Mais serviços Mais serviços":
+                                - button "Mais serviços":
+                                  - img
+                                - generic: Mais serviços
+                        - generic:
+                          - listitem:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Loja":
+                                      - /url: /marketplace
+                                      - generic: Loja
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Add-ons WordPress":
+                                      - /url: /addons/dashboard
+                                      - generic: Add-ons WordPress
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Ferramentas de IA":
+                                      - /url: /ai-tools
+                                      - generic: Ferramentas de IA
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Monitoramento da dark web Monitoramento da dark web":
+                                      - /url: /dark-web-monitor
+                                      - button "Monitoramento da dark web":
+                                        - img
+                                      - generic: Monitoramento da dark web
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Créditos da nexos.ai":
+                                      - /url: /nexos-credits
+                                      - generic: Créditos da nexos.ai
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - link "Créditos de Oxylabs AI Studio":
+                                      - /url: /oxylabs-credits
+                                      - generic: Créditos de Oxylabs AI Studio
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - link "API API":
+                                - /url: /api
+                                - button "API":
+                                  - img
+                                - generic: API
+                        - generic:
+                          - listitem:
+                            - list
+              - generic:
+                - generic:
+                  - navigation:
+                    - list:
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - link "Compartilhamento de conta Compartilhamento de conta":
+                              - /url: /profile/account-access/account-sharing?amplitudeLocation=side_menu
+                              - button "Compartilhamento de conta":
+                                - img
+                              - generic: Compartilhamento de conta
+                      - generic:
+                        - listitem:
+                          - list
+          - generic:
+            - generic:
+              - complementary:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Menu principal":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Menu principal
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Nome do site
+                          - generic:
+                            - generic:
+                              - generic:
+                                - combobox:
+                                  - generic:
+                                    - generic: passoapassouniformes.com
+                                  - generic [ref=e332] [cursor=pointer]:
+                                    - img
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - textbox "Pesquisar"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - navigation:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Painel de controle":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Painel de controle
+                              - generic:
+                                - listitem:
+                                  - list
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "WordPress":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: WordPress
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Visão geral":
+                                            - generic:
+                                              - generic: Visão geral
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Segurança":
+                                            - generic:
+                                              - generic: Segurança
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Ferramenta de solução de problemas com IA":
+                                            - generic:
+                                              - generic: Ferramenta de solução de problemas com IA
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Ambiente de teste":
+                                            - generic:
+                                              - generic: Ambiente de teste
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Copiar site":
+                                            - generic:
+                                              - generic: Copiar site
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Predefinições":
+                                            - generic:
+                                              - generic: Predefinições
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Saiba mais":
+                                            - generic:
+                                              - generic: Saiba mais
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Plano de hospedagem":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Plano de hospedagem
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Detalhes do plano":
+                                            - generic:
+                                              - generic: Detalhes do plano
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Consumo de recursos":
+                                            - generic:
+                                              - generic: Consumo de recursos
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Renovar":
+                                            - generic:
+                                              - generic: Renovar
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Fazer upgrade":
+                                            - generic:
+                                              - generic: Fazer upgrade
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Desempenho":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Desempenho
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Ferramenta de solução de problemas com IA":
+                                            - generic:
+                                              - generic: Ferramenta de solução de problemas com IA
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Cache de objetos":
+                                            - generic:
+                                              - generic: Cache de objetos
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Velocidade da página":
+                                            - generic:
+                                              - generic: Velocidade da página
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "CDN":
+                                            - generic:
+                                              - generic: CDN
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Analytics":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Analytics
+                              - generic:
+                                - listitem:
+                                  - list
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Segurança":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Segurança
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Detector de malware":
+                                            - generic:
+                                              - generic: Detector de malware
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Atualizações automáticas do WordPress":
+                                            - generic:
+                                              - generic: Atualizações automáticas do WordPress
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "SSL":
+                                            - generic:
+                                              - generic: SSL
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Domínios":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Domínios
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Subdomínios":
+                                            - generic:
+                                              - generic: Subdomínios
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Domínios estacionados":
+                                            - generic:
+                                              - generic: Domínios estacionados
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Redirecionamentos":
+                                            - generic:
+                                              - generic: Redirecionamentos
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Site":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Site
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Instalador automático":
+                                            - generic:
+                                              - generic: Instalador automático
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Migrar site":
+                                            - generic:
+                                              - generic: Migrar site
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Copiar site":
+                                            - generic:
+                                              - generic: Copiar site
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Páginas de erro":
+                                            - generic:
+                                              - generic: Páginas de erro
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Criador de logos":
+                                            - generic:
+                                              - generic: Criador de logos
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Desenvolvimento de sites":
+                                            - generic:
+                                              - generic: Desenvolvimento de sites
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Arquivos":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Arquivos
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Gerenciador de arquivos":
+                                            - generic:
+                                              - generic: Gerenciador de arquivos
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Backups":
+                                            - generic:
+                                              - generic: Backups
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Contas FTP":
+                                            - generic:
+                                              - generic: Contas FTP
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Alterar senha":
+                                            - generic:
+                                              - generic: Alterar senha
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Bancos de dados":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Bancos de dados
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Gerenciamento":
+                                            - generic:
+                                              - generic: Gerenciamento
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "phpMyAdmin":
+                                            - generic:
+                                              - generic: phpMyAdmin
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "MySQL remoto":
+                                            - generic:
+                                              - generic: MySQL remoto
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - menuitem "Avançado":
+                                      - generic:
+                                        - img
+                                      - generic:
+                                        - generic: Avançado
+                                      - generic:
+                                        - img
+                              - generic:
+                                - listitem:
+                                  - list:
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Acesso SSH":
+                                            - generic:
+                                              - generic: Acesso SSH
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Configuração de PHP":
+                                            - generic:
+                                              - generic: Configuração de PHP
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Editor de zona DNS":
+                                            - generic:
+                                              - generic: Editor de zona DNS
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Cron Jobs":
+                                            - generic:
+                                              - generic: Cron Jobs
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Informações de PHP":
+                                            - generic:
+                                              - generic: Informações de PHP
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Gerenciador de cache":
+                                            - generic:
+                                              - generic: Gerenciador de cache
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "GIT":
+                                            - generic:
+                                              - generic: GIT
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Diretórios protegidos por senha":
+                                            - generic:
+                                              - generic: Diretórios protegidos por senha
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Gerenciador de IP":
+                                            - generic:
+                                              - generic: Gerenciador de IP
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Proteção Hotlink":
+                                            - generic:
+                                              - generic: Proteção Hotlink
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Gerenciador de índice de pastas":
+                                            - generic:
+                                              - generic: Gerenciador de índice de pastas
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Restaurar permissões de arquivos":
+                                            - generic:
+                                              - generic: Restaurar permissões de arquivos
+                                    - listitem:
+                                      - generic:
+                                        - generic:
+                                          - menuitem "Registro de atividades":
+                                            - generic:
+                                              - generic: Registro de atividades
+                    - generic:
+                      - generic:
+                        - listitem:
+                          - generic:
+                            - generic:
+                              - menuitem "Dar feedback":
+                                - generic:
+                                  - img
+                                - generic:
+                                  - generic: Dar feedback

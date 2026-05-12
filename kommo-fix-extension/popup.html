@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 260px;
+      font-family: 'Segoe UI', Inter, system-ui, sans-serif;
+      background: #0A0A0A;
+      color: #fff;
+    }
+    .header {
+      background: #C85A00;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo { font-size: 1.3rem; }
+    .header h1 { font-size: 0.9rem; font-weight: 700; }
+    .header p  { font-size: 0.65rem; opacity: 0.85; margin-top: 1px; }
+
+    .body { padding: 14px 16px; }
+
+    .fix-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid #1A1A1A;
+    }
+    .fix-item:last-child { border-bottom: none; }
+
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #2ecc71;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .fix-item strong { font-size: 0.78rem; font-weight: 700; color: #fff; display: block; }
+    .fix-item span   { font-size: 0.68rem; color: #9A9A9A; margin-top: 2px; display: block; }
+
+    .footer {
+      padding: 10px 16px;
+      background: #111;
+      font-size: 0.62rem;
+      color: #4A4A4A;
+      text-align: center;
+    }
+    .status {
+      padding: 8px 16px;
+      background: #111;
+      font-size: 0.7rem;
+      color: #2ecc71;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .status::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #2ecc71;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">🔧</div>
+    <div>
+      <h1>Kommo Fix</h1>
+      <p>PassoaPasso Uniformes</p>
+    </div>
+  </div>
+
+  <div class="status">Ativo no Kommo</div>
+
+  <div class="body">
+    <div class="fix-item">
+      <div class="dot"></div>
+      <div>
+        <strong>Enter envia mensagem</strong>
+        <span>Shift+Enter continua em nova linha</span>
+      </div>
+    </div>
+    <div class="fix-item">
+      <div class="dot"></div>
+      <div>
+        <strong>Foco automático</strong>
+        <span>Cursor volta pro campo após enviar</span>
+      </div>
+    </div>
+    <div class="fix-item">
+      <div class="dot"></div>
+      <div>
+        <strong>Foco ao abrir conversa</strong>
+        <span>Campo já ativo ao clicar num contato</span>
+      </div>
+    </div>
+    <div class="fix-item">
+      <div class="dot"></div>
+      <div>
+        <strong>Fotos dos clientes</strong>
+        <span>Força carregamento de avatares</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">v1.0 · Passo a Passo Uniformes</div>
+</body>
+</html>

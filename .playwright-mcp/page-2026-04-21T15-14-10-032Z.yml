@@ -1,0 +1,316 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 281" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "281"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e52] [cursor=pointer]:
+            - link "Calendário 128" [ref=e54]:
+              - /url: /todo
+              - img [ref=e56]
+              - generic [ref=e58]: Calendário
+              - generic [ref=e62]: "128"
+          - listitem [ref=e63]:
+            - link "Listas" [ref=e65] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e67]
+              - generic [ref=e69]: Listas
+              - img [ref=e72]
+          - listitem [ref=e75] [cursor=pointer]:
+            - link "Agente de IA" [ref=e77]:
+              - /url: /settings/ai-agent/
+              - img [ref=e79]
+              - generic [ref=e81]: Agente de IA
+          - listitem [ref=e82]:
+            - link "Automações" [ref=e84] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e86]
+              - generic [ref=e88]: Automações
+              - img [ref=e91]
+          - listitem [ref=e93]:
+            - link "Insights" [ref=e95] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e97]
+              - generic [ref=e100]: Insights
+              - img [ref=e103]
+        - generic [ref=e105]: Integrações fixadas
+        - list [ref=e106]:
+          - listitem [ref=e108] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e110]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e113]
+              - generic [ref=e114]: WhatsApp Business
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "TikTok" [ref=e118]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e121]
+              - generic [ref=e122]: TikTok
+      - list [ref=e126]:
+        - listitem [ref=e128] [cursor=pointer]:
+          - link "Configurações" [ref=e130]:
+            - /url: /settings/profile/
+            - img [ref=e132]
+            - generic [ref=e135]: Configurações
+        - listitem [ref=e136]:
+          - link "Ajuda" [ref=e138] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e140]
+            - generic [ref=e142]: Ajuda
+            - img [ref=e145]
+        - listitem [ref=e148] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e150]:
+            - /url: ""
+            - img [ref=e152]
+            - generic [ref=e154]: Enviar feedback
+        - listitem [ref=e156] [cursor=pointer]:
+          - link "Centro de Notificação 248" [ref=e158]:
+            - /url: /settings/profile/notifications
+            - img [ref=e160]
+            - generic [ref=e162]: Centro de Notificação
+            - generic [ref=e166]: "248"
+      - separator [ref=e167]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e169] [cursor=pointer]:
+        - img "Avatar" [ref=e172]
+        - generic [ref=e173]:
+          - generic [ref=e174]: Passo a passo uniformes
+          - generic [ref=e175]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e177]:
+      - img [ref=e178]
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e188]:
+              - textbox "Buscar" [ref=e191]
+              - img [ref=e192]
+            - button "Atividades" [ref=e194] [cursor=pointer]:
+              - generic [ref=e195]:
+                - img [ref=e196]
+                - generic [ref=e198]: Atividades
+          - generic:
+            - generic: passoapassouniformes2025
+            - generic:
+              - generic [ref=e199]:
+                - button "Hoje" [ref=e200] [cursor=pointer]
+                - button "Ontem" [ref=e201] [cursor=pointer]
+                - button "Semana" [ref=e202] [cursor=pointer]
+                - button "Mês" [ref=e203] [cursor=pointer]
+                - button "Período" [ref=e204] [cursor=pointer]:
+                  - generic:
+                    - generic:
+                      - img
+                  - text: Período
+              - generic [ref=e205]:
+                - button "Todos" [ref=e206] [cursor=pointer]
+                - button "Selecionar usuário" [ref=e208] [cursor=pointer]:
+                  - generic [ref=e209]: Selecionar usuário
+                  - link [ref=e210]:
+                    - /url: ""
+                    - img
+              - generic [ref=e212] [cursor=pointer]:
+                - img [ref=e213]
+                - generic [ref=e215]: Configurações
+        - generic [ref=e217]:
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - heading "Mensagens recebidas" [level=4] [ref=e221]:
+                - generic [ref=e222]: Mensagens recebidas
+              - generic [ref=e223]:
+                - link [ref=e225] [cursor=pointer]:
+                  - /url: /events/list/?filter%5Bdate_preset%5D=current_month&filter%5Bevent_type%5D%5B0%5D=89&filter%5Bfilter_date_switch%5D=created&useFilter=y&filter_date_switch=closed
+                  - img [ref=e226]:
+                    - generic [ref=e227]: "5758"
+                - generic [ref=e228]: este mês
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e232]:
+                  - img "WhatsApp Cloud API" [ref=e233]
+                  - text: WhatsApp Cloud API
+                - generic [ref=e235]: "5758"
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - img "Wazzup" [ref=e239]
+                  - text: Wazzup
+                - generic [ref=e241]: "0"
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - img "Bate-papo online" [ref=e244]
+                  - text: Bate-papo online
+                - generic [ref=e246]: "0"
+              - generic [ref=e247]:
+                - generic [ref=e248]: Outros
+                - generic [ref=e250]: "0"
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - heading "Conversas atuais" [level=4] [ref=e254]:
+                - generic [ref=e255]: Conversas atuais
+              - img [ref=e258]:
+                - generic [ref=e259]: "809"
+            - generic [ref=e261]:
+              - img [ref=e263]:
+                - generic [ref=e264]: "+764"
+              - generic [ref=e265]: este mês
+          - generic [ref=e267]:
+            - generic [ref=e268]:
+              - heading "Chats sem respostas" [level=4] [ref=e269]:
+                - generic [ref=e270]: Chats sem respostas
+              - img [ref=e273]:
+                - generic [ref=e274]: "281"
+            - generic [ref=e276]:
+              - img [ref=e278]:
+                - generic [ref=e279]: "+239"
+              - generic [ref=e280]: este mês
+          - generic [ref=e283]:
+            - heading "Tempo de resposta" [level=4] [ref=e284]:
+              - generic [ref=e285]: Tempo de resposta
+            - img [ref=e288]:
+              - generic [ref=e289]: 7m
+            - generic [ref=e290]: este mês
+          - generic [ref=e293]:
+            - heading "Mais tempo esperando" [level=4] [ref=e294]:
+              - generic [ref=e295]: Mais tempo esperando
+            - link [ref=e298] [cursor=pointer]:
+              - /url: /chats/795/leads/detail/27295623
+              - img [ref=e299]:
+                - generic [ref=e300]: 44d
+          - generic [ref=e302]:
+            - heading "Fontes de lead" [level=4] [ref=e303]:
+              - generic [ref=e304]: Fontes de lead
+            - generic [ref=e305]:
+              - list [ref=e306]:
+                - listitem [ref=e307]:
+                  - link "Passo A Passo Uniformes" [ref=e308] [cursor=pointer]:
+                    - /url: /leads/pipeline/13368211/?filter%5Blead_source%5D=23055683&filter%5Bdate_preset%5D=month&useFilter=y
+                - listitem [ref=e309]:
+                  - link "API" [ref=e310] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Blead_source%5D=23055831&filter%5Bdate_preset%5D=month&useFilter=y
+                - listitem
+                - listitem
+                - listitem
+              - img [ref=e312]
+              - img [ref=e315]
+              - img [ref=e318]
+              - img [ref=e320]
+              - img [ref=e322]
+          - generic [ref=e324]:
+            - generic [ref=e325]:
+              - heading "Leads ganhos" [level=4] [ref=e326]:
+                - generic [ref=e327]: Leads ganhos
+              - link [ref=e330] [cursor=pointer]:
+                - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=142&filter_date_switch=closed
+                - img [ref=e331]:
+                  - generic [ref=e332]: "1"
+              - generic [ref=e333]: R$0
+            - generic [ref=e334]:
+              - img [ref=e336]:
+                - generic [ref=e337]: "+1"
+              - generic [ref=e338]: este mês
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - heading "Leads ativos" [level=4] [ref=e342]:
+                - generic [ref=e343]: Leads ativos
+              - link [ref=e346] [cursor=pointer]:
+                - /url: /leads/list/?
+                - img [ref=e347]:
+                  - generic [ref=e348]: "864"
+              - generic [ref=e349]: R$23.640
+            - generic [ref=e350]:
+              - img [ref=e352]:
+                - generic [ref=e353]: "+819"
+              - generic [ref=e354]: este mês
+          - generic [ref=e356]:
+            - generic [ref=e357]:
+              - heading "Leads perdidos" [level=4] [ref=e358]:
+                - generic [ref=e359]: Leads perdidos
+              - link [ref=e362] [cursor=pointer]:
+                - /url: /leads/list/?sel=bad_complited&filter%5Bstatus_id%5D%5B0%5D=143&useFilter=y
+                - img [ref=e363]:
+                  - generic [ref=e364]: "6"
+              - generic [ref=e365]: R$0
+            - generic [ref=e366]:
+              - img [ref=e368]:
+                - generic [ref=e369]: "+6"
+              - generic [ref=e370]: este mês
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - heading "Leads sem tarefas" [level=4] [ref=e374]:
+                - generic [ref=e375]: Leads sem tarefas
+              - link [ref=e378] [cursor=pointer]:
+                - /url: /leads/list/?sel=leads_without_tasks&filter%5Btasks%5D%5B0%5D=no_tasks&useFilter=y
+                - img [ref=e379]:
+                  - generic [ref=e380]: "737"
+              - generic [ref=e381]: R$20.495
+            - generic [ref=e382]:
+              - img [ref=e384]:
+                - generic [ref=e385]: "+701"
+              - generic [ref=e386]: este mês
+          - generic [ref=e388]:
+            - generic [ref=e389]:
+              - heading "Tarefas" [level=4] [ref=e390]:
+                - generic [ref=e391]: Tarefas
+              - generic [ref=e392]:
+                - link [ref=e394] [cursor=pointer]:
+                  - /url: /todo/list/?
+                  - img [ref=e395]:
+                    - generic [ref=e396]: "128"
+                - generic [ref=e397]:
+                  - img [ref=e399]:
+                    - generic [ref=e400]: "+128"
+                  - generic [ref=e401]: este mês
+            - generic [ref=e404]:
+              - link "Acompanhar" [ref=e406] [cursor=pointer]:
+                - /url: /todo/list/?filter%5Btask_type%5D%5B0%5D=1
+                - generic [ref=e407]: Acompanhar
+              - link "128 tarefas" [ref=e411] [cursor=pointer]:
+                - /url: /todo/list/?filter%5Btask_type%5D%5B0%5D=1
+              - generic [ref=e412]: "+128"
+    - generic [ref=e416]:
+      - img
+      - button [ref=e417]:
+        - img [ref=e418]
+        - img [ref=e420]
+        - img [ref=e424]
+      - generic [ref=e426]:
+        - generic [ref=e427]:
+          - generic [ref=e428]:
+            - img [ref=e429]
+            - generic [ref=e431]: Kommo Copilot
+          - generic [ref=e432]:
+            - button [ref=e433] [cursor=pointer]:
+              - img [ref=e436]
+            - button [ref=e438] [cursor=pointer]:
+              - img [ref=e441]
+            - button [ref=e443] [cursor=pointer]:
+              - img [ref=e446]
+        - button "Configuração do WhatsApp Business" [ref=e448] [cursor=pointer]:
+          - generic [ref=e449]:
+            - generic [ref=e450]: Configuração do WhatsApp Business
+            - img [ref=e451]
+        - generic [ref=e476]:
+          - generic [ref=e477]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e480]
+            - button [disabled] [ref=e483]:
+              - img [ref=e486]
+          - generic [ref=e488]: O conteúdo gerado por IA pode ser impreciso

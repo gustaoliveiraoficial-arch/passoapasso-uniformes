@@ -1,0 +1,381 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 284" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "284"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/list/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e52] [cursor=pointer]:
+            - link "Calendário 13" [ref=e54]:
+              - /url: /todo
+              - img [ref=e56]
+              - generic [ref=e58]: Calendário
+              - generic [ref=e62]: "13"
+          - listitem [ref=e63]:
+            - link "Listas" [ref=e65] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e67]
+              - generic [ref=e69]: Listas
+              - img [ref=e72]
+          - listitem [ref=e75] [cursor=pointer]:
+            - link "Agente de IA" [ref=e77]:
+              - /url: /settings/ai-agent/
+              - img [ref=e79]
+              - generic [ref=e81]: Agente de IA
+          - listitem [ref=e82]:
+            - link "Automações" [ref=e84] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e86]
+              - generic [ref=e88]: Automações
+              - img [ref=e91]
+          - listitem [ref=e93]:
+            - link "Insights" [ref=e95] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e97]
+              - generic [ref=e100]: Insights
+              - img [ref=e103]
+        - generic [ref=e105]: Integrações fixadas
+        - list [ref=e106]:
+          - listitem [ref=e108] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e110]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e113]
+              - generic [ref=e114]: WhatsApp Business
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "TikTok" [ref=e118]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e121]
+              - generic [ref=e122]: TikTok
+      - list [ref=e124]:
+        - listitem [ref=e126] [cursor=pointer]:
+          - link "Configurações" [ref=e128]:
+            - /url: /settings/profile/
+            - img [ref=e130]
+            - generic [ref=e133]: Configurações
+        - listitem [ref=e134]:
+          - link "Ajuda" [ref=e136] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e138]
+            - generic [ref=e140]: Ajuda
+            - img [ref=e143]
+        - listitem [ref=e146] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e148]:
+            - /url: ""
+            - img [ref=e150]
+            - generic [ref=e152]: Enviar feedback
+        - listitem [ref=e154] [cursor=pointer]:
+          - link "Centro de Notificação 17" [ref=e156]:
+            - /url: /settings/profile/notifications
+            - img [ref=e158]
+            - generic [ref=e160]: Centro de Notificação
+            - generic [ref=e164]: "17"
+      - separator [ref=e165]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e167] [cursor=pointer]:
+        - img "Avatar" [ref=e170]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Passo a passo uniformes
+          - generic [ref=e173]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e175]:
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - img [ref=e180] [cursor=pointer]
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - 'textbox "Lead #28962893" [ref=e190]'
+                  - button [ref=e193] [cursor=pointer]
+                - list [ref=e198]:
+                  - listitem [ref=e199] [cursor=pointer]:
+                    - textbox [ref=e200]
+                    - generic "#adicionar tags" [ref=e201]
+              - generic [ref=e204]:
+                - button "Negociando" [ref=e206] [cursor=pointer]:
+                  - generic [ref=e207]: Negociando
+                - generic [ref=e209]:
+                  - generic [ref=e210]: Negociando
+                  - text: (Hoje)
+            - generic [ref=e229]:
+              - button [ref=e232] [cursor=pointer]:
+                - img [ref=e234]
+              - generic "Principal" [ref=e237] [cursor=pointer]
+              - generic "Estatísticas" [ref=e239] [cursor=pointer]
+              - generic "Mídia" [ref=e241] [cursor=pointer]
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - generic "Usuário responsável" [ref=e244]:
+                  - generic [ref=e245]: Usuário responsável
+                - list [ref=e248]:
+                  - listitem [ref=e249] [cursor=pointer]:
+                    - textbox [ref=e250]
+                    - generic [ref=e251]: Passo a passo uniformes
+              - generic [ref=e252]:
+                - generic "Venda" [ref=e253]:
+                  - generic [ref=e254]: Venda
+                - generic [ref=e256]:
+                  - text: R$
+                  - textbox "0" [ref=e257]
+                  - generic [ref=e258]: "0"
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic "Próxima consulta" [ref=e261]:
+                  - generic [ref=e262]: Próxima consulta
+                - generic [ref=e263]:
+                  - generic [ref=e264]:
+                    - textbox "..." [disabled]
+                  - text: API
+              - generic [ref=e265]:
+                - generic "Número de rastreamento" [ref=e266]:
+                  - generic [ref=e267]: Número de rastreamento
+                - textbox "..." [ref=e269]
+              - generic [ref=e270]:
+                - generic "Endereço de entrega" [ref=e271]:
+                  - generic [ref=e272]: Endereço de entrega
+                - textbox "..." [ref=e274]
+              - generic [ref=e275]:
+                - generic "Método de pagamento" [ref=e276]:
+                  - generic [ref=e277]: Método de pagamento
+                - button "Selecione" [ref=e280] [cursor=pointer]:
+                  - generic [ref=e281]: Selecione
+              - generic [ref=e282]:
+                - generic "Desconto" [ref=e283]:
+                  - generic [ref=e284]: Desconto
+                - button "Selecione" [ref=e287] [cursor=pointer]:
+                  - generic [ref=e288]: Selecione
+              - generic [ref=e289]:
+                - generic "Motivo de perda" [ref=e290]:
+                  - generic [ref=e291]: Motivo de perda
+                - button "Selecione" [ref=e294] [cursor=pointer]:
+                  - generic [ref=e295]: Selecione
+              - generic [ref=e296]:
+                - generic "Número do contrato" [ref=e297]:
+                  - generic [ref=e298]: Número do contrato
+                - textbox "..." [ref=e300]
+              - generic [ref=e301]:
+                - generic "Data do contrato" [ref=e302]:
+                  - generic [ref=e303]: Data do contrato
+                - generic [ref=e305]:
+                  - textbox [ref=e306] [cursor=pointer]
+                  - img [ref=e308] [cursor=pointer]
+              - generic [ref=e310]:
+                - generic "Pagamento" [ref=e311]:
+                  - generic [ref=e312]: Pagamento
+                - button "Selecione" [ref=e315] [cursor=pointer]:
+                  - generic [ref=e316]: Selecione
+              - generic [ref=e317]:
+                - generic "Arquivo" [ref=e318]:
+                  - generic [ref=e319]: Arquivo
+                - generic [ref=e324] [cursor=pointer]: Fazer upload
+            - text: API API API API API API API API API API API API
+        - generic [ref=e326]:
+          - list [ref=e328]:
+            - listitem [ref=e329]:
+              - generic [ref=e330]:
+                - generic [ref=e335]:
+                  - generic [ref=e336]:
+                    - generic [ref=e337]:
+                      - textbox "..." [ref=e338]: Adv. Wilson Neto
+                      - generic [ref=e339]: Adv. Wilson Neto
+                    - img [ref=e341] [cursor=pointer]
+                  - generic [ref=e349] [cursor=pointer]: WhatsApp Business
+                - generic [ref=e350]:
+                  - generic [ref=e351]:
+                    - generic "Empresa" [ref=e352]
+                    - textbox "..." [ref=e356]
+                  - generic [ref=e358]:
+                    - button "Tel. comercial" [ref=e361] [cursor=pointer]
+                    - textbox "..." [ref=e365] [cursor=pointer]: +55 51 99799-777
+                  - text: API
+                  - generic [ref=e369] [cursor=pointer]:
+                    - textbox
+                    - generic [ref=e370]: Mais
+          - generic [ref=e372]:
+            - textbox "Adicionar contato" [ref=e380] [cursor=pointer]
+            - text: API
+          - generic:
+            - list
+          - textbox "Adicionar empresa" [ref=e389] [cursor=pointer]
+      - generic [ref=e391]:
+        - generic [ref=e393]:
+          - generic [ref=e396]:
+            - generic [ref=e399]: Busca e filtro
+            - img [ref=e400]
+          - generic [ref=e402]:
+            - generic [ref=e404]: Ontem
+            - generic [ref=e413]:
+              - generic [ref=e414]: Ontem
+              - text: "Criar:"
+              - generic [ref=e415]: 2 eventos
+              - link "Expandir" [ref=e416] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=e419]:
+              - generic [ref=e420]:
+                - generic [ref=e421]:
+                  - generic "Adv. Wilson Neto" [ref=e422]
+                  - img [ref=e425]
+                - generic [ref=e426]: Adv. Wilson Neto
+              - generic [ref=e427]:
+                - generic [ref=e431]:
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: Ontem 14:08
+                    - generic [ref=e436] [cursor=pointer]:
+                      - img [ref=e437]
+                      - generic [ref=e439]: Entregue
+                  - generic [ref=e441]: boa tarde
+                - generic [ref=e445]:
+                  - generic [ref=e448]:
+                    - generic [ref=e449]: Ontem 14:10
+                    - generic [ref=e450] [cursor=pointer]:
+                      - img [ref=e451]
+                      - generic [ref=e453]: Entregue
+                  - generic [ref=e454]:
+                    - generic [ref=e455]: 👕 Polo Piquet PV
+                    - generic [ref=e456]: _Tecido piquet de alta qualidade, leve e confortável, ideal para uso diário ou esportivo._
+                    - generic [ref=e457]: "Quantidade: 10 peças × R$ 79,90 = R$ 799,00"
+                - generic [ref=e461]:
+                  - generic [ref=e464]:
+                    - generic [ref=e465]: Ontem 14:10
+                    - generic [ref=e466] [cursor=pointer]:
+                      - img [ref=e467]
+                      - generic [ref=e469]: Entregue
+                  - generic [ref=e471]: 🪡 Matriz de bordado (1ª vez) — R$ 45,00 _(cobrada uma única vez, fica arquivada para pedidos futuros)_
+                - generic [ref=e475]:
+                  - generic [ref=e478]:
+                    - generic [ref=e479]: Ontem 14:11
+                    - generic [ref=e480] [cursor=pointer]:
+                      - img [ref=e481]
+                      - generic [ref=e483]: Entregue
+                  - generic [ref=e484]:
+                    - generic [ref=e485]: "💰 TOTAL GERAL: R$ 844,00"
+                    - generic [ref=e487]: 💳 FORMAS DE PAGAMENTO
+                    - generic [ref=e488]: "💠 PIX: Sem acréscimo. 50% na aprovação + 50% na entrega. Pagamento integral à vista: 5% de desconto."
+                    - generic [ref=e489]: "💳 CARTÃO DE CRÉDITO: Débito: sem acréscimo. 1x: +3%. Até 3x: +6%."
+                - generic [ref=e492]:
+                  - generic [ref=e493]:
+                    - generic "WhatsApp Business" [ref=e494]
+                    - img [ref=e497]
+                  - generic [ref=e498]:
+                    - generic [ref=e501]:
+                      - generic [ref=e502]: Ontem 14:12
+                      - generic "WhatsApp Business" [ref=e503]
+                      - generic [ref=e504] [cursor=pointer]:
+                        - img [ref=e505]
+                        - generic [ref=e507]: Entregue
+                    - link "Download" [ref=e510] [cursor=pointer]:
+                      - /url: https://drive-c.kommo.com/download/ae18b572-abc5-5d01-b008-9b49a2442353/2c4a264d-3cd1-4abf-b2fd-1dc418e88ecd/3c7611cb-82a1-49f7-9e98-32bca061631f/file.jpeg
+                      - img [ref=e511]
+                      - img [ref=e512]
+                      - button "Download" [ref=e513]
+                    - img [ref=e514]
+                - generic [ref=e518]:
+                  - generic [ref=e519]:
+                    - generic "Adv. Wilson Neto" [ref=e520]
+                    - img [ref=e523]
+                  - generic [ref=e524]:
+                    - generic [ref=e527]:
+                      - generic [ref=e528]: Ontem 14:15
+                      - generic "Adv. Wilson Neto" [ref=e529] [cursor=pointer]
+                    - link "Download" [ref=e532] [cursor=pointer]:
+                      - /url: https://drive-c.kommo.com/download/ae18b572-abc5-5d01-b008-9b49a2442353/a3e4b972-c0cb-42bc-bcd4-0c7e6b306baa/29df5e40-9b5d-4ca2-9a04-ae824cb290f9/file.jpeg
+                      - img [ref=e533]
+                      - img [ref=e534]
+                      - button "Download" [ref=e535]
+                    - img [ref=e536]
+                  - generic [ref=e538]:
+                    - generic [ref=e539] [cursor=pointer]:
+                      - generic [ref=e540]: Conversa
+                      - generic [ref=e541]: № A992
+                    - generic [ref=e543] [cursor=pointer]:
+                      - img [ref=e545]
+                      - generic [ref=e547]: Resumir
+                    - generic [ref=e550] [cursor=pointer]: Fechar conversa
+                    - generic [ref=e553] [cursor=pointer]: Colocar em espera
+            - generic [ref=e561] [cursor=pointer]:
+              - generic [ref=e563]:
+                - generic [ref=e564]: Ontem 14:15
+                - generic [ref=e565]: Robô
+                - generic [ref=e566]:
+                  - generic [ref=e567]: O valor do campo «Telefone»
+                  - generic [ref=e568]: está definido para «+555199799777»
+              - link "Adv. Wilson Neto" [ref=e571]:
+                - /url: /contacts/detail/34593627
+            - generic [ref=e580]:
+              - generic [ref=e581]: Ontem
+              - text: "Usuário responsável foi alterado:"
+              - generic [ref=e582]: 2 eventos
+              - link "Expandir" [ref=e583] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=e591]:
+              - generic [ref=e592]: Ontem 14:16
+              - generic [ref=e593]: Passo a passo uniformes
+              - generic [ref=e594]:
+                - generic [ref=e595]: "Movido para:"
+                - generic "Negociando" [ref=e596]
+                - text: de Leads de entrada
+          - generic [ref=e597]:
+            - generic [ref=e598] [cursor=pointer]:
+              - img [ref=e600]
+              - generic [ref=e602]: Nenhuma tarefa planejada, comece adicionando uma
+            - 'link "Participantes: 0" [ref=e606] [cursor=pointer]':
+              - /url: "#"
+        - generic [ref=e610]:
+          - generic [ref=e612]:
+            - generic [ref=e613] [cursor=pointer]: Bate-papo
+            - generic [ref=e614]: com
+            - generic "Adv. Wilson Neto" [ref=e618] [cursor=pointer]
+            - generic [ref=e619]: ":"
+            - img [ref=e621] [cursor=pointer]
+          - generic [ref=e623]: Conversa № A 992
+          - generic [ref=e624]: Escreva uma mensagem ou digite "/" para sua lista de Salesbot
+        - text: "Novas mensagens:"
+    - generic [ref=e628]:
+      - img
+      - button [ref=e629]:
+        - img [ref=e630]
+        - img [ref=e632]
+        - img [ref=e636]
+      - generic [ref=e638]:
+        - generic [ref=e639]:
+          - generic [ref=e640]:
+            - img [ref=e641]
+            - generic [ref=e643]: Kommo Copilot
+          - generic [ref=e644]:
+            - button [ref=e645] [cursor=pointer]:
+              - img [ref=e648]
+            - button [ref=e650] [cursor=pointer]:
+              - img [ref=e653]
+            - button [ref=e655] [cursor=pointer]:
+              - img [ref=e658]
+        - button "Configuração do WhatsApp Business" [ref=e660] [cursor=pointer]:
+          - generic [ref=e661]:
+            - generic [ref=e662]: Configuração do WhatsApp Business
+            - img [ref=e663]
+        - generic [ref=e688]:
+          - generic [ref=e689]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e692]
+            - button [disabled] [ref=e695]:
+              - img [ref=e698]
+          - generic [ref=e700]: O conteúdo gerado por IA pode ser impreciso
+  - textbox [ref=e701]: "Lead #28962893"

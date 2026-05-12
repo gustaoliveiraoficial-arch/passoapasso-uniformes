@@ -1,0 +1,1620 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 226" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "226"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e52] [cursor=pointer]:
+            - link "Calendário 9" [ref=e54]:
+              - /url: /todo
+              - img [ref=e56]
+              - generic [ref=e58]: Calendário
+              - generic [ref=e62]: "9"
+          - listitem [ref=e63]:
+            - link "Listas" [ref=e65] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e67]
+              - generic [ref=e69]: Listas
+              - img [ref=e72]
+          - listitem [ref=e75] [cursor=pointer]:
+            - link "Agente de IA" [ref=e77]:
+              - /url: /settings/ai-agent/
+              - img [ref=e79]
+              - generic [ref=e81]: Agente de IA
+          - listitem [ref=e82]:
+            - link "Automações" [ref=e84] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e86]
+              - generic [ref=e88]: Automações
+              - img [ref=e91]
+          - listitem [ref=e93]:
+            - link "Insights" [ref=e95] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e97]
+              - generic [ref=e100]: Insights
+              - img [ref=e103]
+        - generic [ref=e105]: Integrações fixadas
+        - list [ref=e106]:
+          - listitem [ref=e108] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e110]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e113]
+              - generic [ref=e114]: WhatsApp Business
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "TikTok" [ref=e118]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e121]
+              - generic [ref=e122]: TikTok
+      - list [ref=e124]:
+        - listitem [ref=e126] [cursor=pointer]:
+          - link "Configurações" [ref=e128]:
+            - /url: /settings/profile/
+            - img [ref=e130]
+            - generic [ref=e133]: Configurações
+        - listitem [ref=e134]:
+          - link "Ajuda" [ref=e136] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e138]
+            - generic [ref=e140]: Ajuda
+            - img [ref=e143]
+        - listitem [ref=e146] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e148]:
+            - /url: ""
+            - img [ref=e150]
+            - generic [ref=e152]: Enviar feedback
+        - listitem [ref=e154] [cursor=pointer]:
+          - link "Centro de Notificação 4" [ref=e156]:
+            - /url: /settings/profile/notifications
+            - img [ref=e158]
+            - generic [ref=e160]: Centro de Notificação
+            - generic [ref=e164]: "4"
+      - separator [ref=e165]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e167] [cursor=pointer]:
+        - img "Avatar" [ref=e170]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Passo a passo uniformes
+          - generic [ref=e173]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - generic "Leads" [ref=e182]:
+            - generic [ref=e183]: Leads
+          - generic [ref=e184]:
+            - link "Leads" [ref=e185] [cursor=pointer]:
+              - /url: /leads/pipeline/
+              - img [ref=e186]
+            - link "Lista" [ref=e188] [cursor=pointer]:
+              - /url: /leads/list/pipeline/
+              - img [ref=e189]
+        - generic [ref=e191]:
+          - generic [ref=e193] [cursor=pointer]: Leads ativos
+          - generic [ref=e195]:
+            - textbox "Busca e filtro" [ref=e196]
+            - generic [ref=e197]:
+              - generic [ref=e198]: "762 leads:"
+              - generic [ref=e199]: R$23.640
+          - text: "Criada Fechadas Lead de entrada tipo: Lead fonte: Usuários Criado por Modificado por Tarefas: Método de pagamento: Desconto: Motivo de perda: Pagamento: Status das conversas: Progresso da conversa: Direção da última mensagem: Criado Modificado Tarefas: Criado Modificado Tarefas: Produtos"
+        - generic [ref=e200]:
+          - button "Mais" [ref=e203] [cursor=pointer]:
+            - img [ref=e205]
+          - link "Automatize" [ref=e207] [cursor=pointer]:
+            - /url: /settings/pipeline/leads/13368211
+            - generic [ref=e208]:
+              - img [ref=e209]
+              - generic [ref=e211]: Automatize
+          - link "Novo lead" [ref=e212] [cursor=pointer]:
+            - /url: /leads/add/?pipeline_id=13368211
+            - img [ref=e213]
+            - generic [ref=e215]: Novo lead
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - generic [ref=e223]:
+            - generic "Etapa de leads de entrada" [ref=e224]:
+              - generic [ref=e225]: Etapa de leads de entrada
+            - generic [ref=e228] [cursor=pointer]: "solicitações: 39"
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - generic "Tainara Piltz" [ref=e233]:
+                  - img [ref=e235]
+                - generic [ref=e236]:
+                  - generic [ref=e237] [cursor=pointer]:
+                    - generic [ref=e238]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e239]: Hoje 09:55
+                  - link "Tainara Piltz" [ref=e240] [cursor=pointer]:
+                    - /url: /leads/detail/28035957
+                  - generic [ref=e242]:
+                    - img [ref=e243]
+                    - generic [ref=e246]: Olá, gostaria de fazer um orçamento
+              - generic [ref=e247] [cursor=pointer]:
+                - img [ref=e249]
+                - img [ref=e252]
+                - img [ref=e255]
+            - generic [ref=e257]:
+              - generic [ref=e258]:
+                - generic "Gustavo" [ref=e259]:
+                  - img [ref=e261]
+                - generic [ref=e262]:
+                  - generic [ref=e263] [cursor=pointer]:
+                    - generic [ref=e264]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e265]: Ontem 18:05
+                  - link "Gustavo" [ref=e266] [cursor=pointer]:
+                    - /url: /leads/detail/27997555
+                  - generic [ref=e268]:
+                    - img [ref=e269]
+                    - generic [ref=e272]: Linha polo para empresa
+              - generic [ref=e273] [cursor=pointer]:
+                - img [ref=e275]
+                - img [ref=e278]
+                - img [ref=e281]
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - generic "Jordana Vieira" [ref=e285]:
+                  - img [ref=e287]
+                - generic [ref=e288]:
+                  - generic [ref=e289] [cursor=pointer]:
+                    - generic [ref=e290]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e291]: Ontem 15:36
+                  - link "Jordana Vieira" [ref=e292] [cursor=pointer]:
+                    - /url: /leads/detail/27988557
+                  - generic [ref=e294]:
+                    - img [ref=e295]
+                    - generic [ref=e298]: Olá, gostaria de fazer um orçamento
+              - generic [ref=e299] [cursor=pointer]:
+                - img [ref=e301]
+                - img [ref=e304]
+                - img [ref=e307]
+            - generic [ref=e309]:
+              - generic [ref=e310]:
+                - generic "Priscila Damiani" [ref=e311]:
+                  - img [ref=e313]
+                - generic [ref=e314]:
+                  - generic [ref=e315] [cursor=pointer]:
+                    - generic [ref=e316]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e317]: Ontem 13:02
+                  - link "Priscila Damiani" [ref=e318] [cursor=pointer]:
+                    - /url: /leads/detail/27978879
+                  - generic [ref=e320]:
+                    - img [ref=e321]
+                    - generic [ref=e324]: Olá, gostaria de fazer um orçamento
+              - generic [ref=e325] [cursor=pointer]:
+                - img [ref=e327]
+                - img [ref=e330]
+                - img [ref=e333]
+            - generic [ref=e335]:
+              - generic [ref=e336]:
+                - generic "Gabi" [ref=e337]:
+                  - img [ref=e339]
+                - generic [ref=e340]:
+                  - generic [ref=e341] [cursor=pointer]:
+                    - generic [ref=e342]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e343]: 11/04/2026 10:52
+                  - link "Gabi" [ref=e344] [cursor=pointer]:
+                    - /url: /leads/detail/27902213
+                  - generic [ref=e346]:
+                    - img [ref=e347]
+                    - generic [ref=e350]: Tudo bemmm?
+              - generic [ref=e351] [cursor=pointer]:
+                - img [ref=e353]
+                - img [ref=e356]
+                - img [ref=e359]
+            - generic [ref=e361]:
+              - generic [ref=e362]:
+                - generic "Mãos de Fada Studio criativo" [ref=e363]:
+                  - img [ref=e365]
+                - generic [ref=e366]:
+                  - generic [ref=e367] [cursor=pointer]:
+                    - generic [ref=e368]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e369]: 10/04/2026 23:03
+                  - link "Mãos de Fada Studio criativo" [ref=e370] [cursor=pointer]:
+                    - /url: /leads/detail/27882683
+                  - generic [ref=e372]:
+                    - img [ref=e373]
+                    - generic [ref=e376]: Olá, gostaria de fazer um orçamento
+              - generic [ref=e377] [cursor=pointer]:
+                - img [ref=e379]
+                - img [ref=e382]
+                - img [ref=e385]
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - generic "h" [ref=e389]:
+                  - img [ref=e391]
+                - generic [ref=e392]:
+                  - generic [ref=e393] [cursor=pointer]:
+                    - generic [ref=e394]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e395]: 10/04/2026 22:32
+                  - link "h" [ref=e396] [cursor=pointer]:
+                    - /url: /leads/detail/27869015
+                  - generic [ref=e398]:
+                    - img [ref=e399]
+                    - generic [ref=e402]: tudo certinho?
+              - generic [ref=e403] [cursor=pointer]:
+                - img [ref=e405]
+                - img [ref=e408]
+                - img [ref=e411]
+            - generic [ref=e413]:
+              - generic [ref=e414]:
+                - generic "Guilherme Paim" [ref=e415]:
+                  - img [ref=e417]
+                - generic [ref=e418]:
+                  - generic [ref=e419] [cursor=pointer]:
+                    - generic [ref=e420]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e421]: 10/04/2026 16:43
+                  - link "Guilherme Paim" [ref=e422] [cursor=pointer]:
+                    - /url: /leads/detail/27845721
+                  - generic [ref=e424]:
+                    - img [ref=e425]
+                    - generic [ref=e428]: Show de bola
+              - generic [ref=e429] [cursor=pointer]:
+                - img [ref=e431]
+                - img [ref=e434]
+                - img [ref=e437]
+            - generic [ref=e439]:
+              - generic [ref=e440]:
+                - generic "Maria Eduarda" [ref=e441]:
+                  - img [ref=e443]
+                - generic [ref=e444]:
+                  - generic [ref=e445] [cursor=pointer]:
+                    - generic [ref=e446]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e447]: 10/04/2026 16:17
+                  - link "Maria Eduarda" [ref=e448] [cursor=pointer]:
+                    - /url: /leads/detail/27839609
+                  - generic [ref=e450]:
+                    - img [ref=e451]
+                    - generic [ref=e454]: Mensagem de voz
+              - generic [ref=e455] [cursor=pointer]:
+                - img [ref=e457]
+                - img [ref=e460]
+                - img [ref=e463]
+            - generic [ref=e465]:
+              - generic [ref=e466]:
+                - generic "Max" [ref=e467]:
+                  - img [ref=e469]
+                - generic [ref=e470]:
+                  - generic [ref=e471] [cursor=pointer]:
+                    - generic [ref=e472]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e473]: 10/04/2026 16:06
+                  - link "Max" [ref=e474] [cursor=pointer]:
+                    - /url: /leads/detail/27838841
+                  - generic [ref=e476]:
+                    - img [ref=e477]
+                    - generic [ref=e480]: Olá, gostaria de fazer um orçamento
+              - generic [ref=e481] [cursor=pointer]:
+                - img [ref=e483]
+                - img [ref=e486]
+                - img [ref=e489]
+            - generic [ref=e491]:
+              - generic [ref=e492]:
+                - generic "Oliveira Refrigeracao" [ref=e493]:
+                  - img [ref=e495]
+                - generic [ref=e496]:
+                  - generic [ref=e497] [cursor=pointer]:
+                    - generic [ref=e498]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e499]: 10/04/2026 14:37
+                  - link "Oliveira Refrigeracao" [ref=e500] [cursor=pointer]:
+                    - /url: /leads/detail/27827067
+                  - generic [ref=e502]:
+                    - img [ref=e503]
+                    - generic [ref=e506]: Bom diaaaa
+              - generic [ref=e507] [cursor=pointer]:
+                - img [ref=e509]
+                - img [ref=e512]
+                - img [ref=e515]
+            - generic [ref=e517]:
+              - generic [ref=e518]:
+                - generic "Compras" [ref=e519]:
+                  - img [ref=e521]
+                - generic [ref=e522]:
+                  - generic [ref=e523] [cursor=pointer]:
+                    - generic [ref=e524]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e525]: 10/04/2026 09:38
+                  - link "Compras" [ref=e526] [cursor=pointer]:
+                    - /url: /leads/detail/27795533
+                  - generic [ref=e528]:
+                    - img [ref=e529]
+                    - generic [ref=e532]: Perfeito Rodrigo, fico no teu aguardo aqui!!
+              - generic [ref=e533] [cursor=pointer]:
+                - img [ref=e535]
+                - img [ref=e538]
+                - img [ref=e541]
+            - generic [ref=e543]:
+              - generic [ref=e544]:
+                - generic "Esio Muller" [ref=e545]:
+                  - img [ref=e547]
+                - generic [ref=e548]:
+                  - generic [ref=e549] [cursor=pointer]:
+                    - generic [ref=e550]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e551]: 09/04/2026 15:51
+                  - link "Esio Muller" [ref=e552] [cursor=pointer]:
+                    - /url: /leads/detail/27712253
+                  - generic [ref=e554]:
+                    - img [ref=e555]
+                    - generic [ref=e558]: show
+              - generic [ref=e559] [cursor=pointer]:
+                - img [ref=e561]
+                - img [ref=e564]
+                - img [ref=e567]
+            - generic [ref=e569]:
+              - generic [ref=e570]:
+                - generic "Diemilly" [ref=e571]:
+                  - img [ref=e573]
+                - generic [ref=e574]:
+                  - generic [ref=e575] [cursor=pointer]:
+                    - generic [ref=e576]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e577]: 09/04/2026 15:02
+                  - link "Diemilly" [ref=e578] [cursor=pointer]:
+                    - /url: /leads/detail/27707697
+                  - generic [ref=e580]:
+                    - img [ref=e581]
+                    - generic [ref=e584]: Queríamos uma malha que não fosse quente
+              - generic [ref=e585] [cursor=pointer]:
+                - img [ref=e587]
+                - img [ref=e590]
+                - img [ref=e593]
+            - generic [ref=e595]:
+              - generic [ref=e596]:
+                - generic "Ricardo Barbosa" [ref=e597]:
+                  - img [ref=e599]
+                - generic [ref=e600]:
+                  - generic [ref=e601] [cursor=pointer]:
+                    - generic [ref=e602]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e603]: 09/04/2026 14:55
+                  - link "Ricardo Barbosa" [ref=e604] [cursor=pointer]:
+                    - /url: /leads/detail/27706721
+                  - generic [ref=e606]:
+                    - img [ref=e607]
+                    - generic [ref=e610]: Tudo bem??
+              - generic [ref=e611] [cursor=pointer]:
+                - img [ref=e613]
+                - img [ref=e616]
+                - img [ref=e619]
+            - generic [ref=e621]:
+              - generic [ref=e622]:
+                - generic "TM Medicina e Segurança Do Trabalho" [ref=e623]:
+                  - img [ref=e625]
+                - generic [ref=e626]:
+                  - generic [ref=e627] [cursor=pointer]:
+                    - generic [ref=e628]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e629]: 09/04/2026 14:04
+                  - link "TM Medicina e Segurança Do Trabalho" [ref=e630] [cursor=pointer]:
+                    - /url: /leads/detail/27698353
+                  - generic [ref=e632]:
+                    - img [ref=e633]
+                    - generic [ref=e636]: consegue fechar 5 polos só duas não podemos passar para produção
+              - generic [ref=e637] [cursor=pointer]:
+                - img [ref=e639]
+                - img [ref=e642]
+                - img [ref=e645]
+            - generic [ref=e647]:
+              - generic [ref=e648]:
+                - generic "Carla Silva" [ref=e649]:
+                  - img [ref=e651]
+                - generic [ref=e652]:
+                  - generic [ref=e653] [cursor=pointer]:
+                    - generic [ref=e654]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e655]: 09/04/2026 13:59
+                  - link "Carla Silva" [ref=e656] [cursor=pointer]:
+                    - /url: /leads/detail/27698037
+                  - generic [ref=e658]:
+                    - img [ref=e659]
+                    - generic [ref=e662]: Olá, gostaria de fazer um orçamento
+              - generic [ref=e663] [cursor=pointer]:
+                - img [ref=e665]
+                - img [ref=e668]
+                - img [ref=e671]
+            - generic [ref=e673]:
+              - generic [ref=e674]:
+                - generic "Almiro Oliveira Da Silvei" [ref=e675]:
+                  - img [ref=e677]
+                - generic [ref=e678]:
+                  - generic [ref=e679] [cursor=pointer]:
+                    - generic [ref=e680]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e681]: 09/04/2026 13:51
+                  - link "Almiro Oliveira Da Silvei" [ref=e682] [cursor=pointer]:
+                    - /url: /leads/detail/27697511
+                  - generic [ref=e684]:
+                    - img [ref=e685]
+                    - generic [ref=e688]: Av pedro torres 595 no rincao ev
+              - generic [ref=e689] [cursor=pointer]:
+                - img [ref=e691]
+                - img [ref=e694]
+                - img [ref=e697]
+            - generic [ref=e699]:
+              - generic [ref=e700]:
+                - generic "Tainá" [ref=e701]:
+                  - img [ref=e703]
+                - generic [ref=e704]:
+                  - generic [ref=e705] [cursor=pointer]:
+                    - generic [ref=e706]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e707]: 09/04/2026 13:40
+                  - link "Tainá" [ref=e708] [cursor=pointer]:
+                    - /url: /leads/detail/27696899
+                  - generic [ref=e710]:
+                    - img [ref=e711]
+                    - generic [ref=e714]: Apenas 1 estampa de cada modelo não consigo fazer!!💔
+              - generic [ref=e715] [cursor=pointer]:
+                - img [ref=e717]
+                - img [ref=e720]
+                - img [ref=e723]
+            - generic [ref=e725]:
+              - generic [ref=e726]:
+                - generic "Thais Barboza" [ref=e727]:
+                  - img [ref=e729]
+                - generic [ref=e730]:
+                  - generic [ref=e731] [cursor=pointer]:
+                    - generic [ref=e732]: "de: Passo A Passo Uniformes"
+                    - generic [ref=e733]: 09/04/2026 12:29
+                  - link "Thais Barboza" [ref=e734] [cursor=pointer]:
+                    - /url: /leads/detail/27692309
+                  - generic [ref=e736]:
+                    - img [ref=e737]
+                    - generic [ref=e740]: Dependendo da personalização consigo fazer a partir de 5 peças se eu tiver os tamanhos a pronta entrega!!
+              - generic [ref=e741] [cursor=pointer]:
+                - img [ref=e743]
+                - img [ref=e746]
+                - img [ref=e749]
+        - generic [ref=e751]:
+          - generic [ref=e754]:
+            - generic "Lead Frio" [ref=e755]:
+              - generic [ref=e756]: Lead Frio
+            - generic [ref=e758]:
+              - generic [ref=e759]: "611 leads:"
+              - generic [ref=e760]: R$0
+          - generic [ref=e762]:
+            - generic [ref=e764] [cursor=pointer]: Adição rápida
+            - generic [ref=e768]:
+              - generic [ref=e769]:
+                - generic [ref=e770]: Caroline Westphal
+                - generic [ref=e771]: 10/04/2026
+              - generic [ref=e773]: Passo a passo uniformes
+              - 'link "Lead #27788503" [ref=e775] [cursor=pointer]':
+                - /url: /leads/detail/27788503
+              - generic "Nenhuma tarefa atribuída" [ref=e781]
+            - generic [ref=e785]:
+              - generic [ref=e786]:
+                - generic [ref=e787]: Vitor
+                - generic [ref=e788]: 07/04/2026
+              - generic [ref=e790]: irua
+              - link "vitor cdb" [ref=e792] [cursor=pointer]:
+                - /url: /leads/detail/27476037
+              - generic "Nenhuma tarefa atribuída" [ref=e798]
+            - generic [ref=e802]:
+              - generic [ref=e803]:
+                - generic [ref=e804]: Jessika Mendes
+                - generic [ref=e805]: 06/04/2026
+              - generic [ref=e807]: irua
+              - 'link "Lead #27341671" [ref=e809] [cursor=pointer]':
+                - /url: /leads/detail/27341671
+              - generic "Nenhuma tarefa atribuída" [ref=e815]
+            - generic [ref=e819]:
+              - generic [ref=e820]:
+                - generic [ref=e821]: +55 55 8447-7409
+                - generic [ref=e822]: 06/04/2026
+              - generic [ref=e824]: Passo a passo uniformes
+              - link "Lead +55 55 8447-7409" [ref=e826] [cursor=pointer]:
+                - /url: /leads/detail/27322631
+              - generic "Nenhuma tarefa atribuída" [ref=e832]
+            - generic [ref=e836]:
+              - generic [ref=e837]:
+                - generic [ref=e838]: +55 51 9217-4412
+                - generic [ref=e839]: 06/04/2026
+              - generic [ref=e841]: Passo a passo uniformes
+              - link "Lead +55 51 9217-4412" [ref=e843] [cursor=pointer]:
+                - /url: /leads/detail/27322629
+              - generic "Nenhuma tarefa atribuída" [ref=e849]
+            - generic [ref=e853]:
+              - generic [ref=e854]:
+                - generic [ref=e855]: +55 24 99316-8938
+                - generic [ref=e856]: 06/04/2026
+              - generic [ref=e858]: Passo a passo uniformes
+              - link "Lead +55 24 99316-8938" [ref=e860] [cursor=pointer]:
+                - /url: /leads/detail/27322623
+              - generic "Nenhuma tarefa atribuída" [ref=e866]
+            - generic [ref=e870]:
+              - generic [ref=e871]:
+                - generic [ref=e872]: +55 51 9792-8447
+                - generic [ref=e873]: 06/04/2026
+              - generic [ref=e875]: Passo a passo uniformes
+              - link "Lead +55 51 9792-8447" [ref=e877] [cursor=pointer]:
+                - /url: /leads/detail/27322621
+              - generic "Nenhuma tarefa atribuída" [ref=e883]
+            - generic [ref=e887]:
+              - generic [ref=e888]:
+                - generic [ref=e889]: +55 51 8904-1042
+                - generic [ref=e890]: 06/04/2026
+              - generic [ref=e892]: Passo a passo uniformes
+              - link "Lead +55 51 8904-1042" [ref=e894] [cursor=pointer]:
+                - /url: /leads/detail/27322619
+              - generic "Nenhuma tarefa atribuída" [ref=e900]
+            - generic [ref=e904]:
+              - generic [ref=e905]:
+                - generic [ref=e906]: +55 51 9185-7197
+                - generic [ref=e907]: 06/04/2026
+              - generic [ref=e909]: Passo a passo uniformes
+              - link "Lead +55 51 9185-7197" [ref=e911] [cursor=pointer]:
+                - /url: /leads/detail/27322617
+              - generic "Nenhuma tarefa atribuída" [ref=e917]
+            - generic [ref=e921]:
+              - generic [ref=e922]:
+                - generic [ref=e923]: +55 51 9624-8109
+                - generic [ref=e924]: 06/04/2026
+              - generic [ref=e926]: Passo a passo uniformes
+              - link "Lead +55 51 9624-8109" [ref=e928] [cursor=pointer]:
+                - /url: /leads/detail/27322615
+              - generic "Nenhuma tarefa atribuída" [ref=e934]
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - generic [ref=e940]: +55 51 9506-1918
+                - generic [ref=e941]: 06/04/2026
+              - generic [ref=e943]: Passo a passo uniformes
+              - link "Lead +55 51 9506-1918" [ref=e945] [cursor=pointer]:
+                - /url: /leads/detail/27322613
+              - generic "Nenhuma tarefa atribuída" [ref=e951]
+            - generic [ref=e955]:
+              - generic [ref=e956]:
+                - generic [ref=e957]: +55 51 9813-8630
+                - generic [ref=e958]: 06/04/2026
+              - generic [ref=e960]: Passo a passo uniformes
+              - link "Lead +55 51 9813-8630" [ref=e962] [cursor=pointer]:
+                - /url: /leads/detail/27322611
+              - generic "Nenhuma tarefa atribuída" [ref=e968]
+            - generic [ref=e972]:
+              - generic [ref=e973]:
+                - generic [ref=e974]: +55 51 9618-0427
+                - generic [ref=e975]: 06/04/2026
+              - generic [ref=e977]: Passo a passo uniformes
+              - link "Lead +55 51 9618-0427" [ref=e979] [cursor=pointer]:
+                - /url: /leads/detail/27322609
+              - generic "Nenhuma tarefa atribuída" [ref=e985]
+            - generic [ref=e989]:
+              - generic [ref=e990]:
+                - generic [ref=e991]: +55 54 9682-5084
+                - generic [ref=e992]: 06/04/2026
+              - generic [ref=e994]: Passo a passo uniformes
+              - link "Lead +55 54 9682-5084" [ref=e996] [cursor=pointer]:
+                - /url: /leads/detail/27322607
+              - generic "Nenhuma tarefa atribuída" [ref=e1002]
+            - generic [ref=e1006]:
+              - generic [ref=e1007]:
+                - generic [ref=e1008]: +55 51 8953-4414
+                - generic [ref=e1009]: 06/04/2026
+              - generic [ref=e1011]: Passo a passo uniformes
+              - link "Lead +55 51 8953-4414" [ref=e1013] [cursor=pointer]:
+                - /url: /leads/detail/27322605
+              - generic "Nenhuma tarefa atribuída" [ref=e1019]
+            - generic [ref=e1023]:
+              - generic [ref=e1024]:
+                - generic [ref=e1025]: +55 51 9368-4680
+                - generic [ref=e1026]: 06/04/2026
+              - generic [ref=e1028]: Passo a passo uniformes
+              - link "Lead +55 51 9368-4680" [ref=e1030] [cursor=pointer]:
+                - /url: /leads/detail/27322603
+              - generic "Nenhuma tarefa atribuída" [ref=e1036]
+            - generic [ref=e1040]:
+              - generic [ref=e1041]:
+                - generic [ref=e1042]: +55 51 8260-7109
+                - generic [ref=e1043]: 06/04/2026
+              - generic [ref=e1045]: Passo a passo uniformes
+              - link "Lead +55 51 8260-7109" [ref=e1047] [cursor=pointer]:
+                - /url: /leads/detail/27322601
+              - generic "Nenhuma tarefa atribuída" [ref=e1053]
+            - generic [ref=e1057]:
+              - generic [ref=e1058]:
+                - generic [ref=e1059]: +55 51 9727-9060
+                - generic [ref=e1060]: 06/04/2026
+              - generic [ref=e1062]: Passo a passo uniformes
+              - link "Lead +55 51 9727-9060" [ref=e1064] [cursor=pointer]:
+                - /url: /leads/detail/27322599
+              - generic "Nenhuma tarefa atribuída" [ref=e1070]
+            - generic [ref=e1074]:
+              - generic [ref=e1075]:
+                - generic [ref=e1076]: +55 51 9459-9628
+                - generic [ref=e1077]: 06/04/2026
+              - generic [ref=e1079]: Passo a passo uniformes
+              - link "Lead +55 51 9459-9628" [ref=e1081] [cursor=pointer]:
+                - /url: /leads/detail/27322597
+              - generic "Nenhuma tarefa atribuída" [ref=e1087]
+            - generic [ref=e1091]:
+              - generic [ref=e1092]:
+                - generic [ref=e1093]: +55 51 9565-2880
+                - generic [ref=e1094]: 06/04/2026
+              - generic [ref=e1096]: Passo a passo uniformes
+              - link "Lead +55 51 9565-2880" [ref=e1098] [cursor=pointer]:
+                - /url: /leads/detail/27322595
+              - generic "Nenhuma tarefa atribuída" [ref=e1104]
+        - generic [ref=e1105]:
+          - generic [ref=e1108]:
+            - generic "Primeiro Contato" [ref=e1109]:
+              - generic [ref=e1110]: Primeiro Contato
+            - generic [ref=e1112]:
+              - generic [ref=e1113]: "35 leads:"
+              - generic [ref=e1114]: R$0
+          - generic [ref=e1116]:
+            - generic [ref=e1120]:
+              - generic [ref=e1121]:
+                - generic [ref=e1122]: Mih
+                - generic [ref=e1123]: 08/04/2026
+              - generic [ref=e1125]: irua
+              - link "Mih" [ref=e1127] [cursor=pointer]:
+                - /url: /leads/detail/27569651
+              - generic "Nenhuma tarefa atribuída" [ref=e1133]
+            - generic [ref=e1137]:
+              - generic [ref=e1138]:
+                - generic [ref=e1139]: Alice Ferreira Ortiz
+                - generic [ref=e1140]: 07/04/2026
+              - generic [ref=e1142]: irua
+              - link "alice" [ref=e1144] [cursor=pointer]:
+                - /url: /leads/detail/27507849
+              - generic "Nenhuma tarefa atribuída" [ref=e1150]
+            - generic [ref=e1154]:
+              - generic [ref=e1155]:
+                - generic [ref=e1156]: Vinícius
+                - generic [ref=e1157]: 06/04/2026
+              - generic [ref=e1159]: Greg
+              - 'link "Lead #27323617" [ref=e1161] [cursor=pointer]':
+                - /url: /leads/detail/27323617
+              - generic "Nenhuma tarefa atribuída" [ref=e1167]
+            - generic [ref=e1171]:
+              - generic [ref=e1172]:
+                - generic [ref=e1173]: TIME PASSO A PASSO
+                - generic [ref=e1174]: 26/03/2026
+              - generic [ref=e1176]: Passo a passo uniformes
+              - link "Lead from (TIME PASSO A PASSO)" [ref=e1178] [cursor=pointer]:
+                - /url: /leads/detail/26609018
+              - generic [ref=e1179]:
+                - generic [ref=e1181]:
+                  - text: "+1"
+                  - generic [ref=e1182] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1184]
+            - generic [ref=e1188]:
+              - generic [ref=e1189]:
+                - generic [ref=e1190]: Amanda Carolina
+                - generic [ref=e1191]: 26/03/2026
+              - generic [ref=e1193]: Greg
+              - link "Lead from (Amanda Carolina" [ref=e1195] [cursor=pointer]:
+                - /url: /leads/detail/26608910
+              - generic [ref=e1196]:
+                - generic [ref=e1198]:
+                  - text: "+1"
+                  - generic [ref=e1199] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1201]
+            - generic [ref=e1205]:
+              - generic [ref=e1206]:
+                - generic [ref=e1207]: Mecânica Multicar Financeiro
+                - generic [ref=e1208]: 26/03/2026
+              - generic [ref=e1210]: Greg
+              - link "Lead from (Mecânica Multicar Financeiro)" [ref=e1212] [cursor=pointer]:
+                - /url: /leads/detail/26608684
+              - generic [ref=e1213]:
+                - generic [ref=e1215]:
+                  - text: "+1"
+                  - generic [ref=e1216] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1218]
+              - generic [ref=e1219]:
+                - img [ref=e1220]
+                - generic [ref=e1223]: === SYSTEM WZ === Mensagem apagada. Procure nas salas de chat do Wazzup para ver qual mensagem foi apagada pelo cliente
+            - generic [ref=e1227]:
+              - generic [ref=e1228]:
+                - generic [ref=e1229]: Lucas Martins
+                - generic [ref=e1230]: 26/03/2026
+              - generic [ref=e1232]: Greg
+              - link "Lead from (Lucas Martins)" [ref=e1234] [cursor=pointer]:
+                - /url: /leads/detail/26608276
+              - generic [ref=e1235]:
+                - generic [ref=e1237]:
+                  - text: "+1"
+                  - generic [ref=e1238] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1240]
+              - generic [ref=e1241]:
+                - img [ref=e1242]
+                - generic [ref=e1245]: === SYSTEM WZ === Mensagem apagada. Procure nas salas de chat do Wazzup para ver qual mensagem foi apagada pelo cliente
+            - generic [ref=e1249]:
+              - generic [ref=e1250]:
+                - generic [ref=e1251]: Miriam Vanessa
+                - generic [ref=e1252]: 25/03/2026
+              - generic [ref=e1254]: irua
+              - link "Lead from (Miriam Vanessa" [ref=e1256] [cursor=pointer]:
+                - /url: /leads/detail/26596518
+              - generic [ref=e1257]:
+                - generic [ref=e1259]:
+                  - text: "+1"
+                  - generic [ref=e1260] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1262]
+            - generic [ref=e1266]:
+              - generic [ref=e1267]:
+                - generic [ref=e1268]: Fran
+                - generic [ref=e1269]: 25/03/2026
+              - generic [ref=e1271]: Greg
+              - link "Lead from (Fran)" [ref=e1273] [cursor=pointer]:
+                - /url: /leads/detail/26595954
+              - generic [ref=e1274]:
+                - generic [ref=e1276]:
+                  - text: "+1"
+                  - generic [ref=e1277] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1279]
+            - generic [ref=e1283]:
+              - generic [ref=e1284]:
+                - generic [ref=e1285]: LeveLar
+                - generic [ref=e1286]: 25/03/2026
+              - generic [ref=e1288]: Greg
+              - link "Lead from (LeveLar)" [ref=e1290] [cursor=pointer]:
+                - /url: /leads/detail/26595534
+              - generic [ref=e1291]:
+                - generic [ref=e1293]:
+                  - text: "+1"
+                  - generic [ref=e1294] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1296]
+            - generic [ref=e1300]:
+              - generic [ref=e1301]:
+                - generic [ref=e1302]: Lorenzo
+                - generic [ref=e1303]: 25/03/2026
+              - generic [ref=e1305]: Greg
+              - link "Lead from (Lorenzo)" [ref=e1307] [cursor=pointer]:
+                - /url: /leads/detail/26594250
+              - generic [ref=e1308]:
+                - generic [ref=e1310]:
+                  - text: "+1"
+                  - generic [ref=e1311] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1313]
+              - generic [ref=e1314]:
+                - img [ref=e1315]
+                - generic [ref=e1318]: Boa noite! Gostaria de saber se é confirmado q estará pronto dia 27, pois precisamos logo da camiseta. Um abraço, estare
+            - generic [ref=e1322]:
+              - generic [ref=e1323]:
+                - generic [ref=e1324]: Augusto
+                - generic [ref=e1325]: 25/03/2026
+              - generic [ref=e1327]: Greg
+              - link "Lead from (Augusto)" [ref=e1329] [cursor=pointer]:
+                - /url: /leads/detail/26586442
+              - generic [ref=e1330]:
+                - generic [ref=e1332]:
+                  - text: "+1"
+                  - generic [ref=e1333] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1335]
+              - generic [ref=e1336]:
+                - img [ref=e1337]
+                - generic [ref=e1340]: Queríamos um primeiro orçamento..
+            - generic [ref=e1344]:
+              - generic [ref=e1345]:
+                - generic [ref=e1346]: "5551993312174"
+                - generic [ref=e1347]: 25/03/2026
+              - generic [ref=e1349]: irua
+              - link "Lead from (5551993312174)" [ref=e1351] [cursor=pointer]:
+                - /url: /leads/detail/26584404
+              - generic [ref=e1352]:
+                - generic [ref=e1354]:
+                  - text: "+1"
+                  - generic [ref=e1355] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1357]
+            - generic [ref=e1361]:
+              - generic [ref=e1362]:
+                - generic [ref=e1363]: iruã
+                - generic [ref=e1364]: 25/03/2026
+              - generic [ref=e1366]: Passo a passo uniformes
+              - link "Lead from (iruã)" [ref=e1368] [cursor=pointer]:
+                - /url: /leads/detail/26584070
+              - generic [ref=e1369]:
+                - generic [ref=e1371]:
+                  - text: "+1"
+                  - generic [ref=e1372] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1374]
+            - generic [ref=e1378]:
+              - generic [ref=e1379]:
+                - generic [ref=e1380]: "5551994410418"
+                - generic [ref=e1381]: 25/03/2026
+              - generic [ref=e1383]: irua
+              - link "Lead from (5551994410418)" [ref=e1385] [cursor=pointer]:
+                - /url: /leads/detail/26584006
+              - generic [ref=e1386]:
+                - generic [ref=e1388]:
+                  - text: "+1"
+                  - generic [ref=e1389] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1391]
+              - generic [ref=e1392]:
+                - img [ref=e1393]
+                - generic [ref=e1396]: === SYSTEM WZ === Mensagem apagada. Procure nas salas de chat do Wazzup para ver qual mensagem foi apagada pelo cliente
+            - generic [ref=e1400]:
+              - generic [ref=e1401]:
+                - generic [ref=e1402]: Elizier
+                - generic [ref=e1403]: 25/03/2026
+              - generic [ref=e1405]: irua
+              - link "Lead from (Elizier )" [ref=e1407] [cursor=pointer]:
+                - /url: /leads/detail/26583794
+              - generic [ref=e1408]:
+                - generic [ref=e1410]:
+                  - text: "+1"
+                  - generic [ref=e1411] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1413]
+              - generic [ref=e1414]:
+                - img [ref=e1415]
+                - generic [ref=e1418]: ">>>>>>>>>>>>>>>>>>>> camiseta_ribas_fc_profissional.pdf ____________________ Exatamente assim Só que com o nosso logo"
+            - generic [ref=e1422]:
+              - generic [ref=e1423]:
+                - generic [ref=e1424]: Produção usina
+                - generic [ref=e1425]: 25/03/2026
+              - generic [ref=e1427]: Passo a passo uniformes
+              - link "Lead from (Produção usina)" [ref=e1429] [cursor=pointer]:
+                - /url: /leads/detail/26583698
+              - generic [ref=e1430]:
+                - generic [ref=e1432]:
+                  - text: "+1"
+                  - generic [ref=e1433] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1435]
+            - generic [ref=e1439]:
+              - generic [ref=e1440]:
+                - generic [ref=e1441]: Francielly Lopes Passo A Passo
+                - generic [ref=e1442]: 25/03/2026
+              - generic [ref=e1444]: Passo a passo uniformes
+              - link "Lead from (Francielly Lopes Passo A Passo)" [ref=e1446] [cursor=pointer]:
+                - /url: /leads/detail/26581440
+              - generic [ref=e1447]:
+                - generic [ref=e1449]:
+                  - text: "+1"
+                  - generic [ref=e1450] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1452]
+            - generic [ref=e1456]:
+              - generic [ref=e1457]:
+                - generic [ref=e1458]: "5551993268135"
+                - generic [ref=e1459]: 25/03/2026
+              - generic [ref=e1461]: irua
+              - link "Lead from (5551993268135)" [ref=e1463] [cursor=pointer]:
+                - /url: /leads/detail/26580878
+              - generic [ref=e1464]:
+                - generic [ref=e1466]:
+                  - text: "+1"
+                  - generic [ref=e1467] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1469]
+            - generic [ref=e1473]:
+              - generic [ref=e1474]:
+                - generic [ref=e1475]: Rodrigo ROMA CARPINTARIA
+                - generic [ref=e1476]: 25/03/2026
+              - generic [ref=e1478]: Passo a passo uniformes
+              - link "Lead from (Rodrigo ROMA CARPINTARIA)" [ref=e1480] [cursor=pointer]:
+                - /url: /leads/detail/26580722
+              - generic [ref=e1481]:
+                - generic [ref=e1483]:
+                  - text: "+1"
+                  - generic [ref=e1484] [cursor=pointer]: WZ (555185600893)
+                - generic "Nenhuma tarefa atribuída" [ref=e1486]
+        - generic [ref=e1487]:
+          - generic [ref=e1490]:
+            - generic "Qualificado" [ref=e1491]:
+              - generic [ref=e1492]: Qualificado
+            - generic [ref=e1494]:
+              - generic [ref=e1495]: "11 leads:"
+              - generic [ref=e1496]: R$0
+          - generic [ref=e1498]:
+            - generic [ref=e1502]:
+              - generic [ref=e1503]:
+                - generic [ref=e1504]: Stevan - Lux 18k Joias
+                - generic [ref=e1505]: 09/04/2026
+              - generic [ref=e1507]: Passo a passo uniformes
+              - 'link "Lead #27725073" [ref=e1509] [cursor=pointer]':
+                - /url: /leads/detail/27725073
+              - generic "Nenhuma tarefa atribuída" [ref=e1515]
+            - generic [ref=e1519]:
+              - generic [ref=e1520]:
+                - generic [ref=e1521]: Fernanda
+                - generic [ref=e1522]: 09/04/2026
+              - generic [ref=e1524]: Passo a passo uniformes
+              - link "FERNANDA JALECO" [ref=e1526] [cursor=pointer]:
+                - /url: /leads/detail/27694183
+              - generic "Nenhuma tarefa atribuída" [ref=e1532]
+            - generic [ref=e1536]:
+              - generic [ref=e1537]:
+                - generic [ref=e1538]: Mateus Magro
+                - generic [ref=e1539]: 08/04/2026
+              - generic [ref=e1541]: Passo a passo uniformes
+              - 'link "Lead #27585347" [ref=e1543] [cursor=pointer]':
+                - /url: /leads/detail/27585347
+              - generic "Nenhuma tarefa atribuída" [ref=e1549]
+              - generic [ref=e1550]:
+                - img [ref=e1551]
+                - generic [ref=e1554]: Bom dia
+            - generic [ref=e1558]:
+              - generic [ref=e1559]:
+                - generic [ref=e1560]: Leticia Studio M
+                - generic [ref=e1561]: 08/04/2026
+              - generic [ref=e1563]: Passo a passo uniformes
+              - 'link "Lead #27579839" [ref=e1565] [cursor=pointer]':
+                - /url: /leads/detail/27579839
+              - generic "Nenhuma tarefa atribuída" [ref=e1571]
+              - generic [ref=e1572]:
+                - img [ref=e1573]
+                - generic [ref=e1576]: Mensagem de voz
+            - generic [ref=e1580]:
+              - generic [ref=e1581]:
+                - generic [ref=e1582]: Alana CDV 814
+                - generic [ref=e1583]: 08/04/2026
+              - generic [ref=e1585]: Greg
+              - link "Alana - CDV" [ref=e1587] [cursor=pointer]:
+                - /url: /leads/detail/27570799
+              - generic "Nenhuma tarefa atribuída" [ref=e1593]
+            - generic [ref=e1597]:
+              - generic [ref=e1598]:
+                - generic [ref=e1599]: Angela Velho
+                - generic [ref=e1600]: 07/04/2026
+              - generic [ref=e1602]: Passo a passo uniformes
+              - link "Angela" [ref=e1604] [cursor=pointer]:
+                - /url: /leads/detail/27468219
+              - generic "Nenhuma tarefa atribuída" [ref=e1610]
+            - generic [ref=e1614]:
+              - generic [ref=e1615]:
+                - generic [ref=e1616]: Marcelí
+                - generic [ref=e1617]: 06/04/2026
+              - generic [ref=e1619]: Passo a passo uniformes
+              - link "Marcelí MVR Diesel" [ref=e1621] [cursor=pointer]:
+                - /url: /leads/detail/27323555
+              - generic "Nenhuma tarefa atribuída" [ref=e1627]
+            - generic [ref=e1631]:
+              - generic [ref=e1632]:
+                - generic [ref=e1633]: Fabiano
+                - generic [ref=e1634]: 06/04/2026
+              - generic [ref=e1636]: irua
+              - link "Fabiano" [ref=e1638] [cursor=pointer]:
+                - /url: /leads/detail/27318583
+              - generic "Nenhuma tarefa atribuída" [ref=e1644]
+            - generic [ref=e1648]:
+              - generic [ref=e1649]:
+                - generic [ref=e1650]: Tulio Moraes
+                - generic [ref=e1651]: 06/04/2026
+              - generic [ref=e1653]: Greg
+              - link "Tulio - Crossfit Canoas" [ref=e1655] [cursor=pointer]:
+                - /url: /leads/detail/27296465
+              - generic "Nenhuma tarefa atribuída" [ref=e1661]
+            - generic [ref=e1665]:
+              - generic [ref=e1666]:
+                - generic [ref=e1667]: ...
+                - generic [ref=e1668]: 24/03/2026
+              - generic [ref=e1670]: irua
+              - link "DRSUL VEICULOS - MARYANA OTERO" [ref=e1672] [cursor=pointer]:
+                - /url: /leads/detail/26505294
+              - generic "Nenhuma tarefa atribuída" [ref=e1678]
+            - generic [ref=e1682]:
+              - generic [ref=e1683]:
+                - generic [ref=e1684]: Fernanda Jéssica
+                - generic [ref=e1685]: 15/03/2026
+              - generic [ref=e1687]: irua
+              - 'link "Lead #27294625" [ref=e1689] [cursor=pointer]':
+                - /url: /leads/detail/27294625
+              - generic "Nenhuma tarefa atribuída" [ref=e1695]
+        - generic [ref=e1696]:
+          - generic [ref=e1699]:
+            - generic "Enviar Orçamento" [ref=e1700]:
+              - generic [ref=e1701]: Enviar Orçamento
+            - generic [ref=e1703]:
+              - generic [ref=e1704]: "10 leads:"
+              - generic [ref=e1705]: R$0
+          - generic [ref=e1707]:
+            - generic [ref=e1711]:
+              - generic [ref=e1712]:
+                - generic [ref=e1713]: Bellus Sorrisos Janaína
+                - generic [ref=e1714]: 10/04/2026
+              - generic [ref=e1716]: Passo a passo uniformes
+              - link "Janaína - bellus dentista" [ref=e1718] [cursor=pointer]:
+                - /url: /leads/detail/27814421
+              - generic "Nenhuma tarefa atribuída" [ref=e1724]
+            - generic [ref=e1728]:
+              - generic [ref=e1729]:
+                - generic [ref=e1730]: Pequeno Cidadão Direção
+                - generic [ref=e1731]: 09/04/2026
+              - generic [ref=e1733]: Passo a passo uniformes
+              - 'link "Lead #27715679" [ref=e1735] [cursor=pointer]':
+                - /url: /leads/detail/27715679
+              - generic "Nenhuma tarefa atribuída" [ref=e1741]
+            - generic [ref=e1745]:
+              - generic [ref=e1746]:
+                - generic [ref=e1747]: +55 51 98177-7778
+                - generic [ref=e1748]: 09/04/2026
+              - generic [ref=e1750]: Passo a passo uniformes
+              - 'link "Lead #27697477" [ref=e1752] [cursor=pointer]':
+                - /url: /leads/detail/27697477
+              - generic "Nenhuma tarefa atribuída" [ref=e1758]
+            - generic [ref=e1762]:
+              - generic [ref=e1763]:
+                - generic [ref=e1764]: Ronise
+                - generic [ref=e1765]: 09/04/2026
+              - generic [ref=e1767]: Passo a passo uniformes
+              - 'link "Lead #27680530" [ref=e1769] [cursor=pointer]':
+                - /url: /leads/detail/27680530
+              - generic "Nenhuma tarefa atribuída" [ref=e1775]
+            - generic [ref=e1779]:
+              - generic [ref=e1780]:
+                - generic [ref=e1781]: Tiago Camargo
+                - generic [ref=e1782]: 08/04/2026
+              - generic [ref=e1784]: Passo a passo uniformes
+              - link "Tiago" [ref=e1786] [cursor=pointer]:
+                - /url: /leads/detail/27585065
+              - generic "Nenhuma tarefa atribuída" [ref=e1792]
+            - generic [ref=e1796]:
+              - generic [ref=e1797]:
+                - generic [ref=e1798]: Eduarda Rodrigues
+                - generic [ref=e1799]: 08/04/2026
+              - generic [ref=e1801]: Passo a passo uniformes
+              - link "Eduarda" [ref=e1803] [cursor=pointer]:
+                - /url: /leads/detail/27584421
+              - generic "Nenhuma tarefa atribuída" [ref=e1809]
+            - generic [ref=e1813]:
+              - generic [ref=e1814]:
+                - generic [ref=e1815]: alanis reis
+                - generic [ref=e1816]: 08/04/2026
+              - generic [ref=e1818]: Greg
+              - 'link "Lead #27576121" [ref=e1820] [cursor=pointer]':
+                - /url: /leads/detail/27576121
+              - generic "Nenhuma tarefa atribuída" [ref=e1826]
+            - generic [ref=e1830]:
+              - generic [ref=e1831]:
+                - generic [ref=e1832]: Ar New
+                - generic [ref=e1833]: 07/04/2026
+              - generic [ref=e1835]: irua
+              - link "Antonio amigo gabriel" [ref=e1837] [cursor=pointer]:
+                - /url: /leads/detail/27466089
+              - generic "Nenhuma tarefa atribuída" [ref=e1843]
+            - generic [ref=e1847]:
+              - generic [ref=e1848]:
+                - generic [ref=e1849]: dienifer_schwan
+                - generic [ref=e1850]: 07/04/2026
+              - generic [ref=e1852]: Passo a passo uniformes
+              - link "dienifer_schwan" [ref=e1854] [cursor=pointer]:
+                - /url: /leads/detail/27462995
+              - generic "Nenhuma tarefa atribuída" [ref=e1860]
+            - generic [ref=e1864]:
+              - generic [ref=e1865]:
+                - generic [ref=e1866]: Carlos Eduardo
+                - generic [ref=e1867]: 06/04/2026
+              - generic [ref=e1869]: Passo a passo uniformes
+              - link "Carlos Terceirão olhando layout" [ref=e1871] [cursor=pointer]:
+                - /url: /leads/detail/27346569
+              - generic "Nenhuma tarefa atribuída" [ref=e1877]
+        - generic [ref=e1878]:
+          - generic [ref=e1881]:
+            - generic "ORÇAMENTO JESSICA" [ref=e1882]:
+              - generic [ref=e1883]: ORÇAMENTO JESSICA
+            - generic [ref=e1885]:
+              - generic [ref=e1886]: "3 leads:"
+              - generic [ref=e1887]: R$0
+          - generic [ref=e1889]:
+            - generic [ref=e1893]:
+              - generic [ref=e1894]:
+                - generic [ref=e1895]: Jordana Godoy - Financeiro
+                - generic [ref=e1896]: 10/04/2026
+              - generic [ref=e1898]: Passo a passo uniformes
+              - link "Jordana escola pri" [ref=e1900] [cursor=pointer]:
+                - /url: /leads/detail/27789061
+              - generic [ref=e1901]:
+                - generic [ref=e1905]: 2d
+                - generic "Tarefa expirada" [ref=e1907]
+            - generic [ref=e1911]:
+              - generic [ref=e1912]:
+                - generic [ref=e1913]: Simone Miranda
+                - generic [ref=e1914]: 08/04/2026
+              - generic [ref=e1916]: Passo a passo uniformes
+              - link "Simone Portas do Vale - SL" [ref=e1918] [cursor=pointer]:
+                - /url: /leads/detail/27627665
+              - generic "Nenhuma tarefa atribuída" [ref=e1924]
+            - generic [ref=e1928]:
+              - generic [ref=e1929]:
+                - generic [ref=e1930]: Natan Amaral
+                - generic [ref=e1931]: 11/03/2026
+              - generic [ref=e1933]: Greg
+              - link "Natan - Body One" [ref=e1935] [cursor=pointer]:
+                - /url: /leads/detail/27295377
+              - generic "Nenhuma tarefa atribuída" [ref=e1941]
+        - generic [ref=e1942]:
+          - generic [ref=e1945]:
+            - generic "Negociando" [ref=e1946]:
+              - generic [ref=e1947]: Negociando
+            - generic [ref=e1949]:
+              - generic [ref=e1950]: "29 leads:"
+              - generic [ref=e1951]: R$3.327
+          - generic [ref=e1953]:
+            - generic [ref=e1957]:
+              - generic [ref=e1958]:
+                - generic [ref=e1959]: Carlos Magnus RECH
+                - generic [ref=e1960]: 10/04/2026
+              - generic [ref=e1962]: Passo a passo uniformes
+              - 'link "Lead #27811609" [ref=e1964] [cursor=pointer]':
+                - /url: /leads/detail/27811609
+              - generic "Nenhuma tarefa atribuída" [ref=e1970]
+            - generic [ref=e1974]:
+              - generic [ref=e1975]:
+                - generic [ref=e1976]: Daia Ruaro
+                - generic [ref=e1977]: 09/04/2026
+              - generic [ref=e1979]: Passo a passo uniformes
+              - 'link "Lead #27705203" [ref=e1981] [cursor=pointer]':
+                - /url: /leads/detail/27705203
+              - generic "Nenhuma tarefa atribuída" [ref=e1987]
+            - generic [ref=e1991]:
+              - generic [ref=e1992]:
+                - generic [ref=e1993]: Nyta
+                - generic [ref=e1994]: 09/04/2026
+              - generic [ref=e1996]: Passo a passo uniformes
+              - link "Nyta" [ref=e1998] [cursor=pointer]:
+                - /url: /leads/detail/27698093
+              - generic "Nenhuma tarefa atribuída" [ref=e2004]
+            - generic [ref=e2008]:
+              - generic [ref=e2009]:
+                - generic [ref=e2010]: Elena tortelli
+                - generic [ref=e2011]: 09/04/2026
+              - generic [ref=e2013]: Passo a passo uniformes
+              - link "Elena" [ref=e2015] [cursor=pointer]:
+                - /url: /leads/detail/27694231
+              - generic "Nenhuma tarefa atribuída" [ref=e2021]
+            - generic [ref=e2025]:
+              - generic [ref=e2026]:
+                - generic [ref=e2027]: Bernardo
+                - generic [ref=e2028]: 09/04/2026
+              - generic [ref=e2030]: Greg
+              - 'link "Lead #27686473" [ref=e2032] [cursor=pointer]':
+                - /url: /leads/detail/27686473
+              - generic "Nenhuma tarefa atribuída" [ref=e2038]
+            - generic [ref=e2042]:
+              - generic [ref=e2043]:
+                - generic [ref=e2044]: Carro Certo
+                - generic [ref=e2045]: 09/04/2026
+              - generic [ref=e2047]: Passo a passo uniformes
+              - link "carro certo - NATI" [ref=e2049] [cursor=pointer]:
+                - /url: /leads/detail/27685983
+              - generic "Nenhuma tarefa atribuída" [ref=e2055]
+            - generic [ref=e2059]:
+              - generic [ref=e2060]:
+                - generic [ref=e2061]: Ortobom Sarandi/
+                - generic [ref=e2062]: 08/04/2026
+              - generic [ref=e2064]: Passo a passo uniformes
+              - link "Jussara" [ref=e2066] [cursor=pointer]:
+                - /url: /leads/detail/27621507
+              - generic "Nenhuma tarefa atribuída" [ref=e2072]
+            - generic [ref=e2076]:
+              - generic [ref=e2077]:
+                - generic [ref=e2078]: Betina Berghan✨
+                - generic [ref=e2079]: 08/04/2026
+              - generic [ref=e2081]: Passo a passo uniformes
+              - link "Betina" [ref=e2083] [cursor=pointer]:
+                - /url: /leads/detail/27579669
+              - generic "Nenhuma tarefa atribuída" [ref=e2089]
+              - generic [ref=e2090]:
+                - img [ref=e2091]
+                - generic [ref=e2094]: Pode ser simm
+            - generic [ref=e2098]:
+              - generic [ref=e2099]:
+                - generic [ref=e2100]: Daisy Lara
+                - generic [ref=e2101]: 08/04/2026
+              - generic [ref=e2103]: Passo a passo uniformes
+              - link "Daisy Lara" [ref=e2105] [cursor=pointer]:
+                - /url: /leads/detail/27578637
+              - generic [ref=e2106]:
+                - generic [ref=e2110]: 4d
+                - generic "Tarefa expirada" [ref=e2112]
+            - generic [ref=e2116]:
+              - generic [ref=e2117]:
+                - generic [ref=e2118]: Emporio Gastronomico
+                - generic [ref=e2119]: 08/04/2026
+              - generic [ref=e2121]: irua
+              - link "Jessica Emporio Gastro" [ref=e2123] [cursor=pointer]:
+                - /url: /leads/detail/27572743
+              - generic [ref=e2124]:
+                - generic [ref=e2128]: 4d
+                - generic "Tarefa expirada" [ref=e2130]
+            - generic [ref=e2134]:
+              - generic [ref=e2135]:
+                - generic [ref=e2136]: Deise
+                - generic [ref=e2137]: 07/04/2026
+              - generic [ref=e2139]: Passo a passo uniformes
+              - link "Deise Inverno" [ref=e2141] [cursor=pointer]:
+                - /url: /leads/detail/27475799
+              - generic "Nenhuma tarefa atribuída" [ref=e2147]
+            - generic [ref=e2151]:
+              - generic [ref=e2152]:
+                - generic [ref=e2153]: Yasmin Dias
+                - generic [ref=e2154]: 07/04/2026
+              - generic [ref=e2156]: irua
+              - link "Yasmim" [ref=e2158] [cursor=pointer]:
+                - /url: /leads/detail/27468999
+              - generic "Nenhuma tarefa atribuída" [ref=e2164]
+            - generic [ref=e2168]:
+              - generic [ref=e2169]:
+                - generic [ref=e2170]: Carla Financeiro Newquim✨
+                - generic [ref=e2171]: 07/04/2026
+              - generic [ref=e2173]: Passo a passo uniformes
+              - link "Carla newquim" [ref=e2175] [cursor=pointer]:
+                - /url: /leads/detail/27467341
+              - generic [ref=e2176]:
+                - generic [ref=e2180]: 4d
+                - generic "Tarefa expirada" [ref=e2182]
+            - generic [ref=e2186]:
+              - generic [ref=e2187]:
+                - generic [ref=e2188]: Vanessa Correa
+                - generic [ref=e2189]: 07/04/2026
+              - generic [ref=e2191]: irua
+              - link "Vanessa" [ref=e2193] [cursor=pointer]:
+                - /url: /leads/detail/27463971
+              - generic [ref=e2194]:
+                - generic [ref=e2198]: 4d
+                - generic "Tarefa expirada" [ref=e2200]
+            - generic [ref=e2204]:
+              - generic [ref=e2205]:
+                - generic [ref=e2206]: ANDREI
+                - generic [ref=e2207]: 07/04/2026
+              - generic [ref=e2209]: irua
+              - link "ANDREI COLORADO" [ref=e2211] [cursor=pointer]:
+                - /url: /leads/detail/27460775
+              - generic "Nenhuma tarefa atribuída" [ref=e2217]
+            - generic [ref=e2221]:
+              - generic [ref=e2222]:
+                - generic [ref=e2223]: USN Máquinas
+                - generic [ref=e2224]: 07/04/2026
+              - generic [ref=e2226]: irua
+              - link "ederson - USN MAQ" [ref=e2228] [cursor=pointer]:
+                - /url: /leads/detail/27460733
+              - generic [ref=e2229]:
+                - generic [ref=e2233]: 4d
+                - generic "Tarefa expirada" [ref=e2235]
+            - generic [ref=e2239]:
+              - generic [ref=e2240]:
+                - generic [ref=e2241]: Wil
+                - generic [ref=e2242]: 07/04/2026
+              - generic [ref=e2244]: irua
+              - link "Wil - Dryfit" [ref=e2246] [cursor=pointer]:
+                - /url: /leads/detail/27455295
+              - generic "Nenhuma tarefa atribuída" [ref=e2252]
+            - generic [ref=e2256]:
+              - generic [ref=e2257]:
+                - generic [ref=e2258]: Gean
+                - generic [ref=e2259]: 06/04/2026
+              - generic [ref=e2261]: Greg
+              - link "Gean pedido de calça janeiro" [ref=e2263] [cursor=pointer]:
+                - /url: /leads/detail/27339079
+            - generic [ref=e2271]:
+              - generic [ref=e2272]:
+                - generic [ref=e2273]: Fabiana Garcia
+                - generic [ref=e2274]: 06/04/2026
+              - generic [ref=e2276]: irua
+              - link "Fabiana 50 camisetas comemorativa aniversario" [ref=e2278] [cursor=pointer]:
+                - /url: /leads/detail/27325209
+              - generic "Nenhuma tarefa atribuída" [ref=e2284]
+            - generic [ref=e2288]:
+              - generic [ref=e2289]:
+                - generic [ref=e2290]: Ananda
+                - generic [ref=e2291]: 06/04/2026
+              - generic [ref=e2293]: Passo a passo uniformes
+              - link "Ananda" [ref=e2295] [cursor=pointer]:
+                - /url: /leads/detail/27319341
+              - generic "Nenhuma tarefa atribuída" [ref=e2301]
+        - generic [ref=e2302]:
+          - generic [ref=e2305]:
+            - generic "Desenvolver Layout" [ref=e2306]:
+              - generic [ref=e2307]: Desenvolver Layout
+            - generic [ref=e2309]:
+              - generic [ref=e2310]: "6 leads:"
+              - generic [ref=e2311]: R$0
+          - generic [ref=e2313]:
+            - generic [ref=e2317]:
+              - generic [ref=e2318]:
+                - generic [ref=e2319]: Cassia Schmitz
+                - generic [ref=e2320]: 10/04/2026
+              - generic [ref=e2322]: Greg
+              - 'link "Lead #27814001" [ref=e2324] [cursor=pointer]':
+                - /url: /leads/detail/27814001
+              - generic "Nenhuma tarefa atribuída" [ref=e2330]
+            - generic [ref=e2334]:
+              - generic [ref=e2335]:
+                - generic [ref=e2336]: Fernanda Pedron
+                - generic [ref=e2337]: 07/04/2026
+              - generic [ref=e2339]: Greg
+              - link "Fernanda Pedron" [ref=e2341] [cursor=pointer]:
+                - /url: /leads/detail/27506387
+              - generic [ref=e2342]:
+                - generic [ref=e2346]: 3d
+                - generic "Tarefa expirada" [ref=e2348]
+            - generic [ref=e2352]:
+              - generic [ref=e2353]:
+                - generic [ref=e2354]: Isadora Klein
+                - generic [ref=e2355]: 31/03/2026
+              - generic [ref=e2357]: irua
+              - 'link "Lead #27294861" [ref=e2359] [cursor=pointer]':
+                - /url: /leads/detail/27294861
+              - generic "Nenhuma tarefa atribuída" [ref=e2365]
+            - generic [ref=e2369]:
+              - generic [ref=e2370]:
+                - generic [ref=e2371]: Pedro Rodrigues
+                - generic [ref=e2372]: 19/03/2026
+              - generic [ref=e2374]: Greg
+              - 'link "Lead #27294925" [ref=e2376] [cursor=pointer]':
+                - /url: /leads/detail/27294925
+              - generic "Nenhuma tarefa atribuída" [ref=e2382]
+            - generic [ref=e2386]:
+              - generic [ref=e2387]:
+                - generic [ref=e2388]: Luiza Ritter
+                - generic [ref=e2389]: 17/03/2026
+              - generic [ref=e2391]: Greg
+              - 'link "Lead #27294525" [ref=e2393] [cursor=pointer]':
+                - /url: /leads/detail/27294525
+              - generic "Nenhuma tarefa atribuída" [ref=e2399]
+            - generic [ref=e2403]:
+              - generic [ref=e2404]:
+                - generic [ref=e2405]: Luiza Rossi
+                - generic [ref=e2406]: 11/03/2026
+              - generic [ref=e2408]: Greg
+              - 'link "Lead #27294521" [ref=e2410] [cursor=pointer]':
+                - /url: /leads/detail/27294521
+              - generic "Nenhuma tarefa atribuída" [ref=e2416]
+        - generic [ref=e2417]:
+          - generic [ref=e2420]:
+            - generic "Layout Aprovado" [ref=e2421]:
+              - generic [ref=e2422]: Layout Aprovado
+            - generic [ref=e2424]:
+              - generic [ref=e2425]: "5 leads:"
+              - generic [ref=e2426]: R$1.828
+          - generic [ref=e2428]:
+            - generic [ref=e2432]:
+              - generic [ref=e2433]:
+                - generic [ref=e2434]: Sarah Taha
+                - generic [ref=e2435]: 08/04/2026
+              - generic [ref=e2437]: Passo a passo uniformes
+              - link "Sarah Pilates" [ref=e2439] [cursor=pointer]:
+                - /url: /leads/detail/27626285
+              - generic "Nenhuma tarefa atribuída" [ref=e2445]
+            - generic [ref=e2449]:
+              - generic [ref=e2450]:
+                - generic [ref=e2451]: Henrique Klein
+                - generic [ref=e2452]: 06/04/2026
+              - generic [ref=e2454]: irua
+              - link "Henrique Ginastica" [ref=e2456] [cursor=pointer]:
+                - /url: /leads/detail/27310551
+              - generic [ref=e2457]:
+                - generic [ref=e2461]: Hoje
+                - generic "Tarefas para hoje atribuídas" [ref=e2463]
+            - generic [ref=e2467]:
+              - generic [ref=e2468]:
+                - generic [ref=e2469]: Gu
+                - generic [ref=e2470]: 30/03/2026
+              - generic [ref=e2472]: irua
+              - link "Gu" [ref=e2474] [cursor=pointer]:
+                - /url: /leads/detail/27294485
+              - generic [ref=e2475]:
+                - generic [ref=e2479]: 2d
+                - generic "Tarefa expirada" [ref=e2481]
+            - generic [ref=e2485]:
+              - generic [ref=e2486]:
+                - generic [ref=e2487]: Lilian
+                - generic [ref=e2488]: 19/03/2026
+              - generic [ref=e2490]: Greg
+              - link "Lilian - Santander" [ref=e2492] [cursor=pointer]:
+                - /url: /leads/detail/27294797
+              - generic "Nenhuma tarefa atribuída" [ref=e2498]
+            - generic [ref=e2502]:
+              - generic [ref=e2503]:
+                - generic [ref=e2504]: Tefy
+                - generic [ref=e2505]: 09/03/2026
+              - generic [ref=e2507]: irua
+              - 'link "Lead #27294823" [ref=e2509] [cursor=pointer]':
+                - /url: /leads/detail/27294823
+              - generic "Nenhuma tarefa atribuída" [ref=e2515]
+        - generic [ref=e2516]:
+          - generic [ref=e2519]:
+            - generic "Pedido Confirmado (finaceiro)" [ref=e2520]:
+              - generic [ref=e2521]: Pedido Confirmado (finaceiro)
+            - generic [ref=e2523]:
+              - generic [ref=e2524]: "4 leads:"
+              - generic [ref=e2525]: R$1.768
+          - generic [ref=e2527]:
+            - generic [ref=e2531]:
+              - generic [ref=e2532]:
+                - generic [ref=e2533]: Caroline Garcez
+                - generic [ref=e2534]: 08/04/2026
+              - generic [ref=e2536]: Passo a passo uniformes
+              - link "Caroline Moletom" [ref=e2538] [cursor=pointer]:
+                - /url: /leads/detail/27572993
+              - generic "Nenhuma tarefa atribuída" [ref=e2544]
+            - generic [ref=e2548]:
+              - generic [ref=e2549]:
+                - generic [ref=e2550]: bel
+                - generic [ref=e2551]: 24/03/2026
+              - generic [ref=e2553]: Greg
+              - 'link "Lead #27294493" [ref=e2555] [cursor=pointer]':
+                - /url: /leads/detail/27294493
+              - generic "Nenhuma tarefa atribuída" [ref=e2561]
+            - generic [ref=e2565]:
+              - generic [ref=e2566]:
+                - generic [ref=e2567]: Karine
+                - generic [ref=e2568]: 18/03/2026
+              - generic [ref=e2570]: Passo a passo uniformes
+              - link "karine 17/04" [ref=e2572] [cursor=pointer]:
+                - /url: /leads/detail/27295017
+              - generic "Nenhuma tarefa atribuída" [ref=e2578]
+            - generic [ref=e2582]:
+              - generic [ref=e2583]:
+                - generic [ref=e2584]: Pâmela Schroder CGP Brazil
+                - generic [ref=e2585]: 12/03/2026
+              - generic [ref=e2587]: Greg
+              - link "Pamela - feira em junho" [ref=e2589] [cursor=pointer]:
+                - /url: /leads/detail/27294535
+              - generic "Nenhuma tarefa atribuída" [ref=e2595]
+        - generic [ref=e2596]:
+          - generic [ref=e2599]:
+            - generic "Em Produção" [ref=e2600]:
+              - generic [ref=e2601]: Em Produção
+            - generic [ref=e2603]:
+              - generic [ref=e2604]: "7 leads:"
+              - generic [ref=e2605]: R$13.340
+          - generic [ref=e2607]:
+            - generic [ref=e2611]:
+              - generic [ref=e2612]:
+                - generic [ref=e2613]: Vitor Tenedini - Construdini
+                - generic [ref=e2614]: 06/04/2026
+              - generic [ref=e2616]: irua
+              - link "Vitor Construdini" [ref=e2618] [cursor=pointer]:
+                - /url: /leads/detail/27325293
+              - generic "Nenhuma tarefa atribuída" [ref=e2624]
+            - generic [ref=e2628]:
+              - generic [ref=e2629]:
+                - generic [ref=e2630]: ...
+                - generic [ref=e2631]: 24/03/2026
+              - generic [ref=e2633]: Greg
+              - link "INN RESTO BAR" [ref=e2635] [cursor=pointer]:
+                - /url: /leads/detail/26504238
+              - generic [ref=e2636]:
+                - generic [ref=e2638]:
+                  - text: "+1"
+                  - generic [ref=e2639] [cursor=pointer]: FRAN
+                - generic "Nenhuma tarefa atribuída" [ref=e2641]
+            - generic [ref=e2645]:
+              - generic [ref=e2646]:
+                - generic [ref=e2647]: Lucas Almeida
+                - generic [ref=e2648]: 24/03/2026
+              - generic [ref=e2650]: irua
+              - link "Lucas" [ref=e2652] [cursor=pointer]:
+                - /url: /leads/detail/27294487
+              - generic "Nenhuma tarefa atribuída" [ref=e2658]
+            - generic [ref=e2662]:
+              - generic [ref=e2663]:
+                - generic [ref=e2664]: manu
+                - generic [ref=e2665]: 09/03/2026
+              - generic [ref=e2667]: Greg
+              - link "Manu - Terceirão 8 setembro" [ref=e2669] [cursor=pointer]:
+                - /url: /leads/detail/27294477
+              - generic "Nenhuma tarefa atribuída" [ref=e2675]
+            - generic [ref=e2679]:
+              - generic [ref=e2680]:
+                - generic [ref=e2681]: Brenda
+                - generic [ref=e2682]: 09/03/2026
+              - generic [ref=e2684]: irua
+              - 'link "Lead #27294561" [ref=e2686] [cursor=pointer]':
+                - /url: /leads/detail/27294561
+              - generic [ref=e2687]:
+                - generic [ref=e2689]:
+                  - text: "+1"
+                  - generic [ref=e2690] [cursor=pointer]: BRENDA TERCEIRÃO DE ONÇA BORDO
+                - generic "Nenhuma tarefa atribuída" [ref=e2692]
+            - generic [ref=e2696]:
+              - generic [ref=e2697]:
+                - generic [ref=e2698]: Passo A Passo Uniformes
+                - generic [ref=e2699]: 09/03/2026
+              - generic [ref=e2701]: irua
+              - link "isadora farmacia" [ref=e2703] [cursor=pointer]:
+                - /url: /leads/detail/27294769
+              - generic "Nenhuma tarefa atribuída" [ref=e2709]
+            - generic [ref=e2713]:
+              - generic [ref=e2714]:
+                - generic [ref=e2715]: Mônica Haubrich
+                - generic [ref=e2716]: 09/03/2026
+              - generic [ref=e2718]: Greg
+              - 'link "Lead #27294773" [ref=e2720] [cursor=pointer]':
+                - /url: /leads/detail/27294773
+              - generic "Nenhuma tarefa atribuída" [ref=e2726]
+        - generic [ref=e2727]:
+          - generic [ref=e2730]:
+            - generic "Pedido Pronto para envio" [ref=e2731]:
+              - generic [ref=e2732]: Pedido Pronto para envio
+            - generic [ref=e2734]:
+              - generic [ref=e2735]: "1 lead:"
+              - generic [ref=e2736]: R$0
+          - generic [ref=e2742]:
+            - generic [ref=e2743]:
+              - generic [ref=e2744]: Chris
+              - generic [ref=e2745]: 09/03/2026
+            - generic [ref=e2747]: Greg
+            - 'link "Lead #27294635" [ref=e2749] [cursor=pointer]':
+              - /url: /leads/detail/27294635
+            - generic "Nenhuma tarefa atribuída" [ref=e2755]
+        - generic [ref=e2756]:
+          - generic [ref=e2759]:
+            - generic "Ganho" [ref=e2760]:
+              - generic [ref=e2761]: Ganho
+            - generic [ref=e2763]:
+              - generic [ref=e2764]: "1 lead:"
+              - generic [ref=e2765]: R$3.377
+          - generic [ref=e2771]:
+            - generic [ref=e2772]:
+              - generic [ref=e2773]: rafa leivas
+              - generic [ref=e2774]: 10/03/2026
+            - generic [ref=e2776]: Greg
+            - link "Rafa Leivas" [ref=e2778] [cursor=pointer]:
+              - /url: /leads/detail/27294515
+            - generic "Nenhuma tarefa atribuída" [ref=e2784]
+        - generic [ref=e2788]:
+          - generic "Perdido" [ref=e2789]:
+            - generic [ref=e2790]: Perdido
+          - generic [ref=e2792]:
+            - generic [ref=e2793]: "0 leads:"
+            - generic [ref=e2794]: R$0
+      - generic [ref=e2797] [cursor=pointer]:
+        - generic "Etapa de leads de entrada" [ref=e2801]:
+          - generic [ref=e2802]: Etapa de leads de entrada
+        - generic "Lead Frio" [ref=e2807]:
+          - generic [ref=e2808]: Lead Frio
+        - generic "Primeiro Contato" [ref=e2813]:
+          - generic [ref=e2814]: Primeiro Contato
+        - generic "Qualificado" [ref=e2819]:
+          - generic [ref=e2820]: Qualificado
+        - generic "Enviar Orçamento" [ref=e2825]:
+          - generic [ref=e2826]: Enviar Orçamento
+        - generic "ORÇAMENTO JESSICA" [ref=e2831]:
+          - generic [ref=e2832]: ORÇAMENTO JESSICA
+        - generic "Negociando" [ref=e2837]:
+          - generic [ref=e2838]: Negociando
+        - generic "Desenvolver Layout" [ref=e2843]:
+          - generic [ref=e2844]: Desenvolver Layout
+        - generic "Layout Aprovado" [ref=e2849]:
+          - generic [ref=e2850]: Layout Aprovado
+        - generic "Pedido Confirmado (finaceiro)" [ref=e2855]:
+          - generic [ref=e2856]: Pedido Confirmado (finaceiro)
+        - generic "Em Produção" [ref=e2861]:
+          - generic [ref=e2862]: Em Produção
+        - generic "Pedido Pronto para envio" [ref=e2867]:
+          - generic [ref=e2868]: Pedido Pronto para envio
+        - generic "Ganho" [ref=e2873]:
+          - generic [ref=e2874]: Ganho
+        - generic "Perdido" [ref=e2879]:
+          - generic [ref=e2880]: Perdido
+    - generic [ref=e2884]:
+      - img
+      - button [ref=e2885]:
+        - img [ref=e2886]
+        - img [ref=e2888]
+        - img [ref=e2892]
+      - generic [ref=e2894]:
+        - generic [ref=e2895]:
+          - generic [ref=e2896]:
+            - img [ref=e2897]
+            - generic [ref=e2899]: Kommo Copilot
+          - generic [ref=e2900]:
+            - button [ref=e2901] [cursor=pointer]:
+              - img [ref=e2904]
+            - button [ref=e2906] [cursor=pointer]:
+              - img [ref=e2909]
+            - button [ref=e2911] [cursor=pointer]:
+              - img [ref=e2914]
+        - button "Configuração do WhatsApp Business" [ref=e2916] [cursor=pointer]:
+          - generic [ref=e2917]:
+            - generic [ref=e2918]: Configuração do WhatsApp Business
+            - img [ref=e2919]
+        - generic [ref=e2944]:
+          - generic [ref=e2945]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e2948]
+            - button [disabled] [ref=e2951]:
+              - img [ref=e2954]
+          - generic [ref=e2956]: O conteúdo gerado por IA pode ser impreciso

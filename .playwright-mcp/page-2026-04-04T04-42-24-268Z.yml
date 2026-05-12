@@ -1,0 +1,161 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - region [ref=e1730]: Changed to list view.
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - button "Skip to main content" [ref=e7] [cursor=pointer]:
+        - generic [ref=e9]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e11] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Accessibility feedback" [ref=e15] [cursor=pointer]:
+        - generic [ref=e17]: Accessibility feedback
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - link "Drive" [ref=e24] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo&authuser=0
+          - img [ref=e25]
+          - generic [ref=e26]: Drive
+        - generic [ref=e27]:
+          - search [ref=e29]:
+            - table [ref=e31]:
+              - rowgroup [ref=e32]:
+                - row [ref=e33]:
+                  - cell [ref=e34]:
+                    - textbox "Search in Drive" [ref=e35]
+            - button "Advanced search" [ref=e36] [cursor=pointer]:
+              - img [ref=e37]
+            - button "Search Google Drive" [ref=e39] [cursor=pointer]:
+              - img [ref=e40]
+          - generic [ref=e43]:
+            - button "Support" [ref=e46] [cursor=pointer]:
+              - img [ref=e47]
+            - button "Settings" [ref=e51] [cursor=pointer]:
+              - img [ref=e53]
+            - generic [ref=e60]:
+              - generic:
+                - button "Try Gemini" [ref=e63] [cursor=pointer]:
+                  - img [ref=e66]
+                - tooltip [ref=e69]: Try Gemini
+            - generic [ref=e77]:
+              - button "Upgrade" [ref=e79] [cursor=pointer]:
+                - generic [ref=e81]: Upgrade
+              - tooltip [ref=e82]: Upgrade for premium features
+        - generic [ref=e84]:
+          - button "Google apps" [ref=e88] [cursor=pointer]:
+            - img [ref=e89]
+          - 'button "Google Account: Gustavo Oliveira (gustaoliveiraoficial@gmail.com)" [ref=e94] [cursor=pointer]':
+            - img [ref=e96]
+    - button "New" [ref=e99] [cursor=pointer]:
+      - img [ref=e102]
+      - generic [ref=e104]: New
+    - navigation [ref=e110]:
+      - heading "Folders and views" [level=2] [ref=e111]
+      - tree "Folders and views" [ref=e112]:
+        - treeitem "Home" [ref=e113]:
+          - link "Home" [ref=e114] [cursor=pointer]:
+            - generic "Home" [ref=e117]:
+              - generic [ref=e119]:
+                - img [ref=e122]
+                - img [ref=e127]
+              - generic "Home" [ref=e132]
+          - group
+        - treeitem "My Drive" [ref=e133]:
+          - link "My Drive" [ref=e134] [cursor=pointer]:
+            - img [ref=e137]
+            - generic "My Drive" [ref=e140]:
+              - generic [ref=e142]:
+                - img [ref=e145]
+                - img [ref=e150]
+              - generic "My Drive" [ref=e152]
+        - treeitem "Computers" [ref=e153]:
+          - link "Computers" [ref=e154] [cursor=pointer]:
+            - img [ref=e157]
+            - generic "Computers" [ref=e160]:
+              - generic [ref=e162]:
+                - img [ref=e165]
+                - img [ref=e170]
+              - generic "Computers" [ref=e173]
+        - treeitem "Shared with me" [ref=e174]:
+          - link "Shared with me" [ref=e175] [cursor=pointer]:
+            - generic "Shared with me" [ref=e178]:
+              - generic [ref=e180]:
+                - img [ref=e183]
+                - img [ref=e188]
+              - generic "Items shared with me" [ref=e194]: Shared with me
+          - group
+        - treeitem "Recent" [ref=e195]:
+          - link "Recent" [ref=e196] [cursor=pointer]:
+            - generic "Recent" [ref=e199]:
+              - generic [ref=e201]:
+                - img [ref=e204]
+                - img [ref=e210]
+              - generic "Recent items" [ref=e215]: Recent
+          - group
+        - treeitem "Starred" [ref=e216]:
+          - link "Starred" [ref=e217] [cursor=pointer]:
+            - generic "Starred" [ref=e220]:
+              - generic [ref=e222]:
+                - img [ref=e224]
+                - img [ref=e227]
+              - generic "Starred items" [ref=e231]: Starred
+          - group
+        - treeitem "Spam" [selected] [ref=e232]:
+          - link "Spam" [ref=e233] [cursor=pointer]:
+            - generic "Spam" [ref=e236]:
+              - generic [ref=e238]:
+                - img [ref=e241]
+                - img [ref=e245]
+              - generic "Spam" [ref=e250]
+          - group
+        - treeitem "Trash" [ref=e251]:
+          - link "Trash" [ref=e252] [cursor=pointer]:
+            - generic "Trash" [ref=e255]:
+              - generic [ref=e257]:
+                - img [ref=e260]
+                - img [ref=e265]
+              - generic "Trashed items" [ref=e270]: Trash
+          - group
+        - treeitem "Storage" [ref=e271]:
+          - link "Storage" [ref=e272] [cursor=pointer]:
+            - generic "Storage" [ref=e275]:
+              - generic [ref=e277]:
+                - img [ref=e1731]
+                - img [ref=e1734]
+              - generic "Storage" [ref=e288]
+          - group
+      - generic [ref=e1739]:
+        - 'generic "Storage Summary: 8.14 GB of 15 GB used" [ref=e1743] [cursor=pointer]': 8.14 GB of 15 GB used
+        - generic [ref=e1747] [cursor=pointer]:
+          - text: Get more storage
+          - link "Get more storage" [ref=e1748]:
+            - /url: https://drive.google.com/settings/storage?authuser=0&i=m&utm_source=drive&utm_medium=web&utm_campaign=g1_widget_normal#upgrade
+    - generic [ref=e305]:
+      - generic [ref=e1753]:
+        - banner [ref=e1756]:
+          - heading "Spam" [level=1] [ref=e1757]
+        - toolbar [ref=e1758]:
+          - button "View details (Alt+V then D)" [ref=e1760] [cursor=pointer]:
+            - img [ref=e1762]
+      - main [ref=e1765]:
+        - region [active] [ref=e1771]:
+          - status [ref=e1774]:
+            - generic "Files in spam won't appear anywhere else in Drive. Files are permanently removed after 30 days." [ref=e1775]:
+              - heading "Your spam is empty" [ref=e1776]
+              - generic [ref=e1778]: Files in spam won't appear anywhere else in Drive. Files are permanently removed after 30 days.
+      - generic:
+        - navigation
+    - generic [ref=e1710]:
+      - complementary "Side panel" [ref=e1711]:
+        - tablist [ref=e1713]:
+          - tab "Calendar"
+          - tab "Keep"
+          - tab "Tasks"
+          - tab "Contacts"
+          - separator [disabled] [ref=e1718]
+          - tab "Get Add-ons"
+      - generic:
+        - button "Hide side panel":
+          - img [ref=e1724] [cursor=pointer]
+  - region
+  - img [ref=e1728]

@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e9]:
+    - navigation [ref=e10]:
+      - button "person u723199063" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: person
+        - text: u723199063
+      - button "My files" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: folder
+        - text: My files
+      - generic [ref=e15]:
+        - button "New folder" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: create_new_folder
+          - text: New folder
+        - button "New file" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: note_add
+          - text: New file
+      - link "Trash bin" [ref=e21] [cursor=pointer]:
+        - /url: /b6bf1eeac9bc86f1/files/.trash
+        - generic [ref=e22]: delete
+        - text: Trash bin
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: Space
+          - generic [ref=e29]: 0.64%
+          - generic [ref=e30]: 327.68 MiB / 50 GiB
+        - generic [ref=e31]:
+          - generic [ref=e32]: Inodes
+          - generic [ref=e36]: 3.43%
+          - generic [ref=e37]: 20577 / 600000
+      - button "Logout" [ref=e38] [cursor=pointer]:
+        - generic [ref=e39]: exit_to_app
+        - text: Logout
+      - paragraph [ref=e40]:
+        - generic [ref=e41]: File Browser v2.54.0-h8
+        - generic [ref=e42]: Help
+    - main [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - link "Home" [ref=e46] [cursor=pointer]:
+            - /url: /b6bf1eeac9bc86f1/files
+            - generic [ref=e47]: home
+          - generic [ref=e48]:
+            - generic [ref=e50]: keyboard_arrow_right
+            - link "public_html" [ref=e51] [cursor=pointer]:
+              - /url: /b6bf1eeac9bc86f1/files/public_html/
+          - generic [ref=e52]:
+            - generic [ref=e54]: keyboard_arrow_right
+            - link "camiseta-pv" [ref=e55] [cursor=pointer]:
+              - /url: /b6bf1eeac9bc86f1/files/public_html/camiseta-pv/
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - button "Toggle sidebar" [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: menu
+            - button "Search" [ref=e60] [cursor=pointer]:
+              - generic [ref=e61]: search
+            - generic:
+              - button "Switch view":
+                - generic: view_module
+                - generic: Switch view
+              - button "Download":
+                - generic: file_download
+                - generic: Download
+              - button "Upload":
+                - generic: file_upload
+                - generic: Upload
+              - button "Calculate directory sizes":
+                - generic: assessment
+                - generic: Calculate directory sizes
+              - button "Info":
+                - generic: info
+                - generic: Info
+              - button "Select multiple":
+                - generic: check_circle
+                - generic: Select multiple
+            - button "More" [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: more_vert
+          - heading "sentiment_dissatisfied It feels lonely here..." [level=2] [ref=e65]:
+            - generic [ref=e66]: sentiment_dissatisfied
+            - text: It feels lonely here...
+  - button "Choose File" [ref=e67]

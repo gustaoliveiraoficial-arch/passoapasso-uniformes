@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Kommo Fix — PassoaPasso",
+  "version": "1.0.0",
+  "description": "Corrige: Enter para enviar, foco automático no campo, carregamento de fotos.",
+  "permissions": ["scripting", "storage"],
+  "host_permissions": [
+    "https://*.kommo.com/*",
+    "https://*.amocrm.com/*",
+    "https://*.amocrm.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.kommo.com/*",
+        "https://*.amocrm.com/*",
+        "https://*.amocrm.ru/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Kommo Fix"
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

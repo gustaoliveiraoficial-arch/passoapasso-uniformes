@@ -1,0 +1,165 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e2423]: Nenhum selecionado
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - link "Pular para o conteúdo" [ref=e14] [cursor=pointer]:
+          - /url: ""
+        - link "Como usar o Gmail com leitores de tela" [ref=e15] [cursor=pointer]:
+          - /url: ""
+      - heading [level=1] [ref=e17]:
+        - banner [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - button "Menu principal" [expanded] [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+              - link "Gmail" [ref=e26] [cursor=pointer]:
+                - /url: "#inbox"
+                - img [ref=e27]
+            - generic [ref=e28]:
+              - search [ref=e30]:
+                - heading "Pesquisar" [level=2] [ref=e31]
+                - table [ref=e1325]:
+                  - rowgroup [ref=e1326]:
+                    - row "from:openrouter" [ref=e2424]:
+                      - cell "from:openrouter" [ref=e2425]:
+                        - textbox "Pesquisar e-mail" [ref=e1329]: from:openrouter
+                - button "Opções de pesquisa avançada" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Limpar pesquisa" [ref=e2426] [cursor=pointer]:
+                  - img [ref=e2427]
+                - button "Pesquisar e-mail" [disabled] [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+              - generic [ref=e41]:
+                - button "Suporte" [ref=e1331] [cursor=pointer]:
+                  - img [ref=e1332]
+                - button "Configurações" [ref=e45] [cursor=pointer]:
+                  - img [ref=e46]
+                - generic [ref=e1336]:
+                  - generic:
+                    - button "Teste o Gemini" [ref=e1339] [cursor=pointer]:
+                      - img [ref=e1342]
+                    - tooltip [ref=e1345]: Teste o Gemini
+                - generic [ref=e1348]:
+                  - button "Upgrade" [ref=e1350] [cursor=pointer]:
+                    - generic [ref=e1352]: Upgrade
+                  - tooltip [ref=e1353]: Faça upgrade para ter acesso aos recursos premium
+            - generic [ref=e50]:
+              - button "Google Apps" [ref=e54] [cursor=pointer]:
+                - img [ref=e55]
+              - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e60] [cursor=pointer]':
+                - img [ref=e62]
+      - alert [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]: Ativar as notificações na área de trabalho para o Gmail.
+          - generic [ref=e68]:
+            - link "OK" [ref=e69] [cursor=pointer]
+            - link "Agora não(a)" [ref=e70] [cursor=pointer]
+          - button "Fechar" [ref=e71] [cursor=pointer]
+    - generic [ref=e73]:
+      - navigation [ref=e74]:
+        - button "Escrever" [ref=e77] [cursor=pointer]
+        - generic [ref=e83]:
+          - generic "Marcadores" [ref=e85]:
+            - heading "Marcadores" [level=2] [ref=e86]
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - generic [ref=e90]:
+                  - generic [ref=e95]:
+                    - link "Caixa de entrada 92 não lidas" [ref=e97] [cursor=pointer]:
+                      - /url: https://mail.google.com/mail/u/0/#inbox
+                      - text: Caixa de entrada
+                    - generic [ref=e98]: "92"
+                  - link "Com estrela" [ref=e105] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#starred
+                  - link "Adiados" [ref=e112] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#snoozed
+                  - link "Enviados" [ref=e119] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#sent
+                  - link "Rascunhos" [ref=e126] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#drafts
+                - generic [ref=e133]:
+                  - link "Compras 6 não lidas tem menu" [ref=e135] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#category/purchases
+                    - text: Compras
+                  - generic [ref=e136]: "6"
+              - button "Mais marcadores" [ref=e138] [cursor=pointer]:
+                - generic [ref=e139]: Mais
+          - generic [ref=e142]:
+            - heading "Marcadores" [ref=e143]
+            - button "Criar novo marcador" [ref=e144] [cursor=pointer]
+          - generic:
+            - generic "Marcadores":
+              - heading "Marcadores" [level=2] [ref=e145]
+      - main [ref=e2434]:
+        - generic [ref=e2435]:
+          - toolbar "refinamento de pesquisa" [ref=e2436]:
+            - generic [ref=e2440]:
+              - button "Qualquer período" [ref=e2442] [cursor=pointer]:
+                - generic [ref=e2444]:
+                  - generic [ref=e2445]: Qualquer período
+                  - img [ref=e2446]
+              - button "Com anexo" [ref=e2449] [cursor=pointer]:
+                - generic [ref=e2452]: Com anexo
+              - button "Para" [ref=e2454] [cursor=pointer]:
+                - generic [ref=e2456]:
+                  - generic [ref=e2457]: Para
+                  - img [ref=e2458]
+              - button "Não lido" [ref=e2461] [cursor=pointer]:
+                - generic [ref=e2464]: Não lido
+              - button "Pesquisa avançada" [ref=e2465] [cursor=pointer]:
+                - generic [ref=e2468]: Pesquisa avançada
+          - generic [ref=e2469]:
+            - generic [ref=e2472]:
+              - button "Selecionar" [ref=e2474] [cursor=pointer]:
+                - checkbox [ref=e2476]
+              - button "Atualizar" [ref=e2479] [cursor=pointer]
+              - button "Mais opções de e-mail" [ref=e2483] [cursor=pointer]
+            - generic [ref=e2486]:
+              - button "Mais relevantes" [ref=e2489] [cursor=pointer]:
+                - generic [ref=e2490]: Mais relevantes
+              - generic [ref=e2493]:
+                - button "Mostrar mais mensagens" [ref=e2494] [cursor=pointer]:
+                  - generic [ref=e2495]:
+                    - generic [ref=e2496]: 1–1
+                    - text: de 1
+                - button "Resultados anteriores" [disabled] [ref=e2497]
+                - button "Próximos resultados" [disabled] [ref=e2498]
+        - heading "Conversas" [level=2] [ref=e2500]
+        - grid [ref=e2504]:
+          - rowgroup [ref=e2505]:
+            - row "não lida, OpenRouter, Your sign up link, 13:11, Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the." [ref=e2506] [cursor=pointer]:
+              - gridcell [ref=e2507]
+              - gridcell "não lida, OpenRouter, Your sign up link, 13:11, Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the." [ref=e2508]:
+                - checkbox "não lida, OpenRouter, Your sign up link, 13:11, Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the." [ref=e2509]
+              - gridcell "Sem estrela" [ref=e2510]:
+                - button "Sem estrela" [ref=e2511]
+              - gridcell "OpenRouter" [ref=e2512]:
+                - generic [ref=e2514]: OpenRouter
+              - gridcell "Caixa de entrada Your sign up link - Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the" [ref=e2515]:
+                - link "Caixa de entrada Your sign up link - Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the" [ref=e2516]:
+                  - generic [ref=e2517]:
+                    - generic "Caixa de entrada" [ref=e2520]:
+                      - generic [ref=e2522]: Caixa de entrada
+                    - generic [ref=e2524]: Your sign up link
+                    - generic [ref=e2525]:
+                      - generic [ref=e2526]: "-"
+                      - text: Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the
+              - gridcell [ref=e2527]
+              - gridcell "ter., 7 de abr. de 2026, 13:11" [ref=e2528]:
+                - generic "ter., 7 de abr. de 2026, 13:11" [ref=e2529]: 13:11
+              - gridcell
+      - generic [ref=e1311]:
+        - complementary "Painel lateral" [ref=e1312]:
+          - tablist [ref=e1314]:
+            - tab "Agenda"
+            - tab "Keep"
+            - tab "Tarefas"
+            - tab "Contatos"
+            - separator [disabled] [ref=e1319]
+            - tab "Instalar complementos"
+        - generic:
+          - button "Esconder painel lateral":
+            - img [ref=e1322] [cursor=pointer]

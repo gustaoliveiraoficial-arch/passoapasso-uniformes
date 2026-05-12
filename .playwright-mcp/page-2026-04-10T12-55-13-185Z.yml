@@ -1,0 +1,58 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - heading "Configurações" [level=1] [ref=e35]
+      - main [ref=e37]:
+        - generic [ref=e40]:
+          - heading "Pagamentos" [level=1] [ref=e41]
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - button "Configurações do WooCommerce" [ref=e47] [cursor=pointer]:
+                - img [ref=e48]
+              - heading "Transferência bancária" [level=1] [ref=e50]
+            - generic [ref=e52]:
+              - generic [ref=e54]:
+                - heading "Enable and customise" [level=2] [ref=e55]
+                - paragraph [ref=e56]: Choose how you want to present bank transfer to your customers during checkout.
+              - generic [ref=e67]:
+                - heading "Detalhes da conta" [level=2] [ref=e68]
+                - paragraph [ref=e69]: Configure your bank account details.
+              - button "Salvar alterações" [disabled] [ref=e76]
+          - paragraph [ref=e77]
+    - generic [ref=e79]:
+      - img [ref=e81]
+      - generic [ref=e83]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e85] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+  - img

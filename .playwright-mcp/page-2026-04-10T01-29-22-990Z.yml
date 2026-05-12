@@ -1,0 +1,37 @@
+- generic [ref=e1]:
+  - link "Hostinger" [ref=e2] [cursor=pointer]:
+    - /url: https://www.hostinger.com/
+    - img "Hostinger" [ref=e3]
+  - generic [ref=e8]:
+    - heading "Log in" [level=3] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - link "Google" [ref=e12] [cursor=pointer]:
+          - /url: https://auth.hostinger.com/api/external/v1/oauth/google/login/7d1b2028-d760-403c-8ce7-d7810e807674?redirect_back_url=https://auth.hostinger.com/login
+          - img "Google" [ref=e13]
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://auth.hostinger.com/api/external/v1/oauth/facebook/login/7d1b2028-d760-403c-8ce7-d7810e807674?redirect_back_url=https://auth.hostinger.com/login
+          - img "Facebook" [ref=e15]
+        - link "Github" [ref=e16] [cursor=pointer]:
+          - /url: https://auth.hostinger.com/api/external/v1/oauth/github/login/7d1b2028-d760-403c-8ce7-d7810e807674?redirect_back_url=https://auth.hostinger.com/login
+          - img "Github" [ref=e17]
+      - generic [ref=e18]:
+        - separator [ref=e19]
+        - paragraph [ref=e20]: or
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - text: Email address
+        - textbox "Email address" [active] [ref=e23]
+      - generic [ref=e24]: Password
+      - generic [ref=e25]:
+        - textbox "Password" [ref=e26]
+        - img [ref=e28] [cursor=pointer]
+      - link "Forgot password?" [ref=e30] [cursor=pointer]:
+        - /url: /forgot-password
+      - button "Log in" [ref=e31] [cursor=pointer]
+      - link "Can't Access Your Account?" [ref=e32] [cursor=pointer]:
+        - /url: /account-recovery
+    - generic [ref=e33]:
+      - text: Don't have an account?
+      - link "Sign Up" [ref=e34] [cursor=pointer]:
+        - /url: register

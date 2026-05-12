@@ -1,0 +1,242 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - button "Opções de tela" [ref=e37] [cursor=pointer]
+          - generic [ref=e38]:
+            - heading "Editar modelo" [level=1] [ref=e39]
+            - link "Adicionar novo modelo" [ref=e40] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/post-new.php?post_type=elementor_library
+            - generic [ref=e42]:
+              - generic:
+                - generic [ref=e43]:
+                  - generic [ref=e44]:
+                    - generic [ref=e45]:
+                      - generic: Adicionar título
+                      - textbox "Adicionar título" [ref=e46]: Kit padrão
+                    - generic [ref=e48]:
+                      - strong [ref=e49]: "Link permanente:"
+                      - link "https://passoapassouniformes.com/?elementor_library=kit-padrao" [ref=e50] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/?elementor_library=kit-padrao
+                  - button "Voltar ao editor do WordPress" [ref=e52] [cursor=pointer]:
+                    - generic [ref=e53]:
+                      - generic [ref=e54]: 
+                      - text: Voltar ao editor do WordPress
+                    - text: 
+                  - link "Editar com Elementor" [ref=e56] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/post.php?post=5&action=elementor
+                    - generic [ref=e57]:
+                      - generic [ref=e58]: 
+                      - text: Editar com Elementor
+                - generic [ref=e60]:
+                  - generic [ref=e61]:
+                    - generic [ref=e62]:
+                      - heading "Publicar" [level=2] [ref=e63]
+                      - generic [ref=e64]:
+                        - button "Mover para cima" [disabled] [ref=e65]:
+                          - generic [ref=e66]: Mover para cima
+                        - button "Mover para baixo" [ref=e68] [cursor=pointer]:
+                          - generic [ref=e69]: Mover para baixo
+                        - 'button "Alternar painel: Publicar" [expanded] [ref=e71] [cursor=pointer]':
+                          - generic [ref=e72]: "Alternar painel: Publicar"
+                    - generic [ref=e75]:
+                      - generic [ref=e76]:
+                        - link "Visualizar alterações (abrir em uma nova aba)" [ref=e78] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/?elementor_library=kit-padrao&preview=true
+                          - text: Visualizar alterações
+                          - generic [ref=e79]: (abrir em uma nova aba)
+                        - generic [ref=e80]:
+                          - generic [ref=e81]:
+                            - text: "Status: Publicado"
+                            - button "Editar status" [ref=e82] [cursor=pointer]:
+                              - text: Editar
+                              - generic [ref=e83]: Editar status
+                          - generic [ref=e84]:
+                            - text: "Visibilidade: Público"
+                            - button "Editar visibilidade" [ref=e85] [cursor=pointer]:
+                              - text: Editar
+                              - generic [ref=e86]: Editar visibilidade
+                          - generic [ref=e87]:
+                            - generic [ref=e88]: "Publicado em: 4 de fev de 2026 às 19:38"
+                            - button "Editar data e hora" [ref=e89] [cursor=pointer]:
+                              - text: Editar
+                              - generic [ref=e90]: Editar data e hora
+                      - generic [ref=e91]:
+                        - link "Mover para lixeira" [ref=e93] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=5&action=trash&_wpnonce=96cd0bb946
+                        - button "Atualizar" [ref=e95] [cursor=pointer]
+                  - generic [ref=e96]:
+                    - generic [ref=e97]:
+                      - heading "Categorias" [level=2] [ref=e98]
+                      - generic [ref=e99]:
+                        - button "Mover para cima" [ref=e100] [cursor=pointer]:
+                          - generic [ref=e101]: Mover para cima
+                        - button "Mover para baixo" [ref=e103] [cursor=pointer]:
+                          - generic [ref=e104]: Mover para baixo
+                        - 'button "Alternar painel: Categorias" [expanded] [ref=e106] [cursor=pointer]':
+                          - generic [ref=e107]: "Alternar painel: Categorias"
+                    - generic [ref=e110]:
+                      - list [ref=e111]:
+                        - listitem [ref=e112]:
+                          - link "Todas as categorias" [ref=e113] [cursor=pointer]:
+                            - /url: "#elementor_library_category-all"
+                        - listitem [ref=e114]:
+                          - link "Mais usadas" [ref=e115] [cursor=pointer]:
+                            - /url: "#elementor_library_category-pop"
+                      - generic [ref=e116]:
+                        - list
+                      - link "+ Adicionar categoria" [ref=e118] [cursor=pointer]:
+                        - /url: "#elementor_library_category-add"
+                  - generic [ref=e119]:
+                    - generic [ref=e120]:
+                      - heading "Atributos do post" [level=2] [ref=e121]
+                      - generic [ref=e122]:
+                        - button "Mover para cima" [ref=e123] [cursor=pointer]:
+                          - generic [ref=e124]: Mover para cima
+                        - button "Mover para baixo" [ref=e126] [cursor=pointer]:
+                          - generic [ref=e127]: Mover para baixo
+                        - 'button "Alternar painel: Atributos do post" [expanded] [ref=e129] [cursor=pointer]':
+                          - generic [ref=e130]: "Alternar painel: Atributos do post"
+                    - generic [ref=e132]:
+                      - paragraph [ref=e133]: Modelo
+                      - combobox "Modelo" [ref=e134] [cursor=pointer]:
+                        - option "Modelo padrão" [selected]
+                        - option "Elementor largura total"
+                        - option "Tela do Elementor"
+                        - option "Tema"
+                  - generic [ref=e135]:
+                    - generic [ref=e136]:
+                      - heading "LiteSpeed" [level=2] [ref=e137]
+                      - generic [ref=e138]:
+                        - button "Mover para cima" [ref=e139] [cursor=pointer]:
+                          - generic [ref=e140]: Mover para cima
+                        - button "Mover para baixo" [ref=e142] [cursor=pointer]:
+                          - generic [ref=e143]: Mover para baixo
+                        - 'button "Alternar painel: LiteSpeed" [expanded] [ref=e145] [cursor=pointer]':
+                          - generic [ref=e146]: "Alternar painel: LiteSpeed"
+                    - generic [ref=e148]:
+                      - generic [ref=e149]:
+                        - generic [ref=e150]: Desativar cache
+                        - checkbox "Desativar cache" [ref=e151] [cursor=pointer]
+                      - generic [ref=e152]:
+                        - generic [ref=e153]: Desativar carregamento lento de imagens
+                        - checkbox "Desativar carregamento lento de imagens" [ref=e154] [cursor=pointer]
+                      - generic [ref=e155]:
+                        - generic [ref=e156]: Desativar VPI
+                        - checkbox "Desativar VPI" [ref=e157] [cursor=pointer]
+                      - generic [ref=e158]:
+                        - text: Imagens da janela de visualização (viewport)
+                        - textbox "Imagens da janela de visualização (viewport)" [ref=e159]
+                      - generic [ref=e160]:
+                        - text: Imagens da janela de visualização (viewport) - Dispositivo móvel
+                        - textbox "Imagens da janela de visualização (viewport) - Dispositivo móvel" [ref=e161]
+                      - link "Saber mais" [ref=e163] [cursor=pointer]:
+                        - /url: https://docs.litespeedtech.com/lscache/lscwp/metabox/
+                  - generic [ref=e164]:
+                    - generic [ref=e165]:
+                      - heading "Imagem destacada" [level=2] [ref=e166]
+                      - generic [ref=e167]:
+                        - button "Mover para cima" [ref=e168] [cursor=pointer]:
+                          - generic [ref=e169]: Mover para cima
+                        - button "Mover para baixo" [ref=e171] [cursor=pointer]:
+                          - generic [ref=e172]: Mover para baixo
+                        - 'button "Alternar painel: Imagem destacada" [expanded] [ref=e174] [cursor=pointer]':
+                          - generic [ref=e175]: "Alternar painel: Imagem destacada"
+                    - paragraph [ref=e178]:
+                      - link "Definir imagem destacada" [ref=e179] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/media-upload.php?post_id=5&type=image&TB_iframe=1
+                  - generic [ref=e180]:
+                    - generic [ref=e181]:
+                      - heading "Imagem externa em destaque" [level=2] [ref=e182]
+                      - generic [ref=e183]:
+                        - button "Mover para cima" [ref=e184] [cursor=pointer]:
+                          - generic [ref=e185]: Mover para cima
+                        - button "Mover para baixo" [ref=e187] [cursor=pointer]:
+                          - generic [ref=e188]: Mover para baixo
+                        - 'button "Alternar painel: Imagem externa em destaque" [expanded] [ref=e190] [cursor=pointer]':
+                          - generic [ref=e191]: "Alternar painel: Imagem externa em destaque"
+                    - paragraph [ref=e194]:
+                      - text: "URL da imagem:"
+                      - textbox "URL da imagem:" [ref=e195]
+                - generic [ref=e197]:
+                  - generic [ref=e198]:
+                    - generic [ref=e199]:
+                      - heading "Campos personalizados" [level=2] [ref=e200]
+                      - generic [ref=e201]:
+                        - button "Mover para cima" [ref=e202] [cursor=pointer]:
+                          - generic [ref=e203]: Mover para cima
+                        - button "Mover para baixo" [ref=e205] [cursor=pointer]:
+                          - generic [ref=e206]: Mover para baixo
+                        - 'button "Alternar painel: Campos personalizados" [expanded] [ref=e208] [cursor=pointer]':
+                          - generic [ref=e209]: "Alternar painel: Campos personalizados"
+                    - generic [ref=e211]:
+                      - generic [ref=e212]:
+                        - paragraph [ref=e213]:
+                          - strong [ref=e214]: "Adicionar campo personalizado:"
+                        - table [ref=e215]:
+                          - rowgroup [ref=e216]:
+                            - row "Nome Valor" [ref=e217]:
+                              - columnheader "Nome" [ref=e218]
+                              - columnheader "Valor" [ref=e219]
+                          - rowgroup [ref=e220]:
+                            - row "— Selecionar — Digite novo" [ref=e221]:
+                              - cell "— Selecionar — Digite novo" [ref=e222]:
+                                - combobox "Nome" [ref=e223] [cursor=pointer]:
+                                  - option "— Selecionar —" [selected]
+                                  - option "total_sales"
+                                - button "Digite novo" [ref=e224] [cursor=pointer]
+                              - cell [ref=e225]:
+                                - textbox "Valor" [ref=e226]
+                        - button "Adicionar campo personalizado" [ref=e228] [cursor=pointer]
+                      - paragraph [ref=e229]:
+                        - text: Campos personalizados podem ser usados para adicionar ao post metadados extras que você pode
+                        - link "utilizar em seu tema" [ref=e230] [cursor=pointer]:
+                          - /url: https://wordpress.org/documentation/article/assign-custom-fields/
+                        - text: .
+                  - generic [ref=e231]:
+                    - generic [ref=e232]:
+                      - heading "Autor" [level=2] [ref=e233]
+                      - generic [ref=e234]:
+                        - button "Mover para cima" [ref=e235] [cursor=pointer]:
+                          - generic [ref=e236]: Mover para cima
+                        - button "Mover para baixo" [ref=e238] [cursor=pointer]:
+                          - generic [ref=e239]: Mover para baixo
+                        - 'button "Alternar painel: Autor" [expanded] [ref=e241] [cursor=pointer]':
+                          - generic [ref=e242]: "Alternar painel: Autor"
+                    - generic [ref=e244]:
+                      - generic [ref=e245]: Autor
+                      - combobox "Autor" [ref=e246] [cursor=pointer]:
+                        - option "passoapassouniformes2025@gmail.com (passoapassouniformes2025@gmail.com)" [selected]
+  - img

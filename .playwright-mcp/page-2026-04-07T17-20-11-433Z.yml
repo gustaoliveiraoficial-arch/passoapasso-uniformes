@@ -1,0 +1,60 @@
+- generic [ref=e1]:
+  - generic [ref=e86]:
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - link "Groq" [ref=e89] [cursor=pointer]:
+          - /url: /home
+          - img "Groq" [ref=e90]
+        - generic [ref=e91]:
+          - button "Personal" [ref=e93] [cursor=pointer]:
+            - generic [ref=e94]: Personal
+            - img [ref=e95]
+          - generic [ref=e98]: /
+          - button "Default Project" [ref=e100] [cursor=pointer]:
+            - generic "Default Project" [ref=e101]
+            - img [ref=e102]
+      - generic [ref=e105]:
+        - navigation [ref=e106]:
+          - link "Playground" [ref=e108] [cursor=pointer]:
+            - /url: /playground
+            - generic [ref=e109]: Playground
+          - link "API Keys" [active] [ref=e111] [cursor=pointer]:
+            - /url: /keys
+            - generic [ref=e112]: API Keys
+          - link "Dashboard" [ref=e114] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e115]: Dashboard
+          - link "Docs" [ref=e117] [cursor=pointer]:
+            - /url: /docs
+            - generic [ref=e118]: Docs
+          - link [ref=e120] [cursor=pointer]:
+            - /url: /settings
+            - img [ref=e122]
+        - button "P" [ref=e126] [cursor=pointer]:
+          - generic [ref=e128]: P
+    - main [ref=e324]:
+      - generic [ref=e327]:
+        - generic [ref=e328]:
+          - generic [ref=e329]:
+            - heading "API Keys" [level=1] [ref=e330]
+            - generic [ref=e331]: Manage your project API keys. Remember to keep your API keys safe to prevent unauthorized access.
+          - button "Create API Key" [ref=e333] [cursor=pointer]:
+            - img [ref=e334]
+            - generic [ref=e335]: Create API Key
+        - generic [ref=e339]:
+          - table [ref=e341]:
+            - rowgroup [ref=e342]:
+              - row "Name Secret Key Created Last Used Expires Usage (24hrs)" [ref=e343]:
+                - columnheader "Name" [ref=e344]
+                - columnheader "Secret Key" [ref=e345]
+                - columnheader "Created" [ref=e346]
+                - columnheader "Last Used" [ref=e347]
+                - columnheader "Expires" [ref=e348]
+                - columnheader "Usage (24hrs)" [ref=e349]
+                - columnheader [ref=e350]
+            - rowgroup
+          - generic [ref=e351]: (No keys)
+  - region "Notifications alt+T"
+  - alert [ref=e31]: API Keys - GroqCloud
+  - iframe [ref=e323]:
+    

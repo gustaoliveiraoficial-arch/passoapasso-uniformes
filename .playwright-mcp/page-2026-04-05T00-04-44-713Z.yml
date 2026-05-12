@@ -1,0 +1,514 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - link "Pular para a barra de ferramentas" [ref=e4] [cursor=pointer]:
+        - /url: "#wp-toolbar"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Hostinger" [ref=e9] [cursor=pointer]:
+            - /url: admin.php?page=hostinger
+            - generic [ref=e11]: Hostinger
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Integração" [ref=e14] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-get-onboarding
+            - listitem [ref=e15]:
+              - link "Ferramentas" [ref=e16] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-tools
+            - listitem [ref=e17]:
+              - link "E-mail marketing" [ref=e18] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-reach
+            - listitem [ref=e19]:
+              - link "Criador de Conteúdo com IA" [ref=e20] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-ai-assistant
+        - listitem [ref=e21]:
+          - link "Painel" [ref=e22] [cursor=pointer]:
+            - /url: index.php
+            - generic [ref=e23]: 
+            - generic [ref=e24]: Painel
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - link "Início" [ref=e27] [cursor=pointer]:
+                - /url: index.php
+            - listitem [ref=e28]:
+              - link "Atualizações 8" [ref=e29] [cursor=pointer]:
+                - /url: update-core.php
+                - text: Atualizações
+                - generic [ref=e30]: "8"
+        - listitem [ref=e31]:
+          - link "Elementor" [ref=e32] [cursor=pointer]:
+            - /url: admin.php?page=elementor-home
+            - generic [ref=e34]: Elementor
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Página inicial" [ref=e37] [cursor=pointer]:
+                - /url: admin.php?page=elementor-home
+            - listitem [ref=e38]:
+              - link "Editor" [ref=e39] [cursor=pointer]:
+                - /url: admin.php?page=elementor
+            - listitem [ref=e40]:
+              - link "Atualizar" [ref=e41] [cursor=pointer]:
+                - /url: admin.php?page=elementor-one-upgrade
+        - listitem [ref=e42]
+        - listitem [ref=e44]:
+          - link "Posts" [ref=e45] [cursor=pointer]:
+            - /url: edit.php
+            - generic [ref=e46]: 
+            - generic [ref=e47]: Posts
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Todos os posts" [ref=e50] [cursor=pointer]:
+                - /url: edit.php
+            - listitem [ref=e51]:
+              - link "Adicionar post" [ref=e52] [cursor=pointer]:
+                - /url: post-new.php
+            - listitem [ref=e53]:
+              - link "Categorias" [ref=e54] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=category
+            - listitem [ref=e55]:
+              - link "Tags" [ref=e56] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=post_tag
+        - listitem [ref=e57]:
+          - link "Mídia" [ref=e58] [cursor=pointer]:
+            - /url: upload.php
+            - generic [ref=e59]: 
+            - generic [ref=e60]: Mídia
+          - list [ref=e61]:
+            - listitem [ref=e62]:
+              - link "Biblioteca" [ref=e63] [cursor=pointer]:
+                - /url: upload.php
+            - listitem [ref=e64]:
+              - link "Adicionar arquivo de mídia" [ref=e65] [cursor=pointer]:
+                - /url: media-new.php
+        - listitem [ref=e66]:
+          - link "Páginas" [ref=e67] [cursor=pointer]:
+            - /url: edit.php?post_type=page
+            - generic [ref=e68]: 
+            - generic [ref=e69]: Páginas
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - link "Todas as páginas" [ref=e72] [cursor=pointer]:
+                - /url: edit.php?post_type=page
+            - listitem [ref=e73]:
+              - link "Adicionar página" [ref=e74] [cursor=pointer]:
+                - /url: post-new.php?post_type=page
+        - listitem [ref=e75]:
+          - link "Comentários" [ref=e76] [cursor=pointer]:
+            - /url: edit-comments.php
+            - generic [ref=e77]: 
+            - generic [ref=e78]: Comentários
+        - listitem [ref=e79]
+        - text:  
+        - listitem [ref=e81]
+        - listitem [ref=e83]:
+          - link "Hello Biz" [ref=e84] [cursor=pointer]:
+            - /url: admin.php?page=hello-biz
+            - generic [ref=e85]: 
+            - generic [ref=e86]: Hello Biz
+          - list [ref=e87]:
+            - listitem [ref=e88]:
+              - link "Home" [ref=e89] [cursor=pointer]:
+                - /url: admin.php?page=hello-biz
+            - listitem [ref=e90]:
+              - link "Begin setup" [ref=e91] [cursor=pointer]:
+                - /url: admin.php?page=hello-biz-setup
+            - listitem [ref=e92]:
+              - link "Settings" [ref=e93] [cursor=pointer]:
+                - /url: admin.php?page=hello-plus-settings
+            - listitem [ref=e94]:
+              - link "Theme Builder" [ref=e95] [cursor=pointer]:
+                - /url: admin.php?page=elementor-app&ver=3.35.0#site-editor/promotion
+        - listitem [ref=e96]:
+          - link "Aparência" [ref=e97] [cursor=pointer]:
+            - /url: themes.php
+            - generic [ref=e98]: 
+            - generic [ref=e99]: Aparência
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Temas 1" [ref=e102] [cursor=pointer]:
+                - /url: themes.php
+                - text: Temas
+                - generic [ref=e103]: "1"
+            - listitem [ref=e104]:
+              - link "Design" [ref=e105] [cursor=pointer]:
+                - /url: site-editor.php
+            - listitem [ref=e106]:
+              - link "Personalizar" [ref=e107] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Fedit.php
+            - listitem [ref=e108]:
+              - link "Menus" [ref=e109] [cursor=pointer]:
+                - /url: nav-menus.php
+            - listitem [ref=e110]:
+              - link "Editor de arquivos de tema" [ref=e111] [cursor=pointer]:
+                - /url: theme-editor.php
+        - listitem [ref=e112]:
+          - link "Plugins 6" [ref=e113] [cursor=pointer]:
+            - /url: plugins.php
+            - generic [ref=e114]: 
+            - generic [ref=e115]:
+              - text: Plugins
+              - generic [ref=e116]: "6"
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "Plugins instalados" [ref=e119] [cursor=pointer]:
+                - /url: plugins.php
+            - listitem [ref=e120]:
+              - link "Adicionar plugin" [ref=e121] [cursor=pointer]:
+                - /url: plugin-install.php
+            - listitem [ref=e122]:
+              - link "Editor de arquivos de plugin" [ref=e123] [cursor=pointer]:
+                - /url: plugin-editor.php
+        - listitem [ref=e124]:
+          - link "Usuários" [ref=e125] [cursor=pointer]:
+            - /url: users.php
+            - generic [ref=e126]: 
+            - generic [ref=e127]: Usuários
+          - list [ref=e128]:
+            - listitem [ref=e129]:
+              - link "Todos os usuários" [ref=e130] [cursor=pointer]:
+                - /url: users.php
+            - listitem [ref=e131]:
+              - link "Adicionar usuário" [ref=e132] [cursor=pointer]:
+                - /url: user-new.php
+            - listitem [ref=e133]:
+              - link "Perfil" [ref=e134] [cursor=pointer]:
+                - /url: profile.php
+        - listitem [ref=e135]:
+          - link "Ferramentas" [ref=e136] [cursor=pointer]:
+            - /url: tools.php
+            - generic [ref=e137]: 
+            - generic [ref=e138]: Ferramentas
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link "Ferramentas disponíveis" [ref=e141] [cursor=pointer]:
+                - /url: tools.php
+            - listitem [ref=e142]:
+              - link "Importar" [ref=e143] [cursor=pointer]:
+                - /url: import.php
+            - listitem [ref=e144]:
+              - link "Exportar" [ref=e145] [cursor=pointer]:
+                - /url: export.php
+            - listitem [ref=e146]:
+              - link "Diagnóstico 1" [ref=e147] [cursor=pointer]:
+                - /url: site-health.php
+                - text: Diagnóstico
+                - generic [ref=e148]: "1"
+            - listitem [ref=e149]:
+              - link "Exportar dados pessoais" [ref=e150] [cursor=pointer]:
+                - /url: export-personal-data.php
+            - listitem [ref=e151]:
+              - link "Apagar dados pessoais" [ref=e152] [cursor=pointer]:
+                - /url: erase-personal-data.php
+            - listitem [ref=e153]:
+              - link "Scheduled Actions" [ref=e154] [cursor=pointer]:
+                - /url: tools.php?page=action-scheduler
+        - listitem [ref=e155]:
+          - link "Configurações" [ref=e156] [cursor=pointer]:
+            - /url: options-general.php
+            - generic [ref=e157]: 
+            - generic [ref=e158]: Configurações
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "Geral" [ref=e161] [cursor=pointer]:
+                - /url: options-general.php
+            - listitem [ref=e162]:
+              - link "Escrita" [ref=e163] [cursor=pointer]:
+                - /url: options-writing.php
+            - listitem [ref=e164]:
+              - link "Leitura" [ref=e165] [cursor=pointer]:
+                - /url: options-reading.php
+            - listitem [ref=e166]:
+              - link "Discussão" [ref=e167] [cursor=pointer]:
+                - /url: options-discussion.php
+            - listitem [ref=e168]:
+              - link "Mídia" [ref=e169] [cursor=pointer]:
+                - /url: options-media.php
+            - listitem [ref=e170]:
+              - link "Links permanentes" [ref=e171] [cursor=pointer]:
+                - /url: options-permalink.php
+            - listitem [ref=e172]:
+              - link "Privacidade" [ref=e173] [cursor=pointer]:
+                - /url: options-privacy.php
+            - listitem [ref=e174]:
+              - link "LiteSpeed Cache" [ref=e175] [cursor=pointer]:
+                - /url: options-general.php?page=litespeed-cache-options
+        - listitem [ref=e176]
+        - listitem [ref=e178]:
+          - link "LiteSpeed Cache" [ref=e179] [cursor=pointer]:
+            - /url: admin.php?page=litespeed
+            - generic [ref=e180]: 
+            - generic [ref=e181]: LiteSpeed Cache
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "Painel" [ref=e184] [cursor=pointer]:
+                - /url: admin.php?page=litespeed
+            - listitem [ref=e185]:
+              - link "Predefinições" [ref=e186] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-presets
+            - listitem [ref=e187]:
+              - link "Geral" [ref=e188] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-general
+            - listitem [ref=e189]:
+              - link "Cache" [ref=e190] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-cache
+            - listitem [ref=e191]:
+              - link "CDN" [ref=e192] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-cdn
+            - listitem [ref=e193]:
+              - link "Otimização de imagem" [ref=e194] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-img_optm
+            - listitem [ref=e195]:
+              - link "Otimização de página" [ref=e196] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-page_optm
+            - listitem [ref=e197]:
+              - link "Banco de dados" [ref=e198] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-db_optm
+            - listitem [ref=e199]:
+              - link "Rastreador" [ref=e200] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-crawler
+            - listitem [ref=e201]:
+              - link "Caixa de ferramentas" [ref=e202] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-toolbox
+        - listitem [ref=e203]:
+          - button "Recolher menu principal" [expanded] [ref=e204] [cursor=pointer]:
+            - generic [ref=e206]: Recolher menu
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e209]:
+              - menuitem "Sobre o WordPress" [ref=e210] [cursor=pointer]:
+                - generic [ref=e212]: Sobre o WordPress
+            - group [ref=e213]:
+              - menuitem "proativado.hostingersite.com" [ref=e214] [cursor=pointer]
+            - group [ref=e215]:
+              - menuitem "8 atualizações disponíveis" [ref=e216] [cursor=pointer]:
+                - generic [ref=e218]: "8"
+                - generic [ref=e219]: 8 atualizações disponíveis
+            - group [ref=e220]:
+              - menuitem "0 comentário esperando moderação" [ref=e221] [cursor=pointer]:
+                - generic [ref=e223]: "0"
+                - generic [ref=e224]: 0 comentário esperando moderação
+            - group [ref=e225]:
+              - menuitem "Novo" [ref=e226] [cursor=pointer]:
+                - generic [ref=e228]: Novo
+            - group [ref=e229]:
+              - menuitem "Ver posts" [ref=e230] [cursor=pointer]
+            - group [ref=e231]:
+              - menuitem "Hostinger" [ref=e232]:
+                - img [ref=e233]
+                - text: Hostinger
+            - group [ref=e235]:
+              - menuitem "" [ref=e236] [cursor=pointer]:
+                - generic "Limpar tudo no LiteSpeed Cache - LSCache" [ref=e237]: 
+          - menu [ref=e238]:
+            - group [ref=e239]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e240] [cursor=pointer]
+      - main [ref=e241]:
+        - generic [ref=e242]:
+          - text: 
+          - generic [ref=e243]:
+            - button "Opções de tela" [ref=e245] [cursor=pointer]
+            - button "Ajuda" [ref=e247] [cursor=pointer]
+          - generic [ref=e248]:
+            - heading "Posts" [level=1] [ref=e249]
+            - link "Adicionar post" [ref=e250] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/post-new.php
+            - generic [ref=e251]:
+              - generic [ref=e252] [cursor=pointer]: ×
+              - generic [ref=e253]:
+                - img "Hostinger Reach logo" [ref=e255]
+                - generic [ref=e256]:
+                  - generic [ref=e257]:
+                    - heading "Connect Hostinger Reach to start Email Marketing" [level=3] [ref=e258]
+                    - paragraph [ref=e259]: Connect your Hostinger Reach account to start sending newsletters and managing subscribers. With Hostinger Reach, it's easy to grow your audience in just one click.
+                  - generic [ref=e260]:
+                    - button "Conectar" [ref=e261] [cursor=pointer]
+                    - link "Learn more" [ref=e262] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-reach
+            - generic [ref=e265]:
+              - button "Dismiss this notice." [ref=e266] [cursor=pointer]:
+                - generic [ref=e267]: Dismiss this notice.
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - heading "Welcome to Hello Biz" [level=6] [ref=e270]
+                  - paragraph [ref=e271]: Access the full suite of features, including website templates, header and footer templates, and extra widgets.
+                  - link "Begin setup" [ref=e272] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hello-biz&start-install=true
+                  - paragraph [ref=e273]: By clicking "Begin setup" I agree to install and activate the Hello+ plugin.
+                - img [ref=e274]
+            - heading "Filtrar lista de posts" [level=2] [ref=e275]
+            - list [ref=e276]:
+              - listitem [ref=e277]:
+                - link "Todos (1)" [ref=e278] [cursor=pointer]:
+                  - /url: edit.php?post_type=post
+                - text: "|"
+              - listitem [ref=e279]:
+                - link "Publicado (1)" [ref=e280] [cursor=pointer]:
+                  - /url: edit.php?post_status=publish&post_type=post
+            - generic [ref=e281]:
+              - paragraph [ref=e282]:
+                - generic [ref=e283]: "Pesquisar posts:"
+                - searchbox "Pesquisar posts:" [ref=e284]
+                - button "Pesquisar posts" [ref=e285] [cursor=pointer]
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Selecionar ação em massa
+                  - combobox "Selecionar ação em massa" [ref=e289] [cursor=pointer]:
+                    - option "Ações em massa" [selected]
+                    - option "Editar"
+                    - option "Mover para lixeira"
+                  - button "Aplicar" [ref=e290] [cursor=pointer]
+                - generic [ref=e291]:
+                  - generic [ref=e292]: Filtrar por data
+                  - combobox "Filtrar por data" [ref=e293] [cursor=pointer]:
+                    - option "Todas as datas" [selected]
+                    - option "fevereiro 2026"
+                  - generic [ref=e294]: Filtrar por categoria
+                  - combobox "Filtrar por categoria" [ref=e295] [cursor=pointer]:
+                    - option "Todas as categorias" [selected]
+                    - option "Uncategorized"
+                  - button "Filtrar" [ref=e296] [cursor=pointer]
+                - generic [ref=e298]: 1 item
+              - heading "Lista de posts" [level=2] [ref=e299]
+              - table "Tabela ordenada por data. Descendente." [ref=e300]:
+                - caption [ref=e301]: Tabela ordenada por data. Descendente.
+                - rowgroup [ref=e302]:
+                  - row "Selecionar todos Título Ordenar ascendente. Autor Categorias Tags Comentários Ordenar ascendente. Data" [ref=e303]:
+                    - cell "Selecionar todos" [ref=e304]:
+                      - checkbox "Selecionar todos" [ref=e305] [cursor=pointer]
+                      - generic [ref=e307]: Selecionar todos
+                    - columnheader "Título Ordenar ascendente." [ref=e308]:
+                      - link "Título Ordenar ascendente." [ref=e309] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?orderby=title&order=asc
+                        - generic [ref=e310]: Título
+                        - generic [ref=e314]: Ordenar ascendente.
+                    - columnheader "Autor" [ref=e315]
+                    - columnheader "Categorias" [ref=e316]
+                    - columnheader "Tags" [ref=e317]
+                    - columnheader "Comentários Ordenar ascendente." [ref=e318]:
+                      - link "Comentários Ordenar ascendente." [ref=e319] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?orderby=comment_count&order=asc
+                        - generic [ref=e322]: Comentários
+                        - generic [ref=e326]: Ordenar ascendente.
+                    - columnheader "Data" [ref=e327]:
+                      - link "Data" [ref=e328] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?orderby=date&order=asc
+                        - generic [ref=e329]: Data
+                - rowgroup [ref=e333]:
+                  - row "Selecionar Hello world! “Hello world!” (Editar) Editar “Hello world!” | Editar diretamente “Hello world!” | Mover “Hello world!” para a lixeira | Ver “Hello world!” passoapassouniformes2025@gmail.com Uncategorized Nenhuma tag 1 comentário Publicado 04/02/2026 às 19:36" [ref=e334]:
+                    - rowheader "Selecionar Hello world!" [ref=e335]:
+                      - checkbox "Selecionar Hello world!" [ref=e336] [cursor=pointer]
+                      - generic [ref=e338]: Selecionar Hello world!
+                    - cell "“Hello world!” (Editar) Editar “Hello world!” | Editar diretamente “Hello world!” | Mover “Hello world!” para a lixeira | Ver “Hello world!”" [ref=e339]:
+                      - strong [ref=e340]:
+                        - link "“Hello world!” (Editar)" [ref=e341] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=1&action=edit
+                          - text: Hello world!
+                      - generic [ref=e342]:
+                        - generic [ref=e343]:
+                          - link "Editar “Hello world!”" [ref=e344] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=1&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e345]:
+                          - button "Editar diretamente “Hello world!”" [ref=e346] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e347]:
+                          - link "Mover “Hello world!” para a lixeira" [ref=e348] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=1&action=trash&_wpnonce=d25b5cc467
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Ver “Hello world!”" [ref=e350] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/hello-world/
+                          - text: Ver
+                    - cell "passoapassouniformes2025@gmail.com" [ref=e351]:
+                      - link "passoapassouniformes2025@gmail.com" [ref=e352] [cursor=pointer]:
+                        - /url: edit.php?post_type=post&author=1
+                    - cell "Uncategorized" [ref=e353]:
+                      - link "Uncategorized" [ref=e354] [cursor=pointer]:
+                        - /url: edit.php?category_name=uncategorized
+                    - cell "Nenhuma tag" [ref=e355]:
+                      - text: —
+                      - generic [ref=e356]: Nenhuma tag
+                    - cell "1 comentário" [ref=e357]:
+                      - link "1 comentário" [ref=e359] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit-comments.php?p=1&comment_status=approved
+                        - generic [ref=e360]: "1"
+                        - generic [ref=e361]: 1 comentário
+                    - cell "Publicado 04/02/2026 às 19:36" [ref=e362]:
+                      - text: Publicado
+                      - text: 04/02/2026 às 19:36
+                - rowgroup [ref=e363]:
+                  - row "Selecionar todos Título Ordenar ascendente. Autor Categorias Tags Comentários Ordenar ascendente. Data" [ref=e364]:
+                    - cell "Selecionar todos" [ref=e365]:
+                      - checkbox "Selecionar todos" [ref=e366] [cursor=pointer]
+                      - generic [ref=e368]: Selecionar todos
+                    - columnheader "Título Ordenar ascendente." [ref=e369]:
+                      - link "Título Ordenar ascendente." [ref=e370] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?orderby=title&order=asc
+                        - generic [ref=e371]: Título
+                        - generic [ref=e375]: Ordenar ascendente.
+                    - columnheader "Autor" [ref=e376]
+                    - columnheader "Categorias" [ref=e377]
+                    - columnheader "Tags" [ref=e378]
+                    - columnheader "Comentários Ordenar ascendente." [ref=e379]:
+                      - link "Comentários Ordenar ascendente." [ref=e380] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?orderby=comment_count&order=asc
+                        - generic [ref=e383]: Comentários
+                        - generic [ref=e387]: Ordenar ascendente.
+                    - columnheader "Data" [ref=e388]:
+                      - link "Data" [ref=e389] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?orderby=date&order=asc
+                        - generic [ref=e390]: Data
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - generic [ref=e396]: Selecionar ação em massa
+                  - combobox "Selecionar ação em massa" [ref=e397] [cursor=pointer]:
+                    - option "Ações em massa" [selected]
+                    - option "Editar"
+                    - option "Mover para lixeira"
+                  - button "Aplicar" [ref=e398] [cursor=pointer]
+                - generic [ref=e400]: 1 item
+    - contentinfo [ref=e401]:
+      - paragraph [ref=e402]:
+        - generic [ref=e403]:
+          - text: Obrigado por criar com
+          - link "WordPress" [ref=e404] [cursor=pointer]:
+            - /url: https://br.wordpress.org/
+          - text: .
+      - paragraph [ref=e405]: Versão 6.9.4
+    - generic [ref=e406]:
+      - generic [ref=e408]:
+        - generic [ref=e409]:
+          - heading "Kodee" [level=4] [ref=e410]
+          - button "Ocultar" [ref=e412] [cursor=pointer]:
+            - img [ref=e413]
+        - generic [ref=e415]:
+          - generic [ref=e416]:
+            - img [ref=e418]
+            - heading "Hey," [level=2] [ref=e420]
+            - heading "How can I help you?" [level=3] [ref=e421]
+          - generic [ref=e422]:
+            - paragraph [ref=e423]: "I’m Kodee – your AI WordPress assistant. I can help you:"
+            - list [ref=e424]:
+              - listitem [ref=e425]:
+                - img [ref=e426]
+                - heading "Create and edit pages or posts" [level=4] [ref=e428]
+              - listitem [ref=e429]:
+                - img [ref=e430]
+                - heading "Manage users and permissions" [level=4] [ref=e432]
+              - listitem [ref=e433]:
+                - img [ref=e434]
+                - heading "Summarize your store or site performance" [level=4] [ref=e436]
+              - listitem [ref=e437]:
+                - img [ref=e438]
+                - heading "Add and manage WooCommerce products" [level=4] [ref=e440]
+          - button "Dê uma chance" [ref=e441] [cursor=pointer]:
+            - generic [ref=e442]: Dê uma chance
+      - generic [ref=e443] [cursor=pointer]:
+        - img [ref=e444]
+        - generic [ref=e446]: Fale com o Kodee
+  - img

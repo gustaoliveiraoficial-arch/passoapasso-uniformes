@@ -1,0 +1,206 @@
+- generic [ref=e9]:
+  - navigation [ref=e10]:
+    - button "person u723199063" [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: person
+      - text: u723199063
+    - button "My files" [ref=e13] [cursor=pointer]:
+      - generic [ref=e14]: folder
+      - text: My files
+    - generic [ref=e15]:
+      - button "New folder" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e21] [cursor=pointer]:
+      - /url: /ea808ec29a0c64aa/files/.trash
+      - generic [ref=e22]: delete
+      - text: Trash bin
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Space
+        - generic [ref=e29]: 0.84%
+        - generic [ref=e30]: 429.84 MiB / 50 GiB
+      - generic [ref=e31]:
+        - generic [ref=e32]: Inodes
+        - generic [ref=e36]: 3.48%
+        - generic [ref=e37]: 20884 / 600000
+    - button "Logout" [ref=e38] [cursor=pointer]:
+      - generic [ref=e39]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e40]:
+      - generic [ref=e41]: File Browser v2.63.2-h2
+      - generic [ref=e42]: Help
+  - main [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link "Home" [ref=e46] [cursor=pointer]:
+          - /url: /ea808ec29a0c64aa/files
+          - generic [ref=e47]: home
+        - generic [ref=e48]:
+          - generic [ref=e50]: keyboard_arrow_right
+          - link "public_html" [ref=e51] [cursor=pointer]:
+            - /url: /ea808ec29a0c64aa/files/public_html/
+        - generic [ref=e52]:
+          - generic [ref=e54]: keyboard_arrow_right
+          - link "tabeladeprecos" [ref=e55] [cursor=pointer]:
+            - /url: /ea808ec29a0c64aa/files/public_html/tabeladeprecos/
+        - generic [ref=e56]:
+          - generic [ref=e58]: keyboard_arrow_right
+          - link "assets" [ref=e59] [cursor=pointer]:
+            - /url: /ea808ec29a0c64aa/files/public_html/tabeladeprecos/assets/
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - button "Toggle sidebar" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: menu
+          - button "Search" [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: more_vert
+        - generic [ref=e206]:
+          - generic [ref=e209] [cursor=pointer]:
+            - button "Sort by name" [ref=e210]:
+              - text: Name
+              - generic [ref=e211]: arrow_upward
+            - button "Sort by last modified" [ref=e212]:
+              - text: Last modified
+              - generic [ref=e213]: arrow_upward
+          - generic [ref=e214]:
+            - button "html2pdf-3rVsTMDg.js" [ref=e215] [cursor=pointer]:
+              - generic [ref=e217]: code
+              - generic [ref=e218]:
+                - paragraph [ref=e219]: html2pdf-3rVsTMDg.js
+                - paragraph [ref=e220]:
+                  - time [ref=e221]: a few seconds ago
+            - button "html2pdf-DATUaIoa.js" [ref=e222] [cursor=pointer]:
+              - generic [ref=e224]: code
+              - generic [ref=e225]:
+                - paragraph [ref=e226]: html2pdf-DATUaIoa.js
+                - paragraph [ref=e227]:
+                  - time [ref=e228]: 8 hours ago
+            - button "html2pdf-fNQ16Ae6.js" [ref=e229] [cursor=pointer]:
+              - generic [ref=e231]: code
+              - generic [ref=e232]:
+                - paragraph [ref=e233]: html2pdf-fNQ16Ae6.js
+                - paragraph [ref=e234]:
+                  - time [ref=e235]: 8 hours ago
+            - button "html2pdf-ZKhDaCG0.js" [ref=e236] [cursor=pointer]:
+              - generic [ref=e238]: code
+              - generic [ref=e239]:
+                - paragraph [ref=e240]: html2pdf-ZKhDaCG0.js
+                - paragraph [ref=e241]:
+                  - time [ref=e242]: 8 hours ago
+            - button "index-2p5BgaL8.css" [ref=e243] [cursor=pointer]:
+              - generic [ref=e245]: code
+              - generic [ref=e246]:
+                - paragraph [ref=e247]: index-2p5BgaL8.css
+                - paragraph [ref=e248]:
+                  - time [ref=e249]: 9 hours ago
+            - button "index-B1Yx_f7f.js" [ref=e250] [cursor=pointer]:
+              - generic [ref=e252]: code
+              - generic [ref=e253]:
+                - paragraph [ref=e254]: index-B1Yx_f7f.js
+                - paragraph [ref=e255]:
+                  - time [ref=e256]: 8 hours ago
+            - button "index-Bb2cTMXP.css" [ref=e257] [cursor=pointer]:
+              - generic [ref=e259]: code
+              - generic [ref=e260]:
+                - paragraph [ref=e261]: index-Bb2cTMXP.css
+                - paragraph [ref=e262]:
+                  - time [ref=e263]: a few seconds ago
+            - button "index-Bg730Pd4.js" [ref=e264] [cursor=pointer]:
+              - generic [ref=e266]: code
+              - generic [ref=e267]:
+                - paragraph [ref=e268]: index-Bg730Pd4.js
+                - paragraph [ref=e269]:
+                  - time [ref=e270]: 2 days ago
+            - button "index-BSxlyIAh.js" [ref=e271] [cursor=pointer]:
+              - generic [ref=e273]: code
+              - generic [ref=e274]:
+                - paragraph [ref=e275]: index-BSxlyIAh.js
+                - paragraph [ref=e276]:
+                  - time [ref=e277]: a few seconds ago
+            - button "index-BwfSGrDz.js" [ref=e278] [cursor=pointer]:
+              - generic [ref=e280]: code
+              - generic [ref=e281]:
+                - paragraph [ref=e282]: index-BwfSGrDz.js
+                - paragraph [ref=e283]:
+                  - time [ref=e284]: 9 hours ago
+            - button "index-BYZ7XcIk.js" [ref=e285] [cursor=pointer]:
+              - generic [ref=e287]: code
+              - generic [ref=e288]:
+                - paragraph [ref=e289]: index-BYZ7XcIk.js
+                - paragraph [ref=e290]:
+                  - time [ref=e291]: 2 days ago
+            - button "index-C2D8slNP.css" [ref=e292] [cursor=pointer]:
+              - generic [ref=e294]: code
+              - generic [ref=e295]:
+                - paragraph [ref=e296]: index-C2D8slNP.css
+                - paragraph [ref=e297]:
+                  - time [ref=e298]: 2 days ago
+            - button "index-CKrLuV7B.js" [ref=e299] [cursor=pointer]:
+              - generic [ref=e301]: code
+              - generic [ref=e302]:
+                - paragraph [ref=e303]: index-CKrLuV7B.js
+                - paragraph [ref=e304]:
+                  - time [ref=e305]: 2 days ago
+            - button "index-CLA0FII5.js" [ref=e306] [cursor=pointer]:
+              - generic [ref=e308]: code
+              - generic [ref=e309]:
+                - paragraph [ref=e310]: index-CLA0FII5.js
+                - paragraph [ref=e311]:
+                  - time [ref=e312]: 2 days ago
+            - button "index-CnfIt-3G.js" [ref=e313] [cursor=pointer]:
+              - generic [ref=e315]: code
+              - generic [ref=e316]:
+                - paragraph [ref=e317]: index-CnfIt-3G.js
+                - paragraph [ref=e318]:
+                  - time [ref=e319]: 2 days ago
+            - button "index-Cq_-3uqL.js" [ref=e320] [cursor=pointer]:
+              - generic [ref=e322]: code
+              - generic [ref=e323]:
+                - paragraph [ref=e324]: index-Cq_-3uqL.js
+                - paragraph [ref=e325]:
+                  - time [ref=e326]: 9 hours ago
+            - button "index-CxegDcNC.js" [ref=e327] [cursor=pointer]:
+              - generic [ref=e329]: code
+              - generic [ref=e330]:
+                - paragraph [ref=e331]: index-CxegDcNC.js
+                - paragraph [ref=e332]:
+                  - time [ref=e333]: 8 hours ago
+            - button "index-DxE00izU.js" [ref=e334] [cursor=pointer]:
+              - generic [ref=e336]: code
+              - generic [ref=e337]:
+                - paragraph [ref=e338]: index-DxE00izU.js
+                - paragraph [ref=e339]:
+                  - time [ref=e340]: 8 hours ago
+            - button "index-hER9ztqX.css" [ref=e341] [cursor=pointer]:
+              - generic [ref=e343]: code
+              - generic [ref=e344]:
+                - paragraph [ref=e345]: index-hER9ztqX.css
+                - paragraph [ref=e346]:
+                  - time [ref=e347]: 9 hours ago
+          - generic [ref=e348]:
+            - paragraph [ref=e349]: Multiple selection enabled
+            - button "Clear" [ref=e350] [cursor=pointer]:
+              - generic [ref=e351]: clear

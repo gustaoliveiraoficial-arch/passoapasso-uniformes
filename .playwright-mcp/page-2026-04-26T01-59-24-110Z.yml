@@ -1,0 +1,78 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Barra de ferramentas":
+      - menu:
+        - group [ref=e3]:
+          - menuitem "Sobre o WordPress" [ref=e4] [cursor=pointer]:
+            - generic [ref=e6]: Sobre o WordPress
+        - group [ref=e7]:
+          - menuitem "Passo a Passo Uniformes" [ref=e8] [cursor=pointer]
+        - group [ref=e9]:
+          - menuitem "Personalizar" [ref=e10] [cursor=pointer]
+        - group [ref=e11]:
+          - menuitem "7 atualizações disponíveis" [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: "7"
+            - generic [ref=e15]: 7 atualizações disponíveis
+        - group [ref=e16]:
+          - menuitem "0 comentário esperando moderação" [ref=e17] [cursor=pointer]:
+            - generic [ref=e19]: "0"
+            - generic [ref=e20]: 0 comentário esperando moderação
+        - group [ref=e21]:
+          - menuitem "Novo" [ref=e22] [cursor=pointer]:
+            - generic [ref=e24]: Novo
+        - group [ref=e25]:
+          - menuitem "Editar página" [ref=e26] [cursor=pointer]
+        - text:  
+      - menu [ref=e27]:
+        - group [ref=e28]:
+          - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e29] [cursor=pointer]
+  - link "Skip to content" [ref=e30] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e31]:
+    - generic [ref=e32]:
+      - link "Passo a Passo Uniformes" [ref=e34] [cursor=pointer]:
+        - /url: https://passoapassouniformes.com/
+      - paragraph [ref=e35]: Uniformes Escolares Premium desde 1998
+  - main [ref=e36]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - heading "Kit PV Premium - 10 Pecas" [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - strong [ref=e43]: "10"
+            - text: pecas
+          - generic [ref=e44]: "Prazo: 30-40 dias uteis"
+          - generic [ref=e45]: 1 estampa inclusa
+      - generic [ref=e46]:
+        - generic [ref=e47]: 1. Dados
+        - generic [ref=e48]: 2. Cor
+        - generic [ref=e49]: 3. Tamanhos
+        - generic [ref=e50]: 4. Estampas
+        - generic [ref=e51]: 5. Revisao
+      - generic [ref=e163]:
+        - generic [ref=e164]: Estampas e Artes
+        - generic [ref=e165]: Informe as estampas e o link das artes.
+        - generic [ref=e166]:
+          - strong [ref=e167]: 1 estampa inclusa
+          - text: ": serigrafia ou DTF, ate 10 cm, ate 2 cores. Adicionais tem custo extra e"
+          - strong [ref=e168]: precisam ser confirmadas com o vendedor quanto a viabilidade
+          - text: .
+        - generic [ref=e169]:
+          - generic [ref=e170]: Quantidade de estampas *
+          - generic [ref=e171]:
+            - button "–" [ref=e172] [cursor=pointer]
+            - generic [ref=e173]: "1"
+            - button "+" [ref=e174] [cursor=pointer]
+            - generic [ref=e175]: (inclusa no kit)
+        - generic [ref=e176]:
+          - generic [ref=e177]: Link das artes (Google Drive, WeTransfer etc.) *
+          - textbox "https://drive.google.com/..." [ref=e178]
+          - generic [ref=e179]: Certifique-se de que o link esta acessivel para compartilhamento.
+        - generic [ref=e180]:
+          - generic [ref=e181]: Observacoes sobre as estampas (opcional)
+          - 'textbox "Ex: Logo na frente centralizado, numero no dorso..." [ref=e182]'
+        - generic [ref=e183]:
+          - button "Voltar" [ref=e184] [cursor=pointer]
+          - button "Proximo" [ref=e185] [cursor=pointer]
+  - contentinfo [ref=e68]
+  - status [ref=e69]

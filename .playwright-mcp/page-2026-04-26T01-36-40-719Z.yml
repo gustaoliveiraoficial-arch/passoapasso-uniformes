@@ -1,0 +1,37 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic:
+      - generic [ref=e4]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e5]:
+              - menuitem "Menu" [ref=e6] [cursor=pointer]:
+                - generic [ref=e7]: 
+                - generic [ref=e8]: Menu
+            - group [ref=e9]:
+              - menuitem "Sobre o WordPress" [ref=e10] [cursor=pointer]:
+                - generic [ref=e12]: Sobre o WordPress
+            - group [ref=e13]:
+              - menuitem "Passo a Passo Uniformes" [ref=e14] [cursor=pointer]
+            - group [ref=e15]:
+              - menuitem "7 atualizações disponíveis" [ref=e16] [cursor=pointer]:
+                - generic [ref=e18]: "7"
+                - generic [ref=e19]: 7 atualizações disponíveis
+            - group [ref=e20]:
+              - menuitem "0 comentário esperando moderação" [ref=e21] [cursor=pointer]:
+                - generic [ref=e23]: "0"
+                - generic [ref=e24]: 0 comentário esperando moderação
+            - group [ref=e25]:
+              - menuitem "Novo" [ref=e26] [cursor=pointer]:
+                - generic [ref=e28]: Novo
+            - text: 
+          - menu [ref=e29]:
+            - group [ref=e30]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e31] [cursor=pointer]
+      - main:
+        - heading "Adicionar página" [level=1] [ref=e32]
+  - img

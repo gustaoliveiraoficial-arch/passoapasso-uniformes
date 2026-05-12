@@ -1,0 +1,1474 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e10]:
+          - button "Conversas" [pressed] [ref=e13] [cursor=pointer]:
+            - generic [ref=e15]:
+              - generic [ref=e17]:
+                - img
+              - generic "36 mensagens não lidas" [ref=e19]:
+                - generic [ref=e20]: "36"
+          - button "Atualizações no status" [ref=e23] [cursor=pointer]:
+            - generic [ref=e27]:
+              - img
+          - button "Canais" [ref=e32] [cursor=pointer]:
+            - generic [ref=e36]:
+              - img
+          - button "Comunidades" [ref=e39] [cursor=pointer]:
+            - generic [ref=e43]:
+              - img
+          - separator [ref=e44]
+          - button "Ferramentas" [ref=e47] [cursor=pointer]:
+            - generic [ref=e51]:
+              - img
+          - button "Anunciar" [ref=e54] [cursor=pointer]:
+            - generic [ref=e58]:
+              - img
+        - generic [ref=e60]:
+          - button "Mídia" [ref=e63] [cursor=pointer]:
+            - generic [ref=e67]:
+              - img
+          - button "Configurações" [ref=e70] [cursor=pointer]:
+            - generic [ref=e74]:
+              - img
+          - button "Perfil" [ref=e77] [cursor=pointer]:
+            - img [ref=e82]
+    - generic [ref=e83]:
+      - banner [ref=e84]:
+        - banner [ref=e85]:
+          - generic [ref=e86]:
+            - heading "WhatsApp" [level=2] [ref=e88]:
+              - generic "WhatsApp" [ref=e92]:
+                - img "wa-wordmark-refreshed"
+            - generic [ref=e94]:
+              - button "Nova conversa" [ref=e97] [cursor=pointer]:
+                - generic [ref=e101]:
+                  - img
+              - button "Mais opções" [ref=e104] [cursor=pointer]:
+                - generic [ref=e108]:
+                  - img
+      - generic [ref=e109]:
+        - generic [ref=e116]:
+          - generic [ref=e118]:
+            - img
+          - textbox "Pesquisar ou começar uma nova conversa" [ref=e120]
+        - tablist "chat-list-filters" [ref=e121]:
+          - tab "Tudo" [ref=e123] [cursor=pointer]:
+            - generic [ref=e129]: Tudo
+          - tab "Não lidas" [ref=e131] [cursor=pointer]:
+            - generic [ref=e137]: Não lidas
+          - tab "Favoritas" [ref=e139] [cursor=pointer]:
+            - generic [ref=e145]: Favoritas
+          - tab "Grupos" [ref=e147] [cursor=pointer]:
+            - generic [ref=e153]: Grupos
+          - tab [ref=e156] [cursor=pointer]:
+            - generic [ref=e160]:
+              - img
+        - generic [ref=e1893]:
+          - button "Fechar" [ref=e1896] [cursor=pointer]:
+            - generic [ref=e1900]:
+              - img
+          - generic [ref=e1901]:
+            - generic [ref=e1902]:
+              - img
+            - generic [ref=e1905]:
+              - text: As notificações de mensagens estão desativadas.
+              - button "Ativar" [ref=e1906] [cursor=pointer]
+        - grid "Lista de conversas" [ref=e164]:
+          - row "Marcia Bordado 11:08 Muito obrigado Conversa fixada" [ref=e165]:
+            - gridcell "Marcia Bordado 11:08 Muito obrigado Conversa fixada" [ref=e166]:
+              - generic [ref=e168] [cursor=pointer]:
+                - img [ref=e173]
+                - generic [ref=e174]:
+                  - gridcell "Marcia Bordado 11:08" [ref=e175]:
+                    - generic [ref=e177]:
+                      - generic "Marcia Bordado" [ref=e179]
+                      - generic [ref=e183]:
+                        - img
+                    - generic [ref=e185]: 11:08
+                  - generic [ref=e186]:
+                    - generic "‪Muito obrigado‬" [ref=e188]:
+                      - generic [ref=e190]:
+                        - img
+                      - generic [ref=e191]: Muito obrigado
+                    - gridcell "Conversa fixada" [ref=e192]:
+                      - generic "Conversa fixada" [ref=e194]:
+                        - generic [ref=e195]:
+                          - img
+          - 'row "FRASES 09:46 Você : +555196128475 Conversa fixada" [ref=e196]':
+            - 'gridcell "FRASES 09:46 Você : +555196128475 Conversa fixada" [ref=e197]':
+              - generic [ref=e199] [cursor=pointer]:
+                - generic [ref=e205]:
+                  - img
+                - generic [ref=e206]:
+                  - gridcell "FRASES 09:46" [ref=e207]:
+                    - generic [ref=e209]:
+                      - generic "FRASES" [ref=e210]
+                      - generic [ref=e214]:
+                        - img
+                    - generic [ref=e216]: 09:46
+                  - generic [ref=e217]:
+                    - generic "‪+555196128475‬" [ref=e219]:
+                      - generic [ref=e221]:
+                        - img
+                      - generic [ref=e224]: Você
+                      - generic [ref=e225]: ":"
+                      - generic [ref=e226]: "+555196128475"
+                    - gridcell "Conversa fixada" [ref=e227]:
+                      - generic "Conversa fixada" [ref=e229]:
+                        - generic [ref=e230]:
+                          - img
+          - 'row "Ingridy segunda-feira Reagiu com ❤️ a: \" Tudo certinho\" Conversa fixada" [ref=e231]':
+            - 'gridcell "Ingridy segunda-feira Reagiu com ❤️ a: \" Tudo certinho\" Conversa fixada" [ref=e232]':
+              - generic [ref=e234] [cursor=pointer]:
+                - img [ref=e239]
+                - generic [ref=e240]:
+                  - gridcell "Ingridy segunda-feira" [ref=e241]:
+                    - generic [ref=e243]:
+                      - generic "Ingridy" [ref=e245]
+                      - generic [ref=e249]:
+                        - img
+                    - generic [ref=e251]: segunda-feira
+                  - generic [ref=e252]:
+                    - generic "‪Tudo certinho‬" [ref=e254]:
+                      - generic [ref=e255]:
+                        - text: Reagiu com
+                        - img "❤️" [ref=e256]
+                        - text: "a:"
+                      - text: "\""
+                      - generic [ref=e258]: Tudo certinho"
+                    - gridcell "Conversa fixada" [ref=e259]:
+                      - generic "Conversa fixada" [ref=e261]:
+                        - generic [ref=e262]:
+                          - img
+          - row "+55 51 9240-3553 11:28 O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e1907]:
+            - gridcell "+55 51 9240-3553 11:28 O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e1908]:
+              - generic [ref=e1910] [cursor=pointer]:
+                - img [ref=e1915]
+                - generic [ref=e1916]:
+                  - gridcell "+55 51 9240-3553 11:28" [ref=e1917]:
+                    - generic [ref=e1919]:
+                      - generic "+55 51 9240-3553" [ref=e1921]
+                      - generic [ref=e1925]:
+                        - img
+                    - generic [ref=e1927]: 11:28
+                  - generic [ref=e1928]:
+                    - generic "‪O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥‬" [ref=e1930]:
+                      - generic [ref=e1932]:
+                        - img
+                      - generic [ref=e1933]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e1934]
+                    - gridcell
+          - 'row "+55 81 9820-8576 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e263]':
+            - 'gridcell "+55 81 9820-8576 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e264]':
+              - generic [ref=e266] [cursor=pointer]:
+                - img [ref=e271]
+                - generic [ref=e272]:
+                  - gridcell "+55 81 9820-8576 quarta-feira" [ref=e273]:
+                    - generic "+55 81 9820-8576" [ref=e277]
+                    - generic [ref=e279]: quarta-feira
+                  - generic [ref=e280]:
+                    - generic [ref=e282]:
+                      - generic [ref=e283]: "Rascunho:"
+                      - generic [ref=e284]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e285]
+                    - gridcell
+          - 'row "+55 51 8183-6034 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e286]':
+            - 'gridcell "+55 51 8183-6034 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e287]':
+              - generic [ref=e289] [cursor=pointer]:
+                - img [ref=e294]
+                - generic [ref=e295]:
+                  - gridcell "+55 51 8183-6034 Ontem" [ref=e296]:
+                    - generic "+55 51 8183-6034" [ref=e300]
+                    - generic [ref=e302]: Ontem
+                  - generic [ref=e303]:
+                    - generic [ref=e305]:
+                      - generic [ref=e306]: "Rascunho:"
+                      - generic [ref=e307]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e308]
+                    - gridcell
+          - 'row "+55 51 8273-0878 30/04/2026 Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e1935]':
+            - 'gridcell "+55 51 8273-0878 30/04/2026 Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e1936]':
+              - generic [ref=e312] [cursor=pointer]:
+                - img [ref=e317]
+                - generic [ref=e318]:
+                  - gridcell "+55 51 8273-0878 30/04/2026" [ref=e1937]:
+                    - generic "+55 51 8273-0878" [ref=e323]
+                    - generic [ref=e1939]: 30/04/2026
+                  - generic [ref=e324]:
+                    - generic [ref=e1940]:
+                      - generic [ref=e1941]: "Rascunho:"
+                      - generic [ref=e1942]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e1943]
+                    - gridcell
+          - 'row "+55 51 9115-5598 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e326]':
+            - 'gridcell "+55 51 9115-5598 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e327]':
+              - generic [ref=e329] [cursor=pointer]:
+                - img [ref=e334]
+                - generic [ref=e335]:
+                  - gridcell "+55 51 9115-5598 quarta-feira" [ref=e336]:
+                    - generic "+55 51 9115-5598" [ref=e340]
+                    - generic [ref=e342]: quarta-feira
+                  - generic [ref=e343]:
+                    - generic [ref=e345]:
+                      - generic [ref=e346]: "Rascunho:"
+                      - generic [ref=e347]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e348]
+                    - gridcell
+          - 'row "+55 51 8905-7242 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e349]':
+            - 'gridcell "+55 51 8905-7242 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e350]':
+              - generic [ref=e352] [cursor=pointer]:
+                - img [ref=e357]
+                - generic [ref=e358]:
+                  - gridcell "+55 51 8905-7242 quarta-feira" [ref=e359]:
+                    - generic "+55 51 8905-7242" [ref=e363]
+                    - generic [ref=e365]: quarta-feira
+                  - generic [ref=e366]:
+                    - generic [ref=e368]:
+                      - generic [ref=e369]: "Rascunho:"
+                      - generic [ref=e370]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e371]
+                    - gridcell
+          - 'row "+55 51 8015-3169 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e372]':
+            - 'gridcell "+55 51 8015-3169 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e373]':
+              - generic [ref=e375] [cursor=pointer]:
+                - img [ref=e380]
+                - generic [ref=e381]:
+                  - gridcell "+55 51 8015-3169 Ontem" [ref=e382]:
+                    - generic "+55 51 8015-3169" [ref=e386]
+                    - generic [ref=e388]: Ontem
+                  - generic [ref=e389]:
+                    - generic [ref=e391]:
+                      - generic [ref=e392]: "Rascunho:"
+                      - generic [ref=e393]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e394]
+                    - gridcell
+          - row "+55 51 9556-9136 11:25 Já vamos fazer o layout aqui" [ref=e395]:
+            - gridcell "+55 51 9556-9136 11:25 Já vamos fazer o layout aqui" [ref=e396]:
+              - generic [ref=e398] [cursor=pointer]:
+                - img [ref=e403]
+                - generic [ref=e404]:
+                  - gridcell "+55 51 9556-9136 11:25" [ref=e405]:
+                    - generic "+55 51 9556-9136" [ref=e409]
+                    - generic [ref=e411]: 11:25
+                  - generic [ref=e412]:
+                    - generic "‪Já vamos fazer o layout aqui‬" [ref=e414]:
+                      - generic [ref=e416]:
+                        - img
+                      - generic [ref=e417]: Já vamos fazer o layout aqui
+                    - gridcell
+          - 'row "+55 51 9577-0535 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e418]':
+            - 'gridcell "+55 51 9577-0535 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e419]':
+              - generic [ref=e421] [cursor=pointer]:
+                - img [ref=e426]
+                - generic [ref=e427]:
+                  - gridcell "+55 51 9577-0535 Ontem" [ref=e428]:
+                    - generic "+55 51 9577-0535" [ref=e432]
+                    - generic [ref=e434]: Ontem
+                  - generic [ref=e435]:
+                    - generic [ref=e437]:
+                      - generic [ref=e438]: "Rascunho:"
+                      - generic [ref=e439]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e440]
+                    - gridcell
+          - 'row "+55 51 9599-9084 11:25 Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e1944]':
+            - 'gridcell "+55 51 9599-9084 11:25 Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e1945]':
+              - generic [ref=e1947] [cursor=pointer]:
+                - generic [ref=e1953]:
+                  - img
+                - generic [ref=e1954]:
+                  - gridcell "+55 51 9599-9084 11:25" [ref=e1955]:
+                    - generic [ref=e1957]:
+                      - generic "+55 51 9599-9084" [ref=e1959]
+                      - generic [ref=e1963]:
+                        - img
+                    - generic [ref=e1965]: 11:25
+                  - generic [ref=e1966]:
+                    - generic [ref=e1968]:
+                      - generic [ref=e1969]: "Rascunho:"
+                      - generic [ref=e1970]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e1971]
+                    - gridcell
+          - 'row "+55 51 9156-2482 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e441]':
+            - 'gridcell "+55 51 9156-2482 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e442]':
+              - generic [ref=e444] [cursor=pointer]:
+                - generic [ref=e450]:
+                  - img
+                - generic [ref=e451]:
+                  - gridcell "+55 51 9156-2482 quarta-feira" [ref=e452]:
+                    - generic [ref=e454]:
+                      - generic "+55 51 9156-2482" [ref=e456]
+                      - generic [ref=e460]:
+                        - img
+                    - generic [ref=e462]: quarta-feira
+                  - generic [ref=e463]:
+                    - generic [ref=e465]:
+                      - generic [ref=e466]: "Rascunho:"
+                      - generic [ref=e467]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e468]
+                    - gridcell
+          - 'row "+55 51 9828-3538 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e469]':
+            - 'gridcell "+55 51 9828-3538 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e470]':
+              - generic [ref=e472] [cursor=pointer]:
+                - img [ref=e477]
+                - generic [ref=e478]:
+                  - gridcell "+55 51 9828-3538 quarta-feira" [ref=e479]:
+                    - generic [ref=e481]:
+                      - generic "+55 51 9828-3538" [ref=e483]
+                      - generic [ref=e487]:
+                        - img
+                    - generic [ref=e489]: quarta-feira
+                  - generic [ref=e490]:
+                    - generic [ref=e492]:
+                      - generic [ref=e493]: "Rascunho:"
+                      - generic [ref=e494]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e495]
+                    - gridcell
+          - 'row "7 mensagens não lidas Compras passo a passo Atacadao 11:24 Marcia : @Jessica Particular Conversa silenciada" [ref=e496]':
+            - 'gridcell "7 mensagens não lidas Compras passo a passo Atacadao 11:24 Marcia : @Jessica Particular Conversa silenciada" [ref=e497]':
+              - generic [ref=e499] [cursor=pointer]:
+                - generic [ref=e505]:
+                  - img
+                - generic [ref=e506]:
+                  - gridcell "7 mensagens não lidas Compras passo a passo Atacadao 11:24" [ref=e507]:
+                    - generic [ref=e508]:
+                      - generic [ref=e509]: 7 mensagens não lidas
+                      - generic "Compras passo a passo Atacadao" [ref=e510]
+                    - generic [ref=e512]: 11:24
+                  - generic [ref=e513]:
+                    - generic "‪@Jessica Particular‬" [ref=e515]:
+                      - generic [ref=e518]: Marcia
+                      - generic [ref=e519]: ":"
+                      - generic [ref=e520]: "@Jessica Particular"
+                    - gridcell "Conversa silenciada" [ref=e521]:
+                      - generic [ref=e522]:
+                        - generic "Conversa silenciada" [ref=e523]:
+                          - generic [ref=e524]:
+                            - img
+                        - generic [ref=e527]: "7"
+          - 'row "+55 51 9533-2641 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e528]':
+            - 'gridcell "+55 51 9533-2641 Ontem Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e529]':
+              - generic [ref=e531] [cursor=pointer]:
+                - img [ref=e536]
+                - generic [ref=e537]:
+                  - gridcell "+55 51 9533-2641 Ontem" [ref=e538]:
+                    - generic "+55 51 9533-2641" [ref=e542]
+                    - generic [ref=e544]: Ontem
+                  - generic [ref=e545]:
+                    - generic [ref=e547]:
+                      - generic [ref=e548]: "Rascunho:"
+                      - generic [ref=e549]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e550]
+                    - gridcell
+          - row "+55 51 9454-6097 11:24 Sai de futbol kkk" [ref=e551]:
+            - gridcell "+55 51 9454-6097 11:24 Sai de futbol kkk" [ref=e552]:
+              - generic [ref=e554] [cursor=pointer]:
+                - img [ref=e559]
+                - generic [ref=e560]:
+                  - gridcell "+55 51 9454-6097 11:24" [ref=e561]:
+                    - generic "+55 51 9454-6097" [ref=e565]
+                    - generic [ref=e567]: 11:24
+                  - generic [ref=e568]:
+                    - generic "‪Sai de futbol kkk‬" [ref=e570]:
+                      - generic [ref=e571]: Sai de futbol kkk
+                    - gridcell
+          - 'row "+55 51 8946-5768 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e572]':
+            - 'gridcell "+55 51 8946-5768 quarta-feira Rascunho: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e573]':
+              - generic [ref=e575] [cursor=pointer]:
+                - img [ref=e580]
+                - generic [ref=e581]:
+                  - gridcell "+55 51 8946-5768 quarta-feira" [ref=e582]:
+                    - generic "+55 51 8946-5768" [ref=e586]
+                    - generic [ref=e588]: quarta-feira
+                  - generic [ref=e589]:
+                    - generic [ref=e591]:
+                      - generic [ref=e592]: "Rascunho:"
+                      - generic [ref=e593]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e594]
+                    - gridcell
+          - row "+55 51 9995-8583 11:23 Mto obriagda" [ref=e595]:
+            - gridcell "+55 51 9995-8583 11:23 Mto obriagda" [ref=e596]:
+              - generic [ref=e598] [cursor=pointer]:
+                - img [ref=e603]
+                - generic [ref=e604]:
+                  - gridcell "+55 51 9995-8583 11:23" [ref=e605]:
+                    - generic [ref=e607]:
+                      - generic "+55 51 9995-8583" [ref=e609]
+                      - generic [ref=e613]:
+                        - img
+                    - generic [ref=e615]: 11:23
+                  - generic [ref=e616]:
+                    - generic "‪Mto obriagda‬" [ref=e618]:
+                      - generic [ref=e619]: Mto obriagda
+                    - gridcell
+          - row "+55 51 9612-8405 11:22 O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e620]:
+            - gridcell "+55 51 9612-8405 11:22 O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e621]:
+              - generic [ref=e623] [cursor=pointer]:
+                - img [ref=e628]
+                - generic [ref=e629]:
+                  - gridcell "+55 51 9612-8405 11:22" [ref=e630]:
+                    - generic [ref=e632]:
+                      - generic "+55 51 9612-8405" [ref=e634]
+                      - generic [ref=e638]:
+                        - img
+                    - generic [ref=e640]: 11:22
+                  - generic [ref=e641]:
+                    - generic "‪O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥‬" [ref=e643]:
+                      - generic [ref=e645]:
+                        - img
+                      - generic [ref=e646]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e647]
+                    - gridcell
+          - row "+55 51 9748-8239 11:21 Bom diaa! tudo bem?" [ref=e648]:
+            - gridcell "+55 51 9748-8239 11:21 Bom diaa! tudo bem?" [ref=e649]:
+              - generic [ref=e651] [cursor=pointer]:
+                - img [ref=e656]
+                - generic [ref=e657]:
+                  - gridcell "+55 51 9748-8239 11:21" [ref=e658]:
+                    - generic "+55 51 9748-8239" [ref=e662]
+                    - generic [ref=e664]: 11:21
+                  - generic [ref=e665]:
+                    - generic "‪Bom diaa! tudo bem?‬" [ref=e667]:
+                      - generic [ref=e669]:
+                        - img
+                      - generic [ref=e670]: Bom diaa! tudo bem?
+                    - gridcell
+          - row "Simone - Araújo Despachante 11:20 O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e671]:
+            - gridcell "Simone - Araújo Despachante 11:20 O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥" [ref=e672]:
+              - generic [ref=e674] [cursor=pointer]:
+                - img [ref=e679]
+                - generic [ref=e680]:
+                  - gridcell "Simone - Araújo Despachante 11:20" [ref=e681]:
+                    - generic "Simone - Araújo Despachante" [ref=e685]
+                    - generic [ref=e687]: 11:20
+                  - generic [ref=e688]:
+                    - generic "‪O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥‬" [ref=e690]:
+                      - generic [ref=e692]:
+                        - img
+                      - generic [ref=e693]:
+                        - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                        - img "🧥" [ref=e694]
+                    - gridcell
+          - 'row "Expedição Passo a Passo 11:17 ~Produção Passo A Passo 🧡 : @Financeiro Passo A Passo Fernanda pedron (4162) 1 volume" [ref=e695]':
+            - 'gridcell "Expedição Passo a Passo 11:17 ~Produção Passo A Passo 🧡 : @Financeiro Passo A Passo Fernanda pedron (4162) 1 volume" [ref=e696]':
+              - generic [ref=e698] [cursor=pointer]:
+                - img [ref=e703]
+                - generic [ref=e704]:
+                  - gridcell "Expedição Passo a Passo 11:17" [ref=e705]:
+                    - generic "Expedição Passo a Passo" [ref=e707]
+                    - generic [ref=e709]: 11:17
+                  - generic [ref=e710]:
+                    - generic "‪@Financeiro Passo A Passo Fernanda pedron (4162) 1 volume‬" [ref=e712]:
+                      - generic [ref=e715]:
+                        - text: ~Produção Passo A Passo
+                        - img "🧡" [ref=e716]
+                      - generic [ref=e717]: ":"
+                      - generic [ref=e718]: "@Financeiro Passo A Passo Fernanda pedron (4162) 1 volume"
+                    - gridcell
+          - row "+55 51 9277-5707 11:14 Disponha, pode me passar um feedback do nosso atendimento por favor?" [ref=e719]:
+            - gridcell "+55 51 9277-5707 11:14 Disponha, pode me passar um feedback do nosso atendimento por favor?" [ref=e720]:
+              - generic [ref=e722] [cursor=pointer]:
+                - generic [ref=e728]:
+                  - img
+                - generic [ref=e729]:
+                  - gridcell "+55 51 9277-5707 11:14" [ref=e730]:
+                    - generic "+55 51 9277-5707" [ref=e734]
+                    - generic [ref=e736]: 11:14
+                  - generic [ref=e737]:
+                    - generic "‪Disponha, pode me passar um feedback do nosso atendimento por favor?‬" [ref=e739]:
+                      - generic [ref=e741]:
+                        - img
+                      - generic [ref=e742]: Disponha, pode me passar um feedback do nosso atendimento por favor?
+                    - gridcell
+          - row "+55 51 9967-7442 11:08 perfeito, minimo para produção é de 10 peças, conseguimos fechar?" [ref=e743]:
+            - gridcell "+55 51 9967-7442 11:08 perfeito, minimo para produção é de 10 peças, conseguimos fechar?" [ref=e744]:
+              - generic [ref=e746] [cursor=pointer]:
+                - img [ref=e751]
+                - generic [ref=e752]:
+                  - gridcell "+55 51 9967-7442 11:08" [ref=e753]:
+                    - generic "+55 51 9967-7442" [ref=e757]
+                    - generic [ref=e759]: 11:08
+                  - generic [ref=e760]:
+                    - generic "‪perfeito, minimo para produção é de 10 peças, conseguimos fechar?‬" [ref=e762]:
+                      - generic [ref=e764]:
+                        - img
+                      - generic [ref=e765]: perfeito, minimo para produção é de 10 peças, conseguimos fechar?
+                    - gridcell
+          - row "+55 51 9685-6468 11:06 tudo certinho com o orçamento?" [ref=e766]:
+            - gridcell "+55 51 9685-6468 11:06 tudo certinho com o orçamento?" [ref=e767]:
+              - generic [ref=e769] [cursor=pointer]:
+                - img [ref=e774]
+                - generic [ref=e775]:
+                  - gridcell "+55 51 9685-6468 11:06" [ref=e776]:
+                    - generic "+55 51 9685-6468" [ref=e780]
+                    - generic [ref=e782]: 11:06
+                  - generic [ref=e783]:
+                    - generic "‪tudo certinho com o orçamento?‬" [ref=e785]:
+                      - generic [ref=e787]:
+                        - img
+                      - generic [ref=e788]: tudo certinho com o orçamento?
+                    - gridcell
+          - row "Não lida +55 51 9823-0229 11:05 Olá, bom dia! Segue os dados da empresa" [ref=e789]:
+            - gridcell "Não lida +55 51 9823-0229 11:05 Olá, bom dia! Segue os dados da empresa" [ref=e790]:
+              - generic [ref=e792] [cursor=pointer]:
+                - generic [ref=e798]:
+                  - img
+                - generic [ref=e799]:
+                  - gridcell "Não lida +55 51 9823-0229 11:05" [ref=e800]:
+                    - generic [ref=e801]:
+                      - generic [ref=e802]: Não lida
+                      - generic "+55 51 9823-0229" [ref=e805]
+                    - generic [ref=e807]: 11:05
+                  - generic [ref=e808]:
+                    - generic "‪Olá, bom dia! Segue os dados da empresa‬" [ref=e810]:
+                      - generic [ref=e811]: Olá, bom dia! Segue os dados da empresa
+                    - gridcell [ref=e812]
+          - row "+55 51 9692-5318 11:05 Perfeito, agradeço a compreensão!! ☺️ 🙏🏻" [ref=e816]:
+            - gridcell "+55 51 9692-5318 11:05 Perfeito, agradeço a compreensão!! ☺️ 🙏🏻" [ref=e817]:
+              - generic [ref=e819] [cursor=pointer]:
+                - img [ref=e824]
+                - generic [ref=e825]:
+                  - gridcell "+55 51 9692-5318 11:05" [ref=e826]:
+                    - generic [ref=e828]:
+                      - generic "+55 51 9692-5318" [ref=e830]
+                      - generic [ref=e834]:
+                        - img
+                    - generic [ref=e836]: 11:05
+                  - generic [ref=e837]:
+                    - generic "‪Perfeito, agradeço a compreensão!!☺️🙏🏻‬" [ref=e839]:
+                      - generic [ref=e841]:
+                        - img
+                      - generic [ref=e842]:
+                        - text: Perfeito, agradeço a compreensão!!
+                        - img "☺️" [ref=e843]
+                        - img "🙏🏻" [ref=e844]
+                    - gridcell
+          - 'row "DTF 11:02 Você : @Gráfica Rm Enfeites Dtf Se possivl quando imprimir me avisar agradeço" [ref=e845]':
+            - 'gridcell "DTF 11:02 Você : @Gráfica Rm Enfeites Dtf Se possivl quando imprimir me avisar agradeço" [ref=e846]':
+              - generic [ref=e848] [cursor=pointer]:
+                - generic [ref=e854]:
+                  - img
+                - generic [ref=e855]:
+                  - gridcell "DTF 11:02" [ref=e856]:
+                    - generic [ref=e858]:
+                      - generic "DTF" [ref=e859]
+                      - generic [ref=e863]:
+                        - img
+                    - generic [ref=e865]: 11:02
+                  - generic [ref=e866]:
+                    - generic "‪@Gráfica Rm Enfeites Dtf Se possivl quando imprimir me avisar agradeço‬" [ref=e868]:
+                      - generic [ref=e870]:
+                        - img
+                      - generic [ref=e873]: Você
+                      - generic [ref=e874]: ":"
+                      - generic [ref=e875]: "@Gráfica Rm Enfeites Dtf Se possivl quando imprimir me avisar agradeço"
+                    - gridcell
+          - row "iruã 11:01 Vídeo" [ref=e876]:
+            - gridcell "iruã 11:01 Vídeo" [ref=e877]:
+              - generic [ref=e879] [cursor=pointer]:
+                - generic [ref=e885]:
+                  - img
+                - generic [ref=e886]:
+                  - gridcell "iruã 11:01" [ref=e887]:
+                    - generic [ref=e889]:
+                      - generic "iruã" [ref=e891]
+                      - generic [ref=e895]:
+                        - img
+                    - generic [ref=e897]: 11:01
+                  - generic [ref=e898]:
+                    - generic "‪Vídeo‬" [ref=e900]:
+                      - generic [ref=e902]:
+                        - img
+                      - generic [ref=e903]: Vídeo
+                    - gridcell
+          - row "+55 51 8188-8707 10:59 da polo em poliviscose (tecido leve) R$ 79,90" [ref=e904]:
+            - gridcell "+55 51 8188-8707 10:59 da polo em poliviscose (tecido leve) R$ 79,90" [ref=e905]:
+              - generic [ref=e907] [cursor=pointer]:
+                - img [ref=e912]
+                - generic [ref=e913]:
+                  - gridcell "+55 51 8188-8707 10:59" [ref=e914]:
+                    - generic "+55 51 8188-8707" [ref=e918]
+                    - generic [ref=e920]: 10:59
+                  - generic [ref=e921]:
+                    - generic "‪da polo em poliviscose (tecido leve) R$ 79,90‬" [ref=e923]:
+                      - generic [ref=e925]:
+                        - img
+                      - generic [ref=e927]:
+                        - img
+                      - generic [ref=e928]: da polo em poliviscose (tecido leve) R$ 79,90
+                    - gridcell
+          - row "+55 51 9820-3209 10:46 > Passo a passo uniformes Certoo! Vou orçar e te retorno" [ref=e929]:
+            - gridcell "+55 51 9820-3209 10:46 > Passo a passo uniformes Certoo! Vou orçar e te retorno" [ref=e930]:
+              - generic [ref=e932] [cursor=pointer]:
+                - generic [ref=e938]:
+                  - img
+                - generic [ref=e939]:
+                  - gridcell "+55 51 9820-3209 10:46" [ref=e940]:
+                    - generic "+55 51 9820-3209" [ref=e944]
+                    - generic [ref=e946]: 10:46
+                  - generic [ref=e947]:
+                    - generic "‪> Passo a passo uniformes Certoo! Vou orçar e te retorno‬" [ref=e949]:
+                      - generic [ref=e951]:
+                        - img
+                      - generic [ref=e952]: "> Passo a passo uniformes Certoo! Vou orçar e te retorno"
+                    - gridcell
+          - row "+55 51 9994-4013 10:42 Me manda o comprovante que ja encaminho para formalização" [ref=e953]:
+            - gridcell "+55 51 9994-4013 10:42 Me manda o comprovante que ja encaminho para formalização" [ref=e954]:
+              - generic [ref=e956] [cursor=pointer]:
+                - generic [ref=e962]:
+                  - img
+                - generic [ref=e963]:
+                  - gridcell "+55 51 9994-4013 10:42" [ref=e964]:
+                    - generic "+55 51 9994-4013" [ref=e968]
+                    - generic [ref=e970]: 10:42
+                  - generic [ref=e971]:
+                    - generic "‪Me manda o comprovante que ja encaminho para formalização‬" [ref=e973]:
+                      - generic [ref=e975]:
+                        - img
+                      - generic [ref=e976]: Me manda o comprovante que ja encaminho para formalização
+                    - gridcell
+          - row "+55 51 9346-8848 10:37 Nossos abrigos, vão pra produção quando?" [ref=e977]:
+            - gridcell "+55 51 9346-8848 10:37 Nossos abrigos, vão pra produção quando?" [ref=e978]:
+              - generic [ref=e980] [cursor=pointer]:
+                - img [ref=e985]
+                - generic [ref=e986]:
+                  - gridcell "+55 51 9346-8848 10:37" [ref=e987]:
+                    - generic "+55 51 9346-8848" [ref=e991]
+                    - generic [ref=e993]: 10:37
+                  - generic [ref=e994]:
+                    - generic "‪Nossos abrigos, vão pra produção quando?‬" [ref=e996]:
+                      - generic [ref=e997]: Nossos abrigos, vão pra produção quando?
+                    - gridcell
+          - row "+55 54 9100-3185 10:36 okaay obrigada!" [ref=e998]:
+            - gridcell "+55 54 9100-3185 10:36 okaay obrigada!" [ref=e999]:
+              - generic [ref=e1001] [cursor=pointer]:
+                - generic [ref=e1007]:
+                  - img
+                - generic [ref=e1008]:
+                  - gridcell "+55 54 9100-3185 10:36" [ref=e1009]:
+                    - generic "+55 54 9100-3185" [ref=e1013]
+                    - generic [ref=e1015]: 10:36
+                  - generic [ref=e1016]:
+                    - generic "‪okaay obrigada!‬" [ref=e1018]:
+                      - generic [ref=e1019]: okaay obrigada!
+                    - gridcell
+          - 'row "Produção usina 10:32 Você : Sobre esse pedido??" [ref=e1020]':
+            - 'gridcell "Produção usina 10:32 Você : Sobre esse pedido??" [ref=e1021]':
+              - generic [ref=e1023] [cursor=pointer]:
+                - generic [ref=e1029]:
+                  - img
+                - generic [ref=e1030]:
+                  - gridcell "Produção usina 10:32" [ref=e1031]:
+                    - generic [ref=e1033]:
+                      - generic "Produção usina" [ref=e1034]
+                      - generic [ref=e1038]:
+                        - img
+                    - generic [ref=e1040]: 10:32
+                  - generic [ref=e1041]:
+                    - generic "‪Sobre esse pedido??‬" [ref=e1043]:
+                      - generic [ref=e1045]:
+                        - img
+                      - generic [ref=e1048]: Você
+                      - generic [ref=e1049]: ":"
+                      - generic [ref=e1050]: Sobre esse pedido??
+                    - gridcell
+          - row "+55 51 8139-1419 10:32 Número 313 prédio 01" [ref=e1051]:
+            - gridcell "+55 51 8139-1419 10:32 Número 313 prédio 01" [ref=e1052]:
+              - generic [ref=e1054] [cursor=pointer]:
+                - generic [ref=e1060]:
+                  - img
+                - generic [ref=e1061]:
+                  - gridcell "+55 51 8139-1419 10:32" [ref=e1062]:
+                    - generic [ref=e1064]:
+                      - generic "+55 51 8139-1419" [ref=e1066]
+                      - generic [ref=e1070]:
+                        - img
+                    - generic [ref=e1072]: 10:32
+                  - generic [ref=e1073]:
+                    - generic "‪Número 313 prédio 01‬" [ref=e1075]:
+                      - generic [ref=e1076]: Número 313 prédio 01
+                    - gridcell
+          - row "+55 51 9317-2268 10:32 Obrigado" [ref=e1077]:
+            - gridcell "+55 51 9317-2268 10:32 Obrigado" [ref=e1078]:
+              - generic [ref=e1080] [cursor=pointer]:
+                - img [ref=e1085]
+                - generic [ref=e1086]:
+                  - gridcell "+55 51 9317-2268 10:32" [ref=e1087]:
+                    - generic "+55 51 9317-2268" [ref=e1091]
+                    - generic [ref=e1093]: 10:32
+                  - generic [ref=e1094]:
+                    - generic "‪Obrigado‬" [ref=e1096]:
+                      - generic [ref=e1097]: Obrigado
+                    - gridcell
+          - row "+55 51 9129-2337 10:26 ok, obrigada" [ref=e1098]:
+            - gridcell "+55 51 9129-2337 10:26 ok, obrigada" [ref=e1099]:
+              - generic [ref=e1101] [cursor=pointer]:
+                - img [ref=e1106]
+                - generic [ref=e1107]:
+                  - gridcell "+55 51 9129-2337 10:26" [ref=e1108]:
+                    - generic "+55 51 9129-2337" [ref=e1112]
+                    - generic [ref=e1114]: 10:26
+                  - generic [ref=e1115]:
+                    - generic "‪ok, obrigada‬" [ref=e1117]:
+                      - generic [ref=e1118]: ok, obrigada
+                    - gridcell
+          - row "Life Fit Club 10:24 perfeito marcado então 🤝" [ref=e1119]:
+            - gridcell "Life Fit Club 10:24 perfeito marcado então 🤝" [ref=e1120]:
+              - generic [ref=e1122] [cursor=pointer]:
+                - img [ref=e1127]
+                - generic [ref=e1128]:
+                  - gridcell "Life Fit Club 10:24" [ref=e1129]:
+                    - generic "Life Fit Club" [ref=e1133]
+                    - generic [ref=e1135]: 10:24
+                  - generic [ref=e1136]:
+                    - generic "‪perfeito marcado então 🤝‬" [ref=e1138]:
+                      - generic [ref=e1140]:
+                        - img
+                      - generic [ref=e1141]:
+                        - text: perfeito marcado então
+                        - img "🤝" [ref=e1142]
+                    - gridcell
+          - row "Reis Clean Higienização 10:03 Tranquilo irmão, tudo certo" [ref=e1143]:
+            - gridcell "Reis Clean Higienização 10:03 Tranquilo irmão, tudo certo" [ref=e1144]:
+              - generic [ref=e1146] [cursor=pointer]:
+                - img [ref=e1151]
+                - generic [ref=e1152]:
+                  - gridcell "Reis Clean Higienização 10:03" [ref=e1153]:
+                    - generic "Reis Clean Higienização" [ref=e1157]
+                    - generic [ref=e1159]: 10:03
+                  - generic [ref=e1160]:
+                    - generic "‪Tranquilo irmão, tudo certo‬" [ref=e1162]:
+                      - generic [ref=e1163]: Tranquilo irmão, tudo certo
+                    - gridcell
+          - row "+55 51 9447-5472 10:01 🙏🏽 🙏🏽" [ref=e1164]:
+            - gridcell "+55 51 9447-5472 10:01 🙏🏽 🙏🏽" [ref=e1165]:
+              - generic [ref=e1167] [cursor=pointer]:
+                - generic [ref=e1173]:
+                  - img
+                - generic [ref=e1174]:
+                  - gridcell "+55 51 9447-5472 10:01" [ref=e1175]:
+                    - generic "+55 51 9447-5472" [ref=e1179]
+                    - generic [ref=e1181]: 10:01
+                  - generic [ref=e1182]:
+                    - generic "‪🙏🏽🙏🏽‬" [ref=e1184]:
+                      - generic [ref=e1185]:
+                        - img "🙏🏽" [ref=e1186]
+                        - img "🙏🏽" [ref=e1187]
+                    - gridcell
+          - row "+55 42 8864-5782 10:00 Ainda não" [ref=e1188]:
+            - gridcell "+55 42 8864-5782 10:00 Ainda não" [ref=e1189]:
+              - generic [ref=e1191] [cursor=pointer]:
+                - img [ref=e1196]
+                - generic [ref=e1197]:
+                  - gridcell "+55 42 8864-5782 10:00" [ref=e1198]:
+                    - generic "+55 42 8864-5782" [ref=e1202]
+                    - generic [ref=e1204]: 10:00
+                  - generic [ref=e1205]:
+                    - generic "‪Ainda não‬" [ref=e1207]:
+                      - generic [ref=e1208]: Ainda não
+                    - gridcell
+          - row "+55 51 9477-7887 09:57 opa, bom dia." [ref=e1209]:
+            - gridcell "+55 51 9477-7887 09:57 opa, bom dia." [ref=e1210]:
+              - generic [ref=e1212] [cursor=pointer]:
+                - img [ref=e1217]
+                - generic [ref=e1218]:
+                  - gridcell "+55 51 9477-7887 09:57" [ref=e1219]:
+                    - generic "+55 51 9477-7887" [ref=e1223]
+                    - generic [ref=e1225]: 09:57
+                  - generic [ref=e1226]:
+                    - generic "‪opa, bom dia.‬" [ref=e1228]:
+                      - generic [ref=e1229]: opa, bom dia.
+                    - gridcell
+          - row "+55 51 8157-6628 09:43 Nosso pedido mínimo é de 10 peças" [ref=e1230]:
+            - gridcell "+55 51 8157-6628 09:43 Nosso pedido mínimo é de 10 peças" [ref=e1231]:
+              - generic [ref=e1233] [cursor=pointer]:
+                - img [ref=e1238]
+                - generic [ref=e1239]:
+                  - gridcell "+55 51 8157-6628 09:43" [ref=e1240]:
+                    - generic "+55 51 8157-6628" [ref=e1244]
+                    - generic [ref=e1246]: 09:43
+                  - generic [ref=e1247]:
+                    - generic "‪Nosso pedido mínimo é de 10 peças‬" [ref=e1249]:
+                      - generic [ref=e1251]:
+                        - img
+                      - generic [ref=e1252]: Nosso pedido mínimo é de 10 peças
+                    - gridcell
+          - row "+55 51 3191-9968 09:41 0:12" [ref=e1253]:
+            - gridcell "+55 51 3191-9968 09:41 0:12" [ref=e1254]:
+              - generic [ref=e1256] [cursor=pointer]:
+                - img [ref=e1261]
+                - generic [ref=e1262]:
+                  - gridcell "+55 51 3191-9968 09:41" [ref=e1263]:
+                    - generic [ref=e1265]:
+                      - generic "+55 51 3191-9968" [ref=e1267]
+                      - generic [ref=e1271]:
+                        - img
+                    - generic [ref=e1273]: 09:41
+                  - generic [ref=e1274]:
+                    - generic "‪0:12‬" [ref=e1276]:
+                      - generic [ref=e1278]:
+                        - img
+                      - generic [ref=e1280]:
+                        - img
+                      - generic [ref=e1281]: 0:12
+                    - gridcell
+          - 'row "PASSO A PASSO FRITZ MOTOBOYS 09:38 Marcia : Obg" [ref=e1282]':
+            - 'gridcell "PASSO A PASSO FRITZ MOTOBOYS 09:38 Marcia : Obg" [ref=e1283]':
+              - generic [ref=e1285] [cursor=pointer]:
+                - generic [ref=e1291]:
+                  - img
+                - generic [ref=e1292]:
+                  - gridcell "PASSO A PASSO FRITZ MOTOBOYS 09:38" [ref=e1293]:
+                    - generic "PASSO A PASSO FRITZ MOTOBOYS" [ref=e1295]
+                    - generic [ref=e1297]: 09:38
+                  - generic [ref=e1298]:
+                    - generic "‪Obg‬" [ref=e1300]:
+                      - generic [ref=e1303]: Marcia
+                      - generic [ref=e1304]: ":"
+                      - generic [ref=e1305]: Obg
+                    - gridcell
+          - row "+55 51 9744-6060 09:31 Bom dia e obrigado" [ref=e1306]:
+            - gridcell "+55 51 9744-6060 09:31 Bom dia e obrigado" [ref=e1307]:
+              - generic [ref=e1309] [cursor=pointer]:
+                - img [ref=e1314]
+                - generic [ref=e1315]:
+                  - gridcell "+55 51 9744-6060 09:31" [ref=e1316]:
+                    - generic [ref=e1318]:
+                      - generic "+55 51 9744-6060" [ref=e1320]
+                      - generic [ref=e1324]:
+                        - img
+                    - generic [ref=e1326]: 09:31
+                  - generic [ref=e1327]:
+                    - generic "‪Bom dia e obrigado‬" [ref=e1329]:
+                      - generic [ref=e1330]: Bom dia e obrigado
+                    - gridcell
+          - row "Marcia Miranda 09:28 Foto" [ref=e1331]:
+            - gridcell "Marcia Miranda 09:28 Foto" [ref=e1332]:
+              - generic [ref=e1334] [cursor=pointer]:
+                - img [ref=e1339]
+                - generic [ref=e1340]:
+                  - gridcell "Marcia Miranda 09:28" [ref=e1341]:
+                    - generic [ref=e1343]:
+                      - generic "Marcia Miranda" [ref=e1345]
+                      - generic [ref=e1349]:
+                        - img
+                    - generic [ref=e1351]: 09:28
+                  - generic [ref=e1352]:
+                    - generic "‪Foto‬" [ref=e1354]:
+                      - generic [ref=e1356]:
+                        - img
+                      - generic [ref=e1358]:
+                        - img
+                      - generic [ref=e1359]: Foto
+                    - gridcell
+          - row "+55 51 9255-7322 09:25 Te passei ontem" [ref=e1360]:
+            - gridcell "+55 51 9255-7322 09:25 Te passei ontem" [ref=e1361]:
+              - generic [ref=e1363] [cursor=pointer]:
+                - img [ref=e1368]
+                - generic [ref=e1369]:
+                  - gridcell "+55 51 9255-7322 09:25" [ref=e1370]:
+                    - generic "+55 51 9255-7322" [ref=e1374]
+                    - generic [ref=e1376]: 09:25
+                  - generic [ref=e1377]:
+                    - generic "‪Te passei ontem‬" [ref=e1379]:
+                      - generic [ref=e1380]: Te passei ontem
+                    - gridcell
+          - row "Pedro Particular 09:21 CDV BARTOLOMEU 29.04.2026.cdr" [ref=e1381]:
+            - gridcell "Pedro Particular 09:21 CDV BARTOLOMEU 29.04.2026.cdr" [ref=e1382]:
+              - generic [ref=e1384] [cursor=pointer]:
+                - img [ref=e1389]
+                - generic [ref=e1390]:
+                  - gridcell "Pedro Particular 09:21" [ref=e1391]:
+                    - generic [ref=e1393]:
+                      - generic "Pedro Particular" [ref=e1395]
+                      - generic [ref=e1399]:
+                        - img
+                    - generic [ref=e1401]: 09:21
+                  - generic [ref=e1402]:
+                    - generic "‪CDV BARTOLOMEU 29.04.2026.cdr‬" [ref=e1404]:
+                      - generic [ref=e1406]:
+                        - img
+                      - generic [ref=e1408]:
+                        - img
+                      - generic [ref=e1409]: CDV BARTOLOMEU 29.04.2026.cdr
+                    - gridcell
+          - row "+55 61 8350-4775 09:19 Está bem 🫶🏻" [ref=e1410]:
+            - gridcell "+55 61 8350-4775 09:19 Está bem 🫶🏻" [ref=e1411]:
+              - generic [ref=e1413] [cursor=pointer]:
+                - img [ref=e1418]
+                - generic [ref=e1419]:
+                  - gridcell "+55 61 8350-4775 09:19" [ref=e1420]:
+                    - generic "+55 61 8350-4775" [ref=e1424]
+                    - generic [ref=e1426]: 09:19
+                  - generic [ref=e1427]:
+                    - generic "‪Está bem🫶🏻‬" [ref=e1429]:
+                      - generic [ref=e1430]:
+                        - text: Está bem
+                        - img "🫶🏻" [ref=e1431]
+                    - gridcell
+          - row "Andrei CARTEL COLORADO 09:15 0:06" [ref=e1432]:
+            - gridcell "Andrei CARTEL COLORADO 09:15 0:06" [ref=e1433]:
+              - generic [ref=e1435] [cursor=pointer]:
+                - generic [ref=e1441]:
+                  - img
+                - generic [ref=e1442]:
+                  - gridcell "Andrei CARTEL COLORADO 09:15" [ref=e1443]:
+                    - generic [ref=e1445]:
+                      - generic "Andrei CARTEL COLORADO" [ref=e1447]
+                      - generic [ref=e1449]:
+                        - generic [ref=e1450]:
+                          - img
+                        - generic [ref=e1451]:
+                          - img
+                    - generic [ref=e1453]: 09:15
+                  - generic [ref=e1454]:
+                    - generic "‪0:06‬" [ref=e1456]:
+                      - generic [ref=e1458]:
+                        - img
+                      - generic [ref=e1460]:
+                        - img
+                      - generic [ref=e1461]: 0:06
+                    - gridcell
+          - row "+55 51 9685-1430 09:15 E tem alguma opção com menos de 10 peças?" [ref=e1462]:
+            - gridcell "+55 51 9685-1430 09:15 E tem alguma opção com menos de 10 peças?" [ref=e1463]:
+              - generic [ref=e1465] [cursor=pointer]:
+                - generic [ref=e1471]:
+                  - img
+                - generic [ref=e1472]:
+                  - gridcell "+55 51 9685-1430 09:15" [ref=e1473]:
+                    - generic "+55 51 9685-1430" [ref=e1477]
+                    - generic [ref=e1479]: 09:15
+                  - generic [ref=e1480]:
+                    - generic "‪E tem alguma opção com menos de 10 peças?‬" [ref=e1482]:
+                      - generic [ref=e1483]: E tem alguma opção com menos de 10 peças?
+                    - gridcell
+          - row "+55 51 9808-5146 09:11 Bom dia Gustavo, tudo bem? Certo! Vou verificar aqui com Vini o responsável e volto a te chamar. 😁 ⚽" [ref=e1484]:
+            - gridcell "+55 51 9808-5146 09:11 Bom dia Gustavo, tudo bem? Certo! Vou verificar aqui com Vini o responsável e volto a te chamar. 😁 ⚽" [ref=e1485]:
+              - generic [ref=e1487] [cursor=pointer]:
+                - img [ref=e1492]
+                - generic [ref=e1493]:
+                  - gridcell "+55 51 9808-5146 09:11" [ref=e1494]:
+                    - generic "+55 51 9808-5146" [ref=e1498]
+                    - generic [ref=e1500]: 09:11
+                  - generic [ref=e1501]:
+                    - generic "‪Bom dia Gustavo, tudo bem? Certo! Vou verificar aqui com Vini o responsável e volto a te chamar. 😁⚽‬" [ref=e1503]:
+                      - generic [ref=e1504]:
+                        - text: Bom dia Gustavo, tudo bem? Certo! Vou verificar aqui com Vini o responsável e volto a te chamar.
+                        - img "😁" [ref=e1505]
+                        - img "⚽" [ref=e1506]
+                    - gridcell
+          - row "+55 51 9301-5325 08:35 Vocês já tem um emblema/ layout?" [ref=e1507]:
+            - gridcell "+55 51 9301-5325 08:35 Vocês já tem um emblema/ layout?" [ref=e1508]:
+              - generic [ref=e1510] [cursor=pointer]:
+                - generic [ref=e1516]:
+                  - img
+                - generic [ref=e1517]:
+                  - gridcell "+55 51 9301-5325 08:35" [ref=e1518]:
+                    - generic "+55 51 9301-5325" [ref=e1522]
+                    - generic [ref=e1524]: 08:35
+                  - generic [ref=e1525]:
+                    - generic "‪Vocês já tem um emblema/ layout?‬" [ref=e1527]:
+                      - generic [ref=e1529]:
+                        - img
+                      - generic [ref=e1530]: Vocês já tem um emblema/ layout?
+                    - gridcell
+          - 'row "3 mensagens não lidas WhatsApp Business 08:34 *Conecte suas redes sociais para iniciar conversas* Acesse as ferramentas 🛠️ Entre nas suas redes sociais para adicionar um botão de contato do WhatsApp no Facebook e no Instagram 🔗 Assim fica muito mais fácil para os clientes conversarem com sua empresa 👋 . O resultado: mais leads para você!" [ref=e1531]':
+            - 'gridcell "3 mensagens não lidas WhatsApp Business 08:34 *Conecte suas redes sociais para iniciar conversas* Acesse as ferramentas 🛠️ Entre nas suas redes sociais para adicionar um botão de contato do WhatsApp no Facebook e no Instagram 🔗 Assim fica muito mais fácil para os clientes conversarem com sua empresa 👋 . O resultado: mais leads para você!" [ref=e1532]':
+              - generic [ref=e1534] [cursor=pointer]:
+                - generic [ref=e1540]:
+                  - img
+                - generic [ref=e1541]:
+                  - gridcell "3 mensagens não lidas WhatsApp Business 08:34" [ref=e1542]:
+                    - generic [ref=e1543]:
+                      - generic [ref=e1544]: 3 mensagens não lidas
+                      - generic "WhatsApp Business" [ref=e1547]
+                    - generic [ref=e1549]: 08:34
+                  - generic [ref=e1550]:
+                    - 'generic "‪*Conecte suas redes sociais para iniciar conversas* Acesse as ferramentas 🛠️ Entre nas suas redes sociais para adicionar um botão de contato do WhatsApp no Facebook e no Instagram 🔗 Assim fica muito mais fácil para os clientes conversarem com sua empresa 👋. O resultado: mais leads para você!‬" [ref=e1552]':
+                      - generic [ref=e1553]:
+                        - text: "*Conecte suas redes sociais para iniciar conversas* Acesse as ferramentas"
+                        - img "🛠️" [ref=e1554]
+                        - text: Entre nas suas redes sociais para adicionar um botão de contato do WhatsApp no Facebook e no Instagram
+                        - img "🔗" [ref=e1555]
+                        - text: Assim fica muito mais fácil para os clientes conversarem com sua empresa
+                        - img "👋" [ref=e1556]
+                        - text: ". O resultado: mais leads para você!"
+                    - gridcell [ref=e1557]:
+                      - generic [ref=e1561]: "3"
+          - row "Não lida Lucas Staudt 08:23 Bom dia, Gregori. Tudo certo? Sei que é ruim, mas é possível incluir uma camiseta preta no pedido? Entrou uma menina nova ontem, veio para jogar futsal" [ref=e1562]:
+            - gridcell "Não lida Lucas Staudt 08:23 Bom dia, Gregori. Tudo certo? Sei que é ruim, mas é possível incluir uma camiseta preta no pedido? Entrou uma menina nova ontem, veio para jogar futsal" [ref=e1563]:
+              - generic [ref=e1565] [cursor=pointer]:
+                - img [ref=e1570]
+                - generic [ref=e1571]:
+                  - gridcell "Não lida Lucas Staudt 08:23" [ref=e1572]:
+                    - generic [ref=e1573]:
+                      - generic [ref=e1574]: Não lida
+                      - generic [ref=e1575]:
+                        - generic "Lucas Staudt" [ref=e1577]
+                        - generic [ref=e1581]:
+                          - img
+                    - generic [ref=e1583]: 08:23
+                  - generic [ref=e1584]:
+                    - generic "‪Bom dia, Gregori. Tudo certo? Sei que é ruim, mas é possível incluir uma camiseta preta no pedido? Entrou uma menina nova ontem, veio para jogar futsal‬" [ref=e1586]:
+                      - generic [ref=e1587]: Bom dia, Gregori. Tudo certo? Sei que é ruim, mas é possível incluir uma camiseta preta no pedido? Entrou uma menina nova ontem, veio para jogar futsal
+                    - gridcell [ref=e1588]
+          - row "+55 51 9578-5226 07:12 Queria saber se está indo tudo certo com a produção das camisetas e dos moletons!" [ref=e1592]:
+            - gridcell "+55 51 9578-5226 07:12 Queria saber se está indo tudo certo com a produção das camisetas e dos moletons!" [ref=e1593]:
+              - generic [ref=e1595] [cursor=pointer]:
+                - img [ref=e1600]
+                - generic [ref=e1601]:
+                  - gridcell "+55 51 9578-5226 07:12" [ref=e1602]:
+                    - generic [ref=e1604]:
+                      - generic "+55 51 9578-5226" [ref=e1606]
+                      - generic [ref=e1608]:
+                        - generic [ref=e1609]:
+                          - img
+                        - generic [ref=e1610]:
+                          - img
+                    - generic [ref=e1612]: 07:12
+                  - generic [ref=e1613]:
+                    - generic "‪Queria saber se está indo tudo certo com a produção das camisetas e dos moletons!‬" [ref=e1615]:
+                      - generic [ref=e1616]: Queria saber se está indo tudo certo com a produção das camisetas e dos moletons!
+                    - gridcell
+          - row "Lk Locações & Terraplanagem Ontem Só menor o símbolo do Instagram" [ref=e1617]:
+            - gridcell "Lk Locações & Terraplanagem Ontem Só menor o símbolo do Instagram" [ref=e1618]:
+              - generic [ref=e1620] [cursor=pointer]:
+                - img [ref=e1625]
+                - generic [ref=e1626]:
+                  - gridcell "Lk Locações & Terraplanagem Ontem" [ref=e1627]:
+                    - generic [ref=e1629]:
+                      - generic "Lk Locações & Terraplanagem" [ref=e1631]
+                      - generic [ref=e1635]:
+                        - img
+                    - generic [ref=e1637]: Ontem
+                  - generic [ref=e1638]:
+                    - generic "‪Só menor o símbolo do Instagram‬" [ref=e1640]:
+                      - generic [ref=e1641]: Só menor o símbolo do Instagram
+                    - gridcell
+          - row "+55 51 9662-1057 Ontem redefort brasil" [ref=e1642]:
+            - gridcell "+55 51 9662-1057 Ontem redefort brasil" [ref=e1643]:
+              - generic [ref=e1645] [cursor=pointer]:
+                - img [ref=e1650]
+                - generic [ref=e1651]:
+                  - gridcell "+55 51 9662-1057 Ontem" [ref=e1652]:
+                    - generic "+55 51 9662-1057" [ref=e1656]
+                    - generic [ref=e1658]: Ontem
+                  - generic [ref=e1659]:
+                    - generic "‪redefort brasil‬" [ref=e1661]:
+                      - generic [ref=e1663]:
+                        - img
+                      - generic [ref=e1664]: redefort brasil
+                    - gridcell
+          - row "+55 51 9922-9814 Ontem 0:34" [ref=e1665]:
+            - gridcell "+55 51 9922-9814 Ontem 0:34" [ref=e1666]:
+              - generic [ref=e1668] [cursor=pointer]:
+                - img [ref=e1673]
+                - generic [ref=e1674]:
+                  - gridcell "+55 51 9922-9814 Ontem" [ref=e1675]:
+                    - generic "+55 51 9922-9814" [ref=e1679]
+                    - generic [ref=e1681]: Ontem
+                  - generic [ref=e1682]:
+                    - generic "‪0:34‬" [ref=e1684]:
+                      - generic [ref=e1686]:
+                        - img
+                      - generic [ref=e1687]: 0:34
+                    - gridcell
+          - row "+55 51 9711-8103 Ontem perfeito" [ref=e1688]:
+            - gridcell "+55 51 9711-8103 Ontem perfeito" [ref=e1689]:
+              - generic [ref=e1691] [cursor=pointer]:
+                - img [ref=e1696]
+                - generic [ref=e1697]:
+                  - gridcell "+55 51 9711-8103 Ontem" [ref=e1698]:
+                    - generic "+55 51 9711-8103" [ref=e1702]
+                    - generic [ref=e1704]: Ontem
+                  - generic [ref=e1705]:
+                    - generic "‪perfeito‬" [ref=e1707]:
+                      - generic [ref=e1709]:
+                        - img
+                      - generic [ref=e1710]: perfeito
+                    - gridcell
+    - generic [ref=e1787]:
+      - banner [ref=e1789]:
+        - generic [ref=e1790]:
+          - button "Dados do perfil" [ref=e1791] [cursor=pointer]:
+            - img [ref=e1793]
+          - button "+55 51 9240-3553":
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: +55 51 9240-3553
+        - generic [ref=e1795]:
+          - button "Etiquetar conversa" [ref=e1798] [cursor=pointer]:
+            - generic [ref=e1801]:
+              - img
+            - generic [ref=e1802]:
+              - img
+          - button "Ligação de vídeo" [ref=e1803] [cursor=pointer]:
+            - generic [ref=e1804]:
+              - img
+            - generic [ref=e1805]:
+              - img
+          - button "Pesquisar" [ref=e1808] [cursor=pointer]:
+            - generic [ref=e1812]:
+              - img
+          - button "Mais opções" [ref=e1816] [cursor=pointer]:
+            - generic [ref=e1820]:
+              - img
+      - generic [ref=e1823]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: 30/04/2026
+        - generic [ref=e1825]:
+          - button "Clique neste aviso para carregar mensagens mais antigas do seu celular." [ref=e1973] [cursor=pointer]:
+            - generic [ref=e1975]: Clique neste aviso para carregar mensagens mais antigas do seu celular.
+          - generic [ref=e1830]:
+            - generic [ref=e1978]: 21/04/2026
+            - generic [ref=e1979]:
+              - 'row "Você: Abrir imagem 09:14 Entregue Encaminhar mídia" [ref=e1981]':
+                - generic [ref=e1986]:
+                  - generic [ref=e1987]:
+                    - img
+                  - generic [ref=e1988]:
+                    - generic "Você:"
+                    - generic [ref=e1990]:
+                      - button "Abrir imagem" [ref=e1991] [cursor=pointer]:
+                        - generic [ref=e1992]:
+                          - img [ref=e1994]
+                          - img [ref=e1996]
+                      - generic [ref=e1999]:
+                        - generic [ref=e2000]: 09:14
+                        - generic "Entregue" [ref=e2002]:
+                          - img "msg-dblcheck"
+                  - button "Encaminhar mídia" [ref=e2005] [cursor=pointer]:
+                    - generic [ref=e2006]:
+                      - img
+              - row "Abrir imagem 09:14 Entregue Encaminhar mídia" [ref=e2008]:
+                - generic [ref=e2013]:
+                  - generic [ref=e2016]:
+                    - button "Abrir imagem" [ref=e2017] [cursor=pointer]:
+                      - generic [ref=e2018]:
+                        - generic [ref=e2019]:
+                          - img
+                        - img [ref=e2021]
+                    - generic [ref=e2024]:
+                      - generic [ref=e2025]: 09:14
+                      - generic "Entregue" [ref=e2027]:
+                        - img "msg-dblcheck"
+                  - button "Encaminhar mídia" [ref=e2030] [cursor=pointer]:
+                    - generic [ref=e2031]:
+                      - img
+              - row "Abrir imagem 09:14 Entregue Encaminhar mídia" [ref=e2033]:
+                - generic [ref=e2038]:
+                  - generic [ref=e2041]:
+                    - button "Abrir imagem" [ref=e2042] [cursor=pointer]:
+                      - generic [ref=e2043]:
+                        - img [ref=e2045]
+                        - img [ref=e2047]
+                    - generic [ref=e2050]:
+                      - generic [ref=e2051]: 09:14
+                      - generic "Entregue" [ref=e2053]:
+                        - img "msg-dblcheck"
+                  - button "Encaminhar mídia" [ref=e2056] [cursor=pointer]:
+                    - generic [ref=e2057]:
+                      - img
+              - 'row "Esse é o arquivo final do seu pedido! 🧾 Através das informações que constam neste layout é que serão produzidas todas as suas peças. 🎽 🩳 É de extrema importância que você confira com muita atenção todos os detalhes, tais como: tipo de tecido, cores, quantidades por modelo e tamanhos e os nomes/números personalizados, caso haja. 🔍 Qualquer alteração só poderá ser feita até este momento, pois após iniciarmos a produção do seu pedido, não teremos mais como fazer nenhuma alteração. ❌ Contamos com a sua compreensão para que o seu pedido fique impecável! 🎯 09:14 Entregue" [ref=e2059]':
+                - generic [ref=e2067]:
+                  - generic [ref=e2070]:
+                    - generic [ref=e2071]:
+                      - text: Esse é o
+                      - strong [ref=e2072]: arquivo final
+                      - text: do seu pedido!
+                      - img "🧾" [ref=e2073]
+                    - generic [ref=e2075]:
+                      - text: Através das informações que constam neste layout é que
+                      - strong [ref=e2076]: serão produzidas
+                      - text: todas as suas peças.
+                      - img "🎽" [ref=e2077]
+                      - img "🩳" [ref=e2078]
+                    - generic [ref=e2080]:
+                      - text: É de extrema importância que você
+                      - strong [ref=e2081]: confira com muita atenção todos os detalhes,
+                      - text: "tais como: tipo de tecido, cores, quantidades por modelo e tamanhos e os nomes/números personalizados, caso haja."
+                      - img "🔍" [ref=e2082]
+                    - generic [ref=e2084]:
+                      - strong [ref=e2085]: Qualquer alteração
+                      - text: só poderá ser feita até este momento, pois após iniciarmos a produção do seu pedido, não teremos mais como fazer
+                      - strong [ref=e2086]: nenhuma alteração.
+                      - img "❌" [ref=e2087]
+                    - generic [ref=e2089]:
+                      - text: Contamos com a sua compreensão para que o seu pedido fique impecável!
+                      - img "🎯" [ref=e2090]
+                  - generic [ref=e2093]:
+                    - generic [ref=e2094]: 09:14
+                    - generic "Entregue" [ref=e2096]:
+                      - img "msg-dblcheck"
+              - 'row "Você: 💳 FORMAS DE PAGAMENTO 💠 PIX: Sem acréscimo. 50% na aprovação + 50% na entrega. Pagamento integral à vista: 5% de desconto. 💳 CARTÃO DE CRÉDITO: Débito: sem acréscimo. 1x: +3%. Até 3x: +6%. 🔗 LINK DE PAGAMENTO: Até 3x: +12%. Acima de 3x: consultar. Agora que temos o pedido formalizado, gostaria de saber: qual seria a forma de pagamento que você gostaria de dar seguimento com o pedido? 09:16 Entregue" [ref=e2098]':
+                - generic [ref=e2104]:
+                  - generic "Você:"
+                  - generic [ref=e2106]:
+                    - generic [ref=e2109]:
+                      - generic [ref=e2110]:
+                        - img "💳" [ref=e2111]
+                        - text: FORMAS DE PAGAMENTO
+                      - generic [ref=e2112]:
+                        - img "💠" [ref=e2113]
+                        - text: "PIX: Sem acréscimo. 50% na aprovação + 50% na entrega. Pagamento integral à vista: 5% de desconto."
+                      - generic [ref=e2114]:
+                        - img "💳" [ref=e2115]
+                        - text: "CARTÃO DE CRÉDITO: Débito: sem acréscimo. 1x: +3%. Até 3x: +6%."
+                      - generic [ref=e2116]:
+                        - img "🔗" [ref=e2117]
+                        - text: "LINK DE PAGAMENTO: Até 3x: +12%. Acima de 3x: consultar."
+                      - text: "Agora que temos o pedido formalizado, gostaria de saber: qual seria a forma de pagamento que você gostaria de dar seguimento com o pedido?"
+                    - generic [ref=e2121]:
+                      - generic [ref=e2122]: 09:16
+                      - generic "Entregue" [ref=e2124]:
+                        - img "msg-dblcheck"
+            - 'row "+55 51 9240-3553: Vou fazer no pix 10:01" [ref=e2127]':
+              - generic [ref=e2132]:
+                - generic [ref=e2133]:
+                  - img
+                - generic [ref=e2134]:
+                  - generic "+55 51 9240-3553:"
+                  - generic [ref=e2136]:
+                    - generic [ref=e2139]: Vou fazer no pix
+                    - generic [ref=e2143]: 10:01
+            - generic [ref=e2144]:
+              - 'row "Você: Perfeito João, vou te encaminhar o pix aqui para fazer o valor de entrada.. 10:04 Entregue" [ref=e2146]':
+                - generic [ref=e2151]:
+                  - generic [ref=e2152]:
+                    - img
+                  - generic [ref=e2153]:
+                    - generic "Você:"
+                    - generic [ref=e2155]:
+                      - generic [ref=e2158]: Perfeito João, vou te encaminhar o pix aqui para fazer o valor de entrada..
+                      - generic [ref=e2161]:
+                        - generic [ref=e2162]: 10:04
+                        - generic "Entregue" [ref=e2164]:
+                          - img "msg-dblcheck"
+              - row "CHAVE PIX CNPJ PASSO A PASSO CONFECÇÕES 01645313000160 10:04 Entregue" [ref=e2166]:
+                - generic [ref=e2174]:
+                  - generic [ref=e2177]:
+                    - strong [ref=e2179]: CHAVE PIX
+                    - generic [ref=e2180]: CNPJ PASSO A PASSO CONFECÇÕES
+                    - text: "01645313000160"
+                  - generic [ref=e2183]:
+                    - generic [ref=e2184]: 10:04
+                    - generic "Entregue" [ref=e2186]:
+                      - img "msg-dblcheck"
+              - 'row "Você: Valor de entrada: R$ 571,65 Valor na retirada: R$ 571,65 10:05 Entregue" [ref=e2188]':
+                - generic [ref=e2194]:
+                  - generic "Você:"
+                  - generic [ref=e2196]:
+                    - generic [ref=e2199]:
+                      - generic [ref=e2200]: "Valor de entrada: R$ 571,65"
+                      - text: "Valor na retirada: R$ 571,65"
+                    - generic [ref=e2203]:
+                      - generic [ref=e2204]: 10:05
+                      - generic "Entregue" [ref=e2206]:
+                        - img "msg-dblcheck"
+            - generic [ref=e2209]: 22/04/2026
+            - generic [ref=e2210]:
+              - 'row "Você: Bommmm dia!!! 09:10 Entregue" [ref=e2212]':
+                - generic [ref=e2217]:
+                  - generic [ref=e2218]:
+                    - img
+                  - generic [ref=e2219]:
+                    - generic "Você:"
+                    - generic [ref=e2221]:
+                      - generic [ref=e2224]: Bommmm dia!!!
+                      - generic [ref=e2227]:
+                        - generic [ref=e2228]: 09:10
+                        - generic "Entregue" [ref=e2230]:
+                          - img "msg-dblcheck"
+              - row "Tudo bem?? 09:10 Entregue" [ref=e2232]:
+                - generic [ref=e2240]:
+                  - generic [ref=e2243]: Tudo bem??
+                  - generic [ref=e2246]:
+                    - generic [ref=e2247]: 09:10
+                    - generic "Entregue" [ref=e2249]:
+                      - img "msg-dblcheck"
+              - 'row "Você: João assim que feito se poder me enviar o comprovante para dar baixa aqui, agradeço 🙏🏻 09:14 Entregue" [ref=e2251]':
+                - generic [ref=e2257]:
+                  - generic "Você:"
+                  - generic [ref=e2259]:
+                    - generic [ref=e2263]:
+                      - text: João assim que feito se poder me enviar o comprovante para dar baixa aqui, agradeço
+                      - img "🙏🏻" [ref=e2264]
+                    - generic [ref=e2267]:
+                      - generic [ref=e2268]: 09:14
+                      - generic "Entregue" [ref=e2270]:
+                        - img "msg-dblcheck"
+            - generic [ref=e2271]:
+              - 'row "+55 51 9240-3553: Bom dia!!! 09:23" [ref=e2273]':
+                - generic [ref=e2278]:
+                  - generic [ref=e2279]:
+                    - img
+                  - generic [ref=e2280]:
+                    - generic "+55 51 9240-3553:"
+                    - generic [ref=e2282]:
+                      - generic [ref=e2285]: Bom dia!!!
+                      - generic [ref=e2289]: 09:23
+              - 'row "+55 51 9240-3553: Bora fazer, logo ja envio o valor 09:23" [ref=e2291]':
+                - generic [ref=e2297]:
+                  - generic "+55 51 9240-3553:"
+                  - generic [ref=e2299]:
+                    - generic [ref=e2302]: Bora fazer, logo ja envio o valor
+                    - generic [ref=e2306]: 09:23
+            - 'row "Você: Olaaa João tudo bem? Estou organizando a produção do seu pedido e, para garantir sua entrega no prazo, preciso apenas da confirmação do pagamento. Assim já seguimos com tudo certinho 🙌 18:48 Entregue" [ref=e2309]':
+              - generic [ref=e2314]:
+                - generic [ref=e2315]:
+                  - img
+                - generic [ref=e2316]:
+                  - generic "Você:"
+                  - generic [ref=e2318]:
+                    - generic [ref=e2322]:
+                      - text: Olaaa João tudo bem? Estou organizando a produção do seu pedido e, para garantir sua entrega no prazo, preciso apenas da confirmação do pagamento. Assim já seguimos com tudo certinho
+                      - img "🙌" [ref=e2323]
+                    - generic [ref=e2326]:
+                      - generic [ref=e2327]: 18:48
+                      - generic "Entregue" [ref=e2329]:
+                        - img "msg-dblcheck"
+            - generic [ref=e2332]: 24/04/2026
+            - generic [ref=e2333]:
+              - 'row "Você: Boaaa tarde João!! 15:27 Entregue" [ref=e2335]':
+                - generic [ref=e2340]:
+                  - generic [ref=e2341]:
+                    - img
+                  - generic [ref=e2342]:
+                    - generic "Você:"
+                    - generic [ref=e2344]:
+                      - generic [ref=e2347]: Boaaa tarde João!!
+                      - generic [ref=e2350]:
+                        - generic [ref=e2351]: 15:27
+                        - generic "Entregue" [ref=e2353]:
+                          - img "msg-dblcheck"
+              - 'row "Você: Tudo bem?? 15:27 Entregue" [ref=e2355]':
+                - generic [ref=e2361]:
+                  - generic "Você:"
+                  - generic [ref=e2363]:
+                    - generic [ref=e2366]: Tudo bem??
+                    - generic [ref=e2369]:
+                      - generic [ref=e2370]: 15:27
+                      - generic "Entregue" [ref=e2372]:
+                        - img "msg-dblcheck"
+            - generic [ref=e2375]: 30/04/2026
+            - 'row "Você: Olá! 👋 Hoje é nosso fecha mês da Passo a Passo Uniformes! 🎉 Fechando hoje você garante: ✅ Prazo de aproximadamente 30 dias ✅ 5% de desconto pagando no PIX 💸 Aproveite essa oportunidade! 😊 14:38 Entregue" [ref=e2378]':
+              - generic [ref=e2383]:
+                - generic [ref=e2384]:
+                  - img
+                - generic [ref=e2385]:
+                  - generic "Você:"
+                  - generic [ref=e2387]:
+                    - generic [ref=e2390]:
+                      - generic [ref=e2391]:
+                        - text: Olá!
+                        - img "👋" [ref=e2392]
+                        - text: Hoje é nosso
+                        - strong [ref=e2393]: fecha mês
+                        - text: da Passo a Passo Uniformes!
+                        - img "🎉" [ref=e2394]
+                      - generic [ref=e2396]: "Fechando hoje você garante:"
+                      - generic [ref=e2397]:
+                        - img "✅" [ref=e2398]
+                        - text: Prazo de aproximadamente 30 dias
+                      - generic [ref=e2399]:
+                        - img "✅" [ref=e2400]
+                        - text: 5% de desconto pagando no PIX
+                        - img "💸" [ref=e2401]
+                      - generic [ref=e2403]:
+                        - text: Aproveite essa oportunidade!
+                        - img "😊" [ref=e2404]
+                    - generic [ref=e2407]:
+                      - generic [ref=e2408]: 14:38
+                      - generic "Entregue" [ref=e2410]:
+                        - img "msg-dblcheck"
+            - generic [ref=e2413]: quarta-feira
+            - generic [ref=e2414]:
+              - 'row "Você: Boa noitee mestre 20:45 Entregue" [ref=e2416]':
+                - generic [ref=e2421]:
+                  - generic [ref=e2422]:
+                    - img
+                  - generic [ref=e2423]:
+                    - generic "Você:"
+                    - generic [ref=e2425]:
+                      - generic [ref=e2428]: Boa noitee mestre
+                      - generic [ref=e2431]:
+                        - generic [ref=e2432]: 20:45
+                        - generic "Entregue" [ref=e2434]:
+                          - img "msg-dblcheck"
+              - row "tudo certinho? 20:45 Entregue" [ref=e2436]:
+                - generic [ref=e2444]:
+                  - generic [ref=e2447]: tudo certinho?
+                  - generic [ref=e2450]:
+                    - generic [ref=e2451]: 20:45
+                    - generic "Entregue" [ref=e2453]:
+                      - img "msg-dblcheck"
+              - 'row "Você: vamos colocar esse teu pedido na produção? 20:45 Entregue" [ref=e2455]':
+                - generic [ref=e2461]:
+                  - generic "Você:"
+                  - generic [ref=e2463]:
+                    - generic [ref=e2466]: vamos colocar esse teu pedido na produção?
+                    - generic [ref=e2469]:
+                      - generic [ref=e2470]: 20:45
+                      - generic "Entregue" [ref=e2472]:
+                        - img "msg-dblcheck"
+            - generic [ref=e2475]: Hoje
+            - 'row "Você: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar? 🧥 11:28 Enviada" [ref=e2478]':
+              - generic [ref=e2483]:
+                - generic [ref=e2484]:
+                  - img
+                - generic [ref=e2485]:
+                  - generic "Você:"
+                  - generic [ref=e2487]:
+                    - generic [ref=e2491]:
+                      - text: O frio está chegando e os pedidos estão acelerando! Que tal garantirmos um bom prazo e darmos sequência ao seu pedido? Posso colocar em produção ainda hoje. Vamos fechar?
+                      - img "🧥" [ref=e2492]
+                    - button "11:28 Enviada" [ref=e2495] [cursor=pointer]:
+                      - generic [ref=e2496]: 11:28
+                      - generic "Enviada" [ref=e2498]:
+                        - img "msg-check"
+      - contentinfo [ref=e1855]:
+        - generic [ref=e1861]:
+          - button "Anexar" [ref=e1865] [cursor=pointer]:
+            - generic [ref=e1869]:
+              - img
+          - button "Emojis, GIFs, figurinhas" [ref=e1873] [cursor=pointer]:
+            - generic [ref=e1877]:
+              - img
+          - generic [ref=e1878]:
+            - textbox "Digite uma mensagem para +55 51 9240-3553" [active] [ref=e1879]:
+              - paragraph [ref=e2499]
+            - generic: Digite uma mensagem
+          - button "Mensagem de voz" [ref=e2501] [cursor=pointer]:
+            - button "Mensagem de voz" [ref=e2504]:
+              - generic [ref=e2508]:
+                - img
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - tooltip "Mensagem de voz":
+                  - generic:
+                    - generic: Mensagem de voz

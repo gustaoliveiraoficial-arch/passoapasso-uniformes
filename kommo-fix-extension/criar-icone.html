@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>Gerar Ícone</title></head>
+<body>
+<canvas id="c" width="128" height="128" style="display:none"></canvas>
+<a id="dl" download="icon.png">Baixar icon.png</a>
+<script>
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+
+  // Fundo laranja
+  ctx.fillStyle = '#C85A00';
+  roundRect(ctx, 0, 0, 128, 128, 24);
+  ctx.fill();
+
+  // Letra K branca
+  ctx.fillStyle = '#FFFFFF';
+  ctx.font = 'bold 72px Inter, Segoe UI, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('K', 64, 66);
+
+  // Exporta
+  const dl = document.getElementById('dl');
+  dl.href = canvas.toDataURL('image/png');
+  dl.click();
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+</script>
+</body>
+</html>

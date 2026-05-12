@@ -1,0 +1,367 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - button "Ajuda" [ref=e37] [cursor=pointer]
+          - generic [ref=e38]:
+            - heading "Perfil" [level=1] [ref=e39]
+            - generic [ref=e40]:
+              - paragraph
+              - heading "Opções pessoais" [level=2] [ref=e41]
+              - text: Destaque de sintaxe
+              - generic [ref=e42]:
+                - checkbox "Desabilitar destaque de sintaxe na edição de códigos" [ref=e43] [cursor=pointer]
+                - text: Desabilitar destaque de sintaxe na edição de códigos
+              - text: Esquema de cor do painel administrativo
+              - group "Esquema de cor do painel administrativo" [ref=e44]:
+                - generic [ref=e46]: Esquema de cor do painel administrativo
+                - generic [ref=e47] [cursor=pointer]:
+                  - radio "Padrão" [checked] [ref=e48]
+                  - generic [ref=e49]: Padrão
+                - generic [ref=e55] [cursor=pointer]:
+                  - radio "Claro" [ref=e56]
+                  - generic [ref=e57]: Claro
+                - generic [ref=e63] [cursor=pointer]:
+                  - radio "Moderno" [ref=e64]
+                  - generic [ref=e65]: Moderno
+                - generic [ref=e70] [cursor=pointer]:
+                  - radio "Azul" [ref=e71]
+                  - generic [ref=e72]: Azul
+                - generic [ref=e78] [cursor=pointer]:
+                  - radio "Café" [ref=e79]
+                  - generic [ref=e80]: Café
+                - generic [ref=e86] [cursor=pointer]:
+                  - radio "Ectoplasma" [ref=e87]
+                  - generic [ref=e88]: Ectoplasma
+                - generic [ref=e94] [cursor=pointer]:
+                  - radio "Meia-noite" [ref=e95]
+                  - generic [ref=e96]: Meia-noite
+                - generic [ref=e102] [cursor=pointer]:
+                  - radio "Oceano" [ref=e103]
+                  - generic [ref=e104]: Oceano
+                - generic [ref=e110] [cursor=pointer]:
+                  - radio "Amanhecer" [ref=e111]
+                  - generic [ref=e112]: Amanhecer
+              - text: Atalhos do teclado
+              - generic [ref=e118]:
+                - checkbox "Ativar atalhos de teclado para moderação de comentários." [ref=e119] [cursor=pointer]
+                - text: Ativar atalhos de teclado para moderação de comentários.
+              - link "Documentação sobre os atalhos do teclado" [ref=e120] [cursor=pointer]:
+                - /url: https://wordpress.org/documentation/article/keyboard-shortcuts-classic-editor/#keyboard-shortcuts-for-comments
+              - text: Barra de ferramentas
+              - generic [ref=e121]:
+                - checkbox "Mostrar a barra de ferramentas ao ver site" [checked] [ref=e122] [cursor=pointer]
+                - text: Mostrar a barra de ferramentas ao ver site
+              - generic [ref=e123]:
+                - text: Idioma
+                - generic [ref=e124]: 
+              - combobox "Idioma" [ref=e125] [cursor=pointer]:
+                - option "Padrão do site" [selected]
+                - option "English (United States)"
+                - option "Português do Brasil"
+                - option "Afrikaans"
+                - option "አማርኛ"
+                - option "Aragonés"
+                - option "العربية"
+                - option "العربية المغربية"
+                - option "অসমীয়া"
+                - option "گؤنئی آذربایجان"
+                - option "Azərbaycan dili"
+                - option "Беларуская мова"
+                - option "Български"
+                - option "বাংলা"
+                - option "བོད་ཡིག"
+                - option "Bosanski"
+                - option "Català"
+                - option "Cebuano"
+                - option "Čeština"
+                - option "Cymraeg"
+                - option "Dansk"
+                - option "Deutsch (Österreich)"
+                - option "Deutsch (Schweiz)"
+                - option "Deutsch"
+                - option "Deutsch (Sie)"
+                - option "Deutsch (Schweiz, Du)"
+                - option "Dolnoserbšćina"
+                - option "རྫོང་ཁ"
+                - option "Ελληνικά"
+                - option "English (New Zealand)"
+                - option "English (Canada)"
+                - option "English (UK)"
+                - option "English (Australia)"
+                - option "English (South Africa)"
+                - option "Esperanto"
+                - option "Español de Chile"
+                - option "Español de México"
+                - option "Español de Colombia"
+                - option "Español de Costa Rica"
+                - option "Español de Perú"
+                - option "Español de Venezuela"
+                - option "Español de Ecuador"
+                - option "Español de República Dominicana"
+                - option "Español de Uruguay"
+                - option "Español de Puerto Rico"
+                - option "Español de Guatemala"
+                - option "Español"
+                - option "Español de Argentina"
+                - option "Eesti"
+                - option "Euskara"
+                - option "فارسی"
+                - option "(فارسی (افغانستان"
+                - option "Suomi"
+                - option "Français du Canada"
+                - option "Français"
+                - option "Français de Belgique"
+                - option "Friulian"
+                - option "Frysk"
+                - option "Gàidhlig"
+                - option "Galego"
+                - option "ગુજરાતી"
+                - option "هزاره گی"
+                - option "עִבְרִית"
+                - option "हिन्दी"
+                - option "Hrvatski"
+                - option "Hornjoserbšćina"
+                - option "Magyar"
+                - option "Հայերեն"
+                - option "Bahasa Indonesia"
+                - option "Íslenska"
+                - option "Italiano"
+                - option "日本語"
+                - option "Basa Jawa"
+                - option "ქართული"
+                - option "Taqbaylit"
+                - option "Қазақ тілі"
+                - option "ភាសាខ្មែរ"
+                - option "ಕನ್ನಡ"
+                - option "한국어"
+                - option "كوردی‎"
+                - option "Кыргызча"
+                - option "ພາສາລາວ"
+                - option "Lietuvių kalba"
+                - option "Latviešu valoda"
+                - option "Македонски јазик"
+                - option "മലയാളം"
+                - option "Монгол"
+                - option "मराठी"
+                - option "Bahasa Melayu"
+                - option "ဗမာစာ"
+                - option "Norsk bokmål"
+                - option "नेपाली"
+                - option "Nederlands"
+                - option "Nederlands (België)"
+                - option "Nederlands (Formeel)"
+                - option "Norsk nynorsk"
+                - option "Occitan"
+                - option "ਪੰਜਾਬੀ"
+                - option "Polski"
+                - option "پښتو"
+                - option "Português (AO90)"
+                - option "Português"
+                - option "Português de Angola"
+                - option "Ruáinga"
+                - option "Română"
+                - option "Русский"
+                - option "Сахалыы"
+                - option "سنڌي"
+                - option "සිංහල"
+                - option "Slovenčina"
+                - option "سرائیکی"
+                - option "Slovenščina"
+                - option "Shqip"
+                - option "Српски језик"
+                - option "Svenska"
+                - option "Kiswahili"
+                - option "Ślōnskŏ gŏdka"
+                - option "தமிழ்"
+                - option "தமிழ்"
+                - option "తెలుగు"
+                - option "ไทย"
+                - option "Tagalog"
+                - option "Türkçe"
+                - option "Татар теле"
+                - option "Reo Tahiti"
+                - option "ئۇيغۇرچە"
+                - option "Українська"
+                - option "اردو"
+                - option "O‘zbekcha"
+                - option "Tiếng Việt"
+                - option "Yorùbá"
+                - option "繁體中文"
+                - option "简体中文"
+                - option "香港中文"
+              - heading "Elementor - IA" [level=2] [ref=e126]
+              - text: Status
+              - generic [ref=e127]:
+                - checkbox "Status Ativar funcionalidade de IA do Elementor" [checked] [ref=e128] [cursor=pointer]
+                - text: Ativar funcionalidade de IA do Elementor
+              - heading "Nome" [level=2] [ref=e129]
+              - text: Nome de usuário
+              - textbox "Nome de usuário" [ref=e130]: passoapassouniformes2025@gmail.com
+              - text: Não é possível alterar nomes de usuário. Nome
+              - textbox "Nome" [ref=e131]
+              - text: Sobrenome
+              - textbox "Sobrenome" [ref=e132]
+              - generic [ref=e133]: Apelido (obrigatório)
+              - textbox "Apelido (obrigatório)" [ref=e134]: passoapassouniformes2025@gmail.com
+              - text: Exibir o nome publicamente como
+              - combobox "Exibir o nome publicamente como" [ref=e135] [cursor=pointer]:
+                - option "passoapassouniformes2025@gmail.com" [selected]
+              - heading "Informações de contato" [level=2] [ref=e136]
+              - generic [ref=e137]: E-mail (obrigatório)
+              - textbox "E-mail (obrigatório)" [ref=e138]: passoapassouniformes2025@gmail.com
+              - paragraph [ref=e139]:
+                - text: Se você alterar isso, enviaremos um e-mail para o seu novo endereço para confirmá-lo.
+                - strong [ref=e140]: O novo endereço de e-mail não ficará ativo até ser confirmado.
+              - text: Site
+              - textbox "Site" [ref=e141]: http://passoapassouniformes.com
+              - heading "Sobre você" [level=2] [ref=e142]
+              - text: Informações biográficas
+              - textbox "Informações biográficas" [ref=e143]
+              - paragraph [ref=e144]: Escreva uma minibiografia para constar no seu perfil. Essas informações poderão ser vistas por todos.
+              - text: Foto do perfil
+              - paragraph [ref=e145]:
+                - link "Você pode alterar sua foto de perfil no Gravatar" [ref=e146] [cursor=pointer]:
+                  - /url: https://br.gravatar.com/
+                - text: .
+              - heading "Gerenciamento de conta" [level=2] [ref=e147]
+              - text: Nova senha
+              - button "Definir nova senha" [ref=e148] [cursor=pointer]
+              - text:   Atividades
+              - button "Fazer logout em outros lugares" [disabled] [ref=e150]
+              - paragraph [ref=e151]: Você está conectado neste local.
+              - heading "Endereço de cobrança do cliente" [level=2] [ref=e152]
+              - table [ref=e153]:
+                - rowgroup [ref=e154]:
+                  - row "Nome" [ref=e155]:
+                    - rowheader "Nome" [ref=e156]
+                    - cell [ref=e157]:
+                      - textbox "Nome" [ref=e158]
+                  - row "Sobrenome" [ref=e159]:
+                    - rowheader "Sobrenome" [ref=e160]
+                    - cell [ref=e161]:
+                      - textbox "Sobrenome" [ref=e162]
+                  - row "Empresa" [ref=e163]:
+                    - rowheader "Empresa" [ref=e164]
+                    - cell [ref=e165]:
+                      - textbox "Empresa" [ref=e166]
+                  - row "Endereço linha 1" [ref=e167]:
+                    - rowheader "Endereço linha 1" [ref=e168]
+                    - cell [ref=e169]:
+                      - textbox "Endereço linha 1" [ref=e170]
+                  - row "Endereço linha 2" [ref=e171]:
+                    - rowheader "Endereço linha 2" [ref=e172]
+                    - cell [ref=e173]:
+                      - textbox "Endereço linha 2" [ref=e174]
+                  - row "Cidade" [ref=e175]:
+                    - rowheader "Cidade" [ref=e176]
+                    - cell [ref=e177]:
+                      - textbox "Cidade" [ref=e178]
+                  - row "CEP" [ref=e179]:
+                    - rowheader "CEP" [ref=e180]
+                    - cell [ref=e181]:
+                      - textbox "CEP" [ref=e182]
+                  - row "País Selecione um país…" [ref=e183]:
+                    - rowheader "País" [ref=e184]
+                    - cell "Selecione um país…" [ref=e185]:
+                      - combobox [ref=e186] [cursor=pointer]
+                      - combobox "Selecione um país…" [ref=e189] [cursor=pointer]:
+                        - textbox "Selecione um país…" [ref=e190]
+                  - row "Estado Estado" [ref=e191]:
+                    - rowheader "Estado" [ref=e192]
+                    - cell "Estado" [ref=e193]:
+                      - textbox "Estado" [ref=e194]
+                      - paragraph [ref=e195]: Estado
+                  - row "Telefone" [ref=e196]:
+                    - rowheader "Telefone" [ref=e197]
+                    - cell [ref=e198]:
+                      - textbox "Telefone" [ref=e199]
+                  - row "Endereço de e-mail passoapassouniformes2025@gmail.com" [ref=e200]:
+                    - rowheader "Endereço de e-mail" [ref=e201]
+                    - cell "passoapassouniformes2025@gmail.com" [ref=e202]:
+                      - textbox "Endereço de e-mail" [ref=e203]: passoapassouniformes2025@gmail.com
+              - heading "Endereço de entrega do cliente" [level=2] [ref=e204]
+              - table [ref=e205]:
+                - rowgroup [ref=e206]:
+                  - row "Copiar do endereço de cobrança" [ref=e207]:
+                    - rowheader "Copiar do endereço de cobrança" [ref=e208]
+                    - cell "Copiar do endereço de cobrança" [ref=e209]:
+                      - button "Copiar do endereço de cobrança" [ref=e210] [cursor=pointer]: Copiar
+                  - row "Nome" [ref=e211]:
+                    - rowheader "Nome" [ref=e212]
+                    - cell [ref=e213]:
+                      - textbox "Nome" [ref=e214]
+                  - row "Sobrenome" [ref=e215]:
+                    - rowheader "Sobrenome" [ref=e216]
+                    - cell [ref=e217]:
+                      - textbox "Sobrenome" [ref=e218]
+                  - row "Empresa" [ref=e219]:
+                    - rowheader "Empresa" [ref=e220]
+                    - cell [ref=e221]:
+                      - textbox "Empresa" [ref=e222]
+                  - row "Endereço linha 1" [ref=e223]:
+                    - rowheader "Endereço linha 1" [ref=e224]
+                    - cell [ref=e225]:
+                      - textbox "Endereço linha 1" [ref=e226]
+                  - row "Endereço linha 2" [ref=e227]:
+                    - rowheader "Endereço linha 2" [ref=e228]
+                    - cell [ref=e229]:
+                      - textbox "Endereço linha 2" [ref=e230]
+                  - row "Cidade" [ref=e231]:
+                    - rowheader "Cidade" [ref=e232]
+                    - cell [ref=e233]:
+                      - textbox "Cidade" [ref=e234]
+                  - row "CEP" [ref=e235]:
+                    - rowheader "CEP" [ref=e236]
+                    - cell [ref=e237]:
+                      - textbox "CEP" [ref=e238]
+                  - row "País Selecione um país…" [ref=e239]:
+                    - rowheader "País" [ref=e240]
+                    - cell "Selecione um país…" [ref=e241]:
+                      - combobox [ref=e242] [cursor=pointer]
+                      - combobox "Selecione um país…" [ref=e245] [cursor=pointer]:
+                        - textbox "Selecione um país…" [ref=e246]
+                  - row "Estado Estado" [ref=e247]:
+                    - rowheader "Estado" [ref=e248]
+                    - cell "Estado" [ref=e249]:
+                      - textbox "Estado" [ref=e250]
+                      - paragraph [ref=e251]: Estado
+                  - row "Telefone" [ref=e252]:
+                    - rowheader "Telefone" [ref=e253]
+                    - cell [ref=e254]:
+                      - textbox "Telefone" [ref=e255]
+              - paragraph [ref=e256]:
+                - button "Atualizar perfil" [ref=e257] [cursor=pointer]
+  - img

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório de Resultados — Gustavo Oliveira — Passo a Passo Uniformes</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1a1a2e;
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 48px 52px 60px;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 4px solid #c85a00;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  .header-left h1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #c85a00;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .header-left .subtitle {
+    font-size: 13px;
+    color: #444;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .header-left .meta {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+  }
+  .header-right { text-align: right; }
+  .badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .badge-orange { background: #c85a00; color: #fff; }
+  .badge-red    { background: #c0392b; color: #fff; margin-top: 6px; }
+  .badge-green  { background: #2d6a4f; color: #fff; }
+
+  /* SECTION */
+  .section { margin-bottom: 32px; }
+  .section-title {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #c85a00;
+    border-left: 5px solid #c85a00;
+    padding-left: 10px;
+    margin-bottom: 14px;
+  }
+  .section-title.green {
+    color: #2d6a4f;
+    border-left-color: #2d6a4f;
+  }
+  .section-title.red {
+    color: #c0392b;
+    border-left-color: #c0392b;
+  }
+
+  /* KPI GRID */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 10px; }
+  .kpi-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .kpi-card {
+    background: #fdf6f0;
+    border: 1px solid #f0d0b0;
+    border-radius: 8px;
+    padding: 13px 14px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: #c85a00; border-color: #c85a00; }
+  .kpi-card.green-card { background: #f0faf3; border-color: #c3e6cb; }
+  .kpi-card.warning { background: #fff8e1; border-color: #ffe066; }
+  .kpi-card.alert { background: #fff3f3; border-color: #f5c6cb; }
+  .kpi-value { font-size: 26px; font-weight: 800; color: #c85a00; line-height: 1; margin-bottom: 4px; }
+  .kpi-card.highlight .kpi-value { color: #fff; }
+  .kpi-card.green-card .kpi-value { color: #2d6a4f; }
+  .kpi-card.warning .kpi-value { color: #e67e00; }
+  .kpi-card.alert .kpi-value { color: #c0392b; }
+  .kpi-label { font-size: 10.5px; color: #555; font-weight: 500; line-height: 1.3; }
+  .kpi-card.highlight .kpi-label { color: rgba(255,255,255,0.88); }
+  .kpi-sub { font-size: 10px; color: #c85a00; margin-top: 3px; font-weight: 600; }
+  .kpi-card.highlight .kpi-sub { color: #ffd4a8; }
+  .kpi-card.green-card .kpi-sub { color: #2d6a4f; }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  thead th {
+    background: #c85a00;
+    color: #fff;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  thead th.green-th { background: #2d6a4f; }
+  thead th.red-th   { background: #c0392b; }
+  thead th.center   { text-align: center; }
+  tbody tr:nth-child(even) { background: #fdf6f0; }
+  tbody tr:hover { background: #fde8d4; }
+  tbody td { padding: 7px 12px; border-bottom: 1px solid #ecdccc; color: #333; }
+  td.num { text-align: center; font-weight: 700; color: #c85a00; }
+  td.num.green { color: #2d6a4f; }
+  td.highlight-row { font-weight: 700; background: #d4edda !important; color: #155724; }
+  td.alert-row { background: #fff3f3 !important; color: #c0392b; font-weight: 700; }
+  td.warn-row  { background: #fff8e1 !important; color: #b7700d; font-weight: 700; }
+  td.tag-venda {
+    background: #2d6a4f; color: #fff;
+    font-size: 9px; font-weight: 700;
+    padding: 2px 6px; border-radius: 10px; margin-left: 6px;
+    display: inline-block;
+  }
+
+  /* ALERTAS */
+  .alertas { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .alerta-card {
+    border-radius: 8px; padding: 11px 13px;
+    display: flex; align-items: flex-start; gap: 9px;
+  }
+  .alerta-card.bad  { background: #fff3f3; border: 1px solid #f5c6cb; }
+  .alerta-card.good { background: #f0faf3; border: 1px solid #c3e6cb; }
+  .alerta-card.warn { background: #fff8e1; border: 1px solid #ffe066; }
+  .alerta-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .alerta-text strong { font-size: 11.5px; display: block; margin-bottom: 2px; }
+  .alerta-text span   { font-size: 10.5px; color: #555; line-height: 1.4; }
+
+  /* FUNIL */
+  .funil-wrap { display: flex; flex-direction: column; gap: 4px; }
+  .funil-row  { display: flex; align-items: center; gap: 10px; }
+  .funil-label { width: 200px; font-size: 11px; color: #333; text-align: right; flex-shrink: 0; }
+  .funil-bar-wrap { flex: 1; height: 20px; background: #f0e0d0; border-radius: 4px; overflow: hidden; }
+  .funil-bar {
+    height: 100%; border-radius: 4px;
+    display: flex; align-items: center; padding-left: 8px;
+    font-size: 10px; font-weight: 700; color: #fff;
+  }
+  .funil-count { width: 38px; font-size: 11.5px; font-weight: 800; color: #c85a00; text-align: center; flex-shrink: 0; }
+  .funil-count.green-c { color: #2d6a4f; }
+  .funil-count.red-c   { color: #c0392b; }
+  .funil-count.warn-c  { color: #e67e00; }
+  .bar-cold        { background: #adb5bd; }
+  .bar-entry       { background: #6c8ebf; }
+  .bar-contact     { background: #74b9ff; }
+  .bar-qualified   { background: #55a3d4; }
+  .bar-quote       { background: #f39c12; }
+  .bar-negotiating { background: #e67e22; }
+  .bar-layout      { background: #9b59b6; }
+  .bar-layout-ok   { background: #8e44ad; }
+  .bar-confirmed   { background: #27ae60; }
+  .bar-production  { background: #2ecc71; }
+
+  /* APP CARDS */
+  .app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .app-card {
+    background: #fdf6f0;
+    border: 1px solid #f0d0b0;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .app-card.green-card-bg { background: #f0faf3; border-color: #c3e6cb; }
+  .app-card.blue-card-bg  { background: #f0f4ff; border-color: #c5d3f5; }
+  .app-card.purple-card-bg{ background: #f8f0ff; border-color: #ddc5f5; }
+  .app-number {
+    font-size: 10px; font-weight: 800; letter-spacing: 1px;
+    color: #c85a00; text-transform: uppercase; margin-bottom: 3px;
+  }
+  .app-card.green-card-bg .app-number { color: #2d6a4f; }
+  .app-card.blue-card-bg .app-number  { color: #1a56db; }
+  .app-card.purple-card-bg .app-number{ color: #7c3aed; }
+  .app-name { font-size: 12.5px; font-weight: 700; color: #1a1a2e; margin-bottom: 5px; }
+  .app-file { font-size: 10px; color: #888; font-family: 'Courier New', monospace; margin-bottom: 6px; }
+  .app-desc { font-size: 11px; color: #444; line-height: 1.55; }
+
+  /* DESTAQUE CRITICO */
+  .destaque-critico {
+    background: linear-gradient(135deg, #7b0c0c 0%, #c0392b 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    font-size: 12.5px;
+  }
+  .destaque-critico h2 { color: #ffd4d4; font-size: 15px; margin-bottom: 10px; }
+  .destaque-critico strong { color: #ffd4d4; }
+  .destaque-critico .big-number {
+    font-size: 52px; font-weight: 900; color: #fff;
+    line-height: 1; display: block; margin: 8px 0;
+  }
+
+  /* VISITAS BOX */
+  .visitas-box {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .visitas-numero {
+    font-size: 72px; font-weight: 900; color: #fff;
+    line-height: 1; flex-shrink: 0;
+  }
+  .visitas-texto h3 { font-size: 16px; font-weight: 700; color: #a8d5b5; margin-bottom: 6px; }
+  .visitas-texto p  { font-size: 11.5px; color: rgba(255,255,255,0.88); line-height: 1.7; }
+  .visitas-texto strong { color: #a8d5b5; }
+
+  /* GEAR FLOW */
+  .gear-flow {
+    background: #fdf6f0;
+    border: 1px solid #f0d0b0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 11.5px;
+    line-height: 2;
+    color: #1b1b1b;
+  }
+  .gear-flow .arrow { color: #c85a00; font-weight: bold; }
+  .gear-flow strong { color: #c85a00; }
+
+  /* ROLES TABLE */
+  .role-badge {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    font-size: 10px; font-weight: 700;
+  }
+  .role-badge.orange { background: #fdf6f0; color: #c85a00; border: 1px solid #f0d0b0; }
+  .role-badge.green  { background: #f0faf3; color: #155724; border: 1px solid #c3e6cb; }
+  .role-badge.red    { background: #fff3f3; color: #c0392b; border: 1px solid #f5c6cb; }
+
+  /* PROJECAO */
+  .projecao-box {
+    background: linear-gradient(135deg, #c85a00 0%, #9b3a00 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 18px 22px;
+    line-height: 1.8;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .projecao-box strong { color: #ffd4a8; }
+
+  /* URL TABLE */
+  .url-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  .url-table td { padding: 7px 12px; border-bottom: 1px solid #ecdccc; }
+  .url-table td:first-child { font-weight: 700; width: 200px; color: #1a1a2e; }
+  .url-table td:last-child  { color: #1a56db; font-family: 'Courier New', monospace; font-size: 11px; }
+  .url-table tr:nth-child(even) { background: #fdf6f0; }
+
+  /* RESUMO EXECUTIVO */
+  .resumo-box {
+    background: linear-gradient(135deg, #c85a00 0%, #9b3a00 100%);
+    color: #fff; border-radius: 12px;
+    padding: 24px 28px; line-height: 1.85; font-size: 12.5px;
+  }
+  .resumo-box strong { color: #ffd4a8; }
+  .resumo-box .resumo-title {
+    font-size: 15px; font-weight: 800; color: #ffd4a8;
+    margin-bottom: 12px; display: block;
+  }
+
+  /* SPRINT BOX */
+  .sprint-box {
+    background: #1b4332; color: #fff;
+    border-radius: 10px; padding: 18px 22px; margin-bottom: 8px;
+  }
+  .sprint-box h3  { color: #a8d5b5; font-size: 12px; margin-bottom: 8px; }
+  .sprint-box ul  { padding-left: 18px; line-height: 2; font-size: 11px; }
+  .sprint-box .hl { color: #a8d5b5; font-weight: 700; }
+
+  /* DIVIDER */
+  .divider {
+    border: none; border-top: 1px solid #e8d4c0;
+    margin: 28px 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 40px; border-top: 1px solid #ddd;
+    padding-top: 14px; text-align: center;
+    font-size: 10px; color: #aaa;
+  }
+
+  /* CATEGORY HEADER */
+  .cat-header {
+    background: #1a1a2e; color: #fff;
+    border-radius: 8px; padding: 10px 16px;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px; margin-top: 4px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .cat-header.orange { background: #c85a00; }
+  .cat-header.green  { background: #2d6a4f; }
+  .cat-header.blue   { background: #1a56db; }
+  .cat-header.purple { background: #7c3aed; }
+  .cat-header.dark   { background: #1a1a2e; }
+
+  /* COVER PAGE */
+  .cover {
+    text-align: center;
+    padding: 60px 0 50px;
+    border-bottom: 4px solid #c85a00;
+    margin-bottom: 36px;
+  }
+  .cover-logo {
+    width: 80px; height: 80px;
+    background: linear-gradient(135deg, #c85a00, #9b3a00);
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; font-weight: 900; color: #fff;
+    letter-spacing: -2px;
+  }
+  .cover h1 { font-size: 28px; font-weight: 900; color: #c85a00; margin-bottom: 6px; }
+  .cover h2 { font-size: 16px; font-weight: 600; color: #444; margin-bottom: 18px; }
+  .cover-badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .cover-meta { font-size: 12px; color: #888; margin-top: 20px; }
+
+  @media print {
+    body { background: #fff; font-size: 11px; }
+    .page { padding: 20px 28px; max-width: 100%; }
+    .cover { padding: 30px 0 28px; }
+    .app-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- CAPA -->
+  <div class="cover">
+    <div class="cover-logo">PP</div>
+    <h1>Relatório de Resultados</h1>
+    <h2>Gustavo Oliveira — Passo a Passo Uniformes</h2>
+    <div class="cover-badges">
+      <span class="badge badge-orange">01/04/2026 – 07/05/2026</span>
+      <span class="badge badge-green">CRM · Apps · Processos · Estratégia</span>
+      <span class="badge badge-red">Equipe reduzida a partir de 21/04</span>
+    </div>
+    <div class="cover-meta">
+      Fonte: Kommo CRM passoapassouniformes2025 · Arquivos de trabalho internos<br>
+      Gerado em 07/05/2026
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BLOCO 1 — DADOS CRM -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">1. Dados do CRM Kommo — 01/04 a 13/04/2026</div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card highlight">
+        <div class="kpi-value">762</div>
+        <div class="kpi-label">Leads ativos no CRM</div>
+        <div class="kpi-sub">+717 entraram em abril</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">3.056</div>
+        <div class="kpi-label">Mensagens gerenciadas</div>
+        <div class="kpi-sub">100% WhatsApp Cloud API</div>
+      </div>
+      <div class="kpi-card green-card">
+        <div class="kpi-value">13</div>
+        <div class="kpi-label">Pedidos confirmados</div>
+        <div class="kpi-sub">Média: 1 venda/dia</div>
+      </div>
+      <div class="kpi-card green-card">
+        <div class="kpi-value">8 min</div>
+        <div class="kpi-label">Tempo médio de resposta</div>
+        <div class="kpi-sub">Excelente desempenho</div>
+      </div>
+    </div>
+
+    <div class="kpi-grid kpi-grid-3" style="margin-top:10px;">
+      <div class="kpi-card">
+        <div class="kpi-value">121</div>
+        <div class="kpi-label">Novos leads gerados</div>
+        <div class="kpi-sub">Em 13 dias</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">703</div>
+        <div class="kpi-label">Conversas abertas</div>
+        <div class="kpi-sub">658 novas em abril</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">61%</div>
+        <div class="kpi-label">Taxa conversão chat → lead</div>
+        <div class="kpi-sub">61 de 100 convertidos</div>
+      </div>
+    </div>
+
+    <div class="kpi-grid kpi-grid-3" style="margin-top:10px;">
+      <div class="kpi-card alert">
+        <div class="kpi-value">611</div>
+        <div class="kpi-label">Leads em "Lead Frio"</div>
+        <div class="kpi-sub">Principal gargalo do funil</div>
+      </div>
+      <div class="kpi-card warning">
+        <div class="kpi-value">227</div>
+        <div class="kpi-label">Chats sem resposta</div>
+        <div class="kpi-sub">185 abertos só em abril</div>
+      </div>
+      <div class="kpi-card green-card">
+        <div class="kpi-value">2</div>
+        <div class="kpi-label">Leads perdidos no mês</div>
+        <div class="kpi-sub">Taxa de perda &lt; 0,3%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FUNIL VISUAL -->
+  <div class="section">
+    <div class="section-title">2. Funil de Vendas — Distribuição por Etapa</div>
+    <div class="funil-wrap">
+      <div class="funil-row">
+        <div class="funil-label"><strong>Etapa de Entrada</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-entry" style="width:12%">39 leads</div></div>
+        <div class="funil-count warn-c">39</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label" style="color:#c0392b;"><strong>Lead Frio ⚠️</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-cold" style="width:95%">gargalo principal</div></div>
+        <div class="funil-count red-c">611</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Primeiro Contato</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-contact" style="width:11%"></div></div>
+        <div class="funil-count">35</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Qualificado</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-qualified" style="width:4%"></div></div>
+        <div class="funil-count">11</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Enviar Orçamento</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-quote" style="width:3%"></div></div>
+        <div class="funil-count warn-c">10</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Orçamento Jessica</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-quote" style="width:1.5%"></div></div>
+        <div class="funil-count">3</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label"><strong>Negociando 💰</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-negotiating" style="width:9%">29 oportunidades</div></div>
+        <div class="funil-count warn-c">29</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Desenvolver Layout</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-layout" style="width:2%"></div></div>
+        <div class="funil-count">6</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Layout Aprovado</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-layout-ok" style="width:1.5%"></div></div>
+        <div class="funil-count">5</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label"><strong>Pedido Confirmado ✓</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-confirmed" style="width:1.3%"></div></div>
+        <div class="funil-count green-c">13</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Em Produção</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-production" style="width:2.2%"></div></div>
+        <div class="funil-count green-c">7</div>
+      </div>
+    </div>
+    <p style="font-size:10.5px; color:#999; margin-top:8px; font-style:italic;">* Dados do relatório 01–13/04/2026 extraídos diretamente do Kommo CRM passoapassouniformes2025.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BLOCO 2 — PERÍODO CRÍTICO -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title red">3. Período Crítico — A partir de 21/04/2026</div>
+
+    <div class="destaque-critico">
+      <h2>⚠️ Equipe desfalcada: 1 pessoa a menos no comercial</h2>
+      A partir do dia <strong>21 de abril</strong>, a equipe comercial ficou com uma pessoa a menos. Todo o volume de atendimento, follow-up, gestão do CRM, relacionamento com clientes e criação de estratégias foi absorvido por quem ficou. Mesmo assim, a operação não parou — <strong>foi monitorada, documentada e evoluída.</strong>
+      <br><br>
+      Em apenas 9 dias (13/04 → 22/04), os leads na Etapa de Entrada subiram de <strong>39 para 73 (+87%)</strong> enquanto o time estava reduzido.
+    </div>
+
+    <div class="visitas-box" style="margin-top:12px;">
+      <div class="visitas-numero">11</div>
+      <div class="visitas-texto">
+        <h3>Visitas Comerciais Presenciais</h3>
+        <p>
+          Realizadas entre <strong>21/04 e 07/05/2026</strong> — período de equipe reduzida.<br>
+          Prospecção ativa, apresentação de propostas, fechamento de orçamentos e acompanhamento de clientes em negociação — tudo feito <strong>além do volume diário de 3.000+ mensagens no WhatsApp, gestão de 762 leads ativos e criação das ferramentas documentadas neste relatório.</strong><br><br>
+          Sair para visitar clientes enquanto se sustenta a operação interna sem equipe completa demonstra que o processo foi <strong>mantido e evoluído mesmo em condição adversa.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;">
+      <p style="font-size:12px; color:#333; margin-bottom:12px; line-height:1.7;">
+        Em 22/04 foi gerada a <strong>Análise Estratégica do Funil</strong> (badge AÇÃO URGENTE) com projeção de receita mapeada no pipeline naquele momento:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="red-th">Origem no funil</th>
+            <th class="red-th center">Leads</th>
+            <th class="red-th center">Conv. estimada</th>
+            <th class="red-th center">Pedidos</th>
+            <th class="red-th center">Ticket médio</th>
+            <th class="red-th center">Receita projetada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Negociando</strong> — atacar primeiro</td>
+            <td class="num">29</td><td style="text-align:center;">40%</td>
+            <td class="num">~12</td><td style="text-align:center;">R$ 4.500</td>
+            <td class="num highlight-row">R$ 54.000</td>
+          </tr>
+          <tr>
+            <td><strong>Layout Aprovado</strong> — quase prontos</td>
+            <td class="num">5</td><td style="text-align:center;">80%</td>
+            <td class="num">~4</td><td style="text-align:center;">R$ 4.000</td>
+            <td class="num highlight-row">R$ 16.000</td>
+          </tr>
+          <tr>
+            <td><strong>Desenvolver Layout</strong></td>
+            <td class="num">6</td><td style="text-align:center;">60%</td>
+            <td class="num">~4</td><td style="text-align:center;">R$ 3.500</td>
+            <td class="num">R$ 14.000</td>
+          </tr>
+          <tr>
+            <td><strong>Qualificado + Orçamento</strong></td>
+            <td class="num">13</td><td style="text-align:center;">30%</td>
+            <td class="num">~4</td><td style="text-align:center;">R$ 3.500</td>
+            <td class="num">R$ 14.000</td>
+          </tr>
+          <tr>
+            <td colspan="4" style="text-align:right; font-weight:800; font-size:13px;">TOTAL PROJETADO</td>
+            <td class="num" style="font-size:15px; color:#27ae60; font-weight:900;">~24</td>
+            <td class="num highlight-row" style="font-size:15px;">~R$ 98.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BLOCO 3 — MÉTODO DE ATENDIMENTO -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title green">4. Método de Atendimento Criado — Do Zero</div>
+
+    <p style="font-size:12px; color:#333; margin-bottom:14px; line-height:1.7;">
+      Um processo completo foi estruturado e documentado, cobrindo desde o primeiro contato até a entrada do pedido na produção. Cada etapa tem responsável, SLA e critério de passagem.
+    </p>
+
+    <div class="gear-flow">
+      <strong>FLUXO COMPLETO — LEAD → PRODUÇÃO</strong><br><br>
+      ENTRADA (Lead via WhatsApp / Meta Ads / Site)
+      <span class="arrow"> → </span> <strong>PRIMEIRO CONTATO</strong> — resposta em até 8 minutos<br>
+      <span class="arrow"> → </span> <strong>QUALIFICAÇÃO</strong> — ticket alto ou baixo? Definir responsável<br>
+      <span class="arrow"> → </span> <strong>ENVIO DE ORÇAMENTO</strong> — até 4h após qualificação<br>
+      <span class="arrow"> → </span> <strong>NEGOCIAÇÃO</strong> — follow-up ativo (ligação se necessário)<br>
+      <span class="arrow"> → </span> <strong>APROVAÇÃO DO ORÇAMENTO</strong><br>
+      <span class="arrow"> → </span> <strong>DESENVOLVER LAYOUT</strong> (Irua — SLA: 24h)<br>
+      <span class="arrow"> → </span> <strong>LAYOUT APROVADO</strong> pelo cliente<br>
+      <span class="arrow"> → </span> <strong>FICHA DE PEDIDO</strong> — criada em até 2h (Fran)<br>
+      <span class="arrow"> → </span> <strong>PEDIDO CONFIRMADO</strong> (financeiro) <br>
+      <span class="arrow"> → </span> <strong>EM PRODUÇÃO</strong> → PRONTO → ENTREGA
+    </div>
+
+    <p style="font-size:11.5px; color:#555; margin: 12px 0 12px; font-weight:600;">Papéis definidos no método:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Pessoa</th>
+          <th>Papel no processo</th>
+          <th>SLA / Critério</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Gustavo</strong></td>
+          <td>Negociando de alto ticket + coordenação geral</td>
+          <td class="warn-row">Follow-up em até 24h nos negociando</td>
+        </tr>
+        <tr>
+          <td><strong>Greg</strong></td>
+          <td>Triagem da entrada + "caçador" dos negociando médios</td>
+          <td class="warn-row">Triagem em até 5 min na entrada</td>
+        </tr>
+        <tr>
+          <td><strong>Jessica</strong></td>
+          <td>Fechamento exclusivo de tickets acima de R$ 5.000</td>
+          <td class="highlight-row">Não dispersar em leads pequenos</td>
+        </tr>
+        <tr>
+          <td><strong>Irua</strong></td>
+          <td>100% foco em layout — removida do atendimento</td>
+          <td class="highlight-row">SLA: 24h por layout</td>
+        </tr>
+        <tr>
+          <td><strong>Fran</strong></td>
+          <td>Formalização do pedido após layout aprovado</td>
+          <td class="warn-row">Ficha criada em até 2h</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BLOCO 4 — APPS CRIADOS -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">5. Apps e Ferramentas Criadas</div>
+
+    <!-- CATEGORIA: PROCESSO E ATENDIMENTO -->
+    <div class="cat-header orange">PROCESSO E ATENDIMENTO</div>
+    <div class="app-grid" style="margin-bottom:16px;">
+
+      <div class="app-card">
+        <div class="app-number">App 01</div>
+        <div class="app-name">Guia do Vendedor — WhatsApp</div>
+        <div class="app-file">guia-vendedor-whatsapp.html</div>
+        <div class="app-desc">Manual digital completo para padronizar o atendimento via WhatsApp. Contém mensagens-padrão prontas para cada etapa da venda, fluxo de conversação do primeiro "oi" até o fechamento, orientações de tom e linguagem, e o que fazer em cada situação — cliente sumiu, pediu prazo, quer desconto. Qualquer pessoa da equipe atende com o mesmo padrão, sem improvisar.</div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-number">App 02</div>
+        <div class="app-name">Ficha de Pedido Interativa</div>
+        <div class="app-file">ficha-pedido.html</div>
+        <div class="app-desc">Formulário digital interativo para registrar todos os dados de um pedido no momento em que o cliente aprova. Campos para nome, produto, grade de tamanhos (P, M, G, GG…), tipo de peça (unissex ou babylook), quantidade por pessoa e observações. Substitui anotações em papel ou WhatsApp que se perdem. Com a ficha preenchida, a Fran tem tudo que precisa para mandar para produção.</div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-number">App 03</div>
+        <div class="app-name">Fluxo de Pedido — Rastreador Visual</div>
+        <div class="app-file">fluxo-pedido.html</div>
+        <div class="app-desc">Painel tipo "wizard" com as 8 etapas de produção: Recebimento → Confirmação → Design → Aprovação → Produção → Finalização → Expedição → Entrega. Cada etapa tem status visual (pendente / em andamento / concluído). A equipe sabe onde está cada pedido sem precisar perguntar, e o cliente recebe uma resposta clara quando pergunta "como tá meu pedido?".</div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-number">App 04</div>
+        <div class="app-name">Checklist Arte Finalista</div>
+        <div class="app-file">checklist-arte-finalista.html · PDF</div>
+        <div class="app-desc">Lista de verificação que a Irua usa antes de entregar qualquer arte finalizada. Valida pontos técnicos obrigatórios: cores em CMYK, fontes incorporadas, alinhamento, resolução mínima para impressão, margens e sangria. Evita retrabalho por erro técnico descoberto só na hora da produção, o que atrasaria a entrega e sobrecarregaria toda a cadeia.</div>
+      </div>
+
+    </div>
+
+    <!-- CATEGORIA: DASHBOARDS E RELATÓRIOS -->
+    <div class="cat-header green">DASHBOARDS E RELATÓRIOS</div>
+    <div class="app-grid" style="margin-bottom:16px;">
+
+      <div class="app-card green-card-bg">
+        <div class="app-number">App 05</div>
+        <div class="app-name">Painel de Vendas</div>
+        <div class="app-file">painel-vendas.html</div>
+        <div class="app-desc">Dashboard em modo escuro com ranking visual dos vendedores (pódio com ouro, prata e bronze), métricas de vendas por período e abas dinâmicas em JavaScript para filtrar os dados. Serve para mostrar o desempenho da equipe comercial de forma visual em reuniões ou no dia a dia, sem abrir planilha.</div>
+      </div>
+
+      <div class="app-card green-card-bg">
+        <div class="app-number">App 06</div>
+        <div class="app-name">Painel de Vendas Comercial (Web App)</div>
+        <div class="app-file">painel-vendas-comercial/ · painel-vendas-comercial-app/</div>
+        <div class="app-desc">Versão completa do painel com back-end em Firebase. Armazena dados de vendas em tempo real, permite múltiplos usuários atualizando ao mesmo tempo e exibe gráficos de performance. Criado em duas versões: web estática e Progressive Web App (PWA) — que pode ser instalada no celular como aplicativo nativo.</div>
+      </div>
+
+      <div class="app-card green-card-bg">
+        <div class="app-number">App 07</div>
+        <div class="app-name">Relatório CRM — Abril 2026</div>
+        <div class="app-file">relatorio-crm-abril-2026.html · PDF</div>
+        <div class="app-desc">Relatório formal com todos os dados do Kommo CRM do período 01–13/04. Apresenta KPIs de captação (121 leads, 3.056 mensagens), vendas (13 pedidos), funil completo etapa a etapa, capacidade de atendimento (8 min de resposta), pontos de atenção e resumo executivo. Criado para a reunião de equipe de 13/04 e serve como registro histórico de performance.</div>
+      </div>
+
+      <div class="app-card green-card-bg">
+        <div class="app-number">App 08</div>
+        <div class="app-name">Análise Estratégica do Funil</div>
+        <div class="app-file">analise-estrategica-funil-abril-2026.html · PDF</div>
+        <div class="app-desc">Documento de análise profunda gerado em 22/04 (período de equipe reduzida). Mapeia os 3 gargalos críticos do funil, diagnostica cada pessoa da equipe, propõe um sprint de 8 dias com ações por pessoa e projeta R$ 98.000 de receita potencial no pipeline. Serve como plano de ação para destravar o funil mesmo com time enxuto.</div>
+      </div>
+
+      <div class="app-card green-card-bg">
+        <div class="app-number">App 09</div>
+        <div class="app-name">Lista de Leads Sem Resposta</div>
+        <div class="app-file">leads-sem-resposta.html · PDF</div>
+        <div class="app-desc">Relatório com os leads que estão há mais tempo sem atendimento no CRM, organizado para priorizar o follow-up e garantir que nenhuma oportunidade seja perdida por esquecimento. Evidenciou leads aguardando resposta há mais de 35 dias — oportunidades reais que precisavam de ação imediata.</div>
+      </div>
+
+    </div>
+
+    <!-- CATEGORIA: APPS WEB E SITES -->
+    <div class="cat-header blue">APPS WEB E SITES</div>
+    <div class="app-grid" style="margin-bottom:16px;">
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 10</div>
+        <div class="app-name">Tabela de Preços (App React)</div>
+        <div class="app-file">tabela-precos/ · passoapassouniformes.com/tabeladeprecos</div>
+        <div class="app-desc">Calculadora de preços online em React/Vite hospedada no servidor. O cliente ou vendedor escolhe o produto, a quantidade e as opções, e o app calcula o valor automaticamente. Elimina erros de cálculo manual e padroniza os preços apresentados por toda a equipe — todos mostram o mesmo valor ao cliente.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 11</div>
+        <div class="app-name">Editor de Tabela de Preços</div>
+        <div class="app-file">tabela-precos-editor/</div>
+        <div class="app-desc">Painel de administração para atualizar os preços da tabela sem precisar mexer em código. A Jessica ou a Fran entram no editor, alteram o valor, e a tabela online reflete a mudança para todos os vendedores imediatamente. Separa a gestão de preços da parte técnica — sem precisar chamar um desenvolvedor.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 12</div>
+        <div class="app-name">Site Oficial (Next.js)</div>
+        <div class="app-file">site-oficial/ · passoapassouniformes.com</div>
+        <div class="app-desc">Site oficial completo em Next.js com geração estática de páginas, otimização de performance e SEO. Integrado com LiteSpeed Cache, Elementor e WooCommerce. Serve como presença digital principal da empresa para quem chega via Google ou link direto.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 13</div>
+        <div class="app-name">Site E-commerce — Catálogo de Produtos</div>
+        <div class="app-file">site-ecommerce/ (7 páginas)</div>
+        <div class="app-desc">Site de catálogo com 7 páginas de linhas de produtos: Linha Empresarial, Linha Escolar, Linha Esportes, Linha Inverno, Brindes, PAP Store e código de acesso. Serve para o cliente navegar pelos produtos antes de entrar em contato, chegando no WhatsApp já com ideia do que quer — leads mais qualificados.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 14</div>
+        <div class="app-name">Landing Page — Formandos</div>
+        <div class="app-file">site/landing-formandos/ · Netlify Forms</div>
+        <div class="app-desc">Página de captura focada no segmento de formandos, hospedada no Netlify com formulário integrado (Netlify Forms). Inclui logotipo, foto do prêmio e fotos de uniformes. Cada formulário preenchido vira um lead qualificado no CRM automaticamente — sem trabalho manual de transcrição.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 15</div>
+        <div class="app-name">Landing Page — Uniformes Empresariais</div>
+        <div class="app-file">site/uniformes-empresariais/</div>
+        <div class="app-desc">Página de captura focada no segmento corporativo. Apresenta diferenciais, casos de uso e call-to-action direto para o WhatsApp ou formulário. Segmenta o tráfego para que leads empresariais cheguem pelo canal certo, com abordagem adequada ao perfil.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 16</div>
+        <div class="app-name">Landing Page — Camiseta PV</div>
+        <div class="app-file">site/landing-camiseta-pv/</div>
+        <div class="app-desc">Página de produto focada na linha de camiseta PV, com especificações técnicas, opções de personalização e call-to-action para pedido. Serve para campanhas de tráfego pago direcionadas a esse produto específico, aumentando a taxa de conversão do anúncio.</div>
+      </div>
+
+      <div class="app-card blue-card-bg">
+        <div class="app-number">App 17</div>
+        <div class="app-name">Ficha Técnica Online</div>
+        <div class="app-file">site/ficha-tecnica/</div>
+        <div class="app-desc">Página com as fichas técnicas dos produtos: composição do tecido, gramatura, caimento e opções de personalização. O vendedor envia o link quando o cliente pergunta sobre qualidade ou especificações — profissionaliza o atendimento e reduz dúvidas repetitivas no WhatsApp.</div>
+      </div>
+
+    </div>
+
+    <!-- CATEGORIA: AUTOMAÇÕES -->
+    <div class="cat-header purple">SCRIPTS DE AUTOMAÇÃO</div>
+    <div class="app-grid" style="margin-bottom:16px;">
+
+      <div class="app-card purple-card-bg">
+        <div class="app-number">App 18</div>
+        <div class="app-name">Automação de Stories Diários</div>
+        <div class="app-file">scripts/daily-stories.js</div>
+        <div class="app-desc">Script Node.js que roda automaticamente e envia por email, todo dia, sugestões de conteúdo para Stories do Instagram e Facebook. Banco com 12 frases motivacionais, 31 datas comemorativas mapeadas (Dia da Mulher, Natal, Consciência Negra etc.), emojis e hashtags prontos, 6 horários de post por dia. Resolve o "o que postar hoje?" sem ninguém criar do zero.</div>
+      </div>
+
+      <div class="app-card purple-card-bg">
+        <div class="app-number">App 19</div>
+        <div class="app-name">Automação de Posts Instagram</div>
+        <div class="app-file">scripts/daily-instagram.js</div>
+        <div class="app-desc">Script complementar ao de stories, voltado para o feed do Instagram. Gera e agenda publicações automáticas com base no calendário de conteúdo da empresa. A equipe de marketing não precisa criar posts manuais todos os dias — o sistema já entrega a sugestão pronta.</div>
+      </div>
+
+      <div class="app-card purple-card-bg">
+        <div class="app-number">App 20</div>
+        <div class="app-name">Deploy Automático — Google Apps Script</div>
+        <div class="app-file">automate-appsscript.js</div>
+        <div class="app-desc">Script que automatiza o processo de publicar ou atualizar um Google Apps Script Web App. Abre o navegador via Puppeteer, injeta o código na planilha correta e faz o deploy automaticamente, salvando a URL gerada. Elimina um processo manual de 15 minutos que antes precisava ser feito a cada atualização de script.</div>
+      </div>
+
+      <div class="app-card purple-card-bg">
+        <div class="app-number">App 21</div>
+        <div class="app-name">Plano de Ação Automático — Reunião</div>
+        <div class="app-file">scripts/criar-plano-acao-reuniao.gs</div>
+        <div class="app-desc">Google Apps Script que gera automaticamente um documento de plano de ação após reunião, com os pontos levantados, responsáveis e prazos. Evita que decisões tomadas na reunião se percam por falta de registro. O documento fica no Google Drive, acessível para todos.</div>
+      </div>
+
+      <div class="app-card purple-card-bg">
+        <div class="app-number">App 22</div>
+        <div class="app-name">Gerador de Apresentações PowerPoint</div>
+        <div class="app-file">scripts/gerar_pptx.py · gerar_pptx_equipe.py · gerar_pptx_produto.py</div>
+        <div class="app-desc">Scripts Python que geram apresentações .pptx automaticamente a partir de dados. Três versões: apresentação geral, apresentação para equipe e apresentação de produto. Criado para criar materiais de reunião e proposta sem montar slide por slide manualmente — dados entram, slides saem prontos.</div>
+      </div>
+
+      <div class="app-card purple-card-bg">
+        <div class="app-number">App 23</div>
+        <div class="app-name">Parser de PDF com Gemini AI</div>
+        <div class="app-file">scripts/parse_pdf_gemini.js</div>
+        <div class="app-desc">Script que lê PDFs (catálogo de fornecedor, tabela de frete, proposta) e extrai as informações relevantes usando inteligência artificial (Gemini). Transforma documentos em texto estruturado para uso em outros sistemas, eliminando horas de digitação manual de dados de documentos externos.</div>
+      </div>
+
+    </div>
+
+    <!-- CATEGORIA: INTEGRAÇÕES -->
+    <div class="cat-header dark">INTEGRAÇÕES DE SISTEMA</div>
+    <div class="app-grid" style="margin-bottom:16px;">
+
+      <div class="app-card">
+        <div class="app-number">App 24</div>
+        <div class="app-name">Integração WooCommerce → Kommo CRM</div>
+        <div class="app-file">.functions-php.txt (via WordPress)</div>
+        <div class="app-desc">Código que conecta a loja WooCommerce diretamente ao Kommo CRM. Quando um pedido é feito na loja online, um lead é criado automaticamente no CRM com nome, email, telefone e produtos do pedido. Zero trabalho manual de transcrição — dado entra na loja e aparece no CRM em segundos.</div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-number">App 25</div>
+        <div class="app-name">Integração Meta Ads → CRM</div>
+        <div class="app-file">scripts/integrations/meta-bitrix/</div>
+        <div class="app-desc">Integração que captura leads gerados pelos anúncios do Meta (Facebook/Instagram) e envia direto para o CRM. Lead gerado no anúncio aparece no CRM em segundos, sem exportar planilha ou copiar manualmente. Token de verificação configurado: passoapasso_webhook_secret_2026.</div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-number">App 26</div>
+        <div class="app-name">Webhook Router do Kommo</div>
+        <div class="app-file">kommo-webhook/ (Express.js)</div>
+        <div class="app-desc">Servidor Node.js/Express que recebe eventos do Kommo CRM (novo lead, lead movido de etapa, mensagem recebida) e roteia para a ação correta com base em palavras-chave. Funciona como "cérebro" de automação do CRM — define o que acontece automaticamente quando algo muda no funil.</div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-number">App 27</div>
+        <div class="app-name">Extensão Chrome para Kommo</div>
+        <div class="app-file">kommo-fix-extension/</div>
+        <div class="app-desc">Extensão para o Google Chrome que adiciona funcionalidades e correções à interface do Kommo CRM no navegador. Melhora a experiência de uso do CRM no dia a dia da equipe sem precisar esperar atualização do sistema — funcionalidades personalizadas para a realidade da Passo a Passo.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BLOCO 5 — DOCUMENTOS E ESTRATÉGIAS -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">6. Documentos e Estratégias Criados</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Documento</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Plano de Tráfego Pago — Março 2026</strong></td>
+          <td>Estratégia de mídia paga com metas, canais e orçamento para o mês</td>
+        </tr>
+        <tr>
+          <td><strong>Apresentação Comercial — Terceiron</strong></td>
+          <td>Proposta customizada para cliente corporativo Terceiron</td>
+        </tr>
+        <tr>
+          <td><strong>Análise Imposto + Marketing — ML</strong></td>
+          <td>Estudo de viabilidade de venda de kits no Mercado Livre com carga tributária e margem</td>
+        </tr>
+        <tr>
+          <td><strong>Apresentação Líderes de Vendas 2026</strong></td>
+          <td>Material para apresentação à liderança com resultados e direcionamentos</td>
+        </tr>
+        <tr>
+          <td><strong>Template Proposta Comercial</strong></td>
+          <td>Modelo padrão reutilizável para propostas — padroniza o visual e acelera a criação</td>
+        </tr>
+        <tr>
+          <td><strong>Orçamento — Dani / Celsus</strong></td>
+          <td>Proposta comercial formal para cliente Dani, empresa Celsus</td>
+        </tr>
+        <tr>
+          <td><strong>Orçamento — Perfeita Alquimia / Tais</strong></td>
+          <td>Proposta comercial para cliente Tais, empresa Perfeita Alquimia</td>
+        </tr>
+        <tr>
+          <td><strong>Tabela de Preços — Príncipe da Paz</strong></td>
+          <td>Tabela customizada de preços para o cliente Príncipe da Paz</td>
+        </tr>
+        <tr>
+          <td><strong>Operação Mercado Livre — Kits Uniforme</strong></td>
+          <td>Planejamento da operação de venda de kits no ML com estratégia de anúncios e precificação</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BLOCO 6 — URLs -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">7. URLs do Sistema</div>
+    <table class="url-table">
+      <tr>
+        <td>Site Oficial</td>
+        <td>https://passoapassouniformes.com</td>
+      </tr>
+      <tr>
+        <td>WordPress Admin</td>
+        <td>https://passoapassouniformes.com/wp-admin/</td>
+      </tr>
+      <tr>
+        <td>Tabela de Preços</td>
+        <td>https://passoapassouniformes.com/tabeladeprecos</td>
+      </tr>
+      <tr>
+        <td>Kommo CRM</td>
+        <td>https://passoapassouniformes2025.kommo.com</td>
+      </tr>
+      <tr>
+        <td>Google Sheets (dados)</td>
+        <td>https://docs.google.com/spreadsheets/d/1-SLpaeXztHabC58_6a9nZESUKHldTCb0ZwfTf-3odVc</td>
+      </tr>
+      <tr>
+        <td>Email operacional</td>
+        <td>passoapassouniformes2025@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- RESUMO EXECUTIVO FINAL -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">8. Resumo Executivo</div>
+    <div class="resumo-box">
+      <span class="resumo-title">Passo a Passo Uniformes — 01/04 a 07/05/2026</span>
+
+      <strong>No CRM:</strong> 762 leads ativos gerenciados, mais de 3.000 mensagens processadas, 13 pedidos confirmados nos primeiros 13 dias (média de 1 venda/dia), tempo de resposta mantido em 8 minutos e taxa de perda de menos de 0,3% no mês.<br><br>
+
+      <strong>No processo:</strong> Um método completo de atendimento foi criado do zero — da entrada do lead até a ficha de produção — com papéis definidos, SLAs por etapa, guia do vendedor, ficha de pedido interativa e fluxo visual de rastreamento de 8 etapas.<br><br>
+
+      <strong>Em ferramentas:</strong> 27 apps, dashboards, scripts de automação, landing pages e integrações criadas para suportar toda a operação — CRM, vendas, produção, marketing e e-commerce.<br><br>
+
+      <strong>A partir de 21/04:</strong> com a equipe desfalcada (1 pessoa a menos no comercial), o volume foi absorvido e organizado. A análise estratégica identificou R$ 98.000 em oportunidades no funil, definiu um sprint de 8 dias com responsáveis claros por etapa, e <strong>11 visitas comerciais presenciais foram realizadas</strong> — além do atendimento diário completo, da gestão de 762 leads ativos e da entrega de todas as ferramentas documentadas neste relatório. A operação foi mantida e evoluída mesmo em condição adversa.
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Relatório de Resultados — Gustavo Oliveira &nbsp;|&nbsp; Passo a Passo Uniformes &nbsp;|&nbsp; Período: 01/04/2026 – 07/05/2026<br>
+    Fonte: Kommo CRM passoapassouniformes2025 · Arquivos de trabalho internos &nbsp;|&nbsp; Gerado em 07/05/2026
+  </div>
+
+</div>
+</body>
+</html>

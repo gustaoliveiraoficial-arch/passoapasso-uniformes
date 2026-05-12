@@ -1,0 +1,377 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e125] [cursor=pointer]:
+      - /url: "#wpbody-content"
+      - text: Pular para o conteúdo principal
+    - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - group [ref=e6]:
+          - menuitem [ref=e126] [cursor=pointer]:
+            - generic [ref=e8]: 
+            - generic [ref=e9]: Menu
+        - group [ref=e10]:
+          - menuitem [ref=e127] [cursor=pointer]:
+            - generic [ref=e13]: Sobre o WordPress
+        - group [ref=e14]:
+          - menuitem [ref=e128] [cursor=pointer]: Passo a Passo Uniformes
+        - group [ref=e16]:
+          - menuitem [ref=e129] [cursor=pointer]:
+            - generic [ref=e19]: "7"
+            - generic [ref=e20]: 7 atualizações disponíveis
+        - group [ref=e21]:
+          - menuitem [ref=e130] [cursor=pointer]:
+            - generic [ref=e24]: "0"
+            - generic [ref=e25]: 0 comentário esperando moderação
+        - group [ref=e26]:
+          - menuitem [ref=e131] [cursor=pointer]:
+            - generic [ref=e29]: Novo
+        - text: 
+        - menu [ref=e30]:
+          - group [ref=e31]:
+            - menuitem [ref=e132] [cursor=pointer]: Olá, passoapassouniformes2025@gmail.com
+      - heading [level=1] [ref=e133]: Configurações
+      - main [ref=e37]:
+        - generic [ref=e40]:
+          - heading [level=1] [ref=e134]: Pagamentos
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - button [ref=e135] [cursor=pointer]:
+                - img [ref=e48]
+              - heading [level=1] [ref=e136]: Transferência bancária
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - generic [ref=e54]:
+                  - heading [level=2] [ref=e137]: Enable and customise
+                  - paragraph [ref=e56]: Choose how you want to present bank transfer to your customers during checkout.
+                - generic [ref=e57]:
+                  - generic [ref=e90]:
+                    - generic [ref=e91]:
+                      - checkbox [checked] [ref=e138] [cursor=pointer]
+                      - img
+                    - generic [ref=e93] [cursor=pointer]: Enable direct bank transfers
+                  - generic [ref=e94]:
+                    - generic [ref=e95]:
+                      - generic [ref=e96]: Título
+                      - textbox [ref=e139]:
+                        - /placeholder: Direct bank transfer payments
+                        - text: Banco do Brasil / Pix CNPJ
+                    - paragraph [ref=e98]: Payment method name that the customer will see during checkout.
+                  - generic [ref=e99]:
+                    - generic [ref=e100]:
+                      - generic [ref=e101]: Descrição
+                      - textbox [ref=e140]: Pague via Pix e receba confirmação em minutos! Após finalizar o pedido você receberá a chave Pix para realizar o pagamento.
+                    - paragraph [ref=e103]: Payment method description that the customer will see during checkout.
+                  - generic [ref=e104]:
+                    - generic [ref=e105]:
+                      - generic [ref=e106]: Instruções
+                      - textbox [ref=e141]: "Obrigado pelo pedido! Pague via Pix: 🔑 Chave Pix: [CHAVE_PIX] Envie o comprovante no WhatsApp: (51) 98560-0893 Seu pedido será confirmado após a verificação do pagamento."
+                    - paragraph [ref=e108]: Instruções a serem adicionadas na página e em e-mails de agradecimento.
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - heading [level=2] [ref=e142]: Detalhes da conta
+                  - paragraph [ref=e69]: Configure your bank account details.
+                - generic [ref=e109]:
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: Account Name
+                    - generic [ref=e115]: Account Details
+                    - generic [ref=e116]: Bank Name
+                  - listitem [ref=e117]:
+                    - button [ref=e143] [cursor=pointer]: + Adicionar conta
+                  - status [ref=e119]
+              - button [ref=e144] [cursor=pointer]: Salvar alterações
+          - paragraph [ref=e77]
+    - generic [ref=e79]:
+      - img [ref=e81]
+      - generic [ref=e83]: Falta pouco para publicar sua loja on-line
+      - link [ref=e145] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+        - text: Continuar configuração
+    - generic [ref=e121] [cursor=pointer]:
+      - img [ref=e122]
+      - generic [ref=e124]: Fale com o Kodee
+  - dialog "Add a bank account" [ref=e147]:
+    - document "Seção rolável" [ref=e148]:
+      - generic [ref=e149]:
+        - heading "Add a bank account" [level=1] [ref=e151]
+        - button "Fechar" [ref=e152] [cursor=pointer]:
+          - img [ref=e153]
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - paragraph [ref=e157]: Add your bank account details.
+          - generic [ref=e160] [cursor=pointer]:
+            - generic [ref=e162]: País *
+            - generic [ref=e163]:
+              - combobox "País *" [ref=e164]:
+                - option "Afeganistão"
+                - option "África do Sul"
+                - option "Albânia"
+                - option "Alemanha"
+                - option "Andorra"
+                - option "Angola"
+                - option "Anguilla"
+                - option "Antártica"
+                - option "Antígua e Barbuda"
+                - option "Arábia Saudita"
+                - option "Argélia"
+                - option "Argentina"
+                - option "Armênia"
+                - option "Aruba"
+                - option "Austrália"
+                - option "Áustria"
+                - option "Azerbaijão"
+                - option "Bahamas"
+                - option "Bangladesh"
+                - option "Barbados"
+                - option "Barém"
+                - option "Belau"
+                - option "Bélgica"
+                - option "Belize"
+                - option "Benim"
+                - option "Bermudas"
+                - option "Bielorrússia"
+                - option "Bolívia"
+                - option "Bonaire, Santo Eustáquio e Saba"
+                - option "Bósnia e Herzegovina"
+                - option "Botsuana"
+                - option "Brasil" [selected]
+                - option "Brunei"
+                - option "Bulgária"
+                - option "Burquina Fasso"
+                - option "Burúndi"
+                - option "Butão"
+                - option "Cabo Verde"
+                - option "Camarões"
+                - option "Camboja"
+                - option "Canadá"
+                - option "Catar"
+                - option "Cazaquistão"
+                - option "Chade"
+                - option "Chile"
+                - option "China"
+                - option "Chipre"
+                - option "Cingapura"
+                - option "Colômbia"
+                - option "Comores"
+                - option "Comunidade das Ilhas Marianas Setentrionais"
+                - option "Congo (Brazzaville)"
+                - option "Congo (Kinshasa)"
+                - option "Coréia do Norte"
+                - option "Coréia do Sul"
+                - option "Costa do Marfim"
+                - option "Costa Rica"
+                - option "Croácia"
+                - option "Cuba"
+                - option "Curaçao"
+                - option "Dinamarca"
+                - option "Djibouti"
+                - option "Dominica"
+                - option "Egito"
+                - option "El Salvador"
+                - option "Emirados Árabes Unidos"
+                - option "Equador"
+                - option "Eritreia"
+                - option "Eslováquia"
+                - option "Eslovenia"
+                - option "Espanha"
+                - option "Estados Unidos"
+                - option "Estônia"
+                - option "Eswatini"
+                - option "Etiópia"
+                - option "Fiji"
+                - option "Filipinas"
+                - option "Finlândia"
+                - option "França"
+                - option "Gabão"
+                - option "Gâmbia"
+                - option "Gana"
+                - option "Geórgia"
+                - option "Gibraltar"
+                - option "Granada"
+                - option "Grécia"
+                - option "Groenlândia"
+                - option "Guadalupe"
+                - option "Guam"
+                - option "Guatemala"
+                - option "Guernsey"
+                - option "Guiana"
+                - option "Guiana Francesa"
+                - option "Guiné"
+                - option "Guiné Equatorial"
+                - option "Guiné-Bissau"
+                - option "Haiti"
+                - option "Holanda"
+                - option "Honduras"
+                - option "Hong Kong"
+                - option "Hungria"
+                - option "Iémen"
+                - option "Ilha Bouvet"
+                - option "Ilha Christmas"
+                - option "Ilha de Man"
+                - option "Ilha de São Martinho (República Francesa)"
+                - option "Ilha Heard e Ilhas McDonald"
+                - option "Ilha Norfolk"
+                - option "Ilhas Aland"
+                - option "Ilhas Cayman"
+                - option "Ilhas Cocos"
+                - option "Ilhas Cook"
+                - option "Ilhas Feroe"
+                - option "Ilhas Geórgia do Sul e Sandwich do Sul"
+                - option "Ilhas Malvinas"
+                - option "Ilhas Marshall"
+                - option "Ilhas Menores Distantes, Estados Unidos da América (EUA)"
+                - option "Ilhas Pitcairn"
+                - option "Ilhas Salomão"
+                - option "Ilhas Turcas e Caicos"
+                - option "Ilhas Virgens (EUA)"
+                - option "Ilhas Virgens Britânicas"
+                - option "Índia"
+                - option "Indonésia"
+                - option "Irã"
+                - option "Iraque"
+                - option "Irlanda"
+                - option "Islândia"
+                - option "Israel"
+                - option "Itália"
+                - option "Jamaica"
+                - option "Japão"
+                - option "Jersey"
+                - option "Jordânia"
+                - option "Kosovo"
+                - option "Kuweit"
+                - option "Laos"
+                - option "Látvia"
+                - option "Lesoto"
+                - option "Líbano"
+                - option "Libéria"
+                - option "Líbia"
+                - option "Liechtenstein"
+                - option "Lituânia"
+                - option "Luxemburgo"
+                - option "Macao"
+                - option "Macedônia do Norte"
+                - option "Madagascar"
+                - option "Malásia"
+                - option "Malawi"
+                - option "Maldivas"
+                - option "Mali"
+                - option "Malta"
+                - option "Marrocos"
+                - option "Martinica"
+                - option "Maurício"
+                - option "Mauritânia"
+                - option "Mayotte"
+                - option "México"
+                - option "Micronésia"
+                - option "Moçambique"
+                - option "Moldávia"
+                - option "Mônaco"
+                - option "Mongólia"
+                - option "Montenegro"
+                - option "Montserrat"
+                - option "Namíbia"
+                - option "Nauru"
+                - option "Nepal"
+                - option "Nicarágua"
+                - option "Níger"
+                - option "Nigéria"
+                - option "Niue"
+                - option "Noruega"
+                - option "Nova Caledónia"
+                - option "Nova Zelândia"
+                - option "Omã"
+                - option "Panamá"
+                - option "Papua-Nova Guiné"
+                - option "Paquistão"
+                - option "Paraguai"
+                - option "Peru"
+                - option "Polinésia Francesa"
+                - option "Polônia"
+                - option "Porto Rico"
+                - option "Portugal"
+                - option "Quênia"
+                - option "Quirguistão"
+                - option "Quiribáti"
+                - option "Reino Unido (UK)"
+                - option "República Checa"
+                - option "República da África Central"
+                - option "República da União de Myanmar"
+                - option "República Dominicana"
+                - option "Reunião"
+                - option "Romênia"
+                - option "Ruanda"
+                - option "Rússia"
+                - option "São Tomé e Príncipe"
+                - option "Saara Ocidental"
+                - option "Saint Martin (parte Holandesa)"
+                - option "Saint-Pierre e Miquelon"
+                - option "Samoa"
+                - option "Samoa Americana"
+                - option "San Marino"
+                - option "Santa Helena"
+                - option "Santa Lúcia"
+                - option "São Bartolomeu"
+                - option "São Cristóvão e Nevis"
+                - option "São Vicente e Granadinas"
+                - option "Senegal"
+                - option "Serra Leoa"
+                - option "Sérvia"
+                - option "Seychelles"
+                - option "Síria"
+                - option "Somália"
+                - option "Sri Lanka"
+                - option "Sudão"
+                - option "Sudão do Sul"
+                - option "Suécia"
+                - option "Suiça"
+                - option "Suriname"
+                - option "Svalbard e Jan Mayen"
+                - option "Tailândia"
+                - option "Taiwan"
+                - option "Tajiquistão"
+                - option "Tanzânia"
+                - option "Território Britânico do Oceano Índico"
+                - option "Território das Terras Austrais e Antárcticas Francesas"
+                - option "Território Palestino"
+                - option "Timor-Leste"
+                - option "Togo"
+                - option "Tokelau"
+                - option "Tonga"
+                - option "Trinidad e Tobago"
+                - option "Tunísia"
+                - option "Turcomenistão"
+                - option "Türkiye"
+                - option "Tuvalu"
+                - option "Ucrânia"
+                - option "Uganda"
+                - option "Uruguai"
+                - option "Uzbequistão"
+                - option "Vanuatu"
+                - option "Vaticano"
+                - option "Venezuela"
+                - option "Vietnã"
+                - option "Wallis e Futuna"
+                - option "Zâmbia"
+                - option "Zimbábue"
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+          - generic [ref=e166]:
+            - generic [ref=e167]: Account Name *
+            - textbox "Account Name *" [active] [ref=e168]
+          - generic [ref=e170]:
+            - generic [ref=e171]: Bank Name
+            - textbox "Bank Name" [ref=e172]
+          - generic [ref=e174]:
+            - generic [ref=e175]: Account Number
+            - textbox "Account Number" [ref=e176]
+          - generic [ref=e178]:
+            - generic [ref=e179]: IBAN
+            - textbox "IBAN" [ref=e180]
+          - generic [ref=e182]:
+            - generic [ref=e183]: BIC / SWIFT
+            - textbox "BIC / SWIFT" [ref=e184]
+        - generic [ref=e185]:
+          - button "Cancelar" [ref=e186] [cursor=pointer]
+          - button "Salvar" [ref=e187] [cursor=pointer]

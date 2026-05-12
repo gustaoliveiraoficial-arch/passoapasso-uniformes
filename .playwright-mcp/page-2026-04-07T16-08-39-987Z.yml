@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - progressbar [ref=e6]
+    - main [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e18]:
+          - img [ref=e20]
+          - generic [ref=e25]: Fazer Login com o Google
+        - generic [ref=e26]:
+          - heading "Você está fazendo login novamente no openrouter.ai" [level=1] [ref=e27]
+          - link "passoapassouniformes2025@gmail.com selecionado. Alternar entre contas" [ref=e29] [cursor=pointer]:
+            - generic [ref=e32]: passoapassouniformes2025@gmail.com
+            - img [ref=e34]
+      - generic [ref=e46]:
+        - generic [ref=e47]: Leia a Política de Privacidade e os Termos de Serviço de openrouter.ai para entender como openrouter.ai vai processar e proteger seus dados.
+        - generic [ref=e48]:
+          - text: Para fazer mudanças a qualquer momento, acesse sua
+          - link "Conta do Google" [ref=e49] [cursor=pointer]:
+            - /url: https://myaccount.google.com/connections#filter=4
+          - text: .
+        - generic [ref=e50]:
+          - text: Saiba mais sobre o recurso
+          - link "Fazer login com o Google" [ref=e51] [cursor=pointer]:
+            - /url: https://support.google.com/accounts/answer/12921417?sjid=1919169284593837430-NC
+          - text: .
+      - generic [ref=e54]:
+        - button "Cancelar" [ref=e58]: Cancelar
+        - button "Continuar" [ref=e64]: Continuar
+  - contentinfo [ref=e70]:
+    - combobox "Alterar idioma Português (Brasil)" [ref=e74] [cursor=pointer]:
+      - generic:
+        - generic: Português (Brasil)
+      - generic:
+        - img
+    - list [ref=e76]:
+      - listitem [ref=e77]:
+        - link "Ajuda" [ref=e78] [cursor=pointer]:
+          - /url: https://support.google.com/accounts?hl=pt-BR&p=account_iph
+      - listitem [ref=e79]:
+        - link "Privacidade" [ref=e80] [cursor=pointer]:
+          - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR&privacy=true
+      - listitem [ref=e81]:
+        - link "Termos" [ref=e82] [cursor=pointer]:
+          - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR

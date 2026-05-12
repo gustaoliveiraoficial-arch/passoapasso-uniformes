@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guia do Vendedor — Passo a Passo Uniformes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a2e;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px 44px 50px;
+    }
+
+    /* ─── HEADER ─── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #1a56db;
+      padding-bottom: 18px;
+      margin-bottom: 28px;
+    }
+    .header-left { display: flex; align-items: center; gap: 16px; }
+    .header-logo-placeholder {
+      width: 64px; height: 64px; border-radius: 12px;
+      background: linear-gradient(135deg, #1a56db, #7c3aed);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -1px;
+    }
+    .header-title h1 { font-size: 20px; font-weight: 800; color: #1a56db; line-height: 1.2; }
+    .header-title p  { font-size: 12px; color: #6b7280; margin-top: 2px; }
+    .header-badge {
+      background: linear-gradient(135deg, #1a56db, #7c3aed);
+      color: #fff; padding: 8px 16px; border-radius: 50px;
+      font-size: 11px; font-weight: 700; text-align: center; line-height: 1.5;
+    }
+
+    /* ─── LABELS ─── */
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #1a56db; color: #fff;
+      font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 50px; margin-bottom: 12px;
+    }
+    .section-label.purple { background: #7c3aed; }
+    .section-label.green  { background: #059669; }
+    .section-label.gray   { background: #374151; }
+
+    /* ─── SCOPE BANNER ─── */
+    .scope-banner {
+      background: linear-gradient(135deg, #1e40af11, #7c3aed11);
+      border: 1.5px solid #c4b5fd;
+      border-radius: 14px;
+      padding: 16px 22px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .scope-banner-icon { font-size: 28px; flex-shrink: 0; }
+    .scope-banner h2 { font-size: 14px; font-weight: 700; color: #4c1d95; margin-bottom: 4px; }
+    .scope-banner p  { font-size: 12px; color: #374151; line-height: 1.6; }
+    .scope-banner strong { color: #1a1a2e; }
+
+    /* ─── FLOW INDICATOR ─── */
+    .flow-bar {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 28px;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1.5px solid #e5e7eb;
+    }
+    .flow-item {
+      flex: 1;
+      padding: 10px 8px;
+      text-align: center;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #6b7280;
+      background: #f9fafb;
+      border-right: 1px solid #e5e7eb;
+      line-height: 1.3;
+    }
+    .flow-item:last-child { border-right: none; }
+    .flow-item.active {
+      background: #1a56db;
+      color: #fff;
+    }
+    .flow-item.done {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    .flow-item span { display: block; font-size: 14px; }
+
+    /* ─── CARDS ─── */
+    .wpp-card {
+      background: #f0fdf4;
+      border: 1.5px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+    .wpp-card.blue   { background: #eff6ff; border-color: #bfdbfe; }
+    .wpp-card.purple { background: #faf5ff; border-color: #ddd6fe; }
+    .wpp-card.gray   { background: #f8fafc; border-color: #e2e8f0; }
+
+    .wpp-card-title { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+
+    .wpp-step-num {
+      width: 30px; height: 30px; border-radius: 50%;
+      background: #059669; color: #fff;
+      font-size: 13px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .wpp-step-num.blue   { background: #1a56db; }
+    .wpp-step-num.purple { background: #7c3aed; }
+    .wpp-step-num.gray   { background: #374151; }
+
+    .wpp-card-title h3 { font-size: 14px; font-weight: 700; color: #065f46; }
+    .wpp-card.blue   .wpp-card-title h3 { color: #1e40af; }
+    .wpp-card.purple .wpp-card-title h3 { color: #5b21b6; }
+    .wpp-card.gray   .wpp-card-title h3 { color: #1f2937; }
+
+    /* sub-label inside card */
+    .card-sublabel {
+      display: inline-block;
+      font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+      color: #6b7280; background: #e5e7eb;
+      padding: 2px 8px; border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .card-sublabel.green { background: #d1fae5; color: #065f46; }
+    .card-sublabel.blue  { background: #dbeafe; color: #1e40af; }
+
+    .wpp-msg-box {
+      background: #fff;
+      border: 1px solid #d1fae5;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 12.5px;
+      line-height: 1.8;
+      color: #1a1a2e;
+      white-space: pre-wrap;
+      margin-bottom: 10px;
+    }
+    .wpp-card.blue   .wpp-msg-box { border-color: #bfdbfe; }
+    .wpp-card.purple .wpp-msg-box { border-color: #ddd6fe; }
+    .wpp-card.gray   .wpp-msg-box { border-color: #e2e8f0; }
+
+    .msg-label {
+      font-size: 10px; font-weight: 700; color: #9ca3af;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      margin-bottom: 8px; padding-bottom: 6px;
+      border-bottom: 1px dashed #e5e7eb;
+      display: block;
+    }
+
+    .note-inline {
+      font-size: 11.5px; color: #6b7280;
+      background: #f9fafb; border-left: 3px solid #d1d5db;
+      padding: 8px 12px; border-radius: 0 8px 8px 0;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+    .note-inline strong { color: #374151; }
+
+    /* ─── ALERTS ─── */
+    .alert-box {
+      border-radius: 12px; padding: 12px 16px; margin-bottom: 16px;
+      display: flex; gap: 12px; align-items: flex-start;
+      page-break-inside: avoid;
+    }
+    .alert-box.orange { background: #fff7ed; border: 1.5px solid #fed7aa; }
+    .alert-box.red    { background: #fef2f2; border: 1.5px solid #fecaca; }
+    .alert-box.blue   { background: #eff6ff; border: 1.5px solid #bfdbfe; }
+    .alert-icon { font-size: 18px; flex-shrink: 0; line-height: 1.4; }
+    .alert-box p { font-size: 12px; color: #374151; line-height: 1.6; }
+    .alert-box strong { color: #1a1a2e; }
+
+    /* ─── CHECKLIST ─── */
+    .checklist-box {
+      background: #f8fafc; border: 1.5px solid #e2e8f0;
+      border-radius: 14px; padding: 20px 24px;
+      margin-bottom: 20px; page-break-inside: avoid;
+    }
+    .checklist-box h3 { font-size: 14px; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; }
+    .check-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0; border-bottom: 1px solid #f1f5f9;
+    }
+    .check-item:last-child { border-bottom: none; }
+    .check-box {
+      width: 18px; height: 18px; border: 2px solid #94a3b8;
+      border-radius: 4px; flex-shrink: 0; margin-top: 2px;
+    }
+    .check-item-text { font-size: 12.5px; color: #374151; line-height: 1.5; }
+    .check-item-text strong { color: #1a1a2e; }
+    .check-item-text span   { color: #6b7280; font-size: 11.5px; }
+
+    /* ─── TIPS GRID ─── */
+    .tips-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; page-break-inside: avoid; }
+    .tip-card { background: #fefce8; border: 1.5px solid #fde68a; border-radius: 12px; padding: 13px 15px; }
+    .tip-card h4 { font-size: 12px; font-weight: 700; color: #92400e; margin-bottom: 5px; }
+    .tip-card p  { font-size: 11.5px; color: #78350f; line-height: 1.6; }
+
+    /* ─── HANDOFF ─── */
+    .handoff-box {
+      background: linear-gradient(135deg, #7c3aed11, #1a56db11);
+      border: 2px dashed #a78bfa;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+    .handoff-box h3 { font-size: 14px; font-weight: 700; color: #4c1d95; margin-bottom: 10px; }
+    .handoff-box p  { font-size: 12px; color: #374151; line-height: 1.6; }
+    .handoff-step {
+      display: flex; gap: 10px; align-items: flex-start;
+      padding: 7px 0; border-bottom: 1px solid #ede9fe;
+    }
+    .handoff-step:last-child { border-bottom: none; }
+    .handoff-step-num {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #7c3aed; color: #fff;
+      font-size: 11px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .handoff-step p { font-size: 12px; color: #374151; }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, #1a56db22, #1a56db, #7c3aed, #7c3aed22);
+      border-radius: 2px; margin: 26px 0;
+    }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      border-top: 2px solid #e5e7eb; padding-top: 14px; margin-top: 30px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer p { font-size: 11px; color: #9ca3af; }
+
+    /* ─── PRINT ─── */
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      .page { padding: 18px 26px 28px; max-width: 100%; }
+      .no-break { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-logo-placeholder">PP</div>
+      <div class="header-title">
+        <h1>Passo a Passo Uniformes</h1>
+        <p>Guia de Atendimento — Vendedor de Leads</p>
+      </div>
+    </div>
+    <div class="header-badge">
+      📱 Roteiro<br>WhatsApp
+    </div>
+  </div>
+
+  <!-- ESCOPO DO VENDEDOR -->
+  <div class="scope-banner">
+    <div class="scope-banner-icon">🎯</div>
+    <div>
+      <h2>Qual é o seu papel nesse atendimento?</h2>
+      <p>Você é responsável pelo atendimento desde a <strong>chegada do lead</strong> até reunir todas as informações necessárias para o orçamento. Seu objetivo é <strong>conduzir o cliente com naturalidade</strong>, manter o foco no pedido e entregar um dossiê completo para o <strong>vendedor de orçamentos</strong>, que assumirá a partir daí com o layout final e a proposta comercial.</p>
+    </div>
+  </div>
+
+  <!-- FLUXO VISUAL -->
+  <div class="flow-bar">
+    <div class="flow-item active"><span>👋</span>Chegada<br>do Lead</div>
+    <div class="flow-item active"><span>💬</span>Coleta<br>de Dados</div>
+    <div class="flow-item active"><span>📋</span>Checklist<br>Completo</div>
+    <div class="flow-item" style="background:#f3f4f6; color:#9ca3af;"><span>📐</span>Layout +<br>Orçamento</div>
+    <div class="flow-item" style="background:#f3f4f6; color:#9ca3af;"><span>🤝</span>Fechamento</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ETAPA 0 — PRIMEIRO CONTATO -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label blue">🤝 Etapa 0 — Primeiro Contato</div>
+  <div class="wpp-card blue no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num blue">0</div>
+      <h3>Apresentação + o que o cliente procura</h3>
+    </div>
+
+    <div class="card-sublabel green">✅ Mensagem principal</div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>Olá, <strong>[Nome do cliente]</strong>! 😊 Tudo bem?
+
+Sou <strong>[Seu nome]</strong>, da <strong>Passo a Passo Uniformes</strong>! Fico feliz em te atender 🎽
+
+Me conta — <strong>o que você está precisando?</strong> Pode ser uniforme para empresa, escola, time, formatura, evento... estamos aqui para ajudar! 🚀</div>
+
+    <div class="note-inline">
+      💡 <strong>Objetivo desta mensagem:</strong> apresentar-se de forma breve e já abrir espaço para o cliente falar. Não detalhe produtos, não faça perguntas múltiplas — deixe o cliente se expressar primeiro.
+    </div>
+  </div>
+
+  <div class="wpp-card blue no-break" style="margin-top: -8px;">
+    <div class="wpp-card-title" style="margin-bottom:8px;">
+      <div class="wpp-step-num blue" style="font-size:16px;">📚</div>
+      <h3>Se o cliente estiver sem foco ou indeciso</h3>
+    </div>
+    <div class="card-sublabel" style="background:#dbeafe; color:#1e40af;">Usar somente se necessário</div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>Sem problema! Deixa eu te mandar nosso catálogo completo para você dar uma olhada 😊
+
+📎 <strong>[Anexar link ou PDF do catálogo]</strong>
+
+Qualquer modelo que chamar sua atenção, é só me falar que a gente explica tudo e monta um orçamento pra você! 🎽</div>
+    <div class="note-inline">
+      ⚠️ <strong>Após enviar o catálogo</strong>, aguarde o retorno do cliente. Se não responder em 24–48h, envie: <em>"Oi [Nome]! Conseguiu dar uma olhada? Posso te ajudar a escolher 😊"</em>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ETAPA 1 — MODELO E COR -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label">👕 Etapa 1 — Modelo e Cor</div>
+  <div class="wpp-card no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num">1</div>
+      <h3>Identificar o produto e a cor</h3>
+    </div>
+    <div class="card-sublabel green">✅ Após o cliente descrever o que quer</div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>Ótimo! Trabalhamos com esse modelo sim 👍
+
+E qual a <strong>cor</strong> que você está pensando para as peças?
+_(Ex: Preto, Azul Marinho, Branco, Cinza...)_</div>
+    <div class="note-inline">
+      💡 Se o cliente já mencionou o modelo e a cor na primeira mensagem, pule direto para a Etapa 2.
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ETAPA 2 — QUANTIDADE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label">🔢 Etapa 2 — Quantidade Aproximada</div>
+  <div class="wpp-card no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num">2</div>
+      <h3>Perguntar a quantidade (sempre aproximada)</h3>
+    </div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>E qual seria a <strong>quantidade aproximada</strong> de peças?
+
+💡 <em>Quanto maior a quantidade, melhor o preço por peça — então mesmo que ainda não tenha certeza, um número aproximado já me ajuda a preparar uma referência de valor pra você!</em></div>
+    <div class="note-inline">
+      ⚠️ <strong>Sempre use "quantidade aproximada".</strong> Nunca pressione por um número exato neste momento — isso pode travar o cliente. O número definitivo será confirmado na grade de tamanhos.
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ETAPA 3 — LAYOUT E ESTAMPA -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label">🎨 Etapa 3 — Layout e Ideia da Estampa</div>
+  <div class="wpp-card no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num">3</div>
+      <h3>Coletar referências e arte — sem entrar em técnica</h3>
+    </div>
+    <div class="card-sublabel green">✅ Mensagem principal</div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>Agora me conta sobre a <strong>personalização</strong> 🎨
+
+✦ Você já tem uma <strong>logo ou arte</strong> pronta?
+  _(Se sim, pode mandar aqui mesmo — PNG, PDF ou qualquer formato)_
+
+✦ Se ainda não tem, pode me descrever a <strong>ideia</strong> ou mandar alguma <strong>referência</strong> que você gostou?
+  _(Uma foto, print, ou texto mesmo já ajuda muito!)_</div>
+
+    <div class="note-inline">
+      💡 <strong>Não pergunte o tipo de personalização</strong> (bordado, serigrafia, sublimação...). O vendedor de orçamentos vai analisar a arte e indicar a melhor técnica. Seu papel aqui é apenas <strong>receber o material</strong>.
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ETAPA 4 — TAMANHOS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label">📏 Etapa 4 — Tamanhos</div>
+  <div class="wpp-card no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num">4</div>
+      <h3>Coletar a grade de tamanhos</h3>
+    </div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>Para fechar as informações, preciso da <strong>grade de tamanhos</strong> 📏
+
+Me manda quantas peças de cada:
+
+P  — ___ pçs
+M  — ___ pçs
+G  — ___ pçs
+GG — ___ pçs
+
+⚠️ Vai ter alguma peça nos tamanhos <strong>XG, XGG, G1, G2 ou G3</strong>?
+_(Tamanhos acima do GG têm um pequeno acréscimo no valor — já informamos direitinho no orçamento!)_</div>
+
+    <div class="note-inline">
+      ⚠️ <strong>Não informe o percentual de acréscimo agora</strong> — isso fica no orçamento. Apenas sinalize que existe diferença para o cliente não se surpreender depois.
+    </div>
+  </div>
+
+  <div class="alert-box red no-break">
+    <div class="alert-icon">🚨</div>
+    <p><strong>Ponto crítico:</strong> A grade de tamanhos é a informação mais importante desta etapa. Sem ela, o orçamento não pode ser gerado com precisão. Se o cliente disser que ainda não tem, peça para enviar assim que tiver e já sinalize que o orçamento será preparado assim que receber.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ETAPA 5 — ADICIONAIS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label">➕ Etapa 5 — Adicionais</div>
+  <div class="wpp-card no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num">5</div>
+      <h3>Verificar extras rápidos</h3>
+    </div>
+    <div class="wpp-msg-box">
+<span class="msg-label">💬 Copiar e enviar</span>Última pergunta! 😊 Vai querer algum adicional nas peças?
+
+☐ Nome de cada pessoa
+☐ Numeração nas peças
+☐ Outro detalhe especial?
+
+_(Pode ser breve, o orçamento vai detalhar tudo direitinho!)_</div>
+    <div class="note-inline">
+      💡 Mantenha simples. Não entre em preços de adicionais aqui — isso vai no orçamento. O objetivo é só saber se tem algo além do básico para o próximo vendedor não ser surpreendido.
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MENSAGEM DE TRANSIÇÃO -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label gray">🔄 Transição — Encaminhando para o Orçamento</div>
+  <div class="wpp-card gray no-break">
+    <div class="wpp-card-title">
+      <div class="wpp-step-num gray">→</div>
+      <h3>Fechar o atendimento e preparar o handoff</h3>
+    </div>
+    <div class="wpp-msg-box" style="border-color:#e2e8f0;">
+<span class="msg-label">💬 Copiar e enviar</span>Perfeito, <strong>[Nome]</strong>! Já tenho tudo que preciso 😊
+
+Vou preparar o orçamento com essas informações e te retorno em breve com a proposta completa, incluindo as opções de personalização e os valores detalhados.
+
+Qualquer dúvida enquanto isso, pode me chamar aqui! 🙌</div>
+    <div class="note-inline">
+      💡 Após enviar essa mensagem, passe o dossiê completo para o <strong>vendedor de orçamentos</strong> com todas as informações coletadas.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHECKLIST DE HANDOFF -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label green">✅ Checklist — Antes de Passar para o Orçamentista</div>
+  <div class="checklist-box no-break" style="margin-top:12px;">
+    <h3>Confirme que você reuniu:</h3>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Nome e contato do cliente</strong></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Modelo e cor da peça</strong> <span>— Ex: Polo Piquet PV, Azul Marinho</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Quantidade aproximada</strong> <span>— Ex: ~50 peças</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Arte ou referência de estampa</strong> <span>— Arquivo, foto ou descrição</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Grade de tamanhos</strong> <span>— Quantidade por tamanho</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Tem tamanhos acima do GG?</strong> <span>— XG, XGG, G1, G2, G3</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-item-text"><strong>Adicionais identificados</strong> <span>— Nome, numeração, outro</span></div>
+    </div>
+  </div>
+
+  <!-- HANDOFF BOX -->
+  <div class="handoff-box no-break">
+    <h3>🔄 Como fazer o handoff para o orçamentista</h3>
+    <div class="handoff-step">
+      <div class="handoff-step-num">1</div>
+      <p>Reúna todas as informações acima em uma mensagem única ou no CRM/grupo interno</p>
+    </div>
+    <div class="handoff-step">
+      <div class="handoff-step-num">2</div>
+      <p>Encaminhe os arquivos de arte recebidos do cliente</p>
+    </div>
+    <div class="handoff-step">
+      <div class="handoff-step-num">3</div>
+      <p>Informe se há alguma observação especial do cliente (urgência, dúvidas, histórico)</p>
+    </div>
+    <div class="handoff-step">
+      <div class="handoff-step-num">4</div>
+      <p>A partir daqui, o <strong>orçamentista assume a conversa</strong> com o cliente com o layout e a proposta comercial</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- DICAS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-label gray">💡 Dicas Rápidas</div>
+  <div class="tips-grid" style="margin-top:14px;">
+    <div class="tip-card">
+      <h4>🎯 Uma pergunta de cada vez</h4>
+      <p>Não mande várias perguntas juntas. Espere o cliente responder uma antes de avançar. Isso mantém a conversa fluindo naturalmente.</p>
+    </div>
+    <div class="tip-card">
+      <h4>📚 Catálogo como aliado</h4>
+      <p>Se o cliente estiver sem foco ou indeciso, mande o catálogo. Não tente adivinhar o que ele quer — deixe ele escolher e voltar com clareza.</p>
+    </div>
+    <div class="tip-card">
+      <h4>💬 Sempre induza o próximo passo</h4>
+      <p>Termine cada mensagem com uma ação clara: uma pergunta, uma instrução ou uma expectativa de retorno. Nunca deixe a conversa "solta".</p>
+    </div>
+    <div class="tip-card">
+      <h4>🔢 Quantidade: sempre "aproximada"</h4>
+      <p>Use sempre "quantidade aproximada". Jamais pressione por um número exato — isso trava o cliente antes de fechar.</p>
+    </div>
+    <div class="tip-card">
+      <h4>🎨 Não fale de técnica</h4>
+      <p>Nunca mencione serigrafia, bordado, sublimação... Só receba a arte. O orçamentista vai definir e explicar a melhor opção para o cliente.</p>
+    </div>
+    <div class="tip-card">
+      <h4>⏰ Follow-up após 48h</h4>
+      <p>Se o cliente não responder, envie um lembrete gentil. Muitas vendas são perdidas por falta de acompanhamento simples.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>📋 Guia do Vendedor de Leads · Passo a Passo Uniformes · passoapassouniformes.com</p>
+    <p>Versão 2.0 · 2026</p>
+  </div>
+
+</div>
+</body>
+</html>

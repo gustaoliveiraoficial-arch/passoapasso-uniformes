@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluxo de Pedido — PassoaPasso Uniformes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --orange:       #C85A00;
+      --orange-dark:  #A84A00;
+      --orange-light: #E06A10;
+      --orange-pale:  #FDF0E6;
+      --black:        #0A0A0A;
+      --gray-900:     #111111;
+      --gray-800:     #1A1A1A;
+      --gray-700:     #2A2A2A;
+      --gray-600:     #4A4A4A;
+      --gray-400:     #9A9A9A;
+      --gray-300:     #CACACA;
+      --gray-200:     #E5E5E5;
+      --gray-100:     #F5F5F5;
+      --white:        #FFFFFF;
+      --gold:         #C49A30;
+      --green:        #2D7D4E;
+      --green-pale:   #EEF7F2;
+      --radius:       12px;
+      --radius-sm:    8px;
+      --shadow:       0 2px 16px rgba(0,0,0,0.09);
+      --shadow-md:    0 4px 24px rgba(0,0,0,0.13);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background: #EFEFEF;
+      color: var(--gray-800);
+      min-height: 100vh;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--black);
+      color: var(--white);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .topbar-brand { display: flex; align-items: center; gap: 12px; }
+    .topbar-logo {
+      background: var(--orange);
+      border-radius: 8px;
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .topbar h1 { font-size: 1rem; font-weight: 700; }
+    .topbar p  { font-size: 0.72rem; color: var(--gray-400); margin-top: 1px; }
+
+    .pedido-num {
+      background: rgba(200,90,0,0.2);
+      border: 1px solid rgba(200,90,0,0.4);
+      color: var(--orange-light);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── PROGRESS WIZARD ── */
+    .wizard-wrap {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0 24px;
+      overflow-x: auto;
+    }
+    .wizard {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      padding: 0;
+    }
+    .step-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 8px 12px;
+      cursor: pointer;
+      position: relative;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+      min-width: 100px;
+      text-align: center;
+    }
+    .step-item:hover .step-num { border-color: var(--orange); color: var(--orange); }
+    .step-item.active { border-bottom-color: var(--orange); }
+    .step-item.done   { border-bottom-color: var(--green); }
+
+    .step-num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--gray-300);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gray-400);
+      transition: all 0.2s;
+      margin-bottom: 5px;
+      background: var(--white);
+      flex-shrink: 0;
+    }
+    .step-item.active .step-num {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: var(--white);
+    }
+    .step-item.done .step-num {
+      background: var(--green);
+      border-color: var(--green);
+      color: var(--white);
+    }
+    .step-item.done .step-num::after { content: '✓'; }
+    .step-item.done .step-num span   { display: none; }
+
+    .step-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      line-height: 1.3;
+    }
+    .step-item.active .step-label { color: var(--orange); }
+    .step-item.done   .step-label { color: var(--green); }
+
+    .step-connector {
+      width: 1px;
+      background: var(--gray-200);
+      align-self: stretch;
+      margin: 14px 0;
+    }
+
+    /* ── MAIN ── */
+    .main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+
+    /* ── STEP PANEL ── */
+    .step-panel { display: none; }
+    .step-panel.active { display: block; }
+
+    .panel-header {
+      margin-bottom: 20px;
+    }
+    .panel-header .step-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--orange);
+      margin-bottom: 4px;
+    }
+    .panel-header h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.3px;
+    }
+    .panel-header p {
+      font-size: 0.82rem;
+      color: var(--gray-600);
+      margin-top: 4px;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+    .card-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--orange);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-title::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 14px;
+      background: var(--orange);
+      border-radius: 2px;
+    }
+
+    /* ── FORM GRID ── */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    .full   { grid-column: 1 / -1; }
+
+    .form-group { display: flex; flex-direction: column; gap: 5px; }
+    .form-group label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-600);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 1.5px solid var(--gray-300);
+      border-radius: var(--radius-sm);
+      padding: 9px 12px;
+      font-size: 0.9rem;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--orange);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 72px; }
+
+    /* ── TOGGLE CHIPS ── */
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 2px; }
+    .chip-label { cursor: pointer; }
+    .chip-label input { display: none; }
+    .chip-label span {
+      display: inline-block;
+      padding: 6px 14px;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      transition: all 0.15s;
+      user-select: none;
+    }
+    .chip-label input[type="radio"]:checked + span,
+    .chip-label input[type="checkbox"]:checked + span {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: var(--white);
+    }
+    .chip-label.green input:checked + span {
+      border-color: var(--green);
+      background: var(--green);
+    }
+
+    /* ── GRADE DE TAMANHOS ── */
+    .grade-table { width: 100%; border-collapse: collapse; }
+    .grade-table th {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--gray-600);
+      padding: 6px 10px;
+      border-bottom: 1px solid var(--gray-200);
+      text-align: center;
+    }
+    .grade-table td {
+      padding: 5px 6px;
+      text-align: center;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .grade-table .group-label {
+      font-size: 0.66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--orange);
+      text-align: left;
+      padding: 10px 10px 4px;
+      border-bottom: none;
+    }
+    .grade-table .tam-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gray-800);
+    }
+    .grade-input {
+      width: 64px;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      padding: 5px 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-align: center;
+      font-family: inherit;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .grade-input:focus { border-color: var(--orange); background: var(--white); }
+    .grade-input:not([value=""]):not([value="0"]) {
+      border-color: var(--orange);
+      background: var(--orange-pale);
+      color: var(--orange-dark);
+    }
+    .grade-total-row td {
+      background: var(--gray-100);
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--gray-800);
+      padding: 8px 6px;
+    }
+
+    /* ── VALOR / MOEDA ── */
+    .currency-wrap {
+      position: relative;
+    }
+    .currency-wrap::before {
+      content: 'R$';
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--gray-600);
+      pointer-events: none;
+    }
+    .currency-wrap input { padding-left: 38px; }
+
+    /* ── RESUMO FINAL ── */
+    .resumo-section {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+    .resumo-header {
+      background: var(--black);
+      color: var(--white);
+      padding: 12px 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .resumo-body {
+      padding: 16px 20px;
+    }
+    .resumo-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .resumo-row:last-child { border-bottom: none; }
+    .resumo-row .r-label {
+      font-size: 0.78rem;
+      color: var(--gray-600);
+      font-weight: 500;
+    }
+    .resumo-row .r-value {
+      font-size: 0.88rem;
+      color: var(--gray-800);
+      font-weight: 700;
+      text-align: right;
+      max-width: 60%;
+    }
+    .resumo-row .r-value.highlight { color: var(--orange); }
+    .resumo-row .r-value.green     { color: var(--green); }
+
+    /* ── GRADE RESUMO ── */
+    .grade-resumo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .grade-chip {
+      background: var(--orange-pale);
+      border: 1px solid rgba(200,90,0,0.25);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--orange-dark);
+    }
+
+    /* ── CONFIRMAÇÃO ── */
+    .confirm-box {
+      background: var(--green-pale);
+      border: 2px solid var(--green);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 14px;
+    }
+    .confirm-box h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+    .confirm-box p {
+      font-size: 0.82rem;
+      color: var(--gray-600);
+    }
+    .confirm-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(45,125,78,0.2);
+    }
+    .confirm-check input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--green);
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .confirm-check label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      cursor: pointer;
+    }
+
+    /* ── BOTÕES ── */
+    .step-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .btn {
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 24px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-back {
+      background: var(--white);
+      color: var(--gray-600);
+      border: 2px solid var(--gray-300);
+    }
+    .btn-back:hover { border-color: var(--gray-600); color: var(--gray-800); }
+    .btn-next {
+      background: var(--orange);
+      color: var(--white);
+      flex: 1;
+      justify-content: center;
+      box-shadow: 0 3px 10px rgba(200,90,0,0.3);
+    }
+    .btn-next:hover { background: var(--orange-dark); transform: translateY(-1px); }
+    .btn-pdf {
+      background: var(--black);
+      color: var(--white);
+      flex: 1;
+      justify-content: center;
+    }
+    .btn-pdf:hover { background: var(--gray-800); transform: translateY(-1px); }
+    .btn-new {
+      background: var(--white);
+      color: var(--gray-700);
+      border: 2px solid var(--gray-300);
+    }
+    .btn-new:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ── CAMPO OBRIGATÓRIO ── */
+    .required::after {
+      content: ' *';
+      color: var(--orange);
+    }
+
+    /* ── STATUS BADGE ── */
+    .status-pill {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+    .status-aprovado   { background: #EEF7F2; color: var(--green); border: 1px solid rgba(45,125,78,0.3); }
+    .status-negociacao { background: #FDF0E6; color: var(--orange); border: 1px solid rgba(200,90,0,0.3); }
+    .status-aguardando { background: #F5F5F5; color: var(--gray-600); border: 1px solid var(--gray-300); }
+
+    /* ── PRINT ── */
+    @media print {
+      .topbar, .wizard-wrap, .step-actions, .btn { display: none !important; }
+      body { background: #fff; }
+      .main { padding: 0; max-width: 100%; }
+      .card, .resumo-section { box-shadow: none; border: 1px solid #ddd; }
+    }
+
+    @media (max-width: 600px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .full { grid-column: 1; }
+      .step-label { font-size: 0.58rem; }
+      .main { padding: 16px 10px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-brand">
+    <div class="topbar-logo">👕</div>
+    <div>
+      <h1>Fluxo de Pedido</h1>
+      <p>PassoaPasso Uniformes</p>
+    </div>
+  </div>
+  <div class="pedido-num" id="pedido-num">PED-000</div>
+</div>
+
+<!-- WIZARD PROGRESS -->
+<div class="wizard-wrap">
+  <div class="wizard">
+    <div class="step-item active" onclick="goToStep(1)" id="sw-1">
+      <div class="step-num"><span>1</span></div>
+      <div class="step-label">Qualificação</div>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step-item" onclick="goToStep(2)" id="sw-2">
+      <div class="step-num"><span>2</span></div>
+      <div class="step-label">Produto e<br>Estampas</div>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step-item" onclick="goToStep(3)" id="sw-3">
+      <div class="step-num"><span>3</span></div>
+      <div class="step-label">Orçamento e<br>Negociação</div>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step-item" onclick="goToStep(4)" id="sw-4">
+      <div class="step-num"><span>4</span></div>
+      <div class="step-label">Ficha<br>Técnica</div>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step-item" onclick="goToStep(5)" id="sw-5">
+      <div class="step-num"><span>5</span></div>
+      <div class="step-label">Formalização<br>do Pedido</div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- ══════════════════════════════════════════════
+       STEP 1 — QUALIFICAÇÃO DO CLIENTE
+  ══════════════════════════════════════════════ -->
+  <div class="step-panel active" id="panel-1">
+    <div class="panel-header">
+      <div class="step-tag">Etapa 1 de 5</div>
+      <h2>Qualificação do Cliente</h2>
+      <p>Identifique quem é o cliente e qual a necessidade inicial.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Dados de Contato</div>
+      <div class="grid-2">
+        <div class="form-group full">
+          <label class="required">Nome do Responsável</label>
+          <input type="text" id="q-nome" placeholder="Nome completo" />
+        </div>
+        <div class="form-group">
+          <label class="required">Empresa / Organização</label>
+          <input type="text" id="q-empresa" placeholder="Nome da empresa, escola ou grupo" />
+        </div>
+        <div class="form-group">
+          <label>Cargo / Função</label>
+          <input type="text" id="q-cargo" placeholder="Ex: Diretor, Gerente, Responsável..." />
+        </div>
+        <div class="form-group">
+          <label class="required">WhatsApp</label>
+          <input type="tel" id="q-whatsapp" placeholder="(00) 00000-0000" />
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" id="q-email" placeholder="contato@empresa.com" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Origem e Perfil</div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Como nos encontrou?</label>
+          <div class="chips" id="origem-chips">
+            <label class="chip-label"><input type="radio" name="origem" value="Instagram" /><span>Instagram</span></label>
+            <label class="chip-label"><input type="radio" name="origem" value="Indicação" /><span>Indicação</span></label>
+            <label class="chip-label"><input type="radio" name="origem" value="Google" /><span>Google</span></label>
+            <label class="chip-label"><input type="radio" name="origem" value="WhatsApp" /><span>WhatsApp</span></label>
+            <label class="chip-label"><input type="radio" name="origem" value="Facebook" /><span>Facebook</span></label>
+            <label class="chip-label"><input type="radio" name="origem" value="Retorno" /><span>Cliente antigo</span></label>
+            <label class="chip-label"><input type="radio" name="origem" value="Outros" /><span>Outros</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tipo de Cliente</label>
+          <div class="chips" id="tipo-cliente-chips">
+            <label class="chip-label"><input type="radio" name="tipo-cliente" value="Empresa" /><span>Empresa</span></label>
+            <label class="chip-label"><input type="radio" name="tipo-cliente" value="Escola" /><span>Escola</span></label>
+            <label class="chip-label"><input type="radio" name="tipo-cliente" value="Time/Esporte" /><span>Time / Esporte</span></label>
+            <label class="chip-label"><input type="radio" name="tipo-cliente" value="Evento" /><span>Evento</span></label>
+            <label class="chip-label"><input type="radio" name="tipo-cliente" value="Personal" /><span>Personal</span></label>
+            <label class="chip-label"><input type="radio" name="tipo-cliente" value="Outros" /><span>Outros</span></label>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Necessidade Principal / Contexto</label>
+          <textarea id="q-necessidade" placeholder="Descreva brevemente o que o cliente precisa, prazo urgente, quantidade estimada mencionada..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn btn-next" onclick="nextStep(1)">Próximo: Produto e Estampas →</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STEP 2 — ESCOLHA DO PRODUTO E ESTAMPAS
+  ══════════════════════════════════════════════ -->
+  <div class="step-panel" id="panel-2">
+    <div class="panel-header">
+      <div class="step-tag">Etapa 2 de 5</div>
+      <h2>Produto e Estampas</h2>
+      <p>Defina o produto, finalidade, quantidade e as estampas desejadas.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Produto e Finalidade</div>
+      <div class="grid-2">
+        <div class="form-group full">
+          <label>Produto Principal</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="produto" value="Camiseta Dry-Fit" /><span>Camiseta Dry-Fit</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Camiseta Polo" /><span>Polo</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Camiseta Algodão" /><span>Algodão</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Regata" /><span>Regata</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Agasalho/Moletom" /><span>Agasalho / Moletom</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Uniforme Escolar" /><span>Uniforme Escolar</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Kit Completo" /><span>Kit Completo</span></label>
+            <label class="chip-label"><input type="radio" name="produto" value="Outro" /><span>Outro</span></label>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Para qual finalidade?</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="finalidade" value="Uniforme de trabalho" /><span>Uniforme de trabalho</span></label>
+            <label class="chip-label"><input type="radio" name="finalidade" value="Uniforme escolar" /><span>Uniforme escolar</span></label>
+            <label class="chip-label"><input type="radio" name="finalidade" value="Time esportivo" /><span>Time esportivo</span></label>
+            <label class="chip-label"><input type="radio" name="finalidade" value="Evento/Confraternização" /><span>Evento</span></label>
+            <label class="chip-label"><input type="radio" name="finalidade" value="Brinde corporativo" /><span>Brinde corporativo</span></label>
+            <label class="chip-label"><input type="radio" name="finalidade" value="Formatura" /><span>Formatura</span></label>
+            <label class="chip-label"><input type="radio" name="finalidade" value="Outros" /><span>Outros</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="required">Quantidade Estimada (peças)</label>
+          <input type="number" id="p-quantidade" placeholder="Ex: 50" min="1" />
+        </div>
+        <div class="form-group">
+          <label>Produto Detalhado / Outros</label>
+          <input type="text" id="p-produto-detalhe" placeholder="Ex: Camiseta manga longa, colete..." />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Estampas e Personalização</div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Localização das Estampas</label>
+          <div class="chips">
+            <label class="chip-label"><input type="checkbox" name="estampa" value="Frente" /><span>Frente</span></label>
+            <label class="chip-label"><input type="checkbox" name="estampa" value="Costas" /><span>Costas</span></label>
+            <label class="chip-label"><input type="checkbox" name="estampa" value="Manga Esquerda" /><span>Manga Esq.</span></label>
+            <label class="chip-label"><input type="checkbox" name="estampa" value="Manga Direita" /><span>Manga Dir.</span></label>
+            <label class="chip-label"><input type="checkbox" name="estampa" value="Gola/Nuca" /><span>Gola / Nuca</span></label>
+            <label class="chip-label"><input type="checkbox" name="estampa" value="Bolso" /><span>Bolso</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tipo de Personalização</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="personalizacao" value="Sublimação total" /><span>Sublimação</span></label>
+            <label class="chip-label"><input type="radio" name="personalizacao" value="Silk screen" /><span>Silk Screen</span></label>
+            <label class="chip-label"><input type="radio" name="personalizacao" value="Bordado" /><span>Bordado</span></label>
+            <label class="chip-label"><input type="radio" name="personalizacao" value="Estampa digital" /><span>Digital</span></label>
+            <label class="chip-label"><input type="radio" name="personalizacao" value="Termocolante" /><span>Termocolante</span></label>
+            <label class="chip-label"><input type="radio" name="personalizacao" value="Misto" /><span>Misto</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Referência de Cores</label>
+          <input type="text" id="p-cores" placeholder="Ex: azul royal, branco, preto — código ou referência" />
+        </div>
+        <div class="form-group">
+          <label>Observações sobre Arte / Layout</label>
+          <input type="text" id="p-arte-obs" placeholder="Ex: logo já aprovado, envio por WhatsApp..." />
+        </div>
+      </div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn btn-back" onclick="prevStep(2)">← Voltar</button>
+      <button class="btn btn-next" onclick="nextStep(2)">Próximo: Orçamento →</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STEP 3 — ORÇAMENTO E NEGOCIAÇÃO
+  ══════════════════════════════════════════════ -->
+  <div class="step-panel" id="panel-3">
+    <div class="panel-header">
+      <div class="step-tag">Etapa 3 de 5</div>
+      <h2>Orçamento e Negociação</h2>
+      <p>Registre os valores, condições de pagamento e prazos negociados.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Valores</div>
+      <div class="grid-3">
+        <div class="form-group">
+          <label>Valor Unitário</label>
+          <div class="currency-wrap">
+            <input type="number" id="o-valor-unit" placeholder="0,00" step="0.01" min="0" oninput="calcTotal()" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Quantidade</label>
+          <input type="number" id="o-qtd-ref" placeholder="—" min="1" oninput="calcTotal()" />
+        </div>
+        <div class="form-group">
+          <label>Valor Total</label>
+          <div class="currency-wrap">
+            <input type="text" id="o-valor-total" placeholder="0,00" readonly style="background:#F9F9F9;font-weight:700;color:var(--orange);" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Observações sobre o Valor</label>
+          <input type="text" id="o-valor-obs" placeholder="Ex: frete incluso, desconto para quantidade, valor sujeito a confirmação da arte..." />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Condições de Pagamento</div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Forma de Pagamento</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="pagamento" value="PIX" /><span>PIX</span></label>
+            <label class="chip-label"><input type="radio" name="pagamento" value="Boleto" /><span>Boleto</span></label>
+            <label class="chip-label"><input type="radio" name="pagamento" value="Cartão Crédito" /><span>Crédito</span></label>
+            <label class="chip-label"><input type="radio" name="pagamento" value="Cartão Débito" /><span>Débito</span></label>
+            <label class="chip-label"><input type="radio" name="pagamento" value="Dinheiro" /><span>Dinheiro</span></label>
+            <label class="chip-label"><input type="radio" name="pagamento" value="Misto" /><span>Misto</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Parcelamento</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="parcelas" value="À vista" /><span>À vista</span></label>
+            <label class="chip-label"><input type="radio" name="parcelas" value="2x" /><span>2x</span></label>
+            <label class="chip-label"><input type="radio" name="parcelas" value="3x" /><span>3x</span></label>
+            <label class="chip-label"><input type="radio" name="parcelas" value="4x" /><span>4x</span></label>
+            <label class="chip-label"><input type="radio" name="parcelas" value="5x" /><span>5x</span></label>
+            <label class="chip-label"><input type="radio" name="parcelas" value="6x" /><span>6x</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Entrada / Sinal</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="entrada" value="Sem entrada" /><span>Sem entrada</span></label>
+            <label class="chip-label"><input type="radio" name="entrada" value="30%" /><span>30%</span></label>
+            <label class="chip-label"><input type="radio" name="entrada" value="50%" /><span>50%</span></label>
+            <label class="chip-label"><input type="radio" name="entrada" value="100%" /><span>100%</span></label>
+            <label class="chip-label"><input type="radio" name="entrada" value="Outro" /><span>Outro</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Condição de Pagamento</label>
+          <select id="o-condicao">
+            <option value="">Selecione...</option>
+            <option>Entrada + restante na entrega</option>
+            <option>50% entrada + 50% na entrega</option>
+            <option>100% antecipado</option>
+            <option>100% na entrega</option>
+            <option>30 dias após entrega</option>
+            <option>Outra condição</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Prazo de Entrega Desejado</label>
+          <input type="date" id="o-prazo-desejado" />
+        </div>
+        <div class="form-group">
+          <label>Status do Orçamento</label>
+          <select id="o-status">
+            <option value="Em negociação">Em negociação</option>
+            <option value="Aprovado">Aprovado</option>
+            <option value="Aguardando retorno">Aguardando retorno</option>
+            <option value="Recusado">Recusado</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Observações da Negociação</label>
+          <textarea id="o-obs" placeholder="Ex: cliente pediu desconto, condição especial acordada, prazo urgente..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn btn-back" onclick="prevStep(3)">← Voltar</button>
+      <button class="btn btn-next" onclick="nextStep(3)">Próximo: Ficha Técnica →</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STEP 4 — FICHA TÉCNICA
+  ══════════════════════════════════════════════ -->
+  <div class="step-panel" id="panel-4">
+    <div class="panel-header">
+      <div class="step-tag">Etapa 4 de 5</div>
+      <h2>Ficha Técnica</h2>
+      <p>Grade de tamanhos, especificações do produto, layout aprovado e data de entrega.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Grade de Tamanhos</div>
+      <table class="grade-table">
+        <thead>
+          <tr>
+            <th style="text-align:left;width:140px">Grupo</th>
+            <th>Tamanho</th>
+            <th>Qtd</th>
+            <th style="width:80px"></th>
+            <th>Tamanho</th>
+            <th>Qtd</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="group-label" colspan="6">● Adulto Unissex</td></tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">PP</span></td><td><input class="grade-input" type="number" id="g-pp" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">P</span></td><td><input class="grade-input" type="number" id="g-p" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">M</span></td><td><input class="grade-input" type="number" id="g-m" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">G</span></td><td><input class="grade-input" type="number" id="g-g" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">GG</span></td><td><input class="grade-input" type="number" id="g-gg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">XG</span></td><td><input class="grade-input" type="number" id="g-xg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">XXG</span></td><td><input class="grade-input" type="number" id="g-xxg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">XXXG</span></td><td><input class="grade-input" type="number" id="g-xxxg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+
+          <tr><td class="group-label" colspan="6">● Babylook / Feminino</td></tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">PP</span></td><td><input class="grade-input" type="number" id="g-bpp" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">P</span></td><td><input class="grade-input" type="number" id="g-bp" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">M</span></td><td><input class="grade-input" type="number" id="g-bm" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">G</span></td><td><input class="grade-input" type="number" id="g-bg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">GG</span></td><td><input class="grade-input" type="number" id="g-bgg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">XG</span></td><td><input class="grade-input" type="number" id="g-bxg" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+
+          <tr><td class="group-label" colspan="6">● Infantil (anos)</td></tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">2</span></td><td><input class="grade-input" type="number" id="g-i2" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">4</span></td><td><input class="grade-input" type="number" id="g-i4" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">6</span></td><td><input class="grade-input" type="number" id="g-i6" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">8</span></td><td><input class="grade-input" type="number" id="g-i8" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">10</span></td><td><input class="grade-input" type="number" id="g-i10" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">12</span></td><td><input class="grade-input" type="number" id="g-i12" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tam-tag">14</span></td><td><input class="grade-input" type="number" id="g-i14" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+            <td></td>
+            <td><span class="tam-tag">16</span></td><td><input class="grade-input" type="number" id="g-i16" value="" min="0" placeholder="0" oninput="updateGradeTotal()" /></td>
+          </tr>
+
+          <tr class="grade-total-row">
+            <td colspan="5" style="text-align:right;padding-right:16px">TOTAL DE PEÇAS:</td>
+            <td><span id="grade-total-display" style="color:var(--orange);font-size:1rem">0</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Especificações do Produto</div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Material / Tecido</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="material" value="Dry-Fit / Poliéster" /><span>Dry-Fit</span></label>
+            <label class="chip-label"><input type="radio" name="material" value="Malha PV" /><span>Malha PV</span></label>
+            <label class="chip-label"><input type="radio" name="material" value="Algodão" /><span>Algodão</span></label>
+            <label class="chip-label"><input type="radio" name="material" value="Misto (Algodão + Poliéster)" /><span>Misto</span></label>
+            <label class="chip-label"><input type="radio" name="material" value="Helanca" /><span>Helanca</span></label>
+            <label class="chip-label"><input type="radio" name="material" value="Outro" /><span>Outro</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Detalhes Adicionais</label>
+          <div class="chips">
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Gola redonda" /><span>Gola redonda</span></label>
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Gola polo" /><span>Gola polo</span></label>
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Zíper" /><span>Zíper</span></label>
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Bolso" /><span>Bolso</span></label>
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Punho" /><span>Punho</span></label>
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Capuz" /><span>Capuz</span></label>
+            <label class="chip-label"><input type="checkbox" name="detalhe" value="Número/Nome" /><span>Número / Nome</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Cor Principal da Peça</label>
+          <input type="text" id="ft-cor" placeholder="Ex: Azul royal, Preto, Branco..." />
+        </div>
+        <div class="form-group">
+          <label>Medidas Especiais / Observações</label>
+          <input type="text" id="ft-medidas" placeholder="Ex: manga longa, comprimento específico..." />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Arte e Prazo de Entrega</div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Status da Arte / Layout</label>
+          <div class="chips">
+            <label class="chip-label"><input type="radio" name="status-arte" value="Arte aprovada" /><span>Arte aprovada</span></label>
+            <label class="chip-label"><input type="radio" name="status-arte" value="Arte em criação" /><span>Em criação</span></label>
+            <label class="chip-label"><input type="radio" name="status-arte" value="Aguardando arte do cliente" /><span>Aguardando cliente</span></label>
+            <label class="chip-label"><input type="radio" name="status-arte" value="Arte em revisão" /><span>Em revisão</span></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Link / Referência da Arte</label>
+          <input type="text" id="ft-arte-link" placeholder="Drive, WhatsApp, pasta, número do arquivo..." />
+        </div>
+        <div class="form-group">
+          <label class="required">Data de Entrega Confirmada</label>
+          <input type="date" id="ft-data-entrega" />
+        </div>
+        <div class="form-group">
+          <label>Observações da Ficha Técnica</label>
+          <textarea id="ft-obs" placeholder="Ex: acabamento especial, etiqueta personalizada, embalagem individual..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn btn-back" onclick="prevStep(4)">← Voltar</button>
+      <button class="btn btn-next" onclick="nextStep(4)">Próximo: Formalizar Pedido →</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STEP 5 — FORMALIZAÇÃO DO PEDIDO
+  ══════════════════════════════════════════════ -->
+  <div class="step-panel" id="panel-5">
+    <div class="panel-header">
+      <div class="step-tag">Etapa 5 de 5</div>
+      <h2>Formalização do Pedido</h2>
+      <p>Dados completos do cliente, revisão do pedido e confirmação de produção.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Dados Completos do Cliente</div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>CPF / CNPJ</label>
+          <input type="text" id="f-doc" placeholder="000.000.000-00 ou 00.000.000/0000-00" />
+        </div>
+        <div class="form-group">
+          <label>Inscrição Estadual (se PJ)</label>
+          <input type="text" id="f-ie" placeholder="Isento ou número" />
+        </div>
+        <div class="form-group full">
+          <label>Endereço de Entrega</label>
+          <input type="text" id="f-endereco" placeholder="Rua, número, bairro, cidade — CEP" />
+        </div>
+        <div class="form-group">
+          <label>Responsável pelo Recebimento</label>
+          <input type="text" id="f-responsavel" placeholder="Nome de quem vai receber" />
+        </div>
+        <div class="form-group">
+          <label>Ponto de Referência</label>
+          <input type="text" id="f-referencia" placeholder="Próximo a..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUMO COMPLETO -->
+    <div class="resumo-section">
+      <div class="resumo-header">📋 Resumo Completo do Pedido</div>
+      <div class="resumo-body" id="resumo-body">
+        <!-- preenchido via JS -->
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Observações Finais do Pedido</div>
+      <div class="form-group">
+        <textarea id="f-obs-finais" placeholder="Alguma observação final sobre o pedido, solicitações especiais do cliente..." style="min-height:80px"></textarea>
+      </div>
+    </div>
+
+    <div class="confirm-box">
+      <h3>Confirmar Produção</h3>
+      <p>Ao confirmar, o pedido estará formalizado e liberado para entrada em produção. Verifique todas as informações antes de confirmar.</p>
+      <div class="confirm-check">
+        <input type="checkbox" id="conf-check" onchange="toggleConfirm()" />
+        <label for="conf-check">Confirmo que todas as informações foram verificadas e aprovadas pelo cliente. O pedido está liberado para produção.</label>
+      </div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn btn-back" onclick="prevStep(5)">← Voltar</button>
+      <button class="btn btn-new" onclick="novoPedido()">+ Novo Pedido</button>
+      <button class="btn btn-pdf" onclick="gerarPDF()" id="btn-gerar-pdf" disabled>⬇ Gerar PDF do Pedido</button>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+  let currentStep = 1;
+
+  // Gerar número do pedido
+  function gerarNumeroPedido() {
+    const d = new Date();
+    const y = String(d.getFullYear()).slice(2);
+    const m = String(d.getMonth()+1).padStart(2,'0');
+    const rand = String(Math.floor(Math.random()*9000)+1000);
+    return `PED-${y}${m}-${rand}`;
+  }
+
+  const numPedido = gerarNumeroPedido();
+  document.getElementById('pedido-num').textContent = numPedido;
+
+  // Data padrão hoje
+  const hoje = new Date().toISOString().split('T')[0];
+  document.getElementById('o-prazo-desejado').value = hoje;
+
+  function goToStep(n) {
+    if (n > currentStep) return; // só permite voltar clicando no wizard
+    switchStep(n);
+  }
+
+  function nextStep(from) {
+    if (from === 1) {
+      const nome    = document.getElementById('q-nome').value.trim();
+      const empresa = document.getElementById('q-empresa').value.trim();
+      const wpp     = document.getElementById('q-whatsapp').value.trim();
+      if (!nome || !empresa || !wpp) {
+        alert('Preencha os campos obrigatórios: Nome, Empresa e WhatsApp.');
+        return;
+      }
+    }
+    if (from === 2) {
+      const qtd = document.getElementById('p-quantidade').value;
+      if (!qtd || parseInt(qtd) < 1) {
+        alert('Informe a quantidade estimada de peças.');
+        return;
+      }
+    }
+    if (from === 4) {
+      const entrega = document.getElementById('ft-data-entrega').value;
+      if (!entrega) {
+        alert('Informe a data de entrega confirmada.');
+        return;
+      }
+    }
+    markDone(from);
+    switchStep(from + 1);
+    if (from + 1 === 5) buildResumo();
+  }
+
+  function prevStep(from) {
+    switchStep(from - 1);
+  }
+
+  function switchStep(n) {
+    currentStep = n;
+    document.querySelectorAll('.step-panel').forEach((p,i) => {
+      p.classList.toggle('active', i + 1 === n);
+    });
+    document.querySelectorAll('.step-item').forEach((item, i) => {
+      item.classList.remove('active');
+      if (i + 1 === n) item.classList.add('active');
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function markDone(stepNum) {
+    const sw = document.getElementById(`sw-${stepNum}`);
+    if (sw && !sw.classList.contains('done')) {
+      sw.classList.remove('active');
+      sw.classList.add('done');
+    }
+  }
+
+  // CALC TOTAL
+  function calcTotal() {
+    const unit = parseFloat(document.getElementById('o-valor-unit').value) || 0;
+    const qtd  = parseInt(document.getElementById('o-qtd-ref').value) || 0;
+    const total = unit * qtd;
+    document.getElementById('o-valor-total').value =
+      total > 0 ? total.toLocaleString('pt-BR', { minimumFractionDigits: 2 }) : '';
+    // sincroniza qtd
+    if (qtd > 0) document.getElementById('p-quantidade').value = qtd;
+  }
+
+  // GRADE TOTAL
+  const gradeIds = ['pp','p','m','g','gg','xg','xxg','xxxg','bpp','bp','bm','bg','bgg','bxg','i2','i4','i6','i8','i10','i12','i14','i16'];
+  function updateGradeTotal() {
+    let total = 0;
+    gradeIds.forEach(id => {
+      const v = parseInt(document.getElementById('g-'+id).value) || 0;
+      total += v;
+    });
+    document.getElementById('grade-total-display').textContent = total;
+  }
+
+  // CONFIRMAÇÃO
+  function toggleConfirm() {
+    const checked = document.getElementById('conf-check').checked;
+    document.getElementById('btn-gerar-pdf').disabled = !checked;
+  }
+
+  // NOVO PEDIDO
+  function novoPedido() {
+    if (!confirm('Iniciar um novo pedido? Os dados atuais não serão salvos.')) return;
+    location.reload();
+  }
+
+  // ── CONSTRUIR RESUMO ──
+  function getRadio(name) {
+    const el = document.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.value : '—';
+  }
+  function getCheckboxes(name) {
+    const els = document.querySelectorAll(`input[name="${name}"]:checked`);
+    const vals = Array.from(els).map(e => e.value);
+    return vals.length ? vals.join(', ') : '—';
+  }
+  function val(id) {
+    const el = document.getElementById(id);
+    return el && el.value.trim() ? el.value.trim() : '—';
+  }
+  function fmtDate(dateStr) {
+    if (!dateStr || dateStr === '—') return '—';
+    const [y,m,d] = dateStr.split('-');
+    return `${d}/${m}/${y}`;
+  }
+
+  function buildGradeResumo() {
+    const labels = {
+      pp:'PP', p:'P', m:'M', g:'G', gg:'GG', xg:'XG', xxg:'XXG', xxxg:'XXXG',
+      bpp:'PP(B)', bp:'P(B)', bm:'M(B)', bg:'G(B)', bgg:'GG(B)', bxg:'XG(B)',
+      i2:'2a', i4:'4a', i6:'6a', i8:'8a', i10:'10a', i12:'12a', i14:'14a', i16:'16a'
+    };
+    const chips = gradeIds
+      .map(id => {
+        const v = parseInt(document.getElementById('g-'+id).value) || 0;
+        return v > 0 ? `<span class="grade-chip">${labels[id]}: ${v}</span>` : '';
+      })
+      .filter(Boolean)
+      .join('');
+    return chips || '<span style="color:var(--gray-400);font-size:0.8rem">Nenhuma quantidade preenchida</span>';
+  }
+
+  function buildResumo() {
+    const total = parseInt(document.getElementById('grade-total-display').textContent) || 0;
+    const valorUnit  = document.getElementById('o-valor-unit').value;
+    const valorTotal = document.getElementById('o-valor-total').value;
+    const statusOrc  = val('o-status');
+
+    let statusClass = 'status-negociacao';
+    if (statusOrc === 'Aprovado') statusClass = 'status-aprovado';
+    if (statusOrc === 'Aguardando retorno') statusClass = 'status-aguardando';
+
+    const html = `
+      <div class="resumo-row">
+        <span class="r-label">Número do Pedido</span>
+        <span class="r-value highlight">${numPedido}</span>
+      </div>
+
+      <!-- CLIENTE -->
+      <div style="margin:14px 0 6px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--gray-400)">Cliente</div>
+      <div class="resumo-row"><span class="r-label">Nome</span><span class="r-value">${val('q-nome')}</span></div>
+      <div class="resumo-row"><span class="r-label">Empresa</span><span class="r-value">${val('q-empresa')}</span></div>
+      <div class="resumo-row"><span class="r-label">WhatsApp</span><span class="r-value">${val('q-whatsapp')}</span></div>
+      <div class="resumo-row"><span class="r-label">E-mail</span><span class="r-value">${val('q-email')}</span></div>
+      <div class="resumo-row"><span class="r-label">Tipo de cliente</span><span class="r-value">${getRadio('tipo-cliente')}</span></div>
+      <div class="resumo-row"><span class="r-label">Origem</span><span class="r-value">${getRadio('origem')}</span></div>
+
+      <!-- PRODUTO -->
+      <div style="margin:14px 0 6px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--gray-400)">Produto</div>
+      <div class="resumo-row"><span class="r-label">Produto</span><span class="r-value">${getRadio('produto')}</span></div>
+      <div class="resumo-row"><span class="r-label">Finalidade</span><span class="r-value">${getRadio('finalidade')}</span></div>
+      <div class="resumo-row"><span class="r-label">Estampas</span><span class="r-value">${getCheckboxes('estampa')}</span></div>
+      <div class="resumo-row"><span class="r-label">Personalização</span><span class="r-value">${getRadio('personalizacao')}</span></div>
+      <div class="resumo-row"><span class="r-label">Cores</span><span class="r-value">${val('p-cores')}</span></div>
+
+      <!-- ORÇAMENTO -->
+      <div style="margin:14px 0 6px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--gray-400)">Orçamento</div>
+      <div class="resumo-row"><span class="r-label">Valor unitário</span><span class="r-value">${valorUnit !== '—' ? 'R$ ' + parseFloat(valorUnit).toLocaleString('pt-BR',{minimumFractionDigits:2}) : '—'}</span></div>
+      <div class="resumo-row"><span class="r-label">Valor total</span><span class="r-value highlight">${valorTotal !== '—' && valorTotal ? 'R$ ' + valorTotal : '—'}</span></div>
+      <div class="resumo-row"><span class="r-label">Pagamento</span><span class="r-value">${getRadio('pagamento')}</span></div>
+      <div class="resumo-row"><span class="r-label">Parcelamento</span><span class="r-value">${getRadio('parcelas')}</span></div>
+      <div class="resumo-row"><span class="r-label">Entrada</span><span class="r-value">${getRadio('entrada')}</span></div>
+      <div class="resumo-row"><span class="r-label">Condição</span><span class="r-value">${val('o-condicao')}</span></div>
+      <div class="resumo-row"><span class="r-label">Status orçamento</span><span class="r-value"><span class="status-pill ${statusClass}">${statusOrc}</span></span></div>
+      <div class="resumo-row"><span class="r-label">Prazo desejado</span><span class="r-value">${fmtDate(val('o-prazo-desejado'))}</span></div>
+
+      <!-- FICHA TÉCNICA -->
+      <div style="margin:14px 0 6px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--gray-400)">Ficha Técnica</div>
+      <div class="resumo-row"><span class="r-label">Material</span><span class="r-value">${getRadio('material')}</span></div>
+      <div class="resumo-row"><span class="r-label">Cor da peça</span><span class="r-value">${val('ft-cor')}</span></div>
+      <div class="resumo-row"><span class="r-label">Detalhes</span><span class="r-value">${getCheckboxes('detalhe')}</span></div>
+      <div class="resumo-row"><span class="r-label">Arte / Layout</span><span class="r-value">${getRadio('status-arte')}</span></div>
+      <div class="resumo-row"><span class="r-label">Data entrega confirmada</span><span class="r-value green">${fmtDate(val('ft-data-entrega'))}</span></div>
+      <div class="resumo-row"><span class="r-label">Total de peças (grade)</span><span class="r-value highlight">${total} peça${total !== 1 ? 's' : ''}</span></div>
+
+      <!-- GRADE -->
+      <div style="margin:8px 0 6px">
+        <div class="grade-resumo">${buildGradeResumo()}</div>
+      </div>
+    `;
+    document.getElementById('resumo-body').innerHTML = html;
+  }
+
+  // ── GERAR PDF ──
+  function gerarPDF() {
+    const nome    = val('q-nome');
+    const empresa = val('q-empresa');
+    const produto = getRadio('produto');
+    const entrega = fmtDate(val('ft-data-entrega'));
+    const valorUnit  = document.getElementById('o-valor-unit').value;
+    const valorTotal = document.getElementById('o-valor-total').value;
+    const totalPecas = document.getElementById('grade-total-display').textContent;
+    const obsFinais  = val('f-obs-finais');
+    const endereco   = val('f-endereco');
+    const doc        = val('f-doc');
+    const dataPedido = new Date().toLocaleDateString('pt-BR');
+
+    const gradeHtml = (() => {
+      const labels = {
+        pp:'PP', p:'P', m:'M', g:'G', gg:'GG', xg:'XG', xxg:'XXG', xxxg:'XXXG',
+        bpp:'PP(B)', bp:'P(B)', bm:'M(B)', bg:'G(B)', bgg:'GG(B)', bxg:'XG(B)',
+        i2:'2a', i4:'4a', i6:'6a', i8:'8a', i10:'10a', i12:'12a', i14:'14a', i16:'16a'
+      };
+      return gradeIds.map(id => {
+        const v = parseInt(document.getElementById('g-'+id).value) || 0;
+        if (!v) return '';
+        return `<div style="display:inline-block;background:#FDF0E6;border:1px solid rgba(200,90,0,0.25);border-radius:6px;padding:3px 10px;font-size:12px;font-weight:700;color:#A84A00;margin:3px 2px">${labels[id]}: ${v}</div>`;
+      }).filter(Boolean).join('');
+    })();
+
+    const row = (label, value, highlight) =>
+      `<tr>
+        <td style="padding:7px 12px;font-size:12px;color:#4A4A4A;border-bottom:1px solid #F0F0F0;font-weight:500;width:40%">${label}</td>
+        <td style="padding:7px 12px;font-size:13px;color:${highlight||'#1A1A1A'};border-bottom:1px solid #F0F0F0;font-weight:700">${value}</td>
+      </tr>`;
+
+    const section = (title) =>
+      `<tr><td colspan="2" style="padding:12px 12px 4px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:#9A9A9A;background:#FAFAFA;border-bottom:1px solid #F0F0F0">${title}</td></tr>`;
+
+    const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Pedido ${numPedido} — ${empresa}</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #111; padding: 28px 32px; }
+    @media print { body { padding: 16px 20px; } }
+    .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 22px; padding-bottom: 16px; border-bottom: 3px solid #C85A00; }
+    .header-left h1 { font-size: 1.15rem; font-weight: 800; color: #0A0A0A; }
+    .header-left p  { font-size: 0.75rem; color: #4A4A4A; margin-top: 3px; }
+    .header-right { text-align: right; }
+    .ped-num { background: #C85A00; color: #fff; padding: 5px 14px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px; display: inline-block; margin-bottom: 5px; }
+    .ped-date { font-size: 0.72rem; color: #4A4A4A; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 18px; border: 1px solid #E5E5E5; border-radius: 8px; overflow: hidden; }
+    .footer { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid #E0E0E0; margin-top: 6px; }
+    .total-box { background: #0A0A0A; color: #fff; border-radius: 8px; padding: 8px 20px; font-size: 0.82rem; font-weight: 700; }
+    .total-box span { color: #E06A10; font-size: 1rem; }
+    .confirm-stamp { background: #EEF7F2; border: 2px solid #2D7D4E; border-radius: 8px; padding: 10px 16px; margin-bottom: 18px; }
+    .confirm-stamp p { font-size: 12px; color: #2D7D4E; font-weight: 700; }
+    .rodape { margin-top: 24px; text-align: center; font-size: 10px; color: #CACACA; }
+    .obs-box { background: #FDF0E6; border-left: 3px solid #C85A00; padding: 10px 14px; border-radius: 0 6px 6px 0; margin-bottom: 18px; }
+    .obs-box .obs-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #A84A00; margin-bottom: 4px; }
+    .obs-box p { font-size: 12px; color: #333; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <h1>Pedido de Uniformes</h1>
+      <p>PassoaPasso Uniformes</p>
+    </div>
+    <div class="header-right">
+      <div class="ped-num">${numPedido}</div>
+      <div class="ped-date">Emitido em ${dataPedido}</div>
+    </div>
+  </div>
+
+  <div class="confirm-stamp">
+    <p>✓ PEDIDO CONFIRMADO PARA PRODUÇÃO · Entrega prevista: ${entrega}</p>
+  </div>
+
+  <table>
+    <tbody>
+      ${section('Cliente')}
+      ${row('Nome do responsável', nome)}
+      ${row('Empresa / Organização', empresa)}
+      ${row('WhatsApp', val('q-whatsapp'))}
+      ${row('E-mail', val('q-email'))}
+      ${row('CPF / CNPJ', doc)}
+      ${row('Endereço de entrega', endereco)}
+      ${row('Tipo de cliente', getRadio('tipo-cliente'))}
+      ${row('Origem', getRadio('origem'))}
+
+      ${section('Produto')}
+      ${row('Produto', produto)}
+      ${row('Finalidade', getRadio('finalidade'))}
+      ${row('Personalização', getRadio('personalizacao'))}
+      ${row('Localização das estampas', getCheckboxes('estampa'))}
+      ${row('Cores de referência', val('p-cores'))}
+
+      ${section('Orçamento')}
+      ${row('Valor unitário', valorUnit ? 'R$ ' + parseFloat(valorUnit).toLocaleString('pt-BR',{minimumFractionDigits:2}) : '—', '#C85A00')}
+      ${row('Valor total', valorTotal ? 'R$ ' + valorTotal : '—', '#C85A00')}
+      ${row('Forma de pagamento', getRadio('pagamento'))}
+      ${row('Parcelamento', getRadio('parcelas'))}
+      ${row('Entrada / Sinal', getRadio('entrada'))}
+      ${row('Condição de pagamento', val('o-condicao'))}
+
+      ${section('Ficha Técnica')}
+      ${row('Material / Tecido', getRadio('material'))}
+      ${row('Cor da peça', val('ft-cor'))}
+      ${row('Detalhes adicionais', getCheckboxes('detalhe'))}
+      ${row('Status da arte', getRadio('status-arte'))}
+      ${row('Total de peças', totalPecas + ' peças', '#C85A00')}
+    </tbody>
+  </table>
+
+  ${gradeHtml ? `<div style="margin-bottom:18px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#9A9A9A;margin-bottom:8px">Grade de Tamanhos</div>${gradeHtml}</div>` : ''}
+
+  ${obsFinais !== '—' ? `<div class="obs-box"><div class="obs-label">Observações Finais</div><p>${obsFinais}</p></div>` : ''}
+
+  <div class="footer">
+    <div style="font-size:11px;color:#4A4A4A">Gerado em ${dataPedido} às ${new Date().toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'})}</div>
+    <div class="total-box">Total: <span>${totalPecas}</span> peça${parseInt(totalPecas)!==1?'s':''}</div>
+  </div>
+
+  <div style="margin-top:28px;border-top:1px solid #E0E0E0;padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <div>
+      <div style="height:1px;background:#0A0A0A;margin-bottom:6px"></div>
+      <div style="font-size:11px;color:#4A4A4A">Assinatura do Cliente</div>
+    </div>
+    <div>
+      <div style="height:1px;background:#0A0A0A;margin-bottom:6px"></div>
+      <div style="font-size:11px;color:#4A4A4A">Assinatura PassoaPasso Uniformes</div>
+    </div>
+  </div>
+
+  <div class="rodape">PassoaPasso Uniformes · ${numPedido} · Pedido gerado automaticamente</div>
+
+  <script>window.onload = () => window.print();<\/script>
+</body>
+</html>`;
+
+    const win = window.open('', '_blank');
+    win.document.write(html);
+    win.document.close();
+  }
+</script>
+</body>
+</html>

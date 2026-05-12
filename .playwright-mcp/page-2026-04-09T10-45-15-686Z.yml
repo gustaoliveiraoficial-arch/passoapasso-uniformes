@@ -1,0 +1,122 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Menu principal" [expanded] [ref=e295] [cursor=pointer]:
+            - img [ref=e9]
+          - link "Google Apps Script" [ref=e296] [cursor=pointer]:
+            - /url: /home
+            - img [ref=e14]
+            - generic [ref=e15]: Apps Script
+        - generic [ref=e16]:
+          - search [ref=e23]:
+            - generic [ref=e29]:
+              - textbox [disabled] [ref=e30]: Pesquisar
+              - combobox "Pesquisar" [ref=e297]
+            - button "Pesquisa" [ref=e298] [cursor=pointer]:
+              - img [ref=e33]
+          - button "Suporte" [ref=e299] [cursor=pointer]:
+            - generic [ref=e43]: help_outline
+        - generic [ref=e45]:
+          - button "Google Apps" [ref=e300] [cursor=pointer]:
+            - img [ref=e50]
+          - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e301] [cursor=pointer]':
+            - img [ref=e57]
+      - navigation [ref=e58]:
+        - menu [ref=e59]:
+          - generic [ref=e61]:
+            - button "Novo projeto" [ref=e302] [cursor=pointer]:
+              - img [ref=e65]
+              - generic [ref=e71]: Novo projeto
+            - generic [ref=e72]:
+              - menuitem "Projetos com estrela" [ref=e303]:
+                - button "Projetos com estrela" [ref=e304] [cursor=pointer]:
+                  - generic [ref=e77]:
+                    - generic [ref=e78]: star_outline
+                    - generic [ref=e79]: Projetos com estrela
+              - menuitem "Meus projetos" [ref=e305]:
+                - button "Meus projetos" [ref=e306] [cursor=pointer]:
+                  - generic [ref=e84]:
+                    - generic [ref=e85]: folder
+                    - generic [ref=e86]: Meus projetos
+              - menuitem "Todos os projetos" [ref=e307]:
+                - button "Todos os projetos" [ref=e308] [cursor=pointer]:
+                  - generic [ref=e91]:
+                    - generic [ref=e92]: folder
+                    - generic [ref=e93]: Todos os projetos
+              - menuitem "Compartilhados comigo" [ref=e309]:
+                - button "Compartilhados comigo" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: group
+                    - generic [ref=e100]: Compartilhados comigo
+              - menuitem "Lixeira" [ref=e311]:
+                - button "Lixeira" [ref=e312] [cursor=pointer]:
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: delete
+                    - generic [ref=e107]: Lixeira
+              - menuitem "Minhas execuções" [ref=e313]:
+                - button "Minhas execuções" [ref=e314] [cursor=pointer]:
+                  - generic [ref=e113]:
+                    - img [ref=e115]
+                    - generic [ref=e121]: Minhas execuções
+              - menuitem "Meus acionadores" [ref=e315]:
+                - button "Meus acionadores" [ref=e316] [cursor=pointer]:
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: alarm
+                    - generic [ref=e128]: Meus acionadores
+              - menuitem "Vamos começar" [ref=e317]:
+                - button "Vamos começar" [ref=e318] [cursor=pointer]:
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: play_circle_outline
+                    - generic [ref=e136]: Vamos começar
+              - menuitem "Configurações" [ref=e319]:
+                - button "Configurações" [ref=e320] [cursor=pointer]:
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: settings
+                    - generic [ref=e143]: Configurações
+              - menuitem "Status do serviço" [ref=e321]:
+                - button "Status do serviço" [ref=e322] [cursor=pointer]:
+                  - generic [ref=e148]:
+                    - generic [ref=e149]: warning_amber
+                    - generic [ref=e150]: Status do serviço
+    - generic [ref=e151]:
+      - generic [active] [ref=e152]:
+        - heading "Meus projetos" [level=1] [ref=e323]
+        - generic [ref=e228]: Mostrando 2 projetos
+      - generic [ref=e155]:
+        - generic [ref=e229]:
+          - button "Projeto" [ref=e324] [cursor=pointer]:
+            - generic [ref=e234]: Projeto
+          - generic [ref=e235]: Proprietário
+          - 'button "Classificação: Última modificação, Decrescente. Inverter classificação." [ref=e325] [cursor=pointer]':
+            - generic [ref=e240]:
+              - text: Última modificação
+              - generic [ref=e242]: 
+        - listbox "Lista de projetos" [ref=e326]:
+          - 'option "Projeto Projeto sem título - Apps Script. Status do monitoramento: DESATIVADO. Pertence a Eu. Última modificação em 01:16. Visão geral do projeto Mais opções" [ref=e327] [cursor=pointer]':
+            - 'button "Projeto Projeto sem título - Apps Script. Status do monitoramento: DESATIVADO. Pertence a Eu. Última modificação em 01:16. Visão geral do projeto Mais opções" [ref=e328]':
+              - generic [ref=e249]:
+                - img [ref=e251]
+                - 'generic "Projeto Projeto sem título - Apps Script. Status do monitoramento: DESATIVADO." [ref=e329]': Projeto sem título
+              - generic "Pertence a Eu." [ref=e330]: Eu
+              - generic "Última modificação em 01:16." [ref=e331]: 01:16
+              - button "Visão geral do projeto" [ref=e332]:
+                - generic [ref=e261]: 
+              - button "Mais opções" [ref=e333]:
+                - generic [ref=e267]: 
+          - 'option "Projeto Projeto sem título - Apps Script. Status do monitoramento: DESATIVADO. Pertence a Eu. Última modificação em 25 de mar. de 2026. Visão geral do projeto Mais opções" [ref=e334] [cursor=pointer]':
+            - 'button "Projeto Projeto sem título - Apps Script. Status do monitoramento: DESATIVADO. Pertence a Eu. Última modificação em 25 de mar. de 2026. Visão geral do projeto Mais opções" [ref=e335]':
+              - generic [ref=e270]:
+                - img [ref=e272]
+                - 'generic "Projeto Projeto sem título - Apps Script. Status do monitoramento: DESATIVADO." [ref=e336]': Projeto sem título
+                - generic [ref=e282]: 
+              - generic "Pertence a Eu." [ref=e337]: Eu
+              - generic "Última modificação em 25 de mar. de 2026." [ref=e338]: 25 de mar. de 2026
+              - button "Visão geral do projeto" [ref=e339]:
+                - generic [ref=e288]: 
+              - button "Mais opções" [ref=e340]:
+                - generic [ref=e294]: 
+  - generic: "Classificação: Última modificação, Decrescente. Inverter classificação."

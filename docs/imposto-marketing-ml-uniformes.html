@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imposto & Marketing ML — Uniformes Personalizados</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ml-yellow: #FFE600;
+    --ml-blue: #2D3277;
+    --ml-light-blue: #3483FA;
+    --dark: #1A1A2E;
+    --gray: #F8F9FA;
+    --text: #2C2C2C;
+    --text-light: #666;
+    --success: #00A650;
+    --warning: #FF7733;
+    --danger: #E53935;
+    --card-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ======= CAPA ======= */
+  .cover {
+    background: linear-gradient(135deg, var(--ml-blue) 0%, #1a1f5e 60%, #0d1040 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: var(--ml-yellow);
+    opacity: 0.06;
+    border-radius: 50%;
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -100px;
+    width: 600px; height: 600px;
+    background: var(--ml-light-blue);
+    opacity: 0.08;
+    border-radius: 50%;
+  }
+
+  .cover-badge {
+    background: var(--ml-yellow);
+    color: var(--ml-blue);
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-icon {
+    font-size: 80px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover h1 {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover h1 span {
+    color: var(--ml-yellow);
+  }
+
+  .cover-subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-pills {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 64px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-pill {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .cover-meta {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ======= ÍNDICE ======= */
+  .toc-page {
+    padding: 80px 60px;
+    page-break-after: always;
+    min-height: 100vh;
+    background: var(--gray);
+  }
+
+  .toc-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--ml-blue);
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid var(--ml-yellow);
+  }
+
+  .toc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .toc-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--card-shadow);
+  }
+
+  .toc-num {
+    background: var(--ml-blue);
+    color: var(--ml-yellow);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .toc-item-text h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ml-blue);
+  }
+
+  .toc-item-text p {
+    font-size: 12px;
+    color: var(--text-light);
+  }
+
+  /* ======= SECTION COVER ======= */
+  .section-cover {
+    background: linear-gradient(135deg, var(--ml-blue), #2a3080);
+    padding: 80px 60px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    page-break-before: always;
+    page-break-after: always;
+  }
+
+  .section-cover-icon {
+    font-size: 72px;
+    flex-shrink: 0;
+  }
+
+  .section-cover-text h2 {
+    color: var(--ml-yellow);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .section-cover-text h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .section-cover-text p {
+    color: rgba(255,255,255,0.65);
+    font-size: 16px;
+  }
+
+  /* ======= PÁGINA CONTEÚDO ======= */
+  .page {
+    padding: 64px 60px;
+    page-break-after: always;
+    min-height: 100vh;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #EAEAEA;
+  }
+
+  .page-header-icon {
+    font-size: 28px;
+  }
+
+  .page-header h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--ml-blue);
+  }
+
+  .page-header .section-tag {
+    margin-left: auto;
+    background: var(--ml-yellow);
+    color: var(--ml-blue);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+
+  /* ======= CARDS ======= */
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #F0F0F0;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ml-blue);
+    margin-bottom: 12px;
+  }
+
+  .card-highlight {
+    background: linear-gradient(135deg, var(--ml-blue), #3a45a0);
+    color: #fff;
+    border: none;
+  }
+
+  .card-highlight .card-title {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .card-highlight h3 {
+    color: var(--ml-yellow);
+  }
+
+  .card-highlight p {
+    color: rgba(255,255,255,0.85);
+  }
+
+  .card-yellow {
+    background: var(--ml-yellow);
+    border: none;
+  }
+
+  .card-yellow .card-title,
+  .card-yellow h3,
+  .card-yellow p {
+    color: var(--ml-blue);
+  }
+
+  /* ======= GRID ======= */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; }
+
+  /* ======= TABELAS ======= */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  thead tr {
+    background: var(--ml-blue);
+    color: #fff;
+  }
+
+  thead th {
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #F0F0F0;
+    transition: background 0.2s;
+  }
+
+  tbody tr:nth-child(even) { background: #F8F9FC; }
+  tbody tr:last-child { border-bottom: none; }
+
+  tbody td {
+    padding: 14px 18px;
+    color: var(--text);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .badge-green { background: #E8F5E9; color: var(--success); }
+  .badge-blue { background: #E3F2FD; color: var(--ml-light-blue); }
+  .badge-yellow { background: #FFF9C4; color: #F57F17; }
+  .badge-orange { background: #FFF3E0; color: var(--warning); }
+  .badge-red { background: #FFEBEE; color: var(--danger); }
+
+  /* ======= FÓRMULA ======= */
+  .formula-box {
+    background: var(--dark);
+    color: #fff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .formula-box .formula-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--ml-yellow);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .formula-box .formula-main {
+    color: var(--ml-yellow);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .formula-box .formula-note {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 8px;
+  }
+
+  /* ======= BULLET LISTS ======= */
+  .bullet-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bullet-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .bullet-list li::before {
+    content: '▸';
+    color: var(--ml-light-blue);
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .bullet-list.check li::before { content: '✓'; color: var(--success); }
+  .bullet-list.cross li::before { content: '✗'; color: var(--danger); }
+  .bullet-list.yellow li::before { content: '●'; color: var(--ml-yellow); }
+
+  /* ======= STAT CARD ======= */
+  .stat-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    border-top: 4px solid var(--ml-blue);
+  }
+
+  .stat-value {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--ml-blue);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-light);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .stat-sub {
+    font-size: 11px;
+    color: var(--ml-light-blue);
+    margin-top: 4px;
+  }
+
+  /* ======= ALERT ======= */
+  .alert {
+    border-radius: 12px;
+    padding: 18px 22px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .alert-icon { font-size: 20px; flex-shrink: 0; }
+
+  .alert-warning { background: #FFF8E1; border-left: 4px solid #FFC107; }
+  .alert-success { background: #E8F5E9; border-left: 4px solid var(--success); }
+  .alert-info { background: #E3F2FD; border-left: 4px solid var(--ml-light-blue); }
+  .alert-danger { background: #FFEBEE; border-left: 4px solid var(--danger); }
+
+  /* ======= TIMELINE / STEPS ======= */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    background: var(--ml-blue);
+    color: var(--ml-yellow);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .step-content h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ml-blue);
+    margin-bottom: 4px;
+  }
+
+  .step-content p {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  /* ======= RODAPÉ ======= */
+  .footer {
+    background: var(--ml-blue);
+    color: rgba(255,255,255,0.5);
+    padding: 32px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .footer strong { color: var(--ml-yellow); }
+
+  /* ======= HIGHLIGHT NUMBERS ======= */
+  .big-number {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--ml-blue);
+    line-height: 1;
+  }
+
+  .big-number.yellow { color: var(--ml-yellow); }
+  .big-number.white { color: #fff; }
+
+  /* ======= PRINT ======= */
+  @media print {
+    .page, .section-cover, .cover, .toc-page { page-break-inside: avoid; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  /* ======= SEPARATOR ======= */
+  .sep { height: 1px; background: #EAEAEA; margin: 24px 0; }
+
+  p { font-size: 14px; color: var(--text); line-height: 1.7; }
+
+  .tag-roas {
+    display: inline-block;
+    background: var(--ml-blue);
+    color: var(--ml-yellow);
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+
+<!-- =============================== CAPA =============================== -->
+<div class="cover">
+  <div class="cover-badge">Documento Estratégico Interno · 2026</div>
+  <div class="cover-icon">🛍️</div>
+  <h1>Imposto & <span>Marketing</span><br>no Mercado Livre</h1>
+  <p class="cover-subtitle">Guia completo de tributação pelo Simples Nacional e estratégia de ML Ads para venda de uniformes e camisetas personalizadas</p>
+  <div class="cover-pills">
+    <span class="cover-pill">📋 Simples Nacional</span>
+    <span class="cover-pill">🎯 ML Ads Interno</span>
+    <span class="cover-pill">💰 Precificação Real</span>
+    <span class="cover-pill">📈 Estratégia de Escala</span>
+  </div>
+  <p class="cover-meta">Passo a Passo Uniformes · Março 2026 · Uso Interno</p>
+</div>
+
+<!-- =============================== ÍNDICE =============================== -->
+<div class="toc-page">
+  <h2 class="toc-title">Índice</h2>
+  <div class="toc-list">
+    <div class="toc-item">
+      <div class="toc-num">1</div>
+      <div class="toc-item-text">
+        <h4>CNAE — Qual usar?</h4>
+        <p>Enquadramento correto por atividade</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">2</div>
+      <div class="toc-item-text">
+        <h4>Anexos do Simples Nacional</h4>
+        <p>Alíquotas e diferenças práticas</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">3</div>
+      <div class="toc-item-text">
+        <h4>Cálculo de Imposto no Preço</h4>
+        <p>Como embutir corretamente na formação de preço</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">4</div>
+      <div class="toc-item-text">
+        <h4>Fórmula de Precificação</h4>
+        <p>Modelo completo com todos os custos do ML</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">5</div>
+      <div class="toc-item-text">
+        <h4>Frete Grátis — Impacto Real</h4>
+        <p>Como o frete afeta a margem por região</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">6</div>
+      <div class="toc-item-text">
+        <h4>ML Ads — Estrutura de Campanhas</h4>
+        <p>Automática vs Manual: quando usar cada uma</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">7</div>
+      <div class="toc-item-text">
+        <h4>Palavras-chave que Convertem</h4>
+        <p>Top keywords do nicho de uniformes com CPC estimado</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">8</div>
+      <div class="toc-item-text">
+        <h4>Metas de ROAS por Fase</h4>
+        <p>Benchmarks de lançamento ao escala</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">9</div>
+      <div class="toc-item-text">
+        <h4>Passo a Passo — Criar Campanha</h4>
+        <p>Configuração completa da primeira campanha ML Ads</p>
+      </div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">10</div>
+      <div class="toc-item-text">
+        <h4>Checklist Final</h4>
+        <p>Validação de imposto + marketing antes de lançar</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================== SEÇÃO 1: IMPOSTO =============================== -->
+<div class="section-cover">
+  <div class="section-cover-icon">🧾</div>
+  <div class="section-cover-text">
+    <h2>Parte 1 de 2</h2>
+    <h1>Tributação<br>Simples Nacional</h1>
+    <p>CNAE correto, anexo ideal e cálculo real de imposto para operação de uniformes no ML</p>
+  </div>
+</div>
+
+<!-- PÁG: CNAE -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">🏭</span>
+    <h2>Qual CNAE usar?</h2>
+    <span class="section-tag">Imposto · 1/5</span>
+  </div>
+
+  <div class="alert alert-info">
+    <span class="alert-icon">ℹ️</span>
+    <div>O CNAE define em qual <strong>Anexo do Simples Nacional</strong> sua empresa se enquadra — o que determina diretamente a alíquota de imposto que você vai pagar. Escolher errado pode significar pagar mais imposto do que deveria.</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>CNAE</th>
+        <th>Descrição</th>
+        <th>Anexo Simples</th>
+        <th>Alíquota Inicial</th>
+        <th>Indicado Para</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1411-8/01</strong></td>
+        <td>Confecção de roupas íntimas e similares</td>
+        <td><span class="badge badge-blue">Anexo II — Indústria</span></td>
+        <td><strong>4,5%</strong></td>
+        <td>Quem produz as peças</td>
+      </tr>
+      <tr>
+        <td><strong>1412-6/01</strong></td>
+        <td>Confecção de peças do vestuário</td>
+        <td><span class="badge badge-blue">Anexo II — Indústria</span></td>
+        <td><strong>4,5%</strong></td>
+        <td>Quem confecciona uniformes</td>
+      </tr>
+      <tr>
+        <td><strong>4781-4/00</strong></td>
+        <td>Comércio varejista de artigos do vestuário</td>
+        <td><span class="badge badge-green">Anexo I — Comércio</span></td>
+        <td><strong>4,0%</strong></td>
+        <td>Quem só revende pronto</td>
+      </tr>
+      <tr>
+        <td><strong>1340-5/99</strong></td>
+        <td>Serviços de beneficiamento (bordado/silk)</td>
+        <td><span class="badge badge-orange">Anexo III — Serviço</span></td>
+        <td><strong>6,0%</strong></td>
+        <td>Serviço de personalização puro</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="grid-2">
+    <div class="card card-highlight">
+      <div class="card-title">Recomendação Principal</div>
+      <h3>Quem Produz → Anexo II</h3>
+      <p>Se você manda fabricar ou fabrica os uniformes com personalização, use CNAE de confecção (1412-6/01). Isso enquadra no Anexo II com alíquota de 4,5% — menor que serviço.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Se Só Revende</div>
+      <h3>Revendedor → Anexo I</h3>
+      <p>Se compra produto pronto e revende sem alterar, use CNAE de comércio (4781-4/00) no Anexo I, com alíquota inicial de 4,0%.</p>
+      <p style="margin-top:8px; color: var(--warning); font-size: 13px;">⚠️ Personalizar o produto já descaracteriza "só revenda"</p>
+    </div>
+  </div>
+
+  <div class="alert alert-warning">
+    <span class="alert-icon">⚠️</span>
+    <div><strong>Importante:</strong> Uniformes personalizados sob demanda (com logo do cliente) caracterizam atividade mista — produção + serviço. Consulte seu contador para definir o CNAE principal vs secundário. O CNAE com maior receita define o anexo.</div>
+  </div>
+</div>
+
+<!-- PÁG: ALÍQUOTAS -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">📊</span>
+    <h2>Alíquotas por Faixa de Faturamento</h2>
+    <span class="section-tag">Imposto · 2/5</span>
+  </div>
+
+  <p style="margin-bottom: 24px;">O Simples Nacional tem alíquotas progressivas por faixa de faturamento anual. Para quem está começando, a primeira faixa (até R$180 mil/ano) é a mais relevante.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Receita Bruta Anual</th>
+        <th>Anexo I (Comércio)</th>
+        <th>Anexo II (Indústria)</th>
+        <th>Anexo III (Serviço)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Até R$ 180.000</strong> <span class="badge badge-green">Início</span></td>
+        <td><strong>4,0%</strong></td>
+        <td><strong>4,5%</strong></td>
+        <td><strong>6,0%</strong></td>
+      </tr>
+      <tr>
+        <td>R$ 180.001 a R$ 360.000</td>
+        <td>7,3%</td>
+        <td>7,8%</td>
+        <td>11,2%</td>
+      </tr>
+      <tr>
+        <td>R$ 360.001 a R$ 720.000</td>
+        <td>9,5%</td>
+        <td>10,0%</td>
+        <td>13,5%</td>
+      </tr>
+      <tr>
+        <td>R$ 720.001 a R$ 1.800.000</td>
+        <td>10,7%</td>
+        <td>11,2%</td>
+        <td>16,0%</td>
+      </tr>
+      <tr>
+        <td>R$ 1.800.001 a R$ 3.600.000</td>
+        <td>14,3%</td>
+        <td>14,7%</td>
+        <td>21,0%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert alert-success">
+    <span class="alert-icon">✅</span>
+    <div><strong>Boa notícia:</strong> Na primeira faixa (até R$180k/ano = R$15k/mês), a alíquota é mínima. Você tem muito espaço para crescer antes da alíquota subir significativamente. Foco total na construção de volume nessa fase.</div>
+  </div>
+
+  <div class="grid-3">
+    <div class="stat-card">
+      <div class="stat-value">4,5%</div>
+      <div class="stat-label">Alíquota Inicial</div>
+      <div class="stat-sub">Anexo II · Indústria</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">R$ 15k</div>
+      <div class="stat-label">Faturamento mensal</div>
+      <div class="stat-sub">Limite da 1ª faixa</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">R$ 675</div>
+      <div class="stat-label">Imposto/mês</div>
+      <div class="stat-sub">A R$15k de faturamento</div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁG: CÁLCULO NO PREÇO -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">💰</span>
+    <h2>Como Embutir o Imposto no Preço de Venda</h2>
+    <span class="section-tag">Imposto · 3/5</span>
+  </div>
+
+  <div class="alert alert-danger">
+    <span class="alert-icon">🚨</span>
+    <div><strong>Erro fatal de principiantes:</strong> Calcular o imposto sobre o lucro em vez de sobre o faturamento. O Simples Nacional incide sobre a <strong>receita bruta total</strong> — não sobre o lucro. Se você faturar R$1.000, paga imposto sobre R$1.000, independente do lucro.</div>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-label">Fórmula de Precificação Completa</div>
+    <div class="formula-main">Preço = Custo Total ÷ (1 − Comissão ML − Imposto − Margem)</div>
+    <div class="formula-note">Onde: Comissão ML ≈ 15% | Imposto Simples II = 4,5% | Margem desejada = 30%</div>
+  </div>
+
+  <h3 style="font-size:18px; font-weight:700; color:var(--ml-blue); margin-bottom:16px;">Exemplo Real — Kit 10 Camisetas Personalizadas</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item de Custo</th>
+        <th>Valor</th>
+        <th>Observação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Custo de produção (10 peças)</td>
+        <td><strong>R$ 150,00</strong></td>
+        <td>Tecido + personalização silk</td>
+      </tr>
+      <tr>
+        <td>Embalagem</td>
+        <td><strong>R$ 8,00</strong></td>
+        <td>Saco plástico + caixa</td>
+      </tr>
+      <tr>
+        <td>Comissão Mercado Livre</td>
+        <td><strong>15%</strong></td>
+        <td>Sobre o valor total da venda</td>
+      </tr>
+      <tr>
+        <td>Imposto Simples Nacional</td>
+        <td><strong>4,5%</strong></td>
+        <td>Anexo II, 1ª faixa</td>
+      </tr>
+      <tr>
+        <td>Margem de lucro desejada</td>
+        <td><strong>30%</strong></td>
+        <td>Meta de rentabilidade</td>
+      </tr>
+      <tr style="background: #FFF9C4;">
+        <td><strong>Custo total fixo</strong></td>
+        <td><strong>R$ 158,00</strong></td>
+        <td>150 + 8</td>
+      </tr>
+      <tr style="background: #E8F5E9;">
+        <td><strong>Divisor</strong></td>
+        <td><strong>0,505</strong></td>
+        <td>1 − 0,15 − 0,045 − 0,30</td>
+      </tr>
+      <tr style="background: var(--ml-blue); color: #fff;">
+        <td><strong style="color:#fff;">PREÇO MÍNIMO DE VENDA</strong></td>
+        <td><strong style="color:var(--ml-yellow); font-size:16px;">R$ 312,87</strong></td>
+        <td style="color:rgba(255,255,255,0.7);">158 ÷ 0,505</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card card-yellow">
+    <div class="card-title">Preço Recomendado para Prática</div>
+    <h3>R$ 319,90 — R$ 329,90</h3>
+    <p>Arredondado acima do mínimo para criar margem de segurança. Dentro da média do mercado para kit 10 peças (R$ 300-380). Competitivo e lucrativo ao mesmo tempo.</p>
+  </div>
+</div>
+
+<!-- PÁG: FRETE GRÁTIS -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">🚚</span>
+    <h2>Frete Grátis — Impacto Real na Margem</h2>
+    <span class="section-tag">Imposto · 4/5</span>
+  </div>
+
+  <p style="margin-bottom: 24px;">Oferecer frete grátis é quase obrigatório para competir no ML, mas o custo sai <strong>100% da sua margem</strong>. É preciso calcular por região para não vender com prejuízo.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Região</th>
+        <th>Frete Médio (Kit 10)</th>
+        <th>Impacto na Margem</th>
+        <th>Decisão</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>São Paulo Capital</td>
+        <td>R$ 15 – 20</td>
+        <td><span class="badge badge-green">Baixo (-5%)</span></td>
+        <td>✅ Frete grátis sempre</td>
+      </tr>
+      <tr>
+        <td>Interior SP + Sul</td>
+        <td>R$ 22 – 30</td>
+        <td><span class="badge badge-yellow">Médio (-8%)</span></td>
+        <td>✅ Frete grátis — ok</td>
+      </tr>
+      <tr>
+        <td>Rio de Janeiro + MG</td>
+        <td>R$ 28 – 40</td>
+        <td><span class="badge badge-yellow">Médio (-10%)</span></td>
+        <td>⚠️ Avaliar por pedido</td>
+      </tr>
+      <tr>
+        <td>Centro-Oeste</td>
+        <td>R$ 35 – 50</td>
+        <td><span class="badge badge-orange">Alto (-13%)</span></td>
+        <td>⚠️ Colocar frete pago</td>
+      </tr>
+      <tr>
+        <td>Nordeste</td>
+        <td>R$ 40 – 60</td>
+        <td><span class="badge badge-red">Crítico (-16%)</span></td>
+        <td>🚫 Frete pago obrigatório</td>
+      </tr>
+      <tr>
+        <td>Norte (AM, PA, AC)</td>
+        <td>R$ 55 – 90</td>
+        <td><span class="badge badge-red">Crítico (-22%)</span></td>
+        <td>🚫 Frete pago ou não vender</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Estratégia Recomendada — Início</div>
+      <h3>Frete Grátis Seletivo</h3>
+      <ul class="bullet-list check">
+        <li>Frete grátis para SP, Sul e RJ/MG</li>
+        <li>Frete pago para regiões distantes</li>
+        <li>Usar tabela de frete do ML Correios</li>
+        <li>Configurar por região no painel ML</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Estratégia Avançada — Escala</div>
+      <h3>Embutir Frete no Preço</h3>
+      <ul class="bullet-list check">
+        <li>Calcular frete médio ponderado por venda</li>
+        <li>Adicionar ~R$25 fixo ao preço base</li>
+        <li>Oferecer frete grátis nacional</li>
+        <li>Frete vira vantagem competitiva visível</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- PÁG: TABELA IMPOSTO POR FATURAMENTO -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">📈</span>
+    <h2>Projeção de Imposto por Nível de Faturamento</h2>
+    <span class="section-tag">Imposto · 5/5</span>
+  </div>
+
+  <p style="margin-bottom: 24px;">Quanto você vai pagar de imposto conforme seu negócio cresce. Planeje a precificação para cada fase:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Faturamento Mensal</th>
+        <th>Faturamento Anual</th>
+        <th>Faixa Simples</th>
+        <th>Alíquota (Anexo II)</th>
+        <th>Imposto/Mês</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R$ 3.000</td>
+        <td>R$ 36.000</td>
+        <td>1ª faixa</td>
+        <td>4,5%</td>
+        <td><strong>R$ 135</strong></td>
+      </tr>
+      <tr>
+        <td>R$ 5.000</td>
+        <td>R$ 60.000</td>
+        <td>1ª faixa</td>
+        <td>4,5%</td>
+        <td><strong>R$ 225</strong></td>
+      </tr>
+      <tr>
+        <td>R$ 10.000</td>
+        <td>R$ 120.000</td>
+        <td>1ª faixa</td>
+        <td>4,5%</td>
+        <td><strong>R$ 450</strong></td>
+      </tr>
+      <tr style="background: #FFF9C4;">
+        <td>R$ 15.000</td>
+        <td>R$ 180.000</td>
+        <td>1ª faixa (limite)</td>
+        <td>4,5%</td>
+        <td><strong>R$ 675</strong></td>
+      </tr>
+      <tr>
+        <td>R$ 20.000</td>
+        <td>R$ 240.000</td>
+        <td>2ª faixa</td>
+        <td>7,8%</td>
+        <td><strong>R$ 1.560</strong></td>
+      </tr>
+      <tr>
+        <td>R$ 30.000</td>
+        <td>R$ 360.000</td>
+        <td>2ª faixa (limite)</td>
+        <td>7,8%</td>
+        <td><strong>R$ 2.340</strong></td>
+      </tr>
+      <tr>
+        <td>R$ 60.000</td>
+        <td>R$ 720.000</td>
+        <td>3ª faixa</td>
+        <td>10,0%</td>
+        <td><strong>R$ 6.000</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert alert-warning">
+    <span class="alert-icon">⚠️</span>
+    <div><strong>Atenção na virada de faixa:</strong> Ao ultrapassar R$180k/ano, a alíquota salta de 4,5% para 7,8%. Ajuste seus preços <strong>antes</strong> de atingir esse limite, não depois. Revisar precificação a cada 6 meses é obrigatório.</div>
+  </div>
+
+  <div class="card card-highlight">
+    <div class="card-title">Dica Estratégica</div>
+    <h3>Planeje a Troca de Faixa</h3>
+    <p>Quando seu faturamento se aproximar de R$150k/ano (R$12,5k/mês), atualize sua planilha de precificação já com alíquota de 7,8% para não ser pego de surpresa no mês seguinte.</p>
+  </div>
+</div>
+
+<!-- =============================== SEÇÃO 2: MARKETING =============================== -->
+<div class="section-cover">
+  <div class="section-cover-icon">📢</div>
+  <div class="section-cover-text">
+    <h2>Parte 2 de 2</h2>
+    <h1>Marketing<br>ML Ads Interno</h1>
+    <p>Estrutura de campanhas, palavras-chave, ROAS e passo a passo para anunciar uniformes dentro do ecossistema Mercado Livre</p>
+  </div>
+</div>
+
+<!-- PÁG: VISÃO GERAL ADS -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">🎯</span>
+    <h2>ML Ads — Como Funciona</h2>
+    <span class="section-tag">Marketing · 1/4</span>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:28px;">
+    <div class="stat-card">
+      <div class="stat-value">CPC</div>
+      <div class="stat-label">Modelo de cobrança</div>
+      <div class="stat-sub">Paga só no clique</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">ROAS</div>
+      <div class="stat-label">Métrica principal (2025+)</div>
+      <div class="stat-sub">Substituiu o ACOS</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">R$ 30</div>
+      <div class="stat-label">Budget mínimo/dia</div>
+      <div class="stat-sub">Para começar a testar</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">O Que é ROAS?</div>
+    <h3>Return on Ad Spend — Retorno sobre o Investimento em Anúncio</h3>
+    <div class="formula-box" style="margin-top:16px;">
+      <div class="formula-label">Fórmula ROAS</div>
+      <div class="formula-main">ROAS = Valor de Vendas Geradas ÷ Valor Investido em Ads</div>
+      <div class="formula-note">Exemplo: R$500 em vendas ÷ R$50 investidos = ROAS 10</div>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ROAS</th>
+        <th>Interpretação</th>
+        <th>Ação Recomendada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tag-roas">ROAS &lt; 3</span></td>
+        <td><span class="badge badge-red">Campanha deficitária</span></td>
+        <td>Pausar ou ajustar palavras-chave urgente</td>
+      </tr>
+      <tr>
+        <td><span class="tag-roas">ROAS 3–5</span></td>
+        <td><span class="badge badge-yellow">Limiar de rentabilidade</span></td>
+        <td>Otimizar: pausar termos ruins, aumentar os bons</td>
+      </tr>
+      <tr>
+        <td><span class="tag-roas">ROAS 5–8</span></td>
+        <td><span class="badge badge-green">Campanha saudável</span></td>
+        <td>Manter orçamento e monitorar semanalmente</td>
+      </tr>
+      <tr>
+        <td><span class="tag-roas">ROAS 8–12</span></td>
+        <td><span class="badge badge-blue">Excelente</span></td>
+        <td>Aumentar orçamento progressivamente</td>
+      </tr>
+      <tr>
+        <td><span class="tag-roas">ROAS &gt; 12</span></td>
+        <td><span class="badge badge-green">Campanha de escala</span></td>
+        <td>Escalar agressivamente — essa campanha é ouro</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PÁG: ESTRUTURA DE CAMPANHAS -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">🏗️</span>
+    <h2>Estrutura de Campanhas Recomendada</h2>
+    <span class="section-tag">Marketing · 2/4</span>
+  </div>
+
+  <div class="grid-2" style="margin-bottom: 28px;">
+    <div class="card card-highlight">
+      <div class="card-title">Fase 1 — Descoberta (Dias 1-14)</div>
+      <h3>Campanha Automática</h3>
+      <p>O ML escolhe automaticamente as palavras-chave com base no seu anúncio. Você define apenas o orçamento diário. Ideal para coletar dados reais do seu produto.</p>
+      <ul class="bullet-list yellow" style="margin-top:14px;">
+        <li>Budget: R$ 30-50/dia</li>
+        <li>Duração: 14 dias sem mexer</li>
+        <li>Objetivo: descobrir quais termos convertem</li>
+        <li>Não ajustar antes dos 14 dias — dados insuficientes</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Fase 2 — Otimização (Dias 15+)</div>
+      <h3>Campanha Manual</h3>
+      <p>Você define as palavras-chave e o valor de bid (lance) por clique. Use os dados da campanha automática para escolher os melhores termos.</p>
+      <ul class="bullet-list check" style="margin-top:14px;">
+        <li>Budget: R$ 50-80/dia</li>
+        <li>Extrair palavras da campanha automática</li>
+        <li>Aumentar bid nos termos ROAS > 7</li>
+        <li>Pausar termos ROAS < 2 após 50 cliques</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px; font-weight:700; color:var(--ml-blue); margin-bottom:16px;">Estrutura Visual das Campanhas</h3>
+
+  <div class="card" style="background: #F8F9FC; border: 1px solid #E0E0E0;">
+    <div style="font-family: monospace; font-size: 13px; line-height: 2;">
+      <div style="color: var(--ml-blue); font-weight: 700; font-size: 14px;">📁 Conta ML Ads</div>
+      <div style="padding-left: 20px; color: #555;">
+        <div style="color: var(--success); font-weight: 600;">├── Campanha 1: AUTOMÁTICA — Descoberta</div>
+        <div style="padding-left: 20px; color: #777;">
+          <div>│ Budget: R$30/dia | Duração: 14 dias</div>
+          <div>│ Todos os anúncios de uniformes</div>
+          <div>│ Sem ajuste manual</div>
+        </div>
+        <div style="color: var(--ml-light-blue); font-weight: 600; margin-top: 8px;">├── Campanha 2: MANUAL — Alta Intenção</div>
+        <div style="padding-left: 20px; color: #777;">
+          <div>│ Budget: R$50/dia | Bid: R$1,80-2,50</div>
+          <div>│ Termos: "kit camisetas empresa", "uniforme personalizado"</div>
+          <div>│ Monitorar ROAS semanalmente</div>
+        </div>
+        <div style="color: var(--warning); font-weight: 600; margin-top: 8px;">└── Campanha 3: MANUAL — Nichos (após 50 vendas)</div>
+        <div style="padding-left: 20px; color: #777;">
+          <div>  Budget: R$30/dia por nicho</div>
+          <div>  Ex: "uniforme restaurante", "camiseta escolar"</div>
+          <div>  ROAS > 8 para manter ativo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁG: PALAVRAS-CHAVE -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">🔑</span>
+    <h2>Palavras-chave que Convertem no Nicho</h2>
+    <span class="section-tag">Marketing · 3/4</span>
+  </div>
+
+  <p style="margin-bottom: 24px;">Baseado no comportamento de busca no Mercado Livre para uniformes e camisetas personalizadas. Classificadas por intenção de compra:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Palavra-chave</th>
+        <th>Intenção</th>
+        <th>CPC Estimado</th>
+        <th>Prioridade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>kit camisetas personalizadas empresa</strong></td>
+        <td><span class="badge badge-green">Muito Alta</span></td>
+        <td>R$ 1,80–2,50</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td><strong>uniforme personalizado empresa</strong></td>
+        <td><span class="badge badge-green">Muito Alta</span></td>
+        <td>R$ 1,60–2,20</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td><strong>kit 10 camisetas personalizadas</strong></td>
+        <td><span class="badge badge-green">Alta</span></td>
+        <td>R$ 1,40–2,00</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td><strong>camiseta bordada empresa</strong></td>
+        <td><span class="badge badge-blue">Alta</span></td>
+        <td>R$ 1,20–1,80</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td><strong>kit uniforme time futebol</strong></td>
+        <td><span class="badge badge-blue">Alta</span></td>
+        <td>R$ 1,10–1,60</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>uniforme escolar personalizado</td>
+        <td><span class="badge badge-blue">Alta</span></td>
+        <td>R$ 1,00–1,50</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>camiseta personalizada kit</td>
+        <td><span class="badge badge-yellow">Média-Alta</span></td>
+        <td>R$ 0,80–1,40</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>uniforme restaurante personalizado</td>
+        <td><span class="badge badge-yellow">Média-Alta</span></td>
+        <td>R$ 0,90–1,30</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>camiseta polo personalizada empresa</td>
+        <td><span class="badge badge-yellow">Média</span></td>
+        <td>R$ 0,70–1,20</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td style="color: var(--danger);">camiseta personalizada</td>
+        <td><span class="badge badge-red">Baixa (genérico)</span></td>
+        <td>R$ 0,50–0,90</td>
+        <td>⚠️ Evitar no início</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert alert-warning">
+    <span class="alert-icon">⚠️</span>
+    <div><strong>Evite termos genéricos no início:</strong> "camiseta personalizada" atrai muito clique de quem quer uma peça unitária, não kit empresarial. Você paga o clique e não converte. Foque em termos com "kit + empresa" para atrair o comprador B2B certo.</div>
+  </div>
+</div>
+
+<!-- PÁG: ROAS + PASSO A PASSO -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">📊</span>
+    <h2>Metas de ROAS e Passo a Passo — Criar Campanha</h2>
+    <span class="section-tag">Marketing · 4/4</span>
+  </div>
+
+  <h3 style="font-size:17px; font-weight:700; color:var(--ml-blue); margin-bottom:16px;">Metas de ROAS por Fase do Negócio</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fase</th>
+        <th>Período</th>
+        <th>ROAS Mínimo</th>
+        <th>ROAS Bom</th>
+        <th>ROAS Excelente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Lançamento</strong></td>
+        <td>0–30 dias</td>
+        <td><span class="badge badge-orange">3</span></td>
+        <td><span class="badge badge-yellow">5</span></td>
+        <td><span class="badge badge-green">7+</span></td>
+      </tr>
+      <tr>
+        <td><strong>Crescimento</strong></td>
+        <td>30–90 dias</td>
+        <td><span class="badge badge-orange">5</span></td>
+        <td><span class="badge badge-yellow">8</span></td>
+        <td><span class="badge badge-green">12+</span></td>
+      </tr>
+      <tr>
+        <td><strong>Consolidação</strong></td>
+        <td>90–180 dias</td>
+        <td><span class="badge badge-yellow">7</span></td>
+        <td><span class="badge badge-green">10</span></td>
+        <td><span class="badge badge-blue">15+</span></td>
+      </tr>
+      <tr>
+        <td><strong>Escala</strong></td>
+        <td>180+ dias</td>
+        <td><span class="badge badge-yellow">8</span></td>
+        <td><span class="badge badge-blue">12</span></td>
+        <td><span class="badge badge-blue">20+</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sep"></div>
+
+  <h3 style="font-size:17px; font-weight:700; color:var(--ml-blue); margin-bottom:20px;">Passo a Passo — Criar Primeira Campanha</h3>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Acesse o painel de Publicidade</h4>
+        <p>No Mercado Livre → menu superior → "Publicidade" → "Product Ads". Disponível após ativar o termômetro (10+ vendas).</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Clique em "Criar campanha" → Campanha Automática</h4>
+        <p>Escolha "Automática" para começar. Dê um nome claro: ex. "Uniformes — Descoberta Jan/2026".</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Selecione os anúncios a promover</h4>
+        <p>Adicione seus anúncios de kit de camisetas. Começar com 1-2 anúncios é suficiente para não diluir o orçamento.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Defina o orçamento diário: R$ 30–50</h4>
+        <p>Não coloque mais que isso na fase de descoberta. O objetivo é coletar dados, não vender em volume ainda.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>Aguarde 14 dias SEM MODIFICAR</h4>
+        <p>O algoritmo do ML precisa de tempo para otimizar. Alterar antes dos 14 dias reinicia o aprendizado e desperdiça dados.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <h4>Analise os relatórios de palavras-chave</h4>
+        <p>Exporte o relatório de termos de busca. Identifique quais palavras geraram cliques e quais converteram em vendas.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">7</div>
+      <div class="step-content">
+        <h4>Crie campanha Manual com os melhores termos</h4>
+        <p>Use os dados reais para criar uma campanha manual focada. Defina bids maiores para os termos com ROAS > 7.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================== CHECKLIST FINAL =============================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-icon">✅</span>
+    <h2>Checklist Final — Antes de Lançar</h2>
+    <span class="section-tag">Validação</span>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Tributação — Verificar Antes de Vender</div>
+      <ul class="bullet-list check" style="margin-top:8px;">
+        <li>CNAE correto cadastrado (1412-6/01 ou 4781-4/00)</li>
+        <li>Simples Nacional ativo com o Anexo correto</li>
+        <li>Regime tributário validado com contador</li>
+        <li>Planilha de precificação com 4,5% de imposto incluído</li>
+        <li>Frete calculado por região e margem ajustada</li>
+        <li>Nota fiscal configurada (se obrigatória na categoria)</li>
+        <li>Meta de faturamento por faixa planejada (12 meses)</li>
+        <li>Alerta configurado para R$150k/ano (virada de faixa)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">ML Ads — Verificar Antes de Ativar</div>
+      <ul class="bullet-list check" style="margin-top:8px;">
+        <li>Mínimo 10 vendas no histórico (termômetro ativo)</li>
+        <li>Reputação no termômetro verde</li>
+        <li>Anúncio com ficha técnica 100% preenchida</li>
+        <li>Fotos profissionais (mínimo 5 fotos)</li>
+        <li>Budget diário definido (R$30 mínimo)</li>
+        <li>Campanha automática criada como ponto de partida</li>
+        <li>Agenda de análise: revisão todo domingo</li>
+        <li>Meta de ROAS mínimo definida: ROAS 5</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-3" style="margin-top:20px;">
+    <div class="card card-highlight">
+      <div class="card-title">Regra de Ouro — Imposto</div>
+      <h3>Calcule Sempre sobre o Faturamento Total</h3>
+      <p>O Simples Nacional incide sobre o que entra, não sobre o lucro. Embutir na fórmula de preço é obrigatório.</p>
+    </div>
+    <div class="card card-yellow">
+      <div class="card-title">Regra de Ouro — Ads</div>
+      <h3>14 Dias Mínimos Sem Mexer</h3>
+      <p>O algoritmo do ML precisa de dados. Paciência nos primeiros 14 dias é a diferença entre uma boa e uma má campanha.</p>
+    </div>
+    <div class="card card-highlight">
+      <div class="card-title">Regra de Ouro — Geral</div>
+      <h3>ROAS &lt; 3 = Pausar Imediato</h3>
+      <p>Campanha com ROAS abaixo de 3 após 50+ cliques está queimando dinheiro. Pausar e reestruturar é a ação correta.</p>
+    </div>
+  </div>
+</div>
+
+<!-- =============================== RODAPÉ =============================== -->
+<div class="footer">
+  <div><strong>Passo a Passo Uniformes</strong> — Documento Estratégico Interno</div>
+  <div>Imposto & Marketing ML · Março 2026</div>
+  <div>Uso exclusivo interno · <strong>MarketMind</strong></div>
+</div>
+
+</body>
+</html>

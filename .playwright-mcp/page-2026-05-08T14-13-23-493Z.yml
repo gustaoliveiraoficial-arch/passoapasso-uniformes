@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img [ref=e4]
+    - separator [ref=e7]
+    - generic [ref=e32]:
+      - generic [ref=e35]: Configurações
+      - generic [ref=e39]: Ajuda
+      - generic [ref=e43]: Enviar feedback
+      - generic [ref=e47]: Centro de Notificação
+    - separator [ref=e49]
+  - generic [ref=e59]:
+    - generic [ref=e61]:
+      - textbox "Buscar" [ref=e63]
+      - img [ref=e64]
+    - generic [ref=e73]:
+      - generic [ref=e74] [cursor=pointer]:
+        - textbox "Filtro" [disabled] [ref=e75]
+        - img [ref=e76]
+      - button "Button_more" [ref=e80] [cursor=pointer]:
+        - img [ref=e82]

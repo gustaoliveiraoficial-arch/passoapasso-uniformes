@@ -1,0 +1,119 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /home
+          - img
+        - generic:
+          - generic:
+            - button:
+              - generic: Personal
+              - img
+          - generic: /
+          - generic:
+            - button:
+              - generic: Default Project
+              - img
+      - generic:
+        - generic:
+          - button:
+            - img
+          - generic:
+            - button:
+              - img
+          - navigation:
+            - generic:
+              - generic:
+                - img
+            - generic: Playground
+            - generic:
+              - generic:
+                - img
+            - generic: API Keys
+            - generic:
+              - generic:
+                - img
+            - generic: Dashboard
+            - generic:
+              - generic:
+                - img
+            - generic: Docs
+            - generic:
+              - generic:
+                - img
+            - generic: Settings
+          - generic:
+            - generic:
+              - button:
+                - generic:
+                  - generic:
+                    - generic: P
+                  - generic:
+                    - generic: Passo a passo uniformes
+                    - generic: passoapassouniformes2025@gmail.com
+            - generic:
+              - button:
+                - img
+              - button:
+                - img
+              - button:
+                - img
+            - generic:
+              - generic:
+                - button: Sign Out
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=1]: API Keys
+                - generic: Manage your project API keys. Remember to keep your API keys safe to prevent unauthorized access.
+              - generic:
+                - button [expanded]:
+                  - img
+                  - generic: Create API Key
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - table:
+                        - rowgroup:
+                          - row:
+                            - columnheader: Name
+                            - columnheader
+                        - rowgroup:
+                          - row:
+                            - cell:
+                              - generic: Passo a Passo Uniformes
+                            - cell:
+                              - generic:
+                                - button:
+                                  - img
+                                - button:
+                                  - img
+  - region "Notifications alt+T"
+  - alert
+  - iframe [ref=e123]:
+    
+  - dialog "Create API Key" [ref=e125]:
+    - heading "Create API Key" [level=2] [ref=e127]
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - text: Display Name
+        - textbox "Display Name" [active] [ref=e131]:
+          - /placeholder: e.g. Production API Key
+        - paragraph [ref=e132]: A display name for the key. Maximum 50 characters.
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - text: Expiration
+          - combobox "Expiration" [ref=e136] [cursor=pointer]:
+            - generic: No expiration
+            - img [ref=e137]
+          - combobox [ref=e139]
+        - paragraph [ref=e140]: This key will not expire.
+    - button "Close" [ref=e145] [cursor=pointer]:
+      - img [ref=e146]
+      - generic [ref=e149]: Close

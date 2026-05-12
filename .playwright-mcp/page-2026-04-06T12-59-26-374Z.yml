@@ -1,0 +1,129 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 42" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "42"
+          - listitem [ref=e40]:
+            - link "Funis" [ref=e42] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis
+              - img [ref=e49]
+          - listitem [ref=e52] [cursor=pointer]:
+            - link "Calendário" [ref=e54]:
+              - /url: /todo
+              - img [ref=e56]
+              - generic [ref=e58]: Calendário
+          - listitem [ref=e59]:
+            - link "Listas" [ref=e61] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e63]
+              - generic [ref=e65]: Listas
+              - img [ref=e68]
+          - listitem [ref=e71] [cursor=pointer]:
+            - link "Agente de IA" [ref=e73]:
+              - /url: /settings/ai-agent/
+              - img [ref=e75]
+              - generic [ref=e77]: Agente de IA
+          - listitem [ref=e78]:
+            - link "Automações" [ref=e80] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e82]
+              - generic [ref=e84]: Automações
+              - img [ref=e87]
+          - listitem [ref=e89]:
+            - link "Insights" [ref=e91] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e93]
+              - generic [ref=e96]: Insights
+              - img [ref=e99]
+        - generic [ref=e101]: Integrações fixadas
+        - list [ref=e102]:
+          - listitem [ref=e104] [cursor=pointer]:
+            - link "Wazzup" [ref=e106]:
+              - /url: /widget_page/amo_wazzup/amo_wazzup
+              - img [ref=e109]
+              - generic [ref=e110]: Wazzup
+          - listitem [ref=e112] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e114]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e117]
+              - generic [ref=e118]: WhatsApp Business
+          - listitem [ref=e120] [cursor=pointer]:
+            - link "TikTok" [ref=e122]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e125]
+              - generic [ref=e126]: TikTok
+      - list [ref=e128]:
+        - listitem [ref=e130] [cursor=pointer]:
+          - link "Configurações" [ref=e132]:
+            - /url: /settings/profile/
+            - img [ref=e134]
+            - generic [ref=e137]: Configurações
+        - listitem [ref=e138]:
+          - link "Ajuda" [ref=e140] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e142]
+            - generic [ref=e144]: Ajuda
+            - img [ref=e147]
+        - listitem [ref=e150] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e152]:
+            - /url: ""
+            - img [ref=e154]
+            - generic [ref=e156]: Enviar feedback
+        - listitem [ref=e158] [cursor=pointer]:
+          - link "Centro de Notificação" [ref=e160]:
+            - /url: /settings/profile/notifications
+            - img [ref=e162]
+            - generic [ref=e164]: Centro de Notificação
+      - separator [ref=e165]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e167] [cursor=pointer]:
+        - img "Avatar" [ref=e170]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Passo a passo uniformes
+          - generic [ref=e173]: passoapassouniformes2025
+  - generic [ref=e180]:
+    - img
+    - button [ref=e181]:
+      - img [ref=e182]
+      - img [ref=e184]
+      - img [ref=e188]
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - img [ref=e193]
+          - generic [ref=e195]: Kommo Copilot
+        - generic [ref=e196]:
+          - button [ref=e197] [cursor=pointer]:
+            - img [ref=e200]
+          - button [ref=e202] [cursor=pointer]:
+            - img [ref=e205]
+          - button [ref=e207] [cursor=pointer]:
+            - img [ref=e210]
+      - button "Configuração do WhatsApp Business" [ref=e212] [cursor=pointer]:
+        - generic [ref=e213]:
+          - generic [ref=e214]: Configuração do WhatsApp Business
+          - img [ref=e215]
+      - generic [ref=e240]:
+        - generic [ref=e241]:
+          - textbox "Pergunte ao Kommo Copilot" [ref=e244]
+          - button [disabled] [ref=e247]:
+            - img [ref=e250]
+        - generic [ref=e252]: O conteúdo gerado por IA pode ser impreciso

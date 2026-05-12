@@ -1,0 +1,193 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e227]
+  - generic [ref=e236]:
+    - generic [ref=e237]:
+      - banner [ref=e238]:
+        - generic [ref=e239]:
+          - link "Home" [ref=e240] [cursor=pointer]:
+            - /url: /
+            - img "Vadoo Logo" [ref=e241]
+          - generic [ref=e242]:
+            - img [ref=e245] [cursor=pointer]
+            - button "Toggle Menu" [ref=e248] [cursor=pointer]:
+              - img [ref=e249]
+            - generic [ref=e252]:
+              - generic [ref=e253]: $
+              - text: "0"
+            - img "Profile" [ref=e255] [cursor=pointer]
+        - generic [ref=e256]:
+          - separator [ref=e257]
+          - navigation "Dashboard Navigation" [ref=e258]:
+            - link "Dashboard" [ref=e259] [cursor=pointer]:
+              - /url: /dashboard
+            - link "Explore" [ref=e260] [cursor=pointer]:
+              - /url: /playground
+            - link "Workflow" [ref=e261] [cursor=pointer]:
+              - /url: /workflow
+            - link "Agents" [ref=e262] [cursor=pointer]:
+              - /url: /agents
+            - link "Apps" [ref=e263] [cursor=pointer]:
+              - /url: /apps
+              - text: Apps
+              - img [ref=e264]
+            - link "Studio 🔥" [ref=e266] [cursor=pointer]:
+              - /url: /studio
+              - text: Studio
+              - generic [ref=e267]: 🔥
+            - link "API Keys" [ref=e268] [cursor=pointer]:
+              - /url: /access-keys
+            - link "Billing" [ref=e269] [cursor=pointer]:
+              - /url: /topup
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - link "Home" [ref=e272] [cursor=pointer]:
+            - /url: /
+            - img "Vadoo Logo" [ref=e273]
+          - button "Close Menu" [ref=e274] [cursor=pointer]:
+            - img [ref=e275]
+        - navigation "Mobile Navigation" [ref=e277]:
+          - link "Explore" [ref=e278] [cursor=pointer]:
+            - /url: /playground
+          - link "Docs" [ref=e279] [cursor=pointer]:
+            - /url: /docs/introduction
+          - link "Discord" [ref=e280] [cursor=pointer]:
+            - /url: https://discord.com/invite/zpnuBRXhKg
+    - main [ref=e281]:
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - heading "Access Keys" [level=1] [ref=e284]
+          - paragraph [ref=e285]: Manage your API keys to authenticate with the muapi backend
+        - generic [ref=e287]:
+          - generic [ref=e288]:
+            - heading "Create New Access Key" [level=2] [ref=e289]
+            - paragraph [ref=e290]: Generate a new key for your applications or scripts.
+          - generic [ref=e291]:
+            - generic [ref=e292]: Key Name
+            - generic [ref=e293]:
+              - textbox "e.g. Production Frontend" [ref=e294]
+              - button "Generate Key" [ref=e295] [cursor=pointer]
+            - generic [ref=e296]:
+              - checkbox "Create as Sandbox (Testing) Key (Mock data, zero cost)" [ref=e297]
+              - generic [ref=e298] [cursor=pointer]: Create as Sandbox (Testing) Key (Mock data, zero cost)
+        - generic [ref=e299]:
+          - generic [ref=e300]:
+            - generic [ref=e301]:
+              - heading "Your Active Keys" [level=3] [ref=e302]
+              - paragraph [ref=e303]: Manage and monitor your existing API credentials.
+            - generic [ref=e304]:
+              - generic [ref=e305]:
+                - button "7d" [ref=e306] [cursor=pointer]
+                - button "30d" [ref=e307] [cursor=pointer]
+                - button "All" [ref=e308] [cursor=pointer]
+              - generic [ref=e309]:
+                - button "All (0)" [ref=e310] [cursor=pointer]
+                - button "Production (0)" [ref=e311] [cursor=pointer]
+                - button "Sandbox (0)" [ref=e312] [cursor=pointer]
+          - table [ref=e314]:
+            - rowgroup [ref=e315]:
+              - row "Name Secret Key Created At Status Requests Cost IP Whitelist Actions" [ref=e316]:
+                - columnheader "Name" [ref=e317]
+                - columnheader "Secret Key" [ref=e318]
+                - columnheader "Created At" [ref=e319]
+                - columnheader "Status" [ref=e320]
+                - columnheader "Requests" [ref=e321]
+                - columnheader "Cost" [ref=e322]
+                - columnheader "IP Whitelist" [ref=e323]
+                - columnheader "Actions" [ref=e324]
+            - rowgroup [ref=e325]:
+              - row "No keys found" [ref=e326]:
+                - cell "No keys found" [ref=e327]:
+                  - generic [ref=e328]:
+                    - img [ref=e330]
+                    - paragraph [ref=e332]: No keys found
+      - generic [ref=e334]:
+        - generic [ref=e335]:
+          - generic [ref=e336]:
+            - link "Vadoo AI Logo" [ref=e337] [cursor=pointer]:
+              - /url: /
+              - img "Vadoo AI Logo" [ref=e338]
+            - paragraph [ref=e339]: One API for all state-of-the-art AI models. Build, scale, and deploy generative AI workflows at the lowest cost.
+          - generic [ref=e340]:
+            - heading "COMPANY" [level=3] [ref=e341]
+            - list [ref=e342]:
+              - listitem [ref=e343]:
+                - link "Blog" [ref=e344] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e345]:
+                - link "Sitemap" [ref=e346] [cursor=pointer]:
+                  - /url: /sitemap.xml
+              - listitem [ref=e347]:
+                - link "Terms of Use" [ref=e348] [cursor=pointer]:
+                  - /url: /api/app/pdf/terms.pdf
+              - listitem [ref=e349]:
+                - link "Privacy Policy" [ref=e350] [cursor=pointer]:
+                  - /url: /api/app/pdf/privacy_policy.pdf
+              - listitem [ref=e351]:
+                - link "Refund Policy" [ref=e352] [cursor=pointer]:
+                  - /url: /refund-policy
+          - generic [ref=e353]:
+            - heading "RESOURCES" [level=3] [ref=e354]
+            - list [ref=e355]:
+              - listitem [ref=e356]:
+                - link "Veo 3.1 Image to Video" [ref=e357] [cursor=pointer]:
+                  - /url: /playground/veo3.1-image-to-video
+              - listitem [ref=e358]:
+                - link "Veo 3.1 Text to Video" [ref=e359] [cursor=pointer]:
+                  - /url: /playground/veo3.1-text-to-video
+              - listitem [ref=e360]:
+                - link "Veo 3.1 Lite Text to Video" [ref=e361] [cursor=pointer]:
+                  - /url: /playground/veo3.1-lite-text-to-video
+              - listitem [ref=e362]:
+                - link "Sora 2 Pro Image to Video" [ref=e363] [cursor=pointer]:
+                  - /url: /playground/openai-sora-2-pro-image-to-video
+              - listitem [ref=e364]:
+                - link "Midjourney V7" [ref=e365] [cursor=pointer]:
+                  - /url: /playground/midjourney-v7-text-to-image
+              - listitem [ref=e366]:
+                - link "Flux Kontext API" [ref=e367] [cursor=pointer]:
+                  - /url: /playground/flux-kontext-pro-t2i
+              - listitem [ref=e368]:
+                - link "Nano Banana API" [ref=e369] [cursor=pointer]:
+                  - /url: /playground/nano-banana
+              - listitem [ref=e370]:
+                - link "SD 2 API" [ref=e371] [cursor=pointer]:
+                  - /url: /sd-2
+              - listitem [ref=e372]:
+                - link "HappyHorse 1.0 API" [ref=e373] [cursor=pointer]:
+                  - /url: /happyhorse-1
+              - listitem [ref=e374]:
+                - link "Veo 4 API" [ref=e375] [cursor=pointer]:
+                  - /url: /veo-4
+          - generic [ref=e376]:
+            - heading "MARKET" [level=3] [ref=e377]
+            - list [ref=e378]:
+              - listitem [ref=e379]:
+                - link "AI Image Upscale" [ref=e380] [cursor=pointer]:
+                  - /url: /playground/ai-image-upscale
+              - listitem [ref=e381]:
+                - link "Background Remover" [ref=e382] [cursor=pointer]:
+                  - /url: /playground/ai-background-remover
+              - listitem [ref=e383]:
+                - link "Face Swap" [ref=e384] [cursor=pointer]:
+                  - /url: /playground/ai-video-face-swap
+              - listitem [ref=e385]:
+                - link "Product Shot" [ref=e386] [cursor=pointer]:
+                  - /url: /playground/ai-product-shot
+              - listitem [ref=e387]:
+                - link "Anime Generator" [ref=e388] [cursor=pointer]:
+                  - /url: /playground/ai-anime-generator
+              - listitem [ref=e389]:
+                - link "Lip Sync" [ref=e390] [cursor=pointer]:
+                  - /url: /playground/sync-lipsync
+        - generic [ref=e391]:
+          - generic [ref=e392]:
+            - img [ref=e393]
+            - paragraph [ref=e395]: 2025 Vadoo Internet Services Private Limited. All Rights Reserved.
+          - generic [ref=e396]:
+            - link "Terms" [ref=e397] [cursor=pointer]:
+              - /url: /api/app/pdf/terms.pdf
+            - link "Privacy" [ref=e398] [cursor=pointer]:
+              - /url: /api/app/pdf/privacy_policy.pdf
+            - link "Refund Policy" [ref=e399] [cursor=pointer]:
+              - /url: /refund-policy
+    - region "Notifications Alt+T"

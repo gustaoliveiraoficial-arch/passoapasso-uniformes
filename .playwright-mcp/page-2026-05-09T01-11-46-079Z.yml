@@ -1,0 +1,79 @@
+- generic [ref=e3]:
+  - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - navigation "Produtos do Console do Firebase" [ref=e9]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e10]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e12]:
+              - img [ref=e13]
+              - img "Logotipo do Firebase" [ref=e14]
+        - img [ref=e19]: search
+        - link "Visão geral do projeto" [ref=e21] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e22]: gmp_nav20_overview
+        - menu [ref=e23]:
+          - menuitem "Configurações" [ref=e24]:
+            - img [ref=e26] [cursor=pointer]: settings
+      - separator [ref=e27]
+      - group [ref=e29]:
+        - link "Storage" [ref=e31] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e32]: gmp_nav20_storage
+        - link "Firestore" [ref=e34] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e35]: gmp_firestore
+      - separator [ref=e36]
+    - button "Alternar barra lateral de navegação" [ref=e39] [cursor=pointer]:
+      - img [ref=e40]: chevron_left
+  - banner:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - button "Abrir menu de navegação" [ref=e45] [cursor=pointer]:
+          - img [ref=e46]: menu
+        - button "pap-pedidos (Abrir o menu \"Selecionar projeto\")" [ref=e50] [cursor=pointer]:
+          - text: pap-pedidos
+          - img [ref=e51]: arrow_drop_down
+      - button "Mais opções" [ref=e54] [cursor=pointer]:
+        - img [ref=e55]: more_vert
+  - main [active] [ref=e58]:
+    - generic [ref=e62]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: pap-pedidos
+          - button "Plano Spark" [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: Plano Spark
+        - button "Adicionar app" [ref=e75]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: add
+            - generic [ref=e79]: Adicionar app
+      - progressbar [ref=e83]:
+        - img [ref=e85]
+        - generic [ref=e88]:
+          - img [ref=e90]
+          - img [ref=e93]
+          - img [ref=e96]
+  - generic "Gemini no Firebase" [ref=e98]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e108] [cursor=pointer]':
+          - img [ref=e110]
+          - img [ref=e116]
+        - button "Abrir alertas" [ref=e118] [cursor=pointer]:
+          - img [ref=e119]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e127] [cursor=pointer]:
+          - img [ref=e129]: spark
+        - button "Ajuda" [ref=e132] [cursor=pointer]:
+          - img [ref=e133]: contact_support
+        - separator [ref=e136]
+        - button "Ativar o Cloud Shell" [ref=e137] [cursor=pointer]:
+          - img [ref=e138]:
+            - img [ref=e139]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e143]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e146] [cursor=pointer]:
+          - img [ref=e147]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e151] [cursor=pointer]':
+        - img [ref=e152]: dark_mode

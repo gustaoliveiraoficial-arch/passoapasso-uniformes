@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Pedido — PassoaPasso Uniformes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --orange:       #C85A00;
+      --orange-dark:  #A84A00;
+      --orange-light: #E06A10;
+      --orange-pale:  #FDF0E6;
+      --black:        #0A0A0A;
+      --gray-900:     #111111;
+      --gray-800:     #1A1A1A;
+      --gray-600:     #4A4A4A;
+      --gray-300:     #CACACA;
+      --gray-100:     #F5F5F5;
+      --white:        #FFFFFF;
+      --gold:         #C49A30;
+      --radius:       10px;
+      --shadow:       0 2px 14px rgba(0,0,0,0.10);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background: var(--gray-100);
+      color: var(--gray-800);
+      min-height: 100vh;
+      padding: 24px 16px 60px;
+    }
+
+    .container { max-width: 880px; margin: 0 auto; }
+
+    /* ── Header ── */
+    header {
+      background: var(--black);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 22px 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--orange);
+    }
+
+    header .brand { display: flex; align-items: center; gap: 14px; }
+    header .logo-box {
+      background: var(--orange);
+      border-radius: 8px;
+      width: 42px; height: 42px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.3px; }
+    header p  { font-size: 0.78rem; color: var(--gray-300); margin-top: 2px; }
+
+    .badge-pedido {
+      background: rgba(200,90,0,0.15);
+      border: 1px solid rgba(200,90,0,0.35);
+      color: var(--orange-light);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Meta row ── */
+    .meta-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .field {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-600);
+      margin-bottom: 7px;
+    }
+
+    .field input, .field select {
+      width: 100%;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      padding: 9px 11px;
+      font-size: 0.92rem;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .field input:focus { border-color: var(--orange); background: var(--white); }
+
+    /* ── Cards de pessoa ── */
+    #pessoas { display: flex; flex-direction: column; gap: 14px; }
+
+    .pessoa-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      border-top: 3px solid var(--orange);
+      position: relative;
+    }
+
+    .pessoa-card .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .card-num {
+      background: var(--orange);
+      color: var(--white);
+      border-radius: 50%;
+      width: 28px; height: 28px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      font-size: 0.83rem;
+      font-weight: 700;
+      color: var(--gray-600);
+      margin-left: 9px;
+      flex: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .btn-remove {
+      background: none;
+      border: none;
+      color: var(--gray-300);
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 3px 7px;
+      border-radius: 4px;
+      transition: color 0.2s;
+    }
+    .btn-remove:hover { color: var(--orange); }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .full    { grid-column: 1 / -1; }
+
+    .inline-field label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-600);
+      margin-bottom: 7px;
+    }
+
+    .inline-field input,
+    .inline-field select {
+      width: 100%;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      padding: 9px 11px;
+      font-size: 0.92rem;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .inline-field input:focus,
+    .inline-field select:focus { border-color: var(--orange); background: var(--white); }
+
+    /* ── Tipo unissex/babylook ── */
+    .tipo-toggle { display: flex; gap: 7px; margin-top: 6px; flex-wrap: wrap; }
+    .tipo-toggle label { cursor: pointer; }
+    .tipo-toggle input[type="radio"] { display: none; }
+    .tipo-toggle span {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      transition: all 0.15s;
+      user-select: none;
+    }
+    .tipo-toggle input[type="radio"]:checked + span {
+      border-color: var(--black);
+      background: var(--black);
+      color: var(--white);
+    }
+
+    /* ── Tamanhos ── */
+    .secao-tam label.secao-label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-600);
+      margin-bottom: 8px;
+    }
+
+    .grupo-tam { margin-bottom: 10px; }
+
+    .grupo-tam .grupo-titulo {
+      font-size: 0.66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--orange);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .tamanhos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tamanhos label { cursor: pointer; }
+    .tamanhos input[type="radio"] { display: none; }
+    .tamanhos span {
+      display: inline-block;
+      padding: 5px 11px;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      transition: all 0.15s;
+      user-select: none;
+      background: var(--gray-100);
+    }
+    .tamanhos input[type="radio"]:checked + span {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    /* infantil tem cor diferenciada */
+    .tamanhos.infantil input[type="radio"]:checked + span {
+      border-color: var(--gold);
+      background: var(--gold);
+      color: var(--white);
+    }
+
+    .campo-outro { display: none; margin-top: 10px; }
+    .campo-outro.ativo { display: block; }
+    .campo-outro label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-600);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .campo-outro input {
+      width: 100%;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      padding: 9px 11px;
+      font-size: 0.9rem;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      outline: none;
+      font-family: inherit;
+    }
+    .campo-outro input:focus { border-color: var(--orange); background: var(--white); }
+
+    /* ── Quantidade ── */
+    .qtd-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--gray-100);
+      margin-top: 6px;
+    }
+
+    .qtd-btn {
+      background: var(--gray-100);
+      border: none;
+      width: 38px;
+      height: 38px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gray-600);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      flex-shrink: 0;
+      font-family: inherit;
+    }
+    .qtd-btn:hover { background: var(--orange); color: var(--white); }
+
+    .qtd-input {
+      border: none;
+      border-left: 1.5px solid var(--gray-300);
+      border-right: 1.5px solid var(--gray-300);
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      background: var(--white);
+      outline: none;
+      padding: 6px 4px;
+      font-family: inherit;
+      -moz-appearance: textfield;
+    }
+    .qtd-input::-webkit-outer-spin-button,
+    .qtd-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+    /* ── Toggle time ── */
+    .toggle-time {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .toggle-time label {
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      cursor: pointer;
+      user-select: none;
+    }
+    .toggle-time input[type="checkbox"] {
+      accent-color: var(--orange);
+      width: 16px; height: 16px;
+      cursor: pointer;
+    }
+
+    .campos-time { display: none; grid-template-columns: 1fr 2fr; gap: 12px; margin-top: 12px; }
+    .campos-time.ativo { display: grid; }
+
+    /* ── Divider entre grupos ── */
+    .tam-divider {
+      height: 1px;
+      background: var(--gray-100);
+      margin: 8px 0;
+    }
+
+    /* ── Observações ── */
+    .obs-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      margin-top: 14px;
+    }
+    .obs-card label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-600);
+      display: block;
+      margin-bottom: 8px;
+    }
+    .obs-card textarea {
+      width: 100%;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      resize: vertical;
+      min-height: 72px;
+      font-family: inherit;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      outline: none;
+    }
+    .obs-card textarea:focus { border-color: var(--orange); background: var(--white); }
+
+    /* ── Botões ── */
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 13px 22px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-family: inherit;
+    }
+
+    .btn-add {
+      background: var(--white);
+      color: var(--gray-800);
+      border: 2px solid var(--gray-300);
+      flex: 1;
+      justify-content: center;
+    }
+    .btn-add:hover { border-color: var(--orange); color: var(--orange); }
+
+    .btn-pdf {
+      background: var(--orange);
+      color: var(--white);
+      flex: 1;
+      justify-content: center;
+      box-shadow: 0 3px 10px rgba(200,90,0,0.3);
+    }
+    .btn-pdf:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+    /* ── PRINT ── */
+    @media print {
+      body { background: #fff; padding: 8px; }
+      .btn, .actions, .btn-remove, .badge-pedido { display: none !important; }
+      .campo-outro:not(.ativo),
+      .campos-time:not(.ativo) { display: none !important; }
+      .pessoa-card { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; border-top: 3px solid var(--orange); }
+      header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .card-num, .tamanhos input[type="radio"]:checked + span,
+      .tipo-toggle input[type="radio"]:checked + span {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .meta-row { grid-template-columns: 1fr; }
+      .grid-2   { grid-template-columns: 1fr; }
+      .campos-time { grid-template-columns: 1fr; }
+      header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="brand">
+      <div class="logo-box">👕</div>
+      <div>
+        <h1>Ficha de Pedido de Uniformes</h1>
+        <p>PassoaPasso Uniformes · Preencha um card por pessoa</p>
+      </div>
+    </div>
+    <div class="badge-pedido">PEDIDO</div>
+  </header>
+
+  <div class="meta-row">
+    <div class="field">
+      <label>Empresa / Cliente</label>
+      <input type="text" id="empresa" placeholder="Nome da empresa" />
+    </div>
+    <div class="field">
+      <label>Data do Pedido</label>
+      <input type="date" id="data" />
+    </div>
+  </div>
+
+  <div id="pessoas"></div>
+
+  <div class="obs-card">
+    <label>Observações Gerais</label>
+    <textarea id="obs" placeholder="Ex: cor padrão, prazo de entrega, logo específico..."></textarea>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-add" onclick="addPessoa()">＋ Adicionar Pessoa</button>
+    <button class="btn btn-pdf" onclick="salvarPDF()">⬇ Salvar como PDF</button>
+  </div>
+
+</div>
+
+<script>
+  let count = 0;
+
+  const tamAdulto   = ['PP','P','M','G','GG','XG','XXG'];
+  const tamInfantil = ['2','4','6','8','10','12','14','16'];
+
+  function buildTamanhos(id) {
+    const adulto = tamAdulto.map(t =>
+      `<label><input type="radio" name="tam-${id}" value="${t}" ${t==='M'?'checked':''}
+        onchange="checkOutro(${id})"/><span>${t}</span></label>`
+    ).join('');
+
+    const infantil = tamInfantil.map(t =>
+      `<label><input type="radio" name="tam-${id}" value="${t} anos"
+        onchange="checkOutro(${id})"/><span>${t}</span></label>`
+    ).join('');
+
+    return `
+      <div class="secao-tam full">
+        <div class="grupo-tam">
+          <div class="grupo-titulo">● Adulto</div>
+          <div class="tamanhos">${adulto}
+            <label><input type="radio" name="tam-${id}" value="Outro"
+              onchange="checkOutro(${id})"/><span>Outro</span></label>
+          </div>
+        </div>
+        <div class="tam-divider"></div>
+        <div class="grupo-tam">
+          <div class="grupo-titulo">● Infantil <span style="font-size:0.6rem;color:var(--gold);font-weight:600">(anos)</span></div>
+          <div class="tamanhos infantil">${infantil}</div>
+        </div>
+        <div class="campo-outro" id="outro-${id}">
+          <label>Medida Especial</label>
+          <input type="text" placeholder="Ex: busto 96cm, comprimento 68cm..." />
+        </div>
+      </div>
+    `;
+  }
+
+  function addPessoa() {
+    count++;
+    const id = count;
+    const container = document.getElementById('pessoas');
+    const div = document.createElement('div');
+    div.className = 'pessoa-card';
+    div.id = `pessoa-${id}`;
+
+    div.innerHTML = `
+      <div class="card-header">
+        <div class="card-num">${id}</div>
+        <span class="card-title">Pessoa ${id}</span>
+        <button class="btn-remove" onclick="removePessoa(${id})" title="Remover">✕</button>
+      </div>
+
+      <div class="grid-2">
+        <div class="inline-field full">
+          <label>Nome</label>
+          <input type="text" placeholder="Nome completo" />
+        </div>
+
+        <div class="inline-field">
+          <label>Tipo de Camiseta</label>
+          <div class="tipo-toggle">
+            <label><input type="radio" name="tipo-${id}" value="Unissex" checked /><span>Unissex</span></label>
+            <label><input type="radio" name="tipo-${id}" value="Babylook" /><span>Babylook</span></label>
+          </div>
+        </div>
+
+        <div class="inline-field">
+          <label>Quantidade</label>
+          <div class="qtd-wrapper">
+            <button type="button" class="qtd-btn" onclick="changeQtd(${id}, -1)">−</button>
+            <input type="number" id="qtd-${id}" class="qtd-input" value="1" min="1" max="999" />
+            <button type="button" class="qtd-btn" onclick="changeQtd(${id}, +1)">+</button>
+          </div>
+        </div>
+
+        ${buildTamanhos(id)}
+      </div>
+
+      <div class="toggle-time">
+        <input type="checkbox" id="time-check-${id}" onchange="toggleTime(${id})" />
+        <label for="time-check-${id}">🏆 Camiseta de Time — número e nome nas costas</label>
+      </div>
+
+      <div class="campos-time" id="campos-time-${id}">
+        <div class="inline-field">
+          <label>Número</label>
+          <input type="number" placeholder="Ex: 10" min="1" max="99" />
+        </div>
+        <div class="inline-field">
+          <label>Nome na Camiseta</label>
+          <input type="text" placeholder="Ex: SILVA" style="text-transform:uppercase;font-family:inherit" />
+        </div>
+      </div>
+    `;
+
+    container.appendChild(div);
+    updateNums();
+  }
+
+  function removePessoa(id) {
+    const el = document.getElementById(`pessoa-${id}`);
+    if (el) el.remove();
+    updateNums();
+  }
+
+  function updateNums() {
+    document.querySelectorAll('.pessoa-card').forEach((card, i) => {
+      const num   = card.querySelector('.card-num');
+      const title = card.querySelector('.card-title');
+      if (num)   num.textContent   = i + 1;
+      if (title) title.textContent = `Pessoa ${i + 1}`;
+    });
+  }
+
+  function checkOutro(id) {
+    const radios  = document.querySelectorAll(`input[name="tam-${id}"]`);
+    const outro   = document.getElementById(`outro-${id}`);
+    let isOutro   = false;
+    radios.forEach(r => { if (r.checked && r.value === 'Outro') isOutro = true; });
+    outro.classList.toggle('ativo', isOutro);
+  }
+
+  function changeQtd(id, delta) {
+    const input = document.getElementById(`qtd-${id}`);
+    const val = Math.max(1, (parseInt(input.value) || 1) + delta);
+    input.value = val;
+  }
+
+  function toggleTime(id) {
+    const check  = document.getElementById(`time-check-${id}`);
+    const campos = document.getElementById(`campos-time-${id}`);
+    campos.classList.toggle('ativo', check.checked);
+  }
+
+  function salvarPDF() {
+    const empresa = document.getElementById('empresa').value || '—';
+    const data    = document.getElementById('data').value || '—';
+    const obs     = document.getElementById('obs').value || '';
+
+    const cards = document.querySelectorAll('.pessoa-card');
+    const linhas = [];
+
+    cards.forEach((card, i) => {
+      const nome  = card.querySelector('input[placeholder="Nome completo"]')?.value || `Pessoa ${i+1}`;
+      const tipo  = card.querySelector(`input[name^="tipo-"]:checked`)?.value || '—';
+      const tam   = card.querySelector(`input[name^="tam-"]:checked`)?.value || '—';
+      const qtdEl = card.querySelector(`input[id^="qtd-"]`);
+      const qtd   = qtdEl ? (parseInt(qtdEl.value) || 1) : 1;
+
+      let medida = '';
+      if (tam === 'Outro') {
+        const m = card.querySelector('.campo-outro input')?.value;
+        medida = m ? ` (${m})` : '';
+      }
+
+      let time = '';
+      const timeCheck = card.querySelector(`input[id^="time-check-"]`);
+      if (timeCheck?.checked) {
+        const num  = card.querySelector('.campos-time input[type="number"]')?.value || '';
+        const nome2 = card.querySelector('.campos-time input[type="text"]')?.value || '';
+        time = ` · 🏆 Nº ${num}${nome2 ? ' — ' + nome2.toUpperCase() : ''}`;
+      }
+
+      linhas.push({ nome, tipo, tam: tam + medida, qtd, time });
+    });
+
+    const dataFmt = data ? new Date(data + 'T12:00:00').toLocaleDateString('pt-BR') : '—';
+    const total   = linhas.reduce((s, l) => s + l.qtd, 0);
+
+    const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Resumo do Pedido — ${empresa}</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #111; padding: 32px 36px; font-size: 13px; }
+
+    .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 3px solid #C85A00; }
+    .header h1 { font-size: 1.2rem; font-weight: 700; color: #0A0A0A; }
+    .header p  { font-size: 0.75rem; color: #4A4A4A; margin-top: 3px; }
+    .badge { background: #C85A00; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px; }
+
+    .meta { display: flex; gap: 32px; margin-bottom: 20px; }
+    .meta div { }
+    .meta .label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A4A4A; margin-bottom: 3px; }
+    .meta .value { font-size: 0.88rem; font-weight: 600; color: #0A0A0A; }
+
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    thead tr { background: #0A0A0A; color: #fff; }
+    thead th { padding: 9px 12px; text-align: left; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+    tbody tr { border-bottom: 1px solid #F0F0F0; }
+    tbody tr:nth-child(even) { background: #FAFAFA; }
+    tbody td { padding: 9px 12px; font-size: 0.84rem; color: #1A1A1A; }
+    .qtd-badge { display: inline-block; background: #C85A00; color: #fff; border-radius: 12px; padding: 2px 10px; font-size: 0.75rem; font-weight: 700; }
+    .tam-badge { display: inline-block; background: #F0F0F0; color: #111; border-radius: 6px; padding: 2px 8px; font-size: 0.78rem; font-weight: 600; }
+    .time-info { font-size: 0.75rem; color: #C85A00; font-weight: 600; }
+    .num-col { color: #4A4A4A; font-size: 0.8rem; }
+
+    .footer { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid #E0E0E0; }
+    .total-box { background: #0A0A0A; color: #fff; border-radius: 8px; padding: 8px 18px; font-size: 0.85rem; font-weight: 700; }
+    .total-box span { color: #C85A00; font-size: 1rem; }
+
+    .obs-box { margin-bottom: 20px; background: #FDF0E6; border-left: 3px solid #C85A00; padding: 10px 14px; border-radius: 0 6px 6px 0; }
+    .obs-box .label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #A84A00; margin-bottom: 4px; }
+    .obs-box p { font-size: 0.84rem; color: #333; }
+
+    .rodape { margin-top: 28px; text-align: center; font-size: 0.68rem; color: #CACACA; }
+
+    @media print {
+      body { padding: 16px 20px; }
+      .qtd-badge, thead tr { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div>
+      <h1>Resumo do Pedido</h1>
+      <p>PassoaPasso Uniformes</p>
+    </div>
+    <span class="badge">PEDIDO</span>
+  </div>
+
+  <div class="meta">
+    <div><div class="label">Empresa / Cliente</div><div class="value">${empresa}</div></div>
+    <div><div class="label">Data</div><div class="value">${dataFmt}</div></div>
+    <div><div class="label">Total de Itens</div><div class="value">${total} camiseta${total !== 1 ? 's' : ''}</div></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Tamanho</th>
+        <th>Qtd</th>
+        <th>Obs. Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${linhas.map((l, i) => `
+        <tr>
+          <td class="num-col">${i+1}</td>
+          <td><strong>${l.nome}</strong></td>
+          <td>${l.tipo}</td>
+          <td><span class="tam-badge">${l.tam}</span></td>
+          <td><span class="qtd-badge">${l.qtd}×</span></td>
+          <td class="time-info">${l.time || '—'}</td>
+        </tr>
+      `).join('')}
+    </tbody>
+  </table>
+
+  ${obs ? `<div class="obs-box"><div class="label">Observações</div><p>${obs}</p></div>` : ''}
+
+  <div class="footer">
+    <div style="font-size:0.75rem;color:#4A4A4A">Gerado em ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'})}</div>
+    <div class="total-box">Total: <span>${total}</span> peça${total !== 1 ? 's' : ''}</div>
+  </div>
+
+  <div class="rodape">PassoaPasso Uniformes · Ficha gerada automaticamente</div>
+
+  <script>window.onload = () => window.print();<\/script>
+</body>
+</html>`;
+
+    const win = window.open('', '_blank');
+    win.document.write(html);
+    win.document.close();
+  }
+
+  // Init
+  document.getElementById('data').value = new Date().toISOString().split('T')[0];
+  addPessoa();
+</script>
+</body>
+</html>

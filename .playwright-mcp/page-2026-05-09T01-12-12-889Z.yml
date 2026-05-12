@@ -1,0 +1,143 @@
+- generic [ref=e3]:
+  - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e93]:
+    - generic [ref=e94]:
+      - navigation "Produtos do Console do Firebase" [ref=e96]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e97]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e98] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e99]:
+              - img [ref=e100]
+              - img "Logotipo do Firebase" [ref=e101]
+        - img [ref=e106]: search
+        - link "Visão geral do projeto" [ref=e108] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e109]: gmp_nav20_overview
+        - menu [ref=e110]:
+          - menuitem "Configurações" [ref=e111]:
+            - img [ref=e113] [cursor=pointer]: settings
+      - separator [ref=e114]
+      - group [ref=e116]:
+        - link "Firestore" [ref=e121] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e122]: gmp_firestore
+        - link "Storage" [ref=e118] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e119]: gmp_nav20_storage
+      - separator [ref=e123]
+    - button "Alternar barra lateral de navegação" [ref=e126] [cursor=pointer]:
+      - img [ref=e127]: chevron_left
+  - banner:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Abrir menu de navegação" [ref=e130] [cursor=pointer]:
+          - img [ref=e131]: menu
+        - button "pap-pedidos (Abrir o menu \"Selecionar projeto\")" [ref=e135] [cursor=pointer]:
+          - text: pap-pedidos
+          - img [ref=e136]: arrow_drop_down
+      - button "Mais opções" [ref=e139] [cursor=pointer]:
+        - img [ref=e140]: more_vert
+  - main [ref=e13]:
+    - generic [ref=e144]:
+      - region "Cabeçalho do produto" [ref=e145]:
+        - generic [ref=e146]:
+          - navigation "Breadcrumbs" [ref=e148]:
+            - generic [ref=e149] [cursor=pointer]:
+              - link "Cloud Firestore" [ref=e150]
+              - text: chevron_right
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - generic:
+                - generic:
+                  - heading "Banco de dados" [level=2]
+              - generic [ref=e153]:
+                - button "Undefined parameter - DATABASE_ID selecione um banco de dados" [ref=e156] [cursor=pointer]:
+                  - generic [ref=e157]: (default)
+                  - img [ref=e158]: arrow_drop_down
+                - button "Pergunte ao Gemini sobre os conceitos básicos para usar o Firestore" [ref=e160]:
+                  - generic [ref=e162]:
+                    - img [ref=e163]: spark
+                    - text: Pergunte ao Gemini sobre os conceitos básicos para usar o Firestore
+            - generic [ref=e166]:
+              - tablist "Recursos do produto" [ref=e169]:
+                - generic [ref=e172]:
+                  - tab "Dados" [ref=e326] [cursor=pointer]:
+                    - generic [ref=e176]: Dados
+                  - 'tab "Guia selecionada: Regras" [active] [selected] [ref=e327] [cursor=pointer]':
+                    - generic [ref=e182]: Regras
+                  - tab "Índices" [ref=e185] [cursor=pointer]:
+                    - generic [ref=e188]: Índices
+                  - tab "Recuperação de desastres" [ref=e191] [cursor=pointer]:
+                    - generic [ref=e194]: Recuperação de desastres
+                  - tab "Uso" [ref=e197] [cursor=pointer]:
+                    - generic [ref=e200]: Uso
+                  - tab "Query Insights" [ref=e203] [cursor=pointer]:
+                    - generic [ref=e207]: Query Insights
+                    - alert [ref=e210]:
+                      - button "Dispensar" [ref=e211]:
+                        - img [ref=e212]: close
+                      - generic [ref=e216]:
+                        - img [ref=e217]: gmp_firestore
+                        - generic [ref=e218]:
+                          - generic [ref=e219]: Entenda o desempenho da consulta
+                          - generic [ref=e220]: Identifique e resolva problemas com consultas que exigem mais tempo ou recursos para serem executadas.
+                          - link "Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e221]:
+                            - /url: https://firebase.google.com/docs/firestore/enterprise/query-insights?hl=pt-BR&authuser=0
+                            - text: Saiba mais open_in_new
+                  - tab "Extensions" [ref=e224] [cursor=pointer]:
+                    - generic [ref=e227]:
+                      - generic [ref=e228]: gmp_nav20_mods
+                      - text: Extensions
+              - button "Novo no Cloud Firestore" [ref=e234]:
+                - img [ref=e235]: campaign
+                - generic [ref=e238]: Novo no Cloud Firestore
+      - generic [ref=e328]:
+        - button "Desenvolver e testar" [ref=e333]:
+          - generic [ref=e334]: Desenvolver e testar
+        - generic [ref=e344]:
+          - generic [ref=e345]:
+            - tablist:
+              - generic [ref=e351]:
+                - img [ref=e353]
+                - generic [ref=e354]:
+                  - generic [ref=e356]: Proteja seus dados com regras que definem quem pode acessá-los e como eles são estruturados
+                  - link "Ver os documentos (abre a documentação do Firebase em uma nova guia)" [ref=e359] [cursor=pointer]:
+                    - /url: https://firebase.google.com/docs/rules/get-started?hl=pt-BR&authuser=0
+                    - text: subject Ver os documentos
+              - button "Laboratório de testes de regras Faça testes e entenda as Regras de segurança" [ref=e361] [cursor=pointer]:
+                - generic [ref=e362]:
+                  - generic [ref=e363]:
+                    - img [ref=e364]: tune
+                    - generic [ref=e365]: Laboratório de testes de regras
+                  - generic [ref=e366]: Faça testes e entenda as Regras de segurança
+                - img [ref=e367]: expand_less
+          - tabpanel [ref=e368]:
+            - progressbar [ref=e376]:
+              - img [ref=e378]
+              - generic [ref=e381]:
+                - img [ref=e383]
+                - img [ref=e386]
+                - img [ref=e389]
+  - generic "Gemini no Firebase" [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e42] [cursor=pointer]':
+          - img [ref=e44]
+          - img [ref=e50]
+        - button "Abrir alertas" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e61] [cursor=pointer]:
+          - img [ref=e63]: spark
+        - button "Ajuda" [ref=e66] [cursor=pointer]:
+          - img [ref=e67]: contact_support
+        - separator [ref=e70]
+        - button "Ativar o Cloud Shell" [ref=e71] [cursor=pointer]:
+          - img [ref=e72]:
+            - img [ref=e73]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e77]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e80] [cursor=pointer]:
+          - img [ref=e81]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e85] [cursor=pointer]':
+        - img [ref=e86]: dark_mode

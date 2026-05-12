@@ -1,0 +1,103 @@
+- application [ref=e1]:
+  - banner "Barra de menus" [ref=e2]:
+    - generic [ref=e5]:
+      - link "Página inicial do Google Docs" [ref=e7] [cursor=pointer]:
+        - /url: https://docs.google.com/document/u/0/?pli=1&authuser=0&usp=docs_web
+      - generic [ref=e14]:
+        - generic "📋 Plano de Vendas e Marketing — Abril 2026" [ref=e16]:
+          - generic [ref=e17]:
+            - generic: 📋 Plano de Vendas e Marketing — Abril 2026
+            - textbox "Renomear" [ref=e19]: 📋 Plano de Vendas e Marketing — Abril 2026
+          - 'button "Status do documento: Alterações salvas no Drive." [ref=e22]':
+            - generic [ref=e27] [cursor=pointer]: Alterações salvas no Drive
+        - generic [ref=e30]:
+          - button [disabled] [ref=e32]
+          - button [ref=e36]
+          - generic [ref=e41]:
+            - button "Compartilhar" [disabled] [ref=e42]: Compartilhar
+            - button "Ações rápidas de compartilhamento" [ref=e44]
+          - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e48] [cursor=pointer]':
+            - img [ref=e49]
+    - generic [ref=e50]:
+      - menubar [ref=e52]:
+        - menuitem "Arquivo" [ref=e53] [cursor=pointer]
+        - menuitem "Editar" [ref=e54] [cursor=pointer]
+        - menuitem "Ver" [ref=e55] [cursor=pointer]
+        - menuitem "Inserir" [ref=e56] [cursor=pointer]
+        - menuitem "Formatar" [ref=e57] [cursor=pointer]
+        - menuitem "Ferramentas" [ref=e58] [cursor=pointer]
+        - menuitem "Extensões" [ref=e59] [cursor=pointer]
+        - menuitem "Ajuda" [ref=e60] [cursor=pointer]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - toolbar "Pesquisar os menus (Alt+/)" [ref=e63]:
+            - combobox "Menus" [ref=e65]
+          - toolbar "Principal" [ref=e66]:
+            - button "Desfazer (Ctrl+Z)" [ref=e67] [cursor=pointer]
+            - button "Refazer (Ctrl+Y)" [ref=e72] [cursor=pointer]
+            - button "Imprimir (Ctrl+P)" [disabled] [ref=e77]
+            - button "Verificação ortográfica e gramatical (Ctrl+Alt+X)" [disabled] [ref=e82]
+            - button "Pintar formatação" [ref=e87] [cursor=pointer]
+            - combobox "Zoom" [ref=e92] [cursor=pointer]:
+              - option "Lista Zoom. 100% selecionado." [selected] [ref=e95]:
+                - textbox "Zoom" [ref=e96]: 100%
+            - separator [disabled] [ref=e100]
+            - listbox "Estilos" [disabled] [ref=e101]:
+              - option "Estilos" [disabled] [selected] [ref=e104]: Texto normal
+            - separator [disabled] [ref=e108]
+            - button "Mais" [disabled] [ref=e109] [cursor=pointer]
+        - toolbar "Modo e visualização" [ref=e116]:
+          - button [disabled] [ref=e117]
+          - separator [disabled] [ref=e121]
+          - button "Ocultar os menus (Ctrl+Shift+F)" [ref=e122] [cursor=pointer]
+  - generic [ref=e129]:
+    - generic [ref=e134]:
+      - generic [ref=e135]: "22"
+      - generic [ref=e140]: "21"
+      - generic [ref=e145]: "20"
+      - generic [ref=e150]: "19"
+      - generic [ref=e155]: "18"
+      - generic [ref=e160]: "17"
+      - generic [ref=e165]: "16"
+      - generic [ref=e170]: "15"
+      - generic [ref=e175]: "14"
+      - generic [ref=e180]: "13"
+      - generic [ref=e185]: "12"
+      - generic [ref=e190]: "11"
+      - generic [ref=e195]: "10"
+      - generic [ref=e200]: "9"
+      - generic [ref=e205]: "8"
+      - generic [ref=e210]: "7"
+      - generic [ref=e215]: "6"
+      - generic [ref=e220]: "5"
+      - generic [ref=e225]: "4"
+      - generic [ref=e230]: "3"
+      - generic [ref=e235]: "2"
+      - generic [ref=e240]: "1"
+      - generic [ref=e249]: "1"
+      - generic [ref=e254]: "2"
+      - generic [ref=e259]: "3"
+      - generic [ref=e264]: "4"
+      - generic [ref=e269]: "5"
+      - generic [ref=e274]: "6"
+      - generic [ref=e279]: "7"
+      - generic [ref=e284]: "8"
+      - generic [ref=e289]: "9"
+      - generic [ref=e294]: "10"
+      - generic [ref=e299]: "11"
+      - generic [ref=e304]: "12"
+      - generic [ref=e309]: "13"
+      - generic [ref=e314]: "14"
+      - generic [ref=e319]: "15"
+      - generic [ref=e324]: "16"
+      - generic [ref=e329]: "17"
+      - generic [ref=e334]: "18"
+      - generic [ref=e339]: "19"
+      - generic [ref=e344]: "20"
+      - generic [ref=e349]: "21"
+    - img [ref=e370]
+  - iframe [active] [ref=e371]:
+    - textbox "Conteúdo do documento" [active] [ref=f6e1]
+    - group
+  - link "Ativar a compatibilidade com o leitor de tela" [ref=e372] [cursor=pointer]:
+    - /url: "#"

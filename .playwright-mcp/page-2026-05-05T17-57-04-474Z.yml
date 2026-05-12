@@ -1,0 +1,201 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - img [ref=e38]
+          - listitem [ref=e40]:
+            - list [ref=e41]:
+              - listitem [ref=e43] [cursor=pointer]:
+                - link "Inbox de chat 415" [ref=e45]:
+                  - /url: /chats/
+                  - generic [ref=e47]: Inbox de chat
+                  - generic [ref=e51]: "415"
+              - listitem [ref=e52]:
+                - link "Inbox de email" [ref=e54] [cursor=pointer]:
+                  - /url: /mail/inbox/
+                  - generic [ref=e56]: Inbox de email
+                  - img [ref=e59]
+              - listitem [ref=e62] [cursor=pointer]:
+                - link "Chats da equipe" [ref=e64]:
+                  - /url: /teams/
+                  - generic [ref=e66]: Chats da equipe
+          - listitem [ref=e67]:
+            - link "Funis de vendas" [ref=e69] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e71]
+              - generic [ref=e73]: Funis de vendas
+              - img [ref=e76]
+          - listitem [ref=e79] [cursor=pointer]:
+            - link "Calendário 153" [ref=e81]:
+              - /url: /todo
+              - img [ref=e83]
+              - generic [ref=e85]: Calendário
+              - generic [ref=e89]: "153"
+          - listitem [ref=e90]:
+            - link "Listas" [ref=e92] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e94]
+              - generic [ref=e96]: Listas
+              - img [ref=e99]
+          - listitem [ref=e102] [cursor=pointer]:
+            - link "Agente de IA" [ref=e104]:
+              - /url: /settings/ai-agent/
+              - img [ref=e106]
+              - generic [ref=e108]: Agente de IA
+          - listitem [ref=e109]:
+            - link "Automações" [ref=e111] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e113]
+              - generic [ref=e118]: Automações
+              - img [ref=e121]
+          - listitem [ref=e123]:
+            - link "Insights" [ref=e125] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e127]
+              - generic [ref=e130]: Insights
+              - img [ref=e133]
+        - generic [ref=e135]: Integrações fixadas
+        - list [ref=e136]:
+          - listitem [ref=e138] [cursor=pointer]:
+            - link "Instagram" [ref=e140]:
+              - /url: /widget_page/instagram_int/hub
+              - img [ref=e143]
+              - generic [ref=e144]: Instagram
+          - listitem [ref=e146] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e148]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e151]
+              - generic [ref=e152]: WhatsApp Business
+          - listitem [ref=e154] [cursor=pointer]:
+            - link "TikTok" [ref=e156]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e159]
+              - generic [ref=e160]: TikTok
+      - list [ref=e162]:
+        - listitem [ref=e164] [cursor=pointer]:
+          - link "Configurações" [ref=e166]:
+            - /url: /settings/profile/
+            - img [ref=e168]
+            - generic [ref=e171]: Configurações
+        - listitem [ref=e172]:
+          - link "Ajuda" [ref=e174] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e176]
+            - generic [ref=e178]: Ajuda
+            - img [ref=e181]
+        - listitem [ref=e184] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e186]:
+            - /url: ""
+            - img [ref=e188]
+            - generic [ref=e190]: Enviar feedback
+        - listitem [ref=e192] [cursor=pointer]:
+          - link "Centro de Notificação 296" [ref=e194]:
+            - /url: /settings/profile/notifications
+            - img [ref=e196]
+            - generic [ref=e198]: Centro de Notificação
+            - generic [ref=e202]: "296"
+      - separator [ref=e203]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e205] [cursor=pointer]:
+        - img "Avatar" [ref=e208]
+        - generic [ref=e209]:
+          - generic [ref=e210]: Passo a passo uniformes
+          - generic [ref=e211]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - heading "Bots" [level=2] [ref=e217]
+        - generic [ref=e218]:
+          - button "Importar" [ref=e220] [cursor=pointer]:
+            - generic [ref=e222]: Importar
+          - button "Criar bot" [ref=e223] [cursor=pointer]:
+            - generic [ref=e224]:
+              - img [ref=e225]
+              - generic [ref=e227]: Criar bot
+      - generic [ref=e228]:
+        - generic [ref=e230]: Salesbots
+        - paragraph [ref=e232]:
+          - text: Crie bots sem código para automatizar chats e tarefas rotineiras. Comece do zero ou use um modelo — depois personalize-o e adicione seus gatilhos.
+          - link "Learn more" [ref=e233] [cursor=pointer]:
+            - /url: https://www.kommo.com/br/recursos/?query=Salesbot
+          - text: .
+        - link "Faça upgrade para o Avançado" [ref=e235] [cursor=pointer]:
+          - /url: /settings/pay/
+          - button "Faça upgrade para o Avançado" [ref=e236]:
+            - generic [ref=e238]: Faça upgrade para o Avançado
+        - generic [ref=e242]:
+          - generic [ref=e250]:
+            - checkbox [ref=e254] [cursor=pointer]
+            - generic [ref=e259]: Nome
+            - generic [ref=e264]: Gatilhos
+            - generic [ref=e269]: Taxa de conversão
+            - generic [ref=e274]: Total lançado
+            - generic [ref=e279]: Sessões ativas
+          - generic [ref=e281]:
+            - checkbox [ref=e286] [cursor=pointer]
+            - 'link "Salesbot #2" [ref=e290] [cursor=pointer]':
+              - /url: "#"
+            - generic [ref=e294]:
+              - generic [ref=e295] [cursor=pointer]: "+1"
+              - generic [ref=e296] [cursor=pointer]: Qualquer nova conversa
+            - generic "0%" [ref=e298]
+            - generic "0" [ref=e300]
+            - generic "0" [ref=e302]
+          - generic [ref=e303]:
+            - checkbox [ref=e308] [cursor=pointer]
+            - link "TestBot" [ref=e312] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e316]:
+              - generic [ref=e317] [cursor=pointer]: "+1"
+              - generic [ref=e318]:
+                - img [ref=e319]
+                - text: Qualquer nova conversa
+            - generic "0%" [ref=e322]
+            - generic "0" [ref=e324]
+            - generic "0" [ref=e326]
+        - generic:
+          - generic: avançado
+    - generic [ref=e329]:
+      - img
+      - button [ref=e330]:
+        - img [ref=e331]
+        - img [ref=e333]
+        - img [ref=e337]
+      - generic [ref=e339]:
+        - generic [ref=e340]:
+          - generic [ref=e341]:
+            - img [ref=e342]
+            - generic [ref=e344]: Kommo Copilot
+          - generic [ref=e345]:
+            - button [ref=e346] [cursor=pointer]:
+              - img [ref=e349]
+            - button [ref=e351] [cursor=pointer]:
+              - img [ref=e354]
+            - button [ref=e356] [cursor=pointer]:
+              - img [ref=e359]
+        - button "Configuração do WhatsApp Business" [ref=e361] [cursor=pointer]:
+          - generic [ref=e362]:
+            - generic [ref=e363]: Configuração do WhatsApp Business
+            - img [ref=e364]
+        - generic [ref=e389]:
+          - generic [ref=e390]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e393]
+            - button [disabled] [ref=e396]:
+              - img [ref=e399]
+          - generic [ref=e401]: O conteúdo gerado por IA pode ser impreciso

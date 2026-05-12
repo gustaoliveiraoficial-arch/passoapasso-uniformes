@@ -1,0 +1,67 @@
+- generic [active] [ref=e1]:
+  - button "Pular para o conteúdo principal" [ref=e154] [cursor=pointer]:
+    - generic [ref=e7]: Pular para o conteúdo principal
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - link "Configurações da Conta do Google" [ref=e155] [cursor=pointer]:
+        - /url: /?tab=kk
+        - generic [ref=e15]: Conta
+      - generic [ref=e22]:
+        - button "Ajuda" [ref=e156] [cursor=pointer]:
+          - img [ref=e26]
+        - tooltip [ref=e29]: Ajuda
+      - generic [ref=e31]:
+        - button "Google Apps" [ref=e157] [cursor=pointer]:
+          - img [ref=e36]
+        - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e158] [cursor=pointer]':
+          - img [ref=e43]
+  - generic [ref=e47]:
+    - navigation [ref=e49]:
+      - generic [ref=e51]:
+        - button "Voltar à página anterior" [ref=e159] [cursor=pointer]:
+          - img [ref=e54]
+        - tooltip [ref=e57]: Voltar à página anterior
+      - heading "Senhas de app" [level=1] [ref=e160]
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: As senhas de app ajudam a fazer login na sua Conta do Google em apps e serviços mais antigos que não oferecem suporte aos padrões de segurança modernos.
+          - paragraph [ref=e69]: As senhas de app são menos seguras do que usar apps e serviços atualizados com padrões de segurança modernos. Antes de criar uma senha, verifique se o app precisa disso para fazer login.
+          - link "Saiba mais sobre senhas de app" [ref=e161] [cursor=pointer]:
+            - /url: https://support.google.com/accounts/answer/185833?hl=pt_BR
+            - text: Saiba mais
+        - generic [ref=e72]:
+          - generic [ref=e108]:
+            - heading "Suas senhas de app" [level=2] [ref=e162]
+            - list [ref=e110]:
+              - listitem [ref=e112]:
+                - generic [ref=e113]:
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: PassoaPasso Stories
+                    - generic [ref=e116]: Criada em 00:19
+                  - button "Revogar senha de app" [ref=e163] [cursor=pointer]:
+                    - img [ref=e122]
+          - paragraph
+          - generic [ref=e76]:
+            - paragraph [ref=e77]: Para criar uma senha específica para um app, digite o nome dele abaixo…
+            - generic [ref=e81]:
+              - generic:
+                - generic: Nome do app
+                - generic: Nome do app
+              - textbox "Nome do app" [ref=e164]
+            - generic [ref=e89]:
+              - button "Criar" [disabled]:
+                - generic: Criar
+          - paragraph
+  - contentinfo [ref=e91]:
+    - link "Consulte a Política de Privacidade do Google" [ref=e165] [cursor=pointer]:
+      - /url: https://policies.google.com/privacy
+      - text: Privacidade
+    - link "Consulte os Termos de Serviço do Google" [ref=e166] [cursor=pointer]:
+      - /url: https://policies.google.com/terms
+      - text: Termos
+    - link "Ajuda" [ref=e167] [cursor=pointer]:
+      - /url: https://support.google.com/accounts
+    - link "Saiba mais sobre a Conta do Google" [ref=e168] [cursor=pointer]:
+      - /url: https://www.google.com/account/about
+      - text: Sobre

@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Opções de tela" [ref=e37] [cursor=pointer]
+            - button "Ajuda" [ref=e39] [cursor=pointer]
+          - generic [ref=e40]:
+            - heading "Enviar nova mídia" [level=1] [ref=e41]
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - generic [ref=e45]:
+                  - paragraph [ref=e46]: Solte arquivos aqui para enviar
+                  - paragraph [ref=e47]: ou
+                  - paragraph [ref=e48]:
+                    - button "Selecionar arquivos" [ref=e49] [cursor=pointer]
+                - paragraph [ref=e50]:
+                  - text: Você está usando o envio de múltiplos arquivos. Com problemas? Experimente o
+                  - button "componente de envio de arquivos do navegador" [ref=e51] [cursor=pointer]
+                  - text: .
+                - button "Choose File" [ref=e53] [cursor=pointer]
+              - paragraph [ref=e54]: "Tamanho máximo de upload de arquivo: 2 GB."
+  - img

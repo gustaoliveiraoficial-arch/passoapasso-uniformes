@@ -1,0 +1,106 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - link "Pular para o conteúdo" [ref=e14] [cursor=pointer]:
+          - /url: ""
+        - link "Como usar o Gmail com leitores de tela" [ref=e15] [cursor=pointer]:
+          - /url: ""
+      - heading [level=1] [ref=e17]:
+        - banner [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - button "Menu principal" [expanded] [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+              - link "Gmail" [ref=e26] [cursor=pointer]:
+                - /url: "#inbox"
+                - img [ref=e27]
+            - generic [ref=e28]:
+              - search [ref=e30]:
+                - heading "Pesquisar" [level=2] [ref=e31]
+                - table [ref=e1323]:
+                  - rowgroup [ref=e1324]:
+                    - row [ref=e1325]:
+                      - cell [ref=e1326]:
+                        - textbox "Pesquisar e-mail" [ref=e1327]
+                - button "Opções de pesquisa avançada" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Pesquisar e-mail" [disabled] [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+              - generic [ref=e41]:
+                - button "Suporte" [ref=e1329] [cursor=pointer]:
+                  - img [ref=e1330]
+                - button "Configurações" [ref=e45] [cursor=pointer]:
+                  - img [ref=e46]
+                - generic [ref=e1334]:
+                  - generic:
+                    - button "Teste o Gemini" [ref=e1337] [cursor=pointer]:
+                      - img [ref=e1340]
+                    - tooltip [ref=e1343]: Teste o Gemini
+                - generic [ref=e1346]:
+                  - button "Upgrade" [ref=e1348] [cursor=pointer]:
+                    - generic [ref=e1350]: Upgrade
+                  - tooltip [ref=e1351]: Faça upgrade para ter acesso aos recursos premium
+            - generic [ref=e50]:
+              - button "Google Apps" [ref=e54] [cursor=pointer]:
+                - img [ref=e55]
+              - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e60] [cursor=pointer]':
+                - img [ref=e62]
+      - alert [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]: Ativar as notificações na área de trabalho para o Gmail.
+          - generic [ref=e68]:
+            - link "OK" [ref=e69] [cursor=pointer]
+            - link "Agora não(a)" [ref=e70] [cursor=pointer]
+          - button "Fechar" [ref=e71] [cursor=pointer]
+    - generic [ref=e73]:
+      - navigation [ref=e74]:
+        - button "Escrever" [ref=e77] [cursor=pointer]
+        - generic [ref=e83]:
+          - generic "Marcadores" [ref=e85]:
+            - heading "Marcadores" [level=2] [ref=e86]
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - generic [ref=e90]:
+                  - generic [ref=e1356]:
+                    - link "Caixa de entrada 92 não lidas" [ref=e1358] [cursor=pointer]:
+                      - /url: https://mail.google.com/mail/u/0/#inbox
+                      - text: Caixa de entrada
+                    - generic [ref=e1359]: "92"
+                  - link "Com estrela" [ref=e1366] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#starred
+                  - link "Adiados" [ref=e1373] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#snoozed
+                  - link "Enviados" [ref=e1380] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#sent
+                  - link "Rascunhos" [ref=e1387] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#drafts
+                - generic [ref=e1392]:
+                  - link "Compras 6 não lidas tem menu" [ref=e1394] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#category/purchases
+                    - text: Compras
+                  - generic [ref=e1395]: "6"
+              - button "Mais marcadores" [ref=e138] [cursor=pointer]:
+                - generic [ref=e139]: Mais
+          - generic [ref=e142]:
+            - heading "Marcadores" [ref=e143]
+            - button "Criar novo marcador" [ref=e144] [cursor=pointer]
+          - generic:
+            - generic "Marcadores":
+              - heading "Marcadores" [level=2] [ref=e145]
+      - generic [ref=e2430]:
+        - generic: Carregando indicador
+      - generic [ref=e1311]:
+        - complementary "Painel lateral" [ref=e1312]:
+          - tablist [ref=e1314]:
+            - tab "Agenda"
+            - tab "Keep"
+            - tab "Tarefas"
+            - tab "Contatos"
+            - separator [disabled] [ref=e2424]
+            - tab "Instalar complementos"
+        - generic:
+          - button "Esconder painel lateral":
+            - img [ref=e1320] [cursor=pointer]

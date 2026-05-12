@@ -1,0 +1,330 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /ac901997beeefb64/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e24]: 0.82%
+        - generic [ref=e25]: 422.06 MiB / 50 GiB
+      - generic [ref=e26]:
+        - generic [ref=e27]: Inodes
+        - generic [ref=e31]: 3.48%
+        - generic [ref=e32]: 20859 / 600000
+    - button "Logout" [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e35]:
+      - generic [ref=e36]: File Browser v2.63.2-h2
+      - generic [ref=e37]: Help
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - link "Home" [ref=e41] [cursor=pointer]:
+          - /url: /ac901997beeefb64/files
+          - generic [ref=e42]: home
+        - generic [ref=e43]:
+          - generic [ref=e45]: keyboard_arrow_right
+          - link "public_html" [ref=e46] [cursor=pointer]:
+            - /url: /ac901997beeefb64/files/public_html/
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - img [ref=e49]
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]: search
+              - textbox "Search..." [ref=e53]
+            - generic [ref=e54]:
+              - paragraph [ref=e55]: Type to search...
+              - generic [ref=e56]:
+                - heading "Types" [level=3] [ref=e57]
+                - generic [ref=e58]:
+                  - button "Images" [ref=e59] [cursor=pointer]:
+                    - generic [ref=e60]: insert_photo
+                    - paragraph [ref=e61]: Images
+                  - button "Music" [ref=e62] [cursor=pointer]:
+                    - generic [ref=e63]: volume_up
+                    - paragraph [ref=e64]: Music
+                  - button "Video" [ref=e65] [cursor=pointer]:
+                    - generic [ref=e66]: movie
+                    - paragraph [ref=e67]: Video
+                  - button "PDF" [ref=e68] [cursor=pointer]:
+                    - generic [ref=e69]: picture_as_pdf
+                    - paragraph [ref=e70]: PDF
+          - generic [ref=e71]:
+            - button "Switch view" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: view_module
+            - button "Download" [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: file_download
+            - button "Upload" [ref=e76] [cursor=pointer]:
+              - generic [ref=e77]: file_upload
+            - button "Calculate directory sizes" [ref=e78] [cursor=pointer]:
+              - generic [ref=e79]: assessment
+            - button "Info" [ref=e80] [cursor=pointer]:
+              - generic [ref=e81]: info
+            - button "Select multiple" [ref=e82] [cursor=pointer]:
+              - generic [ref=e83]: check_circle
+        - generic [ref=e84]:
+          - generic [ref=e87] [cursor=pointer]:
+            - button "Sort by name" [ref=e88]:
+              - text: Name
+              - generic [ref=e89]: arrow_upward
+            - button "Sort by size" [ref=e90]:
+              - text: Size
+              - generic [ref=e91]: arrow_upward
+            - button "Sort by last modified" [ref=e92]:
+              - text: Last modified
+              - generic [ref=e93]: arrow_upward
+          - generic [ref=e94]:
+            - button ".private" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: folder
+              - generic [ref=e98]:
+                - paragraph [ref=e99]: .private
+                - paragraph [ref=e100]: "-"
+                - paragraph [ref=e101]:
+                  - time [ref=e102]: 3 months ago
+                - paragraph [ref=e103]: drwxr-xr-x
+            - button "_next" [ref=e104] [cursor=pointer]:
+              - generic [ref=e106]: folder
+              - generic [ref=e107]:
+                - paragraph [ref=e108]: _next
+                - paragraph [ref=e109]: "-"
+                - paragraph [ref=e110]:
+                  - time [ref=e111]: a month ago
+                - paragraph [ref=e112]: drwxr-xr-x
+            - button "_not-found" [ref=e113] [cursor=pointer]:
+              - generic [ref=e115]: folder
+              - generic [ref=e116]:
+                - paragraph [ref=e117]: _not-found
+                - paragraph [ref=e118]: "-"
+                - paragraph [ref=e119]:
+                  - time [ref=e120]: a month ago
+                - paragraph [ref=e121]: drwxr-xr-x
+            - button "camiseta-pv" [ref=e122] [cursor=pointer]:
+              - generic [ref=e124]: folder
+              - generic [ref=e125]:
+                - paragraph [ref=e126]: camiseta-pv
+                - paragraph [ref=e127]: "-"
+                - paragraph [ref=e128]:
+                  - time [ref=e129]: 24 days ago
+                - paragraph [ref=e130]: drwxr-xr-x
+            - button "linkdabio" [ref=e131] [cursor=pointer]:
+              - generic [ref=e133]: folder
+              - generic [ref=e134]:
+                - paragraph [ref=e135]: linkdabio
+                - paragraph [ref=e136]: "-"
+                - paragraph [ref=e137]:
+                  - time [ref=e138]: 26 minutes ago
+                - paragraph [ref=e139]: drwxr-xr-x
+            - button "tabeladeprecos" [ref=e377] [cursor=pointer]:
+              - generic [ref=e379]: folder
+              - generic [ref=e380]:
+                - paragraph [ref=e381]: tabeladeprecos
+                - paragraph [ref=e382]: "-"
+                - paragraph [ref=e383]:
+                  - time [ref=e384]: a few seconds ago
+                - paragraph [ref=e385]: drwxr-xr-x
+            - button "uniformes-empresariais" [ref=e140] [cursor=pointer]:
+              - generic [ref=e142]: folder
+              - generic [ref=e143]:
+                - paragraph [ref=e144]: uniformes-empresariais
+                - paragraph [ref=e145]: "-"
+                - paragraph [ref=e146]:
+                  - time [ref=e147]: 7 days ago
+                - paragraph [ref=e148]: drwxr-xr-x
+            - button "wp-admin" [ref=e149] [cursor=pointer]:
+              - generic [ref=e151]: folder
+              - generic [ref=e152]:
+                - paragraph [ref=e153]: wp-admin
+                - paragraph [ref=e154]: "-"
+                - paragraph [ref=e155]:
+                  - time [ref=e156]: 3 months ago
+                - paragraph [ref=e157]: drwxr-xr-x
+            - button "wp-content" [ref=e158] [cursor=pointer]:
+              - generic [ref=e160]: folder
+              - generic [ref=e161]:
+                - paragraph [ref=e162]: wp-content
+                - paragraph [ref=e163]: "-"
+                - paragraph [ref=e164]:
+                  - time [ref=e165]: 12 days ago
+                - paragraph [ref=e166]: drwxr-xr-x
+            - button "wp-includes" [ref=e167] [cursor=pointer]:
+              - generic [ref=e169]: folder
+              - generic [ref=e170]:
+                - paragraph [ref=e171]: wp-includes
+                - paragraph [ref=e172]: "-"
+                - paragraph [ref=e173]:
+                  - time [ref=e174]: 3 months ago
+                - paragraph [ref=e175]: drwxr-xr-x
+          - generic [ref=e176]:
+            - button ".htaccess" [ref=e177] [cursor=pointer]:
+              - generic [ref=e179]: description
+              - generic [ref=e180]:
+                - paragraph [ref=e181]: .htaccess
+                - paragraph [ref=e182]: 2.33 KiB
+                - paragraph [ref=e183]:
+                  - time [ref=e184]: 8 days ago
+                - paragraph [ref=e185]: "-rw-r--r--"
+            - button ".htaccess.bk" [ref=e186] [cursor=pointer]:
+              - generic [ref=e188]: description
+              - generic [ref=e189]:
+                - paragraph [ref=e190]: .htaccess.bk
+                - paragraph [ref=e191]: 714 B
+                - paragraph [ref=e192]:
+                  - time [ref=e193]: 3 months ago
+                - paragraph [ref=e194]: "-rw-r--r--"
+            - button "404.html" [ref=e195] [cursor=pointer]:
+              - generic [ref=e197]: code
+              - generic [ref=e198]:
+                - paragraph [ref=e199]: 404.html
+                - paragraph [ref=e200]: 8.12 KiB
+                - paragraph [ref=e201]:
+                  - time [ref=e202]: a month ago
+                - paragraph [ref=e203]: "-rw-r--r--"
+            - button "__next.__PAGE__.txt" [ref=e204] [cursor=pointer]:
+              - generic [ref=e206]: description
+              - generic [ref=e207]:
+                - paragraph [ref=e208]: __next.__PAGE__.txt
+                - paragraph [ref=e209]: 784 B
+                - paragraph [ref=e210]:
+                  - time [ref=e211]: a month ago
+                - paragraph [ref=e212]: "-rw-r--r--"
+            - button "__next._full.txt" [ref=e213] [cursor=pointer]:
+              - generic [ref=e215]: description
+              - generic [ref=e216]:
+                - paragraph [ref=e217]: __next._full.txt
+                - paragraph [ref=e218]: 4.08 KiB
+                - paragraph [ref=e219]:
+                  - time [ref=e220]: a month ago
+                - paragraph [ref=e221]: "-rw-r--r--"
+            - button "__next._head.txt" [ref=e222] [cursor=pointer]:
+              - generic [ref=e224]: description
+              - generic [ref=e225]:
+                - paragraph [ref=e226]: __next._head.txt
+                - paragraph [ref=e227]: 1.04 KiB
+                - paragraph [ref=e228]:
+                  - time [ref=e229]: a month ago
+                - paragraph [ref=e230]: "-rw-r--r--"
+            - button "__next._index.txt" [ref=e231] [cursor=pointer]:
+              - generic [ref=e233]: description
+              - generic [ref=e234]:
+                - paragraph [ref=e235]: __next._index.txt
+                - paragraph [ref=e236]: 1.78 KiB
+                - paragraph [ref=e237]:
+                  - time [ref=e238]: a month ago
+                - paragraph [ref=e239]: "-rw-r--r--"
+            - button "__next._tree.txt" [ref=e240] [cursor=pointer]:
+              - generic [ref=e242]: description
+              - generic [ref=e243]:
+                - paragraph [ref=e244]: __next._tree.txt
+                - paragraph [ref=e245]: 244 B
+                - paragraph [ref=e246]:
+                  - time [ref=e247]: a month ago
+                - paragraph [ref=e248]: "-rw-r--r--"
+            - button "_not-found.html" [ref=e249] [cursor=pointer]:
+              - generic [ref=e251]: code
+              - generic [ref=e252]:
+                - paragraph [ref=e253]: _not-found.html
+                - paragraph [ref=e254]: 8.12 KiB
+                - paragraph [ref=e255]:
+                  - time [ref=e256]: a month ago
+                - paragraph [ref=e257]: "-rw-r--r--"
+            - button "_not-found.txt" [ref=e258] [cursor=pointer]:
+              - generic [ref=e260]: description
+              - generic [ref=e261]:
+                - paragraph [ref=e262]: _not-found.txt
+                - paragraph [ref=e263]: 5.11 KiB
+                - paragraph [ref=e264]:
+                  - time [ref=e265]: a month ago
+                - paragraph [ref=e266]: "-rw-r--r--"
+            - button "brindes.html" [ref=e267] [cursor=pointer]:
+              - generic [ref=e269]: code
+              - generic [ref=e270]:
+                - paragraph [ref=e271]: brindes.html
+                - paragraph [ref=e272]: 12.13 KiB
+                - paragraph [ref=e273]:
+                  - time [ref=e274]: a month ago
+                - paragraph [ref=e275]: "-rw-r--r--"
+            - button "default.php" [ref=e276] [cursor=pointer]:
+              - generic [ref=e278]: code
+              - generic [ref=e279]:
+                - paragraph [ref=e280]: default.php
+                - paragraph [ref=e281]: 16.01 KiB
+                - paragraph [ref=e282]:
+                  - time [ref=e283]: 3 months ago
+                - paragraph [ref=e284]: "-rw-r--r--"
+            - button "favicon.ico" [ref=e285] [cursor=pointer]:
+              - img [ref=e287]
+              - generic [ref=e288]:
+                - paragraph [ref=e289]: favicon.ico
+                - paragraph [ref=e290]: 25.32 KiB
+                - paragraph [ref=e291]:
+                  - time [ref=e292]: a month ago
+                - paragraph [ref=e293]: "-rw-r--r--"
+            - button "file.svg" [ref=e294] [cursor=pointer]:
+              - img [ref=e296]
+              - generic [ref=e297]:
+                - paragraph [ref=e298]: file.svg
+                - paragraph [ref=e299]: 391 B
+                - paragraph [ref=e300]:
+                  - time [ref=e301]: a month ago
+                - paragraph [ref=e302]: "-rw-r--r--"
+            - button "globe.svg" [ref=e303] [cursor=pointer]:
+              - img [ref=e305]
+              - generic [ref=e306]:
+                - paragraph [ref=e307]: globe.svg
+                - paragraph [ref=e308]: 1.01 KiB
+                - paragraph [ref=e309]:
+                  - time [ref=e310]: a month ago
+                - paragraph [ref=e311]: "-rw-r--r--"
+            - button "hero.png" [ref=e312] [cursor=pointer]:
+              - img [ref=e314]
+              - generic [ref=e315]:
+                - paragraph [ref=e316]: hero.png
+                - paragraph [ref=e317]: 43.87 KiB
+                - paragraph [ref=e318]:
+                  - time [ref=e319]: a month ago
+                - paragraph [ref=e320]: "-rw-r--r--"
+            - button "index.html" [ref=e321] [cursor=pointer]:
+              - generic [ref=e323]: code
+              - generic [ref=e324]:
+                - paragraph [ref=e325]: index.html
+                - paragraph [ref=e326]: 23.43 KiB
+                - paragraph [ref=e327]:
+                  - time [ref=e328]: a month ago
+                - paragraph [ref=e329]: "-rw-r--r--"
+            - button "index.php" [ref=e330] [cursor=pointer]:
+              - generic [ref=e332]: code
+              - generic [ref=e333]:
+                - paragraph [ref=e334]: index.php
+                - paragraph [ref=e335]: 405 B
+                - paragraph [ref=e336]:
+                  - time [ref=e337]: 3 months ago
+                - paragraph [ref=e338]: "-rw-r--r--"
+            - button "index.txt" [ref=e339] [cursor=pointer]:
+              - generic [ref=e341]: description
+              - generic [ref=e342]:
+                - paragraph [ref=e343]: index.txt
+                - paragraph [ref=e344]: 4.08 KiB
+                - paragraph [ref=e345]:
+                  - time [ref=e346]: a month ago
+                - paragraph [ref=e347]: "-rw-r--r--"
+          - generic [ref=e357]:
+            - paragraph [ref=e358]: Multiple selection enabled
+            - button "Clear" [ref=e359] [cursor=pointer]:
+              - generic [ref=e360]: clear

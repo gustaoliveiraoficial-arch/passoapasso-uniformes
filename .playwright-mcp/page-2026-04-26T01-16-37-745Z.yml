@@ -1,0 +1,154 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - generic [ref=e34]:
+        - heading "Categorias de produto" [level=1] [ref=e35]
+        - generic [ref=e36]:
+          - heading "Atividade da loja" [level=2] [ref=e37]
+          - complementary "Atividade da loja" [ref=e38]:
+            - tablist [ref=e39]:
+              - tab "Atividade" [ref=e40] [cursor=pointer]:
+                - img [ref=e41]
+                - text: Atividade
+      - main [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - button "Opções de tela" [ref=e50] [cursor=pointer]
+            - button "Ajuda" [ref=e52] [cursor=pointer]
+          - generic [ref=e56]:
+            - heading "Categorias de produto" [level=1] [ref=e57]
+            - paragraph [ref=e59]:
+              - generic [ref=e60]: "Pesquisar categorias:"
+              - searchbox "Pesquisar categorias:" [ref=e61]
+              - button "Pesquisar categorias" [ref=e62] [cursor=pointer]
+            - generic [ref=e63]:
+              - generic [ref=e65]:
+                - paragraph [ref=e66]: As categorias de produtos da sua loja podem ser gerenciadas aqui. Para alterar a ordem das categorias na frente do site você pode arrastar e soltá-los. Para ver mais categorias clique em "opções de tela" no topo da página.
+                - generic [ref=e67]:
+                  - heading "Adicionar nova categoria" [level=2] [ref=e68]
+                  - generic [ref=e69]:
+                    - generic [ref=e70]:
+                      - generic [ref=e71]: Nome
+                      - textbox "Nome" [active] [ref=e72]
+                      - paragraph [ref=e73]: O nome é como aparece em seu site.
+                    - generic [ref=e74]:
+                      - generic [ref=e75]: Slug
+                      - textbox "Slug" [ref=e76]
+                      - paragraph [ref=e77]: O “slug” é uma versão amigável do URL. Normalmente é todo em minúsculas e contém apenas letras, números e hifens.
+                    - generic [ref=e78]:
+                      - generic [ref=e79]: Categoria ascendente
+                      - combobox "Categoria ascendente" [ref=e80] [cursor=pointer]:
+                        - option "Nenhum" [selected]
+                        - option "Sem categoria"
+                      - paragraph [ref=e81]: Atribua um termo ascendente para criar uma hierarquia. O termo Jazz, por exemplo, pode ser ascendente de Bebop e Big Band.
+                    - generic [ref=e82]:
+                      - generic [ref=e83]: Descrição
+                      - textbox "Descrição" [ref=e84]
+                      - paragraph [ref=e85]: A descrição não está em destaque por padrão, no entanto alguns temas podem mostrá-la.
+                    - generic [ref=e86]:
+                      - generic [ref=e87]: Tipo de exibição
+                      - combobox "Tipo de exibição" [ref=e88] [cursor=pointer]:
+                        - option "Padrão" [selected]
+                        - option "Produtos"
+                        - option "Subcategorias"
+                        - option "Ambos"
+                    - generic [ref=e89]:
+                      - generic [ref=e90]: Miniatura
+                      - img [ref=e92]
+                      - button "Enviar/Adicionar imagem" [ref=e94] [cursor=pointer]
+                    - paragraph [ref=e95]:
+                      - button "Adicionar nova categoria" [ref=e96] [cursor=pointer]
+              - generic [ref=e99]:
+                - heading "Lista de categorias" [level=2] [ref=e101]
+                - table "Tabela ordenada hierarquicamente. Ascendente." [ref=e102]:
+                  - caption [ref=e103]: Tabela ordenada hierarquicamente. Ascendente.
+                  - rowgroup [ref=e104]:
+                    - row "Selecionar todos Nome" [ref=e105]:
+                      - cell "Selecionar todos" [ref=e106]:
+                        - checkbox "Selecionar todos" [ref=e107] [cursor=pointer]
+                        - generic [ref=e109]: Selecionar todos
+                      - columnheader "Nome" [ref=e110]:
+                        - link "Nome" [ref=e111] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/edit-tags.php?taxonomy=product_cat&post_type=product&orderby=name&order=desc
+                          - generic [ref=e112]: Nome
+                      - columnheader [ref=e116]
+                  - rowgroup [ref=e117]:
+                    - row "Esta é a categoria padrão e não pode ser deletada. Ela será designada para todos os produtos sem categoria. “Sem categoria” (Editar) Editar “Sem categoria” | Editar diretamente “Sem categoria” | Ver o arquivo de “Sem categoria” Mostrar mais detalhes" [ref=e118]:
+                      - rowheader "Esta é a categoria padrão e não pode ser deletada. Ela será designada para todos os produtos sem categoria." [ref=e119]:
+                        - generic "Esta é a categoria padrão e não pode ser deletada. Ela será designada para todos os produtos sem categoria." [ref=e120]: 
+                      - cell "“Sem categoria” (Editar) Editar “Sem categoria” | Editar diretamente “Sem categoria” | Ver o arquivo de “Sem categoria” Mostrar mais detalhes" [ref=e121]:
+                        - strong [ref=e122]:
+                          - link "“Sem categoria” (Editar)" [ref=e123] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/term.php?taxonomy=product_cat&tag_ID=16&post_type=product&wp_http_referer=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dproduct_cat%26post_type%3Dproduct
+                            - text: Sem categoria
+                        - generic [ref=e124]:
+                          - generic [ref=e125]:
+                            - link "Editar “Sem categoria”" [ref=e126] [cursor=pointer]:
+                              - /url: https://passoapassouniformes.com/wp-admin/term.php?taxonomy=product_cat&tag_ID=16&post_type=product&wp_http_referer=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dproduct_cat%26post_type%3Dproduct
+                              - text: Editar
+                            - text: "|"
+                          - generic [ref=e127]:
+                            - button "Editar diretamente “Sem categoria”" [ref=e128] [cursor=pointer]: Edição rápida
+                            - text: "|"
+                          - link "Ver o arquivo de “Sem categoria”" [ref=e130] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/categoria-produto/sem-categoria/
+                            - text: Ver
+                        - button "Mostrar mais detalhes" [ref=e131]:
+                          - generic [ref=e132]: Mostrar mais detalhes
+                      - text: Descrição Slug Contagem
+                      - cell [ref=e133]
+                  - rowgroup [ref=e134]:
+                    - row "Selecionar todos Nome" [ref=e135]:
+                      - cell "Selecionar todos" [ref=e136]:
+                        - checkbox "Selecionar todos" [ref=e137] [cursor=pointer]
+                        - generic [ref=e139]: Selecionar todos
+                      - columnheader "Nome" [ref=e140]:
+                        - link "Nome" [ref=e141] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/edit-tags.php?taxonomy=product_cat&post_type=product&orderby=name&order=desc
+                          - generic [ref=e142]: Nome
+                      - columnheader [ref=e146]
+                - generic [ref=e147]:
+                  - generic [ref=e148]:
+                    - generic [ref=e149]: Selecionar ação em massa
+                    - combobox "Selecionar ação em massa" [ref=e150] [cursor=pointer]:
+                      - option "Ações em massa" [selected]
+                      - option "Excluir"
+                    - button "Aplicar" [ref=e151] [cursor=pointer]
+                  - generic [ref=e152]: 1 item
+    - generic [ref=e154]:
+      - img [ref=e156]
+      - generic [ref=e158]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e160] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+  - img

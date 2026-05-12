@@ -1,0 +1,41 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e7]: P
+        - generic [ref=e8]:
+          - heading "Passo a Passo Uniformes" [level=1] [ref=e9]
+          - paragraph [ref=e10]: Sistema de Pedidos
+      - link "Novo Pedido" [ref=e11] [cursor=pointer]:
+        - /url: /novo-pedido
+        - img [ref=e12]
+        - text: Novo Pedido
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - img [ref=e17]
+        - textbox "Buscar por cliente, pedido ou vendedor..." [ref=e20]
+      - combobox [ref=e21]:
+        - option "Todos os status" [selected]
+        - option "1. Dados"
+        - option "2. Tamanhos"
+        - option "3. Arquivos"
+        - option "4. Confirmação"
+      - button "Atualizar" [ref=e22] [cursor=pointer]:
+        - img [ref=e23]
+        - text: Atualizar
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: "0"
+        - generic [ref=e31]: 1. Dados
+      - generic [ref=e32]:
+        - generic [ref=e33]: "0"
+        - generic [ref=e34]: 2. Tamanhos
+      - generic [ref=e35]:
+        - generic [ref=e36]: "0"
+        - generic [ref=e37]: 3. Arquivos
+      - generic [ref=e38]:
+        - generic [ref=e39]: "0"
+        - generic [ref=e40]: 4. Confirmação
+    - generic [ref=e42]: Carregando pedidos...
+    - paragraph [ref=e43]: 0 pedido(s) exibido(s)

@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "Groq" [ref=e5]
+      - paragraph [ref=e7]:
+        - text: Build
+        - img [ref=e8]
+        - text: Fast
+    - generic [ref=e15]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Logging in...
+        - img [ref=e26]
+      - paragraph [ref=e28]:
+        - text: By continuing, I accept the
+        - link "Services Agreement" [ref=e29] [cursor=pointer]:
+          - /url: /docs/legal/services-agreement
+        - text: and acknowledge that I have read the
+        - link "Privacy Policy" [ref=e30] [cursor=pointer]:
+          - /url: https://groq.com/privacy-policy
+        - text: .
+  - region "Notifications alt+T"
+  - alert [ref=e31]

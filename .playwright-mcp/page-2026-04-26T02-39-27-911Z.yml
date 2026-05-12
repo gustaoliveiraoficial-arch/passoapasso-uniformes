@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Opções de tela" [ref=e37] [cursor=pointer]
+            - button "Ajuda" [ref=e39] [cursor=pointer]
+          - generic [ref=e40]:
+            - heading "Enviar nova mídia" [level=1] [ref=e41]
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - paragraph [ref=e44]:
+                  - generic [ref=e45]: Enviar
+                  - button "Enviar" [ref=e46] [cursor=pointer]
+                  - button "Enviar" [disabled] [ref=e47]
+                - paragraph [ref=e48]:
+                  - text: Você está usando o componente de envio de arquivos nativo do navegador. O componente de envio do WordPress inclui seleção de múltiplos arquivos e a habilidade de arrastar e soltar.
+                  - button "Trocar para o componente de envio de múltiplos arquivos" [ref=e49] [cursor=pointer]
+                  - text: .
+              - paragraph [ref=e50]: "Tamanho máximo de upload de arquivo: 2 GB."
+              - generic [ref=e58]:
+                - generic [ref=e62]:
+                  - strong [ref=e64]: tamanhos-unissex
+                  - generic [ref=e65]: tamanhos-unissex.jpeg
+                  - generic [ref=e66]:
+                    - link "Editar" [ref=e67] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/post.php?post=89&action=edit
+                    - button "Copiar URL para área de transferência" [ref=e69] [cursor=pointer]
+                - generic [ref=e73]:
+                  - strong [ref=e75]: tamanhos-babylook
+                  - generic [ref=e76]: tamanhos-babylook.jpeg
+                  - generic [ref=e77]:
+                    - link "Editar" [ref=e78] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/post.php?post=90&action=edit
+                    - button "Copiar URL para área de transferência" [ref=e80] [cursor=pointer]
+    - button "Fale com o Kodee" [ref=e54] [cursor=pointer]:
+      - img [ref=e55]
+      - generic [ref=e57]: Fale com o Kodee
+  - img

@@ -1,0 +1,143 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e45]:
+    - banner [ref=e46]:
+      - generic [ref=e47]:
+        - link [ref=e48] [cursor=pointer]:
+          - /url: /
+          - img [ref=e49]
+        - generic [ref=e51]:
+          - heading "Novo Pedido" [level=1] [ref=e52]
+          - paragraph [ref=e53]: Preencha todos os campos para registrar o pedido
+    - main [ref=e54]:
+      - generic [ref=e55]:
+        - heading "1. Dados do Cliente" [level=2] [ref=e57]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60] [cursor=pointer]:
+              - radio "Pessoa Física" [checked] [ref=e61]
+              - generic [ref=e62]: Pessoa Física
+            - generic [ref=e63] [cursor=pointer]:
+              - radio "Empresa (CNPJ)" [ref=e64]
+              - generic [ref=e65]: Empresa (CNPJ)
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]: Nome Completo *
+              - textbox "Nome completo" [ref=e69]
+            - generic [ref=e70]:
+              - generic [ref=e71]: CPF *
+              - textbox "000.000.000-00" [ref=e72]
+            - generic [ref=e73]:
+              - generic [ref=e74]: Telefone
+              - textbox "(51) 99999-9999" [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e77]: Endereço completo *
+              - textbox "Rua, número, bairro" [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]: Cidade
+              - textbox [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]: Estado
+              - textbox "RS" [ref=e84]
+            - generic [ref=e85]:
+              - generic [ref=e86]: CEP *
+              - textbox "00000-000" [ref=e87]
+            - generic [ref=e88]:
+              - generic [ref=e89]: E-mail *
+              - textbox "email@exemplo.com" [ref=e90]
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: Data do Pedido *
+              - textbox [ref=e94]: 2026-05-09
+            - generic [ref=e95]:
+              - generic [ref=e96]: Data de Entrega Prevista *
+              - textbox [ref=e97]
+      - generic [ref=e98]:
+        - heading "2. Produto" [level=2] [ref=e100]
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]: Modelo *
+            - combobox [ref=e104]:
+              - option "Selecione o modelo" [selected]
+              - option "Camiseta Básica"
+              - option "Camiseta Polo"
+              - option "Regata"
+              - option "Bermuda / Short"
+              - option "Calça"
+              - option "Agasalho (Conjunto)"
+              - option "Jaqueta"
+              - option "Moletom com Capuz"
+              - option "Colete"
+          - generic [ref=e105]:
+            - generic [ref=e106]: Nome do Fornecedor *
+            - 'textbox "Ex: U.S, Paquetá, Fardamento..." [ref=e107]'
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - generic [ref=e110]: Referência Unissex
+              - textbox "Ref." [ref=e111]
+            - generic [ref=e112]:
+              - generic [ref=e113]: Referência Babylook
+              - textbox "Ref." [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]: Referência Infantil
+              - textbox "Ref." [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]: Detalhes da Peça
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - checkbox [ref=e122]
+                - generic [ref=e123]: "Corpo:"
+                - textbox "Descrição..." [disabled] [ref=e124]
+              - generic [ref=e125]:
+                - checkbox [ref=e126]
+                - generic [ref=e127]: "Friso:"
+                - textbox "Descrição..." [disabled] [ref=e128]
+              - generic [ref=e129]:
+                - checkbox [ref=e130]
+                - generic [ref=e131]: "Punho:"
+                - textbox "Descrição..." [disabled] [ref=e132]
+              - generic [ref=e133]:
+                - checkbox [ref=e134]
+                - generic [ref=e135]: "Gola:"
+                - textbox "Descrição..." [disabled] [ref=e136]
+              - generic [ref=e137]:
+                - checkbox [ref=e138]
+                - generic [ref=e139]: "Manga:"
+                - textbox "Descrição..." [disabled] [ref=e140]
+              - generic [ref=e141]:
+                - checkbox [ref=e142]
+                - generic [ref=e143]: "Bolso:"
+                - textbox "Descrição..." [disabled] [ref=e144]
+          - generic [ref=e145]:
+            - generic [ref=e146]: Tipo de Estampa
+            - generic [ref=e147]:
+              - generic [ref=e148] [cursor=pointer]: Serigrafia
+              - generic [ref=e149] [cursor=pointer]: DTF
+              - generic [ref=e150] [cursor=pointer]: Plastsol
+              - generic [ref=e151] [cursor=pointer]: Alto Relevo
+              - generic [ref=e152] [cursor=pointer]: Sublimação
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - generic [ref=e155]: Valor Unitário (R$) *
+              - spinbutton [ref=e156]
+            - generic [ref=e157]:
+              - generic [ref=e158]: Quantidade Total de Peças *
+              - spinbutton [ref=e159]
+            - generic [ref=e160]:
+              - generic [ref=e161]: Total Estimado
+              - generic [ref=e162]: —
+      - generic [ref=e163]:
+        - heading "3. Vendedor & Número do Pedido" [level=2] [ref=e165]
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: Nome do Vendedor *
+            - 'textbox "Ex: Gustavo" [ref=e170]'
+          - generic [ref=e171]:
+            - generic [ref=e172]: Número do Pedido *
+            - 'textbox "Ex: 2026-0042" [ref=e173]'
+      - generic [ref=e174]:
+        - link "Cancelar" [ref=e175] [cursor=pointer]:
+          - /url: /
+        - button "Salvar Pedido" [ref=e176] [cursor=pointer]:
+          - text: Salvar Pedido
+          - img [ref=e177]
+  - alert [ref=e44]

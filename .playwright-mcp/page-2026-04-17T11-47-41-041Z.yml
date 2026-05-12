@@ -1,0 +1,43 @@
+- generic [ref=e3]:
+  - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner
+  - main [ref=e5]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img [ref=e10]: warning
+        - heading "Ativar a autenticação multifator (MFA)" [level=1] [ref=e11]
+      - paragraph [ref=e12]: A autenticação multifator (MFA), também chamada de verificação em duas etapas (2SV), agora é obrigatória para os usuários. É necessário ativar essa autenticação para ter acesso ao Firebase.
+      - generic [ref=e13]:
+        - link "Ative a verificação em duas etapas (abre em uma nova guia)" [active] [ref=e14] [cursor=pointer]:
+          - /url: https://myaccount.google.com/u/0/signinoptions/twosv
+          - generic [ref=e15]: Ative a verificação em duas etapas
+        - link "Saiba mais sobre a verificação em duas etapas (abre a documentação do Google Cloud em uma nova guia)" [ref=e18] [cursor=pointer]:
+          - /url: https://cloud.google.com/docs/authentication/mfa-requirement?hl=pt-BR&authuser=0
+          - generic [ref=e19]: Saiba mais
+  - generic "Gemini no Firebase" [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e32] [cursor=pointer]':
+          - img [ref=e34]
+          - img [ref=e40]
+        - button "Abrir alertas" [ref=e42] [cursor=pointer]:
+          - img [ref=e43]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [disabled] [ref=e51]:
+          - img [ref=e53]: spark
+          - tooltip "Gemini no Firebase Selecione um projeto para usar o Gemini no Firebase" [ref=e56]:
+            - generic:
+              - text: Gemini no Firebase
+              - generic [ref=e57]: Selecione um projeto para usar o Gemini no Firebase
+        - button "Ajuda" [ref=e60] [cursor=pointer]:
+          - img [ref=e61]: contact_support
+        - separator [ref=e64]
+        - button "Ativar o Cloud Shell" [ref=e65] [cursor=pointer]:
+          - img [ref=e66]:
+            - img [ref=e67]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e71]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [disabled]:
+          - img: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e75] [cursor=pointer]':
+        - img [ref=e76]: dark_mode

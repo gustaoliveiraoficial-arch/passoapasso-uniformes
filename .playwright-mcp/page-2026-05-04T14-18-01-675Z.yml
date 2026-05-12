@@ -1,0 +1,58 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - button "person u723199063" [ref=e6] [cursor=pointer]:
+        - generic [ref=e7]: person
+        - text: u723199063
+      - button "My files" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: folder
+        - text: My files
+      - generic [ref=e10]:
+        - button "New folder" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: create_new_folder
+          - text: New folder
+        - button "New file" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: note_add
+          - text: New file
+      - link "Trash bin" [ref=e16] [cursor=pointer]:
+        - /url: /ac901997beeefb64/files/.trash
+        - generic [ref=e17]: delete
+        - text: Trash bin
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: Space
+          - generic [ref=e23]: 0.83%
+          - generic [ref=e61]: 424.64 MiB / 50 GiB
+        - generic [ref=e24]:
+          - generic [ref=e25]: Inodes
+          - generic [ref=e28]: 3.48%
+          - generic [ref=e63]: 20871 / 600000
+      - button "Logout" [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]: exit_to_app
+        - text: Logout
+      - paragraph [ref=e31]:
+        - generic [ref=e32]: File Browser v2.63.2-h2
+        - generic [ref=e33]: Help
+    - main [ref=e34]:
+      - generic [ref=e35]:
+        - img [ref=e595]
+        - generic [ref=e39]:
+          - link "Home" [ref=e40] [cursor=pointer]:
+            - /url: /ac901997beeefb64/files
+            - generic [ref=e41]: home
+          - generic [ref=e42]:
+            - generic [ref=e44]: keyboard_arrow_right
+            - link "public_html" [ref=e45] [cursor=pointer]:
+              - /url: /ac901997beeefb64/files/public_html/
+          - generic [ref=e46]:
+            - generic [ref=e48]: keyboard_arrow_right
+            - link "tabeladeprecos" [ref=e49] [cursor=pointer]:
+              - /url: /ac901997beeefb64/files/public_html/tabeladeprecos/
+        - heading "error You don't have permissions to access this." [level=2] [ref=e597]:
+          - generic [ref=e598]: error
+          - text: You don't have permissions to access this.
+  - generic [ref=e599]:
+    - img [ref=e600]
+    - alert [ref=e602]:
+      - generic [ref=e604]: <html> <head><title>403 Forbidden</title></head> <body> <center><h1>403 Forbidden</h1></center> <hr><center>openresty</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page -->
+    - button "close" [ref=e605] [cursor=pointer]: ×

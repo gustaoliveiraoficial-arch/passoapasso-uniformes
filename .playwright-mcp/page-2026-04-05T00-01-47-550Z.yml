@@ -1,0 +1,358 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - link "Pular para a barra de ferramentas" [ref=e4] [cursor=pointer]:
+        - /url: "#wp-toolbar"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Hostinger" [ref=e9] [cursor=pointer]:
+            - /url: admin.php?page=hostinger
+            - generic [ref=e11]: Hostinger
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Integração" [ref=e14] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-get-onboarding
+            - listitem [ref=e15]:
+              - link "Ferramentas" [ref=e16] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-tools
+            - listitem [ref=e17]:
+              - link "E-mail marketing" [ref=e18] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-reach
+            - listitem [ref=e19]:
+              - link "Criador de Conteúdo com IA" [ref=e20] [cursor=pointer]:
+                - /url: admin.php?page=hostinger-ai-assistant
+        - listitem [ref=e21]:
+          - link "Painel" [ref=e22] [cursor=pointer]:
+            - /url: index.php
+            - generic [ref=e23]: 
+            - generic [ref=e24]: Painel
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - link "Início" [ref=e27] [cursor=pointer]:
+                - /url: index.php
+            - listitem [ref=e28]:
+              - link "Atualizações 8" [ref=e29] [cursor=pointer]:
+                - /url: update-core.php
+                - text: Atualizações
+                - generic [ref=e30]: "8"
+        - listitem [ref=e31]:
+          - link "Elementor" [ref=e32] [cursor=pointer]:
+            - /url: admin.php?page=elementor-home
+            - generic [ref=e34]: Elementor
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Página inicial" [ref=e37] [cursor=pointer]:
+                - /url: admin.php?page=elementor-home
+            - listitem [ref=e38]:
+              - link "Editor" [ref=e39] [cursor=pointer]:
+                - /url: admin.php?page=elementor
+            - listitem [ref=e40]:
+              - link "Atualizar" [ref=e41] [cursor=pointer]:
+                - /url: admin.php?page=elementor-one-upgrade
+        - listitem [ref=e42]
+        - listitem [ref=e44]:
+          - link "Posts" [ref=e45] [cursor=pointer]:
+            - /url: edit.php
+            - generic [ref=e46]: 
+            - generic [ref=e47]: Posts
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Todos os posts" [ref=e50] [cursor=pointer]:
+                - /url: edit.php
+            - listitem [ref=e51]:
+              - link "Adicionar post" [ref=e52] [cursor=pointer]:
+                - /url: post-new.php
+            - listitem [ref=e53]:
+              - link "Categorias" [ref=e54] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=category
+            - listitem [ref=e55]:
+              - link "Tags" [ref=e56] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=post_tag
+        - listitem [ref=e57]:
+          - link "Mídia" [ref=e58] [cursor=pointer]:
+            - /url: upload.php
+            - generic [ref=e59]: 
+            - generic [ref=e60]: Mídia
+          - list [ref=e61]:
+            - listitem [ref=e62]:
+              - link "Biblioteca" [ref=e63] [cursor=pointer]:
+                - /url: upload.php
+            - listitem [ref=e64]:
+              - link "Adicionar arquivo de mídia" [ref=e65] [cursor=pointer]:
+                - /url: media-new.php
+        - listitem [ref=e66]:
+          - link "Páginas" [ref=e67] [cursor=pointer]:
+            - /url: edit.php?post_type=page
+            - generic [ref=e68]: 
+            - generic [ref=e69]: Páginas
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - link "Todas as páginas" [ref=e72] [cursor=pointer]:
+                - /url: edit.php?post_type=page
+            - listitem [ref=e73]:
+              - link "Adicionar página" [ref=e74] [cursor=pointer]:
+                - /url: post-new.php?post_type=page
+        - listitem [ref=e75]:
+          - link "Comentários" [ref=e76] [cursor=pointer]:
+            - /url: edit-comments.php
+            - generic [ref=e77]: 
+            - generic [ref=e78]: Comentários
+        - listitem [ref=e79]
+        - text:  
+        - listitem [ref=e81]
+        - listitem [ref=e83]:
+          - link "Hello Biz" [ref=e84] [cursor=pointer]:
+            - /url: admin.php?page=hello-biz
+            - generic [ref=e85]: 
+            - generic [ref=e86]: Hello Biz
+          - list [ref=e87]:
+            - listitem [ref=e88]:
+              - link "Home" [ref=e89] [cursor=pointer]:
+                - /url: admin.php?page=hello-biz
+            - listitem [ref=e90]:
+              - link "Begin setup" [ref=e91] [cursor=pointer]:
+                - /url: admin.php?page=hello-biz-setup
+            - listitem [ref=e92]:
+              - link "Settings" [ref=e93] [cursor=pointer]:
+                - /url: admin.php?page=hello-plus-settings
+            - listitem [ref=e94]:
+              - link "Theme Builder" [ref=e95] [cursor=pointer]:
+                - /url: admin.php?page=elementor-app&ver=3.35.0#site-editor/promotion
+        - listitem [ref=e96]:
+          - link "Aparência" [ref=e97] [cursor=pointer]:
+            - /url: themes.php
+            - generic [ref=e98]: 
+            - generic [ref=e99]: Aparência
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Temas 1" [ref=e102] [cursor=pointer]:
+                - /url: themes.php
+                - text: Temas
+                - generic [ref=e103]: "1"
+            - listitem [ref=e104]:
+              - link "Design" [ref=e105] [cursor=pointer]:
+                - /url: site-editor.php
+            - listitem [ref=e106]:
+              - link "Personalizar" [ref=e107] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Fpost-new.php%3Fpost_type%3Dpage
+            - listitem [ref=e108]:
+              - link "Menus" [ref=e109] [cursor=pointer]:
+                - /url: nav-menus.php
+            - listitem [ref=e110]:
+              - link "Editor de arquivos de tema" [ref=e111] [cursor=pointer]:
+                - /url: theme-editor.php
+        - listitem [ref=e112]:
+          - link "Plugins 6" [ref=e113] [cursor=pointer]:
+            - /url: plugins.php
+            - generic [ref=e114]: 
+            - generic [ref=e115]:
+              - text: Plugins
+              - generic [ref=e116]: "6"
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "Plugins instalados" [ref=e119] [cursor=pointer]:
+                - /url: plugins.php
+            - listitem [ref=e120]:
+              - link "Adicionar plugin" [ref=e121] [cursor=pointer]:
+                - /url: plugin-install.php
+            - listitem [ref=e122]:
+              - link "Editor de arquivos de plugin" [ref=e123] [cursor=pointer]:
+                - /url: plugin-editor.php
+        - listitem [ref=e124]:
+          - link "Usuários" [ref=e125] [cursor=pointer]:
+            - /url: users.php
+            - generic [ref=e126]: 
+            - generic [ref=e127]: Usuários
+          - list [ref=e128]:
+            - listitem [ref=e129]:
+              - link "Todos os usuários" [ref=e130] [cursor=pointer]:
+                - /url: users.php
+            - listitem [ref=e131]:
+              - link "Adicionar usuário" [ref=e132] [cursor=pointer]:
+                - /url: user-new.php
+            - listitem [ref=e133]:
+              - link "Perfil" [ref=e134] [cursor=pointer]:
+                - /url: profile.php
+        - listitem [ref=e135]:
+          - link "Ferramentas" [ref=e136] [cursor=pointer]:
+            - /url: tools.php
+            - generic [ref=e137]: 
+            - generic [ref=e138]: Ferramentas
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link "Ferramentas disponíveis" [ref=e141] [cursor=pointer]:
+                - /url: tools.php
+            - listitem [ref=e142]:
+              - link "Importar" [ref=e143] [cursor=pointer]:
+                - /url: import.php
+            - listitem [ref=e144]:
+              - link "Exportar" [ref=e145] [cursor=pointer]:
+                - /url: export.php
+            - listitem [ref=e146]:
+              - link "Diagnóstico 1" [ref=e147] [cursor=pointer]:
+                - /url: site-health.php
+                - text: Diagnóstico
+                - generic [ref=e148]: "1"
+            - listitem [ref=e149]:
+              - link "Exportar dados pessoais" [ref=e150] [cursor=pointer]:
+                - /url: export-personal-data.php
+            - listitem [ref=e151]:
+              - link "Apagar dados pessoais" [ref=e152] [cursor=pointer]:
+                - /url: erase-personal-data.php
+            - listitem [ref=e153]:
+              - link "Scheduled Actions" [ref=e154] [cursor=pointer]:
+                - /url: tools.php?page=action-scheduler
+        - listitem [ref=e155]:
+          - link "Configurações" [ref=e156] [cursor=pointer]:
+            - /url: options-general.php
+            - generic [ref=e157]: 
+            - generic [ref=e158]: Configurações
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "Geral" [ref=e161] [cursor=pointer]:
+                - /url: options-general.php
+            - listitem [ref=e162]:
+              - link "Escrita" [ref=e163] [cursor=pointer]:
+                - /url: options-writing.php
+            - listitem [ref=e164]:
+              - link "Leitura" [ref=e165] [cursor=pointer]:
+                - /url: options-reading.php
+            - listitem [ref=e166]:
+              - link "Discussão" [ref=e167] [cursor=pointer]:
+                - /url: options-discussion.php
+            - listitem [ref=e168]:
+              - link "Mídia" [ref=e169] [cursor=pointer]:
+                - /url: options-media.php
+            - listitem [ref=e170]:
+              - link "Links permanentes" [ref=e171] [cursor=pointer]:
+                - /url: options-permalink.php
+            - listitem [ref=e172]:
+              - link "Privacidade" [ref=e173] [cursor=pointer]:
+                - /url: options-privacy.php
+            - listitem [ref=e174]:
+              - link "LiteSpeed Cache" [ref=e175] [cursor=pointer]:
+                - /url: options-general.php?page=litespeed-cache-options
+        - listitem [ref=e176]
+        - listitem [ref=e178]:
+          - link "LiteSpeed Cache" [ref=e179] [cursor=pointer]:
+            - /url: admin.php?page=litespeed
+            - generic [ref=e180]: 
+            - generic [ref=e181]: LiteSpeed Cache
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "Painel" [ref=e184] [cursor=pointer]:
+                - /url: admin.php?page=litespeed
+            - listitem [ref=e185]:
+              - link "Predefinições" [ref=e186] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-presets
+            - listitem [ref=e187]:
+              - link "Geral" [ref=e188] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-general
+            - listitem [ref=e189]:
+              - link "Cache" [ref=e190] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-cache
+            - listitem [ref=e191]:
+              - link "CDN" [ref=e192] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-cdn
+            - listitem [ref=e193]:
+              - link "Otimização de imagem" [ref=e194] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-img_optm
+            - listitem [ref=e195]:
+              - link "Otimização de página" [ref=e196] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-page_optm
+            - listitem [ref=e197]:
+              - link "Banco de dados" [ref=e198] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-db_optm
+            - listitem [ref=e199]:
+              - link "Rastreador" [ref=e200] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-crawler
+            - listitem [ref=e201]:
+              - link "Caixa de ferramentas" [ref=e202] [cursor=pointer]:
+                - /url: admin.php?page=litespeed-toolbox
+        - listitem [ref=e203]:
+          - button "Recolher menu principal" [expanded] [ref=e204] [cursor=pointer]:
+            - generic [ref=e206]: Recolher menu
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e209]:
+              - menuitem "Sobre o WordPress" [ref=e210] [cursor=pointer]:
+                - generic [ref=e212]: Sobre o WordPress
+            - group [ref=e213]:
+              - menuitem "proativado.hostingersite.com" [ref=e214] [cursor=pointer]
+            - group [ref=e215]:
+              - menuitem "8 atualizações disponíveis" [ref=e216] [cursor=pointer]:
+                - generic [ref=e218]: "8"
+                - generic [ref=e219]: 8 atualizações disponíveis
+            - group [ref=e220]:
+              - menuitem "0 comentário esperando moderação" [ref=e221] [cursor=pointer]:
+                - generic [ref=e223]: "0"
+                - generic [ref=e224]: 0 comentário esperando moderação
+            - group [ref=e225]:
+              - menuitem "Novo" [ref=e226] [cursor=pointer]:
+                - generic [ref=e228]: Novo
+            - group [ref=e229]:
+              - menuitem "Hostinger" [ref=e230]:
+                - img [ref=e231]
+                - text: Hostinger
+            - group [ref=e233]:
+              - menuitem "" [ref=e234] [cursor=pointer]:
+                - generic "Limpar tudo no LiteSpeed Cache - LSCache" [ref=e235]: 
+          - menu [ref=e236]:
+            - group [ref=e237]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e238] [cursor=pointer]
+      - main [ref=e239]:
+        - generic:
+          - generic:
+            - heading "Adicionar página" [level=1] [ref=e240]
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - region "Barra superior do editor" [ref=e244]:
+                  - generic [ref=e245]:
+                    - toolbar "Ferramentas de documento" [ref=e247]:
+                      - generic [ref=e248]:
+                        - button "Ferramenta Inserção de blocos" [ref=e249] [cursor=pointer]:
+                          - img [ref=e250]
+                        - button "Desfazer" [disabled] [ref=e252]:
+                          - img [ref=e253]
+                        - button "Refazer" [disabled] [ref=e255]:
+                          - img [ref=e256]
+                        - button "Visão geral do documento" [ref=e258] [cursor=pointer]:
+                          - img [ref=e259]
+                      - button "Editar com Elementor" [ref=e262] [cursor=pointer]:
+                        - generic [ref=e263]:
+                          - generic [ref=e264]: 
+                          - text: Editar com Elementor
+                    - button "Sem título · Página Ctrl+K" [ref=e267] [cursor=pointer]:
+                      - heading "Sem título · Página" [level=1] [ref=e269]:
+                        - generic [ref=e270]: Sem título
+                        - generic [ref=e271]: · Página
+                      - generic [ref=e272]: Ctrl+K
+                    - generic [ref=e273]:
+                      - button "Salvar rascunho" [disabled] [ref=e274]
+                      - button "Ver" [ref=e276] [cursor=pointer]:
+                        - img [ref=e277]
+                      - button "Publicar" [disabled] [ref=e279]
+                      - button "Opções" [ref=e281] [cursor=pointer]:
+                        - img [ref=e282]
+                - generic [ref=e284]:
+                  - region "Editor de conteúdo" [ref=e285]:
+                    - generic [ref=e289]:
+                      - textbox "Adicionar título" [active] [ref=e291]:
+                        - generic: Adicionar título
+                      - generic [ref=e294]:
+                        - button "Adicionar bloco padrão" [ref=e295]: Digite / para escolher um bloco
+                        - button "Adicionar bloco" [ref=e297] [cursor=pointer]:
+                          - img
+                      - text: 
+                  - region "Editor de configurações"
+                  - region "Publicação do editor":
+                    - button "Abrir o painel de publicação" [ref=e299] [cursor=pointer]
+              - region "Editor do rodapé" [ref=e300]:
+                - list "Breadcrumb do bloco" [ref=e301]:
+                  - listitem [ref=e302]:
+                    - generic [ref=e303]: Página
+  - img

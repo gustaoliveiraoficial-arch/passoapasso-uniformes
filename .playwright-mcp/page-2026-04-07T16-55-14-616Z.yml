@@ -1,0 +1,176 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Skip to content" [ref=e6] [cursor=pointer]:
+          - /url: "#skip"
+        - generic [ref=e7]:
+          - link "Logo OpenRouter" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - button "Logo OpenRouter" [ref=e9]:
+              - generic [ref=e10]:
+                - img "Logo" [ref=e11]
+                - text: OpenRouter
+          - combobox [ref=e19]:
+            - generic [ref=e20]:
+              - img [ref=e21]
+              - combobox [expanded] [ref=e23]
+            - generic: /
+          - generic [ref=e24]:
+            - link "Fusion" [ref=e25] [cursor=pointer]:
+              - /url: /labs/fusion
+              - button "Fusion" [ref=e26]:
+                - generic [ref=e27]:
+                  - text: Fusion
+                  - img [ref=e28]
+            - link "Models" [ref=e30] [cursor=pointer]:
+              - /url: /models
+              - button "Models" [ref=e31]
+            - link "Chat" [ref=e32] [cursor=pointer]:
+              - /url: /chat
+              - button "Chat" [ref=e33]
+            - link "Rankings" [ref=e34] [cursor=pointer]:
+              - /url: /rankings
+              - button "Rankings" [ref=e35]
+            - link "Apps" [ref=e36] [cursor=pointer]:
+              - /url: /apps
+              - button "Apps" [ref=e37]
+            - link "Docs" [ref=e38] [cursor=pointer]:
+              - /url: /docs/quickstart
+              - button "Docs" [ref=e39]
+            - navigation "Main" [ref=e41]:
+              - list [ref=e43]:
+                - listitem [ref=e44]:
+                  - button "Personal Personal" [ref=e45] [cursor=pointer]:
+                    - img "Personal" [ref=e47]
+                    - generic [ref=e48]: Personal
+                    - img [ref=e49]
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - link "API Keys" [ref=e54] [cursor=pointer]:
+          - /url: /workspaces/default/keys
+          - button "API Keys" [ref=e55]:
+            - generic [ref=e56]:
+              - img [ref=e57]
+              - text: API Keys
+        - link "Guardrails" [ref=e59] [cursor=pointer]:
+          - /url: /workspaces/default/guardrails
+          - button "Guardrails" [ref=e60]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - text: Guardrails
+        - link "BYOK" [ref=e64] [cursor=pointer]:
+          - /url: /workspaces/default/byok
+          - button "BYOK" [ref=e65]:
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - text: BYOK
+        - link "Routing" [ref=e69] [cursor=pointer]:
+          - /url: /workspaces/default/routing
+          - button "Routing" [ref=e70]:
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - text: Routing
+        - link "Presets" [ref=e74] [cursor=pointer]:
+          - /url: /workspaces/default/presets
+          - button "Presets" [ref=e75]:
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - text: Presets
+        - link "Plugins" [ref=e79] [cursor=pointer]:
+          - /url: /workspaces/default/plugins
+          - button "Plugins" [ref=e80]:
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - text: Plugins
+        - link "Observability" [ref=e84] [cursor=pointer]:
+          - /url: /workspaces/default/observability
+          - button "Observability" [ref=e85]:
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - text: Observability
+        - link "Settings" [ref=e90] [cursor=pointer]:
+          - /url: /workspaces/default/settings
+          - button "Settings" [ref=e91]:
+            - generic [ref=e92]:
+              - img [ref=e93]
+              - text: Settings
+        - generic [ref=e96]: Account
+        - link "Activity" [ref=e97] [cursor=pointer]:
+          - /url: /activity
+          - button "Activity" [ref=e98]:
+            - generic [ref=e99]:
+              - img [ref=e100]
+              - text: Activity
+        - link "Logs" [ref=e102] [cursor=pointer]:
+          - /url: /logs
+          - button "Logs" [ref=e103]:
+            - generic [ref=e104]:
+              - img [ref=e105]
+              - text: Logs
+        - link "Credits" [ref=e107] [cursor=pointer]:
+          - /url: /settings/credits
+          - button "Credits" [ref=e108]:
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - text: Credits
+        - link "Management Keys" [ref=e112] [cursor=pointer]:
+          - /url: /settings/management-keys
+          - button "Management Keys" [ref=e113]:
+            - generic [ref=e114]:
+              - img [ref=e115]
+              - text: Management Keys
+        - link "Preferences" [ref=e117] [cursor=pointer]:
+          - /url: /settings/preferences
+          - button "Preferences" [ref=e118]:
+            - generic [ref=e119]:
+              - img [ref=e120]
+              - text: Preferences
+      - generic [ref=e124]:
+        - generic [ref=e127]:
+          - heading "API Keys" [level=1] [ref=e129]
+          - paragraph [ref=e130]: Create and manage your API keys.
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - img
+          - generic [ref=e135]: No API keys yet
+          - generic [ref=e137]:
+            - generic [ref=e138]: Create your first API key to start using OpenRouter
+            - button "Create" [ref=e139] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=e140]
+  - generic:
+    - generic:
+      - generic:
+        - dialog [active]:
+          - generic [ref=e193]:
+            - button "Close" [ref=e194] [cursor=pointer]:
+              - img [ref=e195]
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - generic [ref=e200]:
+                  - text: Name
+                  - img [ref=e201]
+                - textbox "Name" [ref=e203]:
+                  - /placeholder: e.g. "Chatbot Key"
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - text: Credit limit (optional)
+                  - img [ref=e206]
+                - spinbutton "Credit limit (optional)" [ref=e208]
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - text: Reset limit every...
+                  - img [ref=e211]
+                - combobox "Reset limit every..." [disabled] [ref=e213]:
+                  - generic: N/A
+                  - img [ref=e214]
+              - generic [ref=e216]:
+                - generic [ref=e217]:
+                  - text: Expiration
+                  - img [ref=e218]
+                - combobox "Expiration" [ref=e220] [cursor=pointer]:
+                  - generic: No expiration
+                  - img [ref=e221]
+              - generic [ref=e223]:
+                - button "Create" [disabled]

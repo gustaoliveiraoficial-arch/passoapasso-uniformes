@@ -1,0 +1,117 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e444]:
+      - generic [ref=e445]:
+        - navigation "Produtos do Console do Firebase" [ref=e447]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e448]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e449] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e450]:
+                - img [ref=e451]
+                - img "Logotipo do Firebase" [ref=e452]
+          - img [ref=e457]: search
+          - link "Visão geral do projeto" [ref=e459] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e460]: gmp_nav20_overview
+          - menu [ref=e461]:
+            - menuitem "Configurações" [ref=e462]:
+              - img [ref=e464] [cursor=pointer]: settings
+        - separator [ref=e465]
+      - button "Alternar barra lateral de navegação" [ref=e468] [cursor=pointer]:
+        - img [ref=e469]: chevron_left
+    - banner:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - button "Abrir menu de navegação" [ref=e472] [cursor=pointer]:
+            - img [ref=e473]: menu
+          - button "pap-tabela-precos (Abrir o menu \"Selecionar projeto\")" [ref=e477] [cursor=pointer]:
+            - text: pap-tabela-precos
+            - img [ref=e478]: arrow_drop_down
+        - button "Mais opções" [ref=e480] [cursor=pointer]:
+          - img [ref=e481]: more_vert
+    - main [ref=e16]:
+      - generic [ref=e486]:
+        - generic [ref=e488]:
+          - generic [ref=e489]:
+            - generic [ref=e490]: pap-tabela-precos
+            - button "Plano Spark" [ref=e492] [cursor=pointer]:
+              - generic [ref=e493]: Plano Spark
+          - button "Adicionar app" [ref=e499]:
+            - generic [ref=e501]:
+              - generic [ref=e502]: add
+              - generic [ref=e503]: Adicionar app
+        - progressbar [ref=e507]:
+          - img [ref=e509]
+          - generic [ref=e512]:
+            - img [ref=e514]
+            - img [ref=e517]
+            - img [ref=e520]
+    - dialog "Gemini no Firebase" [ref=e522]:
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e128] [cursor=pointer]':
+            - img [ref=e130]
+            - img [ref=e136]
+          - button "Abrir alertas" [ref=e138] [cursor=pointer]:
+            - img [ref=e139]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [ref=e147] [cursor=pointer]:
+            - img [ref=e149]: spark
+          - button "Ajuda" [ref=e156] [cursor=pointer]:
+            - img [ref=e157]: contact_support
+          - separator [ref=e160]
+          - button "Ativar o Cloud Shell" [ref=e161] [cursor=pointer]:
+            - img [ref=e162]:
+              - img [ref=e163]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e167]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e523] [cursor=pointer]:
+            - img [ref=e524]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e171] [cursor=pointer]':
+          - img [ref=e172]: dark_mode
+      - generic [ref=e527]:
+        - generic [ref=e529]:
+          - heading "Gemini no Firebase" [level=2] [ref=e530]:
+            - generic [ref=e532]:
+              - generic [ref=e533]: Gemini
+              - generic [ref=e534]: no Firebase
+          - generic [ref=e535]:
+            - generic [ref=e536]:
+              - button "Iniciar nova conversa" [disabled]:
+                - img: add
+                - alert [ref=e537]:
+                  - button "Dispensar" [ref=e538] [cursor=pointer]:
+                    - img [ref=e539]: close
+                  - generic: Crie novas conversas com o Gemini
+              - button "Abrir histórico de chat" [ref=e544] [cursor=pointer]:
+                - img [ref=e545]: history
+              - button "Maximizar" [ref=e548] [cursor=pointer]:
+                - img [ref=e549]: fullscreen
+              - button "Informar um problema" [ref=e552] [cursor=pointer]:
+                - img [ref=e553]: bug_report
+            - button "Fechar painel" [ref=e556] [cursor=pointer]:
+              - img [ref=e557]: close
+        - generic [ref=e560]:
+          - generic [ref=e563]:
+            - generic [ref=e564]:
+              - img "Logotipo do Gemini" [ref=e565]
+              - generic [ref=e566]: Quer fazer mais com o Gemini? Teste o Gemini Code Assist open_in_new
+            - generic [ref=e567]:
+              - generic [ref=e568]: Olá, shark,
+              - generic [ref=e569]: Como posso ajudar?
+              - generic [ref=e571]:
+                - img [ref=e573]: spark
+                - generic [ref=e574]: Olá! O que você vai criar hoje? Como posso ajudar?
+          - generic [ref=e577]:
+            - generic [ref=e578]: Entrada da mensagem
+            - generic [ref=e579]:
+              - textbox "Entrada da mensagem" [active] [ref=e580]:
+                - /placeholder: Ask Gemini
+              - button "Enviar mensagem" [disabled]:
+                - img: send
+            - generic [ref=e581]:
+              - text: O Gemini pode cometer erros. Por isso, é importante checar as respostas
+              - button "Exoneração de responsabilidade do Gemini no Firebase" [ref=e583]:
+                - img [ref=e584]: help
+  - generic [ref=e175]: Concluindo…

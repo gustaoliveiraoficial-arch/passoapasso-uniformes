@@ -1,0 +1,89 @@
+- generic [ref=e9]:
+  - navigation [ref=e10]:
+    - button "person u723199063" [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: person
+      - text: u723199063
+    - button "Arquivos" [ref=e13] [cursor=pointer]:
+      - generic [ref=e14]: folder
+      - text: Arquivos
+    - generic [ref=e15]:
+      - button "Nova pasta" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: create_new_folder
+        - text: Nova pasta
+      - button "Novo arquivo" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: note_add
+        - text: Novo arquivo
+    - link "Lixeira" [ref=e21] [cursor=pointer]:
+      - /url: /40a7f303c5929401/files/.trash
+      - generic [ref=e22]: delete
+      - text: Lixeira
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Espaço
+        - generic [ref=e29]: 0.66%
+        - generic [ref=e30]: 337.83 MiB / 50 GiB
+      - generic [ref=e31]:
+        - generic [ref=e32]: Inodes
+        - generic [ref=e36]: 3.47%
+        - generic [ref=e37]: 20818 / 600000
+    - button "Sair" [ref=e38] [cursor=pointer]:
+      - generic [ref=e39]: exit_to_app
+      - text: Sair
+    - paragraph [ref=e40]:
+      - generic [ref=e41]: File Browser v2.63.2-h1
+      - generic [ref=e42]: Ajuda
+  - main [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link "Início" [ref=e46] [cursor=pointer]:
+          - /url: /40a7f303c5929401/files
+          - generic [ref=e47]: home
+        - generic [ref=e48]:
+          - generic [ref=e50]: keyboard_arrow_right
+          - link "public_html" [ref=e51] [cursor=pointer]:
+            - /url: /40a7f303c5929401/files/public_html/
+        - generic [ref=e52]:
+          - generic [ref=e54]: keyboard_arrow_right
+          - link "uniformes-empresariais" [ref=e55] [cursor=pointer]:
+            - /url: /40a7f303c5929401/files/public_html/uniformes-empresariais/
+        - generic [ref=e128]:
+          - generic [ref=e130]: keyboard_arrow_right
+          - link "index.html" [ref=e131] [cursor=pointer]:
+            - /url: /40a7f303c5929401/files/public_html/uniformes-empresariais/index.html/
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - button "Fechar" [ref=e134] [cursor=pointer]:
+            - generic [ref=e135]: close
+          - generic [ref=e136]: index.html
+          - button "Aumentar o tamanho da fonte" [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]: add
+          - generic [ref=e139]: 14px
+          - button "Diminuir o tamanho da fonte" [ref=e140] [cursor=pointer]:
+            - generic [ref=e141]: remove
+          - button "Salvar" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: save
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic "Início" [ref=e146]:
+              - generic [ref=e147]: home
+            - generic [ref=e148]:
+              - generic [ref=e150]: keyboard_arrow_right
+              - generic [ref=e151]: public_html
+            - generic [ref=e152]:
+              - generic [ref=e154]: keyboard_arrow_right
+              - generic [ref=e155]: uniformes-empresariais
+            - generic [ref=e156]:
+              - generic [ref=e158]: keyboard_arrow_right
+              - generic [ref=e159]: index.html
+          - generic [ref=e160]:
+            - button "content_copy" [disabled] [ref=e161]:
+              - generic [ref=e163]: content_copy
+            - button "content_cut" [disabled] [ref=e164]:
+              - generic [ref=e166]: content_cut
+            - button "content_paste" [ref=e167] [cursor=pointer]:
+              - generic [ref=e169]: content_paste
+            - button "more_vert" [ref=e170] [cursor=pointer]:
+              - generic [ref=e172]: more_vert
+        - generic [ref=e173]:
+          - textbox "Cursor at row 1" [active] [ref=e174]
+          - generic [ref=e177]: "1"

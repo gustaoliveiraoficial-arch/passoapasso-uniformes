@@ -1,0 +1,490 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner "Global Navigation Menu" [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "Open menu" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+          - link "Homepage (g then d)" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img [ref=e16]
+        - generic [ref=e18]:
+          - navigation "Breadcrumbs" [ref=e19]:
+            - list [ref=e20]:
+              - listitem [ref=e21]:
+                - group [ref=e22]:
+                  - button "1 more breadcrumb items" [ref=e23] [cursor=pointer]:
+                    - img [ref=e24]
+                - img [ref=e27]
+              - listitem [ref=e29]:
+                - link "passoapasso-kommo-webhook" [ref=e30] [cursor=pointer]:
+                  - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook
+                  - generic [ref=e31]: passoapasso-kommo-webhook
+                  - img [ref=e32]
+          - button "Search or jump to… (forward slash)" [ref=e34] [cursor=pointer]:
+            - img [ref=e35]
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e41]:
+              - link "Chat with Copilot" [ref=e43] [cursor=pointer]:
+                - /url: /copilot
+                - img [ref=e44]
+              - button "Open Copilot…" [ref=e48] [cursor=pointer]:
+                - generic:
+                  - img
+            - button "Create new..." [ref=e50] [cursor=pointer]:
+              - generic [ref=e51]:
+                - generic:
+                  - img
+              - generic:
+                - img
+            - generic [ref=e52]:
+              - link "All issues (g then i)" [ref=e53] [cursor=pointer]:
+                - /url: /issues
+                - img [ref=e54]
+              - link "All pull requests" [ref=e57] [cursor=pointer]:
+                - /url: /pulls
+                - img [ref=e58]
+              - link "All repositories" [ref=e60] [cursor=pointer]:
+                - /url: /repos
+                - img [ref=e61]
+          - link "You have no unread notifications (g then n)" [ref=e63] [cursor=pointer]:
+            - /url: /notifications
+            - img [ref=e64]
+          - button "Open user navigation menu" [ref=e67] [cursor=pointer]:
+            - img "User avatar" [ref=e68]
+      - heading "Repository navigation" [level=2] [ref=e69]
+      - navigation "Repository" [ref=e70]:
+        - list [ref=e71]:
+          - listitem [ref=e72]:
+            - link "Code" [ref=e73] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook
+              - img [ref=e75]
+              - generic [ref=e77]: Code
+          - listitem [ref=e78]:
+            - link "Pull requests" [ref=e79] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/pulls
+              - img [ref=e81]
+              - generic [ref=e83]: Pull requests
+          - listitem [ref=e84]:
+            - link "Actions" [ref=e85] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/actions
+              - img [ref=e87]
+              - generic [ref=e89]: Actions
+          - listitem [ref=e90]:
+            - link "Projects" [ref=e91] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/projects
+              - img [ref=e93]
+              - generic [ref=e95]: Projects
+          - listitem [ref=e96]:
+            - link "Wiki" [ref=e97] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/wiki
+              - img [ref=e99]
+              - generic [ref=e101]: Wiki
+          - listitem [ref=e102]:
+            - link "Security and quality" [ref=e103] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/security
+              - img [ref=e105]
+              - generic [ref=e107]: Security and quality
+          - listitem [ref=e108]:
+            - link "Insights" [ref=e109] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/pulse
+              - img [ref=e111]
+              - generic [ref=e113]: Insights
+          - listitem [ref=e114]:
+            - link "Settings" [ref=e115] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/settings
+              - img [ref=e117]
+              - generic [ref=e119]: Settings
+  - main [ref=e123]:
+    - generic [ref=e136]:
+      - generic [ref=e139]:
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - img "Owner avatar" [ref=e144]
+              - strong [ref=e145]:
+                - link "passoapasso-kommo-webhook" [ref=e146] [cursor=pointer]:
+                  - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook
+              - generic [ref=e147]: Public
+            - generic [ref=e149]:
+              - text: forked from
+              - link "gustaoliveiraoficial-arch/passoapasso-kommo-webhook" [ref=e150] [cursor=pointer]:
+                - /url: /gustaoliveiraoficial-arch/passoapasso-kommo-webhook
+          - generic [ref=e151]:
+            - list:
+              - listitem [ref=e152]:
+                - button "Pin" [ref=e155] [cursor=pointer]:
+                  - img [ref=e156]
+                  - text: Pin
+              - listitem [ref=e158]:
+                - 'button "Watch: Participating in passoapassouniformes2025-spec/passoapasso-kommo-webhook" [ref=e161] [cursor=pointer]':
+                  - generic [ref=e162]:
+                    - generic:
+                      - img
+                    - generic [ref=e163]: Watch
+                    - generic:
+                      - generic: "0"
+                      - generic: (0)
+                  - generic:
+                    - img
+              - listitem [ref=e164]:
+                - generic [ref=e165]:
+                  - button "Fork 0" [disabled] [ref=e166]:
+                    - img [ref=e167]
+                    - text: Fork
+                    - generic "0" [ref=e169]
+                  - group [ref=e170]:
+                    - button "See your forks of this repository" [ref=e171] [cursor=pointer]:
+                      - img [ref=e172]
+              - listitem [ref=e174]:
+                - generic [ref=e176]:
+                  - button "Star this repository (0)" [ref=e178] [cursor=pointer]:
+                    - img [ref=e179]
+                    - text: Star
+                    - generic "0 users starred this repository" [ref=e181]: "0"
+                  - button "Add this repository to a list" [ref=e185] [cursor=pointer]:
+                    - img
+        - heading "passoapassouniformes2025-spec/passoapasso-kommo-webhook" [level=1] [ref=e188]
+      - generic [ref=e189]:
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - button "master branch" [ref=e196] [cursor=pointer]:
+                - generic [ref=e197]:
+                  - generic [ref=e199]:
+                    - img [ref=e201]
+                    - generic [ref=e204]: master
+                  - generic:
+                    - img
+              - generic [ref=e205]:
+                - link "Go to Branches page" [ref=e206] [cursor=pointer]:
+                  - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/branches
+                  - img [ref=e207]
+                - link "Go to Tags page" [ref=e209] [cursor=pointer]:
+                  - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/tags
+                  - img [ref=e210]
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - button "Go to file" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e217]: Go to file
+                - generic [ref=e218]:
+                  - heading "Add file" [level=2] [ref=e219]
+                  - button "Add file" [ref=e220] [cursor=pointer]:
+                    - img [ref=e223]
+              - button "Code" [ref=e225] [cursor=pointer]:
+                - generic [ref=e226]:
+                  - generic:
+                    - img
+                  - generic [ref=e227]: Code
+                  - generic:
+                    - img
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - text: This branch is
+              - link "1 commit behind" [ref=e230] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/compare/master...gustaoliveiraoficial-arch%3Apassoapasso-kommo-webhook%3Amaster
+              - generic [ref=e231]: gustaoliveiraoficial-arch/passoapasso-kommo-webhook:master
+              - text: .
+            - generic [ref=e232]:
+              - button "Contribute" [ref=e233] [cursor=pointer]:
+                - generic [ref=e234]:
+                  - generic:
+                    - img
+                  - generic [ref=e235]: Contribute
+                  - generic:
+                    - img
+              - button "Sync fork" [ref=e236] [cursor=pointer]:
+                - generic [ref=e237]:
+                  - generic:
+                    - img
+                  - generic [ref=e238]: Sync fork
+                - generic:
+                  - img
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - heading "Folders and files" [level=2] [ref=e241]
+              - table "Folders and files" [ref=e242]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e243]:
+                  - 'row "Latest commit gustaoliveiraoficial-arch commits by gustaoliveiraoficial-arch feat: polling 45s + update_talk webhook para WhatsApp Business API of… Open commit details success Commit 74e221b · May 5, 20261 hour ago History View commit history for this file." [ref=e244]':
+                    - 'cell "Latest commit gustaoliveiraoficial-arch commits by gustaoliveiraoficial-arch feat: polling 45s + update_talk webhook para WhatsApp Business API of… Open commit details success Commit 74e221b · May 5, 20261 hour ago History View commit history for this file." [ref=e245]':
+                      - generic [ref=e246]:
+                        - heading "Latest commit" [level=2] [ref=e247]
+                        - generic [ref=e248]:
+                          - generic [ref=e250]:
+                            - link "gustaoliveiraoficial-arch" [ref=e251] [cursor=pointer]:
+                              - /url: /gustaoliveiraoficial-arch
+                              - img "gustaoliveiraoficial-arch" [ref=e252]
+                            - link "commits by gustaoliveiraoficial-arch" [ref=e253] [cursor=pointer]:
+                              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commits?author=gustaoliveiraoficial-arch
+                              - text: gustaoliveiraoficial-arch
+                          - generic [ref=e254]:
+                            - 'link "feat: polling 45s + update_talk webhook para WhatsApp Business API of…" [ref=e257] [cursor=pointer]':
+                              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/74e221b0ce031d66430787391d4083d700d747a5
+                            - button "Open commit details" [ref=e258] [cursor=pointer]:
+                              - img [ref=e259]
+                            - button "success" [ref=e261] [cursor=pointer]:
+                              - img [ref=e262]
+                        - generic [ref=e264]:
+                          - generic [ref=e266]:
+                            - link "Commit 74e221b" [ref=e267] [cursor=pointer]:
+                              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/74e221b0ce031d66430787391d4083d700d747a5
+                              - text: 74e221b
+                            - text: ·
+                            - generic "May 5, 2026, 12:54 PM GMT-3" [ref=e268]: May 5, 20261 hour ago
+                          - generic [ref=e269]:
+                            - heading "History" [level=2] [ref=e270]
+                            - link "View commit history for this file." [ref=e272] [cursor=pointer]:
+                              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commits/master/
+                              - generic [ref=e273]:
+                                - generic:
+                                  - img
+                  - 'row ".env.example, (File) feat: webhook router de leads por palavras-chave para Kommo May 5, 20265 hours ago" [ref=e274]':
+                    - cell ".env.example, (File)" [ref=e275]:
+                      - generic [ref=e276]:
+                        - img [ref=e277]
+                        - link ".env.example, (File)" [ref=e282] [cursor=pointer]:
+                          - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/blob/master/.env.example
+                          - text: .env.example
+                    - 'cell "feat: webhook router de leads por palavras-chave para Kommo" [ref=e283]':
+                      - 'link "feat: webhook router de leads por palavras-chave para Kommo" [ref=e286] [cursor=pointer]':
+                        - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/bc399e921c592e23d36e48a5fef2576362807a33
+                    - cell "May 5, 20265 hours ago" [ref=e287]:
+                      - generic [ref=e288]: May 5, 20265 hours ago
+                  - 'row ".gitignore, (File) feat: webhook router de leads por palavras-chave para Kommo May 5, 20265 hours ago" [ref=e289]':
+                    - cell ".gitignore, (File)" [ref=e290]:
+                      - generic [ref=e291]:
+                        - img [ref=e292]
+                        - link ".gitignore, (File)" [ref=e297] [cursor=pointer]:
+                          - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/blob/master/.gitignore
+                          - text: .gitignore
+                    - 'cell "feat: webhook router de leads por palavras-chave para Kommo" [ref=e298]':
+                      - 'link "feat: webhook router de leads por palavras-chave para Kommo" [ref=e301] [cursor=pointer]':
+                        - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/bc399e921c592e23d36e48a5fef2576362807a33
+                    - cell "May 5, 20265 hours ago" [ref=e302]:
+                      - generic [ref=e303]: May 5, 20265 hours ago
+                  - 'row "index.js, (File) feat: polling 45s + update_talk webhook para WhatsApp Business API of… May 5, 20261 hour ago" [ref=e304]':
+                    - cell "index.js, (File)" [ref=e305]:
+                      - generic [ref=e306]:
+                        - img [ref=e307]
+                        - link "index.js, (File)" [ref=e312] [cursor=pointer]:
+                          - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/blob/master/index.js
+                          - text: index.js
+                    - 'cell "feat: polling 45s + update_talk webhook para WhatsApp Business API of…" [ref=e313]':
+                      - 'link "feat: polling 45s + update_talk webhook para WhatsApp Business API of…" [ref=e316] [cursor=pointer]':
+                        - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/74e221b0ce031d66430787391d4083d700d747a5
+                    - cell "May 5, 20261 hour ago" [ref=e317]:
+                      - generic [ref=e318]: May 5, 20261 hour ago
+                  - 'row "package-lock.json, (File) feat: webhook router de leads por palavras-chave para Kommo May 5, 20265 hours ago" [ref=e319]':
+                    - cell "package-lock.json, (File)" [ref=e320]:
+                      - generic [ref=e321]:
+                        - img [ref=e322]
+                        - link "package-lock.json, (File)" [ref=e327] [cursor=pointer]:
+                          - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/blob/master/package-lock.json
+                          - text: package-lock.json
+                    - 'cell "feat: webhook router de leads por palavras-chave para Kommo" [ref=e328]':
+                      - 'link "feat: webhook router de leads por palavras-chave para Kommo" [ref=e331] [cursor=pointer]':
+                        - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/bc399e921c592e23d36e48a5fef2576362807a33
+                    - cell "May 5, 20265 hours ago" [ref=e332]:
+                      - generic [ref=e333]: May 5, 20265 hours ago
+                  - 'row "package.json, (File) feat: webhook router de leads por palavras-chave para Kommo May 5, 20265 hours ago" [ref=e334]':
+                    - cell "package.json, (File)" [ref=e335]:
+                      - generic [ref=e336]:
+                        - img [ref=e337]
+                        - link "package.json, (File)" [ref=e342] [cursor=pointer]:
+                          - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/blob/master/package.json
+                          - text: package.json
+                    - 'cell "feat: webhook router de leads por palavras-chave para Kommo" [ref=e343]':
+                      - 'link "feat: webhook router de leads por palavras-chave para Kommo" [ref=e346] [cursor=pointer]':
+                        - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/bc399e921c592e23d36e48a5fef2576362807a33
+                    - cell "May 5, 20265 hours ago" [ref=e347]:
+                      - generic [ref=e348]: May 5, 20265 hours ago
+                  - 'row "railway.json, (File) feat: webhook router de leads por palavras-chave para Kommo May 5, 20265 hours ago" [ref=e349]':
+                    - cell "railway.json, (File)" [ref=e350]:
+                      - generic [ref=e351]:
+                        - img [ref=e352]
+                        - link "railway.json, (File)" [ref=e357] [cursor=pointer]:
+                          - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/blob/master/railway.json
+                          - text: railway.json
+                    - 'cell "feat: webhook router de leads por palavras-chave para Kommo" [ref=e358]':
+                      - 'link "feat: webhook router de leads por palavras-chave para Kommo" [ref=e361] [cursor=pointer]':
+                        - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/commit/bc399e921c592e23d36e48a5fef2576362807a33
+                    - cell "May 5, 20265 hours ago" [ref=e362]:
+                      - generic [ref=e363]: May 5, 20265 hours ago
+            - generic [ref=e365]:
+              - generic [ref=e366]:
+                - heading "Repository files navigation" [level=2] [ref=e367]
+                - navigation "Repository files" [ref=e368]:
+                  - list [ref=e369]:
+                    - listitem [ref=e370]:
+                      - link "README" [ref=e371] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e373]
+                        - generic [ref=e375]: README
+              - generic [ref=e377]:
+                - img [ref=e379]
+                - heading "Add a README" [level=2] [ref=e381]
+                - paragraph [ref=e382]: Help people interested in this repository understand your project.
+                - link "Add a README" [ref=e384] [cursor=pointer]:
+                  - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/new/master?filename=README.md
+                  - generic [ref=e386]: Add a README
+        - generic [ref=e390]:
+          - generic [ref=e392]:
+            - group:
+              - button "Edit repository metadata" [ref=e393] [cursor=pointer]:
+                - img "Edit repository metadata" [ref=e395]
+            - generic [ref=e397]:
+              - heading "About" [level=2] [ref=e398]
+              - generic [ref=e399]: No description, website, or topics provided.
+              - link "Activity" [ref=e401] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/activity
+                - img [ref=e402]
+                - text: Activity
+              - heading "Stars" [level=3] [ref=e404]
+              - link "0 stars" [ref=e406] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/stargazers
+                - img [ref=e407]
+                - strong [ref=e409]: "0"
+                - text: stars
+              - heading "Watchers" [level=3] [ref=e410]
+              - link "0 watching" [ref=e412] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/watchers
+                - img [ref=e413]
+                - strong [ref=e415]: "0"
+                - text: watching
+              - heading "Forks" [level=3] [ref=e416]
+              - link "0 forks" [ref=e418] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/forks
+                - img [ref=e419]
+                - strong [ref=e421]: "0"
+                - text: forks
+          - generic [ref=e423]:
+            - heading "Releases" [level=2] [ref=e424]:
+              - link "Releases" [ref=e425] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/releases
+            - generic [ref=e426]: No releases published
+            - link "Create a new release" [ref=e428] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/releases/new
+          - generic [ref=e430]:
+            - heading "Deployments 4" [level=2] [ref=e431]:
+              - link "Deployments 4" [ref=e432] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/deployments
+                - text: Deployments
+                - generic "4" [ref=e433]
+            - list [ref=e434]:
+              - listitem [ref=e435]:
+                - img [ref=e436]
+                - link "courteous-motivation / production May 5, 2026 12:541 hour ago" [ref=e438] [cursor=pointer]:
+                  - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/deployments/courteous-motivation%20%2F%20production
+            - link "+ 3 deployments" [ref=e440] [cursor=pointer]:
+              - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/deployments
+          - generic [ref=e442]:
+            - heading "Packages" [level=2] [ref=e443]:
+              - link "Packages" [ref=e444] [cursor=pointer]:
+                - /url: /users/passoapassouniformes2025-spec/packages?repo_name=passoapasso-kommo-webhook
+            - generic [ref=e445]:
+              - text: No packages published
+              - link "Publish your first package" [ref=e446] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/packages
+          - generic [ref=e448]:
+            - heading "Contributors" [level=2] [ref=e449]:
+              - link "Contributors" [ref=e450] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/graphs/contributors
+            - generic [ref=e451]: No contributors
+          - generic [ref=e453]:
+            - heading "Languages" [level=2] [ref=e454]
+            - list [ref=e458]:
+              - listitem [ref=e459]:
+                - generic [ref=e460]:
+                  - img [ref=e461]
+                  - generic [ref=e463]: JavaScript
+                  - generic [ref=e464]: 100.0%
+          - generic [ref=e466]:
+            - generic [ref=e467]:
+              - heading "Suggested workflows" [level=2] [ref=e468]
+              - generic [ref=e469]: Based on your tech stack
+            - list [ref=e470]:
+              - listitem [ref=e471]:
+                - generic [ref=e472]:
+                  - generic [ref=e473]:
+                    - img [ref=e475]
+                    - generic [ref=e477]: Datadog Synthetics
+                    - link "Configure Datadog Synthetics" [ref=e478] [cursor=pointer]:
+                      - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/new/master?filename=.github%2Fworkflows%2Fdatadog-synthetics.yml&workflow_template=ci%2Fdatadog-synthetics
+                      - generic [ref=e480]:
+                        - text: Configure
+                        - generic [ref=e481]: Datadog Synthetics
+                  - generic [ref=e482]: Run Datadog Synthetic tests within your GitHub Actions workflow
+              - listitem [ref=e483]:
+                - generic [ref=e484]:
+                  - generic [ref=e485]:
+                    - img [ref=e487]
+                    - generic [ref=e489]: Publish Node.js Package to GitHub Packages
+                    - link "Configure Publish Node.js Package to GitHub Packages" [ref=e490] [cursor=pointer]:
+                      - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/new/master?filename=.github%2Fworkflows%2Fnpm-publish-github-packages.yml&workflow_template=ci%2Fnpm-publish-github-packages
+                      - generic [ref=e492]:
+                        - text: Configure
+                        - generic [ref=e493]: Publish Node.js Package to GitHub Packages
+                  - generic [ref=e494]: Publishes a Node.js package to GitHub Packages.
+              - listitem [ref=e495]:
+                - generic [ref=e496]:
+                  - generic [ref=e497]:
+                    - img [ref=e499]
+                    - generic [ref=e501]: SLSA Generic generator
+                    - link "Configure SLSA Generic generator" [ref=e502] [cursor=pointer]:
+                      - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/new/master?filename=.github%2Fworkflows%2Fgenerator-generic-ossf-slsa3-publish.yml&workflow_template=ci%2Fgenerator-generic-ossf-slsa3-publish
+                      - generic [ref=e504]:
+                        - text: Configure
+                        - generic [ref=e505]: SLSA Generic generator
+                  - generic [ref=e506]: Generate SLSA3 provenance for your existing release workflows
+            - generic [ref=e507]:
+              - link "More workflows" [ref=e508] [cursor=pointer]:
+                - /url: /passoapassouniformes2025-spec/passoapasso-kommo-webhook/actions/new
+              - button "Dismiss suggestions" [ref=e510] [cursor=pointer]:
+                - generic [ref=e512]: Dismiss suggestions
+  - contentinfo [ref=e514]:
+    - heading "Footer" [level=2] [ref=e515]
+    - generic [ref=e516]:
+      - generic [ref=e517]:
+        - link "GitHub Homepage" [ref=e518] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e519]
+        - generic [ref=e521]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e522]:
+        - heading "Footer navigation" [level=3] [ref=e523]
+        - list "Footer navigation" [ref=e524]:
+          - listitem [ref=e525]:
+            - link "Terms" [ref=e526] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e527]:
+            - link "Privacy" [ref=e528] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e529]:
+            - link "Security" [ref=e530] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e531]:
+            - link "Status" [ref=e532] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e533]:
+            - link "Community" [ref=e534] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e535]:
+            - link "Docs" [ref=e536] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e537]:
+            - link "Contact" [ref=e538] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e539]:
+            - button "Manage cookies" [ref=e541] [cursor=pointer]
+          - listitem [ref=e542]:
+            - button "Do not share my personal information" [ref=e544] [cursor=pointer]

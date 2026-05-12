@@ -1,0 +1,175 @@
+- generic [ref=e6]:
+  - link "Pular para o conteúdo principal" [ref=e324] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e96]:
+    - generic [ref=e97]:
+      - navigation "Produtos do Console do Firebase" [ref=e325]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e326]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e327] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - img "Logotipo do Firebase" [ref=e328]
+        - img [ref=e109]: search
+        - link "Visão geral do projeto" [ref=e329] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e112]: gmp_nav20_overview
+        - menu [ref=e113]:
+          - menuitem "Configurações" [ref=e330]:
+            - img [ref=e116] [cursor=pointer]: settings
+      - separator [ref=e117]
+      - group [ref=e119]:
+        - link "Firestore" [ref=e331] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e122]: gmp_firestore
+      - separator [ref=e123]
+    - button "Alternar barra lateral de navegação" [ref=e332] [cursor=pointer]:
+      - img [ref=e127]: chevron_left
+  - banner:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button "Abrir menu de navegação" [ref=e333] [cursor=pointer]:
+          - img [ref=e131]: menu
+        - button "pap-pedidos (Abrir o menu \"Selecionar projeto\")" [ref=e334] [cursor=pointer]:
+          - text: pap-pedidos
+          - img [ref=e136]: arrow_drop_down
+      - button "Mais opções" [ref=e335] [cursor=pointer]:
+        - img [ref=e140]: more_vert
+  - main [ref=e16]:
+    - generic [ref=e144]:
+      - generic [ref=e153]:
+        - heading "Storage" [level=1] [ref=e336]
+        - generic [ref=e156]: Armazenar e recuperar arquivos gerados pelo usuário, como imagens, áudio e vídeos, sem o código do lado do servidor
+        - status [ref=e161]:
+          - img [ref=e162]: info
+          - generic [ref=e163]: "note:"
+          - generic [ref=e165]:
+            - text: Para usar Storage, faça upgrade do plano de preços do seu projeto
+            - button "Fazer upgrade do projeto" [active] [ref=e337]: Fazer upgrade do projeto
+      - generic "Storage" [ref=e338]:
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - heading "Saiba mais" [level=2] [ref=e339]
+            - generic [ref=e176]:
+              - link "settingsPor onde começar? Ver a documentação (abre a documentação do Firebase em uma nova guia)" [ref=e340] [cursor=pointer]:
+                - /url: //firebase.google.com/docs/storage/?hl=pt-BR&authuser=0#implementation_path
+                - generic [ref=e179]:
+                  - img [ref=e180]:
+                    - img [ref=e181]: settings
+                  - generic [ref=e182]:
+                    - generic [ref=e183]: Por onde começar?
+                    - generic [ref=e184]: Ver a documentação
+              - link "infoComo o produto \"Storage\" funciona? Ver a documentação (abre a documentação do Firebase em uma nova guia)" [ref=e341] [cursor=pointer]:
+                - /url: //firebase.google.com/docs/storage/?hl=pt-BR&authuser=0#how_does_it_work
+                - generic [ref=e187]:
+                  - img [ref=e188]:
+                    - img [ref=e189]: info
+                  - generic [ref=e190]:
+                    - generic [ref=e192]: Como o produto "Storage" funciona?
+                    - generic [ref=e193]: Ver a documentação
+              - link "sentiment_satisfied_altDe que forma o produto \"Storage\" pode ser útil para mim? Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e342] [cursor=pointer]:
+                - /url: //firebase.google.com/products/storage/?hl=pt-BR&authuser=0
+                - generic [ref=e196]:
+                  - img [ref=e197]:
+                    - img [ref=e198]: sentiment_satisfied_alt
+                  - generic [ref=e199]:
+                    - generic [ref=e200]: De que forma o produto "Storage" pode ser útil para mim?
+                    - generic [ref=e201]: Saiba mais
+            - iframe [ref=e204]:
+              - generic [active] [ref=f12e1]:
+                - generic "Player de vídeo do YouTube" [ref=f12e3]
+                - generic [ref=f12e5]:
+                  - generic:
+                    - generic:
+                      - button "Assistir vídeo" [ref=f12e10] [cursor=pointer]
+                      - button "Ocultar controles do player" [ref=f12e12] [cursor=pointer]
+                      - generic [ref=f12e14]:
+                        - generic [ref=f12e19]:
+                          - generic [ref=f12e20]:
+                            - link "Introducing Cloud Storage for Firebase" [ref=f12e21] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=_tyjqozrEPY
+                            - link "Firebase" [ref=f12e22] [cursor=pointer]:
+                              - /url: /channel/UCP4bf6IHJJQehibu6ai__cg
+                              - generic [ref=f12e23]: Firebase
+                          - generic [ref=f12e24]:
+                            - button [ref=f12e25] [cursor=pointer]
+                            - generic [ref=f12e26]:
+                              - generic [ref=f12e27]:
+                                - generic: Firebase
+                                - generic: 415 mil inscritos
+                              - generic [ref=f12e35]:
+                                - generic [ref=f12e36]:
+                                  - generic:
+                                    - generic:
+                                      - img
+                                  - button "Inscrever-se" [ref=f12e39] [cursor=pointer]:
+                                    - generic [ref=f12e40]: Inscrever-se
+                                - generic:
+                                  - generic:
+                                    - img
+                        - generic [ref=f12e44]:
+                          - generic [ref=f12e45]:
+                            - button "Compartilhar" [ref=f12e47] [cursor=pointer]:
+                              - generic [ref=f12e51]:
+                                - img
+                            - button "Assistir mais tarde" [ref=f12e56] [cursor=pointer]:
+                              - generic [ref=f12e60]:
+                                - img
+                          - link "Assistir no YouTube" [ref=f12e67] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=_tyjqozrEPY
+                            - generic [ref=f12e70]:
+                              - text: Assista no
+                              - img [ref=f12e72]:
+                                - generic [ref=f12e74]:
+                                  - img
+          - generic [ref=e205]:
+            - separator [ref=e207]
+            - generic [ref=e208]:
+              - heading "Mais produtos para desenvolvedores" [level=2] [ref=e343]
+              - generic [ref=e210]:
+                - link "Authentication Uma solução de identidade de usuário completa em menos de 10 linhas de código" [ref=e344] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e213]:
+                    - img [ref=e214]
+                    - generic [ref=e215]:
+                      - generic [ref=e216]: Authentication
+                      - generic [ref=e217]: Uma solução de identidade de usuário completa em menos de 10 linhas de código
+                - link "Cloud Firestore Atualizações em tempo real, consultas eficientes e escalonamento automático" [ref=e345] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e220]:
+                    - img [ref=e221]
+                    - generic [ref=e222]:
+                      - generic [ref=e223]: Cloud Firestore
+                      - generic [ref=e224]: Atualizações em tempo real, consultas eficientes e escalonamento automático
+                - link "Hosting Implantar apps da Web em segundos" [ref=e346] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e227]:
+                    - img [ref=e228]
+                    - generic [ref=e229]:
+                      - generic [ref=e230]: Hosting
+                      - generic [ref=e231]: Implantar apps da Web em segundos
+              - link "Ver mais produtos relacionados (abre a documentação do Firebase em uma nova guia)" [ref=e347] [cursor=pointer]:
+                - /url: https://firebase.google.com/docs/build?hl=pt-BR&authuser=0
+                - text: Ver mais produtos relacionados open_in_new
+  - generic "Gemini no Firebase" [ref=e348]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e349] [cursor=pointer]':
+          - img [ref=e47]
+          - img [ref=e53]
+        - button "Abrir alertas" [ref=e350] [cursor=pointer]:
+          - img [ref=e56]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e351] [cursor=pointer]:
+          - img [ref=e66]: spark
+        - button "Ajuda" [ref=e352] [cursor=pointer]:
+          - img [ref=e70]: contact_support
+        - separator [ref=e73]
+        - button "Ativar o Cloud Shell" [ref=e353] [cursor=pointer]:
+          - img [ref=e75]:
+            - img [ref=e76]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e80]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e354] [cursor=pointer]:
+          - img [ref=e84]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e355] [cursor=pointer]':
+        - img [ref=e89]: dark_mode

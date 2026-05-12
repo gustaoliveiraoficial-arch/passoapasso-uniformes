@@ -1,0 +1,102 @@
+- generic [active] [ref=e1]:
+  - button "Pular para o conteúdo principal" [ref=e361] [cursor=pointer]:
+    - generic [ref=e7]: Pular para o conteúdo principal
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - link "Configurações da Conta do Google" [ref=e362] [cursor=pointer]:
+        - /url: /?tab=kk
+        - generic [ref=e15]: Conta
+      - generic [ref=e22]:
+        - button "Ajuda" [ref=e363] [cursor=pointer]:
+          - img [ref=e26]
+        - tooltip [ref=e29]: Ajuda
+      - generic [ref=e31]:
+        - button "Google Apps" [ref=e364] [cursor=pointer]:
+          - img [ref=e36]
+        - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e365] [cursor=pointer]':
+          - img [ref=e43]
+  - generic [ref=e47]:
+    - navigation [ref=e49]:
+      - generic [ref=e51]:
+        - button "Voltar à página anterior" [ref=e366] [cursor=pointer]:
+          - img [ref=e54]
+        - tooltip [ref=e57]: Voltar à página anterior
+      - heading "Verificação em duas etapas" [level=1] [ref=e367]
+    - main [ref=e63]:
+      - generic [ref=e182]:
+        - generic [ref=e185]:
+          - heading "Sua conta está protegida com a verificação em duas etapas" [level=2] [ref=e368]
+          - paragraph [ref=e187]: Use uma camada extra de segurança para evitar que hackers acessem sua conta.
+          - paragraph [ref=e188]:
+            - text: A menos que você faça login usando uma chave de acesso, será necessário concluir a segunda etapa mais segura disponível na sua conta. Você pode atualizar suas segundas etapas e opções de login nas configurações quando quiser.
+            - link "Acesse as Configurações de segurança" [ref=e369] [cursor=pointer]:
+              - /url: security
+        - article [ref=e191]:
+          - generic [ref=e193]:
+            - heading "Segundas etapas" [level=2] [ref=e370]
+            - generic [ref=e195]: Mantenha essas informações atualizadas e adicione mais opções de login para que você possa sempre acessar sua Conta do Google
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - link "Chaves de acesso e de segurança 5 chaves de acesso" [ref=e371] [cursor=pointer]:
+                - /url: https://myaccount.google.com/signinoptions/passkeys?continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Ftwosv%3Fauthuser%3D0&authuser=0
+                - generic [ref=e201]:
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: Chaves de acesso e de segurança
+                    - generic [ref=e207]:
+                      - img [ref=e209]
+                      - generic [ref=e212]: 5 chaves de acesso
+                  - img [ref=e216]
+            - listitem [ref=e218]:
+              - link "Solicitação do Google 3 dispositivos" [ref=e372] [cursor=pointer]:
+                - /url: two-step-verification/prompt
+                - generic [ref=e221]:
+                  - generic [ref=e224]:
+                    - generic [ref=e225]: Solicitação do Google
+                    - generic [ref=e227]:
+                      - img [ref=e229]
+                      - generic [ref=e232]: 3 dispositivos
+                  - img [ref=e236]
+            - listitem [ref=e238]:
+              - link "Authenticator Adicionar app autenticador" [ref=e373] [cursor=pointer]:
+                - /url: two-step-verification/authenticator
+                - generic [ref=e241]:
+                  - generic [ref=e244]:
+                    - generic [ref=e245]: Authenticator
+                    - generic [ref=e247]:
+                      - img [ref=e249]
+                      - generic [ref=e251]: Adicionar app autenticador
+                  - img [ref=e255]
+            - listitem [ref=e257]:
+              - link "Número de telefone (51) 98088-1519" [ref=e374] [cursor=pointer]:
+                - /url: two-step-verification/phone-numbers
+                - generic [ref=e260]:
+                  - generic [ref=e263]:
+                    - generic [ref=e264]: Número de telefone
+                    - generic [ref=e266]:
+                      - img [ref=e268]
+                      - generic [ref=e271]: (51) 98088-1519
+                  - img [ref=e275]
+            - listitem [ref=e277]:
+              - link "Códigos alternativos Receber códigos alternativos" [ref=e375] [cursor=pointer]:
+                - /url: two-step-verification/backup-codes
+                - generic [ref=e280]:
+                  - generic [ref=e283]:
+                    - generic [ref=e284]: Códigos alternativos
+                    - generic [ref=e286]:
+                      - img [ref=e288]
+                      - generic [ref=e290]: Receber códigos alternativos
+                  - img [ref=e294]
+        - button "Desativar a Verificação em duas etapas" [ref=e376] [cursor=pointer]:
+          - generic [ref=e300]: Desativar a Verificação em duas etapas
+  - contentinfo [ref=e167]:
+    - link "Consulte a Política de Privacidade do Google" [ref=e377] [cursor=pointer]:
+      - /url: https://policies.google.com/privacy
+      - text: Privacidade
+    - link "Consulte os Termos de Serviço do Google" [ref=e378] [cursor=pointer]:
+      - /url: https://policies.google.com/terms
+      - text: Termos
+    - link "Ajuda" [ref=e379] [cursor=pointer]:
+      - /url: https://support.google.com/accounts
+    - link "Saiba mais sobre a Conta do Google" [ref=e380] [cursor=pointer]:
+      - /url: https://www.google.com/account/about
+      - text: Sobre

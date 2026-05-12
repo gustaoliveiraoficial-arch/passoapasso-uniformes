@@ -1,0 +1,53 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /9366ae24f437b4e3/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0%
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 0%
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h1
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - button "Toggle sidebar" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: menu
+      - generic [ref=e39]:
+        - link "Home" [ref=e40] [cursor=pointer]:
+          - /url: /9366ae24f437b4e3/files
+          - generic [ref=e41]: home
+        - generic [ref=e42]:
+          - generic [ref=e44]: keyboard_arrow_right
+          - link "public_html" [ref=e45] [cursor=pointer]:
+            - /url: /9366ae24f437b4e3/files/public_html/
+        - generic [ref=e46]:
+          - generic [ref=e48]: keyboard_arrow_right
+          - link "wp-content" [ref=e49] [cursor=pointer]:
+            - /url: /9366ae24f437b4e3/files/public_html/wp-content/
+        - generic [ref=e50]:
+          - generic [ref=e52]: keyboard_arrow_right
+          - link "uploads" [ref=e53] [cursor=pointer]:
+            - /url: /9366ae24f437b4e3/files/public_html/wp-content/uploads/
+      - heading "Loading..." [level=2] [ref=e55]: Loading...

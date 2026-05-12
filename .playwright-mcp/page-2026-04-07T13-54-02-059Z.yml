@@ -1,0 +1,42 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - progressbar [ref=e6]
+      - main [ref=e14]:
+        - generic [ref=e15]:
+          - img [ref=e18]
+          - heading "Escolha uma conta" [level=1] [ref=e24]
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "passoapassouniformes2025@gmail.com Desconectada" [ref=e37] [cursor=pointer]:
+              - generic [ref=e39]:
+                - generic [ref=e42]: passoapassouniformes2025@gmail.com
+                - generic [ref=e43]: Desconectada
+          - listitem [ref=e44]:
+            - link "Usar outra conta" [ref=e45] [cursor=pointer]:
+              - generic [ref=e46]:
+                - img [ref=e48]
+                - generic [ref=e51]: Usar outra conta
+          - listitem [ref=e52]:
+            - link "Remover uma conta" [ref=e53] [cursor=pointer]:
+              - generic [ref=e54]:
+                - img [ref=e56]
+                - generic [ref=e58]: Remover uma conta
+    - contentinfo [ref=e63]:
+      - combobox "Alterar idioma Português (Brasil)" [ref=e67] [cursor=pointer]:
+        - generic:
+          - generic: Português (Brasil)
+        - generic:
+          - img
+      - list [ref=e69]:
+        - listitem [ref=e70]:
+          - link "Ajuda" [ref=e71] [cursor=pointer]:
+            - /url: https://support.google.com/accounts?hl=pt-BR&p=account_iph
+        - listitem [ref=e72]:
+          - link "Privacidade" [ref=e73] [cursor=pointer]:
+            - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR&privacy=true
+        - listitem [ref=e74]:
+          - link "Termos" [ref=e75] [cursor=pointer]:
+            - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR
+  - iframe [ref=e76]:
+    

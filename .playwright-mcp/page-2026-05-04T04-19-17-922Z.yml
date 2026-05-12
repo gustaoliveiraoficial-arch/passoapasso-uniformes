@@ -1,0 +1,182 @@
+- generic [ref=e9]:
+  - navigation [ref=e10]:
+    - button "person u723199063" [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: person
+      - text: u723199063
+    - button "Arquivos" [ref=e13] [cursor=pointer]:
+      - generic [ref=e14]: folder
+      - text: Arquivos
+    - generic [ref=e15]:
+      - button "Nova pasta" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: create_new_folder
+        - text: Nova pasta
+      - button "Novo arquivo" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: note_add
+        - text: Novo arquivo
+    - link "Lixeira" [ref=e21] [cursor=pointer]:
+      - /url: /eac3c3c974209c9e/files/.trash
+      - generic [ref=e22]: delete
+      - text: Lixeira
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Espaço
+        - generic [ref=e29]: 0.82%
+        - generic [ref=e30]: 422.04 MiB / 50 GiB
+      - generic [ref=e31]:
+        - generic [ref=e32]: Inodes
+        - generic [ref=e36]: 3.48%
+        - generic [ref=e37]: 20859 / 600000
+    - button "Sair" [ref=e38] [cursor=pointer]:
+      - generic [ref=e39]: exit_to_app
+      - text: Sair
+    - paragraph [ref=e40]:
+      - generic [ref=e41]: File Browser v2.63.2-h2
+      - generic [ref=e42]: Ajuda
+  - main [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link "Início" [ref=e46] [cursor=pointer]:
+          - /url: /eac3c3c974209c9e/files
+          - generic [ref=e47]: home
+        - generic [ref=e48]:
+          - generic [ref=e50]: keyboard_arrow_right
+          - link "public_html" [ref=e51] [cursor=pointer]:
+            - /url: /eac3c3c974209c9e/files/public_html/
+        - generic [ref=e52]:
+          - generic [ref=e54]: keyboard_arrow_right
+          - link "linkdabio" [ref=e55] [cursor=pointer]:
+            - /url: /eac3c3c974209c9e/files/public_html/linkdabio/
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: search
+              - textbox "Pesquisar..." [ref=e62]
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Digite para pesquisar...
+              - generic [ref=e65]:
+                - heading "Tipos" [level=3] [ref=e66]
+                - generic [ref=e67]:
+                  - button "Imagens" [ref=e68] [cursor=pointer]:
+                    - generic [ref=e69]: insert_photo
+                    - paragraph [ref=e70]: Imagens
+                  - button "Música" [ref=e71] [cursor=pointer]:
+                    - generic [ref=e72]: volume_up
+                    - paragraph [ref=e73]: Música
+                  - button "Vídeos" [ref=e74] [cursor=pointer]:
+                    - generic [ref=e75]: movie
+                    - paragraph [ref=e76]: Vídeos
+                  - button "PDF" [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78]: picture_as_pdf
+                    - paragraph [ref=e79]: PDF
+          - generic [ref=e80]:
+            - button "Alterar visualização" [ref=e81] [cursor=pointer]:
+              - generic [ref=e82]: view_module
+            - button "Baixar" [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: file_download
+            - button "Enviar" [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: file_upload
+            - button "Calcular tamanho dos diretórios" [ref=e87] [cursor=pointer]:
+              - generic [ref=e88]: assessment
+            - button "Informações" [ref=e89] [cursor=pointer]:
+              - generic [ref=e90]: info
+            - button "Selecionar múltiplos" [ref=e91] [cursor=pointer]:
+              - generic [ref=e92]: check_circle
+        - generic [ref=e182]:
+          - generic [ref=e185] [cursor=pointer]:
+            - button "Ordenar pelo nome" [ref=e186]:
+              - text: Nome
+              - generic [ref=e187]: arrow_upward
+            - button "Ordenar pelo tamanho" [ref=e188]:
+              - text: Tamanho
+              - generic [ref=e189]: arrow_upward
+            - button "Ordenar pela última modificação" [ref=e190]:
+              - text: Última modificação
+              - generic [ref=e191]: arrow_upward
+          - generic [ref=e192]:
+            - button "conatiner04" [ref=e193] [cursor=pointer]:
+              - generic [ref=e195]: folder
+              - generic [ref=e196]:
+                - paragraph [ref=e197]: conatiner04
+                - paragraph [ref=e198]: "-"
+                - paragraph [ref=e199]:
+                  - time [ref=e200]: há alguns segundos
+                - paragraph [ref=e201]: drwxr-xr-x
+            - button "container final" [ref=e202] [cursor=pointer]:
+              - generic [ref=e204]: folder
+              - generic [ref=e205]:
+                - paragraph [ref=e206]: container final
+                - paragraph [ref=e207]: "-"
+                - paragraph [ref=e208]:
+                  - time [ref=e209]: há alguns segundos
+                - paragraph [ref=e210]: drwxr-xr-x
+            - button "container01" [ref=e211] [cursor=pointer]:
+              - generic [ref=e213]: folder
+              - generic [ref=e214]:
+                - paragraph [ref=e215]: container01
+                - paragraph [ref=e216]: "-"
+                - paragraph [ref=e217]:
+                  - time [ref=e218]: há alguns segundos
+                - paragraph [ref=e219]: drwxr-xr-x
+            - button "container02" [ref=e220] [cursor=pointer]:
+              - generic [ref=e222]: folder
+              - generic [ref=e223]:
+                - paragraph [ref=e224]: container02
+                - paragraph [ref=e225]: "-"
+                - paragraph [ref=e226]:
+                  - time [ref=e227]: há alguns segundos
+                - paragraph [ref=e228]: drwxr-xr-x
+            - button "container03" [ref=e229] [cursor=pointer]:
+              - generic [ref=e231]: folder
+              - generic [ref=e232]:
+                - paragraph [ref=e233]: container03
+                - paragraph [ref=e234]: "-"
+                - paragraph [ref=e235]:
+                  - time [ref=e236]: há alguns segundos
+                - paragraph [ref=e237]: drwxr-xr-x
+          - generic [ref=e238]:
+            - button "black-tile-texture-with-white-seams-2022-12-16-21-46-44-utc.jpg" [ref=e239] [cursor=pointer]:
+              - img [ref=e241]
+              - generic [ref=e242]:
+                - paragraph [ref=e243]: black-tile-texture-with-white-seams-2022-12-16-21-46-44-utc.jpg
+                - paragraph [ref=e244]: 6.92 MiB
+                - paragraph [ref=e245]:
+                  - time [ref=e246]: há alguns segundos
+                - paragraph [ref=e247]: "-rw-r--r--"
+            - button "images (2).jpg" [ref=e248] [cursor=pointer]:
+              - img [ref=e250]
+              - generic [ref=e251]:
+                - paragraph [ref=e252]: images (2).jpg
+                - paragraph [ref=e253]: 11.02 KiB
+                - paragraph [ref=e254]:
+                  - time [ref=e255]: há alguns segundos
+                - paragraph [ref=e256]: "-rw-r--r--"
+            - button "index.html" [ref=e257] [cursor=pointer]:
+              - generic [ref=e259]: code
+              - generic [ref=e260]:
+                - paragraph [ref=e261]: index.html
+                - paragraph [ref=e262]: 45.1 KiB
+                - paragraph [ref=e263]:
+                  - time [ref=e264]: há alguns segundos
+                - paragraph [ref=e265]: "-rw-r--r--"
+            - button "linkdabio.zip" [ref=e266] [cursor=pointer]:
+              - generic [ref=e268]: folder_zip
+              - generic [ref=e269]:
+                - paragraph [ref=e270]: linkdabio.zip
+                - paragraph [ref=e271]: 41.44 MiB
+                - paragraph [ref=e272]:
+                  - time [ref=e273]: há 3 minutos
+                - paragraph [ref=e274]: "-rw-r--r--"
+            - button "logo pap sem fundo.png" [ref=e275] [cursor=pointer]:
+              - img [ref=e277]
+              - generic [ref=e278]:
+                - paragraph [ref=e279]: logo pap sem fundo.png
+                - paragraph [ref=e280]: 20.71 KiB
+                - paragraph [ref=e281]:
+                  - time [ref=e282]: há alguns segundos
+                - paragraph [ref=e283]: "-rw-r--r--"
+          - generic [ref=e284]:
+            - paragraph [ref=e285]: Seleção múltipla ativada
+            - button "Limpar" [ref=e286] [cursor=pointer]:
+              - generic [ref=e287]: clear

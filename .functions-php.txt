@@ -1,0 +1,158 @@
+<?php
+/**
+ * Theme functions and definitions
+ *
+ * @package HelloBiz
+ */
+
+use HelloBiz\Theme;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+define( 'HELLO_BIZ_ELEMENTOR_VERSION', '1.2.0' );
+define( 'EHP_THEME_SLUG', 'hello-biz' );
+
+define( 'HELLO_BIZ_PATH', get_template_directory() );
+define( 'HELLO_BIZ_URL', get_template_directory_uri() );
+define( 'HELLO_BIZ_ASSETS_PATH', HELLO_BIZ_PATH . '/assets/' );
+define( 'HELLO_BIZ_ASSETS_URL', HELLO_BIZ_URL . '/assets/' );
+define( 'HELLO_BIZ_SCRIPTS_PATH', HELLO_BIZ_ASSETS_PATH . 'js/' );
+define( 'HELLO_BIZ_SCRIPTS_URL', HELLO_BIZ_ASSETS_URL . 'js/' );
+define( 'HELLO_BIZ_STYLE_PATH', HELLO_BIZ_ASSETS_PATH . 'css/' );
+define( 'HELLO_BIZ_STYLE_URL', HELLO_BIZ_ASSETS_URL . 'css/' );
+define( 'HELLO_BIZ_IMAGES_PATH', HELLO_BIZ_ASSETS_PATH . 'images/' );
+define( 'HELLO_BIZ_IMAGES_URL', HELLO_BIZ_ASSETS_URL . 'images/' );
+define( 'HELLO_BIZ_STARTER_IMAGES_PATH', HELLO_BIZ_IMAGES_PATH . 'starter-content/' );
+define( 'HELLO_BIZ_STARTER_IMAGES_URL', HELLO_BIZ_IMAGES_URL . 'starter-content/' );
+
+if ( ! isset( $content_width ) ) {
+	$content_width = 800; // Pixels.
+}
+
+// Init the Theme class
+require HELLO_BIZ_PATH . '/theme.php';
+
+Theme::instance();
+
+// =============================================
+// INTEGRAÇÃO KOMMO CRM + WOOCOMMERCE
+// =============================================
+
+define('KOMMO_CLIENT_ID', '40c566fc-081b-44a9-b43b-2a674b16465e');
+define('KOMMO_CLIENT_SECRET', 'LfrrjqWFnB55GQ3vofJqiHBukQzxnFDKFbjBriL8aqlfpQ1i0ptWRRWehBQ52utt');
+define('KOMMO_PIPELINE_ID', 13368211);
+define('KOMMO_STATUS_ID', 103109839);
+define('KOMMO_BASE_URL', 'https://passoapassouniformes2025.kommo.com');
+
+// Inicializar tokens — expiry=0 força refresh imediato na primeira chamada
+add_action('init', function() {
+    if (!get_option('kommo_refresh_token')) {
+        update_option('kommo_access_token', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFmNmVlYjQ2YzIyZGFmYjQzNWNiOThhNjZmZTAwOTVhMWYwM2UzNzA5YTBlYmFkNTg5M2RhMGJmMjJlOGIyYzZiYTI5ZThjMjhiNTg0OWQ1In0.eyJhdWQiOiI0MGM1NjZmYy0wODFiLTQ0YTktYjQzYi0yYTY3NGIxNjQ2NWUiLCJqdGkiOiIxZjZlZWI0NmMyMmRhZmI0MzVjYjk4YTY2ZmUwMDk1YTFmMDNlMzcwOWEwZWJhZDU4OTNkYTBiZjIyZThiMmM2YmEyOWU4YzI4YjU4NDlkNSIsImlhdCI6MTc3NTc4NjIzNCwibmJmIjoxNzc1Nzg2MjM0LCJleHAiOjE3NzU4NzI2MzQsInN1YiI6IjE0OTc3MDM5IiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjM2MjI0ODA3LCJiYXNlX2RvbWFpbiI6ImtvbW1vLmNvbSIsInZlcnNpb24iOjIsInNjb3BlcyI6WyJwdXNoX25vdGlmaWNhdGlvbnMiLCJmaWxlcyIsImNybSIsImZpbGVzX2RlbGV0ZSIsIm5vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjoiNGFmY2I3MWQtNmI5Yy00Mjg5LWI1M2UtZTM5YzYxZTUxN2Q4IiwiYXBpX2RvbWFpbiI6ImFwaS1jLmtvbW1vLmNvbSJ9.NnYv89Sw4xMY3Hxhze6a6K1Sx_Vf_u5KaheXoThknEVRi4ZQlsTWzhVJ5v2xeo3VTLSywzqh5gZU1_8mex0pdUGhzgbUflmUG7yCEat1IH2oRRmPIBK52vjC1Bc749mVazCVPS4UVRip62LSTQO7E-EsXul0TvvCOPD_JOpojBMoHX3kuecksDssUeCgcspNGjRDs7YXIW5fekXgdFooGL-biTk7VRxv8J9yF8pqexiHehF9yWrY92OMZ8e_ORLtuAFFo3_oRF-mdFDd5bsNQdq87Zi6YcmOfTY3nynBzO7KHAwR0lR1iTiRTvGejqbyk_Zbb1feyKhghwYgSyiUXQ');
+        update_option('kommo_refresh_token', 'def50200e73615f514f10d75fbfee76d249fcefd2cea39254086c40f1fffcabc09638153b5baa18a3376f65c5ed016170bb38488fdc45c6224f12115c84d14421805c229b3de790d5d296a718999aa3df8f65295c3edd7f841b6a87c74fca6906dce1e0c2e4167e3635ea8c44f0337a9fb363df272d6d536bced944b4b6e99effbed00b2535988b27c2f45a641f1aed328bcc71387f26e9e0ff2875f535dda23df0c5d156b40b9b93c4ce079b6173f8fc1ccbf780834648442d35fc8dc3a17109d5b79d296b144fa3ea0e4ed901ee940ded238e098ce15e1df4eada1100896b53091ca92225cb1f3af732426d731a34a03b6f76b1c6b93178c8ada684c613eaebeac5dd9658b59a2b277584ff70924507cfe2c98ec6d1d5647fa020bb2ea61a0b8642baae27384e7d4b05e3da3369366feb723d98f3e1938d97dda8a5cb9a4d13845310f734ba4a7131fa48794234e8ce1e4b42c44aa06ea7c1e211313e59571f06adc1b38cac226cbbf9ef789ed2247b65ff7a7fa7ea75602552dac754ee980a1e4f0a5cea54825e90009b73bbe8087d5ba75d86f10d703756a3ff7c4c63ca0cce14be7179838b593ca20dad4c095aa9ceea8eb48d7de28e1edb2c8b3086d6c43f7897774a7da63915113a62b7e90d7c526d91fa4c188b18155c22387790fe983302e6d0e86b759c98e4d5bf3c0');
+        update_option('kommo_token_expires', 0); // expiry=0 força refresh imediato
+    }
+    // Forçar reset do expiry se o token salvo estiver expirado
+    if (get_option('kommo_token_expires', 0) > 0 && get_option('kommo_token_expires', 0) < time() + 86400) {
+        $stored = get_option('kommo_access_token', '');
+        // Se o token começa com o JWT inicial (já expirado), forçar refresh
+        if (strpos($stored, 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFm') === 0) {
+            update_option('kommo_token_expires', 0);
+        }
+    }
+});
+
+function kommo_get_valid_token() {
+    $expires = get_option('kommo_token_expires', 0);
+    if ($expires > 0 && time() < $expires - 300) {
+        return get_option('kommo_access_token');
+    }
+    $refresh_token = get_option('kommo_refresh_token');
+    if (!$refresh_token) return false;
+
+    $response = wp_remote_post(KOMMO_BASE_URL . '/oauth2/access_token', [
+        'body' => json_encode([
+            'client_id'     => KOMMO_CLIENT_ID,
+            'client_secret' => KOMMO_CLIENT_SECRET,
+            'grant_type'    => 'refresh_token',
+            'refresh_token' => $refresh_token,
+            'redirect_uri'  => 'https://passoapassouniformes.com'
+        ]),
+        'headers' => ['Content-Type' => 'application/json'],
+        'timeout' => 30
+    ]);
+
+    if (is_wp_error($response)) return false;
+    $data = json_decode(wp_remote_retrieve_body($response), true);
+    if (empty($data['access_token'])) return false;
+
+    update_option('kommo_access_token', $data['access_token']);
+    update_option('kommo_refresh_token', $data['refresh_token']);
+    update_option('kommo_token_expires', time() + $data['expires_in']);
+    return $data['access_token'];
+}
+
+function kommo_criar_lead_pedido($order_id) {
+    if (get_post_meta($order_id, '_kommo_lead_criado', true)) return;
+    $order = wc_get_order($order_id);
+    if (!$order) return;
+    $token = kommo_get_valid_token();
+    if (!$token) return;
+
+    $nome  = $order->get_billing_first_name() . ' ' . $order->get_billing_last_name();
+    $email = $order->get_billing_email();
+    $fone  = $order->get_billing_phone();
+    $total = $order->get_total();
+    $items = [];
+    foreach ($order->get_items() as $item) {
+        $items[] = $item->get_name() . ' x' . $item->get_quantity();
+    }
+    $produtos = implode(', ', $items);
+
+    $lead_data = [[
+        'name'        => 'Pedido #' . $order_id . ' - ' . $nome,
+        'price'       => (int)($total * 100),
+        'pipeline_id' => KOMMO_PIPELINE_ID,
+        'status_id'   => KOMMO_STATUS_ID,
+        '_embedded'   => [
+            'contacts' => [[
+                'name'       => $nome,
+                'first_name' => $order->get_billing_first_name(),
+                'last_name'  => $order->get_billing_last_name(),
+                'custom_fields_values' => array_values(array_filter([
+                    $email ? ['field_code' => 'EMAIL', 'values' => [['value' => $email, 'enum_code' => 'WORK']]] : null,
+                    $fone  ? ['field_code' => 'PHONE', 'values' => [['value' => $fone,  'enum_code' => 'WORK']]] : null,
+                ]))
+            ]]
+        ],
+        'custom_fields_values' => [[
+            'field_name' => 'Produtos',
+            'values'     => [['value' => $produtos]]
+        ]]
+    ]];
+
+    $response = wp_remote_post(KOMMO_BASE_URL . '/api/v4/leads/complex', [
+        'body'    => json_encode($lead_data),
+        'headers' => [
+            'Content-Type'  => 'application/json',
+            'Authorization' => 'Bearer ' . $token
+        ],
+        'timeout' => 30
+    ]);
+
+    if (!is_wp_error($response) && wp_remote_retrieve_response_code($response) === 200) {
+        update_post_meta($order_id, '_kommo_lead_criado', true);
+    }
+}
+
+add_action('woocommerce_order_status_completed',  'kommo_criar_lead_pedido');
+add_action('woocommerce_order_status_processing', 'kommo_criar_lead_pedido');
+
+// Redirecionar direto para o checkout após adicionar ao carrinho
+add_filter('woocommerce_add_to_cart_redirect', function($url) {
+    if (isset($_GET['add-to-cart'])) {
+        return wc_get_checkout_url();
+    }
+    return $url;
+});

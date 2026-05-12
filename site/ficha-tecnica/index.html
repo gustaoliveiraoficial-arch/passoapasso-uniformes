@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha Técnica — Passo a Passo Uniformes</title>
+  <style>
+    :root {
+      --azul: #1a3a6b;
+      --azul-claro: #2563eb;
+      --laranja: #f97316;
+      --verde: #25d366;
+      --cinza: #f1f5f9;
+      --borda: #cbd5e1;
+      --texto: #1e293b;
+      --branco: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--cinza); color: var(--texto); min-height: 100vh; }
+
+    /* HEADER */
+    header {
+      background: var(--azul); color: #fff;
+      padding: 16px 32px; display: flex; align-items: center; gap: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.18);
+    }
+    .logo-circle {
+      width: 46px; height: 46px; background: var(--laranja); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 18px; color: #fff; flex-shrink: 0;
+    }
+    header h1 { font-size: 1.2rem; font-weight: 700; }
+    header p { font-size: .8rem; opacity: .8; margin-top: 2px; }
+
+    /* CONTAINER */
+    .container { max-width: 1000px; margin: 28px auto; padding: 0 16px 80px; }
+
+    /* CARD */
+    .card {
+      background: var(--branco); border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.07);
+      padding: 26px 28px; margin-bottom: 20px;
+    }
+    .card-title {
+      font-size: .95rem; font-weight: 700; color: var(--azul);
+      text-transform: uppercase; letter-spacing: .5px;
+      border-left: 4px solid var(--laranja); padding-left: 10px;
+      margin-bottom: 18px;
+    }
+
+    /* GRID */
+    .grid { display: grid; gap: 14px; }
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+    /* FIELDS */
+    .field label {
+      display: block; font-size: .75rem; font-weight: 600;
+      color: #64748b; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 5px;
+    }
+    .field input, .field select, .field textarea {
+      width: 100%; padding: 9px 11px;
+      border: 1.5px solid var(--borda); border-radius: 8px;
+      font-size: .92rem; color: var(--texto);
+      transition: border-color .2s, box-shadow .2s; background: #f8fafc;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none; border-color: var(--azul-claro);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.1); background: #fff;
+    }
+    .field textarea { resize: vertical; min-height: 68px; }
+
+    /* MODELO CARD */
+    .modelo-card {
+      border: 2px solid var(--borda); border-radius: 12px;
+      background: #fff; margin-bottom: 20px; overflow: hidden;
+    }
+    .modelo-card-header {
+      background: var(--azul); color: #fff;
+      padding: 12px 22px; display: flex; align-items: center;
+      justify-content: space-between; gap: 12px;
+    }
+    .modelo-card-header h3 { font-size: 1rem; font-weight: 700; }
+    .modelo-card-body { padding: 22px 24px; }
+
+    /* CHIPS ESTAMPA */
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .chip input[type="checkbox"] { display: none; }
+    .chip label {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 14px; border: 2px solid var(--borda); border-radius: 100px;
+      font-size: .82rem; font-weight: 600; cursor: pointer; color: #64748b;
+      transition: all .15s; user-select: none;
+    }
+    .chip input:checked + label { background: var(--azul); border-color: var(--azul); color: #fff; }
+    .chip label:hover { border-color: var(--azul-claro); color: var(--azul-claro); }
+
+    /* PORTADORES */
+    .portadores-wrap { margin-top: 20px; }
+    .portadores-header-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .portadores-label {
+      font-size: .8rem; font-weight: 700; color: var(--azul);
+      text-transform: uppercase; letter-spacing: .4px;
+      border-left: 4px solid var(--verde); padding-left: 8px;
+    }
+    .portadores-table-header {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 60px 2fr 32px;
+      gap: 6px; padding: 6px 10px;
+      background: var(--cinza); border-radius: 6px 6px 0 0;
+      font-size: .72rem; font-weight: 700; color: #64748b; text-transform: uppercase;
+    }
+    .portador-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 60px 2fr 32px;
+      gap: 6px; padding: 6px 10px;
+      border-bottom: 1px solid #f1f5f9; align-items: center;
+    }
+    .portador-row:last-child { border-bottom: none; }
+    .portador-row input, .portador-row select {
+      padding: 7px 9px; border: 1.5px solid var(--borda); border-radius: 6px;
+      font-size: .88rem; background: #f8fafc; width: 100%;
+    }
+    .portador-row input:focus, .portador-row select:focus {
+      outline: none; border-color: var(--azul-claro); background: #fff;
+    }
+    .portador-row input[type="number"] { text-align: center; }
+    #portadores-container { border: 1.5px solid var(--borda); border-radius: 8px; overflow: hidden; }
+    .portadores-empty {
+      padding: 20px; text-align: center; font-size: .85rem;
+      color: #94a3b8; font-style: italic;
+    }
+    .btn-remove-row {
+      width: 28px; height: 28px; border: none; background: #fee2e2;
+      color: #dc2626; border-radius: 6px; cursor: pointer;
+      font-size: .9rem; font-weight: 700; display: flex;
+      align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .btn-remove-row:hover { background: #fecaca; }
+
+    /* GRADE RESUMO */
+    .grade-resumo {
+      margin-top: 14px; padding: 12px 16px;
+      background: var(--cinza); border-radius: 8px;
+    }
+    .grade-resumo-label {
+      font-size: .72rem; font-weight: 700; color: #64748b;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+    .grade-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .grade-tag {
+      background: var(--azul); color: #fff;
+      padding: 4px 12px; border-radius: 100px;
+      font-size: .82rem; font-weight: 700;
+    }
+    .grade-total {
+      margin-top: 8px; font-size: .88rem; color: var(--texto);
+    }
+    .grade-total strong { color: var(--azul); }
+
+    /* VALORES POR MODELO */
+    .modelo-valores {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px; margin-top: 16px; align-items: end;
+    }
+    .valor-display {
+      background: var(--azul); color: #fff; border-radius: 10px;
+      padding: 14px 16px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+    .valor-display.laranja { background: var(--laranja); }
+    .valor-display span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .4px; }
+    .valor-display strong { font-size: 1.35rem; font-weight: 800; margin-top: 2px; }
+
+    /* TOTAL GERAL */
+    .total-geral {
+      background: var(--azul); color: #fff; border-radius: 12px;
+      padding: 20px 28px; display: flex; align-items: center;
+      justify-content: space-between; margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(26,58,107,.25);
+    }
+    .total-geral-label { font-size: .85rem; opacity: .8; }
+    .total-geral-valor { font-size: 1.8rem; font-weight: 900; }
+
+    /* BOTÕES */
+    .btn-row { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      padding: 11px 24px; border: none; border-radius: 8px;
+      font-size: .92rem; font-weight: 700; cursor: pointer; transition: all .15s;
+    }
+    .btn-primary { background: var(--laranja); color: #fff; }
+    .btn-primary:hover { background: #ea6f0a; transform: translateY(-1px); }
+    .btn-secondary { background: var(--azul); color: #fff; }
+    .btn-secondary:hover { background: #142f5a; transform: translateY(-1px); }
+    .btn-ghost { background: transparent; color: #64748b; border: 1.5px solid var(--borda); }
+    .btn-ghost:hover { border-color: #94a3b8; color: var(--texto); }
+    .btn-whats { background: var(--verde); color: #fff; }
+    .btn-whats:hover { background: #1db954; transform: translateY(-1px); }
+    .btn-danger { background: #fee2e2; color: #dc2626; border: none; }
+    .btn-danger:hover { background: #fecaca; }
+    .btn-sm { padding: 6px 14px; font-size: .8rem; border-radius: 6px; }
+
+    /* ADICIONAR MODELO */
+    .add-modelo-btn {
+      width: 100%; padding: 16px; border: 2px dashed var(--borda);
+      border-radius: 12px; background: transparent; color: #64748b;
+      font-size: .95rem; font-weight: 600; cursor: pointer;
+      transition: all .15s; margin-bottom: 20px;
+    }
+    .add-modelo-btn:hover { border-color: var(--azul-claro); color: var(--azul-claro); background: #f0f7ff; }
+
+    /* LISTA DE FICHAS */
+    #lista-fichas { display: none; }
+    #lista-fichas.visible { display: block; }
+    .ficha-item {
+      border: 1.5px solid var(--borda); border-radius: 10px;
+      padding: 16px 20px; margin-bottom: 10px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 14px; flex-wrap: wrap;
+    }
+    .ficha-item:hover { border-color: var(--azul-claro); }
+    .ficha-info strong { font-size: .95rem; color: var(--azul); }
+    .ficha-info span { font-size: .8rem; color: #64748b; display: block; margin-top: 2px; }
+    .ficha-valor { font-size: 1.1rem; font-weight: 800; color: var(--laranja); white-space: nowrap; }
+    .ficha-acoes { display: flex; gap: 7px; }
+
+    /* MODAL */
+    #modal-print {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.45); z-index: 1000;
+      align-items: center; justify-content: center; padding: 16px;
+    }
+    #modal-print.open { display: flex; }
+    .modal-box {
+      background: var(--branco); border-radius: 14px; padding: 32px 36px;
+      max-width: 680px; width: 100%; max-height: 90vh; overflow-y: auto;
+      box-shadow: 0 8px 40px rgba(0,0,0,.18);
+    }
+
+    /* PREVIEW */
+    #preview-ficha { font-family: Arial, sans-serif; border: 2px solid #1a3a6b; border-radius: 8px; overflow: hidden; }
+    .preview-header { background: #1a3a6b; color: #fff; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; }
+    .preview-header h2 { font-size: 1rem; }
+    .preview-section { padding: 12px 18px; border-bottom: 1px solid #e2e8f0; }
+    .preview-section:last-child { border-bottom: none; }
+    .preview-section h3 { font-size: .65rem; text-transform: uppercase; letter-spacing: .5px; color: #64748b; margin-bottom: 6px; }
+    .preview-modelo-title { font-size: .82rem; font-weight: 700; color: #1a3a6b; margin-bottom: 8px; padding: 6px 10px; background: #f1f5f9; border-radius: 6px; }
+    .preview-row { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+    .pv-field { min-width: 120px; }
+    .pv-field label { font-size: .65rem; color: #94a3b8; display: block; }
+    .pv-field span { font-size: .82rem; font-weight: 600; }
+    .preview-table { width: 100%; border-collapse: collapse; font-size: .8rem; margin-top: 6px; }
+    .preview-table th { background: #f1f5f9; padding: 5px 8px; text-align: left; font-size: .68rem; text-transform: uppercase; color: #64748b; }
+    .preview-table td { padding: 5px 8px; border-bottom: 1px solid #f1f5f9; }
+    .preview-total { background: #f97316; color: #fff; padding: 12px 18px; display: flex; align-items: center; justify-content: space-between; }
+    .preview-total strong { font-size: 1.3rem; }
+
+    /* RESPONSIVO */
+    @media (max-width: 640px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .modelo-valores { grid-template-columns: 1fr; }
+      .portadores-table-header { display: none; }
+      .portador-row { grid-template-columns: 1fr 1fr 1fr; row-gap: 6px; }
+      .portador-row .obs-field { grid-column: span 3; }
+      .card { padding: 18px 14px; }
+      .modal-box { padding: 22px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-circle">PP</div>
+  <div>
+    <h1>Ficha Técnica do Pedido</h1>
+    <p>Passo a Passo Uniformes</p>
+  </div>
+</header>
+
+<div class="container">
+  <form id="form-ficha" autocomplete="off">
+
+    <!-- DADOS DO PEDIDO -->
+    <div class="card">
+      <div class="card-title">Dados do Pedido</div>
+      <div class="grid grid-3">
+        <div class="field">
+          <label>Nome do Cliente *</label>
+          <input type="text" id="cliente-nome" placeholder="Ex: Empresa ABC" required />
+        </div>
+        <div class="field">
+          <label>Telefone / WhatsApp</label>
+          <input type="tel" id="cliente-tel" placeholder="(00) 00000-0000" />
+        </div>
+        <div class="field">
+          <label>CPF / CNPJ</label>
+          <input type="text" id="cliente-doc" placeholder="000.000.000-00 ou 00.000.000/0001-00" />
+        </div>
+        <div class="field">
+          <label>Número do Pedido</label>
+          <input type="text" id="num-pedido" placeholder="Ex: PED-2026-001" />
+        </div>
+        <div class="field">
+          <label>Data de Entrega *</label>
+          <input type="date" id="data-entrega" required />
+        </div>
+        <div class="field">
+          <label>E-mail</label>
+          <input type="email" id="cliente-email" placeholder="cliente@email.com" />
+        </div>
+        <div class="field">
+          <label>Vendedor Responsável</label>
+          <input type="text" id="vendedor" placeholder="Nome do vendedor" />
+        </div>
+      </div>
+      <div class="card-title" style="margin-top:18px;">Endereço de Entrega</div>
+      <div class="grid grid-3">
+        <div class="field" style="grid-column: span 2;">
+          <label>Rua / Avenida e Número</label>
+          <input type="text" id="cliente-rua" placeholder="Ex: Rua das Flores, 123" />
+        </div>
+        <div class="field">
+          <label>CEP</label>
+          <input type="text" id="cliente-cep" placeholder="00000-000" />
+        </div>
+        <div class="field">
+          <label>Bairro</label>
+          <input type="text" id="cliente-bairro" placeholder="Ex: Centro" />
+        </div>
+        <div class="field" style="grid-column: span 2;">
+          <label>Cidade / Estado</label>
+          <input type="text" id="cliente-cidade" placeholder="Ex: São Paulo / SP" />
+        </div>
+      </div>
+    </div>
+
+    <!-- MODELOS (dinâmico) -->
+    <div id="modelos-container"></div>
+
+    <!-- BOTÃO ADICIONAR MODELO -->
+    <button type="button" class="add-modelo-btn" onclick="adicionarModelo()">
+      + Adicionar Modelo
+    </button>
+
+    <!-- TOTAL GERAL -->
+    <div class="total-geral" id="total-geral-bar">
+      <div>
+        <div class="total-geral-label">VALOR TOTAL DO PEDIDO</div>
+        <div style="font-size:.8rem; opacity:.7;" id="total-geral-info">0 modelos · 0 peças</div>
+      </div>
+      <div class="total-geral-valor" id="total-geral-valor">R$ 0,00</div>
+    </div>
+
+    <!-- OBSERVAÇÕES -->
+    <div class="card">
+      <div class="card-title">Observações Gerais</div>
+      <div class="field">
+        <textarea id="observacoes" placeholder="Condições de pagamento, prazo de produção, informações adicionais..." style="min-height:80px;"></textarea>
+      </div>
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="btn-row">
+      <button type="button" class="btn btn-ghost" onclick="limparForm()">Limpar</button>
+      <button type="button" class="btn btn-secondary" onclick="copiarSolicitacaoDados()">📋 Solicitar Dados ao Cliente</button>
+      <button type="button" class="btn btn-whats" onclick="copiarWhatsApp()">📱 Copiar para WhatsApp</button>
+      <button type="submit" class="btn btn-primary">+ Salvar Ficha</button>
+    </div>
+
+  </form>
+
+  <!-- LISTA DE FICHAS SALVAS -->
+  <div id="lista-fichas">
+    <div class="card">
+      <div class="card-title">Fichas Salvas</div>
+      <div id="fichas-container"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- MODAL PREVIEW -->
+<div id="modal-print">
+  <div class="modal-box">
+    <div id="preview-ficha"></div>
+    <div class="btn-row" style="margin-top:18px;">
+      <button class="btn btn-ghost" onclick="fecharModal()">Fechar</button>
+      <button class="btn btn-whats" onclick="copiarWhatsAppFicha(fichaAtualIdx)">📱 Copiar WhatsApp</button>
+      <button class="btn btn-secondary" onclick="imprimirFicha()">🖨️ Imprimir</button>
+      <button class="btn btn-primary" onclick="exportarPDF()">⬇️ PDF</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// =============================================
+// ESTADO GLOBAL
+// =============================================
+let fichas = JSON.parse(localStorage.getItem('fichas_tecnicas_v2') || '[]');
+let fichaAtualIdx = null;
+let modeloCount = 0;
+const portadorCounters = {};
+
+const MODELAGENS = ['Unissex', 'Babylook', 'Infantil'];
+const TAMANHOS_INFANTIL = ['2','4','6','8','10','12','14'];
+const TAMANHOS_ORDEM = [...TAMANHOS_INFANTIL,'PP','P','M','G','GG','XG','XXG','XXXG','XGG','FXG','G1','G2','G3'];
+const TAMANHOS_PLUS = new Set(['XG','XXG','XXXG','XGG','FXG','G1','G2','G3']); // +30% no valor unitário
+
+// Retorna as chaves da grade ordenadas (modelagem + tamanho)
+function ordenarGradeKeys(grade) {
+  const resultado = [];
+  // Primeiro itera modelagens conhecidas, depois sem modelagem
+  [...MODELAGENS, ''].forEach(mod => {
+    TAMANHOS_ORDEM.forEach(tam => {
+      const key = mod ? `${mod} ${tam}` : tam;
+      if (grade[key] !== undefined) resultado.push(key);
+    });
+  });
+  // Chaves não previstas no final
+  Object.keys(grade).forEach(k => { if (!resultado.includes(k)) resultado.push(k); });
+  return resultado;
+}
+const MATERIAIS = [
+  'Malha PV (Poliéster/Viscose)',
+  'Malha Piquet',
+  '100% Poliéster',
+  '100% Algodão',
+  'Dry Fit',
+  'Nylon',
+  'Oxford',
+  'Outro'
+];
+
+// =============================================
+// ADICIONAR / REMOVER MODELO
+// =============================================
+function adicionarModelo() {
+  modeloCount++;
+  const id = modeloCount;
+  portadorCounters[id] = 0;
+
+  const container = document.getElementById('modelos-container');
+  const div = document.createElement('div');
+  div.className = 'modelo-card';
+  div.id = `modelo-${id}`;
+  div.innerHTML = buildModeloHTML(id);
+  container.appendChild(div);
+
+  // Adiciona 1 portador vazio para começar
+  adicionarPortador(id);
+  atualizarTotalGeral();
+}
+
+function removerModelo(id) {
+  if (!confirm('Remover este modelo?')) return;
+  const el = document.getElementById(`modelo-${id}`);
+  if (el) el.remove();
+  atualizarTotalGeral();
+}
+
+function buildModeloHTML(id) {
+  const optsEstampa = [
+    ['serigrafia','🖨️ Serigrafia'],
+    ['dtf','🎨 DTF'],
+    ['bordado','🧵 Bordado'],
+    ['sublimacao','🌈 Sublimação'],
+    ['sem','— Sem estampa'],
+  ].map(([k,l]) => `
+    <div class="chip">
+      <input type="checkbox" id="m${id}-est-${k}" value="${l.replace(/[^a-zA-ZÀ-ú ]/g,'').trim()}" />
+      <label for="m${id}-est-${k}">${l}</label>
+    </div>
+  `).join('');
+
+  const optsMateria = MATERIAIS.map(m =>
+    `<option value="${m}">${m}</option>`
+  ).join('');
+
+  return `
+    <div class="modelo-card-header">
+      <h3 id="m${id}-titulo">Modelo ${id}</h3>
+      <button type="button" class="btn btn-danger btn-sm" onclick="removerModelo(${id})">✕ Remover</button>
+    </div>
+    <div class="modelo-card-body">
+
+      <div class="grid grid-3">
+        <div class="field">
+          <label>Nome do Modelo *</label>
+          <input type="text" id="m${id}-nome" placeholder="Ex: Jaqueta, Moletom..." required
+            oninput="document.getElementById('m${id}-titulo').textContent = this.value || 'Modelo ${id}'" />
+        </div>
+        <div class="field">
+          <label>Material</label>
+          <select id="m${id}-material" onchange="toggleMaterialOutro(this, ${id})">
+            <option value="">Selecionar...</option>
+            ${optsMateria}
+          </select>
+          <input type="text" id="m${id}-material-outro" placeholder="Descreva o material..."
+            style="display:none; margin-top:7px;" />
+        </div>
+        <div class="field">
+          <label>Fornecedor</label>
+          <input type="text" id="m${id}-fornecedor" placeholder="Nome do fornecedor" />
+        </div>
+        <div class="field">
+          <label>Cor Principal</label>
+          <input type="text" id="m${id}-cor" placeholder="Ex: Azul Royal, Preto..." />
+        </div>
+        <div class="field" style="grid-column: span 2;">
+          <label>Tipo de Estampa</label>
+          <div class="chips">${optsEstampa}</div>
+        </div>
+      </div>
+
+      <div class="field" style="margin-top:12px;">
+        <label>Posição / Detalhes da Estampa</label>
+        <textarea id="m${id}-estampa-detalhe" placeholder="Ex: Logo peito esquerdo bordado..." style="min-height:56px;"></textarea>
+      </div>
+
+      <!-- PORTADORES -->
+      <div class="portadores-wrap">
+        <div class="portadores-header-bar">
+          <div class="portadores-label">Portadores</div>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="adicionarPortador(${id})">+ Portador</button>
+        </div>
+        <div id="m${id}-portadores-wrap">
+          <div class="portadores-table-header">
+            <span>Nome</span><span>Modelagem</span><span>Tamanho</span><span>Qtd</span><span>Obs Individual</span><span></span>
+          </div>
+          <div id="m${id}-portadores-rows" style="border:1.5px solid var(--borda); border-top:none; border-radius:0 0 8px 8px;">
+            <div class="portadores-empty" id="m${id}-empty">Nenhum portador adicionado</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRADE RESUMO -->
+      <div class="grade-resumo">
+        <div class="grade-resumo-label">Grade de Tamanhos</div>
+        <div class="grade-tags" id="m${id}-grade-tags">
+          <span style="font-size:.82rem; color:#94a3b8;">Adicione portadores para ver a grade</span>
+        </div>
+        <div class="grade-total">Total: <strong id="m${id}-total-pecas">0</strong> peças <span id="m${id}-plus-aviso" style="display:none;color:#f97316;font-size:.75rem;margin-left:8px;">⚠️ Tamanhos plus com acréscimo de 30%</span></div>
+      </div>
+
+      <!-- VALORES DO MODELO -->
+      <div class="modelo-valores">
+        <div class="field">
+          <label>Valor Unitário (R$)</label>
+          <input type="number" id="m${id}-valor-unit" min="0" step="0.01" placeholder="0,00"
+            oninput="atualizarSubtotal(${id}); atualizarTotalGeral();" />
+        </div>
+        <div class="valor-display">
+          <span>Total de Peças</span>
+          <strong id="m${id}-display-pecas">0</strong>
+        </div>
+        <div class="valor-display laranja">
+          <span>Subtotal deste Modelo</span>
+          <strong id="m${id}-subtotal">R$ 0,00</strong>
+        </div>
+      </div>
+
+    </div>
+  `;
+}
+
+// =============================================
+// MATERIAL "OUTRO"
+// =============================================
+function toggleMaterialOutro(sel, id) {
+  const campo = document.getElementById(`m${id}-material-outro`);
+  if (sel.value === 'Outro') {
+    campo.style.display = 'block';
+    campo.focus();
+  } else {
+    campo.style.display = 'none';
+    campo.value = '';
+  }
+}
+
+function getMaterial(id) {
+  const sel = document.getElementById(`m${id}-material`).value;
+  if (sel === 'Outro') {
+    return document.getElementById(`m${id}-material-outro`).value.trim() || 'Outro';
+  }
+  return sel || '—';
+}
+
+// =============================================
+// PORTADORES
+// =============================================
+function adicionarPortador(modeloId) {
+  portadorCounters[modeloId]++;
+  const pid = portadorCounters[modeloId];
+
+  const emptyEl = document.getElementById(`m${modeloId}-empty`);
+  if (emptyEl) emptyEl.remove();
+
+  const container = document.getElementById(`m${modeloId}-portadores-rows`);
+  const row = document.createElement('div');
+  row.className = 'portador-row';
+  row.id = `m${modeloId}-p${pid}`;
+
+  const optsModelagem = MODELAGENS
+    .map(m => `<option value="${m}">${m}</option>`).join('');
+
+  const optsInfantil = TAMANHOS_INFANTIL
+    .map(s => `<option value="${s}">${s} anos</option>`).join('');
+
+  const optsAdulto = ['PP','P','M','G','GG','XG','XXG','XXXG','XGG','FXG','G1','G2','G3','Outro']
+    .map(s => {
+      const plus = TAMANHOS_PLUS.has(s) ? ' (+30%)' : '';
+      return `<option value="${s}">${s}${plus}</option>`;
+    }).join('');
+
+  const optsSize = `
+    <optgroup label="— Infantil (por idade) —">
+      ${optsInfantil}
+    </optgroup>
+    <optgroup label="— Adulto —">
+      ${optsAdulto}
+    </optgroup>
+  `;
+
+  row.innerHTML = `
+    <input type="text" placeholder="Nome do portador"
+      oninput="atualizarGrade(${modeloId})" />
+    <select onchange="atualizarGrade(${modeloId})">
+      <option value="">—</option>
+      ${optsModelagem}
+    </select>
+    <select onchange="atualizarGrade(${modeloId}); atualizarSubtotal(${modeloId}); atualizarTotalGeral();">
+      <option value="">—</option>
+      ${optsSize}
+    </select>
+    <input type="number" value="1" min="1"
+      oninput="atualizarGrade(${modeloId}); atualizarSubtotal(${modeloId}); atualizarTotalGeral();" />
+    <input type="text" placeholder="Obs (ex: alongar manga 3cm)" class="obs-field" />
+    <button type="button" class="btn-remove-row" onclick="removerPortador(${modeloId}, ${pid})">✕</button>
+  `;
+  container.appendChild(row);
+  atualizarGrade(modeloId);
+  atualizarSubtotal(modeloId);
+  atualizarTotalGeral();
+}
+
+function removerPortador(modeloId, pid) {
+  const row = document.getElementById(`m${modeloId}-p${pid}`);
+  if (row) row.remove();
+
+  const container = document.getElementById(`m${modeloId}-portadores-rows`);
+  if (container.children.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'portadores-empty';
+    empty.id = `m${modeloId}-empty`;
+    empty.textContent = 'Nenhum portador adicionado';
+    container.appendChild(empty);
+  }
+  atualizarGrade(modeloId);
+  atualizarSubtotal(modeloId);
+  atualizarTotalGeral();
+}
+
+// =============================================
+// GRADE / TOTAIS
+// =============================================
+function getPortadores(modeloId) {
+  const rows = document.querySelectorAll(`#m${modeloId}-portadores-rows .portador-row`);
+  return Array.from(rows).map(row => {
+    const inputs = row.querySelectorAll('input');
+    const sels = row.querySelectorAll('select');
+    return {
+      nome: inputs[0].value.trim(),
+      modelagem: sels[0] ? sels[0].value : '',
+      tamanho: sels[1] ? sels[1].value : '',
+      qtd: parseInt(inputs[1].value) || 1,
+      obs: inputs[2].value.trim(),
+    };
+  });
+}
+
+function calcularGrade(portadores) {
+  const grade = {};
+  portadores.forEach(p => {
+    if (!p.tamanho) return;
+    const key = p.modelagem ? `${p.modelagem} ${p.tamanho}` : p.tamanho;
+    grade[key] = (grade[key] || 0) + p.qtd;
+  });
+  return grade;
+}
+
+function totalPecas(grade) {
+  return Object.values(grade).reduce((a, b) => a + b, 0);
+}
+
+function atualizarGrade(modeloId) {
+  const portadores = getPortadores(modeloId);
+  const grade = calcularGrade(portadores);
+  const total = totalPecas(grade);
+
+  const tagsEl = document.getElementById(`m${modeloId}-grade-tags`);
+  const totalEl = document.getElementById(`m${modeloId}-total-pecas`);
+  const displayEl = document.getElementById(`m${modeloId}-display-pecas`);
+
+  const ordenados = ordenarGradeKeys(grade);
+
+  const plusAviso = document.getElementById(`m${modeloId}-plus-aviso`);
+  if (ordenados.length === 0) {
+    tagsEl.innerHTML = '<span style="font-size:.82rem; color:#94a3b8;">Adicione portadores para ver a grade</span>';
+    if (plusAviso) plusAviso.style.display = 'none';
+  } else {
+    // extrai o tamanho da chave (último token: "Unissex M" → "M", "XG" → "XG")
+    const tamanhoDaChave = k => k.split(' ').pop();
+    const temPlus = ordenados.some(k => TAMANHOS_PLUS.has(tamanhoDaChave(k)));
+    tagsEl.innerHTML = ordenados.map(k => {
+      const isPlus = TAMANHOS_PLUS.has(tamanhoDaChave(k));
+      return `<span class="grade-tag" style="${isPlus ? 'background:#f97316;' : ''}">${k}${isPlus ? '*' : ''}: ${grade[k]}</span>`;
+    }).join('');
+    if (plusAviso) plusAviso.style.display = temPlus ? 'inline' : 'none';
+  }
+
+  totalEl.textContent = total;
+  if (displayEl) displayEl.textContent = total;
+  atualizarSubtotal(modeloId);
+}
+
+function calcularSubtotalModelo(portadores, unit) {
+  return portadores.reduce((acc, p) => {
+    if (!p.tamanho) return acc; // ignora linhas sem tamanho
+    const preco = TAMANHOS_PLUS.has(p.tamanho) ? unit * 1.3 : unit;
+    return acc + preco * (p.qtd || 1);
+  }, 0);
+}
+
+function atualizarSubtotal(modeloId) {
+  const portadores = getPortadores(modeloId);
+  const unit = parseFloat(document.getElementById(`m${modeloId}-valor-unit`).value) || 0;
+  const sub = calcularSubtotalModelo(portadores, unit);
+  const el = document.getElementById(`m${modeloId}-subtotal`);
+  if (el) el.textContent = 'R$ ' + sub.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+}
+
+function atualizarTotalGeral() {
+  let totalValor = 0;
+  let totalPecasGeral = 0;
+  let qtdModelos = 0;
+
+  document.querySelectorAll('.modelo-card').forEach(card => {
+    const id = card.id.replace('modelo-', '');
+    const portadores = getPortadores(id);
+    const grade = calcularGrade(portadores);
+    const pecas = totalPecas(grade);
+    const unit = parseFloat(document.getElementById(`m${id}-valor-unit`)?.value) || 0;
+    totalValor += calcularSubtotalModelo(portadores, unit);
+    totalPecasGeral += pecas;
+    qtdModelos++;
+  });
+
+  document.getElementById('total-geral-valor').textContent =
+    'R$ ' + totalValor.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+  document.getElementById('total-geral-info').textContent =
+    `${qtdModelos} modelo${qtdModelos !== 1 ? 's' : ''} · ${totalPecasGeral} peças`;
+}
+
+// =============================================
+// ESTAMPAS
+// =============================================
+function getEstampas(id) {
+  const checks = document.querySelectorAll(`#modelo-${id} .chip input[type="checkbox"]:checked`);
+  return Array.from(checks).map(c => c.value).join(', ') || '—';
+}
+
+// =============================================
+// SALVAR FICHA
+// =============================================
+document.getElementById('form-ficha').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const modelos = [];
+  document.querySelectorAll('.modelo-card').forEach(card => {
+    const id = card.id.replace('modelo-', '');
+    const portadores = getPortadores(id);
+    const grade = calcularGrade(portadores);
+    const pecas = totalPecas(grade);
+    const unit = parseFloat(document.getElementById(`m${id}-valor-unit`).value) || 0;
+
+    const sub = calcularSubtotalModelo(portadores, unit);
+    modelos.push({
+      nome: document.getElementById(`m${id}-nome`).value.trim() || `Modelo ${id}`,
+      material: getMaterial(id),
+      fornecedor: document.getElementById(`m${id}-fornecedor`).value.trim(),
+      cor: document.getElementById(`m${id}-cor`).value.trim(),
+      estampa: {
+        tipos: getEstampas(id),
+        detalhe: document.getElementById(`m${id}-estampa-detalhe`).value.trim(),
+      },
+      portadores,
+      grade,
+      totalPecas: pecas,
+      valorUnitario: unit,
+      subtotal: sub,
+    });
+  });
+
+  const totalGeral = modelos.reduce((a, m) => a + m.subtotal, 0);
+  const totalPecasGeral = modelos.reduce((a, m) => a + m.totalPecas, 0);
+
+  const ficha = {
+    id: Date.now(),
+    numPedido: document.getElementById('num-pedido').value.trim() || `PED-${Date.now()}`,
+    cliente: {
+      nome: document.getElementById('cliente-nome').value.trim(),
+      tel: document.getElementById('cliente-tel').value.trim(),
+      email: document.getElementById('cliente-email').value.trim(),
+      doc: document.getElementById('cliente-doc').value.trim(),
+      rua: document.getElementById('cliente-rua').value.trim(),
+      bairro: document.getElementById('cliente-bairro').value.trim(),
+      cidade: document.getElementById('cliente-cidade').value.trim(),
+      cep: document.getElementById('cliente-cep').value.trim(),
+    },
+    vendedor: document.getElementById('vendedor').value.trim(),
+    dataEntrega: document.getElementById('data-entrega').value,
+    modelos,
+    totalPecas: totalPecasGeral,
+    totalGeral,
+    observacoes: document.getElementById('observacoes').value.trim(),
+    criadoEm: new Date().toISOString(),
+  };
+
+  fichas.unshift(ficha);
+  localStorage.setItem('fichas_tecnicas_v2', JSON.stringify(fichas));
+  renderLista();
+  abrirPreview(0);
+  mostrarToast('✅ Ficha salva com sucesso!');
+});
+
+// =============================================
+// LIMPAR
+// =============================================
+function limparForm() {
+  document.getElementById('cliente-nome').value = '';
+  document.getElementById('cliente-tel').value = '';
+  document.getElementById('cliente-email').value = '';
+  document.getElementById('cliente-doc').value = '';
+  document.getElementById('cliente-rua').value = '';
+  document.getElementById('cliente-bairro').value = '';
+  document.getElementById('cliente-cidade').value = '';
+  document.getElementById('cliente-cep').value = '';
+  document.getElementById('vendedor').value = '';
+  document.getElementById('num-pedido').value = '';
+  document.getElementById('data-entrega').value = '';
+  document.getElementById('observacoes').value = '';
+  document.getElementById('modelos-container').innerHTML = '';
+  modeloCount = 0;
+  Object.keys(portadorCounters).forEach(k => delete portadorCounters[k]);
+  atualizarTotalGeral();
+  adicionarModelo();
+}
+
+// =============================================
+// FORMATAR DATA
+// =============================================
+function formatarData(iso) {
+  if (!iso) return '—';
+  const [y, m, d] = iso.split('-');
+  return `${d}/${m}/${y}`;
+}
+
+// =============================================
+// LISTA DE FICHAS
+// =============================================
+function renderLista() {
+  const container = document.getElementById('fichas-container');
+  const lista = document.getElementById('lista-fichas');
+  if (fichas.length === 0) { lista.classList.remove('visible'); return; }
+  lista.classList.add('visible');
+  container.innerHTML = fichas.map((f, i) => `
+    <div class="ficha-item">
+      <div class="ficha-info">
+        <strong>${f.cliente.nome}</strong>
+        <span>${f.modelos.map(m => m.nome).join(' + ')} · ${f.totalPecas} peças · Entrega: ${formatarData(f.dataEntrega)}</span>
+        <span style="color:#94a3b8; font-size:.73rem;">${f.numPedido} · ${new Date(f.criadoEm).toLocaleDateString('pt-BR')}</span>
+      </div>
+      <div class="ficha-valor">R$ ${f.totalGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</div>
+      <div class="ficha-acoes">
+        <button class="btn btn-secondary btn-sm" onclick="abrirPreview(${i})">Ver / PDF</button>
+        <button class="btn btn-whats btn-sm" onclick="copiarWhatsAppFicha(${i})">📱</button>
+        <button class="btn btn-ghost btn-sm" onclick="excluirFicha(${i})">Excluir</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function excluirFicha(i) {
+  if (!confirm('Excluir esta ficha?')) return;
+  fichas.splice(i, 1);
+  localStorage.setItem('fichas_tecnicas_v2', JSON.stringify(fichas));
+  renderLista();
+}
+
+// =============================================
+// PREVIEW / MODAL
+// =============================================
+function abrirPreview(i) {
+  fichaAtualIdx = i;
+  const f = fichas[i];
+
+  const modelosHTML = f.modelos.map((m, idx) => {
+    const gradeOrdenada = ordenarGradeKeys(m.grade);
+    const tamanhoDaChave = k => k.split(' ').pop();
+
+    const portadoresRows = m.portadores.map(p => `
+      <tr>
+        <td>${p.nome || '—'}</td>
+        <td>${p.modelagem || '—'}</td>
+        <td>${p.tamanho || '—'}</td>
+        <td>${p.qtd}</td>
+        <td>${p.obs || '—'}</td>
+      </tr>
+    `).join('');
+
+    return `
+      <div class="preview-section">
+        <div class="preview-modelo-title">👕 ${idx + 1}. ${m.nome}</div>
+        <div class="preview-row" style="margin-bottom:8px;">
+          <div class="pv-field"><label>Material</label><span>${m.material}</span></div>
+          <div class="pv-field"><label>Cor</label><span>${m.cor || '—'}</span></div>
+          <div class="pv-field"><label>Fornecedor</label><span>${m.fornecedor || '—'}</span></div>
+          <div class="pv-field"><label>Estampa</label><span>${m.estampa.tipos}</span></div>
+          ${m.estampa.detalhe ? `<div class="pv-field" style="flex:1"><label>Detalhe</label><span>${m.estampa.detalhe}</span></div>` : ''}
+        </div>
+        <table class="preview-table">
+          <thead><tr><th>Nome</th><th>Modelagem</th><th>Tamanho</th><th>Qtd</th><th>Obs</th></tr></thead>
+          <tbody>${portadoresRows}</tbody>
+        </table>
+        <div style="margin-top:8px; font-size:.78rem;">
+          <strong>Grade:</strong> ${gradeOrdenada.map(k => TAMANHOS_PLUS.has(tamanhoDaChave(k)) ? `<span style="color:#f97316;font-weight:700">${k}*: ${m.grade[k]}</span>` : `${k}: ${m.grade[k]}`).join(' · ')} &nbsp;|&nbsp;
+          <strong>${m.totalPecas} peças</strong> · R$ ${m.valorUnitario.toLocaleString('pt-BR',{minimumFractionDigits:2})} un. =
+          <strong>R$ ${m.subtotal.toLocaleString('pt-BR',{minimumFractionDigits:2})}</strong>
+          ${gradeOrdenada.some(k => TAMANHOS_PLUS.has(tamanhoDaChave(k))) ? `<span style="color:#f97316;font-size:.7rem;margin-left:6px;">(*Plus +30%: R$ ${(m.valorUnitario*1.3).toLocaleString('pt-BR',{minimumFractionDigits:2})} un.)</span>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  document.getElementById('preview-ficha').innerHTML = `
+    <div class="preview-header">
+      <div><h2>Ficha Técnica · ${f.numPedido}</h2>
+      <span>Passo a Passo Uniformes</span></div>
+      <span style="font-size:.75rem;">${new Date(f.criadoEm).toLocaleDateString('pt-BR')}</span>
+    </div>
+    <div class="preview-section">
+      <h3>Dados do Pedido</h3>
+      <div class="preview-row">
+        <div class="pv-field"><label>Cliente</label><span>${f.cliente.nome}</span></div>
+        ${f.cliente.doc ? `<div class="pv-field"><label>CPF/CNPJ</label><span>${f.cliente.doc}</span></div>` : ''}
+        ${f.cliente.tel ? `<div class="pv-field"><label>Telefone</label><span>${f.cliente.tel}</span></div>` : ''}
+        ${f.cliente.email ? `<div class="pv-field"><label>E-mail</label><span>${f.cliente.email}</span></div>` : ''}
+        ${f.vendedor ? `<div class="pv-field"><label>Vendedor</label><span>${f.vendedor}</span></div>` : ''}
+        <div class="pv-field"><label>Entrega</label><span>${formatarData(f.dataEntrega)}</span></div>
+      </div>
+      ${(f.cliente.rua || f.cliente.bairro || f.cliente.cidade || f.cliente.cep) ? `
+      <div class="preview-row" style="margin-top:6px;">
+        ${f.cliente.rua ? `<div class="pv-field" style="flex:1"><label>Endereço</label><span>${f.cliente.rua}</span></div>` : ''}
+        ${f.cliente.bairro ? `<div class="pv-field"><label>Bairro</label><span>${f.cliente.bairro}</span></div>` : ''}
+        ${f.cliente.cidade ? `<div class="pv-field"><label>Cidade/Estado</label><span>${f.cliente.cidade}</span></div>` : ''}
+        ${f.cliente.cep ? `<div class="pv-field"><label>CEP</label><span>${f.cliente.cep}</span></div>` : ''}
+      </div>` : ''}
+    </div>
+    ${modelosHTML}
+    ${f.observacoes ? `<div class="preview-section"><h3>Observações</h3><p style="font-size:.82rem;">${f.observacoes}</p></div>` : ''}
+    <div class="preview-total">
+      <span>TOTAL GERAL · ${f.totalPecas} peças · ${f.modelos.length} modelo${f.modelos.length !== 1 ? 's' : ''}</span>
+      <strong>R$ ${f.totalGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</strong>
+    </div>
+  `;
+
+  document.getElementById('modal-print').classList.add('open');
+}
+
+function fecharModal() {
+  document.getElementById('modal-print').classList.remove('open');
+}
+document.getElementById('modal-print').addEventListener('click', function (e) {
+  if (e.target === this) fecharModal();
+});
+
+// =============================================
+// IMPRIMIR / PDF
+// =============================================
+function imprimirFicha() {
+  const conteudo = document.getElementById('preview-ficha').innerHTML;
+  const win = window.open('', '_blank', 'width=900,height=700');
+  win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Ficha Técnica</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:20px;font-size:13px;}
+    .preview-header{background:#1a3a6b;color:#fff;padding:12px 16px;display:flex;justify-content:space-between;}
+    .preview-header h2{font-size:.95rem;}
+    .preview-section{padding:10px 16px;border-bottom:1px solid #e2e8f0;}
+    .preview-section h3{font-size:.62rem;text-transform:uppercase;color:#64748b;margin-bottom:5px;}
+    .preview-modelo-title{font-size:.8rem;font-weight:700;color:#1a3a6b;padding:5px 8px;background:#f1f5f9;border-radius:4px;margin-bottom:6px;}
+    .preview-row{display:flex;flex-wrap:wrap;gap:5px 18px;margin-bottom:6px;}
+    .pv-field label{font-size:.6rem;color:#94a3b8;display:block;}
+    .pv-field span{font-size:.8rem;font-weight:600;}
+    .preview-table{width:100%;border-collapse:collapse;font-size:.75rem;margin-top:5px;}
+    .preview-table th{background:#f1f5f9;padding:4px 7px;text-align:left;font-size:.62rem;text-transform:uppercase;color:#64748b;}
+    .preview-table td{padding:4px 7px;border-bottom:1px solid #f1f5f9;}
+    .preview-total{background:#f97316;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;}
+    .preview-total strong{font-size:1.2rem;}
+    @media print{body{margin:0;}}
+  </style></head><body>
+  ${conteudo}
+  <script>window.onload=()=>window.print();<\/script>
+  </body></html>`);
+  win.document.close();
+}
+
+function exportarPDF() { imprimirFicha(); }
+
+// =============================================
+// WHATSAPP
+// =============================================
+function gerarMensagemWhats(f) {
+  const linhasModelos = f.modelos.map((m, idx) => {
+    const gradeOrdenada = ordenarGradeKeys(m.grade);
+    const tamanhoDaChave = k => k.split(' ').pop();
+
+    const portadoresLinhas = m.portadores
+      .filter(p => p.nome || p.tamanho)
+      .map(p => {
+        const isPlus = TAMANHOS_PLUS.has(p.tamanho);
+        const mod = p.modelagem ? `${p.modelagem} ` : '';
+        let linha = `  ${p.nome || '?'} — ${mod}${p.tamanho || '?'}`;
+        if (p.qtd > 1) linha += ` (${p.qtd}x)`;
+        if (isPlus) linha += ` 💲+30%`;
+        if (p.obs) linha += ` ⚠️ ${p.obs}`;
+        return linha;
+      }).join('\n');
+
+    const gradeTexto = gradeOrdenada.map(k => {
+      const plus = TAMANHOS_PLUS.has(tamanhoDaChave(k)) ? '*' : '';
+      return `${k}${plus}: ${m.grade[k]}`;
+    }).join(' · ');
+
+    const temPlus = gradeOrdenada.some(k => TAMANHOS_PLUS.has(tamanhoDaChave(k)));
+    const unitFmt = m.valorUnitario.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+    const unitPlusFmt = (m.valorUnitario * 1.3).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+
+    return [
+      `📦 *${idx + 1}. ${m.nome.toUpperCase()}*`,
+      m.material !== '—' ? `• Material: ${m.material}` : null,
+      m.cor ? `• Cor: ${m.cor}` : null,
+      m.fornecedor ? `• Fornecedor: ${m.fornecedor}` : null,
+      m.estampa.tipos !== '—' ? `• Estampa: ${m.estampa.tipos}` : null,
+      m.estampa.detalhe ? `• Detalhe: ${m.estampa.detalhe}` : null,
+      ``,
+      `👥 *Portadores:*`,
+      portadoresLinhas || '  —',
+      ``,
+      `📐 *Grade:* ${gradeTexto || '—'}`,
+      temPlus ? `💲 *Indica com * = tamanho plus (+30%)*` : null,
+      `🔢 Total: ${m.totalPecas} peças`,
+      m.valorUnitario > 0 ? `💰 R$ ${unitFmt} un.${temPlus ? ` | Plus: R$ ${unitPlusFmt}` : ''} → Subtotal: R$ ${m.subtotal.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}` : null,
+    ].filter(l => l !== null).join('\n');
+  });
+
+  const msg = [
+    `🧾 *FICHA TÉCNICA DO PEDIDO*`,
+    `📋 Passo a Passo Uniformes`,
+    `🔖 ${f.numPedido}`,
+    `📅 ${new Date(f.criadoEm).toLocaleDateString('pt-BR')}`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `👤 *CLIENTE*`,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `• Nome: ${f.cliente.nome}`,
+    f.cliente.doc ? `• CPF/CNPJ: ${f.cliente.doc}` : null,
+    f.cliente.tel ? `• WhatsApp: ${f.cliente.tel}` : null,
+    f.cliente.email ? `• E-mail: ${f.cliente.email}` : null,
+    (f.cliente.rua || f.cliente.bairro || f.cliente.cidade) ? `📍 Endereço:` : null,
+    f.cliente.rua ? `• ${f.cliente.rua}` : null,
+    (f.cliente.bairro || f.cliente.cidade) ? `• ${[f.cliente.bairro, f.cliente.cidade].filter(Boolean).join(' — ')}` : null,
+    f.cliente.cep ? `• CEP: ${f.cliente.cep}` : null,
+    f.vendedor ? `• Vendedor: ${f.vendedor}` : null,
+    `• Entrega: ${formatarData(f.dataEntrega)}`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `👕 *MODELOS*`,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    linhasModelos.join('\n\n'),
+    f.observacoes ? `\n━━━━━━━━━━━━━━━━━━━━\n📝 *OBSERVAÇÕES*\n━━━━━━━━━━━━━━━━━━━━\n${f.observacoes}` : null,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `💰 *TOTAL GERAL: R$ ${f.totalGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}*`,
+    `🔢 ${f.totalPecas} peças · ${f.modelos.length} modelo${f.modelos.length !== 1 ? 's' : ''}`,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    ``,
+    `✅ _Passo a Passo Uniformes_`,
+  ].filter(l => l !== null).join('\n');
+
+  return msg;
+}
+
+// =============================================
+// SOLICITAR DADOS AO CLIENTE
+// =============================================
+function copiarSolicitacaoDados() {
+  const nomeModelos = [];
+  document.querySelectorAll('.modelo-card').forEach(card => {
+    const id = card.id.replace('modelo-', '');
+    const nomeEl = document.getElementById(`m${id}-nome`);
+    if (nomeEl && nomeEl.value.trim()) nomeModelos.push(nomeEl.value.trim());
+  });
+
+  const linhaModelos = nomeModelos.length > 0
+    ? nomeModelos.map((n, i) => `  ${i + 1}. ${n}`).join('\n')
+    : '  (informe os modelos que deseja)';
+
+  const msg = [
+    `Olá! 👋 Sou da *Passo a Passo Uniformes*.`,
+    ``,
+    `Para darmos início ao seu pedido, preciso que você nos envie as seguintes informações:`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `📋 *DADOS NECESSÁRIOS PARA O PEDIDO*`,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    ``,
+    `👤 *Dados Pessoais / Empresa:*`,
+    `• Nome completo ou Razão Social:`,
+    `• CPF ou CNPJ:`,
+    `• Telefone / WhatsApp:`,
+    `• E-mail:`,
+    ``,
+    `📍 *Endereço de Entrega:*`,
+    `• Rua / Avenida e Número:`,
+    `• Bairro:`,
+    `• Cidade / Estado:`,
+    `• CEP:`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `👕 *Detalhes dos Modelos:*`,
+    ``,
+    nomeModelos.length > 0 ? `Modelos do pedido:\n${linhaModelos}` : null,
+    ``,
+    `Para *cada modelo*, informe:`,
+    `• Nome do modelo (ex: Camiseta, Jaqueta, Moletom...):`,
+    `• Cor principal:`,
+    `• Material preferido (ex: Malha PV, Dry Fit, Algodão...):`,
+    `• Tipo de estampa (Serigrafia / DTF / Bordado / Sublimação / Sem estampa):`,
+    `• Posição e detalhe da estampa (ex: logo peito esquerdo, nome nas costas...):`,
+    `• Fornecedor preferido (se houver):`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `👥 *Para cada portador (pessoa que vai usar o uniforme):*`,
+    ``,
+    `• Nome:`,
+    `• Modelagem: Unissex, Babylook ou Infantil`,
+    `• Tamanho adulto: PP / P / M / G / GG / XG / XXG / XXXG / Outro`,
+    `• Tamanho infantil (por idade): 2 / 4 / 6 / 8 / 10 / 12 / 14 anos`,
+    `  _(obs: tamanho 16 é PP adulto, não infantil)_`,
+    `• Quantidade:`,
+    `• Observações especiais (ex: alongar manga 3cm, ajuste no ombro...):`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    `📅 *Data desejada de entrega:*`,
+    ``,
+    `📝 *Observações adicionais:*`,
+    `(condições de pagamento, referências de modelos, dúvidas...)`,
+    ``,
+    `━━━━━━━━━━━━━━━━━━━━`,
+    ``,
+    `Assim que recebermos tudo, entramos em contato para confirmar os detalhes e passar o orçamento! 😊`,
+    ``,
+    `_Passo a Passo Uniformes_ 👟`,
+  ].filter(l => l !== null).join('\n');
+
+  copiarTexto(msg);
+}
+
+function copiarWhatsApp() {
+  if (!document.getElementById('cliente-nome').value.trim()) {
+    mostrarToast('Preencha o nome do cliente!');
+    return;
+  }
+
+  // Monta ficha temporária com dados atuais do form
+  const modelos = [];
+  document.querySelectorAll('.modelo-card').forEach(card => {
+    const id = card.id.replace('modelo-', '');
+    const portadores = getPortadores(id);
+    const grade = calcularGrade(portadores);
+    const pecas = totalPecas(grade);
+    const unit = parseFloat(document.getElementById(`m${id}-valor-unit`).value) || 0;
+    modelos.push({
+      nome: document.getElementById(`m${id}-nome`).value.trim() || `Modelo ${id}`,
+      material: getMaterial(id),
+      fornecedor: document.getElementById(`m${id}-fornecedor`).value.trim(),
+      cor: document.getElementById(`m${id}-cor`).value.trim(),
+      estampa: {
+        tipos: getEstampas(id),
+        detalhe: document.getElementById(`m${id}-estampa-detalhe`).value.trim(),
+      },
+      portadores, grade, totalPecas: pecas,
+      valorUnitario: unit, subtotal: calcularSubtotalModelo(portadores, unit),
+    });
+  });
+
+  const fichaTemp = {
+    numPedido: document.getElementById('num-pedido').value.trim() || '—',
+    cliente: {
+      nome: document.getElementById('cliente-nome').value.trim(),
+      tel: document.getElementById('cliente-tel').value.trim(),
+      email: document.getElementById('cliente-email').value.trim(),
+      doc: document.getElementById('cliente-doc').value.trim(),
+      rua: document.getElementById('cliente-rua').value.trim(),
+      bairro: document.getElementById('cliente-bairro').value.trim(),
+      cidade: document.getElementById('cliente-cidade').value.trim(),
+      cep: document.getElementById('cliente-cep').value.trim(),
+    },
+    vendedor: document.getElementById('vendedor').value.trim(),
+    dataEntrega: document.getElementById('data-entrega').value,
+    modelos,
+    totalPecas: modelos.reduce((a, m) => a + m.totalPecas, 0),
+    totalGeral: modelos.reduce((a, m) => a + m.subtotal, 0),
+    observacoes: document.getElementById('observacoes').value.trim(),
+    criadoEm: new Date().toISOString(),
+  };
+
+  copiarTexto(gerarMensagemWhats(fichaTemp));
+}
+
+function copiarWhatsAppFicha(i) {
+  const f = fichas[i];
+  if (!f) return;
+  copiarTexto(gerarMensagemWhats(f));
+}
+
+function copiarTexto(texto) {
+  navigator.clipboard.writeText(texto).then(() => {
+    mostrarToast('✅ Mensagem copiada! Cole no WhatsApp.');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = texto;
+    ta.style.cssText = 'position:fixed;opacity:0;';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+    mostrarToast('✅ Mensagem copiada! Cole no WhatsApp.');
+  });
+}
+
+// =============================================
+// TOAST
+// =============================================
+function mostrarToast(msg) {
+  const t = document.createElement('div');
+  t.textContent = msg;
+  Object.assign(t.style, {
+    position: 'fixed', bottom: '22px', left: '50%', transform: 'translateX(-50%)',
+    background: '#1a3a6b', color: '#fff', padding: '11px 22px',
+    borderRadius: '8px', fontWeight: '600', fontSize: '.88rem',
+    zIndex: '9999', boxShadow: '0 4px 16px rgba(0,0,0,.2)', transition: 'opacity .3s'
+  });
+  document.body.appendChild(t);
+  setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 300); }, 2500);
+}
+
+// =============================================
+// INIT
+// =============================================
+renderLista();
+adicionarModelo(); // começa com 1 modelo vazio
+</script>
+</body>
+</html>

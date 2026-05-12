@@ -1,0 +1,98 @@
+- application [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - iframe [ref=e3]:
+    
+  - banner "Barra de menus" [ref=e4]:
+    - generic [ref=e5]:
+      - complementary "Quase sem espaço de armazenamento" [ref=e11]:
+        - generic [ref=e12]:
+          - img [ref=e14]
+          - generic [ref=e16]:
+            - generic [ref=e17]: Quase sem espaço de armazenamento
+            - generic [ref=e18]: Caso você fique sem armazenamento, não será possível criar ou editar arquivos, enviar e receber mensagens no Gmail ou fazer backups no Google Fotos. Aumente seu armazenamento — receba um desconto de 77% por 3 meses.
+        - button "Gerenciar armazenamento" [ref=e21] [cursor=pointer]:
+          - generic [ref=e23]: Gerenciar armazenamento
+        - generic [ref=e24]:
+          - button "Fechar banner" [ref=e25] [cursor=pointer]:
+            - img [ref=e27]
+          - tooltip [ref=e30]: Fechar banner
+      - generic [ref=e32]:
+        - link "Página inicial do Google Planilhas" [ref=e34] [cursor=pointer]:
+          - /url: https://docs.google.com/spreadsheets/u/0/?authuser=0&usp=sheets_web
+        - generic [ref=e41]:
+          - generic "vendas castel" [ref=e43]:
+            - generic [ref=e45]: vendas castel
+            - generic [ref=e47]:
+              - checkbox "Marcar com uma estrela" [ref=e49] [cursor=pointer]
+              - button "Adicionar atalho ao Google Drive" [ref=e53] [cursor=pointer]
+              - 'button "Status do documento: Alterações salvas no Drive." [ref=e57]'
+          - generic [ref=e64]:
+            - button "1 ocultos 1 leitor" [ref=e68] [cursor=pointer]:
+              - generic [ref=e71]: "1"
+            - button [disabled] [ref=e75]
+            - button "Use este link para entrar em uma chamada ou apresentar esta guia." [ref=e79] [cursor=pointer]
+            - button "Compartilhar. Qualquer pessoa com o link. Qualquer pessoa que tiver o link pode acessar. Não é necessário fazer login." [ref=e85] [cursor=pointer]
+            - generic [ref=e95]:
+              - button "Upgrade" [ref=e97] [cursor=pointer]:
+                - generic [ref=e99]: Upgrade
+              - tooltip [ref=e100]: Faça upgrade para ter acesso aos recursos premium
+            - generic [ref=e103]:
+              - generic:
+                - button "Teste o Gemini" [ref=e106] [cursor=pointer]:
+                  - img [ref=e109]
+                - tooltip [ref=e112]: Teste o Gemini
+            - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e115] [cursor=pointer]':
+              - img [ref=e116]
+    - generic [ref=e117]:
+      - menubar [ref=e119]:
+        - menuitem "Arquivo" [ref=e120] [cursor=pointer]
+        - menuitem "Editar" [ref=e121] [cursor=pointer]
+        - menuitem "Ver" [ref=e122] [cursor=pointer]
+        - menuitem "Inserir" [disabled] [ref=e123]
+        - menuitem "Formatar" [disabled] [ref=e124]
+        - menuitem "Dados" [ref=e125] [cursor=pointer]
+        - menuitem "Ferramentas" [ref=e126] [cursor=pointer]
+        - menuitem "Extensões" [disabled] [ref=e127]
+        - menuitem "Ajuda" [ref=e128] [cursor=pointer]
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - toolbar "Pesquisar os menus (Alt+/)" [ref=e131]:
+            - combobox "Menus" [ref=e133]
+          - toolbar "Principal" [ref=e134]:
+            - button "Imprimir (Ctrl+P)" [ref=e135] [cursor=pointer]
+            - button "Visualizações de filtros" [ref=e140] [cursor=pointer]
+            - combobox "Zoom" [ref=e149] [cursor=pointer]:
+              - option "Lista Zoom. 100% selecionado." [selected] [ref=e152]:
+                - textbox "Zoom" [ref=e153]: 100%
+            - button "Modo" [ref=e157] [cursor=pointer]:
+              - generic [ref=e158]: Somente ver
+        - toolbar "Modo e visualização" [ref=e161]:
+          - button "Ocultar os menus (Ctrl+Shift+F)" [ref=e162] [cursor=pointer]
+    - generic:
+      - generic:
+        - button "Mostrar painel lateral":
+          - img [ref=e168] [cursor=pointer]
+    - generic [ref=e173]:
+      - generic "Caixa de nome (Ctrl + J)" [ref=e174]:
+        - textbox [ref=e175]: A1
+        - button "Botão do menu da caixa de nome. Selecione um dos itens do menu para acessar o intervalo nomeado correspondente." [ref=e177] [cursor=pointer]
+      - textbox [ref=e193]
+  - navigation "Barra de guias da página" [ref=e237]:
+    - toolbar [ref=e238]:
+      - button "Todas as páginas" [ref=e239] [cursor=pointer]
+    - toolbar [ref=e246]:
+      - button "Vendas" [ref=e247]:
+        - generic [ref=e251]: Vendas
+    - toolbar [ref=e255]
+  - generic [ref=e256]:
+    - textbox [active]
+  - link "Ativar a compatibilidade com o leitor de tela" [ref=e257] [cursor=pointer]:
+    - /url: "#"
+  - textbox [ref=e258]
+  - region [ref=e259]: Para ativar o suporte para leitor de tela, pressione Ctrl+Alt+Z Para saber mais sobre atalhos de teclado, pressione Ctrl+barra
+  - generic [ref=e260]: Quase sem espaço de armazenamentoCaso você fique sem armazenamento, não será possível criar ou editar arquivos, enviar e receber mensagens no Gmail ou fazer backups no Google Fotos. Aumente seu armazenamento — receba um desconto de 77% por 3 meses. Gerenciar armazenamento Close
+  - region
+  - generic [ref=e261]: shark solutions acessou o documento.
+  - iframe [ref=e263]:
+    

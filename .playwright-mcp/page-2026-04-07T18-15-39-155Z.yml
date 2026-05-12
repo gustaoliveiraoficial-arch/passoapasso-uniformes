@@ -1,0 +1,72 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e93]:
+    - navigation [ref=e95]:
+      - link "Supabase Logo" [ref=e98] [cursor=pointer]:
+        - /url: /dashboard/organizations
+        - img "Supabase Logo" [ref=e99]
+      - link "Documentation" [ref=e101] [cursor=pointer]:
+        - /url: https://supabase.com/docs
+        - img [ref=e103]
+        - generic [ref=e106]: Documentation
+    - generic [ref=e107]:
+      - main [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - heading "Get started" [level=1] [ref=e111]
+            - heading "Create a new account" [level=2] [ref=e112]
+          - generic [ref=e113]:
+            - button "Continue with GitHub" [ref=e116] [cursor=pointer]:
+              - img [ref=e118]
+              - generic [ref=e121]: Continue with GitHub
+            - generic [ref=e126]: or
+            - generic [ref=e129]:
+              - generic [ref=e131]:
+                - generic [ref=e134]: Email
+                - textbox "Email" [ref=e137]:
+                  - /placeholder: you@example.com
+              - generic [ref=e139]:
+                - generic [ref=e142]: Password
+                - generic [ref=e145]:
+                  - textbox "Password" [ref=e146]:
+                    - /placeholder: ••••••••
+                  - button "Show password" [ref=e147] [cursor=pointer]:
+                    - img [ref=e149]
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - img [ref=e154]
+                  - paragraph [ref=e156]: Uppercase letter
+                - generic [ref=e157]:
+                  - img [ref=e158]
+                  - paragraph [ref=e160]: Lowercase letter
+                - generic [ref=e161]:
+                  - img [ref=e162]
+                  - paragraph [ref=e164]: Number
+                - generic [ref=e165]:
+                  - img [ref=e166]
+                  - paragraph [ref=e168]: Special character (e.g. !?<>@#$%)
+                - generic [ref=e169]:
+                  - img [ref=e170]
+                  - paragraph [ref=e172]: 8 characters or more
+              - button "Sign up" [disabled]:
+                - generic: Sign up
+          - generic [ref=e173]:
+            - text: Have an account?
+            - link "Sign in" [ref=e174] [cursor=pointer]:
+              - /url: /dashboard/sign-in
+        - paragraph [ref=e176]:
+          - text: By continuing, you agree to Supabase’s
+          - link "Terms of Service" [ref=e177] [cursor=pointer]:
+            - /url: https://supabase.com/terms
+          - text: and
+          - link "Privacy Policy" [ref=e178] [cursor=pointer]:
+            - /url: https://supabase.com/privacy
+          - text: ", and to receive periodic emails with updates."
+      - complementary [ref=e179]:
+        - generic [ref=e180]:
+          - generic [ref=e181]: “
+          - blockquote [ref=e182]: Supabase is the best product experience I've had in years. Not just tech - taste. From docs to latency to the URL structure that makes you think "oh, that's obvious" Feels like every other platform should study how they built it @supabase I love you
+          - link "yatsiv_yuriy @yatsiv_yuriy" [ref=e183] [cursor=pointer]:
+            - /url: https://x.com/yatsiv_yuriy/status/1979182362480071162
+            - img "yatsiv_yuriy" [ref=e184]
+            - generic [ref=e186]: "@yatsiv_yuriy"
+  - alert [ref=e92]: Supabase

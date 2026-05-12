@@ -1,0 +1,45 @@
+- generic [active] [ref=e1]:
+  - img "Loading" [ref=e3]
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - banner:
+      - heading "Console do Firebase" [level=1] [ref=e10]:
+        - link "Console do Firebase" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e12]:
+            - img [ref=e13]
+            - img "Logotipo do Firebase" [ref=e14]
+    - main [ref=e16]:
+      - progressbar [ref=e20]:
+        - img [ref=e22]
+        - generic [ref=e25]:
+          - img [ref=e27]
+          - img [ref=e30]
+          - img [ref=e33]
+    - generic "Gemini no Firebase" [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e45] [cursor=pointer]':
+            - img [ref=e47]
+            - img [ref=e53]
+          - button "Abrir alertas" [ref=e55] [cursor=pointer]:
+            - img [ref=e56]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [disabled] [ref=e64]:
+            - img [ref=e66]: spark
+            - tooltip "Gemini no Firebase Selecione um projeto para usar o Gemini no Firebase" [ref=e69]:
+              - generic:
+                - text: Gemini no Firebase
+                - generic [ref=e70]: Selecione um projeto para usar o Gemini no Firebase
+          - button "Ajuda" [ref=e73] [cursor=pointer]:
+            - img [ref=e74]: contact_support
+          - separator [ref=e77]
+          - button "Ativar o Cloud Shell" [ref=e78] [cursor=pointer]:
+            - img [ref=e79]:
+              - img [ref=e80]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e84]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [disabled]:
+            - img: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e88] [cursor=pointer]':
+          - img [ref=e89]: dark_mode

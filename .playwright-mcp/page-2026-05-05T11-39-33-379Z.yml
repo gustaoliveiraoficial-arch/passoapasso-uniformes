@@ -1,0 +1,219 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - img [ref=e38]
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e51]:
+            - list [ref=e52]:
+              - listitem [ref=e54] [cursor=pointer]:
+                - link "Funil de vendas" [ref=e56]:
+                  - /url: /leads/pipeline/13368211
+                  - generic [ref=e58]: Funil de vendas
+              - listitem [ref=e60] [cursor=pointer]:
+                - link "Linha Empresarial" [ref=e62]:
+                  - /url: /leads/pipeline/13664859
+                  - generic [ref=e64]: Linha Empresarial
+              - listitem [ref=e66] [cursor=pointer]:
+                - link "Linha Fitness" [ref=e68]:
+                  - /url: /leads/pipeline/13664863
+                  - generic [ref=e70]: Linha Fitness
+              - listitem [ref=e72] [cursor=pointer]:
+                - link "Linha Formandos" [ref=e74]:
+                  - /url: /leads/pipeline/13664867
+                  - generic [ref=e76]: Linha Formandos
+              - listitem [ref=e78] [cursor=pointer]:
+                - link "Linha Futebol" [ref=e80]:
+                  - /url: /leads/pipeline/13664871
+                  - generic [ref=e82]: Linha Futebol
+              - listitem [ref=e84] [cursor=pointer]:
+                - link "Linha Inverno" [ref=e86]:
+                  - /url: /leads/pipeline/13664875
+                  - generic [ref=e88]: Linha Inverno
+              - listitem [ref=e90] [cursor=pointer]:
+                - link "Menos de 10 Pecas" [ref=e92]:
+                  - /url: /leads/pipeline/13664879
+                  - generic [ref=e94]: Menos de 10 Pecas
+              - listitem [ref=e96] [cursor=pointer]:
+                - link "Todos os leads" [ref=e98]:
+                  - /url: /leads/list/
+                  - generic [ref=e100]: Todos os leads
+          - listitem [ref=e102] [cursor=pointer]:
+            - link "Calendário 153" [ref=e104]:
+              - /url: /todo
+              - img [ref=e106]
+              - generic [ref=e108]: Calendário
+              - generic [ref=e112]: "153"
+          - listitem [ref=e113]:
+            - link "Listas" [ref=e115] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e117]
+              - generic [ref=e119]: Listas
+              - img [ref=e122]
+          - listitem [ref=e125] [cursor=pointer]:
+            - link "Agente de IA" [ref=e127]:
+              - /url: /settings/ai-agent/
+              - img [ref=e129]
+              - generic [ref=e131]: Agente de IA
+          - listitem [ref=e132]:
+            - link "Automações" [ref=e134] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e136]
+              - generic [ref=e141]: Automações
+              - img [ref=e144]
+          - listitem [ref=e146]:
+            - link "Insights" [ref=e148] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e150]
+              - generic [ref=e153]: Insights
+              - img [ref=e156]
+        - generic [ref=e158]: Integrações fixadas
+        - list [ref=e159]:
+          - listitem [ref=e161] [cursor=pointer]:
+            - link "Instagram" [ref=e163]:
+              - /url: /widget_page/instagram_int/hub
+              - img [ref=e166]
+              - generic [ref=e167]: Instagram
+          - listitem [ref=e169] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e171]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e174]
+              - generic [ref=e175]: WhatsApp Business
+          - listitem [ref=e177] [cursor=pointer]:
+            - link "TikTok" [ref=e179]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e182]
+              - generic [ref=e183]: TikTok
+      - list [ref=e185]:
+        - listitem [ref=e187] [cursor=pointer]:
+          - link "Configurações" [ref=e189]:
+            - /url: /settings/profile/
+            - img [ref=e191]
+            - generic [ref=e194]: Configurações
+        - listitem [ref=e195]:
+          - link "Ajuda" [ref=e197] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e199]
+            - generic [ref=e201]: Ajuda
+            - img [ref=e204]
+        - listitem [ref=e207] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e209]:
+            - /url: ""
+            - img [ref=e211]
+            - generic [ref=e213]: Enviar feedback
+        - listitem [ref=e215] [cursor=pointer]:
+          - link "Centro de Notificação 296" [ref=e217]:
+            - /url: /settings/profile/notifications
+            - img [ref=e219]
+            - generic [ref=e221]: Centro de Notificação
+            - generic [ref=e225]: "296"
+      - separator [ref=e226]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e228] [cursor=pointer]:
+        - img "Avatar" [ref=e231]
+        - generic [ref=e232]:
+          - generic [ref=e233]: Passo a passo uniformes
+          - generic [ref=e234]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e237]:
+      - generic [ref=e238]:
+        - heading "Bots" [level=2] [ref=e240]
+        - generic [ref=e241]:
+          - button "Importar" [ref=e243] [cursor=pointer]:
+            - generic [ref=e245]: Importar
+          - button "Criar bot" [ref=e246] [cursor=pointer]:
+            - generic [ref=e247]:
+              - img [ref=e248]
+              - generic [ref=e250]: Criar bot
+      - generic [ref=e251]:
+        - generic [ref=e253]: Salesbots
+        - paragraph [ref=e255]:
+          - text: Crie bots sem código para automatizar chats e tarefas rotineiras. Comece do zero ou use um modelo — depois personalize-o e adicione seus gatilhos.
+          - link "Learn more" [ref=e256] [cursor=pointer]:
+            - /url: https://www.kommo.com/br/recursos/?query=Salesbot
+          - text: .
+        - link "Faça upgrade para o Avançado" [ref=e258] [cursor=pointer]:
+          - /url: /settings/pay/
+          - button "Faça upgrade para o Avançado" [ref=e259]:
+            - generic [ref=e261]: Faça upgrade para o Avançado
+        - generic [ref=e265]:
+          - generic [ref=e273]:
+            - checkbox [ref=e277] [cursor=pointer]
+            - generic [ref=e282]: Nome
+            - generic [ref=e287]: Gatilhos
+            - generic [ref=e292]: Taxa de conversão
+            - generic [ref=e297]: Total lançado
+            - generic [ref=e302]: Sessões ativas
+          - generic [ref=e304]:
+            - checkbox [ref=e309] [cursor=pointer]
+            - 'link "Salesbot #2" [ref=e313] [cursor=pointer]':
+              - /url: "#"
+            - generic [ref=e317]:
+              - generic [ref=e318] [cursor=pointer]: "+1"
+              - generic [ref=e319] [cursor=pointer]: Qualquer nova conversa
+            - generic "0%" [ref=e321]
+            - generic "0" [ref=e323]
+            - generic "0" [ref=e325]
+          - generic [ref=e326]:
+            - checkbox [ref=e331] [cursor=pointer]
+            - link "TestBot" [ref=e335] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e339]:
+              - generic [ref=e340] [cursor=pointer]: "+1"
+              - generic [ref=e341]:
+                - img [ref=e342]
+                - text: Qualquer nova conversa
+            - generic "0%" [ref=e345]
+            - generic "0" [ref=e347]
+            - generic "0" [ref=e349]
+        - generic:
+          - generic: avançado
+    - generic [ref=e352]:
+      - img
+      - button [ref=e353]:
+        - img [ref=e354]
+        - img [ref=e356]
+        - img [ref=e360]
+      - generic [ref=e362]:
+        - generic [ref=e363]:
+          - generic [ref=e364]:
+            - img [ref=e365]
+            - generic [ref=e367]: Kommo Copilot
+          - generic [ref=e368]:
+            - button [ref=e369] [cursor=pointer]:
+              - img [ref=e372]
+            - button [ref=e374] [cursor=pointer]:
+              - img [ref=e377]
+            - button [ref=e379] [cursor=pointer]:
+              - img [ref=e382]
+        - button "Configuração do WhatsApp Business" [ref=e384] [cursor=pointer]:
+          - generic [ref=e385]:
+            - generic [ref=e386]: Configuração do WhatsApp Business
+            - img [ref=e387]
+        - generic [ref=e412]:
+          - generic [ref=e413]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e416]
+            - button [disabled] [ref=e419]:
+              - img [ref=e422]
+          - generic [ref=e424]: O conteúdo gerado por IA pode ser impreciso

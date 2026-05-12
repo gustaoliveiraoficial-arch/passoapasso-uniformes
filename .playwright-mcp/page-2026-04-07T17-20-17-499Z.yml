@@ -1,0 +1,95 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /home
+          - img
+        - generic:
+          - generic:
+            - button:
+              - generic: Personal
+              - img
+          - generic: /
+          - generic:
+            - button:
+              - generic: Default Project
+              - img
+      - generic:
+        - navigation:
+          - generic:
+            - link:
+              - /url: /playground
+              - generic: Playground
+          - generic:
+            - link:
+              - /url: /keys
+              - generic: API Keys
+          - generic:
+            - link:
+              - /url: /dashboard
+              - generic: Dashboard
+          - generic:
+            - link:
+              - /url: /docs
+              - generic: Docs
+          - generic:
+            - link:
+              - /url: /settings
+              - generic:
+                - img
+        - generic:
+          - button:
+            - generic:
+              - generic: P
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=1]: API Keys
+                - generic: Manage your project API keys. Remember to keep your API keys safe to prevent unauthorized access.
+              - generic:
+                - button [expanded]:
+                  - img
+                  - generic: Create API Key
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - table:
+                        - rowgroup:
+                          - row:
+                            - columnheader: Name
+                            - columnheader: Secret Key
+                            - columnheader: Created
+                            - columnheader: Last Used
+                            - columnheader: Expires
+                            - columnheader: Usage (24hrs)
+                            - columnheader
+                    - generic: (No keys)
+  - region "Notifications alt+T"
+  - alert: API Keys - GroqCloud
+  - iframe [ref=e323]:
+    
+  - dialog "Create API Key" [ref=e353]:
+    - heading "Create API Key" [level=2] [ref=e355]
+    - generic [ref=e357]:
+      - generic [ref=e358]:
+        - text: Display Name
+        - textbox "Display Name" [active] [ref=e359]:
+          - /placeholder: e.g. Production API Key
+        - paragraph [ref=e360]: A display name for the key. Maximum 50 characters.
+      - generic [ref=e361]:
+        - generic [ref=e363]:
+          - text: Expiration
+          - combobox "Expiration" [ref=e364] [cursor=pointer]:
+            - generic: No expiration
+            - img [ref=e365]
+          - combobox [ref=e367]
+        - paragraph [ref=e368]: This key will not expire.
+    - button "Close" [ref=e373] [cursor=pointer]:
+      - img [ref=e374]
+      - generic [ref=e377]: Close

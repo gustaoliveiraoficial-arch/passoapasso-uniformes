@@ -1,0 +1,443 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - generic [ref=e34]:
+        - heading "Adicionar novo" [level=1] [ref=e35]
+        - generic [ref=e36]:
+          - heading "Atividade da loja" [level=2] [ref=e37]
+          - complementary "Atividade da loja" [ref=e38]:
+            - tablist [ref=e39]:
+              - tab "Atividade atividade não lida" [ref=e40] [cursor=pointer]:
+                - img [ref=e41]
+                - text: Atividade
+                - generic [ref=e44]: atividade não lida
+              - tab "Sugestões" [ref=e45] [cursor=pointer]:
+                - img [ref=e46]
+                - text: Sugestões
+      - main [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - button "Opções de tela" [ref=e54] [cursor=pointer]
+            - button "Ajuda" [ref=e56] [cursor=pointer]
+          - generic [ref=e60]:
+            - heading "Adicionar novo produto" [level=1] [ref=e61]
+            - generic [ref=e63]:
+              - generic:
+                - generic [ref=e64]:
+                  - generic [ref=e66]:
+                    - generic: Nome do produto
+                    - textbox "Nome do produto" [active] [ref=e67]
+                    - link "Pular para o editor" [ref=e68] [cursor=pointer]:
+                      - /url: "#content"
+                  - generic [ref=e72]:
+                    - generic [ref=e73]:
+                      - heading "Criar produtos com IA" [level=2] [ref=e74]
+                      - generic [ref=e75]:
+                        - button "Mover para cima" [disabled] [ref=e76]:
+                          - generic [ref=e77]: Mover para cima
+                        - button "Mover para baixo" [ref=e79] [cursor=pointer]:
+                          - generic [ref=e80]: Mover para baixo
+                        - 'button "Alternar painel: Criar produtos com IA" [expanded] [ref=e82] [cursor=pointer]':
+                          - generic [ref=e83]: "Alternar painel: Criar produtos com IA"
+                    - generic [ref=e86]:
+                      - generic [ref=e88]:
+                        - generic [ref=e89]: Desenvolvido por
+                        - img [ref=e90]
+                      - generic [ref=e101]: Descreva seu produto em algumas palavras
+                      - textbox "Descreva seu produto em algumas palavras" [ref=e102]
+                      - generic [ref=e103]:
+                        - generic [ref=e104]:
+                          - generic [ref=e105]: Tamanho do conteúdo
+                          - combobox "Tamanho do conteúdo" [ref=e106] [cursor=pointer]:
+                            - option "Curto" [selected]
+                            - option "Médio"
+                            - option "Longo"
+                        - generic [ref=e107]:
+                          - generic [ref=e108]: Tom de voz
+                          - combobox "Tom de voz" [ref=e109] [cursor=pointer]:
+                            - option "Neutro" [selected]
+                            - option "Formal"
+                            - option "Confiável"
+                            - option "Amigável"
+                            - option "Divertido"
+                      - button "Create product with AI" [ref=e112]
+                  - generic [ref=e113]:
+                    - heading "Descrição do produto" [level=2] [ref=e114]:
+                      - generic [ref=e115]: Descrição do produto
+                    - generic [ref=e116]:
+                      - generic [ref=e117]:
+                        - generic [ref=e118]:
+                          - button "Adicionar mídia" [ref=e119] [cursor=pointer]: Adicionar mídia
+                          - generic "Descreva este produto. O que o torna único? Quais são suas características mais importantes?" [ref=e121]: 
+                        - generic [ref=e122]:
+                          - button "Visual" [pressed] [ref=e123] [cursor=pointer]
+                          - button "Código" [ref=e124] [cursor=pointer]
+                      - application [ref=e126]:
+                        - generic [ref=e127]:
+                          - group [ref=e130]:
+                            - toolbar [ref=e132]:
+                              - group [ref=e134]:
+                                - generic [ref=e135]:
+                                  - button "Parágrafo" [ref=e136] [cursor=pointer]:
+                                    - button "Parágrafo" [ref=e137]:
+                                      - generic [ref=e138]: Parágrafo
+                                  - button "Negrito (Ctrl+B)" [ref=e140] [cursor=pointer]:
+                                    - button [ref=e141]
+                                  - button "Itálico (Ctrl+I)" [ref=e143] [cursor=pointer]:
+                                    - button [ref=e144]
+                                  - button "Lista com marcadores (Shift+Alt+U)" [ref=e146] [cursor=pointer]:
+                                    - button [ref=e147]
+                                  - button "Lista numerada (Shift+Alt+O)" [ref=e149] [cursor=pointer]:
+                                    - button [ref=e150]
+                                  - button "Bloco de citação (Shift+Alt+Q)" [ref=e152] [cursor=pointer]:
+                                    - button [ref=e153]
+                                  - button "Alinhar à esquerda (Shift+Alt+L)" [ref=e155] [cursor=pointer]:
+                                    - button [ref=e156]
+                                  - button "Alinhar ao centro (Shift+Alt+C)" [ref=e158] [cursor=pointer]:
+                                    - button [ref=e159]
+                                  - button "Alinhar à direita (Shift+Alt+R)" [ref=e161] [cursor=pointer]:
+                                    - button [ref=e162]
+                                  - button "Inserir/editar link (Ctrl+K)" [ref=e164] [cursor=pointer]:
+                                    - button [ref=e165]
+                                  - button "Inserir a tag \"Leia mais\" (Shift+Alt+T)" [ref=e167] [cursor=pointer]:
+                                    - button [ref=e168]
+                                  - button "Alternar barra de ferramentas (Shift+Alt+Z)" [ref=e170] [cursor=pointer]:
+                                    - button [ref=e171]
+                                  - button "Modo de escrita sem distrações (Shift+Alt+W)" [ref=e173] [cursor=pointer]:
+                                    - button [ref=e174]
+                          - group [ref=e176]:
+                            - iframe [ref=e177]:
+                              - paragraph [ref=f8e2]
+                          - group [ref=e178]
+                    - text: "Palavras: 0"
+                - generic [ref=e183]:
+                  - generic [ref=e184]:
+                    - generic [ref=e185]:
+                      - heading "Publicar" [level=2] [ref=e186]
+                      - generic [ref=e187]:
+                        - button "Mover para cima" [ref=e188] [cursor=pointer]:
+                          - generic [ref=e189]: Mover para cima
+                        - button "Mover para baixo" [ref=e191] [cursor=pointer]:
+                          - generic [ref=e192]: Mover para baixo
+                        - 'button "Alternar painel: Publicar" [expanded] [ref=e194] [cursor=pointer]':
+                          - generic [ref=e195]: "Alternar painel: Publicar"
+                    - generic [ref=e198]:
+                      - generic [ref=e199]:
+                        - generic [ref=e200]:
+                          - button "Salvar como rascunho" [ref=e201] [cursor=pointer]
+                          - link "Visualizar (abrir em uma nova aba)" [ref=e202] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/?post_type=product&p=79&preview=true
+                            - text: Visualizar
+                            - generic [ref=e203]: (abrir em uma nova aba)
+                        - generic [ref=e204]:
+                          - generic [ref=e205]:
+                            - text: "Status: Rascunho"
+                            - button "Editar status" [ref=e206] [cursor=pointer]:
+                              - text: Editar
+                              - generic [ref=e207]: Editar status
+                          - generic [ref=e208]:
+                            - text: "Visibilidade: Público"
+                            - button "Editar visibilidade" [ref=e209] [cursor=pointer]:
+                              - text: Editar
+                              - generic [ref=e210]: Editar visibilidade
+                          - generic [ref=e211]:
+                            - generic [ref=e212]: Publicar imediatamente
+                            - button "Editar data e hora" [ref=e213] [cursor=pointer]:
+                              - text: Editar
+                              - generic [ref=e214]: Editar data e hora
+                          - generic [ref=e215]:
+                            - text: "Visibilidade no catálogo:"
+                            - strong [ref=e216]: Loja e resultados de pesquisa
+                            - link "Editar" [ref=e217] [cursor=pointer]:
+                              - /url: "#catalog-visibility"
+                      - generic [ref=e218]:
+                        - link "Copiar para rascunho" [ref=e220] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=product&action=duplicate_product&post=79&_wpnonce=86e24bb0f4
+                        - button "Publicar" [ref=e222] [cursor=pointer]
+                  - generic [ref=e223]:
+                    - generic [ref=e224]:
+                      - heading "Imagem do produto" [level=2] [ref=e225]
+                      - generic [ref=e226]:
+                        - button "Mover para cima" [ref=e227] [cursor=pointer]:
+                          - generic [ref=e228]: Mover para cima
+                        - button "Mover para baixo" [ref=e230] [cursor=pointer]:
+                          - generic [ref=e231]: Mover para baixo
+                        - 'button "Alternar painel: Imagem do produto" [expanded] [ref=e233] [cursor=pointer]':
+                          - generic [ref=e234]: "Alternar painel: Imagem do produto"
+                    - paragraph [ref=e237]:
+                      - link "Definir imagem do produto" [ref=e238] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/media-upload.php?post_id=79&type=image&TB_iframe=1
+                      - 'generic "Para obter melhores resultados, carregue arquivos JPEG ou PNG com 1.000 por 1.000 pixels ou mais. Tamanho máximo do arquivo de upload: 2 GB." [ref=e239]': 
+                  - generic [ref=e240]:
+                    - generic [ref=e241]:
+                      - heading "Galeria de imagens do produto" [level=2] [ref=e242]
+                      - generic [ref=e243]:
+                        - button "Mover para cima" [ref=e244] [cursor=pointer]:
+                          - generic [ref=e245]: Mover para cima
+                        - button "Mover para baixo" [ref=e247] [cursor=pointer]:
+                          - generic [ref=e248]: Mover para baixo
+                        - 'button "Alternar painel: Galeria de imagens do produto" [expanded] [ref=e250] [cursor=pointer]':
+                          - generic [ref=e251]: "Alternar painel: Galeria de imagens do produto"
+                    - generic [ref=e253]:
+                      - generic:
+                        - list
+                      - paragraph [ref=e254]:
+                        - link "Adicionar galeria de imagens do produto" [ref=e255] [cursor=pointer]:
+                          - /url: "#"
+                        - 'generic "Para obter melhores resultados, carregue arquivos JPEG ou PNG com 1.000 por 1.000 pixels ou mais. Tamanho máximo do arquivo de upload: 2 GB." [ref=e256]': 
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - heading "Categorias de produto" [level=2] [ref=e259]
+                      - generic [ref=e260]:
+                        - button "Mover para cima" [ref=e261] [cursor=pointer]:
+                          - generic [ref=e262]: Mover para cima
+                        - button "Mover para baixo" [ref=e264] [cursor=pointer]:
+                          - generic [ref=e265]: Mover para baixo
+                        - 'button "Alternar painel: Categorias de produto" [expanded] [ref=e267] [cursor=pointer]':
+                          - generic [ref=e268]: "Alternar painel: Categorias de produto"
+                    - generic [ref=e271]:
+                      - list [ref=e272]:
+                        - listitem [ref=e273]:
+                          - link "Todas as categorias" [ref=e274] [cursor=pointer]:
+                            - /url: "#product_cat-all"
+                        - listitem [ref=e275]:
+                          - link "Mais usadas" [ref=e276] [cursor=pointer]:
+                            - /url: "#product_cat-pop"
+                      - list [ref=e278]:
+                        - listitem [ref=e279]:
+                          - generic [ref=e280]:
+                            - checkbox "Sem categoria" [ref=e281] [cursor=pointer]
+                            - text: Sem categoria
+                      - link "+ Adicionar nova categoria" [ref=e283] [cursor=pointer]:
+                        - /url: "#product_cat-add"
+                  - generic [ref=e284]:
+                    - generic [ref=e285]:
+                      - heading "Tags de produto" [level=2] [ref=e286]
+                      - generic [ref=e287]:
+                        - button "Mover para cima" [ref=e288] [cursor=pointer]:
+                          - generic [ref=e289]: Mover para cima
+                        - button "Mover para baixo" [ref=e291] [cursor=pointer]:
+                          - generic [ref=e292]: Mover para baixo
+                        - 'button "Alternar painel: Tags de produto" [expanded] [ref=e294] [cursor=pointer]':
+                          - generic [ref=e295]: "Alternar painel: Tags de produto"
+                    - generic [ref=e297]:
+                      - generic [ref=e298]:
+                        - generic [ref=e299]:
+                          - generic [ref=e300]:
+                            - generic [ref=e301]: Adicionar nova tag
+                            - combobox "Adicionar nova tag" [ref=e302]
+                            - button "Adicionar" [ref=e303] [cursor=pointer]
+                          - paragraph [ref=e304]: Separar as tags com vírgulas
+                        - list
+                      - paragraph [ref=e305]:
+                        - button "Escolher das tags mais usadas" [ref=e306] [cursor=pointer]
+                  - generic [ref=e307]:
+                    - generic [ref=e308]:
+                      - heading "Marcas" [level=2] [ref=e309]
+                      - generic [ref=e310]:
+                        - button "Mover para cima" [ref=e311] [cursor=pointer]:
+                          - generic [ref=e312]: Mover para cima
+                        - button "Mover para baixo" [ref=e314] [cursor=pointer]:
+                          - generic [ref=e315]: Mover para baixo
+                        - 'button "Alternar painel: Marcas" [expanded] [ref=e317] [cursor=pointer]':
+                          - generic [ref=e318]: "Alternar painel: Marcas"
+                    - generic [ref=e321]:
+                      - list [ref=e322]:
+                        - listitem [ref=e323]:
+                          - link "Todas as marcas" [ref=e324] [cursor=pointer]:
+                            - /url: "#product_brand-all"
+                        - listitem [ref=e325]:
+                          - link "Mais usadas" [ref=e326] [cursor=pointer]:
+                            - /url: "#product_brand-pop"
+                      - generic [ref=e327]:
+                        - list
+                      - link "+ Adicionar nova marca" [ref=e329] [cursor=pointer]:
+                        - /url: "#product_brand-add"
+                  - generic [ref=e330]:
+                    - generic [ref=e331]:
+                      - heading "Imagem externa em destaque" [level=2] [ref=e332]
+                      - generic [ref=e333]:
+                        - button "Mover para cima" [ref=e334] [cursor=pointer]:
+                          - generic [ref=e335]: Mover para cima
+                        - button "Mover para baixo" [ref=e337] [cursor=pointer]:
+                          - generic [ref=e338]: Mover para baixo
+                        - 'button "Alternar painel: Imagem externa em destaque" [expanded] [ref=e340] [cursor=pointer]':
+                          - generic [ref=e341]: "Alternar painel: Imagem externa em destaque"
+                    - paragraph [ref=e344]:
+                      - text: "URL da imagem:"
+                      - textbox "URL da imagem:" [ref=e345]
+                - generic [ref=e347]:
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - heading "Dados do produto — Produto simples Simples – abrange a grande maioria de quaisquer produtos que você possa vender. Produtos simples são enviados e não possuem opções. Por exemplo, um livro. Virtual Baixável" [level=2] [ref=e350]:
+                        - text: Dados do produto
+                        - generic [ref=e351]:
+                          - text: —
+                          - generic [ref=e352]:
+                            - combobox "Simples – abrange a grande maioria de quaisquer produtos que você possa vender. Produtos simples são enviados e não possuem opções. Por exemplo, um livro." [ref=e353] [cursor=pointer]:
+                              - option "Produto simples" [selected]
+                              - option "Grupo de produto"
+                              - option "Produto externo/afiliado"
+                              - option "Produto variável"
+                            - generic "Simples – abrange a grande maioria de quaisquer produtos que você possa vender. Produtos simples são enviados e não possuem opções. Por exemplo, um livro." [ref=e354]: 
+                          - generic [ref=e355]:
+                            - checkbox "Virtual" [ref=e356] [cursor=pointer]
+                            - text: Virtual
+                          - generic [ref=e357]:
+                            - checkbox "Baixável" [ref=e358] [cursor=pointer]
+                            - text: Baixável
+                      - generic [ref=e359]:
+                        - button "Mover para cima" [ref=e360] [cursor=pointer]:
+                          - generic [ref=e361]: Mover para cima
+                        - button "Mover para baixo" [ref=e363] [cursor=pointer]:
+                          - generic [ref=e364]: Mover para baixo
+                        - 'button "Alternar painel: Dados do produto" [expanded] [ref=e366] [cursor=pointer]':
+                          - generic [ref=e367]: "Alternar painel: Dados do produto"
+                    - generic [ref=e370]:
+                      - list [ref=e371]:
+                        - listitem [ref=e372]:
+                          - link " Geral" [ref=e373] [cursor=pointer]:
+                            - /url: "#general_product_data"
+                        - listitem [ref=e374]:
+                          - link " Estoque" [ref=e375] [cursor=pointer]:
+                            - /url: "#inventory_product_data"
+                        - listitem [ref=e376]:
+                          - link " Entrega" [ref=e377] [cursor=pointer]:
+                            - /url: "#shipping_product_data"
+                        - listitem [ref=e378]:
+                          - link " Produtos relacionados" [ref=e379] [cursor=pointer]:
+                            - /url: "#linked_product_data"
+                        - listitem [ref=e380]:
+                          - link " Atributos" [ref=e381] [cursor=pointer]:
+                            - /url: "#product_attributes"
+                        - text: 
+                        - listitem [ref=e382]:
+                          - link " Avançado" [ref=e383] [cursor=pointer]:
+                            - /url: "#advanced_product_data"
+                      - generic [ref=e384]:
+                        - generic [ref=e385]:
+                          - paragraph [ref=e386]:
+                            - generic [ref=e387]: Preço ($)
+                            - textbox "Preço ($)" [ref=e388]:
+                              - /placeholder: ""
+                          - paragraph [ref=e389]:
+                            - generic [ref=e390]: Preço promocional ($)
+                            - textbox "Preço promocional ($)" [ref=e391]:
+                              - /placeholder: ""
+                            - link "Programar" [ref=e393] [cursor=pointer]:
+                              - /url: "#"
+                          - text: 
+                        - text:  
+                      - text:               
+                  - generic [ref=e394]:
+                    - generic [ref=e395]:
+                      - heading "Slug" [level=2] [ref=e396]
+                      - generic [ref=e397]:
+                        - button "Mover para cima" [ref=e398] [cursor=pointer]:
+                          - generic [ref=e399]: Mover para cima
+                        - button "Mover para baixo" [ref=e401] [cursor=pointer]:
+                          - generic [ref=e402]: Mover para baixo
+                        - 'button "Alternar painel: Slug" [expanded] [ref=e404] [cursor=pointer]':
+                          - generic [ref=e405]: "Alternar painel: Slug"
+                    - generic [ref=e407]:
+                      - generic [ref=e408]: Slug
+                      - textbox "Slug" [ref=e409]
+                  - generic [ref=e410]:
+                    - generic [ref=e411]:
+                      - heading "Breve descrição sobre o produto Resuma este produto em 1-2 frases curtas. Vamos mostrá-lo no topo da página." [level=2] [ref=e412]:
+                        - text: Breve descrição sobre o produto
+                        - generic "Resuma este produto em 1-2 frases curtas. Vamos mostrá-lo no topo da página." [ref=e413]: 
+                      - generic [ref=e414]:
+                        - button "Mover para cima" [ref=e415] [cursor=pointer]:
+                          - generic [ref=e416]: Mover para cima
+                        - button "Mover para baixo" [ref=e418] [cursor=pointer]:
+                          - generic [ref=e419]: Mover para baixo
+                        - 'button "Alternar painel: Breve descrição sobre o produto" [expanded] [ref=e421] [cursor=pointer]':
+                          - generic [ref=e422]: "Alternar painel: Breve descrição sobre o produto"
+                    - generic [ref=e425]:
+                      - generic [ref=e426]:
+                        - button "Adicionar mídia" [ref=e428] [cursor=pointer]: Adicionar mídia
+                        - generic [ref=e430]:
+                          - button "Visual" [pressed] [ref=e431] [cursor=pointer]
+                          - button "Código" [ref=e432] [cursor=pointer]
+                      - application [ref=e434]:
+                        - generic [ref=e435]:
+                          - group [ref=e438]:
+                            - toolbar [ref=e440]:
+                              - group [ref=e442]:
+                                - generic [ref=e443]:
+                                  - button "Parágrafo" [ref=e444] [cursor=pointer]:
+                                    - button "Parágrafo" [ref=e445]:
+                                      - generic [ref=e446]: Parágrafo
+                                  - button "Negrito (Ctrl+B)" [ref=e448] [cursor=pointer]:
+                                    - button [ref=e449]
+                                  - button "Itálico (Ctrl+I)" [ref=e451] [cursor=pointer]:
+                                    - button [ref=e452]
+                                  - button "Lista com marcadores (Shift+Alt+U)" [ref=e454] [cursor=pointer]:
+                                    - button [ref=e455]
+                                  - button "Lista numerada (Shift+Alt+O)" [ref=e457] [cursor=pointer]:
+                                    - button [ref=e458]
+                                  - button "Bloco de citação (Shift+Alt+Q)" [ref=e460] [cursor=pointer]:
+                                    - button [ref=e461]
+                                  - button "Alinhar à esquerda (Shift+Alt+L)" [ref=e463] [cursor=pointer]:
+                                    - button [ref=e464]
+                                  - button "Alinhar ao centro (Shift+Alt+C)" [ref=e466] [cursor=pointer]:
+                                    - button [ref=e467]
+                                  - button "Alinhar à direita (Shift+Alt+R)" [ref=e469] [cursor=pointer]:
+                                    - button [ref=e470]
+                                  - button "Inserir/editar link (Ctrl+K)" [ref=e472] [cursor=pointer]:
+                                    - button [ref=e473]
+                                  - button "Inserir a tag \"Leia mais\" (Shift+Alt+T)" [ref=e475] [cursor=pointer]:
+                                    - button [ref=e476]
+                                  - button "Tela inteira" [ref=e478] [cursor=pointer]:
+                                    - button [ref=e479]
+                                  - button "Alternar barra de ferramentas (Shift+Alt+Z)" [ref=e481] [cursor=pointer]:
+                                    - button [ref=e482]
+                          - group [ref=e484]:
+                            - iframe [ref=e485]:
+                              - paragraph [ref=f9e2]
+                          - group [ref=e486]:
+                            - generic [ref=e491]: 
+    - generic [ref=e493]:
+      - img [ref=e495]
+      - generic [ref=e497]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e499] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+  - img
+  - status [ref=e502]
+  - text:          
+  - status [ref=e503]
+  - text:            
+  - status [ref=e504]
+  - text:  

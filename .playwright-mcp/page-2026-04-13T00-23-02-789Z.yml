@@ -1,0 +1,178 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Google Apps Script" [ref=e13] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e14]
+          - generic [ref=e15]: Apps Script
+        - generic [ref=e16]:
+          - generic [ref=e19]:
+            - button "Renomear" [ref=e450] [cursor=pointer]: Projeto sem título
+            - generic [ref=e153]: cloud_done
+          - generic [ref=e38]:
+            - button "Implantar" [expanded] [ref=e455] [cursor=pointer]:
+              - generic [ref=e458]:
+                - text: Implantar
+                - generic [ref=e459]: 
+            - button "Suporte" [ref=e155] [cursor=pointer]:
+              - generic [ref=e158]: help_outline
+        - generic [ref=e45]:
+          - button "Google Apps" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e55] [cursor=pointer]':
+            - img [ref=e57]
+            - img [ref=e63]
+    - generic [ref=e162]:
+      - navigation "Páginas do projeto do Apps Script" [ref=e460]:
+        - link "Visão geral" [ref=e461] [cursor=pointer]:
+          - generic [ref=e167]: info_outline
+          - generic [ref=e168]: Visão geral
+        - link "Editor" [ref=e462] [cursor=pointer]:
+          - generic [ref=e171]: code
+          - generic [ref=e172]: Editor
+        - link "Histórico do projeto" [ref=e463] [cursor=pointer]:
+          - generic [ref=e175]: history
+          - generic [ref=e176]: Histórico do projeto
+        - link "Acionadores" [ref=e464] [cursor=pointer]:
+          - generic [ref=e179]: alarm
+          - generic [ref=e180]: Acionadores
+        - link "Execuções" [ref=e465] [cursor=pointer]:
+          - generic [ref=e183]: playlist_play
+          - generic [ref=e184]: Execuções
+        - link "Configurações do projeto" [ref=e466] [cursor=pointer]:
+          - generic [ref=e187]: settings
+          - generic [ref=e188]: Configurações do projeto
+      - generic [ref=e189]:
+        - heading "Editor" [level=1] [ref=e467]
+        - generic [ref=e191]:
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - heading "Arquivos" [level=2] [ref=e468]
+              - generic [ref=e197]:
+                - button "Classificar os arquivos por ordem alfabética" [disabled] [ref=e469]:
+                  - generic [ref=e202]: sort_by_alpha
+                - button "Adicionar um arquivo" [ref=e470] [cursor=pointer]:
+                  - generic [ref=e207]: add
+            - listbox "Arquivos do projeto" [ref=e471]:
+              - option "Código.gs" [ref=e472] [cursor=pointer]:
+                - generic "Código.gs" [ref=e473]
+                - button "Menu de operações de arquivos para Código.gs." [ref=e474]:
+                  - button "Menu de operações de arquivos para Código.gs." [ref=e475]:
+                    - generic [ref=e216]: 
+            - generic [ref=e217]:
+              - heading "Bibliotecas" [level=2] [ref=e476]
+              - button "Adicionar uma biblioteca" [ref=e477] [cursor=pointer]:
+                - generic [ref=e224]: add
+            - generic:
+              - listbox "Dependências de biblioteca"
+            - generic [ref=e225]:
+              - heading "Serviços" [level=2] [ref=e478]
+              - button "Adicionar um serviço" [ref=e479] [cursor=pointer]:
+                - generic [ref=e232]: add
+            - generic:
+              - listbox "Dependências do serviço"
+          - generic [ref=e239]:
+            - region [ref=e240]:
+              - generic [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e245]:
+                    - button "Desfazer edição de código" [disabled]:
+                      - generic: undo
+                  - generic [ref=e248]:
+                    - button "Refazer edição de código" [disabled]:
+                      - generic: redo
+                - generic [ref=e252]:
+                  - button "Salvar projeto no Drive" [disabled]:
+                    - img
+                - generic [ref=e253]:
+                  - button "Executar a função selecionada" [ref=e480]:
+                    - generic [ref=e260]: play_arrow
+                    - generic [ref=e261]: Executar
+                  - button "Depurar a função selecionada" [ref=e481]:
+                    - img [ref=e268]
+                    - generic [ref=e271]: Depuração
+                  - listbox "Selecione a função para executar" [ref=e482] [cursor=pointer]:
+                    - option "doGet" [selected] [ref=e483]
+                - button "Abrir o painel de registros de execução" [ref=e484]:
+                  - generic [ref=e283]: Registro de execução
+            - generic [ref=e285]:
+              - main [ref=e289]:
+                - generic [ref=e290]: .
+                - generic [ref=e292]:
+                  - iframe [ref=e293]:
+                    
+                  - code [ref=e295]:
+                    - generic [ref=e296]:
+                      - generic [ref=e299]:
+                        - generic [ref=e485]:
+                          - generic [ref=e487] [cursor=pointer]: 
+                          - generic [ref=e488]: "1"
+                        - generic [ref=e489]:
+                          - generic [ref=e490] [cursor=pointer]: 
+                          - generic [ref=e491]: "2"
+                        - generic [ref=e306]: "3"
+                        - generic [ref=e492]:
+                          - generic [ref=e493] [cursor=pointer]: 
+                          - generic [ref=e494]: "4"
+                        - generic [ref=e310]: "5"
+                        - generic [ref=e313]: "6"
+                        - generic [ref=e495]:
+                          - generic [ref=e496] [cursor=pointer]: 
+                          - generic [ref=e497]: "7"
+                        - generic [ref=e498]:
+                          - generic [ref=e499] [cursor=pointer]: 
+                          - generic [ref=e500]: "8"
+                        - generic [ref=e320]: "9"
+                        - generic [ref=e323]: "10"
+                        - generic [ref=e326]: "11"
+                        - generic [ref=e328]: "12"
+                        - generic [ref=e330]: "13"
+                        - generic [ref=e501]:
+                          - generic [ref=e502] [cursor=pointer]: 
+                          - generic [ref=e503]: "14"
+                        - generic [ref=e334]: "15"
+                        - generic [ref=e337]: "16"
+                      - generic [ref=e398]:
+                        - generic [ref=e400]: "function doGet(e) {"
+                        - generic [ref=e402]: "try {"
+                        - generic [ref=e404]: const result = getDashboardData(e);
+                        - generic [ref=e406]: return ContentService
+                        - generic [ref=e408]: .createTextOutput(JSON.stringify
+                        - generic [ref=e410]: (result))
+                        - generic [ref=e412]: .setMimeType(ContentService.
+                        - generic [ref=e414]: MimeType.JSON);
+                        - generic [ref=e416]: "} catch(err) {"
+                        - generic [ref=e418]: return ContentService
+                        - generic [ref=e420]: .createTextOutput(JSON.stringify
+                        - generic [ref=e422]: "({ erro: err.message }))"
+                        - generic [ref=e424]: .setMimeType(ContentService.
+                        - generic [ref=e426]: MimeType.JSON);
+                        - generic [ref=e428]: "}"
+                        - generic [ref=e430]: "}"
+                        - generic [ref=e433]: "function getDashboardData(e) {"
+                        - generic [ref=e435]: const ss = SpreadsheetApp.
+                        - generic [ref=e437]: getActiveSpreadsheet();
+                        - generic [ref=e439]: const sheet = ss.getSheetByName
+                      - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=e504]: "function doGet(e) { try { const result = getDashboardData(e); return ContentService .createTextOutput(JSON.stringify(result)) .setMimeType(ContentService.MimeType.JSON); } catch(err) { return ContentService"
+              - generic:
+                - generic:
+                  - button "Fechar painel de logs de execução" [ref=e505] [cursor=pointer]:
+                    - generic [ref=e446]: close
+                  - tooltip [ref=e447]: Fechar registros de execução
+  - generic: "Classificação: Última modificação, Decrescente. Inverter classificação."
+  - generic [ref=e449]:
+    - alert
+    - alert
+    - complementary
+    - complementary
+  - menu [active] [ref=e506]:
+    - generic [ref=e508]:
+      - menuitem "Nova implantação" [ref=e509] [cursor=pointer]:
+        - generic [ref=e511]: Nova implantação
+      - menuitem "Opção \"Gerenciar implantações\"" [ref=e512] [cursor=pointer]:
+        - generic [ref=e514]: Gerenciar implantações
+      - menuitem "Testar implantações" [ref=e515] [cursor=pointer]:
+        - generic [ref=e517]: Testar implantações

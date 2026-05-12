@@ -1,0 +1,50 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - progressbar [ref=e6]
+      - main [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e18]:
+            - img [ref=e20]
+            - generic [ref=e25]: Fazer Login com o Google
+          - generic [ref=e26]:
+            - heading "Escolha uma conta" [level=1] [ref=e27]
+            - generic [ref=e29]:
+              - text: Prosseguir para
+              - button "groq.com" [ref=e30] [cursor=pointer]
+        - generic [ref=e33]:
+          - list [ref=e41]:
+            - listitem [ref=e42]:
+              - link "passoapassouniformes2025@gmail.com" [ref=e43] [cursor=pointer]:
+                - generic [ref=e48]: passoapassouniformes2025@gmail.com
+            - listitem [ref=e49]:
+              - link "Usar outra conta" [ref=e50] [cursor=pointer]:
+                - generic [ref=e51]:
+                  - img [ref=e53]
+                  - generic [ref=e56]: Usar outra conta
+          - generic [ref=e59]:
+            - text: Consulte a
+            - link "Política de Privacidade" [ref=e60] [cursor=pointer]:
+              - /url: https://wow.groq.com/privacy-policy/
+            - text: e os
+            - link "Termos de Serviço" [ref=e61] [cursor=pointer]:
+              - /url: https://wow.groq.com/terms-and-conditions/
+            - text: do app groq.com antes de usá-lo.
+    - contentinfo [ref=e66]:
+      - combobox "Alterar idioma Português (Brasil)" [ref=e70] [cursor=pointer]:
+        - generic:
+          - generic: Português (Brasil)
+        - generic:
+          - img
+      - list [ref=e72]:
+        - listitem [ref=e73]:
+          - link "Ajuda" [ref=e74] [cursor=pointer]:
+            - /url: https://support.google.com/accounts?hl=pt-BR&p=account_iph
+        - listitem [ref=e75]:
+          - link "Privacidade" [ref=e76] [cursor=pointer]:
+            - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR&privacy=true
+        - listitem [ref=e77]:
+          - link "Termos" [ref=e78] [cursor=pointer]:
+            - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR
+  - iframe [ref=e79]:
+    

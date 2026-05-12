@@ -1,0 +1,164 @@
+- generic [ref=e9]:
+  - navigation [ref=e10]:
+    - button "person u723199063" [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: person
+      - text: u723199063
+    - button "Arquivos" [ref=e13] [cursor=pointer]:
+      - generic [ref=e14]: folder
+      - text: Arquivos
+    - generic [ref=e15]:
+      - button "Nova pasta" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: create_new_folder
+        - text: Nova pasta
+      - button "Novo arquivo" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: note_add
+        - text: Novo arquivo
+    - link "Lixeira" [ref=e21] [cursor=pointer]:
+      - /url: /39ba8012f5b9ed97/files/.trash
+      - generic [ref=e22]: delete
+      - text: Lixeira
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Espaço
+        - generic [ref=e29]: 0.84%
+        - generic [ref=e30]: 429.84 MiB / 50 GiB
+      - generic [ref=e31]:
+        - generic [ref=e32]: Inodes
+        - generic [ref=e36]: 3.48%
+        - generic [ref=e37]: 20884 / 600000
+    - button "Sair" [ref=e38] [cursor=pointer]:
+      - generic [ref=e39]: exit_to_app
+      - text: Sair
+    - paragraph [ref=e40]:
+      - generic [ref=e41]: File Browser v2.63.2-h2
+      - generic [ref=e42]: Ajuda
+  - main [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link "Início" [ref=e46] [cursor=pointer]:
+          - /url: /39ba8012f5b9ed97/files
+          - generic [ref=e47]: home
+        - generic [ref=e48]:
+          - generic [ref=e50]: keyboard_arrow_right
+          - link "public_html" [ref=e51] [cursor=pointer]:
+            - /url: /39ba8012f5b9ed97/files/public_html/
+        - generic [ref=e52]:
+          - generic [ref=e54]: keyboard_arrow_right
+          - link "tabeladeprecos" [ref=e55] [cursor=pointer]:
+            - /url: /39ba8012f5b9ed97/files/public_html/tabeladeprecos/
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: search
+              - textbox "Pesquisar..." [ref=e62]
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Digite para pesquisar...
+              - generic [ref=e65]:
+                - heading "Tipos" [level=3] [ref=e66]
+                - generic [ref=e67]:
+                  - button "Imagens" [ref=e68] [cursor=pointer]:
+                    - generic [ref=e69]: insert_photo
+                    - paragraph [ref=e70]: Imagens
+                  - button "Música" [ref=e71] [cursor=pointer]:
+                    - generic [ref=e72]: volume_up
+                    - paragraph [ref=e73]: Música
+                  - button "Vídeos" [ref=e74] [cursor=pointer]:
+                    - generic [ref=e75]: movie
+                    - paragraph [ref=e76]: Vídeos
+                  - button "PDF" [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78]: picture_as_pdf
+                    - paragraph [ref=e79]: PDF
+          - generic [ref=e80]:
+            - button "Alterar visualização" [ref=e81] [cursor=pointer]:
+              - generic [ref=e82]: view_module
+            - button "Baixar" [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: file_download
+            - button "Enviar" [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: file_upload
+            - button "Calcular tamanho dos diretórios" [ref=e87] [cursor=pointer]:
+              - generic [ref=e88]: assessment
+            - button "Informações" [ref=e89] [cursor=pointer]:
+              - generic [ref=e90]: info
+            - button "Selecionar múltiplos" [ref=e91] [cursor=pointer]:
+              - generic [ref=e92]: check_circle
+        - generic [ref=e93]:
+          - generic [ref=e96] [cursor=pointer]:
+            - button "Ordenar pelo nome" [ref=e97]:
+              - text: Nome
+              - generic [ref=e98]: arrow_upward
+            - button "Ordenar pelo tamanho" [ref=e99]:
+              - text: Tamanho
+              - generic [ref=e100]: arrow_upward
+            - button "Ordenar pela última modificação" [ref=e101]:
+              - text: Última modificação
+              - generic [ref=e102]: arrow_upward
+          - button "assets" [ref=e104] [cursor=pointer]:
+            - generic [ref=e106]: folder
+            - generic [ref=e107]:
+              - paragraph [ref=e108]: assets
+              - paragraph [ref=e109]: "-"
+              - paragraph [ref=e110]:
+                - time [ref=e111]: há alguns segundos
+              - paragraph [ref=e112]: drwxr-xr-x
+          - generic [ref=e113]:
+            - button "favicon.svg" [ref=e114] [cursor=pointer]:
+              - img [ref=e116]
+              - generic [ref=e117]:
+                - paragraph [ref=e118]: favicon.svg
+                - paragraph [ref=e119]: 9.3 KiB
+                - paragraph [ref=e120]:
+                  - time [ref=e121]: há 32 minutos
+                - paragraph [ref=e122]: "-rw-r--r--"
+            - button "icons.svg" [ref=e123] [cursor=pointer]:
+              - img [ref=e125]
+              - generic [ref=e126]:
+                - paragraph [ref=e127]: icons.svg
+                - paragraph [ref=e128]: 4.91 KiB
+                - paragraph [ref=e129]:
+                  - time [ref=e130]: há 32 minutos
+                - paragraph [ref=e131]: "-rw-r--r--"
+            - button "index.html" [ref=e132] [cursor=pointer]:
+              - generic [ref=e134]: code
+              - generic [ref=e135]:
+                - paragraph [ref=e136]: index.html
+                - paragraph [ref=e137]: 508 B
+                - paragraph [ref=e138]:
+                  - time [ref=e139]: há 6 minutos
+                - paragraph [ref=e140]: "-rw-r--r--"
+            - button "logo-pap.png" [ref=e141] [cursor=pointer]:
+              - img [ref=e143]
+              - generic [ref=e144]:
+                - paragraph [ref=e145]: logo-pap.png
+                - paragraph [ref=e146]: 20.71 KiB
+                - paragraph [ref=e147]:
+                  - time [ref=e148]: há 32 minutos
+                - paragraph [ref=e149]: "-rw-r--r--"
+            - button "tabeladeprecos-deploy-upload.zip" [ref=e150] [cursor=pointer]:
+              - generic [ref=e152]: folder_zip
+              - generic [ref=e153]:
+                - paragraph [ref=e154]: tabeladeprecos-deploy-upload.zip
+                - paragraph [ref=e155]: 159.61 KiB
+                - paragraph [ref=e156]:
+                  - time [ref=e157]: há 2 dias
+                - paragraph [ref=e158]: "-rw-r--r--"
+          - generic [ref=e159]:
+            - paragraph [ref=e160]: Seleção múltipla ativada
+            - button "Limpar" [ref=e161] [cursor=pointer]:
+              - generic [ref=e162]: clear
+  - generic [ref=e176]:
+    - heading "Substitua ou ignore arquivos" [level=2] [ref=e178]
+    - generic [ref=e179]:
+      - paragraph [ref=e180]: Na pasta de destino existem 1 arquivos com o mesmo nome.
+      - generic [ref=e181]:
+        - button "done_all Substitua todos os arquivos na pasta de destino" [ref=e182] [cursor=pointer]:
+          - generic [ref=e183]: done_all
+          - text: Substitua todos os arquivos na pasta de destino
+        - button "undo Ignorar todos os arquivos conflitantes" [ref=e184] [cursor=pointer]:
+          - generic [ref=e185]: undo
+          - text: Ignorar todos os arquivos conflitantes
+        - button "checklist Decida para cada arquivo conflitante" [ref=e186] [cursor=pointer]:
+          - generic [ref=e187]: checklist
+          - text: Decida para cada arquivo conflitante
+    - button "Cancelar" [ref=e190] [cursor=pointer]

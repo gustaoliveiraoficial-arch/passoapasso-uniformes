@@ -1,0 +1,165 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Google Apps Script" [ref=e10] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - button "Renomear" [ref=e18] [cursor=pointer]: Projeto sem título
+            - generic [ref=e356]: cloud_done
+          - generic [ref=e26]:
+            - button "Implantar" [ref=e31] [cursor=pointer]:
+              - generic [ref=e34]:
+                - text: Implantar
+                - generic [ref=e35]: 
+            - button "Compartilhar este projeto com outros" [ref=e39] [cursor=pointer]:
+              - generic [ref=e40]: person_add
+            - button "Suporte" [ref=e42] [cursor=pointer]:
+              - generic [ref=e45]: help_outline
+        - generic [ref=e47]:
+          - button "Google Apps" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e57] [cursor=pointer]':
+            - img [ref=e59]
+    - generic [ref=e61]:
+      - navigation "Páginas do projeto do Apps Script" [ref=e63]:
+        - link "Visão geral" [ref=e64] [cursor=pointer]:
+          - generic [ref=e66]: info_outline
+          - generic [ref=e67]: Visão geral
+        - link "Editor" [ref=e68] [cursor=pointer]:
+          - generic [ref=e70]: code
+          - generic [ref=e71]: Editor
+        - link "Histórico do projeto" [ref=e72] [cursor=pointer]:
+          - generic [ref=e74]: history
+          - generic [ref=e75]: Histórico do projeto
+        - link "Acionadores" [ref=e76] [cursor=pointer]:
+          - generic [ref=e78]: alarm
+          - generic [ref=e79]: Acionadores
+        - link "Execuções" [ref=e80] [cursor=pointer]:
+          - generic [ref=e82]: playlist_play
+          - generic [ref=e83]: Execuções
+        - link "Configurações do projeto" [ref=e84] [cursor=pointer]:
+          - generic [ref=e86]: settings
+          - generic [ref=e87]: Configurações do projeto
+      - generic [ref=e88]:
+        - heading "Editor" [level=1] [ref=e89]
+        - generic [ref=e90]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - heading "Arquivos" [level=2] [ref=e94]
+              - generic [ref=e96]:
+                - button "Classificar os arquivos por ordem alfabética" [disabled] [ref=e98]:
+                  - generic [ref=e101]: sort_by_alpha
+                - button "Adicionar um arquivo" [ref=e103] [cursor=pointer]:
+                  - generic [ref=e106]: add
+            - listbox "Arquivos do projeto" [ref=e108]:
+              - option "Código.gs" [ref=e109] [cursor=pointer]:
+                - generic "Código.gs" [ref=e110]
+                - button "Menu de operações de arquivos para Código.gs." [ref=e111]:
+                  - button "Menu de operações de arquivos para Código.gs." [ref=e112]:
+                    - generic [ref=e115]: 
+            - generic [ref=e116]:
+              - heading "Bibliotecas" [level=2] [ref=e117]
+              - button "Adicionar uma biblioteca" [ref=e120] [cursor=pointer]:
+                - generic [ref=e123]: add
+            - generic:
+              - listbox "Dependências de biblioteca"
+            - generic [ref=e124]:
+              - heading "Serviços" [level=2] [ref=e125]
+              - button "Adicionar um serviço" [ref=e128] [cursor=pointer]:
+                - generic [ref=e131]: add
+            - generic:
+              - listbox "Dependências do serviço"
+          - generic [ref=e138]:
+            - region [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e144]:
+                    - button "Desfazer edição de código" [disabled]:
+                      - generic: undo
+                  - generic [ref=e147]:
+                    - button "Refazer edição de código" [disabled]:
+                      - generic: redo
+                - generic [ref=e151]:
+                  - button "Salvar projeto no Drive" [disabled]:
+                    - img
+                - generic [ref=e152]:
+                  - button "Executar a função selecionada" [ref=e156]:
+                    - generic [ref=e159]: play_arrow
+                    - generic [ref=e160]: Executar
+                  - button "Depurar a função selecionada" [ref=e164]:
+                    - img [ref=e167]
+                    - generic [ref=e170]: Depuração
+                  - listbox "Selecione a função para executar" [ref=e173] [cursor=pointer]:
+                    - option "criarPlanoVendas" [selected] [ref=e174]
+                - button "Abrir o painel de registros de execução" [ref=e179]:
+                  - generic [ref=e182]: Registro de execução
+            - generic [ref=e184]:
+              - main [ref=e188]:
+                - generic [ref=e189]: .
+                - generic [ref=e191]:
+                  - iframe [ref=e192]:
+                    
+                  - code [ref=e194]:
+                    - generic [ref=e195]:
+                      - generic [ref=e198]:
+                        - generic [ref=e357]:
+                          - generic [ref=e359] [cursor=pointer]: 
+                          - generic [ref=e360]: "1"
+                        - generic [ref=e203]: "2"
+                        - generic [ref=e205]: "3"
+                        - generic [ref=e207]: "4"
+                        - generic [ref=e209]: "5"
+                        - generic [ref=e212]: "6"
+                        - generic [ref=e215]: "7"
+                        - generic [ref=e218]: "8"
+                        - generic [ref=e221]: "9"
+                        - generic [ref=e224]: "10"
+                        - generic [ref=e226]: "11"
+                        - generic [ref=e229]: "12"
+                        - generic [ref=e232]: "13"
+                        - generic [ref=e235]: "14"
+                        - generic [ref=e237]: "15"
+                        - generic [ref=e239]: "16"
+                        - generic [ref=e241]: "17"
+                      - generic [ref=e297]:
+                        - generic [ref=e362]: "function criarPlanoVendas() {"
+                        - generic [ref=e364]: const doc = DocumentApp.create('📋 Plano de Vendas e Marketing — Abril 2026');
+                        - generic [ref=e366]: const body = doc.getBody();
+                        - generic [ref=e368]: "const estiloTitulo = { [DocumentApp.Attribute.FONT_SIZE]: 22, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute."
+                        - generic [ref=e370]: "FOREGROUND_COLOR]: '#1a1a2e' };"
+                        - generic [ref=e372]: "const estiloSecao = { [DocumentApp.Attribute.FONT_SIZE]: 16, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute."
+                        - generic [ref=e374]: "FOREGROUND_COLOR]: '#16213e' };"
+                        - generic [ref=e376]: "const estiloSub = { [DocumentApp.Attribute.FONT_SIZE]: 13, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute."
+                        - generic [ref=e378]: "FOREGROUND_COLOR]: '#0f3460' };"
+                        - generic [ref=e380]: "const estiloNormal = { [DocumentApp.Attribute.FONT_SIZE]: 11, [DocumentApp.Attribute.BOLD]: false, [DocumentApp.Attribute."
+                        - generic [ref=e382]: "FOREGROUND_COLOR]: '#222222' };"
+                        - generic [ref=e384]: "const estiloRed = { [DocumentApp.Attribute.FONT_SIZE]: 11, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute."
+                        - generic [ref=e386]: "FOREGROUND_COLOR]: '#c0392b' };"
+                        - generic [ref=e388]: "function h1(t) { const p = body.appendParagraph(t); p.setHeading(DocumentApp.ParagraphHeading.HEADING1); p.setAttributes"
+                        - generic [ref=e390]: "(estiloTitulo); }"
+                        - generic [ref=e392]: "function h2(t) { body.appendParagraph(''); const p = body.appendParagraph(t); p.setHeading(DocumentApp.ParagraphHeading."
+                        - generic [ref=e394]: "HEADING2); p.setAttributes(estiloSecao); }"
+                        - generic [ref=e396]: "function h3(t) { const p = body.appendParagraph(t); p.setHeading(DocumentApp.ParagraphHeading.HEADING3); p.setAttributes"
+                        - generic [ref=e398]: "(estiloSub); }"
+                        - generic [ref=e400]: "function txt(t) { body.appendParagraph(t).setAttributes(estiloNormal); }"
+                        - generic [ref=e402]: "function red(t) { body.appendParagraph(t).setAttributes(estiloRed); }"
+                        - generic [ref=e404]: "function task(t) { const p = body.appendParagraph('☐ ' + t); p.setAttributes(estiloNormal); p.setIndentStart(20); }"
+                        - generic [ref=e406]: "function sep() { body.appendParagraph('───────────────────────────────────────────────').setAttributes({ [DocumentApp."
+                        - generic [ref=e408]: "Attribute.FONT_SIZE]: 9, [DocumentApp.Attribute.FOREGROUND_COLOR]: '#cccccc' }); }"
+                      - textbox "Editor content;Press Alt+F1 for Accessibility Options." [active] [ref=e349]: "function criarPlanoVendas() { const doc = DocumentApp.create('📋 Plano de Vendas e Marketing — Abril 2026'); const body = doc.getBody(); const estiloTitulo = { [DocumentApp.Attribute.FONT_SIZE]: 22, [DocumentApp.Attribute.BOLD]: true, [DocumentApp.Attribute.FOREGROUND_COLOR]: '#1a1a2e' }; const estiloSecao = { [DocumentApp.Attribute.FO"
+              - generic:
+                - generic:
+                  - button "Fechar painel de logs de execução" [ref=e350] [cursor=pointer]:
+                    - generic [ref=e351]: close
+                  - tooltip [ref=e352]: Fechar registros de execução
+  - generic [ref=e353]:
+    - alert
+    - alert
+    - complementary
+    - complementary

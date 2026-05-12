@@ -1,0 +1,642 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - img [ref=e38]
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/list/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e51]:
+            - list [ref=e52]:
+              - listitem [ref=e54] [cursor=pointer]:
+                - link "Funil de vendas" [ref=e56]:
+                  - /url: /leads/list/pipeline/13368211
+                  - generic [ref=e58]: Funil de vendas
+              - listitem [ref=e60] [cursor=pointer]:
+                - link "Todos os leads" [ref=e62]:
+                  - /url: /leads/list/
+                  - generic [ref=e64]: Todos os leads
+          - listitem [ref=e66] [cursor=pointer]:
+            - link "Calendário 131" [ref=e68]:
+              - /url: /todo
+              - img [ref=e70]
+              - generic [ref=e72]: Calendário
+              - generic [ref=e76]: "131"
+          - listitem [ref=e77]:
+            - link "Listas" [ref=e79] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e81]
+              - generic [ref=e83]: Listas
+              - img [ref=e86]
+          - listitem [ref=e89] [cursor=pointer]:
+            - link "Agente de IA" [ref=e91]:
+              - /url: /settings/ai-agent/
+              - img [ref=e93]
+              - generic [ref=e95]: Agente de IA
+          - listitem [ref=e96]:
+            - link "Automações" [ref=e98] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e100]
+              - generic [ref=e102]: Automações
+              - img [ref=e105]
+          - listitem [ref=e107]:
+            - link "Insights" [ref=e109] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e111]
+              - generic [ref=e114]: Insights
+              - img [ref=e117]
+        - generic [ref=e119]: Integrações fixadas
+        - list [ref=e120]:
+          - listitem [ref=e122] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e124]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e127]
+              - generic [ref=e128]: WhatsApp Business
+          - listitem [ref=e130] [cursor=pointer]:
+            - link "TikTok" [ref=e132]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e135]
+              - generic [ref=e136]: TikTok
+      - list [ref=e140]:
+        - listitem [ref=e142] [cursor=pointer]:
+          - link "Configurações" [ref=e144]:
+            - /url: /settings/profile/
+            - img [ref=e146]
+            - generic [ref=e149]: Configurações
+        - listitem [ref=e150]:
+          - link "Ajuda" [ref=e152] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e154]
+            - generic [ref=e156]: Ajuda
+            - img [ref=e159]
+        - listitem [ref=e162] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e164]:
+            - /url: ""
+            - img [ref=e166]
+            - generic [ref=e168]: Enviar feedback
+        - listitem [ref=e170] [cursor=pointer]:
+          - link "Centro de Notificação 249" [ref=e172]:
+            - /url: /settings/profile/notifications
+            - img [ref=e174]
+            - generic [ref=e176]: Centro de Notificação
+            - generic [ref=e180]: "249"
+      - separator [ref=e181]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e183] [cursor=pointer]:
+        - img "Avatar" [ref=e186]
+        - generic [ref=e187]:
+          - generic [ref=e188]: Passo a passo uniformes
+          - generic [ref=e189]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e191]:
+      - generic: "Criada Fechadas Usuários Método de pagamento: Desconto: Motivo de perda: Pagamento: Tags"
+      - generic [ref=e192]:
+        - generic [ref=e193]:
+          - generic [ref=e195]:
+            - button "Análise de vendas"
+          - heading "Análise de vendas" [level=2] [ref=e197]
+        - generic [ref=e198]:
+          - generic [ref=e199]: leads
+          - generic [ref=e205]:
+            - generic [ref=e207]:
+              - generic [ref=e208]:
+                - generic [ref=e209]: Novo
+                - generic [ref=e210]: "12"
+              - generic [ref=e212]:
+                - generic [ref=e213]: dentro da etapa
+                - generic [ref=e214]: entrou na etapa
+                - generic [ref=e215]: Perda
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - generic [ref=e221]:
+                  - generic [ref=e222]: lead novo
+                  - link "1" [ref=e224] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104808511
+                  - link "R$0" [ref=e226] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104808511
+                - generic [ref=e228]: 0 , R$0
+              - generic [ref=e229]:
+                - generic [ref=e232]:
+                  - generic [ref=e233]: Lead Frio
+                  - link "583" [ref=e235] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109843
+                  - link "R$0" [ref=e237] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109843
+                - generic [ref=e239]: 0 , R$0
+              - generic [ref=e240]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]: Primeiro Contato
+                  - link "49" [ref=e246] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109831
+                  - link "R$0" [ref=e248] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109831
+                - generic [ref=e250]: 0 , R$0
+              - generic [ref=e251]:
+                - generic [ref=e254]:
+                  - generic [ref=e255]: Qualificado
+                  - link "24" [ref=e257] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109847
+                  - link "R$4.305" [ref=e259] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109847
+                - generic [ref=e261]: 0 , R$0
+              - generic [ref=e262]:
+                - generic [ref=e265]:
+                  - generic [ref=e266]: Enviar Orçamento
+                  - link "20" [ref=e268] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109851
+                  - link "R$0" [ref=e270] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109851
+                - generic [ref=e272]: 0 , R$0
+              - generic [ref=e273]:
+                - generic [ref=e276]:
+                  - generic [ref=e277]: ORÇAMENTO JESSICA
+                  - link "3" [ref=e279] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104249555
+                  - link "R$0" [ref=e281] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104249555
+                - generic [ref=e283]: 0 , R$0
+              - generic [ref=e284]:
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Negociando
+                  - link "61" [ref=e290] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109835
+                  - link "R$3.778" [ref=e292] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109835
+                - generic [ref=e294]: 0 , R$0
+              - generic [ref=e295]:
+                - generic [ref=e298]:
+                  - generic [ref=e299]: Desenvolver Layout
+                  - link "6" [ref=e301] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104096379
+                  - link "R$1.317" [ref=e303] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104096379
+                - generic [ref=e305]: 0 , R$0
+              - generic [ref=e306]:
+                - generic [ref=e309]:
+                  - generic [ref=e310]: Layout Aguardando aprovação
+                  - link "2" [ref=e312] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104096383
+                  - link "R$1.828" [ref=e314] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104096383
+                - generic [ref=e316]: 0 , R$0
+              - generic [ref=e317]:
+                - generic [ref=e320]:
+                  - generic [ref=e321]: Pedido Confirmado (finaceiro)
+                  - link "12" [ref=e323] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109839
+                  - link "R$0" [ref=e325] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103109839
+                - generic [ref=e327]: 0 , R$0
+              - generic [ref=e328]:
+                - generic [ref=e331]:
+                  - generic [ref=e332]: Em Produção
+                  - link "15" [ref=e334] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426723
+                  - link "R$9.035" [ref=e336] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426723
+                - generic [ref=e338]: 0 , R$0
+              - generic [ref=e339]:
+                - generic [ref=e342]:
+                  - generic [ref=e343]: Pedido Pronto para envio
+                  - link "1" [ref=e345] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426727
+                  - link "R$0" [ref=e347] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426727
+                - generic [ref=e349]: 0 , R$0
+              - generic [ref=e350]:
+                - generic [ref=e353]:
+                  - generic [ref=e354]: Ganho
+                  - link "5" [ref=e356] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426731
+                  - link "R$3.377" [ref=e358] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426731
+                - generic [ref=e360]: 0 , R$0
+              - generic [ref=e361]:
+                - generic [ref=e364]:
+                  - generic [ref=e365]: Perdido
+                  - link "4" [ref=e367] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426735
+                  - link "R$0" [ref=e369] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=103426735
+                - generic [ref=e371]: 0 , R$0
+              - generic [ref=e372]:
+                - generic [ref=e375]:
+                  - generic [ref=e376]: REMARKETING
+                  - link "7" [ref=e378] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104396707
+                  - link "R$0" [ref=e380] [cursor=pointer]:
+                    - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=104396707
+                - generic [ref=e382]: 0 , R$0
+              - generic [ref=e383]:
+                - generic [ref=e387]: Ganho
+                - generic [ref=e389]:
+                  - generic [ref=e390]: Leads perdidos
+                  - generic:
+                    - link:
+                      - /url: /leads/list/?filter_date_from=20%2F04%2F2026&filter_date_to=22%2F04%2F2026&filter_date_switch=closed&filter%5Bstatus_id%5D%5B0%5D=143
+              - generic [ref=e391]:
+                - generic [ref=e395]:
+                  - link "32" [ref=e397] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104808511&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e399] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104808511&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e404]:
+                  - link "41" [ref=e406] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109843&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e408] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109843&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e413]:
+                  - link "60" [ref=e415] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109831&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e417] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109831&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e422]:
+                  - link "52" [ref=e424] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109847&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e426] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109847&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e431]:
+                  - link "49" [ref=e433] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109851&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e435] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109851&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e440]:
+                  - link "36" [ref=e442] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104249555&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e444] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104249555&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e449]:
+                  - link "36" [ref=e451] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109835&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e453] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109835&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e458]:
+                  - link "23" [ref=e460] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104096379&moving%5Bpipeline_id%5D=13368211
+                  - link "R$1.317" [ref=e462] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104096379&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e467]:
+                  - link "19" [ref=e469] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104096383&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e471] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104096383&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e476]:
+                  - link "23" [ref=e478] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109839&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e480] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103109839&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e485]:
+                  - link "15" [ref=e487] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426723&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e489] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426723&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e494]:
+                  - link "11" [ref=e496] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426727&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e498] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426727&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e503]:
+                  - link "11" [ref=e505] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426731&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e507] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426731&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e512]:
+                  - link "7" [ref=e514] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426735&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e516] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=103426735&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e521]:
+                  - link "3" [ref=e523] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104396707&moving%5Bpipeline_id%5D=13368211
+                  - link "R$0" [ref=e525] [cursor=pointer]:
+                    - /url: /leads/list/?show_all_leads=y&moving%5Bdate_from%5D=1776654000&moving%5Bdate_to%5D=1776913199&moving%5Bstatus%5D=104396707&moving%5Bpipeline_id%5D=13368211
+                - generic [ref=e530]:
+                  - link "0" [ref=e532] [cursor=pointer]:
+                    - /url: /leads/list/?filter_date_from=20%2F04%2F2026&filter_date_to=22%2F04%2F2026&filter_date_switch=closed&filter%5Bstatus_id%5D%5B0%5D=142
+                  - link "R$0" [ref=e534] [cursor=pointer]:
+                    - /url: /leads/list/?filter_date_from=20%2F04%2F2026&filter_date_to=22%2F04%2F2026&filter_date_switch=closed&filter%5Bstatus_id%5D%5B0%5D=142
+        - generic [ref=e539]:
+          - generic [ref=e541]:
+            - generic [ref=e542] [cursor=pointer]: Todos os
+            - generic [ref=e543] [cursor=pointer]: Ativo
+            - generic [ref=e544] [cursor=pointer]: Fechadas
+          - generic [ref=e545]:
+            - generic [ref=e546] [cursor=pointer]: Por venda
+            - generic [ref=e547] [cursor=pointer]: Por quantidade
+          - generic [ref=e549]:
+            - list [ref=e551]:
+              - listitem [ref=e552]:
+                - generic [ref=e553]:
+                  - generic: 0d.
+              - listitem [ref=e554]:
+                - generic [ref=e555]:
+                  - generic: 0d.
+              - listitem [ref=e556]:
+                - generic [ref=e557]:
+                  - generic: 0d.
+              - listitem [ref=e558]:
+                - generic [ref=e559]:
+                  - generic: 0d.
+              - listitem [ref=e560]:
+                - generic [ref=e561]:
+                  - generic: 0d.
+              - listitem [ref=e562]:
+                - generic [ref=e563]:
+                  - generic: 0d.
+              - listitem [ref=e564]:
+                - generic [ref=e565]:
+                  - generic: 0d.
+              - listitem [ref=e566]:
+                - generic [ref=e567]:
+                  - generic: 0d.
+              - listitem [ref=e568]:
+                - generic [ref=e569]:
+                  - generic: 0d.
+              - listitem [ref=e570]:
+                - generic [ref=e571]:
+                  - generic: 0d.
+              - listitem [ref=e572]:
+                - generic [ref=e573]:
+                  - generic: 0d.
+              - listitem [ref=e574]:
+                - generic [ref=e575]:
+                  - generic: 0d.
+              - listitem [ref=e576]:
+                - generic [ref=e578]: 4d.
+              - listitem [ref=e579]:
+                - generic [ref=e580]:
+                  - generic: 0d.
+              - listitem [ref=e581]:
+                - generic [ref=e582]:
+                  - generic: 0d.
+              - listitem [ref=e583]:
+                - generic [ref=e585]: 35d.
+              - listitem [ref=e586]
+            - generic [ref=e588]:
+              - generic [ref=e590]: 39d.
+              - generic [ref=e591]: Média do ciclo de vida do lead
+          - list [ref=e595]:
+            - listitem [ref=e596]:
+              - generic [ref=e597]:
+                - generic [ref=e600]: 100%
+                - generic [ref=e603]:
+                  - generic [ref=e604]: Etapa de leads de entrada
+                  - generic [ref=e605]:
+                    - link "7" [ref=e606] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e607]:
+              - generic [ref=e608]:
+                - generic [ref=e611]: 100%
+                - generic [ref=e614]:
+                  - generic [ref=e615]: lead novo
+                  - generic [ref=e616]:
+                    - link "7" [ref=e617] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e618]:
+              - generic [ref=e619]:
+                - generic [ref=e622]: 100%
+                - generic [ref=e625]:
+                  - generic [ref=e626]: Lead Frio
+                  - generic [ref=e627]:
+                    - link "7" [ref=e628] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e629]:
+              - generic [ref=e630]:
+                - generic [ref=e633]: 43%
+                - generic [ref=e636]:
+                  - generic [ref=e637]: Primeiro Contato
+                  - generic [ref=e638]:
+                    - link "3" [ref=e639] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e640]:
+              - generic [ref=e641]:
+                - generic [ref=e644]: 43%
+                - generic [ref=e647]:
+                  - generic [ref=e648]: Qualificado
+                  - generic [ref=e649]:
+                    - link "3" [ref=e650] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e651]:
+              - generic [ref=e652]:
+                - generic [ref=e655]: 43%
+                - generic [ref=e658]:
+                  - generic [ref=e659]: Enviar Orçamento
+                  - generic [ref=e660]:
+                    - link "3" [ref=e661] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e662]:
+              - generic [ref=e663]:
+                - generic [ref=e666]: 29%
+                - generic [ref=e669]:
+                  - generic [ref=e670]: ORÇAMENTO JESSICA
+                  - generic [ref=e671]:
+                    - link "2" [ref=e672] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e673]:
+              - generic [ref=e674]:
+                - generic [ref=e677]: 29%
+                - generic [ref=e680]:
+                  - generic [ref=e681]: Negociando
+                  - generic [ref=e682]:
+                    - link "2" [ref=e683] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e684]:
+              - generic [ref=e685]:
+                - generic [ref=e688]: 29%
+                - generic [ref=e691]:
+                  - generic [ref=e692]: Desenvolver Layout
+                  - generic [ref=e693]:
+                    - link "2" [ref=e694] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e695]:
+              - generic [ref=e696]:
+                - generic [ref=e699]: 29%
+                - generic [ref=e702]:
+                  - generic [ref=e703]: Layout Aguardando aprovação
+                  - generic [ref=e704]:
+                    - link "2" [ref=e705] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e706]:
+              - generic [ref=e707]:
+                - generic [ref=e710]: 29%
+                - generic [ref=e713]:
+                  - generic [ref=e714]: Pedido Confirmado (finaceiro)
+                  - generic [ref=e715]:
+                    - link "2" [ref=e716] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&stp%5B9%5D=104096383&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e717]:
+              - generic [ref=e718]:
+                - generic [ref=e721]: 29%
+                - generic [ref=e724]:
+                  - generic [ref=e725]: Em Produção
+                  - generic [ref=e726]:
+                    - link "2" [ref=e727] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&stp%5B9%5D=104096383&stp%5B10%5D=103109839&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e728]:
+              - generic [ref=e729]:
+                - generic [ref=e732]: 29%
+                - generic [ref=e735]:
+                  - generic [ref=e736]: Pedido Pronto para envio
+                  - generic [ref=e737]:
+                    - link "2" [ref=e738] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&stp%5B9%5D=104096383&stp%5B10%5D=103109839&stp%5B11%5D=103426723&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e739]:
+              - generic [ref=e740]:
+                - generic [ref=e743]: 29%
+                - generic [ref=e746]:
+                  - generic [ref=e747]: Ganho
+                  - generic [ref=e748]:
+                    - link "2" [ref=e749] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&stp%5B9%5D=104096383&stp%5B10%5D=103109839&stp%5B11%5D=103426723&stp%5B12%5D=103426727&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e750]:
+              - generic [ref=e751]:
+                - generic [ref=e754]: 29%
+                - generic [ref=e757]:
+                  - generic [ref=e758]: Perdido
+                  - generic [ref=e759]:
+                    - link "2" [ref=e760] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&stp%5B9%5D=104096383&stp%5B10%5D=103109839&stp%5B11%5D=103426723&stp%5B12%5D=103426727&stp%5B13%5D=103426731&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e761]:
+              - generic [ref=e762]:
+                - generic [ref=e765]: 29%
+                - generic [ref=e768]:
+                  - generic [ref=e769]: REMARKETING
+                  - generic [ref=e770]:
+                    - link "2" [ref=e771] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&filter%5Bstatus_id%5D%5B1%5D=142&stp%5B0%5D=103109571&stp%5B1%5D=104808511&stp%5B2%5D=103109843&stp%5B3%5D=103109831&stp%5B4%5D=103109847&stp%5B5%5D=103109851&stp%5B6%5D=104249555&stp%5B7%5D=103109835&stp%5B8%5D=104096379&stp%5B9%5D=104096383&stp%5B10%5D=103109839&stp%5B11%5D=103426723&stp%5B12%5D=103426727&stp%5B13%5D=103426731&stp%5B14%5D=103426735&useFilter=y
+                    - text: leads R$0
+            - listitem [ref=e772]:
+              - generic [ref=e773]:
+                - generic [ref=e776]: 14%
+                - generic [ref=e779]:
+                  - generic [ref=e780]: Venda ganha
+                  - generic [ref=e781]:
+                    - link "1" [ref=e782] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=142&useFilter=y
+                    - text: lead R$0
+            - listitem [ref=e783]:
+              - generic [ref=e784]:
+                - generic [ref=e787]: 86%
+                - generic [ref=e790]:
+                  - generic [ref=e791]: Venda perdida
+                  - generic [ref=e792]:
+                    - link "6" [ref=e793] [cursor=pointer]:
+                      - /url: /leads/list/?filter%5Bstatus_id%5D%5B0%5D=143&useFilter=y
+                    - text: leads R$0
+        - generic [ref=e794]:
+          - generic [ref=e795]: Etapa de leads de entrada
+          - generic [ref=e796]:
+            - generic [ref=e797]:
+              - generic [ref=e798]: 2 dias
+              - generic [ref=e802]: Tempo médio para processar uma solicitação
+            - list [ref=e805]:
+              - listitem [ref=e806]:
+                - generic [ref=e807]:
+                  - generic [ref=e808]:
+                    - generic [ref=e810]:
+                      - generic [ref=e811]: "207"
+                      - generic [ref=e812]: Bate-papo
+                    - generic [ref=e813]: "207"
+                  - generic [ref=e814]: pedidos recebidos
+              - listitem [ref=e815]:
+                - generic [ref=e816]:
+                  - generic [ref=e820]: "134"
+                  - generic [ref=e821]: convertido em leads
+        - generic [ref=e823]:
+          - generic [ref=e829]:
+            - generic [ref=e831]: Vendas totais
+            - generic [ref=e832]: "0"
+            - generic [ref=e833]: R$0
+          - generic [ref=e836]:
+            - heading "Vendas em potencial" [level=2] [ref=e837]
+            - generic [ref=e840]:
+              - generic [ref=e842]:
+                - text: Com base nas suas estatísticas de vendas, podemos supor sobre vendas futuras e o momento do fechamento dos leads. Os relatórios estão disponíveis no plano avançado.
+                - link "Fazer upgrade" [ref=e844] [cursor=pointer]:
+                  - /url: /settings/pay/
+                  - button "Fazer upgrade" [ref=e845]:
+                    - generic [ref=e847]: Fazer upgrade
+              - generic [ref=e848]: Avançado
+          - list [ref=e850]:
+            - listitem [ref=e851]:
+              - generic [ref=e852]: Hoje
+              - generic [ref=e854]:
+                - generic [ref=e856]: R$0
+                - generic [ref=e858]: 0 leads
+            - listitem [ref=e859]:
+              - generic [ref=e860]: 5 dias
+              - generic [ref=e862]:
+                - generic [ref=e864]: R$0
+                - generic [ref=e866]: 0 leads
+            - listitem [ref=e867]:
+              - generic [ref=e868]: 10 dias
+              - generic [ref=e870]:
+                - generic [ref=e872]: R$0
+                - generic [ref=e874]: 0 leads
+            - listitem [ref=e875]:
+              - generic [ref=e876]: 15 dias
+              - generic [ref=e878]:
+                - generic [ref=e880]: R$0
+                - generic [ref=e882]: 0 leads
+    - generic [ref=e885]:
+      - img
+      - button [ref=e886]:
+        - img [ref=e887]
+        - img [ref=e889]
+        - img [ref=e893]
+      - generic [ref=e895]:
+        - generic [ref=e896]:
+          - generic [ref=e897]:
+            - img [ref=e898]
+            - generic [ref=e900]: Kommo Copilot
+          - generic [ref=e901]:
+            - button [ref=e902] [cursor=pointer]:
+              - img [ref=e905]
+            - button [ref=e907] [cursor=pointer]:
+              - img [ref=e910]
+            - button [ref=e912] [cursor=pointer]:
+              - img [ref=e915]
+        - button "Novo chat" [ref=e917]:
+          - generic [ref=e918]:
+            - generic [ref=e919]: Novo chat
+            - img [ref=e920]
+        - generic [ref=e945]:
+          - generic [ref=e946]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e949]
+            - button [disabled] [ref=e952]:
+              - img [ref=e955]
+          - generic [ref=e957]: O conteúdo gerado por IA pode ser impreciso

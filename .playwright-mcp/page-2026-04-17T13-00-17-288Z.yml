@@ -1,0 +1,147 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - link [ref=e202] [cursor=pointer]:
+      - /url: "#main"
+      - text: Pular para o conteúdo principal
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - navigation [ref=e203]:
+          - heading [level=2] [ref=e204]:
+            - link [ref=e205] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e104]:
+                - img [ref=e105]
+                - img [ref=e206]
+          - img [ref=e111]: search
+          - link [ref=e207] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e114]: gmp_nav20_overview
+          - menu [ref=e115]:
+            - menuitem [ref=e208]:
+              - img [ref=e118] [cursor=pointer]: settings
+        - separator [ref=e119]
+        - group [ref=e121]:
+          - link [ref=e209] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e124]: gmp_nav20_database
+        - separator [ref=e125]
+      - button [ref=e210] [cursor=pointer]:
+        - img [ref=e129]: chevron_left
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button [ref=e211] [cursor=pointer]:
+          - img [ref=e133]: menu
+        - button [ref=e212] [cursor=pointer]:
+          - text: painel-vendas-comercial
+          - img [ref=e138]: arrow_drop_down
+      - button [ref=e213] [cursor=pointer]:
+        - img [ref=e142]: more_vert
+    - main [ref=e16]:
+      - generic [ref=e146]:
+        - region [ref=e214]:
+          - generic [ref=e150]:
+            - heading [level=2] [ref=e215]: Utilização e faturamento
+            - tablist [ref=e216]:
+              - generic [ref=e161]:
+                - tab [ref=e217] [cursor=pointer]:
+                  - generic [ref=e165]: Visão geral
+                - tab [selected] [ref=e218] [cursor=pointer]:
+                  - generic [ref=e171]: Detalhes e configurações
+                - tab [ref=e219] [cursor=pointer]:
+                  - generic [ref=e177]: Inscrições
+        - generic [ref=e183]:
+          - heading [level=2] [ref=e220]: Plano de faturamento do Firebase
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]: Spark
+              - generic [ref=e188]: Sem custos financeiros
+            - generic [ref=e189]:
+              - button [ref=e221]:
+                - generic [ref=e191]: Modificar plano
+              - link [ref=e222] [cursor=pointer]:
+                - /url: https://firebase.google.com/pricing?hl=pt-BR&authuser=0
+                - generic [ref=e195]: Ver todos os planos
+                - text: open_in_new
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - button [ref=e224] [cursor=pointer]:
+          - img [ref=e47]
+          - img [ref=e53]
+        - button [ref=e225] [cursor=pointer]:
+          - img [ref=e56]: notifications
+        - button [ref=e226] [cursor=pointer]:
+          - img [ref=e66]: spark
+        - button [ref=e227] [cursor=pointer]:
+          - img [ref=e74]: contact_support
+        - separator [ref=e77]
+        - button [ref=e228] [cursor=pointer]:
+          - img [ref=e79]:
+            - img [ref=e80]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e84]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button [ref=e229] [cursor=pointer]:
+          - img [ref=e199]: school
+      - button [ref=e230] [cursor=pointer]:
+        - img [ref=e89]: dark_mode
+  - dialog "Planos de preços do Firebase" [ref=e234]:
+    - generic [ref=e239]:
+      - generic [ref=e240]:
+        - heading "Planos de preços do Firebase" [active] [level=2] [ref=e241]
+        - button "Fechar caixa de diálogo" [ref=e242] [cursor=pointer]:
+          - img [ref=e243]: close
+      - generic [ref=e246]:
+        - generic [ref=e251]:
+          - img [ref=e252]: auto_awesome
+          - generic [ref=e253]: Ganhe US$ 300 em créditos para começar a usar o Firebase!
+          - link "Saiba mais sobre os créditos gratuitos (abre em uma nova guia)" [ref=e255] [cursor=pointer]:
+            - /url: https://firebase.blog/posts/2024/11/claim-300-to-get-started
+            - text: Saiba mais open_in_new
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - generic [ref=e262]: Sem custos (US$ 0/mês)
+                  - generic [ref=e263]: Plano Spark
+                  - generic [ref=e264]: Uso limitado e cota de serviços pagos
+                - button "Alterne a exibição dos detalhes do plano" [ref=e265] [cursor=pointer]:
+                  - img [ref=e266]: expand_more
+                - generic [ref=e269]: Plano atual
+              - list:
+                - listitem [ref=e270]:
+                  - img [ref=e271]: info
+                  - generic [ref=e272]: Uso total de serviços sem custos financeiros e cota de uso limitada para serviços pagos do Firebase
+                - listitem [ref=e273]:
+                  - img [ref=e274]: close
+                  - generic [ref=e275]: Não é possível usar outros serviços do Google Cloud
+                - listitem [ref=e276]:
+                  - img [ref=e277]: check
+                  - generic [ref=e278]:
+                    - text: Incluídos em todos os planos
+                    - text: Analytics, Notificações, Crash Reporting, suporte e muito mais
+            - generic [ref=e280]:
+              - generic [ref=e281]:
+                - generic [ref=e282]:
+                  - generic [ref=e283]: Pagamento por utilização
+                  - generic [ref=e284]: Plano Blaze
+                  - generic [ref=e285]: Uso estendido e cota de serviços pagos
+                - button "Alterne a exibição dos detalhes do plano" [ref=e286] [cursor=pointer]:
+                  - img [ref=e287]: expand_more
+                - 'button "Escolha um plano: Blaze" [ref=e291]':
+                  - generic [ref=e292]: Selecionar plano
+              - list:
+                - listitem [ref=e295]:
+                  - img [ref=e296]: info
+                  - generic [ref=e297]: Inclui cota e serviços sem custo financeiro para serviços pagos. No futuro, é possível fazer o pagamento por uso pela utilização adicional de serviços pagos. Cancele quando quiser.
+                - listitem [ref=e298]:
+                  - img [ref=e299]:
+                    - img [ref=e300]
+                  - generic [ref=e305]: Estender para usar serviços adicionais do Google Cloud
+                - listitem [ref=e306]:
+                  - img [ref=e307]: check
+                  - generic [ref=e308]:
+                    - text: Incluídos em todos os planos
+                    - text: Analytics, Notificações, Crash Reporting, suporte e muito mais
+          - link "Ver a comparação de todos os planos (abre a documentação do Firebase em uma nova guia)" [ref=e309] [cursor=pointer]:
+            - /url: https://firebase.google.com/pricing?hl=pt-BR&authuser=0
+            - text: Ver a comparação de todos os planos open_in_new

@@ -1,0 +1,261 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e863] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e14]
+          - generic [ref=e15]: Apps Script
+        - generic [ref=e16]:
+          - generic [ref=e19]:
+            - button [ref=e864] [cursor=pointer]: Projeto sem título
+            - generic [ref=e862]: cloud_done
+          - generic [ref=e38]:
+            - button [ref=e865] [cursor=pointer]:
+              - generic [ref=e458]:
+                - text: Implantar
+                - generic [ref=e459]: 
+            - button [ref=e866] [cursor=pointer]:
+              - generic [ref=e158]: help_outline
+        - generic [ref=e45]:
+          - button [ref=e867] [cursor=pointer]:
+            - img [ref=e50]
+          - button [ref=e868] [cursor=pointer]:
+            - img [ref=e57]
+            - img [ref=e63]
+    - generic [ref=e162]:
+      - navigation [ref=e869]:
+        - link [ref=e870] [cursor=pointer]:
+          - generic [ref=e167]: info_outline
+          - generic [ref=e168]: Visão geral
+        - link [ref=e871] [cursor=pointer]:
+          - generic [ref=e171]: code
+          - generic [ref=e172]: Editor
+        - link [ref=e872] [cursor=pointer]:
+          - generic [ref=e175]: history
+          - generic [ref=e176]: Histórico do projeto
+        - link [ref=e873] [cursor=pointer]:
+          - generic [ref=e179]: alarm
+          - generic [ref=e180]: Acionadores
+        - link [ref=e874] [cursor=pointer]:
+          - generic [ref=e183]: playlist_play
+          - generic [ref=e184]: Execuções
+        - link [ref=e875] [cursor=pointer]:
+          - generic [ref=e187]: settings
+          - generic [ref=e188]: Configurações do projeto
+      - generic [ref=e189]:
+        - heading [level=1] [ref=e876]: Editor
+        - generic [ref=e191]:
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - heading [level=2] [ref=e877]: Arquivos
+              - generic [ref=e197]:
+                - button [disabled] [ref=e878]:
+                  - generic [ref=e202]: sort_by_alpha
+                - button [ref=e879] [cursor=pointer]:
+                  - generic [ref=e207]: add
+            - listbox [ref=e880]:
+              - option [ref=e881] [cursor=pointer]:
+                - generic [ref=e882]: Código.gs
+                - button [ref=e883]:
+                  - button [ref=e884]:
+                    - generic [ref=e216]: 
+            - generic [ref=e217]:
+              - heading [level=2] [ref=e885]: Bibliotecas
+              - button [ref=e886] [cursor=pointer]:
+                - generic [ref=e224]: add
+            - generic [ref=e225]:
+              - heading [level=2] [ref=e887]: Serviços
+              - button [ref=e888] [cursor=pointer]:
+                - generic [ref=e232]: add
+          - generic [ref=e239]:
+            - region [ref=e240]:
+              - generic [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e245]:
+                    - button [disabled]:
+                      - generic: undo
+                  - generic [ref=e248]:
+                    - button [disabled]:
+                      - generic: redo
+                - generic [ref=e252]:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e836]:
+                  - button [ref=e889]:
+                    - generic [ref=e843]: play_arrow
+                    - generic [ref=e844]: Executar
+                  - button [ref=e890]:
+                    - img [ref=e851]
+                    - generic [ref=e854]: Depuração
+                  - listbox [ref=e891] [cursor=pointer]:
+                    - option [selected] [ref=e892]: doGet
+                - button [ref=e893]:
+                  - generic [ref=e283]: Registro de execução
+            - generic [ref=e285]:
+              - main [ref=e289]:
+                - generic [ref=e290]: .
+                - generic [ref=e292]:
+                  - iframe [ref=e293]:
+                    
+                  - code [ref=e295]:
+                    - generic [ref=e296]:
+                      - generic [ref=e299]:
+                        - generic [ref=e705]:
+                          - generic [ref=e707] [cursor=pointer]: 
+                          - generic [ref=e708]: "1"
+                        - generic [ref=e710]: "2"
+                        - generic [ref=e712]: "3"
+                        - generic [ref=e715]: "4"
+                        - generic [ref=e717]: "5"
+                        - generic [ref=e719]: "6"
+                        - generic [ref=e721]: "7"
+                        - generic [ref=e724]: "8"
+                        - generic [ref=e727]: "9"
+                        - generic [ref=e729]: "10"
+                        - generic [ref=e731]: "11"
+                        - generic [ref=e735]: "12"
+                        - generic [ref=e736]:
+                          - generic [ref=e737] [cursor=pointer]: 
+                          - generic [ref=e738]: "13"
+                        - generic [ref=e739]:
+                          - generic [ref=e740] [cursor=pointer]: 
+                          - generic [ref=e741]: "14"
+                        - generic [ref=e743]: "15"
+                        - generic [ref=e744]:
+                          - generic [ref=e745] [cursor=pointer]: 
+                          - generic [ref=e746]: "16"
+                      - generic [ref=e398]:
+                        - generic [ref=e787]: /**
+                        - generic [ref=e789]: "* SalesBoard Pro — Google Apps Script"
+                        - generic [ref=e791]: "* Cole este código no Apps Script da"
+                        - generic [ref=e793]: sua planilha Google.
+                        - generic [ref=e795]: "*"
+                        - generic [ref=e797]: "* FORMATO DA PLANILHA:"
+                        - generic [ref=e799]: "* Aba: \"Vendas\""
+                        - generic [ref=e801]: "* Linha 1 (cabeçalho): data |"
+                        - generic [ref=e803]: Vendedor1 | Vendedor2 | ...
+                        - generic [ref=e805]: "* Linhas seguintes: 11/04/2026 |"
+                        - generic [ref=e807]: 1500 | 2300 | ...
+                        - generic [ref=e809]: "*/"
+                        - generic [ref=e812]: var SPREADSHEET_ID =
+                        - generic [ref=e814]: "'1-SLpaeXztHabC58_6a9nZESUKHldTCb0ZwfTf"
+                        - generic [ref=e816]: "-3odVc';"
+                        - generic [ref=e819]: "function doGet(e) {"
+                        - generic [ref=e821]: "try {"
+                        - generic [ref=e823]: var result = getDashboardData(e);
+                        - generic [ref=e825]: return ContentService
+                      - textbox [ref=e894]: "/** * SalesBoard Pro — Google Apps Script * Cole este código no Apps Script da sua planilha Google. * * FORMATO DA PLANILHA: * Aba: \"Vendas\" * Linha 1 (cabeçalho): data | Vendedor1 | Vendedor2 | ... * Linhas seguintes: 11/04/2026 |"
+              - button [ref=e895] [cursor=pointer]:
+                - generic [ref=e446]: close
+              - tooltip [ref=e447]: Fechar registros de execução
+    - dialog "Gerenciar implantações" [ref=e897]:
+      - heading "Gerenciar implantações" [level=2] [ref=e898]
+      - generic [ref=e900]:
+        - generic [ref=e901]:
+          - generic [ref=e902]:
+            - generic [ref=e903]:
+              - generic [ref=e905]: Ativo
+              - listbox "Lista de implantações ativas" [ref=e908]:
+                - option "vendas catei" [ref=e909] [cursor=pointer]:
+                  - generic [ref=e910]: vendas catei
+            - generic [ref=e911]:
+              - generic [ref=e913]: Arquivados
+              - generic [ref=e916]: Nenhuma implantação arquivada
+          - generic [ref=e917]:
+            - generic [ref=e918]:
+              - generic [ref=e919]: Configuração
+              - generic [ref=e920]:
+                - generic [ref=e921] [cursor=pointer]:
+                  - generic [ref=e922]: help_outline
+                  - link "Saiba mais sobre as implantações" [ref=e923]:
+                    - /url: https://developers.google.com/apps-script/concepts/deployments
+                - tooltip [ref=e924]: Saiba mais sobre as implantações
+              - generic [ref=e926]:
+                - button "Editar" [ref=e927] [cursor=pointer]:
+                  - generic [ref=e928]: edit
+                - tooltip [ref=e929]: Editar
+              - generic [ref=e931]:
+                - button "Arquivar implantação" [ref=e932] [cursor=pointer]:
+                  - generic [ref=e933]: archive
+                - tooltip [ref=e934]: Arquivar implantação
+            - generic [ref=e936]:
+              - generic [ref=e938]:
+                - generic:
+                  - combobox "Versão Versão 1 em 11 de abr. de 2026, 14:33" [disabled]:
+                    - generic:
+                      - generic:
+                        - generic: Versão
+                    - generic:
+                      - generic: Versão 1 em 11 de abr. de 2026, 14:33
+                    - generic:
+                      - img
+              - generic [ref=e940]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Descrição
+                  - textbox "Descrição" [disabled] [ref=e941]: vendas catei
+              - generic [ref=e943]:
+                - generic [ref=e944]: Código de implantação
+                - generic [ref=e945]:
+                  - generic [ref=e948]: AKfycbxGA4AZc_Dg4BkMKuCx9eOKT6XR_0Ox4j05WJhhcEiLLXMRT3hJQ08TaVzGntHtPEBM
+                  - button "Copiar o código da implantação." [ref=e951]:
+                    - generic [ref=e954]: content_copy
+                    - generic [ref=e955]: Copiar
+              - generic [ref=e957]:
+                - generic [ref=e958]: App da Web
+                - generic [ref=e959]:
+                  - generic [ref=e960]: URL
+                  - generic [ref=e961]:
+                    - link "https://script.google.com/macros/s/AKfycbxGA4AZc_Dg4BkMKuCx9eOKT6XR_0Ox4j05WJhhcEiLLXMRT3hJQ08TaVzGntHtPEBM/exec" [ref=e965] [cursor=pointer]:
+                      - /url: https://script.google.com/macros/s/AKfycbxGA4AZc_Dg4BkMKuCx9eOKT6XR_0Ox4j05WJhhcEiLLXMRT3hJQ08TaVzGntHtPEBM/exec
+                    - button "Copiar o URL do app da Web" [ref=e968]:
+                      - generic [ref=e971]: content_copy
+                      - generic [ref=e972]: Copiar
+                - generic [ref=e974]:
+                  - generic:
+                    - combobox "Executar como Eu (sharksollutions@gmail.com)" [disabled]:
+                      - generic:
+                        - generic:
+                          - generic: Executar como
+                      - generic:
+                        - generic: Eu (sharksollutions@gmail.com)
+                      - generic:
+                        - img
+                - generic [ref=e975]: O app da Web será autorizado a usar os dados da sua conta.
+                - generic [ref=e977]:
+                  - generic:
+                    - combobox "Quem pode acessar Qualquer pessoa" [disabled]:
+                      - generic:
+                        - generic:
+                          - generic: Quem pode acessar
+                      - generic:
+                        - generic: Qualquer pessoa
+                      - generic:
+                        - img
+              - generic [ref=e978]:
+                - generic [ref=e979]: Biblioteca
+                - generic [ref=e981]:
+                  - generic [ref=e982]: URL
+                  - generic [ref=e983]:
+                    - link "https://script.google.com/macros/library/d/1YO2LcB9PPd8H6594neGsbb_FbUg9ACMBDiWFE3IXQuzItZ8LXvNMo5ys/1" [ref=e987] [cursor=pointer]:
+                      - /url: https://script.google.com/macros/library/d/1YO2LcB9PPd8H6594neGsbb_FbUg9ACMBDiWFE3IXQuzItZ8LXvNMo5ys/1
+                    - button "Copiar o URL da biblioteca" [ref=e990]:
+                      - generic [ref=e993]: content_copy
+                      - generic [ref=e994]: Copiar
+                - generic [ref=e995]: Para permitir que outros grupos e pessoas usem este projeto como uma biblioteca, compartilhe o projeto com eles.
+        - generic [ref=e996]:
+          - button "Cancelar" [ref=e998]:
+            - generic [ref=e1001]: Cancelar
+          - generic [ref=e1002]:
+            - button "Implantar" [disabled]:
+              - generic: Implantar
+  - generic: Salvando o projeto...
+  - generic [ref=e449]:
+    - alert
+    - alert
+    - complementary
+    - complementary

@@ -1,0 +1,146 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e396] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - button [ref=e397] [cursor=pointer]: Untitled project
+            - generic [ref=e395]: cloud_done
+          - generic [ref=e26]:
+            - button [ref=e398] [cursor=pointer]:
+              - generic [ref=e34]:
+                - text: Deploy
+                - generic [ref=e35]: 
+            - button [ref=e399] [cursor=pointer]:
+              - generic [ref=e40]: person_add
+            - button [ref=e400] [cursor=pointer]:
+              - generic [ref=e45]: help_outline
+        - generic [ref=e47]:
+          - button [ref=e401] [cursor=pointer]:
+            - img [ref=e52]
+          - button [ref=e402] [cursor=pointer]:
+            - img [ref=e59]
+    - generic [ref=e61]:
+      - navigation [ref=e403]:
+        - link [ref=e404] [cursor=pointer]:
+          - generic [ref=e66]: info_outline
+          - generic [ref=e67]: Overview
+        - link [ref=e405] [cursor=pointer]:
+          - generic [ref=e70]: code
+          - generic [ref=e71]: Editor
+        - link [ref=e406] [cursor=pointer]:
+          - generic [ref=e74]: history
+          - generic [ref=e75]: Project History
+        - link [ref=e407] [cursor=pointer]:
+          - generic [ref=e78]: alarm
+          - generic [ref=e79]: Triggers
+        - link [ref=e408] [cursor=pointer]:
+          - generic [ref=e82]: playlist_play
+          - generic [ref=e83]: Executions
+        - link [ref=e409] [cursor=pointer]:
+          - generic [ref=e86]: settings
+          - generic [ref=e87]: Project Settings
+      - generic [ref=e88]:
+        - heading [level=1] [ref=e410]: Editor
+        - generic [ref=e90]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - heading [level=2] [ref=e411]: Files
+              - generic [ref=e96]:
+                - button [disabled] [ref=e412]:
+                  - generic [ref=e101]: sort_by_alpha
+                - button [ref=e413] [cursor=pointer]:
+                  - generic [ref=e106]: add
+            - listbox [ref=e414]:
+              - option [ref=e415] [cursor=pointer]:
+                - generic [ref=e416]: Code.gs
+                - button [ref=e417]:
+                  - button [ref=e418]:
+                    - generic [ref=e115]: 
+            - generic [ref=e116]:
+              - heading [level=2] [ref=e419]: Libraries
+              - button [ref=e420] [cursor=pointer]:
+                - generic [ref=e123]: add
+            - generic [ref=e124]:
+              - heading [level=2] [ref=e421]: Services
+              - button [ref=e422] [cursor=pointer]:
+                - generic [ref=e131]: add
+          - generic [ref=e138]:
+            - region [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e144]:
+                    - button [disabled]:
+                      - generic: undo
+                  - generic [ref=e147]:
+                    - button [disabled]:
+                      - generic: redo
+                - generic [ref=e151]:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e369]:
+                  - generic [ref=e372]:
+                    - button [disabled]:
+                      - generic: play_arrow
+                      - generic: Run
+                  - generic [ref=e380]:
+                    - button [disabled]:
+                      - img
+                      - generic: Debug
+                  - listbox [disabled] [ref=e423]:
+                    - option [disabled] [selected] [ref=e424]: criarPlanoDeAcao
+                  - button [ref=e428]:
+                    - generic [ref=e431]: stop
+                    - generic [ref=e432]: Stop
+                - button [ref=e433]:
+                  - generic [ref=e167]: Execution log
+            - generic [ref=e169]:
+              - main [ref=e173]:
+                - generic [ref=e174]: .
+                - generic [ref=e176]:
+                  - iframe [ref=e177]:
+                    
+                  - code [ref=e179]:
+                    - generic [ref=e180]:
+                      - generic [ref=e183]:
+                        - generic [ref=e231]:
+                          - generic [ref=e233] [cursor=pointer]: 
+                          - generic [ref=e234]: "1"
+                        - generic [ref=e236]: "2"
+                        - generic [ref=e238]: "3"
+                      - generic [ref=e200]:
+                        - generic [ref=e318]: "function criarPlanoDeAcao() {"
+                        - generic [ref=e321]: const doc = DocumentApp.create
+                        - generic [ref=e323]: ('Plano de Acao - Reuniao 30/03/
+                        - generic [ref=e325]: 2026');
+                      - textbox [ref=e434]: "function criarPlanoDeAcao() { const doc = DocumentApp.create('Plano de Acao - Reuniao 30/03/2026'); const body = doc.getBody(); body.clear(); const AZUL = '#1a3a5c'; const VERDE = '#1e5631';"
+              - generic [ref=e436]:
+                - complementary [ref=e438]:
+                  - generic [ref=e440]: Execution log
+                - button [ref=e474] [cursor=pointer]:
+                  - generic [ref=e212]: close
+                - tooltip [ref=e213]: Close execution logs
+    - dialog "Authorization required" [ref=e476]:
+      - heading "Authorization required" [level=2] [ref=e477]:
+        - generic [ref=e478]: Authorization required
+      - generic [ref=e479]:
+        - generic [ref=e480]: This app might not work as expected without providing all requested
+        - generic [ref=e481]: permissions.
+      - generic [ref=e482]:
+        - button "Cancel" [active] [ref=e484] [cursor=pointer]:
+          - generic [ref=e486]: Cancel
+        - button "Review permissions" [ref=e488] [cursor=pointer]:
+          - generic [ref=e490]: Review permissions
+  - generic: Saving project...
+  - generic [ref=e214]:
+    - alert
+    - alert
+    - complementary
+    - complementary
+  - generic [ref=e392]: Saving project...

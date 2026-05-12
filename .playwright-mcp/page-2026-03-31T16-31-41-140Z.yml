@@ -1,0 +1,172 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Google Apps Script" [ref=e10] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - button "Rename" [ref=e18] [cursor=pointer]: Untitled project
+            - generic [ref=e22]:
+              - generic [ref=e23]: cloud_done
+              - text: Saved to Drive
+          - generic [ref=e26]:
+            - button "Deploy" [ref=e31] [cursor=pointer]:
+              - generic [ref=e34]:
+                - text: Deploy
+                - generic [ref=e35]: 
+            - button "Share this project with others" [ref=e39] [cursor=pointer]:
+              - generic [ref=e40]: person_add
+            - button "Support" [ref=e42] [cursor=pointer]:
+              - generic [ref=e45]: help_outline
+        - generic [ref=e47]:
+          - button "Google apps" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - 'button "Google Account: Gustavo Oliveira (gustaoliveiraoficial@gmail.com)" [ref=e57] [cursor=pointer]':
+            - img [ref=e59]
+    - generic [ref=e61]:
+      - navigation "Apps Script project pages" [ref=e63]:
+        - link "Overview" [ref=e64] [cursor=pointer]:
+          - generic [ref=e66]: info_outline
+          - generic [ref=e67]: Overview
+        - link "Editor" [ref=e68] [cursor=pointer]:
+          - generic [ref=e70]: code
+          - generic [ref=e71]: Editor
+        - link "Project History" [ref=e72] [cursor=pointer]:
+          - generic [ref=e74]: history
+          - generic [ref=e75]: Project History
+        - link "Triggers" [ref=e76] [cursor=pointer]:
+          - generic [ref=e78]: alarm
+          - generic [ref=e79]: Triggers
+        - link "Executions" [ref=e80] [cursor=pointer]:
+          - generic [ref=e82]: playlist_play
+          - generic [ref=e83]: Executions
+        - link "Project Settings" [ref=e84] [cursor=pointer]:
+          - generic [ref=e86]: settings
+          - generic [ref=e87]: Project Settings
+      - generic [ref=e88]:
+        - heading "Editor" [level=1] [ref=e89]
+        - generic [ref=e90]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - heading "Files" [level=2] [ref=e94]
+              - generic [ref=e96]:
+                - button "Sort files alphabetically" [disabled] [ref=e98]:
+                  - generic [ref=e101]: sort_by_alpha
+                - button "Add a file" [ref=e103] [cursor=pointer]:
+                  - generic [ref=e106]: add
+            - listbox "Project files" [ref=e108]:
+              - option "Code.gs" [ref=e109] [cursor=pointer]:
+                - generic "Code.gs" [ref=e110]
+                - button "File operations menu for Code.gs." [ref=e111]:
+                  - button "File operations menu for Code.gs." [ref=e112]:
+                    - generic [ref=e115]: 
+            - generic [ref=e116]:
+              - heading "Libraries" [level=2] [ref=e117]
+              - button "Add a library" [ref=e120] [cursor=pointer]:
+                - generic [ref=e123]: add
+            - generic:
+              - listbox "Library Dependencies"
+            - generic [ref=e124]:
+              - heading "Services" [level=2] [ref=e125]
+              - button "Add a service" [ref=e128] [cursor=pointer]:
+                - generic [ref=e131]: add
+            - generic:
+              - listbox "Service Dependencies"
+          - generic [ref=e138]:
+            - region [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e144]:
+                    - button "Undo code edit" [disabled]:
+                      - generic: undo
+                  - generic [ref=e147]:
+                    - button "Redo code edit" [disabled]:
+                      - generic: redo
+                - generic [ref=e151]:
+                  - button "Save project to Drive" [disabled]:
+                    - img
+                - generic [ref=e152]:
+                  - button "Run the selected function" [ref=e156] [cursor=pointer]:
+                    - generic [ref=e159]: play_arrow
+                    - generic [ref=e160]: Run
+                  - button "Debug the selected function" [ref=e164]:
+                    - img [ref=e167]
+                    - generic [ref=e170]: Debug
+                  - listbox "Select function to run" [ref=e173] [cursor=pointer]:
+                    - option "criarPlanoDeAcao" [selected] [ref=e174]
+                - button "Open the execution log panel" [ref=e179]:
+                  - generic [ref=e182]: Execution log
+            - generic [ref=e184]:
+              - main [ref=e188]:
+                - generic [ref=e189]: .
+                - generic [ref=e191]:
+                  - iframe [ref=e192]:
+                    
+                  - code [ref=e194]:
+                    - generic [ref=e195]:
+                      - generic [ref=e198]:
+                        - generic [ref=e201]: "1"
+                        - generic [ref=e203]: "2"
+                        - generic [ref=e205]: "3"
+                        - generic [ref=e207]: "4"
+                        - generic [ref=e209]: "5"
+                        - generic [ref=e211]: "6"
+                        - generic [ref=e213]: "7"
+                        - generic [ref=e215]: "8"
+                        - generic [ref=e217]: "9"
+                        - generic [ref=e219]: "10"
+                        - generic [ref=e221]: "11"
+                        - generic [ref=e223]: "12"
+                        - generic [ref=e225]: "13"
+                        - generic [ref=e227]: "14"
+                        - generic [ref=e229]: "15"
+                        - generic [ref=e231]: "16"
+                        - generic [ref=e233]: "17"
+                        - generic [ref=e235]: "18"
+                        - generic [ref=e237]: "19"
+                        - generic [ref=e239]: "20"
+                        - generic [ref=e241]: "21"
+                        - generic [ref=e243]: "22"
+                        - generic [ref=e245]: "23"
+                        - generic [ref=e247]: "24"
+                        - generic [ref=e249]: "25"
+                        - generic [ref=e251]: "26"
+                      - generic [ref=e310]:
+                        - generic [ref=e312]: "function criarPlanoDeAcao() {"
+                        - generic [ref=e315]: const doc = DocumentApp.create('Plano de Acao - Reuniao 30/03/2026');
+                        - generic [ref=e317]: const body = doc.getBody();
+                        - generic [ref=e319]: body.clear();
+                        - generic [ref=e322]: const AZUL = '#1a3a5c';
+                        - generic [ref=e324]: const VERDE = '#1e5631';
+                        - generic [ref=e326]: const CINZA = '#555555';
+                        - generic [ref=e329]: const titulo = body.appendParagraph('PLANO DE ACAO - REUNIAO 30/03/2026');
+                        - generic [ref=e331]: titulo.setHeading(DocumentApp.ParagraphHeading.TITLE);
+                        - generic [ref=e333]: titulo.setAlignment(DocumentApp.HorizontalAlignment.CENTER);
+                        - generic [ref=e335]: titulo.editAsText().setForegroundColor(AZUL).setFontSize(20).setBold(true);
+                        - generic [ref=e338]: body.appendParagraph('');
+                        - generic [ref=e341]: const resumoTitulo = body.appendParagraph('RESUMO FINANCEIRO - MARCO 2026');
+                        - generic [ref=e343]: resumoTitulo.setHeading(DocumentApp.ParagraphHeading.HEADING2);
+                        - generic [ref=e345]: resumoTitulo.editAsText().setForegroundColor(AZUL).setBold(true);
+                        - generic [ref=e348]: const tabela = body.appendTable([
+                        - generic [ref=e350]: "['Meta Total', 'R$ 196.000'],"
+                        - generic [ref=e352]: "['Feito', 'R$ 93.000'],"
+                        - generic [ref=e354]: "['Falta', 'R$ 103.000'],"
+                        - generic [ref=e356]: "['Vendido em 1 semana (16-25/03)', 'R$ 32.000'],"
+                      - textbox "Editor content;Press Alt+F1 for Accessibility Options." [active] [ref=e359]: "function criarPlanoDeAcao() { const doc = DocumentApp.create('Plano de Acao - Reuniao 30/03/2026'); const body = doc.getBody(); body.clear(); const AZUL = '#1a3a5c'; const VERDE = '#1e5631'; const CINZA = '#555555';"
+              - generic:
+                - generic:
+                  - button "Close execution logs pane" [ref=e360] [cursor=pointer]:
+                    - generic [ref=e361]: close
+                  - tooltip [ref=e362]: Close execution logs
+  - generic [ref=e363]:
+    - alert
+    - alert
+    - complementary
+    - complementary
+  - generic:
+    - generic: Run the selected function

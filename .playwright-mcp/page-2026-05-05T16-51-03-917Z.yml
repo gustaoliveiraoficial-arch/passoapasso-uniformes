@@ -1,0 +1,427 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - button [ref=e9]:
+            - img [ref=e12]
+        - separator [ref=e14]
+        - generic [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link [ref=e24]:
+                - /url: /home/
+                - img [ref=e26]
+            - listitem [ref=e28]:
+              - link "419" [ref=e30] [cursor=pointer]:
+                - /url: /chats/
+                - generic [ref=e31]:
+                  - img [ref=e32]
+                  - generic [ref=e35]: "419"
+            - listitem [ref=e36]:
+              - link [ref=e38] [cursor=pointer]:
+                - /url: /leads/pipeline/13368211
+                - img [ref=e40]
+            - listitem [ref=e43] [cursor=pointer]:
+              - link "153" [ref=e45]:
+                - /url: /todo
+                - generic [ref=e46]:
+                  - img [ref=e47]
+                  - generic [ref=e50]: "153"
+            - listitem [ref=e51]:
+              - link [ref=e53] [cursor=pointer]:
+                - /url: /contacts/list/contacts
+                - img [ref=e55]
+            - listitem [ref=e58] [cursor=pointer]:
+              - link [ref=e60]:
+                - /url: /settings/ai-agent/
+                - img [ref=e62]
+            - listitem [ref=e64]:
+              - link [ref=e66] [cursor=pointer]:
+                - /url: /chats/tools/bots/
+                - img [ref=e68]
+            - listitem [ref=e70]:
+              - link [ref=e72] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e74]
+          - separator [ref=e77]
+          - list [ref=e78]:
+            - listitem [ref=e80] [cursor=pointer]:
+              - link [ref=e82]:
+                - /url: /widget_page/instagram_int/hub
+                - img [ref=e85]
+            - listitem [ref=e87] [cursor=pointer]:
+              - link [ref=e89]:
+                - /url: /widget_page/whatsapp_cloud_api/hub
+                - img [ref=e92]
+            - listitem [ref=e94] [cursor=pointer]:
+              - link [ref=e96]:
+                - /url: /widget_page/tiktok_kommo/hub
+                - img [ref=e99]
+        - list [ref=e101]:
+          - listitem [ref=e103] [cursor=pointer]:
+            - link [ref=e105]:
+              - /url: /settings/profile/
+              - img [ref=e107]
+          - listitem [ref=e109]:
+            - link [ref=e111] [cursor=pointer]:
+              - /url: /settings/ai
+              - img [ref=e113]
+          - listitem [ref=e116] [cursor=pointer]:
+            - link [ref=e118]:
+              - /url: ""
+              - img [ref=e120]
+          - listitem [ref=e123] [cursor=pointer]:
+            - link "296" [ref=e125]:
+              - /url: /settings/profile/notifications
+              - generic [ref=e126]:
+                - img [ref=e127]
+                - generic [ref=e130]: "296"
+        - separator [ref=e132]
+        - button "Avatar" [ref=e134] [cursor=pointer]:
+          - img "Avatar" [ref=e137]
+      - generic [ref=e138]:
+        - heading "Configurações" [level=2] [ref=e140]
+        - separator [ref=e141]
+        - generic [ref=e146]:
+          - generic [ref=e147]: Perfil
+          - list [ref=e148]:
+            - listitem [ref=e150] [cursor=pointer]:
+              - link "Configurações de perfil" [ref=e152]:
+                - /url: /settings/profile/
+                - generic [ref=e153]: Configurações de perfil
+          - generic [ref=e154]: Área de trabalho
+          - list [ref=e155]:
+            - listitem [ref=e157] [cursor=pointer]:
+              - link "Configurações de trabalho" [ref=e159]:
+                - /url: /settings/
+                - generic [ref=e160]: Configurações de trabalho
+            - listitem [ref=e162] [cursor=pointer]:
+              - link "Configurações de chat" [ref=e164]:
+                - /url: /settings/communications/
+                - generic [ref=e165]: Configurações de chat
+            - listitem [ref=e167] [cursor=pointer]:
+              - link "Configurações de email" [ref=e169]:
+                - /url: /mail/settings/
+                - generic [ref=e170]: Configurações de email
+            - listitem [ref=e172] [cursor=pointer]:
+              - link "Faturamento" [ref=e174]:
+                - /url: /settings/pay/
+                - generic [ref=e175]: Faturamento
+            - listitem [ref=e177] [cursor=pointer]:
+              - link "Gestão de usuários" [ref=e179]:
+                - /url: /settings/users/
+                - generic [ref=e180]: Gestão de usuários
+          - generic [ref=e181]: IA
+          - list [ref=e182]:
+            - listitem [ref=e184] [cursor=pointer]:
+              - link "Configurações de IA" [ref=e186]:
+                - /url: /settings/ai/
+                - generic [ref=e187]: Configurações de IA
+            - listitem [ref=e189] [cursor=pointer]:
+              - link "Fontes de conhecimento da IA" [ref=e191]:
+                - /url: /settings/ai-knowledge-sources/
+                - generic [ref=e192]: Fontes de conhecimento da IA
+          - generic [ref=e193]: Integrações e canais
+          - list [ref=e194]:
+            - listitem [ref=e196] [cursor=pointer]:
+              - link "Central de integrações" [ref=e198]:
+                - /url: /settings/widgets/
+                - generic [ref=e199]: Central de integrações
+  - generic:
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - heading "Configurações de trabalho" [level=2] [ref=e205]
+        - button "Salvar" [ref=e207]:
+          - generic [ref=e209]: Salvar
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - generic [ref=e213]: Configurações gerais
+          - paragraph [ref=e215]: Você pode alterar o subdomínio da sua conta. Utilize apenas letras e números. Caracteres especiais e espaços não são permitidos.
+          - table [ref=e216]:
+            - rowgroup [ref=e217]:
+              - row "ID da área de trabalho 36224807" [ref=e218]:
+                - cell "ID da área de trabalho" [ref=e219]
+                - cell "36224807" [ref=e220]:
+                  - generic [ref=e221]: "36224807"
+                  - button [ref=e222] [cursor=pointer]:
+                    - img [ref=e223]
+              - row "Nome da área de trabalho passoapassouniformes2025" [ref=e225]:
+                - cell "Nome da área de trabalho" [ref=e226]
+                - cell "passoapassouniformes2025" [ref=e227]:
+                  - textbox [ref=e228]: passoapassouniformes2025
+                - cell [ref=e229]
+              - row "Subdomínio passoapassouniformes2025" [ref=e230]:
+                - cell "Subdomínio" [ref=e231]
+                - cell "passoapassouniformes2025" [ref=e232]:
+                  - textbox [ref=e234]: passoapassouniformes2025
+              - row "Fuso horário (GMT -03:00) São Paulo" [ref=e235]:
+                - cell "Fuso horário" [ref=e236]
+                - cell "(GMT -03:00) São Paulo" [ref=e237]:
+                  - button "(GMT -03:00) São Paulo" [ref=e239] [cursor=pointer]
+              - row "País Brasil" [ref=e240]:
+                - cell "País" [ref=e241]
+                - cell "Brasil" [ref=e242]:
+                  - button "Brasil" [ref=e244] [cursor=pointer]
+              - row "Formato de data 31/12/2026" [ref=e245]:
+                - cell "Formato de data" [ref=e246]
+                - cell "31/12/2026" [ref=e247]:
+                  - button "31/12/2026" [ref=e249] [cursor=pointer]
+              - row "Formato de hora 24 horas" [ref=e250]:
+                - cell "Formato de hora" [ref=e251]
+                - cell "24 horas" [ref=e252]:
+                  - button "24 horas" [ref=e254] [cursor=pointer]
+              - row "Moeda Real brasileiro" [ref=e255]:
+                - cell "Moeda" [ref=e256]
+                - cell "Real brasileiro" [ref=e257]:
+                  - button "Real brasileiro" [ref=e259] [cursor=pointer]
+                - cell [ref=e260]
+              - row "Formato do nome do contato Primeiro nome, Sobrenome" [ref=e261]:
+                - cell "Formato do nome do contato" [ref=e262]
+                - cell "Primeiro nome, Sobrenome" [ref=e263]:
+                  - button "Primeiro nome, Sobrenome" [ref=e265] [cursor=pointer]
+              - row "Casas decimais da moeda Mostra todos os dígitos após a vírgula nos preços" [ref=e266]:
+                - cell "Casas decimais da moeda" [ref=e267]
+                - cell "Mostra todos os dígitos após a vírgula nos preços" [ref=e268]:
+                  - generic [ref=e272]: Mostra todos os dígitos após a vírgula nos preços
+        - generic [ref=e273]:
+          - generic [ref=e274]:
+            - generic [ref=e275]: Verificação em 2 etapas obrigatória
+            - generic [ref=e277]:
+              - checkbox
+          - generic [ref=e279]: Adicione uma camada extra de segurança à sua conta Kommo. Além da senha, todos os usuários precisarão inserir um código enviado para o email sempre que fizerem login. Para evitar a perda de acesso a esta conta, os usuários precisarão configurar a verificação em 2 etapas dentro do período selecionado.
+        - generic [ref=e280]:
+          - generic [ref=e282]: Produtos
+          - generic [ref=e285]: Ativar o uso do catálogo de produtos e analisar as vendas de cada produto
+        - generic [ref=e286]:
+          - generic [ref=e288]: Chats diretos
+          - paragraph [ref=e292]: Você pode proibir o uso de bate-papos diretos para usuários e também restringir a capacidade de criar bate-papos em grupo.
+          - table [ref=e293]:
+            - rowgroup [ref=e294]:
+              - row "Capacidade de criar grupos de chats Todos" [ref=e295]:
+                - cell "Capacidade de criar grupos de chats" [ref=e296]
+                - cell "Todos" [ref=e297]:
+                  - button "Todos" [ref=e299] [cursor=pointer]
+                - cell [ref=e300]
+        - generic [ref=e301]:
+          - generic [ref=e303]: Chat inbox
+          - paragraph [ref=e307]: Essa seção do Kommo captura as novas mensagens de todas as suas fontes, chats de equipe e menções da equipe.
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e311]: Personalize a barra de menus esquerda com base na função do usuário
+            - generic [ref=e312]: Personalize seu menu esquerdo, oculte seções que você não usa e fixe seus pipelines e listas favoritos para acesso rápido.
+          - generic [ref=e318]:
+            - generic [ref=e323]:
+              - generic [ref=e330]: Padrão
+              - button "Adicionar nova função" [ref=e336] [cursor=pointer]:
+                - generic [ref=e337]:
+                  - img [ref=e339]
+                  - generic [ref=e341]: Adicionar nova função
+            - generic [ref=e342]:
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - img [ref=e348]
+                  - generic [ref=e350]: Comunicações
+                - generic [ref=e351] [cursor=pointer]:
+                  - generic [ref=e352]: Ocultar
+                  - img [ref=e355]
+              - generic [ref=e360] [cursor=pointer]:
+                - checkbox [checked] [ref=e361]
+                - img [ref=e362]
+            - generic [ref=e368]:
+              - generic [ref=e373]: Inbox de chat
+              - generic [ref=e377] [cursor=pointer]:
+                - checkbox [checked] [ref=e378]
+                - img [ref=e379]
+            - generic [ref=e385]:
+              - generic [ref=e390]: Chats da equipe
+              - generic [ref=e394] [cursor=pointer]:
+                - checkbox [checked] [ref=e395]
+                - img [ref=e396]
+            - generic [ref=e402]:
+              - generic [ref=e407]: Inbox de email
+              - generic [ref=e411] [cursor=pointer]:
+                - checkbox [checked] [ref=e412]
+                - img [ref=e413]
+            - generic [ref=e419]:
+              - generic [ref=e422]:
+                - generic [ref=e423]:
+                  - img [ref=e425]
+                  - generic [ref=e427]: Funis de vendas
+                  - generic [ref=e428] [cursor=pointer]: Reordenar
+                - generic [ref=e429] [cursor=pointer]:
+                  - generic [ref=e430]: Mostrar tudo
+                  - img [ref=e433]
+              - generic [ref=e438] [cursor=pointer]:
+                - checkbox [checked] [ref=e439]
+                - img [ref=e440]
+            - generic [ref=e446]:
+              - generic [ref=e450]:
+                - img [ref=e452]
+                - generic [ref=e454]: Calendário
+              - generic [ref=e458] [cursor=pointer]:
+                - checkbox [checked] [ref=e459]
+                - img [ref=e460]
+            - generic [ref=e466]:
+              - generic [ref=e469]:
+                - generic [ref=e470]:
+                  - img [ref=e472]
+                  - generic [ref=e474]: Listas
+                - generic [ref=e475] [cursor=pointer]:
+                  - generic [ref=e476]: Mostrar tudo
+                  - img [ref=e479]
+              - generic [ref=e484] [cursor=pointer]:
+                - checkbox [checked] [ref=e485]
+                - img [ref=e486]
+            - generic [ref=e492]:
+              - generic [ref=e495]:
+                - generic [ref=e496]:
+                  - img [ref=e498]
+                  - generic [ref=e501]: Insights
+                - generic [ref=e502] [cursor=pointer]:
+                  - generic [ref=e503]: Ocultar
+                  - img [ref=e506]
+              - generic [ref=e511] [cursor=pointer]:
+                - checkbox [checked] [ref=e512]
+                - img [ref=e513]
+            - generic [ref=e519]:
+              - generic [ref=e524]: Painel
+              - generic [ref=e528] [cursor=pointer]:
+                - checkbox [checked] [ref=e529]
+                - img [ref=e530]
+            - generic [ref=e536]:
+              - generic [ref=e541]: ROI
+              - generic [ref=e545] [cursor=pointer]:
+                - checkbox [checked] [ref=e546]
+                - img [ref=e547]
+            - generic [ref=e553]:
+              - generic [ref=e558]: Ganhos e perdas
+              - generic [ref=e562] [cursor=pointer]:
+                - checkbox [checked] [ref=e563]
+                - img [ref=e564]
+            - generic [ref=e570]:
+              - generic [ref=e575]: Relatório consolidado
+              - generic [ref=e579] [cursor=pointer]:
+                - checkbox [checked] [ref=e580]
+                - img [ref=e581]
+            - generic [ref=e587]:
+              - generic [ref=e592]: Relatório de atividades
+              - generic [ref=e596] [cursor=pointer]:
+                - checkbox [checked] [ref=e597]
+                - img [ref=e598]
+            - generic [ref=e604]:
+              - generic [ref=e609]: Registro de atividades
+              - generic [ref=e613] [cursor=pointer]:
+                - checkbox [checked] [ref=e614]
+                - img [ref=e615]
+            - generic [ref=e621]:
+              - generic [ref=e626]: Relatório de chamadas
+              - generic [ref=e630] [cursor=pointer]:
+                - checkbox [checked] [ref=e631]
+                - img [ref=e632]
+            - generic [ref=e638]:
+              - generic [ref=e643]: Relatório de objetivos
+              - generic [ref=e647] [cursor=pointer]:
+                - checkbox [checked] [ref=e648]
+                - img [ref=e649]
+            - generic [ref=e655]:
+              - generic [ref=e658]:
+                - generic [ref=e659]:
+                  - img [ref=e661]
+                  - generic [ref=e663]: Automações
+                - generic [ref=e664] [cursor=pointer]:
+                  - generic [ref=e665]: Ocultar
+                  - img [ref=e668]
+              - generic [ref=e673] [cursor=pointer]:
+                - checkbox [checked] [ref=e674]
+                - img [ref=e675]
+            - generic [ref=e681]:
+              - generic [ref=e686]: Bots
+              - generic [ref=e690] [cursor=pointer]:
+                - checkbox [checked] [ref=e691]
+                - img [ref=e692]
+            - generic [ref=e698]:
+              - generic [ref=e703]: Modelos
+              - generic [ref=e707] [cursor=pointer]:
+                - checkbox [checked] [ref=e708]
+                - img [ref=e709]
+            - generic [ref=e715]:
+              - generic [ref=e720]: Transmissão
+              - generic [ref=e724] [cursor=pointer]:
+                - checkbox [checked] [ref=e725]
+                - img [ref=e726]
+      - generic [ref=e741]:
+        - generic [ref=e743]: Download automático de arquivos grandes
+        - paragraph [ref=e745]: Controle seu espaço de armazenamento escolhendo como você gostaria de lidar com o download de arquivos de fontes de chat. Para arquivos maiores que 5MB, você pode desativar downloads automáticos e, em vez disso, descarregá-los manualmente no cartão de condutor ou de cliente. Tenha em mente que algumas fontes de chat não armazenam arquivos em sua extremidade, portanto, se você não fizer o download manual imediatamente, corre o risco de perder a capacidade de baixá-los mais tarde.
+        - paragraph [ref=e747]: Escolha suas configurações
+        - generic [ref=e748]:
+          - 'generic "Para todas as fontes: desativar o autodownloads" [ref=e749] [cursor=pointer]':
+            - radio [ref=e751]
+            - generic [ref=e753]: "Para todas as fontes: desativar o autodownloads"
+          - 'generic "Para todas as fontes: permitir o autodownloads" [ref=e754] [cursor=pointer]':
+            - radio [ref=e756]
+            - generic [ref=e758]: "Para todas as fontes: permitir o autodownloads"
+          - 'generic "Para fontes que não armazenam arquivos: ativar o autodownload de arquivos; Para fontes que armazenam arquivos: desativar o autodownload de arquivos" [ref=e759] [cursor=pointer]':
+            - radio [checked] [ref=e761]
+            - generic [ref=e763]: "Para fontes que não armazenam arquivos: ativar o autodownload de arquivos; Para fontes que armazenam arquivos: desativar o autodownload de arquivos"
+      - generic [ref=e764]:
+        - generic [ref=e766]: Backup
+        - generic [ref=e767]: A opção de backup permite receber todos os dados da sua conta a qualquer momento e também configurar a preparação periódica desses backups. Quando o backup estiver pronto, você será notificado por email. Essa funcionalidade estará disponível no plano tarifário Pro.
+        - link "Faça upgrade para o Empresarial" [ref=e769] [cursor=pointer]:
+          - /url: /settings/pay/
+          - button "Faça upgrade para o Empresarial" [ref=e770]:
+            - generic [ref=e772]: Faça upgrade para o Empresarial
+        - generic [ref=e774]: empresarial
+      - generic [ref=e775]:
+        - generic [ref=e777]: Excluindo arquivos
+        - generic [ref=e778]:
+          - paragraph [ref=e779]: Você pode determinar regras para deletar mídias.
+          - paragraph [ref=e780]: Uma vez deletados, osarquivos podem ser restaurados através da lista de mídia dentro de 30 dias.
+        - generic [ref=e784]:
+          - generic [ref=e793]:
+            - checkbox [disabled] [ref=e797] [cursor=pointer]
+            - generic [ref=e802]: Nome da regra
+            - generic [ref=e807]: Excluir após, dias
+            - generic [ref=e812]: Tamanho do arquivo
+            - generic [ref=e817]: Criador
+            - generic [ref=e822]: Tipo de arquivo
+            - generic [ref=e827]: Fontes
+          - generic [ref=e829] [cursor=pointer]:
+            - generic [ref=e831]:
+              - generic:
+                - generic:
+                  - checkbox [disabled]
+            - generic "Criar uma nova regra" [ref=e833]:
+              - generic [ref=e834]: Criar uma nova regra
+          - checkbox [disabled] [ref=e855] [cursor=pointer]
+          - checkbox [disabled] [ref=e886] [cursor=pointer]
+    - generic [ref=e914]:
+      - img
+      - button [ref=e915]:
+        - img [ref=e916]
+        - img [ref=e918]
+        - img [ref=e922]
+      - generic [ref=e924]:
+        - generic [ref=e925]:
+          - generic [ref=e926]:
+            - img [ref=e927]
+            - generic [ref=e929]: Kommo Copilot
+          - generic [ref=e930]:
+            - button [ref=e931] [cursor=pointer]:
+              - img [ref=e934]
+            - button [ref=e936] [cursor=pointer]:
+              - img [ref=e939]
+            - button [ref=e941] [cursor=pointer]:
+              - img [ref=e944]
+        - button "Novo chat" [ref=e946]:
+          - generic [ref=e947]:
+            - generic [ref=e948]: Novo chat
+            - img [ref=e949]
+        - generic [ref=e974]:
+          - generic [ref=e975]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e978]
+            - button [disabled] [ref=e981]:
+              - img [ref=e984]
+          - generic [ref=e986]: O conteúdo gerado por IA pode ser impreciso

@@ -1,0 +1,37 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - progressbar [ref=e6]
+    - main [ref=e14]:
+      - generic [ref=e15]:
+        - img [ref=e18]
+        - generic [ref=e23]:
+          - heading "Use sua chave de acesso para confirmar que é você" [level=1] [ref=e24]
+          - link "passoapassouniformes2025@gmail.com selecionado. Alternar entre contas" [ref=e26] [cursor=pointer]:
+            - img [ref=e29]
+            - generic [ref=e31]: passoapassouniformes2025@gmail.com
+            - img [ref=e33]
+      - generic [ref=e40]:
+        - figure [ref=e42]:
+          - img [ref=e44]
+        - generic [ref=e47]: O dispositivo vai solicitar sua impressão digital, seu rosto ou seu bloqueio de tela
+      - generic [ref=e49]:
+        - button "Continuar" [ref=e53]:
+          - generic [ref=e56]: Continuar
+        - button "Tentar de outro jeito" [ref=e60]:
+          - generic [ref=e63]: Tentar de outro jeito
+  - contentinfo [ref=e67]:
+    - combobox "Alterar idioma Português (Brasil)" [ref=e71] [cursor=pointer]:
+      - generic:
+        - generic: Português (Brasil)
+      - generic:
+        - img
+    - list [ref=e73]:
+      - listitem [ref=e74]:
+        - link "Ajuda" [ref=e75] [cursor=pointer]:
+          - /url: https://support.google.com/accounts?hl=pt-BR&p=account_iph
+      - listitem [ref=e76]:
+        - link "Privacidade" [ref=e77] [cursor=pointer]:
+          - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR&privacy=true
+      - listitem [ref=e78]:
+        - link "Termos" [ref=e79] [cursor=pointer]:
+          - /url: https://accounts.google.com/TOS?loc=BR&hl=pt-BR

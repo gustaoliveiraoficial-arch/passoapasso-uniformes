@@ -1,0 +1,203 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]
+          - listitem [ref=e29]
+          - listitem [ref=e40]
+          - listitem [ref=e52] [cursor=pointer]
+          - listitem [ref=e63]
+          - listitem [ref=e75] [cursor=pointer]
+          - listitem [ref=e82]
+          - listitem [ref=e93]
+        - generic [ref=e105]: Integrações fixadas
+        - list [ref=e106]:
+          - listitem [ref=e108] [cursor=pointer]
+          - listitem [ref=e116] [cursor=pointer]
+      - list [ref=e126]:
+        - listitem [ref=e128] [cursor=pointer]:
+          - link "Configurações" [ref=e130]:
+            - /url: /settings/profile/
+        - listitem [ref=e136]:
+          - link "Ajuda" [ref=e138] [cursor=pointer]:
+            - /url: /settings/ai
+        - listitem [ref=e148] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e150]:
+            - /url: ""
+        - listitem [ref=e156] [cursor=pointer]:
+          - link "Centro de Notificação 248" [ref=e158]:
+            - /url: /settings/profile/notifications
+      - separator [ref=e167]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e169] [cursor=pointer]:
+        - img "Avatar" [ref=e172]
+        - generic [ref=e173]:
+          - generic [ref=e174]: Passo a passo uniformes
+          - generic [ref=e175]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - generic "Leads" [ref=e184]
+          - generic [ref=e186]
+        - generic [ref=e193]:
+          - generic [ref=e195] [cursor=pointer]: Leads ativos
+          - generic [ref=e197]
+          - text: "Criada Fechadas Lead de entrada tipo: Lead fonte: Usuários Criado por Modificado por Tarefas: Método de pagamento: Desconto: Motivo de perda: Pagamento: Status das conversas: Progresso da conversa: Direção da última mensagem: Criado Modificado Tarefas: Criado Modificado Tarefas: Produtos"
+        - generic [ref=e202]:
+          - button "Mais" [ref=e205] [cursor=pointer]
+          - link "Lead" [ref=e209] [cursor=pointer]:
+            - /url: /leads/add/?pipeline_id=13368211
+      - generic [ref=e216]:
+        - generic [ref=e217]:
+          - generic [ref=e220]
+          - generic [ref=e227]
+        - generic [ref=e748]:
+          - generic [ref=e751]
+          - generic [ref=e759]
+        - generic [ref=e1102]:
+          - generic [ref=e1105]
+          - generic [ref=e1113]
+        - generic [ref=e1489]:
+          - generic [ref=e1492]
+          - generic [ref=e1500]
+        - generic [ref=e1861]:
+          - generic [ref=e1864]
+          - generic [ref=e1872]
+        - generic [ref=e2066]:
+          - generic [ref=e2069]
+          - generic [ref=e2077]
+        - generic [ref=e2130]:
+          - generic [ref=e2133]
+          - generic [ref=e2141]
+        - generic [ref=e2482]:
+          - generic [ref=e2485]
+          - generic [ref=e2493]
+        - generic [ref=e2545]:
+          - generic [ref=e2548]
+          - generic [ref=e2556]
+        - generic [ref=e2662]:
+          - generic [ref=e2665]
+          - generic [ref=e2673]
+        - generic [ref=e2799]:
+          - generic [ref=e2802]
+          - generic [ref=e2810]
+        - generic [ref=e2998]:
+          - generic [ref=e3001]
+          - generic [ref=e3013]
+        - generic [ref=e3027]:
+          - generic [ref=e3030]
+          - generic [ref=e3038]
+        - generic [ref=e3090]:
+          - generic [ref=e3093]
+          - generic [ref=e3105]
+        - generic [ref=e3119]:
+          - generic [ref=e3122]
+          - generic [ref=e3130]
+      - generic [ref=e3199] [cursor=pointer]:
+        - generic "Etapa de leads de entrada" [ref=e3203]:
+          - generic [ref=e3204]: Etapa de leads de entrada
+        - generic "Lead Frio" [ref=e3209]:
+          - generic [ref=e3210]: Lead Frio
+        - generic "Primeiro Contato" [ref=e3215]:
+          - generic [ref=e3216]: Primeiro Contato
+        - generic "Qualificado" [ref=e3221]:
+          - generic [ref=e3222]: Qualificado
+        - generic "Enviar Orçamento" [ref=e3227]:
+          - generic [ref=e3228]: Enviar Orçamento
+        - generic "ORÇAMENTO JESSICA" [ref=e3233]:
+          - generic [ref=e3234]: ORÇAMENTO JESSICA
+        - generic "Negociando" [ref=e3239]:
+          - generic [ref=e3240]: Negociando
+        - generic "Desenvolver Layout" [ref=e3245]:
+          - generic [ref=e3246]: Desenvolver Layout
+        - generic "Layout Aprovado" [ref=e3251]:
+          - generic [ref=e3252]: Layout Aprovado
+        - generic "Pedido Confirmado (finaceiro)" [ref=e3257]:
+          - generic [ref=e3258]: Pedido Confirmado (finaceiro)
+        - generic "Em Produção" [ref=e3263]:
+          - generic [ref=e3264]: Em Produção
+        - generic "Pedido Pronto para envio" [ref=e3269]:
+          - generic [ref=e3270]: Pedido Pronto para envio
+        - generic "Ganho" [ref=e3275]:
+          - generic [ref=e3276]: Ganho
+        - generic "Perdido" [ref=e3281]:
+          - generic [ref=e3282]: Perdido
+        - generic "REMARKETING" [ref=e3287]:
+          - generic [ref=e3288]: REMARKETING
+    - generic [ref=e3292]:
+      - img
+      - button [ref=e3293]:
+        - img [ref=e3294]
+        - img [ref=e3296]
+        - img [ref=e3300]
+      - generic [ref=e3302]:
+        - generic [ref=e3303]:
+          - generic [ref=e3304]
+          - generic [ref=e3308]
+        - button "Configuração do WhatsApp Business" [ref=e3324] [cursor=pointer]:
+          - generic [ref=e3325]
+        - generic [ref=e3384]:
+          - generic [ref=e3387]: Home
+          - generic [ref=e3388]
+          - paragraph [ref=e3394]: Houve um erro de rede ou servidor. Por favor, entre em contato com nossa equipe de suporte ou tente novamente mais tarde.
+          - generic [ref=e3397]: "Lead #26608910"
+          - generic [ref=e3398]
+          - generic [ref=e3402]
+          - generic [ref=e3423]: "Lead #27294823"
+          - generic [ref=e3424]
+          - generic [ref=e3428]
+          - generic [ref=e3449]: "Lead #27294861"
+          - generic [ref=e3450]
+          - generic [ref=e3454]
+          - generic [ref=e3473]
+          - generic [ref=e3477]
+          - generic [ref=e3497]: "Lead #27294521"
+          - generic [ref=e3498]
+          - generic [ref=e3502]
+          - generic [ref=e3523]: "Lead #27467341"
+          - generic [ref=e3524]
+          - generic [ref=e3528]
+          - generic [ref=e3547]
+          - generic [ref=e3551]
+          - generic [ref=e3569]
+          - generic [ref=e3573]
+          - generic [ref=e3599]: "Lead #26506202"
+          - generic [ref=e3600]
+          - generic [ref=e3604]
+          - generic [ref=e3625]: "Lead #27570799"
+          - generic [ref=e3626]
+          - generic [ref=e3630]
+          - generic [ref=e3651]: "Lead #27572993"
+          - generic [ref=e3652]
+          - generic [ref=e3656]
+          - generic [ref=e3677]: "Lead #27585347"
+          - generic [ref=e3678]
+          - generic [ref=e3682]
+          - generic [ref=e3703]: "Lead #27627665"
+          - generic [ref=e3704]
+          - generic [ref=e3708]
+          - generic [ref=e3729]: "Lead #27579669"
+          - generic [ref=e3730]
+          - generic [ref=e3734]
+          - generic [ref=e3755]: "Lead #28970899"
+          - generic [ref=e3756]
+          - generic [ref=e3760]
+          - generic [ref=e3779]
+          - generic [ref=e3783]
+          - generic [ref=e3803]: "Lead #29002050"
+          - generic [ref=e3804]
+          - generic [ref=e3808]
+          - generic [ref=e3827]
+          - generic [ref=e3831]
+          - generic [ref=e3851]: Leads
+          - button
+        - generic [ref=e3352]:
+          - generic [ref=e3353]
+          - generic [ref=e3364]: O conteúdo gerado por IA pode ser impreciso

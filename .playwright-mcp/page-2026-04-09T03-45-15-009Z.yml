@@ -1,0 +1,298 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e6]:
+      - navigation [ref=e7]:
+        - link "Kommo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - button [ref=e20] [cursor=pointer]:
+              - img [ref=e22]
+    - generic [ref=e26]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - heading "Log in" [level=2] [ref=e34]
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e38]:
+                - textbox "Email" [ref=e39]:
+                  - /placeholder: " "
+                - generic [ref=e40]: Email
+                - img [ref=e42]
+              - generic [ref=e45]:
+                - textbox "Password Show" [ref=e46]:
+                  - /placeholder: " "
+                - generic [ref=e47]: Password
+                - img [ref=e49]
+                - button "Show" [ref=e52] [cursor=pointer]:
+                  - generic [ref=e53]: Show
+              - button "Log in" [ref=e54] [cursor=pointer]:
+                - generic [ref=e55]: Log in
+            - separator [ref=e56]
+            - generic [ref=e57]:
+              - link "Continue with Google" [ref=e58] [cursor=pointer]:
+                - /url: https://www.kommo.com/v3/account/connect/google/start?force_auth=1&ga=GA1.1.1635652814.1775480129&onboarding_sequence=default&device_type=desktop
+                - generic [ref=e59]:
+                  - img [ref=e62]
+                  - generic [ref=e67]: Continue with Google
+              - link "Continue with Facebook" [ref=e68] [cursor=pointer]:
+                - /url: https://www.kommo.com/v3/account/connect/fb/start?ga=GA1.1.1635652814.1775480129&onboarding_sequence=default&device_type=desktop
+                - generic [ref=e69]:
+                  - img [ref=e72]
+                  - generic [ref=e75]: Continue with Facebook
+        - button "Forgot password?" [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]: Forgot password?
+      - contentinfo [ref=e79]:
+        - generic [ref=e81]:
+          - navigation [ref=e82]:
+            - generic [ref=e83]:
+              - link "Kommo":
+                - /url: /
+                - img
+            - list [ref=e84]:
+              - listitem [ref=e85]:
+                - generic [ref=e86]:
+                  - paragraph [ref=e88]: What’s Kommo?
+                  - list [ref=e89]:
+                    - listitem [ref=e90]:
+                      - link "Kommo overview" [ref=e91] [cursor=pointer]:
+                        - /url: /product-overview/
+                        - generic [ref=e92]: Kommo overview
+                    - listitem [ref=e93]:
+                      - link "CRM pipeline" [ref=e94] [cursor=pointer]:
+                        - /url: /crm-pipeline/
+                        - generic [ref=e95]: CRM pipeline
+                    - listitem [ref=e96]:
+                      - link "Chat inbox" [ref=e97] [cursor=pointer]:
+                        - /url: /unified-inbox/
+                        - generic [ref=e98]: Chat inbox
+                    - listitem [ref=e99]:
+                      - link "Salesbot" [ref=e100] [cursor=pointer]:
+                        - /url: /salesbot/
+                        - generic [ref=e101]: Salesbot
+              - listitem [ref=e102]:
+                - generic [ref=e103]:
+                  - paragraph [ref=e105]: Channels
+                  - list [ref=e106]:
+                    - listitem [ref=e107]:
+                      - link "WhatsApp CRM" [ref=e108] [cursor=pointer]:
+                        - /url: /whatsapp/
+                        - generic [ref=e109]: WhatsApp CRM
+                    - listitem [ref=e110]:
+                      - link "Instagram CRM" [ref=e111] [cursor=pointer]:
+                        - /url: /instagram/
+                        - generic [ref=e112]: Instagram CRM
+                    - listitem [ref=e113]:
+                      - link "TikTok CRM" [ref=e114] [cursor=pointer]:
+                        - /url: /tiktok/
+                        - generic [ref=e115]: TikTok CRM
+                    - listitem [ref=e116]:
+                      - link "All channels" [ref=e117] [cursor=pointer]:
+                        - /url: /integrations/messaging-sms/
+                        - generic [ref=e118]: All channels
+              - listitem [ref=e119]:
+                - generic [ref=e120]:
+                  - paragraph [ref=e122]: Partners
+                  - list [ref=e123]:
+                    - listitem [ref=e124]:
+                      - link "Find a partner" [ref=e125] [cursor=pointer]:
+                        - /url: /partners/
+                        - generic [ref=e126]: Find a partner
+                    - listitem [ref=e127]:
+                      - link "Become a partner" [ref=e128] [cursor=pointer]:
+                        - /url: /partners/become-partner/
+                        - generic [ref=e129]: Become a partner
+                    - listitem [ref=e130]:
+                      - link "Submit a request" [ref=e131] [cursor=pointer]:
+                        - /url: /partners/#form
+                        - generic [ref=e132]: Submit a request
+              - listitem [ref=e133]:
+                - generic [ref=e134]:
+                  - paragraph [ref=e136]: Resources
+                  - list [ref=e137]:
+                    - listitem [ref=e138]:
+                      - link "Get a demo" [ref=e139] [cursor=pointer]:
+                        - /url: /get-a-demo/
+                        - generic [ref=e140]: Get a demo
+                    - listitem [ref=e141]:
+                      - link "Kommo blog" [ref=e142] [cursor=pointer]:
+                        - /url: /blog/
+                        - generic [ref=e143]: Kommo blog
+                    - listitem [ref=e144]:
+                      - link "Knowledge base" [ref=e145] [cursor=pointer]:
+                        - /url: /support/
+                        - generic [ref=e146]: Knowledge base
+                    - listitem [ref=e147]:
+                      - link "Support" [ref=e148] [cursor=pointer]:
+                        - /url: /contact-us/
+                        - generic [ref=e149]: Support
+                    - listitem [ref=e150]:
+                      - link "API & SDK" [ref=e151] [cursor=pointer]:
+                        - /url: https://developers.kommo.com/docs/kommo-for-developers
+                        - generic [ref=e152]: API & SDK
+              - listitem [ref=e153]:
+                - generic [ref=e154]:
+                  - paragraph [ref=e156]: Guides
+                  - list [ref=e157]:
+                    - listitem [ref=e158]:
+                      - link "WhatsApp CRM" [ref=e159] [cursor=pointer]:
+                        - /url: /blog/whatsapp-crm/
+                        - generic [ref=e160]: WhatsApp CRM
+                    - listitem [ref=e161]:
+                      - link "TikTok CRM" [ref=e162] [cursor=pointer]:
+                        - /url: https://www.kommo.com/blog/tiktok-crm/
+                        - generic [ref=e163]: TikTok CRM
+                    - listitem [ref=e164]:
+                      - link "Instagram CRM" [ref=e165] [cursor=pointer]:
+                        - /url: /blog/instagram-crm/
+                        - generic [ref=e166]: Instagram CRM
+              - listitem [ref=e167]:
+                - generic [ref=e168]:
+                  - paragraph [ref=e170]: Integrated apps
+                  - list [ref=e171]:
+                    - listitem [ref=e172]:
+                      - link "Featured apps" [ref=e173] [cursor=pointer]:
+                        - /url: /integrations/top-picks/
+                        - generic [ref=e174]: Featured apps
+                    - listitem [ref=e175]:
+                      - link "Messengers & SMS" [ref=e176] [cursor=pointer]:
+                        - /url: /integrations/messaging-sms/
+                        - generic [ref=e177]: Messengers & SMS
+                    - listitem [ref=e178]:
+                      - link "All integrations" [ref=e179] [cursor=pointer]:
+                        - /url: /integrations/
+                        - generic [ref=e180]: All integrations
+              - listitem [ref=e181]:
+                - generic [ref=e182]:
+                  - paragraph [ref=e184]: Why Kommo?
+                  - list [ref=e185]:
+                    - listitem [ref=e186]:
+                      - link "Pricing" [ref=e187] [cursor=pointer]:
+                        - /url: /buy/tariff/
+                        - generic [ref=e188]: Pricing
+                    - listitem [ref=e189]:
+                      - link "Client reviews" [ref=e190] [cursor=pointer]:
+                        - /url: /client-reviews/
+                        - generic [ref=e191]: Client reviews
+                    - listitem [ref=e192]:
+                      - link "Customer cases" [ref=e193] [cursor=pointer]:
+                        - /url: /cases/
+                        - generic [ref=e194]: Customer cases
+              - listitem [ref=e195]:
+                - generic [ref=e196]:
+                  - paragraph [ref=e198]: Free tools
+                  - list [ref=e199]:
+                    - listitem [ref=e200]:
+                      - link "WhatsApp link generator" [ref=e201] [cursor=pointer]:
+                        - /url: /whatsapp-link-generator/
+                        - generic [ref=e202]: WhatsApp link generator
+                    - listitem [ref=e203]:
+                      - link "WhatsApp QR generator" [ref=e204] [cursor=pointer]:
+                        - /url: /whatsapp-qr-code-generator/
+                        - generic [ref=e205]: WhatsApp QR generator
+                    - listitem [ref=e206]:
+                      - link "Free QR code generator" [ref=e207] [cursor=pointer]:
+                        - /url: /qr-code-generator/
+                        - generic [ref=e208]: Free QR code generator
+                    - listitem [ref=e209]:
+                      - link "WhatsApp pricing calculator" [ref=e210] [cursor=pointer]:
+                        - /url: /whatsapp-pricing-calculator/
+                        - generic [ref=e211]: WhatsApp pricing calculator
+              - listitem [ref=e212]:
+                - generic [ref=e213]:
+                  - paragraph [ref=e215]: Contact us
+                  - list [ref=e216]:
+                    - listitem [ref=e217]:
+                      - link "Chat in WhatsApp" [ref=e218] [cursor=pointer]:
+                        - /url: https://api.whatsapp.com/send/?phone=14159141403&text&type=phone_number&app_absent=0
+                        - generic [ref=e219]: Chat in WhatsApp
+                    - listitem [ref=e220]:
+                      - link "Chat in Facebook" [ref=e221] [cursor=pointer]:
+                        - /url: https://m.me/279272215431766
+                        - generic [ref=e222]: Chat in Facebook
+                    - listitem [ref=e223]:
+                      - 'link "Call: +1-830-580-3077" [ref=e224] [cursor=pointer]':
+                        - /url: tel:+18305803077
+                        - generic [ref=e225]: "Call: +1-830-580-3077"
+                    - listitem [ref=e226]:
+                      - link "Text message us" [ref=e227] [cursor=pointer]:
+                        - /url: sms:+18305803077
+                        - generic [ref=e228]: Text message us
+                    - listitem [ref=e229]:
+                      - link "Email us" [ref=e230] [cursor=pointer]:
+                        - /url: mailto:support@kommo.com
+                        - generic [ref=e231]: Email us
+              - listitem [ref=e232]:
+                - generic [ref=e233]:
+                  - paragraph [ref=e235]: Legal
+                  - list [ref=e236]:
+                    - listitem [ref=e237]:
+                      - link "Terms" [ref=e238] [cursor=pointer]:
+                        - /url: /terms/
+                        - generic [ref=e239]: Terms
+                    - listitem [ref=e240]:
+                      - link "Security" [ref=e241] [cursor=pointer]:
+                        - /url: /security/
+                        - generic [ref=e242]: Security
+                    - listitem [ref=e243]:
+                      - link "Vulnerability program" [ref=e244] [cursor=pointer]:
+                        - /url: /vulnerability-disclosure-program/
+                        - generic [ref=e245]: Vulnerability program
+                    - listitem [ref=e246]:
+                      - link "Google disclosure" [ref=e247] [cursor=pointer]:
+                        - /url: /google-disclosure/
+                        - generic [ref=e248]: Google disclosure
+                    - listitem [ref=e249]:
+                      - link "Privacy policy" [ref=e250] [cursor=pointer]:
+                        - /url: /privacy/
+                        - generic [ref=e251]: Privacy policy
+                    - listitem [ref=e252]:
+                      - link "Refund policy" [ref=e253] [cursor=pointer]:
+                        - /url: /refund-policy/
+                        - generic [ref=e254]: Refund policy
+              - listitem [ref=e255]:
+                - generic [ref=e256]:
+                  - paragraph [ref=e258]: Official partners
+                  - img "meta badge" [ref=e261]
+          - generic [ref=e262]:
+            - generic [ref=e263]:
+              - link "Facebook" [ref=e264] [cursor=pointer]:
+                - /url: https://www.facebook.com/KommoCRM
+                - img [ref=e265]
+              - link "LinkedIn" [ref=e268] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/kommo/
+                - img [ref=e269]
+              - link "Instagram" [ref=e272] [cursor=pointer]:
+                - /url: https://www.instagram.com/kommocrm/
+                - img [ref=e273]
+              - link "YouTube" [ref=e278] [cursor=pointer]:
+                - /url: https://www.youtube.com/@kommoglobal
+                - img [ref=e279]
+              - link "Telegramm" [ref=e281] [cursor=pointer]:
+                - /url: https://t.me/kommoglobal
+                - img [ref=e282]
+            - button "English" [ref=e286] [cursor=pointer]:
+              - img [ref=e288]
+              - generic [ref=e291]: English
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - link [ref=e294] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.kommo.mobile
+                - img [ref=e295]
+              - link [ref=e307] [cursor=pointer]:
+                - /url: https://apps.apple.com/sg/app/kommo/id6443626329
+                - img [ref=e308]
+            - paragraph [ref=e313]: QSOFT LLC © 2009-2026. All rights reserved.
+  - generic [ref=e314]:
+    - iframe
+    - generic [ref=e315] [cursor=pointer]:
+      - img [ref=e318]
+      - iframe [ref=e323]:
+        - generic [ref=f28e5] [cursor=pointer]: 👋 Hi! Got a question or need some help?
+      - generic [ref=e324]: "1"
+  - generic [ref=e326]:
+    - button "×" [ref=e327] [cursor=pointer]
+    - iframe [ref=e328]:
+      - link [ref=f29e6] [cursor=pointer]:
+        - /url: https://www.kommo.com/blog/kommo-ai-agent/

@@ -1,0 +1,493 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic:
+      - generic [ref=e4]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e5]:
+              - menuitem "Menu" [ref=e6] [cursor=pointer]:
+                - generic [ref=e7]: 
+                - generic [ref=e8]: Menu
+            - group [ref=e9]:
+              - menuitem "Sobre o WordPress" [ref=e10] [cursor=pointer]:
+                - generic [ref=e12]: Sobre o WordPress
+            - group [ref=e13]:
+              - menuitem "Passo a Passo Uniformes" [ref=e14] [cursor=pointer]
+            - group [ref=e15]:
+              - menuitem "7 atualizações disponíveis" [ref=e16] [cursor=pointer]:
+                - generic [ref=e18]: "7"
+                - generic [ref=e19]: 7 atualizações disponíveis
+            - group [ref=e20]:
+              - menuitem "0 comentário esperando moderação" [ref=e21] [cursor=pointer]:
+                - generic [ref=e23]: "0"
+                - generic [ref=e24]: 0 comentário esperando moderação
+            - group [ref=e25]:
+              - menuitem "Novo" [ref=e26] [cursor=pointer]:
+                - generic [ref=e28]: Novo
+            - text: 
+          - menu [ref=e29]:
+            - group [ref=e30]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e31] [cursor=pointer]
+      - main:
+        - generic:
+          - generic:
+            - heading "Editar página" [level=1] [ref=e32]
+            - generic [ref=e35]:
+              - region "Barra superior do editor" [ref=e36]:
+                - generic [ref=e37]:
+                  - toolbar "Ferramentas de documento" [ref=e39]:
+                    - generic [ref=e40]:
+                      - button "Ferramenta Inserção de blocos" [ref=e42] [cursor=pointer]:
+                        - img [ref=e43]
+                      - button "Visão geral do documento" [ref=e46] [cursor=pointer]:
+                        - img [ref=e47]
+                    - button "Editar com Elementor" [ref=e50] [cursor=pointer]:
+                      - generic [ref=e51]:
+                        - generic [ref=e52]: 
+                        - text: Editar com Elementor
+                  - button "Finalização de compra · Página" [ref=e53] [cursor=pointer]:
+                    - generic:
+                      - heading "Finalização de compra · Página" [level=1]:
+                        - generic: Finalização de compra
+                        - generic [ref=e54]: · Página
+                  - generic [ref=e55]:
+                    - link "Finish Setup" [ref=e58] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding
+                      - img [ref=e59]
+                      - text: Finish Setup
+                    - link "Preview" [ref=e63] [cursor=pointer]:
+                      - /url: https://passoapassouniformes.com/finalizar-compra/
+                      - img [ref=e64]
+                      - text: Preview
+                    - generic [ref=e66]:
+                      - button "Edit Pages" [ref=e67] [cursor=pointer]:
+                        - img [ref=e68]
+                      - button "Configurações" [ref=e72] [cursor=pointer]:
+                        - img [ref=e73]
+                      - button "Todas as notas" [ref=e75] [cursor=pointer]:
+                        - img [ref=e76]
+                    - button "Salvar" [ref=e78] [cursor=pointer]
+                    - button "Opções" [ref=e80] [cursor=pointer]:
+                      - img [ref=e81]
+              - generic [ref=e83]:
+                - region "Editor de conteúdo" [ref=e84]:
+                  - generic [ref=e88]:
+                    - textbox "Adicionar título" [ref=e90]
+                    - 'document "Bloco: Finalização de compra" [ref=e92]':
+                      - generic [ref=e95]:
+                        - generic [ref=e99]:
+                          - 'document "Bloco: Contact Information" [ref=e100]':
+                            - generic [ref=e101]:
+                              - heading [level=2] [ref=e103]:
+                                - textbox [ref=e104]: Informações de contato
+                              - paragraph
+                            - generic [ref=e105]:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - textbox "Endereço de e-mail" [disabled]: passoapassouniformes2025@gmail.com
+                                    - generic: Endereço de e-mail
+                                  - generic:
+                                    - generic:
+                                      - checkbox "Assine nossa newsletter (opcional)" [disabled]
+                                      - generic: Assine nossa newsletter (opcional)
+                                  - paragraph: Você está fazendo check-out como convidado.
+                          - 'document "Bloco: Billing Address" [ref=e106]':
+                            - generic [ref=e107]:
+                              - heading [level=2] [ref=e109]:
+                                - textbox [ref=e110]: Endereço de cobrança
+                              - paragraph
+                            - generic [ref=e111]:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: País
+                                            - combobox "País" [disabled]:
+                                              - option "Selecione um país" [disabled]
+                                              - option "Afeganistão" [disabled]
+                                              - option "África do Sul" [disabled]
+                                              - option "Albânia" [disabled]
+                                              - option "Alemanha" [disabled]
+                                              - option "Andorra" [disabled]
+                                              - option "Angola" [disabled]
+                                              - option "Anguilla" [disabled]
+                                              - option "Antártica" [disabled]
+                                              - option "Antígua e Barbuda" [disabled]
+                                              - option "Arábia Saudita" [disabled]
+                                              - option "Argélia" [disabled]
+                                              - option "Argentina" [disabled]
+                                              - option "Armênia" [disabled]
+                                              - option "Aruba" [disabled]
+                                              - option "Austrália" [disabled]
+                                              - option "Áustria" [disabled]
+                                              - option "Azerbaijão" [disabled]
+                                              - option "Bahamas" [disabled]
+                                              - option "Bangladesh" [disabled]
+                                              - option "Barbados" [disabled]
+                                              - option "Barém" [disabled]
+                                              - option "Belau" [disabled]
+                                              - option "Bélgica" [disabled]
+                                              - option "Belize" [disabled]
+                                              - option "Benim" [disabled]
+                                              - option "Bermudas" [disabled]
+                                              - option "Bielorrússia" [disabled]
+                                              - option "Bolívia" [disabled]
+                                              - option "Bonaire, Santo Eustáquio e Saba" [disabled]
+                                              - option "Bósnia e Herzegovina" [disabled]
+                                              - option "Botsuana" [disabled]
+                                              - option "Brasil" [disabled]
+                                              - option "Brunei" [disabled]
+                                              - option "Bulgária" [disabled]
+                                              - option "Burquina Fasso" [disabled]
+                                              - option "Burúndi" [disabled]
+                                              - option "Butão" [disabled]
+                                              - option "Cabo Verde" [disabled]
+                                              - option "Camarões" [disabled]
+                                              - option "Camboja" [disabled]
+                                              - option "Canadá" [disabled]
+                                              - option "Catar" [disabled]
+                                              - option "Cazaquistão" [disabled]
+                                              - option "Chade" [disabled]
+                                              - option "Chile" [disabled]
+                                              - option "China" [disabled]
+                                              - option "Chipre" [disabled]
+                                              - option "Cingapura" [disabled]
+                                              - option "Colômbia" [disabled]
+                                              - option "Comores" [disabled]
+                                              - option "Comunidade das Ilhas Marianas Setentrionais" [disabled]
+                                              - option "Congo (Brazzaville)" [disabled]
+                                              - option "Congo (Kinshasa)" [disabled]
+                                              - option "Coréia do Norte" [disabled]
+                                              - option "Coréia do Sul" [disabled]
+                                              - option "Costa do Marfim" [disabled]
+                                              - option "Costa Rica" [disabled]
+                                              - option "Croácia" [disabled]
+                                              - option "Cuba" [disabled]
+                                              - option "Curaçao" [disabled]
+                                              - option "Dinamarca" [disabled]
+                                              - option "Djibouti" [disabled]
+                                              - option "Dominica" [disabled]
+                                              - option "Egito" [disabled]
+                                              - option "El Salvador" [disabled]
+                                              - option "Emirados Árabes Unidos" [disabled]
+                                              - option "Equador" [disabled]
+                                              - option "Eritreia" [disabled]
+                                              - option "Eslováquia" [disabled]
+                                              - option "Eslovenia" [disabled]
+                                              - option "Espanha" [disabled]
+                                              - option "Estados Unidos" [disabled] [selected]
+                                              - option "Estônia" [disabled]
+                                              - option "Eswatini" [disabled]
+                                              - option "Etiópia" [disabled]
+                                              - option "Fiji" [disabled]
+                                              - option "Filipinas" [disabled]
+                                              - option "Finlândia" [disabled]
+                                              - option "França" [disabled]
+                                              - option "Gabão" [disabled]
+                                              - option "Gâmbia" [disabled]
+                                              - option "Gana" [disabled]
+                                              - option "Geórgia" [disabled]
+                                              - option "Gibraltar" [disabled]
+                                              - option "Granada" [disabled]
+                                              - option "Grécia" [disabled]
+                                              - option "Groenlândia" [disabled]
+                                              - option "Guadalupe" [disabled]
+                                              - option "Guam" [disabled]
+                                              - option "Guatemala" [disabled]
+                                              - option "Guernsey" [disabled]
+                                              - option "Guiana" [disabled]
+                                              - option "Guiana Francesa" [disabled]
+                                              - option "Guiné" [disabled]
+                                              - option "Guiné Equatorial" [disabled]
+                                              - option "Guiné-Bissau" [disabled]
+                                              - option "Haiti" [disabled]
+                                              - option "Holanda" [disabled]
+                                              - option "Honduras" [disabled]
+                                              - option "Hong Kong" [disabled]
+                                              - option "Hungria" [disabled]
+                                              - option "Iémen" [disabled]
+                                              - option "Ilha Bouvet" [disabled]
+                                              - option "Ilha Christmas" [disabled]
+                                              - option "Ilha de Man" [disabled]
+                                              - option "Ilha de São Martinho (República Francesa)" [disabled]
+                                              - option "Ilha Heard e Ilhas McDonald" [disabled]
+                                              - option "Ilha Norfolk" [disabled]
+                                              - option "Ilhas Aland" [disabled]
+                                              - option "Ilhas Cayman" [disabled]
+                                              - option "Ilhas Cocos" [disabled]
+                                              - option "Ilhas Cook" [disabled]
+                                              - option "Ilhas Feroe" [disabled]
+                                              - option "Ilhas Geórgia do Sul e Sandwich do Sul" [disabled]
+                                              - option "Ilhas Malvinas" [disabled]
+                                              - option "Ilhas Marshall" [disabled]
+                                              - option "Ilhas Menores Distantes, Estados Unidos da América (EUA)" [disabled]
+                                              - option "Ilhas Pitcairn" [disabled]
+                                              - option "Ilhas Salomão" [disabled]
+                                              - option "Ilhas Turcas e Caicos" [disabled]
+                                              - option "Ilhas Virgens (EUA)" [disabled]
+                                              - option "Ilhas Virgens Britânicas" [disabled]
+                                              - option "Índia" [disabled]
+                                              - option "Indonésia" [disabled]
+                                              - option "Irã" [disabled]
+                                              - option "Iraque" [disabled]
+                                              - option "Irlanda" [disabled]
+                                              - option "Islândia" [disabled]
+                                              - option "Israel" [disabled]
+                                              - option "Itália" [disabled]
+                                              - option "Jamaica" [disabled]
+                                              - option "Japão" [disabled]
+                                              - option "Jersey" [disabled]
+                                              - option "Jordânia" [disabled]
+                                              - option "Kosovo" [disabled]
+                                              - option "Kuweit" [disabled]
+                                              - option "Laos" [disabled]
+                                              - option "Látvia" [disabled]
+                                              - option "Lesoto" [disabled]
+                                              - option "Líbano" [disabled]
+                                              - option "Libéria" [disabled]
+                                              - option "Líbia" [disabled]
+                                              - option "Liechtenstein" [disabled]
+                                              - option "Lituânia" [disabled]
+                                              - option "Luxemburgo" [disabled]
+                                              - option "Macao" [disabled]
+                                              - option "Macedônia do Norte" [disabled]
+                                              - option "Madagascar" [disabled]
+                                              - option "Malásia" [disabled]
+                                              - option "Malawi" [disabled]
+                                              - option "Maldivas" [disabled]
+                                              - option "Mali" [disabled]
+                                              - option "Malta" [disabled]
+                                              - option "Marrocos" [disabled]
+                                              - option "Martinica" [disabled]
+                                              - option "Maurício" [disabled]
+                                              - option "Mauritânia" [disabled]
+                                              - option "Mayotte" [disabled]
+                                              - option "México" [disabled]
+                                              - option "Micronésia" [disabled]
+                                              - option "Moçambique" [disabled]
+                                              - option "Moldávia" [disabled]
+                                              - option "Mônaco" [disabled]
+                                              - option "Mongólia" [disabled]
+                                              - option "Montenegro" [disabled]
+                                              - option "Montserrat" [disabled]
+                                              - option "Namíbia" [disabled]
+                                              - option "Nauru" [disabled]
+                                              - option "Nepal" [disabled]
+                                              - option "Nicarágua" [disabled]
+                                              - option "Níger" [disabled]
+                                              - option "Nigéria" [disabled]
+                                              - option "Niue" [disabled]
+                                              - option "Noruega" [disabled]
+                                              - option "Nova Caledónia" [disabled]
+                                              - option "Nova Zelândia" [disabled]
+                                              - option "Omã" [disabled]
+                                              - option "Panamá" [disabled]
+                                              - option "Papua-Nova Guiné" [disabled]
+                                              - option "Paquistão" [disabled]
+                                              - option "Paraguai" [disabled]
+                                              - option "Peru" [disabled]
+                                              - option "Polinésia Francesa" [disabled]
+                                              - option "Polônia" [disabled]
+                                              - option "Porto Rico" [disabled]
+                                              - option "Portugal" [disabled]
+                                              - option "Quênia" [disabled]
+                                              - option "Quirguistão" [disabled]
+                                              - option "Quiribáti" [disabled]
+                                              - option "Reino Unido (UK)" [disabled]
+                                              - option "República Checa" [disabled]
+                                              - option "República da África Central" [disabled]
+                                              - option "República da União de Myanmar" [disabled]
+                                              - option "República Dominicana" [disabled]
+                                              - option "Reunião" [disabled]
+                                              - option "Romênia" [disabled]
+                                              - option "Ruanda" [disabled]
+                                              - option "Rússia" [disabled]
+                                              - option "Saara Ocidental" [disabled]
+                                              - option "Saint Martin (parte Holandesa)" [disabled]
+                                              - option "Saint-Pierre e Miquelon" [disabled]
+                                              - option "Samoa" [disabled]
+                                              - option "Samoa Americana" [disabled]
+                                              - option "San Marino" [disabled]
+                                              - option "Santa Helena" [disabled]
+                                              - option "Santa Lúcia" [disabled]
+                                              - option "São Bartolomeu" [disabled]
+                                              - option "São Cristóvão e Nevis" [disabled]
+                                              - option "São Tomé e Príncipe" [disabled]
+                                              - option "São Vicente e Granadinas" [disabled]
+                                              - option "Senegal" [disabled]
+                                              - option "Serra Leoa" [disabled]
+                                              - option "Sérvia" [disabled]
+                                              - option "Seychelles" [disabled]
+                                              - option "Síria" [disabled]
+                                              - option "Somália" [disabled]
+                                              - option "Sri Lanka" [disabled]
+                                              - option "Sudão" [disabled]
+                                              - option "Sudão do Sul" [disabled]
+                                              - option "Suécia" [disabled]
+                                              - option "Suiça" [disabled]
+                                              - option "Suriname" [disabled]
+                                              - option "Svalbard e Jan Mayen" [disabled]
+                                              - option "Tailândia" [disabled]
+                                              - option "Taiwan" [disabled]
+                                              - option "Tajiquistão" [disabled]
+                                              - option "Tanzânia" [disabled]
+                                              - option "Território Britânico do Oceano Índico" [disabled]
+                                              - option "Território das Terras Austrais e Antárcticas Francesas" [disabled]
+                                              - option "Território Palestino" [disabled]
+                                              - option "Timor-Leste" [disabled]
+                                              - option "Togo" [disabled]
+                                              - option "Tokelau" [disabled]
+                                              - option "Tonga" [disabled]
+                                              - option "Trinidad e Tobago" [disabled]
+                                              - option "Tunísia" [disabled]
+                                              - option "Turcomenistão" [disabled]
+                                              - option "Türkiye" [disabled]
+                                              - option "Tuvalu" [disabled]
+                                              - option "Ucrânia" [disabled]
+                                              - option "Uganda" [disabled]
+                                              - option "Uruguai" [disabled]
+                                              - option "Uzbequistão" [disabled]
+                                              - option "Vanuatu" [disabled]
+                                              - option "Vaticano" [disabled]
+                                              - option "Venezuela" [disabled]
+                                              - option "Vietnã" [disabled]
+                                              - option "Wallis e Futuna" [disabled]
+                                              - option "Zâmbia" [disabled]
+                                              - option "Zimbábue" [disabled]
+                                            - img
+                                      - generic:
+                                        - textbox "Nome" [disabled]
+                                        - generic: Nome
+                                      - generic:
+                                        - textbox "Sobrenome" [disabled]
+                                        - generic: Sobrenome
+                                      - generic:
+                                        - textbox "Endereço" [disabled]
+                                        - generic: Endereço
+                                      - button "+ Add complemento, apartamento, etc." [disabled]
+                                      - textbox [disabled]
+                                      - generic:
+                                        - textbox "Cidade" [disabled]
+                                        - generic: Cidade
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: Estado
+                                            - combobox "Estado" [disabled]:
+                                              - option "Selecione um estado" [disabled]
+                                              - option "Alabama" [disabled]
+                                              - option "Alasca" [disabled]
+                                              - option "Arizona" [disabled]
+                                              - option "Arkansas" [disabled]
+                                              - option "Califórnia" [disabled] [selected]
+                                              - option "Colorado" [disabled]
+                                              - option "Connecticut" [disabled]
+                                              - option "Delaware" [disabled]
+                                              - option "Distrito de Columbia" [disabled]
+                                              - option "Flórida" [disabled]
+                                              - option "Geórgia" [disabled]
+                                              - option "Havaí" [disabled]
+                                              - option "Idaho" [disabled]
+                                              - option "Illinois" [disabled]
+                                              - option "Indiana" [disabled]
+                                              - option "Iowa" [disabled]
+                                              - option "Kansas" [disabled]
+                                              - option "Kentucky" [disabled]
+                                              - option "Louisiana" [disabled]
+                                              - option "Maine" [disabled]
+                                              - option "Maryland" [disabled]
+                                              - option "Massachusetts" [disabled]
+                                              - option "Michigan" [disabled]
+                                              - option "Minnesota" [disabled]
+                                              - option "Mississippi" [disabled]
+                                              - option "Missouri" [disabled]
+                                              - option "Montana" [disabled]
+                                              - option "Nebraska" [disabled]
+                                              - option "Nevada" [disabled]
+                                              - option "Nova Hampshire" [disabled]
+                                              - option "Nova Jersey" [disabled]
+                                              - option "Novo México" [disabled]
+                                              - option "Nova Iorque" [disabled]
+                                              - option "Carolina do Norte" [disabled]
+                                              - option "Dakota do Norte" [disabled]
+                                              - option "Ohio" [disabled]
+                                              - option "Oklahoma" [disabled]
+                                              - option "Oregon" [disabled]
+                                              - option "Pensilvânia" [disabled]
+                                              - option "Rhode Island" [disabled]
+                                              - option "Carolina do Sul" [disabled]
+                                              - option "Dakota do Sul" [disabled]
+                                              - option "Tennessee" [disabled]
+                                              - option "Texas" [disabled]
+                                              - option "Utah" [disabled]
+                                              - option "Vermont" [disabled]
+                                              - option "Virgínia" [disabled]
+                                              - option "Washington" [disabled]
+                                              - option "Virgínia Ocidental" [disabled]
+                                              - option "Wisconsin" [disabled]
+                                              - option "Wyoming" [disabled]
+                                              - option "Forças Armadas (AA)" [disabled]
+                                              - option "Forças Armadas (AE)" [disabled]
+                                              - option "Forças Armadas (AP)" [disabled]
+                                            - img
+                                      - generic:
+                                        - textbox "CEP" [disabled]
+                                        - generic: CEP
+                                      - generic:
+                                        - textbox "Telefone (opcional)" [disabled]
+                                        - generic: Telefone (opcional)
+                          - 'document "Bloco: Payment Options" [ref=e112]':
+                            - generic [ref=e113]:
+                              - heading [level=2] [ref=e115]:
+                                - textbox [ref=e116]: Opções de pagamento
+                              - paragraph
+                            - generic [ref=e117]:
+                              - generic:
+                                - generic "Loading payment options…"
+                          - 'document "Bloco: Order Note" [ref=e118]':
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - checkbox "Adicione uma observação ao seu pedido" [disabled]
+                                        - generic: Adicione uma observação ao seu pedido
+                          - 'document "Bloco: Terms and Conditions" [ref=e119]':
+                            - textbox [ref=e121]
+                          - 'document "Bloco: Actions" [ref=e122]':
+                            - generic [ref=e124]:
+                              - generic [ref=e125]:
+                                - img
+                                - textbox "Retornar ao carrinho" [ref=e126]
+                              - button "Finalizar pedido" [disabled]:
+                                - generic:
+                                  - generic:
+                                    - textbox [disabled]
+                          - button "Adicionar bloco" [ref=e129] [cursor=pointer]:
+                            - img
+                        - generic [ref=e132]:
+                          - 'document "Bloco: Order Summary" [ref=e133]':
+                            - button "Resumo do pedido R$1.417,50" [ref=e134] [cursor=pointer]:
+                              - heading "Resumo do pedido" [level=2] [ref=e135]
+                              - generic [ref=e136]: R$1.417,50
+                              - generic [ref=e137]:
+                                - img
+                          - button "Adicionar bloco" [ref=e140] [cursor=pointer]:
+                            - img
+                    - text: 
+                - region "Editor de configurações"
+                - region "Publicação do editor":
+                  - button "Abrir painel de publicação" [disabled] [ref=e142]
+    - generic [ref=e144] [cursor=pointer]:
+      - img [ref=e145]
+      - generic [ref=e147]: Fale com o Kodee
+  - img

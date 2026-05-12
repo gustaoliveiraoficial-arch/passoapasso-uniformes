@@ -1,0 +1,268 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - button [ref=e9]:
+            - img [ref=e12]
+        - separator [ref=e14]
+        - generic [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link [ref=e24]:
+                - /url: /home/
+                - img [ref=e26]
+            - listitem [ref=e28]:
+              - link "207" [ref=e30] [cursor=pointer]:
+                - /url: /chats/
+                - generic [ref=e31]:
+                  - img [ref=e32]
+                  - generic [ref=e35]: "207"
+            - listitem [ref=e36]:
+              - link [ref=e38] [cursor=pointer]:
+                - /url: /leads/pipeline/13368211
+                - img [ref=e40]
+            - listitem [ref=e43] [cursor=pointer]:
+              - link [ref=e45]:
+                - /url: /todo
+                - img [ref=e47]
+            - listitem [ref=e49]:
+              - link [ref=e51] [cursor=pointer]:
+                - /url: /contacts/list/contacts
+                - img [ref=e53]
+            - listitem [ref=e56] [cursor=pointer]:
+              - link [ref=e58]:
+                - /url: /settings/ai-agent/
+                - img [ref=e60]
+            - listitem [ref=e62]:
+              - link [ref=e64] [cursor=pointer]:
+                - /url: /chats/tools/bots/
+                - img [ref=e66]
+            - listitem [ref=e68]:
+              - link [ref=e70] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e72]
+          - separator [ref=e75]
+          - list [ref=e76]:
+            - listitem [ref=e78] [cursor=pointer]:
+              - link [ref=e80]:
+                - /url: /widget_page/whatsapp_cloud_api/hub
+                - img [ref=e83]
+            - listitem [ref=e85] [cursor=pointer]:
+              - link [ref=e87]:
+                - /url: /widget_page/tiktok_kommo/hub
+                - img [ref=e90]
+        - list [ref=e92]:
+          - listitem [ref=e94] [cursor=pointer]:
+            - link [ref=e96]:
+              - /url: /settings/profile/
+              - img [ref=e98]
+          - listitem [ref=e100]:
+            - link [ref=e102] [cursor=pointer]:
+              - /url: /settings/ai
+              - img [ref=e104]
+          - listitem [ref=e107] [cursor=pointer]:
+            - link [ref=e109]:
+              - /url: ""
+              - img [ref=e111]
+          - listitem [ref=e114] [cursor=pointer]:
+            - link "1" [ref=e116]:
+              - /url: /settings/profile/notifications
+              - generic [ref=e117]:
+                - img [ref=e118]
+                - generic [ref=e121]: "1"
+        - separator [ref=e122]
+        - button "Avatar" [ref=e124] [cursor=pointer]:
+          - img "Avatar" [ref=e127]
+      - generic [ref=e128]:
+        - heading "Configurações" [level=2] [ref=e130]
+        - separator [ref=e131]
+        - generic [ref=e136]:
+          - generic [ref=e137]: Perfil
+          - list [ref=e138]:
+            - listitem [ref=e140] [cursor=pointer]:
+              - link "Configurações de perfil" [ref=e142]:
+                - /url: /settings/profile/
+                - generic [ref=e143]: Configurações de perfil
+          - generic [ref=e144]: Área de trabalho
+          - list [ref=e145]:
+            - listitem [ref=e147] [cursor=pointer]:
+              - link "Configurações de trabalho" [ref=e149]:
+                - /url: /settings/
+                - generic [ref=e150]: Configurações de trabalho
+            - listitem [ref=e152] [cursor=pointer]:
+              - link "Configurações de chat" [ref=e154]:
+                - /url: /settings/communications/
+                - generic [ref=e155]: Configurações de chat
+            - listitem [ref=e157] [cursor=pointer]:
+              - link "Configurações de email" [ref=e159]:
+                - /url: /mail/settings/
+                - generic [ref=e160]: Configurações de email
+            - listitem [ref=e162] [cursor=pointer]:
+              - link "Faturamento" [ref=e164]:
+                - /url: /settings/pay/
+                - generic [ref=e165]: Faturamento
+            - listitem [ref=e167] [cursor=pointer]:
+              - link "Gestão de usuários" [ref=e169]:
+                - /url: /settings/users/
+                - generic [ref=e170]: Gestão de usuários
+          - generic [ref=e171]: IA
+          - list [ref=e172]:
+            - listitem [ref=e174] [cursor=pointer]:
+              - link "Configurações de IA" [ref=e176]:
+                - /url: /settings/ai/
+                - generic [ref=e177]: Configurações de IA
+            - listitem [ref=e179] [cursor=pointer]:
+              - link "Fontes de conhecimento da IA" [ref=e181]:
+                - /url: /settings/ai-knowledge-sources/
+                - generic [ref=e182]: Fontes de conhecimento da IA
+          - generic [ref=e183]: Integrações e canais
+          - list [ref=e184]:
+            - listitem [ref=e186] [cursor=pointer]:
+              - link "Central de integrações" [ref=e188]:
+                - /url: /settings/widgets/
+                - generic [ref=e189]: Central de integrações
+  - generic:
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e196]:
+          - button [ref=e199] [cursor=pointer]:
+            - img [ref=e201]
+          - button "Configurações do grupo" [ref=e204] [cursor=pointer]:
+            - generic [ref=e205]: Configurações do grupo
+          - link "Adicionar usuário" [ref=e206] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e207]
+            - generic [ref=e209]: Adicionar usuário
+        - generic [ref=e210]:
+          - textbox "Busca e filtro" [ref=e213]
+          - img [ref=e214]
+      - generic [ref=e218]:
+        - generic [ref=e229]:
+          - checkbox [ref=e233] [cursor=pointer]
+          - generic [ref=e238] [cursor=pointer]: Nome
+          - generic [ref=e243] [cursor=pointer]: Grupo
+          - generic [ref=e248] [cursor=pointer]: E-mail
+          - generic [ref=e253]: Leads
+          - generic [ref=e258]: Contatos
+          - generic [ref=e263]: Empresas
+          - generic [ref=e268]: Tarefas
+          - generic [ref=e273]: Status
+        - generic [ref=e275]:
+          - checkbox [ref=e280] [cursor=pointer]
+          - generic "Passo a passo uniformes" [ref=e285] [cursor=pointer]
+          - generic "Seção de vendas" [ref=e287]:
+            - generic [ref=e288]: Seção de vendas
+          - generic [ref=e291]: passoapassouniformes2025@gmail.com
+          - generic [ref=e293]: Administrador
+        - generic [ref=e302]:
+          - checkbox [ref=e307] [cursor=pointer]
+          - generic "irua" [ref=e312] [cursor=pointer]
+          - generic "Seção de vendas" [ref=e314]:
+            - generic [ref=e315]: Seção de vendas
+          - generic [ref=e318]: iruasoares@gmail.com
+          - generic [ref=e320]:
+            - listitem "Adicionar" [ref=e321]
+            - listitem "View" [ref=e322]
+            - listitem "Editar" [ref=e323]
+            - listitem "Excluir" [ref=e324]
+            - listitem "Exportar" [ref=e325]
+          - generic [ref=e327]:
+            - listitem "Adicionar" [ref=e328]
+            - listitem "View" [ref=e329]
+            - listitem "Editar" [ref=e330]
+            - listitem "Excluir" [ref=e331]
+            - listitem "Exportar" [ref=e332]
+          - generic [ref=e334]:
+            - listitem "Adicionar" [ref=e335]
+            - listitem "View" [ref=e336]
+            - listitem "Editar" [ref=e337]
+            - listitem "Excluir" [ref=e338]
+            - listitem "Exportar" [ref=e339]
+          - generic [ref=e341]:
+            - listitem "Editar" [ref=e342]
+            - listitem "Excluir" [ref=e343]
+        - generic [ref=e346]:
+          - checkbox [ref=e351] [cursor=pointer]
+          - generic "Greg" [ref=e356] [cursor=pointer]
+          - generic "Seção de vendas" [ref=e358]:
+            - generic [ref=e359]: Seção de vendas
+          - generic [ref=e362]: passoapassomrk@gmail.com
+          - generic [ref=e364]:
+            - listitem "Adicionar" [ref=e365]
+            - listitem "View" [ref=e366]
+            - listitem "Editar" [ref=e367]
+            - listitem "Excluir" [ref=e368]
+            - listitem "Exportar" [ref=e369]
+          - generic [ref=e371]:
+            - listitem "Adicionar" [ref=e372]
+            - listitem "View" [ref=e373]
+            - listitem "Editar" [ref=e374]
+            - listitem "Excluir" [ref=e375]
+            - listitem "Exportar" [ref=e376]
+          - generic [ref=e378]:
+            - listitem "Adicionar" [ref=e379]
+            - listitem "View" [ref=e380]
+            - listitem "Editar" [ref=e381]
+            - listitem "Excluir" [ref=e382]
+            - listitem "Exportar" [ref=e383]
+          - generic [ref=e385]:
+            - listitem "Editar" [ref=e386]
+            - listitem "Excluir" [ref=e387]
+        - generic [ref=e390]:
+          - checkbox [ref=e395] [cursor=pointer]
+          - generic "Fran" [ref=e400] [cursor=pointer]
+          - generic "Seção de vendas" [ref=e402]:
+            - generic [ref=e403]: Seção de vendas
+          - generic [ref=e406]: francillylopes1995@gmail.com
+          - generic [ref=e408]:
+            - listitem "Adicionar" [ref=e409]
+            - listitem "View" [ref=e410]
+            - listitem "Editar" [ref=e411]
+            - listitem "Excluir" [ref=e412]
+            - listitem "Exportar" [ref=e413]
+          - generic [ref=e415]:
+            - listitem "Adicionar" [ref=e416]
+            - listitem "View" [ref=e417]
+            - listitem "Editar" [ref=e418]
+            - listitem "Excluir" [ref=e419]
+            - listitem "Exportar" [ref=e420]
+          - generic [ref=e422]:
+            - listitem "Adicionar" [ref=e423]
+            - listitem "View" [ref=e424]
+            - listitem "Editar" [ref=e425]
+            - listitem "Excluir" [ref=e426]
+            - listitem "Exportar" [ref=e427]
+          - generic [ref=e429]:
+            - listitem "Editar" [ref=e430]
+            - listitem "Excluir" [ref=e431]
+    - generic [ref=e438]:
+      - img
+      - button [ref=e439]:
+        - img [ref=e440]
+        - img [ref=e441]
+        - img [ref=e445]
+      - generic [ref=e446]:
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - img [ref=e449]
+            - generic [ref=e450]: Kommo Copilot
+          - generic [ref=e451]:
+            - button [ref=e452] [cursor=pointer]:
+              - img [ref=e455]
+            - button [ref=e456] [cursor=pointer]:
+              - img [ref=e459]
+            - button [ref=e460] [cursor=pointer]:
+              - img [ref=e463]
+        - button "Novo chat" [ref=e465]:
+          - generic [ref=e466]:
+            - generic [ref=e467]: Novo chat
+            - img [ref=e468]
+        - generic [ref=e492]:
+          - generic [ref=e493]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e496]
+            - button [disabled] [ref=e499]:
+              - img [ref=e502]
+          - generic [ref=e503]: O conteúdo gerado por IA pode ser impreciso

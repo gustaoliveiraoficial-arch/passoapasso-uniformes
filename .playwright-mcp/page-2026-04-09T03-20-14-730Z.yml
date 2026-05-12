@@ -1,0 +1,1086 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - link "Pular para o conteúdo" [ref=e14] [cursor=pointer]:
+          - /url: ""
+        - link "Como usar o Gmail com leitores de tela" [ref=e15] [cursor=pointer]:
+          - /url: ""
+      - heading [level=1] [ref=e17]:
+        - banner [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - button "Menu principal" [expanded] [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+              - link "Gmail" [ref=e26] [cursor=pointer]:
+                - /url: "#inbox"
+                - img [ref=e27]
+            - generic [ref=e28]:
+              - search [ref=e30]:
+                - heading "Pesquisar" [level=2] [ref=e31]
+                - combobox "Pesquisar e-mail" [ref=e33]
+                - button "Opções de pesquisa avançada" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Pesquisar e-mail" [disabled] [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+              - generic [ref=e41]:
+                - button [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+                - button "Configurações" [ref=e45] [cursor=pointer]:
+                  - img [ref=e46]
+                - generic [ref=e50]:
+                  - generic:
+                    - button "Teste o Gemini" [ref=e53] [cursor=pointer]:
+                      - img [ref=e56]
+                    - tooltip [ref=e59]: Teste o Gemini
+            - generic [ref=e61]:
+              - button "Google Apps" [ref=e65] [cursor=pointer]:
+                - img [ref=e66]
+              - 'button "Conta do Google: Passo a passo uniformes (passoapassouniformes2025@gmail.com)" [ref=e71] [cursor=pointer]':
+                - img [ref=e73]
+      - alert [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]: Ativar as notificações na área de trabalho para o Gmail.
+          - generic [ref=e79]:
+            - link "OK" [ref=e80] [cursor=pointer]
+            - link "Agora não(a)" [ref=e81] [cursor=pointer]
+          - button "Fechar" [ref=e82] [cursor=pointer]
+    - generic [ref=e84]:
+      - navigation [ref=e85]:
+        - button "Escrever" [ref=e88] [cursor=pointer]
+        - generic [ref=e94]:
+          - generic "Marcadores" [ref=e96]:
+            - heading "Marcadores" [level=2] [ref=e97]
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - generic [ref=e101]:
+                  - generic [ref=e106]:
+                    - link "Caixa de entrada 100 não lidas" [ref=e108] [cursor=pointer]:
+                      - /url: https://mail.google.com/mail/u/0/#inbox
+                      - text: Caixa de entrada
+                    - generic [ref=e109]: "100"
+                  - link "Com estrela" [ref=e116] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#starred
+                  - link "Adiados" [ref=e123] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#snoozed
+                  - link "Enviados" [ref=e130] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#sent
+                  - link "Rascunhos" [ref=e137] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#drafts
+                - generic [ref=e144]:
+                  - link "Compras 6 não lidas tem menu" [ref=e146] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#category/purchases
+                    - text: Compras
+                  - generic [ref=e147]: "6"
+              - button "Mais marcadores" [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]: Mais
+          - generic [ref=e153]:
+            - heading "Marcadores" [ref=e154]
+            - button "Criar novo marcador" [ref=e155] [cursor=pointer]
+          - generic:
+            - generic "Marcadores":
+              - heading "Marcadores" [level=2] [ref=e156]
+      - generic [ref=e161]:
+        - generic [ref=e164]:
+          - generic [ref=e167]:
+            - button "Selecionar" [ref=e169] [cursor=pointer]:
+              - checkbox [ref=e171]
+            - button "Atualizar" [ref=e174] [cursor=pointer]
+            - button "Mais opções de e-mail" [ref=e178] [cursor=pointer]
+          - generic [ref=e183]:
+            - button "Mostrar mais mensagens" [ref=e184] [cursor=pointer]:
+              - generic [ref=e185]:
+                - generic [ref=e186]: 1–50
+                - text: de 158
+            - button "Próximas" [disabled] [ref=e187]
+            - button "Anteriores" [ref=e188] [cursor=pointer]
+        - generic [ref=e190]:
+          - main [ref=e193]:
+            - alert [ref=e196]:
+              - complementary "Aproveite 30 GB. Em vez de R$ 4,50, pague R$ 1 por 3 meses" [ref=e198]:
+                - generic [ref=e199]:
+                  - generic [ref=e202]:
+                    - generic [ref=e203]:
+                      - generic [ref=e204]:
+                        - img [ref=e206]
+                        - text: O armazenamento está quase cheio
+                      - generic [ref=e208]:
+                        - heading "Aproveite 30 GB. Em vez de R$ 4,50, pague R$ 1 por 3 meses" [level=3] [ref=e210]: Aproveite 30 GB pagando R$ 4,50 R$ 1 por 3 meses
+                        - generic [ref=e211]: O armazenamento é compartilhado entre o Gmail, o Drive e o Google Fotos
+                      - generic [ref=e217]: 14,98 GB de 15 GB usados
+                    - generic [ref=e218]:
+                      - button "Liberar espaço" [ref=e221] [cursor=pointer]:
+                        - generic [ref=e223]: Liberar espaço
+                      - button "Aproveite a oferta" [ref=e226] [cursor=pointer]:
+                        - generic [ref=e228]: Aproveite a oferta
+                  - generic [ref=e229]:
+                    - button "Fechar banner" [ref=e230] [cursor=pointer]:
+                      - img [ref=e232]
+                    - tooltip [ref=e235]: Fechar banner
+            - heading "Conversas" [level=2] [ref=e237]
+            - table [ref=e239]:
+              - rowgroup [ref=e240]:
+                - tablist [ref=e241]:
+                  - heading "Principal, 5 novas mensagens," [level=3] [ref=e242]:
+                    - tab "Principal, 5 novas mensagens," [selected] [ref=e243] [cursor=pointer]:
+                      - generic [ref=e246]:
+                        - generic [ref=e247]: 5 novos
+                        - generic: Principal
+                  - heading "Promoções, uma nova mensagem," [level=3] [ref=e248]:
+                    - tab "Promoções, uma nova mensagem," [ref=e249] [cursor=pointer]:
+                      - generic [ref=e252]:
+                        - generic [ref=e253]: 1 novo
+                        - generic [ref=e254]: Promoções
+                  - heading "Social" [level=3] [ref=e255]:
+                    - tab "Social" [ref=e256] [cursor=pointer]:
+                      - generic [ref=e260]: Social
+                  - heading "Atualizações, 35 novas mensagens," [level=3] [ref=e261]:
+                    - tab "Atualizações, 35 novas mensagens," [ref=e262] [cursor=pointer]:
+                      - generic [ref=e265]:
+                        - generic [ref=e266]: 35 novos
+                        - generic: Atualizações
+                  - cell
+                  - cell
+                - row
+            - tabpanel "Principal" [ref=e269]:
+              - grid [ref=e272]:
+                - rowgroup [ref=e273]:
+                  - 'row "não lida, eu, 📱 Stories do Dia 09/04/2026 | Passo a Passo, com anexo, 00:20, 📱 Cronograma de Stories Quinta-feira, 09 de abril de 2026 · Passo a Passo Uniformes ⚡ Antes de postar: verifique tendências no TikTok, Instagram Explore e Twitter Trending Brasil. Adapte o conteúdo se." [ref=e274] [cursor=pointer]':
+                    - gridcell [ref=e275]
+                    - 'gridcell "não lida, eu, 📱 Stories do Dia 09/04/2026 | Passo a Passo, com anexo, 00:20, 📱 Cronograma de Stories Quinta-feira, 09 de abril de 2026 · Passo a Passo Uniformes ⚡ Antes de postar: verifique tendências no TikTok, Instagram Explore e Twitter Trending Brasil. Adapte o conteúdo se." [ref=e276]':
+                      - 'checkbox "não lida, eu, 📱 Stories do Dia 09/04/2026 | Passo a Passo, com anexo, 00:20, 📱 Cronograma de Stories Quinta-feira, 09 de abril de 2026 · Passo a Passo Uniformes ⚡ Antes de postar: verifique tendências no TikTok, Instagram Explore e Twitter Trending Brasil. Adapte o conteúdo se." [ref=e277]'
+                    - gridcell "Sem estrela" [ref=e278]:
+                      - button "Sem estrela" [ref=e279]
+                    - gridcell "eu" [ref=e280]:
+                      - generic [ref=e282]: eu
+                    - 'gridcell "📱 Stories do Dia 09/04/2026 | Passo a Passo 📱 Cronograma de Stories Quinta-feira, 09 de abril de 2026 · Passo a Passo Uniformes ⚡ Antes de postar: verifique tendências no TikTok, Instagram Explore e Twitter Trending Brasil. Adapte o conteúdo se" [ref=e283]':
+                      - 'link "📱 Stories do Dia 09/04/2026 | Passo a Passo 📱 Cronograma de Stories Quinta-feira, 09 de abril de 2026 · Passo a Passo Uniformes ⚡ Antes de postar: verifique tendências no TikTok, Instagram Explore e Twitter Trending Brasil. Adapte o conteúdo se" [ref=e284]':
+                        - generic [ref=e285]:
+                          - generic [ref=e288]:
+                            - img "📱" [ref=e289]
+                            - text: Stories do Dia 09/04/2026 | Passo a Passo
+                          - generic [ref=e290]:
+                            - img "📱" [ref=e291]
+                            - text: Cronograma de Stories Quinta-feira, 09 de abril de 2026 · Passo a Passo Uniformes
+                            - img "⚡" [ref=e292]
+                            - text: "Antes de postar: verifique tendências no TikTok, Instagram Explore e Twitter Trending Brasil. Adapte o conteúdo se"
+                    - gridcell "Com anexo" [ref=e293]:
+                      - img "Com anexo" [ref=e294]
+                    - gridcell "qui., 9 de abr. de 2026, 00:20" [ref=e295]:
+                      - generic "qui., 9 de abr. de 2026, 00:20" [ref=e296]: 00:20
+                    - gridcell
+                  - row "não lida, Google, Alerta de segurança, 00:19, Senhas de app foram criadas para fazer login na sua conta passoapassouniformes2025@gmail.com Se você não gerou essa senha para PassoaPasso Stories, alguém pode estar usando sua conta. Verifique e." [ref=e297] [cursor=pointer]:
+                    - gridcell [ref=e298]
+                    - gridcell "não lida, Google, Alerta de segurança, 00:19, Senhas de app foram criadas para fazer login na sua conta passoapassouniformes2025@gmail.com Se você não gerou essa senha para PassoaPasso Stories, alguém pode estar usando sua conta. Verifique e." [ref=e299]:
+                      - checkbox "não lida, Google, Alerta de segurança, 00:19, Senhas de app foram criadas para fazer login na sua conta passoapassouniformes2025@gmail.com Se você não gerou essa senha para PassoaPasso Stories, alguém pode estar usando sua conta. Verifique e." [ref=e300]
+                    - gridcell "Sem estrela" [ref=e301]:
+                      - button "Sem estrela" [ref=e302]
+                    - gridcell "Nova Google" [ref=e303]:
+                      - generic [ref=e305]: Nova
+                      - generic [ref=e307]: Google
+                    - gridcell "Alerta de segurança Senhas de app foram criadas para fazer login na sua conta passoapassouniformes2025@gmail.com Se você não gerou essa senha para PassoaPasso Stories, alguém pode estar usando sua conta. Verifique e" [ref=e308]:
+                      - link "Alerta de segurança Senhas de app foram criadas para fazer login na sua conta passoapassouniformes2025@gmail.com Se você não gerou essa senha para PassoaPasso Stories, alguém pode estar usando sua conta. Verifique e" [ref=e310]:
+                        - generic [ref=e311]:
+                          - generic [ref=e313]: Alerta de segurança
+                          - generic [ref=e314]: Senhas de app foram criadas para fazer login na sua conta passoapassouniformes2025@gmail.com Se você não gerou essa senha para PassoaPasso Stories, alguém pode estar usando sua conta. Verifique e
+                    - gridcell [ref=e315]
+                    - gridcell "qui., 9 de abr. de 2026, 00:19" [ref=e316]:
+                      - generic "qui., 9 de abr. de 2026, 00:19" [ref=e317]: 00:19
+                    - gridcell
+                  - row "não lida, Google, Verificação em duas etapas ativada, 00:18, Verificação em duas etapas ativada passoapassouniformes2025@gmail.com Sua Conta do Google passoapassouniformes2025@gmail.com está protegida com a verificação em duas etapas. Quando você fizer login em." [ref=e318] [cursor=pointer]:
+                    - gridcell [ref=e319]
+                    - gridcell "não lida, Google, Verificação em duas etapas ativada, 00:18, Verificação em duas etapas ativada passoapassouniformes2025@gmail.com Sua Conta do Google passoapassouniformes2025@gmail.com está protegida com a verificação em duas etapas. Quando você fizer login em." [ref=e320]:
+                      - checkbox "não lida, Google, Verificação em duas etapas ativada, 00:18, Verificação em duas etapas ativada passoapassouniformes2025@gmail.com Sua Conta do Google passoapassouniformes2025@gmail.com está protegida com a verificação em duas etapas. Quando você fizer login em." [ref=e321]
+                    - gridcell "Sem estrela" [ref=e322]:
+                      - button "Sem estrela" [ref=e323]
+                    - gridcell "Nova Google" [ref=e324]:
+                      - generic [ref=e326]: Nova
+                      - generic [ref=e328]: Google
+                    - gridcell "Verificação em duas etapas ativada Verificação em duas etapas ativada passoapassouniformes2025@gmail.com Sua Conta do Google passoapassouniformes2025@gmail.com está protegida com a verificação em duas etapas. Quando você fizer login em" [ref=e329]:
+                      - link "Verificação em duas etapas ativada Verificação em duas etapas ativada passoapassouniformes2025@gmail.com Sua Conta do Google passoapassouniformes2025@gmail.com está protegida com a verificação em duas etapas. Quando você fizer login em" [ref=e331]:
+                        - generic [ref=e332]:
+                          - generic [ref=e334]: Verificação em duas etapas ativada
+                          - generic [ref=e335]: Verificação em duas etapas ativada passoapassouniformes2025@gmail.com Sua Conta do Google passoapassouniformes2025@gmail.com está protegida com a verificação em duas etapas. Quando você fizer login em
+                    - gridcell [ref=e336]
+                    - gridcell "qui., 9 de abr. de 2026, 00:18" [ref=e337]:
+                      - generic "qui., 9 de abr. de 2026, 00:18" [ref=e338]: 00:18
+                    - gridcell
+                  - 'row "não lida, passoapassouniforme. 2, Passo a passo uniformes, você tem 3 novas notificações, 00:01, passoapassouniformes2025 É hora de concluir uma tare... 08.04.2026 23:55 Vanessa Passo a passo uniformes: Acompanhar... É hora de concluir uma tare... 08.04.2026 23:55 ederson - USN MAQ Passo a passo." [ref=e339] [cursor=pointer]':
+                    - gridcell [ref=e340]
+                    - 'gridcell "não lida, passoapassouniforme. 2, Passo a passo uniformes, você tem 3 novas notificações, 00:01, passoapassouniformes2025 É hora de concluir uma tare... 08.04.2026 23:55 Vanessa Passo a passo uniformes: Acompanhar... É hora de concluir uma tare... 08.04.2026 23:55 ederson - USN MAQ Passo a passo." [ref=e341]':
+                      - 'checkbox "não lida, passoapassouniforme. 2, Passo a passo uniformes, você tem 3 novas notificações, 00:01, passoapassouniformes2025 É hora de concluir uma tare... 08.04.2026 23:55 Vanessa Passo a passo uniformes: Acompanhar... É hora de concluir uma tare... 08.04.2026 23:55 ederson - USN MAQ Passo a passo." [ref=e342]'
+                    - gridcell "Sem estrela" [ref=e343]:
+                      - button "Sem estrela" [ref=e344]
+                    - gridcell "Nova passoapassouniforme. 2" [ref=e345]:
+                      - generic [ref=e347]: Nova
+                      - generic [ref=e348]:
+                        - generic [ref=e349]: passoapassouniforme.
+                        - generic [ref=e350]: "2"
+                    - 'gridcell "Passo a passo uniformes, você tem 3 novas notificações passoapassouniformes2025 É hora de concluir uma tare... 08.04.2026 23:55 Vanessa Passo a passo uniformes: Acompanhar... É hora de concluir uma tare... 08.04.2026 23:55 ederson - USN MAQ Passo a passo" [ref=e351]':
+                      - 'link "Passo a passo uniformes, você tem 3 novas notificações passoapassouniformes2025 É hora de concluir uma tare... 08.04.2026 23:55 Vanessa Passo a passo uniformes: Acompanhar... É hora de concluir uma tare... 08.04.2026 23:55 ederson - USN MAQ Passo a passo" [ref=e352]':
+                        - generic [ref=e353]:
+                          - generic [ref=e355]: Passo a passo uniformes, você tem 3 novas notificações
+                          - generic [ref=e356]: "passoapassouniformes2025 É hora de concluir uma tare... 08.04.2026 23:55 Vanessa Passo a passo uniformes: Acompanhar... É hora de concluir uma tare... 08.04.2026 23:55 ederson - USN MAQ Passo a passo"
+                    - gridcell [ref=e357]
+                    - gridcell "qui., 9 de abr. de 2026, 00:01" [ref=e358]:
+                      - generic "qui., 9 de abr. de 2026, 00:01" [ref=e359]: 00:01
+                    - gridcell
+                  - row "não lida, Supabase, Have you tried Supabase Auth?, 22:27, Add secure sign-in without extra tools. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e360] [cursor=pointer]:
+                    - gridcell [ref=e361]
+                    - gridcell "não lida, Supabase, Have you tried Supabase Auth?, 22:27, Add secure sign-in without extra tools. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e362]:
+                      - checkbox "não lida, Supabase, Have you tried Supabase Auth?, 22:27, Add secure sign-in without extra tools. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e363]
+                    - gridcell "Sem estrela" [ref=e364]:
+                      - button "Sem estrela" [ref=e365]
+                    - gridcell "Nova Supabase" [ref=e366]:
+                      - generic [ref=e368]: Nova
+                      - generic [ref=e370]: Supabase
+                    - gridcell "Have you tried Supabase Auth? Add secure sign-in without extra tools. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e371]:
+                      - link "Have you tried Supabase Auth? Add secure sign-in without extra tools. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e373]:
+                        - generic [ref=e374]:
+                          - generic [ref=e376]: Have you tried Supabase Auth?
+                          - generic [ref=e377]: Add secure sign-in without extra tools. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e378]
+                    - gridcell "qua., 8 de abr. de 2026, 22:27" [ref=e379]:
+                      - generic "qua., 8 de abr. de 2026, 22:27" [ref=e380]: 22:27
+                    - gridcell
+                  - 'row "não lida, passoapassouniforme. 5, Passo a passo uniformes, você tem uma nova notificação, 16:01, passoapassouniformes2025 Caroline Moletom 08.04.2026 13:37 Fran: Qual seria a melhor forma de ... Este email foi enviado para passoapassouniformes2025@gmail.com, porque você está inscrito para receber." [ref=e381] [cursor=pointer]':
+                    - gridcell [ref=e382]
+                    - 'gridcell "não lida, passoapassouniforme. 5, Passo a passo uniformes, você tem uma nova notificação, 16:01, passoapassouniformes2025 Caroline Moletom 08.04.2026 13:37 Fran: Qual seria a melhor forma de ... Este email foi enviado para passoapassouniformes2025@gmail.com, porque você está inscrito para receber." [ref=e383]':
+                      - 'checkbox "não lida, passoapassouniforme. 5, Passo a passo uniformes, você tem uma nova notificação, 16:01, passoapassouniformes2025 Caroline Moletom 08.04.2026 13:37 Fran: Qual seria a melhor forma de ... Este email foi enviado para passoapassouniformes2025@gmail.com, porque você está inscrito para receber." [ref=e384]'
+                    - gridcell "Sem estrela" [ref=e385]:
+                      - button "Sem estrela" [ref=e386]
+                    - gridcell "Nova passoapassouniforme. 5" [ref=e387]:
+                      - generic [ref=e389]: Nova
+                      - generic [ref=e390]:
+                        - generic [ref=e391]: passoapassouniforme.
+                        - generic [ref=e392]: "5"
+                    - 'gridcell "Passo a passo uniformes, você tem uma nova notificação passoapassouniformes2025 Caroline Moletom 08.04.2026 13:37 Fran: Qual seria a melhor forma de ... Este email foi enviado para passoapassouniformes2025@gmail.com, porque você está inscrito para receber" [ref=e393]':
+                      - 'link "Passo a passo uniformes, você tem uma nova notificação passoapassouniformes2025 Caroline Moletom 08.04.2026 13:37 Fran: Qual seria a melhor forma de ... Este email foi enviado para passoapassouniformes2025@gmail.com, porque você está inscrito para receber" [ref=e394]':
+                        - generic [ref=e395]:
+                          - generic [ref=e397]: Passo a passo uniformes, você tem uma nova notificação
+                          - generic [ref=e398]: "passoapassouniformes2025 Caroline Moletom 08.04.2026 13:37 Fran: Qual seria a melhor forma de ... Este email foi enviado para passoapassouniformes2025@gmail.com, porque você está inscrito para receber"
+                    - gridcell [ref=e399]
+                    - gridcell "qua., 8 de abr. de 2026, 16:01" [ref=e400]:
+                      - generic "qua., 8 de abr. de 2026, 16:01" [ref=e401]: 16:01
+                    - gridcell
+                  - 'row "não lida, Supabase, Welcome to Supabase, 7 de abr., Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need to build a product: Database, Authentication, Storage, Realtime API, Edge." [ref=e402] [cursor=pointer]':
+                    - gridcell [ref=e403]
+                    - 'gridcell "não lida, Supabase, Welcome to Supabase, 7 de abr., Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need to build a product: Database, Authentication, Storage, Realtime API, Edge." [ref=e404]':
+                      - 'checkbox "não lida, Supabase, Welcome to Supabase, 7 de abr., Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need to build a product: Database, Authentication, Storage, Realtime API, Edge." [ref=e405]'
+                    - gridcell "Sem estrela" [ref=e406]:
+                      - button "Sem estrela" [ref=e407]
+                    - gridcell "Supabase" [ref=e408]:
+                      - generic [ref=e410]: Supabase
+                    - 'gridcell "Welcome to Supabase Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need to build a product: Database, Authentication, Storage, Realtime API, Edge" [ref=e411]':
+                      - 'link "Welcome to Supabase Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need to build a product: Database, Authentication, Storage, Realtime API, Edge" [ref=e412]':
+                        - generic [ref=e413]:
+                          - generic [ref=e415]: Welcome to Supabase
+                          - generic [ref=e416]: "Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need to build a product: Database, Authentication, Storage, Realtime API, Edge"
+                    - gridcell [ref=e417]
+                    - gridcell "ter., 7 de abr. de 2026, 15:17" [ref=e418]:
+                      - generic "ter., 7 de abr. de 2026, 15:17" [ref=e419]: 7 de abr.
+                    - gridcell
+                  - row "Supabase, Confirm your email and launch your projects on Supabase!, 7 de abr., Confirm your email address to start building with Supabase You can start building with Supabase right away once you've confirmed that passoapassouniformes2025@gmail.com is your email. Click the." [ref=e420] [cursor=pointer]:
+                    - gridcell [ref=e421]
+                    - gridcell "Supabase, Confirm your email and launch your projects on Supabase!, 7 de abr., Confirm your email address to start building with Supabase You can start building with Supabase right away once you've confirmed that passoapassouniformes2025@gmail.com is your email. Click the." [ref=e422]:
+                      - checkbox "Supabase, Confirm your email and launch your projects on Supabase!, 7 de abr., Confirm your email address to start building with Supabase You can start building with Supabase right away once you've confirmed that passoapassouniformes2025@gmail.com is your email. Click the." [ref=e423]
+                    - gridcell "Sem estrela" [ref=e424]:
+                      - button "Sem estrela" [ref=e425]
+                    - gridcell "Supabase" [ref=e426]:
+                      - generic [ref=e428]: Supabase
+                    - gridcell "Confirm your email and launch your projects on Supabase! Confirm your email address to start building with Supabase You can start building with Supabase right away once you've confirmed that passoapassouniformes2025@gmail.com is your email. Click the" [ref=e429]:
+                      - link "Confirm your email and launch your projects on Supabase! Confirm your email address to start building with Supabase You can start building with Supabase right away once you've confirmed that passoapassouniformes2025@gmail.com is your email. Click the" [ref=e430]:
+                        - generic [ref=e431]:
+                          - generic [ref=e433]: Confirm your email and launch your projects on Supabase!
+                          - generic [ref=e434]: Confirm your email address to start building with Supabase You can start building with Supabase right away once you've confirmed that passoapassouniformes2025@gmail.com is your email. Click the
+                    - gridcell [ref=e435]
+                    - gridcell "ter., 7 de abr. de 2026, 15:15" [ref=e436]:
+                      - generic "ter., 7 de abr. de 2026, 15:15" [ref=e437]: 7 de abr.
+                    - gridcell
+                  - row "não lida, OpenRouter Team, Welcome to OpenRouter, 7 de abr., OpenRouter OpenRouter Hi Passo a passo uniformes, Welcome to OpenRouter. One API, 300+ models from OpenAI, Anthropic, Google, Meta, and others. No vendor lock-in. You've got an account. Here's." [ref=e438] [cursor=pointer]:
+                    - gridcell [ref=e439]
+                    - gridcell "não lida, OpenRouter Team, Welcome to OpenRouter, 7 de abr., OpenRouter OpenRouter Hi Passo a passo uniformes, Welcome to OpenRouter. One API, 300+ models from OpenAI, Anthropic, Google, Meta, and others. No vendor lock-in. You've got an account. Here's." [ref=e440]:
+                      - checkbox "não lida, OpenRouter Team, Welcome to OpenRouter, 7 de abr., OpenRouter OpenRouter Hi Passo a passo uniformes, Welcome to OpenRouter. One API, 300+ models from OpenAI, Anthropic, Google, Meta, and others. No vendor lock-in. You've got an account. Here's." [ref=e441]
+                    - gridcell "Sem estrela" [ref=e442]:
+                      - button "Sem estrela" [ref=e443]
+                    - gridcell "OpenRouter Team" [ref=e444]:
+                      - generic [ref=e446]: OpenRouter Team
+                    - gridcell "Welcome to OpenRouter OpenRouter OpenRouter Hi Passo a passo uniformes, Welcome to OpenRouter. One API, 300+ models from OpenAI, Anthropic, Google, Meta, and others. No vendor lock-in. You've got an account. Here's" [ref=e447]:
+                      - link "Welcome to OpenRouter OpenRouter OpenRouter Hi Passo a passo uniformes, Welcome to OpenRouter. One API, 300+ models from OpenAI, Anthropic, Google, Meta, and others. No vendor lock-in. You've got an account. Here's" [ref=e449]:
+                        - generic [ref=e450]:
+                          - generic [ref=e452]: Welcome to OpenRouter
+                          - generic [ref=e453]: OpenRouter OpenRouter Hi Passo a passo uniformes, Welcome to OpenRouter. One API, 300+ models from OpenAI, Anthropic, Google, Meta, and others. No vendor lock-in. You've got an account. Here's
+                    - gridcell [ref=e454]
+                    - gridcell "ter., 7 de abr. de 2026, 13:53" [ref=e455]:
+                      - generic "ter., 7 de abr. de 2026, 13:53" [ref=e456]: 7 de abr.
+                    - gridcell
+                  - row "não lida, OpenRouter, Your sign up link, 7 de abr., Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the." [ref=e457] [cursor=pointer]:
+                    - gridcell [ref=e458]
+                    - gridcell "não lida, OpenRouter, Your sign up link, 7 de abr., Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the." [ref=e459]:
+                      - checkbox "não lida, OpenRouter, Your sign up link, 7 de abr., Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the." [ref=e460]
+                    - gridcell "Sem estrela" [ref=e461]:
+                      - button "Sem estrela" [ref=e462]
+                    - gridcell "OpenRouter" [ref=e463]:
+                      - generic [ref=e465]: OpenRouter
+                    - gridcell "Your sign up link Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the" [ref=e466]:
+                      - link "Your sign up link Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the" [ref=e467]:
+                        - generic [ref=e468]:
+                          - generic [ref=e470]: Your sign up link
+                          - generic [ref=e471]: Sign up to OpenRouter OpenRouter Sign up to OpenRouter Click the button below to sign up to OpenRouter. This link will expire in 10 minutes. Sign up to OpenRouter If you're having trouble with the
+                    - gridcell [ref=e472]
+                    - gridcell "ter., 7 de abr. de 2026, 13:11" [ref=e473]:
+                      - generic "ter., 7 de abr. de 2026, 13:11" [ref=e474]: 7 de abr.
+                    - gridcell
+                  - row "não lida, Manychat, You ghosted your setup at the finish line 👀 , 7 de abr., It only takes a few taps to finish your setup ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ." [ref=e475] [cursor=pointer]:
+                    - gridcell [ref=e476]
+                    - gridcell "não lida, Manychat, You ghosted your setup at the finish line 👀 , 7 de abr., It only takes a few taps to finish your setup ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ." [ref=e477]:
+                      - checkbox "não lida, Manychat, You ghosted your setup at the finish line 👀 , 7 de abr., It only takes a few taps to finish your setup ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ." [ref=e478]
+                    - gridcell "Sem estrela" [ref=e479]:
+                      - button "Sem estrela" [ref=e480]
+                    - gridcell "Manychat" [ref=e481]:
+                      - generic [ref=e483]: Manychat
+                    - gridcell "You ghosted your setup at the finish line 👀 It only takes a few taps to finish your setup ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌" [ref=e484]:
+                      - link "You ghosted your setup at the finish line 👀 It only takes a few taps to finish your setup ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌" [ref=e486]:
+                        - generic [ref=e487]:
+                          - generic [ref=e490]:
+                            - text: You ghosted your setup at the finish line
+                            - img "👀" [ref=e491]
+                          - generic [ref=e492]: It only takes a few taps to finish your setup ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌
+                    - gridcell [ref=e493]
+                    - gridcell "ter., 7 de abr. de 2026, 05:09" [ref=e494]:
+                      - generic "ter., 7 de abr. de 2026, 05:09" [ref=e495]: 7 de abr.
+                    - gridcell
+                  - 'row "não lida, support, Alerta de segurança, 6 de abr., Entrar Oi, Passo a passo uniformes Notamos um login incomum para a seguinte conta: Conta: www.kommo.com Login: passoapassouniformes2025@gmail.com Data e hora: April, 06 at 21:28 GTM +00:00 Dispositivo:." [ref=e496] [cursor=pointer]':
+                    - gridcell [ref=e497]
+                    - 'gridcell "não lida, support, Alerta de segurança, 6 de abr., Entrar Oi, Passo a passo uniformes Notamos um login incomum para a seguinte conta: Conta: www.kommo.com Login: passoapassouniformes2025@gmail.com Data e hora: April, 06 at 21:28 GTM +00:00 Dispositivo:." [ref=e498]':
+                      - 'checkbox "não lida, support, Alerta de segurança, 6 de abr., Entrar Oi, Passo a passo uniformes Notamos um login incomum para a seguinte conta: Conta: www.kommo.com Login: passoapassouniformes2025@gmail.com Data e hora: April, 06 at 21:28 GTM +00:00 Dispositivo:." [ref=e499]'
+                    - gridcell "Sem estrela" [ref=e500]:
+                      - button "Sem estrela" [ref=e501]
+                    - gridcell "support" [ref=e502]:
+                      - generic [ref=e504]: support
+                    - 'gridcell "Alerta de segurança Entrar Oi, Passo a passo uniformes Notamos um login incomum para a seguinte conta: Conta: www.kommo.com Login: passoapassouniformes2025@gmail.com Data e hora: April, 06 at 21:28 GTM +00:00 Dispositivo:" [ref=e505]':
+                      - 'link "Alerta de segurança Entrar Oi, Passo a passo uniformes Notamos um login incomum para a seguinte conta: Conta: www.kommo.com Login: passoapassouniformes2025@gmail.com Data e hora: April, 06 at 21:28 GTM +00:00 Dispositivo:" [ref=e506]':
+                        - generic [ref=e507]:
+                          - generic [ref=e509]: Alerta de segurança
+                          - generic [ref=e510]: "Entrar Oi, Passo a passo uniformes Notamos um login incomum para a seguinte conta: Conta: www.kommo.com Login: passoapassouniformes2025@gmail.com Data e hora: April, 06 at 21:28 GTM +00:00 Dispositivo:"
+                    - gridcell [ref=e511]
+                    - gridcell "seg., 6 de abr. de 2026, 18:28" [ref=e512]:
+                      - generic "seg., 6 de abr. de 2026, 18:28" [ref=e513]: 6 de abr.
+                    - gridcell
+                  - 'row "não lida, support, Kommo: Confirmação de alteração de senha, 6 de abr., Entrar A senha da Kommo foi atualizada A senha foi atualizada para o seguinte perfil: Passo a passo uniformes. Não reconhece esta atividade? Para sua segurança, nós recomendamos que troque de senha.." [ref=e514] [cursor=pointer]':
+                    - gridcell [ref=e515]
+                    - 'gridcell "não lida, support, Kommo: Confirmação de alteração de senha, 6 de abr., Entrar A senha da Kommo foi atualizada A senha foi atualizada para o seguinte perfil: Passo a passo uniformes. Não reconhece esta atividade? Para sua segurança, nós recomendamos que troque de senha.." [ref=e516]':
+                      - 'checkbox "não lida, support, Kommo: Confirmação de alteração de senha, 6 de abr., Entrar A senha da Kommo foi atualizada A senha foi atualizada para o seguinte perfil: Passo a passo uniformes. Não reconhece esta atividade? Para sua segurança, nós recomendamos que troque de senha.." [ref=e517]'
+                    - gridcell "Sem estrela" [ref=e518]:
+                      - button "Sem estrela" [ref=e519]
+                    - gridcell "support" [ref=e520]:
+                      - generic [ref=e522]: support
+                    - 'gridcell "Kommo: Confirmação de alteração de senha Entrar A senha da Kommo foi atualizada A senha foi atualizada para o seguinte perfil: Passo a passo uniformes. Não reconhece esta atividade? Para sua segurança, nós recomendamos que troque de senha." [ref=e523]':
+                      - 'link "Kommo: Confirmação de alteração de senha Entrar A senha da Kommo foi atualizada A senha foi atualizada para o seguinte perfil: Passo a passo uniformes. Não reconhece esta atividade? Para sua segurança, nós recomendamos que troque de senha." [ref=e524]':
+                        - generic [ref=e525]:
+                          - generic [ref=e527]: "Kommo: Confirmação de alteração de senha"
+                          - generic [ref=e528]: "Entrar A senha da Kommo foi atualizada A senha foi atualizada para o seguinte perfil: Passo a passo uniformes. Não reconhece esta atividade? Para sua segurança, nós recomendamos que troque de senha."
+                    - gridcell [ref=e529]
+                    - gridcell "seg., 6 de abr. de 2026, 09:56" [ref=e530]:
+                      - generic "seg., 6 de abr. de 2026, 09:56" [ref=e531]: 6 de abr.
+                    - gridcell
+                  - row "não lida, Link, Verify your email, 6 de abr., Pay faster at Wazzup SIA and everywhere Link is accepted ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e532] [cursor=pointer]:
+                    - gridcell [ref=e533]
+                    - gridcell "não lida, Link, Verify your email, 6 de abr., Pay faster at Wazzup SIA and everywhere Link is accepted ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e534]:
+                      - checkbox "não lida, Link, Verify your email, 6 de abr., Pay faster at Wazzup SIA and everywhere Link is accepted ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e535]
+                    - gridcell "Sem estrela" [ref=e536]:
+                      - button "Sem estrela" [ref=e537]
+                    - gridcell "Link" [ref=e538]:
+                      - generic [ref=e540]: Link
+                    - gridcell "Verify your email Pay faster at Wazzup SIA and everywhere Link is accepted ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e541]:
+                      - link "Verify your email Pay faster at Wazzup SIA and everywhere Link is accepted ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e542]:
+                        - generic [ref=e543]:
+                          - generic [ref=e545]: Verify your email
+                          - generic [ref=e546]: Pay faster at Wazzup SIA and everywhere Link is accepted ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e547]
+                    - gridcell "seg., 6 de abr. de 2026, 09:06" [ref=e548]:
+                      - generic "seg., 6 de abr. de 2026, 09:06" [ref=e549]: 6 de abr.
+                    - gridcell
+                  - row "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 4 de abr., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e550] [cursor=pointer]:
+                    - gridcell [ref=e551]
+                    - gridcell "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 4 de abr., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e552]:
+                      - checkbox "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 4 de abr., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e553]
+                    - gridcell "Sem estrela" [ref=e554]:
+                      - button "Sem estrela" [ref=e555]
+                    - gridcell "Google" [ref=e556]:
+                      - generic [ref=e558]: Google
+                    - gridcell "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e559]:
+                      - link "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e560]:
+                        - generic [ref=e561]:
+                          - generic [ref=e564]:
+                            - img "⚠️" [ref=e565]
+                            - text: Seu armazenamento do Gmail está 99% cheio
+                          - generic [ref=e566]: Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e567]
+                    - gridcell "sáb., 4 de abr. de 2026, 18:04" [ref=e568]:
+                      - generic "sáb., 4 de abr. de 2026, 18:04" [ref=e569]: 4 de abr.
+                    - gridcell
+                  - 'row "Passo a passo (via ., Solicitação de compartilhamento de \"Painel de Vendas\", 1 de abr., Compartilhar uma planilha? Passo a passo (passoapassomrk@gmail.com) está solicitando acesso à seguinte planilha: Painel de Vendas Gerenciar compartilhamento Google LLC, 1600 Amphitheatre Parkway,." [ref=e570] [cursor=pointer]':
+                    - gridcell [ref=e571]
+                    - 'gridcell "Passo a passo (via ., Solicitação de compartilhamento de \"Painel de Vendas\", 1 de abr., Compartilhar uma planilha? Passo a passo (passoapassomrk@gmail.com) está solicitando acesso à seguinte planilha: Painel de Vendas Gerenciar compartilhamento Google LLC, 1600 Amphitheatre Parkway,." [ref=e572]':
+                      - 'checkbox "Passo a passo (via ., Solicitação de compartilhamento de \"Painel de Vendas\", 1 de abr., Compartilhar uma planilha? Passo a passo (passoapassomrk@gmail.com) está solicitando acesso à seguinte planilha: Painel de Vendas Gerenciar compartilhamento Google LLC, 1600 Amphitheatre Parkway,." [ref=e573]'
+                    - gridcell "Sem estrela" [ref=e574]:
+                      - button "Sem estrela" [ref=e575]
+                    - gridcell "Passo a passo (via ." [ref=e576]:
+                      - generic [ref=e578]: Passo a passo (via .
+                    - 'gridcell "Solicitação de compartilhamento de \"Painel de Vendas\" Compartilhar uma planilha? Passo a passo (passoapassomrk@gmail.com) está solicitando acesso à seguinte planilha: Painel de Vendas Gerenciar compartilhamento Google LLC, 1600 Amphitheatre Parkway," [ref=e579]':
+                      - 'link "Solicitação de compartilhamento de \"Painel de Vendas\" Compartilhar uma planilha? Passo a passo (passoapassomrk@gmail.com) está solicitando acesso à seguinte planilha: Painel de Vendas Gerenciar compartilhamento Google LLC, 1600 Amphitheatre Parkway," [ref=e580]':
+                        - generic [ref=e581]:
+                          - generic [ref=e583]: Solicitação de compartilhamento de "Painel de Vendas"
+                          - generic [ref=e584]: "Compartilhar uma planilha? Passo a passo (passoapassomrk@gmail.com) está solicitando acesso à seguinte planilha: Painel de Vendas Gerenciar compartilhamento Google LLC, 1600 Amphitheatre Parkway,"
+                    - gridcell [ref=e585]
+                    - gridcell "qua., 1 de abr. de 2026, 17:08" [ref=e586]:
+                      - generic "qua., 1 de abr. de 2026, 17:08" [ref=e587]: 1 de abr.
+                    - gridcell
+                  - 'row "não lida, noreply, You''ve been given access to content at site.tiendanube.com, 30 de mar., Te damos la bienvenida a Nuvemshop Completa el registro creando una contraseña segura para tu cuenta. Crear contraseña O copia y pega este enlace en tu navegador: https://site.tiendanube.com/_hcms/mem/." [ref=e588] [cursor=pointer]':
+                    - gridcell [ref=e589]
+                    - 'gridcell "não lida, noreply, You''ve been given access to content at site.tiendanube.com, 30 de mar., Te damos la bienvenida a Nuvemshop Completa el registro creando una contraseña segura para tu cuenta. Crear contraseña O copia y pega este enlace en tu navegador: https://site.tiendanube.com/_hcms/mem/." [ref=e590]':
+                      - 'checkbox "não lida, noreply, You''ve been given access to content at site.tiendanube.com, 30 de mar., Te damos la bienvenida a Nuvemshop Completa el registro creando una contraseña segura para tu cuenta. Crear contraseña O copia y pega este enlace en tu navegador: https://site.tiendanube.com/_hcms/mem/." [ref=e591]'
+                    - gridcell "Sem estrela" [ref=e592]:
+                      - button "Sem estrela" [ref=e593]
+                    - gridcell "noreply" [ref=e594]:
+                      - generic [ref=e596]: noreply
+                    - 'gridcell "You''ve been given access to content at site.tiendanube.com Te damos la bienvenida a Nuvemshop Completa el registro creando una contraseña segura para tu cuenta. Crear contraseña O copia y pega este enlace en tu navegador: https://site.tiendanube.com/_hcms/mem/" [ref=e597]':
+                      - 'link "You''ve been given access to content at site.tiendanube.com Te damos la bienvenida a Nuvemshop Completa el registro creando una contraseña segura para tu cuenta. Crear contraseña O copia y pega este enlace en tu navegador: https://site.tiendanube.com/_hcms/mem/" [ref=e598]':
+                        - generic [ref=e599]:
+                          - generic [ref=e601]: You've been given access to content at site.tiendanube.com
+                          - generic [ref=e602]: "Te damos la bienvenida a Nuvemshop Completa el registro creando una contraseña segura para tu cuenta. Crear contraseña O copia y pega este enlace en tu navegador: https://site.tiendanube.com/_hcms/mem/"
+                    - gridcell [ref=e603]
+                    - gridcell "seg., 30 de mar. de 2026, 12:51" [ref=e604]:
+                      - generic "seg., 30 de mar. de 2026, 12:51" [ref=e605]: 30 de mar.
+                    - gridcell
+                  - row "não lida, Google Play, Mudanças nas configurações da verificação de compras do Google Play, 30 de mar., Google Play Olá, Passo a passo uniformes, Você atualizou as configurações da verificação de compras do Google Play para passoapassouniformes2025@gmail.com no dispositivo Motorola Moto G(8). Agora você." [ref=e606] [cursor=pointer]:
+                    - gridcell [ref=e607]
+                    - gridcell "não lida, Google Play, Mudanças nas configurações da verificação de compras do Google Play, 30 de mar., Google Play Olá, Passo a passo uniformes, Você atualizou as configurações da verificação de compras do Google Play para passoapassouniformes2025@gmail.com no dispositivo Motorola Moto G(8). Agora você." [ref=e608]:
+                      - checkbox "não lida, Google Play, Mudanças nas configurações da verificação de compras do Google Play, 30 de mar., Google Play Olá, Passo a passo uniformes, Você atualizou as configurações da verificação de compras do Google Play para passoapassouniformes2025@gmail.com no dispositivo Motorola Moto G(8). Agora você." [ref=e609]
+                    - gridcell "Sem estrela" [ref=e610]:
+                      - button "Sem estrela" [ref=e611]
+                    - gridcell "Google Play" [ref=e612]:
+                      - generic [ref=e614]: Google Play
+                    - gridcell "Mudanças nas configurações da verificação de compras do Google Play Google Play Olá, Passo a passo uniformes, Você atualizou as configurações da verificação de compras do Google Play para passoapassouniformes2025@gmail.com no dispositivo Motorola Moto G(8). Agora você" [ref=e615]:
+                      - link "Mudanças nas configurações da verificação de compras do Google Play Google Play Olá, Passo a passo uniformes, Você atualizou as configurações da verificação de compras do Google Play para passoapassouniformes2025@gmail.com no dispositivo Motorola Moto G(8). Agora você" [ref=e616]:
+                        - generic [ref=e617]:
+                          - generic [ref=e619]: Mudanças nas configurações da verificação de compras do Google Play
+                          - generic [ref=e620]: Google Play Olá, Passo a passo uniformes, Você atualizou as configurações da verificação de compras do Google Play para passoapassouniformes2025@gmail.com no dispositivo Motorola Moto G(8). Agora você
+                    - gridcell [ref=e621]
+                    - gridcell "seg., 30 de mar. de 2026, 10:43" [ref=e622]:
+                      - generic "seg., 30 de mar. de 2026, 10:43" [ref=e623]: 30 de mar.
+                    - gridcell
+                  - 'row "não lida, TikTok, peti: não foi isso q eu pedi, 29 de mar., 59.0K+ pessoas gostaram do vídeo ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e624] [cursor=pointer]':
+                    - gridcell [ref=e625]
+                    - 'gridcell "não lida, TikTok, peti: não foi isso q eu pedi, 29 de mar., 59.0K+ pessoas gostaram do vídeo ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e626]':
+                      - 'checkbox "não lida, TikTok, peti: não foi isso q eu pedi, 29 de mar., 59.0K+ pessoas gostaram do vídeo ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e627]'
+                    - gridcell "Sem estrela" [ref=e628]:
+                      - button "Sem estrela" [ref=e629]
+                    - gridcell "TikTok" [ref=e630]:
+                      - generic [ref=e632]: TikTok
+                    - 'gridcell "peti: não foi isso q eu pedi 59.0K+ pessoas gostaram do vídeo ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e633]':
+                      - 'link "peti: não foi isso q eu pedi 59.0K+ pessoas gostaram do vídeo ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e634]':
+                        - generic [ref=e635]:
+                          - generic [ref=e637]: "peti: não foi isso q eu pedi"
+                          - generic [ref=e638]: 59.0K+ pessoas gostaram do vídeo ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                    - gridcell [ref=e639]
+                    - gridcell "dom., 29 de mar. de 2026, 10:28" [ref=e640]:
+                      - generic "dom., 29 de mar. de 2026, 10:28" [ref=e641]: 29 de mar.
+                    - gridcell
+                  - row "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 27 de mar., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e642] [cursor=pointer]:
+                    - gridcell [ref=e643]
+                    - gridcell "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 27 de mar., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e644]:
+                      - checkbox "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 27 de mar., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e645]
+                    - gridcell "Sem estrela" [ref=e646]:
+                      - button "Sem estrela" [ref=e647]
+                    - gridcell "Google" [ref=e648]:
+                      - generic [ref=e650]: Google
+                    - gridcell "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e651]:
+                      - link "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e652]:
+                        - generic [ref=e653]:
+                          - generic [ref=e656]:
+                            - img "⚠️" [ref=e657]
+                            - text: Seu armazenamento do Gmail está 99% cheio
+                          - generic [ref=e658]: Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e659]
+                    - gridcell "sex., 27 de mar. de 2026, 17:21" [ref=e660]:
+                      - generic "sex., 27 de mar. de 2026, 17:21" [ref=e661]: 27 de mar.
+                    - gridcell
+                  - 'row "não lida, support, Seu pedido 4663983 foi pago com sucesso! 🎉, 25 de mar., Entrar Oi, Passo a passo uniformes Seu pagamento na Kommo pelo pedido #4663983 foi feito com sucesso! 🎉 Agora você pode aproveitar nossos recursos e começar a melhorar suas vendas. 😎 Ir para minha." [ref=e662] [cursor=pointer]':
+                    - gridcell [ref=e663]
+                    - 'gridcell "não lida, support, Seu pedido 4663983 foi pago com sucesso! 🎉, 25 de mar., Entrar Oi, Passo a passo uniformes Seu pagamento na Kommo pelo pedido #4663983 foi feito com sucesso! 🎉 Agora você pode aproveitar nossos recursos e começar a melhorar suas vendas. 😎 Ir para minha." [ref=e664]':
+                      - 'checkbox "não lida, support, Seu pedido 4663983 foi pago com sucesso! 🎉, 25 de mar., Entrar Oi, Passo a passo uniformes Seu pagamento na Kommo pelo pedido #4663983 foi feito com sucesso! 🎉 Agora você pode aproveitar nossos recursos e começar a melhorar suas vendas. 😎 Ir para minha." [ref=e665]'
+                    - gridcell "Sem estrela" [ref=e666]:
+                      - button "Sem estrela" [ref=e667]
+                    - gridcell "support" [ref=e668]:
+                      - generic [ref=e670]: support
+                    - 'gridcell "Seu pedido 4663983 foi pago com sucesso! 🎉 Entrar Oi, Passo a passo uniformes Seu pagamento na Kommo pelo pedido #4663983 foi feito com sucesso! 🎉 Agora você pode aproveitar nossos recursos e começar a melhorar suas vendas. 😎 Ir para minha" [ref=e671]':
+                      - 'link "Seu pedido 4663983 foi pago com sucesso! 🎉 Entrar Oi, Passo a passo uniformes Seu pagamento na Kommo pelo pedido #4663983 foi feito com sucesso! 🎉 Agora você pode aproveitar nossos recursos e começar a melhorar suas vendas. 😎 Ir para minha" [ref=e672]':
+                        - generic [ref=e673]:
+                          - generic [ref=e676]:
+                            - text: Seu pedido 4663983 foi pago com sucesso!
+                            - img "🎉" [ref=e677]
+                          - generic [ref=e678]:
+                            - text: "Entrar Oi, Passo a passo uniformes Seu pagamento na Kommo pelo pedido #4663983 foi feito com sucesso!"
+                            - img "🎉" [ref=e679]
+                            - text: Agora você pode aproveitar nossos recursos e começar a melhorar suas vendas.
+                            - img "😎" [ref=e680]
+                            - text: Ir para minha
+                    - gridcell [ref=e681]
+                    - gridcell "qua., 25 de mar. de 2026, 17:46" [ref=e682]:
+                      - generic "qua., 25 de mar. de 2026, 17:46" [ref=e683]: 25 de mar.
+                    - gridcell
+                  - 'row "support, Seu novo pedido na Kommo: 4663983 😊, 25 de mar., Entrar Oi, Passo a passo uniformes Seu pedido na Kommo #4663983 está pronto para o pagamento! Atenção: pague no mesmo dia da criação do pedido para evitar o cancelamento. Ir para Faturamento." [ref=e684] [cursor=pointer]':
+                    - gridcell [ref=e685]
+                    - 'gridcell "support, Seu novo pedido na Kommo: 4663983 😊, 25 de mar., Entrar Oi, Passo a passo uniformes Seu pedido na Kommo #4663983 está pronto para o pagamento! Atenção: pague no mesmo dia da criação do pedido para evitar o cancelamento. Ir para Faturamento." [ref=e686]':
+                      - 'checkbox "support, Seu novo pedido na Kommo: 4663983 😊, 25 de mar., Entrar Oi, Passo a passo uniformes Seu pedido na Kommo #4663983 está pronto para o pagamento! Atenção: pague no mesmo dia da criação do pedido para evitar o cancelamento. Ir para Faturamento." [ref=e687]'
+                    - gridcell "Sem estrela" [ref=e688]:
+                      - button "Sem estrela" [ref=e689]
+                    - gridcell "support" [ref=e690]:
+                      - generic [ref=e692]: support
+                    - 'gridcell "Seu novo pedido na Kommo: 4663983 😊 Entrar Oi, Passo a passo uniformes Seu pedido na Kommo #4663983 está pronto para o pagamento! Atenção: pague no mesmo dia da criação do pedido para evitar o cancelamento. Ir para Faturamento" [ref=e693]':
+                      - 'link "Seu novo pedido na Kommo: 4663983 😊 Entrar Oi, Passo a passo uniformes Seu pedido na Kommo #4663983 está pronto para o pagamento! Atenção: pague no mesmo dia da criação do pedido para evitar o cancelamento. Ir para Faturamento" [ref=e694]':
+                        - generic [ref=e695]:
+                          - generic [ref=e698]:
+                            - text: "Seu novo pedido na Kommo: 4663983"
+                            - img "😊" [ref=e699]
+                          - generic [ref=e700]: "Entrar Oi, Passo a passo uniformes Seu pedido na Kommo #4663983 está pronto para o pagamento! Atenção: pague no mesmo dia da criação do pedido para evitar o cancelamento. Ir para Faturamento"
+                    - gridcell [ref=e701]
+                    - gridcell "qua., 25 de mar. de 2026, 17:42" [ref=e702]:
+                      - generic "qua., 25 de mar. de 2026, 17:42" [ref=e703]: 25 de mar.
+                    - gridcell
+                  - row "não lida, Google 5, Alerta de segurança, 25 de mar., Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.." [ref=e704] [cursor=pointer]:
+                    - gridcell [ref=e705]
+                    - gridcell "não lida, Google 5, Alerta de segurança, 25 de mar., Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.." [ref=e706]:
+                      - checkbox "não lida, Google 5, Alerta de segurança, 25 de mar., Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.." [ref=e707]
+                    - gridcell "Sem estrela" [ref=e708]:
+                      - button "Sem estrela" [ref=e709]
+                    - gridcell "Google 5" [ref=e710]:
+                      - generic [ref=e711]:
+                        - generic [ref=e712]: Google
+                        - generic [ref=e713]: "5"
+                    - gridcell "Alerta de segurança Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta." [ref=e714]:
+                      - link "Alerta de segurança Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta." [ref=e716]:
+                        - generic [ref=e717]:
+                          - generic [ref=e719]: Alerta de segurança
+                          - generic [ref=e720]: Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.
+                    - gridcell [ref=e721]
+                    - gridcell "qua., 25 de mar. de 2026, 17:30" [ref=e722]:
+                      - generic "qua., 25 de mar. de 2026, 17:30" [ref=e723]: 25 de mar.
+                    - gridcell
+                  - row "não lida, Google, Alerta de segurança, 24 de mar., Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.." [ref=e724] [cursor=pointer]:
+                    - gridcell [ref=e725]
+                    - gridcell "não lida, Google, Alerta de segurança, 24 de mar., Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.." [ref=e726]:
+                      - checkbox "não lida, Google, Alerta de segurança, 24 de mar., Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.." [ref=e727]
+                    - gridcell "Sem estrela" [ref=e728]:
+                      - button "Sem estrela" [ref=e729]
+                    - gridcell "Google" [ref=e730]:
+                      - generic [ref=e732]: Google
+                    - gridcell "Alerta de segurança Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta." [ref=e733]:
+                      - link "Alerta de segurança Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta." [ref=e735]:
+                        - generic [ref=e736]:
+                          - generic [ref=e738]: Alerta de segurança
+                          - generic [ref=e739]: Novo login na conta passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google. Se foi você que fez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua conta.
+                    - gridcell [ref=e740]
+                    - gridcell "ter., 24 de mar. de 2026, 21:13" [ref=e741]:
+                      - generic "ter., 24 de mar. de 2026, 21:13" [ref=e742]: 24 de mar.
+                    - gridcell
+                  - row "não lida, Bitrix24, Confirme seu e-mail, 24 de mar., Seu espaço de trabalho ideal Confirmar endereço de e-mail Crie uma senha para confirmar seu e-mail e continuar usando o Bitrix24. Criar senha Ignore esta mensagem se você não a esperava. Privacy Policy." [ref=e743] [cursor=pointer]:
+                    - gridcell [ref=e744]
+                    - gridcell "não lida, Bitrix24, Confirme seu e-mail, 24 de mar., Seu espaço de trabalho ideal Confirmar endereço de e-mail Crie uma senha para confirmar seu e-mail e continuar usando o Bitrix24. Criar senha Ignore esta mensagem se você não a esperava. Privacy Policy." [ref=e745]:
+                      - checkbox "não lida, Bitrix24, Confirme seu e-mail, 24 de mar., Seu espaço de trabalho ideal Confirmar endereço de e-mail Crie uma senha para confirmar seu e-mail e continuar usando o Bitrix24. Criar senha Ignore esta mensagem se você não a esperava. Privacy Policy." [ref=e746]
+                    - gridcell "Sem estrela" [ref=e747]:
+                      - button "Sem estrela" [ref=e748]
+                    - gridcell "Bitrix24" [ref=e749]:
+                      - generic [ref=e751]: Bitrix24
+                    - gridcell "Confirme seu e-mail Seu espaço de trabalho ideal Confirmar endereço de e-mail Crie uma senha para confirmar seu e-mail e continuar usando o Bitrix24. Criar senha Ignore esta mensagem se você não a esperava. Privacy Policy" [ref=e752]:
+                      - link "Confirme seu e-mail Seu espaço de trabalho ideal Confirmar endereço de e-mail Crie uma senha para confirmar seu e-mail e continuar usando o Bitrix24. Criar senha Ignore esta mensagem se você não a esperava. Privacy Policy" [ref=e753]:
+                        - generic [ref=e754]:
+                          - generic [ref=e756]: Confirme seu e-mail
+                          - generic [ref=e757]: Seu espaço de trabalho ideal Confirmar endereço de e-mail Crie uma senha para confirmar seu e-mail e continuar usando o Bitrix24. Criar senha Ignore esta mensagem se você não a esperava. Privacy Policy
+                    - gridcell [ref=e758]
+                    - gridcell "ter., 24 de mar. de 2026, 19:55" [ref=e759]:
+                      - generic "ter., 24 de mar. de 2026, 19:55" [ref=e760]: 24 de mar.
+                    - gridcell
+                  - 'row "não lida, passoapassouniforme., Passo a passo uniformes, você tem 7 novas notificações, 24 de mar., passoapassouniformes2025 Solicitação de [WA] 5551856... 24.03.2026 20:47 : a principio 4 em tamanho M e as 8... Solicitação de [WA] 5551856... 24.03.2026 20:36 : Obrigada Solicitação de [WA] 5551856...." [ref=e761] [cursor=pointer]':
+                    - gridcell [ref=e762]
+                    - 'gridcell "não lida, passoapassouniforme., Passo a passo uniformes, você tem 7 novas notificações, 24 de mar., passoapassouniformes2025 Solicitação de [WA] 5551856... 24.03.2026 20:47 : a principio 4 em tamanho M e as 8... Solicitação de [WA] 5551856... 24.03.2026 20:36 : Obrigada Solicitação de [WA] 5551856...." [ref=e763]':
+                      - 'checkbox "não lida, passoapassouniforme., Passo a passo uniformes, você tem 7 novas notificações, 24 de mar., passoapassouniformes2025 Solicitação de [WA] 5551856... 24.03.2026 20:47 : a principio 4 em tamanho M e as 8... Solicitação de [WA] 5551856... 24.03.2026 20:36 : Obrigada Solicitação de [WA] 5551856...." [ref=e764]'
+                    - gridcell "Sem estrela" [ref=e765]:
+                      - button "Sem estrela" [ref=e766]
+                    - gridcell "passoapassouniforme." [ref=e767]:
+                      - generic [ref=e769]: passoapassouniforme.
+                    - 'gridcell "Passo a passo uniformes, você tem 7 novas notificações passoapassouniformes2025 Solicitação de [WA] 5551856... 24.03.2026 20:47 : a principio 4 em tamanho M e as 8... Solicitação de [WA] 5551856... 24.03.2026 20:36 : Obrigada Solicitação de [WA] 5551856..." [ref=e770]':
+                      - 'link "Passo a passo uniformes, você tem 7 novas notificações passoapassouniformes2025 Solicitação de [WA] 5551856... 24.03.2026 20:47 : a principio 4 em tamanho M e as 8... Solicitação de [WA] 5551856... 24.03.2026 20:36 : Obrigada Solicitação de [WA] 5551856..." [ref=e771]':
+                        - generic [ref=e772]:
+                          - generic [ref=e774]: Passo a passo uniformes, você tem 7 novas notificações
+                          - generic [ref=e775]: "passoapassouniformes2025 Solicitação de [WA] 5551856... 24.03.2026 20:47 : a principio 4 em tamanho M e as 8... Solicitação de [WA] 5551856... 24.03.2026 20:36 : Obrigada Solicitação de [WA] 5551856..."
+                    - gridcell [ref=e776]
+                    - gridcell "ter., 24 de mar. de 2026, 18:37" [ref=e777]:
+                      - generic "ter., 24 de mar. de 2026, 18:37" [ref=e778]: 24 de mar.
+                    - gridcell
+                  - row "Wazzup Robot, Bem-vindo ao Wazzup! Confirme seu e-mail, 24 de mar., Bem-vindo ao Wazzup! Confirme seu e-mail Oi! Você criou uma conta no Wazzup — ótimo começo! Confirme seu email para concluir o cadastro. Basta clicar no botão abaixo. Confirmar e-mail Se o botão não." [ref=e779] [cursor=pointer]:
+                    - gridcell [ref=e780]
+                    - gridcell "Wazzup Robot, Bem-vindo ao Wazzup! Confirme seu e-mail, 24 de mar., Bem-vindo ao Wazzup! Confirme seu e-mail Oi! Você criou uma conta no Wazzup — ótimo começo! Confirme seu email para concluir o cadastro. Basta clicar no botão abaixo. Confirmar e-mail Se o botão não." [ref=e781]:
+                      - checkbox "Wazzup Robot, Bem-vindo ao Wazzup! Confirme seu e-mail, 24 de mar., Bem-vindo ao Wazzup! Confirme seu e-mail Oi! Você criou uma conta no Wazzup — ótimo começo! Confirme seu email para concluir o cadastro. Basta clicar no botão abaixo. Confirmar e-mail Se o botão não." [ref=e782]
+                    - gridcell "Sem estrela" [ref=e783]:
+                      - button "Sem estrela" [ref=e784]
+                    - gridcell "Wazzup Robot" [ref=e785]:
+                      - generic [ref=e787]: Wazzup Robot
+                    - gridcell "Bem-vindo ao Wazzup! Confirme seu e-mail Bem-vindo ao Wazzup! Confirme seu e-mail Oi! Você criou uma conta no Wazzup — ótimo começo! Confirme seu email para concluir o cadastro. Basta clicar no botão abaixo. Confirmar e-mail Se o botão não" [ref=e788]:
+                      - link "Bem-vindo ao Wazzup! Confirme seu e-mail Bem-vindo ao Wazzup! Confirme seu e-mail Oi! Você criou uma conta no Wazzup — ótimo começo! Confirme seu email para concluir o cadastro. Basta clicar no botão abaixo. Confirmar e-mail Se o botão não" [ref=e789]:
+                        - generic [ref=e790]:
+                          - generic [ref=e792]: Bem-vindo ao Wazzup! Confirme seu e-mail
+                          - generic [ref=e793]: Bem-vindo ao Wazzup! Confirme seu e-mail Oi! Você criou uma conta no Wazzup — ótimo começo! Confirme seu email para concluir o cadastro. Basta clicar no botão abaixo. Confirmar e-mail Se o botão não
+                    - gridcell [ref=e794]
+                    - gridcell "ter., 24 de mar. de 2026, 16:36" [ref=e795]:
+                      - generic "ter., 24 de mar. de 2026, 16:36" [ref=e796]: 24 de mar.
+                    - gridcell
+                  - row "não lida, Google Developer Pr., Welcome to your Google Developer Profile!, 24 de mar., Complete your profile‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e797] [cursor=pointer]:
+                    - gridcell [ref=e798]
+                    - gridcell "não lida, Google Developer Pr., Welcome to your Google Developer Profile!, 24 de mar., Complete your profile‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e799]:
+                      - checkbox "não lida, Google Developer Pr., Welcome to your Google Developer Profile!, 24 de mar., Complete your profile‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e800]
+                    - gridcell "Sem estrela" [ref=e801]:
+                      - button "Sem estrela" [ref=e802]
+                    - gridcell "Google Developer Pr." [ref=e803]:
+                      - generic [ref=e805]: Google Developer Pr.
+                    - gridcell "Welcome to your Google Developer Profile! Complete your profile‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e806]:
+                      - link "Welcome to your Google Developer Profile! Complete your profile‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e807]:
+                        - generic [ref=e808]:
+                          - generic [ref=e810]: Welcome to your Google Developer Profile!
+                          - generic [ref=e811]: Complete your profile‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                    - gridcell [ref=e812]
+                    - gridcell "ter., 24 de mar. de 2026, 15:51" [ref=e813]:
+                      - generic "ter., 24 de mar. de 2026, 15:51" [ref=e814]: 24 de mar.
+                    - gridcell
+                  - row "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 19 de mar., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e815] [cursor=pointer]:
+                    - gridcell [ref=e816]
+                    - gridcell "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 19 de mar., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e817]:
+                      - checkbox "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 19 de mar., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e818]
+                    - gridcell "Sem estrela" [ref=e819]:
+                      - button "Sem estrela" [ref=e820]
+                    - gridcell "Google" [ref=e821]:
+                      - generic [ref=e823]: Google
+                    - gridcell "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e824]:
+                      - link "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e825]:
+                        - generic [ref=e826]:
+                          - generic [ref=e829]:
+                            - img "⚠️" [ref=e830]
+                            - text: Seu armazenamento do Gmail está 99% cheio
+                          - generic [ref=e831]: Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e832]
+                    - gridcell "qui., 19 de mar. de 2026, 18:57" [ref=e833]:
+                      - generic "qui., 19 de mar. de 2026, 18:57" [ref=e834]: 19 de mar.
+                    - gridcell
+                  - 'row "não lida, TikTok, 001905 é seu código de 6 dígitos, 18 de mar., Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 001905 Use este código para." [ref=e835] [cursor=pointer]':
+                    - gridcell [ref=e836]
+                    - 'gridcell "não lida, TikTok, 001905 é seu código de 6 dígitos, 18 de mar., Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 001905 Use este código para." [ref=e837]':
+                      - 'checkbox "não lida, TikTok, 001905 é seu código de 6 dígitos, 18 de mar., Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 001905 Use este código para." [ref=e838]'
+                    - gridcell "Sem estrela" [ref=e839]:
+                      - button "Sem estrela" [ref=e840]
+                    - gridcell "TikTok" [ref=e841]:
+                      - generic [ref=e843]: TikTok
+                    - 'gridcell "001905 é seu código de 6 dígitos Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 001905 Use este código para" [ref=e844]':
+                      - 'link "001905 é seu código de 6 dígitos Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 001905 Use este código para" [ref=e845]':
+                        - generic [ref=e846]:
+                          - generic [ref=e848]: 001905 é seu código de 6 dígitos
+                          - generic [ref=e849]: "Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 001905 Use este código para"
+                    - gridcell [ref=e850]
+                    - gridcell "qua., 18 de mar. de 2026, 16:39" [ref=e851]:
+                      - generic "qua., 18 de mar. de 2026, 16:39" [ref=e852]: 18 de mar.
+                    - gridcell
+                  - row "não lida, Google 2, Alerta de segurança, 18 de mar., Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,." [ref=e853] [cursor=pointer]:
+                    - gridcell [ref=e854]
+                    - gridcell "não lida, Google 2, Alerta de segurança, 18 de mar., Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,." [ref=e855]:
+                      - checkbox "não lida, Google 2, Alerta de segurança, 18 de mar., Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,." [ref=e856]
+                    - gridcell "Sem estrela" [ref=e857]:
+                      - button "Sem estrela" [ref=e858]
+                    - gridcell "Google 2" [ref=e859]:
+                      - generic [ref=e860]:
+                        - generic [ref=e861]: Google
+                        - generic [ref=e862]: "2"
+                    - gridcell "Alerta de segurança Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi," [ref=e863]:
+                      - link "Alerta de segurança Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi," [ref=e865]:
+                        - generic [ref=e866]:
+                          - generic [ref=e868]: Alerta de segurança
+                          - generic [ref=e869]: Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,
+                    - gridcell [ref=e870]
+                    - gridcell "qua., 18 de mar. de 2026, 16:39" [ref=e871]:
+                      - generic "qua., 18 de mar. de 2026, 16:39" [ref=e872]: 18 de mar.
+                    - gridcell
+                  - 'row "não lida, TikTok, 107984 é seu código de 6 dígitos, 18 de mar., Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 107984 Use este código para." [ref=e873] [cursor=pointer]':
+                    - gridcell [ref=e874]
+                    - 'gridcell "não lida, TikTok, 107984 é seu código de 6 dígitos, 18 de mar., Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 107984 Use este código para." [ref=e875]':
+                      - 'checkbox "não lida, TikTok, 107984 é seu código de 6 dígitos, 18 de mar., Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 107984 Use este código para." [ref=e876]'
+                    - gridcell "Sem estrela" [ref=e877]:
+                      - button "Sem estrela" [ref=e878]
+                    - gridcell "TikTok" [ref=e879]:
+                      - generic [ref=e881]: TikTok
+                    - 'gridcell "107984 é seu código de 6 dígitos Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 107984 Use este código para" [ref=e882]':
+                      - 'link "107984 é seu código de 6 dígitos Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 107984 Use este código para" [ref=e883]':
+                        - generic [ref=e884]:
+                          - generic [ref=e886]: 107984 é seu código de 6 dígitos
+                          - generic [ref=e887]: "Não compartilhe este código com ninguém. Use-o para verificar que esta é a sua conta. Código de 6 dígitos do TikTok Olá, passo.a.passo.uni. Seu código de 6 dígitos é: 107984 Use este código para"
+                    - gridcell [ref=e888]
+                    - gridcell "qua., 18 de mar. de 2026, 16:37" [ref=e889]:
+                      - generic "qua., 18 de mar. de 2026, 16:37" [ref=e890]: 18 de mar.
+                    - gridcell
+                  - row "não lida, Google, ✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google, 18 de mar., Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e891] [cursor=pointer]:
+                    - gridcell [ref=e892]
+                    - gridcell "não lida, Google, ✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google, 18 de mar., Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e893]:
+                      - checkbox "não lida, Google, ✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google, 18 de mar., Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e894]
+                    - gridcell "Sem estrela" [ref=e895]:
+                      - button "Sem estrela" [ref=e896]
+                    - gridcell "Google" [ref=e897]:
+                      - generic [ref=e899]: Google
+                    - gridcell "✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e900]:
+                      - link "✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e902]:
+                        - generic [ref=e903]:
+                          - generic [ref=e906]:
+                            - img "✅" [ref=e907]
+                            - text: Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google
+                          - generic [ref=e908]: Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                    - gridcell [ref=e909]
+                    - gridcell "qua., 18 de mar. de 2026, 16:36" [ref=e910]:
+                      - generic "qua., 18 de mar. de 2026, 16:36" [ref=e911]: 18 de mar.
+                    - gridcell
+                  - 'row "não lida, Zapier Alerts, Notice: Upcoming routine maintenance planned, 16 de mar., Upcoming maintenance may impact your Zapier editor experience on Sunday, March 22 or Monday March 23 depending on your time zone. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e912] [cursor=pointer]':
+                    - gridcell [ref=e913]
+                    - 'gridcell "não lida, Zapier Alerts, Notice: Upcoming routine maintenance planned, 16 de mar., Upcoming maintenance may impact your Zapier editor experience on Sunday, March 22 or Monday March 23 depending on your time zone. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e914]':
+                      - 'checkbox "não lida, Zapier Alerts, Notice: Upcoming routine maintenance planned, 16 de mar., Upcoming maintenance may impact your Zapier editor experience on Sunday, March 22 or Monday March 23 depending on your time zone. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e915]'
+                    - gridcell "Sem estrela" [ref=e916]:
+                      - button "Sem estrela" [ref=e917]
+                    - gridcell "Zapier Alerts" [ref=e918]:
+                      - generic [ref=e920]: Zapier Alerts
+                    - 'gridcell "Notice: Upcoming routine maintenance planned Upcoming maintenance may impact your Zapier editor experience on Sunday, March 22 or Monday March 23 depending on your time zone. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e921]':
+                      - 'link "Notice: Upcoming routine maintenance planned Upcoming maintenance may impact your Zapier editor experience on Sunday, March 22 or Monday March 23 depending on your time zone. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e922]':
+                        - generic [ref=e923]:
+                          - generic [ref=e925]: "Notice: Upcoming routine maintenance planned"
+                          - generic [ref=e926]: Upcoming maintenance may impact your Zapier editor experience on Sunday, March 22 or Monday March 23 depending on your time zone. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e927]
+                    - gridcell "seg., 16 de mar. de 2026, 11:51" [ref=e928]:
+                      - generic "seg., 16 de mar. de 2026, 11:51" [ref=e929]: 16 de mar.
+                    - gridcell
+                  - row "não lida, Google Cloud, [Product Update] Automatic enablement of new OpenTelemetry ingestion API, com anexo, 13 de mar., We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please." [ref=e930] [cursor=pointer]:
+                    - gridcell [ref=e931]
+                    - gridcell "não lida, Google Cloud, [Product Update] Automatic enablement of new OpenTelemetry ingestion API, com anexo, 13 de mar., We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please." [ref=e932]:
+                      - checkbox "não lida, Google Cloud, [Product Update] Automatic enablement of new OpenTelemetry ingestion API, com anexo, 13 de mar., We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please." [ref=e933]
+                    - gridcell "Sem estrela" [ref=e934]:
+                      - button "Sem estrela" [ref=e935]
+                    - gridcell "Google Cloud" [ref=e936]:
+                      - generic [ref=e938]: Google Cloud
+                    - gridcell "[Product Update] Automatic enablement of new OpenTelemetry ingestion API We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please" [ref=e939]:
+                      - link "[Product Update] Automatic enablement of new OpenTelemetry ingestion API We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please" [ref=e940]:
+                        - generic [ref=e941]:
+                          - generic [ref=e943]: "[Product Update] Automatic enablement of new OpenTelemetry ingestion API"
+                          - generic [ref=e944]: We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please
+                    - gridcell "Com anexo" [ref=e945]:
+                      - img "Com anexo" [ref=e946]
+                    - gridcell "sex., 13 de mar. de 2026, 16:50" [ref=e947]:
+                      - generic "sex., 13 de mar. de 2026, 16:50" [ref=e948]: 13 de mar.
+                    - gridcell
+                  - row "não lida, ROOTE TECNOLOGIA LT., Olá, sua cobrança está próxima do vencimento, 13 de mar., ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em." [ref=e949] [cursor=pointer]:
+                    - gridcell [ref=e950]
+                    - gridcell "não lida, ROOTE TECNOLOGIA LT., Olá, sua cobrança está próxima do vencimento, 13 de mar., ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em." [ref=e951]:
+                      - checkbox "não lida, ROOTE TECNOLOGIA LT., Olá, sua cobrança está próxima do vencimento, 13 de mar., ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em." [ref=e952]
+                    - gridcell "Sem estrela" [ref=e953]:
+                      - button "Sem estrela" [ref=e954]
+                    - gridcell "ROOTE TECNOLOGIA LT." [ref=e955]:
+                      - generic [ref=e957]: ROOTE TECNOLOGIA LT.
+                    - gridcell "Olá, sua cobrança está próxima do vencimento ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em" [ref=e958]:
+                      - link "Olá, sua cobrança está próxima do vencimento ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em" [ref=e959]:
+                        - generic [ref=e960]:
+                          - generic [ref=e962]: Olá, sua cobrança está próxima do vencimento
+                          - generic [ref=e963]: ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em
+                    - gridcell [ref=e964]
+                    - gridcell "sex., 13 de mar. de 2026, 08:10" [ref=e965]:
+                      - generic "sex., 13 de mar. de 2026, 08:10" [ref=e966]: 13 de mar.
+                    - gridcell
+                  - 'row "não lida, HeyGen, You did it! Your first video is complete., 12 de mar., HeyGen Hi Passo a passo uniformes, Congrats on making your first video 🎉 That''s always the hardest step. Make your next video → Now here are some fun things you can try next: Use Video Agent to." [ref=e967] [cursor=pointer]':
+                    - gridcell [ref=e968]
+                    - 'gridcell "não lida, HeyGen, You did it! Your first video is complete., 12 de mar., HeyGen Hi Passo a passo uniformes, Congrats on making your first video 🎉 That''s always the hardest step. Make your next video → Now here are some fun things you can try next: Use Video Agent to." [ref=e969]':
+                      - 'checkbox "não lida, HeyGen, You did it! Your first video is complete., 12 de mar., HeyGen Hi Passo a passo uniformes, Congrats on making your first video 🎉 That''s always the hardest step. Make your next video → Now here are some fun things you can try next: Use Video Agent to." [ref=e970]'
+                    - gridcell "Sem estrela" [ref=e971]:
+                      - button "Sem estrela" [ref=e972]
+                    - gridcell "HeyGen" [ref=e973]:
+                      - generic [ref=e975]: HeyGen
+                    - 'gridcell "You did it! Your first video is complete. HeyGen Hi Passo a passo uniformes, Congrats on making your first video 🎉 That''s always the hardest step. Make your next video → Now here are some fun things you can try next: Use Video Agent to" [ref=e976]':
+                      - 'link "You did it! Your first video is complete. HeyGen Hi Passo a passo uniformes, Congrats on making your first video 🎉 That''s always the hardest step. Make your next video → Now here are some fun things you can try next: Use Video Agent to" [ref=e978]':
+                        - generic [ref=e979]:
+                          - generic [ref=e981]: You did it! Your first video is complete.
+                          - generic [ref=e982]:
+                            - text: HeyGen Hi Passo a passo uniformes, Congrats on making your first video
+                            - img "🎉" [ref=e983]
+                            - text: "That's always the hardest step. Make your next video → Now here are some fun things you can try next: Use Video Agent to"
+                    - gridcell [ref=e984]
+                    - gridcell "qui., 12 de mar. de 2026, 13:04" [ref=e985]:
+                      - generic "qui., 12 de mar. de 2026, 13:04" [ref=e986]: 12 de mar.
+                    - gridcell
+                  - row "não lida, HeyGen Notifications, Your Video is Ready!, 11 de mar., HeyGen Hi Passo a passo uniformes, Your AI video is ready! Dynamic GIF Take a look Excited to see what you create, Team HeyGen HeyGen Discord YouTube X LinkedIn Facebook Create videos like you write a." [ref=e987] [cursor=pointer]:
+                    - gridcell [ref=e988]
+                    - gridcell "não lida, HeyGen Notifications, Your Video is Ready!, 11 de mar., HeyGen Hi Passo a passo uniformes, Your AI video is ready! Dynamic GIF Take a look Excited to see what you create, Team HeyGen HeyGen Discord YouTube X LinkedIn Facebook Create videos like you write a." [ref=e989]:
+                      - checkbox "não lida, HeyGen Notifications, Your Video is Ready!, 11 de mar., HeyGen Hi Passo a passo uniformes, Your AI video is ready! Dynamic GIF Take a look Excited to see what you create, Team HeyGen HeyGen Discord YouTube X LinkedIn Facebook Create videos like you write a." [ref=e990]
+                    - gridcell "Sem estrela" [ref=e991]:
+                      - button "Sem estrela" [ref=e992]
+                    - gridcell "HeyGen Notifications" [ref=e993]:
+                      - generic [ref=e995]: HeyGen Notifications
+                    - gridcell "Your Video is Ready! HeyGen Hi Passo a passo uniformes, Your AI video is ready! Dynamic GIF Take a look Excited to see what you create, Team HeyGen HeyGen Discord YouTube X LinkedIn Facebook Create videos like you write a" [ref=e996]:
+                      - link "Your Video is Ready! HeyGen Hi Passo a passo uniformes, Your AI video is ready! Dynamic GIF Take a look Excited to see what you create, Team HeyGen HeyGen Discord YouTube X LinkedIn Facebook Create videos like you write a" [ref=e998]:
+                        - generic [ref=e999]:
+                          - generic [ref=e1001]: Your Video is Ready!
+                          - generic [ref=e1002]: HeyGen Hi Passo a passo uniformes, Your AI video is ready! Dynamic GIF Take a look Excited to see what you create, Team HeyGen HeyGen Discord YouTube X LinkedIn Facebook Create videos like you write a
+                    - gridcell [ref=e1003]
+                    - gridcell "qua., 11 de mar. de 2026, 13:11" [ref=e1004]:
+                      - generic "qua., 11 de mar. de 2026, 13:11" [ref=e1005]: 11 de mar.
+                    - gridcell
+                  - row "não lida, HeyGen, Your avatar \"Cavaleiro do Volante\" from your Avatar IV video is ready! ✨, 11 de mar., HeyGen Hi Passo a passo uniformes, Your new avatar look is ready! Log in to your account to check it out. Start creating your videos with your new look today! ✌️ View Look → Desktop browser required." [ref=e1006] [cursor=pointer]:
+                    - gridcell [ref=e1007]
+                    - gridcell "não lida, HeyGen, Your avatar \"Cavaleiro do Volante\" from your Avatar IV video is ready! ✨, 11 de mar., HeyGen Hi Passo a passo uniformes, Your new avatar look is ready! Log in to your account to check it out. Start creating your videos with your new look today! ✌️ View Look → Desktop browser required." [ref=e1008]:
+                      - checkbox "não lida, HeyGen, Your avatar \"Cavaleiro do Volante\" from your Avatar IV video is ready! ✨, 11 de mar., HeyGen Hi Passo a passo uniformes, Your new avatar look is ready! Log in to your account to check it out. Start creating your videos with your new look today! ✌️ View Look → Desktop browser required." [ref=e1009]
+                    - gridcell "Sem estrela" [ref=e1010]:
+                      - button "Sem estrela" [ref=e1011]
+                    - gridcell "HeyGen" [ref=e1012]:
+                      - generic [ref=e1014]: HeyGen
+                    - gridcell "Your avatar \"Cavaleiro do Volante\" from your Avatar IV video is ready! ✨ HeyGen Hi Passo a passo uniformes, Your new avatar look is ready! Log in to your account to check it out. Start creating your videos with your new look today! ✌️ View Look → Desktop browser required" [ref=e1015]:
+                      - link "Your avatar \"Cavaleiro do Volante\" from your Avatar IV video is ready! ✨ HeyGen Hi Passo a passo uniformes, Your new avatar look is ready! Log in to your account to check it out. Start creating your videos with your new look today! ✌️ View Look → Desktop browser required" [ref=e1017]:
+                        - generic [ref=e1018]:
+                          - generic [ref=e1021]:
+                            - text: Your avatar "Cavaleiro do Volante" from your Avatar IV video is ready!
+                            - img "✨" [ref=e1022]
+                          - generic [ref=e1023]:
+                            - text: HeyGen Hi Passo a passo uniformes, Your new avatar look is ready! Log in to your account to check it out. Start creating your videos with your new look today!
+                            - img "✌️" [ref=e1024]
+                            - text: View Look → Desktop browser required
+                    - gridcell [ref=e1025]
+                    - gridcell "qua., 11 de mar. de 2026, 13:06" [ref=e1026]:
+                      - generic "qua., 11 de mar. de 2026, 13:06" [ref=e1027]: 11 de mar.
+                    - gridcell
+                  - row "não lida, Google 2, Alerta de segurança, 6 de mar., Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,." [ref=e1028] [cursor=pointer]:
+                    - gridcell [ref=e1029]
+                    - gridcell "não lida, Google 2, Alerta de segurança, 6 de mar., Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,." [ref=e1030]:
+                      - checkbox "não lida, Google 2, Alerta de segurança, 6 de mar., Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,." [ref=e1031]
+                    - gridcell "Sem estrela" [ref=e1032]:
+                      - button "Sem estrela" [ref=e1033]
+                    - gridcell "Google 2" [ref=e1034]:
+                      - generic [ref=e1035]:
+                        - generic [ref=e1036]: Google
+                        - generic [ref=e1037]: "2"
+                    - gridcell "Alerta de segurança Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi," [ref=e1038]:
+                      - link "Alerta de segurança Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi," [ref=e1040]:
+                        - generic [ref=e1041]:
+                          - generic [ref=e1043]: Alerta de segurança
+                          - generic [ref=e1044]: Novo login no Apple iPhone passoapassouniformes2025@gmail.com Detectamos um novo login na sua Conta do Google em um Apple iPhone. Se foi você que fez isso, nenhuma ação é necessária. Se não foi,
+                    - gridcell [ref=e1045]
+                    - gridcell "sex., 6 de mar. de 2026, 08:54" [ref=e1046]:
+                      - generic "sex., 6 de mar. de 2026, 08:54" [ref=e1047]: 6 de mar.
+                    - gridcell
+                  - row "não lida, Google, ✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google, 6 de mar., Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e1048] [cursor=pointer]:
+                    - gridcell [ref=e1049]
+                    - gridcell "não lida, Google, ✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google, 6 de mar., Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e1050]:
+                      - checkbox "não lida, Google, ✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google, 6 de mar., Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e1051]
+                    - gridcell "Sem estrela" [ref=e1052]:
+                      - button "Sem estrela" [ref=e1053]
+                    - gridcell "Google" [ref=e1054]:
+                      - generic [ref=e1056]: Google
+                    - gridcell "✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e1057]:
+                      - link "✅ Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e1059]:
+                        - generic [ref=e1060]:
+                          - generic [ref=e1063]:
+                            - img "✅" [ref=e1064]
+                            - text: Passo A Passo Uniformes, termine a configuração do Apple iPhone com o Google
+                          - generic [ref=e1065]: Termine a configuração ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                    - gridcell [ref=e1066]
+                    - gridcell "sex., 6 de mar. de 2026, 08:30" [ref=e1067]:
+                      - generic "sex., 6 de mar. de 2026, 08:30" [ref=e1068]: 6 de mar.
+                    - gridcell
+                  - 'row "não lida, Lovable, Lovable Update: Cross-project referencing, new connectors & Opus 4.6, and more., 26 de fev., Cross-project referencing, new connectors, Opus 4.6, and more. Lovable Lovable Update — Late February 2026 Hey there, here''s what''s new in Lovable: Cross-project referencing Built something." [ref=e1069] [cursor=pointer]':
+                    - gridcell [ref=e1070]
+                    - 'gridcell "não lida, Lovable, Lovable Update: Cross-project referencing, new connectors & Opus 4.6, and more., 26 de fev., Cross-project referencing, new connectors, Opus 4.6, and more. Lovable Lovable Update — Late February 2026 Hey there, here''s what''s new in Lovable: Cross-project referencing Built something." [ref=e1071]':
+                      - 'checkbox "não lida, Lovable, Lovable Update: Cross-project referencing, new connectors & Opus 4.6, and more., 26 de fev., Cross-project referencing, new connectors, Opus 4.6, and more. Lovable Lovable Update — Late February 2026 Hey there, here''s what''s new in Lovable: Cross-project referencing Built something." [ref=e1072]'
+                    - gridcell "Sem estrela" [ref=e1073]:
+                      - button "Sem estrela" [ref=e1074]
+                    - gridcell "Lovable" [ref=e1075]:
+                      - generic [ref=e1077]: Lovable
+                    - 'gridcell "Lovable Update: Cross-project referencing, new connectors & Opus 4.6, and more. Cross-project referencing, new connectors, Opus 4.6, and more. Lovable Lovable Update — Late February 2026 Hey there, here''s what''s new in Lovable: Cross-project referencing Built something" [ref=e1078]':
+                      - 'link "Lovable Update: Cross-project referencing, new connectors & Opus 4.6, and more. Cross-project referencing, new connectors, Opus 4.6, and more. Lovable Lovable Update — Late February 2026 Hey there, here''s what''s new in Lovable: Cross-project referencing Built something" [ref=e1080]':
+                        - generic [ref=e1081]:
+                          - generic [ref=e1083]: "Lovable Update: Cross-project referencing, new connectors & Opus 4.6, and more."
+                          - generic [ref=e1084]: "Cross-project referencing, new connectors, Opus 4.6, and more. Lovable Lovable Update — Late February 2026 Hey there, here's what's new in Lovable: Cross-project referencing Built something"
+                    - gridcell [ref=e1085]
+                    - gridcell "qui., 26 de fev. de 2026, 17:26" [ref=e1086]:
+                      - generic "qui., 26 de fev. de 2026, 17:26" [ref=e1087]: 26 de fev.
+                    - gridcell
+                  - row "não lida, Google Cloud, [Product Update] Automatic enablement of new OpenTelemetry ingestion API, com anexo, 26 de fev., We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please." [ref=e1088] [cursor=pointer]:
+                    - gridcell [ref=e1089]
+                    - gridcell "não lida, Google Cloud, [Product Update] Automatic enablement of new OpenTelemetry ingestion API, com anexo, 26 de fev., We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please." [ref=e1090]:
+                      - checkbox "não lida, Google Cloud, [Product Update] Automatic enablement of new OpenTelemetry ingestion API, com anexo, 26 de fev., We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please." [ref=e1091]
+                    - gridcell "Sem estrela" [ref=e1092]:
+                      - button "Sem estrela" [ref=e1093]
+                    - gridcell "Google Cloud" [ref=e1094]:
+                      - generic [ref=e1096]: Google Cloud
+                    - gridcell "[Product Update] Automatic enablement of new OpenTelemetry ingestion API We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please" [ref=e1097]:
+                      - link "[Product Update] Automatic enablement of new OpenTelemetry ingestion API We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please" [ref=e1098]:
+                        - generic [ref=e1099]:
+                          - generic [ref=e1101]: "[Product Update] Automatic enablement of new OpenTelemetry ingestion API"
+                          - generic [ref=e1102]: We're enabling a new OTLP ingestion API starting Mar 30, 2026. MY CONSOLE Hello Passo a passo uniformes, You may have previously received a notification regarding this update. If so, please
+                    - gridcell "Com anexo" [ref=e1103]:
+                      - img "Com anexo" [ref=e1104]
+                    - gridcell "qui., 26 de fev. de 2026, 01:00" [ref=e1105]:
+                      - generic "qui., 26 de fev. de 2026, 01:00" [ref=e1106]: 26 de fev.
+                    - gridcell
+                  - row "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 23 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1107] [cursor=pointer]:
+                    - gridcell [ref=e1108]
+                    - gridcell "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 23 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1109]:
+                      - checkbox "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 23 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1110]
+                    - gridcell "Sem estrela" [ref=e1111]:
+                      - button "Sem estrela" [ref=e1112]
+                    - gridcell "Google" [ref=e1113]:
+                      - generic [ref=e1115]: Google
+                    - gridcell "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1116]:
+                      - link "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1117]:
+                        - generic [ref=e1118]:
+                          - generic [ref=e1121]:
+                            - img "⚠️" [ref=e1122]
+                            - text: Seu armazenamento do Gmail está 99% cheio
+                          - generic [ref=e1123]: Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e1124]
+                    - gridcell "seg., 23 de fev. de 2026, 18:58" [ref=e1125]:
+                      - generic "seg., 23 de fev. de 2026, 18:58" [ref=e1126]: 23 de fev.
+                    - gridcell
+                  - row "não lida, Recraft, Get started with your product walkthrough, 18 de fev., Welcome to Recraft Studio!‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e1127] [cursor=pointer]:
+                    - gridcell [ref=e1128]
+                    - gridcell "não lida, Recraft, Get started with your product walkthrough, 18 de fev., Welcome to Recraft Studio!‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e1129]:
+                      - checkbox "não lida, Recraft, Get started with your product walkthrough, 18 de fev., Welcome to Recraft Studio!‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌." [ref=e1130]
+                    - gridcell "Sem estrela" [ref=e1131]:
+                      - button "Sem estrela" [ref=e1132]
+                    - gridcell "Recraft" [ref=e1133]:
+                      - generic [ref=e1135]: Recraft
+                    - gridcell "Get started with your product walkthrough Welcome to Recraft Studio!‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e1136]:
+                      - link "Get started with your product walkthrough Welcome to Recraft Studio!‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌" [ref=e1138]:
+                        - generic [ref=e1139]:
+                          - generic [ref=e1141]: Get started with your product walkthrough
+                          - generic [ref=e1142]: Welcome to Recraft Studio!‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                    - gridcell [ref=e1143]
+                    - gridcell "qua., 18 de fev. de 2026, 11:10" [ref=e1144]:
+                      - generic "qua., 18 de fev. de 2026, 11:10" [ref=e1145]: 18 de fev.
+                    - gridcell
+                  - row "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 15 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1146] [cursor=pointer]:
+                    - gridcell [ref=e1147]
+                    - gridcell "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 15 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1148]:
+                      - checkbox "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 15 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1149]
+                    - gridcell "Sem estrela" [ref=e1150]:
+                      - button "Sem estrela" [ref=e1151]
+                    - gridcell "Google" [ref=e1152]:
+                      - generic [ref=e1154]: Google
+                    - gridcell "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1155]:
+                      - link "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1156]:
+                        - generic [ref=e1157]:
+                          - generic [ref=e1160]:
+                            - img "⚠️" [ref=e1161]
+                            - text: Seu armazenamento do Gmail está 99% cheio
+                          - generic [ref=e1162]: Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e1163]
+                    - gridcell "dom., 15 de fev. de 2026, 19:02" [ref=e1164]:
+                      - generic "dom., 15 de fev. de 2026, 19:02" [ref=e1165]: 15 de fev.
+                    - gridcell
+                  - row "não lida, ROOTE TECNOLOGIA LT., Olá, sua cobrança está próxima do vencimento, 13 de fev., ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em." [ref=e1166] [cursor=pointer]:
+                    - gridcell [ref=e1167]
+                    - gridcell "não lida, ROOTE TECNOLOGIA LT., Olá, sua cobrança está próxima do vencimento, 13 de fev., ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em." [ref=e1168]:
+                      - checkbox "não lida, ROOTE TECNOLOGIA LT., Olá, sua cobrança está próxima do vencimento, 13 de fev., ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em." [ref=e1169]
+                    - gridcell "Sem estrela" [ref=e1170]:
+                      - button "Sem estrela" [ref=e1171]
+                    - gridcell "ROOTE TECNOLOGIA LT." [ref=e1172]:
+                      - generic [ref=e1174]: ROOTE TECNOLOGIA LT.
+                    - gridcell "Olá, sua cobrança está próxima do vencimento ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em" [ref=e1175]:
+                      - link "Olá, sua cobrança está próxima do vencimento ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em" [ref=e1176]:
+                        - generic [ref=e1177]:
+                          - generic [ref=e1179]: Olá, sua cobrança está próxima do vencimento
+                          - generic [ref=e1180]: ROOTE TECNOLOGIA LTDA 47.714.701/0001-56 Olá, sua cobrança está próxima do vencimento Olá, Jessica Resendes Lembramos que a sua cobrança gerada por ROOTE TECNOLOGIA LTDA no valor de R$ 512,71 vence em
+                    - gridcell [ref=e1181]
+                    - gridcell "sex., 13 de fev. de 2026, 08:47" [ref=e1182]:
+                      - generic "sex., 13 de fev. de 2026, 08:47" [ref=e1183]: 13 de fev.
+                    - gridcell
+                  - row "não lida, Google Cloud, [Action Advised] Review Google Cloud credential security best practices, 9 de fev., Secure service account and API keys to prevent unauthorized access. MY CONSOLE Enviaremos uma cópia desta mensagem no idioma principal da sua conta assim que as traduções estiverem disponíveis.." [ref=e1184] [cursor=pointer]:
+                    - gridcell [ref=e1185]
+                    - gridcell "não lida, Google Cloud, [Action Advised] Review Google Cloud credential security best practices, 9 de fev., Secure service account and API keys to prevent unauthorized access. MY CONSOLE Enviaremos uma cópia desta mensagem no idioma principal da sua conta assim que as traduções estiverem disponíveis.." [ref=e1186]:
+                      - checkbox "não lida, Google Cloud, [Action Advised] Review Google Cloud credential security best practices, 9 de fev., Secure service account and API keys to prevent unauthorized access. MY CONSOLE Enviaremos uma cópia desta mensagem no idioma principal da sua conta assim que as traduções estiverem disponíveis.." [ref=e1187]
+                    - gridcell "Sem estrela" [ref=e1188]:
+                      - button "Sem estrela" [ref=e1189]
+                    - gridcell "Google Cloud" [ref=e1190]:
+                      - generic [ref=e1192]: Google Cloud
+                    - gridcell "[Action Advised] Review Google Cloud credential security best practices Secure service account and API keys to prevent unauthorized access. MY CONSOLE Enviaremos uma cópia desta mensagem no idioma principal da sua conta assim que as traduções estiverem disponíveis." [ref=e1193]:
+                      - link "[Action Advised] Review Google Cloud credential security best practices Secure service account and API keys to prevent unauthorized access. MY CONSOLE Enviaremos uma cópia desta mensagem no idioma principal da sua conta assim que as traduções estiverem disponíveis." [ref=e1194]:
+                        - generic [ref=e1195]:
+                          - generic [ref=e1197]: "[Action Advised] Review Google Cloud credential security best practices"
+                          - generic [ref=e1198]: Secure service account and API keys to prevent unauthorized access. MY CONSOLE Enviaremos uma cópia desta mensagem no idioma principal da sua conta assim que as traduções estiverem disponíveis.
+                    - gridcell [ref=e1199]
+                    - gridcell "seg., 9 de fev. de 2026, 23:43" [ref=e1200]:
+                      - generic "seg., 9 de fev. de 2026, 23:43" [ref=e1201]: 9 de fev.
+                    - gridcell
+                  - row "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 7 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1202] [cursor=pointer]:
+                    - gridcell [ref=e1203]
+                    - gridcell "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 7 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1204]:
+                      - checkbox "não lida, Google, ⚠️ Seu armazenamento do Gmail está 99% cheio, 7 de fev., Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1205]
+                    - gridcell "Sem estrela" [ref=e1206]:
+                      - button "Sem estrela" [ref=e1207]
+                    - gridcell "Google" [ref=e1208]:
+                      - generic [ref=e1210]: Google
+                    - gridcell "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1211]:
+                      - link "⚠️ Seu armazenamento do Gmail está 99% cheio Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1212]:
+                        - generic [ref=e1213]:
+                          - generic [ref=e1216]:
+                            - img "⚠️" [ref=e1217]
+                            - text: Seu armazenamento do Gmail está 99% cheio
+                          - generic [ref=e1218]: Compre mais armazenamento ou libere espaço ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                    - gridcell [ref=e1219]
+                    - gridcell "sáb., 7 de fev. de 2026, 23:54" [ref=e1220]:
+                      - generic "sáb., 7 de fev. de 2026, 23:54" [ref=e1221]: 7 de fev.
+                    - gridcell
+                  - row "não lida, Elementor, [Elementor] Please Confirm Your Email Address, 4 de fev., Verify now ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌." [ref=e1222] [cursor=pointer]:
+                    - gridcell [ref=e1223]
+                    - gridcell "não lida, Elementor, [Elementor] Please Confirm Your Email Address, 4 de fev., Verify now ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌." [ref=e1224]:
+                      - checkbox "não lida, Elementor, [Elementor] Please Confirm Your Email Address, 4 de fev., Verify now ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌." [ref=e1225]
+                    - gridcell "Sem estrela" [ref=e1226]:
+                      - button "Sem estrela" [ref=e1227]
+                    - gridcell "Elementor" [ref=e1228]:
+                      - generic [ref=e1230]: Elementor
+                    - gridcell "[Elementor] Please Confirm Your Email Address Verify now ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌" [ref=e1231]:
+                      - link "[Elementor] Please Confirm Your Email Address Verify now ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌" [ref=e1232]:
+                        - generic [ref=e1233]:
+                          - generic [ref=e1235]: "[Elementor] Please Confirm Your Email Address"
+                          - generic [ref=e1236]: Verify now ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌
+                    - gridcell [ref=e1237]
+                    - gridcell "qua., 4 de fev. de 2026, 16:39" [ref=e1238]:
+                      - generic "qua., 4 de fev. de 2026, 16:39" [ref=e1239]: 4 de fev.
+                    - gridcell
+          - contentinfo [ref=e1241]:
+            - link "99% de 15 GB usados Siga o link para gerenciar o armazenamento" [ref=e1246] [cursor=pointer]:
+              - /url: https://drive.google.com/u/0/settings/storage?hl=pt-BR&utm_medium=web&utm_source=gmail&utm_campaign=storage_meter&utm_content=storage_very_high
+              - generic [ref=e1249]:
+                - generic [ref=e1250]: 99% de 15 GB usados
+                - img "Siga o link para gerenciar o armazenamento" [ref=e1251]
+            - generic [ref=e1255]:
+              - link "Termos" [ref=e1256] [cursor=pointer]:
+                - /url: https://www.google.com/intl/pt-BR/policies/terms/
+              - text: ·
+              - link "Privacidade" [ref=e1257] [cursor=pointer]:
+                - /url: https://www.google.com/intl/pt-BR/policies/privacy/
+              - text: ·
+              - link "Regulamentos do programa" [ref=e1258] [cursor=pointer]:
+                - /url: https://www.google.com/gmail/about/policy/
+            - generic [ref=e1261]:
+              - generic [ref=e1262]: "Última atividade da conta: há 0 minuto"
+              - link "Detalhes" [ref=e1263] [cursor=pointer]
+      - generic [ref=e1266]:
+        - complementary "Painel lateral" [ref=e1267]:
+          - tablist [ref=e1269]:
+            - tab "Agenda"
+            - tab "Keep"
+            - tab "Tarefas"
+            - tab "Contatos"
+        - generic:
+          - button "Esconder painel lateral":
+            - img [ref=e1275] [cursor=pointer]

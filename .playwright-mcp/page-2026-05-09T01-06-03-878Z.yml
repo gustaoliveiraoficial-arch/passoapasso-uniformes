@@ -1,0 +1,126 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+      - /url: "#main"
+    - banner:
+      - heading "Console do Firebase" [level=1] [ref=e7]:
+        - link "Console do Firebase" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e9]:
+            - img [ref=e10]
+            - img "Logotipo do Firebase" [ref=e11]
+    - main [ref=e13]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: Olá, shark
+          - heading "Este é o Firebase!" [level=2] [ref=e19]
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - heading "Vamos começar" [level=3] [ref=e22]
+            - button "Criar um novo projeto do Firebase" [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+              - generic [ref=e28]: Criar um novo projeto do Firebase
+              - generic [ref=e29]: Integre produtos do Firebase para turbinar seu app
+          - generic [ref=e31]:
+            - generic [ref=e33]:
+              - img [ref=e34]: search
+              - searchbox "Pesquisar todos os projetos e espaços de trabalho" [ref=e35]
+            - generic [ref=e36]:
+              - button "Projetos e espaços de trabalho" [ref=e39] [cursor=pointer]:
+                - text: Projetos e espaços de trabalho
+                - img [ref=e40]: arrow_drop_down
+              - list [ref=e42]:
+                - listitem [ref=e43]:
+                  - generic [ref=e44]:
+                    - link "Abrir pap-tabela-precos" [ref=e46] [cursor=pointer]:
+                      - /url: "#"
+                      - generic [ref=e47]:
+                        - generic [ref=e49]: pap-tabela-precos
+                        - generic [ref=e50]: pap-tabela-precos
+                    - button "Marcar com estrela" [ref=e52] [cursor=pointer]:
+                      - img [ref=e53]: star
+                - listitem [ref=e56]:
+                  - generic [ref=e57]:
+                    - link "Abrir painel-vendas-comercial" [ref=e59] [cursor=pointer]:
+                      - /url: "#"
+                      - generic [ref=e60]:
+                        - generic [ref=e62]: painel-vendas-comercial
+                        - generic [ref=e63]: painel-vendas-comercial
+                    - button "Marcar com estrela" [ref=e65] [cursor=pointer]:
+                      - img [ref=e66]: star
+              - group [ref=e70]:
+                - generic [ref=e73]:
+                  - status [ref=e74]: 1 a 2 de 2
+                  - button "Página anterior" [disabled] [ref=e75]:
+                    - img [ref=e76]
+                  - button "Próxima página" [disabled] [ref=e80]:
+                    - img [ref=e81]
+          - generic [ref=e85]:
+            - heading "Testar um app de exemplo" [level=3] [ref=e86]
+            - generic [ref=e87]:
+              - button "Criar um app do Flutter com tecnologia de IA" [ref=e91] [cursor=pointer]:
+                - img [ref=e92]
+                - generic [ref=e93]: Criar um app do Flutter com tecnologia de IA
+                - generic [ref=e94]: Implante um app de exemplo que mostre como a API Gemini Live, os comandos multimodais e a criação de imagens com o Nano Banana funcionam no Flutter
+              - button "Teste um app de planejamento de viagens com tecnologia de IA" [ref=e98] [cursor=pointer]:
+                - img [ref=e99]
+                - generic [ref=e100]: Teste um app de planejamento de viagens com tecnologia de IA
+                - generic [ref=e101]: Implante um app de exemplo que use o Firestore, o Firebase Authentication e a entrada multimodal no Firebase AI Logic. Depois disso, estude o código no Firebase Studio.
+              - button "Testar um app agêntico de barista" [ref=e105] [cursor=pointer]:
+                - img [ref=e106]
+                - generic [ref=e107]: Testar um app agêntico de barista
+                - generic [ref=e108]: Implante um app de exemplo que use o Firestore, o Firebase Authentication e a chamada de função no Firebase AI Logic. Depois disso, estude o código no Firebase Studio.
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: Idioma
+            - combobox "Idioma português (Brasil)" [ref=e113]:
+              - generic [ref=e114] [cursor=pointer]:
+                - generic [ref=e116]: português (Brasil)
+                - img [ref=e119]
+          - list [ref=e121]:
+            - listitem [ref=e122]:
+              - link "Ver o suporte do Firebase (abrir em nova guia)" [ref=e123] [cursor=pointer]:
+                - /url: https://firebase.google.com/support?hl=pt-BR&authuser=0
+                - text: Suporte
+            - listitem [ref=e124]:
+              - link "Ver os Termos e Serviços do Firebase (abrir em nova guia)" [ref=e125] [cursor=pointer]:
+                - /url: https://firebase.google.com/terms?hl=pt-BR&authuser=0
+                - text: Termos
+            - listitem [ref=e126]:
+              - link "Ver a Política de Privacidade do Google (abrir em nova guia)" [ref=e127] [cursor=pointer]:
+                - /url: https://www.google.com/policies/privacy/
+                - text: Política de Privacidade
+    - generic "Gemini no Firebase" [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e138] [cursor=pointer]':
+            - img [ref=e140]
+            - img [ref=e146]
+          - button "Abrir alertas" [ref=e148] [cursor=pointer]:
+            - img [ref=e149]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [disabled] [ref=e158]:
+            - img [ref=e160]: spark
+            - tooltip "Gemini no Firebase Selecione um projeto para usar o Gemini no Firebase" [ref=e163]:
+              - generic:
+                - text: Gemini no Firebase
+                - generic [ref=e164]: Selecione um projeto para usar o Gemini no Firebase
+          - button "Ajuda" [ref=e167] [cursor=pointer]:
+            - img [ref=e168]: contact_support
+          - separator [ref=e171]
+          - button "Ativar o Cloud Shell" [ref=e172] [cursor=pointer]:
+            - img [ref=e173]:
+              - img [ref=e174]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e178]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [disabled]:
+            - img: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e182] [cursor=pointer]':
+          - img [ref=e183]: dark_mode
+  - generic [ref=e186]: Preparando seu projeto, aguarde.
+  - dialog [ref=e410]:
+    - generic [ref=e415]:
+      - generic [ref=e416]:
+        - img [ref=e424]
+        - img [ref=e427]: warning
+      - generic [ref=e428]: Preparando seu projeto, aguarde.
+      - generic [ref=e429]: pap-pedidos

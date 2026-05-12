@@ -1,0 +1,211 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - link [ref=e234] [cursor=pointer]:
+      - /url: "#main"
+      - text: Pular para o conteúdo principal
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - navigation [ref=e235]:
+          - heading [level=2] [ref=e236]:
+            - link [ref=e237] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e102]:
+                - img [ref=e103]
+                - img [ref=e238]
+          - img [ref=e109]: search
+          - link [ref=e239] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e112]: gmp_nav20_overview
+          - menu [ref=e113]:
+            - menuitem [ref=e240]:
+              - img [ref=e116] [cursor=pointer]: settings
+        - separator [ref=e117]
+        - group [ref=e119]:
+          - link [ref=e241] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e122]: gmp_firestore
+        - separator [ref=e123]
+      - button [ref=e242] [cursor=pointer]:
+        - img [ref=e127]: chevron_left
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button [ref=e243] [cursor=pointer]:
+          - img [ref=e131]: menu
+        - button [ref=e244] [cursor=pointer]:
+          - text: pap-pedidos
+          - img [ref=e136]: arrow_drop_down
+      - button [ref=e245] [cursor=pointer]:
+        - img [ref=e140]: more_vert
+    - main [ref=e16]:
+      - generic [ref=e144]:
+        - generic [ref=e153]:
+          - heading [level=1] [ref=e246]: Storage
+          - generic [ref=e156]: Armazenar e recuperar arquivos gerados pelo usuário, como imagens, áudio e vídeos, sem o código do lado do servidor
+          - status [ref=e161]:
+            - img [ref=e162]: info
+            - generic [ref=e163]: "note:"
+            - generic [ref=e165]:
+              - text: Para usar Storage, faça upgrade do plano de preços do seu projeto
+              - button [ref=e247]: Fazer upgrade do projeto
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - heading [level=2] [ref=e249]: Saiba mais
+            - generic [ref=e176]:
+              - link [ref=e250] [cursor=pointer]:
+                - /url: //firebase.google.com/docs/storage/?hl=pt-BR&authuser=0#implementation_path
+                - generic [ref=e179]:
+                  - img [ref=e180]:
+                    - img [ref=e181]: settings
+                  - generic [ref=e182]:
+                    - generic [ref=e183]: Por onde começar?
+                    - generic [ref=e184]: Ver a documentação
+              - link [ref=e251] [cursor=pointer]:
+                - /url: //firebase.google.com/docs/storage/?hl=pt-BR&authuser=0#how_does_it_work
+                - generic [ref=e187]:
+                  - img [ref=e188]:
+                    - img [ref=e189]: info
+                  - generic [ref=e190]:
+                    - generic [ref=e192]: Como o produto "Storage" funciona?
+                    - generic [ref=e193]: Ver a documentação
+              - link [ref=e252] [cursor=pointer]:
+                - /url: //firebase.google.com/products/storage/?hl=pt-BR&authuser=0
+                - generic [ref=e196]:
+                  - img [ref=e197]:
+                    - img [ref=e198]: sentiment_satisfied_alt
+                  - generic [ref=e199]:
+                    - generic [ref=e200]: De que forma o produto "Storage" pode ser útil para mim?
+                    - generic [ref=e201]: Saiba mais
+            - iframe [ref=e204]:
+              - generic [active] [ref=f12e1]:
+                - generic "Player de vídeo do YouTube" [ref=f12e3]
+                - generic [ref=f12e5]:
+                  - generic:
+                    - generic:
+                      - button "Assistir vídeo" [ref=f12e10] [cursor=pointer]
+                      - button "Ocultar controles do player" [ref=f12e12] [cursor=pointer]
+                      - generic [ref=f12e14]:
+                        - generic [ref=f12e19]:
+                          - generic [ref=f12e20]:
+                            - link "Introducing Cloud Storage for Firebase" [ref=f12e21] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=_tyjqozrEPY
+                            - link "Firebase" [ref=f12e22] [cursor=pointer]:
+                              - /url: /channel/UCP4bf6IHJJQehibu6ai__cg
+                              - generic [ref=f12e23]: Firebase
+                          - generic [ref=f12e24]:
+                            - button [ref=f12e25] [cursor=pointer]
+                            - generic [ref=f12e26]:
+                              - generic [ref=f12e27]:
+                                - generic: Firebase
+                                - generic: 415 mil inscritos
+                              - generic [ref=f12e35]:
+                                - generic [ref=f12e36]:
+                                  - generic:
+                                    - generic:
+                                      - img
+                                  - button "Inscrever-se" [ref=f12e39] [cursor=pointer]:
+                                    - generic [ref=f12e40]: Inscrever-se
+                                - generic:
+                                  - generic:
+                                    - img
+                        - generic [ref=f12e44]:
+                          - generic [ref=f12e45]:
+                            - button "Compartilhar" [ref=f12e47] [cursor=pointer]:
+                              - generic [ref=f12e51]:
+                                - img
+                            - button "Assistir mais tarde" [ref=f12e56] [cursor=pointer]:
+                              - generic [ref=f12e60]:
+                                - img
+                          - link "Assistir no YouTube" [ref=f12e67] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=_tyjqozrEPY
+                            - generic [ref=f12e70]:
+                              - text: Assista no
+                              - img [ref=f12e72]:
+                                - generic [ref=f12e74]:
+                                  - img
+          - generic [ref=e205]:
+            - separator [ref=e207]
+            - generic [ref=e208]:
+              - heading [level=2] [ref=e253]: Mais produtos para desenvolvedores
+              - generic [ref=e210]:
+                - link [ref=e254] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e213]:
+                    - img [ref=e214]
+                    - generic [ref=e215]:
+                      - generic [ref=e216]: Authentication
+                      - generic [ref=e217]: Uma solução de identidade de usuário completa em menos de 10 linhas de código
+                - link [ref=e255] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e220]:
+                    - img [ref=e221]
+                    - generic [ref=e222]:
+                      - generic [ref=e223]: Cloud Firestore
+                      - generic [ref=e224]: Atualizações em tempo real, consultas eficientes e escalonamento automático
+                - link [ref=e256] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e227]:
+                    - img [ref=e228]
+                    - generic [ref=e229]:
+                      - generic [ref=e230]: Hosting
+                      - generic [ref=e231]: Implantar apps da Web em segundos
+              - link [ref=e257] [cursor=pointer]:
+                - /url: https://firebase.google.com/docs/build?hl=pt-BR&authuser=0
+                - text: Ver mais produtos relacionados open_in_new
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - button [ref=e259] [cursor=pointer]:
+          - img [ref=e47]
+          - img [ref=e53]
+        - button [ref=e260] [cursor=pointer]:
+          - img [ref=e56]: notifications
+        - button [ref=e261] [cursor=pointer]:
+          - img [ref=e66]: spark
+        - button [ref=e262] [cursor=pointer]:
+          - img [ref=e70]: contact_support
+        - separator [ref=e73]
+        - button [ref=e263] [cursor=pointer]:
+          - img [ref=e75]:
+            - img [ref=e76]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e80]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button [ref=e264] [cursor=pointer]:
+          - img [ref=e84]: school
+      - button [ref=e265] [cursor=pointer]:
+        - img [ref=e89]: dark_mode
+  - dialog "Sua conta de faturamento" [ref=e269]:
+    - generic [ref=e274]:
+      - generic [ref=e275]:
+        - heading "Sua conta de faturamento" [active] [level=2] [ref=e276]
+        - generic [ref=e277]: Selecione ou crie uma conta do Cloud Billing para fazer upgrade para o plano de pagamento por uso (Blaze)
+        - button "Fechar caixa de diálogo" [ref=e278] [cursor=pointer]:
+          - img [ref=e279]: close
+      - generic [ref=e283]:
+        - generic [ref=e288]:
+          - img [ref=e289]: auto_awesome
+          - generic [ref=e290]: Ganhe US$ 300 em créditos para começar a usar o Firebase!
+          - link "Saiba mais sobre os créditos gratuitos (abre em uma nova guia)" [ref=e292] [cursor=pointer]:
+            - /url: https://firebase.blog/posts/2024/11/claim-300-to-get-started
+            - text: Saiba mais open_in_new
+        - generic [ref=e296]:
+          - text: Plano selecionado
+          - generic [ref=e297]:
+            - generic [ref=e298]: Pagamento por utilizaçãoPlano Blaze
+            - link "Confira todos os detalhes do plano Blaze (abre em uma nova guia)" [ref=e300] [cursor=pointer]:
+              - /url: https://firebase.google.com/pricing?hl=pt-BR&authuser=0
+              - text: Veja os detalhes completos do plano open_in_new
+        - generic [ref=e301]:
+          - generic [ref=e302]: Escolher uma conta do Cloud Billing
+          - table "Contas de faturamento" [ref=e305]:
+            - rowgroup [ref=e306]:
+              - row "Contas do Cloud Billing disponíveis" [ref=e307]:
+                - columnheader "Contas do Cloud Billing disponíveis" [ref=e308] [cursor=pointer]:
+                  - button "Contas do Cloud Billing disponíveis" [ref=e309]:
+                    - generic [ref=e310]: Contas do Cloud Billing disponíveis
+                    - img [ref=e312]
+            - rowgroup [ref=e314]:
+              - row "Você não tem uma conta do Cloud Billing Vamos ajudar você a criar uma conta de faturamento que pode ser vinculada ao projeto Criar uma conta do Cloud Billing" [ref=e315]:
+                - cell "Você não tem uma conta do Cloud Billing Vamos ajudar você a criar uma conta de faturamento que pode ser vinculada ao projeto Criar uma conta do Cloud Billing" [ref=e316]:
+                  - generic [ref=e317]: Você não tem uma conta do Cloud Billing
+                  - generic [ref=e318]: Vamos ajudar você a criar uma conta de faturamento que pode ser vinculada ao projeto
+                  - button "Criar uma conta do Cloud Billing" [ref=e319]:
+                    - generic [ref=e320]: Criar uma conta do Cloud Billing

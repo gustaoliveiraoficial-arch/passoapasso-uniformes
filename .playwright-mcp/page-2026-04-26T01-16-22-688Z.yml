@@ -1,0 +1,377 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Opções de tela" [ref=e37] [cursor=pointer]
+            - button "Ajuda" [ref=e39] [cursor=pointer]
+          - generic [ref=e40]:
+            - heading "Páginas" [level=1] [ref=e41]
+            - link "Adicionar página" [ref=e42] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/post-new.php?post_type=page
+            - generic [ref=e43]:
+              - generic [ref=e44] [cursor=pointer]: ×
+              - generic [ref=e46]:
+                - generic [ref=e47]:
+                  - heading "Connect Hostinger Reach to start Email Marketing" [level=3] [ref=e48]
+                  - paragraph [ref=e49]: Send newsletters with professionally designed templates, automate campaigns, and build AI-powered segments. With Hostinger Reach, growing your audience is easy.
+                - generic [ref=e50]:
+                  - button "Conectar" [ref=e51] [cursor=pointer]
+                  - link "Learn more" [ref=e52] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-reach
+            - region "Elementor notice" [ref=e53]:
+              - button "Dispensar esta notificação." [ref=e54] [cursor=pointer]: 
+              - generic [ref=e57]: 
+              - generic [ref=e58]:
+                - heading "Certifique-se de que seu site tenha uma página de declaração de acessibilidade" [level=3] [ref=e59]
+                - paragraph [ref=e60]: Crie uma experiência de site mais inclusiva para todos os seus visitantes. Com o Ally, é fácil adicionar sua página de declaração com apenas alguns cliques.
+                - generic [ref=e61]:
+                  - link "Instalar agora" [ref=e62] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/update.php?action=install-plugin&plugin=pojo-accessibility&_wpnonce=dba249e5b9&plg_campaign_name=elementor_ea11y_campaign&plg_campaign=acc-statement-plg-pages-install&plg_source=wp-pages-install&plg_medium=wp-dash&plg_campaign_nonce=9b520ae307
+                  - link "Saiba mais" [ref=e63] [cursor=pointer]:
+                    - /url: https://go.elementor.com/acc-plg-learn-more
+            - generic [ref=e66]:
+              - button "Dismiss this notice." [ref=e67] [cursor=pointer]:
+                - generic [ref=e68]: Dismiss this notice.
+              - generic [ref=e69]:
+                - generic [ref=e70]:
+                  - heading "Welcome to Hello Biz" [level=6] [ref=e71]
+                  - paragraph [ref=e72]: Access the full suite of features, including website templates, header and footer templates, and extra widgets.
+                  - link "Begin setup" [ref=e73] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hello-biz&start-install=true
+                  - paragraph [ref=e74]: By clicking "Begin setup" I agree to install and activate the Hello+ plugin.
+                - img [ref=e75]
+            - heading "Filtrar lista de páginas" [level=2] [ref=e76]
+            - list [ref=e77]:
+              - listitem [ref=e78]:
+                - link "Todos (8)" [ref=e79] [cursor=pointer]:
+                  - /url: edit.php?post_type=page
+                - text: "|"
+              - listitem [ref=e80]:
+                - link "Publicados (5)" [ref=e81] [cursor=pointer]:
+                  - /url: edit.php?post_status=publish&post_type=page
+                - text: "|"
+              - listitem [ref=e82]:
+                - link "Rascunhos (3)" [ref=e83] [cursor=pointer]:
+                  - /url: edit.php?post_status=draft&post_type=page
+                - text: "|"
+              - listitem [ref=e84]:
+                - link "Lixos (2)" [ref=e85] [cursor=pointer]:
+                  - /url: edit.php?post_status=trash&post_type=page
+            - generic [ref=e86]:
+              - paragraph [ref=e87]:
+                - generic [ref=e88]: "Pesquisar páginas:"
+                - searchbox "Pesquisar páginas:" [ref=e89]
+                - button "Pesquisar páginas" [ref=e90] [cursor=pointer]
+              - heading "Lista de páginas" [level=2] [ref=e92]
+              - table "Tabela ordenada por ordem hierárquica de menu e título. Ascendente." [ref=e93]:
+                - caption [ref=e94]: Tabela ordenada por ordem hierárquica de menu e título. Ascendente.
+                - rowgroup [ref=e95]:
+                  - row "Selecionar todos Título" [ref=e96]:
+                    - cell "Selecionar todos" [ref=e97]:
+                      - checkbox "Selecionar todos" [ref=e98] [cursor=pointer]
+                      - generic [ref=e100]: Selecionar todos
+                    - columnheader "Título" [ref=e101]:
+                      - link "Título" [ref=e102] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=page&orderby=title&order=desc
+                        - generic [ref=e103]: Título
+                - rowgroup [ref=e107]:
+                  - row "Selecionar Carrinho “Carrinho” (Editar) — Página do carrinho Editar “Carrinho” | Editar diretamente “Carrinho” | Mover “Carrinho” para a lixeira | Ver “Carrinho” Mostrar mais detalhes" [ref=e108]:
+                    - rowheader "Selecionar Carrinho" [ref=e109]:
+                      - checkbox "Selecionar Carrinho" [ref=e110] [cursor=pointer]
+                      - generic [ref=e112]: Selecionar Carrinho
+                    - cell "“Carrinho” (Editar) — Página do carrinho Editar “Carrinho” | Editar diretamente “Carrinho” | Mover “Carrinho” para a lixeira | Ver “Carrinho” Mostrar mais detalhes" [ref=e113]:
+                      - strong [ref=e114]:
+                        - link "“Carrinho” (Editar)" [ref=e115] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=74&action=edit
+                          - text: Carrinho
+                        - text: — Página do carrinho
+                      - generic [ref=e116]:
+                        - generic [ref=e117]:
+                          - link "Editar “Carrinho”" [ref=e118] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=74&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e119]:
+                          - button "Editar diretamente “Carrinho”" [ref=e120] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e121]:
+                          - link "Mover “Carrinho” para a lixeira" [ref=e122] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=74&action=trash&_wpnonce=e3fcb7537f
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Ver “Carrinho”" [ref=e124] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/carrinho/
+                          - text: Ver
+                      - button "Mostrar mais detalhes" [ref=e125]:
+                        - generic [ref=e126]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - 'row "Selecionar Elementor #6 “Elementor #6” (Editar) — Rascunho, Elementor Editar “Elementor #6” | Editar diretamente “Elementor #6” | Mover “Elementor #6” para a lixeira | Visualizar “Elementor #6” | Editar com Elementor Mostrar mais detalhes" [ref=e127]':
+                    - 'rowheader "Selecionar Elementor #6" [ref=e128]':
+                      - 'checkbox "Selecionar Elementor #6" [ref=e129] [cursor=pointer]'
+                      - generic [ref=e131]: "Selecionar Elementor #6"
+                    - 'cell "“Elementor #6” (Editar) — Rascunho, Elementor Editar “Elementor #6” | Editar diretamente “Elementor #6” | Mover “Elementor #6” para a lixeira | Visualizar “Elementor #6” | Editar com Elementor Mostrar mais detalhes" [ref=e132]':
+                      - strong [ref=e133]:
+                        - 'link "“Elementor #6” (Editar)" [ref=e134] [cursor=pointer]':
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=6&action=edit
+                          - text: "Elementor #6"
+                        - text: — Rascunho, Elementor
+                      - generic [ref=e135]:
+                        - generic [ref=e136]:
+                          - 'link "Editar “Elementor #6”" [ref=e137] [cursor=pointer]':
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=6&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e138]:
+                          - 'button "Editar diretamente “Elementor #6”" [ref=e139] [cursor=pointer]': Edição rápida
+                          - text: "|"
+                        - generic [ref=e140]:
+                          - 'link "Mover “Elementor #6” para a lixeira" [ref=e141] [cursor=pointer]':
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=6&action=trash&_wpnonce=50b3429abd
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - generic [ref=e142]:
+                          - 'link "Visualizar “Elementor #6”" [ref=e143] [cursor=pointer]':
+                            - /url: https://passoapassouniformes.com/?page_id=6&preview=true
+                            - text: Visualizar
+                          - text: "|"
+                        - link "Editar com Elementor" [ref=e145] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=6&action=elementor
+                      - button "Mostrar mais detalhes" [ref=e146]:
+                        - generic [ref=e147]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - row "Selecionar Finalização de compra “Finalização de compra” (Editar) — Página de finalização de compra Editar “Finalização de compra” | Editar diretamente “Finalização de compra” | Mover “Finalização de compra” para a lixeira | Ver “Finalização de compra” Mostrar mais detalhes" [ref=e148]:
+                    - rowheader "Selecionar Finalização de compra" [ref=e149]:
+                      - checkbox "Selecionar Finalização de compra" [ref=e150] [cursor=pointer]
+                      - generic [ref=e152]: Selecionar Finalização de compra
+                    - cell "“Finalização de compra” (Editar) — Página de finalização de compra Editar “Finalização de compra” | Editar diretamente “Finalização de compra” | Mover “Finalização de compra” para a lixeira | Ver “Finalização de compra” Mostrar mais detalhes" [ref=e153]:
+                      - strong [ref=e154]:
+                        - link "“Finalização de compra” (Editar)" [ref=e155] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=75&action=edit
+                          - text: Finalização de compra
+                        - text: — Página de finalização de compra
+                      - generic [ref=e156]:
+                        - generic [ref=e157]:
+                          - link "Editar “Finalização de compra”" [ref=e158] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=75&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e159]:
+                          - button "Editar diretamente “Finalização de compra”" [ref=e160] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e161]:
+                          - link "Mover “Finalização de compra” para a lixeira" [ref=e162] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=75&action=trash&_wpnonce=c8459a8a4c
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Ver “Finalização de compra”" [ref=e164] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/finalizar-compra/
+                          - text: Ver
+                      - button "Mostrar mais detalhes" [ref=e165]:
+                        - generic [ref=e166]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - row "Selecionar Loja “Loja” (Editar) — Página da loja Editar “Loja” | Editar diretamente “Loja” | Mover “Loja” para a lixeira | Ver “Loja” Mostrar mais detalhes" [ref=e167]:
+                    - rowheader "Selecionar Loja" [ref=e168]:
+                      - checkbox "Selecionar Loja" [ref=e169] [cursor=pointer]
+                      - generic [ref=e171]: Selecionar Loja
+                    - cell "“Loja” (Editar) — Página da loja Editar “Loja” | Editar diretamente “Loja” | Mover “Loja” para a lixeira | Ver “Loja” Mostrar mais detalhes" [ref=e172]:
+                      - strong [ref=e173]:
+                        - link "“Loja” (Editar)" [ref=e174] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/site-editor.php?postType=wp_template&postId=woocommerce/woocommerce//archive-product
+                          - text: Loja
+                        - text: — Página da loja
+                      - generic [ref=e175]:
+                        - generic [ref=e176]:
+                          - link "Editar “Loja”" [ref=e177] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/site-editor.php?postType=wp_template&postId=woocommerce/woocommerce//archive-product
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e178]:
+                          - button "Editar diretamente “Loja”" [ref=e179] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e180]:
+                          - link "Mover “Loja” para a lixeira" [ref=e181] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=73&action=trash&_wpnonce=a2eb63d0e7
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Ver “Loja”" [ref=e183] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/loja/
+                          - text: Ver
+                      - button "Mostrar mais detalhes" [ref=e184]:
+                        - generic [ref=e185]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - row "Selecionar Minha conta “Minha conta” (Editar) — Página minha conta Editar “Minha conta” | Editar diretamente “Minha conta” | Mover “Minha conta” para a lixeira | Ver “Minha conta” Mostrar mais detalhes" [ref=e186]:
+                    - rowheader "Selecionar Minha conta" [ref=e187]:
+                      - checkbox "Selecionar Minha conta" [ref=e188] [cursor=pointer]
+                      - generic [ref=e190]: Selecionar Minha conta
+                    - cell "“Minha conta” (Editar) — Página minha conta Editar “Minha conta” | Editar diretamente “Minha conta” | Mover “Minha conta” para a lixeira | Ver “Minha conta” Mostrar mais detalhes" [ref=e191]:
+                      - strong [ref=e192]:
+                        - link "“Minha conta” (Editar)" [ref=e193] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=76&action=edit
+                          - text: Minha conta
+                        - text: — Página minha conta
+                      - generic [ref=e194]:
+                        - generic [ref=e195]:
+                          - link "Editar “Minha conta”" [ref=e196] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=76&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e197]:
+                          - button "Editar diretamente “Minha conta”" [ref=e198] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e199]:
+                          - link "Mover “Minha conta” para a lixeira" [ref=e200] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=76&action=trash&_wpnonce=090f4b7922
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Ver “Minha conta”" [ref=e202] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/minha-conta/
+                          - text: Ver
+                      - button "Mostrar mais detalhes" [ref=e203]:
+                        - generic [ref=e204]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - row "Selecionar Passo a Passo Uniformes Escolares “Passo a Passo Uniformes Escolares” (Editar) — Página principal, Elementor Editar “Passo a Passo Uniformes Escolares” | Editar diretamente “Passo a Passo Uniformes Escolares” | Mover “Passo a Passo Uniformes Escolares” para a lixeira | Ver “Passo a Passo Uniformes Escolares” | Editar com Elementor Mostrar mais detalhes" [ref=e205]:
+                    - rowheader "Selecionar Passo a Passo Uniformes Escolares" [ref=e206]:
+                      - checkbox "Selecionar Passo a Passo Uniformes Escolares" [ref=e207] [cursor=pointer]
+                      - generic [ref=e209]: Selecionar Passo a Passo Uniformes Escolares
+                    - cell "“Passo a Passo Uniformes Escolares” (Editar) — Página principal, Elementor Editar “Passo a Passo Uniformes Escolares” | Editar diretamente “Passo a Passo Uniformes Escolares” | Mover “Passo a Passo Uniformes Escolares” para a lixeira | Ver “Passo a Passo Uniformes Escolares” | Editar com Elementor Mostrar mais detalhes" [ref=e210]:
+                      - strong [ref=e211]:
+                        - link "“Passo a Passo Uniformes Escolares” (Editar)" [ref=e212] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=69&action=edit
+                          - text: Passo a Passo Uniformes Escolares
+                        - text: — Página principal, Elementor
+                      - generic [ref=e213]:
+                        - generic [ref=e214]:
+                          - link "Editar “Passo a Passo Uniformes Escolares”" [ref=e215] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=69&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e216]:
+                          - button "Editar diretamente “Passo a Passo Uniformes Escolares”" [ref=e217] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e218]:
+                          - link "Mover “Passo a Passo Uniformes Escolares” para a lixeira" [ref=e219] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=69&action=trash&_wpnonce=fff50898d9
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - generic [ref=e220]:
+                          - link "Ver “Passo a Passo Uniformes Escolares”" [ref=e221] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/
+                            - text: Ver
+                          - text: "|"
+                        - link "Editar com Elementor" [ref=e223] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=69&action=elementor
+                      - button "Mostrar mais detalhes" [ref=e224]:
+                        - generic [ref=e225]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - row "Selecionar Política de reembolso e devoluções “Política de reembolso e devoluções” (Editar) — Rascunho Editar “Política de reembolso e devoluções” | Editar diretamente “Política de reembolso e devoluções” | Mover “Política de reembolso e devoluções” para a lixeira | Visualizar “Política de reembolso e devoluções” Mostrar mais detalhes" [ref=e226]:
+                    - rowheader "Selecionar Política de reembolso e devoluções" [ref=e227]:
+                      - checkbox "Selecionar Política de reembolso e devoluções" [ref=e228] [cursor=pointer]
+                      - generic [ref=e230]: Selecionar Política de reembolso e devoluções
+                    - cell "“Política de reembolso e devoluções” (Editar) — Rascunho Editar “Política de reembolso e devoluções” | Editar diretamente “Política de reembolso e devoluções” | Mover “Política de reembolso e devoluções” para a lixeira | Visualizar “Política de reembolso e devoluções” Mostrar mais detalhes" [ref=e231]:
+                      - strong [ref=e232]:
+                        - link "“Política de reembolso e devoluções” (Editar)" [ref=e233] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=77&action=edit
+                          - text: Política de reembolso e devoluções
+                        - text: — Rascunho
+                      - generic [ref=e234]:
+                        - generic [ref=e235]:
+                          - link "Editar “Política de reembolso e devoluções”" [ref=e236] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=77&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e237]:
+                          - button "Editar diretamente “Política de reembolso e devoluções”" [ref=e238] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e239]:
+                          - link "Mover “Política de reembolso e devoluções” para a lixeira" [ref=e240] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=77&action=trash&_wpnonce=109d81c2f5
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Visualizar “Política de reembolso e devoluções”" [ref=e242] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/?page_id=77&preview=true
+                          - text: Visualizar
+                      - button "Mostrar mais detalhes" [ref=e243]:
+                        - generic [ref=e244]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                  - row "Selecionar Privacy Policy “Privacy Policy” (Editar) — Rascunho, Página de política de privacidade Editar “Privacy Policy” | Editar diretamente “Privacy Policy” | Mover “Privacy Policy” para a lixeira | Visualizar “Privacy Policy” Mostrar mais detalhes" [ref=e245]:
+                    - rowheader "Selecionar Privacy Policy" [ref=e246]:
+                      - checkbox "Selecionar Privacy Policy" [ref=e247] [cursor=pointer]
+                      - generic [ref=e249]: Selecionar Privacy Policy
+                    - cell "“Privacy Policy” (Editar) — Rascunho, Página de política de privacidade Editar “Privacy Policy” | Editar diretamente “Privacy Policy” | Mover “Privacy Policy” para a lixeira | Visualizar “Privacy Policy” Mostrar mais detalhes" [ref=e250]:
+                      - strong [ref=e251]:
+                        - link "“Privacy Policy” (Editar)" [ref=e252] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/post.php?post=3&action=edit
+                          - text: Privacy Policy
+                        - text: — Rascunho, Página de política de privacidade
+                      - generic [ref=e253]:
+                        - generic [ref=e254]:
+                          - link "Editar “Privacy Policy”" [ref=e255] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=3&action=edit
+                            - text: Editar
+                          - text: "|"
+                        - generic [ref=e256]:
+                          - button "Editar diretamente “Privacy Policy”" [ref=e257] [cursor=pointer]: Edição rápida
+                          - text: "|"
+                        - generic [ref=e258]:
+                          - link "Mover “Privacy Policy” para a lixeira" [ref=e259] [cursor=pointer]:
+                            - /url: https://passoapassouniformes.com/wp-admin/post.php?post=3&action=trash&_wpnonce=aea2a2449e
+                            - text: Colocar na lixeira
+                          - text: "|"
+                        - link "Visualizar “Privacy Policy”" [ref=e261] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/?page_id=3&preview=true
+                          - text: Visualizar
+                      - button "Mostrar mais detalhes" [ref=e262]:
+                        - generic [ref=e263]: Mostrar mais detalhes
+                    - text: Autor Comentários Data
+                - rowgroup [ref=e264]:
+                  - row "Selecionar todos Título" [ref=e265]:
+                    - cell "Selecionar todos" [ref=e266]:
+                      - checkbox "Selecionar todos" [ref=e267] [cursor=pointer]
+                      - generic [ref=e269]: Selecionar todos
+                    - columnheader "Título" [ref=e270]:
+                      - link "Título" [ref=e271] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/edit.php?post_type=page&orderby=title&order=desc
+                        - generic [ref=e272]: Título
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - generic [ref=e278]: Selecionar ação em massa
+                  - combobox "Selecionar ação em massa" [ref=e279] [cursor=pointer]:
+                    - option "Ações em massa" [selected]
+                    - option "Editar"
+                    - option "Mover para lixeira"
+                  - button "Aplicar" [ref=e280] [cursor=pointer]
+                - generic [ref=e281]: 8 itens
+  - img

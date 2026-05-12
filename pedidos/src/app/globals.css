@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --brand-orange: #E8500A;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F8F9FA;
+}
+
+/* Input base */
+.input-base {
+  @apply w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition bg-white;
+}
+
+.label-base {
+  @apply block text-sm font-semibold text-gray-700 mb-1;
+}
+
+/* Step indicator */
+.step-active {
+  @apply bg-orange-500 text-white;
+}
+
+.step-done {
+  @apply bg-green-500 text-white;
+}
+
+.step-pending {
+  @apply bg-gray-200 text-gray-500;
+}
+
+/* Print styles para PDF */
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    width: 297mm;
+    height: 210mm;
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Esconde toolbar e wrapper de preview */
+  .no-print { display: none !important; }
+  .preview-wrapper {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    overflow: visible !important;
+  }
+
+  /* Remove zoom do wrapper interno no print */
+  .preview-wrapper > div {
+    zoom: 1 !important;
+  }
+
+  /* A folha A4 no print: tamanho exato, sem sombra */
+  .print-sheet {
+    width: 297mm !important;
+    height: 210mm !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+}

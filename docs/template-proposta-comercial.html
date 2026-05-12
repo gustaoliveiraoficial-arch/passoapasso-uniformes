@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamento Pauline — Passo a Passo Uniformes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    font-size: 13px;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 36px 20px;
+    border-bottom: 3px solid #f97316;
+  }
+
+  .header-logo img {
+    height: 70px;
+    width: auto;
+  }
+
+  .header-info {
+    text-align: right;
+  }
+
+  .header-info .doc-type {
+    font-size: 14px;
+    font-weight: 800;
+    color: #f97316;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .header-info p {
+    color: #555;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .header-info .phone {
+    margin-top: 6px;
+    color: #444;
+    font-size: 12px;
+  }
+
+  /* TITLE BAR */
+  .title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 24px 36px 16px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .title-bar h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+  }
+
+  .orc-info {
+    text-align: right;
+  }
+
+  .orc-info .orc-num {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f97316;
+    letter-spacing: 1px;
+  }
+
+  .orc-info .orc-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 2px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 20px 36px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .section-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f97316;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+    background: #f97316;
+    border-radius: 2px;
+  }
+
+  /* DADOS DO CLIENTE */
+  .client-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+
+  .client-field label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .client-field span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1a1a1a;
+  }
+
+  /* TABELA */
+  .items-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .items-table thead tr {
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .items-table thead th {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .items-table thead th:nth-child(2),
+  .items-table thead th:nth-child(3),
+  .items-table thead th:nth-child(4) {
+    text-align: center;
+  }
+
+  .items-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .items-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .items-table tbody td {
+    padding: 16px 14px;
+    vertical-align: top;
+  }
+
+  .items-table tbody td:nth-child(2),
+  .items-table tbody td:nth-child(3),
+  .items-table tbody td:nth-child(4) {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .item-name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .item-desc {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .item-badge {
+    display: inline-block;
+    background: #fff3e0;
+    color: #f97316;
+    border: 1px solid #ffd8b0;
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 4px;
+    margin-top: 4px;
+  }
+
+  .item-badge.orange {
+    background: #f97316;
+    color: #fff;
+    border-color: #f97316;
+  }
+
+  .total-col {
+    color: #f97316;
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  /* TOTAL BOX */
+  .total-section {
+    padding: 16px 36px 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .total-box {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 18px 28px;
+    min-width: 260px;
+  }
+
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #666;
+  }
+
+  .total-row.final {
+    border-top: 2px solid #eee;
+    margin-top: 8px;
+    padding-top: 12px;
+  }
+
+  .total-row.final .label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .total-row.final .value {
+    font-size: 26px;
+    font-weight: 800;
+    color: #f97316;
+  }
+
+  /* OBSERVAÇÃO */
+  .obs-box {
+    background: #fff8f3;
+    border: 1px solid #ffd8b0;
+    border-left: 4px solid #f97316;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 0 36px 20px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .obs-box strong {
+    color: #f97316;
+  }
+
+  /* FORMAS DE PAGAMENTO */
+  .payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .payment-card {
+    border: 1.5px solid #eee;
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+
+  .payment-card .pay-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .payment-card h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .payment-card p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  .highlight-green {
+    color: #16a34a;
+    font-weight: 600;
+  }
+
+  .highlight-orange {
+    color: #f97316;
+    font-weight: 600;
+  }
+
+  .highlight-red {
+    color: #dc2626;
+    font-weight: 600;
+  }
+
+  .cta-badge {
+    display: inline-block;
+    background: #f97316;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  /* VALIDADE */
+  .validity-box {
+    margin: 20px 36px 0;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #555;
+  }
+
+  .validity-box .icon {
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .validity-box strong {
+    color: #1a1a1a;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 32px;
+    background: #1a1a1a;
+    padding: 20px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .footer-left a {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .footer-right .brand {
+    font-size: 16px;
+    font-weight: 800;
+    color: #f97316;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .footer-right .tagline {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 2px;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-logo">
+      <img src="logo pap sem fundo.png" alt="Passo a Passo Uniformes">
+    </div>
+    <div class="header-info">
+      <div class="doc-type">Orçamento Comercial</div>
+      <p>Data: 16/04/2026</p>
+      <p>Validade: 07 dias</p>
+      <p class="phone">📞 (51) 3556.3452 &nbsp;|&nbsp; WhatsApp (51) 98560.0893</p>
+    </div>
+  </div>
+
+  <!-- TITLE BAR -->
+  <div class="title-bar">
+    <h1>Proposta Comercial</h1>
+    <div class="orc-info">
+      <div class="orc-num">ORC-2026-0416-002</div>
+      <div class="orc-date">Emitido em 16/04/2026</div>
+    </div>
+  </div>
+
+  <!-- DADOS DO CLIENTE -->
+  <div class="section">
+    <div class="section-title">Dados do Cliente</div>
+    <div class="client-grid">
+      <div class="client-field">
+        <label>Cliente</label>
+        <span>Pauline</span>
+      </div>
+      <div class="client-field">
+        <label>Contato</label>
+        <span>Pauline</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITENS DO PEDIDO -->
+  <div class="section">
+    <div class="section-title">Itens do Pedido</div>
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Produto / Descrição</th>
+          <th>Qtd</th>
+          <th>Unit.</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="item-name">👕 Camiseta em Algodão 100% Branco</div>
+            <div class="item-desc">
+              Tecido de alta qualidade, confortável e resistente, ideal para uso diário.<br>
+              Inclui <strong>1 estampa em até 2 cores</strong> (base do produto).<br><br>
+              <strong>🎨 Personalização: Estampa em 4 cores</strong><br>
+              Como o valor já inclui 1 estampa em até 2 cores, serão cobradas apenas <strong>2 cores adicionais</strong> × R$ 1,50 = <span style="color:#f97316;font-weight:700;">+ R$ 3,00/peça</span>.
+            </div>
+            <div>
+              <span class="item-badge orange">Base R$ 56,90</span>
+              <span class="item-badge orange">+ 2 cores adicionais R$ 3,00</span>
+              <span class="item-badge">Até tamanho GG</span>
+              <span class="item-badge">A partir de 40 peças</span>
+            </div>
+          </td>
+          <td style="vertical-align:middle;"><strong>40</strong></td>
+          <td style="vertical-align:middle;">R$ 59,90</td>
+          <td style="vertical-align:middle;" class="total-col">R$ 2.396,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TOTAL -->
+  <div class="total-section">
+    <div class="total-box">
+      <div class="total-row">
+        <span>Subtotal</span>
+        <span>R$ 2.396,00</span>
+      </div>
+      <div class="total-row">
+        <span>Desconto</span>
+        <span>—</span>
+      </div>
+      <div class="total-row final">
+        <span class="label">TOTAL</span>
+        <span class="value">R$ 2.396,00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- OBSERVAÇÃO -->
+  <div class="obs-box">
+    ⚠️ <strong>Tamanhos acima do GG:</strong> Há acréscimo de <strong>30%</strong> no valor unitário da peça.<br>
+    Exemplo: Camiseta XG, XGG, EGG = R$ 59,90 + 30% = <strong>R$ 77,87/peça</strong>.<br>
+    Os valores acima são válidos para peças <strong>até o tamanho GG</strong>, a partir de <strong>40 peças</strong>.
+  </div>
+
+  <!-- FORMAS DE PAGAMENTO -->
+  <div class="section">
+    <div class="section-title">Formas de Pagamento</div>
+    <div class="payment-grid">
+      <div class="payment-card">
+        <div class="pay-icon">💠</div>
+        <h3>PIX</h3>
+        <p>
+          Sem acréscimo<br>
+          <span class="highlight-orange">50%</span> na aprovação + <span class="highlight-orange">50%</span> na entrega<br><br>
+          <span class="cta-badge">✓ 5% de desconto no pagamento integral à vista</span>
+        </p>
+      </div>
+      <div class="payment-card">
+        <div class="pay-icon">💳</div>
+        <h3>Cartão de Crédito / Débito</h3>
+        <p>
+          Débito: <span class="highlight-green">sem acréscimo</span><br>
+          1× crédito: <span class="highlight-red">+3%</span><br>
+          Até 3× crédito: <span class="highlight-red">+6%</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="validity-box">
+      <span class="icon">⏰</span>
+      <span>
+        <strong>Validade deste orçamento: 7 dias corridos a partir de 16/04/2026</strong><br>
+        Prazo de produção: <strong>aproximadamente 30 dias.</strong> Valores sujeitos a alteração após vencimento.
+      </span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <strong style="color:#f97316;">Passo a Passo Uniformes</strong><br>
+      📞 (51) 3556.3452 &nbsp;&nbsp; 📱 (51) 98560.0893<br>
+      <a href="#">passoapassouniformes.com.br</a>
+    </div>
+    <div class="footer-right">
+      <div class="brand">PASSO A PASSO</div>
+      <div class="tagline">Uniformes Personalizados</div>
+      <div class="tagline">Qualidade e pontualidade em cada entrega</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

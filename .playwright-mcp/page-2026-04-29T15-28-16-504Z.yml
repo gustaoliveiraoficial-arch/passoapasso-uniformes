@@ -1,0 +1,302 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Go to the Obsidian home page" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e8]
+        - generic [ref=e21]:
+          - button "Change language" [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+          - link "Open the navigation menu" [ref=e27] [cursor=pointer]:
+            - /url: "#"
+    - generic:
+      - generic:
+        - list:
+          - listitem:
+            - link "Download":
+              - /url: /download
+          - listitem:
+            - link "Account":
+              - /url: /account
+          - listitem:
+            - link "Sync":
+              - /url: /sync
+          - listitem:
+            - link "Publish":
+              - /url: /publish
+          - listitem:
+            - link "Pricing":
+              - /url: /pricing
+          - listitem:
+            - link "Plugins":
+              - /url: /plugins
+          - listitem:
+            - link "Enterprise":
+              - /url: /enterprise
+          - listitem:
+            - link "Web Clipper":
+              - /url: /clipper
+        - generic: Learn more
+        - list:
+          - listitem:
+            - link "Help":
+              - /url: https://obsidian.md/help/
+          - listitem:
+            - link "About":
+              - /url: /about
+          - listitem:
+            - link "Blog":
+              - /url: /blog
+          - listitem:
+            - link "Discord":
+              - /url: https://discord.gg/obsidianmd
+          - listitem:
+            - link "Changelog":
+              - /url: /changelog
+          - listitem:
+            - link "Community":
+              - /url: /community
+          - listitem:
+            - link "Roadmap":
+              - /url: /roadmap
+          - listitem:
+            - link "Security":
+              - /url: /security
+          - listitem:
+            - link "Merch store":
+              - /url: /softwear
+          - listitem:
+            - link "Privacy":
+              - /url: /privacy
+    - generic [ref=e30]:
+      - link "Download Obsidian" [ref=e32] [cursor=pointer]:
+        - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.exe
+        - img [ref=e34]
+        - img [ref=e47]
+      - generic [ref=e56]:
+        - link "Download for Windows" [ref=e57] [cursor=pointer]:
+          - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.exe
+        - link "Last updated March 23, 2026" [ref=e59] [cursor=pointer]:
+          - /url: /changelog
+          - text: Last updated
+          - time [ref=e60]: March 23, 2026
+      - generic [ref=e62]:
+        - heading "App" [level=2] [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: iOS
+            - link "App Store" [ref=e68] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442
+              - img [ref=e69]
+              - text: App Store
+          - generic [ref=e71]:
+            - generic [ref=e72]: Android
+            - generic [ref=e73]:
+              - link "Google Play" [ref=e74] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=md.obsidian
+                - img [ref=e75]
+                - text: Google Play
+              - link "APK" [ref=e77] [cursor=pointer]:
+                - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.apk
+                - img [ref=e78]
+                - text: APK
+          - generic [ref=e81]:
+            - generic [ref=e82]: Windows
+            - link "Universal" [ref=e84] [cursor=pointer]:
+              - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.exe
+              - img [ref=e85]
+              - generic [ref=e88]: Universal
+          - generic [ref=e89]:
+            - generic [ref=e90]: Mac
+            - link "Universal" [ref=e92] [cursor=pointer]:
+              - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.dmg
+              - img [ref=e93]
+              - generic [ref=e96]: Universal
+          - generic [ref=e97]:
+            - generic [ref=e98]: Linux
+            - generic [ref=e99]:
+              - link "AppImage" [ref=e100] [cursor=pointer]:
+                - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.AppImage
+                - img [ref=e101]
+                - text: AppImage
+              - link "Snap" [ref=e104] [cursor=pointer]:
+                - /url: https://snapcraft.io/obsidian
+                - img [ref=e105]
+                - text: Snap
+              - link "Deb" [ref=e108] [cursor=pointer]:
+                - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
+                - img [ref=e109]
+                - text: Deb
+              - link "AppImage (AArch64, ARM64)" [ref=e112] [cursor=pointer]:
+                - /url: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7-arm64.AppImage
+                - img [ref=e113]
+                - generic [ref=e116]: AppImage (AArch64, ARM64)
+              - link "Flatpak Community maintained" [ref=e117] [cursor=pointer]:
+                - /url: https://flathub.org/apps/details/md.obsidian.Obsidian
+                - img [ref=e118]
+                - generic [ref=e121]: Flatpak Community maintained
+      - generic [ref=e123]:
+        - heading "Web Clipper" [level=2] [ref=e124]
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - link "Chrome" [ref=e127] [cursor=pointer]:
+              - /url: https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf
+              - img [ref=e128]
+              - generic [ref=e131]: Chrome
+            - link "Safari" [ref=e132] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/obsidian-web-clipper/id6720708363
+              - img [ref=e133]
+              - generic [ref=e136]: Safari
+            - link "Firefox" [ref=e137] [cursor=pointer]:
+              - /url: https://addons.mozilla.org/en-US/firefox/addon/web-clipper-obsidian/
+              - img [ref=e138]
+              - generic [ref=e141]: Firefox
+            - link "Edge" [ref=e142] [cursor=pointer]:
+              - /url: https://microsoftedge.microsoft.com/addons/detail/obsidian-web-clipper/eigdjhmgnaaeaonimdklocfekkaanfme
+              - img [ref=e143]
+              - generic [ref=e146]: Edge
+          - generic [ref=e147]:
+            - link "Brave" [ref=e148] [cursor=pointer]:
+              - /url: https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf
+              - img [ref=e149]
+              - generic [ref=e152]: Brave
+            - link "Arc" [ref=e153] [cursor=pointer]:
+              - /url: https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf
+              - img [ref=e154]
+              - generic [ref=e157]: Arc
+            - link "Orion" [ref=e158] [cursor=pointer]:
+              - /url: https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf
+              - img [ref=e159]
+              - generic [ref=e162]: Orion
+            - link "Vivaldi" [ref=e163] [cursor=pointer]:
+              - /url: https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf
+              - img [ref=e164]
+              - generic [ref=e167]: Vivaldi
+  - contentinfo [ref=e168]:
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - list [ref=e171]:
+          - listitem [ref=e172]: Get started
+          - listitem [ref=e173]:
+            - link "Download" [ref=e174] [cursor=pointer]:
+              - /url: /download
+          - listitem [ref=e175]:
+            - link "Pricing" [ref=e176] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e177]:
+            - link "Enterprise" [ref=e178] [cursor=pointer]:
+              - /url: /enterprise
+          - listitem [ref=e179]:
+            - link "Account" [ref=e180] [cursor=pointer]:
+              - /url: /account
+        - list [ref=e181]:
+          - listitem [ref=e182]: Obsidian
+          - listitem [ref=e183]:
+            - link "Overview" [ref=e184] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e185]:
+            - link "Sync" [ref=e186] [cursor=pointer]:
+              - /url: /sync
+          - listitem [ref=e187]:
+            - link "Publish" [ref=e188] [cursor=pointer]:
+              - /url: /publish
+          - listitem [ref=e189]:
+            - link "Canvas" [ref=e190] [cursor=pointer]:
+              - /url: /canvas
+          - listitem [ref=e191]:
+            - link "Mobile" [ref=e192] [cursor=pointer]:
+              - /url: /mobile
+          - listitem [ref=e193]:
+            - link "Web Clipper" [ref=e194] [cursor=pointer]:
+              - /url: /clipper
+          - listitem [ref=e195]:
+            - link "CLI" [ref=e196] [cursor=pointer]:
+              - /url: /cli
+      - generic [ref=e197]:
+        - list [ref=e198]:
+          - listitem [ref=e199]: Learn
+          - listitem [ref=e200]:
+            - link "Help" [ref=e201] [cursor=pointer]:
+              - /url: https://obsidian.md/help/
+          - listitem [ref=e202]:
+            - link "Developers" [ref=e203] [cursor=pointer]:
+              - /url: https://docs.obsidian.md/
+          - listitem [ref=e204]:
+            - link "Changelog" [ref=e205] [cursor=pointer]:
+              - /url: /changelog
+          - listitem [ref=e206]:
+            - link "About" [ref=e207] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e208]:
+            - link "Roadmap" [ref=e209] [cursor=pointer]:
+              - /url: /roadmap
+          - listitem [ref=e210]:
+            - link "Blog" [ref=e211] [cursor=pointer]:
+              - /url: /blog
+        - list [ref=e212]:
+          - listitem [ref=e213]: Resources
+          - listitem [ref=e214]:
+            - link "System status" [ref=e215] [cursor=pointer]:
+              - /url: https://status.obsidian.md
+          - listitem [ref=e216]:
+            - link "License overview" [ref=e217] [cursor=pointer]:
+              - /url: /license
+          - listitem [ref=e218]:
+            - link "Terms of service" [ref=e219] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e220]:
+            - link "Privacy policy" [ref=e221] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e222]:
+            - link "Security" [ref=e223] [cursor=pointer]:
+              - /url: /security
+      - list [ref=e225]:
+        - listitem [ref=e226]: Community
+        - listitem [ref=e227]:
+          - link "Plugins" [ref=e228] [cursor=pointer]:
+            - /url: /plugins
+        - listitem [ref=e229]:
+          - link "Join the community" [ref=e230] [cursor=pointer]:
+            - /url: /community
+        - listitem [ref=e231]:
+          - link "Discord" [ref=e232] [cursor=pointer]:
+            - /url: https://discord.gg/obsidianmd
+        - listitem [ref=e233]:
+          - link "Forum" [ref=e234] [cursor=pointer]:
+            - /url: https://forum.obsidian.md
+          - text: /
+          - link "中文论坛" [ref=e235] [cursor=pointer]:
+            - /url: https://forum-zh.obsidian.md
+        - listitem [ref=e236]:
+          - link "Merch store" [ref=e237] [cursor=pointer]:
+            - /url: /softwear
+        - listitem [ref=e238]:
+          - link "Brand guidelines" [ref=e239] [cursor=pointer]:
+            - /url: /brand
+    - generic [ref=e240]:
+      - link "Go to the Obsidian home page" [ref=e241] [cursor=pointer]:
+        - /url: /
+        - img [ref=e242]
+      - generic [ref=e255]: Follow us
+      - generic [ref=e256]:
+        - link "Discord" [ref=e257] [cursor=pointer]:
+          - /url: https://discord.com/invite/obsidianmd
+        - link "Twitter" [ref=e258] [cursor=pointer]:
+          - /url: https://x.com/obsdmd
+        - link "Bluesky" [ref=e259] [cursor=pointer]:
+          - /url: https://bsky.app/profile/obsidian.md
+        - link "Threads" [ref=e260] [cursor=pointer]:
+          - /url: https://www.threads.net/@obsdmd
+        - link "Mastodon" [ref=e261] [cursor=pointer]:
+          - /url: https://mas.to/@obsidian
+        - link "YouTube" [ref=e262] [cursor=pointer]:
+          - /url: https://www.youtube.com/@obsdmd
+        - link "GitHub" [ref=e263] [cursor=pointer]:
+          - /url: https://github.com/obsidianmd
+      - group [ref=e264]:
+        - generic "English" [ref=e265] [cursor=pointer]:
+          - img [ref=e266]
+          - text: English
+          - img [ref=e269]
+      - generic [ref=e271]: © 2026 Obsidian

@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - navigation "Produtos do Console do Firebase" [ref=e12]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e13]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e15]:
+                - img [ref=e16]
+                - img "Logotipo do Firebase" [ref=e17]
+          - img [ref=e22]: search
+          - link "Visão geral do projeto" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e25]: gmp_nav20_overview
+          - menu [ref=e26]:
+            - menuitem "Configurações" [ref=e27]:
+              - img [ref=e29] [cursor=pointer]: settings
+        - separator [ref=e30]
+      - button "Alternar barra lateral de navegação" [ref=e33] [cursor=pointer]:
+        - img [ref=e34]: chevron_left
+    - banner:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - button "Abrir menu de navegação" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]: menu
+          - button "pap-pedidos (Abrir o menu \"Selecionar projeto\")" [ref=e150] [cursor=pointer]:
+            - text: pap-pedidos
+            - img [ref=e151]: arrow_drop_down
+        - button "Mais opções" [ref=e45] [cursor=pointer]:
+          - img [ref=e46]: more_vert
+    - main [ref=e49]:
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: pap-pedidos
+            - button "Plano Spark" [ref=e152] [cursor=pointer]:
+              - generic [ref=e60]: Plano Spark
+          - button "Adicionar app" [ref=e237]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: add
+              - generic [ref=e241]: Adicionar app
+        - generic [ref=e412]:
+          - heading "Analytics" [level=2] [ref=e413]
+          - img [ref=e414]: drag_handle
+          - generic [ref=e418]:
+            - link "Analytics (acessar a página)" [ref=e419] [cursor=pointer]:
+              - generic [ref=e420]: gmp_analytics
+              - heading "Analytics" [level=2] [ref=e421]
+            - generic [ref=e423]:
+              - button "Abrir menu para ativar a visibilidade do gráfico de receita" [ref=e424] [cursor=pointer]:
+                - img [ref=e425]: more_vert
+              - generic [ref=e428]:
+                - generic [ref=e429]:
+                  - generic [ref=e430]:
+                    - heading "Usuários ativos por dia" [level=3] [ref=e433]
+                    - generic [ref=e435]: "- - -"
+                  - generic "Usuários ativos por dia" [ref=e436]:
+                    - generic [ref=e442]:
+                      - generic [ref=e443]: Sem dados
+                      - generic [ref=e444]: for the last 14 days
+                - generic [ref=e446]:
+                  - generic [ref=e447]:
+                    - heading "Retenção no primeiro dia" [level=3] [ref=e450]
+                    - generic [ref=e452]: "- - -"
+                  - generic "Retenção no primeiro dia" [ref=e453]:
+                    - generic [ref=e459]:
+                      - generic [ref=e460]: Sem dados
+                      - generic [ref=e461]: for the last 14 days
+              - generic [ref=e464]:
+                - generic [ref=e465]:
+                  - img [ref=e466]
+                  - generic [ref=e467]: Esta semana
+                - generic [ref=e468]:
+                  - img [ref=e469]
+                  - generic [ref=e470]: Semana passada
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - generic [ref=e473]: Próximas etapas com o Gemini
+            - link "Ver documentos (abre a documentação do Firebase em uma nova guia)" [ref=e474] [cursor=pointer]:
+              - /url: https://firebase.google.com/docs?hl=pt-BR&authuser=0
+              - text: Ver documentos open_in_new
+          - generic [ref=e475]:
+            - button "Conte mais sobre seu app" [ref=e478] [cursor=pointer]:
+              - img [ref=e479]
+              - generic [ref=e480]: Conte mais sobre seu app
+              - generic [ref=e481]: Descreva seu app, e o Gemini vai sugerir outros produtos para ajudar você a refiná-lo
+            - button "Adicionar análises e monitoramento" [ref=e484] [cursor=pointer]:
+              - img [ref=e485]
+              - generic [ref=e486]: Adicionar análises e monitoramento
+              - generic [ref=e487]: Saiba mais sobre os produtos de monitoramento do Google Analytics e do Firebase
+            - button "Criar um back-end" [ref=e490] [cursor=pointer]:
+              - img [ref=e491]
+              - generic [ref=e492]: Criar um back-end
+              - generic [ref=e493]: O Firebase oferece muitos serviços de back-end, incluindo opções de bancos de dados SQL e NoSQL. Saiba quais serviços podem ser ideais para seu app.
+            - button "Adicione IA ao seu app" [ref=e496] [cursor=pointer]:
+              - img [ref=e497]
+              - generic [ref=e498]: Adicione IA ao seu app
+              - generic [ref=e499]: Saiba como integrar a IA ao seu app
+            - button "Hospedar um aplicativo da web" [ref=e502] [cursor=pointer]:
+              - img [ref=e503]
+              - generic [ref=e504]: Hospedar um aplicativo da web
+              - generic [ref=e505]: Crie e implante apps da Web modernos e full stack
+            - button "Saiba mais sobre as ferramentas de desenvolvimento do Firebase" [ref=e508] [cursor=pointer]:
+              - img [ref=e509]
+              - generic [ref=e510]: Saiba mais sobre as ferramentas de desenvolvimento do Firebase
+              - generic [ref=e511]: Saiba mais sobre o emulador do Firebase, a CLI do Firebase e o Firebase Studio para criar seu app
+    - generic "Gemini no Firebase" [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e99] [cursor=pointer]':
+            - img [ref=e101]
+            - img [ref=e107]
+          - button "Abrir alertas" [ref=e109] [cursor=pointer]:
+            - img [ref=e110]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [ref=e118] [cursor=pointer]:
+            - img [ref=e120]: spark
+          - button "Ajuda" [ref=e123] [cursor=pointer]:
+            - img [ref=e124]: contact_support
+          - separator [ref=e127]
+          - button "Ativar o Cloud Shell" [ref=e128] [cursor=pointer]:
+            - img [ref=e129]:
+              - img [ref=e130]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e134]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e137] [cursor=pointer]:
+            - img [ref=e138]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e142] [cursor=pointer]':
+          - img [ref=e143]: dark_mode
+  - generic [ref=e146]: O apelido do app será usado no Console do Firebase para representar o aplicativo. Os usuários não podem ver os apelidos.

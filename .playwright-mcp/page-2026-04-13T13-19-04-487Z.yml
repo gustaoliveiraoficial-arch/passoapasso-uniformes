@@ -1,0 +1,526 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 228" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "228"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/list/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e52] [cursor=pointer]:
+            - link "Calendário 10" [ref=e54]:
+              - /url: /todo
+              - img [ref=e56]
+              - generic [ref=e58]: Calendário
+              - generic [ref=e62]: "10"
+          - listitem [ref=e63]:
+            - link "Listas" [ref=e65] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e67]
+              - generic [ref=e69]: Listas
+              - img [ref=e72]
+          - listitem [ref=e75] [cursor=pointer]:
+            - link "Agente de IA" [ref=e77]:
+              - /url: /settings/ai-agent/
+              - img [ref=e79]
+              - generic [ref=e81]: Agente de IA
+          - listitem [ref=e82]:
+            - link "Automações" [ref=e84] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e86]
+              - generic [ref=e88]: Automações
+              - img [ref=e91]
+          - listitem [ref=e93]:
+            - link "Insights" [ref=e95] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e97]
+              - generic [ref=e100]: Insights
+              - img [ref=e103]
+        - generic [ref=e105]: Integrações fixadas
+        - list [ref=e106]:
+          - listitem [ref=e108] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e110]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e113]
+              - generic [ref=e114]: WhatsApp Business
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "TikTok" [ref=e118]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e121]
+              - generic [ref=e122]: TikTok
+      - list [ref=e124]:
+        - listitem [ref=e126] [cursor=pointer]:
+          - link "Configurações" [ref=e128]:
+            - /url: /settings/profile/
+            - img [ref=e130]
+            - generic [ref=e133]: Configurações
+        - listitem [ref=e134]:
+          - link "Ajuda" [ref=e136] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e138]
+            - generic [ref=e140]: Ajuda
+            - img [ref=e143]
+        - listitem [ref=e146] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e148]:
+            - /url: ""
+            - img [ref=e150]
+            - generic [ref=e152]: Enviar feedback
+        - listitem [ref=e154] [cursor=pointer]:
+          - link "Centro de Notificação 4" [ref=e156]:
+            - /url: /settings/profile/notifications
+            - img [ref=e158]
+            - generic [ref=e160]: Centro de Notificação
+            - generic [ref=e164]: "4"
+      - separator [ref=e165]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e167] [cursor=pointer]:
+        - img "Avatar" [ref=e170]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Passo a passo uniformes
+          - generic [ref=e173]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - generic [ref=e182]:
+          - img [ref=e183]
+          - textbox [ref=e185]:
+            - /placeholder: Buscar
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - generic [ref=e195] [cursor=pointer]: Conversas abertas
+              - generic [ref=e197]: "Total: 703"
+              - button "Button_more" [ref=e200] [cursor=pointer]:
+                - img [ref=e202]
+            - generic: Criada Fechadas Ativas Funil de vendas, etapas Usuário responsável Inscritos de leads Participantes Remetente da última mensagem Tags
+          - generic [ref=e206]:
+            - 'link "avatar icon Tainara Piltz A895 Hoje 10:17 Lead #28035957 Você: como posso ajudar?" [ref=e208] [cursor=pointer]':
+              - /url: /chats/895/leads/detail/28035957?t=1776086245.37
+              - generic [ref=e210]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e212]
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - heading "Tainara Piltz A895" [level=2] [ref=e215]:
+                    - generic [ref=e216]: Tainara Piltz
+                    - generic "A895" [ref=e217]
+                    - img [ref=e219]
+                  - generic [ref=e220]: Hoje 10:17
+                - 'heading "Lead #28035957" [level=3] [ref=e222]':
+                  - generic [ref=e223]: "Lead #28035957"
+                - 'heading "Você: como posso ajudar?" [level=3] [ref=e225]':
+                  - generic [ref=e226]: "Você: como posso ajudar?"
+            - 'link "avatar icon Sarah Taha A852 Hoje 10:17 Sarah Pilates Salesbot: 🖼" [ref=e228] [cursor=pointer]':
+              - /url: /chats/852/leads/detail/27626285?t=1776086240.4742
+              - generic [ref=e230]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e232]
+              - generic [ref=e233]:
+                - generic [ref=e234]:
+                  - heading "Sarah Taha A852" [level=2] [ref=e235]:
+                    - generic [ref=e236]: Sarah Taha
+                    - generic "A852" [ref=e237]
+                    - img [ref=e239]
+                  - generic [ref=e240]: Hoje 10:17
+                - heading "Sarah Pilates" [level=3] [ref=e242]:
+                  - generic [ref=e243]: Sarah Pilates
+                - 'heading "Salesbot: 🖼" [level=3] [ref=e245]':
+                  - generic [ref=e246]: "Salesbot: 🖼"
+            - 'link "avatar icon Luiza Rossi A172 Hoje 10:15 Lead #27294521 não tenho as estampas separadas" [ref=e248] [cursor=pointer]':
+              - /url: /chats/172/leads/detail/27294521?t=1776086139.3282
+              - generic [ref=e250]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e252]
+              - generic [ref=e253]:
+                - generic [ref=e254]:
+                  - heading "Luiza Rossi A172" [level=2] [ref=e255]:
+                    - generic [ref=e256]: Luiza Rossi
+                    - generic "A172" [ref=e257]
+                    - img [ref=e259]
+                  - generic [ref=e260]: Hoje 10:15
+                - 'heading "Lead #27294521" [level=3] [ref=e262]':
+                  - generic [ref=e263]: "Lead #27294521"
+                - heading "não tenho as estampas separadas" [level=3] [ref=e265]:
+                  - generic [ref=e266]: não tenho as estampas separadas
+            - link "avatar icon Betina Berghan✨ A844 Hoje 10:13 Betina Até depoisss" [ref=e268] [cursor=pointer]:
+              - /url: /chats/844/leads/detail/27579669?t=1776086010.7011
+              - generic [ref=e270]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e272]
+              - generic [ref=e273]:
+                - generic [ref=e274]:
+                  - heading "Betina Berghan✨ A844" [level=2] [ref=e275]:
+                    - generic [ref=e276]: Betina Berghan✨
+                    - generic "A844" [ref=e277]
+                    - img [ref=e279]
+                  - generic [ref=e280]: Hoje 10:13
+                - heading "Betina" [level=3] [ref=e282]:
+                  - generic [ref=e283]: Betina
+                - heading "Até depoisss" [level=3] [ref=e285]:
+                  - generic [ref=e286]: Até depoisss
+            - 'link "avatar icon Oliveira Refrigeracao A885 Hoje 10:00 Lead #27827067 Salesbot: Bom diaaaa" [ref=e288] [cursor=pointer]':
+              - /url: /chats/885/leads/detail/27827067?t=1776085236.2424
+              - generic [ref=e290]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e292]
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - heading "Oliveira Refrigeracao A885" [level=2] [ref=e295]:
+                    - generic [ref=e296]: Oliveira Refrigeracao
+                    - generic "A885" [ref=e297]
+                    - img [ref=e299]
+                  - generic [ref=e300]: Hoje 10:00
+                - 'heading "Lead #27827067" [level=3] [ref=e302]':
+                  - generic [ref=e303]: "Lead #27827067"
+                - 'heading "Salesbot: Bom diaaaa" [level=3] [ref=e305]':
+                  - generic [ref=e306]: "Salesbot: Bom diaaaa"
+            - 'link "avatar icon CAROL A856 Hoje 10:15 Lead #27678722 Salesbot: sendo maior quantidade diminui mais os preços" [ref=e308] [cursor=pointer]':
+              - /url: /chats/856/leads/detail/27678722?t=1776085213.2648
+              - generic [ref=e310]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e312]
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - heading "CAROL A856" [level=2] [ref=e315]:
+                    - generic [ref=e316]: CAROL
+                    - generic "A856" [ref=e317]
+                    - img [ref=e319]
+                  - generic [ref=e320]: Hoje 10:15
+                - 'heading "Lead #27678722" [level=3] [ref=e322]':
+                  - generic [ref=e323]: "Lead #27678722"
+                - 'heading "Salesbot: sendo maior quantidade diminui mais os preços" [level=3] [ref=e325]':
+                  - generic [ref=e326]: "Salesbot: sendo maior quantidade diminui mais os preços"
+            - 'link "avatar icon Mônica Haubrich A192 Hoje 09:58 Lead #27294773 Boa semana pra vocês também!🙏🏻" [ref=e328] [cursor=pointer]':
+              - /url: /chats/192/leads/detail/27294773?t=1776085113.5923
+              - generic [ref=e330]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e332]
+              - generic [ref=e333]:
+                - generic [ref=e334]:
+                  - heading "Mônica Haubrich A192" [level=2] [ref=e335]:
+                    - generic [ref=e336]: Mônica Haubrich
+                    - generic "A192" [ref=e337]
+                    - img [ref=e339]
+                  - generic [ref=e340]: Hoje 09:58
+                - 'heading "Lead #27294773" [level=3] [ref=e342]':
+                  - generic [ref=e343]: "Lead #27294773"
+                - heading "Boa semana pra vocês também!🙏🏻" [level=3] [ref=e345]:
+                  - generic [ref=e346]: Boa semana pra vocês também!🙏🏻
+            - 'link "avatar icon Passo A Passo Uniformes A191 Hoje 09:55 isadora farmacia Salesbot: Fica 3x de 605,00" [ref=e348] [cursor=pointer]':
+              - /url: /chats/191/leads/detail/27294769?t=1776084907.1227
+              - generic [ref=e350]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e352]
+              - generic [ref=e353]:
+                - generic [ref=e354]:
+                  - heading "Passo A Passo Uniformes A191" [level=2] [ref=e355]:
+                    - generic [ref=e356]: Passo A Passo Uniformes
+                    - generic "A191" [ref=e357]
+                    - img [ref=e359]
+                  - generic [ref=e360]: Hoje 09:55
+                - heading "isadora farmacia" [level=3] [ref=e362]:
+                  - generic [ref=e363]: isadora farmacia
+                - 'heading "Salesbot: Fica 3x de 605,00" [level=3] [ref=e365]':
+                  - generic [ref=e366]: "Salesbot: Fica 3x de 605,00"
+            - 'link "avatar icon Gustavo Oliveira Passo A Passo A239 Hoje 09:54 Lead #27294557 Salesbot: REGRA 1 — SEM CHECKLIST = SEM ARTE Não inicia layout sem checklist completo Se faltar info: retorna pro vended..." [ref=e368] [cursor=pointer]':
+              - /url: /chats/239/leads/detail/27294557?t=1776084843.5873
+              - generic [ref=e370]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e372]
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - heading "Gustavo Oliveira Passo A Passo A239" [level=2] [ref=e375]:
+                    - generic [ref=e376]: Gustavo Oliveira Passo A Passo
+                    - generic "A239" [ref=e377]
+                    - img [ref=e379]
+                  - generic [ref=e380]: Hoje 09:54
+                - 'heading "Lead #27294557" [level=3] [ref=e382]':
+                  - generic [ref=e383]: "Lead #27294557"
+                - 'heading "Salesbot: REGRA 1 — SEM CHECKLIST = SEM ARTE Não inicia layout sem checklist completo Se faltar info: retorna pro vended..." [level=3] [ref=e385]':
+                  - generic [ref=e386]: "Salesbot: REGRA 1 — SEM CHECKLIST = SEM ARTE Não inicia layout sem checklist completo Se faltar info: retorna pro vended..."
+      - paragraph [ref=e392]: Selecione um tópico para começar a enviar mensagens
+    - generic [ref=e395]:
+      - img
+      - button [ref=e396]:
+        - img [ref=e397]
+        - img [ref=e399]
+        - img [ref=e403]
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - generic [ref=e407]:
+            - img [ref=e408]
+            - generic [ref=e410]: Kommo Copilot
+          - generic [ref=e411]:
+            - button [ref=e412] [cursor=pointer]:
+              - img [ref=e415]
+            - button [ref=e417] [cursor=pointer]:
+              - img [ref=e420]
+            - button [ref=e422] [cursor=pointer]:
+              - img [ref=e425]
+        - button "Configuração do WhatsApp Business" [ref=e427] [cursor=pointer]:
+          - generic [ref=e428]:
+            - generic [ref=e429]: Configuração do WhatsApp Business
+            - img [ref=e430]
+        - generic [ref=e434]:
+          - generic [ref=e437]: Home
+          - generic [ref=e438]:
+            - generic [ref=e439]: quero colocar mue whatsapp bussines
+            - img [ref=e440]
+          - paragraph [ref=e444]: Houve um erro de rede ou servidor. Por favor, entre em contato com nossa equipe de suporte ou tente novamente mais tarde.
+          - generic [ref=e447]: "Lead #26608910"
+          - generic [ref=e448]:
+            - generic [ref=e449]: Resumo do lead
+            - img [ref=e450]
+          - generic [ref=e452]:
+            - generic [ref=e453]:
+              - paragraph [ref=e454]: Amanda Carolina entrou em contato para perguntar sobre a possibilidade de receber brindes ao comprar cerca de 40 camisetas. Não houve acordos fechados nem definições de próximos passos até o momento. A dúvida sobre brindes permanece sem resposta. Sugere-se agendar uma tarefa para responder à cliente às 08:00 do dia 26 de março de 2026.
+              - paragraph [ref=e455]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e456]:
+              - button [ref=e459] [cursor=pointer]:
+                - img [ref=e462]
+              - generic [ref=e464]:
+                - button [ref=e465] [cursor=pointer]:
+                  - img [ref=e466]
+                - button [ref=e468] [cursor=pointer]:
+                  - img [ref=e469]
+          - generic [ref=e473]: "Lead #27294823"
+          - generic [ref=e474]:
+            - generic [ref=e475]: Resumo do lead
+            - img [ref=e476]
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - paragraph [ref=e480]: Tefy, representante do Colégio Estadual 8 de Setembro, entrou em contato para solicitar uniformes personalizados, incluindo camisetas e moletons com logo da escola em cores específicas e detalhes como assinaturas no capuz. Foi acordado o envio de peças para prova e definição dos tamanhos, com retirada prevista para 30 de março. Também foram discutidos valores para pedidos a partir de 40 peças, formas de pagamento (50% na entrada e 50% na retirada, à vista ou parcelado com juros) e personalizações adicionais. O cliente perguntou sobre a possibilidade de envio das peças para prova e sobre variações de preço conforme modelagem, além de detalhes sobre as assinaturas digitalizadas, mas não houve resposta definitiva sobre o envio das peças para prova. Sugere-se agendar uma tarefa para confirmar o envio das peças para prova no dia 30 de março.
+              - paragraph [ref=e481]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e482]:
+              - button [ref=e485] [cursor=pointer]:
+                - img [ref=e488]
+              - generic [ref=e490]:
+                - button [ref=e491] [cursor=pointer]:
+                  - img [ref=e492]
+                - button [ref=e494] [cursor=pointer]:
+                  - img [ref=e495]
+          - generic [ref=e499]: "Lead #27294861"
+          - generic [ref=e500]:
+            - generic [ref=e501]: Resumo do lead
+            - img [ref=e502]
+          - generic [ref=e504]:
+            - generic [ref=e505]:
+              - paragraph [ref=e506]: Isadora Klein entrou em contato para personalizar camisetas em pequena quantidade para um evento, perguntando se é possível fazer menos de 10 unidades e incluir foto e escrita nas costas. Foi informado que há peças disponíveis a pronta entrega a partir de 5 unidades. Ela também perguntou sobre a disponibilidade da camiseta preta e mencionou a necessidade de recebê-la até 23 de maio. Não houve acordos formais, e permanecem sem resposta as dúvidas sobre a personalização específica e confirmação da entrega para a data solicitada. Recomenda-se agendar uma tarefa para acompanhamento da entrega até 23 de maio.
+              - paragraph [ref=e507]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e508]:
+              - button [ref=e511] [cursor=pointer]:
+                - img [ref=e514]
+              - generic [ref=e516]:
+                - button [ref=e517] [cursor=pointer]:
+                  - img [ref=e518]
+                - button [ref=e520] [cursor=pointer]:
+                  - img [ref=e521]
+          - generic [ref=e523]:
+            - generic [ref=e524]: foi passado valor?
+            - img [ref=e525]
+          - generic [ref=e527]:
+            - paragraph [ref=e529]: Isadora Klein perguntou se é possível fazer camisetas personalizadas com foto e escrita nas costas, e também questionou se a camiseta preta estará disponível e se ela poderá recebê-la até o dia 23 de maio. Essas dúvidas não foram respondidas no diálogo.
+            - generic [ref=e530]:
+              - button [ref=e533] [cursor=pointer]:
+                - img [ref=e536]
+              - generic [ref=e538]:
+                - button [ref=e539] [cursor=pointer]:
+                  - img [ref=e540]
+                - button [ref=e542] [cursor=pointer]:
+                  - img [ref=e543]
+          - generic [ref=e547]: "Lead #27294521"
+          - generic [ref=e548]:
+            - generic [ref=e549]: Resumo do lead
+            - img [ref=e550]
+          - generic [ref=e552]:
+            - generic [ref=e553]:
+              - paragraph [ref=e554]: Luiza Rossi entrou em contato para orçar bordados e adesivos em moletons college. Foi informado o preço por peça conforme o tipo de acabamento e quantidade mínima para produção, e Luiza concordou com bordado em duas partes. O pedido foi finalizado e entregue, com confirmação do cliente. Posteriormente, houve interesse em camisetas oversized, com negociação sobre prazos e quantidades, e Luiza planeja fechar o pedido até quinta-feira da última semana de março, optando possivelmente apenas pelas camisetas oversized devido à baixa procura. Foi oferecido desconto para fechamento dentro do mês. Luiza solicitou medidas dos moletons college, que foram providenciadas. Não há perguntas sem resposta no histórico. Sugiro agendar uma tarefa para acompanhamento do fechamento do pedido na quinta-feira da última semana de março.
+              - paragraph [ref=e555]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e556]:
+              - button [ref=e559] [cursor=pointer]:
+                - img [ref=e562]
+              - generic [ref=e564]:
+                - button [ref=e565] [cursor=pointer]:
+                  - img [ref=e566]
+                - button [ref=e568] [cursor=pointer]:
+                  - img [ref=e569]
+          - generic [ref=e573]: "Lead #27467341"
+          - generic [ref=e574]:
+            - generic [ref=e575]: Resumo do lead
+            - img [ref=e576]
+          - generic [ref=e578]:
+            - generic [ref=e579]:
+              - paragraph [ref=e580]: Carla Financeiro Newquim, responsável financeiro da empresa Newquim, entrou em contato em 7 de abril de 2026 para solicitar orçamento de camisetas polo e camisetas em diferentes tecidos, com bordado da logomarca. Foi enviado um orçamento detalhado para 10 unidades de cada modelo, incluindo valores, condições de pagamento e prazo de entrega de aproximadamente 30 dias. Carla informou que já possui layout cadastrado devido a pedidos anteriores de jaquetas e confirmou que não utiliza boleto bancário para pagamento. Ela mencionou que precisa encaminhar a proposta para aprovação da gerência e retornará em caso de aprovação. Não há perguntas pendentes no momento. Sugere-se agendar uma tarefa para acompanhamento do retorno da gerência após o envio do orçamento.
+              - paragraph [ref=e581]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e582]:
+              - button [ref=e585] [cursor=pointer]:
+                - img [ref=e588]
+              - generic [ref=e590]:
+                - button [ref=e591] [cursor=pointer]:
+                  - img [ref=e592]
+                - button [ref=e594] [cursor=pointer]:
+                  - img [ref=e595]
+          - generic [ref=e597]:
+            - generic [ref=e598]: Preciso passar para gerência! Volto a entrar em contato se aprovado! quero uma resposta
+            - img [ref=e599]
+          - generic [ref=e601]:
+            - paragraph [ref=e603]: Certo, de que outra forma posso ajudar?
+            - generic [ref=e604]:
+              - button [ref=e607] [cursor=pointer]:
+                - img [ref=e610]
+              - generic [ref=e612]:
+                - button [ref=e613] [cursor=pointer]:
+                  - img [ref=e614]
+                - button [ref=e616] [cursor=pointer]:
+                  - img [ref=e617]
+          - generic [ref=e619]:
+            - generic [ref=e620]: como posso responder
+            - img [ref=e621]
+          - generic [ref=e623]:
+            - list [ref=e625]:
+              - listitem [ref=e626]:
+                - paragraph [ref=e627]: Amanda Carolina entrou em contato para perguntar sobre a possibilidade de receber brindes ao comprar cerca de 40 camisetas. Não houve acordos fechados nem definições de próximos passos até o momento. A dúvida sobre brindes permanece sem resposta. Sugere-se agendar uma tarefa para responder à cliente às 08:00 do dia 26 de março de 2026.
+              - listitem [ref=e629]:
+                - paragraph [ref=e630]:
+                  - text: reação. O bot reconhece o feedback do cliente, que você também pode alterar conforme sua preferência, agradecendo por compartilhar a experiência.
+                  - text: O bot encerra a conversa e para.
+            - generic [ref=e632]:
+              - button [ref=e635] [cursor=pointer]:
+                - img [ref=e638]
+              - generic [ref=e640]:
+                - button [ref=e641] [cursor=pointer]:
+                  - img [ref=e642]
+                - button [ref=e644] [cursor=pointer]:
+                  - img [ref=e645]
+          - generic [ref=e649]: "Lead #26506202"
+          - generic [ref=e650]:
+            - generic [ref=e651]: Resumo do lead
+            - img [ref=e652]
+          - generic [ref=e654]:
+            - generic [ref=e655]:
+              - paragraph [ref=e656]: Hivânio Costa entrou em contato para solicitar um orçamento de casacos e calças personalizadas. Ele pediu o envio dos modelos disponíveis, tecidos e valores. Não houve acordos fechados nem definições de próximos passos até o momento. A dúvida sobre os modelos, tecidos e preços permanece sem resposta. Sugere-se agendar uma tarefa para enviar as informações solicitadas o quanto antes.
+              - paragraph [ref=e657]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e658]:
+              - button [ref=e661] [cursor=pointer]:
+                - img [ref=e664]
+              - generic [ref=e666]:
+                - button [ref=e667] [cursor=pointer]:
+                  - img [ref=e668]
+                - button [ref=e670] [cursor=pointer]:
+                  - img [ref=e671]
+          - generic [ref=e675]: "Lead #27570799"
+          - generic [ref=e676]:
+            - generic [ref=e677]: Resumo do lead
+            - img [ref=e678]
+          - generic [ref=e680]:
+            - generic [ref=e681]:
+              - paragraph [ref=e682]: Alana CDV 814 entrou em contato no dia 8 de abril de 2026 com uma saudação inicial, mas não especificou o motivo da consulta. Não houve acordos ou próximos passos definidos, tampouco perguntas pendentes registradas. Sugere-se agendar uma tarefa para acompanhamento da comunicação com Alana CDV 814 às 08:22 do mesmo dia.
+              - paragraph [ref=e683]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e684]:
+              - button [ref=e687] [cursor=pointer]:
+                - img [ref=e690]
+              - generic [ref=e692]:
+                - button [ref=e693] [cursor=pointer]:
+                  - img [ref=e694]
+                - button [ref=e696] [cursor=pointer]:
+                  - img [ref=e697]
+          - generic [ref=e701]: "Lead #27572993"
+          - generic [ref=e702]:
+            - generic [ref=e703]: Resumo do lead
+            - img [ref=e704]
+          - generic [ref=e706]:
+            - generic [ref=e707]:
+              - paragraph [ref=e708]: Caroline Garcez, representante da Caroline Garcez Ltda, entrou em contato em 8 de abril de 2026 solicitando orçamento para moletons gola careca na cor azul marinho escuro, nos tamanhos 2G, 2GG, 2EXG, 2G2 e 2G3, com logo pequeno na frente e logo grande nas costas acompanhado do telefone da empresa. Ela forneceu a razão social e o CNPJ para cadastro e elaboração do orçamento. Não houve acordos ou respostas registradas até o momento, nem perguntas adicionais sem resposta. Sugere-se agendar uma tarefa para elaboração do orçamento no dia 8 de abril de 2026 às 9h06.
+              - paragraph [ref=e709]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e710]:
+              - button [ref=e713] [cursor=pointer]:
+                - img [ref=e716]
+              - generic [ref=e718]:
+                - button [ref=e719] [cursor=pointer]:
+                  - img [ref=e720]
+                - button [ref=e722] [cursor=pointer]:
+                  - img [ref=e723]
+          - generic [ref=e727]: "Lead #27585347"
+          - generic [ref=e728]:
+            - generic [ref=e729]: Resumo do lead
+            - img [ref=e730]
+          - generic [ref=e732]:
+            - generic [ref=e733]:
+              - paragraph [ref=e734]: Mateus Magro entrou em contato para enviar os logos dos patrocinadores para a Jé, visando o esboço das camisetas. Ele mencionou que solicitará os logos em PDF aos patrocinadores. Não houve acordos formais registrados nem perguntas sem resposta. Sugere-se agendar uma tarefa para o envio dos logos em PDF logo após a solicitação.
+              - paragraph [ref=e735]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e736]:
+              - button [ref=e739] [cursor=pointer]:
+                - img [ref=e742]
+              - generic [ref=e744]:
+                - button [ref=e745] [cursor=pointer]:
+                  - img [ref=e746]
+                - button [ref=e748] [cursor=pointer]:
+                  - img [ref=e749]
+          - generic [ref=e753]: "Lead #27627665"
+          - generic [ref=e754]:
+            - generic [ref=e755]: Resumo do lead
+            - img [ref=e756]
+          - generic [ref=e758]:
+            - generic [ref=e759]:
+              - paragraph [ref=e760]: Simone Miranda, representante da empresa Portas do Vale, entrou em contato para solicitar um orçamento de uniformes, incluindo corta-vento impermeável, moletom básico, japona brilhosa, polos e camisetas, com quantidades mínimas de 30 unidades para polos e camisetas. Foi acordado que a equipe analisaria a paleta de cores enviada para verificar a disponibilidade junto aos fornecedores e que uma visita poderia ser agendada para apresentar amostras e modelos, dependendo da confirmação das cores. Está previsto o retorno com uma posição sobre as cores e a possibilidade de visita, mas ainda não há resposta para a confirmação da visita ou detalhes finais do orçamento.
+              - paragraph [ref=e761]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e762]:
+              - button [ref=e765] [cursor=pointer]:
+                - img [ref=e768]
+              - generic [ref=e770]:
+                - button [ref=e771] [cursor=pointer]:
+                  - img [ref=e772]
+                - button [ref=e774] [cursor=pointer]:
+                  - img [ref=e775]
+          - generic [ref=e779]: "Lead #27579669"
+          - generic [ref=e780]:
+            - generic [ref=e781]: Resumo do lead
+            - img [ref=e782]
+          - generic [ref=e784]:
+            - generic [ref=e785]:
+              - paragraph [ref=e786]: Betina Berghan entrou em contato para solicitar orçamento de uniformes, incluindo moletom básico, corta-vento, calça moletom e jaqueta japona, com quantidade aproximada de 20 peças por modelo e estampas específicas. Foi enviado um orçamento detalhado com preços unitários e totais para cada item, além de confirmação de modelos já produzidos anteriormente para a empresa Bartolomeu Peças. Houve negociação sobre valores e possibilidade de desconto, com o gerente aguardando retorno sobre condições de pagamento para avançar no pedido. A cliente questionou sobre redução de preço e confirmou que não precisa de suéter, que não é produzido pela empresa. Ainda não houve fechamento do pedido nem definição final sobre descontos ou condições de pagamento.
+              - paragraph [ref=e787]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e788]:
+              - button [ref=e791] [cursor=pointer]:
+                - img [ref=e794]
+              - generic [ref=e796]:
+                - button [ref=e797] [cursor=pointer]:
+                  - img [ref=e798]
+                - button [ref=e800] [cursor=pointer]:
+                  - img [ref=e801]
+          - generic [ref=e805]: Chats
+          - button:
+            - img
+        - generic [ref=e807]:
+          - generic [ref=e808]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e811]
+            - button [disabled] [ref=e814]:
+              - img [ref=e817]
+          - generic [ref=e819]: O conteúdo gerado por IA pode ser impreciso

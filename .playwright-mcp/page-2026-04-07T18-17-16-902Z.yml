@@ -1,0 +1,102 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e113]:
+    - banner [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - link "Supabase" [ref=e118] [cursor=pointer]:
+            - /url: /dashboard/org/sgtmmejdvksjyizrrgtt
+            - img "Supabase" [ref=e119]
+          - generic [ref=e120]:
+            - img [ref=e122]
+            - generic [ref=e124]:
+              - link "passoapassouniformes2025@gmail.com's Org Free" [ref=e125] [cursor=pointer]:
+                - /url: /dashboard/org/sgtmmejdvksjyizrrgtt
+                - img [ref=e126]
+                - generic [ref=e136]: passoapassouniformes2025@gmail.com's Org
+                - generic [ref=e137]: Free
+              - button [ref=e138] [cursor=pointer]:
+                - img [ref=e140]
+          - generic [ref=e143]:
+            - img [ref=e145]
+            - generic [ref=e147]: New project
+        - generic [ref=e148]:
+          - generic [ref=e150] [cursor=pointer]: Feedback
+          - generic [ref=e151]:
+            - button "Search..." [ref=e152] [cursor=pointer]:
+              - generic [ref=e153]:
+                - img [ref=e154]
+                - paragraph [ref=e157]: Search...
+              - generic [ref=e159]:
+                - img [ref=e160]
+                - generic [ref=e162]: K
+            - button [ref=e163] [cursor=pointer]:
+              - img [ref=e165]
+            - button [ref=e169] [cursor=pointer]:
+              - img [ref=e171]
+          - button [ref=e173] [cursor=pointer]:
+            - figure [ref=e175]:
+              - img [ref=e176]
+    - generic [ref=e189]:
+      - generic [ref=e191]:
+        - heading "Create a new project" [level=3] [ref=e192]
+        - paragraph [ref=e193]: Your project will have its own dedicated instance and full Postgres database. An API will be set up so you can easily interact with your new database.
+      - generic [ref=e194]:
+        - generic [ref=e197]:
+          - generic [ref=e200]: Organization
+          - generic [ref=e202]:
+            - combobox [ref=e203] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic: passoapassouniformes2025@gmail.com's Org
+                  - generic: Free
+              - img [ref=e204]
+            - combobox [ref=e206]
+        - generic [ref=e209]:
+          - generic [ref=e212]: Project name
+          - textbox "Project name" [ref=e215]: passoapassouniformes2025@gmail.com's Project
+        - generic [ref=e218]:
+          - generic [ref=e221]: Database password
+          - generic [ref=e222]:
+            - group [ref=e224]:
+              - textbox "Type in a strong password" [ref=e225]
+            - paragraph [ref=e227]:
+              - text: This is the password to your Postgres database, so it must be strong and hard to guess.
+              - button "Generate a password" [ref=e228] [cursor=pointer]
+              - text: .
+        - generic [ref=e231]:
+          - generic [ref=e234]: Region
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - combobox [disabled] [ref=e237]:
+                - generic:
+                  - generic: Loading available regions...
+                - img [ref=e238]
+              - combobox [disabled] [ref=e240]
+            - paragraph [ref=e242]: Select the region closest to your users for the best performance.
+        - generic [ref=e245]:
+          - generic [ref=e248]: Security
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - checkbox "Enable Data API" [checked] [ref=e253] [cursor=pointer]:
+                - generic:
+                  - img
+              - checkbox [checked]
+              - generic [ref=e254]:
+                - text: Enable Data API
+                - generic [ref=e255]:
+                  - text: Autogenerate a RESTful API for your public schema. Recommended if using a client library like
+                  - link "supabase-js" [ref=e256] [cursor=pointer]:
+                    - /url: https://supabase.com/docs/reference/javascript/introduction
+                  - text: .
+            - generic [ref=e257]:
+              - checkbox "Enable automatic RLS" [ref=e258] [cursor=pointer]
+              - checkbox
+              - generic [ref=e259]:
+                - text: Enable automatic RLS
+                - generic [ref=e260]: Create an event trigger that automatically enables Row Level Security on all new tables in the public schema.
+      - generic [ref=e264]:
+        - button "Cancel" [ref=e265] [cursor=pointer]:
+          - generic [ref=e266]: Cancel
+        - button "Create new project" [ref=e267] [cursor=pointer]:
+          - generic [ref=e268]: Create new project
+  - alert [ref=e108]: Supabase

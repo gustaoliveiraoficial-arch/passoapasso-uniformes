@@ -1,0 +1,152 @@
+- generic [ref=e3]:
+  - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e93]:
+    - generic [ref=e94]:
+      - navigation "Produtos do Console do Firebase" [ref=e96]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e97]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e98] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e99]:
+              - img [ref=e100]
+              - img "Logotipo do Firebase" [ref=e101]
+        - img [ref=e106]: search
+        - link "Visão geral do projeto" [ref=e108] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e109]: gmp_nav20_overview
+        - menu [ref=e110]:
+          - menuitem "Configurações" [ref=e111]:
+            - img [ref=e113] [cursor=pointer]: settings
+      - separator [ref=e114]
+      - group [ref=e116]:
+        - link "Authentication" [ref=e118] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e119]: gmp_nav20_auth
+        - link "Realtime Database" [ref=e121] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e122]: gmp_nav20_database
+      - separator [ref=e123]
+    - button "Alternar barra lateral de navegação" [ref=e126] [cursor=pointer]:
+      - img [ref=e127]: chevron_left
+  - banner:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Abrir menu de navegação" [ref=e130] [cursor=pointer]:
+          - img [ref=e131]: menu
+        - button "painel-vendas-comercial (Abrir o menu \"Selecionar projeto\")" [ref=e135] [cursor=pointer]:
+          - text: painel-vendas-comercial
+          - img [ref=e136]: arrow_drop_down
+      - button "Mais opções" [ref=e139] [cursor=pointer]:
+        - img [ref=e140]: more_vert
+  - main [ref=e13]:
+    - generic [ref=e144]:
+      - region "Cabeçalho do produto" [ref=e239]:
+        - generic [ref=e241]:
+          - heading "Authentication" [level=2] [ref=e245]
+          - tablist "Recursos do Authentication" [ref=e249]:
+            - generic [ref=e252]:
+              - tab "Usuários" [ref=e253] [cursor=pointer]:
+                - generic [ref=e256]: Usuários
+              - 'tab "Guia selecionada: Método de login" [selected] [ref=e259] [cursor=pointer]':
+                - generic [ref=e262]: Método de login
+              - tab "Modelos" [ref=e265] [cursor=pointer]:
+                - generic [ref=e268]: Modelos
+              - tab "Uso" [ref=e271] [cursor=pointer]:
+                - generic [ref=e274]: Uso
+              - tab "Configurações" [ref=e277] [cursor=pointer]:
+                - generic [ref=e280]: Configurações
+              - tab "Extensions" [ref=e283] [cursor=pointer]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]: gmp_nav20_mods
+                  - text: Extensions
+      - generic [ref=e292]:
+        - heading "Provedores de login" [level=3] [ref=e297]
+        - generic [ref=e302]:
+          - tooltip "Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform. Saiba mais (abre a documentação do Firebase em uma nova guia) Fazer upgrade" [ref=e442]:
+            - generic [ref=e444]:
+              - generic [ref=e445]:
+                - text: Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform.
+                - link "Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e446] [cursor=pointer]:
+                  - /url: https://firebase.google.com/docs/auth?hl=pt-BR&authuser=0#identity-platform
+                  - text: Saiba mais open_in_new
+              - button "Fazer upgrade" [ref=e447]:
+                - generic [ref=e448]: Fazer upgrade
+          - tooltip "Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform. Saiba mais (abre a documentação do Firebase em uma nova guia) Fazer upgrade" [ref=e460]:
+            - generic [ref=e462]:
+              - generic [ref=e463]:
+                - text: Para acessar esse recurso, faça upgrade para o Firebase Auth com o Identity Platform.
+                - link "Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e464] [cursor=pointer]:
+                  - /url: https://firebase.google.com/docs/auth?hl=pt-BR&authuser=0#identity-platform
+                  - text: Saiba mais open_in_new
+              - button "Fazer upgrade" [ref=e465]:
+                - generic [ref=e466]: Fazer upgrade
+          - generic [ref=e508]:
+            - generic [ref=e509]:
+              - generic [ref=e510]:
+                - generic [ref=e511]:
+                  - img [ref=e513]:
+                    - img [ref=e514]
+                  - text: E-mail/senha
+                - generic [ref=e517]:
+                  - switch "Ativar o login com endereço de e-mail e senha" [active] [ref=e518] [cursor=pointer]:
+                    - generic [ref=e524]:
+                      - img [ref=e525]
+                      - img [ref=e527]
+                  - generic [ref=e529] [cursor=pointer]: Ativar
+              - generic [ref=e530]:
+                - text: Permite que os usuários se inscrevam usando o endereço de e-mail e a senha deles. Nossos SDKs também fornecem verificação de endereço de e-mail, recuperação de senha e componentes essenciais para alteração do endereço de e-mail.
+                - link "Saiba mais sobre a autenticação por e-mail (abre em uma nova guia)" [ref=e531] [cursor=pointer]:
+                  - /url: https://support.google.com/firebase/answer/7000714
+                  - text: Saiba mais open_in_new
+              - generic [ref=e532]:
+                - generic [ref=e533]: Link do e-mail (login sem senha)
+                - generic [ref=e536]:
+                  - switch "Link do e-mail (login sem senha)" [ref=e537] [cursor=pointer]:
+                    - generic [ref=e543]:
+                      - img [ref=e544]
+                      - img [ref=e546]
+                  - generic [ref=e548] [cursor=pointer]: Ativar
+            - generic [ref=e549]:
+              - button "Cancelar" [ref=e550]:
+                - generic [ref=e551]: Cancelar
+              - button "Salvar" [disabled]:
+                - generic: Salvar
+        - heading "Avançado" [level=3] [ref=e475]
+        - generic [ref=e478]:
+          - heading "Autenticação multifator por SMS" [level=4] [ref=e479]:
+            - img [ref=e481]: lock
+            - generic [ref=e482]: Autenticação multifator por SMS
+          - paragraph [ref=e483]:
+            - text: Permita que usuários incluam uma camada extra de segurança nas contas deles. Assim que essa autenticação for ativada, integrada e configurada, os usuários poderão fazer login com um processo de duas etapas por SMS.
+            - link "Saiba mais sobre a autenticação multifator por SMS (abre em uma nova guia)" [ref=e484] [cursor=pointer]:
+              - /url: https://firebase.google.com/docs/auth?hl=pt-BR&authuser=0#multi-factor
+              - text: Saiba mais open_in_new
+          - status [ref=e488]:
+            - img [ref=e489]: star
+            - generic [ref=e490]: "tip:"
+            - generic [ref=e492]:
+              - generic [ref=e493]: A MFA e outros recursos avançados estão disponíveis no Identity Platform, uma solução completa de identidade do cliente do Google Cloud, criada em parceria com o Firebase. Esse upgrade está disponível nos planos Spark e Blaze.
+              - button "Fazer o upgrade para o Firebase Auth com o Identity Platform" [ref=e495]:
+                - generic [ref=e496]: Fazer upgrade para ativar
+  - generic "Gemini no Firebase" [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e42] [cursor=pointer]':
+          - img [ref=e44]
+          - img [ref=e50]
+        - button "Abrir alertas" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e61] [cursor=pointer]:
+          - img [ref=e63]: spark
+        - button "Ajuda" [ref=e66] [cursor=pointer]:
+          - img [ref=e67]: contact_support
+        - separator [ref=e70]
+        - button "Ativar o Cloud Shell" [ref=e71] [cursor=pointer]:
+          - img [ref=e72]:
+            - img [ref=e73]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e77]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e80] [cursor=pointer]:
+          - img [ref=e81]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e85] [cursor=pointer]':
+        - img [ref=e86]: dark_mode

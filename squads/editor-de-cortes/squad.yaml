@@ -1,0 +1,53 @@
+name: editor-de-cortes
+version: 1.0.0
+description: Squad de execução de edição de vídeo no CapCut via browser. Cada pasta é um projeto de vídeo com takes e roteiro — os agentes leem, editam e exportam automaticamente.
+author: Gustavo
+license: UNLICENSED
+slashPrefix: editor
+
+aios:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  agents:
+    - leitor-pasta.md
+    - editor-capcut.md
+    - revisor-video.md
+  tasks:
+    - ler-projeto.md
+    - importar-takes-capcut.md
+    - aplicar-edicao-roteiro.md
+    - exportar-video.md
+    - pipeline-video-completo.md
+  workflows:
+    - editar-pasta.yaml
+  templates:
+    - roteiro-template.md
+  data:
+    - tecnicas-edicao.md
+    - atalhos-capcut.md
+
+config:
+  extends: extend
+
+dependencies:
+  node: []
+  python: []
+  squads: []
+  mcp:
+    - playwright  # Browser automation para controlar CapCut via Chrome
+
+tags:
+  - video
+  - capcut
+  - edicao
+  - automacao
+  - browser
+
+# Estrutura de pastas de projeto esperada:
+# /videos/meu-video/
+#   ├── take-01.mp4
+#   ├── take-02.mp4
+#   ├── take-03.mp4
+#   └── roteiro.md   (ou roteiro.txt / script.md)

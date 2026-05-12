@@ -1,0 +1,872 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 284" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "284"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/list/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e53]: Funis de vendas
+              - img [ref=e56]
+          - listitem [ref=e59] [cursor=pointer]:
+            - link "Calendário 13" [ref=e61]:
+              - /url: /todo
+              - img [ref=e63]
+              - generic [ref=e65]: Calendário
+              - generic [ref=e69]: "13"
+          - listitem [ref=e70]:
+            - link "Listas" [ref=e72] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e74]
+              - generic [ref=e76]: Listas
+              - img [ref=e79]
+          - listitem [ref=e82] [cursor=pointer]:
+            - link "Agente de IA" [ref=e84]:
+              - /url: /settings/ai-agent/
+              - img [ref=e86]
+              - generic [ref=e88]: Agente de IA
+          - listitem [ref=e89]:
+            - link "Automações" [ref=e91] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e93]
+              - generic [ref=e95]: Automações
+              - img [ref=e98]
+          - listitem [ref=e100]:
+            - link "Insights" [ref=e102] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e104]
+              - generic [ref=e107]: Insights
+              - img [ref=e110]
+        - generic [ref=e112]: Integrações fixadas
+        - list [ref=e113]:
+          - listitem [ref=e115] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e117]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e120]
+              - generic [ref=e121]: WhatsApp Business
+          - listitem [ref=e123] [cursor=pointer]:
+            - link "TikTok" [ref=e125]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e128]
+              - generic [ref=e129]: TikTok
+      - list [ref=e131]:
+        - listitem [ref=e133] [cursor=pointer]:
+          - link "Configurações" [ref=e135]:
+            - /url: /settings/profile/
+            - img [ref=e137]
+            - generic [ref=e140]: Configurações
+        - listitem [ref=e141]:
+          - link "Ajuda" [ref=e143] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e145]
+            - generic [ref=e147]: Ajuda
+            - img [ref=e150]
+        - listitem [ref=e153] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e155]:
+            - /url: ""
+            - img [ref=e157]
+            - generic [ref=e159]: Enviar feedback
+        - listitem [ref=e161] [cursor=pointer]:
+          - link "Centro de Notificação 17" [ref=e163]:
+            - /url: /settings/profile/notifications
+            - img [ref=e165]
+            - generic [ref=e167]: Centro de Notificação
+            - generic [ref=e171]: "17"
+      - separator [ref=e172]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e174] [cursor=pointer]:
+        - img "Avatar" [ref=e177]
+        - generic [ref=e178]:
+          - generic [ref=e179]: Passo a passo uniformes
+          - generic [ref=e180]: passoapassouniformes2025
+  - generic [ref=e185]:
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - generic "Leads" [ref=e189]:
+          - generic [ref=e190]: Leads
+        - generic [ref=e191]:
+          - link "Leads" [ref=e192] [cursor=pointer]:
+            - /url: /leads/pipeline/
+            - img [ref=e193]
+          - link "Lista" [ref=e195] [cursor=pointer]:
+            - /url: /leads/list/pipeline/
+            - img [ref=e196]
+      - generic [ref=e198]:
+        - button "Mais" [ref=e201] [cursor=pointer]:
+          - img [ref=e203]
+        - link "Lead" [ref=e205] [cursor=pointer]:
+          - /url: /leads/add/?pipeline_id=13368211
+          - img [ref=e206]
+          - generic [ref=e208]: Lead
+      - generic [ref=e209]:
+        - generic [ref=e211] [cursor=pointer]: Leads ativos
+        - generic [ref=e213]:
+          - textbox "Busca e filtro" [ref=e214]
+          - generic [ref=e215]:
+            - generic [ref=e216]: "861 leads:"
+            - generic [ref=e217]: R$23.640
+        - text: "Criada Fechadas Ativas Lead de entrada tipo: Lead fonte: Usuários Criado por Modificado por Tarefas: Método de pagamento: Desconto: Motivo de perda: Pagamento: Status das conversas: Progresso da conversa: Direção da última mensagem: Criado Modificado Tarefas: Criado Modificado Tarefas: Produtos"
+    - generic [ref=e218]:
+      - generic [ref=e219]:
+        - generic [ref=e220]: Colunas disponíveis
+        - generic [ref=e222]:
+          - generic [ref=e226]: Arquivo
+          - generic [ref=e230]: Criado por
+          - generic [ref=e234]: Criado por (empresa)
+          - generic [ref=e238]: Data Criada
+          - generic [ref=e242]: Data Criada (empresa)
+          - generic [ref=e246]: Data do contrato
+          - generic [ref=e250]: Desconto
+          - generic [ref=e254]: E-mail (contato)
+          - generic [ref=e258]: Empresa
+          - generic [ref=e262]: Endereço (empresa)
+          - generic [ref=e266]: Endereço de entrega
+          - generic [ref=e270]: fbclid
+          - generic [ref=e274]: Fechada em
+          - generic [ref=e278]: gclid
+          - generic [ref=e282]: gclientid
+          - generic [ref=e286]: Lead usuário responsável
+          - generic [ref=e290]: Modificado por
+          - generic [ref=e294]: Modificado por (empresa)
+          - generic [ref=e298]: Motivo de perda
+          - generic [ref=e302]: Método de pagamento
+          - generic [ref=e306]: Número de rastreamento
+          - generic [ref=e310]: Número do contrato
+          - generic [ref=e314]: Pagamento
+          - generic [ref=e318]: Posição (contato)
+          - generic [ref=e322]: Próxima consulta
+          - generic [ref=e326]: Próxima tarefa
+          - generic [ref=e330]: referrer
+          - generic [ref=e334]: Site (empresa)
+          - generic [ref=e338]: Telefone (contato)
+          - generic [ref=e342]: ttad_id
+          - generic [ref=e346]: ttad_name
+          - generic [ref=e350]: utm_campaign
+          - generic [ref=e354]: utm_content
+          - generic [ref=e358]: utm_medium
+          - generic [ref=e362]: utm_referrer
+          - generic [ref=e366]: utm_source
+          - generic [ref=e370]: utm_term
+          - generic [ref=e374]: WhatsappLid_WZ (contato)
+          - generic [ref=e378]: WhatsappUsername_WZ (contato)
+          - generic [ref=e382]: Whatsgroup_WZ (contato)
+          - generic [ref=e386]: Última modificação
+          - generic [ref=e390]: Última modificação (empresa)
+        - generic [ref=e391]:
+          - button "Feito" [ref=e392]:
+            - generic [ref=e394]: Feito
+          - button "Cancelar" [ref=e395] [cursor=pointer]
+          - generic [ref=e397] [cursor=pointer]:
+            - checkbox "Para todos os usuários da conta" [ref=e399]
+            - generic "Para todos os usuários da conta" [ref=e401]
+      - generic [ref=e403]:
+        - generic [ref=e411]:
+          - checkbox [ref=e415] [cursor=pointer]
+          - generic [ref=e420] [cursor=pointer]: Lead título
+          - generic [ref=e425] [cursor=pointer]: Contato principal
+          - generic [ref=e430]: Empresa do contato
+          - generic [ref=e435] [cursor=pointer]: Etapa do lead
+          - generic [ref=e440] [cursor=pointer]: Venda, R$
+        - generic [ref=e442]:
+          - checkbox [ref=e447] [cursor=pointer]
+          - generic [ref=e450]:
+            - 'link "Lead #29002050" [ref=e452] [cursor=pointer]':
+              - /url: /leads/detail/29002050
+            - generic [ref=e453]:
+              - img [ref=e454]
+              - generic [ref=e456]: Bate-papo
+          - generic [ref=e459]: Agiliza Phone
+          - generic [ref=e466]: Etapa de leads de entrada
+          - generic [ref=e468]:
+            - img [ref=e470] [cursor=pointer]
+            - img [ref=e473] [cursor=pointer]
+            - img [ref=e476] [cursor=pointer]
+        - generic [ref=e478]:
+          - checkbox [ref=e483] [cursor=pointer]
+          - generic [ref=e486]:
+            - 'link "Lead #28991137" [ref=e488] [cursor=pointer]':
+              - /url: /leads/detail/28991137
+            - generic [ref=e489]:
+              - img [ref=e490]
+              - generic [ref=e492]: Bate-papo
+          - generic [ref=e495]: Brenda
+          - generic [ref=e502]: Etapa de leads de entrada
+          - generic [ref=e504]:
+            - img [ref=e506] [cursor=pointer]
+            - img [ref=e509] [cursor=pointer]
+            - img [ref=e512] [cursor=pointer]
+        - generic [ref=e514]:
+          - checkbox [ref=e519] [cursor=pointer]
+          - generic [ref=e522]:
+            - 'link "Lead #28981139" [ref=e524] [cursor=pointer]':
+              - /url: /leads/detail/28981139
+            - generic [ref=e525]:
+              - img [ref=e526]
+              - generic [ref=e528]: Bate-papo
+          - generic [ref=e531]: Luiza Província Marcas e Patentes
+          - generic [ref=e538]: Etapa de leads de entrada
+          - generic [ref=e540]:
+            - img [ref=e542] [cursor=pointer]
+            - img [ref=e545] [cursor=pointer]
+            - img [ref=e548] [cursor=pointer]
+        - generic [ref=e550]:
+          - checkbox [ref=e555] [cursor=pointer]
+          - generic [ref=e558]:
+            - 'link "Lead #28979645" [ref=e560] [cursor=pointer]':
+              - /url: /leads/detail/28979645
+            - generic [ref=e561]:
+              - img [ref=e562]
+              - generic [ref=e564]: Bate-papo
+          - generic [ref=e567]: Celsus - Marketing
+          - generic [ref=e574]: Etapa de leads de entrada
+          - generic [ref=e576]:
+            - img [ref=e578] [cursor=pointer]
+            - img [ref=e581] [cursor=pointer]
+            - img [ref=e584] [cursor=pointer]
+        - generic [ref=e586]:
+          - checkbox [ref=e591] [cursor=pointer]
+          - generic [ref=e594]:
+            - 'link "Lead #28970899" [ref=e596] [cursor=pointer]':
+              - /url: /leads/detail/28970899
+            - generic [ref=e597]:
+              - img [ref=e598]
+              - generic [ref=e600]: Bate-papo
+          - generic [ref=e603]: Clau Meneses
+          - generic [ref=e610]: Etapa de leads de entrada
+          - generic [ref=e612]:
+            - img [ref=e614] [cursor=pointer]
+            - img [ref=e617] [cursor=pointer]
+            - img [ref=e620] [cursor=pointer]
+        - generic [ref=e622]:
+          - checkbox [ref=e627] [cursor=pointer]
+          - generic [ref=e631]:
+            - generic "Nenhuma tarefa atribuída" [ref=e633]
+            - 'link "Lead #28962893" [ref=e634] [cursor=pointer]':
+              - /url: /leads/detail/28962893
+          - link "Adv. Wilson Neto" [ref=e640] [cursor=pointer]:
+            - /url: /contacts/detail/34593627
+          - generic [ref=e647]: Negociando
+          - generic [ref=e650]: "0"
+        - generic [ref=e651]:
+          - checkbox [ref=e656] [cursor=pointer]
+          - generic [ref=e660]:
+            - generic "Nenhuma tarefa atribuída" [ref=e662]
+            - 'link "Lead #28913491" [ref=e663] [cursor=pointer]':
+              - /url: /leads/detail/28913491
+          - link "Vanessa Comercial Resgate" [ref=e669] [cursor=pointer]:
+            - /url: /contacts/detail/34534985
+          - generic [ref=e676]: Enviar Orçamento
+          - generic [ref=e679]: "0"
+        - generic [ref=e680]:
+          - checkbox [ref=e685] [cursor=pointer]
+          - generic [ref=e688]:
+            - 'link "Lead #28898391" [ref=e690] [cursor=pointer]':
+              - /url: /leads/detail/28898391
+            - generic [ref=e691]:
+              - img [ref=e692]
+              - generic [ref=e694]: Bate-papo
+          - generic [ref=e697]: Gabriela Ferraz
+          - generic [ref=e704]: Etapa de leads de entrada
+          - generic [ref=e706]:
+            - img [ref=e708] [cursor=pointer]
+            - img [ref=e711] [cursor=pointer]
+            - img [ref=e714] [cursor=pointer]
+        - generic [ref=e716]:
+          - checkbox [ref=e721] [cursor=pointer]
+          - generic [ref=e725]:
+            - generic "Nenhuma tarefa atribuída" [ref=e727]
+            - 'link "Lead #28889007" [ref=e728] [cursor=pointer]':
+              - /url: /leads/detail/28889007
+          - link "Paulo Carvalho" [ref=e734] [cursor=pointer]:
+            - /url: /contacts/detail/34499391
+          - generic [ref=e741]: Primeiro Contato
+          - generic [ref=e744]: "0"
+        - generic [ref=e745]:
+          - checkbox [ref=e750] [cursor=pointer]
+          - generic [ref=e753]:
+            - 'link "Lead #28888445" [ref=e755] [cursor=pointer]':
+              - /url: /leads/detail/28888445
+            - generic [ref=e756]:
+              - img [ref=e757]
+              - generic [ref=e759]: Bate-papo
+          - generic [ref=e762]: Nicole Hehn
+          - generic [ref=e769]: Etapa de leads de entrada
+          - generic [ref=e771]:
+            - img [ref=e773] [cursor=pointer]
+            - img [ref=e776] [cursor=pointer]
+            - img [ref=e779] [cursor=pointer]
+        - generic [ref=e781]:
+          - checkbox [ref=e786] [cursor=pointer]
+          - generic [ref=e789]:
+            - 'link "Lead #28742291" [ref=e791] [cursor=pointer]':
+              - /url: /leads/detail/28742291
+            - generic [ref=e792]:
+              - img [ref=e793]
+              - generic [ref=e795]: Bate-papo
+          - generic [ref=e798]: Gabriel Magalhães
+          - generic [ref=e805]: Etapa de leads de entrada
+          - generic [ref=e807]:
+            - img [ref=e809] [cursor=pointer]
+            - img [ref=e812] [cursor=pointer]
+            - img [ref=e815] [cursor=pointer]
+        - generic [ref=e817]:
+          - checkbox [ref=e822] [cursor=pointer]
+          - generic [ref=e825]:
+            - 'link "Lead #28738617" [ref=e827] [cursor=pointer]':
+              - /url: /leads/detail/28738617
+            - generic [ref=e828]:
+              - img [ref=e829]
+              - generic [ref=e831]: Bate-papo
+          - generic [ref=e834]: Lm
+          - generic [ref=e841]: Etapa de leads de entrada
+          - generic [ref=e843]:
+            - img [ref=e845] [cursor=pointer]
+            - img [ref=e848] [cursor=pointer]
+            - img [ref=e851] [cursor=pointer]
+        - generic [ref=e853]:
+          - checkbox [ref=e858] [cursor=pointer]
+          - generic [ref=e862]:
+            - generic "Nenhuma tarefa atribuída" [ref=e864]
+            - 'link "Lead #28693317" [ref=e865] [cursor=pointer]':
+              - /url: /leads/detail/28693317
+          - link "..." [ref=e871] [cursor=pointer]:
+            - /url: /contacts/detail/34253463
+          - generic [ref=e878]: Perdido
+          - generic [ref=e881]: "0"
+        - generic [ref=e882]:
+          - checkbox [ref=e887] [cursor=pointer]
+          - generic [ref=e890]:
+            - 'link "Lead #28663720" [ref=e892] [cursor=pointer]':
+              - /url: /leads/detail/28663720
+            - generic [ref=e893]:
+              - img [ref=e894]
+              - generic [ref=e896]: Bate-papo
+          - generic [ref=e899]: Monica Tisato
+          - generic [ref=e906]: Etapa de leads de entrada
+          - generic [ref=e908]:
+            - img [ref=e910] [cursor=pointer]
+            - img [ref=e913] [cursor=pointer]
+            - img [ref=e916] [cursor=pointer]
+        - generic [ref=e918]:
+          - checkbox [ref=e923] [cursor=pointer]
+          - generic [ref=e926]:
+            - 'link "Lead #28653086" [ref=e928] [cursor=pointer]':
+              - /url: /leads/detail/28653086
+            - generic [ref=e929]:
+              - img [ref=e930]
+              - generic [ref=e932]: Bate-papo
+          - generic [ref=e935]: Meliza Miranda Móveis Hirt
+          - generic [ref=e942]: Etapa de leads de entrada
+          - generic [ref=e944]:
+            - img [ref=e946] [cursor=pointer]
+            - img [ref=e949] [cursor=pointer]
+            - img [ref=e952] [cursor=pointer]
+        - generic [ref=e954]:
+          - checkbox [ref=e959] [cursor=pointer]
+          - generic [ref=e962]:
+            - 'link "Lead #28635712" [ref=e964] [cursor=pointer]':
+              - /url: /leads/detail/28635712
+            - generic [ref=e965]:
+              - img [ref=e966]
+              - generic [ref=e968]: Bate-papo
+          - generic [ref=e971]: Aline Pena Machado
+          - generic [ref=e978]: Etapa de leads de entrada
+          - generic [ref=e980]:
+            - img [ref=e982] [cursor=pointer]
+            - img [ref=e985] [cursor=pointer]
+            - img [ref=e988] [cursor=pointer]
+        - generic [ref=e990]:
+          - checkbox [ref=e995] [cursor=pointer]
+          - generic [ref=e999]:
+            - generic "Nenhuma tarefa atribuída" [ref=e1001]
+            - 'link "Lead #28628396" [ref=e1002] [cursor=pointer]':
+              - /url: /leads/detail/28628396
+          - link "Grazi Alves" [ref=e1008] [cursor=pointer]:
+            - /url: /contacts/detail/34157738
+          - generic [ref=e1015]: Qualificado
+          - generic [ref=e1018]: "0"
+        - generic [ref=e1019]:
+          - checkbox [ref=e1024] [cursor=pointer]
+          - generic [ref=e1027]:
+            - 'link "Lead #28625804" [ref=e1029] [cursor=pointer]':
+              - /url: /leads/detail/28625804
+            - generic [ref=e1030]:
+              - img [ref=e1031]
+              - generic [ref=e1033]: Bate-papo
+          - generic [ref=e1036]: Rejane chaves nascimento
+          - generic [ref=e1043]: Etapa de leads de entrada
+          - generic [ref=e1045]:
+            - img [ref=e1047] [cursor=pointer]
+            - img [ref=e1050] [cursor=pointer]
+            - img [ref=e1053] [cursor=pointer]
+        - generic [ref=e1055]:
+          - checkbox [ref=e1060] [cursor=pointer]
+          - generic [ref=e1063]:
+            - 'link "Lead #28619968" [ref=e1065] [cursor=pointer]':
+              - /url: /leads/detail/28619968
+            - generic [ref=e1066]:
+              - img [ref=e1067]
+              - generic [ref=e1069]: Bate-papo
+          - generic [ref=e1072]: ...
+          - generic [ref=e1079]: Etapa de leads de entrada
+          - generic [ref=e1081]:
+            - img [ref=e1083] [cursor=pointer]
+            - img [ref=e1086] [cursor=pointer]
+            - img [ref=e1089] [cursor=pointer]
+        - generic [ref=e1091]:
+          - checkbox [ref=e1096] [cursor=pointer]
+          - generic [ref=e1099]:
+            - 'link "Lead #28616404" [ref=e1101] [cursor=pointer]':
+              - /url: /leads/detail/28616404
+            - generic [ref=e1102]:
+              - img [ref=e1103]
+              - generic [ref=e1105]: Bate-papo
+          - generic [ref=e1108]: ...
+          - generic [ref=e1115]: Etapa de leads de entrada
+          - generic [ref=e1117]:
+            - img [ref=e1119] [cursor=pointer]
+            - img [ref=e1122] [cursor=pointer]
+            - img [ref=e1125] [cursor=pointer]
+        - generic [ref=e1127]:
+          - checkbox [ref=e1132] [cursor=pointer]
+          - generic [ref=e1135]:
+            - 'link "Lead #28616182" [ref=e1137] [cursor=pointer]':
+              - /url: /leads/detail/28616182
+            - generic [ref=e1138]:
+              - img [ref=e1139]
+              - generic [ref=e1141]: Bate-papo
+          - generic [ref=e1144]: Hiandra
+          - generic [ref=e1151]: Etapa de leads de entrada
+          - generic [ref=e1153]:
+            - img [ref=e1155] [cursor=pointer]
+            - img [ref=e1158] [cursor=pointer]
+            - img [ref=e1161] [cursor=pointer]
+        - generic [ref=e1163]:
+          - checkbox [ref=e1168] [cursor=pointer]
+          - generic [ref=e1172]:
+            - generic "Nenhuma tarefa atribuída" [ref=e1174]
+            - 'link "Lead #28615118" [ref=e1175] [cursor=pointer]':
+              - /url: /leads/detail/28615118
+          - link "Sara La Roque" [ref=e1181] [cursor=pointer]:
+            - /url: /contacts/detail/34144802
+          - generic [ref=e1188]: Qualificado
+          - generic [ref=e1191]: "0"
+        - generic [ref=e1192]:
+          - checkbox [ref=e1197] [cursor=pointer]
+          - generic [ref=e1200]:
+            - 'link "Lead #28614064" [ref=e1202] [cursor=pointer]':
+              - /url: /leads/detail/28614064
+            - generic [ref=e1203]:
+              - img [ref=e1204]
+              - generic [ref=e1206]: Bate-papo
+          - generic [ref=e1209]: .
+          - generic [ref=e1216]: Etapa de leads de entrada
+          - generic [ref=e1218]:
+            - img [ref=e1220] [cursor=pointer]
+            - img [ref=e1223] [cursor=pointer]
+            - img [ref=e1226] [cursor=pointer]
+        - generic [ref=e1228]:
+          - checkbox [ref=e1233] [cursor=pointer]
+          - generic [ref=e1236]:
+            - 'link "Lead #28613972" [ref=e1238] [cursor=pointer]':
+              - /url: /leads/detail/28613972
+            - generic [ref=e1239]:
+              - img [ref=e1240]
+              - generic [ref=e1242]: Bate-papo
+          - generic [ref=e1245]: Sissi Lachnit
+          - generic [ref=e1252]: Etapa de leads de entrada
+          - generic [ref=e1254]:
+            - img [ref=e1256] [cursor=pointer]
+            - img [ref=e1259] [cursor=pointer]
+            - img [ref=e1262] [cursor=pointer]
+        - generic [ref=e1264]:
+          - checkbox [ref=e1269] [cursor=pointer]
+          - generic [ref=e1272]:
+            - 'link "Lead #28611000" [ref=e1274] [cursor=pointer]':
+              - /url: /leads/detail/28611000
+            - generic [ref=e1275]:
+              - img [ref=e1276]
+              - generic [ref=e1278]: Bate-papo
+          - generic [ref=e1281]: William Oliveira
+          - generic [ref=e1288]: Etapa de leads de entrada
+          - generic [ref=e1290]:
+            - img [ref=e1292] [cursor=pointer]
+            - img [ref=e1295] [cursor=pointer]
+            - img [ref=e1298] [cursor=pointer]
+        - generic [ref=e1300]:
+          - checkbox [ref=e1305] [cursor=pointer]
+          - generic [ref=e1308]:
+            - 'link "Lead #28601566" [ref=e1310] [cursor=pointer]':
+              - /url: /leads/detail/28601566
+            - generic [ref=e1311]:
+              - img [ref=e1312]
+              - generic [ref=e1314]: Bate-papo
+          - generic [ref=e1317]: Marcos Aurélio Moraes
+          - generic [ref=e1324]: Etapa de leads de entrada
+          - generic [ref=e1326]:
+            - img [ref=e1328] [cursor=pointer]
+            - img [ref=e1331] [cursor=pointer]
+            - img [ref=e1334] [cursor=pointer]
+        - generic [ref=e1336]:
+          - checkbox [ref=e1341] [cursor=pointer]
+          - generic [ref=e1344]:
+            - 'link "Lead #28600364" [ref=e1346] [cursor=pointer]':
+              - /url: /leads/detail/28600364
+            - generic [ref=e1347]:
+              - img [ref=e1348]
+              - generic [ref=e1350]: Bate-papo
+          - generic [ref=e1353]: Jujubas Canecaria e Personalizados
+          - generic [ref=e1360]: Etapa de leads de entrada
+          - generic [ref=e1362]:
+            - img [ref=e1364] [cursor=pointer]
+            - img [ref=e1367] [cursor=pointer]
+            - img [ref=e1370] [cursor=pointer]
+        - generic [ref=e1372]:
+          - checkbox [ref=e1377] [cursor=pointer]
+          - generic [ref=e1380]:
+            - 'link "Lead #28599616" [ref=e1382] [cursor=pointer]':
+              - /url: /leads/detail/28599616
+            - generic [ref=e1383]:
+              - img [ref=e1384]
+              - generic [ref=e1386]: Bate-papo
+          - generic [ref=e1389]: Fabiani
+          - generic [ref=e1396]: Etapa de leads de entrada
+          - generic [ref=e1398]:
+            - img [ref=e1400] [cursor=pointer]
+            - img [ref=e1403] [cursor=pointer]
+            - img [ref=e1406] [cursor=pointer]
+        - generic [ref=e1408]:
+          - checkbox [ref=e1413] [cursor=pointer]
+          - generic [ref=e1416]:
+            - 'link "Lead #28599470" [ref=e1418] [cursor=pointer]':
+              - /url: /leads/detail/28599470
+            - generic [ref=e1419]:
+              - img [ref=e1420]
+              - generic [ref=e1422]: Bate-papo
+          - generic [ref=e1425]: Adrieli Ritterbusch
+          - generic [ref=e1432]: Etapa de leads de entrada
+          - generic [ref=e1434]:
+            - img [ref=e1436] [cursor=pointer]
+            - img [ref=e1439] [cursor=pointer]
+            - img [ref=e1442] [cursor=pointer]
+        - generic [ref=e1444]:
+          - checkbox [ref=e1449] [cursor=pointer]
+          - generic [ref=e1452]:
+            - 'link "Lead #28474342" [ref=e1454] [cursor=pointer]':
+              - /url: /leads/detail/28474342
+            - generic [ref=e1455]:
+              - img [ref=e1456]
+              - generic [ref=e1458]: Bate-papo
+          - generic [ref=e1461]: Jane
+          - generic [ref=e1468]: Etapa de leads de entrada
+          - generic [ref=e1470]:
+            - img [ref=e1472] [cursor=pointer]
+            - img [ref=e1475] [cursor=pointer]
+            - img [ref=e1478] [cursor=pointer]
+        - generic [ref=e1480]:
+          - checkbox [ref=e1485] [cursor=pointer]
+          - generic [ref=e1488]:
+            - 'link "Lead #28452446" [ref=e1490] [cursor=pointer]':
+              - /url: /leads/detail/28452446
+            - generic [ref=e1491]:
+              - img [ref=e1492]
+              - generic [ref=e1494]: Bate-papo
+          - generic [ref=e1497]: Cristiano Dreher
+          - generic [ref=e1504]: Etapa de leads de entrada
+          - generic [ref=e1506]:
+            - img [ref=e1508] [cursor=pointer]
+            - img [ref=e1511] [cursor=pointer]
+            - img [ref=e1514] [cursor=pointer]
+        - generic [ref=e1516]:
+          - checkbox [ref=e1521] [cursor=pointer]
+          - generic [ref=e1524]:
+            - 'link "Lead #28437492" [ref=e1526] [cursor=pointer]':
+              - /url: /leads/detail/28437492
+            - generic [ref=e1527]:
+              - img [ref=e1528]
+              - generic [ref=e1530]: Bate-papo
+          - generic [ref=e1533]: Eduarda Malheiros
+          - generic [ref=e1540]: Etapa de leads de entrada
+          - generic [ref=e1542]:
+            - img [ref=e1544] [cursor=pointer]
+            - img [ref=e1547] [cursor=pointer]
+            - img [ref=e1550] [cursor=pointer]
+        - generic [ref=e1552]:
+          - checkbox [ref=e1557] [cursor=pointer]
+          - generic [ref=e1560]:
+            - 'link "Lead #28435114" [ref=e1562] [cursor=pointer]':
+              - /url: /leads/detail/28435114
+            - generic [ref=e1563]:
+              - img [ref=e1564]
+              - generic [ref=e1566]: Bate-papo
+          - generic [ref=e1569]: Pablo Miguel
+          - generic [ref=e1576]: Etapa de leads de entrada
+          - generic [ref=e1578]:
+            - img [ref=e1580] [cursor=pointer]
+            - img [ref=e1583] [cursor=pointer]
+            - img [ref=e1586] [cursor=pointer]
+        - generic [ref=e1588]:
+          - checkbox [ref=e1593] [cursor=pointer]
+          - generic [ref=e1596]:
+            - 'link "Lead #28429052" [ref=e1598] [cursor=pointer]':
+              - /url: /leads/detail/28429052
+            - generic [ref=e1599]:
+              - img [ref=e1600]
+              - generic [ref=e1602]: Bate-papo
+          - generic [ref=e1605]: Ana Rodrigues
+          - generic [ref=e1612]: Etapa de leads de entrada
+          - generic [ref=e1614]:
+            - img [ref=e1616] [cursor=pointer]
+            - img [ref=e1619] [cursor=pointer]
+            - img [ref=e1622] [cursor=pointer]
+        - generic [ref=e1624]:
+          - checkbox [ref=e1629] [cursor=pointer]
+          - generic [ref=e1632]:
+            - 'link "Lead #28419606" [ref=e1634] [cursor=pointer]':
+              - /url: /leads/detail/28419606
+            - generic [ref=e1635]:
+              - img [ref=e1636]
+              - generic [ref=e1638]: Bate-papo
+          - generic [ref=e1641]: Raquel Farias
+          - generic [ref=e1648]: Etapa de leads de entrada
+          - generic [ref=e1650]:
+            - img [ref=e1652] [cursor=pointer]
+            - img [ref=e1655] [cursor=pointer]
+            - img [ref=e1658] [cursor=pointer]
+        - generic [ref=e1660]:
+          - checkbox [ref=e1665] [cursor=pointer]
+          - generic [ref=e1668]:
+            - 'link "Lead #28419060" [ref=e1670] [cursor=pointer]':
+              - /url: /leads/detail/28419060
+            - generic [ref=e1671]:
+              - img [ref=e1672]
+              - generic [ref=e1674]: Bate-papo
+          - generic [ref=e1677]: Diego Duarte
+          - generic [ref=e1684]: Etapa de leads de entrada
+          - generic [ref=e1686]:
+            - img [ref=e1688] [cursor=pointer]
+            - img [ref=e1691] [cursor=pointer]
+            - img [ref=e1694] [cursor=pointer]
+        - generic [ref=e1696]:
+          - checkbox [ref=e1701] [cursor=pointer]
+          - generic [ref=e1704]:
+            - 'link "Lead #28417936" [ref=e1706] [cursor=pointer]':
+              - /url: /leads/detail/28417936
+            - generic [ref=e1707]:
+              - img [ref=e1708]
+              - generic [ref=e1710]: Bate-papo
+          - generic [ref=e1713]: Gabi
+          - generic [ref=e1720]: Etapa de leads de entrada
+          - generic [ref=e1722]:
+            - img [ref=e1724] [cursor=pointer]
+            - img [ref=e1727] [cursor=pointer]
+            - img [ref=e1730] [cursor=pointer]
+        - generic [ref=e1732]:
+          - checkbox [ref=e1737] [cursor=pointer]
+          - generic [ref=e1740]:
+            - 'link "Lead #28417466" [ref=e1742] [cursor=pointer]':
+              - /url: /leads/detail/28417466
+            - generic [ref=e1743]:
+              - img [ref=e1744]
+              - generic [ref=e1746]: Bate-papo
+          - generic [ref=e1749]: Guilherme •
+          - generic [ref=e1756]: Etapa de leads de entrada
+          - generic [ref=e1758]:
+            - img [ref=e1760] [cursor=pointer]
+            - img [ref=e1763] [cursor=pointer]
+            - img [ref=e1766] [cursor=pointer]
+        - generic [ref=e1768]:
+          - checkbox [ref=e1773] [cursor=pointer]
+          - generic [ref=e1776]:
+            - 'link "Lead #28415854" [ref=e1778] [cursor=pointer]':
+              - /url: /leads/detail/28415854
+            - generic [ref=e1779]:
+              - img [ref=e1780]
+              - generic [ref=e1782]: Bate-papo
+          - generic [ref=e1785]: Hanna Ropke
+          - generic [ref=e1792]: Etapa de leads de entrada
+          - generic [ref=e1794]:
+            - img [ref=e1796] [cursor=pointer]
+            - img [ref=e1799] [cursor=pointer]
+            - img [ref=e1802] [cursor=pointer]
+        - generic [ref=e1804]:
+          - checkbox [ref=e1809] [cursor=pointer]
+          - generic [ref=e1812]:
+            - 'link "Lead #28410662" [ref=e1814] [cursor=pointer]':
+              - /url: /leads/detail/28410662
+            - generic [ref=e1815]:
+              - img [ref=e1816]
+              - generic [ref=e1818]: Bate-papo
+          - generic [ref=e1821]: ~vd
+          - generic [ref=e1828]: Etapa de leads de entrada
+          - generic [ref=e1830]:
+            - img [ref=e1832] [cursor=pointer]
+            - img [ref=e1835] [cursor=pointer]
+            - img [ref=e1838] [cursor=pointer]
+        - generic [ref=e1840]:
+          - checkbox [ref=e1845] [cursor=pointer]
+          - generic [ref=e1848]:
+            - 'link "Lead #28410372" [ref=e1850] [cursor=pointer]':
+              - /url: /leads/detail/28410372
+            - generic [ref=e1851]:
+              - img [ref=e1852]
+              - generic [ref=e1854]: Bate-papo
+          - generic [ref=e1857]: Daniela Lopes
+          - generic [ref=e1864]: Etapa de leads de entrada
+          - generic [ref=e1866]:
+            - img [ref=e1868] [cursor=pointer]
+            - img [ref=e1871] [cursor=pointer]
+            - img [ref=e1874] [cursor=pointer]
+        - generic [ref=e1876]:
+          - checkbox [ref=e1881] [cursor=pointer]
+          - generic [ref=e1884]:
+            - 'link "Lead #28408552" [ref=e1886] [cursor=pointer]':
+              - /url: /leads/detail/28408552
+            - generic [ref=e1887]:
+              - img [ref=e1888]
+              - generic [ref=e1890]: Bate-papo
+          - generic [ref=e1893]: a.r
+          - generic [ref=e1900]: Etapa de leads de entrada
+          - generic [ref=e1902]:
+            - img [ref=e1904] [cursor=pointer]
+            - img [ref=e1907] [cursor=pointer]
+            - img [ref=e1910] [cursor=pointer]
+        - generic [ref=e1912]:
+          - checkbox [ref=e1917] [cursor=pointer]
+          - generic [ref=e1920]:
+            - 'link "Lead #28405750" [ref=e1922] [cursor=pointer]':
+              - /url: /leads/detail/28405750
+            - generic [ref=e1923]:
+              - img [ref=e1924]
+              - generic [ref=e1926]: Bate-papo
+          - generic [ref=e1929]: Raquel
+          - generic [ref=e1936]: Etapa de leads de entrada
+          - generic [ref=e1938]:
+            - img [ref=e1940] [cursor=pointer]
+            - img [ref=e1943] [cursor=pointer]
+            - img [ref=e1946] [cursor=pointer]
+        - generic [ref=e1948]:
+          - checkbox [ref=e1953] [cursor=pointer]
+          - generic [ref=e1956]:
+            - 'link "Lead #28405308" [ref=e1958] [cursor=pointer]':
+              - /url: /leads/detail/28405308
+            - generic [ref=e1959]:
+              - img [ref=e1960]
+              - generic [ref=e1962]: Bate-papo
+          - generic [ref=e1965]: Bruna Ramos
+          - generic [ref=e1972]: Etapa de leads de entrada
+          - generic [ref=e1974]:
+            - img [ref=e1976] [cursor=pointer]
+            - img [ref=e1979] [cursor=pointer]
+            - img [ref=e1982] [cursor=pointer]
+        - generic [ref=e1984]:
+          - checkbox [ref=e1989] [cursor=pointer]
+          - generic [ref=e1992]:
+            - 'link "Lead #28405218" [ref=e1994] [cursor=pointer]':
+              - /url: /leads/detail/28405218
+            - generic [ref=e1995]:
+              - img [ref=e1996]
+              - generic [ref=e1998]: Bate-papo
+          - generic [ref=e2001]: ...
+          - generic [ref=e2008]: Etapa de leads de entrada
+          - generic [ref=e2010]:
+            - img [ref=e2012] [cursor=pointer]
+            - img [ref=e2015] [cursor=pointer]
+            - img [ref=e2018] [cursor=pointer]
+        - generic [ref=e2020]:
+          - checkbox [ref=e2025] [cursor=pointer]
+          - generic [ref=e2028]:
+            - 'link "Lead #28405024" [ref=e2030] [cursor=pointer]':
+              - /url: /leads/detail/28405024
+            - generic [ref=e2031]:
+              - img [ref=e2032]
+              - generic [ref=e2034]: Bate-papo
+          - generic [ref=e2037]: Helo
+          - generic [ref=e2044]: Etapa de leads de entrada
+          - generic [ref=e2046]:
+            - img [ref=e2048] [cursor=pointer]
+            - img [ref=e2051] [cursor=pointer]
+            - img [ref=e2054] [cursor=pointer]
+        - generic [ref=e2056]:
+          - checkbox [ref=e2061] [cursor=pointer]
+          - generic [ref=e2064]:
+            - 'link "Lead #28400660" [ref=e2066] [cursor=pointer]':
+              - /url: /leads/detail/28400660
+            - generic [ref=e2067]:
+              - img [ref=e2068]
+              - generic [ref=e2070]: Bate-papo
+          - generic [ref=e2073]: Scheila
+          - generic [ref=e2080]: Etapa de leads de entrada
+          - generic [ref=e2082]:
+            - img [ref=e2084] [cursor=pointer]
+            - img [ref=e2087] [cursor=pointer]
+            - img [ref=e2090] [cursor=pointer]
+        - generic [ref=e2092]:
+          - checkbox [ref=e2097] [cursor=pointer]
+          - generic [ref=e2101]:
+            - generic "Nenhuma tarefa atribuída" [ref=e2103]
+            - 'link "Lead #28399534" [ref=e2104] [cursor=pointer]':
+              - /url: /leads/detail/28399534
+          - link "Julio Franco" [ref=e2110] [cursor=pointer]:
+            - /url: /contacts/detail/33847946
+          - generic [ref=e2117]: Primeiro Contato
+          - generic [ref=e2120]: "0"
+        - generic [ref=e2121]:
+          - checkbox [ref=e2126] [cursor=pointer]
+          - generic [ref=e2130]:
+            - generic "Nenhuma tarefa atribuída" [ref=e2132]
+            - 'link "Lead #28399372" [ref=e2133] [cursor=pointer]':
+              - /url: /leads/detail/28399372
+          - link "Meira Letícia" [ref=e2139] [cursor=pointer]:
+            - /url: /contacts/detail/33847786
+          - generic [ref=e2146]: Qualificado
+          - generic [ref=e2149]: "0"
+        - generic [ref=e2150]:
+          - checkbox [ref=e2155] [cursor=pointer]
+          - generic [ref=e2159]:
+            - generic "Nenhuma tarefa atribuída" [ref=e2161]
+            - 'link "Lead #28376370" [ref=e2162] [cursor=pointer]':
+              - /url: /leads/detail/28376370
+          - link "Junior" [ref=e2168] [cursor=pointer]:
+            - /url: /contacts/detail/33815960
+          - generic [ref=e2175]: Primeiro Contato
+          - generic [ref=e2178]: "0"
+    - generic [ref=e2180]:
+      - generic [ref=e2181]:
+        - img [ref=e2183] [cursor=pointer]
+        - img [ref=e2186] [cursor=pointer]
+      - generic [ref=e2188]:
+        - link "1" [ref=e2190] [cursor=pointer]:
+          - /url: "#"
+        - link "2" [ref=e2192] [cursor=pointer]:
+          - /url: "#"
+        - link "3" [ref=e2194] [cursor=pointer]:
+          - /url: "#"
+        - link "4" [ref=e2196] [cursor=pointer]:
+          - /url: "#"
+        - link "5" [ref=e2198] [cursor=pointer]:
+          - /url: "#"
+        - generic [ref=e2199]: ...
+        - link "18" [ref=e2201] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e2203]: ← Ctrl →
+      - generic [ref=e2204]:
+        - paragraph [ref=e2206]: "Mostrar linhas:"
+        - button "50" [ref=e2209] [cursor=pointer]

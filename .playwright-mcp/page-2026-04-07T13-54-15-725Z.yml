@@ -1,0 +1,102 @@
+- generic [ref=e4]:
+  - button "Skip to main content" [ref=e5]
+  - generic [ref=e7]:
+    - paragraph [ref=e8]:
+      - text: We have updated our
+      - link "Terms of Service" [ref=e9] [cursor=pointer]:
+        - /url: https://ai.google.dev/gemini-api/terms
+    - button "Dismiss" [ref=e10] [cursor=pointer]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - button "Toggle navigation menu" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: menu_open
+      - generic [ref=e15]:
+        - generic [ref=e17]:
+          - link "Google AI Studio logo" [ref=e18] [cursor=pointer]:
+            - /url: /app/prompts/new_chat
+            - img "Google AI Studio logo" [ref=e20]
+          - button "View related products" [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]: expand_more
+        - navigation [ref=e37]:
+          - generic [ref=e38]:
+            - link "Dashboard" [ref=e39] [cursor=pointer]:
+              - /url: /app/prompts/new_chat
+              - generic [ref=e40]: chevron_left
+              - text: Dashboard
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Chaves de API" [ref=e44] [cursor=pointer]:
+                  - /url: /app/api-keys
+              - listitem [ref=e45]:
+                - link "Projetos" [ref=e46] [cursor=pointer]:
+                  - /url: /app/projects
+              - listitem [ref=e47]:
+                - link "Uso" [ref=e48] [cursor=pointer]:
+                  - /url: /app/usage
+              - listitem [ref=e49]:
+                - link "Limite de taxa" [ref=e50] [cursor=pointer]:
+                  - /url: /app/rate-limit
+              - listitem [ref=e51]:
+                - link "Gasto" [ref=e52] [cursor=pointer]:
+                  - /url: /app/spend
+              - listitem [ref=e53]:
+                - link "Faturamento" [ref=e54] [cursor=pointer]:
+                  - /url: /app/billing
+              - listitem [ref=e55]:
+                - link "Registros e conjuntos de dados" [ref=e56] [cursor=pointer]:
+                  - /url: /app/logs
+              - listitem [ref=e57]:
+                - link "Registro de alterações" [ref=e58] [cursor=pointer]:
+                  - /url: https://ai.google.dev/gemini-api/docs/changelog
+                  - text: Registro de alterações
+                  - generic [ref=e59]: arrow_outward
+          - generic [ref=e60]:
+            - button "Search Ctrl /" [ref=e61] [cursor=pointer]:
+              - generic [ref=e62]: search
+              - generic [ref=e63]: Search
+              - generic [ref=e64]: Ctrl /
+            - button "What's new" [ref=e66] [cursor=pointer]:
+              - generic [ref=e67]: notifications
+              - text: What's new
+            - button "Get API key" [ref=e69] [cursor=pointer]:
+              - generic [ref=e70]: key
+              - text: Get API key
+            - button "Settings" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: settings
+              - text: Settings
+            - generic [ref=e74]:
+              - button "passoapassouniformes2025@gmail.com" [ref=e75] [cursor=pointer]:
+                - generic [ref=e76]: passoapassouniformes2025@gmail.com
+              - 'button "Conta do Google: ()" [ref=e79] [cursor=pointer]':
+                - img "Profile photo" [ref=e80]
+    - main [ref=e82]:
+      - generic [ref=e87]:
+        - generic [ref=e89]:
+          - heading "Chaves de API" [level=2] [ref=e90]
+          - generic [ref=e91]:
+            - link "Guia de início rápido da API" [ref=e92] [cursor=pointer]:
+              - /url: https://ai.google.dev/gemini-api/docs/quickstart
+              - generic [ref=e93]: docs
+              - text: Guia de início rápido da API
+            - button "Criar chave de API" [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: key
+              - text: Criar chave de API
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: Agrupar por
+            - generic [ref=e99]:
+              - button "Chave de API" [ref=e100] [cursor=pointer]
+              - button "Projeto" [ref=e101] [cursor=pointer]
+          - generic [ref=e102]:
+            - generic [ref=e103]: Filtrar por
+            - generic "Filtro de projeto" [ref=e104]:
+              - combobox "Todos os projetos" [ref=e108] [cursor=pointer]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: Todos os projetos
+                  - generic [ref=e111]: expand_more
+        - progressbar [ref=e113]:
+          - img [ref=e115]
+          - generic [ref=e118]:
+            - img [ref=e120]
+            - img [ref=e123]
+            - img [ref=e126]

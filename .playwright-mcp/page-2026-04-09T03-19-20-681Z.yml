@@ -1,0 +1,80 @@
+- generic [ref=e1]:
+  - button [ref=e99] [cursor=pointer]:
+    - generic [ref=e7]: Pular para o conteúdo principal
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e100] [cursor=pointer]:
+        - /url: /?tab=kk
+        - generic [ref=e15]: Conta
+      - generic [ref=e22]:
+        - button [ref=e101] [cursor=pointer]:
+          - img [ref=e26]
+        - tooltip [ref=e29]: Ajuda
+      - generic [ref=e31]:
+        - button [ref=e102] [cursor=pointer]:
+          - img [ref=e36]
+        - button [ref=e103] [cursor=pointer]:
+          - img [ref=e43]
+  - generic [ref=e47]:
+    - navigation [ref=e49]:
+      - generic [ref=e51]:
+        - button [ref=e104] [cursor=pointer]:
+          - img [ref=e54]
+        - tooltip [ref=e57]: Voltar à página anterior
+      - heading [level=1] [ref=e105]: Senhas de app
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: As senhas de app ajudam a fazer login na sua Conta do Google em apps e serviços mais antigos que não oferecem suporte aos padrões de segurança modernos.
+          - paragraph [ref=e69]: As senhas de app são menos seguras do que usar apps e serviços atualizados com padrões de segurança modernos. Antes de criar uma senha, verifique se o app precisa disso para fazer login.
+          - link [ref=e106] [cursor=pointer]:
+            - /url: https://support.google.com/accounts/answer/185833?hl=pt_BR
+            - text: Saiba mais
+        - generic [ref=e72]:
+          - generic [ref=e108]:
+            - heading [level=2] [ref=e109]: Suas senhas de app
+            - list [ref=e110]:
+              - listitem [ref=e112]:
+                - generic [ref=e113]:
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: PassoaPasso Stories
+                    - generic [ref=e116]: Criada em 00:19
+                  - button [ref=e119] [cursor=pointer]:
+                    - img [ref=e122]
+          - generic [ref=e76]:
+            - paragraph [ref=e77]: Para criar uma senha específica para um app, digite o nome dele abaixo…
+            - generic [ref=e81]:
+              - generic: Nome do app
+              - generic: Nome do app
+              - textbox [ref=e126]
+            - generic [ref=e89]:
+              - button [disabled]:
+                - generic: Criar
+  - contentinfo [ref=e91]:
+    - link [ref=e127] [cursor=pointer]:
+      - /url: https://policies.google.com/privacy
+      - text: Privacidade
+    - link [ref=e128] [cursor=pointer]:
+      - /url: https://policies.google.com/terms
+      - text: Termos
+    - link [ref=e129] [cursor=pointer]:
+      - /url: https://support.google.com/accounts
+      - text: Ajuda
+    - link [ref=e130] [cursor=pointer]:
+      - /url: https://www.google.com/account/about
+      - text: Sobre
+  - dialog "Senha de app gerada" [ref=e132]:
+    - heading "Senha de app gerada" [level=2] [ref=e133]:
+      - generic [ref=e134]: Senha de app gerada
+    - main [ref=e136]:
+      - text: Sua senha de app para seu dispositivo
+      - article [ref=e138]:
+        - heading "ftho kgkl fblc uuls" [level=2] [ref=e141]:
+          - strong [ref=e143]:
+            - generic [ref=e144]: ftho kgkl fblc uuls
+      - generic [ref=e145]:
+        - generic [ref=e146]: Como usar
+        - text: Acesse as configurações da sua Conta do Google no aplicativo ou dispositivo que você está tentando configurar. Substitua sua senha pela senha de 16 caracteres mostrada acima.
+        - paragraph [ref=e147]: Assim como sua senha normal, esta senha de app concede acesso total à sua Conta do Google. Não é necessário memorizá-la, por isso não a anote ou a compartilhe com outras pessoas.
+    - button "Concluído" [active] [ref=e150] [cursor=pointer]:
+      - generic [ref=e152]: Concluído

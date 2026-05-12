@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Barra de ferramentas":
+      - menu:
+        - group [ref=e3]:
+          - menuitem "Sobre o WordPress" [ref=e4] [cursor=pointer]:
+            - generic [ref=e6]: Sobre o WordPress
+        - group [ref=e7]:
+          - menuitem "Passo a Passo Uniformes" [ref=e8] [cursor=pointer]
+        - group [ref=e9]:
+          - menuitem "Personalizar" [ref=e10] [cursor=pointer]
+        - group [ref=e11]:
+          - menuitem "7 atualizações disponíveis" [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: "7"
+            - generic [ref=e15]: 7 atualizações disponíveis
+        - group [ref=e16]:
+          - menuitem "0 comentário esperando moderação" [ref=e17] [cursor=pointer]:
+            - generic [ref=e19]: "0"
+            - generic [ref=e20]: 0 comentário esperando moderação
+        - group [ref=e21]:
+          - menuitem "Novo" [ref=e22] [cursor=pointer]:
+            - generic [ref=e24]: Novo
+        - group [ref=e25]:
+          - menuitem "Editar página" [ref=e26] [cursor=pointer]
+        - text:   
+      - menu [ref=e27]:
+        - group [ref=e28]:
+          - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e29] [cursor=pointer]
+  - generic [ref=e32]:
+    - banner [ref=e33]:
+      - generic [ref=e34]:
+        - link "Passo a Passo" [ref=e35] [cursor=pointer]:
+          - /url: index.html
+        - link "Solicitar Orçamento" [ref=e36] [cursor=pointer]:
+          - /url: https://wa.me/5500000000000
+    - main [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - img "Uniformes Passo a Passo" [ref=e40]
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: 30 Anos no Mercado
+            - heading "vista sua ideia." [level=1] [ref=e44]:
+              - text: vista
+              - text: sua ideia.
+            - link "Ver Catálogo →" [ref=e45] [cursor=pointer]:
+              - /url: linha-escolar.html
+        - generic [ref=e46]:
+          - img "Linha Empresarial" [ref=e47]
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: +15 Mil Clientes Atendidos
+            - heading "do tecido ao time." [level=1] [ref=e51]:
+              - text: do tecido
+              - text: ao time.
+            - link "Linha Empresarial →" [ref=e52] [cursor=pointer]:
+              - /url: linha-empresarial.html
+        - generic [ref=e53]:
+          - img "Linha Esportes" [ref=e54]
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Linha Jogo · Fitness · Esporte
+            - heading "jogue com tudo." [level=1] [ref=e58]:
+              - text: jogue
+              - text: com tudo.
+            - link "Linha Esportes →" [ref=e59] [cursor=pointer]:
+              - /url: linha-esportes.html
+        - generic [ref=e60]:
+          - button [ref=e61] [cursor=pointer]
+          - button [ref=e62] [cursor=pointer]
+          - button [ref=e63] [cursor=pointer]
+        - button "←" [ref=e64] [cursor=pointer]
+        - button "→" [ref=e65] [cursor=pointer]
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - heading "Kits Escolares Essenciais" [level=2] [ref=e69]
+            - paragraph [ref=e70]: Selecione as melhores combinações para o dia a dia.
+          - generic [ref=e71]:
+            - button "chevron_left" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: chevron_left
+            - button "chevron_right" [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: chevron_right
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - img "Kit Verão" [ref=e79]
+              - generic [ref=e80]: Mais Vendido
+            - heading "Kit Fundamental Verão" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Polo branca + Bermuda tactel
+            - generic [ref=e83]:
+              - generic [ref=e84]: R$ 189,90
+              - button "add_shopping_cart Comprar" [ref=e85] [cursor=pointer]:
+                - generic [ref=e86]: add_shopping_cart
+                - text: Comprar
+          - generic [ref=e87]:
+            - img "Kit Inverno" [ref=e89]
+            - heading "Kit Agasalho Completo" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Jaqueta moletom + Calça
+            - generic [ref=e92]:
+              - generic [ref=e93]: R$ 315,00
+              - button "add_shopping_cart Comprar" [ref=e94] [cursor=pointer]:
+                - generic [ref=e95]: add_shopping_cart
+                - text: Comprar
+          - generic [ref=e96]:
+            - img "Kit Kids" [ref=e98]
+            - heading "Kit Educação Infantil" [level=3] [ref=e99]
+            - paragraph [ref=e100]: T-shirt Algodão + Short/Saia
+            - generic [ref=e101]:
+              - generic [ref=e102]: R$ 145,00
+              - button "add_shopping_cart Comprar" [ref=e103] [cursor=pointer]:
+                - generic [ref=e104]: add_shopping_cart
+                - text: Comprar
+      - generic [ref=e106]:
+        - generic [ref=e108]:
+          - img "Bordado" [ref=e109]
+          - img "Personalização" [ref=e110]
+        - generic [ref=e111]:
+          - heading "Uniforme com a Logomarca da Sua Escola" [level=2] [ref=e112]
+          - paragraph [ref=e113]: Atendemos instituições de ensino com soluções personalizadas. Do bordado eletrônico de alta definição à serigrafia durável, garantimos a identidade visual da sua escola em cada peça.
+          - list [ref=e114]:
+            - listitem [ref=e115]:
+              - generic [ref=e116]: check_circle
+              - generic [ref=e117]: Bordados computadorizados ultra-resistentes
+            - listitem [ref=e118]:
+              - generic [ref=e119]: check_circle
+              - generic [ref=e120]: Tecidos tecnológicos com proteção UV
+            - listitem [ref=e121]:
+              - generic [ref=e122]: check_circle
+              - generic [ref=e123]: Consultoria de design e modelagem exclusiva
+          - button "Solicitar Orçamento Personalizado" [ref=e124] [cursor=pointer]
+      - generic [ref=e126]:
+        - heading "Receba as novidades da volta às aulas" [level=2] [ref=e127]
+        - paragraph [ref=e128]: Cadastre seu e-mail para receber descontos exclusivos em kits de uniforme.
+        - generic [ref=e129]:
+          - textbox "Seu melhor e-mail" [ref=e130]
+          - button "Inscrever agora" [ref=e131] [cursor=pointer]
+    - contentinfo [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]: Passo a Passo
+          - paragraph [ref=e136]: Qualidade e tradição em uniformes escolares desde 1998.
+        - generic [ref=e137]:
+          - link "Polética de Privacidade" [ref=e138] [cursor=pointer]:
+            - /url: "#"
+          - link "Termos de Uso" [ref=e139] [cursor=pointer]:
+            - /url: "#"
+          - link "Trocas e Devoluções" [ref=e140] [cursor=pointer]:
+            - /url: "#"
+          - link "Guia de Tamanhos" [ref=e141] [cursor=pointer]:
+            - /url: "#"
+        - paragraph [ref=e142]: © 2024 Passo a Passo Uniformes Escolares. Todos os direitos reservados.
+    - link "Fale Conosco" [ref=e143] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e144]:
+        - img [ref=e146]
+        - generic: Fale Conosco
+  - generic [ref=e148]: mobile
+  - status [ref=e149]

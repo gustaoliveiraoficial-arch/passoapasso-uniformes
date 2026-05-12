@@ -1,0 +1,83 @@
+name: editar-pasta
+description: Workflow completo para editar um projeto de vídeo de uma pasta
+version: 1.0.0
+
+trigger:
+  command: "*editar-pasta"
+  args:
+    - name: pasta_projeto
+      type: string
+      required: true
+      description: "Caminho absoluto para a pasta do projeto"
+    - name: qualidade
+      type: string
+      required: false
+      default: "1080p"
+      options: ["720p", "1080p", "4K"]
+
+steps:
+  - id: fase-1-leitura
+    name: "📂 Ler Projeto"
+    agent: leitor-pasta
+    task: ler-projeto.md
+    inputs:
+      pasta_projeto: "{{pasta_projeto}}"
+    outputs:
+      - projeto_mapeado
+    on_error: stop
+
+  - id: fase-2-importacao
+    name: "🎬 Importar Takes no CapCut"
+    agent: editor-capcut
+    task: importar-takes-capcut.md
+    depends_on: [fase-1-leitura]
+    inputs:
+      projeto_mapeado: "{{fase-1-leitura.projeto_mapeado}}"
+      nome_projeto: "{{pasta_projeto | basename}}"
+    outputs:
+      - takes_importados
+    on_error: stop
+
+  - id: fase-3-edicao
+    name: "✂️ Aplicar Edição Conforme Roteiro"
+    agent: editor-capcut
+    task: aplicar-edicao-roteiro.md
+    depends_on: [fase-2-importacao]
+    inputs:
+      projeto_mapeado: "{{fase-1-leitura.projeto_mapeado}}"
+      takes_importados: "{{fase-2-importacao.takes_importados}}"
+    outputs:
+      - edicao_completa
+    on_error: stop
+
+  - id: fase-4-exportacao
+    name: "📤 Exportar Vídeo Final"
+    agent: editor-capcut
+    task: exportar-video.md
+    depends_on: [fase-3-edicao]
+    inputs:
+      pasta_projeto: "{{pasta_projeto}}"
+      qualidade: "{{qualidade}}"
+    outputs:
+      - video_exportado
+    on_error: stop
+
+  - id: fase-5-revisao
+    name: "✅ Revisão de Qualidade"
+    agent: revisor-video
+    task: null  # Revisão inline
+    depends_on: [fase-4-exportacao]
+    inputs:
+      pasta_projeto: "{{pasta_projeto}}"
+      video_exportado: "{{fase-4-exportacao.video_exportado}}"
+    outputs:
+      - status_revisao
+      - score_qualidade
+    on_error: warn  # Não bloqueia, apenas avisa
+
+completion:
+  message: |
+    ✅ Pipeline concluído!
+    Vídeo: {{fase-4-exportacao.video_exportado}}
+    Score: {{fase-5-revisao.score_qualidade}}/100
+    Status: {{fase-5-revisao.status_revisao}}

@@ -1,0 +1,11 @@
+Options -MultiViews
+DirectoryIndex index.html index.php
+RewriteEngine On
+
+# Serve existing files/dirs directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Fallback to index.html
+RewriteRule ^ /index.html [L]

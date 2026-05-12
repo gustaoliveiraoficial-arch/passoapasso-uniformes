@@ -1,0 +1,633 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - button "Ajuda" [ref=e37] [cursor=pointer]
+          - generic [ref=e38]:
+            - heading "Instalar plugins" [level=1] [ref=e39]
+            - button "Enviar plugin" [ref=e40] [cursor=pointer]
+            - generic [ref=e43]:
+              - button "Dismiss this notice." [ref=e44] [cursor=pointer]:
+                - generic [ref=e45]: Dismiss this notice.
+              - generic [ref=e46]:
+                - generic [ref=e47]:
+                  - heading "Welcome to Hello Biz" [level=6] [ref=e48]
+                  - paragraph [ref=e49]: Access the full suite of features, including website templates, header and footer templates, and extra widgets.
+                  - link "Begin setup" [ref=e50] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=hello-biz&start-install=true
+                  - paragraph [ref=e51]: By clicking "Begin setup" I agree to install and activate the Hello+ plugin.
+                - img [ref=e52]
+            - heading "Filtrar lista de plugins" [level=2] [ref=e53]
+            - paragraph [ref=e54]:
+              - text: Plugins estendem e expandem a funcionalidade do WordPress. Você pode instalar automaticamente plugins do
+              - link "diretório de plugins do WordPress" [ref=e55] [cursor=pointer]:
+                - /url: https://br.wordpress.org/plugins/
+              - text: ou enviar um plugin no formato .zip clicando no botão na parte superior desta página.
+            - generic [ref=e56]:
+              - list [ref=e57]:
+                - listitem [ref=e58]:
+                  - link "Destaques" [ref=e59] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=featured
+                - listitem [ref=e60]:
+                  - link "Populares" [ref=e61] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=popular
+                - listitem [ref=e62]:
+                  - link "Recomendado" [ref=e63] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=recommended
+                - listitem [ref=e64]:
+                  - link "Favoritos" [ref=e65] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=favorites
+                - listitem [ref=e66]:
+                  - link "Para o Elementor" [ref=e67] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=elementor
+                - listitem [ref=e68]:
+                  - link "WooCommerce Marketplace" [ref=e69] [cursor=pointer]:
+                    - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=woo
+              - generic [ref=e70]:
+                - generic [ref=e71]: Pesquisar plugins
+                - searchbox "Pesquisar plugins" [ref=e72]
+                - generic [ref=e73]: "Pesquisar plugins por:"
+                - combobox "Pesquisar plugins por:" [ref=e74] [cursor=pointer]:
+                  - option "Palavra-chave" [selected]
+                  - option "Autor"
+                  - option "Tag"
+            - generic [ref=e76]:
+              - heading "Lista de plugins" [level=2] [ref=e77]
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]:
+                    - heading "GT Link Manager" [level=3] [ref=e82]:
+                      - link "GT Link Manager" [ref=e83] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=gt-link-manager&TB_iframe=true&width=600&height=550
+                    - list [ref=e85]:
+                      - listitem [ref=e86]:
+                        - button "Instale GT Link Manager 1.6.1 agora" [ref=e87] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e88]:
+                        - link "Mais informações sobre GT Link Manager 1.6.1" [ref=e89] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=gt-link-manager&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e90]:
+                      - paragraph [ref=e91]: Fast, free branded link manager with custom database tables, early redirects, CSV import/export, and block editor integration.
+                      - paragraph [ref=e92]:
+                        - generic [ref=e93]:
+                          - text: Por
+                          - link "Gaurav Tiwari" [ref=e94] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/gauravtiwari/
+                  - generic [ref=e95]:
+                    - generic [ref=e96]:
+                      - generic [ref=e98]: 5,0 avaliação baseada em 1 avaliação
+                      - text: (1)
+                    - generic [ref=e104]:
+                      - strong [ref=e105]: "Última atualização:"
+                      - text: 1 semana atrás
+                    - generic [ref=e106]: 100+ instalações ativas
+                    - generic [ref=e108]:
+                      - strong [ref=e109]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e110]:
+                  - generic [ref=e111]:
+                    - heading "Flavor Block Visibility" [level=3] [ref=e113]:
+                      - link "Flavor Block Visibility" [ref=e114] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=flavor-block-visibility&TB_iframe=true&width=600&height=550
+                    - list [ref=e116]:
+                      - listitem [ref=e117]:
+                        - button "Instale Flavor Block Visibility 1.1.0 agora" [ref=e118] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e119]:
+                        - link "Mais informações sobre Flavor Block Visibility 1.1.0" [ref=e120] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=flavor-block-visibility&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e121]:
+                      - paragraph [ref=e122]: Adds responsive visibility toggles to every Gutenberg block. Hide blocks on Desktop, Tablet, or Mobile right from the Advanced panel.
+                      - paragraph [ref=e123]:
+                        - generic [ref=e124]:
+                          - text: Por
+                          - link "Vlad Zelinskyi" [ref=e125] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/wpspacenerd/
+                  - generic [ref=e126]:
+                    - generic [ref=e127]:
+                      - generic [ref=e129]: 0,0 avaliação
+                      - text: (0)
+                    - generic [ref=e135]:
+                      - strong [ref=e136]: "Última atualização:"
+                      - text: 3 dias atrás
+                    - generic [ref=e137]: 80+ instalações ativas
+                    - generic [ref=e139]:
+                      - strong [ref=e140]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e141]:
+                  - generic [ref=e142]:
+                    - heading "PressPrimer Quiz – AI Quiz Maker, Exam Builder & LMS Assessment Plugin" [level=3] [ref=e144]:
+                      - link "PressPrimer Quiz – AI Quiz Maker, Exam Builder & LMS Assessment Plugin" [ref=e145] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=pressprimer-quiz&TB_iframe=true&width=600&height=550
+                    - list [ref=e147]:
+                      - listitem [ref=e148]:
+                        - button "Instale PressPrimer Quiz – AI Quiz Maker, Exam Builder & LMS Assessment Plugin 2.2.1 agora" [ref=e149] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e150]:
+                        - link "Mais informações sobre PressPrimer Quiz – AI Quiz Maker, Exam Builder & LMS Assessment Plugin 2.2.1" [ref=e151] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=pressprimer-quiz&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e152]:
+                      - paragraph [ref=e153]: Enterprise-grade quiz builder plugin with AI question generation, LMS integration, and beautiful themes. Free forever.
+                      - paragraph [ref=e154]:
+                        - generic [ref=e155]:
+                          - text: Por
+                          - link "PressPrimer" [ref=e156] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/pressprimer/
+                  - generic [ref=e157]:
+                    - generic [ref=e158]:
+                      - generic [ref=e160]: 5,0 avaliação baseada em 1 avaliação
+                      - text: (1)
+                    - generic [ref=e166]:
+                      - strong [ref=e167]: "Última atualização:"
+                      - text: 6 dias atrás
+                    - generic [ref=e168]: 100+ instalações ativas
+                    - generic [ref=e170]:
+                      - strong [ref=e171]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e172]:
+                  - generic [ref=e173]:
+                    - heading "IfElse Pages – Coming Soon and Maintenance Mode" [level=3] [ref=e175]:
+                      - link "IfElse Pages – Coming Soon and Maintenance Mode" [ref=e176] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=ifelse-pages-coming-soon-and-maintenance-mode&TB_iframe=true&width=600&height=550
+                    - list [ref=e178]:
+                      - listitem [ref=e179]:
+                        - button "Instale IfElse Pages – Coming Soon and Maintenance Mode 1.0.0 agora" [ref=e180] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e181]:
+                        - link "Mais informações sobre IfElse Pages – Coming Soon and Maintenance Mode 1.0.0" [ref=e182] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=ifelse-pages-coming-soon-and-maintenance-mode&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e183]:
+                      - paragraph [ref=e184]: A lightweight plugin to display Coming Soon, Maintenance, or Landing Page screens to visitors while you work on your site.
+                      - paragraph [ref=e185]:
+                        - generic [ref=e186]:
+                          - text: Por
+                          - link "Zulkaif Riaz" [ref=e187] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/zulkaifriaz/
+                  - generic [ref=e188]:
+                    - generic [ref=e189]:
+                      - generic [ref=e191]: 5,0 avaliação baseada em 2 avaliações
+                      - text: (2)
+                    - generic [ref=e197]:
+                      - strong [ref=e198]: "Última atualização:"
+                      - text: 4 semanas atrás
+                    - generic [ref=e199]: 200+ instalações ativas
+                    - generic [ref=e201]:
+                      - strong [ref=e202]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e203]:
+                  - generic [ref=e204]:
+                    - heading "Event Koi Lite – Events Calendar & Event Management Plugin for WordPress" [level=3] [ref=e206]:
+                      - link "Event Koi Lite – Events Calendar & Event Management Plugin for WordPress" [ref=e207] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=eventkoi-lite&TB_iframe=true&width=600&height=550
+                    - list [ref=e209]:
+                      - listitem [ref=e210]:
+                        - button "Instale Event Koi Lite – Events Calendar & Event Management Plugin for WordPress 1.3.0.3 agora" [ref=e211] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e212]:
+                        - link "Mais informações sobre Event Koi Lite – Events Calendar & Event Management Plugin for WordPress 1.3.0.3" [ref=e213] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=eventkoi-lite&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e214]:
+                      - paragraph [ref=e215]: A modern, lightweight WordPress events calendar plugin. Create an events calendar or event list, manage event registration and RSVPs, and track attend …
+                      - paragraph [ref=e216]:
+                        - generic [ref=e217]:
+                          - text: Por
+                          - link "EventKoi" [ref=e218] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/eventkoi/
+                  - generic [ref=e219]:
+                    - generic [ref=e220]:
+                      - generic [ref=e222]: 5,0 avaliação baseada em 5 avaliações
+                      - text: (5)
+                    - generic [ref=e228]:
+                      - strong [ref=e229]: "Última atualização:"
+                      - text: 5 dias atrás
+                    - generic [ref=e230]: 100+ instalações ativas
+                    - generic [ref=e232]:
+                      - strong [ref=e233]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e234]:
+                  - generic [ref=e235]:
+                    - heading "Archivarix Broken Links Recovery" [level=3] [ref=e237]:
+                      - link "Archivarix Broken Links Recovery" [ref=e238] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=archivarix-broken-links-recovery&TB_iframe=true&width=600&height=550
+                    - list [ref=e240]:
+                      - listitem [ref=e241]:
+                        - button "Instale Archivarix Broken Links Recovery 1.0.0 agora" [ref=e242] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e243]:
+                        - link "Mais informações sobre Archivarix Broken Links Recovery 1.0.0" [ref=e244] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=archivarix-broken-links-recovery&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e245]:
+                      - paragraph [ref=e246]: Finds broken external and internal links and replaces them with Web Archive copies or manages them manually.
+                      - paragraph [ref=e247]:
+                        - generic [ref=e248]:
+                          - text: Por
+                          - link "Archivarix Support" [ref=e249] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/archivarixsupport/
+                  - generic [ref=e250]:
+                    - generic [ref=e251]:
+                      - generic [ref=e253]: 0,0 avaliação
+                      - text: (0)
+                    - generic [ref=e259]:
+                      - strong [ref=e260]: "Última atualização:"
+                      - text: 4 semanas atrás
+                    - generic [ref=e261]: 100+ instalações ativas
+                    - generic [ref=e263]:
+                      - strong [ref=e264]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e265]:
+                  - generic [ref=e266]:
+                    - heading "Metro Tabs – Responsive Tabs Block" [level=3] [ref=e268]:
+                      - link "Metro Tabs – Responsive Tabs Block" [ref=e269] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=metro-tabs&TB_iframe=true&width=600&height=550
+                    - list [ref=e271]:
+                      - listitem [ref=e272]:
+                        - button "Instale Metro Tabs – Responsive Tabs Block 1.1.5 agora" [ref=e273] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e274]:
+                        - link "Mais informações sobre Metro Tabs – Responsive Tabs Block 1.1.5" [ref=e275] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=metro-tabs&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e276]:
+                      - paragraph [ref=e277]: "Tab blocks: multiple groups per page, any blocks in each tab. No jQuery, no dependencies."
+                      - paragraph [ref=e278]:
+                        - generic [ref=e279]:
+                          - text: Por
+                          - link "Ciprian Popescu" [ref=e280] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/butterflymedia/
+                  - generic [ref=e281]:
+                    - generic [ref=e282]:
+                      - generic [ref=e284]: 0,0 avaliação
+                      - text: (0)
+                    - generic [ref=e290]:
+                      - strong [ref=e291]: "Última atualização:"
+                      - text: 1 semana atrás
+                    - generic [ref=e292]: 100+ instalações ativas
+                    - generic [ref=e294]:
+                      - strong [ref=e295]: Compatível
+                      - text: com essa versão do WordPress
+                - generic [ref=e296]:
+                  - generic [ref=e297]:
+                    - heading "Trilobita DocVault" [level=3] [ref=e299]:
+                      - link "Trilobita DocVault" [ref=e300] [cursor=pointer]:
+                        - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=trilobita-docvault&TB_iframe=true&width=600&height=550
+                    - list [ref=e302]:
+                      - listitem [ref=e303]:
+                        - button "Instale Trilobita DocVault 1.4.2 agora" [ref=e304] [cursor=pointer]: Instalar agora
+                      - listitem [ref=e305]:
+                        - link "Mais informações sobre Trilobita DocVault 1.4.2" [ref=e306] [cursor=pointer]:
+                          - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=trilobita-docvault&TB_iframe=true&width=600&height=550
+                          - text: Mais detalhes
+                    - generic [ref=e307]:
+                      - paragraph [ref=e308]: Version-controlled document management for WordPress — upload, track, and roll back files with a searchable front-end library.
+                      - paragraph [ref=e309]:
+                        - generic [ref=e310]:
+                          - text: Por
+                          - link "trilobita" [ref=e311] [cursor=pointer]:
+                            - /url: https://profiles.wordpress.org/trilobita/
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic [ref=e315]: 0,0 avaliação
+                      - text: (0)
+                    - generic [ref=e321]:
+                      - strong [ref=e322]: "Última atualização:"
+                      - text: 16 horas atrás
+                    - generic [ref=e323]: 80+ instalações ativas
+                    - generic [ref=e325]:
+                      - strong [ref=e326]: Compatível
+                      - text: com essa versão do WordPress
+            - generic [ref=e327]:
+              - heading "Tags populares" [level=2] [ref=e328]
+              - paragraph [ref=e329]: "Você também pode pesquisar com base nas tags mais populares no diretório de Plugins:"
+              - paragraph [ref=e330]:
+                - link "admin (2.831 plugin)" [ref=e331] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=admin
+                  - text: admin
+                - link "ads (600 plugin)" [ref=e332] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=ads
+                  - text: ads
+                - link "affiliate (672 plugin)" [ref=e333] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=affiliate
+                  - text: affiliate
+                - link "AI (1.147 plugin)" [ref=e334] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=AI
+                  - text: AI
+                - link "ajax (714 plugin)" [ref=e335] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=ajax
+                  - text: ajax
+                - link "analytics (1.182 plugin)" [ref=e336] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=analytics
+                  - text: analytics
+                - link "api (737 plugin)" [ref=e337] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=api
+                  - text: api
+                - link "automation (506 plugin)" [ref=e338] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=automation
+                  - text: automation
+                - link "block (1.146 plugin)" [ref=e339] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=block
+                  - text: block
+                - link "blocks (647 plugin)" [ref=e340] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=blocks
+                  - text: blocks
+                - link "buddypress (787 plugin)" [ref=e341] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=buddypress
+                  - text: buddypress
+                - link "button (570 plugin)" [ref=e342] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=button
+                  - text: button
+                - link "cache (482 plugin)" [ref=e343] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=cache
+                  - text: cache
+                - link "calendar (618 plugin)" [ref=e344] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=calendar
+                  - text: calendar
+                - link "categories (579 plugin)" [ref=e345] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=categories
+                  - text: categories
+                - link "category (712 plugin)" [ref=e346] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=category
+                  - text: category
+                - link "chat (756 plugin)" [ref=e347] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=chat
+                  - text: chat
+                - link "chatbot (566 plugin)" [ref=e348] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=chatbot
+                  - text: chatbot
+                - link "checkout (618 plugin)" [ref=e349] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=checkout
+                  - text: checkout
+                - link "comment (575 plugin)" [ref=e350] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=comment
+                  - text: comment
+                - link "comments (1.979 plugin)" [ref=e351] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=comments
+                  - text: comments
+                - link "contact (628 plugin)" [ref=e352] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=contact
+                  - text: contact
+                - link "contact form (831 plugin)" [ref=e353] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=contact+form
+                  - text: contact form
+                - link "contact form 7 (706 plugin)" [ref=e354] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=contact+form+7
+                  - text: contact form 7
+                - link "content (1.043 plugin)" [ref=e355] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=content
+                  - text: content
+                - link "css (646 plugin)" [ref=e356] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=css
+                  - text: css
+                - link "custom (578 plugin)" [ref=e357] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=custom
+                  - text: custom
+                - link "dashboard (704 plugin)" [ref=e358] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=dashboard
+                  - text: dashboard
+                - link "e-commerce (1.048 plugin)" [ref=e359] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=e-commerce
+                  - text: e-commerce
+                - link "ecommerce (1.761 plugin)" [ref=e360] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=ecommerce
+                  - text: ecommerce
+                - link "editor (845 plugin)" [ref=e361] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=editor
+                  - text: editor
+                - link "elementor (1.129 plugin)" [ref=e362] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=elementor
+                  - text: elementor
+                - link "email (1.560 plugin)" [ref=e363] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=email
+                  - text: email
+                - link "embed (796 plugin)" [ref=e364] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=embed
+                  - text: embed
+                - link "events (643 plugin)" [ref=e365] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=events
+                  - text: events
+                - link "facebook (1.521 plugin)" [ref=e366] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=facebook
+                  - text: facebook
+                - link "feed (735 plugin)" [ref=e367] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=feed
+                  - text: feed
+                - link "form (925 plugin)" [ref=e368] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=form
+                  - text: form
+                - link "forms (656 plugin)" [ref=e369] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=forms
+                  - text: forms
+                - link "gallery (1.398 plugin)" [ref=e370] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=gallery
+                  - text: gallery
+                - link "gateway (503 plugin)" [ref=e371] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=gateway
+                  - text: gateway
+                - link "google (1.572 plugin)" [ref=e372] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=google
+                  - text: google
+                - link "gutenberg (1.193 plugin)" [ref=e373] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=gutenberg
+                  - text: gutenberg
+                - link "image (1.631 plugin)" [ref=e374] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=image
+                  - text: image
+                - link "images (1.700 plugin)" [ref=e375] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=images
+                  - text: images
+                - link "import (515 plugin)" [ref=e376] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=import
+                  - text: import
+                - link "integration (454 plugin)" [ref=e377] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=integration
+                  - text: integration
+                - link "javascript (615 plugin)" [ref=e378] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=javascript
+                  - text: javascript
+                - link "jquery (665 plugin)" [ref=e379] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=jquery
+                  - text: jquery
+                - link "link (628 plugin)" [ref=e380] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=link
+                  - text: link
+                - link "links (957 plugin)" [ref=e381] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=links
+                  - text: links
+                - link "live chat (475 plugin)" [ref=e382] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=live+chat
+                  - text: live chat
+                - link "login (1.327 plugin)" [ref=e383] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=login
+                  - text: login
+                - link "marketing (699 plugin)" [ref=e384] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=marketing
+                  - text: marketing
+                - link "media (948 plugin)" [ref=e385] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=media
+                  - text: media
+                - link "menu (797 plugin)" [ref=e386] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=menu
+                  - text: menu
+                - link "mobile (525 plugin)" [ref=e387] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=mobile
+                  - text: mobile
+                - link "navigation (546 plugin)" [ref=e388] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=navigation
+                  - text: navigation
+                - link "news (452 plugin)" [ref=e389] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=news
+                  - text: news
+                - link "newsletter (544 plugin)" [ref=e390] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=newsletter
+                  - text: newsletter
+                - link "notification (494 plugin)" [ref=e391] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=notification
+                  - text: notification
+                - link "page (1.159 plugin)" [ref=e392] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=page
+                  - text: page
+                - link "pages (756 plugin)" [ref=e393] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=pages
+                  - text: pages
+                - link "payment (1.118 plugin)" [ref=e394] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=payment
+                  - text: payment
+                - link "payment gateway (1.015 plugin)" [ref=e395] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=payment+gateway
+                  - text: payment gateway
+                - link "payments (614 plugin)" [ref=e396] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=payments
+                  - text: payments
+                - link "performance (850 plugin)" [ref=e397] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=performance
+                  - text: performance
+                - link "photo (461 plugin)" [ref=e398] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=photo
+                  - text: photo
+                - link "popup (621 plugin)" [ref=e399] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=popup
+                  - text: popup
+                - link "post (2.799 plugin)" [ref=e400] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=post
+                  - text: post
+                - link "posts (2.169 plugin)" [ref=e401] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=posts
+                  - text: posts
+                - link "products (459 plugin)" [ref=e402] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=products
+                  - text: products
+                - link "redirect (504 plugin)" [ref=e403] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=redirect
+                  - text: redirect
+                - link "responsive (673 plugin)" [ref=e404] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=responsive
+                  - text: responsive
+                - link "rss (784 plugin)" [ref=e405] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=rss
+                  - text: rss
+                - link "search (895 plugin)" [ref=e406] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=search
+                  - text: search
+                - link "security (1.552 plugin)" [ref=e407] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=security
+                  - text: security
+                - link "seo (2.436 plugin)" [ref=e408] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=seo
+                  - text: seo
+                - link "share (618 plugin)" [ref=e409] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=share
+                  - text: share
+                - link "shipping (742 plugin)" [ref=e410] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=shipping
+                  - text: shipping
+                - link "shortcode (2.199 plugin)" [ref=e411] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=shortcode
+                  - text: shortcode
+                - link "sidebar (1.319 plugin)" [ref=e412] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=sidebar
+                  - text: sidebar
+                - link "slider (989 plugin)" [ref=e413] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=slider
+                  - text: slider
+                - link "slideshow (465 plugin)" [ref=e414] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=slideshow
+                  - text: slideshow
+                - link "social (1.190 plugin)" [ref=e415] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=social
+                  - text: social
+                - link "social media (538 plugin)" [ref=e416] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=social+media
+                  - text: social media
+                - link "spam (943 plugin)" [ref=e417] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=spam
+                  - text: spam
+                - link "statistics (482 plugin)" [ref=e418] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=statistics
+                  - text: statistics
+                - link "stats (475 plugin)" [ref=e419] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=stats
+                  - text: stats
+                - link "tags (536 plugin)" [ref=e420] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=tags
+                  - text: tags
+                - link "theme (584 plugin)" [ref=e421] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=theme
+                  - text: theme
+                - link "tracking (567 plugin)" [ref=e422] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=tracking
+                  - text: tracking
+                - link "twitter (1.515 plugin)" [ref=e423] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=twitter
+                  - text: twitter
+                - link "user (540 plugin)" [ref=e424] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=user
+                  - text: user
+                - link "users (541 plugin)" [ref=e425] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=users
+                  - text: users
+                - link "video (1.095 plugin)" [ref=e426] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=video
+                  - text: video
+                - link "widget (4.998 plugin)" [ref=e427] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=widget
+                  - text: widget
+                - link "widgets (1.023 plugin)" [ref=e428] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=widgets
+                  - text: widgets
+                - link "woocommerce (8.577 plugin)" [ref=e429] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=woocommerce
+                  - text: woocommerce
+                - link "youtube (689 plugin)" [ref=e430] [cursor=pointer]:
+                  - /url: https://passoapassouniformes.com/wp-admin/plugin-install.php?tab=search&type=tag&s=youtube
+                  - text: youtube
+  - img

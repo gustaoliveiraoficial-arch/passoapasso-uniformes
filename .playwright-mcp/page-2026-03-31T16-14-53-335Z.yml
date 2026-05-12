@@ -1,0 +1,157 @@
+- application [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - iframe [ref=e3]:
+    
+  - banner "Menu bar" [ref=e4]:
+    - generic [ref=e7]:
+      - link "Docs home" [ref=e9] [cursor=pointer]:
+        - /url: https://docs.google.com/document/u/0/?authuser=0&usp=docs_web
+      - generic [ref=e16]:
+        - generic "Plano de Acao - Reuniao 30/03/2026" [ref=e18]:
+          - generic [ref=e19]:
+            - generic: Plano de Acao - Reuniao 30/03/2026
+            - textbox "Rename" [ref=e21]: Plano de Acao - Reuniao 30/03/2026
+          - generic [ref=e22]:
+            - checkbox "Star" [ref=e24] [cursor=pointer]
+            - 'button "Document status: Saved to Drive." [ref=e28]'
+        - generic [ref=e35]:
+          - button "Last edit was seconds ago" [ref=e37] [cursor=pointer]
+          - button "Show all comments 0 new comments" [ref=e41] [cursor=pointer]
+          - button "Join a call here or present this tab to the call" [ref=e45] [cursor=pointer]
+          - button "Share. Private to only me." [ref=e51] [cursor=pointer]
+          - generic [ref=e61]:
+            - button "Upgrade" [ref=e63] [cursor=pointer]:
+              - generic [ref=e65]: Upgrade
+            - tooltip [ref=e66]: Upgrade for premium features
+          - generic [ref=e69]:
+            - generic:
+              - button "Try Gemini" [ref=e72] [cursor=pointer]:
+                - img [ref=e75]
+              - tooltip [ref=e78]: Try Gemini
+          - 'button "Google Account: Gustavo Oliveira (gustaoliveiraoficial@gmail.com)" [ref=e85] [cursor=pointer]':
+            - img [ref=e87]
+    - generic [ref=e88]:
+      - menubar [ref=e90]:
+        - menuitem "File" [ref=e91] [cursor=pointer]
+        - menuitem "Edit" [ref=e92] [cursor=pointer]
+        - menuitem "View" [ref=e93] [cursor=pointer]
+        - menuitem "Insert" [ref=e94] [cursor=pointer]
+        - menuitem "Format" [ref=e95] [cursor=pointer]
+        - menuitem "Tools" [ref=e96] [cursor=pointer]
+        - menuitem "Extensions" [ref=e97] [cursor=pointer]
+        - menuitem "Help" [ref=e98] [cursor=pointer]
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - toolbar "Search the menus (Alt+/)" [ref=e101]:
+            - combobox "Menus" [ref=e103]
+          - toolbar "Main" [ref=e104]:
+            - button "Undo (Ctrl+Z)" [ref=e105] [cursor=pointer]
+            - button "Redo (Ctrl+Y)" [ref=e110] [cursor=pointer]
+            - button "Print (Ctrl+P)" [ref=e115] [cursor=pointer]
+            - button "Spelling and grammar check (Ctrl+Alt+X)" [ref=e120] [cursor=pointer]
+            - button "Paint format" [ref=e125] [cursor=pointer]
+            - combobox "Zoom" [ref=e130] [cursor=pointer]:
+              - option "Zoom list. 100% selected." [selected] [ref=e133]:
+                - textbox "Zoom" [ref=e134]: 100%
+            - separator [disabled] [ref=e138]
+            - listbox "Styles" [ref=e139] [cursor=pointer]:
+              - option "Styles list. Normal text selected." [selected] [ref=e142]: Normal text
+            - separator [disabled] [ref=e146]
+            - button "More" [disabled] [ref=e147] [cursor=pointer]
+        - toolbar "Mode and view" [ref=e154]:
+          - button "Editing mode" [ref=e155] [cursor=pointer]:
+            - generic [ref=e158]: Editing
+          - separator [disabled] [ref=e162]
+          - button "Hide the menus (Ctrl+Shift+F)" [ref=e163] [cursor=pointer]
+  - generic [ref=e170]:
+    - generic [ref=e175]:
+      - generic [ref=e176]: "9"
+      - generic [ref=e185]: "8"
+      - generic [ref=e194]: "7"
+      - generic [ref=e203]: "6"
+      - generic [ref=e212]: "5"
+      - generic [ref=e221]: "4"
+      - generic [ref=e230]: "3"
+      - generic [ref=e239]: "2"
+      - generic [ref=e248]: "1"
+      - generic [ref=e265]: "1"
+      - generic [ref=e274]: "2"
+      - generic [ref=e283]: "3"
+      - generic [ref=e292]: "4"
+      - generic [ref=e301]: "5"
+      - generic [ref=e310]: "6"
+      - generic [ref=e319]: "7"
+      - generic [ref=e328]: "8"
+    - generic [ref=e347]:
+      - generic:
+        - generic [ref=e351]:
+          - button
+        - generic:
+          - list
+    - generic [ref=e356]:
+      - generic [ref=e357]: "11"
+      - generic [ref=e366]: "10"
+      - generic [ref=e375]: "9"
+      - generic [ref=e384]: "8"
+      - generic [ref=e393]: "7"
+      - generic [ref=e402]: "6"
+      - generic [ref=e411]: "5"
+      - generic [ref=e420]: "4"
+      - generic [ref=e429]: "3"
+      - generic [ref=e438]: "2"
+      - generic [ref=e447]: "1"
+      - generic [ref=e464]: "1"
+      - generic [ref=e473]: "2"
+      - generic [ref=e482]: "3"
+      - generic [ref=e491]: "4"
+      - generic [ref=e500]: "5"
+      - generic [ref=e509]: "6"
+      - generic [ref=e518]: "7"
+      - generic [ref=e527]: "8"
+      - generic [ref=e536]: "9"
+      - generic [ref=e545]: "10"
+    - img [ref=e557]
+    - generic "Document tabs" [ref=e560]:
+      - button "Hide tabs & outlines" [ref=e562] [cursor=pointer]:
+        - button "Back" [disabled] [ref=e563]:
+          - button "Back" [disabled] [ref=e567]
+      - generic [ref=e573]:
+        - generic [ref=e575]:
+          - heading "Document tabs" [ref=e576]
+          - button "Add tab" [ref=e579]
+        - tree "Document tabs" [ref=e583]:
+          - generic [ref=e585] [cursor=pointer]:
+            - treeitem "Tab 1" [selected] [ref=e586]:
+              - generic [ref=e593]: Tab 1
+              - button "Tab options" [ref=e596]
+            - generic [ref=e600]:
+              - menuitem "PLANO DE ACAO - REUNIAO 30/03/2026 level 1" [ref=e601]:
+                - generic "PLANO DE ACAO - REUNIAO 30/03/2026 level 1" [ref=e606]:
+                  - generic [ref=e607]: PLANO DE ACAO - REUNIAO 30/03/2026
+              - menuitem "RESUMO FINANCEIRO - MARCO 2026 level 1" [ref=e608]:
+                - generic "RESUMO FINANCEIRO - MARCO 2026 level 1" [ref=e613]:
+                  - generic [ref=e614]: RESUMO FINANCEIRO - MARCO 2026
+              - menuitem "LEGENDA level 1" [ref=e615]:
+                - generic "LEGENDA level 1" [ref=e620]:
+                  - generic [ref=e621]: LEGENDA
+              - menuitem "PRODUTOS & OPERACOES level 1" [ref=e622]:
+                - generic "PRODUTOS & OPERACOES level 1" [ref=e627]:
+                  - generic [ref=e628]: PRODUTOS & OPERACOES
+              - menuitem "VENDAS & PROCESSOS level 1" [ref=e629]:
+                - generic "VENDAS & PROCESSOS level 1" [ref=e634]:
+                  - generic [ref=e635]: VENDAS & PROCESSOS
+              - menuitem "MARKETING & CONTEUDO level 1" [ref=e636]:
+                - generic "MARKETING & CONTEUDO level 1" [ref=e641]:
+                  - generic [ref=e642]: MARKETING & CONTEUDO
+              - menuitem "RELACIONAMENTO & GESTAO level 1" [ref=e643]:
+                - generic "RELACIONAMENTO & GESTAO level 1" [ref=e648]:
+                  - generic [ref=e649]: RELACIONAMENTO & GESTAO
+  - iframe [active] [ref=e650]:
+    - textbox "Document content" [active] [ref=f11e1]
+    - group
+  - link "Turn on screen reader support" [ref=e651] [cursor=pointer]:
+    - /url: "#"
+  - region [ref=e652]: To enable screen reader support, press Ctrl+Alt+Z To learn about keyboard shortcuts, press Ctrl+slash
+  - generic [ref=e653]: Banner hidden
+  - region

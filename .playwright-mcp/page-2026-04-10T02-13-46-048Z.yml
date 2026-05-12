@@ -1,0 +1,202 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - button "Ajuda" [ref=e37] [cursor=pointer]
+          - generic [ref=e38]:
+            - heading "Editar temas" [level=1] [ref=e39]
+            - generic [ref=e40]:
+              - generic [ref=e41]:
+                - heading "Editando Hello Biz (ativo)" [level=2] [ref=e42]:
+                  - text: Editando
+                  - strong [ref=e43]: Hello Biz
+                  - text: (ativo)
+                - strong [ref=e45]: "Arquivo: functions.php"
+              - generic [ref=e47]:
+                - generic [ref=e48]: "Selecionar um tema para editar:"
+                - combobox "Selecionar um tema para editar:" [ref=e49] [cursor=pointer]:
+                  - option "Hello Biz" [selected]
+                  - option "Twenty Twenty-Five"
+                  - option "Twenty Twenty-Four"
+                  - option "Twenty Twenty-Three"
+                - button "Selecionar" [ref=e50] [cursor=pointer]
+            - generic [ref=e51]:
+              - heading "Arquivos do tema" [level=2] [ref=e52]
+              - tree "Arquivos do tema" [ref=e53]:
+                - treeitem [expanded] [level=1] [ref=e54]:
+                  - group [ref=e55]:
+                    - treeitem "Folha de estilos (style.css)" [level=2] [ref=e56] [cursor=pointer]:
+                      - text: Folha de estilos
+                      - text: (style.css)
+                    - treeitem "Funções do tema (functions.php)" [level=2] [ref=e57] [cursor=pointer]:
+                      - generic [ref=e58]:
+                        - text: Funções do tema
+                        - text: (functions.php)
+                    - treeitem "assets pasta" [level=2] [ref=e59]:
+                      - generic [ref=e60] [cursor=pointer]:
+                        - text: assets
+                        - generic [ref=e61]: pasta
+                    - treeitem "Estilos de tema e configurações de bloco (theme.json)" [level=2] [ref=e62] [cursor=pointer]:
+                      - text: Estilos de tema e configurações de bloco
+                      - text: (theme.json)
+                    - treeitem "Comentários (comments.php)" [level=2] [ref=e63] [cursor=pointer]:
+                      - text: Comentários
+                      - text: (comments.php)
+                    - treeitem "Rodapé do tema (footer.php)" [level=2] [ref=e64] [cursor=pointer]:
+                      - text: Rodapé do tema
+                      - text: (footer.php)
+                    - treeitem "Cabeçalho do tema (header.php)" [level=2] [ref=e65] [cursor=pointer]:
+                      - text: Cabeçalho do tema
+                      - text: (header.php)
+                    - treeitem "includes pasta" [level=2] [ref=e66]:
+                      - generic [ref=e67] [cursor=pointer]:
+                        - text: includes
+                        - generic [ref=e68]: pasta
+                    - treeitem "Modelo da página principal (index.php)" [level=2] [ref=e69] [cursor=pointer]:
+                      - text: Modelo da página principal
+                      - text: (index.php)
+                    - treeitem "modules pasta" [level=2] [ref=e70]:
+                      - generic [ref=e71] [cursor=pointer]:
+                        - text: modules
+                        - generic [ref=e72]: pasta
+                    - treeitem "Formulário de pesquisa (searchform.php)" [level=2] [ref=e73] [cursor=pointer]:
+                      - text: Formulário de pesquisa
+                      - text: (searchform.php)
+                    - treeitem "Lateral (sidebar.php)" [level=2] [ref=e74] [cursor=pointer]:
+                      - text: Lateral
+                      - text: (sidebar.php)
+                    - treeitem "template-parts pasta" [level=2] [ref=e75]:
+                      - generic [ref=e76] [cursor=pointer]:
+                        - text: template-parts
+                        - generic [ref=e77]: pasta
+                    - treeitem "theme.php" [level=2] [ref=e78] [cursor=pointer]
+                    - treeitem "readme.txt" [level=2] [ref=e79] [cursor=pointer]
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - generic [ref=e82]: "Conteúdo do arquivo selecionado:"
+                - textbox "Conteúdo do arquivo selecionado:" [ref=e89]:
+                  - generic [ref=e90]:
+                    - generic [ref=e93]: "1"
+                    - text: <?php
+                  - generic [ref=e94]:
+                    - generic [ref=e95]: "2"
+                    - text: /**
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: "3"
+                    - text: "* Theme functions and definitions"
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: "4"
+                    - text: "*"
+                  - generic [ref=e100]:
+                    - generic [ref=e101]: "5"
+                    - text: "* @package HelloBiz"
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: "6"
+                    - text: "*/"
+                  - generic [ref=e105]: "7"
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: "8"
+                    - text: use HelloBiz\Theme;
+                  - generic [ref=e109]: "9"
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: "10"
+                    - text: "if ( ! defined( 'ABSPATH' ) ) {"
+                  - generic [ref=e112]:
+                    - generic [ref=e113]: "11"
+                    - text: exit; // Exit if accessed directly.
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: "12"
+                    - text: "}"
+                  - generic [ref=e117]: "13"
+                  - generic [ref=e118]:
+                    - generic [ref=e119]: "14"
+                    - text: define( 'HELLO_BIZ_ELEMENTOR_VERSION', '1.2.0' );
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: "15"
+                    - text: define( 'EHP_THEME_SLUG', 'hello-biz' );
+                  - generic [ref=e123]: "16"
+                  - generic [ref=e124]:
+                    - generic [ref=e125]: "17"
+                    - text: define( 'HELLO_BIZ_PATH', get_template_directory() );
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: "18"
+                    - text: define( 'HELLO_BIZ_URL', get_template_directory_uri() );
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: "19"
+                    - text: define( 'HELLO_BIZ_ASSETS_PATH', HELLO_BIZ_PATH . '/assets/' );
+                  - generic [ref=e130]:
+                    - generic [ref=e131]: "20"
+                    - text: define( 'HELLO_BIZ_ASSETS_URL', HELLO_BIZ_URL . '/assets/' );
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: "21"
+                    - text: define( 'HELLO_BIZ_SCRIPTS_PATH', HELLO_BIZ_ASSETS_PATH . 'js/' );
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: "22"
+                    - text: define( 'HELLO_BIZ_SCRIPTS_URL', HELLO_BIZ_ASSETS_URL . 'js/' );
+                  - generic [ref=e136]:
+                    - generic [ref=e137]: "23"
+                    - text: define( 'HELLO_BIZ_STYLE_PATH', HELLO_BIZ_ASSETS_PATH . 'css/' );
+                  - generic [ref=e138]:
+                    - generic [ref=e139]: "24"
+                    - text: define( 'HELLO_BIZ_STYLE_URL', HELLO_BIZ_ASSETS_URL . 'css/' );
+                  - generic [ref=e140]:
+                    - generic [ref=e141]: "25"
+                    - text: define( 'HELLO_BIZ_IMAGES_PATH', HELLO_BIZ_ASSETS_PATH . 'images/' );
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: "26"
+                    - text: define( 'HELLO_BIZ_IMAGES_URL', HELLO_BIZ_ASSETS_URL . 'images/' );
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: "27"
+                    - text: define( 'HELLO_BIZ_STARTER_IMAGES_PATH', HELLO_BIZ_IMAGES_PATH . 'starter-content/' );
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: "28"
+                    - text: define( 'HELLO_BIZ_STARTER_IMAGES_URL', HELLO_BIZ_IMAGES_URL . 'starter-content/' );
+                  - generic [ref=e149]: "29"
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: "30"
+                    - text: "if ( ! isset( $content_width ) ) {"
+              - generic [ref=e155]:
+                - generic [ref=e156]: "Documentação:"
+                - combobox "Documentação:" [ref=e157] [cursor=pointer]:
+                  - option "Nome da função" [selected]
+                  - option "define()"
+                  - option "defined()"
+                  - option "get_template_directory()"
+                  - option "get_template_directory_uri()"
+                  - option "instance()"
+                - button "Procurar" [disabled] [ref=e158]
+              - paragraph [ref=e160]:
+                - button "Atualizar arquivo" [ref=e161] [cursor=pointer]
+  - img

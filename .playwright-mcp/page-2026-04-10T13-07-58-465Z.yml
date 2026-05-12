@@ -1,0 +1,109 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e188] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e189] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e190] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e191] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e192] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e193] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e194] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e195] [cursor=pointer]
+      - generic:
+        - generic:
+          - heading "Configurações" [level=1] [ref=e196]
+          - button "Dispensar esta notificação" [ref=e227] [cursor=pointer]:
+            - generic [ref=e228]: Settings updated successfully
+      - main [ref=e37]:
+        - generic [ref=e40]:
+          - heading "Pagamentos" [level=1] [ref=e197]
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - button "Configurações do WooCommerce" [ref=e198] [cursor=pointer]:
+                - img [ref=e48]
+              - heading "Transferência bancária" [level=1] [ref=e199]
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - generic [ref=e54]:
+                  - heading "Enable and customise" [level=2] [ref=e200]
+                  - paragraph [ref=e56]: Choose how you want to present bank transfer to your customers during checkout.
+                - generic [ref=e57]:
+                  - generic [ref=e90]:
+                    - generic [ref=e91]:
+                      - checkbox "Enable direct bank transfers" [checked] [active] [ref=e201] [cursor=pointer]
+                      - img
+                    - generic [ref=e93] [cursor=pointer]: Enable direct bank transfers
+                  - generic [ref=e94]:
+                    - generic [ref=e95]:
+                      - generic [ref=e96]: Título
+                      - textbox "Título" [ref=e202]:
+                        - /placeholder: Direct bank transfer payments
+                        - text: Pix
+                    - paragraph [ref=e98]: Payment method name that the customer will see during checkout.
+                  - generic [ref=e99]:
+                    - generic [ref=e100]:
+                      - generic [ref=e101]: Descrição
+                      - textbox "Descrição" [ref=e203]: Pague via Pix — confirmação em minutos! Após finalizar o pedido, você receberá a chave Pix para realizar o pagamento.
+                    - paragraph [ref=e103]: Payment method description that the customer will see during checkout.
+                  - generic [ref=e104]:
+                    - generic [ref=e105]:
+                      - generic [ref=e106]: Instruções
+                      - textbox "Instruções" [ref=e204]: "Obrigado pelo pedido! Realize o pagamento via Pix: 🔑 Chave Pix (CNPJ): 01.645.313/0001-60 Titular: Passo a Passo Confecções Após o pagamento, envie o comprovante no WhatsApp: (51) 98560-0893 Seu pedido será processado assim que confirmarmos o pagamento."
+                    - paragraph [ref=e108]: Instruções a serem adicionadas na página e em e-mails de agradecimento.
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - heading "Detalhes da conta" [level=2] [ref=e205]
+                  - paragraph [ref=e69]: Configure your bank account details.
+                - generic [ref=e109]:
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: Account Name
+                    - generic [ref=e115]: Account Details
+                    - generic [ref=e116]: Bank Name
+                  - generic [ref=e207]:
+                    - button [ref=e209]:
+                      - img [ref=e211]
+                    - generic [ref=e213]:
+                      - generic [ref=e214]: Passo a Passo Confecções
+                      - generic [ref=e215]: 01.645.313/0001-60
+                      - generic [ref=e216]: Pix CNPJ
+                    - button "Opções" [ref=e220] [cursor=pointer]:
+                      - img [ref=e221]
+                  - listitem [ref=e117]:
+                    - button "+ Adicionar conta" [ref=e224] [cursor=pointer]
+                  - status [ref=e119]
+              - button "Salvar alterações" [disabled] [ref=e225]
+          - paragraph [ref=e77]
+    - generic [ref=e79]:
+      - img [ref=e81]
+      - generic [ref=e83]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e226] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+    - generic [ref=e121] [cursor=pointer]:
+      - img [ref=e122]
+      - generic [ref=e124]: Fale com o Kodee
+  - img
+  - paragraph [ref=e229]: Notificações
+  - generic [ref=e87]: Settings updated successfully

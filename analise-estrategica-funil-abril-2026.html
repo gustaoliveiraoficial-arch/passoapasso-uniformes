@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Estratégica do Funil — Passo a Passo Uniformes — Abril 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1a1a2e;
+    font-size: 13px;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 48px 56px;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #2d6a4f;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+  }
+  .header-left h1 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #2d6a4f;
+    letter-spacing: -0.5px;
+  }
+  .header-left p {
+    font-size: 11.5px;
+    color: #666;
+    margin-top: 4px;
+  }
+  .badge {
+    display: inline-block;
+    background: #2d6a4f;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  .badge-red {
+    background: #c0392b;
+  }
+
+  /* SECTION */
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2d6a4f;
+    border-left: 4px solid #2d6a4f;
+    padding-left: 10px;
+    margin-bottom: 14px;
+  }
+
+  /* TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  thead th {
+    background: #2d6a4f;
+    color: #fff;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  thead th.center { text-align: center; }
+  tbody tr:nth-child(even) { background: #f8fdf9; }
+  tbody tr:hover { background: #eaf6ee; }
+  tbody td {
+    padding: 7px 12px;
+    border-bottom: 1px solid #e8f0ec;
+    color: #333;
+  }
+  td.num { text-align: center; font-weight: 700; color: #2d6a4f; }
+  td.center { text-align: center; }
+  td.highlight-row { font-weight: 700; background: #d4edda !important; color: #155724; }
+  td.alert-row { font-weight: 700; background: #fff3f3 !important; color: #c0392b; }
+  td.warn-row { font-weight: 700; background: #fff8e1 !important; color: #b7700d; }
+
+  /* KPI GRID */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .kpi-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .kpi-card {
+    background: #f8fdf9;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: #2d6a4f; border-color: #2d6a4f; color: #fff; }
+  .kpi-card.warning { background: #fff8e1; border-color: #ffcc02; }
+  .kpi-card.alert { background: #fff3f3; border-color: #e74c3c; }
+  .kpi-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #2d6a4f;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .kpi-card.highlight .kpi-value { color: #fff; }
+  .kpi-card.warning .kpi-value { color: #e67e00; }
+  .kpi-card.alert .kpi-value { color: #c0392b; }
+  .kpi-label {
+    font-size: 10.5px;
+    color: #555;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+  .kpi-card.highlight .kpi-label { color: rgba(255,255,255,0.85); }
+  .kpi-sub {
+    font-size: 10px;
+    color: #2d6a4f;
+    margin-top: 3px;
+    font-weight: 600;
+  }
+  .kpi-card.highlight .kpi-sub { color: #a8d5b5; }
+  .kpi-card.warning .kpi-sub { color: #b7700d; }
+  .kpi-card.alert .kpi-sub { color: #c0392b; }
+
+  /* ALERTAS */
+  .alertas { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .alerta-card {
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .alerta-card.bad { background: #fff3f3; border: 1px solid #f5c6cb; }
+  .alerta-card.good { background: #f0faf3; border: 1px solid #c3e6cb; }
+  .alerta-card.warn { background: #fff8e1; border: 1px solid #ffe066; }
+  .alerta-icon { font-size: 17px; flex-shrink: 0; margin-top: 1px; }
+  .alerta-text strong { font-size: 12px; display: block; margin-bottom: 2px; }
+  .alerta-text span { font-size: 11px; color: #555; line-height: 1.4; }
+
+  /* FUNIL VISUAL */
+  .funil-wrap { display: flex; flex-direction: column; gap: 5px; margin-bottom: 8px; }
+  .funil-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .funil-label {
+    width: 210px;
+    font-size: 11.5px;
+    color: #333;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .funil-bar-wrap {
+    flex: 1;
+    height: 22px;
+    background: #eef3ef;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .funil-bar {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .funil-count {
+    width: 40px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #2d6a4f;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .funil-count.alert { color: #c0392b; }
+  .funil-count.warn { color: #e67e00; }
+  .bar-cold { background: #adb5bd; }
+  .bar-entry { background: #6c8ebf; }
+  .bar-contact { background: #74b9ff; }
+  .bar-qualified { background: #55a3d4; }
+  .bar-quote { background: #f39c12; }
+  .bar-negotiating { background: #e67e22; }
+  .bar-layout { background: #9b59b6; }
+  .bar-layout-ok { background: #8e44ad; }
+  .bar-confirmed { background: #27ae60; }
+  .bar-production { background: #2ecc71; }
+  .bar-done { background: #1abc9c; }
+
+  /* SPRINT */
+  .sprint-box {
+    background: #1b4332;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+  .sprint-box h3 { color: #a8d5b5; font-size: 13px; margin-bottom: 10px; }
+  .sprint-box ul { padding-left: 18px; line-height: 2; font-size: 12px; }
+  .sprint-box li { margin-bottom: 2px; }
+  .sprint-box .highlight-text { color: #a8d5b5; font-weight: 700; }
+
+  /* ENGRENAGEM */
+  .gear-flow {
+    background: #f8fdf9;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 11.5px;
+    line-height: 2;
+    color: #1b4332;
+  }
+  .gear-flow .arrow { color: #2d6a4f; font-weight: bold; }
+
+  /* PROJECAO */
+  .projecao-total {
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 18px 22px;
+    line-height: 1.8;
+    font-size: 12.5px;
+    margin-top: 10px;
+  }
+  .projecao-total strong { color: #a8d5b5; }
+
+  /* DASHBOARD */
+  .dashboard-box {
+    background: #1a1a2e;
+    color: #a8d5b5;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .dashboard-box .title { color: #fff; font-weight: bold; border-bottom: 1px solid #2d6a4f; padding-bottom: 6px; margin-bottom: 8px; }
+  .dashboard-box .line { color: #2d6a4f; }
+
+  /* RESUMO EXECUTIVO */
+  .resumo-box {
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 22px 26px;
+    line-height: 1.8;
+    font-size: 12.5px;
+  }
+  .resumo-box strong { color: #a8d5b5; }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 36px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 10px;
+    color: #999;
+  }
+
+  /* ROLE TABLE */
+  .role-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .role-badge.red { background: #fff3f3; color: #c0392b; border: 1px solid #f5c6cb; }
+  .role-badge.green { background: #f0faf3; color: #155724; border: 1px solid #c3e6cb; }
+  .role-badge.orange { background: #fff8e1; color: #b7700d; border: 1px solid #ffe066; }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 20px 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Análise Estratégica do Funil de Vendas</h1>
+      <p>Passo a Passo Uniformes &nbsp;|&nbsp; Gerado em 22/04/2026 &nbsp;|&nbsp; Fonte: Kommo CRM + Relatório 01–13/04/2026</p>
+    </div>
+    <div>
+      <span class="badge">ABRIL 2026</span><br><br>
+      <span class="badge badge-red">AÇÃO URGENTE</span>
+    </div>
+  </div>
+
+  <!-- 1. VISÃO GERAL -->
+  <div class="section">
+    <div class="section-title">1. Visão Geral — KPIs do Período (01–13/04)</div>
+    <div class="kpi-grid">
+      <div class="kpi-card highlight">
+        <div class="kpi-value">762</div>
+        <div class="kpi-label">Leads ativos no CRM</div>
+        <div class="kpi-sub">+717 entraram em abril</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">3.056</div>
+        <div class="kpi-label">Mensagens no WhatsApp</div>
+        <div class="kpi-sub">100% WhatsApp Cloud API</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">13</div>
+        <div class="kpi-label">Pedidos confirmados</div>
+        <div class="kpi-sub">Média: 1 venda/dia</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">8 min</div>
+        <div class="kpi-label">Tempo médio de resposta</div>
+        <div class="kpi-sub">Excelente desempenho</div>
+      </div>
+    </div>
+    <div class="kpi-grid kpi-grid-3" style="margin-top:10px;">
+      <div class="kpi-card alert">
+        <div class="kpi-value">611</div>
+        <div class="kpi-label">Leads parados em "Lead Frio"</div>
+        <div class="kpi-sub">Principal gargalo do funil</div>
+      </div>
+      <div class="kpi-card warning">
+        <div class="kpi-value">227</div>
+        <div class="kpi-label">Chats sem resposta</div>
+        <div class="kpi-sub">185 abertos só em abril</div>
+      </div>
+      <div class="kpi-card warning">
+        <div class="kpi-value">711</div>
+        <div class="kpi-label">Leads sem tarefa definida</div>
+        <div class="kpi-sub">Sem próximo passo agendado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. FUNIL VISUAL -->
+  <div class="section">
+    <div class="section-title">2. Situação Atual do Funil (22/04/2026)</div>
+    <div class="funil-wrap">
+      <div class="funil-row">
+        <div class="funil-label"><strong>Etapa de Entrada</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-entry" style="width:12%">73 agora</div></div>
+        <div class="funil-count warn">73</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label" style="color:#c0392b;"><strong>Lead Frio ⚠️</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-cold" style="width:95%">cemitério de oportunidades</div></div>
+        <div class="funil-count alert">611+</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Primeiro Contato</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-contact" style="width:11%"></div></div>
+        <div class="funil-count">35</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Qualificado</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-qualified" style="width:4%"></div></div>
+        <div class="funil-count">11</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Enviar Orçamento</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-quote" style="width:3%"></div></div>
+        <div class="funil-count warn">10</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Orçamento Jessica</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-quote" style="width:1%"></div></div>
+        <div class="funil-count">3</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label" style="color:#e67e22;"><strong>Negociando 💰</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-negotiating" style="width:9%">cofre sem dono</div></div>
+        <div class="funil-count warn">29+</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Desenvolver Layout</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-layout" style="width:2%"></div></div>
+        <div class="funil-count">6</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Layout Aprovado</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-layout-ok" style="width:1.5%"></div></div>
+        <div class="funil-count">5</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label"><strong>Pedido Confirmado ✓</strong></div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-confirmed" style="width:1.3%"></div></div>
+        <div class="funil-count" style="color:#27ae60;">4</div>
+      </div>
+      <div class="funil-row">
+        <div class="funil-label">Em Produção</div>
+        <div class="funil-bar-wrap"><div class="funil-bar bar-production" style="width:2.2%"></div></div>
+        <div class="funil-count" style="color:#27ae60;">7</div>
+      </div>
+    </div>
+    <p style="font-size:11px; color:#888; margin-top:6px; font-style:italic;">* Dados do relatório 01–13/04 com atualização de "Entrada" via acesso ao Kommo em 22/04/2026.</p>
+  </div>
+
+  <!-- 3. GARGALOS -->
+  <div class="section">
+    <div class="section-title">3. Os 3 Gargalos Críticos</div>
+    <div class="alertas">
+      <div class="alerta-card bad">
+        <div class="alerta-icon">🪦</div>
+        <div class="alerta-text">
+          <strong>Gargalo 1 — Lead Frio (611+): o cemitério oculto</strong>
+          <span>Leads reais que um dia levantaram a mão e ninguém foi atrás. Sem reativação estruturada, esse número só cresce. Uma reativação de 5% = 30 oportunidades imediatas.</span>
+        </div>
+      </div>
+      <div class="alerta-card warn">
+        <div class="alerta-icon">💰</div>
+        <div class="alerta-text">
+          <strong>Gargalo 2 — Negociando (29+): o cofre sem dono</strong>
+          <span>Leads que já receberam orçamento e demonstraram interesse. Ninguém é responsável explicitamente. São potencialmente R$100k+ dormindo esperando um follow-up.</span>
+        </div>
+      </div>
+      <div class="alerta-card bad">
+        <div class="alerta-icon">📭</div>
+        <div class="alerta-text">
+          <strong>Gargalo 3 — 711 leads sem tarefa: invisíveis para a equipe</strong>
+          <span>Sem próxima ação agendada no Kommo, esses leads não aparecem em nenhuma lista prioritária. Vão morrer silenciosamente por abandono.</span>
+        </div>
+      </div>
+      <div class="alerta-card bad">
+        <div class="alerta-icon">🔀</div>
+        <div class="alerta-text">
+          <strong>Gargalo 4 — Irua fragmentada: custo oculto</strong>
+          <span>Cada hora que a designer passa em atendimento é um layout atrasado. Um layout atrasado = um lead que esfria = venda perdida. O custo real é muito maior que parece.</span>
+        </div>
+      </div>
+      <div class="alerta-card good">
+        <div class="alerta-icon">✅</div>
+        <div class="alerta-text">
+          <strong>Ponto forte — Tempo de resposta: 8 minutos</strong>
+          <span>Excelente agilidade no primeiro atendimento. A equipe sabe atender — o problema é o que acontece depois do primeiro contato.</span>
+        </div>
+      </div>
+      <div class="alerta-card good">
+        <div class="alerta-icon">✅</div>
+        <div class="alerta-text">
+          <strong>Ponto forte — Demanda real e crescente</strong>
+          <span>73 leads na entrada hoje (eram 39 em 13/04). 3.056 mensagens em 13 dias. O mercado está aquecido. O problema não é falta de lead.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. PROBLEMA DA EQUIPE -->
+  <div class="section">
+    <div class="section-title">4. Diagnóstico da Equipe — Silos vs. Engrenagem</div>
+
+    <p style="font-size:12px; color:#333; margin-bottom:14px; line-height:1.7;">
+      A equipe funciona como <strong>silos sequenciais</strong> sem dono de etapa. Ninguém é responsável por mover o lead de uma fase para a próxima. Falta o papel de <em>"pastor do funil"</em> — alguém que olha todo dia: quem está parado há mais de 3 dias?
+    </p>
+
+    <table style="margin-bottom:16px;">
+      <thead>
+        <tr>
+          <th>Pessoa</th>
+          <th>Papel atual</th>
+          <th>Problema identificado</th>
+          <th>O que mudar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Gustavo</strong></td>
+          <td>Atendimento + venda</td>
+          <td>Disperso entre entrada e negociando</td>
+          <td class="highlight-row">Focar nos negociando de alto ticket + coordenar o sprint</td>
+        </tr>
+        <tr>
+          <td><strong>Greg</strong></td>
+          <td>Atendimento + venda</td>
+          <td>Mesmo papel que Gustavo — sem diferenciação</td>
+          <td class="highlight-row">Ser o "caçador" dos negociando médios + triagem da entrada</td>
+        </tr>
+        <tr>
+          <td><strong>Irua</strong></td>
+          <td>Designer + atendimento</td>
+          <td>Fragmentada entre dois papéis opostos</td>
+          <td class="alert-row">Sair do atendimento — foco 100% em layout (gargalo de produção)</td>
+        </tr>
+        <tr>
+          <td><strong>Fran</strong></td>
+          <td>Formaliza pedido (passivo)</td>
+          <td>Só age depois do fechamento — sem SLA</td>
+          <td class="warn-row">Criar ficha em até 2h após layout aprovado — zero acúmulo</td>
+        </tr>
+        <tr>
+          <td><strong>Jessica</strong></td>
+          <td>Dona + vendas esporádicas</td>
+          <td>Sem papel estratégico definido</td>
+          <td class="highlight-row">Fechamento exclusivo de tickets acima de R$5.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="gear-flow">
+      <strong style="color:#2d6a4f;">COMO DEVERIA FUNCIONAR — O MODELO DE ENGRENAGEM:</strong><br><br>
+      ENTRADA (73 leads) <span class="arrow">→</span> <strong>Greg</strong> faz triagem (ticket alto ou baixo?)<br>
+      Lead qualificado <span class="arrow">→</span> <strong>Gustavo ou Greg</strong> atende e envia orçamento em até 4h<br>
+      Ticket acima de R$5.000 <span class="arrow">→</span> <strong>Jessica</strong> fecha pessoalmente<br>
+      Aprovado orçamento <span class="arrow">→</span> <strong>Irua</strong> desenvolve layout (SLA: 24h)<br>
+      Layout aprovado <span class="arrow">→</span> <strong>Fran</strong> cria ficha em até 2h<br>
+      Pedido confirmado <span class="arrow">→</span> produção iniciada
+    </div>
+  </div>
+
+  <!-- 5. SPRINT DE FECHAMENTO -->
+  <div class="section">
+    <div class="section-title">5. Sprint de 8 Dias — Operação Fechamento (22–30/04)</div>
+
+    <div class="sprint-box">
+      <h3>DIA 1–2 (22–23/04) — GUSTAVO LIDERA: Atacar os Negociando</h3>
+      <ul>
+        <li>Abrir o Kommo, filtrar "<span class="highlight-text">Negociando</span>" → listar os 29+ com nome, valor e último contato</li>
+        <li>Dividir entre Gustavo (~15) e Greg (~14): cada um é dono dos seus leads</li>
+        <li>Ligar (não só WhatsApp) para TODOS em até 24h com script direto:</li>
+        <li style="font-style:italic; color:#a8d5b5; list-style:none; margin-left:-18px; padding-left:18px;">"Oi [nome], verificando nosso orçamento — ainda tem interesse? Posso garantir o prazo se a gente fechar essa semana."</li>
+        <li>Resposta positiva → mover para próxima etapa <span class="highlight-text">imediatamente</span></li>
+      </ul>
+    </div>
+
+    <div class="sprint-box" style="margin-top:8px;">
+      <h3>DIA 1–3 (22–24/04) — IRUA + FRAN: Destravar Layout</h3>
+      <ul>
+        <li><span class="highlight-text">11 leads</span> estão em "Desenvolver Layout" (6) ou "Layout Aprovado" (5) — vendas a 1-2 passos do fechamento</li>
+        <li>Irua: priorizar esses layouts antes de qualquer nova entrada</li>
+        <li>Fran: assim que layout aprovado → ficha criada no mesmo dia, sem acúmulo</li>
+        <li>Meta: zerar "Layout Aprovado" até 24/04</li>
+      </ul>
+    </div>
+
+    <div class="sprint-box" style="margin-top:8px;">
+      <h3>DIA 1–8 (contínuo) — GREG: Triagem da Entrada</h3>
+      <ul>
+        <li>73 leads na entrada agora — triagem rápida: qual tem ticket alto? Priorizar esses</li>
+        <li>Manter resposta dentro de 5 min (já fazemos 8 min — próximos do ideal)</li>
+        <li>Qualificado com ticket alto → passa para Gustavo. Ticket médio → Greg fecha</li>
+      </ul>
+    </div>
+
+    <div class="sprint-box" style="margin-top:8px;">
+      <h3>DIA 1–8 (contínuo) — JESSICA: Fechamento Estratégico</h3>
+      <ul>
+        <li>Orçamentos acima de R$5.000 → Jessica fecha pessoalmente (autoridade + relacionamento)</li>
+        <li>Não dispersar em leads pequenos — seu tempo vale onde o ticket justifica</li>
+        <li>Revisar os 3 leads em "Orçamento Jessica" hoje — definir sim ou não</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6. PROJEÇÃO -->
+  <div class="section">
+    <div class="section-title">6. Projeção Realista para 8 Dias Restantes</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Origem</th>
+          <th class="center">Leads</th>
+          <th class="center">Conversão estimada</th>
+          <th class="center">Pedidos</th>
+          <th class="center">Ticket médio</th>
+          <th class="center">Receita projetada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Negociando</strong> — atacar hoje</td>
+          <td class="num">29</td>
+          <td class="center">40%</td>
+          <td class="num">~12</td>
+          <td class="center">R$ 4.500</td>
+          <td class="num highlight-row">R$ 54.000</td>
+        </tr>
+        <tr>
+          <td><strong>Layout Aprovado</strong> — quase prontos</td>
+          <td class="num">5</td>
+          <td class="center">80%</td>
+          <td class="num">~4</td>
+          <td class="center">R$ 4.000</td>
+          <td class="num highlight-row">R$ 16.000</td>
+        </tr>
+        <tr>
+          <td><strong>Desenvolver Layout</strong> — destravar</td>
+          <td class="num">6</td>
+          <td class="center">60%</td>
+          <td class="num">~4</td>
+          <td class="center">R$ 3.500</td>
+          <td class="num">R$ 14.000</td>
+        </tr>
+        <tr>
+          <td><strong>Qualificado + Orçamento</strong> — pipeline médio</td>
+          <td class="num">13</td>
+          <td class="center">30%</td>
+          <td class="num">~4</td>
+          <td class="center">R$ 3.500</td>
+          <td class="num">R$ 14.000</td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align:right; font-weight:700; font-size:13px;">TOTAL PROJETADO</td>
+          <td class="num" style="font-size:16px; color:#27ae60;">~24</td>
+          <td class="num highlight-row" style="font-size:16px;">~R$ 98.000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="projecao-total" style="margin-top:12px;">
+      A meta de <strong>R$ 100.000 até 30/04 é matematicamente atingível</strong> — mas depende de atacar os leads em "Negociando" <strong>hoje</strong>. A conversão de 40% desses 29 leads sozinhos já gera R$ 54.000. Somando os leads em fase de layout (11 leads = R$ 30.000 potencial), a meta está ao alcance <strong>sem precisar de nenhum lead novo</strong>.
+    </div>
+  </div>
+
+  <!-- 7. DASHBOARD DIÁRIO -->
+  <div class="section">
+    <div class="section-title">7. Dashboard Diário — Acompanhar todo dia às 17h30</div>
+    <div class="dashboard-box">
+      <div class="title">📊 DAILY DASHBOARD — PASSO A PASSO UNIFORMES — __ / __ / 2026</div>
+      <div class="line">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+      Negociando tratados hoje (Gustavo + Greg): ______<br>
+      Follow-ups feitos por ligação:              ______<br>
+      Layouts entregues (Irua):                   ______<br>
+      Fichas criadas (Fran):                      ______<br>
+      Pedidos confirmados hoje:                   ______<br>
+      <div class="line">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+      Faturamento acumulado do mês:         R$ ______<br>
+      Meta restante até 30/04:              R$ ______<br>
+      <div class="line">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+    </div>
+  </div>
+
+  <!-- 8. RESUMO EXECUTIVO -->
+  <div class="section">
+    <div class="section-title">8. Resumo Executivo</div>
+    <div class="resumo-box">
+      <strong>Diagnóstico:</strong> a demanda existe e é forte — 3.056 mensagens em 13 dias, 73 leads na entrada hoje, apenas 2 leads perdidos no mês. O problema não é falta de lead. É falta de sistema para mover esses leads pelo funil.<br><br>
+      <strong>Gargalo principal:</strong> 29+ leads em "Negociando" sem dono definido. São potencialmente R$54.000 esperando um telefonema. Esse é o cofre da meta de abril.<br><br>
+      <strong>Mudança estrutural mais impactante:</strong> Irua precisa sair do atendimento. Cada hora dela em layout vale 3x mais para o resultado do que no chat.<br><br>
+      <strong>Conclusão:</strong> a equipe é boa em abrir contatos — o problema é o que acontece depois do primeiro atendimento. Com papéis claros, SLAs por etapa e foco nos negociando, R$100k até 30/04 é atingível.
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Análise gerada em 22/04/2026 &nbsp;|&nbsp; Atlas (Analyst Agent) — Synkra AIOS &nbsp;|&nbsp; Fonte: Kommo CRM passoapassouniformes2025 + Relatório 01–13/04/2026
+  </div>
+
+</div>
+</body>
+</html>

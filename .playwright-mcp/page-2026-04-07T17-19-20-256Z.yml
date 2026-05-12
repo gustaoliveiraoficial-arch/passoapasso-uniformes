@@ -1,0 +1,39 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "Groq" [ref=e5]
+      - paragraph [ref=e7]:
+        - text: Build
+        - img [ref=e8]
+        - text: Fast
+    - generic [ref=e15]:
+      - generic [ref=e23]:
+        - generic [ref=e25]: Create Account or Login
+        - generic [ref=e26]:
+          - button "Continue with Google" [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]:
+              - img [ref=e30]
+              - generic [ref=e35]: Continue with Google
+          - button "Continue with GitHub" [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]:
+              - img [ref=e39]
+              - generic [ref=e42]: Continue with GitHub
+          - button "Continue with SSO" [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - generic [ref=e53]: Continue with SSO
+        - generic [ref=e57]: or
+        - generic [ref=e62]:
+          - textbox "Email" [ref=e64]:
+            - /placeholder: example@email.com
+          - button "Continue with email" [ref=e65] [cursor=pointer]
+      - paragraph [ref=e66]:
+        - text: By continuing, I accept the
+        - link "Services Agreement" [ref=e67] [cursor=pointer]:
+          - /url: /docs/legal/services-agreement
+        - text: and acknowledge that I have read the
+        - link "Privacy Policy" [ref=e68] [cursor=pointer]:
+          - /url: https://groq.com/privacy-policy
+        - text: .
+  - region "Notifications alt+T"
+  - alert [ref=e69]

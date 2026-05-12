@@ -1,0 +1,264 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - heading "Configurações" [level=1] [ref=e35]
+      - main [ref=e37]:
+        - generic [ref=e40]:
+          - navigation [ref=e41]:
+            - link "Geral" [ref=e42] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=general
+            - link "Produtos" [ref=e43] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=products
+            - link "Entrega" [ref=e44] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=shipping
+            - link "Pagamentos" [ref=e45] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=checkout
+            - link "Contas e privacidade" [ref=e46] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=account
+            - link "E-mails" [ref=e47] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=email
+            - link "Integração" [ref=e48] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=integration
+            - link "Visibilidade do site" [ref=e49] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=site-visibility
+            - link "Point of Sale" [ref=e50] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=point-of-sale
+            - link "Avançado" [ref=e51] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced
+          - heading "Avançado" [level=1] [ref=e52]
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - link "Página de instalação" [ref=e55] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=
+              - text: "|"
+            - listitem [ref=e56]:
+              - link "REST API keys" [ref=e57] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=keys
+              - text: "|"
+            - listitem [ref=e58]:
+              - link "Webhooks" [ref=e59] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=webhooks
+              - text: "|"
+            - listitem [ref=e60]:
+              - link "API antiga" [ref=e61] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=legacy_api
+              - text: "|"
+            - listitem [ref=e62]:
+              - link "WooCommerce.com" [ref=e63] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=woocommerce_com
+              - text: "|"
+            - listitem [ref=e64]:
+              - link "Blueprint (beta)" [ref=e65] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=blueprint
+              - text: "|"
+            - listitem [ref=e66]:
+              - link "Recursos" [ref=e67] [cursor=pointer]:
+                - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced&section=features
+          - heading "Página de instalação" [level=2] [ref=e68]
+          - paragraph [ref=e70]: Essas páginas precisam ser informadas para que o WooCommerce saiba para onde enviar os usuários para finalizar a compra.
+          - table [ref=e71]:
+            - rowgroup [ref=e72]:
+              - 'row "Página do carrinho Página onde os compradores revisam seu carrinho de compras × Carrinho (ID: 74)" [ref=e73]':
+                - rowheader "Página do carrinho Página onde os compradores revisam seu carrinho de compras" [ref=e74]:
+                  - generic [ref=e75]:
+                    - text: Página do carrinho
+                    - generic "Página onde os compradores revisam seu carrinho de compras" [ref=e76]: 
+                - 'cell "× Carrinho (ID: 74)" [ref=e77]':
+                  - combobox [ref=e78] [cursor=pointer]
+                  - 'combobox "× Carrinho (ID: 74)" [ref=e81] [cursor=pointer]':
+                    - 'textbox "Carrinho (ID: 74)" [ref=e82]':
+                      - generic [ref=e83]: ×
+              - 'row "Página de finalização de compra Página onde os compradores vão finalizar sua compra × Finalização de compra (ID: 75)" [ref=e84]':
+                - rowheader "Página de finalização de compra Página onde os compradores vão finalizar sua compra" [ref=e85]:
+                  - generic [ref=e86]:
+                    - text: Página de finalização de compra
+                    - generic "Página onde os compradores vão finalizar sua compra" [ref=e87]: 
+                - 'cell "× Finalização de compra (ID: 75)" [ref=e88]':
+                  - combobox [ref=e89] [cursor=pointer]
+                  - 'combobox "× Finalização de compra (ID: 75)" [ref=e92] [cursor=pointer]':
+                    - 'textbox "Finalização de compra (ID: 75)" [ref=e93]':
+                      - generic [ref=e94]: ×
+              - 'row "Página minha conta Conteúdo da página: [woocommerce_my_account] × Minha conta (ID: 76)" [ref=e95]':
+                - 'rowheader "Página minha conta Conteúdo da página: [woocommerce_my_account]" [ref=e96]':
+                  - generic [ref=e97]:
+                    - text: Página minha conta
+                    - 'generic "Conteúdo da página: [woocommerce_my_account]" [ref=e98]': 
+                - 'cell "× Minha conta (ID: 76)" [ref=e99]':
+                  - combobox [ref=e100] [cursor=pointer]
+                  - 'combobox "× Minha conta (ID: 76)" [ref=e103] [cursor=pointer]':
+                    - 'textbox "Minha conta (ID: 76)" [ref=e104]':
+                      - generic [ref=e105]: ×
+              - row "Termos e condições Se você definir uma página de \"Termos de uso\" o cliente será perguntado se ele aceita os termos antes de finalizar a compra. Pesquisar por uma página…" [ref=e106]:
+                - rowheader "Termos e condições Se você definir uma página de \"Termos de uso\" o cliente será perguntado se ele aceita os termos antes de finalizar a compra." [ref=e107]:
+                  - generic [ref=e108]:
+                    - text: Termos e condições
+                    - generic "Se você definir uma página de \"Termos de uso\" o cliente será perguntado se ele aceita os termos antes de finalizar a compra." [ref=e109]: 
+                - cell "Pesquisar por uma página…" [ref=e110]:
+                  - combobox [ref=e111] [cursor=pointer]
+                  - combobox "Pesquisar por uma página…" [ref=e114] [cursor=pointer]:
+                    - textbox [ref=e115]
+          - table
+          - heading "Endpoint da página de finalização de compra" [level=2] [ref=e116]
+          - paragraph [ref=e118]: Os endpoints são anexados aos URLs de páginas para executar ações específicas das páginas de finalização de compra. Devem ter um valor exclusivo.
+          - table [ref=e119]:
+            - rowgroup [ref=e120]:
+              - row "Pagar Endpoint para a pagina \"Finalização de compra → Pagar\". order-pay" [ref=e121]:
+                - rowheader "Pagar Endpoint para a pagina \"Finalização de compra → Pagar\"." [ref=e122]:
+                  - generic [ref=e123]:
+                    - text: Pagar
+                    - generic "Endpoint para a pagina \"Finalização de compra → Pagar\"." [ref=e124]: 
+                - cell "order-pay" [ref=e125]:
+                  - textbox "Pagar Endpoint para a pagina \"Finalização de compra → Pagar\"." [ref=e126]:
+                    - /placeholder: ""
+                    - text: order-pay
+              - row "Pedido recebido Endpoint para página \"Finalização de compra → Pedido recebido\". order-received" [ref=e127]:
+                - rowheader "Pedido recebido Endpoint para página \"Finalização de compra → Pedido recebido\"." [ref=e128]:
+                  - generic [ref=e129]:
+                    - text: Pedido recebido
+                    - generic "Endpoint para página \"Finalização de compra → Pedido recebido\"." [ref=e130]: 
+                - cell "order-received" [ref=e131]:
+                  - textbox "Pedido recebido Endpoint para página \"Finalização de compra → Pedido recebido\"." [ref=e132]:
+                    - /placeholder: ""
+                    - text: order-received
+              - row "Adicionar método de pagamento Endpoint para a página \"Finalização de compra → Adicionar método de pagamento\". add-payment-method" [ref=e133]:
+                - rowheader "Adicionar método de pagamento Endpoint para a página \"Finalização de compra → Adicionar método de pagamento\"." [ref=e134]:
+                  - generic [ref=e135]:
+                    - text: Adicionar método de pagamento
+                    - generic "Endpoint para a página \"Finalização de compra → Adicionar método de pagamento\"." [ref=e136]: 
+                - cell "add-payment-method" [ref=e137]:
+                  - textbox "Adicionar método de pagamento Endpoint para a página \"Finalização de compra → Adicionar método de pagamento\"." [ref=e138]:
+                    - /placeholder: ""
+                    - text: add-payment-method
+              - row "Excluir método de pagamento Endpoint para a página de exclusão de método de pagamento. delete-payment-method" [ref=e139]:
+                - rowheader "Excluir método de pagamento Endpoint para a página de exclusão de método de pagamento." [ref=e140]:
+                  - generic [ref=e141]:
+                    - text: Excluir método de pagamento
+                    - generic "Endpoint para a página de exclusão de método de pagamento." [ref=e142]: 
+                - cell "delete-payment-method" [ref=e143]:
+                  - textbox "Excluir método de pagamento Endpoint para a página de exclusão de método de pagamento." [ref=e144]:
+                    - /placeholder: ""
+                    - text: delete-payment-method
+              - row "Definir método de pagamento padrão Endpoint para a página de configuração de método de pagamento padrão. set-default-payment-method" [ref=e145]:
+                - rowheader "Definir método de pagamento padrão Endpoint para a página de configuração de método de pagamento padrão." [ref=e146]:
+                  - generic [ref=e147]:
+                    - text: Definir método de pagamento padrão
+                    - generic "Endpoint para a página de configuração de método de pagamento padrão." [ref=e148]: 
+                - cell "set-default-payment-method" [ref=e149]:
+                  - textbox "Definir método de pagamento padrão Endpoint para a página de configuração de método de pagamento padrão." [ref=e150]:
+                    - /placeholder: ""
+                    - text: set-default-payment-method
+          - heading "Endpoints da conta" [level=2] [ref=e151]
+          - paragraph [ref=e153]: Os endpoints são anexados aos URLs de páginas para executar ações específicas das páginas de contas. Devem ter um valor exclusivo e para desativá-los basta deixar o valor em branco.
+          - table [ref=e154]:
+            - rowgroup [ref=e155]:
+              - row "Pedidos Endpoint para a página \"Minha conta → Pedidos\". orders" [ref=e156]:
+                - rowheader "Pedidos Endpoint para a página \"Minha conta → Pedidos\"." [ref=e157]:
+                  - generic [ref=e158]:
+                    - text: Pedidos
+                    - generic "Endpoint para a página \"Minha conta → Pedidos\"." [ref=e159]: 
+                - cell "orders" [ref=e160]:
+                  - textbox "Pedidos Endpoint para a página \"Minha conta → Pedidos\"." [ref=e161]:
+                    - /placeholder: ""
+                    - text: orders
+              - row "Ver pedido Endpoint para página \"Minha conta → Ver pedido\". view-order" [ref=e162]:
+                - rowheader "Ver pedido Endpoint para página \"Minha conta → Ver pedido\"." [ref=e163]:
+                  - generic [ref=e164]:
+                    - text: Ver pedido
+                    - generic "Endpoint para página \"Minha conta → Ver pedido\"." [ref=e165]: 
+                - cell "view-order" [ref=e166]:
+                  - textbox "Ver pedido Endpoint para página \"Minha conta → Ver pedido\"." [ref=e167]:
+                    - /placeholder: ""
+                    - text: view-order
+              - row "Downloads Endpoint para a página \"Minha conta → Downloads\". downloads" [ref=e168]:
+                - rowheader "Downloads Endpoint para a página \"Minha conta → Downloads\"." [ref=e169]:
+                  - generic [ref=e170]:
+                    - text: Downloads
+                    - generic "Endpoint para a página \"Minha conta → Downloads\"." [ref=e171]: 
+                - cell "downloads" [ref=e172]:
+                  - textbox "Downloads Endpoint para a página \"Minha conta → Downloads\"." [ref=e173]:
+                    - /placeholder: ""
+                    - text: downloads
+              - row "Editar conta Endpoint para a página \"Minha conta → Editar conta\". edit-account" [ref=e174]:
+                - rowheader "Editar conta Endpoint para a página \"Minha conta → Editar conta\"." [ref=e175]:
+                  - generic [ref=e176]:
+                    - text: Editar conta
+                    - generic "Endpoint para a página \"Minha conta → Editar conta\"." [ref=e177]: 
+                - cell "edit-account" [ref=e178]:
+                  - textbox "Editar conta Endpoint para a página \"Minha conta → Editar conta\"." [ref=e179]:
+                    - /placeholder: ""
+                    - text: edit-account
+              - row "Endereços Endpoint para a página \"Minha conta → Endereços\". edit-address" [ref=e180]:
+                - rowheader "Endereços Endpoint para a página \"Minha conta → Endereços\"." [ref=e181]:
+                  - generic [ref=e182]:
+                    - text: Endereços
+                    - generic "Endpoint para a página \"Minha conta → Endereços\"." [ref=e183]: 
+                - cell "edit-address" [ref=e184]:
+                  - textbox "Endereços Endpoint para a página \"Minha conta → Endereços\"." [ref=e185]:
+                    - /placeholder: ""
+                    - text: edit-address
+              - row "Métodos de pagamento Endpoint para a página \"Minha conta → Métodos de pagamento\". payment-methods" [ref=e186]:
+                - rowheader "Métodos de pagamento Endpoint para a página \"Minha conta → Métodos de pagamento\"." [ref=e187]:
+                  - generic [ref=e188]:
+                    - text: Métodos de pagamento
+                    - generic "Endpoint para a página \"Minha conta → Métodos de pagamento\"." [ref=e189]: 
+                - cell "payment-methods" [ref=e190]:
+                  - textbox "Métodos de pagamento Endpoint para a página \"Minha conta → Métodos de pagamento\"." [ref=e191]:
+                    - /placeholder: ""
+                    - text: payment-methods
+              - row "Senha perdida Endpoint para página \"Minha conta → Senha perdida\". lost-password" [ref=e192]:
+                - rowheader "Senha perdida Endpoint para página \"Minha conta → Senha perdida\"." [ref=e193]:
+                  - generic [ref=e194]:
+                    - text: Senha perdida
+                    - generic "Endpoint para página \"Minha conta → Senha perdida\"." [ref=e195]: 
+                - cell "lost-password" [ref=e196]:
+                  - textbox "Senha perdida Endpoint para página \"Minha conta → Senha perdida\"." [ref=e197]:
+                    - /placeholder: ""
+                    - text: lost-password
+              - 'row "Sair Endpoint para a ação de sair da conta. Você pode adicionar este aos seus menus através de um link personalizado: seusite.com/?customer-logout=true customer-logout" [ref=e198]':
+                - 'rowheader "Sair Endpoint para a ação de sair da conta. Você pode adicionar este aos seus menus através de um link personalizado: seusite.com/?customer-logout=true" [ref=e199]':
+                  - generic [ref=e200]:
+                    - text: Sair
+                    - 'generic "Endpoint para a ação de sair da conta. Você pode adicionar este aos seus menus através de um link personalizado: seusite.com/?customer-logout=true" [ref=e201]': 
+                - cell "customer-logout" [ref=e202]:
+                  - 'textbox "Sair Endpoint para a ação de sair da conta. Você pode adicionar este aos seus menus através de um link personalizado: seusite.com/?customer-logout=true" [ref=e203]':
+                    - /placeholder: ""
+                    - text: customer-logout
+          - paragraph [ref=e204]:
+            - button "Salvar alterações" [disabled] [ref=e205]
+    - generic [ref=e207]:
+      - img [ref=e209]
+      - generic [ref=e211]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e213] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+  - img

@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - heading "Configurações" [level=1] [ref=e35]
+      - main [ref=e37]:
+        - generic [ref=e40]:
+          - navigation [ref=e41]:
+            - link "Geral" [ref=e42] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=general
+            - link "Produtos" [ref=e43] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=products
+            - link "Entrega" [ref=e44] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=shipping
+            - link "Pagamentos" [ref=e45] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=checkout
+            - link "Contas e privacidade" [ref=e46] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=account
+            - link "E-mails" [ref=e47] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=email
+            - link "Integração" [ref=e48] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=integration
+            - link "Visibilidade do site" [ref=e49] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=site-visibility
+            - link "Point of Sale" [ref=e50] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=point-of-sale
+            - link "Avançado" [ref=e51] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced
+          - heading "Visibilidade do site" [level=1] [ref=e52]
+          - paragraph [ref=e54]:
+            - strong [ref=e55]: Suas configurações foram salvas.
+          - generic [ref=e57]:
+            - heading "Visibilidade do site" [level=2] [ref=e58]
+            - paragraph [ref=e59]:
+              - text: Gerencie como seu site aparece para os visitantes.
+              - link "Saiba mais" [ref=e60] [cursor=pointer]:
+                - /url: https://woocommerce.com/document/configuring-woocommerce-settings/coming-soon-mode/
+            - generic [ref=e61]:
+              - group [ref=e62]:
+                - generic [ref=e64]:
+                  - radio "Em breve" [ref=e65] [cursor=pointer]
+                  - generic [ref=e66] [cursor=pointer]: Em breve
+              - paragraph [ref=e67]: Seu site fica oculto dos visitantes atrás de uma landing page “Em breve” até que esteja pronto para visualização.
+            - generic [ref=e68]:
+              - group [ref=e69]:
+                - generic [ref=e71]:
+                  - radio "Ao vivo" [checked] [ref=e72] [cursor=pointer]
+                  - generic [ref=e73] [cursor=pointer]: Ao vivo
+              - paragraph [ref=e74]: Seu site é visível para todos.
+          - paragraph [ref=e75]:
+            - button "Salvar alterações" [disabled] [ref=e76]
+    - generic [ref=e78]:
+      - img [ref=e80]
+      - generic [ref=e82]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e84] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+  - img

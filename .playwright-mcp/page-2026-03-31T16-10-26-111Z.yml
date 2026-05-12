@@ -1,0 +1,41 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link "Google Apps Script" [ref=e10] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e21]:
+          - button "Deploy" [ref=e26] [cursor=pointer]:
+            - generic [ref=e29]:
+              - text: Deploy
+              - generic [ref=e30]: 
+          - button "Support" [ref=e32] [cursor=pointer]:
+            - generic [ref=e35]: help_outline
+        - generic [ref=e37]:
+          - button "Google apps" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+          - 'button "Google Account: Gustavo Oliveira (gustaoliveiraoficial@gmail.com)" [ref=e47] [cursor=pointer]':
+            - img [ref=e49]
+    - navigation "Apps Script project pages" [ref=e53]:
+      - link "Overview" [ref=e54] [cursor=pointer]:
+        - generic [ref=e56]: info_outline
+        - generic [ref=e57]: Overview
+      - link "Editor" [ref=e58] [cursor=pointer]:
+        - generic [ref=e60]: code
+        - generic [ref=e61]: Editor
+      - link "Project History" [ref=e62] [cursor=pointer]:
+        - generic [ref=e64]: history
+        - generic [ref=e65]: Project History
+      - link "Triggers" [ref=e66] [cursor=pointer]:
+        - generic [ref=e68]: alarm
+        - generic [ref=e69]: Triggers
+      - link "Executions" [ref=e70] [cursor=pointer]:
+        - generic [ref=e72]: playlist_play
+        - generic [ref=e73]: Executions
+      - link "Project Settings" [ref=e74] [cursor=pointer]:
+        - generic [ref=e76]: settings
+        - generic [ref=e77]: Project Settings

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Tráfego Pago — PassoaPasso | Março 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 64px;
+  }
+
+  /* CAPA */
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0;
+    page-break-after: always;
+  }
+
+  .cover-tag {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #999;
+  }
+
+  .cover-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #0f0f0f;
+    margin-top: 48px;
+  }
+
+  .cover-title span {
+    color: #2563eb;
+  }
+
+  .cover-sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 16px;
+  }
+
+  .cover-divider {
+    width: 48px;
+    height: 3px;
+    background: #2563eb;
+    margin-top: 40px;
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 48px;
+    margin-top: auto;
+    padding-top: 64px;
+  }
+
+  .cover-meta-item label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 4px;
+  }
+
+  .cover-meta-item p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f0f0f;
+  }
+
+  /* SEÇÕES */
+  .section {
+    page-break-inside: avoid;
+    margin-bottom: 56px;
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2563eb;
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  /* FUNIL */
+  .funnel {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .funnel-stage {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .funnel-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    padding: 16px 10px;
+    color: #fff;
+    min-width: 36px;
+    border-radius: 4px;
+  }
+
+  .funnel-bar.topo { background: #93c5fd; color: #1d4ed8; }
+  .funnel-bar.meio { background: #3b82f6; }
+  .funnel-bar.fundo { background: #1d4ed8; }
+
+  .funnel-content {
+    flex: 1;
+    padding: 20px 24px;
+    background: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+  }
+
+  .funnel-content h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-bottom: 4px;
+  }
+
+  .funnel-content p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 10px;
+    font-weight: 500;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 3px 10px;
+    border-radius: 99px;
+    border: 1px solid #bfdbfe;
+  }
+
+  /* BUDGET */
+  .budget-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .budget-card {
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    background: #fafafa;
+  }
+
+  .budget-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .budget-card-header h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0f0f0f;
+  }
+
+  .budget-pct {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 2px 8px;
+    border-radius: 99px;
+  }
+
+  .budget-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-bottom: 2px;
+  }
+
+  .budget-daily {
+    font-size: 11px;
+    color: #999;
+  }
+
+  .budget-obj {
+    font-size: 11px;
+    color: #666;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .budget-total-bar {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .budget-total-bar span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #aaa;
+  }
+
+  .budget-total-bar strong {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  /* CAMPANHAS */
+  .campaign {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .campaign-header {
+    padding: 14px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .campaign-header h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f0f0f;
+  }
+
+  .campaign-budget-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: #2563eb;
+    padding: 3px 12px;
+    border-radius: 99px;
+  }
+
+  .campaign-body {
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .campaign-field label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 3px;
+  }
+
+  .campaign-field p {
+    font-size: 12px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* CRIATIVOS */
+  .creative {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  .creative-header {
+    padding: 14px 20px;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .creative-header h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .creative-duration {
+    font-size: 11px;
+    color: #aaa;
+  }
+
+  .creative-body {
+    padding: 20px;
+  }
+
+  .script-line {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f7f7f7;
+  }
+
+  .script-line:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .script-time {
+    font-size: 10px;
+    font-weight: 700;
+    color: #2563eb;
+    min-width: 48px;
+    padding-top: 1px;
+  }
+
+  .script-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .script-text strong {
+    color: #0f0f0f;
+    font-weight: 600;
+  }
+
+  .creative-meta {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #f8faff;
+    border-radius: 6px;
+    border: 1px solid #e0eaff;
+  }
+
+  .creative-meta p {
+    font-size: 11px;
+    color: #555;
+    margin-bottom: 2px;
+  }
+
+  .creative-meta p:last-child { margin-bottom: 0; }
+
+  .creative-meta strong {
+    color: #1d4ed8;
+    font-weight: 600;
+  }
+
+  /* MÉTRICAS */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .metric-card {
+    padding: 18px 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+  }
+
+  .metric-card h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+
+  .metric-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 5px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: #555;
+  }
+
+  .metric-row:last-child { border-bottom: none; }
+
+  .metric-row strong {
+    font-weight: 600;
+    color: #0f0f0f;
+  }
+
+  /* CRONOGRAMA */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .timeline-week {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .timeline-label {
+    min-width: 120px;
+    padding: 14px 16px;
+    background: #0f0f0f;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .timeline-label span {
+    font-size: 10px;
+    color: #777;
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  .timeline-content {
+    flex: 1;
+    padding: 14px 20px;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    font-size: 12px;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .timeline-content .tl-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .tl-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #2563eb;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  /* PÁGINA DE BREAK */
+  .page-break { page-break-before: always; }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 11px;
+    color: #bbb;
+  }
+
+  /* PLATAFORMA */
+  .platform-split {
+    display: flex;
+    gap: 12px;
+  }
+
+  .platform-card {
+    flex: 1;
+    padding: 18px 20px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+  }
+
+  .platform-card.meta { background: #f0f4ff; border-color: #c7d7fe; }
+  .platform-card.whatsapp { background: #f0fdf4; border-color: #bbf7d0; }
+
+  .platform-card h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .platform-card.meta h4 { color: #1d4ed8; }
+  .platform-card.whatsapp h4 { color: #15803d; }
+
+  .platform-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-bottom: 2px;
+  }
+
+  .platform-pct {
+    font-size: 11px;
+    color: #888;
+  }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 40px 48px; }
+    .section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- CAPA -->
+  <div class="cover">
+    <div>
+      <p class="cover-tag">PassoaPasso Uniformes — Documento Interno</p>
+      <h1 class="cover-title">Plano de<br><span>Tráfego Pago</span></h1>
+      <p class="cover-sub">Estrutura completa de campanhas, criativos, roteiros e distribuição financeira</p>
+      <div class="cover-divider"></div>
+    </div>
+
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <label>Período</label>
+        <p>Março 2026</p>
+      </div>
+      <div class="cover-meta-item">
+        <label>Budget Mensal</label>
+        <p>R$ 1.500,00</p>
+      </div>
+      <div class="cover-meta-item">
+        <label>Plataforma</label>
+        <p>Meta Ads + WhatsApp</p>
+      </div>
+      <div class="cover-meta-item">
+        <label>Campanhas</label>
+        <p>4 Campanhas Ativas</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 1 — FUNIL -->
+  <div class="section">
+    <p class="section-label">01 — Arquitetura</p>
+    <h2 class="section-title">Funil de Tráfego Pago</h2>
+
+    <div class="funnel">
+      <div class="funnel-stage">
+        <div class="funnel-bar topo">Topo</div>
+        <div class="funnel-content">
+          <h3>Awareness — Público Frio</h3>
+          <p>Pessoas que nunca viram a marca. Objetivo: gerar conhecimento e atrair novos seguidores e visitantes.</p>
+          <div class="tags">
+            <span class="tag">Reels Patrocinados</span>
+            <span class="tag">Interesse em Uniformes</span>
+            <span class="tag">Público Lookalike</span>
+            <span class="tag">Faixa 18–35 anos</span>
+            <span class="tag">Região Local</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="funnel-stage">
+        <div class="funnel-bar meio">Meio</div>
+        <div class="funnel-content">
+          <h3>Consideração — Público Morno</h3>
+          <p>Pessoas que já interagiram com o conteúdo mas não converteram. Objetivo: manter presença e criar desejo.</p>
+          <div class="tags">
+            <span class="tag">Visitaram o Perfil (30 dias)</span>
+            <span class="tag">Assistiram 75% do Vídeo</span>
+            <span class="tag">Salvaram Post</span>
+            <span class="tag">Curtiram / Comentaram</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="funnel-stage">
+        <div class="funnel-bar fundo">Fundo</div>
+        <div class="funnel-content">
+          <h3>Conversão — Público Quente</h3>
+          <p>Pessoas próximas da decisão. Objetivo: fechar a venda com urgência e oferta clara.</p>
+          <div class="tags">
+            <span class="tag">Enviaram DM</span>
+            <span class="tag">Clicaram no Link</span>
+            <span class="tag">Iniciaram Conversa WhatsApp</span>
+            <span class="tag">Leads Reativados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 2 — BUDGET -->
+  <div class="section page-break">
+    <p class="section-label">02 — Financeiro</p>
+    <h2 class="section-title">Distribuição do Budget — R$ 1.500/mês</h2>
+
+    <div class="budget-grid">
+      <div class="budget-card">
+        <div class="budget-card-header">
+          <h4>Terceirão — Fechamento</h4>
+          <span class="budget-pct">33%</span>
+        </div>
+        <div class="budget-value">R$ 500</div>
+        <div class="budget-daily">≈ R$ 16,60 / dia</div>
+        <div class="budget-obj">Objetivo: Conversão direta — fechar pedidos de turmas do terceirão</div>
+      </div>
+
+      <div class="budget-card">
+        <div class="budget-card-header">
+          <h4>Clube VIP — Lançamento</h4>
+          <span class="budget-pct">27%</span>
+        </div>
+        <div class="budget-value">R$ 400</div>
+        <div class="budget-daily">≈ R$ 13,30 / dia</div>
+        <div class="budget-obj">Objetivo: Captação de membros fundadores para o consórcio</div>
+      </div>
+
+      <div class="budget-card">
+        <div class="budget-card-header">
+          <h4>Seguidores / Autoridade</h4>
+          <span class="budget-pct">20%</span>
+        </div>
+        <div class="budget-value">R$ 300</div>
+        <div class="budget-daily">≈ R$ 10,00 / dia</div>
+        <div class="budget-obj">Objetivo: Crescimento orgânico + construção de autoridade no nicho</div>
+      </div>
+
+      <div class="budget-card">
+        <div class="budget-card-header">
+          <h4>Retargeting Geral</h4>
+          <span class="budget-pct">13%</span>
+        </div>
+        <div class="budget-value">R$ 200</div>
+        <div class="budget-daily">≈ R$ 6,60 / dia</div>
+        <div class="budget-obj">Objetivo: Reativar leads mornos — quem viu mas não converteu</div>
+      </div>
+    </div>
+
+    <div class="budget-total-bar">
+      <span>Reserva para Testes A/B (7%)</span>
+      <div style="text-align:right;">
+        <span>R$ 100</span>&nbsp;&nbsp;
+        <strong>Total: R$ 1.500</strong>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <div class="platform-split">
+        <div class="platform-card meta">
+          <h4>Meta Ads (Instagram + Facebook)</h4>
+          <div class="platform-value">R$ 1.200</div>
+          <div class="platform-pct">80% do budget — alcance, reels, stories, carrossel</div>
+        </div>
+        <div class="platform-card whatsapp">
+          <h4>WhatsApp Ads (Clique Direto)</h4>
+          <div class="platform-value">R$ 300</div>
+          <div class="platform-pct">20% do budget — conversão direta para conversa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 3 — CAMPANHAS -->
+  <div class="section page-break">
+    <p class="section-label">03 — Campanhas</p>
+    <h2 class="section-title">Estrutura das Campanhas Meta Ads</h2>
+
+    <div class="campaign">
+      <div class="campaign-header">
+        <h3>Campanha 1 — Terceirão: Fechamento</h3>
+        <span class="campaign-budget-tag">R$ 500/mês</span>
+      </div>
+      <div class="campaign-body">
+        <div class="campaign-field">
+          <label>Objetivo</label>
+          <p>Mensagens / Conversões</p>
+        </div>
+        <div class="campaign-field">
+          <label>Público</label>
+          <p>18–24 anos | Interesse em formatura, terceirão, uniforme escolar</p>
+        </div>
+        <div class="campaign-field">
+          <label>Formato</label>
+          <p>Reels 15s + Stories patrocinados</p>
+        </div>
+        <div class="campaign-field">
+          <label>CTA</label>
+          <p>"Manda mensagem agora"</p>
+        </div>
+        <div class="campaign-field">
+          <label>Meta KPI</label>
+          <p>Custo por mensagem &lt; R$ 8</p>
+        </div>
+        <div class="campaign-field">
+          <label>Período</label>
+          <p>11/03 → 31/03</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign">
+      <div class="campaign-header">
+        <h3>Campanha 2 — Clube VIP: Lançamento</h3>
+        <span class="campaign-budget-tag">R$ 400/mês</span>
+      </div>
+      <div class="campaign-body">
+        <div class="campaign-field">
+          <label>Objetivo</label>
+          <p>Mensagens / Cadastros</p>
+        </div>
+        <div class="campaign-field">
+          <label>Público</label>
+          <p>25–45 anos | Pais de alunos, líderes de turma, interessados em economia</p>
+        </div>
+        <div class="campaign-field">
+          <label>Formato</label>
+          <p>Vídeo explicativo 60s + carrossel</p>
+        </div>
+        <div class="campaign-field">
+          <label>CTA</label>
+          <p>"Quero entrar no Clube"</p>
+        </div>
+        <div class="campaign-field">
+          <label>Meta KPI</label>
+          <p>Custo por lead &lt; R$ 20 | 10 membros no mês</p>
+        </div>
+        <div class="campaign-field">
+          <label>Período</label>
+          <p>12/03 → 31/03</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign">
+      <div class="campaign-header">
+        <h3>Campanha 3 — Seguidores / Autoridade</h3>
+        <span class="campaign-budget-tag">R$ 300/mês</span>
+      </div>
+      <div class="campaign-body">
+        <div class="campaign-field">
+          <label>Objetivo</label>
+          <p>Engajamento / Alcance</p>
+        </div>
+        <div class="campaign-field">
+          <label>Público</label>
+          <p>18–35 anos | Moda, personalização, escolas e colégios locais</p>
+        </div>
+        <div class="campaign-field">
+          <label>Formato</label>
+          <p>Reels 30s + Carrossel educativo</p>
+        </div>
+        <div class="campaign-field">
+          <label>CTA</label>
+          <p>"Seguir / Ver mais"</p>
+        </div>
+        <div class="campaign-field">
+          <label>Meta KPI</label>
+          <p>Custo por seguidor &lt; R$ 1,50</p>
+        </div>
+        <div class="campaign-field">
+          <label>Período</label>
+          <p>11/03 → 31/03 (contínua)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="campaign">
+      <div class="campaign-header">
+        <h3>Campanha 4 — Retargeting Geral</h3>
+        <span class="campaign-budget-tag">R$ 200/mês</span>
+      </div>
+      <div class="campaign-body">
+        <div class="campaign-field">
+          <label>Objetivo</label>
+          <p>Conversão / Mensagens</p>
+        </div>
+        <div class="campaign-field">
+          <label>Público</label>
+          <p>Visitantes do perfil (30 dias) + quem assistiu vídeos + salvou posts</p>
+        </div>
+        <div class="campaign-field">
+          <label>Formato</label>
+          <p>Stories + imagem estática com texto direto</p>
+        </div>
+        <div class="campaign-field">
+          <label>CTA</label>
+          <p>"Ainda dá tempo — fala com a gente"</p>
+        </div>
+        <div class="campaign-field">
+          <label>Meta KPI</label>
+          <p>Taxa de conversão &gt; 5% | ROAS &gt; 3x</p>
+        </div>
+        <div class="campaign-field">
+          <label>Período</label>
+          <p>11/03 → 31/03 (contínua)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 4 — CRIATIVOS -->
+  <div class="section page-break">
+    <p class="section-label">04 — Criativos e Roteiros</p>
+    <h2 class="section-title">Scripts por Campanha</h2>
+
+    <div class="creative">
+      <div class="creative-header">
+        <h3>Criativo 1 — Reels Terceirão</h3>
+        <span class="creative-duration">15 segundos | Campanha 1</span>
+      </div>
+      <div class="creative-body">
+        <div class="script-line">
+          <span class="script-time">0–3s</span>
+          <div class="script-text"><strong>GANCHO:</strong> "Seu terceirão vai ser inesquecível..." — texto animado sobre imagem de turma feliz, corte rápido</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">3–8s</span>
+          <div class="script-text"><strong>SOLUÇÃO:</strong> "A gente faz o uniforme perfeito pra sua turma — do pedido à entrega, sem complicação"</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">8–12s</span>
+          <div class="script-text"><strong>PROVA SOCIAL:</strong> Clipe rápido mostrando pedidos prontos sendo entregues, turmas recebendo os uniformes</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">12–15s</span>
+          <div class="script-text"><strong>CTA:</strong> "Manda mensagem agora e garante o seu!" + logo PassoaPasso em tela cheia</div>
+        </div>
+        <div class="creative-meta">
+          <p><strong>Legenda:</strong> "Uniforme do terceirão com a PassoaPasso 🎽 Clica no botão e fala com a gente!"</p>
+          <p><strong>Música:</strong> Trending no Reels — animada, energia positiva</p>
+          <p><strong>Texto na tela:</strong> Fontes grandes, contraste alto, legível sem som</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="creative">
+      <div class="creative-header">
+        <h3>Criativo 2 — Vídeo Clube VIP</h3>
+        <span class="creative-duration">30–60 segundos | Campanha 2</span>
+      </div>
+      <div class="creative-body">
+        <div class="script-line">
+          <span class="script-time">0–5s</span>
+          <div class="script-text"><strong>GANCHO:</strong> "E se o uniforme do seu filho saísse sem pesar no bolso todo mês?"</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">5–20s</span>
+          <div class="script-text"><strong>CONCEITO:</strong> "No Clube VIP PassoaPasso você paga um pouquinho por mês. Quando chegar sua vez — o uniforme sai completo. Simples assim. É como um consórcio, só que pra uniformes."</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">20–40s</span>
+          <div class="script-text"><strong>BENEFÍCIOS:</strong> Lista animada — acesso antecipado a novos modelos, desconto em pedidos extras, grupo VIP exclusivo, prioridade na entrega</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">40–60s</span>
+          <div class="script-text"><strong>CTA:</strong> "Vagas limitadas para membros fundadores. Entra no Clube agora — manda mensagem!"</div>
+        </div>
+        <div class="creative-meta">
+          <p><strong>Legenda:</strong> "Chega de se preocupar com uniforme todo ano. Entra no Clube VIP 👇"</p>
+          <p><strong>Tom:</strong> Calmo, confiante — falar como quem apresenta uma solução, não vende</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="creative">
+      <div class="creative-header">
+        <h3>Criativo 3 — Story Retargeting</h3>
+        <span class="creative-duration">Imagem estática | Campanha 4</span>
+      </div>
+      <div class="creative-body">
+        <div class="script-line">
+          <span class="script-time">Copy</span>
+          <div class="script-text">"Você chegou a olhar os nossos uniformes... Que tal fechar hoje? Tenho uma condição especial pra você 👇"</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">Visual</span>
+          <div class="script-text">Fundo escuro, texto grande centralizado, seta apontando para o botão de CTA. Foto de produto em destaque.</div>
+        </div>
+        <div class="script-line">
+          <span class="script-time">CTA</span>
+          <div class="script-text">"Desliza pra cima / Clique aqui" — direciona direto para WhatsApp</div>
+        </div>
+        <div class="creative-meta">
+          <p><strong>Frequência:</strong> Máx. 3 exibições por pessoa — evitar cansaço de anúncio</p>
+          <p><strong>Variação A/B:</strong> Testar copy com urgência ("últimas vagas") vs copy com benefício ("condição especial")</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 5 — MÉTRICAS -->
+  <div class="section page-break">
+    <p class="section-label">05 — Métricas</p>
+    <h2 class="section-title">KPIs e Metas por Campanha</h2>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <h4>Terceirão — Fechamento</h4>
+        <div class="metric-row"><span>CPM (custo por mil)</span><strong>&lt; R$ 15</strong></div>
+        <div class="metric-row"><span>CTR (taxa de clique)</span><strong>&gt; 2%</strong></div>
+        <div class="metric-row"><span>Custo por mensagem</span><strong>&lt; R$ 8</strong></div>
+        <div class="metric-row"><span>Meta de pedidos</span><strong>15 fechamentos</strong></div>
+      </div>
+
+      <div class="metric-card">
+        <h4>Clube VIP — Lançamento</h4>
+        <div class="metric-row"><span>Custo por lead</span><strong>&lt; R$ 20</strong></div>
+        <div class="metric-row"><span>Taxa conversão lead→membro</span><strong>&gt; 30%</strong></div>
+        <div class="metric-row"><span>Meta de membros</span><strong>10 fundadores</strong></div>
+        <div class="metric-row"><span>Receita recorrente gerada</span><strong>R$ 490–1.490/mês</strong></div>
+      </div>
+
+      <div class="metric-card">
+        <h4>Seguidores / Autoridade</h4>
+        <div class="metric-row"><span>Custo por seguidor</span><strong>&lt; R$ 1,50</strong></div>
+        <div class="metric-row"><span>Alcance semanal</span><strong>&gt; 5.000 pessoas</strong></div>
+        <div class="metric-row"><span>Taxa de engajamento</span><strong>&gt; 4%</strong></div>
+        <div class="metric-row"><span>Meta de novos seguidores</span><strong>+200 no mês</strong></div>
+      </div>
+
+      <div class="metric-card">
+        <h4>Retargeting Geral</h4>
+        <div class="metric-row"><span>ROAS (retorno sobre gasto)</span><strong>&gt; 3x</strong></div>
+        <div class="metric-row"><span>Taxa de conversão</span><strong>&gt; 5%</strong></div>
+        <div class="metric-row"><span>Frequência máxima</span><strong>3x por pessoa</strong></div>
+        <div class="metric-row"><span>Custo por conversão</span><strong>&lt; R$ 30</strong></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; padding: 16px 20px; background: #fafafa; border-radius: 8px; border: 1px solid #f0f0f0;">
+      <p style="font-size: 12px; color: #555; font-weight: 500; margin-bottom: 6px;">Protocolo de Otimização Semanal</p>
+      <p style="font-size: 12px; color: #777;">Toda <strong style="color: #0f0f0f;">domingo</strong>: revisar performance de cada campanha. Pausar criativos com CTR abaixo da meta. Dobrar budget nos anúncios que convertem acima da meta. Testar novo criativo a cada 2 semanas.</p>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 6 — CRONOGRAMA -->
+  <div class="section">
+    <p class="section-label">06 — Cronograma</p>
+    <h2 class="section-title">Plano de Execução — Março 2026</h2>
+
+    <div class="timeline">
+      <div class="timeline-week">
+        <div class="timeline-label">
+          Semana 1
+          <span>11–15/mar</span>
+        </div>
+        <div class="timeline-content">
+          <div class="tl-item"><div class="tl-dot"></div><span>Subir campanhas Terceirão e Retargeting no Meta Ads</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Testar 2 criativos diferentes (A/B) para Terceirão</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Iniciar teaser do Clube VIP nos stories orgânicos</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Publicar conteúdo orgânico diário conforme calendário</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-week">
+        <div class="timeline-label">
+          Semana 2
+          <span>16–22/mar</span>
+        </div>
+        <div class="timeline-content">
+          <div class="tl-item"><div class="tl-dot"></div><span>Análise de resultados semana 1 — pausar o que não converte</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Subir campanha Clube VIP (lançamento oficial 15/mar)</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Ativar campanha de Seguidores / Autoridade</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Reforçar retargeting para leads que engajaram na semana 1</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-week">
+        <div class="timeline-label">
+          Semana 3
+          <span>23–29/mar</span>
+        </div>
+        <div class="timeline-content">
+          <div class="tl-item"><div class="tl-dot"></div><span>Aumentar budget nas campanhas com melhor performance</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Criar senso de urgência — "últimas vagas do mês"</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Publicar depoimentos e provas sociais de fechamentos</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Reativar via DM os leads que clicaram mas não converteram</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-week">
+        <div class="timeline-label">
+          Semana 4
+          <span>30–31/mar</span>
+        </div>
+        <div class="timeline-content">
+          <div class="tl-item"><div class="tl-dot"></div><span>Sprint final — dobrar intensidade nos últimos 2 dias</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Oferta especial exclusiva para fechamento até 31/03</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><span>Relatório de resultados: o que funcionou e o que otimizar em abril</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>PassoaPasso Uniformes — Documento Interno</p>
+    <p>Plano de Tráfego Pago | Março 2026 | Gerado via AIOS</p>
+  </div>
+
+</div>
+</body>
+</html>

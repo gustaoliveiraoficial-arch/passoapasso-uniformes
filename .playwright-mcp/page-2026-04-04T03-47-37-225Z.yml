@@ -1,0 +1,274 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Passo a Passo" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=e5]:
+        - link "Início" [ref=e6] [cursor=pointer]:
+          - /url: index.html
+        - link "Produtos" [ref=e7] [cursor=pointer]:
+          - /url: tabela-precos.html
+        - link "Personalização" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+        - link "Contato" [ref=e9] [cursor=pointer]:
+          - /url: "#"
+      - button "Ver Catálogo" [ref=e10] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: TABELA OFICIAL 2026
+      - heading "Tabela de Preços" [level=1] [ref=e14]
+      - paragraph [ref=e15]: Uniformes & Fardamentos Premium. Quanto mais peças, menor o preço unitário.
+    - navigation [ref=e16]:
+      - button "business_center Linha Empresarial" [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: business_center
+        - text: Linha Empresarial
+      - button "sports_soccer Linha Esportes" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: sports_soccer
+        - text: Linha Esportes
+      - button "school Linha Escolar" [ref=e21] [cursor=pointer]:
+        - generic [ref=e22]: school
+        - text: Linha Escolar
+      - button "storefront PAP Store" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: storefront
+        - text: PAP Store
+      - button "ac_unit Linha de Inverno" [ref=e25] [cursor=pointer]:
+        - generic [ref=e26]: ac_unit
+        - text: Linha de Inverno
+      - button "redeem Brindes" [ref=e27] [cursor=pointer]:
+        - generic [ref=e28]: redeem
+        - text: Brindes
+    - generic [ref=e29]:
+      - heading "Linha Empresarial" [level=2] [ref=e30]
+      - paragraph [ref=e31]: Camisetas e Polos para uniformização corporativa. Incluso serigrafia ou bordado conforme o modelo.
+      - paragraph [ref=e32]: Camisetas Polo
+      - paragraph [ref=e33]: "Piquet PV: incluso 1 bordado lado esquerdo | Poliviscose/Dry Liso: 2 estampas serigrafia 2 cores. Manga Longa: +R$22,00."
+      - table [ref=e35]:
+        - rowgroup [ref=e36]:
+          - row "Modelo / Tecido 10 pçs 30 pçs 50 pçs 100+ pçs" [ref=e37]:
+            - columnheader "Modelo / Tecido" [ref=e38]
+            - columnheader "10 pçs" [ref=e39]
+            - columnheader "30 pçs" [ref=e40]
+            - columnheader "50 pçs" [ref=e41]
+            - columnheader "100+ pçs" [ref=e42]
+        - rowgroup [ref=e43]:
+          - 'row "Piquet PV Veja acréscimos na tabela de personalização Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro R$ 79,90 R$ 76,90 Orçar Orçar" [ref=e44]':
+            - 'cell "Piquet PV Veja acréscimos na tabela de personalização Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro" [ref=e45]':
+              - generic [ref=e46]:
+                - generic [ref=e47]: Piquet PV
+                - generic [ref=e48]: Veja acréscimos na tabela de personalização
+                - generic [ref=e49]: "Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro"
+            - cell "R$ 79,90" [ref=e50]:
+              - generic [ref=e51]: R$ 79,90
+            - cell "R$ 76,90" [ref=e52]:
+              - generic [ref=e53]: R$ 76,90
+            - cell "Orçar" [ref=e54]:
+              - generic [ref=e55]: Orçar
+            - cell "Orçar" [ref=e56]:
+              - generic [ref=e57]: Orçar
+          - 'row "Poliviscose Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro R$ 71,90 R$ 69,90 R$ 67,90 Orçar" [ref=e58]':
+            - 'cell "Poliviscose Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro" [ref=e59]':
+              - generic [ref=e60]:
+                - generic [ref=e61]: Poliviscose
+                - generic [ref=e62]: "Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro"
+            - cell "R$ 71,90" [ref=e63]:
+              - generic [ref=e64]: R$ 71,90
+            - cell "R$ 69,90" [ref=e65]:
+              - generic [ref=e66]: R$ 69,90
+            - cell "R$ 67,90" [ref=e67]:
+              - generic [ref=e68]: R$ 67,90
+            - cell "Orçar" [ref=e69]:
+              - generic [ref=e70]: Orçar
+          - 'row "Dry Fit Liso Cores: Preto, Branco R$ 74,90 R$ 72,90 R$ 70,90 Orçar" [ref=e71]':
+            - 'cell "Dry Fit Liso Cores: Preto, Branco" [ref=e72]':
+              - generic [ref=e73]:
+                - generic [ref=e74]: Dry Fit Liso
+                - generic [ref=e75]: "Cores: Preto, Branco"
+            - cell "R$ 74,90" [ref=e76]:
+              - generic [ref=e77]: R$ 74,90
+            - cell "R$ 72,90" [ref=e78]:
+              - generic [ref=e79]: R$ 72,90
+            - cell "R$ 70,90" [ref=e80]:
+              - generic [ref=e81]: R$ 70,90
+            - cell "Orçar" [ref=e82]:
+              - generic [ref=e83]: Orçar
+      - paragraph [ref=e84]: Camisetas Corporativas
+      - paragraph [ref=e85]: "Incluso 1 estampa em serigrafia de até 2 cores. Acima do GG: +30% sobre o valor unitário."
+      - table [ref=e87]:
+        - rowgroup [ref=e88]:
+          - row "Modelo / Tecido 10 pçs 30 pçs 50 pçs 100+ pçs" [ref=e89]:
+            - columnheader "Modelo / Tecido" [ref=e90]
+            - columnheader "10 pçs" [ref=e91]
+            - columnheader "30 pçs" [ref=e92]
+            - columnheader "50 pçs" [ref=e93]
+            - columnheader "100+ pçs" [ref=e94]
+        - rowgroup [ref=e95]:
+          - 'row "PV Premium Produto pronto — tabela medidas diferente Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro, Off White R$ 51,90 R$ 49,90 R$ 47,90 Orçar" [ref=e96]':
+            - 'cell "PV Premium Produto pronto — tabela medidas diferente Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro, Off White" [ref=e97]':
+              - generic [ref=e98]:
+                - generic [ref=e99]: PV Premium
+                - generic [ref=e100]: Produto pronto — tabela medidas diferente
+                - generic [ref=e101]: "Cores: Preto, Branco, Az. Marinho, Cinza Mescla Claro/Escuro, Off White"
+            - cell "R$ 51,90" [ref=e102]:
+              - generic [ref=e103]: R$ 51,90
+            - cell "R$ 49,90" [ref=e104]:
+              - generic [ref=e105]: R$ 49,90
+            - cell "R$ 47,90" [ref=e106]:
+              - generic [ref=e107]: R$ 47,90
+            - cell "Orçar" [ref=e108]:
+              - generic [ref=e109]: Orçar
+          - 'row "100% Algodão Outras cores min 50 pçs Cores: Preto Mescla, Azul, Royal, Verde Neon, Rosa Neon, Laranja Neon, Verde Floresta R$ 56,90 R$ 54,90 R$ 52,90 Orçar" [ref=e110]':
+            - 'cell "100% Algodão Outras cores min 50 pçs Cores: Preto Mescla, Azul, Royal, Verde Neon, Rosa Neon, Laranja Neon, Verde Floresta" [ref=e111]':
+              - generic [ref=e112]:
+                - generic [ref=e113]: 100% Algodão
+                - generic [ref=e114]: Outras cores min 50 pçs
+                - generic [ref=e115]: "Cores: Preto Mescla, Azul, Royal, Verde Neon, Rosa Neon, Laranja Neon, Verde Floresta"
+            - cell "R$ 56,90" [ref=e116]:
+              - generic [ref=e117]: R$ 56,90
+            - cell "R$ 54,90" [ref=e118]:
+              - generic [ref=e119]: R$ 54,90
+            - cell "R$ 52,90" [ref=e120]:
+              - generic [ref=e121]: R$ 52,90
+            - cell "Orçar" [ref=e122]:
+              - generic [ref=e123]: Orçar
+          - 'row "Algodão PA — Metattx Outras cores min 50 pçs Cores: Preto Mescla, Azul, Royal, Verde/Rosa/Laranja Neon, Verde Floresta R$ 64,90 R$ 62,90 R$ 59,90 Orçar" [ref=e124]':
+            - 'cell "Algodão PA — Metattx Outras cores min 50 pçs Cores: Preto Mescla, Azul, Royal, Verde/Rosa/Laranja Neon, Verde Floresta" [ref=e125]':
+              - generic [ref=e126]:
+                - generic [ref=e127]: Algodão PA — Metattx
+                - generic [ref=e128]: Outras cores min 50 pçs
+                - generic [ref=e129]: "Cores: Preto Mescla, Azul, Royal, Verde/Rosa/Laranja Neon, Verde Floresta"
+            - cell "R$ 64,90" [ref=e130]:
+              - generic [ref=e131]: R$ 64,90
+            - cell "R$ 62,90" [ref=e132]:
+              - generic [ref=e133]: R$ 62,90
+            - cell "R$ 59,90" [ref=e134]:
+              - generic [ref=e135]: R$ 59,90
+            - cell "Orçar" [ref=e136]:
+              - generic [ref=e137]: Orçar
+          - 'row "Viscolycra Incluso 1 logo bordado até 8cm Cores: Preto R$ 63,90 R$ 61,90 R$ 59,90 Orçar" [ref=e138]':
+            - 'cell "Viscolycra Incluso 1 logo bordado até 8cm Cores: Preto" [ref=e139]':
+              - generic [ref=e140]:
+                - generic [ref=e141]: Viscolycra
+                - generic [ref=e142]: Incluso 1 logo bordado até 8cm
+                - generic [ref=e143]: "Cores: Preto"
+            - cell "R$ 63,90" [ref=e144]:
+              - generic [ref=e145]: R$ 63,90
+            - cell "R$ 61,90" [ref=e146]:
+              - generic [ref=e147]: R$ 61,90
+            - cell "R$ 59,90" [ref=e148]:
+              - generic [ref=e149]: R$ 59,90
+            - cell "Orçar" [ref=e150]:
+              - generic [ref=e151]: Orçar
+          - 'row "Dryfit Liso Outras cores min 50 pçs Cores: Preto, Branco R$ 50,90 R$ 48,90 R$ 46,90 Orçar" [ref=e152]':
+            - 'cell "Dryfit Liso Outras cores min 50 pçs Cores: Preto, Branco" [ref=e153]':
+              - generic [ref=e154]:
+                - generic [ref=e155]: Dryfit Liso
+                - generic [ref=e156]: Outras cores min 50 pçs
+                - generic [ref=e157]: "Cores: Preto, Branco"
+            - cell "R$ 50,90" [ref=e158]:
+              - generic [ref=e159]: R$ 50,90
+            - cell "R$ 48,90" [ref=e160]:
+              - generic [ref=e161]: R$ 48,90
+            - cell "R$ 46,90" [ref=e162]:
+              - generic [ref=e163]: R$ 46,90
+            - cell "Orçar" [ref=e164]:
+              - generic [ref=e165]: Orçar
+          - 'row "Dry Colmeia Outras cores min 50 pçs Cores: Consultar R$ 54,90 R$ 52,90 R$ 50,90 Orçar" [ref=e166]':
+            - 'cell "Dry Colmeia Outras cores min 50 pçs Cores: Consultar" [ref=e167]':
+              - generic [ref=e168]:
+                - generic [ref=e169]: Dry Colmeia
+                - generic [ref=e170]: Outras cores min 50 pçs
+                - generic [ref=e171]: "Cores: Consultar"
+            - cell "R$ 54,90" [ref=e172]:
+              - generic [ref=e173]: R$ 54,90
+            - cell "R$ 52,90" [ref=e174]:
+              - generic [ref=e175]: R$ 52,90
+            - cell "R$ 50,90" [ref=e176]:
+              - generic [ref=e177]: R$ 50,90
+            - cell "Orçar" [ref=e178]:
+              - generic [ref=e179]: Orçar
+    - generic [ref=e180]:
+      - heading "Informações de Pagamento" [level=2] [ref=e181]
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e185]: qr_code
+          - heading "PIX" [level=3] [ref=e186]
+          - paragraph [ref=e187]: Até 5% desc. • Sem acréscimo
+          - paragraph [ref=e188]:
+            - text: "50% na aprovação + 50% na entrega. À vista integral:"
+            - strong [ref=e189]: 5% desconto.
+        - generic [ref=e190]:
+          - generic [ref=e192]: payments
+          - heading "Dinheiro" [level=3] [ref=e193]
+          - paragraph [ref=e194]: À vista • Sem acréscimo
+          - paragraph [ref=e195]:
+            - text: "Pagamento total. Sem nota fiscal:"
+            - strong [ref=e196]: 7% desconto.
+        - generic [ref=e197]:
+          - generic [ref=e199]: credit_card
+          - heading "Cartão" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Até 3x • +3% a +6%
+          - paragraph [ref=e202]:
+            - text: "Débito sem acréscimo. Crédito 1x: +3%. Crédito até 3x:"
+            - strong [ref=e203]: +6%.
+        - generic [ref=e204]:
+          - generic [ref=e206]: link
+          - heading "Link de Pagamento" [level=3] [ref=e207]
+          - paragraph [ref=e208]: Até 3x • +12%
+          - paragraph [ref=e209]: "Acima de 3x: consultar valores."
+      - generic [ref=e210]:
+        - heading "Personalizações & Adicionais" [level=2] [ref=e211]
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]: Matriz de bordado (geral)
+            - generic [ref=e215]: R$ 45,00
+          - generic [ref=e216]:
+            - generic [ref=e217]: Matriz bordado (polo/blusinha)
+            - generic [ref=e218]: R$ 20,00
+          - generic [ref=e219]:
+            - generic [ref=e220]: Bordado P — até 5 cm
+            - generic [ref=e221]: + R$ 7,00
+          - generic [ref=e222]:
+            - generic [ref=e223]: Bordado M — até 9 cm
+            - generic [ref=e224]: + R$ 12,00
+          - generic [ref=e225]:
+            - generic [ref=e226]: Nome (serigrafia)
+            - generic [ref=e227]: + R$ 10,00
+          - generic [ref=e228]:
+            - generic [ref=e229]: Logo extra até 2 cores — 28 cm
+            - generic [ref=e230]: + R$ 6,00
+          - generic [ref=e231]:
+            - generic [ref=e232]: Cor adicional (por cor)
+            - generic [ref=e233]: + R$ 1,50
+          - generic [ref=e234]:
+            - generic [ref=e235]: Numeração
+            - generic [ref=e236]: + R$ 12,00
+          - generic [ref=e237]:
+            - generic [ref=e238]: Plastisol
+            - generic [ref=e239]: + R$ 6,00
+          - generic [ref=e240]:
+            - generic [ref=e241]: Gola personalizada
+            - generic [ref=e242]: + R$ 10,00
+          - generic [ref=e243]:
+            - generic [ref=e244]: Gola V / Punho
+            - generic [ref=e245]: + R$ 5,00
+    - paragraph [ref=e246]: Valores sujeitos a alteração sem aviso prévio. Consulte condições especiais para grandes volumes. • Tabela Oficial 2026
+  - contentinfo [ref=e247]:
+    - generic [ref=e248]:
+      - generic [ref=e249]:
+        - generic [ref=e250]: Passo a Passo
+        - paragraph [ref=e251]: Qualidade e tradição em uniformes desde 1998.
+      - generic [ref=e252]:
+        - link "Política de Privacidade" [ref=e253] [cursor=pointer]:
+          - /url: "#"
+        - link "Termos de Uso" [ref=e254] [cursor=pointer]:
+          - /url: "#"
+        - link "Trocas e Devoluções" [ref=e255] [cursor=pointer]:
+          - /url: "#"
+        - link "Guia de Tamanhos" [ref=e256] [cursor=pointer]:
+          - /url: "#"
+      - paragraph [ref=e257]: © 2026 Passo a Passo Uniformes Escolares.
+  - link "Fale Conosco" [ref=e258] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=e259]:
+      - img [ref=e261]
+      - generic [ref=e263]: Fale Conosco

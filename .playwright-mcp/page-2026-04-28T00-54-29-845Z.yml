@@ -1,0 +1,399 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "Arquivos" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: Arquivos
+    - generic [ref=e10]:
+      - button "Nova pasta" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: Nova pasta
+      - button "Novo arquivo" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: Novo arquivo
+    - link "Lixeira" [ref=e16] [cursor=pointer]:
+      - /url: /40a7f303c5929401/files/.trash
+      - generic [ref=e17]: delete
+      - text: Lixeira
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Espaço
+        - generic [ref=e23]: 0.66%
+        - generic [ref=e57]: 337.83 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 3.47%
+        - generic [ref=e59]: 20817 / 600000
+    - button "Sair" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Sair
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h1
+      - generic [ref=e33]: Ajuda
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e39]:
+        - link "Início" [ref=e40] [cursor=pointer]:
+          - /url: /40a7f303c5929401/files
+          - generic [ref=e41]: home
+        - generic [ref=e42]:
+          - generic [ref=e44]: keyboard_arrow_right
+          - link "public_html" [ref=e45] [cursor=pointer]:
+            - /url: /40a7f303c5929401/files/public_html/
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - img [ref=e285]
+          - generic [ref=e286]:
+            - generic [ref=e287]:
+              - generic [ref=e288]: search
+              - textbox "Pesquisar..." [ref=e289]
+            - generic [ref=e290]:
+              - paragraph [ref=e291]: Digite para pesquisar...
+              - generic [ref=e292]:
+                - heading "Tipos" [level=3] [ref=e293]
+                - generic [ref=e294]:
+                  - button "Imagens" [ref=e295] [cursor=pointer]:
+                    - generic [ref=e296]: insert_photo
+                    - paragraph [ref=e297]: Imagens
+                  - button "Música" [ref=e298] [cursor=pointer]:
+                    - generic [ref=e299]: volume_up
+                    - paragraph [ref=e300]: Música
+                  - button "Vídeos" [ref=e301] [cursor=pointer]:
+                    - generic [ref=e302]: movie
+                    - paragraph [ref=e303]: Vídeos
+                  - button "PDF" [ref=e304] [cursor=pointer]:
+                    - generic [ref=e305]: picture_as_pdf
+                    - paragraph [ref=e306]: PDF
+          - generic [ref=e307]:
+            - button "Alterar visualização" [ref=e308] [cursor=pointer]:
+              - generic [ref=e309]: view_module
+            - button "Baixar" [ref=e310] [cursor=pointer]:
+              - generic [ref=e311]: file_download
+            - button "Enviar" [ref=e312] [cursor=pointer]:
+              - generic [ref=e313]: file_upload
+            - button "Calcular tamanho dos diretórios" [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]: assessment
+            - button "Informações" [ref=e316] [cursor=pointer]:
+              - generic [ref=e317]: info
+            - button "Selecionar múltiplos" [ref=e318] [cursor=pointer]:
+              - generic [ref=e319]: check_circle
+        - generic [ref=e68]:
+          - generic [ref=e71] [cursor=pointer]:
+            - button "Ordenar pelo nome" [ref=e72]:
+              - text: Nome
+              - generic [ref=e73]: arrow_upward
+            - button "Ordenar pelo tamanho" [ref=e320]:
+              - text: Tamanho
+              - generic [ref=e321]: arrow_upward
+            - button "Ordenar pela última modificação" [ref=e74]:
+              - text: Última modificação
+              - generic [ref=e75]: arrow_upward
+          - generic [ref=e76]:
+            - button ".private" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: folder
+              - generic [ref=e80]:
+                - paragraph [ref=e81]: .private
+                - paragraph [ref=e322]: "-"
+                - paragraph [ref=e82]:
+                  - time [ref=e83]: há 3 meses
+                - paragraph [ref=e323]: drwxr-xr-x
+            - button "_next" [ref=e84] [cursor=pointer]:
+              - generic [ref=e86]: folder
+              - generic [ref=e87]:
+                - paragraph [ref=e88]: _next
+                - paragraph [ref=e324]: "-"
+                - paragraph [ref=e89]:
+                  - time [ref=e90]: há 23 dias
+                - paragraph [ref=e325]: drwxr-xr-x
+            - button "_not-found" [ref=e91] [cursor=pointer]:
+              - generic [ref=e93]: folder
+              - generic [ref=e94]:
+                - paragraph [ref=e95]: _not-found
+                - paragraph [ref=e326]: "-"
+                - paragraph [ref=e96]:
+                  - time [ref=e97]: há 23 dias
+                - paragraph [ref=e327]: drwxr-xr-x
+            - button "camiseta-pv" [ref=e98] [cursor=pointer]:
+              - generic [ref=e100]: folder
+              - generic [ref=e101]:
+                - paragraph [ref=e102]: camiseta-pv
+                - paragraph [ref=e328]: "-"
+                - paragraph [ref=e103]:
+                  - time [ref=e104]: há 18 dias
+                - paragraph [ref=e329]: drwxr-xr-x
+            - button "wp-admin" [ref=e105] [cursor=pointer]:
+              - generic [ref=e107]: folder
+              - generic [ref=e108]:
+                - paragraph [ref=e109]: wp-admin
+                - paragraph [ref=e330]: "-"
+                - paragraph [ref=e110]:
+                  - time [ref=e111]: há 3 meses
+                - paragraph [ref=e331]: drwxr-xr-x
+            - button "wp-content" [ref=e112] [cursor=pointer]:
+              - generic [ref=e114]: folder
+              - generic [ref=e115]:
+                - paragraph [ref=e116]: wp-content
+                - paragraph [ref=e332]: "-"
+                - paragraph [ref=e117]:
+                  - time [ref=e118]: há 5 dias
+                - paragraph [ref=e333]: drwxr-xr-x
+            - button "wp-includes" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: folder
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: wp-includes
+                - paragraph [ref=e334]: "-"
+                - paragraph [ref=e124]:
+                  - time [ref=e125]: há 3 meses
+                - paragraph [ref=e335]: drwxr-xr-x
+          - generic [ref=e126]:
+            - button ".htaccess" [ref=e127] [cursor=pointer]:
+              - generic [ref=e129]: description
+              - generic [ref=e130]:
+                - paragraph [ref=e131]: .htaccess
+                - paragraph [ref=e336]: 2.33 KiB
+                - paragraph [ref=e132]:
+                  - time [ref=e133]: há um dia
+                - paragraph [ref=e337]: "-rw-r--r--"
+            - button ".htaccess.bk" [ref=e134] [cursor=pointer]:
+              - generic [ref=e136]: description
+              - generic [ref=e137]:
+                - paragraph [ref=e138]: .htaccess.bk
+                - paragraph [ref=e338]: 714 B
+                - paragraph [ref=e139]:
+                  - time [ref=e140]: há 3 meses
+                - paragraph [ref=e339]: "-rw-r--r--"
+            - button "404.html" [ref=e141] [cursor=pointer]:
+              - generic [ref=e143]: code
+              - generic [ref=e144]:
+                - paragraph [ref=e145]: 404.html
+                - paragraph [ref=e340]: 8.12 KiB
+                - paragraph [ref=e146]:
+                  - time [ref=e147]: há 23 dias
+                - paragraph [ref=e341]: "-rw-r--r--"
+            - button "__next.__PAGE__.txt" [ref=e148] [cursor=pointer]:
+              - generic [ref=e150]: description
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: __next.__PAGE__.txt
+                - paragraph [ref=e342]: 784 B
+                - paragraph [ref=e153]:
+                  - time [ref=e154]: há 23 dias
+                - paragraph [ref=e343]: "-rw-r--r--"
+            - button "__next._full.txt" [ref=e155] [cursor=pointer]:
+              - generic [ref=e157]: description
+              - generic [ref=e158]:
+                - paragraph [ref=e159]: __next._full.txt
+                - paragraph [ref=e344]: 4.08 KiB
+                - paragraph [ref=e160]:
+                  - time [ref=e161]: há 23 dias
+                - paragraph [ref=e345]: "-rw-r--r--"
+            - button "__next._head.txt" [ref=e162] [cursor=pointer]:
+              - generic [ref=e164]: description
+              - generic [ref=e165]:
+                - paragraph [ref=e166]: __next._head.txt
+                - paragraph [ref=e346]: 1.04 KiB
+                - paragraph [ref=e167]:
+                  - time [ref=e168]: há 23 dias
+                - paragraph [ref=e347]: "-rw-r--r--"
+            - button "__next._index.txt" [ref=e169] [cursor=pointer]:
+              - generic [ref=e171]: description
+              - generic [ref=e172]:
+                - paragraph [ref=e173]: __next._index.txt
+                - paragraph [ref=e348]: 1.78 KiB
+                - paragraph [ref=e174]:
+                  - time [ref=e175]: há 23 dias
+                - paragraph [ref=e349]: "-rw-r--r--"
+            - button "__next._tree.txt" [ref=e176] [cursor=pointer]:
+              - generic [ref=e178]: description
+              - generic [ref=e179]:
+                - paragraph [ref=e180]: __next._tree.txt
+                - paragraph [ref=e350]: 244 B
+                - paragraph [ref=e181]:
+                  - time [ref=e182]: há 23 dias
+                - paragraph [ref=e351]: "-rw-r--r--"
+            - button "_not-found.html" [ref=e183] [cursor=pointer]:
+              - generic [ref=e185]: code
+              - generic [ref=e186]:
+                - paragraph [ref=e187]: _not-found.html
+                - paragraph [ref=e352]: 8.12 KiB
+                - paragraph [ref=e188]:
+                  - time [ref=e189]: há 23 dias
+                - paragraph [ref=e353]: "-rw-r--r--"
+            - button "_not-found.txt" [ref=e190] [cursor=pointer]:
+              - generic [ref=e192]: description
+              - generic [ref=e193]:
+                - paragraph [ref=e194]: _not-found.txt
+                - paragraph [ref=e354]: 5.11 KiB
+                - paragraph [ref=e195]:
+                  - time [ref=e196]: há 23 dias
+                - paragraph [ref=e355]: "-rw-r--r--"
+            - button "brindes.html" [ref=e197] [cursor=pointer]:
+              - generic [ref=e199]: code
+              - generic [ref=e200]:
+                - paragraph [ref=e201]: brindes.html
+                - paragraph [ref=e356]: 12.13 KiB
+                - paragraph [ref=e202]:
+                  - time [ref=e203]: há 23 dias
+                - paragraph [ref=e357]: "-rw-r--r--"
+            - button "default.php" [ref=e204] [cursor=pointer]:
+              - generic [ref=e206]: code
+              - generic [ref=e207]:
+                - paragraph [ref=e208]: default.php
+                - paragraph [ref=e358]: 16.01 KiB
+                - paragraph [ref=e209]:
+                  - time [ref=e210]: há 3 meses
+                - paragraph [ref=e359]: "-rw-r--r--"
+            - button "favicon.ico" [ref=e211] [cursor=pointer]:
+              - img [ref=e213]
+              - generic [ref=e214]:
+                - paragraph [ref=e215]: favicon.ico
+                - paragraph [ref=e360]: 25.32 KiB
+                - paragraph [ref=e216]:
+                  - time [ref=e217]: há 23 dias
+                - paragraph [ref=e361]: "-rw-r--r--"
+            - button "file.svg" [ref=e218] [cursor=pointer]:
+              - img [ref=e220]
+              - generic [ref=e221]:
+                - paragraph [ref=e222]: file.svg
+                - paragraph [ref=e362]: 391 B
+                - paragraph [ref=e223]:
+                  - time [ref=e224]: há um mês
+                - paragraph [ref=e363]: "-rw-r--r--"
+            - button "globe.svg" [ref=e225] [cursor=pointer]:
+              - img [ref=e227]
+              - generic [ref=e228]:
+                - paragraph [ref=e229]: globe.svg
+                - paragraph [ref=e364]: 1.01 KiB
+                - paragraph [ref=e230]:
+                  - time [ref=e231]: há um mês
+                - paragraph [ref=e365]: "-rw-r--r--"
+            - button "hero.png" [ref=e232] [cursor=pointer]:
+              - img [ref=e234]
+              - generic [ref=e235]:
+                - paragraph [ref=e236]: hero.png
+                - paragraph [ref=e366]: 43.87 KiB
+                - paragraph [ref=e237]:
+                  - time [ref=e238]: há 23 dias
+                - paragraph [ref=e367]: "-rw-r--r--"
+            - button "index.html" [ref=e239] [cursor=pointer]:
+              - generic [ref=e241]: code
+              - generic [ref=e242]:
+                - paragraph [ref=e243]: index.html
+                - paragraph [ref=e368]: 23.43 KiB
+                - paragraph [ref=e244]:
+                  - time [ref=e245]: há 23 dias
+                - paragraph [ref=e369]: "-rw-r--r--"
+            - button "index.php" [ref=e246] [cursor=pointer]:
+              - generic [ref=e248]: code
+              - generic [ref=e249]:
+                - paragraph [ref=e250]: index.php
+                - paragraph [ref=e370]: 405 B
+                - paragraph [ref=e251]:
+                  - time [ref=e252]: há 3 meses
+                - paragraph [ref=e371]: "-rw-r--r--"
+            - button "index.txt" [ref=e253] [cursor=pointer]:
+              - generic [ref=e255]: description
+              - generic [ref=e256]:
+                - paragraph [ref=e257]: index.txt
+                - paragraph [ref=e372]: 4.08 KiB
+                - paragraph [ref=e258]:
+                  - time [ref=e259]: há 23 dias
+                - paragraph [ref=e373]: "-rw-r--r--"
+            - button "license.txt" [ref=e260] [cursor=pointer]:
+              - generic [ref=e262]: description
+              - generic [ref=e263]:
+                - paragraph [ref=e264]: license.txt
+                - paragraph [ref=e374]: 19.44 KiB
+                - paragraph [ref=e265]:
+                  - time [ref=e266]: há 3 meses
+                - paragraph [ref=e375]: "-rw-r--r--"
+            - button "linha-empresarial.html" [ref=e267] [cursor=pointer]:
+              - generic [ref=e269]: code
+              - generic [ref=e270]:
+                - paragraph [ref=e271]: linha-empresarial.html
+                - paragraph [ref=e376]: 12.43 KiB
+                - paragraph [ref=e272]:
+                  - time [ref=e273]: há 23 dias
+                - paragraph [ref=e377]: "-rw-r--r--"
+            - button "linha-escolar.html" [ref=e274] [cursor=pointer]:
+              - generic [ref=e276]: code
+              - generic [ref=e277]:
+                - paragraph [ref=e278]: linha-escolar.html
+                - paragraph [ref=e378]: 12.16 KiB
+                - paragraph [ref=e279]:
+                  - time [ref=e280]: há 23 dias
+                - paragraph [ref=e379]: "-rw-r--r--"
+            - button "linha-esportes.html" [ref=e380] [cursor=pointer]:
+              - generic [ref=e382]: code
+              - generic [ref=e383]:
+                - paragraph [ref=e384]: linha-esportes.html
+                - paragraph [ref=e385]: 12.24 KiB
+                - paragraph [ref=e386]:
+                  - time [ref=e387]: há 23 dias
+                - paragraph [ref=e388]: "-rw-r--r--"
+            - button "linha-inverno.html" [ref=e389] [cursor=pointer]:
+              - generic [ref=e391]: code
+              - generic [ref=e392]:
+                - paragraph [ref=e393]: linha-inverno.html
+                - paragraph [ref=e394]: 12.12 KiB
+                - paragraph [ref=e395]:
+                  - time [ref=e396]: há 23 dias
+                - paragraph [ref=e397]: "-rw-r--r--"
+            - button "next.svg" [ref=e398] [cursor=pointer]:
+              - img [ref=e400]
+              - generic [ref=e401]:
+                - paragraph [ref=e402]: next.svg
+                - paragraph [ref=e403]: 1.34 KiB
+                - paragraph [ref=e404]:
+                  - time [ref=e405]: há um mês
+                - paragraph [ref=e406]: "-rw-r--r--"
+            - button "pap-store.html" [ref=e407] [cursor=pointer]:
+              - generic [ref=e409]: code
+              - generic [ref=e410]:
+                - paragraph [ref=e411]: pap-store.html
+                - paragraph [ref=e412]: 12.05 KiB
+                - paragraph [ref=e413]:
+                  - time [ref=e414]: há 23 dias
+                - paragraph [ref=e415]: "-rw-r--r--"
+            - button "pap-title.php" [ref=e416] [cursor=pointer]:
+              - generic [ref=e418]: code
+              - generic [ref=e419]:
+                - paragraph [ref=e420]: pap-title.php
+                - paragraph [ref=e421]: 404 B
+                - paragraph [ref=e422]:
+                  - time [ref=e423]: há 22 dias
+                - paragraph [ref=e424]: "-rw-r--r--"
+            - button "preview-brindes.png" [ref=e425] [cursor=pointer]:
+              - img [ref=e427]
+              - generic [ref=e428]:
+                - paragraph [ref=e429]: preview-brindes.png
+                - paragraph [ref=e430]: 135.48 KiB
+                - paragraph [ref=e431]:
+                  - time [ref=e432]: há 23 dias
+                - paragraph [ref=e433]: "-rw-r--r--"
+            - button "preview-empresarial-novo.png" [ref=e434] [cursor=pointer]:
+              - img [ref=e436]
+              - generic [ref=e437]:
+                - paragraph [ref=e438]: preview-empresarial-novo.png
+                - paragraph [ref=e439]: 273.38 KiB
+                - paragraph [ref=e440]:
+                  - time [ref=e441]: há 23 dias
+                - paragraph [ref=e442]: "-rw-r--r--"
+          - generic [ref=e281]:
+            - paragraph [ref=e282]: Seleção múltipla ativada
+            - button "Limpar" [ref=e283] [cursor=pointer]:
+              - generic [ref=e284]: clear
+  - generic [ref=e444]:
+    - heading "Novo diretório" [level=2] [ref=e446]
+    - generic [ref=e447]:
+      - paragraph [ref=e448]: Escreva o nome do novo diretório.
+      - textbox [active] [ref=e449]
+      - generic [ref=e451]:
+        - text: /
+        - generic [ref=e452]:
+          - generic [ref=e453]: folder
+          - text: public_html
+    - generic [ref=e454]:
+      - button "Cancelar" [ref=e455] [cursor=pointer]
+      - button "Criar" [ref=e456] [cursor=pointer]

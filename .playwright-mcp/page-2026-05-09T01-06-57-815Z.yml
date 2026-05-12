@@ -1,0 +1,111 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - navigation "Produtos do Console do Firebase" [ref=e12]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e13]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e15]:
+                - img [ref=e16]
+                - img "Logotipo do Firebase" [ref=e17]
+          - img [ref=e22]: search
+          - link "Visão geral do projeto" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e25]: gmp_nav20_overview
+          - menu [ref=e26]:
+            - menuitem "Configurações" [ref=e27]:
+              - img [ref=e29] [cursor=pointer]: settings
+        - separator [ref=e30]
+      - button "Alternar barra lateral de navegação" [ref=e33] [cursor=pointer]:
+        - img [ref=e34]: chevron_left
+    - banner:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - button "Abrir menu de navegação" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]: menu
+          - button "pap-pedidos (Abrir o menu \"Selecionar projeto\")" [ref=e150] [cursor=pointer]:
+            - text: pap-pedidos
+            - img [ref=e151]: arrow_drop_down
+        - button "Mais opções" [ref=e45] [cursor=pointer]:
+          - img [ref=e46]: more_vert
+    - main [ref=e49]:
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: pap-pedidos
+            - button "Plano Spark" [ref=e152] [cursor=pointer]:
+              - generic [ref=e60]: Plano Spark
+          - generic [ref=e199]:
+            - button "Voltar à lista de apps" [active] [ref=e200] [cursor=pointer]:
+              - img [ref=e201]: close
+            - button "Criar aplicativo da Apple" [ref=e204] [cursor=pointer]:
+              - generic [ref=e205]: plat_ios
+            - button "Criar um app Android" [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]: plat_android
+            - button "Criar um app da Web" [ref=e212] [cursor=pointer]:
+              - generic [ref=e213]: plat_web
+            - button "Criar apps do Unity" [ref=e216] [cursor=pointer]:
+              - generic [ref=e217]: plat_unity
+            - button "Criar apps do Flutter" [ref=e220] [cursor=pointer]:
+              - generic [ref=e221]: plat_flutter
+            - generic [ref=e224]: Selecionar uma plataforma
+        - generic [ref=e153]: Olá, shark
+        - generic [ref=e154]: Este é seu projeto do Firebase!
+        - generic [ref=e155]: O Gemini pode dar sugestões de serviços e soluções do Firebase para seu app
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]: Próximas etapas com o Gemini
+            - link "Ver documentos (abre a documentação do Firebase em uma nova guia)" [ref=e159] [cursor=pointer]:
+              - /url: https://firebase.google.com/docs?hl=pt-BR&authuser=0
+              - text: Ver documentos open_in_new
+          - generic [ref=e160]:
+            - button "Fale sobre seu aplicativo" [ref=e163] [cursor=pointer]:
+              - img [ref=e164]
+              - generic [ref=e165]: Fale sobre seu aplicativo
+              - generic [ref=e166]: Descreva seu app, e o Gemini vai sugerir produtos para ajudar você a começar
+            - button "Adicionar análises e monitoramento" [ref=e169] [cursor=pointer]:
+              - img [ref=e170]
+              - generic [ref=e171]: Adicionar análises e monitoramento
+              - generic [ref=e172]: Saiba mais sobre os produtos de monitoramento do Google Analytics e do Firebase
+            - button "Criar um back-end" [ref=e228] [cursor=pointer]:
+              - img [ref=e229]
+              - generic [ref=e230]: Criar um back-end
+              - generic [ref=e231]: O Firebase oferece muitos serviços de back-end, incluindo opções de bancos de dados SQL e NoSQL. Saiba quais serviços podem ser ideais para seu app.
+            - button "Adicione IA ao seu app" [ref=e181] [cursor=pointer]:
+              - img [ref=e182]
+              - generic [ref=e183]: Adicione IA ao seu app
+              - generic [ref=e184]: Saiba como integrar a IA ao seu app
+            - button "Gerar receita com seu app" [ref=e187] [cursor=pointer]:
+              - img [ref=e188]
+              - generic [ref=e189]: Gerar receita com seu app
+              - generic [ref=e190]: Saiba mais sobre o AdMob, a personalização da experiência do usuário e o aumento da receita
+            - button "Hospedar um aplicativo da web" [ref=e193] [cursor=pointer]:
+              - img [ref=e194]
+              - generic [ref=e195]: Hospedar um aplicativo da web
+              - generic [ref=e196]: Crie e implante apps da Web modernos e full stack
+    - generic "Gemini no Firebase" [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e99] [cursor=pointer]':
+            - img [ref=e101]
+            - img [ref=e107]
+          - button "Abrir alertas" [ref=e109] [cursor=pointer]:
+            - img [ref=e110]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [ref=e118] [cursor=pointer]:
+            - img [ref=e120]: spark
+          - button "Ajuda" [ref=e123] [cursor=pointer]:
+            - img [ref=e124]: contact_support
+          - separator [ref=e127]
+          - button "Ativar o Cloud Shell" [ref=e128] [cursor=pointer]:
+            - img [ref=e129]:
+              - img [ref=e130]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e134]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e137] [cursor=pointer]:
+            - img [ref=e138]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e142] [cursor=pointer]':
+          - img [ref=e143]: dark_mode
+  - generic [ref=e235]: Apple

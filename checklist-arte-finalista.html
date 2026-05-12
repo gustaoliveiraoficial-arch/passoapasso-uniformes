@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist Arte Finalista — Passo a Passo Uniformes</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+    font-size: 13px;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 14mm 14mm 12mm 14mm;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-left h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+  }
+  .header-left p {
+    color: #a8c0e8;
+    font-size: 11px;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+  .header-badge {
+    background: #e94560;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  /* GRID DE SEÇÕES */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  /* SEÇÃO */
+  .section {
+    background: #fff;
+    border: 1.5px solid #e8ecf0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .section-header {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1.5px solid #e8ecf0;
+  }
+  .section-icon {
+    font-size: 14px;
+    line-height: 1;
+  }
+  .section-title {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .section-num {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-left: auto;
+    color: #fff;
+  }
+  .section-body {
+    padding: 8px 12px;
+  }
+
+  /* CORES POR SEÇÃO */
+  .s-blue   .section-header { background: #eef4ff; }
+  .s-blue   .section-title  { color: #2563eb; }
+  .s-blue   .section-num    { background: #2563eb; }
+
+  .s-green  .section-header { background: #f0fdf4; }
+  .s-green  .section-title  { color: #16a34a; }
+  .s-green  .section-num    { background: #16a34a; }
+
+  .s-orange .section-header { background: #fff7ed; }
+  .s-orange .section-title  { color: #ea580c; }
+  .s-orange .section-num    { background: #ea580c; }
+
+  .s-purple .section-header { background: #faf5ff; }
+  .s-purple .section-title  { color: #7c3aed; }
+  .s-purple .section-num    { background: #7c3aed; }
+
+  .s-red    .section-header { background: #fff1f2; }
+  .s-red    .section-title  { color: #dc2626; }
+  .s-red    .section-num    { background: #dc2626; }
+
+  .s-teal   .section-header { background: #f0fdfa; }
+  .s-teal   .section-title  { color: #0d9488; }
+  .s-teal   .section-num    { background: #0d9488; }
+
+  .s-indigo .section-header { background: #eef2ff; }
+  .s-indigo .section-title  { color: #4f46e5; }
+  .s-indigo .section-num    { background: #4f46e5; }
+
+  .s-pink   .section-header { background: #fdf2f8; }
+  .s-pink   .section-title  { color: #db2777; }
+  .s-pink   .section-num    { background: #db2777; }
+
+  .s-dark   .section-header { background: #f8fafc; }
+  .s-dark   .section-title  { color: #334155; }
+  .s-dark   .section-num    { background: #334155; }
+
+  /* ITENS DO CHECKLIST */
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.4;
+  }
+  .item:last-child { border-bottom: none; }
+
+  .checkbox {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    background: #fff;
+  }
+
+  .item-text {
+    font-size: 11.5px;
+    color: #374151;
+    flex: 1;
+  }
+  .item-text strong {
+    color: #1a1a2e;
+    font-weight: 700;
+  }
+  .item-text em {
+    color: #6b7280;
+    font-style: italic;
+    font-size: 10.5px;
+  }
+
+  /* SUBTÍTULO DENTRO DE SEÇÃO */
+  .sub-title {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    margin: 8px 0 4px 0;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #e2e8f0;
+  }
+  .sub-title:first-child { margin-top: 0; }
+
+  /* ALERTA FINAL */
+  .alert {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .alert-icon { font-size: 22px; }
+  .alert-text {
+    color: #fff;
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+  .alert-text strong {
+    color: #fbbf24;
+    font-size: 12px;
+  }
+
+  /* INFO RODAPÉ */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #e8ecf0;
+  }
+  .footer-left {
+    font-size: 10px;
+    color: #94a3b8;
+  }
+  .footer-right {
+    display: flex;
+    gap: 8px;
+  }
+  .badge {
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .badge-blue   { background: #dbeafe; color: #1d4ed8; }
+  .badge-green  { background: #dcfce7; color: #15803d; }
+  .badge-orange { background: #ffedd5; color: #c2410c; }
+
+  /* CAMPO DE ASSINATURA */
+  .sign-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .sign-box {
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .sign-line {
+    border-bottom: 1px solid #cbd5e1;
+    height: 22px;
+    margin-bottom: 5px;
+  }
+  .sign-label {
+    font-size: 9.5px;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>✅ Checklist Arte Finalista</h1>
+      <p>Passo a Passo Uniformes — Use em cada pedido antes de enviar para produção</p>
+    </div>
+    <div class="header-badge">Arte Final</div>
+  </div>
+
+  <!-- LINHA 1: PEDIDO + COREL -->
+  <div class="grid">
+
+    <div class="section s-blue">
+      <div class="section-header">
+        <span class="section-icon">📥</span>
+        <span class="section-title">1. Recebimento do Pedido</span>
+        <span class="section-num">6</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Li o pedido completo antes de começar</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Tenho o <strong>nome correto</strong> do cliente/empresa</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Tenho a lista completa de <strong>nomes e números</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Recebi o logo em <strong>vetor</strong> <em>(.ai .cdr .eps .svg)</em></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Confirmei a <strong>cor do tecido</strong> com o comercial</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Sei a quantidade por <strong>modelo e tamanho</strong></span></div>
+      </div>
+    </div>
+
+    <div class="section s-teal">
+      <div class="section-header">
+        <span class="section-icon">⚙️</span>
+        <span class="section-title">2. Configuração no Corel</span>
+        <span class="section-num">5</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Documento no <strong>tamanho real da peça</strong> (gabarito correto)</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Imagens bitmap em <strong>mínimo 300 DPI</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Perfil de cor em <strong>CMYK</strong> — nunca RGB</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Guias de margem de segurança posicionadas</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Arquivo nomeado: <strong>CLIENTE_MODELO_DATA</strong></span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LINHA 2: CORES + TEXTOS -->
+  <div class="grid">
+
+    <div class="section s-orange">
+      <div class="section-header">
+        <span class="section-icon">🎨</span>
+        <span class="section-title">3. Cores</span>
+        <span class="section-num">6</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Cores conferidas com o <strong>briefing do cliente</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Todos os objetos em <strong>CMYK</strong> — nenhum em RGB</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Sublimação: <strong>sem branco falso</strong> <em>(vira cor do tecido)</em></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Cores escuras legíveis no <strong>tecido escuro</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Logo nas <strong>cores oficiais</strong> do cliente</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Degradê/transparência compatível com a <strong>técnica</strong></span></div>
+      </div>
+    </div>
+
+    <div class="section s-red">
+      <div class="section-header">
+        <span class="section-icon">🔤</span>
+        <span class="section-title">4. Ortografia e Textos</span>
+        <span class="section-num">9</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Corretor ortográfico do Corel ativado</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Todos os textos lidos <strong>em voz alta</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Nome da empresa/time</strong> — acento e capitalização</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Cidade, estado, CNPJ</strong> conferidos (se houver)</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Cada <strong>nome de jogador/colaborador</strong> verificado</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Números</strong> sem repetição na lista</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Slogan/frase conferida com o cliente</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Fontes <strong>convertidas em curva</strong> <em>(Ctrl+Q)</em></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Segunda pessoa <strong>revisou os textos</strong></span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LINHA 3: TAMANHOS + POSIÇÃO -->
+  <div class="grid">
+
+    <div class="section s-purple">
+      <div class="section-header">
+        <span class="section-icon">📐</span>
+        <span class="section-title">5. Tamanho das Estampas</span>
+        <span class="section-num">8</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Peito:</strong> 20–28 cm largura</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Costas:</strong> 30–36 cm largura</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Manga:</strong> 8–12 cm</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Logo peito esquerdo:</strong> 8–10 cm</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Número costas:</strong> 25–30 cm de altura</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Nome costas:</strong> 5–7 cm de altura</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Gola respeitando <strong>margem de 3 cm</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Nada ultrapassa a <strong>área de sangria/corte</strong></span></div>
+      </div>
+    </div>
+
+    <div class="section s-indigo">
+      <div class="section-header">
+        <span class="section-icon">📍</span>
+        <span class="section-title">6. Posição das Estampas</span>
+        <span class="section-num">6</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Estampa centralizada no <strong>eixo horizontal</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Distância correta da <strong>gola/ombro</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Número e nome das costas <strong>alinhados entre si</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Manga alinhada ao <strong>centro da manga</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Nada sobre <strong>costuras, bolsos ou zíperes</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Logo peito no <strong>lado esquerdo</strong> (padrão)</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LINHA 4: TÉCNICAS (3 colunas) -->
+  <div class="grid-3">
+
+    <div class="section s-blue">
+      <div class="section-header">
+        <span class="section-icon">🌈</span>
+        <span class="section-title">Sublimação</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Arte em <strong>fundo branco</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Sem <strong>branco falso</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Tecido é <strong>poliéster</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Peça clara ou escura <strong>confirmada</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Cor do tecido incluída no visual</span></div>
+      </div>
+    </div>
+
+    <div class="section s-green">
+      <div class="section-header">
+        <span class="section-icon">🖨️</span>
+        <span class="section-title">Silk Screen</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Cores <strong>chapadas</strong> (sem degradê)</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Cada cor em <strong>camada separada</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Traços <strong>acima de 0,5 mm</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Nº de cores <strong>confere com orçamento</strong></span></div>
+      </div>
+    </div>
+
+    <div class="section s-orange">
+      <div class="section-header">
+        <span class="section-icon">🧵</span>
+        <span class="section-title">Bordado / DTF</span>
+      </div>
+      <div class="section-body">
+        <div class="sub-title">Bordado</div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Arte <strong>simplificada</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Texto mín. <strong>5 mm altura</strong></span></div>
+        <div class="sub-title">DTF</div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>Fundo transparente</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text"><strong>300 DPI</strong> mínimo</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LINHA 5: APROVAÇÃO + PRODUÇÃO -->
+  <div class="grid">
+
+    <div class="section s-green">
+      <div class="section-header">
+        <span class="section-icon">👁️</span>
+        <span class="section-title">8. Revisão Final + Envio ao Cliente</span>
+        <span class="section-num">5</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Zoom 100% em <strong>cada elemento</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Visualizar exportado <strong>fora do Corel</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Arte comparada com o <strong>briefing original</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Salvar como <strong>_REVISAO_1</strong> antes de enviar</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Enviar em <strong>baixa resolução</strong> para aprovação</span></div>
+      </div>
+    </div>
+
+    <div class="section s-dark">
+      <div class="section-header">
+        <span class="section-icon">🏭</span>
+        <span class="section-title">9. Aprovação e Envio à Produção</span>
+        <span class="section-num">5</span>
+      </div>
+      <div class="section-body">
+        <div class="item"><div class="checkbox"></div><span class="item-text">Aprovação registrada <strong>por escrito</strong> (WhatsApp/e-mail)</span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Arquivo salvo como <strong>_APROVADO_DATA</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Fontes em curva + imagens <strong>incorporadas</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">Pasta com: arte + briefing + <strong>aprovação</strong></span></div>
+        <div class="item"><div class="checkbox"></div><span class="item-text">CRM atualizado: <strong>"Arte aprovada — em produção"</strong></span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ALERTA -->
+  <div class="alert">
+    <span class="alert-icon">💡</span>
+    <div class="alert-text">
+      <strong>Regra de ouro:</strong> Se tiver dúvida em qualquer item, <strong>para tudo e confirma</strong> com o comercial ou com o cliente.
+      Refazer uma arte é rápido — refazer uma peça produzida errada custa dinheiro e atrasa a entrega.
+    </div>
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="sign-row">
+    <div class="sign-box">
+      <div class="sign-line"></div>
+      <div class="sign-label">Arte Finalista</div>
+    </div>
+    <div class="sign-box">
+      <div class="sign-line"></div>
+      <div class="sign-label">Revisor / Conferente</div>
+    </div>
+    <div class="sign-box">
+      <div class="sign-line"></div>
+      <div class="sign-label">Data / Nº do Pedido</div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <div class="footer">
+    <span class="footer-left">Passo a Passo Uniformes — passoapassouniformes2025 | v1.0 — 2026</span>
+    <div class="footer-right">
+      <span class="badge badge-blue">Corel Draw</span>
+      <span class="badge badge-green">Sublimação · Silk · DTF</span>
+      <span class="badge badge-orange">Bordado</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

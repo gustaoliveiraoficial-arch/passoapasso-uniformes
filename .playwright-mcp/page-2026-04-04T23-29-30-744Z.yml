@@ -1,0 +1,235 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /e16da36b9889a600/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.48%
+        - generic [ref=e57]: 243.29 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 2.26%
+        - generic [ref=e59]: 13536 / 600000
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.54.0-h8
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e39]:
+        - link "Home" [ref=e40] [cursor=pointer]:
+          - /url: /e16da36b9889a600/files
+          - generic [ref=e41]: home
+        - generic [ref=e42]:
+          - generic [ref=e44]: keyboard_arrow_right
+          - link "public_html" [ref=e45] [cursor=pointer]:
+            - /url: /e16da36b9889a600/files/public_html/
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - button "Toggle sidebar" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: menu
+          - button "Search" [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [active] [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: more_vert
+        - generic [ref=e270]:
+          - generic [ref=e273] [cursor=pointer]:
+            - button "Sort by name" [ref=e274]:
+              - text: Name
+              - generic [ref=e275]: arrow_upward
+            - button "Sort by last modified" [ref=e276]:
+              - text: Last modified
+              - generic [ref=e277]: arrow_upward
+          - generic [ref=e278]:
+            - button ".private" [ref=e279] [cursor=pointer]:
+              - generic [ref=e281]: folder
+              - generic [ref=e282]:
+                - paragraph [ref=e283]: .private
+                - paragraph [ref=e284]:
+                  - time [ref=e285]: 2 months ago
+            - button "wp-admin" [ref=e286] [cursor=pointer]:
+              - generic [ref=e288]: folder
+              - generic [ref=e289]:
+                - paragraph [ref=e290]: wp-admin
+                - paragraph [ref=e291]:
+                  - time [ref=e292]: 2 months ago
+            - button "wp-content" [ref=e293] [cursor=pointer]:
+              - generic [ref=e295]: folder
+              - generic [ref=e296]:
+                - paragraph [ref=e297]: wp-content
+                - paragraph [ref=e298]:
+                  - time [ref=e299]: 2 months ago
+            - button "wp-includes" [ref=e300] [cursor=pointer]:
+              - generic [ref=e302]: folder
+              - generic [ref=e303]:
+                - paragraph [ref=e304]: wp-includes
+                - paragraph [ref=e305]:
+                  - time [ref=e306]: 2 months ago
+          - generic [ref=e307]:
+            - button ".htaccess" [ref=e308] [cursor=pointer]:
+              - generic [ref=e310]: description
+              - generic [ref=e311]:
+                - paragraph [ref=e312]: .htaccess
+                - paragraph [ref=e313]:
+                  - time [ref=e314]: 2 months ago
+            - button ".htaccess.bk" [ref=e315] [cursor=pointer]:
+              - generic [ref=e317]: description
+              - generic [ref=e318]:
+                - paragraph [ref=e319]: .htaccess.bk
+                - paragraph [ref=e320]:
+                  - time [ref=e321]: 2 months ago
+            - button "default.php" [ref=e322] [cursor=pointer]:
+              - generic [ref=e324]: code
+              - generic [ref=e325]:
+                - paragraph [ref=e326]: default.php
+                - paragraph [ref=e327]:
+                  - time [ref=e328]: 2 months ago
+            - button "index.php" [ref=e329] [cursor=pointer]:
+              - generic [ref=e331]: code
+              - generic [ref=e332]:
+                - paragraph [ref=e333]: index.php
+                - paragraph [ref=e334]:
+                  - time [ref=e335]: 2 months ago
+            - button "license.txt" [ref=e336] [cursor=pointer]:
+              - generic [ref=e338]: description
+              - generic [ref=e339]:
+                - paragraph [ref=e340]: license.txt
+                - paragraph [ref=e341]:
+                  - time [ref=e342]: 2 months ago
+            - button "readme.html" [ref=e343] [cursor=pointer]:
+              - generic [ref=e345]: code
+              - generic [ref=e346]:
+                - paragraph [ref=e347]: readme.html
+                - paragraph [ref=e348]:
+                  - time [ref=e349]: 24 days ago
+            - button "site-deploy.zip" [ref=e350] [cursor=pointer]:
+              - generic [ref=e352]: folder_zip
+              - generic [ref=e353]:
+                - paragraph [ref=e354]: site-deploy.zip
+                - paragraph [ref=e355]:
+                  - time [ref=e356]: a few seconds ago
+            - button "wp-activate.php" [ref=e357] [cursor=pointer]:
+              - generic [ref=e359]: code
+              - generic [ref=e360]:
+                - paragraph [ref=e361]: wp-activate.php
+                - paragraph [ref=e362]:
+                  - time [ref=e363]: 2 months ago
+            - button "wp-blog-header.php" [ref=e364] [cursor=pointer]:
+              - generic [ref=e366]: code
+              - generic [ref=e367]:
+                - paragraph [ref=e368]: wp-blog-header.php
+                - paragraph [ref=e369]:
+                  - time [ref=e370]: 2 months ago
+            - button "wp-comments-post.php" [ref=e371] [cursor=pointer]:
+              - generic [ref=e373]: code
+              - generic [ref=e374]:
+                - paragraph [ref=e375]: wp-comments-post.php
+                - paragraph [ref=e376]:
+                  - time [ref=e377]: 2 months ago
+            - button "wp-config-sample.php" [ref=e378] [cursor=pointer]:
+              - generic [ref=e380]: code
+              - generic [ref=e381]:
+                - paragraph [ref=e382]: wp-config-sample.php
+                - paragraph [ref=e383]:
+                  - time [ref=e384]: 2 months ago
+            - button "wp-config.php" [ref=e385] [cursor=pointer]:
+              - generic [ref=e387]: code
+              - generic [ref=e388]:
+                - paragraph [ref=e389]: wp-config.php
+                - paragraph [ref=e390]:
+                  - time [ref=e391]: 2 months ago
+            - button "wp-cron.php" [ref=e392] [cursor=pointer]:
+              - generic [ref=e394]: code
+              - generic [ref=e395]:
+                - paragraph [ref=e396]: wp-cron.php
+                - paragraph [ref=e397]:
+                  - time [ref=e398]: 2 months ago
+            - button "wp-links-opml.php" [ref=e399] [cursor=pointer]:
+              - generic [ref=e401]: code
+              - generic [ref=e402]:
+                - paragraph [ref=e403]: wp-links-opml.php
+                - paragraph [ref=e404]:
+                  - time [ref=e405]: 2 months ago
+            - button "wp-load.php" [ref=e406] [cursor=pointer]:
+              - generic [ref=e408]: code
+              - generic [ref=e409]:
+                - paragraph [ref=e410]: wp-load.php
+                - paragraph [ref=e411]:
+                  - time [ref=e412]: 2 months ago
+            - button "wp-login.php" [ref=e413] [cursor=pointer]:
+              - generic [ref=e415]: code
+              - generic [ref=e416]:
+                - paragraph [ref=e417]: wp-login.php
+                - paragraph [ref=e418]:
+                  - time [ref=e419]: 2 months ago
+            - button "wp-mail.php" [ref=e420] [cursor=pointer]:
+              - generic [ref=e422]: code
+              - generic [ref=e423]:
+                - paragraph [ref=e424]: wp-mail.php
+                - paragraph [ref=e425]:
+                  - time [ref=e426]: 2 months ago
+            - button "wp-settings.php" [ref=e427] [cursor=pointer]:
+              - generic [ref=e429]: code
+              - generic [ref=e430]:
+                - paragraph [ref=e431]: wp-settings.php
+                - paragraph [ref=e432]:
+                  - time [ref=e433]: 2 months ago
+            - button "wp-signup.php" [ref=e434] [cursor=pointer]:
+              - generic [ref=e436]: code
+              - generic [ref=e437]:
+                - paragraph [ref=e438]: wp-signup.php
+                - paragraph [ref=e439]:
+                  - time [ref=e440]: 2 months ago
+            - button "wp-trackback.php" [ref=e441] [cursor=pointer]:
+              - generic [ref=e443]: code
+              - generic [ref=e444]:
+                - paragraph [ref=e445]: wp-trackback.php
+                - paragraph [ref=e446]:
+                  - time [ref=e447]: 2 months ago
+            - button "xmlrpc.php" [ref=e448] [cursor=pointer]:
+              - generic [ref=e450]: code
+              - generic [ref=e451]:
+                - paragraph [ref=e452]: xmlrpc.php
+                - paragraph [ref=e453]:
+                  - time [ref=e454]: 2 months ago
+          - generic [ref=e455]:
+            - paragraph [ref=e456]: Multiple selection enabled
+            - button "Clear" [ref=e457] [cursor=pointer]:
+              - generic [ref=e458]: clear

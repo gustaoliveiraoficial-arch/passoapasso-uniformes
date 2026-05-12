@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - heading "Acessar" [level=1] [ref=e2]
+  - generic [ref=e3]:
+    - link "Powered by WordPress" [ref=e4] [cursor=pointer]:
+      - /url: https://br.wordpress.org/
+    - generic [ref=e5]:
+      - paragraph [ref=e6]:
+        - generic [ref=e7]: Nome de usuário ou endereço de e-mail
+        - textbox "Nome de usuário ou endereço de e-mail" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Senha
+        - generic [ref=e11]:
+          - textbox "Senha" [ref=e12]
+          - button "Mostrar senha" [ref=e13] [cursor=pointer]:
+            - generic [ref=e14]: 
+      - paragraph [ref=e15]:
+        - checkbox "Lembrar-me" [ref=e16] [cursor=pointer]
+        - generic [ref=e17]: Lembrar-me
+      - paragraph:
+        - button "Acessar" [ref=e18] [cursor=pointer]
+    - paragraph [ref=e19]:
+      - link "Perdeu a senha?" [ref=e20] [cursor=pointer]:
+        - /url: https://passoapassouniformes.com/wp-login.php?action=lostpassword
+    - paragraph [ref=e21]:
+      - link "← Ir para proativado.hostingersite.com" [ref=e22] [cursor=pointer]:
+        - /url: https://passoapassouniformes.com/
+  - generic [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]: 
+      - generic [ref=e27]: Idioma
+    - combobox "Idioma" [ref=e28] [cursor=pointer]:
+      - option "English (United States)"
+      - option "Português do Brasil" [selected]
+    - button "Alterar" [ref=e29] [cursor=pointer]

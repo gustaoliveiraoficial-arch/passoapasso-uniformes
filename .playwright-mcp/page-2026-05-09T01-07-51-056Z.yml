@@ -1,0 +1,59 @@
+- generic [ref=e1]:
+  - img "Loading" [ref=e3]
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - navigation "Produtos do Console do Firebase" [ref=e12]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e13]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e15]:
+                - img [ref=e16]
+                - img "Logotipo do Firebase" [ref=e17]
+          - img [ref=e22]: search
+          - link "Visão geral do projeto" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e25]: gmp_nav20_overview
+          - menu [ref=e26]:
+            - menuitem "Configurações" [ref=e27]:
+              - img [ref=e29] [cursor=pointer]: settings
+        - separator [ref=e30]
+      - button "Alternar barra lateral de navegação" [ref=e33] [cursor=pointer]:
+        - img [ref=e34]: chevron_left
+    - banner:
+      - generic [ref=e37]:
+        - button "Abrir menu de navegação" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]: menu
+        - button "Mais opções" [ref=e45] [cursor=pointer]:
+          - img [ref=e46]: more_vert
+    - main [active] [ref=e49]:
+      - progressbar [ref=e51]:
+        - img [ref=e53]
+        - generic [ref=e56]:
+          - img [ref=e58]
+          - img [ref=e61]
+          - img [ref=e64]
+    - generic "Gemini no Firebase" [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e76] [cursor=pointer]':
+            - img [ref=e78]
+            - img [ref=e84]
+          - button "Abrir alertas" [ref=e86] [cursor=pointer]:
+            - img [ref=e87]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [ref=e95] [cursor=pointer]:
+            - img [ref=e97]: spark
+          - button "Ajuda" [ref=e100] [cursor=pointer]:
+            - img [ref=e101]: contact_support
+          - separator [ref=e104]
+          - button "Ativar o Cloud Shell" [ref=e105] [cursor=pointer]:
+            - img [ref=e106]:
+              - img [ref=e107]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e111]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e114] [cursor=pointer]:
+            - img [ref=e115]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e119] [cursor=pointer]':
+          - img [ref=e120]: dark_mode

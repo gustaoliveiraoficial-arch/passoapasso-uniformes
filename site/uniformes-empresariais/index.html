@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Uniformes empresariais personalizados — Camisetas, Polo, Manga Bufante, Calças, Inverno e Jalecos. Estampa inclusa. Passo a Passo Uniformes."/>
+<title>Uniformes Empresariais — Passo a Passo Uniformes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "brand-orange": "#C85A00",
+          "brand-dark": "#0d1117",
+          "brand-dark2": "#161b22",
+          "brand-gray": "#c3c6cf",
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Manrope', sans-serif; }
+  .font-lexend { font-family: 'Lexend', sans-serif; }
+  .hard-shadow { box-shadow: 6px 6px 0px 0px #C85A00; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+  /* Sticky category nav */
+  .cat-nav {
+    position: sticky;
+    top: 73px;
+    z-index: 40;
+    background: #0d1117;
+    border-bottom: 1px solid #161b22;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cat-nav::-webkit-scrollbar { height: 0; }
+
+  /* Product card */
+  .produto-card {
+    background: #161b22;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: border-color .2s, transform .2s;
+  }
+  .produto-card:hover {
+    border-color: #C85A00;
+    transform: translateY(-4px);
+  }
+
+  /* Badge */
+  .badge {
+    display: inline-block;
+    background: #C85A00;
+    color: #000;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+  }
+
+  /* Section alternating */
+  .sec-alt { background: #161b22; }
+  .sec-main { background: #0d1117; }
+
+  /* Hover on nav links */
+  .nav-link { transition: color .15s; }
+  .nav-link:hover { color: #C85A00; }
+</style>
+</head>
+<body class="bg-[#0d1117] text-[#dde3ec]">
+
+<!-- ===== HEADER ===== -->
+<header class="fixed w-full top-0 z-50 bg-[#0d1117] border-b-2 border-[#C85A00]">
+  <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-[1440px] mx-auto">
+    <a href="/" class="text-white font-lexend font-black text-lg tracking-widest uppercase">
+      PASSO A PASSO UNIFORMES
+    </a>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="#camisetas" class="nav-link font-lexend font-black uppercase text-sm tracking-tight text-[#c3c6cf]">Camisetas</a>
+      <a href="#polo" class="nav-link font-lexend font-black uppercase text-sm tracking-tight text-[#c3c6cf]">Polo</a>
+      <a href="#calcas" class="nav-link font-lexend font-black uppercase text-sm tracking-tight text-[#c3c6cf]">Calças</a>
+      <a href="#inverno" class="nav-link font-lexend font-black uppercase text-sm tracking-tight text-[#c3c6cf]">Inverno</a>
+      <a href="#jalecos" class="nav-link font-lexend font-black uppercase text-sm tracking-tight text-[#c3c6cf]">Jalecos</a>
+    </nav>
+    <a href="https://wa.me/5551985600893" target="_blank"
+       class="bg-[#C85A00] text-black font-lexend font-black px-5 py-2 uppercase text-sm tracking-tight hover:bg-white transition-all duration-200 active:translate-y-0.5">
+      💬 Orçamento
+    </a>
+  </div>
+</header>
+
+<!-- ===== URGENCY BAR ===== -->
+<div class="fixed top-[65px] left-0 right-0 z-40 bg-[#C85A00] text-black text-center py-1.5 text-xs font-lexend font-black uppercase tracking-widest">
+  🏭 Estampa inclusa no kit &nbsp;·&nbsp; Prazo de entrega: até 30 dias &nbsp;·&nbsp; Enviamos para todo o Brasil
+</div>
+
+<!-- ===== STICKY CATEGORY NAV ===== -->
+<div class="cat-nav" style="top:97px;">
+  <div class="flex gap-1 px-6 py-3 max-w-[1440px] mx-auto whitespace-nowrap">
+    <a href="#camisetas" class="nav-link text-xs font-bold text-[#c3c6cf] px-4 py-2 border border-transparent hover:border-[#C85A00] hover:text-[#C85A00] transition-all uppercase tracking-widest font-lexend">👕 Camisetas</a>
+    <a href="#polo" class="nav-link text-xs font-bold text-[#c3c6cf] px-4 py-2 border border-transparent hover:border-[#C85A00] hover:text-[#C85A00] transition-all uppercase tracking-widest font-lexend">🎽 Polo</a>
+    <a href="#manga-bufante" class="nav-link text-xs font-bold text-[#c3c6cf] px-4 py-2 border border-transparent hover:border-[#C85A00] hover:text-[#C85A00] transition-all uppercase tracking-widest font-lexend">👗 Manga Bufante</a>
+    <a href="#calcas" class="nav-link text-xs font-bold text-[#c3c6cf] px-4 py-2 border border-transparent hover:border-[#C85A00] hover:text-[#C85A00] transition-all uppercase tracking-widest font-lexend">👖 Calças</a>
+    <a href="#inverno" class="nav-link text-xs font-bold text-[#c3c6cf] px-4 py-2 border border-transparent hover:border-[#C85A00] hover:text-[#C85A00] transition-all uppercase tracking-widest font-lexend">🧥 Inverno</a>
+    <a href="#jalecos" class="nav-link text-xs font-bold text-[#c3c6cf] px-4 py-2 border border-transparent hover:border-[#C85A00] hover:text-[#C85A00] transition-all uppercase tracking-widest font-lexend">🥼 Jalecos</a>
+  </div>
+</div>
+
+<main class="pt-[130px]">
+
+<!-- ===== HERO ===== -->
+<section class="min-h-[85vh] flex flex-col md:flex-row">
+  <div class="w-full md:w-1/2 flex items-center justify-center p-10 md:p-20 bg-[#0d1117]">
+    <div class="max-w-xl">
+      <span class="badge mb-6 block w-fit">Alta Performance</span>
+      <h1 class="font-lexend font-black text-white leading-none mb-6" style="font-size:clamp(48px,7vw,80px);letter-spacing:-0.03em;">
+        UNIFORMES<br><span class="text-[#C85A00]">EMPRESARIAIS</span>
+      </h1>
+      <p class="text-[#c3c6cf] text-lg mb-10 max-w-md leading-relaxed">
+        Seu time com a identidade da sua empresa — do básico ao inverno, com qualidade e personalização inclusa.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/5551985600893" target="_blank"
+           class="bg-[#C85A00] text-black font-lexend font-black py-4 px-8 hard-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase text-base text-center">
+          💬 Pedir Orçamento
+        </a>
+        <a href="#camisetas"
+           class="border-2 border-white text-white font-lexend font-black py-4 px-8 uppercase text-base text-center hover:bg-white hover:text-black transition-all">
+          Ver Produtos ↓
+        </a>
+      </div>
+      <!-- Stats -->
+      <div class="mt-12 grid grid-cols-3 gap-6 border-t border-[#161b22] pt-8">
+        <div>
+          <div class="font-lexend font-black text-[#C85A00] text-3xl leading-none">+500</div>
+          <div class="text-xs text-[#c3c6cf] mt-1 uppercase tracking-widest">Clientes</div>
+        </div>
+        <div>
+          <div class="font-lexend font-black text-[#C85A00] text-3xl leading-none">30</div>
+          <div class="text-xs text-[#c3c6cf] mt-1 uppercase tracking-widest">Dias prazo</div>
+        </div>
+        <div>
+          <div class="font-lexend font-black text-[#C85A00] text-3xl leading-none">100%</div>
+          <div class="text-xs text-[#c3c6cf] mt-1 uppercase tracking-widest">Personalizado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full md:w-1/2 relative min-h-[400px] bg-[#161b22] overflow-hidden">
+    <img class="w-full h-full object-cover grayscale contrast-125 opacity-70"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ0r2R-h3L52-ZQY0TvyU3qCFETar_FUIMUwBLPUNmmi7ahAvcNunNLx8ySXEmPeh-vR4i0JwQ37Kftm3Ddh129nMWPv2d5N7mftW96nPwjI8NAtH-cPCbUvBkCB4zKGb7suZGC4taYKo4ORK0aOe13aFwmkkVBJwy8-yVfsS-Inuc0972KOes2mT59TYEG0KZ2nOkNQsTKL4COMJEu3non7Jwz-Zq95x1ehLFrlC6jGkNPSe_tiUiLNg0xHVTyu0EKScdqoXNSz0"
+         alt="Uniforme profissional"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent md:bg-gradient-to-l opacity-70"></div>
+  </div>
+</section>
+
+<!-- ===== DURABILIDADE STRIP ===== -->
+<section class="flex flex-col md:flex-row border-y border-[#161b22]">
+  <div class="w-full md:w-1/2 relative min-h-[380px]">
+    <img class="w-full h-full object-cover"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtHEWMVUmyzXnQZHUuG-SwmhXQnelElRKiqGSgRT492jXtjh_abL_bbAOt7PKehqgWE9u8McBSKfUZ9LU64ItjnbQY8azE2-Iz9z5a2bHZ-hiuOvSuFozeUzI2K0l3V3hSL6Ws2qYT5f3v2dz_VhW_S9nJ9CiUCRg6cu8_RrZDwVYEWH3TJGjhiyfFsLhlJ6-qSYzWKQ2PGTBgDE-W8HR69kc37WlPx67CjQhcaISLLYKA0xFGxqA1JScWvp1FCjH5pcby0GGMOUE"
+         alt="Tecido de alta qualidade"/>
+  </div>
+  <div class="w-full md:w-1/2 flex items-center p-10 md:p-20 bg-[#0d1117]">
+    <div class="max-w-md">
+      <h2 class="font-lexend font-black text-white text-4xl mb-4 uppercase">Durabilidade Superior</h2>
+      <div class="w-12 h-1 bg-[#C85A00] mb-6"></div>
+      <p class="text-[#c3c6cf] mb-8 leading-relaxed">
+        Tecidos testados sob condições extremas. Costuras triplas reforçadas, cores que resistem a centenas de ciclos de lavagem industrial e estampa que não desbota.
+      </p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[#C85A00]">shield</span>
+          <span class="font-lexend font-black text-xs uppercase tracking-widest text-white">Tecidos Premium</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[#C85A00]">verified</span>
+          <span class="font-lexend font-black text-xs uppercase tracking-widest text-white">Estampa Inclusa no Kit</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[#C85A00]">local_shipping</span>
+          <span class="font-lexend font-black text-xs uppercase tracking-widest text-white">Entrega para Todo o Brasil</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     CAMISETAS
+============================== -->
+<section id="camisetas" class="py-20 px-6 md:px-12 bg-[#0d1117]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em]">Categoria</span>
+        <h2 class="font-lexend font-black text-white text-4xl uppercase mt-1">👕 Camisetas</h2>
+      </div>
+      <a href="https://wa.me/5551985600893" target="_blank" class="border border-[#C85A00] text-[#C85A00] font-lexend font-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-[#C85A00] hover:text-black transition-all">💬 Pedir orçamento</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Poliviscose -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👕</span>
+          <span class="badge absolute top-3 left-3">Mais Pedida</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">⚡ Poliviscose (PV)</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Camiseta Poliviscose</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Tecido PV (mistura de Poliéster e Viscose) — leve, resistente e com excelente caimento. Ideal para uso intenso no dia a dia com personalização inclusa.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Durável e fácil de lavar</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Caimento uniforme</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Diversas cores disponíveis</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG + Babylook</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Camiseta%20Poliviscose" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Algodão -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👕</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">🌿 Algodão 100%</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Camiseta Algodão</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">100% algodão penteado — macio, respirável e confortável. Perfeita para ambientes internos e clima quente.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Toque suave e confortável</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Alta respirabilidade</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Ideal para dias quentes</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG + Babylook</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Camiseta%20Algodão" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Poliamida -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👕</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">💧 Poliamida</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Camiseta Poliamida</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Tecido técnico leve, elástico e de secagem rápida. Indicado para equipes ativas e ambientes externos.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Secagem ultrarrápida</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Alta elasticidade</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Proteção UV</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG + Babylook</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Camiseta%20Poliamida" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     POLO
+============================== -->
+<section id="polo" class="py-20 px-6 md:px-12 bg-[#161b22]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em]">Categoria</span>
+        <h2 class="font-lexend font-black text-white text-4xl uppercase mt-1">🎽 Camisas Polo</h2>
+      </div>
+      <a href="https://wa.me/5551985600893" target="_blank" class="border border-[#C85A00] text-[#C85A00] font-lexend font-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-[#C85A00] hover:text-black transition-all">💬 Pedir orçamento</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+
+      <!-- Piquet PV -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🎽</span>
+          <span class="badge absolute top-3 left-3">Clássica</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">⚡ Piquet PV</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Polo Piquet PV</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Textura diferenciada, aspecto profissional e ótima durabilidade. A escolha clássica para uniformes corporativos.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Textura piquet tradicional</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Visual elegante e profissional</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG + feminino</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Polo%20Piquet%20PV" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Polo Poliviscose -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🎽</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">⚡ Poliviscose</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Polo Poliviscose</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Mais leve que o piquet, mantendo o visual formal. Gola e punhos em ribana. Ótimo custo-benefício.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Mais leve que o piquet</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Gola e punhos em ribana</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG + feminino</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Polo%20Poliviscose" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     MANGA BUFANTE
+============================== -->
+<section id="manga-bufante" class="py-20 px-6 md:px-12 bg-[#0d1117]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em]">Feminino</span>
+        <h2 class="font-lexend font-black text-white text-4xl uppercase mt-1">👗 Manga Bufante</h2>
+      </div>
+      <a href="https://wa.me/5551985600893" target="_blank" class="border border-[#C85A00] text-[#C85A00] font-lexend font-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-[#C85A00] hover:text-black transition-all">💬 Pedir orçamento</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#161b22] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👗</span>
+          <span class="badge absolute top-3 left-3">Feminino</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">✨ Tecido Premium</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Blusa Manga Bufante</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Elegante, confortável e com excelente mobilidade. Ideal para recepcionistas, atendentes e áreas administrativas.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Modelo exclusivamente feminino</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Manga bufante com elástico</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Visual sofisticado e profissional</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG feminino</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Blusa%20Manga%20Bufante" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- design moderno callout -->
+      <div class="flex items-center p-10 bg-[#161b22] border border-[#C85A00]">
+        <div>
+          <h3 class="font-lexend font-black text-white text-2xl uppercase mb-4">Design Moderno</h3>
+          <div class="w-10 h-1 bg-[#C85A00] mb-6"></div>
+          <p class="text-[#c3c6cf] leading-relaxed mb-6">Uniforme não é apenas utilitário — é a identidade da sua marca. Unimos corte contemporâneo à funcionalidade exigida por profissionais de elite.</p>
+          <a href="https://wa.me/5551985600893" target="_blank"
+             class="inline-block border-2 border-white text-white font-lexend font-black px-6 py-3 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition-all">
+            Falar com especialista →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     CALÇAS
+============================== -->
+<section id="calcas" class="py-20 px-6 md:px-12 bg-[#161b22]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em]">Categoria</span>
+        <h2 class="font-lexend font-black text-white text-4xl uppercase mt-1">👖 Calças</h2>
+      </div>
+      <a href="https://wa.me/5551985600893" target="_blank" class="border border-[#C85A00] text-[#C85A00] font-lexend font-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-[#C85A00] hover:text-black transition-all">💬 Pedir orçamento</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Brim/Sarja -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👖</span>
+          <span class="badge absolute top-3 left-3">Mais Resistente</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">🔩 Brim / Sarja</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Calça Brim Sarja</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Alta resistência — ideal para operações, campo, logística e trabalhos pesados.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Extremamente resistente</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Com bolsos funcionais</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Numeração 36 ao 54</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Calça%20Brim%20Sarja" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Thermoblock -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👖</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">🌡️ Thermoblock</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Calça Thermoblock</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Bloqueio térmico — conforto em dias frios sem pesar. Ideal para câmaras frias e outono/inverno.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Isolamento térmico</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Leve e confortável</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Numeração 36 ao 54</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Calça%20Thermoblock" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Moletom -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">👖</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">☁️ Moletom</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Calça Moletom</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Macia, quentinha e confortável. Perfeita para equipes que precisam de praticidade no dia a dia.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Tecido macio e quente</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Elástico e cordão ajustável</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Calça%20Moletom" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     INVERNO
+============================== -->
+<section id="inverno" class="py-20 px-6 md:px-12 bg-[#0d1117]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em]">Linha Frio</span>
+        <h2 class="font-lexend font-black text-white text-4xl uppercase mt-1">🧥 Inverno</h2>
+      </div>
+      <a href="https://wa.me/5551985600893" target="_blank" class="border border-[#C85A00] text-[#C85A00] font-lexend font-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-[#C85A00] hover:text-black transition-all">💬 Pedir orçamento</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Corta-vento -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#161b22] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🧥</span>
+          <span class="badge absolute top-3 left-3">Leve</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">💨 Corta-Vento</span>
+          <h3 class="font-lexend font-black text-white text-lg mt-1 mb-3">Jaqueta Corta-Vento</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Leve e impermeável. Proteção contra vento e chuva leve sem pesar — ideal para equipes externas.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Resistente ao vento</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Com bolsos e zíper</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Jaqueta%20Corta-Vento" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Thermoblock -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#161b22] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🧥</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">🌡️ Thermoblock</span>
+          <h3 class="font-lexend font-black text-white text-lg mt-1 mb-3">Jaqueta Thermoblock</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Forro thermoblock de alta performance. Perfeita para câmaras frias e dias muito frios.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Isolamento térmico</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Ideal p/ câmaras frias</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Jaqueta%20Thermoblock" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Moletom -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#161b22] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🧥</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">☁️ Moletom</span>
+          <h3 class="font-lexend font-black text-white text-lg mt-1 mb-3">Blusa Moletom</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Moletom fechado ou com zíper — quentinho, confortável. O coringa da linha inverno.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Fechado ou com zíper</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Fácil de personalizar</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Blusa%20Moletom" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Puffer -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#161b22] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🧥</span>
+          <span class="badge absolute top-3 left-3">Premium</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">❄️ Puffer</span>
+          <h3 class="font-lexend font-black text-white text-lg mt-1 mb-3">Jaqueta Puffer</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Acolchoada — máximo conforto térmico e visual moderno para regiões de clima mais frio.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Acolchoado premium</span></li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Visual moderno</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Jaqueta%20Puffer" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Orçamento
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     JALECOS
+============================== -->
+<section id="jalecos" class="py-20 px-6 md:px-12 bg-[#161b22]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em]">Saúde & Estética</span>
+        <h2 class="font-lexend font-black text-white text-4xl uppercase mt-1">🥼 Jalecos</h2>
+      </div>
+      <a href="https://wa.me/5551985600893" target="_blank" class="border border-[#C85A00] text-[#C85A00] font-lexend font-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-[#C85A00] hover:text-black transition-all">💬 Pedir orçamento</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+
+      <!-- Jaleco Opção 1 -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🥼</span>
+          <span class="badge absolute top-3 left-3">Opção 1</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">🏥 Modelo Clássico</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Jaleco Clássico</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Jaleco de manga longa — ideal para saúde, laboratório, farmácias e atendimento ao público.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Manga longa com punho</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Bolsos frontais</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG · masc. e fem.</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Bordado ou estampa inclusa</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Jaleco%20Opção%201" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+      <!-- Jaleco Opção 2 -->
+      <div class="produto-card overflow-hidden">
+        <div class="relative h-48 bg-[#0d1117] flex items-center justify-center text-6xl">
+          <span class="opacity-30">🥼</span>
+          <span class="badge absolute top-3 left-3">Opção 2</span>
+        </div>
+        <div class="p-6">
+          <span class="text-[#C85A00] text-xs font-bold uppercase tracking-widest">✨ Modelo Premium</span>
+          <h3 class="font-lexend font-black text-white text-xl mt-1 mb-3">Jaleco Premium</h3>
+          <p class="text-[#c3c6cf] text-sm leading-relaxed mb-4">Corte moderno e anatômico com mais bolsos. Acabamento premium para clínicas e consultórios.</p>
+          <ul class="space-y-1 mb-6">
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Corte moderno e anatômico</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Mais bolsos e funcionalidades</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> PP ao GG · masc. e fem.</li>
+            <li class="flex items-center gap-2 text-sm text-[#c3c6cf]"><span class="text-[#C85A00]">✓</span> Bordado ou estampa inclusa</li>
+          </ul>
+          <a href="https://wa.me/5551985600893?text=Oi!%20Quero%20orçamento%20de%20Jaleco%20Opção%202" target="_blank"
+             class="block bg-[#C85A00] text-black font-lexend font-black text-center py-3 uppercase text-sm tracking-wider hover:bg-white transition-all">
+            💬 Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="py-20 px-6 md:px-12 bg-[#0d1117]">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="mb-16">
+      <h2 class="font-lexend font-black text-white text-4xl uppercase italic">Como Funciona?</h2>
+      <p class="text-[#C85A00] font-lexend font-black text-xs uppercase tracking-[.3em] mt-1">Do orçamento à entrega em 4 passos</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-0 border border-[#161b22]">
+      <div class="p-10 border-b md:border-b-0 md:border-r border-[#161b22] hover:bg-[#161b22] transition-colors">
+        <span class="font-lexend font-black text-[#C85A00] text-4xl block mb-4">01</span>
+        <h3 class="font-lexend font-black text-white text-lg uppercase mb-3">Solicite o Orçamento</h3>
+        <p class="text-[#c3c6cf] text-sm leading-relaxed">Entre em contato pelo WhatsApp informando o produto, quantidade e cores.</p>
+      </div>
+      <div class="p-10 border-b md:border-b-0 md:border-r border-[#161b22] hover:bg-[#161b22] transition-colors">
+        <span class="font-lexend font-black text-[#C85A00] text-4xl block mb-4">02</span>
+        <h3 class="font-lexend font-black text-white text-lg uppercase mb-3">Aprove a Arte</h3>
+        <p class="text-[#c3c6cf] text-sm leading-relaxed">Nossa equipe prepara a arte da personalização e envia para aprovação.</p>
+      </div>
+      <div class="p-10 border-b md:border-b-0 md:border-r border-[#161b22] hover:bg-[#161b22] transition-colors">
+        <span class="font-lexend font-black text-[#C85A00] text-4xl block mb-4">03</span>
+        <h3 class="font-lexend font-black text-white text-lg uppercase mb-3">Confirme o Pedido</h3>
+        <p class="text-[#c3c6cf] text-sm leading-relaxed">Após aprovação, confirmamos. Pix, cartão ou boleto disponíveis.</p>
+      </div>
+      <div class="p-10 hover:bg-[#161b22] transition-colors">
+        <span class="font-lexend font-black text-[#C85A00] text-4xl block mb-4">04</span>
+        <h3 class="font-lexend font-black text-white text-lg uppercase mb-3">Receba em Casa</h3>
+        <p class="text-[#c3c6cf] text-sm leading-relaxed">Prazo de entrega de até 30 dias. Enviamos para todo o Brasil com rastreamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="relative bg-[#0d1117] py-32 px-6 md:px-12 text-center overflow-hidden">
+  <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
+    <span class="font-lexend font-black text-white" style="font-size:200px;letter-spacing:-0.04em;">PRECISION</span>
+  </div>
+  <div class="relative z-10 max-w-3xl mx-auto">
+    <h2 class="font-lexend font-black text-white leading-tight uppercase mb-8" style="font-size:clamp(36px,5vw,64px);">
+      Pronto para elevar o padrão da sua equipe?
+    </h2>
+    <p class="text-[#c3c6cf] text-lg mb-12">Nossa equipe está pronta para criar o uniforme ideal para o seu negócio.</p>
+    <a href="https://wa.me/5551985600893" target="_blank"
+       class="inline-flex items-center justify-center gap-3 bg-[#C85A00] text-black font-lexend font-black px-12 py-6 hard-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase text-lg mx-auto">
+      💬 Pedir Orçamento no WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#0d1117] border-t-2 border-[#161b22]">
+  <div class="grid grid-cols-1 md:grid-cols-2 px-6 md:px-12 py-12 gap-8 max-w-[1440px] mx-auto">
+    <div>
+      <div class="font-lexend font-black text-white text-lg uppercase mb-3">PASSO A PASSO UNIFORMES</div>
+      <p class="font-lexend font-bold uppercase text-xs tracking-widest text-gray-500">
+        © 2024 Passo a Passo Uniformes · Uniformes empresariais com estampa inclusa.
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-8 md:justify-end items-center">
+      <a href="https://wa.me/5551985600893" target="_blank" class="font-lexend font-bold uppercase text-xs tracking-widest text-gray-500 hover:text-[#C85A00] transition-colors">WhatsApp</a>
+      <a href="/" class="font-lexend font-bold uppercase text-xs tracking-widest text-gray-500 hover:text-[#C85A00] transition-colors">Início</a>
+      <a href="/camiseta-pv/" class="font-lexend font-bold uppercase text-xs tracking-widest text-gray-500 hover:text-[#C85A00] transition-colors">Camiseta PV</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Mobile CTA -->
+<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+  <a href="https://wa.me/5551985600893" target="_blank"
+     class="flex items-center justify-center gap-2 bg-[#C85A00] text-black font-lexend font-black py-4 uppercase text-base tracking-wider w-full">
+    💬 Pedir Orçamento no WhatsApp
+  </a>
+</div>
+
+</body>
+</html>

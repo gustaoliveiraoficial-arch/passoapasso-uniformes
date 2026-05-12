@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - navigation "Produtos do Console do Firebase" [ref=e12]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e13]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e15]:
+                - img [ref=e16]
+                - img "Logotipo do Firebase" [ref=e17]
+          - img [ref=e22]: search
+          - link "Visão geral do projeto" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e25]: gmp_nav20_overview
+          - menu [ref=e26]:
+            - menuitem "Configurações" [ref=e27]:
+              - img [ref=e29] [cursor=pointer]: settings
+        - separator [ref=e30]
+        - group [ref=e32]:
+          - link "Firestore" [ref=e34] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e35]: gmp_firestore
+        - separator [ref=e36]
+      - button "Alternar barra lateral de navegação" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]: chevron_left
+    - banner:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - button "Abrir menu de navegação" [ref=e45] [cursor=pointer]:
+            - img [ref=e46]: menu
+          - button "pap-tabela-precos (Abrir o menu \"Selecionar projeto\")" [ref=e260] [cursor=pointer]:
+            - text: pap-tabela-precos
+            - img [ref=e261]: arrow_drop_down
+        - link "Configurações do projeto" [ref=e264] [cursor=pointer]:
+          - /url: "#"
+        - button "Mais opções" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]: more_vert
+    - main [ref=e56]:
+      - generic [ref=e59]:
+        - region "Cabeçalho do produto" [ref=e60]:
+          - generic [ref=e62]:
+            - heading "Configurações do projeto" [level=2] [ref=e66]
+            - tablist "Recursos do produto" [ref=e70]:
+              - generic [ref=e73]:
+                - 'tab "Guia selecionada: Geral" [selected] [ref=e74] [cursor=pointer]':
+                  - generic [ref=e77]: Geral
+                - tab "Cloud Messaging" [ref=e80] [cursor=pointer]:
+                  - generic [ref=e83]: Cloud Messaging
+                - tab "Integrações" [ref=e86] [cursor=pointer]:
+                  - generic [ref=e89]: Integrações
+                - tab "Contas de serviço" [ref=e92] [cursor=pointer]:
+                  - generic [ref=e95]: Contas de serviço
+                - tab "Privacidade dos dados" [ref=e98] [cursor=pointer]:
+                  - generic [ref=e101]: Privacidade dos dados
+                - tab "Usuários e permissões" [ref=e104] [cursor=pointer]:
+                  - generic [ref=e107]: Usuários e permissões
+                - tab "Alertas" [ref=e110] [cursor=pointer]:
+                  - generic [ref=e113]: Alertas
+        - generic [ref=e119]:
+          - heading "Seu projeto" [level=2] [ref=e123]
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: Nome do projeto
+                - generic [ref=e130]: pap-tabela-precos
+                - button "Editar nome do projeto" [ref=e131] [cursor=pointer]:
+                  - img [ref=e132]: mode_edit
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - text: ID do projeto
+                  - button "Saiba mais sobre IDs de projeto" [ref=e138]:
+                    - img [ref=e139]: help
+                - generic [ref=e140]: pap-tabela-precos
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - text: Número do projeto
+                  - button "Saiba mais sobre números de projeto" [ref=e144]:
+                    - img [ref=e145]: help
+                - generic [ref=e146]: "101854550634"
+            - separator [ref=e147]
+            - generic [ref=e148]:
+              - heading "Ambiente" [level=3] [ref=e149]
+              - generic [ref=e150]: Esta configuração personaliza o projeto para diferentes fases do ciclo de vida do aplicativo
+              - generic [ref=e151]:
+                - generic [ref=e152]: Tipo de ambiente
+                - generic [ref=e154]: Não especificado
+                - button "Editar o tipo de ambiente" [ref=e155] [cursor=pointer]:
+                  - img [ref=e156]: mode_edit
+        - heading "Seus aplicativos" [level=2] [ref=e163]
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - text: Não há apps no seu projeto
+            - generic [ref=e167]: Selecione uma plataforma para começar
+          - generic [ref=e169]:
+            - button "Adicionar o Firebase ao seu aplicativo da Apple" [ref=e170] [cursor=pointer]:
+              - img [ref=e171]: plat_ios
+            - button "Adicionar o Firebase ao seu app Android" [ref=e174] [cursor=pointer]:
+              - img [ref=e175]: plat_android
+            - button "Adicionar o Firebase ao seu app da Web" [ref=e178] [cursor=pointer]:
+              - img [ref=e179]: plat_web
+            - button "Adicionar o Firebase aos seus apps do Unity" [ref=e183] [cursor=pointer]:
+              - img [ref=e184]: plat_unity
+            - button "Adicionar o Firebase ao seu app do Flutter" [ref=e187] [cursor=pointer]:
+              - img [ref=e188]: plat_flutter
+        - button "Excluir projeto" [ref=e193]:
+          - img [ref=e194]: delete
+          - generic [ref=e195]: Excluir projeto
+    - generic "Gemini no Firebase" [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e209] [cursor=pointer]':
+            - img [ref=e211]
+            - img [ref=e217]
+          - button "Abrir alertas" [ref=e219] [cursor=pointer]:
+            - img [ref=e220]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [ref=e228] [cursor=pointer]:
+            - img [ref=e230]: spark
+          - button "Ajuda" [ref=e233] [cursor=pointer]:
+            - img [ref=e234]: contact_support
+          - separator [ref=e237]
+          - button "Ativar o Cloud Shell" [ref=e238] [cursor=pointer]:
+            - img [ref=e239]:
+              - img [ref=e240]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e244]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e247] [cursor=pointer]:
+            - img [ref=e248]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e252] [cursor=pointer]':
+          - img [ref=e253]: dark_mode
+  - dialog "Adicionar um app da Web" [ref=e268]:
+    - generic [ref=e270]:
+      - text: open_in_new
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - heading "Adicionar um app da Web" [level=1] [ref=e274]
+          - button "Fechar" [ref=e275] [cursor=pointer]:
+            - img [ref=e276]: close
+        - generic [ref=e282]:
+          - generic [ref=e283]:
+            - button "Registrar app" [expanded] [ref=e284] [cursor=pointer]:
+              - generic [ref=e287]: "1"
+              - generic [ref=e290]: Registrar app
+            - region "Registrar app" [ref=e292]:
+              - generic [ref=e298]:
+                - generic [ref=e299]:
+                  - generic [ref=e301]:
+                    - generic [ref=e302]:
+                      - generic [ref=e303]: Apelido do app
+                      - button "Saiba mais sobre os apelidos de apps" [ref=e305]:
+                        - img [ref=e306]: help
+                    - textbox "Apelido do app" [ref=e307]:
+                      - /placeholder: Meu app da Web
+                  - generic [ref=e308]:
+                    - generic [ref=e309]:
+                      - generic [ref=e311]:
+                        - generic [ref=e312] [cursor=pointer]:
+                          - checkbox "Configure também o Firebase Hosting para este app." [ref=e314]
+                          - generic:
+                            - img
+                        - generic [ref=e316] [cursor=pointer]:
+                          - text: Configure também o
+                          - strong [ref=e317]: Firebase Hosting
+                          - text: para este app.
+                      - link "Saiba mais sobre o Firebase Hosting (abre em uma nova guia)" [ref=e319] [cursor=pointer]:
+                        - /url: https://firebase.google.com/docs/hosting/?hl=pt-BR&authuser=0
+                        - text: Saiba mais open_in_new
+                    - generic [ref=e320]: O Hosting pode ser configurado a qualquer momento sem custos financeiros.
+                - generic [ref=e321]:
+                  - button "Registrar app" [disabled]:
+                    - generic: Registrar app
+          - button "Adicionar o SDK do Firebase" [disabled] [ref=e323] [cursor=pointer]:
+            - generic [ref=e326]: "2"
+            - generic [ref=e329]: Adicionar o SDK do Firebase

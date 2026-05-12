@@ -1,0 +1,102 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button [expanded] [ref=e8] [cursor=pointer]:
+            - img [ref=e9]
+          - link [ref=e13] [cursor=pointer]:
+            - /url: /home
+            - img [ref=e14]
+            - generic [ref=e15]: Apps Script
+        - generic [ref=e16]:
+          - search [ref=e23]:
+            - generic [ref=e29]:
+              - textbox [disabled] [ref=e30]: Pesquisar
+              - combobox [ref=e31]
+            - button [ref=e32] [cursor=pointer]:
+              - img [ref=e33]
+          - button [ref=e40] [cursor=pointer]:
+            - generic [ref=e43]: help_outline
+        - generic [ref=e45]:
+          - button [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+          - button [ref=e55] [cursor=pointer]:
+            - img [ref=e57]
+      - navigation [ref=e58]:
+        - menu [ref=e59]:
+          - generic [ref=e61]:
+            - button [ref=e63] [cursor=pointer]:
+              - img [ref=e65]
+              - generic [ref=e71]: Novo projeto
+            - generic [ref=e72]:
+              - menuitem [ref=e73]:
+                - button [ref=e74] [cursor=pointer]:
+                  - generic [ref=e77]:
+                    - generic [ref=e78]: star_outline
+                    - generic [ref=e79]: Projetos com estrela
+              - menuitem [ref=e80]:
+                - button [ref=e81] [cursor=pointer]:
+                  - generic [ref=e84]:
+                    - generic [ref=e85]: folder
+                    - generic [ref=e86]: Meus projetos
+              - menuitem [ref=e87]:
+                - button [ref=e88] [cursor=pointer]:
+                  - generic [ref=e91]:
+                    - generic [ref=e92]: folder
+                    - generic [ref=e93]: Todos os projetos
+              - menuitem [ref=e94]:
+                - button [ref=e95] [cursor=pointer]:
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: group
+                    - generic [ref=e100]: Compartilhados comigo
+              - menuitem [ref=e101]:
+                - button [ref=e102] [cursor=pointer]:
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: delete
+                    - generic [ref=e107]: Lixeira
+              - menuitem [ref=e109]:
+                - button [ref=e110] [cursor=pointer]:
+                  - generic [ref=e113]:
+                    - img [ref=e115]
+                    - generic [ref=e121]: Minhas execuções
+              - menuitem [ref=e122]:
+                - button [ref=e123] [cursor=pointer]:
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: alarm
+                    - generic [ref=e128]: Meus acionadores
+              - menuitem [ref=e130]:
+                - button [ref=e131] [cursor=pointer]:
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: play_circle_outline
+                    - generic [ref=e136]: Vamos começar
+              - menuitem [ref=e137]:
+                - button [ref=e138] [cursor=pointer]:
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: settings
+                    - generic [ref=e143]: Configurações
+              - menuitem [ref=e144]:
+                - button [ref=e145] [cursor=pointer]:
+                  - generic [ref=e148]:
+                    - generic [ref=e149]: warning_amber
+                    - generic [ref=e150]: Status do serviço
+    - heading [level=1] [ref=e153]: Meus projetos
+    - dialog [ref=e191]:
+      - generic [ref=e193]:
+        - heading "Gerenciar e monitorar todos os seus projetos em um só lugar" [level=1] [ref=e194]
+        - generic [ref=e195]:
+          - img [ref=e196]
+          - img [ref=e200]
+          - img [ref=e204]
+          - img [ref=e208]
+          - img [ref=e213]
+          - img [ref=e215]
+          - img [ref=e217]
+          - img [ref=e219]
+          - img [ref=e221]
+        - heading "Bem-vindo ao painel do Apps Script." [level=3] [ref=e222]
+        - paragraph [ref=e223]: Pesquise e encontre seus projetos com facilidade. Monitore a integridade e o uso de projetos importantes. Depure os projetos visualizando execuções, registros e erros.
+        - button "Ver painel de controle" [ref=e224] [cursor=pointer]:
+          - generic [ref=e227]: Ver painel de controle

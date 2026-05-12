@@ -1,0 +1,238 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Menu principal":
+      - link "Pular para o conteúdo principal" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - text:                 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Barra de ferramentas":
+          - menu:
+            - group [ref=e6]:
+              - menuitem "Menu" [ref=e7] [cursor=pointer]:
+                - generic [ref=e8]: 
+                - generic [ref=e9]: Menu
+            - group [ref=e10]:
+              - menuitem "Sobre o WordPress" [ref=e11] [cursor=pointer]:
+                - generic [ref=e13]: Sobre o WordPress
+            - group [ref=e14]:
+              - menuitem "Passo a Passo Uniformes" [ref=e15] [cursor=pointer]
+            - group [ref=e16]:
+              - menuitem "7 atualizações disponíveis" [ref=e17] [cursor=pointer]:
+                - generic [ref=e19]: "7"
+                - generic [ref=e20]: 7 atualizações disponíveis
+            - group [ref=e21]:
+              - menuitem "0 comentário esperando moderação" [ref=e22] [cursor=pointer]:
+                - generic [ref=e24]: "0"
+                - generic [ref=e25]: 0 comentário esperando moderação
+            - group [ref=e26]:
+              - menuitem "Novo" [ref=e27] [cursor=pointer]:
+                - generic [ref=e29]: Novo
+            - text: 
+          - menu [ref=e30]:
+            - group [ref=e31]:
+              - menuitem "Olá, passoapassouniformes2025@gmail.com" [ref=e32] [cursor=pointer]
+      - heading "Configurações" [level=1] [ref=e35]
+      - main [ref=e37]:
+        - generic [ref=e40]:
+          - navigation [ref=e41]:
+            - link "Geral" [ref=e42] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=general
+            - link "Produtos" [ref=e43] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=products
+            - link "Entrega" [ref=e44] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=shipping
+            - link "Pagamentos" [ref=e45] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=checkout
+            - link "Contas e privacidade" [ref=e46] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=account
+            - link "E-mails" [ref=e47] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=email
+            - link "Integração" [ref=e48] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=integration
+            - link "Visibilidade do site" [ref=e49] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=site-visibility
+            - link "Point of Sale" [ref=e50] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=point-of-sale
+            - link "Avançado" [ref=e51] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-settings&tab=advanced
+          - heading "Geral" [level=1] [ref=e52]
+          - paragraph [ref=e54]:
+            - strong [ref=e55]: Suas configurações foram salvas.
+          - heading "Endereço da loja" [level=2] [ref=e56]
+          - paragraph [ref=e58]: Aqui é onde sua empresa está localizada. Taxas de imposto e custos de entrega utilizarão este endereço.
+          - table [ref=e59]:
+            - rowgroup [ref=e60]:
+              - row "Endereço linha 1 O endereço onde sua empresa esta localizada." [ref=e61]:
+                - rowheader "Endereço linha 1 O endereço onde sua empresa esta localizada." [ref=e62]:
+                  - generic [ref=e63]:
+                    - text: Endereço linha 1
+                    - generic "O endereço onde sua empresa esta localizada." [ref=e64]: 
+                - cell [ref=e65]:
+                  - textbox "Endereço linha 1 O endereço onde sua empresa esta localizada." [ref=e66]:
+                    - /placeholder: ""
+              - row "Endereço linha 2 Uma linha opcional de endereço adicional para a localização da sua empresa." [ref=e67]:
+                - rowheader "Endereço linha 2 Uma linha opcional de endereço adicional para a localização da sua empresa." [ref=e68]:
+                  - generic [ref=e69]:
+                    - text: Endereço linha 2
+                    - generic "Uma linha opcional de endereço adicional para a localização da sua empresa." [ref=e70]: 
+                - cell [ref=e71]:
+                  - textbox "Endereço linha 2 Uma linha opcional de endereço adicional para a localização da sua empresa." [ref=e72]:
+                    - /placeholder: ""
+              - row "Cidade A cidade em que sua empresa está localizada." [ref=e73]:
+                - rowheader "Cidade A cidade em que sua empresa está localizada." [ref=e74]:
+                  - generic [ref=e75]:
+                    - text: Cidade
+                    - generic "A cidade em que sua empresa está localizada." [ref=e76]: 
+                - cell [ref=e77]:
+                  - textbox "Cidade A cidade em que sua empresa está localizada." [ref=e78]:
+                    - /placeholder: ""
+              - row "País / estado O país e estado, se houver, em que sua empresa está localizada. Estados Unidos — Califórnia" [ref=e79]:
+                - rowheader "País / estado O país e estado, se houver, em que sua empresa está localizada." [ref=e80]:
+                  - generic [ref=e81]:
+                    - text: País / estado
+                    - generic "O país e estado, se houver, em que sua empresa está localizada." [ref=e82]: 
+                - cell "Estados Unidos — Califórnia" [ref=e83]:
+                  - combobox [ref=e84] [cursor=pointer]
+                  - combobox "Estados Unidos — Califórnia" [ref=e87] [cursor=pointer]:
+                    - textbox "Estados Unidos — Califórnia" [ref=e88]
+              - row "CEP O código postal, se houver, no qual sua empresa está localizada." [ref=e89]:
+                - rowheader "CEP O código postal, se houver, no qual sua empresa está localizada." [ref=e90]:
+                  - generic [ref=e91]:
+                    - text: CEP
+                    - generic "O código postal, se houver, no qual sua empresa está localizada." [ref=e92]: 
+                - cell [ref=e93]:
+                  - textbox "CEP O código postal, se houver, no qual sua empresa está localizada." [ref=e94]:
+                    - /placeholder: ""
+          - heading "Opções gerais" [level=2] [ref=e95]
+          - table [ref=e96]:
+            - rowgroup [ref=e97]:
+              - row "Locais de venda Esta opção permite que você limite para quais países deseja vender. Vender para todos os países" [ref=e98]:
+                - rowheader "Locais de venda Esta opção permite que você limite para quais países deseja vender." [ref=e99]:
+                  - generic [ref=e100]:
+                    - text: Locais de venda
+                    - generic "Esta opção permite que você limite para quais países deseja vender." [ref=e101]: 
+                - cell "Vender para todos os países" [ref=e102]:
+                  - combobox [ref=e103] [cursor=pointer]
+                  - combobox "Vender para todos os países" [ref=e106] [cursor=pointer]:
+                    - textbox "Vender para todos os países" [ref=e107]
+              - row "Locais de entrega Escolha quais países você deseja enviar ou para todas as localidades que você vende. Enviar para todas as localidades que você vende" [ref=e108]:
+                - rowheader "Locais de entrega Escolha quais países você deseja enviar ou para todas as localidades que você vende." [ref=e109]:
+                  - generic [ref=e110]:
+                    - text: Locais de entrega
+                    - generic "Escolha quais países você deseja enviar ou para todas as localidades que você vende." [ref=e111]: 
+                - cell "Enviar para todas as localidades que você vende" [ref=e112]:
+                  - combobox [ref=e113] [cursor=pointer]
+                  - combobox "Enviar para todas as localidades que você vende" [ref=e116] [cursor=pointer]:
+                    - textbox "Enviar para todas as localidades que você vende" [ref=e117]
+              - row "Localização padrão do cliente Esta opção determina a localização padrão dos clientes. O banco de dados GeoLite da MaxMind será baixado periodicamente para seu o diretório wp-content se você utilizar geolocalização. Região/país da loja" [ref=e118]:
+                - rowheader "Localização padrão do cliente Esta opção determina a localização padrão dos clientes. O banco de dados GeoLite da MaxMind será baixado periodicamente para seu o diretório wp-content se você utilizar geolocalização." [ref=e119]:
+                  - generic [ref=e120]:
+                    - text: Localização padrão do cliente
+                    - generic "Esta opção determina a localização padrão dos clientes. O banco de dados GeoLite da MaxMind será baixado periodicamente para seu o diretório wp-content se você utilizar geolocalização." [ref=e121]: 
+                - cell "Região/país da loja" [ref=e122]:
+                  - combobox [ref=e123] [cursor=pointer]
+                  - combobox "Região/país da loja" [ref=e126] [cursor=pointer]:
+                    - textbox "Região/país da loja" [ref=e127]
+              - row "Address autocomplete Address autocomplete" [ref=e128]:
+                - rowheader "Address autocomplete" [ref=e129]
+                - cell "Address autocomplete" [ref=e130]:
+                  - group "Address autocomplete" [ref=e131]:
+                    - generic [ref=e133]: Address autocomplete
+                    - generic [ref=e134]:
+                      - checkbox "Enable predictive address search" [disabled]
+                      - text: Enable predictive address search
+                    - paragraph [ref=e135]:
+                      - text: Suggest full addresses to customers as they type. Requires a plugin with predictive address search support (e.g.
+                      - link "WooPayments" [ref=e136] [cursor=pointer]:
+                        - /url: https://woocommerce.com/products/woocommerce-payments/
+                      - text: ).
+          - heading "Taxes and coupons" [level=2] [ref=e137]
+          - paragraph [ref=e139]: Enable taxes and coupons and configure how they are calculated.
+          - table [ref=e140]:
+            - rowgroup [ref=e141]:
+              - row "Ativar impostos Ativar impostos" [ref=e142]:
+                - rowheader "Ativar impostos" [ref=e143]
+                - cell "Ativar impostos" [ref=e144]:
+                  - group "Ativar impostos" [ref=e145]:
+                    - generic [ref=e147]: Ativar impostos
+                    - generic [ref=e148]:
+                      - checkbox "Ativar taxas e cálculos de impostos" [ref=e149] [cursor=pointer]
+                      - text: Ativar taxas e cálculos de impostos
+                    - paragraph [ref=e150]: Tarifas serão configuradas e os impostos serão calculadas durante a finalização de compra.
+              - row "Ativar cupons Ativar cupons" [ref=e151]:
+                - rowheader "Ativar cupons" [ref=e152]
+                - cell "Ativar cupons" [ref=e153]:
+                  - group "Ativar cupons" [ref=e154]:
+                    - generic [ref=e156]: Ativar cupons
+                    - generic [ref=e157]:
+                      - checkbox "Ativar o uso de códigos de cupons" [checked] [ref=e158] [cursor=pointer]
+                      - text: Ativar o uso de códigos de cupons
+                    - paragraph [ref=e159]: Cupons podem ser aplicados no carrinho e na página de finalização de compra.
+                  - group [ref=e160]:
+                    - generic [ref=e161]:
+                      - checkbox "Calcular cupom de descontos sequencialmente" [ref=e162] [cursor=pointer]
+                      - text: Calcular cupom de descontos sequencialmente
+                    - paragraph [ref=e163]: Ao aplicar vários cupons, aplique o primeiro para o preço total, o segundo para o preço com desconto e assim por diante.
+          - heading "Opções de moeda" [level=2] [ref=e164]
+          - paragraph [ref=e166]: As opções a seguir afetam como os preços são exibidos no site.
+          - table [ref=e167]:
+            - rowgroup [ref=e168]:
+              - row "Moeda Isto controla qual moeda será listada no catálogo e utilizada nos sistemas de pagamento. Real brasileiro (R$) — BRL" [ref=e169]:
+                - rowheader "Moeda Isto controla qual moeda será listada no catálogo e utilizada nos sistemas de pagamento." [ref=e170]:
+                  - generic [ref=e171]:
+                    - text: Moeda
+                    - generic "Isto controla qual moeda será listada no catálogo e utilizada nos sistemas de pagamento." [ref=e172]: 
+                - cell "Real brasileiro (R$) — BRL" [ref=e173]:
+                  - combobox [ref=e174] [cursor=pointer]
+                  - combobox "Real brasileiro (R$) — BRL" [ref=e177] [cursor=pointer]:
+                    - textbox "Real brasileiro (R$) — BRL" [ref=e178]
+              - row "Posição da moeda Isto controla a posição do simbolo monetário. Esquerda" [ref=e179]:
+                - rowheader "Posição da moeda Isto controla a posição do simbolo monetário." [ref=e180]:
+                  - generic [ref=e181]:
+                    - text: Posição da moeda
+                    - generic "Isto controla a posição do simbolo monetário." [ref=e182]: 
+                - cell "Esquerda" [ref=e183]:
+                  - combobox [ref=e184] [cursor=pointer]
+                  - combobox "Esquerda" [ref=e187] [cursor=pointer]:
+                    - textbox "Esquerda" [ref=e188]
+              - row "Separador de milhares Isto define o simbolo que separa a casa das milhares nos preços. ." [ref=e189]:
+                - rowheader "Separador de milhares Isto define o simbolo que separa a casa das milhares nos preços." [ref=e190]:
+                  - generic [ref=e191]:
+                    - text: Separador de milhares
+                    - generic "Isto define o simbolo que separa a casa das milhares nos preços." [ref=e192]: 
+                - cell "." [ref=e193]:
+                  - textbox "Separador de milhares Isto define o simbolo que separa a casa das milhares nos preços." [ref=e194]:
+                    - /placeholder: ""
+                    - text: .
+              - row "Separador decimal Isto define o simbolo exibido na casa decimal nos preços. ," [ref=e195]:
+                - rowheader "Separador decimal Isto define o simbolo exibido na casa decimal nos preços." [ref=e196]:
+                  - generic [ref=e197]:
+                    - text: Separador decimal
+                    - generic "Isto define o simbolo exibido na casa decimal nos preços." [ref=e198]: 
+                - cell "," [ref=e199]:
+                  - textbox "Separador decimal Isto define o simbolo exibido na casa decimal nos preços." [ref=e200]:
+                    - /placeholder: ""
+                    - text: ","
+              - row "Número de casas decimais Isto define o número de casas decimais mostrado nos preços apresentados. 2" [ref=e201]:
+                - rowheader "Número de casas decimais Isto define o número de casas decimais mostrado nos preços apresentados." [ref=e202]:
+                  - generic [ref=e203]:
+                    - text: Número de casas decimais
+                    - generic "Isto define o número de casas decimais mostrado nos preços apresentados." [ref=e204]: 
+                - cell "2" [ref=e205]:
+                  - spinbutton "Número de casas decimais Isto define o número de casas decimais mostrado nos preços apresentados." [ref=e206]: "2"
+          - paragraph [ref=e207]:
+            - button "Salvar alterações" [disabled] [ref=e208]
+          - paragraph [ref=e209]:
+            - link "Discover additional solutions" [ref=e210] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/wp-admin/admin.php?page=wc-admin&path=%2Fextensions
+            - text: to boost your business and expand what your store can do.
+    - generic [ref=e212]:
+      - img [ref=e214]
+      - generic [ref=e216]: Falta pouco para publicar sua loja on-line
+      - link "Continuar configuração" [ref=e218] [cursor=pointer]:
+        - /url: "\n                        https://passoapassouniformes.com/wp-admin/admin.php?page=hostinger-get-onboarding                        "
+    - generic [ref=e222] [cursor=pointer]:
+      - img [ref=e223]
+      - generic [ref=e225]: Fale com o Kodee
+  - img

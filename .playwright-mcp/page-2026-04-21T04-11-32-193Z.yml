@@ -1,0 +1,368 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações 284" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - generic [ref=e39]: "284"
+          - listitem [ref=e40]:
+            - link "Funis de vendas" [ref=e42] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e44]
+              - generic [ref=e46]: Funis de vendas
+              - img [ref=e49]
+          - listitem [ref=e52] [cursor=pointer]:
+            - link "Calendário 16" [ref=e54]:
+              - /url: /todo
+              - img [ref=e56]
+              - generic [ref=e58]: Calendário
+              - generic [ref=e62]: "16"
+          - listitem [ref=e63]:
+            - link "Listas" [ref=e65] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e67]
+              - generic [ref=e69]: Listas
+              - img [ref=e72]
+          - listitem [ref=e75] [cursor=pointer]:
+            - link "Agente de IA" [ref=e77]:
+              - /url: /settings/ai-agent/
+              - img [ref=e79]
+              - generic [ref=e81]: Agente de IA
+          - listitem [ref=e82]:
+            - link "Automações" [ref=e84] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e86]
+              - generic [ref=e88]: Automações
+              - img [ref=e91]
+          - listitem [ref=e93]:
+            - link "Insights" [ref=e95] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e97]
+              - generic [ref=e100]: Insights
+              - img [ref=e103]
+        - generic [ref=e105]: Integrações fixadas
+        - list [ref=e106]:
+          - listitem [ref=e108] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e110]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e113]
+              - generic [ref=e114]: WhatsApp Business
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "TikTok" [ref=e118]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e121]
+              - generic [ref=e122]: TikTok
+      - list [ref=e124]:
+        - listitem [ref=e126] [cursor=pointer]:
+          - link "Configurações" [ref=e128]:
+            - /url: /settings/profile/
+            - img [ref=e130]
+            - generic [ref=e133]: Configurações
+        - listitem [ref=e134]:
+          - link "Ajuda" [ref=e136] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e138]
+            - generic [ref=e140]: Ajuda
+            - img [ref=e143]
+        - listitem [ref=e146] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e148]:
+            - /url: ""
+            - img [ref=e150]
+            - generic [ref=e152]: Enviar feedback
+        - listitem [ref=e154] [cursor=pointer]:
+          - link "Centro de Notificação 18" [ref=e156]:
+            - /url: /settings/profile/notifications
+            - img [ref=e158]
+            - generic [ref=e160]: Centro de Notificação
+            - generic [ref=e164]: "18"
+      - separator [ref=e165]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e167] [cursor=pointer]:
+        - img "Avatar" [ref=e170]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Passo a passo uniformes
+          - generic [ref=e173]: passoapassouniformes2025
+  - generic:
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - generic [ref=e182]:
+          - img [ref=e183]
+          - textbox [ref=e185]:
+            - /placeholder: Buscar
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - generic [ref=e195] [cursor=pointer]: Conversas abertas
+              - generic [ref=e197]: "Total: 806"
+              - button "Button_more" [ref=e200] [cursor=pointer]:
+                - img [ref=e202]
+            - generic: Criada Fechadas Ativas Funil de vendas, etapas Usuário responsável Inscritos de leads Participantes Remetente da última mensagem Tags
+          - generic [ref=e206]:
+            - 'link "avatar icon Agiliza Phone A997 Ontem 21:13 Lead #29002050 Olá, gostaria de fazer um orçamento" [ref=e208] [cursor=pointer]':
+              - /url: /chats/997/leads/detail/29002050?t=1776730435.5383
+              - generic [ref=e210]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e212]
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - heading "Agiliza Phone A997" [level=2] [ref=e215]:
+                    - generic [ref=e216]: Agiliza Phone
+                    - generic "A997" [ref=e217]
+                    - img [ref=e219]
+                  - generic [ref=e220]: Ontem 21:13
+                - 'heading "Lead #29002050" [level=3] [ref=e222]':
+                  - generic [ref=e223]: "Lead #29002050"
+                - heading "Olá, gostaria de fazer um orçamento" [level=3] [ref=e225]:
+                  - generic [ref=e226]: Olá, gostaria de fazer um orçamento
+            - 'link "avatar icon Clau Meneses A993 Ontem 20:38 Lead #28970899 Gostavo" [ref=e228] [cursor=pointer]':
+              - /url: /chats/993/leads/detail/28970899?t=1776728306.4185
+              - generic [ref=e230]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e232]
+              - generic [ref=e233]:
+                - generic [ref=e234]:
+                  - heading "Clau Meneses A993" [level=2] [ref=e235]:
+                    - generic [ref=e236]: Clau Meneses
+                    - generic "A993" [ref=e237]
+                    - img [ref=e239]
+                  - generic [ref=e240]: Ontem 20:38
+                - 'heading "Lead #28970899" [level=3] [ref=e242]':
+                  - generic [ref=e243]: "Lead #28970899"
+                - heading "Gostavo" [level=3] [ref=e245]:
+                  - generic [ref=e246]: Gostavo
+            - 'link "avatar icon Jessica Rezendes A167 Ontem 19:00 Lead #27294513 Ta" [ref=e248] [cursor=pointer]':
+              - /url: /chats/167/leads/detail/27294513?t=1776722400.8596
+              - generic [ref=e250]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e252]
+              - generic [ref=e253]:
+                - generic [ref=e254]:
+                  - heading "Jessica Rezendes A167" [level=2] [ref=e255]:
+                    - generic [ref=e256]: Jessica Rezendes
+                    - generic "A167" [ref=e257]
+                    - img [ref=e259]
+                  - generic [ref=e260]: Ontem 19:00
+                - 'heading "Lead #27294513" [level=3] [ref=e262]':
+                  - generic [ref=e263]: "Lead #27294513"
+                - heading "Ta" [level=3] [ref=e265]:
+                  - generic [ref=e266]: Ta
+            - 'link "avatar icon Brenda A996 Ontem 18:52 Lead #28991137 E casaco colegial" [ref=e268] [cursor=pointer]':
+              - /url: /chats/996/leads/detail/28991137?t=1776721952.9506
+              - generic [ref=e270]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e272]
+              - generic [ref=e273]:
+                - generic [ref=e274]:
+                  - heading "Brenda A996" [level=2] [ref=e275]:
+                    - generic [ref=e276]: Brenda
+                    - generic "A996" [ref=e277]
+                    - img [ref=e279]
+                  - generic [ref=e280]: Ontem 18:52
+                - 'heading "Lead #28991137" [level=3] [ref=e282]':
+                  - generic [ref=e283]: "Lead #28991137"
+                - heading "E casaco colegial" [level=3] [ref=e285]:
+                  - generic [ref=e286]: E casaco colegial
+            - 'link "avatar icon João Nallem A537 Ontem 18:44 Lead #27294703 Todas restante, normais, sem o dizer" [ref=e288] [cursor=pointer]':
+              - /url: /chats/537/leads/detail/27294703?t=1776721465.1043
+              - generic [ref=e290]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e292]
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - heading "João Nallem A537" [level=2] [ref=e295]:
+                    - generic [ref=e296]: João Nallem
+                    - generic "A537" [ref=e297]
+                    - img [ref=e299]
+                  - generic [ref=e300]: Ontem 18:44
+                - 'heading "Lead #27294703" [level=3] [ref=e302]':
+                  - generic [ref=e303]: "Lead #27294703"
+                - heading "Todas restante, normais, sem o dizer" [level=3] [ref=e305]:
+                  - generic [ref=e306]: Todas restante, normais, sem o dizer
+            - 'link "avatar icon Nicole Hehn A988 Ontem 18:07 Lead #28888445 pode me passar!" [ref=e308] [cursor=pointer]':
+              - /url: /chats/988/leads/detail/28888445?t=1776719257.6955
+              - generic [ref=e310]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e312]
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - heading "Nicole Hehn A988" [level=2] [ref=e315]:
+                    - generic [ref=e316]: Nicole Hehn
+                    - generic "A988" [ref=e317]
+                    - img [ref=e319]
+                  - generic [ref=e320]: Ontem 18:07
+                - 'heading "Lead #28888445" [level=3] [ref=e322]':
+                  - generic [ref=e323]: "Lead #28888445"
+                - heading "pode me passar!" [level=3] [ref=e325]:
+                  - generic [ref=e326]: pode me passar!
+            - link "avatar icon MK Equipamento E Motores A923 Ontem 17:37 dri jimp vieram na loja sem problema, obrigada" [ref=e328] [cursor=pointer]:
+              - /url: /chats/923/leads/detail/28210962?t=1776717470.677
+              - generic [ref=e330]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e332]
+              - generic [ref=e333]:
+                - generic [ref=e334]:
+                  - heading "MK Equipamento E Motores A923" [level=2] [ref=e335]:
+                    - generic [ref=e336]: MK Equipamento E Motores
+                    - generic "A923" [ref=e337]
+                    - img [ref=e339]
+                  - generic [ref=e340]: Ontem 17:37
+                - heading "dri jimp vieram na loja" [level=3] [ref=e342]:
+                  - generic [ref=e343]: dri jimp vieram na loja
+                - heading "sem problema, obrigada" [level=3] [ref=e345]:
+                  - generic [ref=e346]: sem problema, obrigada
+            - 'link "avatar icon Gabriela Ferraz A990 Ontem 17:29 Lead #28898391 Podemos orçar 5 da verde?" [ref=e348] [cursor=pointer]':
+              - /url: /chats/990/leads/detail/28898391?t=1776716948.9849
+              - generic [ref=e350]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e352]
+              - generic [ref=e353]:
+                - generic [ref=e354]:
+                  - heading "Gabriela Ferraz A990" [level=2] [ref=e355]:
+                    - generic [ref=e356]: Gabriela Ferraz
+                    - generic "A990" [ref=e357]
+                    - img [ref=e359]
+                  - generic [ref=e360]: Ontem 17:29
+                - 'heading "Lead #28898391" [level=3] [ref=e362]':
+                  - generic [ref=e363]: "Lead #28898391"
+                - heading "Podemos orçar 5 da verde?" [level=3] [ref=e365]:
+                  - generic [ref=e366]: Podemos orçar 5 da verde?
+            - 'link "avatar icon Tais Gubiani - Comercial A935 Ontem 16:54 Lead #28293308 Isso perfeito" [ref=e368] [cursor=pointer]':
+              - /url: /chats/935/leads/detail/28293308?t=1776714882.4753
+              - generic [ref=e370]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e372]
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - heading "Tais Gubiani - Comercial A935" [level=2] [ref=e375]:
+                    - generic [ref=e376]: Tais Gubiani - Comercial
+                    - generic "A935" [ref=e377]
+                    - img [ref=e379]
+                  - generic [ref=e380]: Ontem 16:54
+                - 'heading "Lead #28293308" [level=3] [ref=e382]':
+                  - generic [ref=e383]: "Lead #28293308"
+                - heading "Isso perfeito" [level=3] [ref=e385]:
+                  - generic [ref=e386]: Isso perfeito
+            - 'link "avatar icon Celsus - Marketing A994 Ontem 16:49 Lead #28979645 obrigada!" [ref=e388] [cursor=pointer]':
+              - /url: /chats/994/leads/detail/28979645?t=1776714434.4502
+              - generic [ref=e390]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e392]
+              - generic [ref=e393]:
+                - generic [ref=e394]:
+                  - heading "Celsus - Marketing A994" [level=2] [ref=e395]:
+                    - generic [ref=e396]: Celsus - Marketing
+                    - generic "A994" [ref=e397]
+                    - img [ref=e399]
+                  - generic [ref=e400]: Ontem 16:49
+                - 'heading "Lead #28979645" [level=3] [ref=e402]':
+                  - generic [ref=e403]: "Lead #28979645"
+                - heading "obrigada!" [level=3] [ref=e405]:
+                  - generic [ref=e406]: obrigada!
+            - 'link "avatar icon Paulo Carvalho A989 Ontem 16:31 Lead #28889007 📄 Eco-Fresh-Açaí-Logo-FundoEscuro.pdf" [ref=e408] [cursor=pointer]':
+              - /url: /chats/989/leads/detail/28889007?t=1776713458.7006
+              - generic [ref=e410]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e412]
+              - generic [ref=e413]:
+                - generic [ref=e414]:
+                  - heading "Paulo Carvalho A989" [level=2] [ref=e415]:
+                    - generic [ref=e416]: Paulo Carvalho
+                    - generic "A989" [ref=e417]
+                    - img [ref=e419]
+                  - generic [ref=e420]: Ontem 16:31
+                - 'heading "Lead #28889007" [level=3] [ref=e422]':
+                  - generic [ref=e423]: "Lead #28889007"
+                - heading "📄 Eco-Fresh-Açaí-Logo-FundoEscuro.pdf" [level=3] [ref=e425]:
+                  - generic [ref=e426]: 📄 Eco-Fresh-Açaí-Logo-FundoEscuro.pdf
+            - 'link "avatar icon Adrieli Ritterbusch A968 Ontem 16:27 Lead #28599470 Salesbot: Quarta às 10 horas trazer 2 cabos e trazer social" [ref=e428] [cursor=pointer]':
+              - /url: /chats/968/leads/detail/28599470?t=1776713274.8064
+              - generic [ref=e430]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e432]
+              - generic [ref=e433]:
+                - generic [ref=e434]:
+                  - heading "Adrieli Ritterbusch A968" [level=2] [ref=e435]:
+                    - generic [ref=e436]: Adrieli Ritterbusch
+                    - generic "A968" [ref=e437]
+                    - img [ref=e439]
+                  - generic [ref=e440]: Ontem 16:27
+                - 'heading "Lead #28599470" [level=3] [ref=e442]':
+                  - generic [ref=e443]: "Lead #28599470"
+                - 'heading "Salesbot: Quarta às 10 horas trazer 2 cabos e trazer social" [level=3] [ref=e445]':
+                  - generic [ref=e446]: "Salesbot: Quarta às 10 horas trazer 2 cabos e trazer social"
+            - 'link "avatar icon Luiza Província Marcas e Patentes A995 Ontem 16:25 Lead #28981139 Olá, tudo bem? Me chamo Luiza, sou da Província Marcas e Patentes. Preciso falar com o responsável pela empres..." [ref=e448] [cursor=pointer]':
+              - /url: /chats/995/leads/detail/28981139?t=1776713143.4048
+              - generic [ref=e450]:
+                - generic:
+                  - img "avatar"
+                - img "icon" [ref=e452]
+              - generic [ref=e453]:
+                - generic [ref=e454]:
+                  - heading "Luiza Província Marcas e Patentes A995" [level=2] [ref=e455]:
+                    - generic [ref=e456]: Luiza Província Marcas e Patentes
+                    - generic "A995" [ref=e457]
+                    - img [ref=e459]
+                  - generic [ref=e460]: Ontem 16:25
+                - 'heading "Lead #28981139" [level=3] [ref=e462]':
+                  - generic [ref=e463]: "Lead #28981139"
+                - heading "Olá, tudo bem? Me chamo Luiza, sou da Província Marcas e Patentes. Preciso falar com o responsável pela empres..." [level=3] [ref=e465]:
+                  - generic [ref=e466]: Olá, tudo bem? Me chamo Luiza, sou da Província Marcas e Patentes. Preciso falar com o responsável pela empres...
+      - paragraph [ref=e472]: Selecione um tópico para começar a enviar mensagens
+    - generic [ref=e475]:
+      - img
+      - button [ref=e476]:
+        - img [ref=e477]
+        - img [ref=e479]
+        - img [ref=e483]
+      - generic [ref=e485]:
+        - generic [ref=e486]:
+          - generic [ref=e487]:
+            - img [ref=e488]
+            - generic [ref=e490]: Kommo Copilot
+          - generic [ref=e491]:
+            - button [ref=e492] [cursor=pointer]:
+              - img [ref=e495]
+            - button [ref=e497] [cursor=pointer]:
+              - img [ref=e500]
+            - button [ref=e502] [cursor=pointer]:
+              - img [ref=e505]
+        - button "Novo chat" [ref=e507] [cursor=pointer]:
+          - generic [ref=e508]:
+            - generic [ref=e509]: Novo chat
+            - img [ref=e510]
+        - generic [ref=e514]:
+          - img [ref=e516]
+          - heading "Olá, sou o Kommo Copilot!" [level=2] [ref=e518]
+          - generic [ref=e519]: Precisa de ajuda para configurar a Kommo ou gerenciar seus leads? É só pedir!
+        - generic [ref=e521]:
+          - generic [ref=e522]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e525]
+            - button [disabled] [ref=e528]:
+              - img [ref=e531]
+          - generic [ref=e533]: O conteúdo gerado por IA pode ser impreciso

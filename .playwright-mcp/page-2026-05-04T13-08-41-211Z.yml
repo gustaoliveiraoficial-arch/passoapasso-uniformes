@@ -1,0 +1,141 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /ac901997beeefb64/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.83%
+        - generic [ref=e60]: 422.76 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 3.48%
+        - generic [ref=e62]: 20867 / 600000
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h2
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e38]:
+        - link "Home" [ref=e39] [cursor=pointer]:
+          - /url: /ac901997beeefb64/files
+          - generic [ref=e40]: home
+        - generic [ref=e41]:
+          - generic [ref=e43]: keyboard_arrow_right
+          - link "public_html" [ref=e44] [cursor=pointer]:
+            - /url: /ac901997beeefb64/files/public_html/
+        - generic [ref=e45]:
+          - generic [ref=e47]: keyboard_arrow_right
+          - link "tabeladeprecos" [ref=e48] [cursor=pointer]:
+            - /url: /ac901997beeefb64/files/public_html/tabeladeprecos/
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - img [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]: search
+              - textbox "Search..." [ref=e69]
+            - generic [ref=e70]:
+              - paragraph [ref=e71]: Type to search...
+              - generic [ref=e72]:
+                - heading "Types" [level=3] [ref=e73]
+                - generic [ref=e74]:
+                  - button "Images" [ref=e75] [cursor=pointer]:
+                    - generic [ref=e76]: insert_photo
+                    - paragraph [ref=e77]: Images
+                  - button "Music" [ref=e78] [cursor=pointer]:
+                    - generic [ref=e79]: volume_up
+                    - paragraph [ref=e80]: Music
+                  - button "Video" [ref=e81] [cursor=pointer]:
+                    - generic [ref=e82]: movie
+                    - paragraph [ref=e83]: Video
+                  - button "PDF" [ref=e84] [cursor=pointer]:
+                    - generic [ref=e85]: picture_as_pdf
+                    - paragraph [ref=e86]: PDF
+          - generic [ref=e87]:
+            - button "Switch view" [ref=e88] [cursor=pointer]:
+              - generic [ref=e89]: view_module
+            - button "Download" [ref=e90] [cursor=pointer]:
+              - generic [ref=e91]: file_download
+            - button "Upload" [ref=e92] [cursor=pointer]:
+              - generic [ref=e93]: file_upload
+            - button "Calculate directory sizes" [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: assessment
+            - button "Info" [ref=e96] [cursor=pointer]:
+              - generic [ref=e97]: info
+            - button "Select multiple" [ref=e98] [cursor=pointer]:
+              - generic [ref=e99]: check_circle
+        - generic [ref=e174]:
+          - generic [ref=e177] [cursor=pointer]:
+            - button "Sort by name" [ref=e178]:
+              - text: Name
+              - generic [ref=e179]: arrow_upward
+            - button "Sort by size" [ref=e180]:
+              - text: Size
+              - generic [ref=e181]: arrow_upward
+            - button "Sort by last modified" [ref=e182]:
+              - text: Last modified
+              - generic [ref=e183]: arrow_upward
+          - button "assets" [ref=e185] [cursor=pointer]:
+            - generic [ref=e187]: folder
+            - generic [ref=e188]:
+              - paragraph [ref=e189]: assets
+              - paragraph [ref=e190]: "-"
+              - paragraph [ref=e191]:
+                - time [ref=e192]: a few seconds ago
+              - paragraph [ref=e193]: drwxr-xr-x
+          - generic [ref=e194]:
+            - button "favicon.svg" [ref=e195] [cursor=pointer]:
+              - img [ref=e197]
+              - generic [ref=e198]:
+                - paragraph [ref=e199]: favicon.svg
+                - paragraph [ref=e200]: 9.3 KiB
+                - paragraph [ref=e201]:
+                  - time [ref=e202]: a few seconds ago
+                - paragraph [ref=e203]: "-rw-r--r--"
+            - button "icons.svg" [ref=e204] [cursor=pointer]:
+              - img [ref=e206]
+              - generic [ref=e207]:
+                - paragraph [ref=e208]: icons.svg
+                - paragraph [ref=e209]: 4.91 KiB
+                - paragraph [ref=e210]:
+                  - time [ref=e211]: a few seconds ago
+                - paragraph [ref=e212]: "-rw-r--r--"
+            - button "index.html" [ref=e213] [cursor=pointer]:
+              - generic [ref=e215]: code
+              - generic [ref=e216]:
+                - paragraph [ref=e217]: index.html
+                - paragraph [ref=e218]: 508 B
+                - paragraph [ref=e219]:
+                  - time [ref=e220]: a few seconds ago
+                - paragraph [ref=e221]: "-rw-r--r--"
+            - button "tabeladeprecos-deploy-upload.zip" [ref=e222] [cursor=pointer]:
+              - generic [ref=e224]: folder_zip
+              - generic [ref=e225]:
+                - paragraph [ref=e226]: tabeladeprecos-deploy-upload.zip
+                - paragraph [ref=e227]: 159.95 KiB
+                - paragraph [ref=e228]:
+                  - time [ref=e229]: a few seconds ago
+                - paragraph [ref=e230]: "-rw-r--r--"
+          - generic [ref=e231]:
+            - paragraph [ref=e232]: Multiple selection enabled
+            - button "Clear" [ref=e233] [cursor=pointer]:
+              - generic [ref=e234]: clear

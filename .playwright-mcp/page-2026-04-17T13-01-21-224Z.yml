@@ -1,0 +1,130 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - link [ref=e202] [cursor=pointer]:
+      - /url: "#main"
+      - text: Pular para o conteúdo principal
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - navigation [ref=e203]:
+          - heading [level=2] [ref=e204]:
+            - link [ref=e205] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e104]:
+                - img [ref=e105]
+                - img [ref=e206]
+          - img [ref=e111]: search
+          - link [ref=e207] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e114]: gmp_nav20_overview
+          - menu [ref=e115]:
+            - menuitem [ref=e208]:
+              - img [ref=e118] [cursor=pointer]: settings
+        - separator [ref=e119]
+        - group [ref=e121]:
+          - link [ref=e209] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e124]: gmp_nav20_database
+        - separator [ref=e125]
+      - button [ref=e210] [cursor=pointer]:
+        - img [ref=e129]: chevron_left
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button [ref=e211] [cursor=pointer]:
+          - img [ref=e133]: menu
+        - button [ref=e212] [cursor=pointer]:
+          - text: painel-vendas-comercial
+          - img [ref=e138]: arrow_drop_down
+      - button [ref=e213] [cursor=pointer]:
+        - img [ref=e142]: more_vert
+    - main [ref=e16]:
+      - generic [ref=e146]:
+        - region [ref=e214]:
+          - generic [ref=e150]:
+            - heading [level=2] [ref=e215]: Utilização e faturamento
+            - tablist [ref=e216]:
+              - generic [ref=e161]:
+                - tab [ref=e217] [cursor=pointer]:
+                  - generic [ref=e165]: Visão geral
+                - tab [selected] [ref=e218] [cursor=pointer]:
+                  - generic [ref=e171]: Detalhes e configurações
+                - tab [ref=e219] [cursor=pointer]:
+                  - generic [ref=e177]: Inscrições
+        - generic [ref=e183]:
+          - heading [level=2] [ref=e220]: Plano de faturamento do Firebase
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]: Spark
+              - generic [ref=e188]: Sem custos financeiros
+            - generic [ref=e189]:
+              - button [ref=e221]:
+                - generic [ref=e191]: Modificar plano
+              - link [ref=e222] [cursor=pointer]:
+                - /url: https://firebase.google.com/pricing?hl=pt-BR&authuser=0
+                - generic [ref=e195]: Ver todos os planos
+                - text: open_in_new
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - button [ref=e224] [cursor=pointer]:
+          - img [ref=e47]
+          - img [ref=e53]
+        - button [ref=e225] [cursor=pointer]:
+          - img [ref=e56]: notifications
+        - button [ref=e226] [cursor=pointer]:
+          - img [ref=e66]: spark
+        - button [ref=e227] [cursor=pointer]:
+          - img [ref=e74]: contact_support
+        - separator [ref=e77]
+        - button [ref=e228] [cursor=pointer]:
+          - img [ref=e79]:
+            - img [ref=e80]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e84]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button [ref=e229] [cursor=pointer]:
+          - img [ref=e199]: school
+      - button [ref=e230] [cursor=pointer]:
+        - img [ref=e89]: dark_mode
+  - dialog "Sua conta de faturamento" [ref=e311]:
+    - generic [ref=e239]:
+      - progressbar [ref=e360]:
+        - img [ref=e362]
+        - generic [ref=e365]:
+          - img [ref=e367]
+          - img [ref=e370]
+          - img [ref=e373]
+      - generic [ref=e240]:
+        - button "Voltar para a seleção de planos" [ref=e313] [cursor=pointer]:
+          - img [ref=e314]: arrow_back
+        - heading "Sua conta de faturamento" [level=2] [ref=e317]
+        - generic [ref=e318]: Selecione ou crie uma conta do Cloud Billing para fazer upgrade para o plano de pagamento por uso (Blaze)
+        - button "Fechar caixa de diálogo" [ref=e242] [cursor=pointer]:
+          - img [ref=e243]: close
+      - generic [ref=e319]:
+        - generic [ref=e324]:
+          - img [ref=e325]: auto_awesome
+          - generic [ref=e326]: Ganhe US$ 300 em créditos para começar a usar o Firebase!
+          - link "Saiba mais sobre os créditos gratuitos (abre em uma nova guia)" [ref=e328] [cursor=pointer]:
+            - /url: https://firebase.blog/posts/2024/11/claim-300-to-get-started
+            - text: Saiba mais open_in_new
+        - generic [ref=e332]:
+          - text: Plano selecionado
+          - generic [ref=e333]:
+            - generic [ref=e334]: Pagamento por utilizaçãoPlano Blaze
+            - link "Confira todos os detalhes do plano Blaze (abre em uma nova guia)" [ref=e336] [cursor=pointer]:
+              - /url: https://firebase.google.com/pricing?hl=pt-BR&authuser=0
+              - text: Veja os detalhes completos do plano open_in_new
+        - generic [ref=e337]:
+          - generic [ref=e338]: Escolher uma conta do Cloud Billing
+          - table "Contas de faturamento" [ref=e341]:
+            - rowgroup [ref=e342]:
+              - row "Contas do Cloud Billing disponíveis" [ref=e343]:
+                - columnheader "Contas do Cloud Billing disponíveis" [ref=e344] [cursor=pointer]:
+                  - button "Contas do Cloud Billing disponíveis" [ref=e345]:
+                    - generic [ref=e346]: Contas do Cloud Billing disponíveis
+                    - img [ref=e348]
+            - rowgroup [ref=e350]:
+              - row "Você não tem uma conta do Cloud Billing Vamos ajudar você a criar uma conta de faturamento que pode ser vinculada ao projeto Criar uma conta do Cloud Billing" [ref=e351]:
+                - cell "Você não tem uma conta do Cloud Billing Vamos ajudar você a criar uma conta de faturamento que pode ser vinculada ao projeto Criar uma conta do Cloud Billing" [ref=e352]:
+                  - generic [ref=e353]: Você não tem uma conta do Cloud Billing
+                  - generic [ref=e354]: Vamos ajudar você a criar uma conta de faturamento que pode ser vinculada ao projeto
+                  - button "Criar uma conta do Cloud Billing" [active] [ref=e355] [cursor=pointer]:
+                    - generic [ref=e356]: Criar uma conta do Cloud Billing

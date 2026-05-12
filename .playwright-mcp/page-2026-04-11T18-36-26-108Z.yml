@@ -1,0 +1,189 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e466] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e11]
+          - generic [ref=e12]: Apps Script
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - button [ref=e467] [cursor=pointer]: Projeto sem título
+            - generic [ref=e453]: cloud_done
+          - generic [ref=e21]:
+            - button [ref=e468] [cursor=pointer]:
+              - generic [ref=e29]:
+                - text: Implantar
+                - generic [ref=e30]: 
+            - button [ref=e469] [cursor=pointer]:
+              - generic [ref=e106]: person_add
+            - button [ref=e470] [cursor=pointer]:
+              - generic [ref=e111]: help_outline
+        - generic [ref=e37]:
+          - button [ref=e471] [cursor=pointer]:
+            - img [ref=e42]
+          - button [ref=e472] [cursor=pointer]:
+            - img [ref=e49]
+    - generic [ref=e113]:
+      - navigation [ref=e473]:
+        - link [ref=e474] [cursor=pointer]:
+          - generic [ref=e118]: info_outline
+          - generic [ref=e119]: Visão geral
+        - link [ref=e475] [cursor=pointer]:
+          - generic [ref=e122]: code
+          - generic [ref=e123]: Editor
+        - link [ref=e476] [cursor=pointer]:
+          - generic [ref=e126]: history
+          - generic [ref=e127]: Histórico do projeto
+        - link [ref=e477] [cursor=pointer]:
+          - generic [ref=e130]: alarm
+          - generic [ref=e131]: Acionadores
+        - link [ref=e478] [cursor=pointer]:
+          - generic [ref=e134]: playlist_play
+          - generic [ref=e135]: Execuções
+        - link [ref=e479] [cursor=pointer]:
+          - generic [ref=e138]: settings
+          - generic [ref=e139]: Configurações do projeto
+      - generic [ref=e140]:
+        - heading [level=1] [ref=e480]: Editor
+        - generic [ref=e142]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - heading [level=2] [ref=e481]: Arquivos
+              - generic [ref=e148]:
+                - button [disabled] [ref=e482]:
+                  - generic [ref=e153]: sort_by_alpha
+                - button [ref=e483] [cursor=pointer]:
+                  - generic [ref=e158]: add
+            - listbox [ref=e484]:
+              - option [ref=e485] [cursor=pointer]:
+                - generic [ref=e486]: Código.gs
+                - button [ref=e487]:
+                  - button [ref=e488]:
+                    - generic [ref=e167]: 
+            - generic [ref=e168]:
+              - heading [level=2] [ref=e489]: Bibliotecas
+              - button [ref=e490] [cursor=pointer]:
+                - generic [ref=e175]: add
+            - generic [ref=e176]:
+              - heading [level=2] [ref=e491]: Serviços
+              - button [ref=e492] [cursor=pointer]:
+                - generic [ref=e183]: add
+          - generic [ref=e190]:
+            - region [ref=e191]:
+              - generic [ref=e192]:
+                - generic [ref=e193]:
+                  - generic [ref=e196]:
+                    - button [disabled]:
+                      - generic: undo
+                  - generic [ref=e199]:
+                    - button [disabled]:
+                      - generic: redo
+                - generic [ref=e203]:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e427]:
+                  - button [ref=e493]:
+                    - generic [ref=e434]: play_arrow
+                    - generic [ref=e435]: Executar
+                  - button [ref=e494]:
+                    - img [ref=e442]
+                    - generic [ref=e445]: Depuração
+                  - listbox [ref=e495] [cursor=pointer]:
+                    - option [selected] [ref=e496]: doGet
+                - button [ref=e497]:
+                  - generic [ref=e219]: Registro de execução
+            - generic [ref=e221]:
+              - main [ref=e225]:
+                - generic [ref=e226]: .
+                - generic [ref=e228]:
+                  - iframe [ref=e229]:
+                    
+                  - code [ref=e231]:
+                    - generic [ref=e232]:
+                      - generic [ref=e235]:
+                        - generic [ref=e285]: "1"
+                        - generic [ref=e289]: "2"
+                        - generic [ref=e290]:
+                          - generic [ref=e291] [cursor=pointer]: 
+                          - generic [ref=e292]: "3"
+                        - generic [ref=e293]:
+                          - generic [ref=e294] [cursor=pointer]: 
+                          - generic [ref=e295]: "4"
+                        - generic [ref=e297]: "5"
+                        - generic [ref=e298]:
+                          - generic [ref=e299] [cursor=pointer]: 
+                          - generic [ref=e300]: "6"
+                        - generic [ref=e302]: "7"
+                        - generic [ref=e305]: "8"
+                        - generic [ref=e307]:
+                          - generic [ref=e308] [cursor=pointer]: 
+                          - generic [ref=e309]: "9"
+                        - generic [ref=e310]:
+                          - generic [ref=e311] [cursor=pointer]: 
+                          - generic [ref=e312]: "10"
+                        - generic [ref=e314]: "11"
+                        - generic [ref=e317]: "12"
+                        - generic [ref=e320]: "13"
+                        - generic [ref=e322]: "14"
+                        - generic [ref=e324]: "15"
+                      - generic [ref=e254]:
+                        - generic [ref=e381]: var SPREADSHEET_ID =
+                        - generic [ref=e383]: "'1-SLpaeXztHabC58_6a9nZESUKHldTCb0ZwfTf"
+                        - generic [ref=e385]: "-3odVc';"
+                        - generic [ref=e388]: "function doGet(e) {"
+                        - generic [ref=e390]: "try {"
+                        - generic [ref=e392]: var result = getDashboardData(e);
+                        - generic [ref=e394]: return ContentService
+                        - generic [ref=e396]: .createTextOutput(JSON.stringify
+                        - generic [ref=e398]: (result))
+                        - generic [ref=e400]: .setMimeType(ContentService.
+                        - generic [ref=e402]: MimeType.JSON);
+                        - generic [ref=e404]: "} catch(err) {"
+                        - generic [ref=e406]: return ContentService
+                        - generic [ref=e408]: .createTextOutput(JSON.stringify
+                        - generic [ref=e410]: "({ erro: err.message }))"
+                        - generic [ref=e412]: .setMimeType(ContentService.
+                        - generic [ref=e414]: MimeType.JSON);
+                        - generic [ref=e416]: "}"
+                        - generic [ref=e418]: "}"
+                      - textbox [ref=e498]: "var SPREADSHEET_ID = '1-SLpaeXztHabC58_6a9nZESUKHldTCb0ZwfTf-3odVc'; function doGet(e) { try { var result = getDashboardData(e); return ContentService .createTextOutput(JSON.stringify(result))"
+              - button [ref=e499] [cursor=pointer]:
+                - generic [ref=e266]: close
+              - tooltip [ref=e267]: Fechar registros de execução
+    - dialog "Nova implantação" [ref=e501]:
+      - heading "Nova implantação" [level=2] [ref=e502]
+      - generic [ref=e504]:
+        - generic [ref=e505]:
+          - generic [ref=e506]:
+            - generic [ref=e507]:
+              - generic [ref=e508]: Selecione o tipo
+              - button "Ativar tipos de implantação" [ref=e509] [cursor=pointer]:
+                - generic [ref=e512]: settings
+            - listbox "Caixa de listagem \"Tipos de implantação\"" [ref=e514]
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - generic [ref=e517]: Configuração
+              - generic [ref=e518]:
+                - generic [ref=e519] [cursor=pointer]:
+                  - generic [ref=e520]: help_outline
+                  - link "Saiba mais sobre as implantações" [ref=e521]:
+                    - /url: https://developers.google.com/apps-script/concepts/deployments
+                - tooltip [ref=e522]: Saiba mais sobre as implantações
+            - generic [ref=e523]:
+              - img [ref=e524]
+              - generic [ref=e531]: Selecione um tipo de implantação
+        - generic [ref=e532]:
+          - button "Cancelar" [ref=e534]:
+            - generic [ref=e537]: Cancelar
+          - generic [ref=e538]:
+            - button "Implantar" [disabled]:
+              - generic: Implantar
+  - generic: Salvando o projeto...
+  - generic [ref=e269]:
+    - alert
+    - alert
+    - complementary
+    - complementary

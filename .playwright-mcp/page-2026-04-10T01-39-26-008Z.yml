@@ -1,0 +1,237 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e12]
+      - separator [ref=e14]
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Início" [ref=e24]:
+              - /url: /home/
+              - img [ref=e26]
+              - generic [ref=e28]: Início
+          - listitem [ref=e29]:
+            - link "Comunicações" [ref=e31] [cursor=pointer]:
+              - /url: /chats/
+              - img [ref=e33]
+              - generic [ref=e35]: Comunicações
+              - img [ref=e38]
+          - listitem [ref=e40]:
+            - list [ref=e41]:
+              - listitem [ref=e43] [cursor=pointer]:
+                - link "Inbox de chat 220" [ref=e45]:
+                  - /url: /chats/
+                  - generic [ref=e47]: Inbox de chat
+                  - generic [ref=e51]: "220"
+              - listitem [ref=e52]:
+                - link "Inbox de email" [ref=e54] [cursor=pointer]:
+                  - /url: /mail/inbox/
+                  - generic [ref=e56]: Inbox de email
+                  - img [ref=e59]
+              - listitem [ref=e62] [cursor=pointer]:
+                - link "Chats da equipe" [ref=e64]:
+                  - /url: /teams/
+                  - generic [ref=e66]: Chats da equipe
+          - listitem [ref=e67]:
+            - link "Funis de vendas" [ref=e69] [cursor=pointer]:
+              - /url: /leads/pipeline/13368211
+              - img [ref=e71]
+              - generic [ref=e73]: Funis de vendas
+              - img [ref=e76]
+          - listitem [ref=e78]:
+            - list [ref=e79]:
+              - listitem [ref=e81] [cursor=pointer]:
+                - link "Funil de vendas" [ref=e83]:
+                  - /url: /leads/pipeline/13368211
+                  - generic [ref=e85]: Funil de vendas
+              - listitem [ref=e87] [cursor=pointer]:
+                - link "Todos os leads" [ref=e89]:
+                  - /url: /leads/list/
+                  - generic [ref=e91]: Todos os leads
+          - listitem [ref=e93] [cursor=pointer]:
+            - link "Calendário 6" [ref=e95]:
+              - /url: /todo
+              - img [ref=e97]
+              - generic [ref=e99]: Calendário
+              - generic [ref=e103]: "6"
+          - listitem [ref=e104]:
+            - link "Listas" [ref=e106] [cursor=pointer]:
+              - /url: /contacts/list/contacts
+              - img [ref=e108]
+              - generic [ref=e110]: Listas
+              - img [ref=e113]
+          - listitem [ref=e116] [cursor=pointer]:
+            - link "Agente de IA" [ref=e118]:
+              - /url: /settings/ai-agent/
+              - img [ref=e120]
+              - generic [ref=e122]: Agente de IA
+          - listitem [ref=e123]:
+            - link "Automações" [ref=e125] [cursor=pointer]:
+              - /url: /chats/tools/bots/
+              - img [ref=e127]
+              - generic [ref=e129]: Automações
+              - img [ref=e132]
+          - listitem [ref=e134]:
+            - link "Insights" [ref=e136] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e138]
+              - generic [ref=e141]: Insights
+              - img [ref=e144]
+        - generic [ref=e146]: Integrações fixadas
+        - list [ref=e147]:
+          - listitem [ref=e149] [cursor=pointer]:
+            - link "WhatsApp Business" [ref=e151]:
+              - /url: /widget_page/whatsapp_cloud_api/hub
+              - img [ref=e154]
+              - generic [ref=e155]: WhatsApp Business
+          - listitem [ref=e157] [cursor=pointer]:
+            - link "TikTok" [ref=e159]:
+              - /url: /widget_page/tiktok_kommo/hub
+              - img [ref=e162]
+              - generic [ref=e163]: TikTok
+      - list [ref=e165]:
+        - listitem [ref=e167] [cursor=pointer]:
+          - link "Configurações" [ref=e169]:
+            - /url: /settings/profile/
+            - img [ref=e171]
+            - generic [ref=e174]: Configurações
+        - listitem [ref=e175]:
+          - link "Ajuda" [ref=e177] [cursor=pointer]:
+            - /url: /settings/ai
+            - img [ref=e179]
+            - generic [ref=e181]: Ajuda
+            - img [ref=e184]
+        - listitem [ref=e187] [cursor=pointer]:
+          - link "Enviar feedback" [ref=e189]:
+            - /url: ""
+            - img [ref=e191]
+            - generic [ref=e193]: Enviar feedback
+        - listitem [ref=e195] [cursor=pointer]:
+          - link "Centro de Notificação 12" [ref=e197]:
+            - /url: /settings/profile/notifications
+            - img [ref=e199]
+            - generic [ref=e201]: Centro de Notificação
+            - generic [ref=e205]: "12"
+      - separator [ref=e206]
+      - button "Avatar Passo a passo uniformes passoapassouniformes2025" [ref=e208] [cursor=pointer]:
+        - img "Avatar" [ref=e211]
+        - generic [ref=e212]:
+          - generic [ref=e213]: Passo a passo uniformes
+          - generic [ref=e214]: passoapassouniformes2025
+  - generic [ref=e216]:
+    - img [ref=e217]
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - generic [ref=e225]:
+          - generic [ref=e227]:
+            - textbox "Buscar" [ref=e230]
+            - img [ref=e231]
+          - button "Atividades" [ref=e233] [cursor=pointer]:
+            - generic [ref=e234]:
+              - img [ref=e235]
+              - generic [ref=e237]: Atividades
+        - generic:
+          - generic: passoapassouniformes2025
+          - generic:
+            - generic [ref=e238]:
+              - button "Hoje" [ref=e239] [cursor=pointer]
+              - button "Ontem" [ref=e240] [cursor=pointer]
+              - button "Semana" [ref=e241] [cursor=pointer]
+              - button "Mês" [ref=e242] [cursor=pointer]
+              - button "Período" [ref=e243] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img
+                - text: Período
+            - generic [ref=e244]:
+              - button "Todos" [ref=e245] [cursor=pointer]
+              - button "2 Usuários" [ref=e247] [cursor=pointer]:
+                - generic [ref=e248]: 2 Usuários
+                - link [ref=e249]:
+                  - /url: ""
+                  - img
+            - generic [ref=e251] [cursor=pointer]:
+              - img [ref=e252]
+              - generic [ref=e254]: Configurações
+      - generic [ref=e256]:
+        - heading "Mensagens recebidas" [level=4] [ref=e260]:
+          - generic [ref=e261]: Mensagens recebidas
+        - generic [ref=e266]:
+          - heading "Conversas atuais" [level=4] [ref=e267]:
+            - generic [ref=e268]: Conversas atuais
+          - img [ref=e271]:
+            - generic [ref=e272]: "0"
+        - generic [ref=e275]:
+          - generic [ref=e276]:
+            - heading "Chats sem respostas" [level=4] [ref=e277]:
+              - generic [ref=e278]: Chats sem respostas
+            - img [ref=e281]:
+              - generic [ref=e282]: "220"
+          - generic [ref=e284]:
+            - img [ref=e286]:
+              - generic [ref=e287]: "+1"
+            - generic [ref=e288]: ontem
+        - generic [ref=e291]:
+          - heading "Tempo de resposta" [level=4] [ref=e292]:
+            - generic [ref=e293]: Tempo de resposta
+          - img [ref=e296]:
+            - generic [ref=e297]: "0"
+          - generic [ref=e298]: ontem
+        - generic [ref=e301]:
+          - heading "Mais tempo esperando" [level=4] [ref=e302]:
+            - generic [ref=e303]: Mais tempo esperando
+          - img [ref=e306]:
+            - generic [ref=e307]: "0"
+        - generic [ref=e308] [cursor=pointer]:
+          - generic [ref=e311]:
+            - img [ref=e312]
+            - text: Dados insuficientes para exibir
+          - generic [ref=e314]:
+            - heading "Fontes de lead" [level=4] [ref=e315]:
+              - generic [ref=e316]: Fontes de lead
+            - generic [ref=e317]:
+              - list [ref=e318]:
+                - listitem:
+                  - link:
+                    - /url: "#"
+                - listitem:
+                  - link:
+                    - /url: "#"
+                - listitem:
+                  - link:
+                    - /url: "#"
+                - listitem:
+                  - link:
+                    - /url: "#"
+                - listitem
+              - img [ref=e320]
+              - img [ref=e323]
+              - img [ref=e326]
+              - img [ref=e329]
+              - img [ref=e332]
+        - generic [ref=e335]:
+          - heading "Leads ganhos" [level=4] [ref=e336]:
+            - generic [ref=e337]: Leads ganhos
+          - img [ref=e340]:
+            - generic [ref=e341]: "0"
+        - generic [ref=e345]:
+          - heading "Leads ativos" [level=4] [ref=e346]:
+            - generic [ref=e347]: Leads ativos
+          - img [ref=e350]:
+            - generic [ref=e351]: "0"
+        - generic [ref=e355]:
+          - heading "Leads perdidos" [level=4] [ref=e356]:
+            - generic [ref=e357]: Leads perdidos
+          - img [ref=e360]:
+            - generic [ref=e361]: "0"
+        - generic [ref=e365]:
+          - heading "Leads sem tarefas" [level=4] [ref=e366]:
+            - generic [ref=e367]: Leads sem tarefas
+          - img [ref=e370]:
+            - generic [ref=e371]: "0"
+        - heading "Tarefas" [level=4] [ref=e376]:
+          - generic [ref=e377]: Tarefas
