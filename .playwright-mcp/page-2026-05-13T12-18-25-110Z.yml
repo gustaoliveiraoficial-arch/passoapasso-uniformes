@@ -1,0 +1,175 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /64855dfaf4872198/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.85%
+        - generic [ref=e69]: 433.19 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 3.5%
+        - generic [ref=e71]: 20983 / 600000
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h2
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e39]:
+        - link "Home" [ref=e40] [cursor=pointer]:
+          - /url: /64855dfaf4872198/files
+          - generic [ref=e41]: home
+        - generic [ref=e42]:
+          - generic [ref=e44]: keyboard_arrow_right
+          - link "..." [ref=e45] [cursor=pointer]:
+            - /url: /64855dfaf4872198/files/public_html/formalizarpedido/_next/
+        - generic [ref=e46]:
+          - generic [ref=e48]: keyboard_arrow_right
+          - link "static" [ref=e49] [cursor=pointer]:
+            - /url: /64855dfaf4872198/files/public_html/formalizarpedido/_next/static/
+        - generic [ref=e50]:
+          - generic [ref=e52]: keyboard_arrow_right
+          - link "chunks" [ref=e53] [cursor=pointer]:
+            - /url: /64855dfaf4872198/files/public_html/formalizarpedido/_next/static/chunks/
+        - generic [ref=e54]:
+          - generic [ref=e56]: keyboard_arrow_right
+          - link "app" [ref=e57] [cursor=pointer]:
+            - /url: /64855dfaf4872198/files/public_html/formalizarpedido/_next/static/chunks/app/
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - button "Toggle sidebar" [ref=e74] [cursor=pointer]:
+            - generic [ref=e75]: menu
+          - button "Search" [ref=e76] [cursor=pointer]:
+            - generic [ref=e77]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: more_vert
+        - generic [ref=e191]:
+          - generic [ref=e194] [cursor=pointer]:
+            - button "Sort by name" [ref=e195]:
+              - text: Name
+              - generic [ref=e196]: arrow_upward
+            - button "Sort by last modified" [ref=e197]:
+              - text: Last modified
+              - generic [ref=e198]: arrow_upward
+          - generic [ref=e199]:
+            - button "_not-found" [ref=e200] [cursor=pointer]:
+              - generic [ref=e202]: folder
+              - generic [ref=e203]:
+                - paragraph [ref=e204]: _not-found
+                - paragraph [ref=e205]:
+                  - time [ref=e206]: 10 hours ago
+            - button "arquivos" [ref=e207] [cursor=pointer]:
+              - generic [ref=e209]: folder
+              - generic [ref=e210]:
+                - paragraph [ref=e211]: arquivos
+                - paragraph [ref=e212]:
+                  - time [ref=e213]: 10 hours ago
+            - button "cliente-pdf" [ref=e214] [cursor=pointer]:
+              - generic [ref=e216]: folder
+              - generic [ref=e217]:
+                - paragraph [ref=e218]: cliente-pdf
+                - paragraph [ref=e219]:
+                  - time [ref=e220]: 10 hours ago
+            - button "confirmacao" [ref=e221] [cursor=pointer]:
+              - generic [ref=e223]: folder
+              - generic [ref=e224]:
+                - paragraph [ref=e225]: confirmacao
+                - paragraph [ref=e226]:
+                  - time [ref=e227]: 10 hours ago
+            - button "lista-tamanhos" [ref=e228] [cursor=pointer]:
+              - generic [ref=e230]: folder
+              - generic [ref=e231]:
+                - paragraph [ref=e232]: lista-tamanhos
+                - paragraph [ref=e233]:
+                  - time [ref=e234]: 10 hours ago
+            - button "novo-pedido" [ref=e235] [cursor=pointer]:
+              - generic [ref=e237]: folder
+              - generic [ref=e238]:
+                - paragraph [ref=e239]: novo-pedido
+                - paragraph [ref=e240]:
+                  - time [ref=e241]: 10 hours ago
+            - button "pedido" [ref=e242] [cursor=pointer]:
+              - generic [ref=e244]: folder
+              - generic [ref=e245]:
+                - paragraph [ref=e246]: pedido
+                - paragraph [ref=e247]:
+                  - time [ref=e248]: 10 hours ago
+            - button "pedido-completo" [ref=e249] [cursor=pointer]:
+              - generic [ref=e251]: folder
+              - generic [ref=e252]:
+                - paragraph [ref=e253]: pedido-completo
+                - paragraph [ref=e254]:
+                  - time [ref=e255]: 10 hours ago
+            - button "tamanhos" [ref=e256] [cursor=pointer]:
+              - generic [ref=e258]: folder
+              - generic [ref=e259]:
+                - paragraph [ref=e260]: tamanhos
+                - paragraph [ref=e261]:
+                  - time [ref=e262]: 10 hours ago
+          - generic [ref=e263]:
+            - button "layout-6efa8f73cf5972b1.js" [ref=e264] [cursor=pointer]:
+              - generic [ref=e266]: code
+              - generic [ref=e267]:
+                - paragraph [ref=e268]: layout-6efa8f73cf5972b1.js
+                - paragraph [ref=e269]:
+                  - time [ref=e270]: 10 hours ago
+            - button "not-found-248fe99c07fb95ca.js" [ref=e271] [cursor=pointer]:
+              - generic [ref=e273]: code
+              - generic [ref=e274]:
+                - paragraph [ref=e275]: not-found-248fe99c07fb95ca.js
+                - paragraph [ref=e276]:
+                  - time [ref=e277]: a few seconds ago
+            - button "not-found-365b7f6de9d2db16.js" [ref=e278] [cursor=pointer]:
+              - generic [ref=e280]: code
+              - generic [ref=e281]:
+                - paragraph [ref=e282]: not-found-365b7f6de9d2db16.js
+                - paragraph [ref=e283]:
+                  - time [ref=e284]: 10 hours ago
+            - button "page-6adea5c7f9dae848.js" [ref=e285] [cursor=pointer]:
+              - generic [ref=e287]: code
+              - generic [ref=e288]:
+                - paragraph [ref=e289]: page-6adea5c7f9dae848.js
+                - paragraph [ref=e290]:
+                  - time [ref=e291]: 10 hours ago
+          - generic [ref=e292]:
+            - paragraph [ref=e293]: Multiple selection enabled
+            - button "Clear" [ref=e294] [cursor=pointer]:
+              - generic [ref=e295]: clear

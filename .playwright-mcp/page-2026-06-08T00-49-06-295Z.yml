@@ -1,0 +1,118 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner "Global Navigation Menu" [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "Open menu" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+          - link "Homepage (g then d)" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img [ref=e16]
+        - button "Search or jump to… (forward slash)" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - generic [ref=e22]:
+          - button "Create new..." [ref=e24] [cursor=pointer]:
+            - generic [ref=e25]:
+              - generic:
+                - img
+            - generic:
+              - img
+          - link "You have no unread notifications (g then n)" [ref=e26] [cursor=pointer]:
+            - /url: /notifications
+            - img [ref=e27]
+          - button "Open user navigation menu" [ref=e30] [cursor=pointer]:
+            - img "User avatar" [ref=e31]
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - heading "Install & Authorize Railway App" [level=2] [ref=e37]:
+        - text: Install & Authorize
+        - link "Railway App" [ref=e38] [cursor=pointer]:
+          - /url: https://github.com/apps/railway-app
+      - generic [ref=e39]:
+        - paragraph [ref=e40]:
+          - text: Install & Authorize on your personal account gustaoliveiraoficial-arch
+          - img "@gustaoliveiraoficial-arch" [ref=e41]
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - paragraph [ref=e45]: "for these repositories:"
+              - radiogroup [ref=e47]:
+                - generic [ref=e48]:
+                  - generic [ref=e49]:
+                    - radio "All repositories" [checked] [ref=e50] [cursor=pointer]
+                    - generic [ref=e51]:
+                      - generic [ref=e52] [cursor=pointer]: All repositories
+                      - generic [ref=e53]: This applies to all current and future repositories owned by the resource owner. Also includes public repositories (read-only).
+                  - generic [ref=e54]:
+                    - radio "Only select repositories" [ref=e55] [cursor=pointer]
+                    - generic [ref=e56]:
+                      - generic [ref=e57] [cursor=pointer]: Only select repositories
+                      - generic [ref=e58]: Select at least one repository. Also includes public repositories (read-only).
+            - paragraph [ref=e59]: "with these permissions:"
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - img [ref=e63]
+                - strong [ref=e65]: Read
+                - text: access to metadata
+              - listitem [ref=e66]:
+                - img [ref=e67]
+                - strong [ref=e69]: Read
+                - text: and
+                - strong [ref=e70]: write
+                - text: access to actions, administration, checks, code, commit statuses, deployments, pull requests, and workflows
+            - separator [ref=e71]
+            - generic [ref=e72]: User permissions
+            - paragraph [ref=e73]:
+              - text: "Installing and authorizing Railway App immediately grants these permissions on your account:"
+              - strong [ref=e74]: gustaoliveiraoficial-arch
+              - text: .
+            - list [ref=e76]:
+              - listitem [ref=e77]:
+                - img [ref=e78]
+                - strong [ref=e80]: Read
+                - text: access to email addresses
+            - separator [ref=e81]
+            - button "Install & Authorize" [ref=e82] [cursor=pointer]
+          - link "Cancel" [ref=e83] [cursor=pointer]:
+            - /url: /apps/railway-app
+        - paragraph [ref=e84]:
+          - text: "Next: you'll be redirected to"
+          - strong [ref=e85]: https://backboard.railway.app/login/github/callback
+  - contentinfo [ref=e86]:
+    - heading "Footer" [level=2] [ref=e87]
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - link "GitHub Homepage" [ref=e90] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e91]
+        - generic [ref=e93]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e94]:
+        - heading "Footer navigation" [level=3] [ref=e95]
+        - list "Footer navigation" [ref=e96]:
+          - listitem [ref=e97]:
+            - link "Terms" [ref=e98] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e99]:
+            - link "Privacy" [ref=e100] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e101]:
+            - link "Security" [ref=e102] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e103]:
+            - link "Status" [ref=e104] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e105]:
+            - link "Community" [ref=e106] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e107]:
+            - link "Docs" [ref=e108] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e109]:
+            - link "Contact" [ref=e110] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e111]:
+            - button "Manage cookies" [ref=e113] [cursor=pointer]
+          - listitem [ref=e114]:
+            - button "Do not share my personal information" [ref=e116] [cursor=pointer]

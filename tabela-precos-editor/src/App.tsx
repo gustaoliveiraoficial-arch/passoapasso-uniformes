@@ -470,7 +470,7 @@ export default function App() {
     const id = `cat-${Date.now()}`
     setCategories(prev => [
       ...prev,
-      { id, title: 'Nova Categoria', description: '', items: [] },
+      { id, title: 'Novo Modelo', description: '', items: [] },
     ])
     setEditingId(id)
   }
@@ -560,7 +560,7 @@ export default function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         {/* Contador de blocos */}
         <p className="text-sm text-slate-400 mb-4">
-          {categories.length} {categories.length === 1 ? 'categoria' : 'categorias'}{' '}
+          {categories.length} {categories.length === 1 ? 'modelo' : 'modelos'}{' '}
           {editingId ? '— clique em ✓ para fechar a edição' : '— clique em ✎ para editar um bloco'}
         </p>
 
@@ -585,7 +585,7 @@ export default function App() {
           onClick={addCategory}
           className="mt-6 w-full flex items-center justify-center gap-2 py-4 rounded-2xl border-2 border-dashed border-slate-300 text-slate-400 hover:border-blue-400 hover:text-blue-500 transition-all text-sm font-medium"
         >
-          <PlusCircle size={18} /> Adicionar nova categoria
+          <PlusCircle size={18} /> Adicionar novo modelo
         </button>
       </main>
 

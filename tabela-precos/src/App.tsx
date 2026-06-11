@@ -5,10 +5,10 @@ import type { Category } from './data/pricingData';
 import { PricingTable } from './components/PricingTable';
 import { PaymentInfo } from './components/PaymentInfo';
 import { QuotationModal } from './components/QuotationModal';
-import { AdminLogin, isAdminSession, clearAdminSession } from './components/AdminLogin';
+import { AdminLogin } from './components/AdminLogin';
 import { AdminPricingTable } from './components/AdminPricingTable';
 import { AdminExtrasModal } from './components/AdminExtrasModal';
-import { loadFromFirestore, saveToFirestore } from './lib/firebase';
+import { loadFromFirestore, saveToFirestore, signOutAdmin, onAdminAuthChange } from './lib/firebase';
 
 type SaveStatus = 'idle' | 'saving' | 'saved' | 'error';
 type ExtraData = typeof defaultExtra;
@@ -22,7 +22,7 @@ function App() {
   const [dataLoaded, setDataLoaded] = useState(false);
 
   // Admin state
-  const [isAdmin, setIsAdmin] = useState(isAdminSession());
+  const [isAdmin, setIsAdmin] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [saveStatus, setSaveStatus] = useState<SaveStatus>('idle');
   const [cloudConnected, setCloudConnected] = useState(false);
@@ -52,18 +52,24 @@ function App() {
     });
   }, []);
 
+  // Escuta mudanças de auth do Firebase
+  useEffect(() => {
+    const unsubscribe = onAdminAuthChange(user => {
+      setIsAdmin(!!user);
+    });
+    return unsubscribe;
+  }, []);
+
   const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : 'light');
   const currentCategory = categories.find(c => c.id === activeCategory);
 
   const handleLogin = () => {
-    setIsAdmin(true);
     setShowLogin(false);
     setEditedCategories([...categories]);
   };
 
   const handleLogout = () => {
-    clearAdminSession();
-    setIsAdmin(false);
+    signOutAdmin();
     setEditedCategories([...categories]);
   };
 
@@ -74,7 +80,7 @@ function App() {
   const handleAddCategory = () => {
     const newCat: Category = {
       id: `cat-${Date.now()}`,
-      title: 'Nova Categoria',
+      title: 'Novo Modelo',
       description: '',
       items: [],
     };
@@ -210,10 +216,10 @@ function App() {
             <button
               onClick={handleAddCategory}
               className="tab-btn-add"
-              title="Adicionar nova categoria"
+              title="Adicionar novo modelo"
             >
               <Plus size={15} />
-              Nova categoria
+              Novo modelo
             </button>
           )}
         </nav>

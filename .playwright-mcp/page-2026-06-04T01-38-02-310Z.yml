@@ -1,0 +1,194 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - generic [ref=e9]:
+      - button "Workflow GUSTAVO OSMAR OLIVEIRA DA SILVA" [expanded] [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]:
+          - img "Workflow" [ref=e17]
+          - generic [ref=e18]: GUSTAVO OSMAR OLIVEIRA DA SILVA
+          - img [ref=e19]
+      - navigation [ref=e22]:
+        - generic [ref=e24]:
+          - link "Dashboard" [ref=e25] [cursor=pointer]:
+            - /url: /
+            - img [ref=e26]
+            - text: Dashboard
+          - link "Produtos" [ref=e28] [cursor=pointer]:
+            - /url: /products
+            - img [ref=e29]
+            - text: Produtos
+          - link "Área de Membros" [ref=e31] [cursor=pointer]:
+            - /url: /members-area
+            - img [ref=e32]
+            - text: Área de Membros
+          - link "Marketplace" [ref=e34] [cursor=pointer]:
+            - /url: /marketplace
+            - img [ref=e35]
+            - text: Marketplace
+          - link "Meus Afiliados" [ref=e37] [cursor=pointer]:
+            - /url: /myaffiliates
+            - img [ref=e38]
+            - text: Meus Afiliados
+          - link "Vendas" [ref=e40] [cursor=pointer]:
+            - /url: /sales
+            - img [ref=e41]
+            - text: Vendas
+          - link "Assinaturas" [ref=e43] [cursor=pointer]:
+            - /url: /subscriptions
+            - img [ref=e44]
+            - text: Assinaturas
+          - link "Financeiro" [ref=e46] [cursor=pointer]:
+            - /url: /finance
+            - img [ref=e47]
+            - text: Financeiro
+          - link "Relatórios" [ref=e50] [cursor=pointer]:
+            - /url: /reports
+            - img [ref=e51]
+            - text: Relatórios
+          - link "Colaboradores" [ref=e53] [cursor=pointer]:
+            - /url: /team-members
+            - img [ref=e54]
+            - text: Colaboradores
+          - link "Apps" [ref=e56] [cursor=pointer]:
+            - /url: /apps
+            - img [ref=e57]
+            - text: Apps
+        - link "Ajuda" [ref=e59] [cursor=pointer]:
+          - /url: https://ajuda.kiwify.com.br/
+          - img [ref=e60]
+          - text: Ajuda
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]: R$ 0.0K / R$ 10K
+          - img [ref=e71]
+        - button [ref=e80] [cursor=pointer]:
+          - img [ref=e83]
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - button "Voltar" [ref=e247] [cursor=pointer]:
+            - img [ref=e248]
+          - heading "Editar produto" [level=3] [ref=e250]
+          - button "Salvar produto" [ref=e251] [cursor=pointer]
+        - navigation [ref=e255]:
+          - link "Geral" [ref=e258] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=general
+          - link "Área de membros" [ref=e260] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=members-area
+          - link "Configurações" [ref=e262] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=settings
+          - link "Checkout" [ref=e264] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=checkout-builder
+          - link "Co-produção" [ref=e266] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=coproductions
+          - link "Afiliados" [ref=e268] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=affiliates
+          - link "Links" [ref=e270] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=links
+        - generic [ref=e271]:
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - heading "Produto" [level=3] [ref=e275]
+              - paragraph [ref=e276]:
+                - text: Você pode cadastrar o produto e já começar a vender.
+                - text: A imagem do produto será exibida na área de membros e no seu programa de afiliados.
+            - generic [ref=e279]:
+              - generic [ref=e281]:
+                - generic [ref=e282]: Nome do produto
+                - textbox "Nome do produto" [ref=e283]: Pódio de Vendas
+              - generic [ref=e285]:
+                - generic [ref=e286]: Descrição
+                - textbox "Explique o seu produto em pelo menos 100 caracteres" [ref=e287]: Painel de competição de vendas em tempo real para equipes comerciais. Ranking ao vivo, metas individuais e do time, sorteio de premiações e dashboard completo. Acesso via assinatura mensal.
+              - generic [ref=e289]:
+                - generic [ref=e290]: Categoria
+                - combobox [ref=e291]:
+                  - option "Selecione uma categoria"
+                  - option "Saúde e Esportes"
+                  - option "Finanças e Investimentos"
+                  - option "Relacionamentos"
+                  - option "Negócios e Carreira"
+                  - option "Espiritualidade"
+                  - option "Sexualidade"
+                  - option "Entretenimento"
+                  - option "Culinária e Gastronomia"
+                  - option "Idiomas"
+                  - option "Direito"
+                  - option "Apps & Software" [selected]
+                  - option "Literatura"
+                  - option "Casa e Construção"
+                  - option "Desenvolvimento Pessoal"
+                  - option "Moda e Beleza"
+                  - option "Animais e Plantas"
+                  - option "Educacional"
+                  - option "Hobbies"
+                  - option "Internet"
+                  - option "Ecologia e Meio Ambiente"
+                  - option "Música e Artes"
+                  - option "Tecnologia da Informação"
+                  - option "Empreendedorismo Digital"
+                  - option "Outros"
+              - group [ref=e293]:
+                - generic [ref=e295]: Garantia
+                - combobox "Garantia" [ref=e299]:
+                  - option "7 dias" [selected]
+                  - option "14 dias"
+                  - option "21 dias"
+                  - option "30 dias"
+              - generic [ref=e300]:
+                - generic [ref=e301]: Imagem do produto
+                - button "Arraste aqui ou selecione do computador" [ref=e305] [cursor=pointer]:
+                  - generic [ref=e306]:
+                    - img [ref=e307]
+                    - generic [ref=e309]: Arraste aqui ou selecione do computador
+                - generic [ref=e311]:
+                  - img [ref=e313]
+                  - paragraph [ref=e316]: "Tamanho recomendado: 300x250 pixels"
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]: Idioma dos emails
+                  - img [ref=e321]
+                - combobox [ref=e325]:
+                  - option "Português" [selected]
+                  - option "English"
+                  - option "Espanhol"
+              - generic [ref=e329]:
+                - generic [ref=e330]: Página de vendas
+                - generic [ref=e331]:
+                  - generic:
+                    - img
+                  - textbox "https://example.com" [ref=e332]: https://podio-de-vendas.vercel.app
+          - generic [ref=e334]:
+            - generic [ref=e335]:
+              - heading "Preços" [level=3] [ref=e336]
+              - paragraph [ref=e337]:
+                - text: Aprenda mais sobre as
+                - link "assinaturas" [ref=e338] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/assinaturas-1okaw5z/?1609083851415
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - generic [ref=e344]: Planos de assinatura
+                - button "Adicionar plano" [ref=e345] [cursor=pointer]
+              - table [ref=e350]:
+                - rowgroup [ref=e351]:
+                  - row "Nome Preço Primeira cobrança Frequência" [ref=e352]:
+                    - columnheader "Nome" [ref=e353]
+                    - columnheader "Preço" [ref=e354]
+                    - columnheader "Primeira cobrança" [ref=e355]
+                    - columnheader "Frequência" [ref=e356]
+                - rowgroup [ref=e357]:
+                  - row "Mensal - Lançamento R$ 47,00 ---- Mensal" [ref=e358]:
+                    - cell "Mensal - Lançamento" [ref=e359]:
+                      - generic [ref=e360] [cursor=pointer]: Mensal - Lançamento
+                    - cell "R$ 47,00" [ref=e361]:
+                      - generic [ref=e362]: R$ 47,00
+                    - cell "----" [ref=e363]:
+                      - generic [ref=e364]: "----"
+                    - cell "Mensal" [ref=e365]:
+                      - generic [ref=e366]: Mensal
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - button "Excluir produto" [ref=e369] [cursor=pointer]
+            - button "Cancelar assinaturas" [ref=e370] [cursor=pointer]
+          - button "Salvar produto" [ref=e372] [cursor=pointer]
+  - img
+  - button "Open chat" [ref=e239] [cursor=pointer]:
+    - img [ref=e241]

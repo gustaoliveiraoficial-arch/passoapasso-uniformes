@@ -1,0 +1,19 @@
+- main [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - img "kiwicheckout" [ref=e8]
+      - heading "Bem-vindo" [level=1] [ref=e9]
+      - paragraph [ref=e11]: Fazer login no kiwicheckout e continuar para Kiwify.
+    - generic [ref=e13]:
+      - generic [ref=e16]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: Endereço de e-mail *
+          - textbox "Endereço de e-mail" [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]: Senha *
+          - textbox "Senha" [ref=e24]
+          - switch "Mostrar senha" [ref=e25] [cursor=pointer]
+      - paragraph [ref=e26]:
+        - link "Redefinir senha" [ref=e27] [cursor=pointer]:
+          - /url: /u/login/password-reset-start/Username-Password-Authentication?state=hKFo2SBXOURlX0d0VGxvamkzNEFGVlRJZTRNWTJaTVJDRjRjVKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGdaMGIxR0hZeldWQ2M4cnRtTnpqRnVXd0c5MWpQLXAzo2NpZNkgeEw0aTQxMWpmNlVzQlE2QUp0UXBxbnpjODA4MGExSEM
+      - button "Continuar" [ref=e29] [cursor=pointer]

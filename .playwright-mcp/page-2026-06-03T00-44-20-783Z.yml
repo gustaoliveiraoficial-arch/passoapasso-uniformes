@@ -1,0 +1,359 @@
+- generic [ref=e1]:
+  - generic [ref=e9]:
+    - generic:
+      - generic:
+        - generic [ref=e11]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - generic:
+              - link "Hotmart" [ref=e20] [cursor=pointer]:
+                - /url: /
+              - link "Hotmart Logo" [ref=e21] [cursor=pointer]:
+                - /url: /
+                - img "Hotmart Logo" [ref=e22]
+          - generic [ref=e23]:
+            - generic:
+              - img [ref=e373] [cursor=pointer]
+              - img [ref=e388] [cursor=pointer]
+              - generic [ref=e400] [cursor=pointer]:
+                - generic:
+                  - img [ref=e401]
+                  - generic [ref=e403]: "10"
+              - img [ref=e36] [cursor=pointer]
+              - generic [ref=e48] [cursor=pointer]: GO
+        - navigation [ref=e52]:
+          - generic:
+            - generic [ref=e57] [cursor=pointer]:
+              - generic:
+                - img [ref=e59]
+                - generic [ref=e61]: Buscar
+            - separator [ref=e62]
+            - generic [ref=e67] [cursor=pointer]:
+              - generic:
+                - img [ref=e69]
+                - generic [ref=e71]: Home
+            - generic [ref=e73]:
+              - generic [ref=e76] [cursor=pointer]:
+                - generic:
+                  - img [ref=e78]
+                  - generic [ref=e80]: Produtos
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e87] [cursor=pointer]: Meus produtos
+                    - generic [ref=e93] [cursor=pointer]: Área de membros
+                    - generic [ref=e99] [cursor=pointer]: Afiliar-se a um produto
+            - generic [ref=e101]:
+              - generic [ref=e104] [cursor=pointer]:
+                - generic:
+                  - img [ref=e106]
+                  - generic [ref=e109]: Marketing
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e116] [cursor=pointer]: Visão geral
+                    - generic [ref=e122] [cursor=pointer]: Criação de páginas
+                    - generic [ref=e128] [cursor=pointer]: E-mail marketing
+            - generic [ref=e130]:
+              - generic [ref=e133] [cursor=pointer]:
+                - generic:
+                  - img [ref=e135]
+                  - generic [ref=e139]: Vendas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e146] [cursor=pointer]: Gestão de vendas
+                    - generic [ref=e152] [cursor=pointer]: Minhas vendas
+                    - generic [ref=e158] [cursor=pointer]: Gestão de assinaturas
+                    - generic [ref=e164] [cursor=pointer]: Gestão de Produtos Físicos
+                    - generic [ref=e170] [cursor=pointer]: Gestão do Parcelado Hotmart
+                    - generic [ref=e176] [cursor=pointer]: Reembolsos
+                    - generic [ref=e182] [cursor=pointer]: Emissão de Nota Fiscal (eNotas)
+                    - generic [ref=e188] [cursor=pointer]: Gestão de recebíveis
+            - generic [ref=e190]:
+              - generic [ref=e193] [cursor=pointer]:
+                - generic:
+                  - img [ref=e195]
+                  - generic [ref=e197]: Carteira
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e204] [cursor=pointer]: Saldo
+                    - generic [ref=e210] [cursor=pointer]: Extrato
+                    - generic [ref=e216] [cursor=pointer]: Movimentações do mês
+                    - generic [ref=e222] [cursor=pointer]: Saques
+                    - generic [ref=e228] [cursor=pointer]: Antecipações
+            - generic [ref=e230]:
+              - generic [ref=e233] [cursor=pointer]:
+                - generic:
+                  - img [ref=e235]
+                  - generic [ref=e237]: Relatórios
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e244] [cursor=pointer]: Vendas
+                    - generic [ref=e250] [cursor=pointer]: Recorrências
+                    - generic [ref=e256] [cursor=pointer]: Minhas análises
+            - generic [ref=e258]:
+              - generic [ref=e261] [cursor=pointer]:
+                - generic:
+                  - img [ref=e263]
+                  - generic [ref=e266]: Parcerias
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e273] [cursor=pointer]: Central de colaboradores
+                    - generic [ref=e279] [cursor=pointer]: Afiliados
+                    - generic [ref=e285] [cursor=pointer]: Chat com Afiliados
+            - generic [ref=e287]:
+              - generic [ref=e290] [cursor=pointer]:
+                - generic:
+                  - img [ref=e292]
+                  - generic [ref=e295]: Ferramentas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e302] [cursor=pointer]: Impulsione suas vendas
+                    - generic [ref=e308] [cursor=pointer]: Gerencie seu negócio
+                    - generic [ref=e314] [cursor=pointer]: Ver todas
+    - main [ref=e318]:
+      - generic [ref=e404]:
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - heading "Webhook" [level=1] [ref=e407]
+            - paragraph [ref=e408]: Nossa API de POSTs automatiza o controle dos seus produtos e otimiza a entrega para o cliente, além de poder ser integrada a qualquer sistema.
+          - navigation [ref=e409]:
+            - generic [ref=e410]:
+              - link "Ver documentação" [ref=e411] [cursor=pointer]:
+                - /url: https://developers.hotmart.com/docs/pt-BR/1.0.0/webhook/about-webhook/
+                - text: Ver documentação
+                - img [ref=e412]
+              - button "Cadastrar Webhook" [ref=e414] [cursor=pointer]:
+                - img [ref=e415]
+                - text: Cadastrar Webhook
+            - generic [ref=e419]:
+              - generic:
+                - generic:
+                  - heading "Cadastrar Webhook" [level=1] [ref=e423]
+                  - generic [ref=e426]:
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: Nome da configuração
+                      - textbox "Insira um nome para sua configuração" [ref=e429]: Pódio de Vendas SaaS
+                    - generic [ref=e430]:
+                      - generic [ref=e431]: Selecione um produto
+                      - generic [ref=e434]:
+                        - textbox "Selecione um produto" [ref=e436]: Pódio de Vendas
+                        - generic:
+                          - generic:
+                            - generic: Todos os produtos
+                          - generic:
+                            - generic: Pódio de Vendas
+                          - generic:
+                            - generic: Pódio de Vendas
+                    - generic [ref=e437]:
+                      - generic [ref=e438]: URL para envio de dados
+                      - textbox "Digite ou cole uma URL para validação" [ref=e439]: https://podio-de-vendas.vercel.app/api/webhooks/hotmart
+                    - separator [ref=e440]
+                    - generic [ref=e441]:
+                      - generic [ref=e442]: Selecione uma versão
+                      - generic [ref=e445]:
+                        - textbox "Selecione uma versão" [ref=e447]: 2.0.0 (Recomendado)
+                        - generic:
+                          - generic:
+                            - generic: 2.0.0 (Recomendado)
+                          - generic:
+                            - generic: 1.0.0
+                    - generic [ref=e448]:
+                      - generic [ref=e449]: Eventos para enviar
+                      - generic [ref=e453]:
+                        - textbox "Eventos para enviar" [ref=e455]
+                        - generic [ref=e497]:
+                          - generic:
+                            - generic [ref=e498] [cursor=pointer]:
+                              - generic:
+                                - generic [ref=e499]:
+                                  - checkbox
+                                  - generic [ref=e501]:
+                                    - generic: Todos
+                                - generic:
+                                  - checkbox
+                            - generic [ref=e502]:
+                              - generic [ref=e503]:
+                                - generic [ref=e504]: Compras
+                                - generic:
+                                  - generic [ref=e505] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e506]:
+                                        - checkbox
+                                        - generic [ref=e508]:
+                                          - generic: Compra cancelada
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e509] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e510]:
+                                        - checkbox
+                                        - generic [ref=e512]:
+                                          - generic: Compra completa
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e513] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e514]:
+                                        - checkbox
+                                        - generic [ref=e516]:
+                                          - generic: Aguardando pagamento
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e517] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e518]:
+                                        - checkbox
+                                        - generic [ref=e520]:
+                                          - generic: Compra aprovada
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e521] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e522]:
+                                        - checkbox
+                                        - generic [ref=e524]:
+                                          - generic: Compra reembolsada
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e525] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e526]:
+                                        - checkbox
+                                        - generic [ref=e528]:
+                                          - generic: Chargeback
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e529] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e530]:
+                                        - checkbox
+                                        - generic [ref=e532]:
+                                          - generic: Compra expirada
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e533] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e534]:
+                                        - checkbox
+                                        - generic [ref=e536]:
+                                          - generic: Pedido de reembolso
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e537] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e538]:
+                                        - checkbox
+                                        - generic [ref=e540]:
+                                          - generic: Compra atrasada
+                                      - generic:
+                                        - checkbox
+                              - generic [ref=e541]:
+                                - generic [ref=e542]: Assinaturas
+                                - generic:
+                                  - generic [ref=e543] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e544]:
+                                        - checkbox
+                                        - generic [ref=e546]:
+                                          - generic: Cancelamento de Assinatura
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e547] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e548]:
+                                        - checkbox
+                                        - generic [ref=e550]:
+                                          - generic: Troca de plano
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e551] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e552]:
+                                        - checkbox
+                                        - generic [ref=e554]:
+                                          - generic: Atualização de Data de Cobrança de Assinatura
+                                      - generic:
+                                        - checkbox
+                              - generic [ref=e555]:
+                                - generic [ref=e556]: Club
+                                - generic:
+                                  - generic [ref=e557] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e558]:
+                                        - checkbox
+                                        - generic [ref=e560]:
+                                          - generic: Primeiro acesso
+                                      - generic:
+                                        - checkbox
+                                  - generic [ref=e561] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e562]:
+                                        - checkbox
+                                        - generic [ref=e564]:
+                                          - generic: Módulo completo
+                                      - generic:
+                                        - checkbox
+                              - generic [ref=e565]:
+                                - generic [ref=e566]: Outros
+                                - generic [ref=e567] [cursor=pointer]:
+                                  - generic:
+                                    - generic [ref=e568]:
+                                      - checkbox
+                                      - generic [ref=e570]:
+                                        - generic: Abandono de carrinho
+                                    - generic:
+                                      - checkbox
+                    - generic [ref=e457]:
+                      - checkbox "Antes de ativar, assegure-se de que o tratamento de dados está em conformidade com a legislação local, conforme estabelecido no Termo de Tratamento de Dados Pessoais. *"
+                      - generic [ref=e458] [cursor=pointer]: Antes de ativar, assegure-se de que o tratamento de dados está em conformidade com a legislação local, conforme estabelecido no Termo de Tratamento de Dados Pessoais. *
+                  - generic [ref=e461]:
+                    - button "Cancelar" [ref=e462] [cursor=pointer]
+                    - button "Salvar" [ref=e463] [cursor=pointer]
+        - generic [ref=e464]:
+          - link "Minhas configurações" [ref=e465] [cursor=pointer]:
+            - /url: /tools/webhook/
+            - generic [ref=e466]: Minhas configurações
+          - link "Histórico" [ref=e467] [cursor=pointer]:
+            - /url: /tools/webhook/history
+            - generic [ref=e468]: Histórico
+          - link "Autenticação" [ref=e469] [cursor=pointer]:
+            - /url: /tools/webhook/auth
+            - generic [ref=e470]: Autenticação
+        - generic [ref=e472]:
+          - generic [ref=e474]:
+            - generic [ref=e475]: Selecione um produto
+            - generic [ref=e478]:
+              - textbox "Selecione um produto" [ref=e480]: Todos os produtos
+              - generic:
+                - generic:
+                  - generic: Todos os produtos
+                - generic:
+                  - generic: Pódio de Vendas
+                - generic:
+                  - generic: Pódio de Vendas
+          - generic [ref=e482]:
+            - img [ref=e485]
+            - heading "Você ainda não tem configurações" [level=2] [ref=e487]
+            - paragraph [ref=e488]: Crie configurações e receba informações de seus compradores aonde você quiser
+            - button "Cadastrar Webhook" [ref=e489] [cursor=pointer]
+            - link "Saiba mais sobre Webhook" [ref=e490] [cursor=pointer]:
+              - /url: https://developers.hotmart.com/docs/pt-BR/1.0.0/webhook/about-webhook/
+              - button "Saiba mais sobre Webhook" [ref=e491]
+  - generic:
+    - generic:
+      - generic [ref=e493]:
+        - iframe [ref=e494]:
+          - button "Fechar mensagem da empresa" [ref=f119e4] [cursor=pointer]:
+            - img [ref=f119e5]
+        - iframe [ref=e495]:
+          - button "Olá. Precisa de ajuda?" [ref=f120e5] [cursor=pointer]
+      - iframe [ref=e496]:
+        - button "Abrir janela de mensagens" [ref=f121e5] [cursor=pointer]:
+          - img [ref=f121e7]
+          - img [ref=f121e10]

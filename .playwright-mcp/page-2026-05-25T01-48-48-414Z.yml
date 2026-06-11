@@ -1,0 +1,330 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - navigation:
+              - generic:
+                - list:
+                  - listitem:
+                    - button:
+                      - generic: P
+                      - generic:
+                        - generic: passoapassouniformes2025@gmail.com's Org
+                        - generic:
+                          - img
+                          - generic: 1 project
+                      - img
+              - button [ref=e117] [cursor=pointer]:
+                - figure [ref=e119]:
+                  - img [ref=e120]
+            - navigation [ref=e356]:
+              - generic [ref=e126]:
+                - button [ref=e127] [cursor=pointer]:
+                  - img [ref=e129]
+                - button [ref=e357] [cursor=pointer]:
+                  - generic [ref=e134]:
+                    - img [ref=e135]
+                    - generic [ref=e138]: Help
+                - button [ref=e358] [cursor=pointer]:
+                  - generic [ref=e142]:
+                    - img [ref=e143]
+                    - generic [ref=e145]: Advisor Center
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - heading [level=3]: Create a new project
+                                    - paragraph: Your project will have its own dedicated instance and full Postgres database. An API will be set up so you can easily interact with your new database.
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: Organization
+                                        - generic:
+                                          - generic:
+                                            - combobox:
+                                              - generic:
+                                                - generic:
+                                                  - generic: passoapassouniformes2025@gmail.com's Org
+                                                  - generic: Free
+                                              - img
+                                            - combobox
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: GitHub (optional)
+                                        - generic:
+                                          - generic:
+                                            - button:
+                                              - generic:
+                                                - img
+                                              - generic: Connect GitHub
+                                          - generic:
+                                            - text: "Ideal for agent-first workflows: update your schema in code, push it to GitHub, and Supabase deploys the changes automatically."
+                                            - link:
+                                              - /url: https://supabase.com/docs/guides/deployment/branching/github-integration
+                                              - text: Learn more
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: Project name
+                                        - generic:
+                                          - generic:
+                                            - textbox:
+                                              - /placeholder: Project name
+                                              - text: podio-de-vendas
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: Database password
+                                        - generic:
+                                          - generic:
+                                            - group:
+                                              - textbox:
+                                                - /placeholder: Type in a strong password
+                                                - text: S8xx52DxgtmSVaGo
+                                              - group:
+                                                - button:
+                                                  - generic:
+                                                    - img
+                                                  - generic: Copy
+                                          - generic:
+                                            - progressbar
+                                            - paragraph:
+                                              - text: This password is strong.
+                                              - button: Generate a password
+                                              - text: .
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: Region
+                                        - generic:
+                                          - generic:
+                                            - combobox [expanded]:
+                                              - generic:
+                                                - generic:
+                                                  - img
+                                                  - generic: Americas
+                                              - img
+                                            - combobox
+                                          - generic:
+                                            - paragraph: Select the region closest to your users for the best performance.
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: Security
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - checkbox [checked]:
+                                                  - generic:
+                                                    - img
+                                                - checkbox [checked]
+                                                - generic:
+                                                  - text: Enable Data API
+                                                  - generic:
+                                                    - text: Autogenerate a RESTful API for your public schema. Recommended if using a client library like
+                                                    - link:
+                                                      - /url: https://supabase.com/docs/reference/javascript/introduction
+                                                      - text: supabase-js
+                                                    - text: .
+                                              - generic:
+                                                - checkbox [checked]:
+                                                  - generic:
+                                                    - img
+                                                - checkbox [checked]
+                                                - generic:
+                                                  - text: Automatically expose new tables
+                                                  - generic:
+                                                    - text: Grants privileges to Data API roles by default, exposing new tables.
+                                                    - strong: We recommend disabling this to control access manually.
+                                              - generic:
+                                                - checkbox
+                                                - checkbox
+                                                - generic:
+                                                  - text: Enable automatic RLS
+                                                  - generic: Create an event trigger that automatically enables Row Level Security on all new tables in the public schema.
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - text: Advanced Configuration
+                                          - img
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic: Cancel
+                                        - button:
+                                          - generic: Create new project
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - generic:
+                - generic:
+                  - button:
+                    - generic:
+                      - img
+                - generic:
+                  - generic: Notice
+                  - generic:
+                    - paragraph: We've updated our Terms of Service
+                    - paragraph: Updates define the responsibilities of both you and Supabase in the use of AI.
+                  - button:
+                    - generic: Learn more
+  - generic:
+    - alert: New Project | Supabase
+  - listbox [ref=e359]:
+    - group "General regions" [ref=e360]:
+      - generic [ref=e361]: General regions
+      - option "region icon Americas Recommended" [active] [selected] [ref=e362]:
+        - img [ref=e365]
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - img "region icon" [ref=e370]
+            - generic [ref=e371]: Americas
+          - generic [ref=e373]: Recommended
+      - option "region icon Europe" [ref=e374]:
+        - generic [ref=e378]:
+          - img "region icon" [ref=e379]
+          - generic [ref=e380]: Europe
+      - option "region icon Asia-Pacific" [ref=e381]:
+        - generic [ref=e385]:
+          - img "region icon" [ref=e386]
+          - generic [ref=e387]: Asia-Pacific
+    - group "Specific regions" [ref=e389]:
+      - generic [ref=e390]: Specific regions
+      - option "region icon West US (North California) us-west-1" [ref=e391]:
+        - generic [ref=e395]:
+          - img "region icon" [ref=e396]
+          - generic [ref=e397]:
+            - generic [ref=e398]: West US (North California)
+            - generic [ref=e399]: us-west-1
+      - option "region icon West US (Oregon) us-west-2 Recommended" [ref=e400]:
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - img "region icon" [ref=e405]
+            - generic [ref=e406]:
+              - generic [ref=e407]: West US (Oregon)
+              - generic [ref=e408]: us-west-2
+          - generic [ref=e409]: Recommended
+      - option "region icon East US (North Virginia) us-east-1" [ref=e410]:
+        - generic [ref=e414]:
+          - img "region icon" [ref=e415]
+          - generic [ref=e416]:
+            - generic [ref=e417]: East US (North Virginia)
+            - generic [ref=e418]: us-east-1
+      - option "region icon East US (Ohio) us-east-2" [ref=e419]:
+        - generic [ref=e423]:
+          - img "region icon" [ref=e424]
+          - generic [ref=e425]:
+            - generic [ref=e426]: East US (Ohio)
+            - generic [ref=e427]: us-east-2
+      - option "region icon Canada (Central) ca-central-1" [ref=e428]:
+        - generic [ref=e432]:
+          - img "region icon" [ref=e433]
+          - generic [ref=e434]:
+            - generic [ref=e435]: Canada (Central)
+            - generic [ref=e436]: ca-central-1
+      - option "region icon West EU (Ireland) eu-west-1" [ref=e437]:
+        - generic [ref=e441]:
+          - img "region icon" [ref=e442]
+          - generic [ref=e443]:
+            - generic [ref=e444]: West EU (Ireland)
+            - generic [ref=e445]: eu-west-1
+      - option "region icon West Europe (London) eu-west-2" [ref=e446]:
+        - generic [ref=e450]:
+          - img "region icon" [ref=e451]
+          - generic [ref=e452]:
+            - generic [ref=e453]: West Europe (London)
+            - generic [ref=e454]: eu-west-2
+      - option "region icon West EU (Paris) eu-west-3" [ref=e455]:
+        - generic [ref=e459]:
+          - img "region icon" [ref=e460]
+          - generic [ref=e461]:
+            - generic [ref=e462]: West EU (Paris)
+            - generic [ref=e463]: eu-west-3
+      - option "region icon Central EU (Frankfurt) eu-central-1" [ref=e464]:
+        - generic [ref=e468]:
+          - img "region icon" [ref=e469]
+          - generic [ref=e470]:
+            - generic [ref=e471]: Central EU (Frankfurt)
+            - generic [ref=e472]: eu-central-1
+      - option "region icon Central Europe (Zurich) eu-central-2" [ref=e473]:
+        - generic [ref=e477]:
+          - img "region icon" [ref=e478]
+          - generic [ref=e479]:
+            - generic [ref=e480]: Central Europe (Zurich)
+            - generic [ref=e481]: eu-central-2
+      - option "region icon North EU (Stockholm) eu-north-1" [ref=e482]:
+        - generic [ref=e486]:
+          - img "region icon" [ref=e487]
+          - generic [ref=e488]:
+            - generic [ref=e489]: North EU (Stockholm)
+            - generic [ref=e490]: eu-north-1
+      - option "region icon South Asia (Mumbai) ap-south-1" [ref=e491]:
+        - generic [ref=e495]:
+          - img "region icon" [ref=e496]
+          - generic [ref=e497]:
+            - generic [ref=e498]: South Asia (Mumbai)
+            - generic [ref=e499]: ap-south-1
+      - option "region icon Southeast Asia (Singapore) ap-southeast-1" [ref=e500]:
+        - generic [ref=e504]:
+          - img "region icon" [ref=e505]
+          - generic [ref=e506]:
+            - generic [ref=e507]: Southeast Asia (Singapore)
+            - generic [ref=e508]: ap-southeast-1
+      - option "region icon Northeast Asia (Tokyo) ap-northeast-1" [ref=e509]:
+        - generic [ref=e513]:
+          - img "region icon" [ref=e514]
+          - generic [ref=e515]:
+            - generic [ref=e516]: Northeast Asia (Tokyo)
+            - generic [ref=e517]: ap-northeast-1
+      - option "region icon Northeast Asia (Seoul) ap-northeast-2" [ref=e518]:
+        - generic [ref=e522]:
+          - img "region icon" [ref=e523]
+          - generic [ref=e524]:
+            - generic [ref=e525]: Northeast Asia (Seoul)
+            - generic [ref=e526]: ap-northeast-2
+      - option "region icon Oceania (Sydney) ap-southeast-2" [ref=e527]:
+        - generic [ref=e531]:
+          - img "region icon" [ref=e532]
+          - generic [ref=e533]:
+            - generic [ref=e534]: Oceania (Sydney)
+            - generic [ref=e535]: ap-southeast-2
+      - option "region icon South America (São Paulo) sa-east-1" [ref=e536]:
+        - generic [ref=e540]:
+          - img "region icon" [ref=e541]
+          - generic [ref=e542]:
+            - generic [ref=e543]: South America (São Paulo)
+            - generic [ref=e544]: sa-east-1
+    - img [ref=e546]

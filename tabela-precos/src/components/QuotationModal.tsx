@@ -21,6 +21,7 @@ interface QuotationItem {
   qty: number;
   adicionais: Adicional[];
   customUnitPrice?: number | null;
+  customNote?: string;
 }
 
 interface GlobalAdicional {
@@ -67,7 +68,7 @@ function uid() {
 }
 
 function emptyItem(): QuotationItem {
-  return { id: uid(), categoryId: '', productId: '', descricao: '', qty: 1, adicionais: [], customUnitPrice: null };
+  return { id: uid(), categoryId: '', productId: '', descricao: '', qty: 1, adicionais: [], customUnitPrice: null, customNote: '' };
 }
 
 
@@ -334,12 +335,15 @@ export function QuotationModal({ categories, extraData = defaultExtra, onClose }
                 <img src={`${import.meta.env.BASE_URL}logo-pap.png`} alt="Passo a Passo Uniformes" className="q-doc-logo" />
               </div>
               <div className="q-doc-title-wrap">
-                <h1 className="q-doc-title">PROPOSTA DE ORÇAMENTO</h1>
+                <h1 className="q-doc-title">PRÉ ORÇAMENTO</h1>
                 <p className="q-doc-subtitle">Uniformes Personalizados</p>
                 <div className="q-doc-meta">
                   <span>Data: {fmtDate(today)}</span>
                   <span>Válido até: {fmtDate(validUntil)}</span>
                 </div>
+                <p style={{ fontSize: '0.72rem', color: '#b45309', marginTop: '0.4rem', fontStyle: 'italic', lineHeight: '1.4' }}>
+                  * Os valores apresentados são estimados e podem ser alterados conforme negociação, tamanhos e aprovação do layout.
+                </p>
               </div>
             </div>
 
@@ -387,6 +391,9 @@ export function QuotationModal({ categories, extraData = defaultExtra, onClose }
                 const prod = cat?.items.find(p => p.id === item.productId);
                 const { unitPrice, total, isOrcamento } = getItemCalc(item);
 
+                const adicionaisPerUnit = item.adicionais.reduce((s, a) => s + a.precoUnit * a.qtd, 0);
+                const effectiveUnitPrice = typeof unitPrice === 'number' ? unitPrice + adicionaisPerUnit : null;
+
                 return (
                   <div key={item.id} className="q-item-block">
                     <div className="q-item-header">
@@ -400,14 +407,14 @@ export function QuotationModal({ categories, extraData = defaultExtra, onClose }
                     <div className="q-item-selectors no-print">
                       {/* Category */}
                       <div className="q-select-wrap">
-                        <label>Categoria</label>
+                        <label>Modelo</label>
                         <div className="q-select-inner">
                           <select
                             value={item.categoryId}
                             onChange={e => handleCategoryChange(item.id, e.target.value)}
                             className="q-select"
                           >
-                            <option value="">Selecionar categoria...</option>
+                            <option value="">Selecionar modelo...</option>
                             {categories.map(c => (
                               <option key={c.id} value={c.id}>{c.title}</option>
                             ))}
@@ -506,6 +513,18 @@ export function QuotationModal({ categories, extraData = defaultExtra, onClose }
                       </div>
                     </div>
 
+                    {/* Valor unitário efetivo (peça + adicionais) */}
+                    {effectiveUnitPrice !== null && adicionaisPerUnit > 0 && (
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.35rem 0.75rem', background: '#fef3c7', borderRadius: '6px', marginTop: '0.35rem', fontSize: '0.8rem' }}>
+                        <span style={{ color: '#92400e', fontWeight: 600 }}>Valor unitário da peça (base + adicionais):</span>
+                        <span style={{ color: '#b45309', fontWeight: 700 }}>{fmtBRL(effectiveUnitPrice)} / pç</span>
+                        <span style={{ color: '#a16207', fontSize: '0.72rem' }}>
+                          ({fmtBRL(typeof unitPrice === 'number' ? unitPrice : 0)} base + {fmtBRL(adicionaisPerUnit)} em adicionais)
+                        </span>
+                      </div>
+                    )}
+
+
                     {/* Product info (obs, description) */}
                     {prod && (prod.obs || prod.colors) && (
                       <div className="q-item-obs">
@@ -563,6 +582,21 @@ export function QuotationModal({ categories, extraData = defaultExtra, onClose }
                         ))}
                       </div>
                     )}
+
+                    {/* Mensagem personalizada do item */}
+                    <div className="q-item-custom-note" style={{ marginTop: '0.5rem' }}>
+                      <label style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', marginBottom: '0.2rem' }}>
+                        Observação personalizada sobre este item (opcional)
+                      </label>
+                      <textarea
+                        value={item.customNote ?? ''}
+                        onChange={e => updateItem(item.id, { customNote: e.target.value })}
+                        placeholder="Ex: Logo na frente e nas costas, cor azul royal, numeração de 4 a 16..."
+                        className="q-input q-textarea"
+                        rows={2}
+                        style={{ fontSize: '0.82rem' }}
+                      />
+                    </div>
 
                     {/* Add adicional to item */}
                     <div className="q-item-add-adicional no-print">
@@ -680,6 +714,12 @@ export function QuotationModal({ categories, extraData = defaultExtra, onClose }
                 {items.some(i => getItemCalc(i).isOrcamento) && (
                   <p className="q-total-obs">* Itens marcados como "A Orçar" não estão incluídos no total.</p>
                 )}
+                <div style={{ marginTop: '0.75rem', padding: '0.6rem 0.9rem', background: '#fff7ed', borderRadius: '8px', border: '1.5px solid #fb923c', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                  <span style={{ fontSize: '1rem' }}>⚠️</span>
+                  <p style={{ fontSize: '0.8rem', color: '#c2410c', fontWeight: 600, margin: 0, lineHeight: '1.4' }}>
+                    Peças nos tamanhos <strong>XG, XXG, XXXG e superiores</strong> sofrem acréscimo de <strong>30%</strong> sobre o valor unitário.
+                  </p>
+                </div>
               </div>
             </div>
 

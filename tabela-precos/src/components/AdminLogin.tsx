@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { Lock, Eye, EyeOff, ShieldCheck } from 'lucide-react';
-
-const ADMIN_PASSWORD = 'Jessica23*';
-const SESSION_KEY = 'pap_admin_session';
+import { Lock, Eye, EyeOff, ShieldCheck, Loader } from 'lucide-react';
+import { signInAdmin } from '../lib/firebase';
 
 interface AdminLoginProps {
   onLogin: () => void;
@@ -14,17 +12,22 @@ export function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [shaking, setShaking] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === ADMIN_PASSWORD) {
-      sessionStorage.setItem(SESSION_KEY, '1');
+    setLoading(true);
+    setError('');
+    try {
+      await signInAdmin(password);
       onLogin();
-    } else {
+    } catch {
       setError('Senha incorreta. Tente novamente.');
       setShaking(true);
       setPassword('');
       setTimeout(() => setShaking(false), 500);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -48,6 +51,7 @@ export function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
               placeholder="Senha de administrador"
               className={`admin-input ${error ? 'admin-input-error' : ''}`}
               autoFocus
+              disabled={loading}
             />
             <button
               type="button"
@@ -60,22 +64,14 @@ export function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
           </div>
           {error && <p className="admin-error">{error}</p>}
           <div className="admin-login-actions">
-            <button type="button" onClick={onClose} className="admin-btn-cancel">Cancelar</button>
-            <button type="submit" className="admin-btn-enter">
-              <ShieldCheck size={17} />
-              Entrar
+            <button type="button" onClick={onClose} className="admin-btn-cancel" disabled={loading}>Cancelar</button>
+            <button type="submit" className="admin-btn-enter" disabled={loading}>
+              {loading ? <Loader size={17} className="animate-spin" /> : <ShieldCheck size={17} />}
+              {loading ? 'Entrando...' : 'Entrar'}
             </button>
           </div>
         </form>
       </div>
     </div>
   );
-}
-
-export function isAdminSession(): boolean {
-  return sessionStorage.getItem(SESSION_KEY) === '1';
-}
-
-export function clearAdminSession() {
-  sessionStorage.removeItem(SESSION_KEY);
 }

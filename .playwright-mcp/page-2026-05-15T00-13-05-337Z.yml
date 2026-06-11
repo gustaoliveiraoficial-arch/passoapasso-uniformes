@@ -1,0 +1,150 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /formalizarpedido/
+        - img [ref=e6]
+      - generic [ref=e8]:
+        - heading "Novo Pedido" [level=1] [ref=e9]
+        - paragraph [ref=e10]: Preencha todos os campos para registrar o pedido
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - heading "1. Dados do Cliente" [level=2] [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17] [cursor=pointer]:
+            - radio "Pessoa Física" [checked] [ref=e18]
+            - generic [ref=e19]: Pessoa Física
+          - generic [ref=e20] [cursor=pointer]:
+            - radio "Empresa (CNPJ)" [ref=e21]
+            - generic [ref=e22]: Empresa (CNPJ)
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: Nome Completo *
+            - textbox "Nome completo" [ref=e26]
+          - generic [ref=e27]:
+            - generic [ref=e28]: CPF *
+            - textbox "000.000.000-00" [ref=e29]
+          - generic [ref=e30]:
+            - generic [ref=e31]: Telefone
+            - textbox "(51) 99999-9999" [ref=e32]
+          - generic [ref=e33]:
+            - generic [ref=e34]: Endereço completo *
+            - textbox "Rua, número, bairro" [ref=e35]
+          - generic [ref=e36]:
+            - generic [ref=e37]: Cidade
+            - textbox [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]: Estado
+            - textbox "RS" [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]: CEP *
+            - textbox "00000-000" [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]: E-mail *
+            - textbox "email@exemplo.com" [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: Data do Pedido *
+            - textbox [ref=e51]: 2026-05-15
+          - generic [ref=e52]:
+            - generic [ref=e53]: Data de Entrega Prevista *
+            - textbox [ref=e54]
+    - generic [ref=e55]:
+      - heading "2. Produto" [level=2] [ref=e57]
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: Modelo *
+          - generic [ref=e61]:
+            - button "Camiseta / Baby Look" [ref=e62] [cursor=pointer]
+            - button "Camiseta Polo" [ref=e63] [cursor=pointer]
+            - button "Blusinha Manga Bufante" [ref=e64] [cursor=pointer]
+            - button "Calça Moletom" [ref=e65] [cursor=pointer]
+            - button "Calça Moletinho" [ref=e66] [cursor=pointer]
+            - button "Regata Basquete" [ref=e67] [cursor=pointer]
+            - button "Bermuda Basquete" [ref=e68] [cursor=pointer]
+            - button "Calção Fardamento Sublimado" [ref=e69] [cursor=pointer]
+            - button "Corta Vento Sublimado" [ref=e70] [cursor=pointer]
+            - button "Jaqueta 1201 Fosca" [ref=e71] [cursor=pointer]
+            - button "Moletom Canguru" [ref=e72] [cursor=pointer]
+            - button "Suplex Feminino — Top Diana" [ref=e73] [cursor=pointer]
+            - button "Suplex Feminino — Legging" [ref=e74] [cursor=pointer]
+        - generic [ref=e75]:
+          - generic [ref=e76]: Nome do Fornecedor *
+          - 'textbox "Ex: U.S, Paquetá, Fardamento..." [ref=e77]'
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: Referência Unissex
+            - textbox "Ref." [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]: Referência Babylook
+            - textbox "Ref." [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]: Referência Infantil
+            - textbox "Ref." [ref=e87]
+        - generic [ref=e88]:
+          - generic [ref=e89]: Detalhes da Peça
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - checkbox [ref=e92]
+              - generic [ref=e93]: "Corpo:"
+              - textbox "Descrição..." [disabled] [ref=e94]
+            - generic [ref=e95]:
+              - checkbox [ref=e96]
+              - generic [ref=e97]: "Friso:"
+              - textbox "Descrição..." [disabled] [ref=e98]
+            - generic [ref=e99]:
+              - checkbox [ref=e100]
+              - generic [ref=e101]: "Punho:"
+              - textbox "Descrição..." [disabled] [ref=e102]
+            - generic [ref=e103]:
+              - checkbox [ref=e104]
+              - generic [ref=e105]: "Gola:"
+              - textbox "Descrição..." [disabled] [ref=e106]
+            - generic [ref=e107]:
+              - checkbox [ref=e108]
+              - generic [ref=e109]: "Manga:"
+              - textbox "Descrição..." [disabled] [ref=e110]
+            - generic [ref=e111]:
+              - checkbox [ref=e112]
+              - generic [ref=e113]: "Bolso:"
+              - textbox "Descrição..." [disabled] [ref=e114]
+        - generic [ref=e115]:
+          - generic [ref=e116]: Tipo de Estampa
+          - generic [ref=e117]:
+            - generic [ref=e118] [cursor=pointer]: Serigrafia
+            - generic [ref=e119] [cursor=pointer]: DTF
+            - generic [ref=e120] [cursor=pointer]: Plastsol
+            - generic [ref=e121] [cursor=pointer]: Alto Relevo
+            - generic [ref=e122] [cursor=pointer]: Sublimação
+            - generic [ref=e123] [cursor=pointer]: Bordado
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: Valor Unitário (R$) *
+            - spinbutton [ref=e127]
+          - generic [ref=e128]:
+            - generic [ref=e129]: Quantidade Total de Peças *
+            - spinbutton [ref=e130]
+          - generic [ref=e131]:
+            - generic [ref=e132]: Total Estimado
+            - generic [ref=e133]: —
+    - generic [ref=e134]:
+      - heading "3. Vendedor & Número do Pedido" [level=2] [ref=e136]
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - generic [ref=e139]:
+            - generic [ref=e140]: Nome do Vendedor *
+            - 'textbox "Ex: Gustavo" [ref=e141]'
+          - generic [ref=e142]:
+            - generic [ref=e143]: Número do Pedido *
+            - 'textbox "Ex: 2026-0042" [ref=e144]'
+        - generic [ref=e145]:
+          - generic [ref=e146]: Mensagem para o Arte-Finalista (como o cliente quer o mockup)
+          - 'textbox "Ex: Cliente quer o logo centralizado no peito, frente com nome da empresa em letras grandes, costas com os valores da empresa em lista. Referência visual: estilo corporativo sóbrio, sem excesso de cores..." [ref=e147]'
+          - paragraph [ref=e148]: Esta mensagem aparecerá em destaque no brief do arte-finalista.
+    - generic [ref=e149]:
+      - link "Cancelar" [ref=e150] [cursor=pointer]:
+        - /url: /formalizarpedido/
+      - button "Salvar Pedido" [ref=e151] [cursor=pointer]:
+        - text: Salvar Pedido
+        - img [ref=e152]

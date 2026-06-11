@@ -1,0 +1,37 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e27] [cursor=pointer]:
+    - img [ref=e28]
+  - alert [ref=e31]
+  - generic [ref=e101]:
+    - banner [ref=e102]:
+      - generic [ref=e103]: 🏆 Empresa Teste
+      - navigation [ref=e104]:
+        - button "🏆 Ranking" [ref=e105] [cursor=pointer]
+        - button "➕ Lançar" [ref=e106] [cursor=pointer]
+        - button "🎡 Roleta" [ref=e107] [cursor=pointer]
+        - button "📊 Dashboard" [ref=e108] [cursor=pointer]
+        - button "📋 Histórico" [ref=e109] [cursor=pointer]
+      - generic [ref=e110]:
+        - generic [ref=e111]: Gustavo Oliveira
+        - link "Sair" [ref=e112] [cursor=pointer]:
+          - /url: /login
+    - main [ref=e113]:
+      - generic [ref=e114]:
+        - generic [ref=e115]: 🎉 Trial gratuito ativo — 14 dias restantes
+        - link "Assinar agora" [ref=e116] [cursor=pointer]:
+          - /url: /billing
+      - generic [ref=e117]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: 👑
+          - generic [ref=e122]: CS
+          - generic [ref=e123]: Carlos Silva
+          - generic [ref=e124]: R$ 0
+          - generic [ref=e125]: 1°
+        - generic [ref=e127]:
+          - generic [ref=e128]: 1°
+          - generic [ref=e129]: CS
+          - generic [ref=e130]:
+            - generic [ref=e131]: Carlos Silva
+            - generic [ref=e132]: "Hoje: R$ 0"
+          - generic [ref=e135]: 0% da meta
+          - generic [ref=e136]: R$ 0

@@ -1,0 +1,48 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: 🏆 Campanha 01
+    - generic [ref=e4]:
+      - button "📲 Instalar" [ref=e96] [cursor=pointer]
+      - generic "Status da sincronização" [ref=e5]
+  - main [ref=e6]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]: 📝 Nova Venda
+        - generic [ref=e102]:
+          - generic [ref=e103]: Vendedor
+          - combobox [ref=e104] [cursor=pointer]:
+            - option "-- Selecione o vendedor --" [selected]
+            - option "Wellington"
+            - option "Israel"
+            - option "Andreza"
+            - option "Vanessa"
+            - option "Eduardo"
+        - generic [ref=e105]:
+          - generic [ref=e106]: Data
+          - textbox [ref=e107]: 2026-05-16
+        - generic [ref=e108]:
+          - generic [ref=e109]: Tipo de Venda
+          - generic [ref=e110]:
+            - button "½ Meia Venda" [ref=e111] [cursor=pointer]
+            - button "✓ Venda Inteira" [ref=e112] [cursor=pointer]
+          - generic [ref=e113]: 1 Venda Inteira = 1 giro na roleta
+        - generic [ref=e114]:
+          - generic [ref=e115]: Valor da Venda (R$)
+          - spinbutton [ref=e116]
+        - generic [ref=e117]:
+          - button "💾 Salvar Venda" [ref=e118] [cursor=pointer]
+          - button "📋 Ver Relatório" [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - generic [ref=e121]: 📊 Resumo do Dia
+        - generic [ref=e123]: Nenhuma venda registrada hoje ainda.
+  - navigation [ref=e89]:
+    - button "📊 Ranking" [ref=e90] [cursor=pointer]:
+      - generic [ref=e91]: 📊
+      - text: Ranking
+    - button "📈 Dashboard" [ref=e92] [cursor=pointer]:
+      - generic [ref=e93]: 📈
+      - text: Dashboard
+    - button "📝 Lançar" [active] [ref=e94] [cursor=pointer]:
+      - generic [ref=e95]: 📝
+      - text: Lançar
+  - button "Choose File"

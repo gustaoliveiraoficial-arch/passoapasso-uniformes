@@ -1,0 +1,114 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e717]:
+      - img [ref=e719]
+      - generic [ref=e721]:
+        - paragraph [ref=e722]: Integração adicionada
+        - paragraph
+      - button [ref=e724] [cursor=pointer]:
+        - img [ref=e725]
+    - generic [ref=e6]:
+      - generic [ref=e9]:
+        - button "Workflow GUSTAVO OSMAR OLIVEIRA DA SILVA" [expanded] [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]:
+            - img "Workflow" [ref=e17]
+            - generic [ref=e18]: GUSTAVO OSMAR OLIVEIRA DA SILVA
+            - img [ref=e19]
+        - navigation [ref=e22]:
+          - generic [ref=e24]:
+            - link "Dashboard" [ref=e25] [cursor=pointer]:
+              - /url: /
+              - img [ref=e26]
+              - text: Dashboard
+            - link "Produtos" [ref=e28] [cursor=pointer]:
+              - /url: /products
+              - img [ref=e29]
+              - text: Produtos
+            - link "Área de Membros" [ref=e31] [cursor=pointer]:
+              - /url: /members-area
+              - img [ref=e32]
+              - text: Área de Membros
+            - link "Marketplace" [ref=e34] [cursor=pointer]:
+              - /url: /marketplace
+              - img [ref=e35]
+              - text: Marketplace
+            - link "Meus Afiliados" [ref=e37] [cursor=pointer]:
+              - /url: /myaffiliates
+              - img [ref=e38]
+              - text: Meus Afiliados
+            - link "Vendas" [ref=e40] [cursor=pointer]:
+              - /url: /sales
+              - img [ref=e41]
+              - text: Vendas
+            - link "Assinaturas" [ref=e43] [cursor=pointer]:
+              - /url: /subscriptions
+              - img [ref=e44]
+              - text: Assinaturas
+            - link "Financeiro" [ref=e46] [cursor=pointer]:
+              - /url: /finance
+              - img [ref=e47]
+              - text: Financeiro
+            - link "Relatórios" [ref=e50] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e51]
+              - text: Relatórios
+            - link "Colaboradores" [ref=e53] [cursor=pointer]:
+              - /url: /team-members
+              - img [ref=e54]
+              - text: Colaboradores
+            - link "Apps" [ref=e56] [cursor=pointer]:
+              - /url: /apps
+              - img [ref=e57]
+              - text: Apps
+          - link "Ajuda" [ref=e59] [cursor=pointer]:
+            - /url: https://ajuda.kiwify.com.br/
+            - img [ref=e60]
+            - text: Ajuda
+      - main [ref=e63]:
+        - generic [ref=e65]:
+          - generic [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: R$ 0.0K / R$ 10K
+            - img [ref=e71]
+          - button [ref=e80] [cursor=pointer]:
+            - img [ref=e83]
+        - generic [ref=e562]:
+          - generic [ref=e564]:
+            - img [ref=e566] [cursor=pointer]
+            - heading "Webhooks" [level=3] [ref=e568]
+          - generic [ref=e569]:
+            - generic [ref=e570]:
+              - generic [ref=e573]:
+                - textbox "Buscar...." [ref=e574]
+                - generic:
+                  - img
+              - generic [ref=e579]:
+                - generic [ref=e581]: Todos os produtos
+                - textbox [ref=e584]
+            - generic [ref=e586] [cursor=pointer]: Criar webhook
+          - table [ref=e591]:
+            - rowgroup [ref=e592]:
+              - row "Produto Nome URL" [ref=e593]:
+                - columnheader "Produto" [ref=e594]
+                - columnheader "Nome" [ref=e595]
+                - columnheader "URL" [ref=e596]
+                - columnheader [ref=e597]
+            - rowgroup [ref=e727]:
+              - row "Pódio de Vendas Pódio de Vendas https://podio-de-vendas.vercel.app/api/webhooks/kiwify" [ref=e728]:
+                - cell "Pódio de Vendas" [ref=e729]:
+                  - generic [ref=e730]: Pódio de Vendas
+                - cell "Pódio de Vendas" [ref=e731]:
+                  - generic [ref=e732]: Pódio de Vendas
+                - cell "https://podio-de-vendas.vercel.app/api/webhooks/kiwify" [ref=e733]:
+                  - generic [ref=e734]: https://podio-de-vendas.vercel.app/api/webhooks/kiwify
+                - cell [ref=e735]:
+                  - button [ref=e740] [cursor=pointer]:
+                    - img [ref=e741]
+          - generic [ref=e599]:
+            - img [ref=e600]
+            - generic [ref=e602]:
+              - text: Aprenda mais sobre os
+              - link "webhooks" [ref=e603] [cursor=pointer]:
+                - /url: https://ajuda.kiwify.com.br/pt-br/article/como-funcionam-os-webhooks-2ydtgl/?1607864862382
+  - img
+  - button "Open chat" [ref=e149] [cursor=pointer]:
+    - img [ref=e151]

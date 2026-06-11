@@ -1,0 +1,552 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - link [ref=e6] [cursor=pointer]:
+            - /url: /formalizarpedido/
+            - img [ref=e7]
+          - generic [ref=e9]:
+            - 'heading "Pedido #0000-000" [level=1] [ref=e10]'
+            - paragraph [ref=e11]: teste
+        - generic [ref=e12]:
+          - generic [ref=e33]: 2. Tamanhos
+          - button "Editar" [ref=e34] [cursor=pointer]:
+            - img [ref=e35]
+            - text: Editar
+          - button "Duplicar" [ref=e38] [cursor=pointer]:
+            - img [ref=e39]
+            - text: Duplicar
+          - link "🖨️ Imprimir Pedido" [ref=e42] [cursor=pointer]:
+            - /url: /formalizarpedido/pedido-completo/ESxP9zCzOYplrMRUek91/
+    - main [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: Data do Pedido
+          - paragraph [ref=e47]: 08/06/2026
+        - generic [ref=e48]:
+          - paragraph [ref=e49]: Entrega Prevista
+          - paragraph [ref=e50]: 01/07/2026
+        - generic [ref=e51]:
+          - paragraph [ref=e52]: Vendedor
+          - paragraph [ref=e53]: gustavo
+        - generic [ref=e54]:
+          - paragraph [ref=e55]: Total de Peças
+          - paragraph [ref=e56]: 40 peças
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: 📋
+          - paragraph [ref=e60]: Observação do Pedido
+        - textbox "Clique para adicionar uma observação sobre este pedido..." [ref=e61]
+        - paragraph [ref=e62]: 💡 Salvo automaticamente ao sair do campo. Visível no kanban para toda a equipe.
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: "1"
+          - heading "Produto" [level=2] [ref=e66]
+          - generic [ref=e67]: Concluído
+        - generic [ref=e68]:
+          - generic [ref=e69]: "Modelo: Jaqueta Thermo Apeluciado"
+          - generic [ref=e70]: "Material: Thermo Apeluciado"
+          - generic [ref=e71]: "Cor: Preto"
+          - generic [ref=e72]: "Fornecedor: aa"
+          - generic [ref=e73]: "Valor Unitário: R$ 100,00"
+          - generic [ref=e74]: "Estampa: Serigrafia"
+        - generic [ref=e75]:
+          - paragraph [ref=e76]: Imagens de Referência
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - paragraph [ref=e79]: 🎨 Artes do cliente (estampas, logos, referências)
+              - generic [ref=e80] [cursor=pointer]:
+                - img [ref=e81]
+                - generic [ref=e84]: Clique para selecionar imagens
+              - button "Clique para selecionar imagens" [ref=e85]
+            - generic [ref=e86]:
+              - paragraph [ref=e87]: ✏️ Rascunho do vendedor (mockup inicial do layout)
+              - generic [ref=e88] [cursor=pointer]:
+                - img [ref=e89]
+                - generic [ref=e92]: Clique para selecionar imagens
+              - button "Clique para selecionar imagens" [ref=e93]
+        - generic [ref=e94]:
+          - paragraph [ref=e95]: 💬 Mensagem para o Arte-Finalista
+          - paragraph [ref=e96]: Explique como o cliente quer o mockup. Aparecerá em destaque no brief do arte-finalista.
+          - 'textbox "Ex: Logo centralizado no peito, nome da empresa em letras grandes nas costas..." [ref=e97]'
+        - generic [ref=e98]:
+          - paragraph [ref=e99]: 🔗 Link de tamanhos para o cliente
+          - generic [ref=e100]:
+            - button "Enviar via WhatsApp" [ref=e101] [cursor=pointer]:
+              - img [ref=e102]
+              - text: Enviar via WhatsApp
+            - button "Copiar link" [ref=e104] [cursor=pointer]:
+              - img [ref=e105]
+              - text: Copiar link
+            - link "ver link" [ref=e108] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/formalizarpedido/tamanhos/ab779deb-58f0-4380-9486-91af84d4c7da
+              - img [ref=e109]
+              - text: ver link
+      - generic [ref=e113]:
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: "2"
+            - generic [ref=e118]:
+              - heading "Tamanhos — 40 peças" [level=2] [ref=e119]
+              - paragraph [ref=e120]: Preencha ou deixe o cliente preencher via link
+          - generic [ref=e121]:
+            - button "Enviar via WhatsApp" [ref=e122] [cursor=pointer]:
+              - img [ref=e123]
+              - text: Enviar via WhatsApp
+            - button "Copiar link" [ref=e125] [cursor=pointer]:
+              - img [ref=e126]
+              - text: Copiar link
+            - link "ver link" [ref=e129] [cursor=pointer]:
+              - /url: https://passoapassouniformes.com/formalizarpedido/tamanhos/ab779deb-58f0-4380-9486-91af84d4c7da
+              - img [ref=e130]
+              - text: ver link
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - img [ref=e136]
+            - generic [ref=e140]: Distribuição rápida
+            - generic [ref=e141]: — por quantidade ou individual com nome/número
+          - button "Abrir" [ref=e142] [cursor=pointer]
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: Jaqueta Thermo Apeluciado
+              - generic [ref=e147]: 20 peças
+            - generic [ref=e149]: Unissex M / 20
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - generic [ref=e152]: Camiseta / Baby Look
+              - generic [ref=e153]: 20 peças
+            - generic [ref=e155]: Unissex P / 20
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e159]: "Modelo 1:"
+              - generic [ref=e160]: Jaqueta Thermo Apeluciado
+              - generic [ref=e161]: 20 peças
+            - generic [ref=e162]:
+              - button "1 Peça 1 Unissex M — R$ 100,00" [ref=e163] [cursor=pointer]:
+                - generic [ref=e164]: "1"
+                - generic [ref=e165]: Peça 1
+                - generic [ref=e166]: Unissex M — R$ 100,00
+              - generic [ref=e167]:
+                - button "Remover esta peça" [ref=e168] [cursor=pointer]:
+                  - img [ref=e169]
+                - button [ref=e172] [cursor=pointer]:
+                  - img [ref=e173]
+          - generic [ref=e176]:
+            - button "2 Peça 2 Unissex M — R$ 100,00" [ref=e177] [cursor=pointer]:
+              - generic [ref=e178]: "2"
+              - generic [ref=e179]: Peça 2
+              - generic [ref=e180]: Unissex M — R$ 100,00
+            - generic [ref=e181]:
+              - button "Remover esta peça" [ref=e182] [cursor=pointer]:
+                - img [ref=e183]
+              - button [ref=e186] [cursor=pointer]:
+                - img [ref=e187]
+          - generic [ref=e190]:
+            - button "3 Peça 3 Unissex M — R$ 100,00" [ref=e191] [cursor=pointer]:
+              - generic [ref=e192]: "3"
+              - generic [ref=e193]: Peça 3
+              - generic [ref=e194]: Unissex M — R$ 100,00
+            - generic [ref=e195]:
+              - button "Remover esta peça" [ref=e196] [cursor=pointer]:
+                - img [ref=e197]
+              - button [ref=e200] [cursor=pointer]:
+                - img [ref=e201]
+          - generic [ref=e204]:
+            - button "4 Peça 4 Unissex M — R$ 100,00" [ref=e205] [cursor=pointer]:
+              - generic [ref=e206]: "4"
+              - generic [ref=e207]: Peça 4
+              - generic [ref=e208]: Unissex M — R$ 100,00
+            - generic [ref=e209]:
+              - button "Remover esta peça" [ref=e210] [cursor=pointer]:
+                - img [ref=e211]
+              - button [ref=e214] [cursor=pointer]:
+                - img [ref=e215]
+          - generic [ref=e218]:
+            - button "5 Peça 5 Unissex M — R$ 100,00" [ref=e219] [cursor=pointer]:
+              - generic [ref=e220]: "5"
+              - generic [ref=e221]: Peça 5
+              - generic [ref=e222]: Unissex M — R$ 100,00
+            - generic [ref=e223]:
+              - button "Remover esta peça" [ref=e224] [cursor=pointer]:
+                - img [ref=e225]
+              - button [ref=e228] [cursor=pointer]:
+                - img [ref=e229]
+          - generic [ref=e232]:
+            - button "6 Peça 6 Unissex M — R$ 100,00" [ref=e233] [cursor=pointer]:
+              - generic [ref=e234]: "6"
+              - generic [ref=e235]: Peça 6
+              - generic [ref=e236]: Unissex M — R$ 100,00
+            - generic [ref=e237]:
+              - button "Remover esta peça" [ref=e238] [cursor=pointer]:
+                - img [ref=e239]
+              - button [ref=e242] [cursor=pointer]:
+                - img [ref=e243]
+          - generic [ref=e246]:
+            - button "7 Peça 7 Unissex M — R$ 100,00" [ref=e247] [cursor=pointer]:
+              - generic [ref=e248]: "7"
+              - generic [ref=e249]: Peça 7
+              - generic [ref=e250]: Unissex M — R$ 100,00
+            - generic [ref=e251]:
+              - button "Remover esta peça" [ref=e252] [cursor=pointer]:
+                - img [ref=e253]
+              - button [ref=e256] [cursor=pointer]:
+                - img [ref=e257]
+          - generic [ref=e260]:
+            - button "8 Peça 8 Unissex M — R$ 100,00" [ref=e261] [cursor=pointer]:
+              - generic [ref=e262]: "8"
+              - generic [ref=e263]: Peça 8
+              - generic [ref=e264]: Unissex M — R$ 100,00
+            - generic [ref=e265]:
+              - button "Remover esta peça" [ref=e266] [cursor=pointer]:
+                - img [ref=e267]
+              - button [ref=e270] [cursor=pointer]:
+                - img [ref=e271]
+          - generic [ref=e274]:
+            - button "9 Peça 9 Unissex M — R$ 100,00" [ref=e275] [cursor=pointer]:
+              - generic [ref=e276]: "9"
+              - generic [ref=e277]: Peça 9
+              - generic [ref=e278]: Unissex M — R$ 100,00
+            - generic [ref=e279]:
+              - button "Remover esta peça" [ref=e280] [cursor=pointer]:
+                - img [ref=e281]
+              - button [ref=e284] [cursor=pointer]:
+                - img [ref=e285]
+          - generic [ref=e288]:
+            - button "10 Peça 10 Unissex M — R$ 100,00" [ref=e289] [cursor=pointer]:
+              - generic [ref=e290]: "10"
+              - generic [ref=e291]: Peça 10
+              - generic [ref=e292]: Unissex M — R$ 100,00
+            - generic [ref=e293]:
+              - button "Remover esta peça" [ref=e294] [cursor=pointer]:
+                - img [ref=e295]
+              - button [ref=e298] [cursor=pointer]:
+                - img [ref=e299]
+          - generic [ref=e302]:
+            - button "11 Peça 11 Unissex M — R$ 100,00" [ref=e303] [cursor=pointer]:
+              - generic [ref=e304]: "11"
+              - generic [ref=e305]: Peça 11
+              - generic [ref=e306]: Unissex M — R$ 100,00
+            - generic [ref=e307]:
+              - button "Remover esta peça" [ref=e308] [cursor=pointer]:
+                - img [ref=e309]
+              - button [ref=e312] [cursor=pointer]:
+                - img [ref=e313]
+          - generic [ref=e316]:
+            - button "12 Peça 12 Unissex M — R$ 100,00" [ref=e317] [cursor=pointer]:
+              - generic [ref=e318]: "12"
+              - generic [ref=e319]: Peça 12
+              - generic [ref=e320]: Unissex M — R$ 100,00
+            - generic [ref=e321]:
+              - button "Remover esta peça" [ref=e322] [cursor=pointer]:
+                - img [ref=e323]
+              - button [ref=e326] [cursor=pointer]:
+                - img [ref=e327]
+          - generic [ref=e330]:
+            - button "13 Peça 13 Unissex M — R$ 100,00" [ref=e331] [cursor=pointer]:
+              - generic [ref=e332]: "13"
+              - generic [ref=e333]: Peça 13
+              - generic [ref=e334]: Unissex M — R$ 100,00
+            - generic [ref=e335]:
+              - button "Remover esta peça" [ref=e336] [cursor=pointer]:
+                - img [ref=e337]
+              - button [ref=e340] [cursor=pointer]:
+                - img [ref=e341]
+          - generic [ref=e344]:
+            - button "14 Peça 14 Unissex M — R$ 100,00" [ref=e345] [cursor=pointer]:
+              - generic [ref=e346]: "14"
+              - generic [ref=e347]: Peça 14
+              - generic [ref=e348]: Unissex M — R$ 100,00
+            - generic [ref=e349]:
+              - button "Remover esta peça" [ref=e350] [cursor=pointer]:
+                - img [ref=e351]
+              - button [ref=e354] [cursor=pointer]:
+                - img [ref=e355]
+          - generic [ref=e358]:
+            - button "15 Peça 15 Unissex M — R$ 100,00" [ref=e359] [cursor=pointer]:
+              - generic [ref=e360]: "15"
+              - generic [ref=e361]: Peça 15
+              - generic [ref=e362]: Unissex M — R$ 100,00
+            - generic [ref=e363]:
+              - button "Remover esta peça" [ref=e364] [cursor=pointer]:
+                - img [ref=e365]
+              - button [ref=e368] [cursor=pointer]:
+                - img [ref=e369]
+          - generic [ref=e372]:
+            - button "16 Peça 16 Unissex M — R$ 100,00" [ref=e373] [cursor=pointer]:
+              - generic [ref=e374]: "16"
+              - generic [ref=e375]: Peça 16
+              - generic [ref=e376]: Unissex M — R$ 100,00
+            - generic [ref=e377]:
+              - button "Remover esta peça" [ref=e378] [cursor=pointer]:
+                - img [ref=e379]
+              - button [ref=e382] [cursor=pointer]:
+                - img [ref=e383]
+          - generic [ref=e386]:
+            - button "17 Peça 17 Unissex M — R$ 100,00" [ref=e387] [cursor=pointer]:
+              - generic [ref=e388]: "17"
+              - generic [ref=e389]: Peça 17
+              - generic [ref=e390]: Unissex M — R$ 100,00
+            - generic [ref=e391]:
+              - button "Remover esta peça" [ref=e392] [cursor=pointer]:
+                - img [ref=e393]
+              - button [ref=e396] [cursor=pointer]:
+                - img [ref=e397]
+          - generic [ref=e400]:
+            - button "18 Peça 18 Unissex M — R$ 100,00" [ref=e401] [cursor=pointer]:
+              - generic [ref=e402]: "18"
+              - generic [ref=e403]: Peça 18
+              - generic [ref=e404]: Unissex M — R$ 100,00
+            - generic [ref=e405]:
+              - button "Remover esta peça" [ref=e406] [cursor=pointer]:
+                - img [ref=e407]
+              - button [ref=e410] [cursor=pointer]:
+                - img [ref=e411]
+          - generic [ref=e414]:
+            - button "19 Peça 19 Unissex M — R$ 100,00" [ref=e415] [cursor=pointer]:
+              - generic [ref=e416]: "19"
+              - generic [ref=e417]: Peça 19
+              - generic [ref=e418]: Unissex M — R$ 100,00
+            - generic [ref=e419]:
+              - button "Remover esta peça" [ref=e420] [cursor=pointer]:
+                - img [ref=e421]
+              - button [ref=e424] [cursor=pointer]:
+                - img [ref=e425]
+          - generic [ref=e428]:
+            - button "20 Peça 20 Unissex M — R$ 100,00" [ref=e429] [cursor=pointer]:
+              - generic [ref=e430]: "20"
+              - generic [ref=e431]: Peça 20
+              - generic [ref=e432]: Unissex M — R$ 100,00
+            - generic [ref=e433]:
+              - button "Remover esta peça" [ref=e434] [cursor=pointer]:
+                - img [ref=e435]
+              - button [ref=e438] [cursor=pointer]:
+                - img [ref=e439]
+          - generic [ref=e441]:
+            - generic [ref=e442]:
+              - generic [ref=e443]: "Modelo 2:"
+              - generic [ref=e444]: Camiseta / Baby Look
+              - generic [ref=e445]: 20 peças
+            - generic [ref=e446]:
+              - button "21 Peça 21 Unissex P — R$ 50,00" [ref=e447] [cursor=pointer]:
+                - generic [ref=e448]: "21"
+                - generic [ref=e449]: Peça 21
+                - generic [ref=e450]: Unissex P — R$ 50,00
+              - generic [ref=e451]:
+                - button "Remover esta peça" [ref=e452] [cursor=pointer]:
+                  - img [ref=e453]
+                - button [ref=e456] [cursor=pointer]:
+                  - img [ref=e457]
+          - generic [ref=e460]:
+            - button "22 Peça 22 Unissex P — R$ 50,00" [ref=e461] [cursor=pointer]:
+              - generic [ref=e462]: "22"
+              - generic [ref=e463]: Peça 22
+              - generic [ref=e464]: Unissex P — R$ 50,00
+            - generic [ref=e465]:
+              - button "Remover esta peça" [ref=e466] [cursor=pointer]:
+                - img [ref=e467]
+              - button [ref=e470] [cursor=pointer]:
+                - img [ref=e471]
+          - generic [ref=e474]:
+            - button "23 Peça 23 Unissex P — R$ 50,00" [ref=e475] [cursor=pointer]:
+              - generic [ref=e476]: "23"
+              - generic [ref=e477]: Peça 23
+              - generic [ref=e478]: Unissex P — R$ 50,00
+            - generic [ref=e479]:
+              - button "Remover esta peça" [ref=e480] [cursor=pointer]:
+                - img [ref=e481]
+              - button [ref=e484] [cursor=pointer]:
+                - img [ref=e485]
+          - generic [ref=e488]:
+            - button "24 Peça 24 Unissex P — R$ 50,00" [ref=e489] [cursor=pointer]:
+              - generic [ref=e490]: "24"
+              - generic [ref=e491]: Peça 24
+              - generic [ref=e492]: Unissex P — R$ 50,00
+            - generic [ref=e493]:
+              - button "Remover esta peça" [ref=e494] [cursor=pointer]:
+                - img [ref=e495]
+              - button [ref=e498] [cursor=pointer]:
+                - img [ref=e499]
+          - generic [ref=e502]:
+            - button "25 Peça 25 Unissex P — R$ 50,00" [ref=e503] [cursor=pointer]:
+              - generic [ref=e504]: "25"
+              - generic [ref=e505]: Peça 25
+              - generic [ref=e506]: Unissex P — R$ 50,00
+            - generic [ref=e507]:
+              - button "Remover esta peça" [ref=e508] [cursor=pointer]:
+                - img [ref=e509]
+              - button [ref=e512] [cursor=pointer]:
+                - img [ref=e513]
+          - generic [ref=e516]:
+            - button "26 Peça 26 Unissex P — R$ 50,00" [ref=e517] [cursor=pointer]:
+              - generic [ref=e518]: "26"
+              - generic [ref=e519]: Peça 26
+              - generic [ref=e520]: Unissex P — R$ 50,00
+            - generic [ref=e521]:
+              - button "Remover esta peça" [ref=e522] [cursor=pointer]:
+                - img [ref=e523]
+              - button [ref=e526] [cursor=pointer]:
+                - img [ref=e527]
+          - generic [ref=e530]:
+            - button "27 Peça 27 Unissex P — R$ 50,00" [ref=e531] [cursor=pointer]:
+              - generic [ref=e532]: "27"
+              - generic [ref=e533]: Peça 27
+              - generic [ref=e534]: Unissex P — R$ 50,00
+            - generic [ref=e535]:
+              - button "Remover esta peça" [ref=e536] [cursor=pointer]:
+                - img [ref=e537]
+              - button [ref=e540] [cursor=pointer]:
+                - img [ref=e541]
+          - generic [ref=e544]:
+            - button "28 Peça 28 Unissex P — R$ 50,00" [ref=e545] [cursor=pointer]:
+              - generic [ref=e546]: "28"
+              - generic [ref=e547]: Peça 28
+              - generic [ref=e548]: Unissex P — R$ 50,00
+            - generic [ref=e549]:
+              - button "Remover esta peça" [ref=e550] [cursor=pointer]:
+                - img [ref=e551]
+              - button [ref=e554] [cursor=pointer]:
+                - img [ref=e555]
+          - generic [ref=e558]:
+            - button "29 Peça 29 Unissex P — R$ 50,00" [ref=e559] [cursor=pointer]:
+              - generic [ref=e560]: "29"
+              - generic [ref=e561]: Peça 29
+              - generic [ref=e562]: Unissex P — R$ 50,00
+            - generic [ref=e563]:
+              - button "Remover esta peça" [ref=e564] [cursor=pointer]:
+                - img [ref=e565]
+              - button [ref=e568] [cursor=pointer]:
+                - img [ref=e569]
+          - generic [ref=e572]:
+            - button "30 Peça 30 Unissex P — R$ 50,00" [ref=e573] [cursor=pointer]:
+              - generic [ref=e574]: "30"
+              - generic [ref=e575]: Peça 30
+              - generic [ref=e576]: Unissex P — R$ 50,00
+            - generic [ref=e577]:
+              - button "Remover esta peça" [ref=e578] [cursor=pointer]:
+                - img [ref=e579]
+              - button [ref=e582] [cursor=pointer]:
+                - img [ref=e583]
+          - generic [ref=e586]:
+            - button "31 Peça 31 Unissex P — R$ 50,00" [ref=e587] [cursor=pointer]:
+              - generic [ref=e588]: "31"
+              - generic [ref=e589]: Peça 31
+              - generic [ref=e590]: Unissex P — R$ 50,00
+            - generic [ref=e591]:
+              - button "Remover esta peça" [ref=e592] [cursor=pointer]:
+                - img [ref=e593]
+              - button [ref=e596] [cursor=pointer]:
+                - img [ref=e597]
+          - generic [ref=e600]:
+            - button "32 Peça 32 Unissex P — R$ 50,00" [ref=e601] [cursor=pointer]:
+              - generic [ref=e602]: "32"
+              - generic [ref=e603]: Peça 32
+              - generic [ref=e604]: Unissex P — R$ 50,00
+            - generic [ref=e605]:
+              - button "Remover esta peça" [ref=e606] [cursor=pointer]:
+                - img [ref=e607]
+              - button [ref=e610] [cursor=pointer]:
+                - img [ref=e611]
+          - generic [ref=e614]:
+            - button "33 Peça 33 Unissex P — R$ 50,00" [ref=e615] [cursor=pointer]:
+              - generic [ref=e616]: "33"
+              - generic [ref=e617]: Peça 33
+              - generic [ref=e618]: Unissex P — R$ 50,00
+            - generic [ref=e619]:
+              - button "Remover esta peça" [ref=e620] [cursor=pointer]:
+                - img [ref=e621]
+              - button [ref=e624] [cursor=pointer]:
+                - img [ref=e625]
+          - generic [ref=e628]:
+            - button "34 Peça 34 Unissex P — R$ 50,00" [ref=e629] [cursor=pointer]:
+              - generic [ref=e630]: "34"
+              - generic [ref=e631]: Peça 34
+              - generic [ref=e632]: Unissex P — R$ 50,00
+            - generic [ref=e633]:
+              - button "Remover esta peça" [ref=e634] [cursor=pointer]:
+                - img [ref=e635]
+              - button [ref=e638] [cursor=pointer]:
+                - img [ref=e639]
+          - generic [ref=e642]:
+            - button "35 Peça 35 Unissex P — R$ 50,00" [ref=e643] [cursor=pointer]:
+              - generic [ref=e644]: "35"
+              - generic [ref=e645]: Peça 35
+              - generic [ref=e646]: Unissex P — R$ 50,00
+            - generic [ref=e647]:
+              - button "Remover esta peça" [ref=e648] [cursor=pointer]:
+                - img [ref=e649]
+              - button [ref=e652] [cursor=pointer]:
+                - img [ref=e653]
+          - generic [ref=e656]:
+            - button "36 Peça 36 Unissex P — R$ 50,00" [ref=e657] [cursor=pointer]:
+              - generic [ref=e658]: "36"
+              - generic [ref=e659]: Peça 36
+              - generic [ref=e660]: Unissex P — R$ 50,00
+            - generic [ref=e661]:
+              - button "Remover esta peça" [ref=e662] [cursor=pointer]:
+                - img [ref=e663]
+              - button [ref=e666] [cursor=pointer]:
+                - img [ref=e667]
+          - generic [ref=e670]:
+            - button "37 Peça 37 Unissex P — R$ 50,00" [ref=e671] [cursor=pointer]:
+              - generic [ref=e672]: "37"
+              - generic [ref=e673]: Peça 37
+              - generic [ref=e674]: Unissex P — R$ 50,00
+            - generic [ref=e675]:
+              - button "Remover esta peça" [ref=e676] [cursor=pointer]:
+                - img [ref=e677]
+              - button [ref=e680] [cursor=pointer]:
+                - img [ref=e681]
+          - generic [ref=e684]:
+            - button "38 Peça 38 Unissex P — R$ 50,00" [ref=e685] [cursor=pointer]:
+              - generic [ref=e686]: "38"
+              - generic [ref=e687]: Peça 38
+              - generic [ref=e688]: Unissex P — R$ 50,00
+            - generic [ref=e689]:
+              - button "Remover esta peça" [ref=e690] [cursor=pointer]:
+                - img [ref=e691]
+              - button [ref=e694] [cursor=pointer]:
+                - img [ref=e695]
+          - generic [ref=e698]:
+            - button "39 Peça 39 Unissex P — R$ 50,00" [ref=e699] [cursor=pointer]:
+              - generic [ref=e700]: "39"
+              - generic [ref=e701]: Peça 39
+              - generic [ref=e702]: Unissex P — R$ 50,00
+            - generic [ref=e703]:
+              - button "Remover esta peça" [ref=e704] [cursor=pointer]:
+                - img [ref=e705]
+              - button [ref=e708] [cursor=pointer]:
+                - img [ref=e709]
+          - generic [ref=e712]:
+            - button "40 Peça 40 Unissex P — R$ 50,00" [ref=e713] [cursor=pointer]:
+              - generic [ref=e714]: "40"
+              - generic [ref=e715]: Peça 40
+              - generic [ref=e716]: Unissex P — R$ 50,00
+            - generic [ref=e717]:
+              - button "Remover esta peça" [ref=e718] [cursor=pointer]:
+                - img [ref=e719]
+              - button [ref=e722] [cursor=pointer]:
+                - img [ref=e723]
+        - button "Adicionar peça" [ref=e726] [cursor=pointer]:
+          - img [ref=e727]
+          - text: Adicionar peça
+        - generic [ref=e728]:
+          - generic [ref=e729]: "Total: R$ 3.000,00"
+          - generic [ref=e730]:
+            - link "📋 Salvar Lista PDF" [ref=e731] [cursor=pointer]:
+              - /url: /formalizarpedido/lista-tamanhos/ESxP9zCzOYplrMRUek91/
+            - button "Salvar Tamanhos" [ref=e732] [cursor=pointer]
+            - button "Avançar → Arquivos" [ref=e733] [cursor=pointer]
+      - generic [ref=e735]:
+        - img [ref=e737]
+        - generic [ref=e740]:
+          - heading "Etapa 3 — Arquivos" [level=2] [ref=e741]
+          - paragraph [ref=e742]: Disponível após confirmar os tamanhos
+      - generic [ref=e744]:
+        - img [ref=e746]
+        - generic [ref=e749]:
+          - heading "Etapa 4 — Pagamento" [level=2] [ref=e750]
+          - paragraph [ref=e751]: Disponível após confirmar os arquivos
+  - alert [ref=e752]

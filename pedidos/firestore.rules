@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /pedidos/{pedidoId} {
+
+      // Leitura livre — todas as páginas do sistema precisam ler
+      allow read: if true;
+
+      // Criação livre — novo-pedido cria documentos
+      allow create: if true;
+
+      // Atualização permitida, mas clienteToken NUNCA pode ser alterado
+      // Isso impede que alguém de fora sequestre/substitua tokens de clientes
+      allow update: if request.resource.data.clienteToken == resource.data.clienteToken;
+
+      // Delete BLOQUEADO para sempre — nenhum dado some pelo app
+      allow delete: if false;
+    }
+  }
+}

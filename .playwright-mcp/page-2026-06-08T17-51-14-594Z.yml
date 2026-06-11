@@ -1,0 +1,140 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /b1aaa10d379f4cca/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e24]: 0.89%
+        - generic [ref=e25]: 454.07 MiB / 50 GiB
+      - generic [ref=e26]:
+        - generic [ref=e27]: Inodes
+        - generic [ref=e31]: 3.58%
+        - generic [ref=e32]: 21459 / 600000
+    - button "Logout" [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e35]:
+      - generic [ref=e36]: File Browser v2.63.2-h2
+      - generic [ref=e37]: Help
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - link "Home" [ref=e41] [cursor=pointer]:
+          - /url: /b1aaa10d379f4cca/files
+          - generic [ref=e42]: home
+        - generic [ref=e43]:
+          - generic [ref=e45]: keyboard_arrow_right
+          - link "public_html" [ref=e46] [cursor=pointer]:
+            - /url: /b1aaa10d379f4cca/files/public_html/
+        - generic [ref=e47]:
+          - generic [ref=e49]: keyboard_arrow_right
+          - link "formalizarpedido" [ref=e50] [cursor=pointer]:
+            - /url: /b1aaa10d379f4cca/files/public_html/formalizarpedido/
+        - generic [ref=e51]:
+          - generic [ref=e53]: keyboard_arrow_right
+          - link ".htaccess" [ref=e54] [cursor=pointer]:
+            - /url: /b1aaa10d379f4cca/files/public_html/formalizarpedido/.htaccess/
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - button "Close" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: close
+          - generic [ref=e59]: .htaccess
+          - button "Increase font size" [ref=e60] [cursor=pointer]:
+            - generic [ref=e61]: add
+          - generic [ref=e62]: 14px
+          - button "Decrease font size" [ref=e63] [cursor=pointer]:
+            - generic [ref=e64]: remove
+          - button "Save" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: save
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic "Home" [ref=e69]:
+              - generic [ref=e70]: home
+            - generic [ref=e71]:
+              - generic [ref=e73]: keyboard_arrow_right
+              - generic [ref=e74]: public_html
+            - generic [ref=e75]:
+              - generic [ref=e77]: keyboard_arrow_right
+              - generic [ref=e78]: formalizarpedido
+            - generic [ref=e79]:
+              - generic [ref=e81]: keyboard_arrow_right
+              - generic [ref=e82]: .htaccess
+          - generic [ref=e83]:
+            - button "content_copy" [disabled] [ref=e84]:
+              - generic [ref=e86]: content_copy
+            - button "content_cut" [disabled] [ref=e87]:
+              - generic [ref=e89]: content_cut
+            - button "content_paste" [ref=e90] [cursor=pointer]:
+              - generic [ref=e92]: content_paste
+            - button "more_vert" [ref=e93] [cursor=pointer]:
+              - generic [ref=e95]: more_vert
+        - generic [ref=e96]:
+          - textbox "Cursor at row 1" [active] [ref=e97]: Options -MultiViews
+          - generic [ref=e99]:
+            - generic [ref=e100]: "1"
+            - generic [ref=e101]: "2"
+            - generic [ref=e102]: "3"
+            - generic [ref=e103]: "4"
+            - generic [ref=e104]: "5"
+            - generic [ref=e105]: "6"
+            - generic [ref=e106]: "7"
+            - generic [ref=e107]: "8"
+            - generic [ref=e108]: "9"
+            - generic [ref=e109]: "10"
+            - generic [ref=e110]: "11"
+            - generic [ref=e111]: "12"
+            - generic [ref=e112]: "13"
+            - generic [ref=e113]: "14"
+            - generic [ref=e114]: "15"
+            - generic [ref=e115]: "16"
+            - generic [ref=e116]: "17"
+            - generic [ref=e117]: "18"
+            - generic [ref=e118]: "19"
+          - generic [ref=e120]:
+            - generic:
+              - generic:
+                - generic: Options -MultiViews
+              - generic:
+                - generic: RewriteEngine On
+              - generic:
+                - generic: RewriteBase /formalizarpedido/
+              - generic:
+                - generic: "# Serve arquivos e diretorios existentes normalmente"
+              - generic:
+                - generic: "RewriteCond %{REQUEST_FILENAME} -f [OR]"
+              - generic:
+                - generic: "RewriteCond %{REQUEST_FILENAME} -d"
+              - generic:
+                - generic: RewriteRule ^ - [L]
+              - generic:
+                - generic: "# Rotas dinamicas RSC payload (index.txt)"
+              - generic:
+                - generic: RewriteRule ^(pedido|arquivos|cliente-pdf|confirmacao|lista-tamanhos|pedido
+                - generic: "-completo)/[^/]+/index\\.txt$ $1/__placeholder__/index.txt [L]"
+              - generic:
+                - generic: RewriteRule ^tamanhos/[^/]+/index\.txt$ tamanhos/__placeholder__/index.txt [L]
+              - generic:
+                - generic: "# Rotas dinamicas HTML"
+              - generic:
+                - generic: RewriteRule ^(pedido|arquivos|cliente-pdf|confirmacao|lista-tamanhos|pedido
+                - generic: "-completo)/[^/]+/?$ $1/__placeholder__/index.html [L]"
+              - generic:
+                - generic: RewriteRule ^tamanhos/[^/]+/?$ tamanhos/__placeholder__/index.html [L]
+              - generic:
+                - generic: ErrorDocument 404 /formalizarpedido/404.html

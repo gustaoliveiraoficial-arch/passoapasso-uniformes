@@ -1,0 +1,190 @@
+- generic [ref=e8]:
+  - navigation [ref=e9]:
+    - button "person u723199063" [ref=e10] [cursor=pointer]:
+      - generic [ref=e11]: person
+      - text: u723199063
+    - button "My files" [ref=e12] [cursor=pointer]:
+      - generic [ref=e13]: folder
+      - text: My files
+    - generic [ref=e14]:
+      - button "New folder" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e20] [cursor=pointer]:
+      - /url: /aa3b7d5732db45e0/files/.trash
+      - generic [ref=e21]: delete
+      - text: Trash bin
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Space
+        - generic [ref=e28]: 0.87%
+        - generic [ref=e29]: 447.98 MiB / 50 GiB
+      - generic [ref=e30]:
+        - generic [ref=e31]: Inodes
+        - generic [ref=e35]: 3.54%
+        - generic [ref=e36]: 21253 / 600000
+    - button "Logout" [ref=e37] [cursor=pointer]:
+      - generic [ref=e38]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e39]:
+      - generic [ref=e40]: File Browser v2.63.2-h2
+      - generic [ref=e41]: Help
+  - main [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - link "Home" [ref=e45] [cursor=pointer]:
+          - /url: /aa3b7d5732db45e0/files
+          - generic [ref=e46]: home
+        - generic [ref=e47]:
+          - generic [ref=e49]: keyboard_arrow_right
+          - link "public_html" [ref=e50] [cursor=pointer]:
+            - /url: /aa3b7d5732db45e0/files/public_html/
+        - generic [ref=e51]:
+          - generic [ref=e53]: keyboard_arrow_right
+          - link "linkdabio" [ref=e54] [cursor=pointer]:
+            - /url: /aa3b7d5732db45e0/files/public_html/linkdabio/
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - img [ref=e57]
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: search
+              - textbox "Search..." [ref=e61]
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: Type to search...
+              - generic [ref=e64]:
+                - heading "Types" [level=3] [ref=e65]
+                - generic [ref=e66]:
+                  - button "Images" [ref=e67] [cursor=pointer]:
+                    - generic [ref=e68]: insert_photo
+                    - paragraph [ref=e69]: Images
+                  - button "Music" [ref=e70] [cursor=pointer]:
+                    - generic [ref=e71]: volume_up
+                    - paragraph [ref=e72]: Music
+                  - button "Video" [ref=e73] [cursor=pointer]:
+                    - generic [ref=e74]: movie
+                    - paragraph [ref=e75]: Video
+                  - button "PDF" [ref=e76] [cursor=pointer]:
+                    - generic [ref=e77]: picture_as_pdf
+                    - paragraph [ref=e78]: PDF
+          - generic [ref=e79]:
+            - button "Switch view" [ref=e80] [cursor=pointer]:
+              - generic [ref=e81]: view_module
+            - button "Download" [ref=e82] [cursor=pointer]:
+              - generic [ref=e83]: file_download
+            - button "Upload" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]: file_upload
+            - button "Calculate directory sizes" [ref=e86] [cursor=pointer]:
+              - generic [ref=e87]: assessment
+            - button "Info" [ref=e88] [cursor=pointer]:
+              - generic [ref=e89]: info
+            - button "Select multiple" [ref=e90] [cursor=pointer]:
+              - generic [ref=e91]: check_circle
+        - generic [ref=e92]:
+          - generic [ref=e95] [cursor=pointer]:
+            - button "Sort by name" [ref=e96]:
+              - text: Name
+              - generic [ref=e97]: arrow_upward
+            - button "Sort by size" [ref=e98]:
+              - text: Size
+              - generic [ref=e99]: arrow_upward
+            - button "Sort by last modified" [ref=e100]:
+              - text: Last modified
+              - generic [ref=e101]: arrow_upward
+          - generic [ref=e102]:
+            - button "conatiner04" [ref=e103] [cursor=pointer]:
+              - generic [ref=e105]: folder
+              - generic [ref=e106]:
+                - paragraph [ref=e107]: conatiner04
+                - paragraph [ref=e108]: "-"
+                - paragraph [ref=e109]:
+                  - time [ref=e110]: a month ago
+                - paragraph [ref=e111]: drwxr-xr-x
+            - button "container final" [ref=e112] [cursor=pointer]:
+              - generic [ref=e114]: folder
+              - generic [ref=e115]:
+                - paragraph [ref=e116]: container final
+                - paragraph [ref=e117]: "-"
+                - paragraph [ref=e118]:
+                  - time [ref=e119]: a month ago
+                - paragraph [ref=e120]: drwxr-xr-x
+            - button "container01" [ref=e121] [cursor=pointer]:
+              - generic [ref=e123]: folder
+              - generic [ref=e124]:
+                - paragraph [ref=e125]: container01
+                - paragraph [ref=e126]: "-"
+                - paragraph [ref=e127]:
+                  - time [ref=e128]: a month ago
+                - paragraph [ref=e129]: drwxr-xr-x
+            - button "container02" [ref=e130] [cursor=pointer]:
+              - generic [ref=e132]: folder
+              - generic [ref=e133]:
+                - paragraph [ref=e134]: container02
+                - paragraph [ref=e135]: "-"
+                - paragraph [ref=e136]:
+                  - time [ref=e137]: a month ago
+                - paragraph [ref=e138]: drwxr-xr-x
+            - button "container03" [ref=e139] [cursor=pointer]:
+              - generic [ref=e141]: folder
+              - generic [ref=e142]:
+                - paragraph [ref=e143]: container03
+                - paragraph [ref=e144]: "-"
+                - paragraph [ref=e145]:
+                  - time [ref=e146]: a month ago
+                - paragraph [ref=e147]: drwxr-xr-x
+          - generic [ref=e148]:
+            - button "black-tile-texture-with-white-seams-2022-12-16-21-46-44-utc.jpg" [ref=e149] [cursor=pointer]:
+              - img [ref=e151]
+              - generic [ref=e152]:
+                - paragraph [ref=e153]: black-tile-texture-with-white-seams-2022-12-16-21-46-44-utc.jpg
+                - paragraph [ref=e154]: 6.92 MiB
+                - paragraph [ref=e155]:
+                  - time [ref=e156]: a month ago
+                - paragraph [ref=e157]: "-rw-r--r--"
+            - button "images (2).jpg" [ref=e158] [cursor=pointer]:
+              - img [ref=e160]
+              - generic [ref=e161]:
+                - paragraph [ref=e162]: images (2).jpg
+                - paragraph [ref=e163]: 11.02 KiB
+                - paragraph [ref=e164]:
+                  - time [ref=e165]: a month ago
+                - paragraph [ref=e166]: "-rw-r--r--"
+            - button "index.html" [ref=e167] [cursor=pointer]:
+              - generic [ref=e169]: code
+              - generic [ref=e170]:
+                - paragraph [ref=e171]: index.html
+                - paragraph [ref=e172]: 31.53 KiB
+                - paragraph [ref=e173]:
+                  - time [ref=e174]: 3 minutes ago
+                - paragraph [ref=e175]: "-rw-r--r--"
+            - button "linkdabio-novo.html" [ref=e176] [cursor=pointer]:
+              - generic [ref=e178]: code
+              - generic [ref=e179]:
+                - paragraph [ref=e180]: linkdabio-novo.html
+                - paragraph [ref=e181]: 32.71 KiB
+                - paragraph [ref=e182]:
+                  - time [ref=e183]: a few seconds ago
+                - paragraph [ref=e184]: "-rw-r--r--"
+            - button "linkdabio.zip" [ref=e185] [cursor=pointer]:
+              - generic [ref=e187]: folder_zip
+              - generic [ref=e188]:
+                - paragraph [ref=e189]: linkdabio.zip
+                - paragraph [ref=e190]: 41.44 MiB
+                - paragraph [ref=e191]:
+                  - time [ref=e192]: a month ago
+                - paragraph [ref=e193]: "-rw-r--r--"
+            - button "logo pap sem fundo.png" [ref=e194] [cursor=pointer]:
+              - img [ref=e196]
+              - generic [ref=e197]:
+                - paragraph [ref=e198]: logo pap sem fundo.png
+                - paragraph [ref=e199]: 20.71 KiB
+                - paragraph [ref=e200]:
+                  - time [ref=e201]: a month ago
+                - paragraph [ref=e202]: "-rw-r--r--"
+          - generic [ref=e203]:
+            - paragraph [ref=e204]: Multiple selection enabled
+            - button "Clear" [ref=e205] [cursor=pointer]:
+              - generic [ref=e206]: clear

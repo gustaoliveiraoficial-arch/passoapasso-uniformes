@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 🏆 Pódio de Vendas
+      - paragraph [ref=e6]: Entre na sua conta
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Email
+        - textbox "seu@email.com" [ref=e10]
+      - generic [ref=e11]:
+        - generic [ref=e12]: Senha
+        - textbox "••••••••" [ref=e13]
+      - button "Entrar" [ref=e14] [cursor=pointer]
+      - paragraph [ref=e15]:
+        - text: Não tem conta?
+        - link "Criar grátis" [ref=e16] [cursor=pointer]:
+          - /url: /register
+  - button "Open Next.js Dev Tools" [ref=e22] [cursor=pointer]:
+    - img [ref=e23]

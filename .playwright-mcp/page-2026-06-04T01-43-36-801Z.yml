@@ -1,0 +1,122 @@
+- generic [ref=e1]:
+  - main [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - textbox [ref=e13]: Checkout A
+            - generic [ref=e14]:
+              - img [ref=e16] [cursor=pointer]
+              - img [ref=e19] [cursor=pointer]
+          - generic [ref=e21]:
+            - generic [ref=e23]:
+              - img [ref=e24]
+              - text: Existem alterações não salvas
+            - button "Salvar checkout" [ref=e26] [cursor=pointer]
+            - button "Pré-visualizar" [ref=e27] [cursor=pointer]:
+              - text: Pré-visualizar
+              - img [ref=e28]
+        - generic [ref=e32]:
+          - generic [ref=e52]:
+            - generic [ref=e296]:
+              - img [ref=e298] [cursor=pointer]
+              - img [ref=e301] [cursor=pointer]
+              - img [ref=e304] [cursor=pointer]
+            - generic [ref=e287]:
+              - generic [ref=e290]: 14:58
+              - img [ref=e291]
+              - generic [active] [ref=e293]: Oferta por tempo limitado
+          - generic [ref=e55]:
+            - generic [ref=e70]: Pódio de Vendas
+            - generic [ref=e78]: Arraste componentes aqui
+      - dialog "Linha" [ref=e195]:
+        - generic [ref=e197]:
+          - generic [ref=e199]:
+            - heading "Cronômetro" [level=2] [ref=e306]
+            - generic [ref=e201]:
+              - button [ref=e202] [cursor=pointer]:
+                - img [ref=e203]
+              - button [ref=e205] [cursor=pointer]:
+                - img [ref=e206]
+              - button "Close panel" [ref=e208] [cursor=pointer]:
+                - generic [ref=e209]: Close panel
+                - img [ref=e210]
+          - generic [ref=e307]:
+            - generic [ref=e309]:
+              - generic [ref=e310]: Tipo
+              - combobox [ref=e311]:
+                - option "Tempo em minutos" [selected]
+                - option "Data final"
+            - generic [ref=e312]:
+              - generic [ref=e313]:
+                - generic [ref=e314]: Background
+                - button [ref=e318] [cursor=pointer]
+              - generic [ref=e319]:
+                - generic [ref=e320]: Texto
+                - button [ref=e324] [cursor=pointer]
+            - generic [ref=e325]:
+              - generic [ref=e326]: Tempo
+              - generic [ref=e327]:
+                - textbox "HH:mm:ss" [ref=e328]: 00:15:00
+                - generic [ref=e330] [cursor=pointer]: ×
+            - generic [ref=e332]:
+              - generic [ref=e333]: Texto contagem ativa
+              - textbox "Texto contagem ativa" [ref=e334]: Oferta por tempo limitado
+            - generic [ref=e336]:
+              - generic [ref=e337]: Texto contagem finalizada
+              - textbox "Texto contagem finalizada" [ref=e338]: O tempo acabou!
+            - generic [ref=e340]:
+              - checkbox [ref=e341] [cursor=pointer]
+              - generic [ref=e343] [cursor=pointer]: Fixar no topo
+      - generic [ref=e82]:
+        - navigation "Tabs" [ref=e85]:
+          - generic [ref=e86] [cursor=pointer]: Componentes
+          - generic [ref=e88] [cursor=pointer]: Linhas
+          - generic [ref=e90] [cursor=pointer]: Configurações
+        - generic [ref=e92]:
+          - generic [ref=e94]: Componentes
+          - generic [ref=e95]:
+            - generic [ref=e97] [cursor=pointer]:
+              - img [ref=e98]
+              - generic [ref=e100]: Texto
+            - generic [ref=e102] [cursor=pointer]:
+              - img [ref=e103]
+              - generic [ref=e105]: Imagem
+            - generic [ref=e107] [cursor=pointer]:
+              - img [ref=e108]
+              - generic [ref=e110]: Vantagens
+            - generic [ref=e112] [cursor=pointer]:
+              - img [ref=e113]
+              - generic [ref=e115]: Selo
+            - generic [ref=e117] [cursor=pointer]:
+              - img [ref=e118]
+              - generic [ref=e120]: Header
+            - generic [ref=e122] [cursor=pointer]:
+              - img [ref=e123]
+              - generic [ref=e126]: Lista
+            - generic [ref=e128] [cursor=pointer]:
+              - img [ref=e129]
+              - generic [ref=e131]: Cronômetro
+            - generic [ref=e133] [cursor=pointer]:
+              - img [ref=e134]
+              - generic [ref=e136]: Depoimento
+            - generic [ref=e138] [cursor=pointer]:
+              - img [ref=e139]
+              - generic [ref=e141]: Vídeo
+            - generic [ref=e143] [cursor=pointer]:
+              - img "Logo Facebook" [ref=e144]
+              - generic [ref=e146]: Facebook
+          - generic [ref=e147]:
+            - generic [ref=e148]: Componentes extra
+            - generic [ref=e150]:
+              - generic [ref=e151] [cursor=pointer]:
+                - generic [ref=e152]:
+                  - img [ref=e154]
+                  - generic [ref=e157]: Exit Popup
+                - checkbox [ref=e160]
+              - generic [ref=e162] [cursor=pointer]:
+                - generic [ref=e163]:
+                  - img [ref=e165]
+                  - generic [ref=e167]: Chat
+                - checkbox [ref=e170]
+  - img

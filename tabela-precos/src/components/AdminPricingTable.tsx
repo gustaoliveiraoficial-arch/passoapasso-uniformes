@@ -222,22 +222,22 @@ export function AdminPricingTable({ category, onChange, onDelete }: AdminPricing
 
   return (
     <div className="animate-fade-in mb-12">
-      {/* Título da categoria */}
+      {/* Título do modelo */}
       <div className="admin-section-header">
         <div className="flex-1">
-          <div className="admin-label">Título da categoria</div>
+          <div className="admin-label">Título do modelo</div>
           <input
             value={title}
             onChange={e => { setTitle(e.target.value); propagate(items, description, e.target.value); }}
             className="admin-cat-title-input"
-            placeholder="Título da categoria"
+            placeholder="Título do modelo"
           />
         </div>
         {onDelete && (
           <button
-            onClick={() => { if (confirm(`Remover a categoria "${title}"?`)) onDelete(); }}
+            onClick={() => { if (confirm(`Remover o modelo "${title}"?`)) onDelete(); }}
             className="admin-delete-row-btn"
-            title="Excluir categoria"
+            title="Excluir modelo"
           >
             <Trash2 size={16} />
           </button>
@@ -246,7 +246,7 @@ export function AdminPricingTable({ category, onChange, onDelete }: AdminPricing
 
       {/* Descrição */}
       <div className="mb-4">
-        <div className="admin-label">Descrição da categoria</div>
+        <div className="admin-label">Descrição do modelo</div>
         <textarea
           value={description}
           onChange={e => { setDescription(e.target.value); propagate(items, e.target.value); }}
@@ -264,7 +264,7 @@ export function AdminPricingTable({ category, onChange, onDelete }: AdminPricing
               <th style={{ minWidth: 220 }}>
                 <div className="flex items-center gap-2">
                   <GripVertical size={14} className="opacity-40" />
-                  Modelo / Tecido
+                  Material
                 </div>
               </th>
               {allTiers.map(qty => (
@@ -344,7 +344,7 @@ export function AdminPricingTable({ category, onChange, onDelete }: AdminPricing
 
       <button onClick={addItem} className="admin-add-item-btn">
         <Plus size={16} />
-        Adicionar produto nesta categoria
+        Adicionar produto neste modelo
       </button>
 
       {/* Modal de edição individual */}

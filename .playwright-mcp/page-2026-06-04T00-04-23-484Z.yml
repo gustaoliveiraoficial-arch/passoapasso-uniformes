@@ -1,0 +1,54 @@
+- main [ref=e2]:
+  - status [ref=e4]
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic:
+          - paragraph
+      - heading "Entrar" [level=2] [ref=e11]:
+        - generic: Entrar
+      - paragraph [ref=e13]:
+        - generic: Entre com senha para continuar sua jornada
+      - generic [ref=e15]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - button "Entrar com Google" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+              - text: Entrar com Google
+            - button "Entrar com Apple" [ref=e25] [cursor=pointer]:
+              - img [ref=e26]
+              - text: Entrar com Apple
+          - generic [ref=e32]: ou
+        - generic [ref=e34]:
+          - generic [ref=e36]:
+            - generic [ref=e38]: Email
+            - textbox "Email" [ref=e40]:
+              - /placeholder: Digite seu e-mail ou usuário
+          - generic [ref=e42]:
+            - generic [ref=e44]: Senha
+            - generic [ref=e45]:
+              - generic:
+                - textbox "Senha" [ref=e46]:
+                  - /placeholder: Sua senha
+                - button [ref=e48] [cursor=pointer]:
+                  - img [ref=e49]
+          - link "Esqueci minha senha" [ref=e52] [cursor=pointer]:
+            - /url: javascript:void(0)
+          - generic [ref=e53]:
+            - button "Entrar" [ref=e54] [cursor=pointer]
+            - generic [ref=e55]:
+              - generic [ref=e56]: Não tem uma conta?
+              - link "Criar conta" [ref=e57] [cursor=pointer]:
+                - /url: /signup?service=https%3A%2F%2Fsso.hotmart.com%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D8cef361b-94f8-4679-bd92-9d1cb496452d%26scope%3Dopenid%2Bprofile%2Bauthorities%2Bemail%2Buser%2Baddress%26redirect_uri%3Dhttps%253A%252F%252Fapp.hotmart.com%252Fauth%252Flogin%253Frealm%253Dhotmart%2526branding_id%253Dbw%26response_type%3Dcode%26response_mode%3Dquery%26state%3D7bd9803656854e45a2e757f8e3fd0c3e%26client_name%3DCasOAuthClient
+            - generic [ref=e58]:
+              - paragraph [ref=e59]: Powered by
+              - img "Powered by Hotmart" [ref=e60]
+    - generic [ref=e61]:
+      - link "Suporte" [ref=e62] [cursor=pointer]:
+        - /url: https://help.hotmart.com/pt-br/article/39413024793613/
+      - text: —
+      - link "Termos de Uso" [ref=e63] [cursor=pointer]:
+        - /url: https://hotmart.com/en/legal/terms-of-use
+      - text: —
+      - link "Política de Privacidade" [ref=e64] [cursor=pointer]:
+        - /url: https://hotmart.com/en/legal/data-privacy-policy

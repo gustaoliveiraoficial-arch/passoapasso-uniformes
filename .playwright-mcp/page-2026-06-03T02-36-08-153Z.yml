@@ -1,0 +1,15 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e95]
+  - generic [ref=e97]:
+    - generic [ref=e98]: 🏆 Pódio de Vendas
+    - generic [ref=e116]:
+      - generic [ref=e117]: 📧
+      - heading "Confirme seu email" [level=2] [ref=e118]
+      - paragraph [ref=e119]: "Enviamos um link de confirmação para:"
+      - generic [ref=e120]: gustaoliveiraoficial@gmail.com
+      - paragraph [ref=e121]: Clique no link do email para ativar sua conta e configurar seu pódio de vendas. Verifique também a pasta de spam.
+      - generic [ref=e122]: 💡 Após confirmar o email, você será redirecionado automaticamente para configurar seu workspace.
+      - paragraph [ref=e123]:
+        - text: Já tem conta?
+        - link "Entrar" [ref=e124] [cursor=pointer]:
+          - /url: /login

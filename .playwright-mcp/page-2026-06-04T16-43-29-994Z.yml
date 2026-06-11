@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e4]:
+    - generic [ref=e6]: 🏆 Pódio de Vendas
+    - generic [ref=e7]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: ✓
+        - generic [ref=e11]: Workspace
+      - generic [ref=e14]:
+        - generic [ref=e15]: ✓
+        - generic [ref=e16]: Time
+      - generic [ref=e19]:
+        - generic [ref=e20]: "3"
+        - generic [ref=e21]: Metas
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - heading "Defina as metas" [level=2] [ref=e50]
+        - paragraph [ref=e51]: Opcionais — você pode configurar depois.
+      - generic [ref=e52]:
+        - generic [ref=e53]: Meta do time (mês) — R$
+        - spinbutton [ref=e54]
+      - generic [ref=e55]:
+        - generic [ref=e56]: Mínimo para girar a roleta — R$
+        - spinbutton [ref=e57]
+      - generic [ref=e58]:
+        - button "Voltar" [ref=e59] [cursor=pointer]
+        - button "🏆 Criar meu pódio!" [ref=e60] [cursor=pointer]

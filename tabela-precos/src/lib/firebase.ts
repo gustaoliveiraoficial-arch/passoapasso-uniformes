@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged, type User } from 'firebase/auth';
 import { pricingData as defaultPricingData, extraData as defaultExtraData } from '../data/pricingData';
 import type { Category } from '../data/pricingData';
 
@@ -14,6 +15,19 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const auth = getAuth(app);
+
+export async function signInAdmin(password: string): Promise<void> {
+  await signInWithEmailAndPassword(auth, 'admin@passoapassouniformes.com', password);
+}
+
+export async function signOutAdmin(): Promise<void> {
+  await signOut(auth);
+}
+
+export function onAdminAuthChange(callback: (user: User | null) => void) {
+  return onAuthStateChanged(auth, callback);
+}
 
 const DOC_REF = doc(db, 'tabela', 'pricing');
 

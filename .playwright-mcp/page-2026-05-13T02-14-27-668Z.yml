@@ -1,0 +1,45 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img "Passo a Passo Uniformes" [ref=e6]
+        - generic [ref=e7]:
+          - heading "Passo a Passo Uniformes" [level=1] [ref=e8]
+          - paragraph [ref=e9]: Sistema de Pedidos
+      - link "Novo Pedido" [ref=e10] [cursor=pointer]:
+        - /url: /formalizarpedido/novo-pedido/
+        - img [ref=e11]
+        - text: Novo Pedido
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - img [ref=e16]
+        - textbox "Buscar por cliente, pedido ou vendedor..." [ref=e19]
+      - combobox [ref=e20]:
+        - option "Todos os status" [selected]
+        - option "1. Dados"
+        - option "2. Tamanhos"
+        - option "3. Arquivos"
+        - option "4. Pagamento"
+        - option "5. Confirmação"
+      - button "Atualizar" [ref=e21]:
+        - img [ref=e22]
+        - text: Atualizar
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: "0"
+        - generic [ref=e30]: 1. Dados
+      - generic [ref=e31]:
+        - generic [ref=e32]: "0"
+        - generic [ref=e33]: 2. Tamanhos
+      - generic [ref=e34]:
+        - generic [ref=e35]: "0"
+        - generic [ref=e36]: 3. Arquivos
+      - generic [ref=e37]:
+        - generic [ref=e38]: "0"
+        - generic [ref=e39]: 4. Pagamento
+      - generic [ref=e40]:
+        - generic [ref=e41]: "0"
+        - generic [ref=e42]: 5. Confirmação
+    - generic [ref=e44]: Carregando pedidos...
+    - paragraph [ref=e45]: 0 pedido(s) exibido(s)

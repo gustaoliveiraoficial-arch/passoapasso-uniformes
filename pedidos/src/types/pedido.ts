@@ -1,10 +1,25 @@
 export type ClienteType = 'empresa' | 'pessoa_fisica'
 
-export type StatusPedido = 'dados' | 'tamanhos' | 'arquivos' | 'pagamento' | 'confirmacao'
+export type StatusPedido = 'dados' | 'tamanhos' | 'arquivos' | 'pagamento' | 'confirmacao' | 'formalizado' | 'retirada'
 
-export type CategoriaSize = 'unissex' | 'babylook' | 'infantil'
+export type StatusProducao = 'em_producao' | 'em_atraso' | 'pronto'
+
+export type CategoriaSize = 'unissex' | 'babylook' | 'feminino' | 'masculino' | 'infantil'
 
 export type TipoEstampa = 'serigrafia' | 'dtf' | 'plastsol' | 'alto_relevo' | 'sublimacao' | 'bordado'
+
+// Categorias que suportam babylook/unissex — demais usam feminino/masculino
+export const CATEGORIAS_CAMISETA = [
+  'Camiseta / Baby Look',
+  'Camisetas Polos',
+  'Blusinha Manga Bufante',
+  'Camiseta Manga Longa',
+  'Regatas e Cropped',
+  'Fitness',
+  'Sublimados',
+  'Kit Futebol',
+  'Kit FTV',
+]
 
 export interface DetalhesPeca {
   corpo: boolean
@@ -29,11 +44,14 @@ export interface PieceEntry {
   categoria: CategoriaSize
   tamanho: string
   precoUnitario: number // calculado com base na categoria/tamanho
+  infoExtra?: string    // observação extra da peça (ex: personalização especial)
+  ajustePreco?: number  // acréscimo (+) ou desconto (−) individual em R$
 }
 
 export interface ClienteEmpresa {
   razaoSocial: string
   cnpj: string
+  inscricaoEstadual?: string
   endereco: string
   cidade: string
   estado: string
@@ -54,6 +72,37 @@ export interface ClientePF {
   email: string
 }
 
+export interface EstampaQuadro {
+  id: string
+  posicao: string
+  tiposEstampa: string[]
+  imagem: string    // URL Cloudinary
+  descricaoCores: string
+}
+
+// Cada modelo = 1 folha A4 de produção
+export interface ModeloPedido {
+  id: string
+  modelo: string
+  material: string
+  cor: string
+  corPersonalizada: string
+  fornecedor: string
+  detalhes: DetalhesPeca
+  tiposEstampa: TipoEstampa[]
+  precoUnitario: number
+  quantidadeTotal: number
+  referenciaUnissex: string
+  referenciaBabylook: string
+  referenciaInfantil: string
+  tipoReferencia?: 'babylook_unissex' | 'masculino_feminino'
+  mensagemMockup?: string
+  pecas: PieceEntry[]
+  layoutImages: string[]
+  vetoresFiles: string[]
+  estampaQuadros?: EstampaQuadro[]
+}
+
 export interface Pedido {
   id: string
   numeroPedido: string
@@ -66,7 +115,7 @@ export interface Pedido {
   dataPedido: string // ISO string
   dataEntregaPrevista: string // ISO string
 
-  // Produto
+  // Produto legado (mantido para pedidos existentes e compatibilidade)
   modelo: string
   material: string
   cor: string
@@ -82,24 +131,29 @@ export interface Pedido {
   referenciaBabylook: string
   referenciaInfantil: string
 
+  // Multi-modelos — cada item representa 1 folha A4 de produção
+  modelos?: ModeloPedido[]
+
+  // Negociação
+  valorNegociacao?: number
+  descricaoNegociacao?: string
+
   // Vendedor
   nomeVendedor: string
 
-  // Tamanhos — um por peça
+  // Tamanhos legado — um por peça
   pecas: PieceEntry[]
 
-  // Arquivos (URLs do Cloudinary)
+  // Arquivos legado (URLs do Cloudinary)
   layoutImages: string[]
   vetoresFiles: string[]
+  artesCliente: string[]
+  rascunhoVendedor: string[]
 
-  // Imagens de referência adicionadas pelo vendedor na etapa "dados"
-  artesCliente: string[]      // artes/estampas enviadas pelo cliente
-  rascunhoVendedor: string[]  // mockup/rascunho inicial feito pelo vendedor
-
-  // Mensagem do vendedor para o arte-finalista
+  // Mensagem do vendedor para o arte-finalista (legado)
   mensagemMockup?: string
 
-  // Quadros de estampa preenchidos pelo arte-finalista
+  // Quadros de estampa (legado)
   estampaQuadros?: EstampaQuadro[]
 
   // Pagamento
@@ -108,6 +162,24 @@ export interface Pedido {
 
   // Token para link do cliente (tamanhos)
   clienteToken: string
+
+  // Formalização
+  numeroPedidoSistema?: string
+  termosEnviados?: boolean
+
+  // Retirada
+  dataRetirada?: string
+  comprovanteRetirada?: string[]
+  observacaoRetirada?: string
+
+  // Observação interna do pedido
+  observacao?: string
+
+  // Controle de Produção
+  statusProducao?: StatusProducao
+  dataEntradaProducao?: string  // ISO — quando entrou em "em_producao", nunca muda
+  dataEntregaNovaProducao?: string // nova data prevista quando em atraso
+  motivoAtraso?: string
 
   createdAt: string
   updatedAt: string
@@ -121,7 +193,7 @@ export function calcularPreco(precoBase: number, categoria: CategoriaSize, taman
   if (categoria === 'infantil' && desconto.includes(tamanho)) {
     return Math.max(0, precoBase - 5)
   }
-  if ((categoria === 'unissex' || categoria === 'babylook') && sobretaxa.includes(tamanho)) {
+  if ((categoria === 'unissex' || categoria === 'babylook' || categoria === 'feminino' || categoria === 'masculino') && sobretaxa.includes(tamanho)) {
     return precoBase * 1.3
   }
   return precoBase
@@ -133,6 +205,8 @@ export const STATUS_LABELS: Record<StatusPedido, string> = {
   arquivos: '3. Arquivos',
   pagamento: '4. Pagamento',
   confirmacao: '5. Confirmação',
+  formalizado: '✓ Formalizado',
+  retirada: '📦 Retirada',
 }
 
 export const STATUS_COLORS: Record<StatusPedido, string> = {
@@ -140,11 +214,15 @@ export const STATUS_COLORS: Record<StatusPedido, string> = {
   tamanhos: 'bg-blue-100 text-blue-800',
   arquivos: 'bg-purple-100 text-purple-800',
   pagamento: 'bg-teal-100 text-teal-800',
-  confirmacao: 'bg-green-100 text-green-800',
+  confirmacao: 'bg-orange-100 text-orange-800',
+  formalizado: 'bg-emerald-100 text-emerald-800',
+  retirada: 'bg-indigo-100 text-indigo-800',
 }
 
 export const TAMANHOS_UNISSEX = ['PP', 'P', 'M', 'G', 'GG', 'XG', 'XXG', 'XXXG']
 export const TAMANHOS_BABYLOOK = ['PP', 'P', 'M', 'G', 'GG', 'XG', 'XXG', 'XXXG']
+export const TAMANHOS_FEMININO = ['PP', 'P', 'M', 'G', 'GG', 'XG', 'XXG', 'XXXG']
+export const TAMANHOS_MASCULINO = ['PP', 'P', 'M', 'G', 'GG', 'XG', 'XXG', 'XXXG']
 export const TAMANHOS_INFANTIL = ['2', '4', '6', '8', '10', '12', '14']
 
 export const TIPOS_ESTAMPA: { value: TipoEstampa; label: string }[] = [
@@ -157,7 +235,7 @@ export const TIPOS_ESTAMPA: { value: TipoEstampa; label: string }[] = [
 ]
 
 export const POSICOES_ESTAMPA = [
-  'Frente', 'Costas', 'Manga Esq.', 'Manga Dir.', 'Bolso', 'Gola', 'Lateral', 'Outro'
+  'Frente', 'Costas', 'Mangas', 'Manga Esq.', 'Manga Dir.', 'Bolso', 'Gola', 'Lateral', 'Outro'
 ]
 
 export const TIPOS_ESTAMPA_QUADRO = [
@@ -169,11 +247,3 @@ export const TIPOS_ESTAMPA_QUADRO = [
   'Plastsol',
   'Alto Relevo',
 ]
-
-export interface EstampaQuadro {
-  id: string
-  posicao: string
-  tiposEstampa: string[]
-  imagem: string    // URL Cloudinary
-  descricaoCores: string
-}

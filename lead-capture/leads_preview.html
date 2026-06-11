@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#fff; color:#111; }
+
+  .capa {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d6a9f 60%, #1e3a5f 100%);
+    color: white;
+    padding: 40px 50px 35px;
+    page-break-after: always;
+  }
+  .capa-logo { font-size: 28px; font-weight: 900; letter-spacing: 1px; margin-bottom: 4px; }
+  .capa-sub { font-size: 13px; opacity: 0.8; margin-bottom: 35px; letter-spacing: 2px; text-transform: uppercase; }
+  .capa-title { font-size: 38px; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+  .capa-desc { font-size: 15px; opacity: 0.85; margin-bottom: 40px; }
+  .capa-stats { display: flex; gap: 30px; }
+  .stat { background: rgba(255,255,255,0.15); border-radius: 12px; padding: 18px 24px; }
+  .stat-num { font-size: 36px; font-weight: 900; line-height: 1; }
+  .stat-label { font-size: 11px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+  .capa-footer { margin-top: 35px; font-size: 12px; opacity: 0.6; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px; }
+
+  .resumo-page { padding: 30px 40px; page-break-after: always; }
+  .sec-title { font-size: 18px; font-weight: 700; color: #1e3a5f; border-bottom: 3px solid #1e3a5f; padding-bottom: 8px; margin-bottom: 20px; }
+  .resumo-table { width: 100%; border-collapse: collapse; }
+  .resumo-table th { background: #1e3a5f; color: white; padding: 10px 14px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .resumo-table td { padding: 9px 14px; font-size: 13px; border-bottom: 1px solid #e5e7eb; }
+  .resumo-table tr:nth-child(even) td { background: #f9fafb; }
+
+  .leads-page { padding: 20px 30px; }
+  .leads-header { margin-bottom: 15px; }
+  .leads-header h2 { font-size: 16px; font-weight: 700; color: #1e3a5f; }
+  .leads-header p { font-size: 11px; color: #6b7280; margin-top: 3px; }
+
+  table.leads { width: 100%; border-collapse: collapse; font-size: 12px; }
+  table.leads thead th {
+    background: #1e3a5f; color: white; padding: 8px; text-align: left;
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; position: sticky; top: 0;
+  }
+  table.leads tbody tr:hover { background: #eff6ff !important; }
+  table.leads td { border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+
+  .obs-col { width: 120px; }
+
+  @media print {
+    .capa { page-break-after: always; }
+    .resumo-page { page-break-after: always; }
+    table.leads { font-size: 11px; }
+  }
+
+  @page { margin: 0; size: A4 landscape; }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="capa">
+  <div class="capa-logo">PASSO A PASSO</div>
+  <div class="capa-sub">Uniformes Personalizados</div>
+  <div class="capa-title">Lista de Leads B2B<br>Região de Novo Hamburgo</div>
+  <div class="capa-desc">Empresas e instituições com potencial de compra de uniformes — Raio ~40km | Rio Grande do Sul</div>
+  <div class="capa-stats">
+    <div class="stat">
+      <div class="stat-num">142</div>
+      <div class="stat-label">Total de Leads</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">113</div>
+      <div class="stat-label">Com Telefone</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">15</div>
+      <div class="stat-label">Categorias</div>
+    </div>
+  </div>
+  <div class="capa-footer">Gerado em 05/06/2026 &nbsp;|&nbsp; Fonte: Google Maps &nbsp;|&nbsp; Uso interno — equipe comercial</div>
+</div>
+
+<!-- RESUMO -->
+<div class="resumo-page">
+  <div class="sec-title">Resumo por Categoria</div>
+  <table class="resumo-table">
+    <thead><tr><th>Categoria</th><th>Qtd. Leads</th></tr></thead>
+    <tbody><tr><td>Escola</td><td style="text-align:center">28</td></tr><tr><td>Segurança Privada</td><td style="text-align:center">19</td></tr><tr><td>Academia / Fitness</td><td style="text-align:center">15</td></tr><tr><td>Indústria / Fábrica</td><td style="text-align:center">14</td></tr><tr><td>Saúde / Clínica</td><td style="text-align:center">14</td></tr><tr><td>Construtora / Engenharia</td><td style="text-align:center">7</td></tr><tr><td>Transportadora / Logística</td><td style="text-align:center">7</td></tr><tr><td>Veterinária / Pet</td><td style="text-align:center">7</td></tr><tr><td>Limpeza / Conservação</td><td style="text-align:center">6</td></tr><tr><td>Concessionária / Automóveis</td><td style="text-align:center">5</td></tr><tr><td>Supermercado / Atacado</td><td style="text-align:center">5</td></tr><tr><td>Hotel / Pousada</td><td style="text-align:center">5</td></tr><tr><td>Restaurante / Alimentação</td><td style="text-align:center">5</td></tr><tr><td>Restaurante / Bar</td><td style="text-align:center">3</td></tr><tr><td>Clube / Esporte</td><td style="text-align:center">2</td></tr><tr style="font-weight:700;background:#eff6ff"><td>TOTAL</td><td style="text-align:center">142</td></tr></tbody>
+  </table>
+  <br><br>
+  <div class="sec-title">Como usar esta planilha</div>
+  <p style="font-size:13px;color:#374151;line-height:1.8">
+    1. Priorize leads <strong>com telefone</strong> (aparecem primeiro na lista).<br>
+    2. Use o <strong>WhatsApp</strong> ou ligue diretamente para o número listado.<br>
+    3. Após contato, preencha a coluna <strong>"Status"</strong>: Ex.: <em>Interessado / Retornar / Sem interesse / Venda</em>.<br>
+    4. Leads sem telefone: pesquise pelo nome no Google para encontrar o contato atualizado.
+  </p>
+</div>
+
+<!-- LISTA DE LEADS -->
+<div class="leads-page">
+  <div class="leads-header">
+    <h2>Lista Completa de Leads — Ordenado por Telefone disponível</h2>
+    <p>Leads com telefone aparecem primeiro &nbsp;|&nbsp; Coluna "Status" para controle da equipe</p>
+  </div>
+  <table class="leads">
+    <thead>
+      <tr>
+        <th style="width:30px">#</th>
+        <th style="width:200px">Nome / Empresa</th>
+        <th style="width:130px">Categoria</th>
+        <th style="width:90px">Cidade</th>
+        <th>Endereço</th>
+        <th style="width:120px">Telefone / WhatsApp</th>
+        <th class="obs-col">Status / Obs.</th>
+      </tr>
+    </thead>
+    <tbody><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">1</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Box São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Imperatriz Leopoldina, 3311</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99290-4372</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">2</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">CrossFit Sinos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Alberto Scherer, 558</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3509-1286</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">3</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Box Scharlau</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Leopoldo Albino Scherer, 540</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99949-8627</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">4</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Summit Cross Training</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. São Borja, 1700</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99243-0720</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">5</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">CrossFit Morro do Espelho</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Mauá, 2899</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99721-1509</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">6</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Black Panther Centro de Treinamento</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Imperatriz Leopoldina, 519</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99530-2660</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">7</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Centro de Treinamento Cristiane Motta</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Leopoldo Wasun, 264</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99344-5480</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">8</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Esporte Clube Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Clube / Esporte</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Santa Tereza, 420</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3553-1900</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">9</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Imperial Veículos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#3f83f815;color:#3f83f8;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Concessionária / Automóveis</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 891</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99254-7279</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">10</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">NH Veículos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#3f83f815;color:#3f83f8;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Concessionária / Automóveis</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bento Gonçalves, 895</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2500-2144</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">11</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">1400 Veículos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#3f83f815;color:#3f83f8;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Concessionária / Automóveis</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 1400</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98141-4455</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">12</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Carro Dez</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#3f83f815;color:#3f83f8;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Concessionária / Automóveis</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 2700</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3586-5852</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">13</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">2A Motors</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#3f83f815;color:#3f83f8;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Concessionária / Automóveis</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 1100</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99195-9479</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">14</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Treez | Arquitetura e Engenharia</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99619-2912</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">15</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Valle Construção e Reforma Predial</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bartolomeu de Gusmão, 3700</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99945-5789</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">16</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Construção e Reforma Andrades</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98224-5153</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">17</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Concisa Construção e Incorporação</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Cariri, 43</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3037-5055</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">18</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Construtora Cisplan</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Aluísio de Azevedo, 60</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98149-2399</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">19</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Vetor Soluções Construtivas</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Paraíba, 198</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99947-6677</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">20</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">FRD Construtora</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#c2780315;color:#c27803;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Construtora / Engenharia</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3035-2600</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">21</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Sinodal da Paz</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-4141</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">22</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola Ágape AEP - Educação Cristã Infantil</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Aracajú, 173</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3581-5789</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">23</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">ESC EST ENS FUN AYRTON SENNA DO BRASIL</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Riveira, 168</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2024-0056</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">24</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Santa Catarina</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Gen. Osório, 729</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3527-4862</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">25</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Cenecista Felipe Tiago Gomes</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Brasil, 341</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3556-3434</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">26</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola de Educação Infantil Múltiplos Saberes</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Cel. Frederico Linck, 1227</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99817-8345</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">27</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Adventista de Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. José de Alencar, 342</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3593-1922</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">28</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola Municipal João Baptista Jaeger</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Valparaíso, 431</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-8131</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">29</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">IENH - Unidade Oswaldo Cruz</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bento Gonçalves, 2391</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3594-8050</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">30</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">E E E MEDIO MAURICIO SIROTSKY SOBRINHO</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Humaitá, 465</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3525-2370</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">31</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola de Educação Infantil da Paz</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Panambi, 50</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-8515</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">32</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">EMEF Arnaldo Grin</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Montevidéu, 902</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3600-3056</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">33</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">APM da Escola Municipal Harry Roth</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-9435</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">34</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Marista Pio XII</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Nicolau Becker, 182</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3584-8000</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">35</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Sagrado Scharlau - Rede Merlin</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Henrique Scharlau, 341</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3568-2395</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">36</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio Sinodal</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Dr. Mario Sperb, 874</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3592-1584</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">37</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">E.E.I. Cuidado de Mãe</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Santa Catarina, 1270</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98187-4478</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">38</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio São Luís</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bento Gonçalves, 1375</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3037-1692</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">39</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Colégio São José</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Mauá, 980</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3592-1575</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">40</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola de Educação Infantil Primeiro Mundo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Américo, 287</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2165-0661</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">41</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Maple Bear São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Nóbrega, 438</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3134-6601</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">42</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Centro Sinodal de Ensino Médio de Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. João Corrêa, 1364</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3599-3332</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">43</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Tindolelê Escola de Educação Infantil</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Santos Dumont, 237</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3529-6276</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">44</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Instituto Estadual de Educação Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Padre Antônio Vieira, 588</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3599-1204</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">45</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola Luterana São Mateus</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Padre Réus, 370</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99155-9906</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">46</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">EMEF La Salle</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Américo Vespúcio, 95</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3559-1736</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">47</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola de Educação Infantil Mamãe Coruja</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Sete de Setembro, 658</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99609-4214</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">48</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Escola Imaculado Coração de Maria</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#1a56db15;color:#1a56db;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Escola</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. João Corrêa, 776</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3039-7743</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">49</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Oxisinos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3035-6396</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">50</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Metalúrgica Fabian Ltda</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Jacarandá, 335</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3586-7457</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">51</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Hyperfil Metalúrgica Ltda</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Rodrigues Alves, 342</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3553-5200</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">52</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Rogers Ind Metalúrgica</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Pau Brasil, 1170</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-1646</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">53</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">LLV Metais</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Dr. João Daniel Hillebrand, 74</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-4614</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">54</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Redêne Metalúrgica Ltda</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Rodrigues Alves, 135</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-1283</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">55</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Alisul Alimentos S/A - SUPRA</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. João Carlos Hohendorff, 900</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2123-1400</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">56</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Perfil Injetados</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Jacob Wingert, 77</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99878-2725</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">57</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Líder Indústria de Embalagens</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Henrique Bier, 3080</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3572-0952</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">58</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Zahonero Indústria e Comércio de Espumas</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Quimisinos, 170</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3579-7500</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">59</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">TFL do Brasil Indústria Química</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Santo Agostinho, 1099</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 4009-2222</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">60</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Indústria SW Plásticos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Otacílio Jacinto Homem, 192</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2165-3749</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">61</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">DM Limpeza e Conservação</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#31c48d15;color:#31c48d;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Limpeza / Conservação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Ver. Arnaldo Reinhardt, 68</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99588-9079</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">62</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">JG Serviços</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#31c48d15;color:#31c48d;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Limpeza / Conservação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Joaquim Nabuco, 828</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3556-1530</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">63</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Bio Service Limpeza</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#31c48d15;color:#31c48d;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Limpeza / Conservação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Nações Unidas, 2456</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3594-1030</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">64</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Equipe Limpar</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#31c48d15;color:#31c48d;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Limpeza / Conservação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Sebastião Fernandes de Lima, 792</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99144-5915</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">65</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Limpidus | Limpeza Empresarial</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#31c48d15;color:#31c48d;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Limpeza / Conservação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Guia Lopes, 968</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99113-8642</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">66</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Turma da Limpeza</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#31c48d15;color:#31c48d;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Limpeza / Conservação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Mundo Novo, 1311</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3524-5671</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">67</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">NH Saúde</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Imperatriz Leopoldina, 313</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3586-1112</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">68</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Hospital Municipal de Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 6520</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3272-3272</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">69</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Clínica Médica Amplamed Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 4902</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3066-9060</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">70</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Centro Clínico Regina</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Dr. Maurício Cardoso, 833</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3594-4900</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">71</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Hospital Regina</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Dr. Maurício Cardoso, 711</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3553-8800</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">72</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Fundação Hospital Centenário</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Theodomiro Porto da Fonseca, 799</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3591-1400</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">73</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Complexo Hospitalar Unimed Vale do Sinos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Conceição, 1050</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3584-1800</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">74</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Doctor Clin São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Pres. Roosevelt, 630</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3579-7600</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">75</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Clínica Médica Amplamed São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 23</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3066-9060</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">76</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Centro Médico São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bento Gonçalves, 806</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99984-0557</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">77</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">D'Bortoli Segurança Ltda</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3239-9050</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">78</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">STV Segurança</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3081-8604</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">79</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">GTS Segurança Privada</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Assunción, 178</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99012-3812</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">80</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">IDEAL Monitoramento</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Três de Outubro, 137</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2399-0945</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">81</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Fox Segurança 24 horas</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Valparaíso, 187</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3582-3075</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">82</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">SegFort Portaria & Monitoramento</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bento Gonçalves, 605</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98088-6017</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">83</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Zeladoria e Vigilância Hamburguense</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Solidariedade, 49</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3587-7336</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">84</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">SBV Monitoramento</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 4706</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3590-1177</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">85</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Prontto Centro de Formação de Vigilantes</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Rio Negro, 343</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3049-1212</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">86</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Protector Sistemas de Segurança</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Alm. Barroso, 132</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3594-1214</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">87</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Magnum Segurança</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Sete de Setembro, 929</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99777-8701</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">88</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Tática Monitoramento</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Alegrete, 200</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99376-4897</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">89</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">PRIMAVERA MONITORAMENTO</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Independência, 407</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99978-6080</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">90</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">GSSI Sistemas de Segurança</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Pio XI, 69</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3091-3250</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">91</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">MAX Monitoramento & Instalações</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Cristiano Zimerman, 594</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99569-7037</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">92</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">STV Segurança</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Brasil, 1123</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3553-7744</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">93</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Grupo Voigt Sistemas Segurança</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Santo Antônio, 1060</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3568-1943</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">94</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Delta Sistema de Monitoramento</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Marieta Fialho Blessmann, 85</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99681-5884</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">95</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Rota Sistemas e Serviços</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#6875f515;color:#6875f5;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Segurança Privada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Nóbrega, 751</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3554-4187</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">96</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Monaco Atacado</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e3a00815;color:#e3a008;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Supermercado / Atacado</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Montevidéu, 777</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3035-1430</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">97</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Atacadão - Novo Hamburgo Ouro Branco</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e3a00815;color:#e3a008;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Supermercado / Atacado</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 2400</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3271-1868</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">98</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Fort Atacadista</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e3a00815;color:#e3a008;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Supermercado / Atacado</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Vinte e Quatro de Maio, 368</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3201-0818</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">99</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Stok Center - Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e3a00815;color:#e3a008;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Supermercado / Atacado</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 5251</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3080-5036</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">100</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">SIRIUS LOGÍSTICA</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Timbaúva, 1200</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3525-1001</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">101</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">JC Logística Ltda</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 3673</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3586-5449</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">102</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Marthicali Transportes LTDA</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Lopes Trovão, 397</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99807-3434</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">103</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">trancare logistica ltda</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99916-3920</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">104</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Mag Logística</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Miguel Chies Sobrinho, 280</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 2126-4900</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">105</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Rede Nacional de Encomendas NH</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Corumbá, 1053</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3524-4530</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">106</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Aceville Transportes Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0694a215;color:#0694a2;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Transportadora / Logística</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Ver. Adão Rodrigues de Oliveira, 2928</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3369-5540</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">107</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Consultório Pet</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. México, 311</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99329-4387</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">108</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Agropecuária Clínica Veterinária Rangel</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 4737</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3939-1364</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">109</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Clínica Veterinária Espaço Pet</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Vinte e Cinco de Julho, 1082</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 99911-8028</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">110</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">AuQMia Clínica Veterinária e Pet Shop</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 4321</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3595-3208</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">111</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Hospital Veterinário Pêlos & Focinhos</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 771</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 3939-5040</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">112</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Conceito Center Pet</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Gen. Daltro Filho, 146</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98020-4490</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">113</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Ferinhas Pet</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#84cc1615;color:#84cc16;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Veterinária / Pet</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 1808</td>
+    <td style="padding:6px 8px;font-size:12px;color:#065f46;font-weight:600">(51) 98225-3913</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">114</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Academia Engenharia do Corpo - Canoas</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Canoas</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Dr. Sezefredo Azambuja Vieira, 2316</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">115</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Synergy Academia</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Canoas</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Bagé, 248</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">116</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Academia Point Evolution</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Canoas</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Farroupilha, 6780</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">117</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Academia Arena Santo Afonso</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Assunción, 162</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">118</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Academia Impacto Fitness</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 3880</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">119</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Academia Atlas</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Assunción, 796</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">120</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Ginásio de Esportes dos Rodoviários de NH</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 414</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">121</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Brothers Academia NH</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Academia / Fitness</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 5033</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">122</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Time Sports Brasil</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e0242415;color:#e02424;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Clube / Esporte</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">123</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Hotel e Pousada 5 De Abril</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#f0525215;color:#f05252;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Hotel / Pousada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">124</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Nossa Casa NH Pousada</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#f0525215;color:#f05252;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Hotel / Pousada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">125</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Locanda Hotel e Restaurante</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#f0525215;color:#f05252;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Hotel / Pousada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">126</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">NHTEL Acomodações</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#f0525215;color:#f05252;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Hotel / Pousada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">127</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Novo Hamburgo Business Hotel</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#f0525215;color:#f05252;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Hotel / Pousada</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">—</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">128</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Metalúrgica Metallo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 181</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">129</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Krupp Indústria Metalúrgica</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#9061f915;color:#9061f9;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Indústria / Fábrica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Sen. Salgado Filho, 4030</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">130</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Restaurante O Bifão</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Alimentação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. São Jacó, 94</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">131</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Patroas Bar e Restaurante</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Alimentação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 2223</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">132</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Restaurante Spettacolo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Alimentação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Pedro Adams Filho, 4919</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">133</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Prato Del Nono Restaurante</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Alimentação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 599</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">134</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Restaurante do Romário</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Alimentação</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Valparaíso, 667</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">135</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">RESTAURANTE DO JAIR</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Bar</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Campo Bom</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. João XXIII, 200</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">136</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Gastropub Imigração</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Bar</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Cairú, 197</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">137</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Guapos Restaurante e Burger Bar</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#ff5a1f15;color:#ff5a1f;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Restaurante / Bar</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Sapiranga</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. São Leopoldo, 605</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">138</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Sant Saúde</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. Nações Unidas, 1970</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">139</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">CCG Saúde - Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. David Canabarro, 30</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">140</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">CCG Saúde - São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">Av. João Alberto, 313</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#ffffff">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">141</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Unidade Integrada de Atendimento - SL</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#0e9f6e15;color:#0e9f6e;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Saúde / Clínica</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">São Leopoldo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. São Pedro, 995</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr><tr style="background:#f9fafb">
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280;text-align:center">142</td>
+    <td style="padding:6px 8px;font-size:12px;font-weight:600;color:#111827">Atacadão - Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px">
+      <span style="background:#e3a00815;color:#e3a008;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;white-space:nowrap">Supermercado / Atacado</span>
+    </td>
+    <td style="padding:6px 8px;font-size:11px;color:#374151">Novo Hamburgo</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280">R. Primeiro de Março, 2711</td>
+    <td style="padding:6px 8px;font-size:12px;color:#9ca3af">—</td>
+    <td style="padding:6px 8px;font-size:11px;color:#6b7280"></td>
+  </tr></tbody>
+  </table>
+</div>
+
+</body>
+</html>

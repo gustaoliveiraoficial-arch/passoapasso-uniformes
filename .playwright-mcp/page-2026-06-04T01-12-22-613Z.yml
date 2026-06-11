@@ -1,0 +1,203 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e562]:
+      - img [ref=e564]
+      - generic [ref=e566]:
+        - paragraph [ref=e567]: A Kiwify não permite a venda de produtos relacionados a apostas ou jogos de azar.
+        - paragraph
+      - button [ref=e569] [cursor=pointer]:
+        - img [ref=e570]
+    - generic [ref=e6]:
+      - generic [ref=e9]:
+        - button "Workflow GUSTAVO OSMAR OLIVEIRA DA SILVA" [expanded] [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]:
+            - img "Workflow" [ref=e17]
+            - generic [ref=e18]: GUSTAVO OSMAR OLIVEIRA DA SILVA
+            - img [ref=e19]
+        - navigation [ref=e22]:
+          - generic [ref=e24]:
+            - link "Dashboard" [ref=e25] [cursor=pointer]:
+              - /url: /
+              - img [ref=e26]
+              - text: Dashboard
+            - link "Produtos" [ref=e28] [cursor=pointer]:
+              - /url: /products
+              - img [ref=e29]
+              - text: Produtos
+            - link "Área de Membros" [ref=e31] [cursor=pointer]:
+              - /url: /members-area
+              - img [ref=e32]
+              - text: Área de Membros
+            - link "Marketplace" [ref=e34] [cursor=pointer]:
+              - /url: /marketplace
+              - img [ref=e35]
+              - text: Marketplace
+            - link "Meus Afiliados" [ref=e37] [cursor=pointer]:
+              - /url: /myaffiliates
+              - img [ref=e38]
+              - text: Meus Afiliados
+            - link "Vendas" [ref=e40] [cursor=pointer]:
+              - /url: /sales
+              - img [ref=e41]
+              - text: Vendas
+            - link "Assinaturas" [ref=e43] [cursor=pointer]:
+              - /url: /subscriptions
+              - img [ref=e44]
+              - text: Assinaturas
+            - link "Financeiro" [ref=e46] [cursor=pointer]:
+              - /url: /finance
+              - img [ref=e47]
+              - text: Financeiro
+            - link "Relatórios" [ref=e50] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e51]
+              - text: Relatórios
+            - link "Colaboradores" [ref=e53] [cursor=pointer]:
+              - /url: /team-members
+              - img [ref=e54]
+              - text: Colaboradores
+            - link "Apps" [ref=e56] [cursor=pointer]:
+              - /url: /apps
+              - img [ref=e57]
+              - text: Apps
+          - link "Ajuda" [ref=e59] [cursor=pointer]:
+            - /url: https://ajuda.kiwify.com.br/
+            - img [ref=e60]
+            - text: Ajuda
+      - main [ref=e63]:
+        - generic [ref=e65]:
+          - generic [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: R$ 0.0K / R$ 10K
+            - img [ref=e71]
+          - button [ref=e80] [cursor=pointer]:
+            - img [ref=e83]
+        - generic [ref=e257]:
+          - dialog "Configurar uma Conta de Criador" [ref=e397]:
+            - generic [ref=e398]:
+              - heading "Criar produto" [level=3] [ref=e399]
+              - button "Close" [ref=e400] [cursor=pointer]:
+                - img [ref=e401]
+            - generic [ref=e406]:
+              - generic [ref=e407]:
+                - generic [ref=e408] [cursor=pointer]:
+                  - img [ref=e543]
+                  - text: Voltar
+                - generic [ref=e545]:
+                  - generic [ref=e546]: Nome do produto
+                  - textbox [ref=e547]: Pódio de Vendas
+                - generic [ref=e548]:
+                  - generic [ref=e549]: Descrição
+                  - textbox "Explique o seu produto em pelo menos 100 caracteres" [ref=e550]: Painel de competição de vendas em tempo real para equipes comerciais. Ranking ao vivo, metas individuais e do time, roleta de prêmios e dashboard completo. Acesso via assinatura mensal com trial de 7 dias.
+                  - generic [ref=e552]: 205/500
+                - generic [ref=e553]:
+                  - generic [ref=e554]: Página de vendas
+                  - generic [ref=e555]: Se você não tem um site, coloque o seu perfil do Instagram
+                  - generic [ref=e556]:
+                    - generic:
+                      - img
+                    - textbox "https://example.com" [ref=e557]: https://podio-de-vendas.vercel.app
+              - button "Criar produto" [ref=e558] [cursor=pointer]
+          - generic [ref=e258]:
+            - heading "Produtos" [level=3] [ref=e259]
+            - generic [ref=e261] [cursor=pointer]: Criar produto
+          - navigation [ref=e265]:
+            - link "Meus produtos" [ref=e268] [cursor=pointer]:
+              - /url: /products?tab=myproducts
+            - link "Minhas co-produções" [ref=e270] [cursor=pointer]:
+              - /url: /products?tab=coproductions
+            - link "Minhas afiliações" [ref=e272] [cursor=pointer]:
+              - /url: /products?tab=affiliations
+          - generic [ref=e274]:
+            - generic [ref=e275]:
+              - generic [ref=e277]:
+                - textbox "Buscar...." [ref=e278]
+                - generic:
+                  - img
+              - combobox [ref=e281]:
+                - option "Todos" [selected]
+                - option "Ativo"
+                - option "Em análise"
+                - option "Recusado"
+                - option "Rascunho"
+                - option "Deletado"
+            - generic [ref=e282]:
+              - table [ref=e286]:
+                - rowgroup [ref=e287]:
+                  - row "Nome Preço Status" [ref=e288]:
+                    - columnheader "Nome" [ref=e289]
+                    - columnheader "Preço" [ref=e290]
+                    - columnheader "Status" [ref=e291]
+                    - columnheader [ref=e292]
+                - rowgroup [ref=e293]:
+                  - row "Kit Reviva Memórias R$ 47,00 Ativo" [ref=e294]:
+                    - cell "Kit Reviva Memórias" [ref=e295]:
+                      - link "Kit Reviva Memórias" [ref=e296] [cursor=pointer]:
+                        - /url: /products/edit/8a023310-0b82-11f1-aa97-e98e32a91436
+                    - cell "R$ 47,00" [ref=e297]:
+                      - generic [ref=e298]: R$ 47,00
+                    - cell "Ativo" [ref=e299]:
+                      - generic [ref=e301]: Ativo
+                    - cell [ref=e302]:
+                      - button [ref=e307] [cursor=pointer]:
+                        - img [ref=e308]
+                  - row "PROATIVADO R$ 37,00 Ativo" [ref=e310]:
+                    - cell "PROATIVADO" [ref=e311]:
+                      - link "PROATIVADO" [ref=e312] [cursor=pointer]:
+                        - /url: /products/edit/563afac0-fffd-11f0-ad3f-fb7d43fd9c37
+                    - cell "R$ 37,00" [ref=e313]:
+                      - generic [ref=e314]: R$ 37,00
+                    - cell "Ativo" [ref=e315]:
+                      - generic [ref=e317]: Ativo
+                    - cell [ref=e318]:
+                      - button [ref=e323] [cursor=pointer]:
+                        - img [ref=e324]
+                  - row "PACK 30 Criativos que Vendem no Andromeda R$ 29,90 Ativo" [ref=e326]:
+                    - cell "PACK 30 Criativos que Vendem no Andromeda" [ref=e327]:
+                      - link "PACK 30 Criativos que Vendem no Andromeda" [ref=e328] [cursor=pointer]:
+                        - /url: /products/edit/f8fd3600-cb33-11f0-ab4d-d1a648d984e9
+                    - cell "R$ 29,90" [ref=e329]:
+                      - generic [ref=e330]: R$ 29,90
+                    - cell "Ativo" [ref=e331]:
+                      - generic [ref=e333]: Ativo
+                    - cell [ref=e334]:
+                      - button [ref=e339] [cursor=pointer]:
+                        - img [ref=e340]
+                  - row "Ebook Orgânico Agressivo R$ 49,90 Ativo" [ref=e342]:
+                    - cell "Ebook Orgânico Agressivo" [ref=e343]:
+                      - link "Ebook Orgânico Agressivo" [ref=e344] [cursor=pointer]:
+                        - /url: /products/edit/c8fbcf90-b5fb-11f0-ae09-c58bf49d3916
+                    - cell "R$ 49,90" [ref=e345]:
+                      - generic [ref=e346]: R$ 49,90
+                    - cell "Ativo" [ref=e347]:
+                      - generic [ref=e349]: Ativo
+                    - cell [ref=e350]:
+                      - button [ref=e355] [cursor=pointer]:
+                        - img [ref=e356]
+                  - row "MÉTODO BARZINHO R$ 19,90 Ativo" [ref=e358]:
+                    - cell "MÉTODO BARZINHO" [ref=e359]:
+                      - link "MÉTODO BARZINHO" [ref=e360] [cursor=pointer]:
+                        - /url: /products/edit/e0b58e70-6c25-11f0-b224-7f20bd1e8bd1
+                    - cell "R$ 19,90" [ref=e361]:
+                      - generic [ref=e362]: R$ 19,90
+                    - cell "Ativo" [ref=e363]:
+                      - generic [ref=e365]: Ativo
+                    - cell [ref=e366]:
+                      - button [ref=e371] [cursor=pointer]:
+                        - img [ref=e372]
+              - generic [ref=e376]:
+                - paragraph [ref=e378]: Exibindo 1 de 1 página
+                - navigation [ref=e380]:
+                  - button "Previous" [ref=e381] [cursor=pointer]:
+                    - img [ref=e382]
+                  - generic [ref=e384] [cursor=pointer]: "1"
+                  - button "Next" [ref=e385] [cursor=pointer]:
+                    - img [ref=e386]
+            - generic [ref=e389]:
+              - img [ref=e390]
+              - generic [ref=e392]:
+                - text: Aprenda mais sobre os
+                - link "produtos" [ref=e393] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/como-cadastrar-o-seu-produto-1lxh5g7/
+  - img
+  - button "Open chat" [ref=e251] [cursor=pointer]:
+    - img [ref=e253]

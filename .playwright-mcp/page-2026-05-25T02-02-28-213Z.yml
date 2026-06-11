@@ -1,0 +1,260 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - navigation [ref=e7]:
+          - generic [ref=e8]:
+            - button "P podio-de-vendas main" [ref=e9]:
+              - generic [ref=e10]: P
+              - generic [ref=e11]:
+                - generic [ref=e12]: podio-de-vendas
+                - generic [ref=e13]:
+                  - img [ref=e14]
+                  - generic [ref=e18]: main
+              - img [ref=e19]
+            - button "Connect" [ref=e22] [cursor=pointer]:
+              - img [ref=e24]
+              - generic [ref=e26]: Connect
+          - generic [ref=e27]:
+            - button [ref=e28] [cursor=pointer]:
+              - figure [ref=e30]:
+                - img [ref=e31]
+            - button "Menu dropdown button" [ref=e33] [cursor=pointer]:
+              - img [ref=e35]
+        - navigation "Floating toolbar" [ref=e36]:
+          - generic [ref=e37]:
+            - button [ref=e38] [cursor=pointer]:
+              - img [ref=e40]
+            - button "Help" [ref=e44] [cursor=pointer]:
+              - generic [ref=e45]:
+                - img [ref=e46]
+                - generic [ref=e49]: Help
+            - button "Advisor Center" [ref=e52] [cursor=pointer]:
+              - generic [ref=e53]:
+                - img [ref=e54]
+                - generic [ref=e56]: Advisor Center
+            - button "SQL Editor" [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]:
+                - img [ref=e60]
+                - generic [ref=e62]: SQL Editor
+            - button "AI Assistant" [ref=e64] [cursor=pointer]:
+              - generic [ref=e65]:
+                - img [ref=e68]
+                - generic [ref=e71]: AI Assistant
+      - main [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e88]:
+              - heading "Sign In / Providers" [level=1] [ref=e89]
+              - paragraph [ref=e90]: Configure authentication providers and login methods for your users
+            - navigation [ref=e91]:
+              - menu [ref=e92]:
+                - listitem [ref=e93]:
+                  - link "Supabase Auth" [ref=e94] [cursor=pointer]:
+                    - /url: /dashboard/project/jjfzdftstglzbwxywngf/auth/providers
+                - listitem [ref=e95]:
+                  - link "Third-Party Auth" [ref=e96] [cursor=pointer]:
+                    - /url: /dashboard/project/jjfzdftstglzbwxywngf/auth/third-party
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - heading "User Signups" [level=2] [ref=e102]
+              - generic [ref=e105]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]:
+                    - switch [checked] [ref=e110] [cursor=pointer]
+                    - checkbox [checked]
+                  - generic [ref=e111]:
+                    - generic [ref=e113]: Allow new users to sign up
+                    - generic [ref=e114]: If this is disabled, new users will not be able to sign up to your application
+                - generic [ref=e117]:
+                  - generic [ref=e118]:
+                    - switch [ref=e119] [cursor=pointer]
+                    - checkbox
+                  - generic [ref=e120]:
+                    - generic [ref=e122]: Allow manual linking
+                    - generic [ref=e123]:
+                      - text: Enable
+                      - link "manual linking APIs" [ref=e124] [cursor=pointer]:
+                        - /url: https://supabase.com/docs/guides/auth/auth-identity-linking#manual-linking-beta
+                      - text: for your project
+                - generic [ref=e127]:
+                  - generic [ref=e128]:
+                    - switch [ref=e129] [cursor=pointer]
+                    - checkbox
+                  - generic [ref=e130]:
+                    - generic [ref=e132]: Allow anonymous sign-ins
+                    - generic [ref=e133]:
+                      - text: Enable
+                      - link "anonymous sign-ins" [ref=e134] [cursor=pointer]:
+                        - /url: https://supabase.com/docs/guides/auth/auth-anonymous
+                      - text: for your project
+                - generic [ref=e137]:
+                  - generic [ref=e138]:
+                    - switch [checked] [ref=e139] [cursor=pointer]
+                    - checkbox [checked]
+                  - generic [ref=e140]:
+                    - generic [ref=e142]: Confirm email
+                    - generic [ref=e143]: Users will need to confirm their email address before signing in for the first time
+                - generic [ref=e144]:
+                  - button "Save changes" [disabled]:
+                    - generic: Save changes
+            - generic [ref=e145]:
+              - generic [ref=e148]:
+                - heading "Auth Providers" [level=2] [ref=e149]
+                - generic [ref=e150]: Authenticate your users through a suite of providers and login methods
+              - generic [ref=e153]:
+                - button "Email auth icon Email Enabled" [ref=e154] [cursor=pointer]:
+                  - img "Email auth icon" [ref=e156]
+                  - generic [ref=e157]: Email
+                  - generic [ref=e159]:
+                    - img [ref=e161]
+                    - generic [ref=e163]: Enabled
+                  - img [ref=e164]
+                - button "Phone auth icon Phone Disabled" [ref=e166] [cursor=pointer]:
+                  - img "Phone auth icon" [ref=e168]
+                  - generic [ref=e169]: Phone
+                  - generic [ref=e171]: Disabled
+                  - img [ref=e172]
+                - button "SAML 2.0 auth icon SAML 2.0 Disabled" [ref=e174] [cursor=pointer]:
+                  - img "SAML 2.0 auth icon" [ref=e176]
+                  - generic [ref=e177]: SAML 2.0
+                  - generic [ref=e179]: Disabled
+                  - img [ref=e180]
+                - button "Web3 Wallet auth icon Web3 Wallet Disabled" [ref=e182] [cursor=pointer]:
+                  - img "Web3 Wallet auth icon" [ref=e184]
+                  - generic [ref=e185]: Web3 Wallet
+                  - generic [ref=e187]: Disabled
+                  - img [ref=e188]
+                - button "Apple auth icon Apple Disabled" [ref=e190] [cursor=pointer]:
+                  - img "Apple auth icon" [ref=e192]
+                  - generic [ref=e193]: Apple
+                  - generic [ref=e195]: Disabled
+                  - img [ref=e196]
+                - button "Azure auth icon Azure Disabled" [ref=e198] [cursor=pointer]:
+                  - img "Azure auth icon" [ref=e200]
+                  - generic [ref=e201]: Azure
+                  - generic [ref=e203]: Disabled
+                  - img [ref=e204]
+                - button "Bitbucket auth icon Bitbucket Disabled" [ref=e206] [cursor=pointer]:
+                  - img "Bitbucket auth icon" [ref=e208]
+                  - generic [ref=e209]: Bitbucket
+                  - generic [ref=e211]: Disabled
+                  - img [ref=e212]
+                - button "Discord auth icon Discord Disabled" [ref=e214] [cursor=pointer]:
+                  - img "Discord auth icon" [ref=e216]
+                  - generic [ref=e217]: Discord
+                  - generic [ref=e219]: Disabled
+                  - img [ref=e220]
+                - button "Facebook auth icon Facebook Disabled" [ref=e222] [cursor=pointer]:
+                  - img "Facebook auth icon" [ref=e224]
+                  - generic [ref=e225]: Facebook
+                  - generic [ref=e227]: Disabled
+                  - img [ref=e228]
+                - button "Figma auth icon Figma Disabled" [ref=e230] [cursor=pointer]:
+                  - img "Figma auth icon" [ref=e232]
+                  - generic [ref=e233]: Figma
+                  - generic [ref=e235]: Disabled
+                  - img [ref=e236]
+                - button "GitHub auth icon GitHub Disabled" [ref=e238] [cursor=pointer]:
+                  - img "GitHub auth icon" [ref=e240]
+                  - generic [ref=e241]: GitHub
+                  - generic [ref=e243]: Disabled
+                  - img [ref=e244]
+                - button "GitLab auth icon GitLab Disabled" [ref=e246] [cursor=pointer]:
+                  - img "GitLab auth icon" [ref=e248]
+                  - generic [ref=e249]: GitLab
+                  - generic [ref=e251]: Disabled
+                  - img [ref=e252]
+                - button "Google auth icon Google Disabled" [ref=e254] [cursor=pointer]:
+                  - img "Google auth icon" [ref=e256]
+                  - generic [ref=e257]: Google
+                  - generic [ref=e259]: Disabled
+                  - img [ref=e260]
+                - button "Kakao auth icon Kakao Disabled" [ref=e262] [cursor=pointer]:
+                  - img "Kakao auth icon" [ref=e264]
+                  - generic [ref=e265]: Kakao
+                  - generic [ref=e267]: Disabled
+                  - img [ref=e268]
+                - button "KeyCloak auth icon KeyCloak Disabled" [ref=e270] [cursor=pointer]:
+                  - img "KeyCloak auth icon" [ref=e272]
+                  - generic [ref=e273]: KeyCloak
+                  - generic [ref=e275]: Disabled
+                  - img [ref=e276]
+                - button "LinkedIn (OIDC) auth icon LinkedIn (OIDC) Disabled" [ref=e278] [cursor=pointer]:
+                  - img "LinkedIn (OIDC) auth icon" [ref=e280]
+                  - generic [ref=e281]: LinkedIn (OIDC)
+                  - generic [ref=e283]: Disabled
+                  - img [ref=e284]
+                - button "Notion auth icon Notion Disabled" [ref=e286] [cursor=pointer]:
+                  - img "Notion auth icon" [ref=e288]
+                  - generic [ref=e289]: Notion
+                  - generic [ref=e291]: Disabled
+                  - img [ref=e292]
+                - button "Twitch auth icon Twitch Disabled" [ref=e294] [cursor=pointer]:
+                  - img "Twitch auth icon" [ref=e296]
+                  - generic [ref=e297]: Twitch
+                  - generic [ref=e299]: Disabled
+                  - img [ref=e300]
+                - button "X / Twitter (OAuth 2.0) auth icon X / Twitter (OAuth 2.0) Disabled" [ref=e302] [cursor=pointer]:
+                  - img "X / Twitter (OAuth 2.0) auth icon" [ref=e304]
+                  - generic [ref=e305]: X / Twitter (OAuth 2.0)
+                  - generic [ref=e307]: Disabled
+                  - img [ref=e308]
+                - button "Twitter (Deprecated) auth icon Twitter (Deprecated) Disabled" [ref=e310] [cursor=pointer]:
+                  - img "Twitter (Deprecated) auth icon" [ref=e312]
+                  - generic [ref=e313]: Twitter (Deprecated)
+                  - generic [ref=e315]: Disabled
+                  - img [ref=e316]
+                - button "Slack (OIDC) auth icon Slack (OIDC) Disabled" [ref=e318] [cursor=pointer]:
+                  - img "Slack (OIDC) auth icon" [ref=e320]
+                  - generic [ref=e321]: Slack (OIDC)
+                  - generic [ref=e323]: Disabled
+                  - img [ref=e324]
+                - button "Slack (Deprecated) auth icon Slack (Deprecated) Disabled" [ref=e326] [cursor=pointer]:
+                  - img "Slack (Deprecated) auth icon" [ref=e328]
+                  - generic [ref=e329]: Slack (Deprecated)
+                  - generic [ref=e331]: Disabled
+                  - img [ref=e332]
+                - button "Spotify auth icon Spotify Disabled" [ref=e334] [cursor=pointer]:
+                  - img "Spotify auth icon" [ref=e336]
+                  - generic [ref=e337]: Spotify
+                  - generic [ref=e339]: Disabled
+                  - img [ref=e340]
+                - button "WorkOS auth icon WorkOS Disabled" [ref=e342] [cursor=pointer]:
+                  - img "WorkOS auth icon" [ref=e344]
+                  - generic [ref=e345]: WorkOS
+                  - generic [ref=e347]: Disabled
+                  - img [ref=e348]
+                - button "Zoom auth icon Zoom Disabled" [ref=e350] [cursor=pointer]:
+                  - img "Zoom auth icon" [ref=e352]
+                  - generic [ref=e353]: Zoom
+                  - generic [ref=e355]: Disabled
+                  - img [ref=e356]
+            - generic [ref=e360]:
+              - generic [ref=e361]:
+                - generic [ref=e362]:
+                  - heading "Custom Providers" [level=2] [ref=e363]
+                  - generic [ref=e364]: New
+                - generic [ref=e365]: Configure OAuth/OIDC providers for this project using your own issuer or endpoints.
+              - link "Docs" [ref=e367] [cursor=pointer]:
+                - /url: https://supabase.com/docs/guides/auth/custom-oauth-providers
+                - img [ref=e369]
+                - generic [ref=e372]: Docs
+    - generic [ref=e379]:
+      - generic:
+        - generic:
+          - generic:
+            - img "Background pattern"
+          - generic:
+            - generic:
+              - button "Close banner":
+                - generic:
+                  - img
+            - generic:
+              - generic: Notice
+              - generic:
+                - paragraph: We've updated our Terms of Service
+                - paragraph: Updates define the responsibilities of both you and Supabase in the use of AI.
+              - button "Learn more":
+                - generic: Learn more
+  - alert [ref=e380]: Sign In / Providers | Authentication | Supabase

@@ -1,0 +1,27 @@
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e27] [cursor=pointer]:
+    - img [ref=e28]
+  - alert [ref=e31]
+  - generic [ref=e33]:
+    - generic [ref=e35]: 🏆 Pódio de Vendas
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e39]: "1"
+        - generic [ref=e40]: Workspace
+      - generic [ref=e43]:
+        - generic [ref=e44]: "2"
+        - generic [ref=e45]: Time
+      - generic [ref=e48]:
+        - generic [ref=e49]: "3"
+        - generic [ref=e50]: Metas
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - heading "Nome da sua empresa" [level=2] [ref=e54]
+        - paragraph [ref=e55]: Como seu pódio vai ser identificado
+      - generic [ref=e56]:
+        - generic [ref=e57]: Nome da empresa / equipe
+        - 'textbox "Ex: Construtora Alfa" [active] [ref=e58]': Empresa Teste
+        - generic [ref=e60]:
+          - text: "URL: podiovendas.com.br/"
+          - strong [ref=e61]: empresa-teste
+      - button "Continuar →" [ref=e59] [cursor=pointer]

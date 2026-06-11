@@ -1,0 +1,305 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - navigation "Produtos do Console do Firebase" [ref=e96]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e97]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e98] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e99]:
+                - img [ref=e100]
+                - img "Logotipo do Firebase" [ref=e101]
+          - img [ref=e106]: search
+          - link "Visão geral do projeto" [ref=e109] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e110]: gmp_nav20_overview
+          - menu [ref=e112]:
+            - menuitem "Configurações" [ref=e113]:
+              - img [ref=e115] [cursor=pointer]: settings
+        - separator [ref=e118]
+        - group [ref=e490]:
+          - link "Firestore" [ref=e149] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e150]: gmp_firestore
+        - separator [ref=e155]
+      - button "Alternar barra lateral de navegação" [ref=e204] [cursor=pointer]:
+        - img [ref=e205]: chevron_left
+    - banner:
+      - button "pap-tabela-precos (Abrir o menu \"Selecionar projeto\")" [ref=e209] [cursor=pointer]:
+        - text: pap-tabela-precos
+        - img [ref=e210]: arrow_drop_down
+    - main [ref=e13]:
+      - generic [ref=e213]:
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - generic [ref=e217]: pap-tabela-precos
+            - button "Plano Spark" [ref=e219] [cursor=pointer]:
+              - generic [ref=e220]: Plano Spark
+          - generic [ref=e225]:
+            - button "Web Tabela Precos Web" [ref=e226]:
+              - generic [ref=e229]:
+                - img "Web" [ref=e231]:
+                  - generic [ref=e232]: plat_web
+                - generic [ref=e233]: Tabela Precos Web
+            - button "Adicionar app" [ref=e236]:
+              - generic [ref=e238]:
+                - generic [ref=e239]: add
+                - generic [ref=e240]: Adicionar app
+        - generic [ref=e243]:
+          - generic [ref=e245]:
+            - heading "Analytics" [level=2] [ref=e246]
+            - img [ref=e247]: drag_handle
+            - generic [ref=e251]:
+              - link "Analytics (acessar a página)" [ref=e252] [cursor=pointer]:
+                - generic [ref=e253]: gmp_analytics
+                - heading "Analytics" [level=2] [ref=e254]
+              - generic [ref=e256]:
+                - button "Abrir menu para ativar a visibilidade do gráfico de receita" [ref=e257] [cursor=pointer]:
+                  - img [ref=e258]: more_vert
+                - generic [ref=e261]:
+                  - generic [ref=e262]:
+                    - generic [ref=e263]:
+                      - heading "Usuários ativos por dia" [level=3] [ref=e266]
+                      - generic [ref=e268]: "- - -"
+                    - generic "Usuários ativos por dia" [ref=e269]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: Sem dados
+                        - generic [ref=e277]: for the last 14 days
+                  - generic [ref=e279]:
+                    - generic [ref=e280]:
+                      - heading "Retenção no primeiro dia" [level=3] [ref=e283]
+                      - generic [ref=e285]: "- - -"
+                    - generic "Retenção no primeiro dia" [ref=e286]:
+                      - generic [ref=e292]:
+                        - generic [ref=e293]: Sem dados
+                        - generic [ref=e294]: for the last 14 days
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: Track your revenue!
+                    - link "Link para a AdMob" [ref=e301] [cursor=pointer]:
+                      - /url: "#"
+                    - link "Vincular ao Google Play" [ref=e302] [cursor=pointer]:
+                      - /url: "#"
+                - generic [ref=e303]:
+                  - generic [ref=e304]:
+                    - img [ref=e305]
+                    - generic [ref=e306]: Esta semana
+                  - generic [ref=e307]:
+                    - img [ref=e308]
+                    - generic [ref=e309]: Semana passada
+          - generic [ref=e311]:
+            - heading "Criação" [level=2] [ref=e312]
+            - img [ref=e313]: drag_handle
+            - generic [ref=e317]:
+              - link "Firestore (acessar a página)" [ref=e318] [cursor=pointer]:
+                - generic [ref=e319]: gmp_firestore
+                - heading "Firestore" [level=3] [ref=e320]
+              - generic [ref=e322]:
+                - generic [ref=e323]:
+                  - generic [ref=e324]:
+                    - link "Leituras (atual) 0 -100%" [ref=e325] [cursor=pointer]:
+                      - generic [ref=e327]:
+                        - heading "Leituras" [level=4] [ref=e328]
+                        - generic [ref=e329]: (atual)
+                      - generic [ref=e330]:
+                        - generic [ref=e331]: "0"
+                        - generic [ref=e332]: "-100%"
+                    - generic "Leituras" [ref=e333]:
+                      - generic [ref=e336]:
+                        - figure "Leituras":
+                          - paragraph [ref=e338]: Leituras
+                          - paragraph [ref=e340]: Uma ou mais grades descrevem este gráfico. Uma linha da grade representa uma série temporal. Uma coluna da grade corresponde a um carimbo de data/hora. Por padrão, os gráficos escondem a maioria das colunas. Para exibir as colunas ocultas ao lado da coluna ativa, use a tecla de leitura do item anterior (seta para cima) até chegar ao cabeçalho. Então, use a tecla do botão ativar (Enter).
+                          - generic [ref=e341]:
+                            - paragraph [ref=e343]: Os dados deste gráfico abrangem um período de terça-feira, 26 de maio de 2026 às 00:00:00 UTC-3 a segunda-feira, 1 de junho de 2026 às 00:00:00 UTC-3.
+                            - paragraph [ref=e344]: Liberar o cursor do eixo X permite que ele siga o mouse sobre o gráfico. O cursor do eixo X sempre será fixado ao se usar a navegação pelo teclado para indicar que os valores exibidos na dica ou na legenda são associados à posição dele.
+                          - paragraph [ref=e348]: Os valores dos dados deste gráfico estão em um intervalo entre 0 (no mínimo) e 11 (no máximo).
+                          - generic [ref=e354]:
+                            - button "Preencher os dados da tabela \"Linha Semana passada\" no gráfico \"Leituras\"" [ref=e355]
+                            - grid "Nenhum dado disponível para a tabela \"Linha Semana passada\" no gráfico \"Leituras\"" [ref=e356]:
+                              - rowgroup:
+                                - row "Grade de dados \"Linha Semana passada\" no gráfico \"Leituras\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade. Áudio":
+                                  - columnheader "Grade de dados \"Linha Semana passada\" no gráfico \"Leituras\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.":
+                                    - generic [ref=e357]: Grade de dados "Linha Semana passada" no gráfico "Leituras". Navegue pela grade usando as teclas de seta. As teclas "Page Up" e "Page Down" movem a seleção 10 linhas para cima e para baixo. As teclas "Home" e "End" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.
+                                  - columnheader "Áudio":
+                                    - generic [ref=e358]: Áudio
+                              - rowgroup [ref=e359]:
+                                - row "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Semana passada\" no gráfico \"Leituras\"\" logo antes dela." [ref=e491]:
+                                  - gridcell "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Semana passada\" no gráfico \"Leituras\"\" logo antes dela." [ref=e492]:
+                                    - generic [ref=e493]: Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão "Preencher os dados da tabela "Linha Semana passada" no gráfico "Leituras"" logo antes dela.
+                            - paragraph [ref=e360]: Caso colunas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as colunas subsequentes até a próxima exibida.
+                            - paragraph [ref=e361]: Caso linhas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as linhas subsequentes até a próxima exibida.
+                            - paragraph [ref=e362]: Ativar a célula de uma grade abrirá a dica neste ponto de dados.
+                            - status [ref=e363]
+                          - generic [ref=e369]:
+                            - button "Preencher os dados da tabela \"Linha Esta semana\" no gráfico \"Leituras\"" [ref=e370]
+                            - grid "Nenhum dado disponível para a tabela \"Linha Esta semana\" no gráfico \"Leituras\"" [ref=e371]:
+                              - rowgroup:
+                                - row "Grade de dados \"Linha Esta semana\" no gráfico \"Leituras\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade. Áudio":
+                                  - columnheader "Grade de dados \"Linha Esta semana\" no gráfico \"Leituras\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.":
+                                    - generic [ref=e372]: Grade de dados "Linha Esta semana" no gráfico "Leituras". Navegue pela grade usando as teclas de seta. As teclas "Page Up" e "Page Down" movem a seleção 10 linhas para cima e para baixo. As teclas "Home" e "End" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.
+                                  - columnheader "Áudio":
+                                    - generic [ref=e373]: Áudio
+                              - rowgroup [ref=e374]:
+                                - row "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Esta semana\" no gráfico \"Leituras\"\" logo antes dela." [ref=e494]:
+                                  - gridcell "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Esta semana\" no gráfico \"Leituras\"\" logo antes dela." [ref=e495]:
+                                    - generic [ref=e496]: Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão "Preencher os dados da tabela "Linha Esta semana" no gráfico "Leituras"" logo antes dela.
+                            - paragraph [ref=e375]: Caso colunas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as colunas subsequentes até a próxima exibida.
+                            - paragraph [ref=e376]: Caso linhas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as linhas subsequentes até a próxima exibida.
+                            - paragraph [ref=e377]: Ativar a célula de uma grade abrirá a dica neste ponto de dados.
+                            - status [ref=e378]
+                  - generic [ref=e380]:
+                    - link "Gravações (atual) 0" [ref=e381] [cursor=pointer]:
+                      - generic [ref=e383]:
+                        - heading "Gravações" [level=4] [ref=e384]
+                        - generic [ref=e385]: (atual)
+                      - generic [ref=e387]: "0"
+                    - generic "Gravações" [ref=e388]:
+                      - generic [ref=e391]:
+                        - figure "Gravações":
+                          - paragraph [ref=e393]: Gravações
+                          - paragraph [ref=e395]: Uma ou mais grades descrevem este gráfico. Uma linha da grade representa uma série temporal. Uma coluna da grade corresponde a um carimbo de data/hora. Por padrão, os gráficos escondem a maioria das colunas. Para exibir as colunas ocultas ao lado da coluna ativa, use a tecla de leitura do item anterior (seta para cima) até chegar ao cabeçalho. Então, use a tecla do botão ativar (Enter).
+                          - generic [ref=e396]:
+                            - paragraph [ref=e398]: Os dados deste gráfico abrangem um período de terça-feira, 26 de maio de 2026 às 00:00:00 UTC-3 a segunda-feira, 1 de junho de 2026 às 00:00:00 UTC-3.
+                            - paragraph [ref=e399]: Liberar o cursor do eixo X permite que ele siga o mouse sobre o gráfico. O cursor do eixo X sempre será fixado ao se usar a navegação pelo teclado para indicar que os valores exibidos na dica ou na legenda são associados à posição dele.
+                          - paragraph [ref=e403]: Os valores dos dados deste gráfico estão em um intervalo entre 0 (no mínimo) e 14 (no máximo).
+                          - generic [ref=e409]:
+                            - button "Preencher os dados da tabela \"Linha Semana passada\" no gráfico \"Gravações\"" [ref=e410]
+                            - grid "Nenhum dado disponível para a tabela \"Linha Semana passada\" no gráfico \"Gravações\"" [ref=e411]:
+                              - rowgroup:
+                                - row "Grade de dados \"Linha Semana passada\" no gráfico \"Gravações\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade. Áudio":
+                                  - columnheader "Grade de dados \"Linha Semana passada\" no gráfico \"Gravações\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.":
+                                    - generic [ref=e412]: Grade de dados "Linha Semana passada" no gráfico "Gravações". Navegue pela grade usando as teclas de seta. As teclas "Page Up" e "Page Down" movem a seleção 10 linhas para cima e para baixo. As teclas "Home" e "End" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.
+                                  - columnheader "Áudio":
+                                    - generic [ref=e413]: Áudio
+                              - rowgroup [ref=e414]:
+                                - row "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Semana passada\" no gráfico \"Gravações\"\" logo antes dela." [ref=e497]:
+                                  - gridcell "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Semana passada\" no gráfico \"Gravações\"\" logo antes dela." [ref=e498]:
+                                    - generic [ref=e499]: Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão "Preencher os dados da tabela "Linha Semana passada" no gráfico "Gravações"" logo antes dela.
+                            - paragraph [ref=e415]: Caso colunas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as colunas subsequentes até a próxima exibida.
+                            - paragraph [ref=e416]: Caso linhas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as linhas subsequentes até a próxima exibida.
+                            - paragraph [ref=e417]: Ativar a célula de uma grade abrirá a dica neste ponto de dados.
+                            - status [ref=e418]
+                          - generic [ref=e424]:
+                            - button "Preencher os dados da tabela \"Linha Esta semana\" no gráfico \"Gravações\"" [ref=e425]
+                            - grid "Nenhum dado disponível para a tabela \"Linha Esta semana\" no gráfico \"Gravações\"" [ref=e426]:
+                              - rowgroup:
+                                - row "Grade de dados \"Linha Esta semana\" no gráfico \"Gravações\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade. Áudio":
+                                  - columnheader "Grade de dados \"Linha Esta semana\" no gráfico \"Gravações\". Navegue pela grade usando as teclas de seta. As teclas \"Page Up\" e \"Page Down\" movem a seleção 10 linhas para cima e para baixo. As teclas \"Home\" e \"End\" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.":
+                                    - generic [ref=e427]: Grade de dados "Linha Esta semana" no gráfico "Gravações". Navegue pela grade usando as teclas de seta. As teclas "Page Up" e "Page Down" movem a seleção 10 linhas para cima e para baixo. As teclas "Home" e "End" movem a seleção para a primeira e a última célula da linha atual. Ctrl+Home e Ctrl+End movem a seleção para a primeira e a última célula da grade.
+                                  - columnheader "Áudio":
+                                    - generic [ref=e428]: Áudio
+                              - rowgroup [ref=e429]:
+                                - row "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Esta semana\" no gráfico \"Gravações\"\" logo antes dela." [ref=e500]:
+                                  - gridcell "Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão \"Preencher os dados da tabela \"Linha Esta semana\" no gráfico \"Gravações\"\" logo antes dela." [ref=e501]:
+                                    - generic [ref=e502]: Para poupar memória, esta tabela fica inativa por padrão. Para preenchê-la, clique no botão "Preencher os dados da tabela "Linha Esta semana" no gráfico "Gravações"" logo antes dela.
+                            - paragraph [ref=e430]: Caso colunas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as colunas subsequentes até a próxima exibida.
+                            - paragraph [ref=e431]: Caso linhas subsequentes sejam omitidas, ativar um cabeçalho revelará todas as linhas subsequentes até a próxima exibida.
+                            - paragraph [ref=e432]: Ativar a célula de uma grade abrirá a dica neste ponto de dados.
+                            - status [ref=e433]
+                - generic [ref=e435]:
+                  - generic [ref=e436]:
+                    - img [ref=e437]
+                    - generic [ref=e438]: Esta semana
+                  - generic [ref=e439]:
+                    - img [ref=e440]
+                    - generic [ref=e441]: Semana passada
+        - generic [ref=e442]:
+          - generic [ref=e443]:
+            - generic [ref=e444]: Próximas etapas com o Gemini
+            - link "Ver documentos (abre a documentação do Firebase em uma nova guia)" [ref=e445] [cursor=pointer]:
+              - /url: https://firebase.google.com/docs?hl=pt-BR&authuser=0
+              - text: Ver documentos open_in_new
+          - generic [ref=e446]:
+            - button "Conte mais sobre seu app" [ref=e449] [cursor=pointer]:
+              - img [ref=e450]
+              - generic [ref=e451]: Conte mais sobre seu app
+              - generic [ref=e452]: Descreva seu app, e o Gemini vai sugerir outros produtos para ajudar você a refiná-lo
+            - button "Adicionar análises e monitoramento" [ref=e455] [cursor=pointer]:
+              - img [ref=e456]
+              - generic [ref=e457]: Adicionar análises e monitoramento
+              - generic [ref=e458]: Saiba mais sobre os produtos de monitoramento do Google Analytics e do Firebase
+            - button "Criar um back-end" [ref=e461] [cursor=pointer]:
+              - img [ref=e462]
+              - generic [ref=e463]: Criar um back-end
+              - generic [ref=e464]: O Firebase oferece muitos serviços de back-end, incluindo opções de bancos de dados SQL e NoSQL. Saiba quais serviços podem ser ideais para seu app.
+            - button "Adicione IA ao seu app" [ref=e467] [cursor=pointer]:
+              - img [ref=e468]
+              - generic [ref=e469]: Adicione IA ao seu app
+              - generic [ref=e470]: Saiba como integrar a IA ao seu app
+            - button "Hospedar um aplicativo da web" [ref=e473] [cursor=pointer]:
+              - img [ref=e474]
+              - generic [ref=e475]: Hospedar um aplicativo da web
+              - generic [ref=e476]: Crie e implante apps da Web modernos e full stack
+            - button "Saiba mais sobre as ferramentas de desenvolvimento do Firebase" [ref=e479] [cursor=pointer]:
+              - img [ref=e480]
+              - generic [ref=e481]: Saiba mais sobre as ferramentas de desenvolvimento do Firebase
+              - generic [ref=e482]: Saiba mais sobre o emulador do Firebase, a CLI do Firebase e o Firebase Studio para criar seu app
+    - dialog "Gemini no Firebase" [ref=e503]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e42] [cursor=pointer]':
+            - img [ref=e44]
+            - img [ref=e50]
+          - button "Abrir alertas" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [active] [ref=e61] [cursor=pointer]:
+            - img [ref=e63]: spark
+          - button "Ajuda" [ref=e66] [cursor=pointer]:
+            - img [ref=e67]: contact_support
+          - separator [ref=e70]
+          - button "Ativar o Cloud Shell" [ref=e71] [cursor=pointer]:
+            - img [ref=e72]:
+              - img [ref=e73]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e77]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e80] [cursor=pointer]:
+            - img [ref=e81]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e85] [cursor=pointer]':
+          - img [ref=e86]: dark_mode
+      - generic [ref=e504]:
+        - generic [ref=e506]:
+          - heading "Gemini no Firebase" [level=2] [ref=e507]:
+            - generic [ref=e509]:
+              - generic [ref=e510]: Gemini
+              - generic [ref=e511]: no Firebase
+          - generic [ref=e512]:
+            - generic [ref=e513]:
+              - button "Iniciar nova conversa" [disabled]:
+                - img: add
+              - button "Abrir histórico de chat" [ref=e521] [cursor=pointer]:
+                - img [ref=e522]: history
+              - button "Maximizar" [ref=e525] [cursor=pointer]:
+                - img [ref=e526]: fullscreen
+              - button "Informar um problema" [ref=e529] [cursor=pointer]:
+                - img [ref=e530]: bug_report
+            - button "Fechar painel" [ref=e533] [cursor=pointer]:
+              - img [ref=e534]: close
+        - generic [ref=e537]:
+          - generic [ref=e540]:
+            - generic [ref=e541]:
+              - img "Logotipo do Gemini" [ref=e542]
+              - generic [ref=e543]: Quer fazer mais com o Gemini? Teste o Gemini Code Assist open_in_new
+            - generic [ref=e544]:
+              - generic [ref=e545]: Olá, shark,
+              - generic [ref=e546]: Como posso ajudar?
+              - paragraph [ref=e547]: Comece com um comando
+              - generic [ref=e549]:
+                - button "How can you help me with Firebase?" [ref=e550]:
+                  - generic [ref=e551]: How can you help me with Firebase?
+                - button "How is my crash-free user rate calculated?" [ref=e554]:
+                  - generic [ref=e555]: How is my crash-free user rate calculated?
+                - button "How can I secure my Firebase app?" [ref=e558]:
+                  - generic [ref=e559]: How can I secure my Firebase app?
+          - generic [ref=e564]:
+            - generic [ref=e565]: Entrada da mensagem
+            - generic [ref=e566]:
+              - textbox "Entrada da mensagem" [ref=e567]:
+                - /placeholder: Ask Gemini
+              - button "Enviar mensagem" [disabled]:
+                - img: send
+            - generic [ref=e568]:
+              - text: O Gemini pode cometer erros. Por isso, é importante checar as respostas
+              - button "Exoneração de responsabilidade do Gemini no Firebase" [ref=e570]:
+                - img [ref=e571]: help
+  - generic [ref=e577]: Conversar com o Gemini (Alt + G)

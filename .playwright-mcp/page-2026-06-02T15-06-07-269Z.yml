@@ -1,0 +1,328 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /497cfa8abe64bb91/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.87%
+        - generic [ref=e343]: 446.52 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 3.54%
+        - generic [ref=e345]: 21251 / 600000
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h2
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - link "Home" [ref=e37] [cursor=pointer]:
+          - /url: /497cfa8abe64bb91/files
+          - generic [ref=e38]: home
+        - generic [ref=e39]:
+          - generic [ref=e41]: keyboard_arrow_right
+          - link "public_html" [ref=e42] [cursor=pointer]:
+            - /url: /497cfa8abe64bb91/files/public_html/
+        - generic [ref=e43]:
+          - generic [ref=e45]: keyboard_arrow_right
+          - link "tabeladeprecos" [ref=e46] [cursor=pointer]:
+            - /url: /497cfa8abe64bb91/files/public_html/tabeladeprecos/
+        - generic [ref=e47]:
+          - generic [ref=e49]: keyboard_arrow_right
+          - link "assets" [ref=e50] [cursor=pointer]:
+            - /url: /497cfa8abe64bb91/files/public_html/tabeladeprecos/assets/
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - img [ref=e53]
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: search
+              - textbox "Search..." [ref=e57]
+            - generic [ref=e58]:
+              - paragraph [ref=e59]: Type to search...
+              - generic [ref=e60]:
+                - heading "Types" [level=3] [ref=e61]
+                - generic [ref=e62]:
+                  - button "Images" [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64]: insert_photo
+                    - paragraph [ref=e65]: Images
+                  - button "Music" [ref=e66] [cursor=pointer]:
+                    - generic [ref=e67]: volume_up
+                    - paragraph [ref=e68]: Music
+                  - button "Video" [ref=e69] [cursor=pointer]:
+                    - generic [ref=e70]: movie
+                    - paragraph [ref=e71]: Video
+                  - button "PDF" [ref=e72] [cursor=pointer]:
+                    - generic [ref=e73]: picture_as_pdf
+                    - paragraph [ref=e74]: PDF
+          - generic [ref=e75]:
+            - button "Switch view" [ref=e76] [cursor=pointer]:
+              - generic [ref=e77]: view_module
+            - button "Download" [ref=e78] [cursor=pointer]:
+              - generic [ref=e79]: file_download
+            - button "Upload" [ref=e80] [cursor=pointer]:
+              - generic [ref=e81]: file_upload
+            - button "Calculate directory sizes" [ref=e82] [cursor=pointer]:
+              - generic [ref=e83]: assessment
+            - button "Info" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]: info
+            - button "Select multiple" [ref=e86] [cursor=pointer]:
+              - generic [ref=e87]: check_circle
+        - generic [ref=e88]:
+          - generic [ref=e91] [cursor=pointer]:
+            - button "Sort by name" [ref=e92]:
+              - text: Name
+              - generic [ref=e93]: arrow_upward
+            - button "Sort by size" [ref=e94]:
+              - text: Size
+              - generic [ref=e95]: arrow_upward
+            - button "Sort by last modified" [ref=e96]:
+              - text: Last modified
+              - generic [ref=e97]: arrow_upward
+          - generic [ref=e98]:
+            - button "html2pdf-3rVsTMDg.js" [ref=e99] [cursor=pointer]:
+              - generic [ref=e101]: code
+              - generic [ref=e102]:
+                - paragraph [ref=e103]: html2pdf-3rVsTMDg.js
+                - paragraph [ref=e104]: 914.02 KiB
+                - paragraph [ref=e105]:
+                  - time [ref=e106]: a month ago
+                - paragraph [ref=e107]: "-rw-r--r--"
+            - button "html2pdf-BoqBcO-e.js" [ref=e108] [cursor=pointer]:
+              - generic [ref=e110]: code
+              - generic [ref=e111]:
+                - paragraph [ref=e112]: html2pdf-BoqBcO-e.js
+                - paragraph [ref=e113]: 914.02 KiB
+                - paragraph [ref=e114]:
+                  - time [ref=e115]: 16 days ago
+                - paragraph [ref=e116]: "-rw-r--r--"
+            - button "html2pdf-Cdl6gqko.js" [ref=e117] [cursor=pointer]:
+              - generic [ref=e119]: code
+              - generic [ref=e120]:
+                - paragraph [ref=e121]: html2pdf-Cdl6gqko.js
+                - paragraph [ref=e122]: 914.02 KiB
+                - paragraph [ref=e123]:
+                  - time [ref=e124]: 19 days ago
+                - paragraph [ref=e125]: "-rw-r--r--"
+            - button "html2pdf-CINAvAjz.js" [ref=e126] [cursor=pointer]:
+              - generic [ref=e128]: code
+              - generic [ref=e129]:
+                - paragraph [ref=e130]: html2pdf-CINAvAjz.js
+                - paragraph [ref=e131]: 914.02 KiB
+                - paragraph [ref=e132]:
+                  - time [ref=e133]: 16 days ago
+                - paragraph [ref=e134]: "-rw-r--r--"
+            - button "html2pdf-DATUaIoa.js" [ref=e135] [cursor=pointer]:
+              - generic [ref=e137]: code
+              - generic [ref=e138]:
+                - paragraph [ref=e139]: html2pdf-DATUaIoa.js
+                - paragraph [ref=e140]: 914.02 KiB
+                - paragraph [ref=e141]:
+                  - time [ref=e142]: a month ago
+                - paragraph [ref=e143]: "-rw-r--r--"
+            - button "html2pdf-fNQ16Ae6.js" [ref=e144] [cursor=pointer]:
+              - generic [ref=e146]: code
+              - generic [ref=e147]:
+                - paragraph [ref=e148]: html2pdf-fNQ16Ae6.js
+                - paragraph [ref=e149]: 914.02 KiB
+                - paragraph [ref=e150]:
+                  - time [ref=e151]: a month ago
+                - paragraph [ref=e152]: "-rw-r--r--"
+            - button "html2pdf-ZKhDaCG0.js" [ref=e153] [cursor=pointer]:
+              - generic [ref=e155]: code
+              - generic [ref=e156]:
+                - paragraph [ref=e157]: html2pdf-ZKhDaCG0.js
+                - paragraph [ref=e158]: 914.02 KiB
+                - paragraph [ref=e159]:
+                  - time [ref=e160]: a month ago
+                - paragraph [ref=e161]: "-rw-r--r--"
+            - button "index-2p5BgaL8.css" [ref=e162] [cursor=pointer]:
+              - generic [ref=e164]: code
+              - generic [ref=e165]:
+                - paragraph [ref=e166]: index-2p5BgaL8.css
+                - paragraph [ref=e167]: 48.12 KiB
+                - paragraph [ref=e168]:
+                  - time [ref=e169]: a month ago
+                - paragraph [ref=e170]: "-rw-r--r--"
+            - button "index-B1Yx_f7f.js" [ref=e171] [cursor=pointer]:
+              - generic [ref=e173]: code
+              - generic [ref=e174]:
+                - paragraph [ref=e175]: index-B1Yx_f7f.js
+                - paragraph [ref=e176]: 486.03 KiB
+                - paragraph [ref=e177]:
+                  - time [ref=e178]: a month ago
+                - paragraph [ref=e179]: "-rw-r--r--"
+            - button "index-Bb2cTMXP.css" [ref=e180] [cursor=pointer]:
+              - generic [ref=e182]: code
+              - generic [ref=e183]:
+                - paragraph [ref=e184]: index-Bb2cTMXP.css
+                - paragraph [ref=e185]: 48.5 KiB
+                - paragraph [ref=e186]:
+                  - time [ref=e187]: 19 days ago
+                - paragraph [ref=e188]: "-rw-r--r--"
+            - button "index-Bg730Pd4.js" [ref=e189] [cursor=pointer]:
+              - generic [ref=e191]: code
+              - generic [ref=e192]:
+                - paragraph [ref=e193]: index-Bg730Pd4.js
+                - paragraph [ref=e194]: 479.13 KiB
+                - paragraph [ref=e195]:
+                  - time [ref=e196]: a month ago
+                - paragraph [ref=e197]: "-rw-r--r--"
+            - button "index-BL6uOah_.css" [ref=e198] [cursor=pointer]:
+              - generic [ref=e200]: code
+              - generic [ref=e201]:
+                - paragraph [ref=e202]: index-BL6uOah_.css
+                - paragraph [ref=e203]: 48.54 KiB
+                - paragraph [ref=e204]:
+                  - time [ref=e205]: 16 days ago
+                - paragraph [ref=e206]: "-rw-r--r--"
+            - button "index-BSxlyIAh.js" [ref=e207] [cursor=pointer]:
+              - generic [ref=e209]: code
+              - generic [ref=e210]:
+                - paragraph [ref=e211]: index-BSxlyIAh.js
+                - paragraph [ref=e212]: 489.21 KiB
+                - paragraph [ref=e213]:
+                  - time [ref=e214]: a month ago
+                - paragraph [ref=e215]: "-rw-r--r--"
+            - button "index-BwfSGrDz.js" [ref=e216] [cursor=pointer]:
+              - generic [ref=e218]: code
+              - generic [ref=e219]:
+                - paragraph [ref=e220]: index-BwfSGrDz.js
+                - paragraph [ref=e221]: 483.38 KiB
+                - paragraph [ref=e222]:
+                  - time [ref=e223]: a month ago
+                - paragraph [ref=e224]: "-rw-r--r--"
+            - button "index-ByB103Bq.js" [ref=e225] [cursor=pointer]:
+              - generic [ref=e227]: code
+              - generic [ref=e228]:
+                - paragraph [ref=e229]: index-ByB103Bq.js
+                - paragraph [ref=e230]: 491.07 KiB
+                - paragraph [ref=e231]:
+                  - time [ref=e232]: 16 days ago
+                - paragraph [ref=e233]: "-rw-r--r--"
+            - button "index-BYZ7XcIk.js" [ref=e234] [cursor=pointer]:
+              - generic [ref=e236]: code
+              - generic [ref=e237]:
+                - paragraph [ref=e238]: index-BYZ7XcIk.js
+                - paragraph [ref=e239]: 478.39 KiB
+                - paragraph [ref=e240]:
+                  - time [ref=e241]: a month ago
+                - paragraph [ref=e242]: "-rw-r--r--"
+            - button "index-C2D8slNP.css" [ref=e243] [cursor=pointer]:
+              - generic [ref=e245]: code
+              - generic [ref=e246]:
+                - paragraph [ref=e247]: index-C2D8slNP.css
+                - paragraph [ref=e248]: 38.55 KiB
+                - paragraph [ref=e249]:
+                  - time [ref=e250]: a month ago
+                - paragraph [ref=e251]: "-rw-r--r--"
+            - button "index-Cd5kTP4d.js" [ref=e252] [cursor=pointer]:
+              - generic [ref=e254]: code
+              - generic [ref=e255]:
+                - paragraph [ref=e256]: index-Cd5kTP4d.js
+                - paragraph [ref=e257]: 491.08 KiB
+                - paragraph [ref=e258]:
+                  - time [ref=e259]: 16 days ago
+                - paragraph [ref=e260]: "-rw-r--r--"
+            - button "index-CieS1myZ.js" [ref=e261] [cursor=pointer]:
+              - generic [ref=e263]: code
+              - generic [ref=e264]:
+                - paragraph [ref=e265]: index-CieS1myZ.js
+                - paragraph [ref=e266]: 489.16 KiB
+                - paragraph [ref=e267]:
+                  - time [ref=e268]: 19 days ago
+                - paragraph [ref=e269]: "-rw-r--r--"
+            - button "index-CKrLuV7B.js" [ref=e270] [cursor=pointer]:
+              - generic [ref=e272]: code
+              - generic [ref=e273]:
+                - paragraph [ref=e274]: index-CKrLuV7B.js
+                - paragraph [ref=e275]: 482.77 KiB
+                - paragraph [ref=e276]:
+                  - time [ref=e277]: a month ago
+                - paragraph [ref=e278]: "-rw-r--r--"
+            - button "index-CLA0FII5.js" [ref=e279] [cursor=pointer]:
+              - generic [ref=e281]: code
+              - generic [ref=e282]:
+                - paragraph [ref=e283]: index-CLA0FII5.js
+                - paragraph [ref=e284]: 478.86 KiB
+                - paragraph [ref=e285]:
+                  - time [ref=e286]: a month ago
+                - paragraph [ref=e287]: "-rw-r--r--"
+            - button "index-CnfIt-3G.js" [ref=e288] [cursor=pointer]:
+              - generic [ref=e290]: code
+              - generic [ref=e291]:
+                - paragraph [ref=e292]: index-CnfIt-3G.js
+                - paragraph [ref=e293]: 480.91 KiB
+                - paragraph [ref=e294]:
+                  - time [ref=e295]: a month ago
+                - paragraph [ref=e296]: "-rw-r--r--"
+            - button "index-Cq_-3uqL.js" [ref=e297] [cursor=pointer]:
+              - generic [ref=e299]: code
+              - generic [ref=e300]:
+                - paragraph [ref=e301]: index-Cq_-3uqL.js
+                - paragraph [ref=e302]: 483.81 KiB
+                - paragraph [ref=e303]:
+                  - time [ref=e304]: a month ago
+                - paragraph [ref=e305]: "-rw-r--r--"
+            - button "index-CxegDcNC.js" [ref=e306] [cursor=pointer]:
+              - generic [ref=e308]: code
+              - generic [ref=e309]:
+                - paragraph [ref=e310]: index-CxegDcNC.js
+                - paragraph [ref=e311]: 486.77 KiB
+                - paragraph [ref=e312]:
+                  - time [ref=e313]: a month ago
+                - paragraph [ref=e314]: "-rw-r--r--"
+            - button "index-DxE00izU.js" [ref=e315] [cursor=pointer]:
+              - generic [ref=e317]: code
+              - generic [ref=e318]:
+                - paragraph [ref=e319]: index-DxE00izU.js
+                - paragraph [ref=e320]: 485.99 KiB
+                - paragraph [ref=e321]:
+                  - time [ref=e322]: a month ago
+                - paragraph [ref=e323]: "-rw-r--r--"
+            - button "index-hER9ztqX.css" [ref=e324] [cursor=pointer]:
+              - generic [ref=e326]: code
+              - generic [ref=e327]:
+                - paragraph [ref=e328]: index-hER9ztqX.css
+                - paragraph [ref=e329]: 48.12 KiB
+                - paragraph [ref=e330]:
+                  - time [ref=e331]: a month ago
+                - paragraph [ref=e332]: "-rw-r--r--"
+          - generic [ref=e333]:
+            - paragraph [ref=e334]: Multiple selection enabled
+            - button "Clear" [ref=e335] [cursor=pointer]:
+              - generic [ref=e336]: clear
+  - generic [ref=e347]:
+    - heading "Replace or skip files" [level=2] [ref=e349]
+    - generic [ref=e350]:
+      - paragraph [ref=e351]: The destination folder there are 1 files with same name.
+      - generic [ref=e352]:
+        - button "done_all Replace all files in destination folder" [ref=e353] [cursor=pointer]:
+          - generic [ref=e354]: done_all
+          - text: Replace all files in destination folder
+        - button "undo Skip all conflicting files" [ref=e355] [cursor=pointer]:
+          - generic [ref=e356]: undo
+          - text: Skip all conflicting files
+        - button "checklist Decide for each conflicting file" [ref=e357] [cursor=pointer]:
+          - generic [ref=e358]: checklist
+          - text: Decide for each conflicting file
+    - button "Cancel" [ref=e361] [cursor=pointer]

@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img "Passo a Passo" [ref=e6]
+          - generic [ref=e7]:
+            - heading "Passo a Passo Uniformes" [level=1] [ref=e8]
+            - paragraph [ref=e9]: Controle de Produção
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]: 0 em produção
+            - generic [ref=e14]: 0 em atraso
+            - generic [ref=e16]: 0 prontos
+          - link "Formalização" [ref=e18] [cursor=pointer]:
+            - /url: https://passoapassouniformes.com/formalizarpedido/
+            - img [ref=e19]
+            - text: Formalização
+          - button "Atualizar" [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+            - text: Atualizar
+    - generic [ref=e30]: Carregando pedidos...
+  - alert [ref=e31]

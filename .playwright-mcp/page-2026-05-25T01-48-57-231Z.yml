@@ -1,0 +1,142 @@
+- generic [ref=e1]:
+  - generic [ref=e89]:
+    - generic [ref=e90]:
+      - generic [ref=e92]:
+        - navigation [ref=e93]:
+          - list [ref=e95]:
+            - listitem [ref=e96]:
+              - button "P passoapassouniformes2025@gmail.com's Org 1 project" [ref=e97]:
+                - generic [ref=e98]: P
+                - generic [ref=e99]:
+                  - generic [ref=e100]: passoapassouniformes2025@gmail.com's Org
+                  - generic [ref=e101]:
+                    - img [ref=e102]
+                    - generic [ref=e112]: 1 project
+                - img [ref=e113]
+          - button [ref=e117] [cursor=pointer]:
+            - figure [ref=e119]:
+              - img [ref=e120]
+        - navigation "Floating toolbar" [ref=e548]:
+          - generic [ref=e126]:
+            - button [ref=e127] [cursor=pointer]:
+              - img [ref=e129]
+            - button "Help" [ref=e549] [cursor=pointer]:
+              - generic [ref=e134]:
+                - img [ref=e135]
+                - generic [ref=e138]: Help
+            - button "Advisor Center" [ref=e550] [cursor=pointer]:
+              - generic [ref=e142]:
+                - img [ref=e143]
+                - generic [ref=e145]: Advisor Center
+      - generic [ref=e229]:
+        - generic [ref=e231]:
+          - heading "Create a new project" [level=3] [ref=e232]
+          - paragraph [ref=e233]: Your project will have its own dedicated instance and full Postgres database. An API will be set up so you can easily interact with your new database.
+        - generic [ref=e234]:
+          - generic [ref=e237]:
+            - generic [ref=e551]: Organization
+            - generic [ref=e242]:
+              - combobox [ref=e243]:
+                - generic:
+                  - generic:
+                    - generic: passoapassouniformes2025@gmail.com's Org
+                    - generic: Free
+                - img [ref=e244]
+              - combobox [ref=e246]
+          - generic [ref=e249]:
+            - generic [ref=e552]: GitHub (optional)
+            - generic [ref=e253]:
+              - button "GitHub icon Connect GitHub" [ref=e255] [cursor=pointer]:
+                - img "GitHub icon" [ref=e257]
+                - generic [ref=e259]: Connect GitHub
+              - generic [ref=e260]:
+                - text: "Ideal for agent-first workflows: update your schema in code, push it to GitHub, and Supabase deploys the changes automatically."
+                - link "Learn more" [ref=e261] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/deployment/branching/github-integration
+          - generic [ref=e264]:
+            - generic [ref=e553]: Project name
+            - textbox "Project name" [ref=e270]: podio-de-vendas
+          - generic [ref=e273]:
+            - generic [ref=e554]: Database password
+            - generic [ref=e277]:
+              - group [ref=e279]:
+                - textbox "Type in a strong password" [ref=e280]: S8xx52DxgtmSVaGo
+                - group [ref=e345]:
+                  - button "Copy" [ref=e346] [cursor=pointer]:
+                    - img [ref=e348]
+                    - generic [ref=e351]: Copy
+              - generic [ref=e281]:
+                - progressbar [ref=e352]
+                - paragraph [ref=e282]:
+                  - text: This password is strong.
+                  - button "Generate a password" [ref=e283]
+                  - text: .
+          - generic [ref=e286]:
+            - generic [ref=e555]: Region
+            - generic [ref=e290]:
+              - generic [ref=e291]:
+                - combobox [active] [ref=e292]:
+                  - generic:
+                    - generic:
+                      - img "region icon"
+                      - generic: South America (São Paulo)
+                  - img [ref=e293]
+                - combobox [ref=e295]
+              - paragraph [ref=e297]: Select the region closest to your users for the best performance.
+          - generic [ref=e300]:
+            - generic [ref=e556]: Security
+            - generic [ref=e306]:
+              - generic [ref=e307]:
+                - checkbox "Enable Data API" [checked] [ref=e308]:
+                  - generic:
+                    - img
+                - checkbox [checked]
+                - generic [ref=e309]:
+                  - text: Enable Data API
+                  - generic [ref=e310]:
+                    - text: Autogenerate a RESTful API for your public schema. Recommended if using a client library like
+                    - link "supabase-js" [ref=e311] [cursor=pointer]:
+                      - /url: https://supabase.com/docs/reference/javascript/introduction
+                    - text: .
+              - generic [ref=e312]:
+                - checkbox "Automatically expose new tables" [checked] [ref=e313]:
+                  - generic:
+                    - img
+                - checkbox [checked]
+                - generic [ref=e314]:
+                  - text: Automatically expose new tables
+                  - generic [ref=e315]:
+                    - text: Grants privileges to Data API roles by default, exposing new tables.
+                    - strong [ref=e316]: We recommend disabling this to control access manually.
+              - generic [ref=e317]:
+                - checkbox "Enable automatic RLS" [ref=e318]
+                - checkbox
+                - generic [ref=e319]:
+                  - text: Enable automatic RLS
+                  - generic [ref=e320]: Create an event trigger that automatically enables Row Level Security on all new tables in the public schema.
+          - button "Advanced Configuration" [ref=e560]:
+            - text: Advanced Configuration
+            - img [ref=e561]
+        - generic [ref=e330]:
+          - button "Cancel" [ref=e331] [cursor=pointer]:
+            - generic [ref=e332]: Cancel
+          - button "Create new project" [ref=e333] [cursor=pointer]:
+            - generic [ref=e334]: Create new project
+    - generic [ref=e222]:
+      - generic:
+        - generic:
+          - generic:
+            - img "Background pattern"
+          - generic:
+            - generic:
+              - button "Close banner":
+                - generic:
+                  - img
+            - generic:
+              - generic: Notice
+              - generic:
+                - paragraph: We've updated our Terms of Service
+                - paragraph: Updates define the responsibilities of both you and Supabase in the use of AI.
+              - button "Learn more":
+                - generic: Learn more
+  - alert [ref=e88]: New Project | Supabase

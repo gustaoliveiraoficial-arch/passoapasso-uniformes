@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Farquivos\u002F[id]","\u002Fcliente-pdf\u002F[id]","\u002Fconfirmacao\u002F[id]","\u002Flista-tamanhos\u002F[id]","\u002Fpedido-completo\u002F[id]","\u002Fpedido\u002F[id]","\u002Ftamanhos\u002F[token]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

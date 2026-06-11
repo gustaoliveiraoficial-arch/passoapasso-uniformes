@@ -35,6 +35,16 @@ export function formatarCEP(cep: string): string {
   return cep.replace(/\D/g, '').replace(/(\d{5})(\d{1,3})$/, '$1-$2')
 }
 
+// Extrai só o pathname do BASE_URL para montar o src da logo corretamente
+// Produção: https://passoapassouniformes.com/formalizarpedido → /formalizarpedido/logo-pap.png
+// Local: http://localhost:3001 → /logo-pap.png
+export const LOGO_URL = (() => {
+  const base = process.env.NEXT_PUBLIC_BASE_URL || ''
+  if (!base) return '/logo-pap.png'
+  try { return new URL(base).pathname.replace(/\/$/, '') + '/logo-pap.png' }
+  catch { return '/logo-pap.png' }
+})()
+
 export function gerarLinkCliente(token: string): string {
   const base = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001'
   return `${base}/tamanhos/${token}`
@@ -43,4 +53,14 @@ export function gerarLinkCliente(token: string): string {
 export function gerarLinkArteFinalista(pedidoId: string): string {
   const base = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001'
   return `${base}/arquivos/${pedidoId}`
+}
+
+// Firebase Storage já serve com Content-Disposition: attachment (configurado no upload)
+// Cloudinary raw: usa fl_attachment como fallback
+export function urlVerPDF(url: string): string {
+  if (!url) return url
+  if (url.includes('cloudinary.com') && url.includes('/raw/upload/')) {
+    return url.replace('/raw/upload/', '/raw/upload/fl_attachment/')
+  }
+  return url
 }

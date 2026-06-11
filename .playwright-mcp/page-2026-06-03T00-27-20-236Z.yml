@@ -1,0 +1,54 @@
+- main [ref=e2]:
+  - generic [ref=e6]:
+    - generic [ref=e67]:
+      - img [ref=e68]
+      - link "Ajuda" [ref=e70] [cursor=pointer]:
+        - /url: https://help.hotmart.com/pt-br/article/39413024793613/
+        - generic:
+          - generic:
+            - img
+        - generic: Ajuda
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - heading "Entrar" [level=2] [ref=e11]:
+          - generic: Entrar
+        - paragraph [ref=e13]:
+          - generic: Entre com senha para continuar sua jornada
+        - generic [ref=e15]:
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - button [ref=e71] [cursor=pointer]:
+                - img [ref=e20]
+              - button [ref=e72] [cursor=pointer]:
+                - img [ref=e26]
+            - generic [ref=e32]: ou
+          - generic [ref=e34]:
+            - generic [ref=e36]:
+              - generic [ref=e38]: Email
+              - textbox "Email" [ref=e40]:
+                - /placeholder: Digite seu e-mail ou usuário
+            - generic [ref=e42]:
+              - generic [ref=e44]: Senha
+              - generic [ref=e45]:
+                - generic:
+                  - textbox "Senha" [ref=e46]:
+                    - /placeholder: Sua senha
+                  - button [ref=e48] [cursor=pointer]:
+                    - img [ref=e49]
+            - link "Esqueci minha senha" [ref=e52] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - generic [ref=e53]:
+              - button "Entrar" [ref=e54] [cursor=pointer]
+              - generic [ref=e55]:
+                - generic [ref=e56]: Não tem uma conta?
+                - link "Criar conta" [ref=e57] [cursor=pointer]:
+                  - /url: /signup?service=https%3A%2F%2Fsso.hotmart.com%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D3ebd6e2a-c3f7-4518-85c8-29b4b109bdf9%26scope%3Dopenid%2Bprofile%2Buser%2Bauthorities%2Bemail%2Baddress%26redirect_uri%3Dhttps%253A%252F%252Fapp-vlc.hotmart.com%252Fauth%252Flogin%26response_type%3Dcode%26response_mode%3Dquery%26state%3Dbae1c018f19f494abbb9d7f49721ae94%26client_name%3DCasOAuthClient
+      - generic [ref=e61]:
+        - link "Suporte" [ref=e62] [cursor=pointer]:
+          - /url: https://help.hotmart.com/pt-br/article/39413024793613/
+        - text: —
+        - link "Termos de Uso" [ref=e63] [cursor=pointer]:
+          - /url: https://hotmart.com/en/legal/terms-of-use
+        - text: —
+        - link "Política de Privacidade" [ref=e64] [cursor=pointer]:
+          - /url: https://hotmart.com/en/legal/data-privacy-policy

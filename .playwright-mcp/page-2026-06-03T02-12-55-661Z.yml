@@ -1,0 +1,205 @@
+- generic [ref=e1]:
+  - generic [ref=e9]:
+    - generic:
+      - generic:
+        - generic [ref=e11]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - generic:
+              - link "Hotmart" [ref=e20] [cursor=pointer]:
+                - /url: /
+              - link "Hotmart Logo" [ref=e21] [cursor=pointer]:
+                - /url: /
+                - img "Hotmart Logo" [ref=e22]
+          - generic [ref=e23]:
+            - generic:
+              - img [ref=e356] [cursor=pointer]
+              - img [ref=e371] [cursor=pointer]
+              - generic [ref=e383] [cursor=pointer]:
+                - generic:
+                  - img [ref=e384]
+                  - generic [ref=e386]: "10"
+              - img [ref=e36] [cursor=pointer]
+              - generic [ref=e48] [cursor=pointer]: GO
+        - navigation [ref=e52]:
+          - generic:
+            - generic [ref=e57] [cursor=pointer]:
+              - generic:
+                - img [ref=e59]
+                - generic [ref=e61]: Buscar
+            - separator [ref=e62]
+            - generic [ref=e67] [cursor=pointer]:
+              - generic:
+                - img [ref=e69]
+                - generic [ref=e71]: Home
+            - generic [ref=e73]:
+              - generic [ref=e76] [cursor=pointer]:
+                - generic:
+                  - img [ref=e78]
+                  - generic [ref=e80]: Produtos
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e87] [cursor=pointer]: Meus produtos
+                    - generic [ref=e93] [cursor=pointer]: Área de membros
+                    - generic [ref=e99] [cursor=pointer]: Afiliar-se a um produto
+            - generic [ref=e101]:
+              - generic [ref=e104] [cursor=pointer]:
+                - generic:
+                  - img [ref=e106]
+                  - generic [ref=e109]: Marketing
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e116] [cursor=pointer]: Visão geral
+                    - generic [ref=e122] [cursor=pointer]: Criação de páginas
+                    - generic [ref=e128] [cursor=pointer]: E-mail marketing
+            - generic [ref=e130]:
+              - generic [ref=e133] [cursor=pointer]:
+                - generic:
+                  - img [ref=e135]
+                  - generic [ref=e139]: Vendas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e146] [cursor=pointer]: Gestão de vendas
+                    - generic [ref=e152] [cursor=pointer]: Minhas vendas
+                    - generic [ref=e158] [cursor=pointer]: Gestão de assinaturas
+                    - generic [ref=e164] [cursor=pointer]: Gestão de Produtos Físicos
+                    - generic [ref=e170] [cursor=pointer]: Gestão do Parcelado Hotmart
+                    - generic [ref=e176] [cursor=pointer]: Reembolsos
+                    - generic [ref=e182] [cursor=pointer]: Emissão de Nota Fiscal (eNotas)
+                    - generic [ref=e188] [cursor=pointer]: Gestão de recebíveis
+            - generic [ref=e190]:
+              - generic [ref=e193] [cursor=pointer]:
+                - generic:
+                  - img [ref=e195]
+                  - generic [ref=e197]: Carteira
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e204] [cursor=pointer]: Saldo
+                    - generic [ref=e210] [cursor=pointer]: Extrato
+                    - generic [ref=e216] [cursor=pointer]: Movimentações do mês
+                    - generic [ref=e222] [cursor=pointer]: Saques
+                    - generic [ref=e228] [cursor=pointer]: Antecipações
+            - generic [ref=e230]:
+              - generic [ref=e233] [cursor=pointer]:
+                - generic:
+                  - img [ref=e235]
+                  - generic [ref=e237]: Relatórios
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e244] [cursor=pointer]: Vendas
+                    - generic [ref=e250] [cursor=pointer]: Recorrências
+                    - generic [ref=e256] [cursor=pointer]: Minhas análises
+            - generic [ref=e258]:
+              - generic [ref=e261] [cursor=pointer]:
+                - generic:
+                  - img [ref=e263]
+                  - generic [ref=e266]: Parcerias
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e273] [cursor=pointer]: Central de colaboradores
+                    - generic [ref=e279] [cursor=pointer]: Afiliados
+                    - generic [ref=e285] [cursor=pointer]: Chat com Afiliados
+            - generic [ref=e287]:
+              - generic [ref=e290] [cursor=pointer]:
+                - generic:
+                  - img [ref=e292]
+                  - generic [ref=e295]: Ferramentas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic [ref=e302] [cursor=pointer]: Impulsione suas vendas
+                    - generic [ref=e308] [cursor=pointer]: Gerencie seu negócio
+                    - generic [ref=e314] [cursor=pointer]: Ver todas
+    - main [ref=e318]:
+      - generic [ref=e417]:
+        - generic [ref=e418]:
+          - generic [ref=e419]:
+            - heading "Webhook" [level=1] [ref=e420]
+            - paragraph [ref=e421]: Nossa API de POSTs automatiza o controle dos seus produtos e otimiza a entrega para o cliente, além de poder ser integrada a qualquer sistema.
+          - navigation [ref=e422]:
+            - generic [ref=e423]:
+              - link "Ver documentação" [ref=e424] [cursor=pointer]:
+                - /url: https://developers.hotmart.com/docs/pt-BR/1.0.0/webhook/about-webhook/
+                - text: Ver documentação
+                - img [ref=e425]
+              - button "Cadastrar Webhook" [ref=e427] [cursor=pointer]:
+                - img [ref=e428]
+                - text: Cadastrar Webhook
+        - generic [ref=e430]:
+          - link "Minhas configurações" [ref=e431] [cursor=pointer]:
+            - /url: /tools/webhook/
+            - generic [ref=e432]: Minhas configurações
+          - link "Histórico" [ref=e433] [cursor=pointer]:
+            - /url: /tools/webhook/history
+            - generic [ref=e434]: Histórico
+          - link "Autenticação" [ref=e435] [cursor=pointer]:
+            - /url: /tools/webhook/auth
+            - generic [ref=e436]: Autenticação
+        - generic [ref=e438]:
+          - generic [ref=e440]:
+            - generic [ref=e441]: Selecione um produto
+            - generic [ref=e444]:
+              - textbox "Selecione um produto" [ref=e446]: Todos os produtos
+              - generic:
+                - generic:
+                  - generic: Todos os produtos
+                - generic:
+                  - generic: Pódio de Vendas
+                - generic:
+                  - generic: Pódio de Vendas
+          - generic [ref=e447]:
+            - 'button "Pódio de Vendas - ID: 7864844" [ref=e448] [cursor=pointer]':
+              - 'heading "Pódio de Vendas - ID: 7864844" [level=2] [ref=e449]'
+              - img [ref=e450]
+            - table [ref=e454]:
+              - rowgroup [ref=e455]:
+                - row "Nome da configuração URL Versão Eventos Status" [ref=e456]:
+                  - columnheader "Nome da configuração" [ref=e457]
+                  - columnheader "URL" [ref=e458]
+                  - columnheader "Versão" [ref=e459]
+                  - columnheader "Eventos" [ref=e460]
+                  - columnheader "Status" [ref=e461]
+                  - columnheader [ref=e462]
+              - rowgroup [ref=e463]:
+                - row "Pódio de Vendas SaaS https://podio-de-ven... 2.0.0 Compra aprovada + 3" [ref=e464]:
+                  - cell "Pódio de Vendas SaaS" [ref=e465]
+                  - cell "https://podio-de-ven..." [ref=e466]:
+                    - generic [ref=e467]:
+                      - generic [ref=e470] [cursor=pointer]: https://podio-de-ven...
+                      - button [ref=e473] [cursor=pointer]:
+                        - img [ref=e474]
+                  - cell "2.0.0" [ref=e476]
+                  - cell "Compra aprovada + 3" [ref=e477]:
+                    - generic [ref=e478]:
+                      - generic [ref=e479]:
+                        - generic: Compra aprovada
+                      - generic [ref=e481]:
+                        - generic: + 3
+                  - cell [ref=e482]:
+                    - generic [ref=e483]:
+                      - generic:
+                        - checkbox [checked]
+                  - cell [ref=e484]:
+                    - generic [ref=e485]:
+                      - button [ref=e487] [cursor=pointer]:
+                        - img [ref=e488]
+                      - button [ref=e491] [cursor=pointer]:
+                        - img [ref=e492]
+  - generic:
+    - generic:
+      - generic [ref=e412]:
+        - iframe [ref=e413]:
+          - button "Fechar mensagem da empresa" [ref=f265e4] [cursor=pointer]:
+            - img [ref=f265e5]
+        - iframe [ref=e414]:
+          - button "Olá. Precisa de ajuda?" [ref=f266e5] [cursor=pointer]
+      - iframe [ref=e415]:
+        - button "Abrir janela de mensagens" [ref=f267e5] [cursor=pointer]:
+          - img [ref=f267e7]
+          - img [ref=f267e10]

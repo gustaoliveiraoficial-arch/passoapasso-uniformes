@@ -1,0 +1,37 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]: 🏆 Empresa Teste
+      - navigation [ref=e5]:
+        - button "🏆 Ranking" [ref=e6] [cursor=pointer]
+        - button "➕ Lançar" [ref=e7] [cursor=pointer]
+        - button "🎡 Roleta" [ref=e8] [cursor=pointer]
+        - button "📊 Dashboard" [ref=e9] [cursor=pointer]
+        - button "📋 Histórico" [ref=e10] [cursor=pointer]
+      - generic [ref=e11]:
+        - generic [ref=e12]: Gustavo Oliveira
+        - button "⚙️ Editar" [ref=e13] [cursor=pointer]
+        - link "Sair" [ref=e14] [cursor=pointer]:
+          - /url: /login
+    - main [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: 🎉 Trial gratuito ativo — 14 dias restantes
+        - link "Assinar agora" [ref=e18] [cursor=pointer]:
+          - /url: /billing
+      - generic [ref=e19]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: 👑
+          - generic [ref=e24]: CS
+          - generic [ref=e25]: Carlos Silva
+          - generic [ref=e26]: R$ 0
+          - generic [ref=e27]: 1°
+        - generic [ref=e29]:
+          - generic [ref=e30]: 1°
+          - generic [ref=e31]: CS
+          - generic [ref=e32]:
+            - generic [ref=e33]: Carlos Silva
+            - generic [ref=e34]: "Hoje: R$ 0"
+          - generic [ref=e37]: 0% da meta
+          - generic [ref=e38]: R$ 0
+  - button "Open Next.js Dev Tools" [ref=e44] [cursor=pointer]:
+    - img [ref=e45]

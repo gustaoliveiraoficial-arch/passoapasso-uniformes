@@ -1,0 +1,247 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /adf1974658183e4f/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.89%
+        - generic [ref=e57]: 454.32 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 3.58%
+        - generic [ref=e59]: 21467 / 600000
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h2
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e39]:
+        - link "Home" [ref=e40] [cursor=pointer]:
+          - /url: /adf1974658183e4f/files
+          - generic [ref=e41]: home
+        - generic [ref=e42]:
+          - generic [ref=e44]: keyboard_arrow_right
+          - link "public_html" [ref=e45] [cursor=pointer]:
+            - /url: /adf1974658183e4f/files/public_html/
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - button "Toggle sidebar" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: menu
+          - button "Search" [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: more_vert
+        - generic [ref=e304]:
+          - generic [ref=e307] [cursor=pointer]:
+            - button "Sort by name" [ref=e308]:
+              - text: Name
+              - generic [ref=e309]: arrow_upward
+            - button "Sort by last modified" [ref=e310]:
+              - text: Last modified
+              - generic [ref=e311]: arrow_upward
+          - generic [ref=e312]:
+            - button ".private" [ref=e313] [cursor=pointer]:
+              - generic [ref=e315]: folder
+              - generic [ref=e316]:
+                - paragraph [ref=e317]: .private
+                - paragraph [ref=e318]:
+                  - time [ref=e319]: 4 months ago
+            - button "_next" [ref=e320] [cursor=pointer]:
+              - generic [ref=e322]: folder
+              - generic [ref=e323]:
+                - paragraph [ref=e324]: _next
+                - paragraph [ref=e325]:
+                  - time [ref=e326]: 2 months ago
+            - button "_not-found" [ref=e327] [cursor=pointer]:
+              - generic [ref=e329]: folder
+              - generic [ref=e330]:
+                - paragraph [ref=e331]: _not-found
+                - paragraph [ref=e332]:
+                  - time [ref=e333]: 2 months ago
+            - button "camiseta-pv" [ref=e334] [cursor=pointer]:
+              - generic [ref=e336]: folder
+              - generic [ref=e337]:
+                - paragraph [ref=e338]: camiseta-pv
+                - paragraph [ref=e339]:
+                  - time [ref=e340]: 2 months ago
+            - button "formalizarpedido" [ref=e341] [cursor=pointer]:
+              - generic [ref=e343]: folder
+              - generic [ref=e344]:
+                - paragraph [ref=e345]: formalizarpedido
+                - paragraph [ref=e346]:
+                  - time [ref=e347]: a day ago
+            - button "linkdabio" [ref=e348] [cursor=pointer]:
+              - generic [ref=e350]: folder
+              - generic [ref=e351]:
+                - paragraph [ref=e352]: linkdabio
+                - paragraph [ref=e353]:
+                  - time [ref=e354]: 7 days ago
+            - button "tabeladeprecos" [ref=e355] [cursor=pointer]:
+              - generic [ref=e357]: folder
+              - generic [ref=e358]:
+                - paragraph [ref=e359]: tabeladeprecos
+                - paragraph [ref=e360]:
+                  - time [ref=e361]: 7 days ago
+            - button "uniformes-empresariais" [ref=e362] [cursor=pointer]:
+              - generic [ref=e364]: folder
+              - generic [ref=e365]:
+                - paragraph [ref=e366]: uniformes-empresariais
+                - paragraph [ref=e367]:
+                  - time [ref=e368]: a month ago
+            - button "wp-admin" [ref=e369] [cursor=pointer]:
+              - generic [ref=e371]: folder
+              - generic [ref=e372]:
+                - paragraph [ref=e373]: wp-admin
+                - paragraph [ref=e374]:
+                  - time [ref=e375]: 4 months ago
+            - button "wp-content" [ref=e376] [cursor=pointer]:
+              - generic [ref=e378]: folder
+              - generic [ref=e379]:
+                - paragraph [ref=e380]: wp-content
+                - paragraph [ref=e381]:
+                  - time [ref=e382]: 2 months ago
+            - button "wp-includes" [ref=e383] [cursor=pointer]:
+              - generic [ref=e385]: folder
+              - generic [ref=e386]:
+                - paragraph [ref=e387]: wp-includes
+                - paragraph [ref=e388]:
+                  - time [ref=e389]: 4 months ago
+          - generic [ref=e390]:
+            - button ".htaccess" [ref=e391] [cursor=pointer]:
+              - generic [ref=e393]: description
+              - generic [ref=e394]:
+                - paragraph [ref=e395]: .htaccess
+                - paragraph [ref=e396]:
+                  - time [ref=e397]: 10 days ago
+            - button ".htaccess.bk" [ref=e398] [cursor=pointer]:
+              - generic [ref=e400]: description
+              - generic [ref=e401]:
+                - paragraph [ref=e402]: .htaccess.bk
+                - paragraph [ref=e403]:
+                  - time [ref=e404]: 4 months ago
+            - button "404.html" [ref=e405] [cursor=pointer]:
+              - generic [ref=e407]: code
+              - generic [ref=e408]:
+                - paragraph [ref=e409]: 404.html
+                - paragraph [ref=e410]:
+                  - time [ref=e411]: 2 months ago
+            - button "__next.__PAGE__.txt" [ref=e412] [cursor=pointer]:
+              - generic [ref=e414]: description
+              - generic [ref=e415]:
+                - paragraph [ref=e416]: __next.__PAGE__.txt
+                - paragraph [ref=e417]:
+                  - time [ref=e418]: 2 months ago
+            - button "__next._full.txt" [ref=e419] [cursor=pointer]:
+              - generic [ref=e421]: description
+              - generic [ref=e422]:
+                - paragraph [ref=e423]: __next._full.txt
+                - paragraph [ref=e424]:
+                  - time [ref=e425]: 2 months ago
+            - button "__next._head.txt" [ref=e426] [cursor=pointer]:
+              - generic [ref=e428]: description
+              - generic [ref=e429]:
+                - paragraph [ref=e430]: __next._head.txt
+                - paragraph [ref=e431]:
+                  - time [ref=e432]: 2 months ago
+            - button "__next._index.txt" [ref=e433] [cursor=pointer]:
+              - generic [ref=e435]: description
+              - generic [ref=e436]:
+                - paragraph [ref=e437]: __next._index.txt
+                - paragraph [ref=e438]:
+                  - time [ref=e439]: 2 months ago
+            - button "__next._tree.txt" [ref=e440] [cursor=pointer]:
+              - generic [ref=e442]: description
+              - generic [ref=e443]:
+                - paragraph [ref=e444]: __next._tree.txt
+                - paragraph [ref=e445]:
+                  - time [ref=e446]: 2 months ago
+            - button "_not-found.html" [ref=e447] [cursor=pointer]:
+              - generic [ref=e449]: code
+              - generic [ref=e450]:
+                - paragraph [ref=e451]: _not-found.html
+                - paragraph [ref=e452]:
+                  - time [ref=e453]: 2 months ago
+            - button "_not-found.txt" [ref=e454] [cursor=pointer]:
+              - generic [ref=e456]: description
+              - generic [ref=e457]:
+                - paragraph [ref=e458]: _not-found.txt
+                - paragraph [ref=e459]:
+                  - time [ref=e460]: 2 months ago
+            - button "brindes.html" [ref=e461] [cursor=pointer]:
+              - generic [ref=e463]: code
+              - generic [ref=e464]:
+                - paragraph [ref=e465]: brindes.html
+                - paragraph [ref=e466]:
+                  - time [ref=e467]: 2 months ago
+            - button "default.php" [ref=e468] [cursor=pointer]:
+              - generic [ref=e470]: code
+              - generic [ref=e471]:
+                - paragraph [ref=e472]: default.php
+                - paragraph [ref=e473]:
+                  - time [ref=e474]: 4 months ago
+            - button "favicon.ico" [ref=e475] [cursor=pointer]:
+              - img [ref=e477]
+              - generic [ref=e478]:
+                - paragraph [ref=e479]: favicon.ico
+                - paragraph [ref=e480]:
+                  - time [ref=e481]: 2 months ago
+            - button "file.svg" [ref=e482] [cursor=pointer]:
+              - img [ref=e484]
+              - generic [ref=e485]:
+                - paragraph [ref=e486]: file.svg
+                - paragraph [ref=e487]:
+                  - time [ref=e488]: 2 months ago
+            - button "formalizarpedido.zip" [ref=e489] [cursor=pointer]:
+              - generic [ref=e491]: folder_zip
+              - generic [ref=e492]:
+                - paragraph [ref=e493]: formalizarpedido.zip
+                - paragraph [ref=e494]:
+                  - time [ref=e495]: a month ago
+            - button "globe.svg" [ref=e496] [cursor=pointer]:
+              - img [ref=e498]
+              - generic [ref=e499]:
+                - paragraph [ref=e500]: globe.svg
+                - paragraph [ref=e501]:
+                  - time [ref=e502]: 2 months ago
+          - generic [ref=e503]:
+            - paragraph [ref=e504]: Multiple selection enabled
+            - button "Clear" [ref=e505] [cursor=pointer]:
+              - generic [ref=e506]: clear

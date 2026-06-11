@@ -65,7 +65,7 @@ A entrega dos resultados previstos neste contrato está condicionada ao cumprime
 | Data de Pagamento | Valor | Descrição |
 |---|---|---|
 | Dia 5 de cada mês | R$ 2.000,00 | Primeira parcela dos honorários mensais |
-| Dia 20 de cada mês | R$ 2.000,00 | Segunda parcela dos honorários mensais |
+| Dia 20 de cada mês | R$ 2.000,00 + comissões apuradas no mês anterior | Segunda parcela dos honorários mensais + comissões (quando devidas) |
 
 **3.4.** Os pagamentos serão realizados via *(PIX / TED — a definir pelas PARTES)*, mediante emissão de **Nota Fiscal** pelo PRESTADOR, na condição de Microempreendedor Individual (MEI).
 
@@ -82,7 +82,7 @@ A entrega dos resultados previstos neste contrato está condicionada ao cumprime
 | Ao atingir R$ 160.000,00 de faturamento no mês | 1,00% | Faturamento total do mês |
 | Ao superar a meta mensal formalmente acordada | 1,50% | Faturamento total do mês |
 
-**4.2.** As comissões serão apuradas ao término de cada mês e pagas até o **dia 15 do mês subsequente**, mediante emissão de Nota Fiscal complementar pelo PRESTADOR.
+**4.2.** As comissões serão apuradas ao término de cada mês e pagas até o **dia 20 do mês subsequente**, juntamente com a segunda parcela dos honorários mensais, mediante emissão de Nota Fiscal complementar pelo PRESTADOR.
 
 **4.3. Critério de apuração — Modelo de pagamento em duas etapas.** A CONTRATANTE adota o modelo de recebimento em que o cliente paga **50% no ato do pedido** e os **50% restantes na retirada** do produto. Para fins de cálculo da comissão do PRESTADOR, aplicam-se as seguintes regras:
 

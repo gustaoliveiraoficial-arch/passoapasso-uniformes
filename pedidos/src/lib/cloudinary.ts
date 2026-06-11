@@ -3,7 +3,7 @@ const UPLOAD_PRESET = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET
 
 export async function uploadParaCloudinary(
   file: File,
-  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento',
+  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada',
   pedidoId: string
 ): Promise<string> {
   if (!CLOUD_NAME || !UPLOAD_PRESET) {
@@ -19,11 +19,15 @@ export async function uploadParaCloudinary(
   const formData = new FormData()
   formData.append('file', file)
   formData.append('upload_preset', UPLOAD_PRESET)
-  formData.append('folder', `pap-pedidos/${pedidoId}/${pasta}`)
 
-  // Para arquivos raw (PDF, CDR), incluímos o nome original para facilitar identificação
-  if (!isImagem) {
+  if (isImagem) {
+    // Para imagens: usa folder e deixa o Cloudinary gerar o public_id
+    formData.append('folder', `pap-pedidos/${pedidoId}/${pasta}`)
+  } else {
+    // Para arquivos raw (PDF, CDR): usa public_id com caminho completo, SEM folder
+    // (setar folder E public_id ao mesmo tempo duplica o caminho na URL)
     formData.append('public_id', `pap-pedidos/${pedidoId}/${pasta}/${file.name}`)
+    formData.append('access_mode', 'public')
   }
 
   const res = await fetch(

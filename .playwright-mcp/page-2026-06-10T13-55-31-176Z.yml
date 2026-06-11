@@ -1,0 +1,27 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img "Passo a Passo Uniformes" [ref=e6]
+        - generic [ref=e7]:
+          - heading "Passo a Passo Uniformes" [level=1] [ref=e8]
+          - paragraph [ref=e9]: Kanban de Pedidos
+      - generic [ref=e10]:
+        - button "Pedidos com entrega próxima" [ref=e12]:
+          - img [ref=e13]
+        - generic [ref=e16]:
+          - img [ref=e17]
+          - textbox "Data inicial" [ref=e19]
+          - text: —
+          - textbox "Data final" [ref=e20]
+        - generic [ref=e21]:
+          - img [ref=e22]
+          - textbox "Buscar cliente ou pedido..." [ref=e25]
+        - button "Atualizar" [ref=e26]:
+          - img [ref=e27]
+          - text: Atualizar
+        - link "Novo Pedido" [ref=e32] [cursor=pointer]:
+          - /url: /formalizarpedido/novo-pedido/
+          - img [ref=e33]
+          - text: Novo Pedido
+  - generic [ref=e36]: Carregando pedidos...

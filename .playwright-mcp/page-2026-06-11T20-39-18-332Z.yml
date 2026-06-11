@@ -1,0 +1,124 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /3473f7ce05413544/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.9%
+        - generic [ref=e24]: 461.42 MiB / 50 GiB
+      - generic [ref=e25]:
+        - generic [ref=e26]: Inodes
+        - generic [ref=e29]: 3.59%
+        - generic [ref=e30]: 21561 / 600000
+    - button "Logout" [ref=e31] [cursor=pointer]:
+      - generic [ref=e32]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e33]:
+      - generic [ref=e34]: File Browser v2.63.2-h2
+      - generic [ref=e35]: Help
+  - main [ref=e36]:
+    - generic [ref=e37]:
+      - link "Home" [ref=e39] [cursor=pointer]:
+        - /url: /3473f7ce05413544/files
+        - generic [ref=e40]: home
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - img [ref=e43]
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: search
+              - textbox "Search..." [ref=e47]
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: Type to search...
+              - generic [ref=e50]:
+                - heading "Types" [level=3] [ref=e51]
+                - generic [ref=e52]:
+                  - button "Images" [ref=e53] [cursor=pointer]:
+                    - generic [ref=e54]: insert_photo
+                    - paragraph [ref=e55]: Images
+                  - button "Music" [ref=e56] [cursor=pointer]:
+                    - generic [ref=e57]: volume_up
+                    - paragraph [ref=e58]: Music
+                  - button "Video" [ref=e59] [cursor=pointer]:
+                    - generic [ref=e60]: movie
+                    - paragraph [ref=e61]: Video
+                  - button "PDF" [ref=e62] [cursor=pointer]:
+                    - generic [ref=e63]: picture_as_pdf
+                    - paragraph [ref=e64]: PDF
+          - generic [ref=e65]:
+            - button "Switch view" [ref=e66] [cursor=pointer]:
+              - generic [ref=e67]: view_module
+            - button "Download" [ref=e68] [cursor=pointer]:
+              - generic [ref=e69]: file_download
+            - button "Upload" [ref=e70] [cursor=pointer]:
+              - generic [ref=e71]: file_upload
+            - button "Calculate directory sizes" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: assessment
+            - button "Info" [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: info
+            - button "Select multiple" [ref=e76] [cursor=pointer]:
+              - generic [ref=e77]: check_circle
+        - generic [ref=e78]:
+          - generic [ref=e81] [cursor=pointer]:
+            - button "Sort by name" [ref=e82]:
+              - text: Name
+              - generic [ref=e83]: arrow_upward
+            - button "Sort by size" [ref=e84]:
+              - text: Size
+              - generic [ref=e85]: arrow_upward
+            - button "Sort by last modified" [ref=e86]:
+              - text: Last modified
+              - generic [ref=e87]: arrow_upward
+          - generic [ref=e88]:
+            - button ".trash" [ref=e89] [cursor=pointer]:
+              - generic [ref=e91]: folder
+              - generic [ref=e92]:
+                - paragraph [ref=e93]: .trash
+                - paragraph [ref=e94]: "-"
+                - paragraph [ref=e95]:
+                  - time [ref=e96]: 2 days ago
+                - paragraph [ref=e97]: drwxr-xr-x
+            - button "home" [ref=e98] [cursor=pointer]:
+              - generic [ref=e100]: folder
+              - generic [ref=e101]:
+                - paragraph [ref=e102]: home
+                - paragraph [ref=e103]: "-"
+                - paragraph [ref=e104]:
+                  - time [ref=e105]: 3 days ago
+                - paragraph [ref=e106]: drwxr-xr-x
+            - button "public_html" [ref=e107] [cursor=pointer]:
+              - generic [ref=e109]: folder
+              - generic [ref=e110]:
+                - paragraph [ref=e111]: public_html
+                - paragraph [ref=e112]: "-"
+                - paragraph [ref=e113]:
+                  - time [ref=e114]: an hour ago
+                - paragraph [ref=e115]: drwxr-xr-x
+          - button "DO_NOT_UPLOAD_HERE" [ref=e117] [cursor=pointer]:
+            - generic [ref=e119]: description
+            - generic [ref=e120]:
+              - paragraph [ref=e121]: DO_NOT_UPLOAD_HERE
+              - paragraph [ref=e122]: 0 B
+              - paragraph [ref=e123]:
+                - time [ref=e124]: 4 months ago
+              - paragraph [ref=e125]: "-rw-r--r--"
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: Multiple selection enabled
+            - button "Clear" [ref=e128] [cursor=pointer]:
+              - generic [ref=e129]: clear

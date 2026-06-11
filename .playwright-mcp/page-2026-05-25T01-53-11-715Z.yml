@@ -1,0 +1,147 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e57]:
+      - generic [ref=e59]:
+        - navigation [ref=e60]:
+          - generic [ref=e61]:
+            - button "P podio-de-vendas main" [ref=e62]:
+              - generic [ref=e63]: P
+              - generic [ref=e64]:
+                - generic [ref=e65]: podio-de-vendas
+                - generic [ref=e66]:
+                  - img [ref=e67]
+                  - generic [ref=e71]: main
+              - img [ref=e72]
+            - button "Connect" [ref=e75] [cursor=pointer]:
+              - img [ref=e77]
+              - generic [ref=e79]: Connect
+          - generic [ref=e80]:
+            - button [ref=e81] [cursor=pointer]:
+              - figure [ref=e83]:
+                - img [ref=e84]
+            - button "Menu dropdown button" [ref=e86] [cursor=pointer]:
+              - img [ref=e88]
+        - navigation "Floating toolbar" [ref=e89]:
+          - generic [ref=e90]:
+            - button [ref=e91] [cursor=pointer]:
+              - img [ref=e93]
+            - button "Help" [ref=e97] [cursor=pointer]:
+              - generic [ref=e98]:
+                - img [ref=e99]
+                - generic [ref=e102]: Help
+            - button "Advisor Center" [ref=e105] [cursor=pointer]:
+              - generic [ref=e106]:
+                - img [ref=e107]
+                - generic [ref=e109]: Advisor Center
+            - button "SQL Editor" [ref=e111] [cursor=pointer]:
+              - generic [ref=e112]:
+                - img [ref=e113]
+                - generic [ref=e115]: SQL Editor
+            - button "AI Assistant" [ref=e117] [cursor=pointer]:
+              - generic [ref=e118]:
+                - img [ref=e121]
+                - generic [ref=e124]: AI Assistant
+      - main [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - tablist [ref=e138]:
+              - button "Sales Podium Multi-Tenant Schema" [ref=e528]:
+                - tab "Sales Podium Multi-Tenant Schema" [selected] [ref=e529]:
+                  - img [ref=e231]
+                  - generic [ref=e238]: Sales Podium Multi-Tenant Schema
+                  - button [ref=e239] [cursor=pointer]:
+                    - img [ref=e240]
+                - separator [ref=e244]
+              - button [ref=e245]:
+                - img [ref=e246]
+            - status [ref=e149]
+          - generic [ref=e152]:
+            - code [ref=e159]:
+              - generic [ref=e160]:
+                - generic [ref=e162]:
+                  - generic [ref=e249]: "130"
+                  - generic [ref=e251]: "131"
+                  - generic [ref=e255]: "132"
+                  - generic [ref=e258]: "133"
+                - generic [ref=e169]:
+                  - generic [ref=e487]: (tenant_id = my_tenant_id()) WITH CHECK (tenant_id = my_tenant_id());
+                  - generic [ref=e492]: CREATE POLICY "config_all" ON workspace_config FOR ALL USING
+                  - generic [ref=e494]: (tenant_id = my_tenant_id()) WITH CHECK (tenant_id = my_tenant_id());
+                  - generic [ref=e499]: ALTER PUBLICATION supabase_realtime ADD TABLE sales;
+                - textbox "Editor content" [active] [ref=e172]: CREATE POLICY "config_all" ON workspace_config FOR ALL USING (tenant_id = my_tenant_id()) WITH CHECK (tenant_id = my_tenant_id()); ALTER PUBLICATION supabase_realtime ADD TABLE sales;
+                - generic [ref=e501]:
+                  - generic [ref=e502]:
+                    - generic [ref=e503]: "6"
+                    - generic [ref=e504]: 
+                  - generic [ref=e505]:
+                    - generic [ref=e506]: "7"
+                    - generic [ref=e507]: 
+                  - generic [ref=e508]:
+                    - generic [ref=e509]: "8"
+                    - generic [ref=e510]: 
+                  - generic [ref=e511]:
+                    - list:
+                      - listitem [ref=e512]:
+                        - generic [ref=e513]: CREATE TABLE tenants (
+                      - listitem [ref=e514]:
+                        - generic [ref=e515]: id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                      - listitem [ref=e516]:
+                        - generic [ref=e517]: name TEXT NOT NULL,
+            - separator [ref=e173]:
+              - img [ref=e175]
+            - generic [ref=e184]:
+              - tablist [ref=e185]:
+                - generic [ref=e186]:
+                  - tab "Results" [selected] [ref=e187]:
+                    - generic [ref=e188]: Results
+                  - tab "Explain" [ref=e189]:
+                    - generic [ref=e190]: Explain
+                  - tab "Chart" [ref=e191]:
+                    - generic [ref=e192]: Chart
+                  - button "Export" [disabled]:
+                    - generic: Export
+                    - generic:
+                      - img
+                - generic [ref=e193]:
+                  - button [ref=e194] [cursor=pointer]:
+                    - img [ref=e196]
+                  - generic [ref=e201]:
+                    - generic [ref=e202] [cursor=pointer]:
+                      - generic [ref=e203]: Source
+                      - button "Primary database" [ref=e204]:
+                        - generic [ref=e205]: Primary database
+                        - img [ref=e207]
+                    - button "Role postgres" [ref=e209] [cursor=pointer]:
+                      - generic [ref=e211]:
+                        - generic [ref=e212]: Role
+                        - generic [ref=e213]: postgres
+                        - img [ref=e214]
+                    - button "Run Ctrl ↵" [ref=e216] [cursor=pointer]:
+                      - generic [ref=e217]: Run
+                      - generic [ref=e530]: Ctrl ↵
+              - paragraph [ref=e531]: Success. No rows returned
+            - generic "Table grid footer" [ref=e532]:
+              - button "0 row" [ref=e533]:
+                - paragraph [ref=e534]:
+                  - generic [ref=e535]: 0 row
+    - generic [ref=e225]:
+      - generic:
+        - generic:
+          - generic:
+            - img "Background pattern"
+          - generic:
+            - generic:
+              - button "Close banner":
+                - generic:
+                  - img
+            - generic:
+              - generic: Notice
+              - generic:
+                - paragraph: We've updated our Terms of Service
+                - paragraph: Updates define the responsibilities of both you and Supabase in the use of AI.
+              - button "Learn more":
+                - generic: Learn more
+  - alert [ref=e56]: SQL Editor | podio-de-vendas | passoapassouniformes2025@gmail.com's Org | Supabase
+  - generic [ref=e226]:
+    - alert
+    - alert

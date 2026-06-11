@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - navigation [ref=e7]:
+          - generic [ref=e10]:
+            - button [ref=e11] [cursor=pointer]:
+              - img [ref=e14]
+            - button "Menu dropdown button" [ref=e16] [cursor=pointer]:
+              - img [ref=e18]
+        - navigation "Floating toolbar" [ref=e19]:
+          - generic [ref=e20]:
+            - button [ref=e21] [cursor=pointer]:
+              - img [ref=e23]
+            - button "Help" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]:
+                - img [ref=e29]
+                - generic [ref=e32]: Help
+            - button "Advisor Center" [ref=e35] [cursor=pointer]:
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic [ref=e39]: Advisor Center
+      - main [ref=e49]:
+        - generic [ref=e50]:
+          - heading "Database Tables" [level=1] [ref=e57]
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e64]:
+                - button [disabled]
+              - button [ref=e65] [cursor=pointer]:
+                - img [ref=e67]
+            - generic [ref=e69]:
+              - group [ref=e70]:
+                - textbox "Search for a table" [ref=e71]
+                - group [ref=e72]:
+                  - img [ref=e73]
+              - button "New table" [disabled] [ref=e76]:
+                - img [ref=e78]
+                - generic [ref=e79]: New table
+    - generic [ref=e85]:
+      - generic:
+        - generic:
+          - generic:
+            - img "Background pattern"
+          - generic:
+            - generic:
+              - button "Close banner":
+                - generic:
+                  - img
+            - generic:
+              - generic: Notice
+              - generic:
+                - paragraph: We've updated our Terms of Service
+                - paragraph: Updates define the responsibilities of both you and Supabase in the use of AI.
+              - button "Learn more":
+                - generic: Learn more
+  - alert [ref=e86]

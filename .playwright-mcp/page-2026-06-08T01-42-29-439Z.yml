@@ -1,0 +1,2631 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - button [ref=e9]:
+            - img [ref=e12]
+        - separator [ref=e14]
+        - generic [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link [ref=e24]:
+                - /url: /home/
+                - img [ref=e1749]
+            - listitem [ref=e28]:
+              - link "474" [ref=e30] [cursor=pointer]:
+                - /url: /chats/
+                - generic [ref=e31]:
+                  - img [ref=e1751]
+                  - generic [ref=e35]: "474"
+            - listitem [ref=e36]:
+              - link [ref=e38] [cursor=pointer]:
+                - /url: /leads/pipeline/13368211
+                - img [ref=e1753]
+            - listitem [ref=e43] [cursor=pointer]:
+              - link "160" [ref=e45]:
+                - /url: /todo
+                - generic [ref=e46]:
+                  - img [ref=e1755]
+                  - generic [ref=e50]: "160"
+            - listitem [ref=e52] [cursor=pointer]:
+              - link [ref=e54]:
+                - /url: /segments/
+                - img [ref=e1757]
+            - listitem [ref=e60]:
+              - link [ref=e62] [cursor=pointer]:
+                - /url: /contacts/list/contacts
+                - img [ref=e1761]
+            - listitem [ref=e67] [cursor=pointer]:
+              - link [ref=e69]:
+                - /url: /settings/ai-agent/
+                - img [ref=e1763]
+            - listitem [ref=e73]:
+              - link [ref=e75] [cursor=pointer]:
+                - /url: /chats/tools/bots/
+                - img [ref=e1765]
+            - listitem [ref=e79]:
+              - link [ref=e81] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e1767]
+          - separator [ref=e86]
+          - list [ref=e87]:
+            - listitem [ref=e89] [cursor=pointer]:
+              - link [ref=e91]:
+                - /url: /widget_page/facebook_int/hub
+                - img [ref=e94]
+            - listitem [ref=e96] [cursor=pointer]:
+              - link [ref=e98]:
+                - /url: /widget_page/instagram_int/hub
+                - img [ref=e101]
+            - listitem [ref=e103] [cursor=pointer]:
+              - link [ref=e105]:
+                - /url: /widget_page/whatsapp_cloud_api/hub
+                - img [ref=e108]
+            - listitem [ref=e110] [cursor=pointer]:
+              - link [ref=e112]:
+                - /url: /widget_page/tiktok_kommo/hub
+                - img [ref=e115]
+        - list [ref=e117]:
+          - listitem [ref=e119] [cursor=pointer]:
+            - link [ref=e121]:
+              - /url: /settings/profile/
+              - img [ref=e1770]
+          - listitem [ref=e125]:
+            - link [ref=e127] [cursor=pointer]:
+              - /url: /settings/ai
+              - img [ref=e1772]
+          - listitem [ref=e132] [cursor=pointer]:
+            - link [ref=e134]:
+              - /url: ""
+              - img [ref=e1774]
+          - listitem [ref=e139] [cursor=pointer]:
+            - link "271" [ref=e141]:
+              - /url: /settings/profile/notifications
+              - generic [ref=e142]:
+                - img [ref=e1776]
+                - generic [ref=e146]: "271"
+        - separator [ref=e148]
+        - button "Avatar" [ref=e150] [cursor=pointer]:
+          - img "Avatar" [ref=e153]
+      - generic [ref=e154]:
+        - heading "Configurações" [level=2] [ref=e156]
+        - separator [ref=e157]
+        - generic [ref=e162]:
+          - generic [ref=e163]: Perfil
+          - list [ref=e164]:
+            - listitem [ref=e166] [cursor=pointer]:
+              - link "Configurações de perfil" [ref=e168]:
+                - /url: /settings/profile/
+                - generic [ref=e169]: Configurações de perfil
+          - generic [ref=e170]: Área de trabalho
+          - list [ref=e171]:
+            - listitem [ref=e173] [cursor=pointer]:
+              - link "Configurações de trabalho" [ref=e175]:
+                - /url: /settings/
+                - generic [ref=e176]: Configurações de trabalho
+            - listitem [ref=e178] [cursor=pointer]:
+              - link "Configurações de chat" [ref=e180]:
+                - /url: /settings/communications/
+                - generic [ref=e181]: Configurações de chat
+            - listitem [ref=e183] [cursor=pointer]:
+              - link "Configurações de email" [ref=e185]:
+                - /url: /mail/settings/
+                - generic [ref=e186]: Configurações de email
+            - listitem [ref=e188] [cursor=pointer]:
+              - link "Faturamento" [ref=e190]:
+                - /url: /settings/pay/?billing_entry_point=left_menu_v2
+                - generic [ref=e191]: Faturamento
+            - listitem [ref=e193] [cursor=pointer]:
+              - link "Gestão de usuários" [ref=e195]:
+                - /url: /settings/users/
+                - generic [ref=e196]: Gestão de usuários
+          - generic [ref=e197]: IA
+          - list [ref=e198]:
+            - listitem [ref=e200] [cursor=pointer]:
+              - link "Configurações de IA" [ref=e202]:
+                - /url: /settings/ai/
+                - generic [ref=e203]: Configurações de IA
+            - listitem [ref=e205] [cursor=pointer]:
+              - link "Fontes de conhecimento da IA" [ref=e207]:
+                - /url: /settings/ai-knowledge-sources/
+                - generic [ref=e208]: Fontes de conhecimento da IA
+          - generic [ref=e209]: Integrações e canais
+          - list [ref=e210]:
+            - listitem [ref=e212] [cursor=pointer]:
+              - link "Central de integrações" [ref=e214]:
+                - /url: /settings/widgets/
+                - generic [ref=e215]: Central de integrações
+  - generic:
+    - generic [ref=e1782]:
+      - generic [ref=e1783]:
+        - generic [ref=e1784]:
+          - textbox "Buscar" [active] [ref=e1787]
+          - img [ref=e1788]
+        - generic [ref=e1791]:
+          - button "Criar integração" [ref=e1792] [cursor=pointer]:
+            - generic [ref=e1793]:
+              - img [ref=e1794]
+              - generic [ref=e1796]: Criar integração
+          - button "Web hooks 2" [ref=e1797]:
+            - generic [ref=e1799]:
+              - text: Web hooks
+              - generic [ref=e1800]: "2"
+      - generic [ref=e1801]:
+        - generic [ref=e1804]:
+          - img "Slide 2" [ref=e1806] [cursor=pointer]
+          - img "Slide 1" [ref=e1808] [cursor=pointer]
+          - img "WAB PT" [ref=e1810] [cursor=pointer]
+        - generic [ref=e1814]:
+          - generic [ref=e1815]:
+            - generic [ref=e1816]:
+              - generic [ref=e4758]: Todos Todos
+              - generic [ref=e4760]: Cx. Entrada
+              - generic [ref=e4763] [cursor=pointer]: Mais coleções
+            - generic [ref=e1824]:
+              - img [ref=e1825]
+              - generic [ref=e1827]: Instalado
+            - generic [ref=e1829] [cursor=pointer]: Ordenar
+          - generic [ref=e1830]:
+            - generic [ref=e1832]: Mensageiros
+            - generic [ref=e1833]:
+              - generic "WhatsApp Business" [ref=e1834]:
+                - generic [ref=e1835] [cursor=pointer]:
+                  - img [ref=e1837]
+                  - generic [ref=e1838]:
+                    - paragraph [ref=e1840]: WhatsApp Business
+                    - generic [ref=e1841]:
+                      - img [ref=e1843]
+                      - text: Instalado
+              - generic "TikTok" [ref=e1845]:
+                - generic [ref=e1846] [cursor=pointer]:
+                  - img [ref=e1848]
+                  - generic [ref=e1849]:
+                    - paragraph [ref=e1851]: TikTok
+                    - generic [ref=e1852]:
+                      - img [ref=e1854]
+                      - text: Instalado
+              - generic "Instagram" [ref=e1856]:
+                - generic [ref=e1857] [cursor=pointer]:
+                  - img [ref=e1859]
+                  - generic [ref=e1860]:
+                    - paragraph [ref=e1862]: Instagram
+                    - generic [ref=e1863]:
+                      - img [ref=e1865]
+                      - text: Instalado
+              - generic "Apple Messages for Business" [ref=e1867]:
+                - generic [ref=e1868] [cursor=pointer]:
+                  - img [ref=e1870]
+                  - generic [ref=e1871]:
+                    - paragraph [ref=e1873]: Apple Messages for Business
+                    - generic [ref=e1874]:
+                      - img [ref=e1876]
+                      - text: Instalar
+              - generic "Facebook" [ref=e1879]:
+                - generic [ref=e1880] [cursor=pointer]:
+                  - img [ref=e1882]
+                  - generic [ref=e1883]:
+                    - paragraph [ref=e1885]: Facebook
+                    - generic [ref=e1886]:
+                      - img [ref=e1888]
+                      - text: Instalado
+              - generic "Viber" [ref=e1890]:
+                - generic [ref=e1891] [cursor=pointer]:
+                  - img [ref=e1893]
+                  - generic [ref=e1894]:
+                    - paragraph [ref=e1896]: Viber
+                    - generic [ref=e1897]:
+                      - img [ref=e1899]
+                      - text: Instalar
+              - generic "Telegram" [ref=e1902]:
+                - generic [ref=e1903] [cursor=pointer]:
+                  - img [ref=e1905]
+                  - generic [ref=e1906]:
+                    - paragraph [ref=e1908]: Telegram
+                    - generic [ref=e1909]:
+                      - img [ref=e1911]
+                      - text: Instalar
+              - generic "WeChat" [ref=e1914]:
+                - generic [ref=e1915] [cursor=pointer]:
+                  - img [ref=e1917]
+                  - generic [ref=e1918]:
+                    - paragraph [ref=e1920]: WeChat
+                    - generic [ref=e1921]:
+                      - img [ref=e1923]
+                      - text: Instalar
+          - generic [ref=e1926]:
+            - generic [ref=e1928]: Provedores de WhatsApp
+            - generic [ref=e1929]:
+              - generic "WhatsApp Business" [ref=e1930]:
+                - generic [ref=e1931] [cursor=pointer]:
+                  - img [ref=e1933]
+                  - generic [ref=e1934]:
+                    - paragraph [ref=e1936]: WhatsApp Business
+                    - generic [ref=e1937]:
+                      - img [ref=e1939]
+                      - text: Instalado
+              - generic "Wazzup (WhatsApp & Instagram)" [ref=e1941]:
+                - generic [ref=e1942] [cursor=pointer]:
+                  - img [ref=e1944]
+                  - generic [ref=e1945]:
+                    - paragraph [ref=e1947]: Wazzup (WhatsApp & Instagram)
+                    - generic [ref=e1948]:
+                      - img [ref=e1950]
+                      - text: Instalar
+              - generic "ChatArchitect.com para WhatsApp" [ref=e1953]:
+                - generic [ref=e1954] [cursor=pointer]:
+                  - img [ref=e1956]
+                  - generic [ref=e1957]:
+                    - paragraph [ref=e1959]: ChatArchitect.com para WhatsApp
+                    - generic [ref=e1960]:
+                      - img [ref=e1962]
+                      - text: Instalar
+              - generic "Chatbots by Message.Help" [ref=e1965]:
+                - generic [ref=e1966] [cursor=pointer]:
+                  - img [ref=e1968]
+                  - generic [ref=e1969]:
+                    - paragraph [ref=e1971]: Chatbots by Message.Help
+                    - generic [ref=e1972]:
+                      - img [ref=e1974]
+                      - text: Instalar
+              - generic "Whatsapp por Whatcrm e Telphin" [ref=e1977]:
+                - generic [ref=e1978] [cursor=pointer]:
+                  - img [ref=e1980]
+                  - generic [ref=e1981]:
+                    - paragraph [ref=e1983]: Whatsapp por Whatcrm e Telphin
+                    - generic [ref=e1984]:
+                      - img [ref=e1986]
+                      - text: Instalar
+              - generic "WhatsApp Business API por Youmessages" [ref=e1989]:
+                - generic [ref=e1990] [cursor=pointer]:
+                  - img [ref=e1992]
+                  - generic [ref=e1993]:
+                    - paragraph [ref=e1995]: WhatsApp Business API por Youmessages
+                    - generic [ref=e1996]:
+                      - img [ref=e1998]
+                      - text: Instalar
+              - generic "Chats by Fromni" [ref=e2001]:
+                - generic [ref=e2002] [cursor=pointer]:
+                  - img [ref=e2004]
+                  - generic [ref=e2005]:
+                    - paragraph [ref=e2007]: Chats by Fromni
+                    - generic [ref=e2008]:
+                      - img [ref=e2010]
+                      - text: Instalar
+              - generic "Anylinga" [ref=e2013]:
+                - generic [ref=e2014] [cursor=pointer]:
+                  - img [ref=e2016]
+                  - generic [ref=e2017]:
+                    - paragraph [ref=e2019]: Anylinga
+                    - generic [ref=e2020]:
+                      - img [ref=e2022]
+                      - text: Instalar
+          - generic [ref=e2025]:
+            - generic [ref=e2027]: Bate-papo ao vivo e outros mensageiros
+            - generic [ref=e2028]:
+              - generic "Intercom" [ref=e2029]:
+                - generic [ref=e2030] [cursor=pointer]:
+                  - img [ref=e2032]
+                  - generic [ref=e2033]:
+                    - paragraph [ref=e2035]: Intercom
+                    - generic [ref=e2036]:
+                      - img [ref=e2038]
+                      - text: Instalar
+              - generic "Slack" [ref=e2041]:
+                - generic [ref=e2042] [cursor=pointer]:
+                  - img [ref=e2044]
+                  - generic [ref=e2045]:
+                    - paragraph [ref=e2047]: Slack
+                    - generic [ref=e2048]:
+                      - img [ref=e2050]
+                      - text: Instalar
+              - generic "Wazzup (WhatsApp & Instagram)" [ref=e2053]:
+                - generic [ref=e2054] [cursor=pointer]:
+                  - img [ref=e2056]
+                  - generic [ref=e2057]:
+                    - paragraph [ref=e2059]: Wazzup (WhatsApp & Instagram)
+                    - generic [ref=e2060]:
+                      - img [ref=e2062]
+                      - text: Instalar
+              - generic "Telegram do Whatcrm" [ref=e2065]:
+                - generic [ref=e2066] [cursor=pointer]:
+                  - img [ref=e2068]
+                  - generic [ref=e2069]:
+                    - paragraph [ref=e2071]: Telegram do Whatcrm
+                    - generic [ref=e2072]:
+                      - img [ref=e2074]
+                      - text: Instalar
+              - generic "Telegram Group Chats via Komanda F5" [ref=e2077]:
+                - generic [ref=e2078] [cursor=pointer]:
+                  - img [ref=e2080]
+                  - generic [ref=e2081]:
+                    - paragraph [ref=e2083]: Telegram Group Chats via Komanda F5
+                    - generic [ref=e2084]:
+                      - img [ref=e2086]
+                      - text: Instalar
+              - 'generic "Umnico: Widget do Messenger" [ref=e2089]':
+                - generic [ref=e2090] [cursor=pointer]:
+                  - img [ref=e2092]
+                  - generic [ref=e2093]:
+                    - paragraph [ref=e2095]: "Umnico: Widget do Messenger"
+                    - generic [ref=e2096]:
+                      - img [ref=e2098]
+                      - text: Instalar
+              - generic "Chats by Fromni" [ref=e2101]:
+                - generic [ref=e2102] [cursor=pointer]:
+                  - img [ref=e2104]
+                  - generic [ref=e2105]:
+                    - paragraph [ref=e2107]: Chats by Fromni
+                    - generic [ref=e2108]:
+                      - img [ref=e2110]
+                      - text: Instalar
+              - generic "MandaZap WhatsApp Lite by DCT" [ref=e2113]:
+                - generic [ref=e2114] [cursor=pointer]:
+                  - img [ref=e2116]
+                  - generic [ref=e2117]:
+                    - paragraph [ref=e2119]: MandaZap WhatsApp Lite by DCT
+                    - generic [ref=e2120]:
+                      - img [ref=e2122]
+                      - text: Instalar
+          - generic [ref=e2125]:
+            - generic [ref=e2127]: Formulários
+            - generic [ref=e2128]:
+              - generic "TikTok Ads Manager" [ref=e2129]:
+                - generic [ref=e2130] [cursor=pointer]:
+                  - generic [ref=e2131]:
+                    - img [ref=e2132]
+                    - generic [ref=e2133]: Avançado
+                  - generic [ref=e2134]:
+                    - paragraph [ref=e2136]: TikTok Ads Manager
+                    - generic [ref=e2137]:
+                      - img [ref=e2139]
+                      - text: Visualizar
+              - generic "LinkedIn" [ref=e2142]:
+                - generic [ref=e2143] [cursor=pointer]:
+                  - img [ref=e2145]
+                  - generic [ref=e2146]:
+                    - paragraph [ref=e2148]: LinkedIn
+                    - generic [ref=e2149]:
+                      - img [ref=e2151]
+                      - text: Instalar
+              - generic "Wufoo" [ref=e2154]:
+                - generic [ref=e2155] [cursor=pointer]:
+                  - img [ref=e2157]
+                  - generic [ref=e2158]:
+                    - paragraph [ref=e2160]: Wufoo
+                    - generic [ref=e2161]:
+                      - img [ref=e2163]
+                      - text: Instalar
+              - generic "Typeform" [ref=e2166]:
+                - generic [ref=e2167] [cursor=pointer]:
+                  - img [ref=e2169]
+                  - generic [ref=e2170]:
+                    - paragraph [ref=e2172]: Typeform
+                    - generic [ref=e2173]:
+                      - img [ref=e2175]
+                      - text: Instalar
+              - generic "Jotform" [ref=e2178]:
+                - generic [ref=e2179] [cursor=pointer]:
+                  - img [ref=e2181]
+                  - generic [ref=e2182]:
+                    - paragraph [ref=e2184]: Jotform
+                    - generic [ref=e2185]:
+                      - img [ref=e2187]
+                      - text: Instalar
+              - generic "RD Station" [ref=e2190]:
+                - generic [ref=e2191] [cursor=pointer]:
+                  - img [ref=e2193]
+                  - generic [ref=e2194]:
+                    - paragraph [ref=e2196]: RD Station
+                    - generic [ref=e2197]:
+                      - img [ref=e2199]
+                      - text: Instalar
+              - generic "Lead Scraper" [ref=e2202]:
+                - generic [ref=e2203] [cursor=pointer]:
+                  - img [ref=e2205]
+                  - generic [ref=e2206]:
+                    - paragraph [ref=e2208]: Lead Scraper
+                    - generic [ref=e2209]:
+                      - img [ref=e2211]
+                      - text: Instalar
+              - generic "Contact Form 7 / Wordpress via 7Club" [ref=e2214]:
+                - generic [ref=e2215] [cursor=pointer]:
+                  - img [ref=e2217]
+                  - generic [ref=e2218]:
+                    - paragraph [ref=e2220]: Contact Form 7 / Wordpress via 7Club
+                    - generic [ref=e2221]:
+                      - img [ref=e2223]
+                      - text: Instalar
+              - generic "Contact Form 7 Wordpress by Devamo" [ref=e2226]:
+                - generic [ref=e2227] [cursor=pointer]:
+                  - img [ref=e2229]
+                  - generic [ref=e2230]:
+                    - paragraph [ref=e2232]: Contact Form 7 Wordpress by Devamo
+                    - generic [ref=e2233]:
+                      - img [ref=e2235]
+                      - text: Instalar
+              - generic "Woocommerce Wordpress via CRMapp" [ref=e2238]:
+                - generic [ref=e2239] [cursor=pointer]:
+                  - img [ref=e2241]
+                  - generic [ref=e2242]:
+                    - paragraph [ref=e2244]: Woocommerce Wordpress via CRMapp
+                    - generic [ref=e2245]:
+                      - img [ref=e2247]
+                      - text: Instalar
+              - generic "WPForms Wordpress via CRMapp" [ref=e2250]:
+                - generic [ref=e2251] [cursor=pointer]:
+                  - img [ref=e2253]
+                  - generic [ref=e2254]:
+                    - paragraph [ref=e2256]: WPForms Wordpress via CRMapp
+                    - generic [ref=e2257]:
+                      - img [ref=e2259]
+                      - text: Instalar
+              - generic "Integração sites da Emfy" [ref=e2262]:
+                - generic [ref=e2263] [cursor=pointer]:
+                  - img [ref=e2265]
+                  - generic [ref=e2266]:
+                    - paragraph [ref=e2268]: Integração sites da Emfy
+                    - generic [ref=e2269]:
+                      - img [ref=e2271]
+                      - text: Instalar
+              - generic "Pedidos do site via NOVA" [ref=e2274]:
+                - generic [ref=e2275] [cursor=pointer]:
+                  - img [ref=e2277]
+                  - generic [ref=e2278]:
+                    - paragraph [ref=e2280]: Pedidos do site via NOVA
+                    - generic [ref=e2281]:
+                      - img [ref=e2283]
+                      - text: Instalar
+              - generic "WebConnect por KWID" [ref=e2286]:
+                - generic [ref=e2287] [cursor=pointer]:
+                  - img [ref=e2289]
+                  - generic [ref=e2290]:
+                    - paragraph [ref=e2292]: WebConnect por KWID
+                    - generic [ref=e2293]:
+                      - img [ref=e2295]
+                      - text: Instalar
+              - generic "Elementor / Wordpress via 7Club" [ref=e2298]:
+                - generic [ref=e2299] [cursor=pointer]:
+                  - img [ref=e2301]
+                  - generic [ref=e2302]:
+                    - paragraph [ref=e2304]: Elementor / Wordpress via 7Club
+                    - generic [ref=e2305]:
+                      - img [ref=e2307]
+                      - text: Instalar
+              - generic "Taplink" [ref=e2310]:
+                - generic [ref=e2311] [cursor=pointer]:
+                  - img [ref=e2313]
+                  - generic [ref=e2314]:
+                    - paragraph [ref=e2316]: Taplink
+                    - generic [ref=e2317]:
+                      - img [ref=e2319]
+                      - text: Visualizar
+              - generic "Yay! Forms" [ref=e2322]:
+                - generic [ref=e2323] [cursor=pointer]:
+                  - img [ref=e2325]
+                  - generic [ref=e2326]:
+                    - paragraph [ref=e2328]: Yay! Forms
+                    - generic [ref=e2329]:
+                      - img [ref=e2331]
+                      - text: Visualizar
+              - generic "Forminator Forms Wordpress by CRMapp" [ref=e2334]:
+                - generic [ref=e2335] [cursor=pointer]:
+                  - img [ref=e2337]
+                  - generic [ref=e2338]:
+                    - paragraph [ref=e2340]: Forminator Forms Wordpress by CRMapp
+                    - generic [ref=e2341]:
+                      - img [ref=e2343]
+                      - text: Instalar
+              - generic "Formify" [ref=e2346]:
+                - generic [ref=e2347] [cursor=pointer]:
+                  - img [ref=e2349]
+                  - generic [ref=e2350]:
+                    - paragraph [ref=e2352]: Formify
+                    - generic [ref=e2353]:
+                      - img [ref=e2355]
+                      - text: Visualizar
+              - generic [ref=e2361] [cursor=pointer]: Ver mais
+          - generic [ref=e2362]:
+            - generic [ref=e2364]: E-commerce
+            - generic [ref=e2365]:
+              - generic "Shopify" [ref=e2366]:
+                - generic [ref=e2367] [cursor=pointer]:
+                  - img [ref=e2369]
+                  - generic [ref=e2370]:
+                    - paragraph [ref=e2372]: Shopify
+                    - generic [ref=e2373]:
+                      - img [ref=e2375]
+                      - text: Instalar
+              - generic "Mercado Livre" [ref=e2378]:
+                - generic [ref=e2379] [cursor=pointer]:
+                  - img [ref=e2381]
+                  - generic [ref=e2382]:
+                    - paragraph [ref=e2384]: Mercado Livre
+                    - generic [ref=e2385]:
+                      - img [ref=e2387]
+                      - text: Instalar
+              - generic "Nuvemshop / Tiendanube" [ref=e2390]:
+                - generic [ref=e2391] [cursor=pointer]:
+                  - img [ref=e2393]
+                  - generic [ref=e2394]:
+                    - paragraph [ref=e2396]: Nuvemshop / Tiendanube
+                    - generic [ref=e2397]:
+                      - img [ref=e2399]
+                      - text: Instalar
+              - generic "WooCommerce" [ref=e2402]:
+                - generic [ref=e2403] [cursor=pointer]:
+                  - img [ref=e2405]
+                  - generic [ref=e2406]:
+                    - paragraph [ref=e2408]: WooCommerce
+                    - generic [ref=e2409]:
+                      - img [ref=e2411]
+                      - text: Instalar
+              - generic "Lazada" [ref=e2414]:
+                - generic [ref=e2415] [cursor=pointer]:
+                  - img [ref=e2417]
+                  - generic [ref=e2418]:
+                    - paragraph [ref=e2420]: Lazada
+                    - generic [ref=e2421]:
+                      - img [ref=e2423]
+                      - text: Instalar
+              - generic "Hotmart por 7Club" [ref=e2426]:
+                - generic [ref=e2427] [cursor=pointer]:
+                  - img [ref=e2429]
+                  - generic [ref=e2430]:
+                    - paragraph [ref=e2432]: Hotmart por 7Club
+                    - generic [ref=e2433]:
+                      - img [ref=e2435]
+                      - text: Instalar
+              - generic "Eduzz por 7Club" [ref=e2438]:
+                - generic [ref=e2439] [cursor=pointer]:
+                  - img [ref=e2441]
+                  - generic [ref=e2442]:
+                    - paragraph [ref=e2444]: Eduzz por 7Club
+                    - generic [ref=e2445]:
+                      - img [ref=e2447]
+                      - text: Instalar
+              - generic "Kiwify por 7Club" [ref=e2450]:
+                - generic [ref=e2451] [cursor=pointer]:
+                  - img [ref=e2453]
+                  - generic [ref=e2454]:
+                    - paragraph [ref=e2456]: Kiwify por 7Club
+                    - generic [ref=e2457]:
+                      - img [ref=e2459]
+                      - text: Instalar
+              - generic "Opencart/OcStore by Devamo" [ref=e2462]:
+                - generic [ref=e2463] [cursor=pointer]:
+                  - img [ref=e2465]
+                  - generic [ref=e2466]:
+                    - paragraph [ref=e2468]: Opencart/OcStore by Devamo
+                    - generic [ref=e2469]:
+                      - img [ref=e2471]
+                      - text: Instalar
+              - generic "Kirvano por 7Club" [ref=e2474]:
+                - generic [ref=e2475] [cursor=pointer]:
+                  - img [ref=e2477]
+                  - generic [ref=e2478]:
+                    - paragraph [ref=e2480]: Kirvano por 7Club
+                    - generic [ref=e2481]:
+                      - img [ref=e2483]
+                      - text: Instalar
+              - generic "Greenn via 7Club" [ref=e2486]:
+                - generic [ref=e2487] [cursor=pointer]:
+                  - img [ref=e2489]
+                  - generic [ref=e2490]:
+                    - paragraph [ref=e2492]: Greenn via 7Club
+                    - generic [ref=e2493]:
+                      - img [ref=e2495]
+                      - text: Instalar
+          - generic [ref=e2498]:
+            - generic [ref=e2500]: Soluções para o setor
+            - generic [ref=e2501]:
+              - generic "Bling" [ref=e2502]:
+                - generic [ref=e2503] [cursor=pointer]:
+                  - generic [ref=e2504]:
+                    - img [ref=e2505]
+                    - generic [ref=e2506]: Avançado
+                  - generic [ref=e2507]:
+                    - paragraph [ref=e2509]: Bling
+                    - generic [ref=e2510]:
+                      - img [ref=e2512]
+                      - text: Visualizar
+              - generic "Altegio de Rubikon" [ref=e2515]:
+                - generic [ref=e2516] [cursor=pointer]:
+                  - img [ref=e2518]
+                  - generic [ref=e2519]:
+                    - paragraph [ref=e2521]: Altegio de Rubikon
+                    - generic [ref=e2522]:
+                      - img [ref=e2524]
+                      - text: Instalar
+              - generic "Avito por Whatcrm" [ref=e2527]:
+                - generic [ref=e2528] [cursor=pointer]:
+                  - img [ref=e2530]
+                  - generic [ref=e2531]:
+                    - paragraph [ref=e2533]: Avito por Whatcrm
+                    - generic [ref=e2534]:
+                      - img [ref=e2536]
+                      - text: Instalar
+              - generic "Sistema de reservas via NOVA" [ref=e2539]:
+                - generic [ref=e2540] [cursor=pointer]:
+                  - img [ref=e2542]
+                  - generic [ref=e2543]:
+                    - paragraph [ref=e2545]: Sistema de reservas via NOVA
+                    - generic [ref=e2546]:
+                      - img [ref=e2548]
+                      - text: Instalar
+              - generic "Busca CNPJ- Receita Federal" [ref=e2551]:
+                - generic [ref=e2552] [cursor=pointer]:
+                  - img [ref=e2554]
+                  - generic [ref=e2555]:
+                    - paragraph [ref=e2557]: Busca CNPJ- Receita Federal
+                    - generic [ref=e2558]:
+                      - img [ref=e2560]
+                      - text: Instalar
+              - generic "mymento" [ref=e2563]:
+                - generic [ref=e2564] [cursor=pointer]:
+                  - img [ref=e2566]
+                  - generic [ref=e2567]:
+                    - paragraph [ref=e2569]: mymento
+                    - generic [ref=e2570]:
+                      - img [ref=e2572]
+                      - text: Visualizar
+          - generic [ref=e2575]:
+            - generic [ref=e2577]: Chatbots
+            - generic [ref=e2578]:
+              - generic "Chatter - WA+ChatGPT via Komanda F5" [ref=e2579]:
+                - generic [ref=e2580] [cursor=pointer]:
+                  - img [ref=e2582]
+                  - generic [ref=e2583]:
+                    - paragraph [ref=e2585]: Chatter - WA+ChatGPT via Komanda F5
+                    - generic [ref=e2586]:
+                      - img [ref=e2588]
+                      - text: Instalar
+              - generic "YCLA AI" [ref=e2591]:
+                - generic [ref=e2592] [cursor=pointer]:
+                  - img [ref=e2594]
+                  - generic [ref=e2595]:
+                    - paragraph [ref=e2597]: YCLA AI
+                    - generic [ref=e2598]:
+                      - img [ref=e2600]
+                      - text: Instalar
+              - generic "ByteGPT - OpenAI via Bytebio" [ref=e2603]:
+                - generic [ref=e2604] [cursor=pointer]:
+                  - img [ref=e2606]
+                  - generic [ref=e2607]:
+                    - paragraph [ref=e2609]: ByteGPT - OpenAI via Bytebio
+                    - generic [ref=e2610]:
+                      - img [ref=e2612]
+                      - text: Instalar
+              - generic "ByteGPT+ (Plus) via Bytebio" [ref=e2615]:
+                - generic [ref=e2616] [cursor=pointer]:
+                  - img [ref=e2618]
+                  - generic [ref=e2619]:
+                    - paragraph [ref=e2621]: ByteGPT+ (Plus) via Bytebio
+                    - generic [ref=e2622]:
+                      - img [ref=e2624]
+                      - text: Instalar
+              - generic "ChatPlace" [ref=e2627]:
+                - generic [ref=e2628] [cursor=pointer]:
+                  - img [ref=e2630]
+                  - generic [ref=e2631]:
+                    - paragraph [ref=e2633]: ChatPlace
+                    - generic [ref=e2634]:
+                      - img [ref=e2636]
+                      - text: Visualizar
+              - generic "Chats by Fromni" [ref=e2639]:
+                - generic [ref=e2640] [cursor=pointer]:
+                  - img [ref=e2642]
+                  - generic [ref=e2643]:
+                    - paragraph [ref=e2645]: Chats by Fromni
+                    - generic [ref=e2646]:
+                      - img [ref=e2648]
+                      - text: Instalar
+              - generic "Agente GPT – AAI da KWID" [ref=e2651]:
+                - generic [ref=e2652] [cursor=pointer]:
+                  - img [ref=e2654]
+                  - generic [ref=e2655]:
+                    - paragraph [ref=e2657]: Agente GPT – AAI da KWID
+                    - generic [ref=e2658]:
+                      - img [ref=e2660]
+                      - text: Instalar
+              - generic "Anylinga" [ref=e2663]:
+                - generic [ref=e2664] [cursor=pointer]:
+                  - img [ref=e2666]
+                  - generic [ref=e2667]:
+                    - paragraph [ref=e2669]: Anylinga
+                    - generic [ref=e2670]:
+                      - img [ref=e2672]
+                      - text: Instalar
+              - generic "AW Sales" [ref=e2675]:
+                - generic [ref=e2676] [cursor=pointer]:
+                  - img [ref=e2678]
+                  - generic [ref=e2679]:
+                    - paragraph [ref=e2681]: AW Sales
+                    - generic [ref=e2682]:
+                      - img [ref=e2684]
+                      - text: Visualizar
+          - generic [ref=e2687]:
+            - generic [ref=e2689]: Chamadas
+            - generic [ref=e2690]:
+              - generic "Twilio" [ref=e2691]:
+                - generic [ref=e2692] [cursor=pointer]:
+                  - img [ref=e2694]
+                  - generic [ref=e2695]:
+                    - paragraph [ref=e2697]: Twilio
+                    - generic [ref=e2698]:
+                      - img [ref=e2700]
+                      - text: Instalar
+              - generic "Integração com Zoom" [ref=e2703]:
+                - generic [ref=e2704] [cursor=pointer]:
+                  - img [ref=e2706]
+                  - generic [ref=e2707]:
+                    - paragraph [ref=e2709]: Integração com Zoom
+                    - generic [ref=e2710]:
+                      - img [ref=e2712]
+                      - text: Instalar
+              - generic "Aplicativo de Voz Zenvia" [ref=e2715]:
+                - generic [ref=e2716] [cursor=pointer]:
+                  - img [ref=e2718]
+                  - generic [ref=e2719]:
+                    - paragraph [ref=e2721]: Aplicativo de Voz Zenvia
+                    - generic [ref=e2722]:
+                      - img [ref=e2724]
+                      - text: Instalar
+              - generic "Nvoip" [ref=e2727]:
+                - generic [ref=e2728] [cursor=pointer]:
+                  - img [ref=e2730]
+                  - generic [ref=e2731]:
+                    - paragraph [ref=e2733]: Nvoip
+                    - generic [ref=e2734]:
+                      - img [ref=e2736]
+                      - text: Instalar
+              - generic "GoTo Connect" [ref=e2739]:
+                - generic [ref=e2740] [cursor=pointer]:
+                  - img [ref=e2742]
+                  - generic [ref=e2743]:
+                    - paragraph [ref=e2745]: GoTo Connect
+                    - generic [ref=e2746]:
+                      - img [ref=e2748]
+                      - text: Instalar
+              - generic "CloudTalk" [ref=e2751]:
+                - generic [ref=e2752] [cursor=pointer]:
+                  - img [ref=e2754]
+                  - generic [ref=e2755]:
+                    - paragraph [ref=e2757]: CloudTalk
+                    - generic [ref=e2758]:
+                      - img [ref=e2760]
+                      - text: Instalar
+              - generic "RingCentral" [ref=e2763]:
+                - generic [ref=e2764] [cursor=pointer]:
+                  - img [ref=e2766]
+                  - generic [ref=e2767]:
+                    - paragraph [ref=e2769]: RingCentral
+                    - generic [ref=e2770]:
+                      - img [ref=e2772]
+                      - text: Instalar
+              - generic "Voximplant Kit" [ref=e2775]:
+                - generic [ref=e2776] [cursor=pointer]:
+                  - img [ref=e2778]
+                  - generic [ref=e2779]:
+                    - paragraph [ref=e2781]: Voximplant Kit
+                    - generic [ref=e2782]:
+                      - img [ref=e2784]
+                      - text: Instalar
+              - generic "Avantiiva - Análise e Insights de Chamadas com IA" [ref=e2787]:
+                - generic [ref=e2788] [cursor=pointer]:
+                  - img [ref=e2790]
+                  - generic [ref=e2791]:
+                    - paragraph [ref=e2793]: Avantiiva - Análise e Insights de Chamadas com IA
+                    - generic [ref=e2794]:
+                      - img [ref=e2796]
+                      - text: Visualizar
+              - generic "Conector Asterisk by Itgrix" [ref=e2799]:
+                - generic [ref=e2800] [cursor=pointer]:
+                  - img [ref=e2802]
+                  - generic [ref=e2803]:
+                    - paragraph [ref=e2805]: Conector Asterisk by Itgrix
+                    - generic [ref=e2806]:
+                      - img [ref=e2808]
+                      - text: Instalar
+              - generic "Registos de chamadas da Emfy" [ref=e2811]:
+                - generic [ref=e2812] [cursor=pointer]:
+                  - img [ref=e2814]
+                  - generic [ref=e2815]:
+                    - paragraph [ref=e2817]: Registos de chamadas da Emfy
+                    - generic [ref=e2818]:
+                      - img [ref=e2820]
+                      - text: Instalar
+              - generic "AsterPhone by Itgrix" [ref=e2823]:
+                - generic [ref=e2824] [cursor=pointer]:
+                  - img [ref=e2826]
+                  - generic [ref=e2827]:
+                    - paragraph [ref=e2829]: AsterPhone by Itgrix
+                    - generic [ref=e2830]:
+                      - img [ref=e2832]
+                      - text: Instalar
+              - generic "API4Com - API de Voz (Oficial)" [ref=e2835]:
+                - generic [ref=e2836] [cursor=pointer]:
+                  - img [ref=e2838]
+                  - generic [ref=e2839]:
+                    - paragraph [ref=e2841]: API4Com - API de Voz (Oficial)
+                    - generic [ref=e2842]:
+                      - img [ref=e2844]
+                      - text: Visualizar
+              - generic "Voice AI (GPT Analysis) via Komanda F5" [ref=e2847]:
+                - generic [ref=e2848] [cursor=pointer]:
+                  - img [ref=e2850]
+                  - generic [ref=e2851]:
+                    - paragraph [ref=e2853]: Voice AI (GPT Analysis) via Komanda F5
+                    - generic [ref=e2854]:
+                      - img [ref=e2856]
+                      - text: Instalar
+              - generic "Chama AI ChatGPT por iQGPT" [ref=e2859]:
+                - generic [ref=e2860] [cursor=pointer]:
+                  - img [ref=e2862]
+                  - generic [ref=e2863]:
+                    - paragraph [ref=e2865]: Chama AI ChatGPT por iQGPT
+                    - generic [ref=e2866]:
+                      - img [ref=e2868]
+                      - text: Instalar
+              - generic "Análise de chamadas AI via NOVA" [ref=e2871]:
+                - generic [ref=e2872] [cursor=pointer]:
+                  - img [ref=e2874]
+                  - generic [ref=e2875]:
+                    - paragraph [ref=e2877]: Análise de chamadas AI via NOVA
+                    - generic [ref=e2878]:
+                      - img [ref=e2880]
+                      - text: Instalar
+              - generic "Virtual PBX facilpabx" [ref=e2883]:
+                - generic [ref=e2884] [cursor=pointer]:
+                  - img [ref=e2886]
+                  - generic [ref=e2887]:
+                    - paragraph [ref=e2889]: Virtual PBX facilpabx
+                    - generic [ref=e2890]:
+                      - img [ref=e2892]
+                      - text: Instalar
+          - generic [ref=e2895]:
+            - generic [ref=e2897]: Marketing e divulgação
+            - generic [ref=e2898]:
+              - generic "Mailchimp" [ref=e2899]:
+                - generic [ref=e2900] [cursor=pointer]:
+                  - img [ref=e2902]
+                  - generic [ref=e2903]:
+                    - paragraph [ref=e2905]: Mailchimp
+                    - generic [ref=e2906]:
+                      - img [ref=e2908]
+                      - text: Instalar
+              - generic "Twilio Text Messaging" [ref=e2911]:
+                - generic [ref=e2912] [cursor=pointer]:
+                  - img [ref=e2914]
+                  - generic [ref=e2915]:
+                    - paragraph [ref=e2917]: Twilio Text Messaging
+                    - generic [ref=e2918]:
+                      - img [ref=e2920]
+                      - text: Instalar
+              - generic "ActiveCampaign" [ref=e2923]:
+                - generic [ref=e2924] [cursor=pointer]:
+                  - img [ref=e2926]
+                  - generic [ref=e2927]:
+                    - paragraph [ref=e2929]: ActiveCampaign
+                    - generic [ref=e2930]:
+                      - img [ref=e2932]
+                      - text: Instalar
+              - generic "SMS RingCentral" [ref=e2935]:
+                - generic [ref=e2936] [cursor=pointer]:
+                  - img [ref=e2938]
+                  - generic [ref=e2939]:
+                    - paragraph [ref=e2941]: SMS RingCentral
+                    - generic [ref=e2942]:
+                      - img [ref=e2944]
+                      - text: Instalar
+              - generic "AlphaSMS" [ref=e2947]:
+                - generic [ref=e2948] [cursor=pointer]:
+                  - img [ref=e2950]
+                  - generic [ref=e2951]:
+                    - paragraph [ref=e2953]: AlphaSMS
+                    - generic [ref=e2954]:
+                      - img [ref=e2956]
+                      - text: Instalar
+              - generic "SMS em todo o mundo pela Fromni" [ref=e2959]:
+                - generic [ref=e2960] [cursor=pointer]:
+                  - img [ref=e2962]
+                  - generic [ref=e2963]:
+                    - paragraph [ref=e2965]: SMS em todo o mundo pela Fromni
+                    - generic [ref=e2966]:
+                      - img [ref=e2968]
+                      - text: Instalar
+              - generic "Enviar emails via NOVA" [ref=e2971]:
+                - generic [ref=e2972] [cursor=pointer]:
+                  - img [ref=e2974]
+                  - generic [ref=e2975]:
+                    - paragraph [ref=e2977]: Enviar emails via NOVA
+                    - generic [ref=e2978]:
+                      - img [ref=e2980]
+                      - text: Instalar
+              - generic "Notificações no Telegram" [ref=e2983]:
+                - generic [ref=e2984] [cursor=pointer]:
+                  - img [ref=e2986]
+                  - generic [ref=e2987]:
+                    - paragraph [ref=e2989]: Notificações no Telegram
+                    - generic [ref=e2990]:
+                      - img [ref=e2992]
+                      - text: Instalar
+              - generic "Disparo em Massa - Com Intervalo - Via 7Club" [ref=e2995]:
+                - generic [ref=e2996] [cursor=pointer]:
+                  - img [ref=e2998]
+                  - generic [ref=e2999]:
+                    - paragraph [ref=e3001]: Disparo em Massa - Com Intervalo - Via 7Club
+                    - generic [ref=e3002]:
+                      - img [ref=e3004]
+                      - text: Instalar
+              - generic "Telegram Notifications via Komanda F5" [ref=e3007]:
+                - generic [ref=e3008] [cursor=pointer]:
+                  - img [ref=e3010]
+                  - generic [ref=e3011]:
+                    - paragraph [ref=e3013]: Telegram Notifications via Komanda F5
+                    - generic [ref=e3014]:
+                      - img [ref=e3016]
+                      - text: Instalar
+              - generic "Mailer via Komanda F5" [ref=e3019]:
+                - generic [ref=e3020] [cursor=pointer]:
+                  - img [ref=e3022]
+                  - generic [ref=e3023]:
+                    - paragraph [ref=e3025]: Mailer via Komanda F5
+                    - generic [ref=e3026]:
+                      - img [ref=e3028]
+                      - text: Instalar
+              - generic "Polaris por Grupo Vorp" [ref=e3031]:
+                - generic [ref=e3032] [cursor=pointer]:
+                  - img [ref=e3034]
+                  - generic [ref=e3035]:
+                    - paragraph [ref=e3037]: Polaris por Grupo Vorp
+                    - generic [ref=e3038]:
+                      - img [ref=e3040]
+                      - text: Instalar
+          - generic [ref=e3043]:
+            - generic [ref=e3045]: Pagamentos e faturamento
+            - generic [ref=e3046]:
+              - generic "Stripe" [ref=e3047]:
+                - generic [ref=e3048] [cursor=pointer]:
+                  - img [ref=e3050]
+                  - generic [ref=e3051]:
+                    - paragraph [ref=e3053]: Stripe
+                    - generic [ref=e3054]:
+                      - img [ref=e3056]
+                      - text: Instalar
+              - generic "PayPal" [ref=e3059]:
+                - generic [ref=e3060] [cursor=pointer]:
+                  - img [ref=e3062]
+                  - generic [ref=e3063]:
+                    - paragraph [ref=e3065]: PayPal
+                    - generic [ref=e3066]:
+                      - img [ref=e3068]
+                      - text: Instalar
+              - generic "Mercado Pago" [ref=e3071]:
+                - generic [ref=e3072] [cursor=pointer]:
+                  - img [ref=e3074]
+                  - generic [ref=e3075]:
+                    - paragraph [ref=e3077]: Mercado Pago
+                    - generic [ref=e3078]:
+                      - img [ref=e3080]
+                      - text: Instalar
+              - generic "Asaas por 7Club" [ref=e3083]:
+                - generic [ref=e3084] [cursor=pointer]:
+                  - img [ref=e3086]
+                  - generic [ref=e3087]:
+                    - paragraph [ref=e3089]: Asaas por 7Club
+                    - generic [ref=e3090]:
+                      - img [ref=e3092]
+                      - text: Instalar
+              - generic "Contabilidade financeira via NOVA" [ref=e3095]:
+                - generic [ref=e3096] [cursor=pointer]:
+                  - img [ref=e3098]
+                  - generic [ref=e3099]:
+                    - paragraph [ref=e3101]: Contabilidade financeira via NOVA
+                    - generic [ref=e3102]:
+                      - img [ref=e3104]
+                      - text: Instalar
+              - generic "Payment Management da AMOGURU" [ref=e3107]:
+                - generic [ref=e3108] [cursor=pointer]:
+                  - img [ref=e3110]
+                  - generic [ref=e3111]:
+                    - paragraph [ref=e3113]: Payment Management da AMOGURU
+                    - generic [ref=e3114]:
+                      - img [ref=e3116]
+                      - text: Instalar
+              - generic "App Max por 7Club" [ref=e3119]:
+                - generic [ref=e3120] [cursor=pointer]:
+                  - img [ref=e3122]
+                  - generic [ref=e3123]:
+                    - paragraph [ref=e3125]: App Max por 7Club
+                    - generic [ref=e3126]:
+                      - img [ref=e3128]
+                      - text: Instalar
+              - generic "InfinitePay via 7Club" [ref=e3131]:
+                - generic [ref=e3132] [cursor=pointer]:
+                  - img [ref=e3134]
+                  - generic [ref=e3135]:
+                    - paragraph [ref=e3137]: InfinitePay via 7Club
+                    - generic [ref=e3138]:
+                      - img [ref=e3140]
+                      - text: Instalar
+          - generic [ref=e3143]:
+            - generic [ref=e3145]: Serviços de integração
+            - generic [ref=e3146]:
+              - generic "Zapier" [ref=e3147]:
+                - generic [ref=e3148] [cursor=pointer]:
+                  - img [ref=e3150]
+                  - generic [ref=e3151]:
+                    - paragraph [ref=e3153]: Zapier
+                    - generic [ref=e3154]:
+                      - img [ref=e3156]
+                      - text: Visualizar
+              - generic "Pluga" [ref=e3159]:
+                - generic [ref=e3160] [cursor=pointer]:
+                  - img [ref=e3162]
+                  - generic [ref=e3163]:
+                    - paragraph [ref=e3165]: Pluga
+                    - generic [ref=e3166]:
+                      - img [ref=e3168]
+                      - text: Visualizar
+              - generic "Webhooks do Salesbot por KWID" [ref=e3171]:
+                - generic [ref=e3172] [cursor=pointer]:
+                  - img [ref=e3174]
+                  - generic [ref=e3175]:
+                    - paragraph [ref=e3177]: Webhooks do Salesbot por KWID
+                    - generic [ref=e3178]:
+                      - img [ref=e3180]
+                      - text: Instalar
+              - generic "Make (Integromat) por Kwid" [ref=e3183]:
+                - generic [ref=e3184] [cursor=pointer]:
+                  - img [ref=e3186]
+                  - generic [ref=e3187]:
+                    - paragraph [ref=e3189]: Make (Integromat) por Kwid
+                    - generic [ref=e3190]:
+                      - img [ref=e3192]
+                      - text: Instalar
+          - generic [ref=e3195]:
+            - generic [ref=e3197]: Fluxo de trabalho
+            - generic [ref=e3198]:
+              - generic "Google Agenda" [ref=e3199]:
+                - generic [ref=e3200] [cursor=pointer]:
+                  - img [ref=e3202]
+                  - generic [ref=e3203]:
+                    - paragraph [ref=e3205]: Google Agenda
+                    - generic [ref=e3206]:
+                      - img [ref=e3208]
+                      - text: Instalar
+              - generic "Cal.com" [ref=e3211]:
+                - generic [ref=e3212] [cursor=pointer]:
+                  - img [ref=e3214]
+                  - generic [ref=e3215]:
+                    - paragraph [ref=e3217]: Cal.com
+                    - generic [ref=e3218]:
+                      - img [ref=e3220]
+                      - text: Instalar
+              - generic "Calendly" [ref=e3223]:
+                - generic [ref=e3224] [cursor=pointer]:
+                  - img [ref=e3226]
+                  - generic [ref=e3227]:
+                    - paragraph [ref=e3229]: Calendly
+                    - generic [ref=e3230]:
+                      - img [ref=e3232]
+                      - text: Instalar
+              - generic "Google" [ref=e3235]:
+                - generic [ref=e3236] [cursor=pointer]:
+                  - img [ref=e3238]
+                  - generic [ref=e3239]:
+                    - paragraph [ref=e3241]: Google
+                    - generic [ref=e3242]:
+                      - img [ref=e3244]
+                      - text: Instalado
+              - generic "Zendesk" [ref=e3246]:
+                - generic [ref=e3247] [cursor=pointer]:
+                  - img [ref=e3249]
+                  - generic [ref=e3250]:
+                    - paragraph [ref=e3252]: Zendesk
+                    - generic [ref=e3253]:
+                      - img [ref=e3255]
+                      - text: Instalar
+              - generic "Campos Avancados da Ventasboost" [ref=e3258]:
+                - generic [ref=e3259] [cursor=pointer]:
+                  - img [ref=e3261]
+                  - generic [ref=e3262]:
+                    - paragraph [ref=e3264]: Campos Avancados da Ventasboost
+                    - generic [ref=e3265]:
+                      - img [ref=e3267]
+                      - text: Instalar
+              - generic "Nomes Auto Lead da Emfy" [ref=e3270]:
+                - generic [ref=e3271] [cursor=pointer]:
+                  - img [ref=e3273]
+                  - generic [ref=e3274]:
+                    - paragraph [ref=e3276]: Nomes Auto Lead da Emfy
+                    - generic [ref=e3277]:
+                      - img [ref=e3279]
+                      - text: Instalar
+              - generic "Platform F5 via Komanda F5" [ref=e3282]:
+                - generic [ref=e3283] [cursor=pointer]:
+                  - img [ref=e3285]
+                  - generic [ref=e3286]:
+                    - paragraph [ref=e3288]: Platform F5 via Komanda F5
+                    - generic [ref=e3289]:
+                      - img [ref=e3291]
+                      - text: Instalar
+              - generic "Bilhetes QR via NOVA" [ref=e3294]:
+                - generic [ref=e3295] [cursor=pointer]:
+                  - img [ref=e3297]
+                  - generic [ref=e3298]:
+                    - paragraph [ref=e3300]: Bilhetes QR via NOVA
+                    - generic [ref=e3301]:
+                      - img [ref=e3303]
+                      - text: Instalar
+              - generic "Base de dados de conhecimento via Peller media" [ref=e3306]:
+                - generic [ref=e3307] [cursor=pointer]:
+                  - img [ref=e3309]
+                  - generic [ref=e3310]:
+                    - paragraph [ref=e3312]: Base de dados de conhecimento via Peller media
+                    - generic [ref=e3313]:
+                      - img [ref=e3315]
+                      - text: Instalar
+              - generic "Lista verificacao de tarefas via NOVA" [ref=e3318]:
+                - generic [ref=e3319] [cursor=pointer]:
+                  - img [ref=e3321]
+                  - generic [ref=e3322]:
+                    - paragraph [ref=e3324]: Lista verificacao de tarefas via NOVA
+                    - generic [ref=e3325]:
+                      - img [ref=e3327]
+                      - text: Instalar
+              - generic "Processes com GPT via Komanda F5" [ref=e3330]:
+                - generic [ref=e3331] [cursor=pointer]:
+                  - img [ref=e3333]
+                  - generic [ref=e3334]:
+                    - paragraph [ref=e3336]: Processes com GPT via Komanda F5
+                    - generic [ref=e3337]:
+                      - img [ref=e3339]
+                      - text: Instalar
+              - generic "AI e-mail Parser via NOVA" [ref=e3342]:
+                - generic [ref=e3343] [cursor=pointer]:
+                  - img [ref=e3345]
+                  - generic [ref=e3346]:
+                    - paragraph [ref=e3348]: AI e-mail Parser via NOVA
+                    - generic [ref=e3349]:
+                      - img [ref=e3351]
+                      - text: Instalar
+              - generic "Integração com Asana via NOVA" [ref=e3354]:
+                - generic [ref=e3355] [cursor=pointer]:
+                  - img [ref=e3357]
+                  - generic [ref=e3358]:
+                    - paragraph [ref=e3360]: Integração com Asana via NOVA
+                    - generic [ref=e3361]:
+                      - img [ref=e3363]
+                      - text: Instalar
+              - generic "Agentes de IA via 7Club" [ref=e3366]:
+                - generic [ref=e3367] [cursor=pointer]:
+                  - img [ref=e3369]
+                  - generic [ref=e3370]:
+                    - paragraph [ref=e3372]: Agentes de IA via 7Club
+                    - generic [ref=e3373]:
+                      - img [ref=e3375]
+                      - text: Instalar
+          - generic [ref=e3378]:
+            - generic [ref=e3380]: Análise e gestão de dados
+            - generic [ref=e3381]:
+              - generic "Relatórios de Marketing e Vendas" [ref=e3382]:
+                - generic [ref=e3383] [cursor=pointer]:
+                  - img [ref=e3385]
+                  - generic [ref=e3386]:
+                    - paragraph [ref=e3388]: Relatórios de Marketing e Vendas
+                    - generic [ref=e3389]:
+                      - img [ref=e3391]
+                      - text: Visualizar
+              - generic "Reportei" [ref=e3394]:
+                - generic [ref=e3395] [cursor=pointer]:
+                  - img [ref=e3397]
+                  - generic [ref=e3398]:
+                    - paragraph [ref=e3400]: Reportei
+                    - generic [ref=e3401]:
+                      - img [ref=e3403]
+                      - text: Instalar
+              - generic "Painel de Atividades" [ref=e3406]:
+                - generic [ref=e3407] [cursor=pointer]:
+                  - img [ref=e3409]
+                  - generic [ref=e3410]:
+                    - paragraph [ref=e3412]: Painel de Atividades
+                    - generic [ref=e3413]:
+                      - img [ref=e3415]
+                      - text: Instalar
+              - generic "Google Sheets por AMOGURU" [ref=e3418]:
+                - generic [ref=e3419] [cursor=pointer]:
+                  - img [ref=e3421]
+                  - generic [ref=e3422]:
+                    - paragraph [ref=e3424]: Google Sheets por AMOGURU
+                    - generic [ref=e3425]:
+                      - img [ref=e3427]
+                      - text: Instalar
+              - generic "Análise de desktop da Emfy" [ref=e3430]:
+                - generic [ref=e3431] [cursor=pointer]:
+                  - img [ref=e3433]
+                  - generic [ref=e3434]:
+                    - paragraph [ref=e3436]: Análise de desktop da Emfy
+                    - generic [ref=e3437]:
+                      - img [ref=e3439]
+                      - text: Instalar
+              - generic "Google Sheets Lite via Komanda F5" [ref=e3442]:
+                - generic [ref=e3443] [cursor=pointer]:
+                  - img [ref=e3445]
+                  - generic [ref=e3446]:
+                    - paragraph [ref=e3448]: Google Sheets Lite via Komanda F5
+                    - generic [ref=e3449]:
+                      - img [ref=e3451]
+                      - text: Instalar
+              - generic "Upload para Google Sheets via NOVA" [ref=e3454]:
+                - generic [ref=e3455] [cursor=pointer]:
+                  - img [ref=e3457]
+                  - generic [ref=e3458]:
+                    - paragraph [ref=e3460]: Upload para Google Sheets via NOVA
+                    - generic [ref=e3461]:
+                      - img [ref=e3463]
+                      - text: Instalar
+              - generic "Exportar dados para CSV via NOVA" [ref=e3466]:
+                - generic [ref=e3467] [cursor=pointer]:
+                  - img [ref=e3469]
+                  - generic [ref=e3470]:
+                    - paragraph [ref=e3472]: Exportar dados para CSV via NOVA
+                    - generic [ref=e3473]:
+                      - img [ref=e3475]
+                      - text: Instalar
+              - generic "LTV clientes via NOVA" [ref=e3478]:
+                - generic [ref=e3479] [cursor=pointer]:
+                  - img [ref=e3481]
+                  - generic [ref=e3482]:
+                    - paragraph [ref=e3484]: LTV clientes via NOVA
+                    - generic [ref=e3485]:
+                      - img [ref=e3487]
+                      - text: Instalar
+              - generic "Importar do Google planilhas via NOVA" [ref=e3490]:
+                - generic [ref=e3491] [cursor=pointer]:
+                  - img [ref=e3493]
+                  - generic [ref=e3494]:
+                    - paragraph [ref=e3496]: Importar do Google planilhas via NOVA
+                    - generic [ref=e3497]:
+                      - img [ref=e3499]
+                      - text: Instalar
+              - generic "Google Analytics da AMOGURU" [ref=e3502]:
+                - generic [ref=e3503] [cursor=pointer]:
+                  - img [ref=e3505]
+                  - generic [ref=e3506]:
+                    - paragraph [ref=e3508]: Google Analytics da AMOGURU
+                    - generic [ref=e3509]:
+                      - img [ref=e3511]
+                      - text: Instalar
+              - generic "Carregamonto para base de dados via NOVA" [ref=e3514]:
+                - generic [ref=e3515] [cursor=pointer]:
+                  - img [ref=e3517]
+                  - generic [ref=e3518]:
+                    - paragraph [ref=e3520]: Carregamonto para base de dados via NOVA
+                    - generic [ref=e3521]:
+                      - img [ref=e3523]
+                      - text: Instalar
+              - generic "Dashboards K2ON" [ref=e3526]:
+                - generic [ref=e3527] [cursor=pointer]:
+                  - img [ref=e3529]
+                  - generic [ref=e3530]:
+                    - paragraph [ref=e3532]: Dashboards K2ON
+                    - generic [ref=e3533]:
+                      - img [ref=e3535]
+                      - text: Visualizar
+              - generic "Stract" [ref=e3538]:
+                - generic [ref=e3539] [cursor=pointer]:
+                  - img [ref=e3541]
+                  - generic [ref=e3542]:
+                    - paragraph [ref=e3544]: Stract
+                    - generic [ref=e3545]:
+                      - img [ref=e3547]
+                      - text: Visualizar
+              - generic "SummDash" [ref=e3550]:
+                - generic [ref=e3551] [cursor=pointer]:
+                  - img [ref=e3553]
+                  - generic [ref=e3554]:
+                    - paragraph [ref=e3556]: SummDash
+                    - generic [ref=e3557]:
+                      - img [ref=e3559]
+                      - text: Visualizar
+              - generic "Dashboard Diagnóstico via 7Club" [ref=e3562]:
+                - generic [ref=e3563] [cursor=pointer]:
+                  - img [ref=e3565]
+                  - generic [ref=e3566]:
+                    - paragraph [ref=e3568]: Dashboard Diagnóstico via 7Club
+                    - generic [ref=e3569]:
+                      - img [ref=e3571]
+                      - text: Instalar
+              - generic "Diagnóstico por Ventasboost" [ref=e3574]:
+                - generic [ref=e3575] [cursor=pointer]:
+                  - img [ref=e3577]
+                  - generic [ref=e3578]:
+                    - paragraph [ref=e3580]: Diagnóstico por Ventasboost
+                    - generic [ref=e3581]:
+                      - img [ref=e3583]
+                      - text: Instalar
+          - generic [ref=e3586]:
+            - generic [ref=e3588]: Gestão de documentos
+            - generic [ref=e3589]:
+              - generic "Gerador de documentos" [ref=e3590]:
+                - generic [ref=e3591] [cursor=pointer]:
+                  - img [ref=e3593]
+                  - generic [ref=e3594]:
+                    - paragraph [ref=e3596]: Gerador de documentos
+                    - generic [ref=e3597]:
+                      - img [ref=e3599]
+                      - text: Instalar
+              - generic "Dropbox" [ref=e3602]:
+                - generic [ref=e3603] [cursor=pointer]:
+                  - img [ref=e3605]
+                  - generic [ref=e3606]:
+                    - paragraph [ref=e3608]: Dropbox
+                    - generic [ref=e3609]:
+                      - img [ref=e3611]
+                      - text: Instalar
+              - generic "Documentos de Google por amgroup" [ref=e3614]:
+                - generic [ref=e3615] [cursor=pointer]:
+                  - img [ref=e3617]
+                  - generic [ref=e3618]:
+                    - paragraph [ref=e3620]: Documentos de Google por amgroup
+                    - generic [ref=e3621]:
+                      - img [ref=e3623]
+                      - text: Instalar
+              - generic "Documentos do Google por AMOGURU" [ref=e3626]:
+                - generic [ref=e3627] [cursor=pointer]:
+                  - img [ref=e3629]
+                  - generic [ref=e3630]:
+                    - paragraph [ref=e3632]: Documentos do Google por AMOGURU
+                    - generic [ref=e3633]:
+                      - img [ref=e3635]
+                      - text: Instalar
+              - generic "Documents via Komanda F5" [ref=e3638]:
+                - generic [ref=e3639] [cursor=pointer]:
+                  - img [ref=e3641]
+                  - generic [ref=e3642]:
+                    - paragraph [ref=e3644]: Documents via Komanda F5
+                    - generic [ref=e3645]:
+                      - img [ref=e3647]
+                      - text: Instalar
+              - generic "Google Drive via Komanda F5" [ref=e3650]:
+                - generic [ref=e3651] [cursor=pointer]:
+                  - img [ref=e3653]
+                  - generic [ref=e3654]:
+                    - paragraph [ref=e3656]: Google Drive via Komanda F5
+                    - generic [ref=e3657]:
+                      - img [ref=e3659]
+                      - text: Instalar
+              - generic "Clicksign via 7Club" [ref=e3662]:
+                - generic [ref=e3663] [cursor=pointer]:
+                  - img [ref=e3665]
+                  - generic [ref=e3666]:
+                    - paragraph [ref=e3668]: Clicksign via 7Club
+                    - generic [ref=e3669]:
+                      - img [ref=e3671]
+                      - text: Instalar
+          - generic [ref=e3674]:
+            - generic [ref=e3676]: Personalização de leads
+            - generic [ref=e3677]:
+              - generic "Busca de Duplicados da Emfy" [ref=e3678]:
+                - generic [ref=e3679] [cursor=pointer]:
+                  - img [ref=e3681]
+                  - generic [ref=e3682]:
+                    - paragraph [ref=e3684]: Busca de Duplicados da Emfy
+                    - generic [ref=e3685]:
+                      - img [ref=e3687]
+                      - text: Instalar
+              - generic "Distribuição de Leads Emfy" [ref=e3690]:
+                - generic [ref=e3691] [cursor=pointer]:
+                  - img [ref=e3693]
+                  - generic [ref=e3694]:
+                    - paragraph [ref=e3696]: Distribuição de Leads Emfy
+                    - generic [ref=e3697]:
+                      - img [ref=e3699]
+                      - text: Instalar
+              - generic "Criação maciça de leads do Ingroup" [ref=e3702]:
+                - generic [ref=e3703] [cursor=pointer]:
+                  - img [ref=e3705]
+                  - generic [ref=e3706]:
+                    - paragraph [ref=e3708]: Criação maciça de leads do Ingroup
+                    - generic [ref=e3709]:
+                      - img [ref=e3711]
+                      - text: Instalar
+              - generic "Bloco de mudança de status por AMOGURU" [ref=e3714]:
+                - generic [ref=e3715] [cursor=pointer]:
+                  - img [ref=e3717]
+                  - generic [ref=e3718]:
+                    - paragraph [ref=e3720]: Bloco de mudança de status por AMOGURU
+                    - generic [ref=e3721]:
+                      - img [ref=e3723]
+                      - text: Instalar
+              - generic "Leads Copier via Komanda F5" [ref=e3726]:
+                - generic [ref=e3727] [cursor=pointer]:
+                  - img [ref=e3729]
+                  - generic [ref=e3730]:
+                    - paragraph [ref=e3732]: Leads Copier via Komanda F5
+                    - generic [ref=e3733]:
+                      - img [ref=e3735]
+                      - text: Instalar
+              - generic "Informer via Komanda F5" [ref=e3738]:
+                - generic [ref=e3739] [cursor=pointer]:
+                  - img [ref=e3741]
+                  - generic [ref=e3742]:
+                    - paragraph [ref=e3744]: Informer via Komanda F5
+                    - generic [ref=e3745]:
+                      - img [ref=e3747]
+                      - text: Instalar
+              - generic "Cópia de lead via NOVA" [ref=e3750]:
+                - generic [ref=e3751] [cursor=pointer]:
+                  - img [ref=e3753]
+                  - generic [ref=e3754]:
+                    - paragraph [ref=e3756]: Cópia de lead via NOVA
+                    - generic [ref=e3757]:
+                      - img [ref=e3759]
+                      - text: Instalar
+              - generic "Criação massiva de leads via NOVA" [ref=e3762]:
+                - generic [ref=e3763] [cursor=pointer]:
+                  - img [ref=e3765]
+                  - generic [ref=e3766]:
+                    - paragraph [ref=e3768]: Criação massiva de leads via NOVA
+                    - generic [ref=e3769]:
+                      - img [ref=e3771]
+                      - text: Instalar
+              - generic "Colorir leads via NOVA" [ref=e3774]:
+                - generic [ref=e3775] [cursor=pointer]:
+                  - img [ref=e3777]
+                  - generic [ref=e3778]:
+                    - paragraph [ref=e3780]: Colorir leads via NOVA
+                    - generic [ref=e3781]:
+                      - img [ref=e3783]
+                      - text: Instalar
+              - generic "Tingimento de um inativo leads via NOVA" [ref=e3786]:
+                - generic [ref=e3787] [cursor=pointer]:
+                  - img [ref=e3789]
+                  - generic [ref=e3790]:
+                    - paragraph [ref=e3792]: Tingimento de um inativo leads via NOVA
+                    - generic [ref=e3793]:
+                      - img [ref=e3795]
+                      - text: Instalar
+              - generic "Sincronização de leads via NOVA" [ref=e3798]:
+                - generic [ref=e3799] [cursor=pointer]:
+                  - img [ref=e3801]
+                  - generic [ref=e3802]:
+                    - paragraph [ref=e3804]: Sincronização de leads via NOVA
+                    - generic [ref=e3805]:
+                      - img [ref=e3807]
+                      - text: Instalar
+              - 'generic "Companova: copiando leads" [ref=e3810]':
+                - generic [ref=e3811] [cursor=pointer]:
+                  - img [ref=e3813]
+                  - generic [ref=e3814]:
+                    - paragraph [ref=e3816]: "Companova: copiando leads"
+                    - generic [ref=e3817]:
+                      - img [ref=e3819]
+                      - text: Instalar
+              - generic "Leadstaker" [ref=e3822]:
+                - generic [ref=e3823] [cursor=pointer]:
+                  - img [ref=e3825]
+                  - generic [ref=e3826]:
+                    - paragraph [ref=e3828]: Leadstaker
+                    - generic [ref=e3829]:
+                      - img [ref=e3831]
+                      - text: Visualizar
+              - generic "Leads Coloridos da AMOGURU" [ref=e3834]:
+                - generic [ref=e3835] [cursor=pointer]:
+                  - img [ref=e3837]
+                  - generic [ref=e3838]:
+                    - paragraph [ref=e3840]: Leads Coloridos da AMOGURU
+                    - generic [ref=e3841]:
+                      - img [ref=e3843]
+                      - text: Instalar
+              - generic "Tradutor de mensagens via NOVA" [ref=e3846]:
+                - generic [ref=e3847] [cursor=pointer]:
+                  - img [ref=e3849]
+                  - generic [ref=e3850]:
+                    - paragraph [ref=e3852]: Tradutor de mensagens via NOVA
+                    - generic [ref=e3853]:
+                      - img [ref=e3855]
+                      - text: Instalar
+              - generic "Todos os contatos da empresa via NOVA" [ref=e3858]:
+                - generic [ref=e3859] [cursor=pointer]:
+                  - img [ref=e3861]
+                  - generic [ref=e3862]:
+                    - paragraph [ref=e3864]: Todos os contatos da empresa via NOVA
+                    - generic [ref=e3865]:
+                      - img [ref=e3867]
+                      - text: Instalar
+              - generic "Calculadora para oficinas" [ref=e3870]:
+                - generic [ref=e3871] [cursor=pointer]:
+                  - img [ref=e3873]
+                  - generic [ref=e3874]:
+                    - paragraph [ref=e3876]: Calculadora para oficinas
+                    - generic [ref=e3877]:
+                      - img [ref=e3879]
+                      - text: Instalar
+              - generic "Criador de leads em massa" [ref=e3882]:
+                - generic [ref=e3883] [cursor=pointer]:
+                  - img [ref=e3885]
+                  - generic [ref=e3886]:
+                    - paragraph [ref=e3888]: Criador de leads em massa
+                    - generic [ref=e3889]:
+                      - img [ref=e3891]
+                      - text: Instalar
+              - generic "ConvAI Lens" [ref=e3894]:
+                - generic [ref=e3895] [cursor=pointer]:
+                  - img [ref=e3897]
+                  - generic [ref=e3898]:
+                    - paragraph [ref=e3900]: ConvAI Lens
+                    - generic [ref=e3901]:
+                      - img [ref=e3903]
+                      - text: Instalar
+              - generic [ref=e3909] [cursor=pointer]: Ver mais
+          - generic [ref=e3910]:
+            - generic [ref=e3912]: Produtividade
+            - generic [ref=e3913]:
+              - generic "Auto tarefas por data via NOVA" [ref=e3914]:
+                - generic [ref=e3915] [cursor=pointer]:
+                  - img [ref=e3917]
+                  - generic [ref=e3918]:
+                    - paragraph [ref=e3920]: Auto tarefas por data via NOVA
+                    - generic [ref=e3921]:
+                      - img [ref=e3923]
+                      - text: Instalar
+              - generic "Scripts de Vendas HyperScript" [ref=e3926]:
+                - generic [ref=e3927] [cursor=pointer]:
+                  - img [ref=e3929]
+                  - generic [ref=e3930]:
+                    - paragraph [ref=e3932]: Scripts de Vendas HyperScript
+                    - generic [ref=e3933]:
+                      - img [ref=e3935]
+                      - text: Instalar
+              - generic "Distribuição de ofertas de AMOGURU" [ref=e3938]:
+                - generic [ref=e3939] [cursor=pointer]:
+                  - img [ref=e3941]
+                  - generic [ref=e3942]:
+                    - paragraph [ref=e3944]: Distribuição de ofertas de AMOGURU
+                    - generic [ref=e3945]:
+                      - img [ref=e3947]
+                      - text: Instalar
+              - generic "Guru Service" [ref=e3950]:
+                - generic [ref=e3951] [cursor=pointer]:
+                  - img [ref=e3953]
+                  - generic [ref=e3954]:
+                    - paragraph [ref=e3956]: Guru Service
+                    - generic [ref=e3957]:
+                      - img [ref=e3959]
+                      - text: Instalar
+              - generic "OCULTANDO DADOS" [ref=e3962]:
+                - generic [ref=e3963] [cursor=pointer]:
+                  - img [ref=e3965]
+                  - generic [ref=e3966]:
+                    - paragraph [ref=e3968]: OCULTANDO DADOS
+                    - generic [ref=e3969]:
+                      - img [ref=e3971]
+                      - text: Instalar
+              - generic "Leads Distribution via Komanda F5" [ref=e3974]:
+                - generic [ref=e3975] [cursor=pointer]:
+                  - img [ref=e3977]
+                  - generic [ref=e3978]:
+                    - paragraph [ref=e3980]: Leads Distribution via Komanda F5
+                    - generic [ref=e3981]:
+                      - img [ref=e3983]
+                      - text: Instalar
+              - generic "Distribuição inteligente por AMOGURU" [ref=e3986]:
+                - generic [ref=e3987] [cursor=pointer]:
+                  - img [ref=e3989]
+                  - generic [ref=e3990]:
+                    - paragraph [ref=e3992]: Distribuição inteligente por AMOGURU
+                    - generic [ref=e3993]:
+                      - img [ref=e3995]
+                      - text: Instalar
+              - generic "Checklists via Komanda F5" [ref=e3998]:
+                - generic [ref=e3999] [cursor=pointer]:
+                  - img [ref=e4001]
+                  - generic [ref=e4002]:
+                    - paragraph [ref=e4004]: Checklists via Komanda F5
+                    - generic [ref=e4005]:
+                      - img [ref=e4007]
+                      - text: Instalar
+              - generic "Tasker via Komanda F5" [ref=e4010]:
+                - generic [ref=e4011] [cursor=pointer]:
+                  - img [ref=e4013]
+                  - generic [ref=e4014]:
+                    - paragraph [ref=e4016]: Tasker via Komanda F5
+                    - generic [ref=e4017]:
+                      - img [ref=e4019]
+                      - text: Instalar
+              - generic "Tarefas auto para emails lidos via NOVA" [ref=e4022]:
+                - generic [ref=e4023] [cursor=pointer]:
+                  - img [ref=e4025]
+                  - generic [ref=e4026]:
+                    - paragraph [ref=e4028]: Tarefas auto para emails lidos via NOVA
+                    - generic [ref=e4029]:
+                      - img [ref=e4031]
+                      - text: Instalar
+              - generic "Tarefas em leads sem tarefas via NOVA" [ref=e4034]:
+                - generic [ref=e4035] [cursor=pointer]:
+                  - img [ref=e4037]
+                  - generic [ref=e4038]:
+                    - paragraph [ref=e4040]: Tarefas em leads sem tarefas via NOVA
+                    - generic [ref=e4041]:
+                      - img [ref=e4043]
+                      - text: Instalar
+              - generic "KPI dos funcionários via NOVA" [ref=e4046]:
+                - generic [ref=e4047] [cursor=pointer]:
+                  - img [ref=e4049]
+                  - generic [ref=e4050]:
+                    - paragraph [ref=e4052]: KPI dos funcionários via NOVA
+                    - generic [ref=e4053]:
+                      - img [ref=e4055]
+                      - text: Instalar
+              - generic "Fila de processamento via NOVA" [ref=e4058]:
+                - generic [ref=e4059] [cursor=pointer]:
+                  - img [ref=e4061]
+                  - generic [ref=e4062]:
+                    - paragraph [ref=e4064]: Fila de processamento via NOVA
+                    - generic [ref=e4065]:
+                      - img [ref=e4067]
+                      - text: Instalar
+              - generic "Tarefas prioritárias via NOVA" [ref=e4070]:
+                - generic [ref=e4071] [cursor=pointer]:
+                  - img [ref=e4073]
+                  - generic [ref=e4074]:
+                    - paragraph [ref=e4076]: Tarefas prioritárias via NOVA
+                    - generic [ref=e4077]:
+                      - img [ref=e4079]
+                      - text: Instalar
+              - generic "Processos em tarefas via NOVA" [ref=e4082]:
+                - generic [ref=e4083] [cursor=pointer]:
+                  - img [ref=e4085]
+                  - generic [ref=e4086]:
+                    - paragraph [ref=e4088]: Processos em tarefas via NOVA
+                    - generic [ref=e4089]:
+                      - img [ref=e4091]
+                      - text: Instalar
+              - generic "Distribuição de leads via NOVA" [ref=e4094]:
+                - generic [ref=e4095] [cursor=pointer]:
+                  - img [ref=e4097]
+                  - generic [ref=e4098]:
+                    - paragraph [ref=e4100]: Distribuição de leads via NOVA
+                    - generic [ref=e4101]:
+                      - img [ref=e4103]
+                      - text: Instalar
+              - generic "Scripts de vendas via NOVA" [ref=e4106]:
+                - generic [ref=e4107] [cursor=pointer]:
+                  - img [ref=e4109]
+                  - generic [ref=e4110]:
+                    - paragraph [ref=e4112]: Scripts de vendas via NOVA
+                    - generic [ref=e4113]:
+                      - img [ref=e4115]
+                      - text: Instalar
+              - generic "Ocultar campos/abas via NOVA" [ref=e4118]:
+                - generic [ref=e4119] [cursor=pointer]:
+                  - img [ref=e4121]
+                  - generic [ref=e4122]:
+                    - paragraph [ref=e4124]: Ocultar campos/abas via NOVA
+                    - generic [ref=e4125]:
+                      - img [ref=e4127]
+                      - text: Instalar
+              - generic "SMART Leads Distribution via Komanda F5" [ref=e4130]:
+                - generic [ref=e4131] [cursor=pointer]:
+                  - img [ref=e4133]
+                  - generic [ref=e4134]:
+                    - paragraph [ref=e4136]: SMART Leads Distribution via Komanda F5
+                    - generic [ref=e4137]:
+                      - img [ref=e4139]
+                      - text: Instalar
+              - generic [ref=e4145] [cursor=pointer]: Ver mais
+          - generic [ref=e4146]:
+            - generic [ref=e4148]: Personalização de campos
+            - generic [ref=e4149]:
+              - generic "Campos Avancados da Ventasboost" [ref=e4150]:
+                - generic [ref=e4151] [cursor=pointer]:
+                  - img [ref=e4153]
+                  - generic [ref=e4154]:
+                    - paragraph [ref=e4156]: Campos Avancados da Ventasboost
+                    - generic [ref=e4157]:
+                      - img [ref=e4159]
+                      - text: Instalar
+              - generic "Calculadora de campo. Fórmulas" [ref=e4162]:
+                - generic [ref=e4163] [cursor=pointer]:
+                  - img [ref=e4165]
+                  - generic [ref=e4166]:
+                    - paragraph [ref=e4168]: Calculadora de campo. Fórmulas
+                    - generic [ref=e4169]:
+                      - img [ref=e4171]
+                      - text: Instalar
+              - generic "Calculadora by Rubikon" [ref=e4174]:
+                - generic [ref=e4175] [cursor=pointer]:
+                  - img [ref=e4177]
+                  - generic [ref=e4178]:
+                    - paragraph [ref=e4180]: Calculadora by Rubikon
+                    - generic [ref=e4181]:
+                      - img [ref=e4183]
+                      - text: Instalar
+              - generic "Country Check via Komanda F5" [ref=e4186]:
+                - generic [ref=e4187] [cursor=pointer]:
+                  - img [ref=e4189]
+                  - generic [ref=e4190]:
+                    - paragraph [ref=e4192]: Country Check via Komanda F5
+                    - generic [ref=e4193]:
+                      - img [ref=e4195]
+                      - text: Instalar
+              - generic "Tempo do cliente via NOVA" [ref=e4198]:
+                - generic [ref=e4199] [cursor=pointer]:
+                  - img [ref=e4201]
+                  - generic [ref=e4202]:
+                    - paragraph [ref=e4204]: Tempo do cliente via NOVA
+                    - generic [ref=e4205]:
+                      - img [ref=e4207]
+                      - text: Instalar
+              - generic "Agrupamento de campos by NOVA" [ref=e4210]:
+                - generic [ref=e4211] [cursor=pointer]:
+                  - img [ref=e4213]
+                  - generic [ref=e4214]:
+                    - paragraph [ref=e4216]: Agrupamento de campos by NOVA
+                    - generic [ref=e4217]:
+                      - img [ref=e4219]
+                      - text: Instalar
+              - generic "Campos dinâmicos via NOVA" [ref=e4222]:
+                - generic [ref=e4223] [cursor=pointer]:
+                  - img [ref=e4225]
+                  - generic [ref=e4226]:
+                    - paragraph [ref=e4228]: Campos dinâmicos via NOVA
+                    - generic [ref=e4229]:
+                      - img [ref=e4231]
+                      - text: Instalar
+              - generic "Criação massiva de leads via NOVA" [ref=e4234]:
+                - generic [ref=e4235] [cursor=pointer]:
+                  - img [ref=e4237]
+                  - generic [ref=e4238]:
+                    - paragraph [ref=e4240]: Criação massiva de leads via NOVA
+                    - generic [ref=e4241]:
+                      - img [ref=e4243]
+                      - text: Instalar
+              - generic "Ocultando campos via NOVA" [ref=e4246]:
+                - generic [ref=e4247] [cursor=pointer]:
+                  - img [ref=e4249]
+                  - generic [ref=e4250]:
+                    - paragraph [ref=e4252]: Ocultando campos via NOVA
+                    - generic [ref=e4253]:
+                      - img [ref=e4255]
+                      - text: Instalar
+              - generic "Padronização de telefones via NOVA" [ref=e4258]:
+                - generic [ref=e4259] [cursor=pointer]:
+                  - img [ref=e4261]
+                  - generic [ref=e4262]:
+                    - paragraph [ref=e4264]: Padronização de telefones via NOVA
+                    - generic [ref=e4265]:
+                      - img [ref=e4267]
+                      - text: Instalar
+              - generic "Fórmulas via NOVA" [ref=e4270]:
+                - generic [ref=e4271] [cursor=pointer]:
+                  - img [ref=e4273]
+                  - generic [ref=e4274]:
+                    - paragraph [ref=e4276]: Fórmulas via NOVA
+                    - generic [ref=e4277]:
+                      - img [ref=e4279]
+                      - text: Instalar
+              - generic "Normalizer via Komanda F5" [ref=e4282]:
+                - generic [ref=e4283] [cursor=pointer]:
+                  - img [ref=e4285]
+                  - generic [ref=e4286]:
+                    - paragraph [ref=e4288]: Normalizer via Komanda F5
+                    - generic [ref=e4289]:
+                      - img [ref=e4291]
+                      - text: Instalar
+              - generic "Campos Avançados por Rubikon" [ref=e4294]:
+                - generic [ref=e4295] [cursor=pointer]:
+                  - img [ref=e4297]
+                  - generic [ref=e4298]:
+                    - paragraph [ref=e4300]: Campos Avançados por Rubikon
+                    - generic [ref=e4301]:
+                      - img [ref=e4303]
+                      - text: Instalar
+              - generic "Validador Telefone +55 e digito 9" [ref=e4306]:
+                - generic [ref=e4307] [cursor=pointer]:
+                  - img [ref=e4309]
+                  - generic [ref=e4310]:
+                    - paragraph [ref=e4312]: Validador Telefone +55 e digito 9
+                    - generic [ref=e4313]:
+                      - img [ref=e4315]
+                      - text: Instalar
+              - generic "Campos obrigatórios" [ref=e4318]:
+                - generic [ref=e4319] [cursor=pointer]:
+                  - img [ref=e4321]
+                  - generic [ref=e4322]:
+                    - paragraph [ref=e4324]: Campos obrigatórios
+                    - generic [ref=e4325]:
+                      - img [ref=e4327]
+                      - text: Instalar
+              - generic "Fields Calculator via Komanda F5" [ref=e4330]:
+                - generic [ref=e4331] [cursor=pointer]:
+                  - img [ref=e4333]
+                  - generic [ref=e4334]:
+                    - paragraph [ref=e4336]: Fields Calculator via Komanda F5
+                    - generic [ref=e4337]:
+                      - img [ref=e4339]
+                      - text: Instalar
+              - generic "Quebra de texto via NOVA" [ref=e4342]:
+                - generic [ref=e4343] [cursor=pointer]:
+                  - img [ref=e4345]
+                  - generic [ref=e4346]:
+                    - paragraph [ref=e4348]: Quebra de texto via NOVA
+                    - generic [ref=e4349]:
+                      - img [ref=e4351]
+                      - text: Instalar
+              - generic "Field Prompts via Komanda F5" [ref=e4354]:
+                - generic [ref=e4355] [cursor=pointer]:
+                  - img [ref=e4357]
+                  - generic [ref=e4358]:
+                    - paragraph [ref=e4360]: Field Prompts via Komanda F5
+                    - generic [ref=e4361]:
+                      - img [ref=e4363]
+                      - text: Instalar
+              - generic "Dicas de campos" [ref=e4366]:
+                - generic [ref=e4367] [cursor=pointer]:
+                  - img [ref=e4369]
+                  - generic [ref=e4370]:
+                    - paragraph [ref=e4372]: Dicas de campos
+                    - generic [ref=e4373]:
+                      - img [ref=e4375]
+                      - text: Instalar
+              - generic [ref=e4381] [cursor=pointer]: Ver mais
+          - generic [ref=e4382]:
+            - generic [ref=e4384]: Gestão de duplicatas
+            - generic [ref=e4385]:
+              - generic "Controle de dublagem por Ingroup" [ref=e4386]:
+                - generic [ref=e4387] [cursor=pointer]:
+                  - img [ref=e4389]
+                  - generic [ref=e4390]:
+                    - paragraph [ref=e4392]: Controle de dublagem por Ingroup
+                    - generic [ref=e4393]:
+                      - img [ref=e4395]
+                      - text: Instalar
+              - generic "Peresmenka por Ventasboost" [ref=e4398]:
+                - generic [ref=e4399] [cursor=pointer]:
+                  - img [ref=e4401]
+                  - generic [ref=e4402]:
+                    - paragraph [ref=e4404]: Peresmenka por Ventasboost
+                    - generic [ref=e4405]:
+                      - img [ref=e4407]
+                      - text: Instalar
+              - generic "Procure por duplicatas por AMOGURU" [ref=e4410]:
+                - generic [ref=e4411] [cursor=pointer]:
+                  - img [ref=e4413]
+                  - generic [ref=e4414]:
+                    - paragraph [ref=e4416]: Procure por duplicatas por AMOGURU
+                    - generic [ref=e4417]:
+                      - img [ref=e4419]
+                      - text: Instalar
+              - generic "Anti-duplicate via Komanda F5" [ref=e4422]:
+                - generic [ref=e4423] [cursor=pointer]:
+                  - img [ref=e4425]
+                  - generic [ref=e4426]:
+                    - paragraph [ref=e4428]: Anti-duplicate via Komanda F5
+                    - generic [ref=e4429]:
+                      - img [ref=e4431]
+                      - text: Instalar
+              - generic "Outras pistas de bizandsoft" [ref=e4434]:
+                - generic [ref=e4435] [cursor=pointer]:
+                  - img [ref=e4437]
+                  - generic [ref=e4438]:
+                    - paragraph [ref=e4440]: Outras pistas de bizandsoft
+                    - generic [ref=e4441]:
+                      - img [ref=e4443]
+                      - text: Instalar
+              - generic "Busca duplicados via bizandsoft" [ref=e4446]:
+                - generic [ref=e4447] [cursor=pointer]:
+                  - img [ref=e4449]
+                  - generic [ref=e4450]:
+                    - paragraph [ref=e4452]: Busca duplicados via bizandsoft
+                    - generic [ref=e4453]:
+                      - img [ref=e4455]
+                      - text: Instalar
+          - generic [ref=e4458]:
+            - generic [ref=e4460]: Personalização de CRM
+            - generic [ref=e4461]:
+              - generic "WhatsApp Lite" [ref=e4462]:
+                - generic [ref=e4463] [cursor=pointer]:
+                  - img [ref=e4465]
+                  - generic [ref=e4466]:
+                    - paragraph [ref=e4468]: WhatsApp Lite
+                    - generic [ref=e4469]:
+                      - img [ref=e4471]
+                      - text: Instalar
+              - generic "Outros leads por contato por amgroup" [ref=e4474]:
+                - generic [ref=e4475] [cursor=pointer]:
+                  - img [ref=e4477]
+                  - generic [ref=e4478]:
+                    - paragraph [ref=e4480]: Outros leads por contato por amgroup
+                    - generic [ref=e4481]:
+                      - img [ref=e4483]
+                      - text: Instalar
+              - generic "Etapa do Lead por KWID" [ref=e4486]:
+                - generic [ref=e4487] [cursor=pointer]:
+                  - img [ref=e4489]
+                  - generic [ref=e4490]:
+                    - paragraph [ref=e4492]: Etapa do Lead por KWID
+                    - generic [ref=e4493]:
+                      - img [ref=e4495]
+                      - text: Instalar
+              - generic "Distribuição de leads" [ref=e4498]:
+                - generic [ref=e4499] [cursor=pointer]:
+                  - img [ref=e4501]
+                  - generic [ref=e4502]:
+                    - paragraph [ref=e4504]: Distribuição de leads
+                    - generic [ref=e4505]:
+                      - img [ref=e4507]
+                      - text: Instalar
+              - generic "Pusher via Komanda F5" [ref=e4510]:
+                - generic [ref=e4511] [cursor=pointer]:
+                  - img [ref=e4513]
+                  - generic [ref=e4514]:
+                    - paragraph [ref=e4516]: Pusher via Komanda F5
+                    - generic [ref=e4517]:
+                      - img [ref=e4519]
+                      - text: Instalar
+              - generic "Objetos de AMOGURU" [ref=e4522]:
+                - generic [ref=e4523] [cursor=pointer]:
+                  - img [ref=e4525]
+                  - generic [ref=e4526]:
+                    - paragraph [ref=e4528]: Objetos de AMOGURU
+                    - generic [ref=e4529]:
+                      - img [ref=e4531]
+                      - text: Instalar
+              - generic "Multi Companies via Komanda F5" [ref=e4534]:
+                - generic [ref=e4535] [cursor=pointer]:
+                  - img [ref=e4537]
+                  - generic [ref=e4538]:
+                    - paragraph [ref=e4540]: Multi Companies via Komanda F5
+                    - generic [ref=e4541]:
+                      - img [ref=e4543]
+                      - text: Instalar
+              - generic "Email Conveniente by Rubikon" [ref=e4546]:
+                - generic [ref=e4547] [cursor=pointer]:
+                  - img [ref=e4549]
+                  - generic [ref=e4550]:
+                    - paragraph [ref=e4552]: Email Conveniente by Rubikon
+                    - generic [ref=e4553]:
+                      - img [ref=e4555]
+                      - text: Instalar
+              - generic "Botões Rápidos via NOVA" [ref=e4558]:
+                - generic [ref=e4559] [cursor=pointer]:
+                  - img [ref=e4561]
+                  - generic [ref=e4562]:
+                    - paragraph [ref=e4564]: Botões Rápidos via NOVA
+                    - generic [ref=e4565]:
+                      - img [ref=e4567]
+                      - text: Instalar
+              - generic "Proibir a circulação via Nova" [ref=e4570]:
+                - generic [ref=e4571] [cursor=pointer]:
+                  - img [ref=e4573]
+                  - generic [ref=e4574]:
+                    - paragraph [ref=e4576]: Proibir a circulação via Nova
+                    - generic [ref=e4577]:
+                      - img [ref=e4579]
+                      - text: Instalar
+              - generic "Telegram via NOVA" [ref=e4582]:
+                - generic [ref=e4583] [cursor=pointer]:
+                  - img [ref=e4585]
+                  - generic [ref=e4586]:
+                    - paragraph [ref=e4588]: Telegram via NOVA
+                    - generic [ref=e4589]:
+                      - img [ref=e4591]
+                      - text: Instalar
+              - generic "Viber via NOVA" [ref=e4594]:
+                - generic [ref=e4595] [cursor=pointer]:
+                  - img [ref=e4597]
+                  - generic [ref=e4598]:
+                    - paragraph [ref=e4600]: Viber via NOVA
+                    - generic [ref=e4601]:
+                      - img [ref=e4603]
+                      - text: Instalar
+              - generic "WhatsApp via NOVA" [ref=e4606]:
+                - generic [ref=e4607] [cursor=pointer]:
+                  - img [ref=e4609]
+                  - generic [ref=e4610]:
+                    - paragraph [ref=e4612]: WhatsApp via NOVA
+                    - generic [ref=e4613]:
+                      - img [ref=e4615]
+                      - text: Instalar
+              - generic "Gestão de ficheiros via NOVA" [ref=e4618]:
+                - generic [ref=e4619] [cursor=pointer]:
+                  - img [ref=e4621]
+                  - generic [ref=e4622]:
+                    - paragraph [ref=e4624]: Gestão de ficheiros via NOVA
+                    - generic [ref=e4625]:
+                      - img [ref=e4627]
+                      - text: Instalar
+              - generic "Acelere a atualização de E-mail via NOVA" [ref=e4630]:
+                - generic [ref=e4631] [cursor=pointer]:
+                  - img [ref=e4633]
+                  - generic [ref=e4634]:
+                    - paragraph [ref=e4636]: Acelere a atualização de E-mail via NOVA
+                    - generic [ref=e4637]:
+                      - img [ref=e4639]
+                      - text: Instalar
+              - generic "Adicionar productos via NOVA" [ref=e4642]:
+                - generic [ref=e4643] [cursor=pointer]:
+                  - img [ref=e4645]
+                  - generic [ref=e4646]:
+                    - paragraph [ref=e4648]: Adicionar productos via NOVA
+                    - generic [ref=e4649]:
+                      - img [ref=e4651]
+                      - text: Instalar
+              - generic "Sincronização de listas via NOVA" [ref=e4654]:
+                - generic [ref=e4655] [cursor=pointer]:
+                  - img [ref=e4657]
+                  - generic [ref=e4658]:
+                    - paragraph [ref=e4660]: Sincronização de listas via NOVA
+                    - generic [ref=e4661]:
+                      - img [ref=e4663]
+                      - text: Instalar
+              - generic "Outros leads via NOVA" [ref=e4666]:
+                - generic [ref=e4667] [cursor=pointer]:
+                  - img [ref=e4669]
+                  - generic [ref=e4670]:
+                    - paragraph [ref=e4672]: Outros leads via NOVA
+                    - generic [ref=e4673]:
+                      - img [ref=e4675]
+                      - text: Instalar
+              - generic "Botões rápidos para Salesbot da AMOGURU" [ref=e4678]:
+                - generic [ref=e4679] [cursor=pointer]:
+                  - img [ref=e4681]
+                  - generic [ref=e4682]:
+                    - paragraph [ref=e4684]: Botões rápidos para Salesbot da AMOGURU
+                    - generic [ref=e4685]:
+                      - img [ref=e4687]
+                      - text: Instalar
+              - generic [ref=e4693] [cursor=pointer]: Ver mais
+          - generic [ref=e4694]:
+            - generic [ref=e4696]: Outros
+            - generic "WhatsApp" [ref=e4698]:
+              - generic [ref=e4699] [cursor=pointer]:
+                - img [ref=e4701]
+                - generic [ref=e4702]:
+                  - paragraph [ref=e4704]: WhatsApp
+                  - generic [ref=e4705]:
+                    - img [ref=e4707]
+                    - text: Instalar
+          - generic [ref=e4710]:
+            - generic [ref=e4712]: Escolhas da equipe
+            - generic [ref=e4713]:
+              - generic "Atendente IA Ana" [ref=e4714]:
+                - generic [ref=e4715] [cursor=pointer]:
+                  - img [ref=e4717]
+                  - generic [ref=e4718]:
+                    - paragraph [ref=e4720]: Atendente IA Ana
+                    - generic [ref=e4721]:
+                      - img [ref=e4723]
+                      - text: Instalado
+              - generic "Webhook Router Linhas" [ref=e4725]:
+                - generic [ref=e4726] [cursor=pointer]:
+                  - img [ref=e4728]
+                  - generic [ref=e4729]:
+                    - paragraph [ref=e4731]: Webhook Router Linhas
+                    - generic [ref=e4732]:
+                      - img [ref=e4734]
+                      - text: Instalado
+              - generic "WooCommerce Pedidos" [ref=e4736]:
+                - generic [ref=e4737] [cursor=pointer]:
+                  - img [ref=e4739]
+                  - generic [ref=e4740]:
+                    - paragraph [ref=e4742]: WooCommerce Pedidos
+                    - generic [ref=e4743]:
+                      - img [ref=e4745]
+                      - text: Instalado
+    - generic [ref=e889]:
+      - img
+      - button [ref=e890]:
+        - img [ref=e891]
+        - img [ref=e893]
+        - img [ref=e897]
+      - generic [ref=e899]:
+        - generic [ref=e901]:
+          - generic [ref=e902]:
+            - img [ref=e903]
+            - generic [ref=e905]: Kommo Copilot
+          - generic [ref=e906]:
+            - button [ref=e907] [cursor=pointer]:
+              - img [ref=e910]
+            - button [ref=e912] [cursor=pointer]:
+              - img [ref=e915]
+            - button [ref=e917] [cursor=pointer]:
+              - img [ref=e920]
+        - button "Configuração do WhatsApp Business" [ref=e922] [cursor=pointer]:
+          - generic [ref=e923]:
+            - generic [ref=e924]: Configuração do WhatsApp Business
+            - img [ref=e925]
+        - generic [ref=e972]:
+          - generic [ref=e975]: Home
+          - generic [ref=e976]:
+            - generic [ref=e977]: quero colocar mue whatsapp bussines
+            - img [ref=e978]
+          - paragraph [ref=e982]: Houve um erro de rede ou servidor. Por favor, entre em contato com nossa equipe de suporte ou tente novamente mais tarde.
+          - generic [ref=e985]: "Lead #26608910"
+          - generic [ref=e986]:
+            - generic [ref=e987]: Resumo do lead
+            - img [ref=e988]
+          - generic [ref=e990]:
+            - generic [ref=e991]:
+              - paragraph [ref=e992]: Amanda Carolina entrou em contato para perguntar sobre a possibilidade de receber brindes ao comprar cerca de 40 camisetas. Não houve acordos fechados nem definições de próximos passos até o momento. A dúvida sobre brindes permanece sem resposta. Sugere-se agendar uma tarefa para responder à cliente às 08:00 do dia 26 de março de 2026.
+              - paragraph [ref=e993]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e994]:
+              - button [ref=e997] [cursor=pointer]:
+                - img [ref=e1000]
+              - generic [ref=e1002]:
+                - button [ref=e1003] [cursor=pointer]:
+                  - img [ref=e1004]
+                - button [ref=e1006] [cursor=pointer]:
+                  - img [ref=e1007]
+          - generic [ref=e1011]: "Lead #27294823"
+          - generic [ref=e1012]:
+            - generic [ref=e1013]: Resumo do lead
+            - img [ref=e1014]
+          - generic [ref=e1016]:
+            - generic [ref=e1017]:
+              - paragraph [ref=e1018]: Tefy, representante do Colégio Estadual 8 de Setembro, entrou em contato para solicitar uniformes personalizados, incluindo camisetas e moletons com logo da escola em cores específicas e detalhes como assinaturas no capuz. Foi acordado o envio de peças para prova e definição dos tamanhos, com retirada prevista para 30 de março. Também foram discutidos valores para pedidos a partir de 40 peças, formas de pagamento (50% na entrada e 50% na retirada, à vista ou parcelado com juros) e personalizações adicionais. O cliente perguntou sobre a possibilidade de envio das peças para prova e sobre variações de preço conforme modelagem, além de detalhes sobre as assinaturas digitalizadas, mas não houve resposta definitiva sobre o envio das peças para prova. Sugere-se agendar uma tarefa para confirmar o envio das peças para prova no dia 30 de março.
+              - paragraph [ref=e1019]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1020]:
+              - button [ref=e1023] [cursor=pointer]:
+                - img [ref=e1026]
+              - generic [ref=e1028]:
+                - button [ref=e1029] [cursor=pointer]:
+                  - img [ref=e1030]
+                - button [ref=e1032] [cursor=pointer]:
+                  - img [ref=e1033]
+          - generic [ref=e1037]: "Lead #27294861"
+          - generic [ref=e1038]:
+            - generic [ref=e1039]: Resumo do lead
+            - img [ref=e1040]
+          - generic [ref=e1042]:
+            - generic [ref=e1043]:
+              - paragraph [ref=e1044]: Isadora Klein entrou em contato para personalizar camisetas em pequena quantidade para um evento, perguntando se é possível fazer menos de 10 unidades e incluir foto e escrita nas costas. Foi informado que há peças disponíveis a pronta entrega a partir de 5 unidades. Ela também perguntou sobre a disponibilidade da camiseta preta e mencionou a necessidade de recebê-la até 23 de maio. Não houve acordos formais, e permanecem sem resposta as dúvidas sobre a personalização específica e confirmação da entrega para a data solicitada. Recomenda-se agendar uma tarefa para acompanhamento da entrega até 23 de maio.
+              - paragraph [ref=e1045]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1046]:
+              - button [ref=e1049] [cursor=pointer]:
+                - img [ref=e1052]
+              - generic [ref=e1054]:
+                - button [ref=e1055] [cursor=pointer]:
+                  - img [ref=e1056]
+                - button [ref=e1058] [cursor=pointer]:
+                  - img [ref=e1059]
+          - generic [ref=e1061]:
+            - generic [ref=e1062]: foi passado valor?
+            - img [ref=e1063]
+          - generic [ref=e1065]:
+            - paragraph [ref=e1067]: Isadora Klein perguntou se é possível fazer camisetas personalizadas com foto e escrita nas costas, e também questionou se a camiseta preta estará disponível e se ela poderá recebê-la até o dia 23 de maio. Essas dúvidas não foram respondidas no diálogo.
+            - generic [ref=e1068]:
+              - button [ref=e1071] [cursor=pointer]:
+                - img [ref=e1074]
+              - generic [ref=e1076]:
+                - button [ref=e1077] [cursor=pointer]:
+                  - img [ref=e1078]
+                - button [ref=e1080] [cursor=pointer]:
+                  - img [ref=e1081]
+          - generic [ref=e1085]: "Lead #27294521"
+          - generic [ref=e1086]:
+            - generic [ref=e1087]: Resumo do lead
+            - img [ref=e1088]
+          - generic [ref=e1090]:
+            - generic [ref=e1091]:
+              - paragraph [ref=e1092]: Luiza Rossi entrou em contato para orçar bordados e adesivos em moletons college. Foi informado o preço por peça conforme o tipo de acabamento e quantidade mínima para produção, e Luiza concordou com bordado em duas partes. O pedido foi finalizado e entregue, com confirmação do cliente. Posteriormente, houve interesse em camisetas oversized, com negociação sobre prazos e quantidades, e Luiza planeja fechar o pedido até quinta-feira da última semana de março, optando possivelmente apenas pelas camisetas oversized devido à baixa procura. Foi oferecido desconto para fechamento dentro do mês. Luiza solicitou medidas dos moletons college, que foram providenciadas. Não há perguntas sem resposta no histórico. Sugiro agendar uma tarefa para acompanhamento do fechamento do pedido na quinta-feira da última semana de março.
+              - paragraph [ref=e1093]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1094]:
+              - button [ref=e1097] [cursor=pointer]:
+                - img [ref=e1100]
+              - generic [ref=e1102]:
+                - button [ref=e1103] [cursor=pointer]:
+                  - img [ref=e1104]
+                - button [ref=e1106] [cursor=pointer]:
+                  - img [ref=e1107]
+          - generic [ref=e1111]: "Lead #27467341"
+          - generic [ref=e1112]:
+            - generic [ref=e1113]: Resumo do lead
+            - img [ref=e1114]
+          - generic [ref=e1116]:
+            - generic [ref=e1117]:
+              - paragraph [ref=e1118]: Carla Financeiro Newquim, responsável financeiro da empresa Newquim, entrou em contato em 7 de abril de 2026 para solicitar orçamento de camisetas polo e camisetas em diferentes tecidos, com bordado da logomarca. Foi enviado um orçamento detalhado para 10 unidades de cada modelo, incluindo valores, condições de pagamento e prazo de entrega de aproximadamente 30 dias. Carla informou que já possui layout cadastrado devido a pedidos anteriores de jaquetas e confirmou que não utiliza boleto bancário para pagamento. Ela mencionou que precisa encaminhar a proposta para aprovação da gerência e retornará em caso de aprovação. Não há perguntas pendentes no momento. Sugere-se agendar uma tarefa para acompanhamento do retorno da gerência após o envio do orçamento.
+              - paragraph [ref=e1119]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1120]:
+              - button [ref=e1123] [cursor=pointer]:
+                - img [ref=e1126]
+              - generic [ref=e1128]:
+                - button [ref=e1129] [cursor=pointer]:
+                  - img [ref=e1130]
+                - button [ref=e1132] [cursor=pointer]:
+                  - img [ref=e1133]
+          - generic [ref=e1135]:
+            - generic [ref=e1136]: Preciso passar para gerência! Volto a entrar em contato se aprovado! quero uma resposta
+            - img [ref=e1137]
+          - generic [ref=e1139]:
+            - paragraph [ref=e1141]: Certo, de que outra forma posso ajudar?
+            - generic [ref=e1142]:
+              - button [ref=e1145] [cursor=pointer]:
+                - img [ref=e1148]
+              - generic [ref=e1150]:
+                - button [ref=e1151] [cursor=pointer]:
+                  - img [ref=e1152]
+                - button [ref=e1154] [cursor=pointer]:
+                  - img [ref=e1155]
+          - generic [ref=e1157]:
+            - generic [ref=e1158]: como posso responder
+            - img [ref=e1159]
+          - generic [ref=e1161]:
+            - list [ref=e1163]:
+              - listitem [ref=e1164]:
+                - paragraph [ref=e1165]: Amanda Carolina entrou em contato para perguntar sobre a possibilidade de receber brindes ao comprar cerca de 40 camisetas. Não houve acordos fechados nem definições de próximos passos até o momento. A dúvida sobre brindes permanece sem resposta. Sugere-se agendar uma tarefa para responder à cliente às 08:00 do dia 26 de março de 2026.
+              - listitem [ref=e1167]:
+                - paragraph [ref=e1168]:
+                  - text: reação. O bot reconhece o feedback do cliente, que você também pode alterar conforme sua preferência, agradecendo por compartilhar a experiência.
+                  - text: O bot encerra a conversa e para.
+            - generic [ref=e1170]:
+              - button [ref=e1173] [cursor=pointer]:
+                - img [ref=e1176]
+              - generic [ref=e1178]:
+                - button [ref=e1179] [cursor=pointer]:
+                  - img [ref=e1180]
+                - button [ref=e1182] [cursor=pointer]:
+                  - img [ref=e1183]
+          - generic [ref=e1187]: "Lead #26506202"
+          - generic [ref=e1188]:
+            - generic [ref=e1189]: Resumo do lead
+            - img [ref=e1190]
+          - generic [ref=e1192]:
+            - generic [ref=e1193]:
+              - paragraph [ref=e1194]: Hivânio Costa entrou em contato para solicitar um orçamento de casacos e calças personalizadas. Ele pediu o envio dos modelos disponíveis, tecidos e valores. Não houve acordos fechados nem definições de próximos passos até o momento. A dúvida sobre os modelos, tecidos e preços permanece sem resposta. Sugere-se agendar uma tarefa para enviar as informações solicitadas o quanto antes.
+              - paragraph [ref=e1195]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1196]:
+              - button [ref=e1199] [cursor=pointer]:
+                - img [ref=e1202]
+              - generic [ref=e1204]:
+                - button [ref=e1205] [cursor=pointer]:
+                  - img [ref=e1206]
+                - button [ref=e1208] [cursor=pointer]:
+                  - img [ref=e1209]
+          - generic [ref=e1213]: "Lead #27570799"
+          - generic [ref=e1214]:
+            - generic [ref=e1215]: Resumo do lead
+            - img [ref=e1216]
+          - generic [ref=e1218]:
+            - generic [ref=e1219]:
+              - paragraph [ref=e1220]: Alana CDV 814 entrou em contato no dia 8 de abril de 2026 com uma saudação inicial, mas não especificou o motivo da consulta. Não houve acordos ou próximos passos definidos, tampouco perguntas pendentes registradas. Sugere-se agendar uma tarefa para acompanhamento da comunicação com Alana CDV 814 às 08:22 do mesmo dia.
+              - paragraph [ref=e1221]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1222]:
+              - button [ref=e1225] [cursor=pointer]:
+                - img [ref=e1228]
+              - generic [ref=e1230]:
+                - button [ref=e1231] [cursor=pointer]:
+                  - img [ref=e1232]
+                - button [ref=e1234] [cursor=pointer]:
+                  - img [ref=e1235]
+          - generic [ref=e1239]: "Lead #27572993"
+          - generic [ref=e1240]:
+            - generic [ref=e1241]: Resumo do lead
+            - img [ref=e1242]
+          - generic [ref=e1244]:
+            - generic [ref=e1245]:
+              - paragraph [ref=e1246]: Caroline Garcez, representante da Caroline Garcez Ltda, entrou em contato em 8 de abril de 2026 solicitando orçamento para moletons gola careca na cor azul marinho escuro, nos tamanhos 2G, 2GG, 2EXG, 2G2 e 2G3, com logo pequeno na frente e logo grande nas costas acompanhado do telefone da empresa. Ela forneceu a razão social e o CNPJ para cadastro e elaboração do orçamento. Não houve acordos ou respostas registradas até o momento, nem perguntas adicionais sem resposta. Sugere-se agendar uma tarefa para elaboração do orçamento no dia 8 de abril de 2026 às 9h06.
+              - paragraph [ref=e1247]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1248]:
+              - button [ref=e1251] [cursor=pointer]:
+                - img [ref=e1254]
+              - generic [ref=e1256]:
+                - button [ref=e1257] [cursor=pointer]:
+                  - img [ref=e1258]
+                - button [ref=e1260] [cursor=pointer]:
+                  - img [ref=e1261]
+          - generic [ref=e1265]: "Lead #27585347"
+          - generic [ref=e1266]:
+            - generic [ref=e1267]: Resumo do lead
+            - img [ref=e1268]
+          - generic [ref=e1270]:
+            - generic [ref=e1271]:
+              - paragraph [ref=e1272]: Mateus Magro entrou em contato para enviar os logos dos patrocinadores para a Jé, visando o esboço das camisetas. Ele mencionou que solicitará os logos em PDF aos patrocinadores. Não houve acordos formais registrados nem perguntas sem resposta. Sugere-se agendar uma tarefa para o envio dos logos em PDF logo após a solicitação.
+              - paragraph [ref=e1273]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1274]:
+              - button [ref=e1277] [cursor=pointer]:
+                - img [ref=e1280]
+              - generic [ref=e1282]:
+                - button [ref=e1283] [cursor=pointer]:
+                  - img [ref=e1284]
+                - button [ref=e1286] [cursor=pointer]:
+                  - img [ref=e1287]
+          - generic [ref=e1291]: "Lead #27627665"
+          - generic [ref=e1292]:
+            - generic [ref=e1293]: Resumo do lead
+            - img [ref=e1294]
+          - generic [ref=e1296]:
+            - generic [ref=e1297]:
+              - paragraph [ref=e1298]: Simone Miranda, representante da empresa Portas do Vale, entrou em contato para solicitar um orçamento de uniformes, incluindo corta-vento impermeável, moletom básico, japona brilhosa, polos e camisetas, com quantidades mínimas de 30 unidades para polos e camisetas. Foi acordado que a equipe analisaria a paleta de cores enviada para verificar a disponibilidade junto aos fornecedores e que uma visita poderia ser agendada para apresentar amostras e modelos, dependendo da confirmação das cores. Está previsto o retorno com uma posição sobre as cores e a possibilidade de visita, mas ainda não há resposta para a confirmação da visita ou detalhes finais do orçamento.
+              - paragraph [ref=e1299]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1300]:
+              - button [ref=e1303] [cursor=pointer]:
+                - img [ref=e1306]
+              - generic [ref=e1308]:
+                - button [ref=e1309] [cursor=pointer]:
+                  - img [ref=e1310]
+                - button [ref=e1312] [cursor=pointer]:
+                  - img [ref=e1313]
+          - generic [ref=e1317]: "Lead #27579669"
+          - generic [ref=e1318]:
+            - generic [ref=e1319]: Resumo do lead
+            - img [ref=e1320]
+          - generic [ref=e1322]:
+            - generic [ref=e1323]:
+              - paragraph [ref=e1324]: Betina Berghan entrou em contato para solicitar orçamento de uniformes, incluindo moletom básico, corta-vento, calça moletom e jaqueta japona, com quantidade aproximada de 20 peças por modelo e estampas específicas. Foi enviado um orçamento detalhado com preços unitários e totais para cada item, além de confirmação de modelos já produzidos anteriormente para a empresa Bartolomeu Peças. Houve negociação sobre valores e possibilidade de desconto, com o gerente aguardando retorno sobre condições de pagamento para avançar no pedido. A cliente questionou sobre redução de preço e confirmou que não precisa de suéter, que não é produzido pela empresa. Ainda não houve fechamento do pedido nem definição final sobre descontos ou condições de pagamento.
+              - paragraph [ref=e1325]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1326]:
+              - button [ref=e1329] [cursor=pointer]:
+                - img [ref=e1332]
+              - generic [ref=e1334]:
+                - button [ref=e1335] [cursor=pointer]:
+                  - img [ref=e1336]
+                - button [ref=e1338] [cursor=pointer]:
+                  - img [ref=e1339]
+          - generic [ref=e1343]: "Lead #28970899"
+          - generic [ref=e1344]:
+            - generic [ref=e1345]: Resumo do lead
+            - img [ref=e1346]
+          - generic [ref=e1348]:
+            - generic [ref=e1349]:
+              - paragraph [ref=e1350]: Clau Meneses, representante da Nalu Care Beauty, entrou em contato para solicitar um orçamento de camisetas, mencionando que já fizeram um uniforme no ano anterior. Foi confirmado que o pedido anterior era de uniforme para empresa, mas não houve definição de próximos passos ou acordos fechados. A cliente não teve suas dúvidas totalmente respondidas, especialmente sobre detalhes do novo pedido. Sugere-se agendar uma tarefa para retorno ao cliente no dia 20 de abril de 2026 às 17h19 para dar continuidade ao atendimento.
+              - paragraph [ref=e1351]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1352]:
+              - button [ref=e1355] [cursor=pointer]:
+                - img [ref=e1358]
+              - generic [ref=e1360]:
+                - button [ref=e1361] [cursor=pointer]:
+                  - img [ref=e1362]
+                - button [ref=e1364] [cursor=pointer]:
+                  - img [ref=e1365]
+          - generic [ref=e1367]:
+            - generic [ref=e1368]: sim
+            - img [ref=e1369]
+          - generic [ref=e1371]:
+            - paragraph [ref=e1373]: A nota foi adicionada. Posso ajudar com mais alguma coisa?
+            - generic [ref=e1374]:
+              - button [ref=e1377] [cursor=pointer]:
+                - img [ref=e1380]
+              - generic [ref=e1382]:
+                - button [ref=e1383] [cursor=pointer]:
+                  - img [ref=e1384]
+                - button [ref=e1386] [cursor=pointer]:
+                  - img [ref=e1387]
+          - generic [ref=e1391]: "Lead #29002050"
+          - generic [ref=e1392]:
+            - generic [ref=e1393]: Resumo do lead
+            - img [ref=e1394]
+          - generic [ref=e1396]:
+            - generic [ref=e1397]:
+              - paragraph [ref=e1398]: "Bruno, representante da Agiliza Phone, entrou em contato para solicitar um orçamento de camisetas para uniformes empresariais. Foi informado que o pedido mínimo é de 10 peças por modelo, com variação de tamanhos permitida, e foram apresentadas duas opções de material: poliviscose e algodão, com respectivos valores detalhados para personalização das estampas. Ainda não houve definição sobre a preferência pelo material a ser utilizado. Sugere-se agendar uma tarefa para acompanhamento da escolha do material e finalização do orçamento."
+              - paragraph [ref=e1399]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1400]:
+              - button [ref=e1403] [cursor=pointer]:
+                - img [ref=e1406]
+              - generic [ref=e1408]:
+                - button [ref=e1409] [cursor=pointer]:
+                  - img [ref=e1410]
+                - button [ref=e1412] [cursor=pointer]:
+                  - img [ref=e1413]
+          - generic [ref=e1415]:
+            - generic [ref=e1416]: agendar uma tarefa para acompanhamento da escolha do material e finalização do orçamento.
+            - img [ref=e1417]
+          - generic [ref=e1419]:
+            - paragraph [ref=e1421]: A nota foi adicionada. Posso ajudar com mais alguma coisa?
+            - generic [ref=e1422]:
+              - button [ref=e1425] [cursor=pointer]:
+                - img [ref=e1428]
+              - generic [ref=e1430]:
+                - button [ref=e1431] [cursor=pointer]:
+                  - img [ref=e1432]
+                - button [ref=e1434] [cursor=pointer]:
+                  - img [ref=e1435]
+          - generic [ref=e1439]: "Lead #28293308"
+          - generic [ref=e1440]:
+            - generic [ref=e1441]: Resumo do lead
+            - img [ref=e1442]
+          - generic [ref=e1444]:
+            - generic [ref=e1445]:
+              - paragraph [ref=e1446]: Tais Gubiani, comercial da Perfeita Alquimia de São Leopoldo, buscou auxílio para uniformes corporativos, incluindo camisetas, polos, camisas sociais e jalecos, com personalização em bordado. Foram apresentados orçamentos detalhados para diferentes quantidades e tecidos, com condições de pagamento e descontos para pagamento à vista. Ficou acordado o envio de um orçamento formal em PDF com todos os itens, incluindo jalecos, para facilitar a aprovação. O cliente está analisando a proposta e planeja retornar com uma resposta na quarta-feira. Perguntou sobre a produção de jalecos com fecho e solicitou imagens de amostra com a logo, aguardando o envio dessas artes para decisão final.
+              - paragraph [ref=e1447]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1448]:
+              - button [ref=e1451] [cursor=pointer]:
+                - img [ref=e1454]
+              - generic [ref=e1456]:
+                - button [ref=e1457] [cursor=pointer]:
+                  - img [ref=e1458]
+                - button [ref=e1460] [cursor=pointer]:
+                  - img [ref=e1461]
+          - generic [ref=e1463]:
+            - generic [ref=e1464]: adicione lembrete para daqui uma hora de "fazer proposta comercial"
+            - img [ref=e1465]
+          - generic [ref=e1467]:
+            - paragraph [ref=e1469]: A nota foi adicionada. Posso ajudar com mais alguma coisa?
+            - generic [ref=e1470]:
+              - button [ref=e1473] [cursor=pointer]:
+                - img [ref=e1476]
+              - generic [ref=e1478]:
+                - button [ref=e1479] [cursor=pointer]:
+                  - img [ref=e1480]
+                - button [ref=e1482] [cursor=pointer]:
+                  - img [ref=e1483]
+          - generic [ref=e1485]:
+            - generic [ref=e1486]: lembrete
+            - img [ref=e1487]
+          - paragraph [ref=e1491]: Você deseja que eu crie um lembrete simples para o usuário como um novo lead no CRM? Se desejar, pode me enviar um nome para esse lembrete, ou posso criar com o nome vazio.
+          - generic [ref=e1492]:
+            - generic [ref=e1493]: adicione uma tarefa para daqui uma hora "criar proposta comercial"
+            - img [ref=e1494]
+          - generic [ref=e1496]:
+            - paragraph [ref=e1498]:
+              - text: Lead criado com sucesso. Você pode visualizar o lead
+              - link "aqui" [ref=e4749] [cursor=pointer]:
+                - /url: https://passoapassouniformes2025.kommo.com/leads/detail/29097764
+              - text: .
+            - generic [ref=e1500]:
+              - button [ref=e1503] [cursor=pointer]:
+                - img [ref=e1506]
+              - generic [ref=e1508]:
+                - button [ref=e1509] [cursor=pointer]:
+                  - img [ref=e1510]
+                - button [ref=e1512] [cursor=pointer]:
+                  - img [ref=e1513]
+          - generic [ref=e1517]: "Lead #28210962"
+          - generic [ref=e1518]:
+            - generic [ref=e1519]: Resumo do lead
+            - img [ref=e1520]
+          - generic [ref=e1522]:
+            - generic [ref=e1523]:
+              - paragraph [ref=e1524]: MK Equipamento E Motores entrou em contato para orçar camisetas personalizadas com tecido DryFit com elastano e poli viscose, visando uniformes com nova identificação da empresa. Foi acordado o pedido de 18 peças com prazo de entrega entre 15 e 20 dias mediante pagamento de 50% de entrada via PIX. O fornecedor confirmou a possibilidade de antecipar o prazo para 20 dias e solicitou a confirmação dos tamanhos para iniciar a arte final. O cliente informou que o principal empecilho era o prazo, mas demonstrou interesse em fechar o pedido em breve. Não há perguntas em aberto no momento.
+              - paragraph [ref=e1525]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1526]:
+              - button [ref=e1529] [cursor=pointer]:
+                - img [ref=e1532]
+              - generic [ref=e1534]:
+                - button [ref=e1535] [cursor=pointer]:
+                  - img [ref=e1536]
+                - button [ref=e1538] [cursor=pointer]:
+                  - img [ref=e1539]
+          - generic [ref=e1543]: "Lead #28599616"
+          - generic [ref=e1544]:
+            - generic [ref=e1545]: Resumo do lead
+            - img [ref=e1546]
+          - generic [ref=e1548]:
+            - generic [ref=e1549]:
+              - paragraph [ref=e1550]: "Lead #28599616 entrou em contato via WhatsApp em 17 de abril de 2026 às 09:07. O contato inicial foi uma mensagem simples de saudação enviada pelo gerente Fabiani às 09:07, sem detalhamento do propósito da consulta, acordos firmados, próximos passos ou perguntas pendentes. Recomenda-se agendar uma tarefa para acompanhamento do lead às 09:07 do dia 17 de abril de 2026."
+              - paragraph [ref=e1551]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1552]:
+              - button [ref=e1555] [cursor=pointer]:
+                - img [ref=e1558]
+              - generic [ref=e1560]:
+                - button [ref=e1561] [cursor=pointer]:
+                  - img [ref=e1562]
+                - button [ref=e1564] [cursor=pointer]:
+                  - img [ref=e1565]
+          - generic [ref=e1567]:
+            - generic [ref=e1568]: crie a tarefa
+            - img [ref=e1569]
+          - generic [ref=e1571]:
+            - paragraph [ref=e1573]: A nota foi adicionada. Posso ajudar com mais alguma coisa?
+            - generic [ref=e1574]:
+              - button [ref=e1577] [cursor=pointer]:
+                - img [ref=e1580]
+              - generic [ref=e1582]:
+                - button [ref=e1583] [cursor=pointer]:
+                  - img [ref=e1584]
+                - button [ref=e1586] [cursor=pointer]:
+                  - img [ref=e1587]
+          - generic [ref=e1591]: "Lead #29265442"
+          - generic [ref=e1592]:
+            - generic [ref=e1593]: Resumo do lead
+            - img [ref=e1594]
+          - generic [ref=e1596]:
+            - generic [ref=e1597]:
+              - paragraph [ref=e1598]: Larissa Santos entrou em contato via WABA em 23 de abril de 2026, mas as mensagens enviadas não puderam ser exibidas por não serem suportadas. Não há informações claras sobre o propósito da consulta, acordos realizados, próximos passos ou perguntas sem resposta. Sugere-se adicionar uma tarefa para verificar o conteúdo das mensagens recebidas em 23 de abril de 2026 às 08:04.
+              - paragraph [ref=e1599]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1600]:
+              - button [ref=e1603] [cursor=pointer]:
+                - img [ref=e1606]
+              - generic [ref=e1608]:
+                - button [ref=e1609] [cursor=pointer]:
+                  - img [ref=e1610]
+                - button [ref=e1612] [cursor=pointer]:
+                  - img [ref=e1613]
+          - generic [ref=e1617]: "Lead #29247340"
+          - generic [ref=e1618]:
+            - generic [ref=e1619]: Resumo do lead
+            - img [ref=e1620]
+          - generic [ref=e1622]:
+            - generic [ref=e1623]:
+              - paragraph [ref=e1624]: Sté entrou em contato via WABA em 22 de abril de 2026 às 21:40 solicitando suporte, mas a mensagem enviada não pôde ser exibida por não ser suportada. Não houve definição clara do propósito da consulta, acordos firmados, próximos passos ou perguntas pendentes. Recomenda-se criar uma tarefa para verificar o conteúdo da mensagem não exibida em 22 de abril de 2026 às 21:40.
+              - paragraph [ref=e1625]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1626]:
+              - button [ref=e1629] [cursor=pointer]:
+                - img [ref=e1632]
+              - generic [ref=e1634]:
+                - button [ref=e1635] [cursor=pointer]:
+                  - img [ref=e1636]
+                - button [ref=e1638] [cursor=pointer]:
+                  - img [ref=e1639]
+          - generic [ref=e1643]: "Lead #28979645"
+          - generic [ref=e1644]:
+            - generic [ref=e1645]: Resumo do lead
+            - img [ref=e1646]
+          - generic [ref=e1648]:
+            - generic [ref=e1649]:
+              - paragraph [ref=e1650]: Dani Celsus, da área de Marketing da Celsus, entrou em contato para solicitar orçamentos de uniformes, incluindo camisas sociais e agasalhos thermoblock com características específicas como tecido confortável, forro peluciado e cores que não desbotem. Foi acordado o envio de orçamentos para agasalhos e camisas sociais, além da entrega de amostras para avaliação. Também houve alinhamento sobre detalhes do logo para bordado e opções de modelos sem fecho. Está prevista uma visita para apresentação dos produtos e continuidade da negociação. Dani solicitou fotos e vídeos para melhor demonstração dos produtos e informou que apresentaria os orçamentos internamente. Não há perguntas pendentes sem resposta no momento.
+              - paragraph [ref=e1651]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1652]:
+              - button [ref=e1655] [cursor=pointer]:
+                - img [ref=e1658]
+              - generic [ref=e1660]:
+                - button [ref=e1661] [cursor=pointer]:
+                  - img [ref=e1662]
+                - button [ref=e1664] [cursor=pointer]:
+                  - img [ref=e1665]
+          - generic [ref=e1669]: "Lead #30114516"
+          - generic [ref=e1670]:
+            - generic [ref=e1671]: Resumo do lead
+            - img [ref=e1672]
+          - generic [ref=e1674]:
+            - generic [ref=e1675]:
+              - paragraph [ref=e1676]: Simone, representante da Araújo Despachante, entrou em contato para solicitar um orçamento de uniformes, mencionando um pedido anterior e a necessidade de aproximadamente seis unidades. Foi discutida a possibilidade de fazer o modelo sem capuz, talvez com gola, e foram apresentadas opções disponíveis. Simone demonstrou dificuldade na escolha e, em 5 de maio, solicitou o orçamento. Não houve resposta ao pedido de orçamento até o momento. Sugere-se agendar uma tarefa para enviar o orçamento solicitado o quanto antes.
+              - paragraph [ref=e1677]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1678]:
+              - button [ref=e1681] [cursor=pointer]:
+                - img [ref=e1684]
+              - generic [ref=e1686]:
+                - button [ref=e1687] [cursor=pointer]:
+                  - img [ref=e1688]
+                - button [ref=e1690] [cursor=pointer]:
+                  - img [ref=e1691]
+          - generic [ref=e1695]: "Lead #27294623"
+          - generic [ref=e1696]:
+            - generic [ref=e1697]: Resumo do lead
+            - img [ref=e1698]
+          - generic [ref=e1700]:
+            - generic [ref=e1701]:
+              - paragraph [ref=e1702]: Marcia Bordado, gerente, entrou em contato solicitando matrizes de bordados específicos para o aeroclube e hangar, incluindo versões no formato WILCOM E2.0. Foi acordado que ela enviaria os arquivos assim que terminasse de montar alguns serviços, e posteriormente confirmou ajustes feitos no computador para envio ao cliente final. Não há acordos futuros definidos nem perguntas sem resposta no diálogo. Sugere-se agendar uma tarefa para revisar e enviar as matrizes ajustadas no dia 6 de maio de 2026.
+              - paragraph [ref=e1703]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1704]:
+              - button [ref=e1707] [cursor=pointer]:
+                - img [ref=e1710]
+              - generic [ref=e1712]:
+                - button [ref=e1713] [cursor=pointer]:
+                  - img [ref=e1714]
+                - button [ref=e1716] [cursor=pointer]:
+                  - img [ref=e1717]
+          - generic [ref=e1721]: "Lead #27294493"
+          - generic [ref=e1722]:
+            - generic [ref=e1723]: Resumo do lead
+            - img [ref=e1724]
+          - generic [ref=e1726]:
+            - generic [ref=e1727]:
+              - paragraph [ref=e1728]: Bel, responsável pelo pedido de uniformes escolares, entrou em contato para solicitar camisetas e moletons personalizados para as turmas 9A, 9B e 9C, além de um segundo pedido para os professores. Foi acordado o envio das planilhas para preenchimento dos tamanhos e nomes, a confirmação dos detalhes do orçamento e a formalização do pedido mediante pagamento via Pix ou cartão. O cliente confirmou a correção dos dados e manifestou intenção de pagar o valor total em breve. Houve atraso na entrega devido à matéria-prima, com nova previsão para cerca de 10 dias após o prazo inicial, e o cliente pediu atualizações constantes sobre o andamento. Ficou acordado que o pedido dos professores será encaixado junto ao principal, e o cliente enviará os dados e pagamento até o dia 17/05. Perguntas sobre o prazo final de entrega e possibilidade de alterações após o início da produção foram respondidas, não havendo questões pendentes sem resposta.
+              - paragraph [ref=e1729]: Gostaria que eu adicionasse este resumo como uma nota?
+            - generic [ref=e1730]:
+              - button [ref=e1733] [cursor=pointer]:
+                - img [ref=e1736]
+              - generic [ref=e1738]:
+                - button [ref=e1739] [cursor=pointer]:
+                  - img [ref=e1740]
+                - button [ref=e1742] [cursor=pointer]:
+                  - img [ref=e1743]
+          - generic [ref=e1747]: Configurações
+          - button:
+            - img
+        - button "Modo Assistente" [ref=e952] [cursor=pointer]:
+          - generic [ref=e954]: Modo Assistente
+          - img [ref=e956]
+        - generic [ref=e958]:
+          - generic [ref=e959]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e962]
+            - button [disabled] [ref=e965]:
+              - img [ref=e968]
+          - generic [ref=e970]: O conteúdo gerado por IA pode ser impreciso

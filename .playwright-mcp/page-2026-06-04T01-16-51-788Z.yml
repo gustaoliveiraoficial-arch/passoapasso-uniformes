@@ -1,0 +1,241 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - generic [ref=e9]:
+      - button "Workflow GUSTAVO OSMAR OLIVEIRA DA SILVA" [expanded] [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]:
+          - img "Workflow" [ref=e17]
+          - generic [ref=e18]: GUSTAVO OSMAR OLIVEIRA DA SILVA
+          - img [ref=e19]
+      - navigation [ref=e22]:
+        - generic [ref=e24]:
+          - link "Dashboard" [ref=e25] [cursor=pointer]:
+            - /url: /
+            - img [ref=e26]
+            - text: Dashboard
+          - link "Produtos" [ref=e28] [cursor=pointer]:
+            - /url: /products
+            - img [ref=e29]
+            - text: Produtos
+          - link "Área de Membros" [ref=e31] [cursor=pointer]:
+            - /url: /members-area
+            - img [ref=e32]
+            - text: Área de Membros
+          - link "Marketplace" [ref=e34] [cursor=pointer]:
+            - /url: /marketplace
+            - img [ref=e35]
+            - text: Marketplace
+          - link "Meus Afiliados" [ref=e37] [cursor=pointer]:
+            - /url: /myaffiliates
+            - img [ref=e38]
+            - text: Meus Afiliados
+          - link "Vendas" [ref=e40] [cursor=pointer]:
+            - /url: /sales
+            - img [ref=e41]
+            - text: Vendas
+          - link "Assinaturas" [ref=e43] [cursor=pointer]:
+            - /url: /subscriptions
+            - img [ref=e44]
+            - text: Assinaturas
+          - link "Financeiro" [ref=e46] [cursor=pointer]:
+            - /url: /finance
+            - img [ref=e47]
+            - text: Financeiro
+          - link "Relatórios" [ref=e50] [cursor=pointer]:
+            - /url: /reports
+            - img [ref=e51]
+            - text: Relatórios
+          - link "Colaboradores" [ref=e53] [cursor=pointer]:
+            - /url: /team-members
+            - img [ref=e54]
+            - text: Colaboradores
+          - link "Apps" [ref=e56] [cursor=pointer]:
+            - /url: /apps
+            - img [ref=e57]
+            - text: Apps
+        - link "Ajuda" [ref=e59] [cursor=pointer]:
+          - /url: https://ajuda.kiwify.com.br/
+          - img [ref=e60]
+          - text: Ajuda
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]: R$ 0.0K / R$ 10K
+          - img [ref=e71]
+        - button [ref=e80] [cursor=pointer]:
+          - img [ref=e83]
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - button "Voltar" [ref=e88] [cursor=pointer]:
+            - img [ref=e89]
+          - heading "Editar produto" [level=3] [ref=e91]
+          - button "Salvar produto" [ref=e92] [cursor=pointer]
+        - navigation [ref=e96]:
+          - link "Geral" [ref=e99] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=general
+          - link "Área de membros" [ref=e154] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=members-area
+          - link "Configurações" [active] [ref=e155] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=settings
+          - link "Checkout" [ref=e156] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=checkout-builder
+          - link "Co-produção" [ref=e157] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=coproductions
+          - link "Afiliados" [ref=e159] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=affiliates
+          - link "Links" [ref=e161] [cursor=pointer]:
+            - /url: /products/edit/c57fcae0-5fb2-11f1-900a-650811752654?tab=links
+        - generic [ref=e305]:
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - heading "Pagamento" [level=3] [ref=e309]
+              - paragraph [ref=e310]:
+                - text: Aprenda sobre as configurações de
+                - link "parcelamento" [ref=e311] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/como-funciona-o-parcelamento-no-checkout-1um5p52/
+                - text: no checkout
+            - generic [ref=e315]:
+              - generic [ref=e317]:
+                - generic [ref=e318]: Método de pagamento
+                - combobox [ref=e319]:
+                  - option "Cartão de crédito, boleto e Pix" [selected]
+                  - option "Cartão de crédito e boleto"
+                  - option "Cartão de crédito e Pix"
+                  - option "Apenas cartão de crédito"
+              - generic [ref=e320]:
+                - generic [ref=e321]:
+                  - generic [ref=e322]: Descrição na fatura do cartão
+                  - img [ref=e324]
+                - generic [ref=e326]:
+                  - generic [ref=e327]: KIWIFY*
+                  - textbox [ref=e330]: PodiodeVen
+              - generic [ref=e333]:
+                - generic [ref=e335]:
+                  - generic [ref=e336]: Validade do boleto
+                  - textbox [ref=e337]: "2"
+                - generic [ref=e338]: dias corridos
+              - generic [ref=e340]:
+                - checkbox [checked] [ref=e341] [cursor=pointer]
+                - generic [ref=e343] [cursor=pointer]: Pedir para o comprador repetir o e-mail
+              - generic [ref=e345]:
+                - checkbox [ref=e346] [cursor=pointer]
+                - generic [ref=e348] [cursor=pointer]: Coletar o endereço do comprador
+              - generic [ref=e350]:
+                - checkbox [ref=e351] [cursor=pointer]
+                - generic [ref=e353] [cursor=pointer]: Coletar o Instagram do comprador
+              - generic [ref=e354]:
+                - group [ref=e355]:
+                  - generic [ref=e358] [cursor=pointer]:
+                    - checkbox "Conversão automática de moedas (recomendado)" [ref=e360]
+                    - generic [ref=e363]: Conversão automática de moedas (recomendado)
+                - img [ref=e365]
+          - generic [ref=e368]:
+            - generic [ref=e369]:
+              - heading "Página de obrigado e upsell" [level=3] [ref=e370]
+              - paragraph [ref=e371]:
+                - text: Aprenda sobre as
+                - link "páginas de obrigado personalizadas" [ref=e372] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/o-que-e-e-como-funcionam-as-paginas-de-obrigado-dsy5hb/
+                - text: e também sobre a
+                - link "upsell de 1 clique" [ref=e373] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/o-que-e-e-como-funcionam-as-paginas-de-obrigado-dsy5hb/
+            - generic [ref=e378]:
+              - checkbox [ref=e379] [cursor=pointer]
+              - generic [ref=e381] [cursor=pointer]: Esse produto tem uma página de obrigado personalizada ou upsell
+          - generic [ref=e383]:
+            - generic [ref=e384]:
+              - heading "Pixels de conversão" [level=3] [ref=e385]
+              - paragraph [ref=e386]:
+                - text: Aprenda mais sobre os
+                - link "pixels de conversão" [ref=e387] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/pixels-de-conversao-tcm3mi/
+            - generic [ref=e390]:
+              - generic [ref=e391]:
+                - generic [ref=e392] [cursor=pointer]:
+                  - img [ref=e393]
+                  - generic [ref=e394]: Facebook
+                - generic [ref=e395] [cursor=pointer]:
+                  - img [ref=e396]
+                  - generic [ref=e397]: G Ads
+                - generic [ref=e398] [cursor=pointer]:
+                  - img [ref=e399]
+                  - generic [ref=e400]: G Analytics
+                - generic [ref=e401] [cursor=pointer]:
+                  - img [ref=e402]
+                  - generic [ref=e403]: Taboola
+                - generic [ref=e404] [cursor=pointer]:
+                  - img [ref=e405]
+                  - generic [ref=e406]: Outbrain
+                - generic [ref=e407] [cursor=pointer]:
+                  - img [ref=e408]
+                  - generic [ref=e409]: TikTok
+                - generic [ref=e410] [cursor=pointer]:
+                  - img [ref=e411]
+                  - generic [ref=e412]: Pinterest
+                - generic [ref=e413] [cursor=pointer]:
+                  - img [ref=e414]
+                  - generic [ref=e415]: Kwai
+              - generic [ref=e416]:
+                - generic [ref=e417]:
+                  - generic [ref=e418]: Pixel ID
+                  - generic [ref=e419]:
+                    - text: Domínio
+                    - generic [ref=e420] [cursor=pointer]: (Gerenciar domínios Facebook)
+                - generic [ref=e422]:
+                  - spinbutton [ref=e425]
+                  - combobox "Search for option" [ref=e429]:
+                    - generic [ref=e430]:
+                      - generic [ref=e431]: go.kiwify.com.br
+                      - searchbox [ref=e432]
+                    - generic [ref=e433]:
+                      - button "Clear Selected"
+                  - generic [ref=e435]:
+                    - img [ref=e437] [cursor=pointer]
+                    - img [ref=e440] [cursor=pointer]
+                - generic [ref=e443]:
+                  - button "Adicionar outro" [ref=e445] [cursor=pointer]
+                  - generic [ref=e446]: 1/50
+                - generic [ref=e448]:
+                  - checkbox [ref=e449] [cursor=pointer]
+                  - generic [ref=e451] [cursor=pointer]: Disparar evento "Purchase" ao gerar um pix?
+                - generic [ref=e453]:
+                  - checkbox [ref=e454] [cursor=pointer]
+                  - generic [ref=e456] [cursor=pointer]: Disparar evento "Purchase" ao gerar um boleto?
+          - generic [ref=e458]:
+            - generic [ref=e459]:
+              - heading "Cupons de desconto" [level=3] [ref=e460]
+              - paragraph [ref=e461]:
+                - text: Aprenda mais sobre os
+                - link "cupons de desconto" [ref=e462] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/cupons-de-desconto-l808xv/
+            - article [ref=e466]:
+              - group [ref=e468]:
+                - generic [ref=e471] [cursor=pointer]:
+                  - checkbox "Habilitar cupons de desconto" [ref=e473]
+                  - generic [ref=e476]: Habilitar cupons de desconto
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - heading "Order bump" [level=3] [ref=e480]
+              - paragraph [ref=e481]:
+                - text: Aprenda mais sobre os
+                - link "order bumps" [ref=e482] [cursor=pointer]:
+                  - /url: https://ajuda.kiwify.com.br/pt-br/article/como-funcionam-os-order-bumps-1bb22bl/?bust=1617344693589
+            - generic [ref=e485]:
+              - table [ref=e490]:
+                - rowgroup [ref=e491]:
+                  - row "Ordem Produto" [ref=e492]:
+                    - columnheader "Ordem" [ref=e493]
+                    - columnheader "Produto" [ref=e494]
+                    - columnheader [ref=e495]
+                - row "Não há nenhum order bump" [ref=e496]:
+                  - cell "Não há nenhum order bump" [ref=e497]
+              - generic [ref=e499]:
+                - button "Adicionar order bump" [ref=e501] [cursor=pointer]
+                - generic [ref=e502]: 0/5
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - button "Excluir produto" [ref=e146] [cursor=pointer]
+            - button "Cancelar assinaturas" [ref=e234] [cursor=pointer]
+          - button "Salvar produto" [ref=e148] [cursor=pointer]
+  - img
+  - button "Open chat" [ref=e149] [cursor=pointer]:
+    - img [ref=e151]

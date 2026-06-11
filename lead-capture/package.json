@@ -1,0 +1,16 @@
+{
+  "name": "lead-capture-passoapasso",
+  "version": "2.0.0",
+  "description": "Captação de leads B2B via Receita Federal (dados abertos) - Passo a Passo Uniformes",
+  "main": "index.js",
+  "scripts": {
+    "buscar": "node index.js",
+    "start": "node index.js",
+    "teste": "node index.js --teste"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3",
+    "unzipper": "^0.12.3",
+    "xlsx": "^0.18.5"
+  }
+}

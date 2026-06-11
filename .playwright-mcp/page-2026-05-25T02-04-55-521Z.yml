@@ -1,0 +1,59 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - navigation [ref=e7]:
+          - generic [ref=e10]:
+            - button [ref=e11] [cursor=pointer]:
+              - img [ref=e14]
+            - button "Menu dropdown button" [ref=e16] [cursor=pointer]:
+              - img [ref=e18]
+        - navigation "Floating toolbar" [ref=e19]:
+          - generic [ref=e20]:
+            - button [ref=e21] [cursor=pointer]:
+              - img [ref=e23]
+            - button "Help" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]:
+                - img [ref=e29]
+                - generic [ref=e32]: Help
+            - button "Advisor Center" [ref=e35] [cursor=pointer]:
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic [ref=e39]: Advisor Center
+      - main [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e56]:
+              - heading "Sign In / Providers" [level=1] [ref=e57]
+              - paragraph [ref=e58]: Configure authentication providers and login methods for your users
+            - navigation [ref=e59]:
+              - menu [ref=e60]:
+                - listitem [ref=e61]:
+                  - link "Supabase Auth" [ref=e62] [cursor=pointer]:
+                    - /url: /dashboard/project/undefined/auth/providers
+                - listitem [ref=e63]:
+                  - link "Third-Party Auth" [ref=e64] [cursor=pointer]:
+                    - /url: /dashboard/project/undefined/auth/third-party
+          - generic [ref=e65]:
+            - heading "User Signups" [level=2] [ref=e70]
+            - generic [ref=e85]:
+              - heading "Auth Providers" [level=2] [ref=e86]
+              - generic [ref=e87]: Authenticate your users through a suite of providers and login methods
+    - generic [ref=e242]:
+      - generic:
+        - generic:
+          - generic:
+            - img "Background pattern"
+          - generic:
+            - generic:
+              - button "Close banner":
+                - generic:
+                  - img
+            - generic:
+              - generic: Notice
+              - generic:
+                - paragraph: We've updated our Terms of Service
+                - paragraph: Updates define the responsibilities of both you and Supabase in the use of AI.
+              - button "Learn more":
+                - generic: Learn more
+  - alert [ref=e243]

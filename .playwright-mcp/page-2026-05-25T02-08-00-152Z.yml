@@ -1,0 +1,33 @@
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e27] [cursor=pointer]:
+    - img [ref=e28]
+  - alert [ref=e31]
+  - generic [ref=e33]:
+    - generic [ref=e35]: 🏆 Pódio de Vendas
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e39]: ✓
+        - generic [ref=e40]: Workspace
+      - generic [ref=e43]:
+        - generic [ref=e44]: "2"
+        - generic [ref=e45]: Time
+      - generic [ref=e48]:
+        - generic [ref=e49]: "3"
+        - generic [ref=e50]: Metas
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - heading "Adicione seus vendedores" [level=2] [ref=e64]
+        - paragraph [ref=e65]: Você pode editar depois. Mínimo 1 vendedor.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - textbox [ref=e68] [cursor=pointer]: "#e74c3c"
+          - textbox "Vendedor 1" [active] [ref=e69]
+          - button "×" [ref=e70] [cursor=pointer]
+        - generic [ref=e71]:
+          - textbox [ref=e72] [cursor=pointer]: "#3498db"
+          - textbox "Vendedor 2" [ref=e73]
+          - button "×" [ref=e74] [cursor=pointer]
+        - button "+ Adicionar vendedor" [ref=e75] [cursor=pointer]
+      - generic [ref=e76]:
+        - button "Voltar" [ref=e77] [cursor=pointer]
+        - button "Continuar →" [disabled] [ref=e78] [cursor=pointer]

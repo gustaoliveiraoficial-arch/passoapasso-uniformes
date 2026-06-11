@@ -1,0 +1,15 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /formalizarpedido/
+
+# Serve arquivos e diretórios existentes normalmente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rotas dinâmicas: serve o placeholder HTML preservando a URL real
+# O client component lê o ID real de window.location.pathname
+RewriteRule ^(pedido|arquivos|cliente-pdf|confirmacao|lista-tamanhos|pedido-completo)/[^/]+/?$ $1/__placeholder__/index.html [L]
+RewriteRule ^tamanhos/[^/]+/?$ tamanhos/__placeholder__/index.html [L]
+
+ErrorDocument 404 /formalizarpedido/404.html

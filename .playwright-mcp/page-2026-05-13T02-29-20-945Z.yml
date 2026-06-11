@@ -1,0 +1,179 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /e3ca5b01318ce323/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.84%
+        - generic [ref=e61]: 431.89 MiB / 50 GiB
+      - generic [ref=e24]:
+        - generic [ref=e25]: Inodes
+        - generic [ref=e28]: 3.49%
+        - generic [ref=e63]: 20932 / 600000
+    - button "Logout" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e31]:
+      - generic [ref=e32]: File Browser v2.63.2-h2
+      - generic [ref=e33]: Help
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e39]:
+        - link "Home" [ref=e40] [cursor=pointer]:
+          - /url: /e3ca5b01318ce323/files
+          - generic [ref=e41]: home
+        - generic [ref=e42]:
+          - generic [ref=e44]: keyboard_arrow_right
+          - link "public_html" [ref=e45] [cursor=pointer]:
+            - /url: /e3ca5b01318ce323/files/public_html/
+        - generic [ref=e46]:
+          - generic [ref=e48]: keyboard_arrow_right
+          - link "formalizarpedido" [ref=e49] [cursor=pointer]:
+            - /url: /e3ca5b01318ce323/files/public_html/formalizarpedido/
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - button "Toggle sidebar" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: menu
+          - button "Search" [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: more_vert
+        - generic [ref=e277]:
+          - generic [ref=e280] [cursor=pointer]:
+            - button "Sort by name" [ref=e281]:
+              - text: Name
+              - generic [ref=e282]: arrow_upward
+            - button "Sort by last modified" [ref=e283]:
+              - text: Last modified
+              - generic [ref=e284]: arrow_upward
+          - generic [ref=e285]:
+            - button "404" [ref=e286] [cursor=pointer]:
+              - generic [ref=e288]: folder
+              - generic [ref=e289]:
+                - paragraph [ref=e290]: "404"
+                - paragraph [ref=e291]:
+                  - time [ref=e292]: 19 minutes ago
+            - button "_next" [ref=e293] [cursor=pointer]:
+              - generic [ref=e295]: folder
+              - generic [ref=e296]:
+                - paragraph [ref=e297]: _next
+                - paragraph [ref=e298]:
+                  - time [ref=e299]: 19 minutes ago
+            - button "arquivos" [ref=e300] [cursor=pointer]:
+              - generic [ref=e302]: folder
+              - generic [ref=e303]:
+                - paragraph [ref=e304]: arquivos
+                - paragraph [ref=e305]:
+                  - time [ref=e306]: 19 minutes ago
+            - button "cliente-pdf" [ref=e307] [cursor=pointer]:
+              - generic [ref=e309]: folder
+              - generic [ref=e310]:
+                - paragraph [ref=e311]: cliente-pdf
+                - paragraph [ref=e312]:
+                  - time [ref=e313]: 19 minutes ago
+            - button "confirmacao" [ref=e314] [cursor=pointer]:
+              - generic [ref=e316]: folder
+              - generic [ref=e317]:
+                - paragraph [ref=e318]: confirmacao
+                - paragraph [ref=e319]:
+                  - time [ref=e320]: 19 minutes ago
+            - button "lista-tamanhos" [ref=e321] [cursor=pointer]:
+              - generic [ref=e323]: folder
+              - generic [ref=e324]:
+                - paragraph [ref=e325]: lista-tamanhos
+                - paragraph [ref=e326]:
+                  - time [ref=e327]: 19 minutes ago
+            - button "novo-pedido" [ref=e328] [cursor=pointer]:
+              - generic [ref=e330]: folder
+              - generic [ref=e331]:
+                - paragraph [ref=e332]: novo-pedido
+                - paragraph [ref=e333]:
+                  - time [ref=e334]: 19 minutes ago
+            - button "pedido" [ref=e335] [cursor=pointer]:
+              - generic [ref=e337]: folder
+              - generic [ref=e338]:
+                - paragraph [ref=e339]: pedido
+                - paragraph [ref=e340]:
+                  - time [ref=e341]: 19 minutes ago
+            - button "pedido-completo" [ref=e342] [cursor=pointer]:
+              - generic [ref=e344]: folder
+              - generic [ref=e345]:
+                - paragraph [ref=e346]: pedido-completo
+                - paragraph [ref=e347]:
+                  - time [ref=e348]: 19 minutes ago
+            - button "tamanhos" [ref=e349] [cursor=pointer]:
+              - generic [ref=e351]: folder
+              - generic [ref=e352]:
+                - paragraph [ref=e353]: tamanhos
+                - paragraph [ref=e354]:
+                  - time [ref=e355]: 19 minutes ago
+          - generic [ref=e356]:
+            - button ".htaccess" [ref=e357] [cursor=pointer]:
+              - generic [ref=e359]: description
+              - generic [ref=e360]:
+                - paragraph [ref=e361]: .htaccess
+                - paragraph [ref=e362]:
+                  - time [ref=e363]: 15 minutes ago
+            - button "404.html" [ref=e364] [cursor=pointer]:
+              - generic [ref=e366]: code
+              - generic [ref=e367]:
+                - paragraph [ref=e368]: 404.html
+                - paragraph [ref=e369]:
+                  - time [ref=e370]: 15 minutes ago
+            - button "index.html" [ref=e371] [cursor=pointer]:
+              - generic [ref=e373]: code
+              - generic [ref=e374]:
+                - paragraph [ref=e375]: index.html
+                - paragraph [ref=e376]:
+                  - time [ref=e377]: 15 minutes ago
+            - button "index.txt" [ref=e378] [cursor=pointer]:
+              - generic [ref=e380]: description
+              - generic [ref=e381]:
+                - paragraph [ref=e382]: index.txt
+                - paragraph [ref=e383]:
+                  - time [ref=e384]: 15 minutes ago
+            - button "logo-pap.png" [ref=e385] [cursor=pointer]:
+              - img [ref=e387]
+              - generic [ref=e388]:
+                - paragraph [ref=e389]: logo-pap.png
+                - paragraph [ref=e390]:
+                  - time [ref=e391]: 15 minutes ago
+          - generic [ref=e392]:
+            - paragraph [ref=e393]: Multiple selection enabled
+            - button "Clear" [ref=e394] [cursor=pointer]:
+              - generic [ref=e395]: clear

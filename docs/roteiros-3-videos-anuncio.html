@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiros de Anúncio — Passo a Passo Uniformes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+
+  /* ===== RESET & BASE ===== */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f0f0;
+    color: #111;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ===== PAGE ===== */
+  .page {
+    width: 794px;
+    min-height: 1123px;
+    background: #fff;
+    margin: 32px auto;
+    padding: 64px 64px 72px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+    position: relative;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover {
+    background: #0a0a0a;
+    color: #fff;
+    padding: 80px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1123px;
+  }
+  .cover-top { }
+  .cover-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,102,0,0.15);
+    border: 1px solid rgba(255,102,0,0.4);
+    color: #FF6600;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .cover-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+  .cover-title span { color: #FF6600; }
+  .cover-sub {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 60px;
+  }
+
+  .cover-formats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+  .format-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid #FF6600;
+    border-radius: 10px;
+  }
+  .format-num {
+    font-size: 13px;
+    font-weight: 800;
+    color: #FF6600;
+    min-width: 24px;
+  }
+  .format-info { flex: 1; }
+  .format-name { font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 2px; }
+  .format-desc { font-size: 13px; color: #666; }
+  .format-dur {
+    font-size: 13px;
+    font-weight: 700;
+    color: #444;
+    background: rgba(255,255,255,0.06);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  .cover-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .cover-brand { font-size: 18px; font-weight: 900; color: #fff; }
+  .cover-brand span { color: #FF6600; }
+  .cover-meta { font-size: 12px; color: #444; text-align: right; line-height: 1.8; }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider {
+    background: #0a0a0a;
+    color: #fff;
+    padding: 40px 64px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: #FF6600;
+  }
+  .divider-format-tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF6600;
+  }
+  .divider-title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+  .divider-sub { font-size: 13px; color: #666; }
+
+  /* ===== SCRIPT CONTENT ===== */
+  .script-page { }
+
+  .script-meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+  }
+  .meta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .badge-format { background: #fff3e6; color: #c85a00; border: 1px solid #ffd4a8; }
+  .badge-dur { background: #f0f0f0; color: #555; }
+  .badge-cam { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+  .badge-obj { background: #e3f2fd; color: #1565c0; border: 1px solid #90caf9; }
+
+  /* ===== SCENE BLOCKS ===== */
+  .scene {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+  }
+  .scene-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+  }
+  .scene-time {
+    font-size: 11px;
+    font-weight: 800;
+    color: #fff;
+    background: #FF6600;
+    padding: 3px 10px;
+    border-radius: 4px;
+    min-width: 60px;
+    text-align: center;
+  }
+  .scene-label {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .scene-body { padding: 16px 18px; }
+
+  /* Scene types */
+  .scene-hook .scene-header { background: #0a0a0a; }
+  .scene-hook .scene-label { color: #FF6600; }
+  .scene-hook .scene-time { background: #FF6600; }
+
+  .scene-body-s .scene-header { background: #fff8f3; }
+  .scene-body-s .scene-label { color: #c85a00; }
+  .scene-body-s .scene-time { background: #c85a00; }
+
+  .scene-prova .scene-header { background: #f3f8ff; }
+  .scene-prova .scene-label { color: #1565c0; }
+  .scene-prova .scene-time { background: #1565c0; }
+
+  .scene-cta .scene-header { background: #f0fff4; }
+  .scene-cta .scene-label { color: #2e7d32; }
+  .scene-cta .scene-time { background: #2e7d32; }
+
+  .scene-react .scene-header { background: #1a1a1a; }
+  .scene-react .scene-label { color: #FF6600; }
+  .scene-react .scene-time { background: #FF6600; }
+
+  .scene-motion .scene-header { background: #0a0a0a; }
+  .scene-motion .scene-label { color: #fff; }
+  .scene-motion .scene-time { background: #555; }
+
+  /* ===== FALAS E DIREÇÕES ===== */
+  .speech {
+    background: #f9f9f9;
+    border-left: 3px solid #FF6600;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #111;
+  }
+  .speech em { font-style: italic; color: #666; }
+  .speech strong { font-weight: 800; color: #FF6600; }
+
+  .direction {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 14px;
+    background: #f0f4ff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    color: #3a4a7a;
+    line-height: 1.55;
+  }
+  .direction-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+
+  .screen-text {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 14px;
+    background: #0a0a0a;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    color: #FF6600;
+    font-weight: 700;
+    line-height: 1.55;
+  }
+
+  /* ===== MOTION BLOCKS ===== */
+  .motion-frame {
+    background: #0a0a0a;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .motion-frame::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: #FF6600;
+  }
+  .motion-timecode {
+    font-size: 10px;
+    font-weight: 800;
+    color: #555;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .motion-text {
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+  .motion-text .highlight { color: #FF6600; }
+  .motion-anim {
+    font-size: 11px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .motion-anim::before {
+    content: '▶';
+    color: #FF6600;
+    font-size: 9px;
+  }
+
+  /* ===== NOTES BOX ===== */
+  .notes-box {
+    background: #fff8f3;
+    border: 1px solid #ffd4a8;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-top: 24px;
+  }
+  .notes-title {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c85a00;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .notes-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .notes-list li {
+    font-size: 12.5px;
+    color: #555;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .notes-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #FF6600;
+  }
+
+  /* ===== CHECKLIST ===== */
+  .checklist {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-top: 16px;
+  }
+  .checklist-title {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12.5px;
+    color: #444;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.45;
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-box {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ===== CTA SUMMARY ===== */
+  .cta-bar {
+    background: #FF6600;
+    color: #fff;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  .cta-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 2px; }
+  .cta-link { font-size: 16px; font-weight: 900; }
+
+  /* ===== PAGE HEADER ===== */
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0a0a0a;
+  }
+  .page-header-brand { font-size: 13px; font-weight: 800; color: #0a0a0a; }
+  .page-header-brand span { color: #FF6600; }
+  .page-num { font-size: 11px; color: #aaa; font-weight: 600; }
+
+  /* ===== SEPARADOR VISUAL ENTRE SCRIPTS ===== */
+  .spacer { height: 40px; }
+  .divider-line { border: none; border-top: 1px solid #eee; margin: 28px 0; }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; padding: 48px 56px; }
+    .cover { padding: 60px 56px; }
+    .section-divider { padding: 32px 56px; }
+    @page { margin: 0; size: A4; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ==============================
+     CAPA
+=============================== -->
+<div class="page cover">
+
+  <div class="cover-top">
+    <div class="cover-tag">Passo a Passo Uniformes · Creative Brief</div>
+    <h1 class="cover-title">3 Roteiros<br>de Anúncio<br><span>Prontos para Gravar</span></h1>
+    <p class="cover-sub">
+      Formatos UGC, React e Motion — baseados nos padrões que mais convertem
+      no Meta e TikTok em 2025–2026. Cada roteiro adaptado ao posicionamento
+      de consultoria da Passo a Passo.
+    </p>
+
+    <div class="cover-formats">
+      <div class="format-item">
+        <div class="format-num">01</div>
+        <div class="format-info">
+          <div class="format-name">UGC — User Generated Content</div>
+          <div class="format-desc">Câmera frontal. Tom de depoimento real. Alguém contando a experiência.</div>
+        </div>
+        <div class="format-dur">40s</div>
+      </div>
+      <div class="format-item">
+        <div class="format-num">02</div>
+        <div class="format-info">
+          <div class="format-name">React — Reação a Comentário</div>
+          <div class="format-desc">Creator reage a DM ou comentário real. Autentico, direto, engaja.</div>
+        </div>
+        <div class="format-dur">25s</div>
+      </div>
+      <div class="format-item">
+        <div class="format-num">03</div>
+        <div class="format-info">
+          <div class="format-name">Motion — Kinetic Typography</div>
+          <div class="format-desc">Sem câmera. Texto animado + voiceover. Funciona sem som.</div>
+        </div>
+        <div class="format-dur">18s</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div>
+      <div class="cover-brand">Passo a Passo <span>Uniformes</span></div>
+      <div style="font-size:12px;color:#333;margin-top:4px;">passoapassouniformes.com/linkdabio</div>
+    </div>
+    <div class="cover-meta">
+      Creative Brief — Anúncios<br>
+      Junho 2026<br>
+      3 formatos · 3 roteiros completos
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ==============================
+     VÍDEO 01 — UGC
+=============================== -->
+
+<div class="page section-divider">
+  <div class="divider-format-tag">Vídeo 01 · Formato</div>
+  <div class="divider-title">UGC — User Generated Content</div>
+  <div class="divider-sub">Jéssica fala como fundadora · Câmera frontal selfie · 40 segundos</div>
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">Vídeo 01 — UGC</div>
+  </div>
+
+  <div class="script-meta">
+    <span class="meta-badge badge-format">UGC</span>
+    <span class="meta-badge badge-dur">⏱ 40 segundos</span>
+    <span class="meta-badge badge-cam">📱 Câmera frontal selfie</span>
+    <span class="meta-badge badge-obj">🎯 Dor: uniforme errado = dinheiro perdido</span>
+  </div>
+
+  <!-- CENÁRIO -->
+  <div class="notes-box" style="margin-bottom:24px;background:#f5f5f5;border-color:#ddd;">
+    <div class="notes-title" style="color:#333;">🎬 Cenário — Jéssica, fundadora da Passo a Passo</div>
+    <ul class="notes-list" style="">
+      <li style="color:#444;"><strong style="color:#111;">Quem fala:</strong> Jéssica — dona e fundadora. Tom de especialista que já viu esse erro acontecer centenas de vezes e quer te poupar do mesmo problema.</li>
+      <li style="color:#444;"><strong style="color:#111;">Onde gravar:</strong> dentro da confecção — máquinas, uniformes, tecidos ao fundo. Mostra que ela produz de verdade.</li>
+      <li style="color:#444;"><strong style="color:#111;">Câmera:</strong> celular apoiado levemente instável — conversa real, não comercial gravado.</li>
+      <li style="color:#444;"><strong style="color:#111;">Tom:</strong> direta, quase indignada nos primeiros 18s. Depois firme e confiante ao apresentar a solução. Gaúcha de verdade.</li>
+    </ul>
+  </div>
+
+  <!-- CENA 1: HOOK — DOR DIRETA -->
+  <div class="scene scene-hook">
+    <div class="scene-header">
+      <div class="scene-time">0–3s</div>
+      <div class="scene-label">Hook — Dor na cara dura</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Você comprou uniforme, pagou caro — e em 4 meses a cor desbotou, o tecido encolheu. Você jogou dinheiro fora."
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TEXTO NA TELA: "Você jogou dinheiro fora."</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Olhar direto pra câmera. Tom firme, sem rodeio — é a dor que o cliente já sentiu e não quer sentir de novo. Sem sorriso no hook.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 2: AGITAÇÃO -->
+  <div class="scene scene-body-s">
+    <div class="scene-header">
+      <div class="scene-time">3–12s</div>
+      <div class="scene-label">Agitação — aprofunda a dor</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "E o pior: você foi reclamar com o fornecedor — e ele sumiu. Ou então disse que era 'do jeito que você lavou'.<br><br>
+        Você ficou sem uniforme e sem o dinheiro. E o time ainda continua sem padronização."
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Tom de indignação compartilhada — "eu sei que isso acontece, eu conheço esse mercado". Jéssica faz o espectador se sentir entendido, não atacado.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 3: MAIS DOR — A CAUSA REAL -->
+  <div class="scene scene-body-s">
+    <div class="scene-header">
+      <div class="scene-time">12–18s</div>
+      <div class="scene-label">Mais dor — a raiz do problema</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Isso não é azar. É falta de orientação. Ninguém perguntou antes de vender: qual é o ambiente do seu time? Lava todo dia? Usa embaixo do sol?<br><br>
+        Esse detalhe muda tudo."
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TEXTO NA TELA: "Esse detalhe muda tudo."</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Tom que revela — "o mercado tá errando nisso". Cria a virada emocional. O espectador entende que o problema não foi ele, foi o fornecedor errado.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 4: VIRADA + SOLUÇÃO -->
+  <div class="scene scene-body-s">
+    <div class="scene-header">
+      <div class="scene-time">18–34s</div>
+      <div class="scene-label">Virada + Solução — o jeito certo</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Sou a Jéssica. Tenho a Passo a Passo Uniformes há 30 anos. E aprendi que antes de qualquer orçamento, preciso entender o seu projeto.<br><br>
+        <em>Campo ou escritório? Lava com que frequência? Quer padronizar a equipe ou fazer marketing com o uniforme na rua?</em><br><br>
+        Cada resposta muda o tecido, o acabamento, a durabilidade. Porque uniforme que dura começa com a pergunta certa."
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TEXTO NA TELA (aos 28s): "Uniforme que dura começa com a pergunta certa."</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        "Sou a Jéssica" é a virada — ela se apresenta DEPOIS de criar a dor, não antes. Pega um uniforme na mão durante a fala. Tom de especialista apaixonada.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 5: PROVA SOCIAL -->
+  <div class="scene scene-prova">
+    <div class="scene-header">
+      <div class="scene-time">34–38s</div>
+      <div class="scene-label">Prova social — autoridade</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Já fiz uniforme pra Beira Rio, Ortobom e Monaco Atacado. E atendo do mesmo jeito quem tem 10 peças."
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        O contraste "grandes marcas / 10 peças" é o gatilho de pertencimento — qualquer tamanho de empresa se identifica.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 6: CTA — FECHA O LOOP DA DOR -->
+  <div class="scene scene-cta">
+    <div class="scene-header">
+      <div class="scene-time">38–42s</div>
+      <div class="scene-label">CTA — fecha o loop da dor do hook</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Entra no link aqui embaixo. Me conta o projeto do seu time — eu te indico o uniforme certo. Dessa vez você não vai jogar dinheiro fora."
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TEXTO NA TELA: passoapassouniformes.com/linkdabio</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        "Dessa vez você não vai jogar dinheiro fora" — espelha exatamente o hook. Fecha o loop emocional. Aponta para baixo. Olha direto na câmera. Corte seco.
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <div class="cta-label">CTA único de todos os vídeos</div>
+      <div class="cta-link">passoapassouniformes.com/linkdabio</div>
+    </div>
+    <div style="font-size:22px;">→</div>
+  </div>
+
+  <div class="notes-box">
+    <div class="notes-title">📋 Notas de Produção — UGC com Jéssica</div>
+    <ul class="notes-list">
+      <li>Hook SEM sorriso — a dor é real. O sorriso só aparece na cena 4, quando ela apresenta a solução.</li>
+      <li>"Sou a Jéssica" vem na cena 4, NÃO no início — quem se apresenta no hook perde o espectador.</li>
+      <li>Fazer 2–3 takes do hook (0–3s) — o mais natural e direto vence.</li>
+      <li>Captions queimadas obrigatórias — 85% assiste sem som.</li>
+      <li>"Dessa vez você não vai jogar dinheiro fora" no CTA fecha o loop do hook — não cortar essa frase.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<!-- ==============================
+     VÍDEO 02 — REACT
+=============================== -->
+
+<div class="page section-divider">
+  <div class="divider-format-tag">Vídeo 02 · Formato</div>
+  <div class="divider-title">React — Reação a Comentário</div>
+  <div class="divider-sub">Jéssica reage a DM real do perfil · 25 segundos · Alta retenção</div>
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">Vídeo 02 — React</div>
+  </div>
+
+  <div class="script-meta">
+    <span class="meta-badge badge-format">REACT</span>
+    <span class="meta-badge badge-dur">⏱ 25 segundos</span>
+    <span class="meta-badge badge-cam">📱 Câmera frontal + tela do celular</span>
+    <span class="meta-badge badge-obj">🎯 Dor: rejeitado por ter time pequeno</span>
+  </div>
+
+  <!-- CENÁRIO REACT -->
+  <div class="notes-box" style="margin-bottom:24px;background:#f5f5f5;border-color:#ddd;">
+    <div class="notes-title" style="color:#333;">🎬 Cenário — Jéssica reage a DM de gestor rejeitado pelo mercado</div>
+    <ul class="notes-list" style="">
+      <li style="color:#444;"><strong style="color:#111;">Quem fala:</strong> Jéssica — reagindo com indignação genuína a uma situação que ela conhece do mercado há décadas.</li>
+      <li style="color:#444;"><strong style="color:#111;">Onde gravar:</strong> na confecção, mesmo cenário do UGC — identidade visual consistente.</li>
+      <li style="color:#444;"><strong style="color:#111;">O DM:</strong> usar uma mensagem real ou recriar verossimilmente. Pode ser do próprio celular dela na tela.</li>
+      <li style="color:#444;"><strong style="color:#111;">Edição:</strong> print do DM entra em slide da esquerda nos 0,5s iniciais, fica até ~5s, depois Jéssica full frame respondendo.</li>
+    </ul>
+  </div>
+
+  <!-- DM EXEMPLO -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px 24px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#555;margin-bottom:14px;">💬 DM que aparece na tela (print de overlay)</div>
+    <div style="display:flex;gap:12px;align-items:flex-start;">
+      <div style="width:36px;height:36px;background:#333;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:16px;">👤</div>
+      <div>
+        <div style="font-size:12px;color:#888;margin-bottom:6px;">@usuario_direto</div>
+        <div style="background:#222;border-radius:0 10px 10px 10px;padding:12px 16px;font-size:14px;color:#fff;line-height:1.6;max-width:380px;">
+          "Sou gestor de uma empresa com 18 funcionários. Liguei em 5 confecções essa semana. Todas disseram que o mínimo é 50 peças. Ficamos sem uniforme."
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 1: ESTÍMULO — MOSTRA O DM -->
+  <div class="scene scene-react">
+    <div class="scene-header">
+      <div class="scene-time">0–4s</div>
+      <div class="scene-label">Estímulo — Mostra o DM</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        <em>[Jéssica olha pra câmera, depois baixa o olho como se estivesse lendo o celular]</em><br><br>
+        "Olha a mensagem que chegou aqui no direct…"
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TELA: Print do DM aparece em overlay — Jéssica fica no rodapé enquanto a mensagem é lida. Pausa de 1,5s com o DM visível.</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Expressão séria ao ler — não surpresa forçada. O espectador lê o DM junto com ela.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 2: REAÇÃO + AGITAÇÃO DA DOR -->
+  <div class="scene scene-react">
+    <div class="scene-header">
+      <div class="scene-time">4–10s</div>
+      <div class="scene-label">Reação — indignação real</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Isso me indigna. Dezoito funcionários. Cinco confecções. Porta na cara cinco vezes.<br><br>
+        Porque o time é 'pequeno demais'."
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Indignação genuína — ela conhece esse absurdo do mercado há décadas. DM some. Jéssica em full frame. Gesticula com a mão. "Pequeno demais" dito com ironia.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 3: MAIS DOR — A INJUSTIÇA -->
+  <div class="scene scene-body-s">
+    <div class="scene-header">
+      <div class="scene-time">10–16s</div>
+      <div class="scene-label">Mais dor — a injustiça do mercado</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Esse gestor tem uma empresa, tem funcionários, quer um uniforme digno pra representar o negócio dele — e o mercado virou as costas.<br><br>
+        Porque não dava pra bater meta de produção deles."
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Tom de empatia com o cliente, crítica ao mercado. Quem assiste e já passou por isso sente raiva junto com ela.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 4: SOLUÇÃO + PROVA SOCIAL -->
+  <div class="scene scene-body-s">
+    <div class="scene-header">
+      <div class="scene-time">16–23s</div>
+      <div class="scene-label">Solução + Prova social</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "O mínimo na Passo a Passo é 10 peças. Empresa com 18? Atendo. Com consultoria. Pergunto o ambiente, o uso, o objetivo — e indico o uniforme certo.<br><br>
+        Já vi empresa pequena virar cliente fiel por anos. Porque quando você faz direito desde o começo, a pessoa não vai mais embora."
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TEXTO NA TELA (aos 19s): "Mínimo 10 peças. Máximo atenção."</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        Tom de solução — calma, confiante. A prova social está na frase "cliente fiel por anos", não no nome de empresa. Gatilho: pertencimento + ROI claro.
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 5: CTA -->
+  <div class="scene scene-cta">
+    <div class="scene-header">
+      <div class="scene-time">23–25s</div>
+      <div class="scene-label">CTA</div>
+    </div>
+    <div class="scene-body">
+      <div class="speech">
+        "Entra no link aqui embaixo. Me conta o projeto. Você não vai ouvir 'não' aqui."
+      </div>
+      <div class="screen-text">
+        <span>📺</span>
+        <span>TEXTO NA TELA: passoapassouniformes.com/linkdabio</span>
+      </div>
+      <div class="direction">
+        <span class="direction-icon">🎥</span>
+        "Você não vai ouvir 'não' aqui" — responde diretamente a dor do DM. Aponta pra baixo, olha na câmera. Sorriso pela primeira vez no vídeo. Corte seco.
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <div class="cta-label">CTA único de todos os vídeos</div>
+      <div class="cta-link">passoapassouniformes.com/linkdabio</div>
+    </div>
+    <div style="font-size:22px;">→</div>
+  </div>
+
+  <div class="notes-box">
+    <div class="notes-title">📋 Notas de Produção — React com Jéssica</div>
+    <ul class="notes-list">
+      <li>A indignação da cena 2 precisa ser real — ela conhece esse mercado, a raiva é genuína, não atuação.</li>
+      <li>Sorriso só no CTA final — "Você não vai ouvir 'não' aqui" é o alívio emocional do vídeo.</li>
+      <li>Usar DM real do perfil sempre que possível — autenticidade máxima.</li>
+      <li>Variações de DM pra novos vídeos: "já pedi em 3 lugares e ninguém deu prazo certo", "disseram que não fazem bordado em tecido sintético", "não atendem fora do RS".</li>
+      <li>Formato React tem maior índice de salvamentos no Instagram — cada dor do cliente vira um episódio.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<!-- ==============================
+     VÍDEO 03 — MOTION
+=============================== -->
+
+<div class="page section-divider">
+  <div class="divider-format-tag">Vídeo 03 · Formato</div>
+  <div class="divider-title">Motion — Kinetic Typography</div>
+  <div class="divider-sub">Sem câmera · Texto animado + voz da Jéssica · 18 segundos · Dor da formatura arruinada</div>
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">Vídeo 03 — Motion</div>
+  </div>
+
+  <div class="script-meta">
+    <span class="meta-badge badge-format">MOTION</span>
+    <span class="meta-badge badge-dur">⏱ 18 segundos</span>
+    <span class="meta-badge badge-cam">🖥 Sem câmera — só motion</span>
+    <span class="meta-badge badge-obj">🎯 Dor: formatura arruinada por prazo/peça errada</span>
+  </div>
+
+  <!-- SPEC TÉCNICO -->
+  <div style="background:#0a0a0a;border-radius:12px;padding:20px 24px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#FF6600;margin-bottom:16px;">⚙ Especificações Técnicas</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Formato</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;">9:16 vertical (1080×1920)</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Fundo</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;">#0A0A0A (preto profundo)</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Cor principal texto</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;">#FFFFFF (branco)</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Cor destaque</div>
+        <div style="font-size:13px;font-weight:700;color:#FF6600;">#FF6600 (laranja da marca)</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Fonte</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;">Inter Black 900 ou Bebas Neue</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Ferramenta sugerida</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;">CapCut Pro / After Effects</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORYBOARD MOTION -->
+  <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#333;margin-bottom:16px;">Storyboard — Frame a Frame</div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 01 · 0s – 2s · HOOK — DOR DIRETA</div>
+    <div class="motion-text">SUA TURMA VAI RECEBER<br>A CAMISETA <span class="highlight">2 DIAS</span><br>ANTES DA FORMATURA.</div>
+    <div class="motion-anim">Texto entra palavra por palavra — POP rápido com bounce. "2 DIAS" em laranja, maior que o restante. Fundo preto. Sem imagem.</div>
+  </div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 02 · 2s – 4s · AGITAÇÃO</div>
+    <div class="motion-text">E PODE<br><span class="highlight">NÃO GOSTAR.</span></div>
+    <div class="motion-anim">Frase entra em slide da esquerda. "NÃO GOSTAR." aparece 0,5s depois em laranja — deixa o espectador em suspense.</div>
+  </div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 03 · 4s – 7s · MAIS DOR</div>
+    <div class="motion-text"><span class="highlight">COR ERRADA.</span><br>LOGO FORA DO LUGAR.<br>SEM TEMPO<br>PRA REFAZER.</div>
+    <div class="motion-anim">Cada linha entra uma por uma, em sequência rápida (0,4s de intervalo). "COR ERRADA." em laranja com scale maior — golpe visual.</div>
+  </div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 04 · 7s – 10s · CAUSA DA DOR</div>
+    <div class="motion-text" style="font-size:15px;color:#888;line-height:1.8;">
+      ESSE É O RISCO DE FECHAR<br>SEM VER AMOSTRA.<br>SEM APROVAÇÃO.<br>SEM QUEM RESPONDA.
+    </div>
+    <div class="motion-anim">Texto menor, cor cinza — tom de "consequência lógica". Aparece em fade suave. Último "SEM QUEM RESPONDA." em branco para destacar.</div>
+  </div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 05 · 10s – 13s · VIRADA + SOLUÇÃO</div>
+    <div class="motion-text">NA <span class="highlight">PASSO A PASSO:</span><br>VOCÊ APROVA ANTES.<br>ENTREGAMOS COM PRAZO.<br>GARANTIA TOTAL.</div>
+    <div class="motion-anim">"NA PASSO A PASSO:" entra primeiro em laranja — marca a virada emocional. Linhas seguintes em branco, entrando uma por uma. Tom de alívio.</div>
+  </div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 06 · 13s – 16s · [IMAGEM DO PRODUTO]</div>
+    <div style="background:#111;border-radius:8px;padding:16px;margin-bottom:12px;text-align:center;">
+      <div style="font-size:12px;color:#444;margin-bottom:8px;">▶ INSERIR AQUI</div>
+      <div style="font-size:13px;color:#666;line-height:1.6;">Foto ou vídeo de 3s do uniforme de formandos mais bonito do portfólio<br>Enquadramento: turma usando o uniforme, ou produto centralizado em fundo neutro<br>Texto overlay: "Linha Formandos" em branco no rodapé</div>
+    </div>
+    <div class="motion-anim">Produto aparece em zoom-out suave (scale 1.1 → 1.0). Transição de tela preta para a imagem com fade de 0,3s.</div>
+  </div>
+
+  <div class="motion-frame">
+    <div class="motion-timecode">Frame 07 · 16s – 18s · CTA FINAL</div>
+    <div class="motion-text" style="font-size:13px;color:#888;margin-bottom:8px;font-weight:600;letter-spacing:1px;">— JÉSSICA · PASSO A PASSO UNIFORMES</div>
+    <div class="motion-text" style="font-size:19px;">LINK NA BIO →</div>
+    <div style="margin:10px 0;"></div>
+    <div style="font-size:13px;color:#FF6600;font-weight:700;letter-spacing:0.5px;">passoapassouniformes.com/linkdabio</div>
+    <div style="margin:8px 0;"></div>
+    <div style="font-size:12px;color:#555;">ESCOLHE A LINHA. CONTA O PROJETO. EU CUIDO DO RESTO.</div>
+    <div class="motion-anim" style="margin-top:12px;">Fundo muda para laranja. "JÉSSICA" aparece primeiro em fade suave, depois "LINK NA BIO →" com bounce. URL abaixo em branco menor. Fade out para preto.</div>
+  </div>
+
+  <!-- VOICEOVER -->
+  <div class="notes-box" style="background:#0a0a0a;border-color:#222;margin-top:24px;">
+    <div class="notes-title" style="color:#FF6600;">🎙 Voiceover — voz da Jéssica (sincronizado ao texto)</div>
+    <div style="background:#111;border-radius:8px;padding:16px 18px;margin-top:4px;">
+      <div style="font-size:14px;color:#ccc;line-height:2.0;font-style:italic;">
+        "Sua turma vai receber a camiseta dois dias antes da formatura.<br>
+        E pode não gostar.<br>
+        Cor errada. Logo fora do lugar. Sem tempo pra refazer.<br>
+        Esse é o risco de fechar sem ver amostra, sem aprovação, sem quem responda.<br>
+        <span style="color:#FF6600;">Na Passo a Passo, você aprova antes. Entregamos com prazo. Garantia total.</span><br>
+        Sou a Jéssica. Link na bio."
+      </div>
+    </div>
+    <div style="font-size:12px;color:#444;margin-top:12px;line-height:1.6;">
+      <strong style="color:#888;">VO gravado pela própria Jéssica</strong> — voz calma, confiante, gaúcha. Tom sério nos frames 1–4, suave e firme nos frames 5–7. "Sou a Jéssica" assina com identidade real. Trilha low-fi a 10% de volume como fundo.
+    </div>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <div class="cta-label">CTA único de todos os vídeos</div>
+      <div class="cta-link">passoapassouniformes.com/linkdabio</div>
+    </div>
+    <div style="font-size:22px;">→</div>
+  </div>
+
+  <div class="notes-box">
+    <div class="notes-title">📋 Notas de Produção — Motion</div>
+    <ul class="notes-list">
+      <li>Frames 1–4 são escuros e tensos (dor) — frames 5–7 são o alívio. A virada visual precisa ser sentida.</li>
+      <li>No CapCut Pro: usar "Texto animado" → estilo "Word pop" ou "Typo beat" com timing manual ajustado ao roteiro.</li>
+      <li>Sincronizar mudança de frame com o beat da trilha — aumenta retenção em ~40%.</li>
+      <li>Frame 06 (produto formandos) é o único com imagem real — foto de alta qualidade, boa iluminação.</li>
+      <li>Funciona sem som — ideal para Stories e Feed onde maioria navega em silêncio.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<!-- ==============================
+     CHECKLIST FINAL
+=============================== -->
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">Checklist de Produção</div>
+  </div>
+
+  <div style="font-size:22px;font-weight:900;margin-bottom:8px;">Antes de publicar,<br>confira tudo.</div>
+  <div style="font-size:14px;color:#888;margin-bottom:32px;">Checklist para os 3 vídeos</div>
+
+  <div class="checklist">
+    <div class="checklist-title">✔ Vídeo 01 — UGC</div>
+    <div class="check-item"><div class="check-box"></div>Gravado em 9:16 vertical</div>
+    <div class="check-item"><div class="check-box"></div>Câmera instável natural — não parece estúdio</div>
+    <div class="check-item"><div class="check-box"></div>Hook nos primeiros 3s sem introdução</div>
+    <div class="check-item"><div class="check-box"></div>Legenda queimada na edição (captions)</div>
+    <div class="check-item"><div class="check-box"></div>URL visível na tela no CTA final</div>
+    <div class="check-item"><div class="check-box"></div>Duração: máximo 42 segundos</div>
+  </div>
+
+  <div class="spacer" style="height:20px;"></div>
+
+  <div class="checklist">
+    <div class="checklist-title">✔ Vídeo 02 — React</div>
+    <div class="check-item"><div class="check-box"></div>Print do DM preparado para overlay</div>
+    <div class="check-item"><div class="check-box"></div>DM visível e legível nos primeiros 4s</div>
+    <div class="check-item"><div class="check-box"></div>Expressão de reação genuína (não forçada)</div>
+    <div class="check-item"><div class="check-box"></div>Produto aparece em câmera entre 14s–18s</div>
+    <div class="check-item"><div class="check-box"></div>URL visível na tela no CTA final</div>
+    <div class="check-item"><div class="check-box"></div>Duração: máximo 27 segundos</div>
+  </div>
+
+  <div class="spacer" style="height:20px;"></div>
+
+  <div class="checklist">
+    <div class="checklist-title">✔ Vídeo 03 — Motion</div>
+    <div class="check-item"><div class="check-box"></div>Fundo #0A0A0A (preto profundo, não preto puro)</div>
+    <div class="check-item"><div class="check-box"></div>Destaque em laranja #FF6600 nas palavras-chave</div>
+    <div class="check-item"><div class="check-box"></div>Frame 06 com foto real do produto (alta qualidade)</div>
+    <div class="check-item"><div class="check-box"></div>CTA final com fundo laranja — destaque máximo</div>
+    <div class="check-item"><div class="check-box"></div>Voiceover gravado (ou texto funciona sem voz)</div>
+    <div class="check-item"><div class="check-box"></div>Duração: máximo 20 segundos</div>
+  </div>
+
+  <div class="spacer" style="height:32px;"></div>
+
+  <!-- ORDEM DE PRIORIDADE -->
+  <div style="background:#0a0a0a;border-radius:12px;padding:28px 28px;">
+    <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#FF6600;margin-bottom:20px;">Ordem de Lançamento Recomendada</div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div style="width:32px;height:32px;background:#FF6600;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;flex-shrink:0;">1</div>
+        <div>
+          <div style="font-size:13px;font-weight:800;color:#fff;">Motion (Vídeo 03)</div>
+          <div style="font-size:12px;color:#555;">Lança primeiro — sem depender de gravação, gera awareness imediato</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div style="width:32px;height:32px;background:#c85a00;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;flex-shrink:0;">2</div>
+        <div>
+          <div style="font-size:13px;font-weight:800;color:#fff;">UGC (Vídeo 01)</div>
+          <div style="font-size:12px;color:#555;">Segundo — reforça com história real, humaniza a marca</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div style="width:32px;height:32px;background:#a84a00;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;flex-shrink:0;">3</div>
+        <div>
+          <div style="font-size:13px;font-weight:800;color:#fff;">React (Vídeo 02)</div>
+          <div style="font-size:12px;color:#555;">Terceiro — responde a dúvidas geradas pelos primeiros dois</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;padding-top:28px;border-top:1px solid #eee;display:flex;justify-content:space-between;align-items:flex-end;">
+    <div>
+      <div style="font-size:16px;font-weight:900;color:#0a0a0a;">Passo a Passo <span style="color:#FF6600;">Uniformes</span></div>
+      <div style="font-size:12px;color:#aaa;margin-top:4px;">passoapassouniformes.com/linkdabio</div>
+    </div>
+    <div style="font-size:11px;color:#ccc;text-align:right;line-height:1.8;">
+      Creative Brief — 3 formatos<br>
+      Baseado em dados Meta + TikTok 2025–2026<br>
+      Junho 2026
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ==============================
+     20 GANCHOS
+=============================== -->
+
+<div class="page section-divider">
+  <div class="divider-format-tag">Arsenal de Copy · Parte 1</div>
+  <div class="divider-title">20 Ganchos de Início de Vídeo</div>
+  <div class="divider-sub">Use nos primeiros 3 segundos — ou você perde o espectador para sempre</div>
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">20 Ganchos de Vídeo</div>
+  </div>
+
+  <div style="font-size:13px;color:#888;margin-bottom:28px;line-height:1.7;padding:16px 20px;background:#f9f9f9;border-radius:10px;border-left:3px solid #FF6600;">
+    <strong style="color:#111;">Regra de ouro:</strong> O gancho é o único segundo que importa. Se o espectador não parar nos primeiros 3s, todo o resto do vídeo não existe. Use estas frases exatamente como estão — ou adapte apenas o contexto, nunca a estrutura.
+  </div>
+
+  <!-- CATEGORIA 1: TENSÃO / PROBLEMA -->
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#FF6600;margin-bottom:14px;">Categoria 1 — Tensão e Problema</div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #FF6600;">
+      <div style="font-size:20px;font-weight:900;color:#FF6600;min-width:32px;line-height:1;">01</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Você está pagando por uniforme que não vai durar 6 meses."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: medo de perder dinheiro · Funciona com câmera ou como texto no motion</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #FF6600;">
+      <div style="font-size:20px;font-weight:900;color:#FF6600;min-width:32px;line-height:1;">02</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Sua equipe atende cliente todo dia. Sem uniforme, o que ela está comunicando?"</div>
+        <div style="font-size:12px;color:#888;">Gatilho: vergonha / reputação · Ideal para Linha Empresarial</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #FF6600;">
+      <div style="font-size:20px;font-weight:900;color:#FF6600;min-width:32px;line-height:1;">03</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"O uniforme que você pediu não era o que você precisava. Você só não sabia."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: curiosidade + autoridade · Abre direto para o argumento da consultoria</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #FF6600;">
+      <div style="font-size:20px;font-weight:900;color:#FF6600;min-width:32px;line-height:1;">04</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Se a sua confecção mandou tabela de preço antes de te perguntar qualquer coisa — corre."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: indignação · Tom polêmico que divide e engaja nos comentários</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #FF6600;">
+      <div style="font-size:20px;font-weight:900;color:#FF6600;min-width:32px;line-height:1;">05</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Bordado caindo, cor desbotada, tecido encolhido. Já passou por isso?"</div>
+        <div style="font-size:12px;color:#888;">Gatilho: identificação com dor específica · Retenção altíssima em quem já teve o problema</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CATEGORIA 2: CURIOSIDADE / REVELAÇÃO -->
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#FF6600;margin-bottom:14px;">Categoria 2 — Curiosidade e Revelação</div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #1565c0;">
+      <div style="font-size:20px;font-weight:900;color:#1565c0;min-width:32px;line-height:1;">06</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Ninguém te conta a diferença entre sublimação, DTF e bordado. Vou te contar."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: informação privilegiada · Promete revelar o que "esconderam"</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #1565c0;">
+      <div style="font-size:20px;font-weight:900;color:#1565c0;min-width:32px;line-height:1;">07</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Existe uma linha de uniforme certa pra cada tipo de time. Você sabe qual é a sua?"</div>
+        <div style="font-size:12px;color:#888;">Gatilho: curiosidade + personalização · Faz o espectador continuar pra descobrir</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #1565c0;">
+      <div style="font-size:20px;font-weight:900;color:#1565c0;min-width:32px;line-height:1;">08</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"30 anos de experiência ensinaram uma coisa que nenhum catálogo mostra."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: autoridade + segredo · O espectador quer saber o que é</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #1565c0;">
+      <div style="font-size:20px;font-weight:900;color:#1565c0;min-width:32px;line-height:1;">09</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Por que o uniforme da sua concorrente parece mais profissional que o seu?"</div>
+        <div style="font-size:12px;color:#888;">Gatilho: comparação social + inveja saudável · Dói em quem já percebeu isso</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #1565c0;">
+      <div style="font-size:20px;font-weight:900;color:#1565c0;min-width:32px;line-height:1;">10</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Olha o que essa academia fez com 30 camisetas e o logo deles."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: prova visual + curiosidade · Funciona com antes/depois ou reveal de produto</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">20 Ganchos — continuação</div>
+  </div>
+
+  <!-- CATEGORIA 3: PROVOCAÇÃO / OPINIÃO -->
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#FF6600;margin-bottom:14px;">Categoria 3 — Provocação e Opinião Forte</div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #c62828;">
+      <div style="font-size:20px;font-weight:900;color:#c62828;min-width:32px;line-height:1;">11</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Empresa que não uniformiza a equipe não respeita a própria marca."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: indignação + opinião polêmica · Gera comentários de quem concorda e de quem discorda</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #c62828;">
+      <div style="font-size:20px;font-weight:900;color:#c62828;min-width:32px;line-height:1;">12</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Uniforme genérico é a coisa mais cara que existe. Você só percebe depois."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: paradoxo · Parece errado, o espectador para pra entender o raciocínio</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #c62828;">
+      <div style="font-size:20px;font-weight:900;color:#c62828;min-width:32px;line-height:1;">13</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Time de futebol amador com uniforme profissional intimida antes de começar."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: poder / status · Emociona quem joga no finzinho de semana</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #c62828;">
+      <div style="font-size:20px;font-weight:900;color:#c62828;min-width:32px;line-height:1;">14</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Fornecedor que some depois da venda não é fornecedor. É armadilha."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: traição / raiva de experiência ruim · Reativa memória emocional negativa com concorrente</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #c62828;">
+      <div style="font-size:20px;font-weight:900;color:#c62828;min-width:32px;line-height:1;">15</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"A camisa de formatura que a turma odiou. Isso acontece quando ninguém perguntou o que a turma queria."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: medo + empatia · Fortíssimo no segmento formandos — todo mundo conhece essa história</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CATEGORIA 4: IDENTIDADE / PERTENCIMENTO -->
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#FF6600;margin-bottom:14px;">Categoria 4 — Identidade e Pertencimento</div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #2e7d32;">
+      <div style="font-size:20px;font-weight:900;color:#2e7d32;min-width:32px;line-height:1;">16</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"De tudo que sobra de um time — foto, troféu, história — o uniforme é o único que você veste pra sempre."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: nostalgia + pertencimento · Emocional, altíssimo compartilhamento</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #2e7d32;">
+      <div style="font-size:20px;font-weight:900;color:#2e7d32;min-width:32px;line-height:1;">17</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Seu aluno malha na academia e sai usando o uniforme dela na rua. Isso é marketing que você não paga por clique."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: economia + marketing orgânico · Conecta uniforme a resultado de negócio</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #2e7d32;">
+      <div style="font-size:20px;font-weight:900;color:#2e7d32;min-width:32px;line-height:1;">18</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Uniforme não é roupa. É a primeira vez que a sua marca fala antes de você abrir a boca."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: identidade de marca · Reposiciona uniforme de custo para investimento estratégico</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #2e7d32;">
+      <div style="font-size:20px;font-weight:900;color:#2e7d32;min-width:32px;line-height:1;">19</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"O nome da sua empresa no peito de cada colaborador é um outdoor que anda."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: ROI de marketing · Linguagem de negócio que ressoa com gestores e donos</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid #eee;border-radius:10px;border-left:3px solid #2e7d32;">
+      <div style="font-size:20px;font-weight:900;color:#2e7d32;min-width:32px;line-height:1;">20</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:#111;margin-bottom:4px;">"Antes de qualquer peça, a gente quer entender o seu time. Porque uniforme certo começa com a pergunta certa."</div>
+        <div style="font-size:12px;color:#888;">Gatilho: consultoria + diferenciação · Gancho ideal para apresentar o novo modelo de atendimento</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:#0a0a0a;border-radius:10px;padding:18px 22px;margin-top:4px;">
+    <div style="font-size:11px;font-weight:800;color:#FF6600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;">Como usar esses ganchos</div>
+    <div style="font-size:13px;color:#888;line-height:1.8;">
+      Cada gancho funciona como texto na tela (Motion), fala de abertura (UGC/React) ou headline de anúncio estático. Combine <strong style="color:#fff;">Categorias 1 ou 2</strong> para campanhas de aquisição fria. Use <strong style="color:#fff;">Categorias 3 ou 4</strong> para remarketing e públicos quentes. Nunca use o mesmo gancho em dois anúncios rodando ao mesmo tempo — o algoritmo detecta similaridade.
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ==============================
+     20 GATILHOS DE MARKETING
+=============================== -->
+
+<div class="page section-divider">
+  <div class="divider-format-tag">Arsenal de Copy · Parte 2</div>
+  <div class="divider-title">20 Gatilhos de Marketing</div>
+  <div class="divider-sub">As alavancas psicológicas que movem uma pessoa da atenção para a compra</div>
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">20 Gatilhos de Marketing</div>
+  </div>
+
+  <div style="font-size:13px;color:#888;margin-bottom:28px;line-height:1.7;padding:16px 20px;background:#f9f9f9;border-radius:10px;border-left:3px solid #FF6600;">
+    <strong style="color:#111;">Como usar:</strong> cada gatilho tem o conceito, a frase pronta aplicada à Passo a Passo e onde encaixar no vídeo ou na legenda. Use 2–3 gatilhos por anúncio — nunca todos ao mesmo tempo.
+  </div>
+
+  <!-- BLOCO DE GATILHOS: 01 a 10 -->
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px;">
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">01</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">AUTORIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Pessoas seguem especialistas. Quanto mais prova de experiência, mais confiança.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"30 anos no mercado. Beira Rio, Ortobom e Monaco confiam. Agora é a sua vez."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">02</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">PROVA SOCIAL</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Se outros já fizeram e aprovaram, eu posso confiar. O número importa.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Mais de 5.000 times, academias e empresas vestidos. Cada um atendido do começo ao fim."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">03</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">ESCASSEZ</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">O que é limitado tem mais valor. Funciona com prazo ou quantidade.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Agenda de produção fechando para julho. Quem fechar até sexta garante entrega no prazo."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">04</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">URGÊNCIA</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Prazo real ou implícito acelera a decisão. Sem data, sem ação.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Formatura em outubro? O prazo mínimo de produção é 30 dias. Conta o calendário."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">05</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">RECIPROCIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Dê algo de valor antes de pedir. Quem recebe, sente vontade de retribuir.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"A gente orienta o projeto inteiro de graça — tecido, técnica, acabamento — antes de qualquer proposta."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">06</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">MEDO DE PERDER</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">A dor de perder é maior que o prazer de ganhar. Use com responsabilidade.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Enquanto você adia o uniforme, sua concorrente já está com a equipe uniformizada na rua."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">07</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">IDENTIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">"Pessoas como eu fazem isso." Ative a identidade do grupo do comprador.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Dono de academia sério cuida da identidade visual da sua marca. Do logo à roupa do aluno."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">08</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">ESPECIFICIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Número específico é mais crível que número redondo. "5.127" convence mais que "5.000".</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Pedido mínimo de 10 peças. Prazo médio de produção: 18 dias úteis. Entregamos no Vale dos Sinos e região."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">09</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">NOVIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">O cérebro responde à novidade. "Novo" e "diferente" aumentam o CTR.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"A Passo a Passo criou um novo jeito de atender: você conta o projeto, a consultora indica o caminho."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">10</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">SIMPLICIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Quanto mais fácil parece, mais perto da ação o cliente fica.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"É simples: link na bio, escolhe a linha, responde 4 perguntas. A consultora entra em contato."</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="page script-page">
+
+  <div class="page-header">
+    <div class="page-header-brand">Passo a Passo <span>Uniformes</span></div>
+    <div class="page-num">20 Gatilhos — continuação</div>
+  </div>
+
+  <!-- GATILHOS 11 a 20 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:32px;">
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">11</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">TRANSFORMAÇÃO</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">As pessoas compram a versão transformada de si mesmas, não o produto.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Sua equipe entra como funcionários. Sai como representantes da sua marca."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">12</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">PERTENCIMENTO</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Querer fazer parte de algo maior. Funciona muito em times e academias.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Uniforme cria time. Time veste a camisa. Camisa carrega identidade."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">13</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">COMPROMETIMENTO</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Pequenos "sins" levam ao grande sim. Faça o cliente concordar antes de pedir a compra.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Você quer um uniforme que dure? Que represente sua marca? Que seja entregue no prazo? Então você precisa nos contar o projeto."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">14</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">CONTRASTE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Compare o cenário ruim com o bom. A diferença amplifica o valor.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Tabela de preço genérica vs. consultoria que entende o seu time. São coisas completamente diferentes."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">15</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">LEGADO / MEMÓRIA</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">O que vai durar. O que vai ser lembrado. Funciona muito em formandos e times.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Daqui a 10 anos, a turma vai se reunir. A camisa vai estar lá. Faz direito agora."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">16</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">EXCLUSIVIDADE</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">O que é feito só pra mim tem mais valor. Personalização é sinônimo de exclusividade.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Nenhum uniforme que sai daqui é igual ao outro. Cada projeto começa do zero."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">17</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">CONFIANÇA / GARANTIA</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Remover o risco percebido. O cliente compra quando sente que não vai se arrepender.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"A gente não some depois da venda. 30 anos de reputação no Vale dos Sinos valem mais que qualquer contrato."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">18</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">PARADOXO</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Uma afirmação que parece errada à primeira vista prende a atenção.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"O uniforme mais barato é o mais caro. Porque você vai comprar de novo em 4 meses."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">19</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">ROI CLARO</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Mostre o retorno sobre o investimento em linguagem do cliente.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Um aluno que usa o uniforme da academia na rua vale mais do que 10 posts patrocinados."</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="font-size:18px;font-weight:900;color:#FF6600;min-width:28px;">20</div>
+        <div style="font-size:13px;font-weight:800;color:#fff;">CTA COM BENEFÍCIO</div>
+      </div>
+      <div style="padding:14px 16px;">
+        <div style="font-size:12px;color:#888;margin-bottom:8px;">Nunca diga só "clique aqui". Diga o que a pessoa ganha ao clicar.</div>
+        <div style="background:#fff8f3;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#c85a00;line-height:1.5;">"Link na bio — escolhe sua linha em 1 minuto e recebe orientação personalizada da nossa equipe."</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TABELA COMBINAÇÕES RECOMENDADAS -->
+  <div style="background:#0a0a0a;border-radius:12px;padding:24px 24px;margin-bottom:0;">
+    <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#FF6600;margin-bottom:18px;">Combinações Recomendadas por Objetivo</div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;padding-bottom:10px;border-bottom:1px solid #1a1a1a;">
+        <div style="font-size:12px;font-weight:700;color:#fff;">Aquisição fria</div>
+        <div style="font-size:12px;color:#666;">Autoridade (01) + Transformação (11) + CTA com Benefício (20)</div>
+      </div>
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;padding-bottom:10px;border-bottom:1px solid #1a1a1a;">
+        <div style="font-size:12px;font-weight:700;color:#fff;">Remarketing</div>
+        <div style="font-size:12px;color:#666;">Medo de Perder (06) + Escassez (03) + Garantia (17)</div>
+      </div>
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;padding-bottom:10px;border-bottom:1px solid #1a1a1a;">
+        <div style="font-size:12px;font-weight:700;color:#fff;">Formandos</div>
+        <div style="font-size:12px;color:#666;">Urgência (04) + Legado (15) + Exclusividade (16)</div>
+      </div>
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;padding-bottom:10px;border-bottom:1px solid #1a1a1a;">
+        <div style="font-size:12px;font-weight:700;color:#fff;">Academia</div>
+        <div style="font-size:12px;color:#666;">Identidade (07) + ROI Claro (19) + Pertencimento (12)</div>
+      </div>
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;">
+        <div style="font-size:12px;font-weight:700;color:#fff;">Empresarial</div>
+        <div style="font-size:12px;color:#666;">Prova Social (02) + Contraste (14) + Simplicidade (10)</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;padding-top:28px;border-top:1px solid #eee;display:flex;justify-content:space-between;align-items:flex-end;">
+    <div>
+      <div style="font-size:16px;font-weight:900;color:#0a0a0a;">Passo a Passo <span style="color:#FF6600;">Uniformes</span></div>
+      <div style="font-size:12px;color:#aaa;margin-top:4px;">passoapassouniformes.com/linkdabio</div>
+    </div>
+    <div style="font-size:11px;color:#ccc;text-align:right;line-height:1.8;">
+      20 Ganchos + 20 Gatilhos<br>
+      Arsenal completo de copy<br>
+      Junho 2026
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

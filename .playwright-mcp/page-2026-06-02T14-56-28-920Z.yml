@@ -1,0 +1,237 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Pular para o conteúdo principal" [ref=e4] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - navigation "Produtos do Console do Firebase" [ref=e9]:
+          - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e10]:
+            - link "Console do Firebase (acessar a lista de projetos)" [ref=e11] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e12]:
+                - img [ref=e13]
+                - img "Logotipo do Firebase" [ref=e14]
+          - generic [ref=e18]:
+            - img [ref=e19]: search
+            - combobox "Pesquise produtos e recursos" [ref=e20]
+          - link "Visão geral do projeto" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e23]: gmp_nav20_overview
+            - generic [ref=e24]: Visão geral do projeto
+          - menu [ref=e25]:
+            - menuitem "Configurações" [ref=e26]:
+              - generic [ref=e27] [cursor=pointer]:
+                - img [ref=e28]: settings
+                - generic [ref=e29]: Configurações
+                - img [ref=e30]: chevron_right
+        - separator [ref=e31]
+        - generic [ref=e32]:
+          - generic [ref=e33]: O que há de novo
+          - group "O que há de novo" [ref=e34]:
+            - link "SQL Connect" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e37]: gmp_nav20_dataconnect
+              - generic [ref=e38]: SQL Connect
+              - generic [ref=e42]: Novo
+              - tooltip "O Data Connect agora se chama SQL Connect, nosso banco de dados PostgreSQL com tecnologia do Cloud SQL" [ref=e43]:
+                - generic: O Data Connect agora se chama SQL Connect, nosso banco de dados PostgreSQL com tecnologia do Cloud SQL
+            - link "Phone Verification" [ref=e47] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e48]: gmp_nav20_phone_verification
+              - generic [ref=e49]: Phone Verification
+              - generic [ref=e53]: Novo
+              - tooltip "A verificação de número de telefone é um método rápido e seguro para verificar os números de telefone dos usuários" [ref=e54]:
+                - generic: A verificação de número de telefone é um método rápido e seguro para verificar os números de telefone dos usuários
+        - separator [ref=e57]
+        - generic [ref=e58]:
+          - generic [ref=e59]: Atalhos do projeto
+          - group "Atalhos do projeto" [ref=e60]:
+            - link "Authentication" [ref=e458] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e459]: gmp_nav20_auth
+              - generic [ref=e460]: Authentication
+              - generic [ref=e461]:
+                - button "Ocultar Authentication" [ref=e462]
+                - button "Fixar Authentication" [ref=e463]
+            - link "Firestore" [ref=e62] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e63]: gmp_firestore
+              - generic [ref=e64]: Firestore
+              - generic [ref=e65]:
+                - button "Ocultar Firestore" [ref=e66]
+                - button "Fixar Firestore" [ref=e67]
+        - separator [ref=e68]
+        - generic [ref=e69]:
+          - generic [ref=e70]: Categorias dos produtos
+          - menu "Categorias dos produtos" [ref=e71]:
+            - menuitem "Bancos de dados e armazenamento" [ref=e72]:
+              - generic [ref=e73] [cursor=pointer]:
+                - generic [ref=e74]: Bancos de dados e armazenamento
+                - img [ref=e75]: chevron_right
+            - menuitem "Segurança" [ref=e76]:
+              - generic [ref=e77] [cursor=pointer]:
+                - generic [ref=e78]: Segurança
+                - img [ref=e79]: chevron_right
+            - menuitem "Serviços de IA" [ref=e80]:
+              - generic [ref=e81] [cursor=pointer]:
+                - generic [ref=e82]: Serviços de IA
+                - img [ref=e83]: chevron_right
+            - menuitem "Hospedagem e sem servidor" [ref=e84]:
+              - generic [ref=e85] [cursor=pointer]:
+                - generic [ref=e86]: Hospedagem e sem servidor
+                - img [ref=e87]: chevron_right
+            - menuitem "DevOps e engajamento" [ref=e88]:
+              - generic [ref=e89] [cursor=pointer]:
+                - generic [ref=e90]: DevOps e engajamento
+                - img [ref=e91]: chevron_right
+            - menuitem "Analytics" [ref=e92]:
+              - generic [ref=e93] [cursor=pointer]:
+                - generic [ref=e94]: Analytics
+                - img [ref=e95]: chevron_right
+      - generic [ref=e96]:
+        - separator [ref=e97]
+        - 'group "Plano de faturamento: Spark" [ref=e464]':
+          - generic [ref=e465]:
+            - generic "Nome do plano de faturamento" [ref=e466]:
+              - generic [ref=e467]: "Plano de faturamento:"
+              - text: Spark
+            - generic "Descrição do plano de faturamento" [ref=e468]: Sem custos (US$ 0/mês)
+          - button "Fazer upgrade do plano de faturamento" [ref=e470]:
+            - generic [ref=e471]:
+              - generic [ref=e472]: Fazer upgrade
+              - generic [ref=e475]: Novo
+            - tooltip "Clique em \"Fazer upgrade\" para saber como ganhar um crédito gratuito de US$ 300." [ref=e478]:
+              - generic: Clique em "Fazer upgrade" para saber como ganhar um crédito gratuito de US$ 300.
+        - separator [ref=e99]
+        - button "Alternar barra lateral de navegação" [expanded] [ref=e101] [cursor=pointer]:
+          - img [ref=e102]: chevron_left
+    - banner:
+      - button "pap-tabela-precos (Abrir o menu \"Selecionar projeto\")" [ref=e483] [cursor=pointer]:
+        - text: pap-tabela-precos
+        - img [ref=e484]: arrow_drop_down
+    - main [ref=e108]:
+      - generic [ref=e111]:
+        - region "Cabeçalho do produto" [ref=e581]:
+          - generic [ref=e583]:
+            - heading "Authentication" [level=2] [ref=e587]
+            - tablist "Recursos do Authentication" [ref=e591]:
+              - generic [ref=e594]:
+                - 'tab "Guia selecionada: Usuários" [selected] [ref=e977] [cursor=pointer]':
+                  - generic [ref=e598]: Usuários
+                - tab "Método de login" [ref=e978] [cursor=pointer]:
+                  - generic [ref=e604]: Método de login
+                - tab "Modelos" [ref=e607] [cursor=pointer]:
+                  - generic [ref=e610]: Modelos
+                - tab "Uso" [ref=e613] [cursor=pointer]:
+                  - generic [ref=e616]: Uso
+                - tab "Configurações" [ref=e619] [cursor=pointer]:
+                  - generic [ref=e622]: Configurações
+                - tab "Extensions" [ref=e625] [cursor=pointer]:
+                  - generic [ref=e628]:
+                    - generic [ref=e629]: gmp_nav20_mods
+                    - text: Extensions
+        - generic [ref=e981]:
+          - status [ref=e985]:
+            - img [ref=e986]: info
+            - generic [ref=e987]: "note:"
+            - generic [ref=e988]:
+              - 'heading "Os seguintes recursos de autenticação vão parar de funcionar quando os Firebase Dynamic Links forem desativados em breve: autenticação por link de e-mail em apps para dispositivos móveis e suporte do Cordova ao OAuth em apps da Web." [level=3] [ref=e989]':
+                - 'button "Os seguintes recursos de autenticação vão parar de funcionar quando os Firebase Dynamic Links forem desativados em breve: autenticação por link de e-mail em apps para dispositivos móveis e suporte do Cordova ao OAuth em apps da Web." [ref=e990] [cursor=pointer]':
+                  - generic [ref=e992]: "Os seguintes recursos de autenticação vão parar de funcionar quando os Firebase Dynamic Links forem desativados em breve: autenticação por link de e-mail em apps para dispositivos móveis e suporte do Cordova ao OAuth em apps da Web."
+                  - img [ref=e994]: keyboard_arrow_up
+              - 'region "Os seguintes recursos de autenticação vão parar de funcionar quando os Firebase Dynamic Links forem desativados em breve: autenticação por link de e-mail em apps para dispositivos móveis e suporte do Cordova ao OAuth em apps da Web."'
+          - heading "Lista de usuários" [level=2] [ref=e995]
+          - generic [ref=e996]:
+            - generic [ref=e1000]:
+              - generic [ref=e1083]:
+                - img [ref=e1084]: search
+                - searchbox "Pesquise por endereço de e-mail, número de telefone ou UID do usuário" [ref=e1085]
+              - button "Adicionar usuário" [ref=e1002]:
+                - generic [ref=e1003]: Adicionar usuário
+              - button "Atualizar" [ref=e1006] [cursor=pointer]:
+                - img [ref=e1007]: refresh
+              - button "Abrir menu" [ref=e1011] [cursor=pointer]:
+                - img [ref=e1012]: more_vert
+            - generic [ref=e1015]:
+              - grid "Usuários" [ref=e1018]:
+                - rowgroup [ref=e1019]:
+                  - row "Identificador Provedores Criação Último login UID do usuário Ações" [ref=e1020]:
+                    - columnheader "Identificador" [ref=e1021] [cursor=pointer]:
+                      - button "Identificador" [ref=e1022]:
+                        - generic [ref=e1024]: Identificador
+                        - img [ref=e1026]
+                    - columnheader "Provedores" [ref=e1028]:
+                      - generic [ref=e1029]: Provedores
+                    - columnheader "Criação" [ref=e1030] [cursor=pointer]:
+                      - button "Criação" [ref=e1031]:
+                        - generic [ref=e1033]: Criação
+                        - img [ref=e1035]
+                    - columnheader "Último login" [ref=e1037] [cursor=pointer]:
+                      - button "Último login" [ref=e1038]:
+                        - generic [ref=e1040]: Último login
+                        - img [ref=e1042]
+                    - columnheader "UID do usuário" [ref=e1044] [cursor=pointer]:
+                      - button "UID do usuário" [ref=e1045]:
+                        - generic [ref=e1047]: UID do usuário
+                        - img [ref=e1049]
+                    - columnheader "Ações" [ref=e1051]:
+                      - generic [ref=e1052]: Ações
+                - rowgroup [ref=e1086]:
+                  - row "admin@passoapassouniformes.com Email 2 de jun. de 2026 Po6Y2h6MZeO9DWrQlrOkIj46Px03 Copiar o ID do usuário (UID) de admin@passoapassouniformes.com Ver mais opções para admin@passoapassouniformes.com" [ref=e1087]:
+                    - gridcell "admin@passoapassouniformes.com" [ref=e1088]:
+                      - generic [ref=e1091]: admin@passoapassouniformes.com
+                    - gridcell "Email" [ref=e1092]:
+                      - generic "Email" [ref=e1094]:
+                        - img [ref=e1095]:
+                          - img [ref=e1096]
+                    - gridcell "2 de jun. de 2026" [ref=e1098]:
+                      - generic [ref=e1099]: 2 de jun. de 2026
+                    - gridcell [ref=e1100]
+                    - gridcell "Po6Y2h6MZeO9DWrQlrOkIj46Px03" [ref=e1101]:
+                      - generic [ref=e1102]: Po6Y2h6MZeO9DWrQlrOkIj46Px03
+                    - gridcell "Copiar o ID do usuário (UID) de admin@passoapassouniformes.com Ver mais opções para admin@passoapassouniformes.com" [ref=e1103]:
+                      - button "Copiar o ID do usuário (UID) de admin@passoapassouniformes.com" [ref=e1104] [cursor=pointer]:
+                        - img [ref=e1105]: content_copy
+                      - button "Ver mais opções para admin@passoapassouniformes.com" [ref=e1109] [cursor=pointer]:
+                        - img [ref=e1110]: more_vert
+              - group [ref=e1114]:
+                - generic [ref=e1116]:
+                  - generic [ref=e1117]:
+                    - generic [ref=e1118]: "Linhas por página:"
+                    - combobox "Linhas por página:" [ref=e1123] [cursor=pointer]:
+                      - generic [ref=e1124]:
+                        - generic [ref=e1126]: "50"
+                        - img [ref=e1129]
+                  - generic [ref=e1132]:
+                    - status [ref=e1133]: 1 – 1 of 1
+                    - button "Previous page" [disabled] [ref=e1134]:
+                      - img [ref=e1135]
+                    - button "Next page" [disabled] [ref=e1139]:
+                      - img [ref=e1140]
+    - generic "Gemini no Firebase" [ref=e389]:
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e399] [cursor=pointer]':
+            - img [ref=e401]
+            - img [ref=e407]
+          - button "Abrir alertas" [ref=e409] [cursor=pointer]:
+            - img [ref=e410]: notifications
+          - button "Conversar com o Gemini (Alt + G)" [ref=e418] [cursor=pointer]:
+            - img [ref=e420]: spark
+          - button "Ajuda" [ref=e423] [cursor=pointer]:
+            - img [ref=e424]: contact_support
+          - separator [ref=e427]
+          - button "Ativar o Cloud Shell" [ref=e428] [cursor=pointer]:
+            - img [ref=e429]:
+              - img [ref=e430]
+            - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e434]:
+              - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+          - button "Ativar/desativar o painel de aprendizado" [ref=e437] [cursor=pointer]:
+            - img [ref=e438]: school
+        - 'button "Tema atual: claro, ajustar o tema" [ref=e442] [cursor=pointer]':
+          - img [ref=e443]: dark_mode
+  - generic [ref=e1151]:
+    - generic [ref=e1152]: check_circle
+    - generic [ref=e1153]:
+      - generic [ref=e1154]: "Success:"
+      - text: "Esta conta foi adicionada: admin@passoapassouniformes.com"

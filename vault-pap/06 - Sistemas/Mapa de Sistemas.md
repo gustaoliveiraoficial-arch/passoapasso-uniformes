@@ -42,6 +42,17 @@
 
 ---
 
+## 🔌 Extensões Chrome
+
+| Extensão | Pasta | Função |
+|----------|-------|--------|
+| **Kommo Chat Pro** | `kommo-extension/` | Interface de chat focada, colunas externas (PIX/Problema/Esboço), overlay Kanban, toolbar arrastável |
+| **WhatsApp Kommo Bridge** | `whatsapp-kommo/` | Detecta número no WhatsApp Web, busca lead no Kommo, move para etapa do funil sem sair do WhatsApp |
+
+→ Detalhes completos: [[Extensões Chrome - Kommo + WhatsApp]]
+
+---
+
 ## 🤖 Automações e Integrações
 
 | Sistema | Pasta | Stack | Função |

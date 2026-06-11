@@ -1,0 +1,24 @@
+{
+  "name": "podio-video",
+  "version": "1.0.0",
+  "description": "Vídeo criativo de anúncio — Pódio de Vendas",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render PodioAd out/podio-ad.mp4",
+    "render": "remotion render PodioAd out/podio-ad.mp4 --log=verbose"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "puppeteer": "^25.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "remotion": {
+    "entrypoint": "src/index.ts"
+  }
+}

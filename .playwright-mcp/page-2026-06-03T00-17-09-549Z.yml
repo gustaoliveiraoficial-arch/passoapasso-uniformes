@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - navigation [ref=e7]:
+          - generic [ref=e10]:
+            - button [ref=e11] [cursor=pointer]:
+              - img [ref=e14]
+            - button "Menu dropdown button" [ref=e16] [cursor=pointer]:
+              - img [ref=e18]
+        - navigation "Floating toolbar" [ref=e19]:
+          - generic [ref=e20]:
+            - button [ref=e21] [cursor=pointer]:
+              - img [ref=e23]
+            - button "Help" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]:
+                - img [ref=e29]
+                - generic [ref=e32]: Help
+            - button "Advisor Center" [ref=e35] [cursor=pointer]:
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic [ref=e39]: Advisor Center
+      - main [ref=e46]:
+        - generic [ref=e47]:
+          - heading "Projects" [level=1] [ref=e54]
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - group [ref=e60]:
+                  - textbox "Search for a project" [ref=e61]
+                  - group [ref=e62]:
+                    - img [ref=e63]
+                  - group
+                - generic [ref=e66]:
+                  - generic [ref=e67] [cursor=pointer]:
+                    - generic [ref=e68]: Status
+                    - img [ref=e70]
+                  - button "Sorted by name" [ref=e72] [cursor=pointer]:
+                    - img [ref=e74]
+                    - generic [ref=e76]: Sorted by name
+              - generic [ref=e77]:
+                - group [ref=e78]:
+                  - radio [checked] [ref=e79]:
+                    - img [ref=e80]
+                  - radio [ref=e82]:
+                    - img [ref=e83]
+                - link "New project" [ref=e84] [cursor=pointer]:
+                  - /url: /dashboard/new/undefined
+                  - img [ref=e86]
+                  - generic [ref=e87]: New project
+            - list [ref=e88]:
+              - generic [ref=e91]:
+                - paragraph [ref=e92]
+                - paragraph [ref=e93]
+              - generic [ref=e96]:
+                - paragraph [ref=e97]
+                - paragraph [ref=e98]
+    - generic [ref=e102]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=e103]:
+        - button "Close banner" [ref=e105] [cursor=pointer]:
+          - img [ref=e107]
+        - generic [ref=e110]:
+          - generic [ref=e111]: Notice
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: We've updated our Terms of Service
+            - paragraph [ref=e114]: Updates define the responsibilities of both you and Supabase in the use of AI.
+          - button "Learn more" [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]: Learn more
+  - alert [ref=e117]

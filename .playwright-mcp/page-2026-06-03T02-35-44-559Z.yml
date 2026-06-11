@@ -1,0 +1,25 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e95]
+  - generic [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]: 🏆 Pódio de Vendas
+      - paragraph [ref=e100]: 7 dias grátis · Sem cartão de crédito
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]: Seu nome
+        - textbox "João Silva" [ref=e104]
+      - generic [ref=e105]:
+        - generic [ref=e106]: Email
+        - textbox "seu@email.com" [ref=e107]
+      - generic [ref=e108]:
+        - generic [ref=e109]: Senha
+        - textbox "Mínimo 6 caracteres" [ref=e110]
+      - button "Criar conta grátis →" [ref=e111] [cursor=pointer]
+      - paragraph [ref=e112]:
+        - text: Ao criar, você concorda com os
+        - link "Termos de Uso" [ref=e113] [cursor=pointer]:
+          - /url: "#"
+      - paragraph [ref=e114]:
+        - text: Já tem conta?
+        - link "Entrar" [ref=e115] [cursor=pointer]:
+          - /url: /login

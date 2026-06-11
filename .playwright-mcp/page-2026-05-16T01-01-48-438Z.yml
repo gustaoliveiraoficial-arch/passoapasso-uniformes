@@ -1,0 +1,131 @@
+- generic [ref=e6]:
+  - link "Pular para o conteúdo principal" [ref=e7] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e98]:
+    - generic [ref=e99]:
+      - navigation "Produtos do Console do Firebase" [ref=e101]:
+        - heading "Console do Firebase (acessar a lista de projetos)" [level=2] [ref=e102]:
+          - link "Console do Firebase (acessar a lista de projetos)" [ref=e103] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e104]:
+              - img [ref=e105]
+              - img "Logotipo do Firebase" [ref=e106]
+        - img [ref=e111]: search
+        - link "Visão geral do projeto" [ref=e113] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e114]: gmp_nav20_overview
+        - menu [ref=e115]:
+          - menuitem "Configurações" [ref=e116]:
+            - img [ref=e118] [cursor=pointer]: settings
+      - separator [ref=e119]
+      - group [ref=e121]:
+        - link "Realtime Database" [ref=e123] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e124]: gmp_nav20_database
+        - link "Authentication" [ref=e126] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e127]: gmp_nav20_auth
+      - separator [ref=e128]
+    - button "Alternar barra lateral de navegação" [ref=e131] [cursor=pointer]:
+      - img [ref=e132]: chevron_left
+  - banner:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button "Abrir menu de navegação" [ref=e135] [cursor=pointer]:
+          - img [ref=e136]: menu
+        - button "painel-vendas-comercial (Abrir o menu \"Selecionar projeto\")" [ref=e140] [cursor=pointer]:
+          - text: painel-vendas-comercial
+          - img [ref=e141]: arrow_drop_down
+      - button "Mais opções" [ref=e143] [cursor=pointer]:
+        - img [ref=e144]: more_vert
+  - main [ref=e16]:
+    - generic [ref=e160]:
+      - region "Cabeçalho do produto" [ref=e162]:
+        - generic [ref=e164]:
+          - generic [ref=e167]:
+            - heading "Realtime Database" [level=2] [ref=e168]
+            - button "Precisa de ajuda com o Realtime Database? Peça ao Gemini!" [ref=e171]:
+              - generic [ref=e173]:
+                - img [ref=e174]: spark
+                - text: Precisa de ajuda com o Realtime Database? Peça ao Gemini!
+          - tablist "Recursos do produto" [ref=e180]:
+            - generic [ref=e183]:
+              - tab "Dados" [ref=e184] [cursor=pointer]:
+                - generic [ref=e187]: Dados
+              - 'tab "Guia selecionada: Regras" [selected] [ref=e190] [cursor=pointer]':
+                - generic [ref=e193]: Regras
+              - tab "Backups" [ref=e196] [cursor=pointer]:
+                - generic [ref=e199]: Backups
+              - tab "Uso" [ref=e202] [cursor=pointer]:
+                - generic [ref=e205]: Uso
+              - tab "Extensions" [ref=e208] [cursor=pointer]:
+                - generic [ref=e211]:
+                  - generic [ref=e212]: gmp_nav20_mods
+                  - text: Extensions
+      - generic [ref=e216]:
+        - tabpanel "Regras do editor" [ref=e221]:
+          - generic [ref=e225]:
+            - button "Laboratório de testes de regras" [ref=e228]:
+              - generic [ref=e229]: Laboratório de testes de regras
+            - generic [ref=e233]:
+              - generic [ref=e313]:
+                - alert [ref=e314]:
+                  - img [ref=e315]: warning
+                  - generic [ref=e316]: "warning:"
+                  - generic [ref=e318]: Suas regras de segurança estão definidas como públicas. Com essa configuração, qualquer pessoa pode roubar, modificar ou excluir informações do seu banco de dados
+                - generic [ref=e320]:
+                  - link "Saiba mais (abre a documentação do Firebase em uma nova guia)" [ref=e321] [cursor=pointer]:
+                    - /url: https://firebase.google.com/docs/database/security/quickstart?hl=pt-BR&authuser=0
+                    - generic [ref=e322]: Saiba mais
+                    - text: open_in_new
+                  - button "Dispensar" [ref=e325]:
+                    - generic [ref=e326]: Dispensar
+              - 'form "Editor de código: pressione a tecla Enter para editar o texto" [ref=e235]':
+                - generic "Pressione a tecla Esc para sair da área de texto" [ref=e237]:
+                  - textbox [ref=e238]
+                  - generic [ref=e241]:
+                    - generic [ref=e293]:
+                      - generic [ref=e296]: "1"
+                      - generic [ref=e298] [cursor=pointer]: ▾
+                      - text: "{"
+                    - generic [ref=e299]:
+                      - generic [ref=e300]: "2"
+                      - generic [ref=e302] [cursor=pointer]: ▾
+                      - text: "\"rules\": {"
+                    - generic [ref=e303]:
+                      - generic [ref=e304]: "3"
+                      - text: "\".read\": true,"
+                    - generic [ref=e305]:
+                      - generic [ref=e306]: "4"
+                      - text: "\".write\": true"
+                    - generic [ref=e307]:
+                      - generic [ref=e308]: "5"
+                      - text: "}"
+                    - generic [ref=e309]:
+                      - generic [ref=e310]: "6"
+                      - text: "}"
+        - generic [ref=e280]:
+          - img [ref=e281]: place
+          - generic [ref=e282]: "Local do banco de dados: Estados Unidos (us-central1)"
+  - generic "Gemini no Firebase" [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - 'button "Conta do Google: shark solutions (sharksollutions@gmail.com)" [ref=e45] [cursor=pointer]':
+          - img [ref=e47]
+          - img [ref=e53]
+        - button "Abrir alertas" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]: notifications
+        - button "Conversar com o Gemini (Alt + G)" [ref=e148] [cursor=pointer]:
+          - img [ref=e150]: spark
+        - button "Ajuda" [ref=e73] [cursor=pointer]:
+          - img [ref=e74]: contact_support
+        - separator [ref=e77]
+        - button "Ativar o Cloud Shell" [ref=e78] [cursor=pointer]:
+          - img [ref=e79]:
+            - img [ref=e80]
+          - tooltip "Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual." [ref=e84]:
+            - generic: Turbine seu desenvolvimento! Use o Cloud Shell para acessar a CLI integrada do Firebase e executar emuladores do Firebase diretamente em uma máquina virtual.
+        - button "Ativar/desativar o painel de aprendizado" [ref=e153] [cursor=pointer]:
+          - img [ref=e154]: school
+      - 'button "Tema atual: claro, ajustar o tema" [ref=e88] [cursor=pointer]':
+        - img [ref=e89]: dark_mode

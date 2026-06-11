@@ -1,0 +1,222 @@
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - button [ref=e45] [cursor=pointer]:
+      - img [ref=e10]
+    - button [ref=e46] [cursor=pointer]:
+      - img [ref=e17]
+      - img [ref=e23]
+  - generic [ref=e47]:
+    - generic [ref=e49]:
+      - generic [ref=e50]: O NotebookLM está passando por problemas que podem afetar a qualidade da sua experiência.
+      - generic [ref=e51]:
+        - text: Siga nosso perfil no
+        - link [ref=e52] [cursor=pointer]:
+          - /url: https://x.com/NotebookLM
+          - text: X
+        - text: ou no
+        - link [ref=e53] [cursor=pointer]:
+          - /url: https://discord.com/channels/1124402182171672732/1294057633334165596
+          - text: Discord
+        - text: para receber atualizações.
+    - generic [ref=e57]:
+      - link [ref=e59] [cursor=pointer]:
+        - /url: /
+        - img [ref=e61]
+      - textbox [ref=e66]: Untitled notebook
+      - generic [ref=e67]:
+        - button [ref=e69]:
+          - img [ref=e70]: add
+          - generic [ref=e71]: Criar notebook
+        - button [ref=e79]:
+          - img [ref=e80]: share
+          - generic [ref=e82]: Compartilhar
+        - button [ref=e89]:
+          - img [ref=e90]: settings
+          - generic [ref=e92]: Configurações
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - navigation [ref=e98]:
+            - heading [level=2] [ref=e99]:
+              - generic [ref=e100]: Fontes
+          - button [ref=e102] [cursor=pointer]:
+            - img [ref=e103]: dock_to_right
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - button [ref=e111]:
+              - img [ref=e112]: add
+              - generic [ref=e113]: Adicionar fontes
+            - generic [ref=e119]:
+              - textbox [ref=e125]:
+                - /placeholder: Pesquise novas fontes na web
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - button [ref=e130]:
+                    - generic [ref=e132]:
+                      - img [ref=e134]: language
+                      - img [ref=e135]: keyboard_arrow_down
+                  - button [ref=e140]:
+                    - generic [ref=e142]:
+                      - img [ref=e144]: search_spark
+                      - img [ref=e145]: keyboard_arrow_down
+                - generic [ref=e148]:
+                  - button [disabled]:
+                    - img: search
+          - generic [ref=e151]:
+            - img [ref=e152]: docs
+            - generic [ref=e153]: As fontes salvas vão aparecer aqui
+            - generic [ref=e154]: Clique em "Adicionar fonte" para incluir arquivos PDF, de sites, de texto, de vídeo ou de áudio. Ou importe um arquivo do Google Drive.
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - heading [level=2] [ref=e159]: Conversa
+          - button [ref=e161] [cursor=pointer]:
+            - img [ref=e162]: more_vert
+        - generic [ref=e165]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: 👋
+            - heading [level=1] [ref=e170]: Vamos iniciar seu notebook…
+            - paragraph [ref=e171]: Esta é sua tela em branco para entender, criar ou progredir em algo novo. Posso te ajudar a começar ou você pode adicionar as próprias fontes.
+            - paragraph [ref=e172]: O que você quer fazer com este notebook?
+            - generic [ref=e173]:
+              - button [ref=e174]:
+                - generic [ref=e175]: Começar um projeto
+              - button [ref=e178]:
+                - generic [ref=e179]: Aprender ou entender algo
+              - button [ref=e182]:
+                - generic [ref=e183]: Criar um podcast, vídeo, apresentação de slides etc.
+              - button [ref=e186]:
+                - generic [ref=e187]: Outra coisa…
+          - generic [ref=e198]:
+            - textbox [ref=e200]:
+              - /placeholder: Faça uma pergunta ou crie algo
+            - generic [ref=e201]:
+              - generic [ref=e203]: 0 fonte
+              - button [disabled]:
+                - img: arrow_forward
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - navigation [ref=e207]:
+            - heading [level=2] [ref=e208]:
+              - generic [ref=e209]: Estúdio
+          - button [ref=e210] [cursor=pointer]:
+            - img [ref=e211]: dock_to_left
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - button [ref=e218] [cursor=pointer]:
+              - generic [ref=e219]:
+                - generic [ref=e220]:
+                  - img [ref=e222]: audio_magic_eraser
+                  - generic [ref=e223]: Resumo em Áudio
+                - button [ref=e225]:
+                  - img [ref=e226]: chevron_forward
+            - button [ref=e230] [cursor=pointer]:
+              - generic [ref=e231]:
+                - generic [ref=e232]:
+                  - generic [ref=e233]:
+                    - img [ref=e234]: tablet
+                    - generic [ref=e235]: BETA
+                  - generic [ref=e236]: Apresentação de slides
+                - button [ref=e238]:
+                  - img [ref=e239]: chevron_forward
+            - button [ref=e243] [cursor=pointer]:
+              - generic [ref=e244]:
+                - generic [ref=e245]:
+                  - img [ref=e247]: subscriptions
+                  - generic [ref=e248]: Resumo em Vídeo
+                - img [ref=e250]: chevron_forward
+            - button [ref=e252] [cursor=pointer]:
+              - generic [ref=e254]:
+                - img [ref=e256]: flowchart
+                - generic [ref=e257]: Mapa mental
+            - button [ref=e259] [cursor=pointer]:
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - img [ref=e263]: auto_tab_group
+                  - generic [ref=e264]: Relatórios
+                - img [ref=e266]: chevron_forward
+            - button [ref=e268] [cursor=pointer]:
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - img [ref=e272]: cards_star
+                  - generic [ref=e273]: Cartões didáticos
+                - button [ref=e275]:
+                  - img [ref=e276]: chevron_forward
+            - button [ref=e280] [cursor=pointer]:
+              - generic [ref=e281]:
+                - generic [ref=e282]:
+                  - img [ref=e284]: quiz
+                  - generic [ref=e285]: Teste
+                - button [ref=e287]:
+                  - img [ref=e288]: chevron_forward
+            - button [ref=e292] [cursor=pointer]:
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - generic [ref=e295]:
+                    - img [ref=e296]: stacked_bar_chart
+                    - generic [ref=e297]: BETA
+                  - generic [ref=e298]: Infográfico
+                - button [ref=e300]:
+                  - img [ref=e301]: chevron_forward
+            - button [ref=e305] [cursor=pointer]:
+              - generic [ref=e306]:
+                - generic [ref=e307]:
+                  - img [ref=e309]: table_view
+                  - generic [ref=e310]: Tabela de dados
+                - button [ref=e312]:
+                  - img [ref=e313]: chevron_forward
+          - generic [ref=e317]:
+            - generic [ref=e319]:
+              - img [ref=e320]: edit_fix_auto
+              - generic [ref=e321]: O resultado do Studio será salvo aqui.
+              - generic [ref=e322]: Depois de incluir as fontes, clique para adicionar um Resumo em Áudio, um Guia de Estudo, um Mapa Mental e muito mais!
+            - button [ref=e323]:
+              - img [ref=e324]: sticky_note_2
+              - generic [ref=e325]: Adicionar nota
+    - contentinfo [ref=e328]: O NotebookLM pode gerar respostas incorretas. Por isso, cheque o conteúdo.
+  - dialog "Crie Resumos em Áudio e em Vídeo usando seus documentos" [ref=e357]:
+    - generic [ref=e361]:
+      - heading "Crie Resumos em Áudio e em Vídeo usando seus documentos" [level=1] [ref=e363]:
+        - text: Crie Resumos em Áudio e em Vídeo usando
+        - generic [ref=e364]: vídeos do YouTube
+        - generic [ref=e365]: seus documentos
+      - generic [ref=e366]:
+        - generic [ref=e370]:
+          - textbox "Pesquise fontes com base na consulta inserida" [active] [ref=e376]:
+            - /placeholder: Pesquise novas fontes na web
+          - generic [ref=e377]:
+            - generic [ref=e378]:
+              - button "Web" [ref=e381]:
+                - generic [ref=e383]:
+                  - generic [ref=e384]:
+                    - img [ref=e385]: language
+                    - generic [ref=e386]: Web
+                  - img [ref=e387]: keyboard_arrow_down
+              - button "Pesquisa rápida" [ref=e392]:
+                - generic [ref=e394]:
+                  - generic [ref=e395]:
+                    - img [ref=e396]: search_spark
+                    - generic [ref=e397]: Pesquisa rápida
+                  - img [ref=e398]: keyboard_arrow_down
+            - generic [ref=e401]:
+              - button "Enviar" [disabled]:
+                - img: search
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - text: ou solte seus arquivos
+            - generic [ref=e405]: pdf, imagens, documentos, áudio e outros
+          - generic [ref=e406]:
+            - button "Enviar arquivos" [ref=e407]:
+              - img [ref=e408]: upload
+              - generic [ref=e409]: Enviar arquivos
+            - button "Sites" [ref=e412]:
+              - img [ref=e413]: link
+              - img [ref=e414]: video_youtube
+              - generic [ref=e415]: Sites
+            - button "Drive" [ref=e418]:
+              - img [ref=e419]: drive
+              - generic [ref=e420]: Drive
+            - button "Texto copiado" [ref=e423]:
+              - img [ref=e424]: content_paste
+              - generic [ref=e425]: Texto copiado
+      - button "Fechar" [ref=e428] [cursor=pointer]:
+        - img [ref=e429]: close

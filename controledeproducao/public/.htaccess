@@ -1,0 +1,24 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /controledeproducao/
+
+# HTML nunca cacheado pelo browser
+<FilesMatch "\.(html|txt)$">
+  Header set Cache-Control "no-store, no-cache, must-revalidate"
+  Header set Pragma "no-cache"
+</FilesMatch>
+
+# JS/CSS estáticos: cache longo (nomes com hash)
+<FilesMatch "\.(js|css)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# Serve arquivos e diretórios existentes normalmente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rota raiz
+RewriteRule ^$ index.html [L]
+
+ErrorDocument 404 /controledeproducao/404.html

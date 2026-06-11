@@ -1,0 +1,35 @@
+- main [ref=e2]:
+  - status [ref=e4]
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic:
+          - paragraph
+      - generic [ref=e10]:
+        - navigation [ref=e11]:
+          - link "Voltar" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e13]
+            - generic [ref=e14]: Voltar
+        - heading "Confirmação de segurança" [level=2] [ref=e16]:
+          - generic: Confirmação de segurança
+        - generic [ref=e18]: 2º Passo
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - generic [ref=e21]:
+              - text: Entre no email
+              - strong [ref=e22]: gustaoliveiraoficial@gmail.com
+              - text: copie o código e insira aqui para continuar
+            - generic [ref=e24]: Código
+          - button "Confirmar" [ref=e25] [cursor=pointer]
+          - generic [ref=e26]:
+            - button "Resend code" [disabled]: Reenviar código
+    - generic [ref=e27]:
+      - link "Suporte" [ref=e28] [cursor=pointer]:
+        - /url: https://help.hotmart.com/pt-br/article/39413024793613/
+      - text: —
+      - link "Termos de Uso" [ref=e29] [cursor=pointer]:
+        - /url: https://hotmart.com/en/legal/terms-of-use
+      - text: —
+      - link "Política de Privacidade" [ref=e30] [cursor=pointer]:
+        - /url: https://hotmart.com/en/legal/data-privacy-policy

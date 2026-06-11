@@ -1,0 +1,708 @@
+/* ===== WhatsApp Kommo Bridge ===== */
+
+/* ─── Botão flutuante ─────────────────────────────────────────────────────── */
+#wkb-toggle {
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: #e44d26;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  z-index: 99999;
+  box-shadow: -2px 2px 10px rgba(0,0,0,0.25);
+  transition: width 0.2s, background 0.15s;
+  user-select: none;
+}
+
+#wkb-toggle:hover,
+#wkb-toggle.wkb-active {
+  width: 42px;
+  background: #c0392b;
+}
+
+/* ─── Painel lateral ──────────────────────────────────────────────────────── */
+#wkb-panel {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 24px rgba(0,0,0,0.18);
+  z-index: 99998;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: right 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#wkb-panel.wkb-open {
+  right: 0;
+}
+
+#wkb-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  border-bottom: 2px solid #e44d26;
+}
+
+#wkb-panel-header button {
+  background: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  border-radius: 5px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+#wkb-panel-header button:hover {
+  background: #e44d26;
+  border-color: #e44d26;
+  color: #fff;
+}
+
+#wkb-panel-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f5f5f5;
+}
+
+/* ─── Estados ─────────────────────────────────────────────────────────────── */
+.wkb-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 13px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.wkb-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-top-color: #e44d26;
+  border-radius: 50%;
+  animation: wkb-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes wkb-spin { to { transform: rotate(360deg); } }
+
+.wkb-hint {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wkb-warn {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #856404;
+}
+
+.wkb-empty {
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.wkb-action-link {
+  display: block;
+  text-align: center;
+  background: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ─── Badge de telefone ───────────────────────────────────────────────────── */
+.wkb-phone-badge {
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ─── Card de lead ────────────────────────────────────────────────────────── */
+.wkb-lead-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wkb-lead-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.wkb-lead-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.wkb-price {
+  font-size: 11px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 600;
+}
+
+.wkb-kommo-link {
+  font-size: 11px;
+  color: #e44d26;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wkb-kommo-link:hover { text-decoration: underline; }
+
+/* ─── Etapas ──────────────────────────────────────────────────────────────── */
+.wkb-stages-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #aaa;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+}
+
+.wkb-stages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.wkb-stage {
+  background: var(--c, #888);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.wkb-stage:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.wkb-stage-current { opacity: 0.5; cursor: default; }
+
+.wkb-loading-sm {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.wkb-hint-sm {
+  font-size: 11px;
+  color: #bbb;
+}
+
+/* ─── Input manual ────────────────────────────────────────────────────────── */
+.wkb-manual {
+  display: flex;
+  gap: 6px;
+}
+
+.wkb-manual input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+  outline: none;
+}
+
+.wkb-manual input:focus { border-color: #e44d26; }
+
+.wkb-manual button {
+  background: #e44d26;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ─── Etapa atual do lead ────────────────────────────────────────────────────── */
+.wkb-lead-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.wkb-current-stage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3px;
+}
+
+.wkb-stage-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* ─── Select dropdown de etapas ─────────────────────────────────────────────── */
+.wkb-select {
+  width: 100%;
+  background: #16213e;
+  border: 1px solid #2a3a5e;
+  border-radius: 8px;
+  color: #eee;
+  padding: 8px 32px 8px 10px;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 4px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  transition: border-color 0.15s;
+}
+
+.wkb-select:hover  { border-color: #e44d26; }
+.wkb-select:focus  { border-color: #e44d26; box-shadow: 0 0 0 2px rgba(228,77,38,0.15); }
+.wkb-select:disabled { opacity: 0.6; cursor: default; }
+
+.wkb-select option          { background: #16213e; color: #eee; }
+.wkb-select option:disabled { color: #4caf50; font-weight: 600; }
+
+.wkb-move-status {
+  font-size: 11px;
+  margin-top: 5px;
+  min-height: 16px;
+  padding-left: 2px;
+}
+
+/* ─── Destaque por cor da etapa do funil Kommo (não respondido) ─────────────── */
+/* --wkb-stage-rgb é injetado via JS com o RGB da etapa do lead                */
+/* fallback = azul para contatos sem lead no Kommo                             */
+/* Os estilos background-color e border-left são aplicados via JS com          */
+/* style.setProperty(..., 'important') para sobrescrever qualquer estilo do WA */
+.wkb-stage-highlight {
+  background-color: rgba(var(--wkb-stage-rgb, 30, 100, 220), 0.14) !important;
+  border-left: 3px solid rgb(var(--wkb-stage-rgb, 30, 100, 220)) !important;
+  box-sizing: border-box !important;
+}
+
+/* ===== v2: Tab Bar, Stage View, Kanban ===== */
+
+/* ─── Select de etapas (injetado no #side) ────────────────────────────────── */
+#wkb-stage-bar {
+  padding: 6px 8px;
+  background: var(--panel-background, #f0f2f5);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+#wkb-stage-select {
+  width: 100%;
+  background: #fff;
+  border: 1.5px solid #d1d7db;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #111b21;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: auto;
+}
+
+#wkb-stage-select:hover { border-color: #aab6bf; }
+#wkb-stage-select:focus { border-color: #e44d26; }
+
+/* dot reutilizado em stage view e kanban */
+.wkb-tab-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* ─── Stage View (overlay sobre lista de chats) ───────────────────────────── */
+#wkb-stage-view {
+  /* posicionado via JS (position: fixed) */
+  background: var(--background-default-sub, #f0f2f5);
+}
+
+.wkb-sv-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 14px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111b21;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.wkb-sv-count {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 400;
+  color: #667781;
+}
+.wkb-sv-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 24px;
+  font-size: 13px;
+  color: #667781;
+}
+.wkb-sv-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-size: 13px;
+  color: #667781;
+  flex: 1;
+}
+.wkb-sv-list {
+  flex: 1;
+  overflow-y: auto;
+}
+.wkb-sv-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: default;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: background 0.12s;
+}
+.wkb-sv-item:hover { background: rgba(0,0,0,0.04); }
+.wkb-sv-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d1d7db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  object-fit: cover;  /* quando for <img> */
+}
+.wkb-sv-avatar-img {
+  background: transparent;
+}
+.wkb-sv-body { flex: 1; min-width: 0; }
+.wkb-sv-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111b21;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wkb-sv-sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #667781;
+  flex-wrap: wrap;
+}
+.wkb-sv-price  { color: #2e7d32; font-weight: 600; }
+.wkb-sv-phone  { color: #667781; }
+.wkb-sv-nophone { color: #aaa; font-style: italic; }
+.wkb-sv-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.wkb-sv-btn-chat {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  transition: background 0.15s;
+  line-height: 1;
+}
+.wkb-sv-btn-chat:hover { background: rgba(0,0,0,0.08); }
+.wkb-sv-btn-link {
+  font-size: 12px;
+  color: #e44d26;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 5px;
+  transition: background 0.15s;
+}
+.wkb-sv-btn-link:hover { background: rgba(228,77,38,0.1); }
+
+/* ─── Painel wide (modo kanban) — ocupa quase toda a tela ────────────────── */
+#wkb-panel.wkb-panel-wide {
+  width: calc(100vw - 52px);   /* deixa o botão K visível */
+  right: calc(-100vw);          /* fora da tela quando fechado */
+}
+#wkb-panel.wkb-panel-wide.wkb-open {
+  right: 0;
+}
+#wkb-panel.wkb-panel-wide #wkb-panel-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 4px 8px 8px;
+  gap: 0;
+  min-height: 0;
+  background: #0f1120;  /* fundo escuro para o kanban */
+}
+
+/* Botão ativo no header */
+.wkb-active-btn {
+  background: rgba(228,77,38,0.2) !important;
+  border-color: #e44d26 !important;
+  color: #e44d26 !important;
+}
+
+/* ─── Kanban board ────────────────────────────────────────────────────────── */
+.wkb-kanban-meta {
+  font-size: 10px;
+  color: #888;
+  padding: 2px 4px 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wkb-kanban-sync-btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #ccc;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-left: auto;
+}
+.wkb-kanban-sync-btn:hover { background: rgba(255,255,255,0.1); }
+
+.wkb-kanban-board {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;   /* colunas esticam até a altura do board */
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 6px;
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+.wkb-kanban-board::-webkit-scrollbar       { height: 5px; }
+.wkb-kanban-board::-webkit-scrollbar-track { background: transparent; }
+.wkb-kanban-board::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+
+.wkb-kanban-col {
+  width: 170px;
+  flex-shrink: 0;
+  background: #1e213a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  /* sem max-height — altura vem do stretch do board pai */
+  overflow: hidden;
+}
+.wkb-kanban-col-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  background: #16213e;
+  flex-shrink: 0;
+}
+.wkb-kanban-col-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #eee;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wkb-kanban-count {
+  background: rgba(255,255,255,0.1);
+  color: #ccc;
+  border-radius: 9px;
+  padding: 0 6px;
+  font-size: 10px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.wkb-kanban-cards {
+  flex: 1;
+  min-height: 0;        /* CHAVE: scroll interno funcionar */
+  overflow-y: auto;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+.wkb-kanban-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 11px;
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+.wkb-kanban-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transform: translateY(-1px);
+}
+/* cabeçalho do card: avatar + info + dot */
+.wkb-kc-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+.wkb-kc-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  object-fit: cover;  /* para img */
+}
+.wkb-kc-info { flex: 1; min-width: 0; }
+.wkb-kc-name  { font-weight: 700; color: #111b21; font-size: 11px; line-height: 1.3;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wkb-kc-lead  { font-size: 10px; color: #667781; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* bolinha de "não respondido" no canto */
+.wkb-kc-unread-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+.wkb-kc-price { font-size: 10px; color: #2e7d32; font-weight: 600; margin-bottom: 5px; }
+.wkb-kc-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.wkb-kc-chat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.wkb-kc-chat:hover { background: #1db954; }
+.wkb-kc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+  color: #e44d26;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid #e44d2633;
+  border-radius: 5px;
+  transition: background 0.15s;
+}
+.wkb-kc-link:hover { background: rgba(228,77,38,0.1); }
+.wkb-kc-empty {
+  font-size: 11px;
+  color: #556;
+  text-align: center;
+  padding: 12px 0;
+  font-style: italic;
+}

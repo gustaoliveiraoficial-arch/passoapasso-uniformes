@@ -1,0 +1,103 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - button "person u723199063" [ref=e6] [cursor=pointer]:
+      - generic [ref=e7]: person
+      - text: u723199063
+    - button "My files" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9]: folder
+      - text: My files
+    - generic [ref=e10]:
+      - button "New folder" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: create_new_folder
+        - text: New folder
+      - button "New file" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: note_add
+        - text: New file
+    - link "Trash bin" [ref=e16] [cursor=pointer]:
+      - /url: /b1aaa10d379f4cca/files/.trash
+      - generic [ref=e17]: delete
+      - text: Trash bin
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Space
+        - generic [ref=e23]: 0.89%
+        - generic [ref=e24]: 454.06 MiB / 50 GiB
+      - generic [ref=e25]:
+        - generic [ref=e26]: Inodes
+        - generic [ref=e29]: 3.58%
+        - generic [ref=e30]: 21457 / 600000
+    - button "Logout" [ref=e31] [cursor=pointer]:
+      - generic [ref=e32]: exit_to_app
+      - text: Logout
+    - paragraph [ref=e33]:
+      - generic [ref=e34]: File Browser v2.63.2-h2
+      - generic [ref=e35]: Help
+  - main [ref=e36]:
+    - generic [ref=e37]:
+      - link "Home" [ref=e39] [cursor=pointer]:
+        - /url: /b1aaa10d379f4cca/files
+        - generic [ref=e40]: home
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - button "Toggle sidebar" [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]: menu
+          - button "Search" [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]: search
+          - generic:
+            - button "Switch view":
+              - generic: view_module
+              - generic: Switch view
+            - button "Download":
+              - generic: file_download
+              - generic: Download
+            - button "Upload":
+              - generic: file_upload
+              - generic: Upload
+            - button "Calculate directory sizes":
+              - generic: assessment
+              - generic: Calculate directory sizes
+            - button "Info":
+              - generic: info
+              - generic: Info
+            - button "Select multiple":
+              - generic: check_circle
+              - generic: Select multiple
+          - button "More" [ref=e47] [cursor=pointer]:
+            - generic [ref=e48]: more_vert
+        - generic [ref=e49]:
+          - generic [ref=e52] [cursor=pointer]:
+            - button "Sort by name" [ref=e53]:
+              - text: Name
+              - generic [ref=e54]: arrow_upward
+            - button "Sort by last modified" [ref=e55]:
+              - text: Last modified
+              - generic [ref=e56]: arrow_upward
+          - generic [ref=e57]:
+            - button ".trash" [ref=e58] [cursor=pointer]:
+              - generic [ref=e60]: folder
+              - generic [ref=e61]:
+                - paragraph [ref=e62]: .trash
+                - paragraph [ref=e63]:
+                  - time [ref=e64]: 10 minutes ago
+            - button "home" [ref=e65] [cursor=pointer]:
+              - generic [ref=e67]: folder
+              - generic [ref=e68]:
+                - paragraph [ref=e69]: home
+                - paragraph [ref=e70]:
+                  - time [ref=e71]: 5 hours ago
+            - button "public_html" [ref=e72] [cursor=pointer]:
+              - generic [ref=e74]: folder
+              - generic [ref=e75]:
+                - paragraph [ref=e76]: public_html
+                - paragraph [ref=e77]:
+                  - time [ref=e78]: 5 days ago
+          - button "DO_NOT_UPLOAD_HERE" [ref=e80] [cursor=pointer]:
+            - generic [ref=e82]: description
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: DO_NOT_UPLOAD_HERE
+              - paragraph [ref=e85]:
+                - time [ref=e86]: 4 months ago
+          - generic [ref=e87]:
+            - paragraph [ref=e88]: Multiple selection enabled
+            - button "Clear" [ref=e89] [cursor=pointer]:
+              - generic [ref=e90]: clear

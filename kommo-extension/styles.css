@@ -1,0 +1,678 @@
+/* ===== KOMMO CHAT PRO v2 — Passo a Passo ===== */
+
+/* ─── Modo Chat Focado ─────────────────────────────────────────────────── */
+body.kcp-focus-mode #card_fields,
+body.kcp-focus-mode .js-card-fields {
+  display: none !important;
+}
+
+body.kcp-focus-mode .js-card-feed.card-holder__feed,
+body.kcp-focus-mode .card-holder__feed {
+  flex: 1 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+body.kcp-focus-mode #card_holder {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+/* ─── Modo iframe (painel Kanban) ──────────────────────────────────────── */
+body.kcp-iframe-mode #left_menu,
+body.kcp-iframe-mode aside.a6cc194a0 {
+  display: none !important;
+}
+
+body.kcp-iframe-mode #page,
+body.kcp-iframe-mode #page_holder {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+body.kcp-iframe-mode .inbox-messaging-page {
+  width: 100% !important;
+}
+
+body.kcp-iframe-mode #kcp-toolbar {
+  display: none !important;
+}
+
+/* ─── Overlay Kanban ───────────────────────────────────────────────────── */
+#kcp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  pointer-events: none;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kcp-overlay.kcp-open {
+  pointer-events: all;
+  visibility: visible;
+}
+
+#kcp-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+#kcp-overlay.kcp-open #kcp-overlay-backdrop {
+  opacity: 1;
+}
+
+#kcp-overlay-panel {
+  position: relative;
+  width: 88vw;
+  max-width: 1100px;
+  height: 88vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.4);
+  transform: scale(0.93) translateY(20px);
+  opacity: 0;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  overflow: hidden;
+}
+
+#kcp-overlay.kcp-open #kcp-overlay-panel {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+#kcp-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #1a1a2e;
+  color: #fff;
+  flex-shrink: 0;
+  border-bottom: 2px solid #e44d26;
+  gap: 10px;
+}
+
+#kcp-overlay-title {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+#kcp-overlay-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Botões de etapa rápida */
+.kcp-stage-btn {
+  background: var(--btn-color, #555);
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.kcp-stage-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.kcp-stage-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+}
+
+#kcp-overlay-header > button,
+#kcp-overlay-actions > button:not(.kcp-stage-btn) {
+  background: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+#kcp-overlay-actions > button:not(.kcp-stage-btn):hover {
+  background: #e44d26;
+  border-color: #e44d26;
+  color: #fff;
+}
+
+#kcp-overlay-body {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#kcp-overlay-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #888;
+  font-size: 13px;
+  background: #f8f8f8;
+}
+
+.kcp-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #eee;
+  border-top-color: #e44d26;
+  border-radius: 50%;
+  animation: kcp-spin 0.7s linear infinite;
+}
+
+@keyframes kcp-spin {
+  to { transform: rotate(360deg); }
+}
+
+#kcp-overlay-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;
+}
+
+/* ─── Botão chat rápido nos cards do Kanban ────────────────────────────── */
+.pipeline_leads__item {
+  position: relative;
+}
+
+.kcp-chat-btn {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  background: #25d366;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.15s, transform 0.15s;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  line-height: 1;
+  padding: 0;
+}
+
+.pipeline_leads__item:hover .kcp-chat-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.kcp-chat-btn:hover {
+  background: #128c7e !important;
+  transform: scale(1.1) !important;
+}
+
+/* ─── Toolbar flutuante ────────────────────────────────────────────────── */
+#kcp-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: #1a1a2e;
+  border-top: 2px solid #e44d26;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99998;
+  border-radius: 10px 0 0 0;
+  box-shadow: -2px -2px 12px rgba(0,0,0,0.3);
+}
+
+#kcp-toolbar button {
+  background: #16213e;
+  color: #eee;
+  border: 1px solid #444;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kcp-toolbar button:not(.kcp-toolbar-stage):hover,
+#kcp-toolbar button.kcp-active {
+  background: #e44d26;
+  border-color: #e44d26;
+}
+
+/* Botões de estágio na toolbar */
+.kcp-toolbar-stage {
+  color: #fff !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 0 8px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  height: 24px !important;
+  width: auto !important;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.15s !important;
+}
+
+.kcp-toolbar-stage:hover {
+  filter: brightness(1.2);
+  transform: translateY(-1px);
+}
+
+.kcp-label {
+  color: #555;
+  font-size: 10px;
+  font-family: monospace;
+  margin-left: 2px;
+}
+
+/* ─── Badge "movido para" (feedback no card) ───────────────────────────── */
+.kcp-moved-badge {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+  animation: kcp-fade-in 0.2s ease;
+}
+
+/* ─── Aviso de 10h sem resposta ────────────────────────────────────────── */
+.kcp-overdue {
+  box-shadow: 0 0 0 2px #e74c3c inset !important;
+}
+
+.kcp-overdue-badge {
+  position: absolute;
+  top: 4px;
+  right: 30px; /* não sobrepor o botão de chat */
+  background: #e74c3c;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+  animation: kcp-pulse 2s infinite;
+}
+
+@keyframes kcp-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+
+@keyframes kcp-fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Destaque mensagens não lidas ─────────────────────────────────────── */
+.notification__item__unread {
+  border-left: 3px solid #e44d26 !important;
+}
+
+/* ─── Input de resposta mais destacado ─────────────────────────────────── */
+.feed-compose__message:focus {
+  outline: 2px solid #25d366 !important;
+  border-radius: 4px;
+}
+
+/* ─── Colunas externas da extensão ─────────────────────────────────────────── */
+.kcp-custom-col {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 220px;
+  width: 210px;
+  height: 100%;
+  background: #f4f5f7;
+  border-radius: 6px;
+  margin: 0 6px;
+  flex-shrink: 0;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.kcp-custom-col__head {
+  padding: 10px 10px 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.kcp-custom-col__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kcp-custom-col__count {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1px 7px;
+  flex-shrink: 0;
+}
+
+.kcp-custom-col__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kcp-custom-col__empty {
+  text-align: center;
+  color: #aaa;
+  font-size: 11px;
+  padding: 16px 0;
+}
+
+/* ─── Cards das colunas externas ────────────────────────────────────────────── */
+.kcp-custom-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px 8px 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: relative;
+  font-size: 12px;
+}
+
+.kcp-custom-card.kcp-overdue {
+  box-shadow: 0 0 0 2px #e74c3c inset !important;
+}
+
+.kcp-cc-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.kcp-cc-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.kcp-cc-time {
+  font-size: 10px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.kcp-cc-chat,
+.kcp-cc-remove {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.kcp-cc-chat:hover {
+  background: #25d366;
+  transform: scale(1.1);
+}
+
+.kcp-cc-remove:hover {
+  background: #e74c3c;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ─── Painel de colunas (lista de leads) ────────────────────────────────────── */
+#kcp-col-panel {
+  position: fixed;
+  bottom: 46px;
+  right: 0;
+  width: 360px;
+  max-height: 70vh;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+  box-shadow: -4px -4px 24px rgba(0,0,0,0.18);
+  z-index: 99997;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#kcp-col-panel.kcp-col-panel-open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+#kcp-col-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 8px;
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  flex-shrink: 0;
+}
+
+#kcp-col-panel-header button {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+#kcp-col-panel-header button:hover { color: #fff; }
+
+#kcp-col-panel-tabs {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  flex-shrink: 0;
+  background: #fafafa;
+}
+
+.kcp-col-tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 8px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.kcp-col-tab-active {
+  color: #1a1a2e;
+  border-bottom-color: var(--tab-color);
+}
+
+.kcp-col-tab-count {
+  background: #eee;
+  color: #555;
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.kcp-col-tab-active .kcp-col-tab-count {
+  background: var(--tab-color);
+  color: #fff;
+}
+
+#kcp-col-panel-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.kcp-col-panel-section {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kcp-col-section-active {
+  display: flex;
+}
+
+.kcp-col-panel-empty {
+  text-align: center;
+  color: #bbb;
+  font-size: 12px;
+  padding: 24px 0;
+}
+
+.kcp-panel-card {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px 10px;
+  position: relative;
+}
+
+.kcp-panel-card.kcp-overdue {
+  border-color: #e74c3c;
+  background: #fff5f5;
+}
+
+.kcp-panel-card-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.kcp-panel-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.kcp-panel-chat {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.kcp-panel-chat:hover { background: #128c7e; }
+
+.kcp-panel-remove {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.kcp-panel-remove:hover { background: #e74c3c; color: #fff; }
+
+/* ─── Drag handle da toolbar ────────────────────────────────────────────────── */
+#kcp-drag-handle {
+  font-size: 16px;
+  color: #555;
+  cursor: grab;
+  padding: 0 4px;
+  line-height: 1;
+  user-select: none;
+  letter-spacing: -1px;
+}
+
+#kcp-drag-handle:active {
+  cursor: grabbing;
+  color: #e44d26;
+}
+
+#kcp-toolbar {
+  cursor: default;
+}

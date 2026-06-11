@@ -1,0 +1,486 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - button [ref=e9]:
+            - img [ref=e12]
+        - separator [ref=e14]
+        - generic [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link [ref=e24]:
+                - /url: /home/
+                - img [ref=e26]
+            - listitem [ref=e28]:
+              - link "472" [ref=e30] [cursor=pointer]:
+                - /url: /chats/
+                - generic [ref=e31]:
+                  - img [ref=e32]
+                  - generic [ref=e35]: "472"
+            - listitem [ref=e36]:
+              - link [ref=e38] [cursor=pointer]:
+                - /url: /leads/pipeline/13368211
+                - img [ref=e40]
+            - listitem [ref=e43] [cursor=pointer]:
+              - link "160" [ref=e45]:
+                - /url: /todo
+                - generic [ref=e46]:
+                  - img [ref=e47]
+                  - generic [ref=e50]: "160"
+            - listitem [ref=e52] [cursor=pointer]:
+              - link [ref=e54]:
+                - /url: /segments/
+                - img [ref=e56]
+            - listitem [ref=e60]:
+              - link [ref=e62] [cursor=pointer]:
+                - /url: /contacts/list/contacts
+                - img [ref=e64]
+            - listitem [ref=e67] [cursor=pointer]:
+              - link [ref=e69]:
+                - /url: /settings/ai-agent/
+                - img [ref=e71]
+            - listitem [ref=e73]:
+              - link [ref=e75] [cursor=pointer]:
+                - /url: /chats/tools/bots/
+                - img [ref=e77]
+            - listitem [ref=e79]:
+              - link [ref=e81] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e83]
+          - separator [ref=e86]
+          - list [ref=e87]:
+            - listitem [ref=e89] [cursor=pointer]:
+              - link [ref=e91]:
+                - /url: /widget_page/facebook_int/hub
+                - img [ref=e94]
+            - listitem [ref=e96] [cursor=pointer]:
+              - link [ref=e98]:
+                - /url: /widget_page/instagram_int/hub
+                - img [ref=e101]
+            - listitem [ref=e103] [cursor=pointer]:
+              - link [ref=e105]:
+                - /url: /widget_page/whatsapp_cloud_api/hub
+                - img [ref=e108]
+            - listitem [ref=e110] [cursor=pointer]:
+              - link [ref=e112]:
+                - /url: /widget_page/tiktok_kommo/hub
+                - img [ref=e115]
+        - list [ref=e117]:
+          - listitem [ref=e119] [cursor=pointer]:
+            - link [ref=e121]:
+              - /url: /settings/profile/
+              - img [ref=e123]
+          - listitem [ref=e125]:
+            - link [ref=e127] [cursor=pointer]:
+              - /url: /settings/ai
+              - img [ref=e129]
+          - listitem [ref=e132] [cursor=pointer]:
+            - link [ref=e134]:
+              - /url: ""
+              - img [ref=e136]
+          - listitem [ref=e139] [cursor=pointer]:
+            - link "271" [ref=e141]:
+              - /url: /settings/profile/notifications
+              - generic [ref=e142]:
+                - img [ref=e143]
+                - generic [ref=e146]: "271"
+        - separator [ref=e148]
+        - button "Avatar" [ref=e150] [cursor=pointer]:
+          - img "Avatar" [ref=e153]
+      - generic [ref=e154]:
+        - heading "Configurações" [level=2] [ref=e156]
+        - separator [ref=e157]
+        - generic [ref=e162]:
+          - generic [ref=e163]: Perfil
+          - list [ref=e164]:
+            - listitem [ref=e166] [cursor=pointer]:
+              - link "Configurações de perfil" [ref=e168]:
+                - /url: /settings/profile/
+                - generic [ref=e169]: Configurações de perfil
+          - generic [ref=e170]: Área de trabalho
+          - list [ref=e171]:
+            - listitem [ref=e173] [cursor=pointer]:
+              - link "Configurações de trabalho" [ref=e175]:
+                - /url: /settings/
+                - generic [ref=e176]: Configurações de trabalho
+            - listitem [ref=e178] [cursor=pointer]:
+              - link "Configurações de chat" [ref=e180]:
+                - /url: /settings/communications/
+                - generic [ref=e181]: Configurações de chat
+            - listitem [ref=e183] [cursor=pointer]:
+              - link "Configurações de email" [ref=e185]:
+                - /url: /mail/settings/
+                - generic [ref=e186]: Configurações de email
+            - listitem [ref=e188] [cursor=pointer]:
+              - link "Faturamento" [ref=e190]:
+                - /url: /settings/pay/?billing_entry_point=left_menu_v2
+                - generic [ref=e191]: Faturamento
+            - listitem [ref=e193] [cursor=pointer]:
+              - link "Gestão de usuários" [ref=e195]:
+                - /url: /settings/users/
+                - generic [ref=e196]: Gestão de usuários
+          - generic [ref=e197]: IA
+          - list [ref=e198]:
+            - listitem [ref=e200] [cursor=pointer]:
+              - link "Configurações de IA" [ref=e202]:
+                - /url: /settings/ai/
+                - generic [ref=e203]: Configurações de IA
+            - listitem [ref=e205] [cursor=pointer]:
+              - link "Fontes de conhecimento da IA" [ref=e207]:
+                - /url: /settings/ai-knowledge-sources/
+                - generic [ref=e208]: Fontes de conhecimento da IA
+          - generic [ref=e209]: Integrações e canais
+          - list [ref=e210]:
+            - listitem [ref=e212] [cursor=pointer]:
+              - link "Central de integrações" [ref=e214]:
+                - /url: /settings/widgets/
+                - generic [ref=e215]: Central de integrações
+  - generic:
+    - generic [ref=e218]:
+      - generic [ref=e219]:
+        - button "Salvar" [ref=e222]:
+          - generic [ref=e224]: Salvar
+        - heading "Configurações de perfil" [level=1] [ref=e226]
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - generic [ref=e233] [cursor=pointer]:
+              - img [ref=e234]
+              - button "Choose File" [ref=e236]
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - generic [ref=e242]: ID do usuário
+                - generic [ref=e244]:
+                  - generic [ref=e245]: "14977039"
+                  - img [ref=e247] [cursor=pointer]
+              - generic [ref=e249]:
+                - generic [ref=e250]: Entrar via
+                - generic [ref=e253]:
+                  - img [ref=e256]
+                  - generic [ref=e258]: Passo a passo uniformes
+                  - generic [ref=e259] [cursor=pointer]:
+                    - img [ref=e260]
+                    - generic [ref=e262]: Sair
+              - generic [ref=e263]:
+                - generic [ref=e264]: Idioma
+                - button "Português" [ref=e267] [cursor=pointer]
+              - generic [ref=e268]:
+                - generic [ref=e269]: Nome
+                - textbox "Nome Sobrenome" [ref=e271]: Passo a passo uniformes
+              - generic [ref=e272]:
+                - generic [ref=e273]: Telefone
+                - textbox [ref=e276]: +55 51 3556-3452
+              - generic [ref=e277]:
+                - generic [ref=e278]: E-mail
+                - generic [ref=e281]:
+                  - textbox [disabled] [ref=e282]: passoapassouniformes2025@gmail.com
+                  - img [ref=e284]
+              - generic [ref=e289]:
+                - generic [ref=e290]: Senha
+                - textbox "******" [ref=e292]
+              - generic [ref=e293]:
+                - generic [ref=e294]: Nota
+                - textbox [ref=e296]
+              - generic [ref=e297]:
+                - generic [ref=e298]: Menu esquerdo
+                - button "Novo menu (Recomendado)" [ref=e301] [cursor=pointer]
+          - generic [ref=e302]:
+            - heading "Segurança" [level=1] [ref=e304]
+            - generic [ref=e305]:
+              - generic [ref=e306]:
+                - heading "Verificação em 2 etapas" [level=1] [ref=e307]
+                - generic [ref=e309]:
+                  - checkbox
+              - generic [ref=e312]: Adicione mais uma etapa de segurança à sua conta Kommo. Além da sua senha, você vai precisar inserir um código enviado ao seu e-mail toda vez que entrar.
+          - generic [ref=e313]:
+            - heading "Sessões" [level=1] [ref=e314]
+            - paragraph [ref=e315]: Esta é uma lista dos seus dispositivos autorizados. As sessões expiram após 3 meses de inatividade. Recomendamos que você mude sua senha se notar algo suspeito. Uma vez que sua senha for alterada, você será desconectado de todos os dispositivos, sites e aplicativos onde está logado com a senha atual.
+          - generic [ref=e316]:
+            - img
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - generic [ref=e323]: SESSÃO
+                - generic [ref=e326]: ÚLTIMO LOGIN
+                - generic [ref=e329]: REGIÃO
+                - generic [ref=e332]: ENDEREÇO DE IP
+              - generic [ref=e333]:
+                - generic [ref=e336]:
+                  - img [ref=e337]
+                  - generic [ref=e339]: Chrome, Win10
+                - generic [ref=e342]: Atual
+                - generic "Porto Alegre, Brazil" [ref=e344]:
+                  - generic [ref=e345]: Porto Alegre, Brazil
+                - generic "201.34.83.66" [ref=e347]:
+                  - generic [ref=e348]: 201.34.83.66
+              - generic [ref=e349]:
+                - generic [ref=e351]:
+                  - generic [ref=e352]:
+                    - img [ref=e353]
+                    - generic [ref=e355]: Chrome, Win10
+                  - button "Sair" [ref=e356] [cursor=pointer]:
+                    - generic [ref=e357]:
+                      - img [ref=e359]
+                      - generic [ref=e361]: Sair
+                - generic [ref=e364]: 03/06/2026 13:42
+                - generic "Novo Hamburgo, Brazil" [ref=e366]:
+                  - generic [ref=e367]: Novo Hamburgo, Brazil
+                - generic "45.176.28.29" [ref=e369]:
+                  - generic [ref=e370]: 45.176.28.29
+              - generic [ref=e371]:
+                - generic [ref=e373]:
+                  - generic [ref=e374]:
+                    - img [ref=e375]
+                    - generic [ref=e377]: Chrome, Win10
+                  - button "Sair" [ref=e378] [cursor=pointer]:
+                    - generic [ref=e379]:
+                      - img [ref=e381]
+                      - generic [ref=e383]: Sair
+                - generic [ref=e386]: 03/06/2026 00:49
+                - generic "São Leopoldo, Brazil" [ref=e388]:
+                  - generic [ref=e389]: São Leopoldo, Brazil
+                - generic "2804:5ef8:89:4d0" [ref=e391]:
+                  - generic [ref=e392]: 2804:5ef8:89:4d0
+              - generic [ref=e393]:
+                - generic [ref=e395]:
+                  - generic [ref=e396]:
+                    - img [ref=e397]
+                    - generic [ref=e399]: Android, Kommo
+                  - button "Sair" [ref=e400] [cursor=pointer]:
+                    - generic [ref=e401]:
+                      - img [ref=e403]
+                      - generic [ref=e405]: Sair
+                - generic [ref=e408]: 06/04/2026 18:28
+                - generic "Não definido" [ref=e410]:
+                  - generic [ref=e411]: Não definido
+                - generic "45.176.28.11" [ref=e413]:
+                  - generic [ref=e414]: 45.176.28.11
+          - generic [ref=e416]:
+            - heading "Configurações de notificação" [level=1] [ref=e417]
+            - heading "Receber notificações" [level=1] [ref=e419]
+        - generic [ref=e422]:
+          - generic [ref=e423]:
+            - generic [ref=e424]:
+              - generic [ref=e425]: Receber notificações via Telegram
+              - generic [ref=e426]: Para o navegador atual, as notificações estão desativadas.Ativar notificações
+            - generic [ref=e427]:
+              - generic [ref=e429]:
+                - generic [ref=e431]:
+                  - checkbox [ref=e434] [cursor=pointer]
+                  - generic [ref=e436]: Configurações avançadas
+                - generic [ref=e438]:
+                  - checkbox [ref=e441] [cursor=pointer]
+                  - generic [ref=e443]: E-mail
+                - generic [ref=e445]:
+                  - checkbox [ref=e448] [cursor=pointer]
+                  - generic [ref=e450]: Tel. Móvel
+                - generic [ref=e452]:
+                  - checkbox [ref=e455] [cursor=pointer]
+                  - generic [ref=e457]: Navegador
+                - generic [ref=e460]: +
+              - generic [ref=e461]:
+                - generic [ref=e468]:
+                  - generic [ref=e470]:
+                    - checkbox [checked] [ref=e473] [cursor=pointer]
+                    - generic [ref=e475]: Caixa de entrada
+                  - generic [ref=e477]:
+                    - checkbox [checked] [ref=e480] [cursor=pointer]
+                    - generic [ref=e482] [cursor=pointer]: Uma vez por dia 18:00
+                  - checkbox [checked] [ref=e487] [cursor=pointer]
+                  - checkbox [checked] [ref=e493] [cursor=pointer]
+                - generic [ref=e496]:
+                  - generic [ref=e498]:
+                    - checkbox [checked] [ref=e501] [cursor=pointer]
+                    - generic [ref=e503]: Menções e team chat
+                  - generic [ref=e505]:
+                    - checkbox [checked] [ref=e508] [cursor=pointer]
+                    - generic [ref=e510] [cursor=pointer]: Apenas não lidos - A cada 1 hora
+                  - checkbox [checked] [ref=e515] [cursor=pointer]
+                  - checkbox [checked] [ref=e521] [cursor=pointer]
+                - generic [ref=e524]:
+                  - generic [ref=e526]:
+                    - checkbox [checked] [ref=e529] [cursor=pointer]
+                    - generic [ref=e531]: Chat da equipe Kommo
+                  - generic [ref=e533]:
+                    - checkbox [checked] [ref=e536] [cursor=pointer]
+                    - generic [ref=e538] [cursor=pointer]: Apenas não lidos - A cada 15 minutos
+                  - checkbox [checked] [ref=e543] [cursor=pointer]
+                  - checkbox [checked] [ref=e549] [cursor=pointer]
+                - generic [ref=e552]:
+                  - generic [ref=e554]:
+                    - checkbox [checked] [ref=e557] [cursor=pointer]
+                    - generic [ref=e559]: Chamadas
+                  - generic [ref=e561]:
+                    - checkbox [ref=e564] [cursor=pointer]
+                    - generic [ref=e566] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e571] [cursor=pointer]
+                  - checkbox [checked] [ref=e577] [cursor=pointer]
+                - generic [ref=e580]:
+                  - generic [ref=e582]:
+                    - checkbox [checked] [ref=e585] [cursor=pointer]
+                    - generic [ref=e587]: Emails recebidos
+                  - generic [ref=e589]:
+                    - checkbox [ref=e592] [cursor=pointer]
+                    - generic [ref=e594] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e599] [cursor=pointer]
+                  - checkbox [checked] [ref=e605] [cursor=pointer]
+                - generic [ref=e608]:
+                  - generic [ref=e610]:
+                    - checkbox [checked] [ref=e613] [cursor=pointer]
+                    - generic [ref=e615]: Erros e outras informações
+                  - generic [ref=e617]:
+                    - checkbox [ref=e620] [cursor=pointer]
+                    - generic [ref=e622] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e627] [cursor=pointer]
+                  - checkbox [checked] [ref=e633] [cursor=pointer]
+                - generic [ref=e636]:
+                  - generic [ref=e638]:
+                    - checkbox [checked] [ref=e641] [cursor=pointer]
+                    - generic [ref=e643]: Faturamento
+                  - generic [ref=e645]:
+                    - checkbox [ref=e648] [cursor=pointer]
+                    - generic [ref=e650] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e655] [cursor=pointer]
+                  - checkbox [checked] [ref=e661] [cursor=pointer]
+                - generic [ref=e664]:
+                  - generic [ref=e666]:
+                    - checkbox [checked] [ref=e669] [cursor=pointer]
+                    - generic [ref=e671]: Leads de entrada
+                  - generic [ref=e673]:
+                    - checkbox [checked] [ref=e676] [cursor=pointer]
+                    - generic [ref=e678] [cursor=pointer]: Uma vez por dia 18:00
+                  - checkbox [checked] [ref=e683] [cursor=pointer]
+                  - checkbox [checked] [ref=e689] [cursor=pointer]
+                - generic [ref=e692]:
+                  - generic [ref=e694]:
+                    - checkbox [checked] [ref=e697] [cursor=pointer]
+                    - generic [ref=e699]: Limites de atividade
+                  - generic [ref=e701]:
+                    - checkbox [ref=e704] [cursor=pointer]
+                    - generic [ref=e706] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e711] [cursor=pointer]
+                  - checkbox [checked] [ref=e717] [cursor=pointer]
+                - generic [ref=e720]:
+                  - generic [ref=e722]:
+                    - checkbox [checked] [ref=e725] [cursor=pointer]
+                    - generic [ref=e727]: "Tarefas: 5 minutos antes da tarefa"
+                  - generic [ref=e729]:
+                    - checkbox [checked] [ref=e732] [cursor=pointer]
+                    - generic [ref=e734] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e739] [cursor=pointer]
+                  - checkbox [checked] [ref=e745] [cursor=pointer]
+                - generic [ref=e748]:
+                  - generic [ref=e750]:
+                    - checkbox [checked] [ref=e753] [cursor=pointer]
+                    - generic [ref=e755]: "Tarefas: A tarefa que você definiu expirou"
+                  - generic [ref=e757]:
+                    - checkbox [checked] [ref=e760] [cursor=pointer]
+                    - generic [ref=e762] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e767] [cursor=pointer]
+                  - checkbox [checked] [ref=e773] [cursor=pointer]
+                - generic [ref=e776]:
+                  - generic [ref=e778]:
+                    - checkbox [checked] [ref=e781] [cursor=pointer]
+                    - generic [ref=e783]: "Tarefas: A tarefa que você definiu foi concluída"
+                  - generic [ref=e785]:
+                    - checkbox [checked] [ref=e788] [cursor=pointer]
+                    - generic [ref=e790] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e795] [cursor=pointer]
+                  - checkbox [checked] [ref=e801] [cursor=pointer]
+                - generic [ref=e804]:
+                  - generic [ref=e806]:
+                    - checkbox [checked] [ref=e809] [cursor=pointer]
+                    - generic [ref=e811]: "Tarefas: Você recebeu uma nova tarefa"
+                  - generic [ref=e813]:
+                    - checkbox [checked] [ref=e816] [cursor=pointer]
+                    - generic [ref=e818] [cursor=pointer]: Imediatamente
+                  - checkbox [checked] [ref=e823] [cursor=pointer]
+                  - checkbox [checked] [ref=e829] [cursor=pointer]
+                - generic [ref=e834]:
+                  - checkbox [ref=e837] [cursor=pointer]
+                  - generic [ref=e839]: Relatório agendado
+          - generic [ref=e845]:
+            - generic [ref=e847]:
+              - generic [ref=e849]:
+                - checkbox [checked] [ref=e852] [cursor=pointer]
+                - generic [ref=e854]: Integrações
+              - generic [ref=e856]:
+                - checkbox [ref=e859] [cursor=pointer]
+                - generic [ref=e861]: E-mail
+              - generic [ref=e863]:
+                - checkbox [checked] [ref=e866] [cursor=pointer]
+                - generic [ref=e868]: Tel. Móvel
+              - generic [ref=e870]:
+                - checkbox [checked] [ref=e873] [cursor=pointer]
+                - generic [ref=e875]: Navegador
+              - generic [ref=e878]: +
+            - generic [ref=e879]:
+              - generic [ref=e880]:
+                - generic [ref=e882]:
+                  - checkbox [checked] [ref=e885] [cursor=pointer]
+                  - generic [ref=e887]: TikTok
+                - generic [ref=e889]:
+                  - checkbox [ref=e892] [cursor=pointer]
+                  - generic [ref=e894] [cursor=pointer]: Imediatamente
+                - checkbox [checked] [ref=e899] [cursor=pointer]
+                - checkbox [checked] [ref=e905] [cursor=pointer]
+              - generic [ref=e908]:
+                - generic [ref=e910]:
+                  - checkbox [checked] [ref=e913] [cursor=pointer]
+                  - generic [ref=e915]: Webhook Router Linhas
+                - generic [ref=e917]:
+                  - checkbox [ref=e920] [cursor=pointer]
+                  - generic [ref=e922] [cursor=pointer]: Imediatamente
+                - checkbox [checked] [ref=e927] [cursor=pointer]
+                - checkbox [checked] [ref=e933] [cursor=pointer]
+              - generic [ref=e936]:
+                - generic [ref=e938]:
+                  - checkbox [checked] [ref=e941] [cursor=pointer]
+                  - generic [ref=e943]: WhatsApp Business
+                - generic [ref=e945]:
+                  - checkbox [ref=e948] [cursor=pointer]
+                  - generic [ref=e950] [cursor=pointer]: Imediatamente
+                - checkbox [checked] [ref=e955] [cursor=pointer]
+                - checkbox [checked] [ref=e961] [cursor=pointer]
+              - generic [ref=e964]:
+                - generic [ref=e966]:
+                  - checkbox [checked] [ref=e969] [cursor=pointer]
+                  - generic [ref=e971]: WooCommerce Pedidos
+                - generic [ref=e973]:
+                  - checkbox [ref=e976] [cursor=pointer]
+                  - generic [ref=e978] [cursor=pointer]: Imediatamente
+                - checkbox [checked] [ref=e983] [cursor=pointer]
+                - checkbox [checked] [ref=e989] [cursor=pointer]
+    - generic [ref=e994]:
+      - img
+      - button [ref=e995]:
+        - img [ref=e996]
+        - img [ref=e998]
+        - img [ref=e1002]
+      - generic [ref=e1004]:
+        - generic [ref=e1006]:
+          - generic [ref=e1007]:
+            - img [ref=e1008]
+            - generic [ref=e1010]: Kommo Copilot
+          - generic [ref=e1011]:
+            - button [ref=e1012] [cursor=pointer]:
+              - img [ref=e1015]
+            - button [ref=e1017] [cursor=pointer]:
+              - img [ref=e1020]
+            - button [ref=e1022] [cursor=pointer]:
+              - img [ref=e1025]
+        - button "Configuração do WhatsApp Business" [ref=e1027] [cursor=pointer]:
+          - generic [ref=e1028]:
+            - generic [ref=e1029]: Configuração do WhatsApp Business
+            - img [ref=e1030]
+        - button "Modo Assistente" [ref=e1057] [cursor=pointer]:
+          - generic [ref=e1059]: Modo Assistente
+          - img [ref=e1061]
+        - generic [ref=e1063]:
+          - generic [ref=e1064]:
+            - textbox "Pergunte ao Kommo Copilot" [ref=e1067]
+            - button [disabled] [ref=e1070]:
+              - img [ref=e1073]
+          - generic [ref=e1075]: O conteúdo gerado por IA pode ser impreciso

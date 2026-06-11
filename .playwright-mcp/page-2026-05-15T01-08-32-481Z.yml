@@ -1,0 +1,414 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img "Passo a Passo Uniformes" [ref=e6]
+          - generic [ref=e7]:
+            - heading "Passo a Passo Uniformes" [level=1] [ref=e8]
+            - paragraph [ref=e9]: Sistema de Pedidos
+        - link "Novo Pedido" [ref=e10] [cursor=pointer]:
+          - /url: /formalizarpedido/novo-pedido/
+          - img [ref=e11]
+          - text: Novo Pedido
+    - main [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - img [ref=e16]
+          - textbox "Buscar por cliente, pedido ou vendedor..." [ref=e19]
+        - combobox [ref=e20]:
+          - option "Todos os status" [selected]
+          - option "1. Dados"
+          - option "2. Tamanhos"
+          - option "3. Arquivos"
+          - option "4. Pagamento"
+          - option "5. Confirmação"
+        - button "Atualizar" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+          - text: Atualizar
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: "2"
+          - generic [ref=e30]: 1. Dados
+        - generic [ref=e31]:
+          - generic [ref=e32]: "1"
+          - generic [ref=e33]: 2. Tamanhos
+        - generic [ref=e34]:
+          - generic [ref=e35]: "1"
+          - generic [ref=e36]: 3. Arquivos
+        - generic [ref=e37]:
+          - generic [ref=e38]: "0"
+          - generic [ref=e39]: 4. Pagamento
+        - generic [ref=e40]:
+          - generic [ref=e41]: "6"
+          - generic [ref=e42]: 5. Confirmação
+      - table [ref=e47]:
+        - rowgroup [ref=e48]:
+          - row "Nº Pedido Cliente Vendedor Modelo Peças Entrega Progresso Status Links Ações" [ref=e49]:
+            - columnheader "Nº Pedido" [ref=e50]
+            - columnheader "Cliente" [ref=e51]
+            - columnheader "Vendedor" [ref=e52]
+            - columnheader "Modelo" [ref=e53]
+            - columnheader "Peças" [ref=e54]
+            - columnheader "Entrega" [ref=e55]
+            - columnheader "Progresso" [ref=e56]
+            - columnheader "Status" [ref=e57]
+            - columnheader "Links" [ref=e58]
+            - columnheader "Ações" [ref=e59]
+        - rowgroup [ref=e60]:
+          - row "2026-TESTE Cliente Teste Pessoa Física Gustavo camiseta babylook 20 15/06/2026 Dados Tam. Arq. Pag. OK 1. Dados Link Arte Abrir Dup." [ref=e61]:
+            - cell "2026-TESTE" [ref=e62]
+            - cell "Cliente Teste Pessoa Física" [ref=e63]:
+              - generic [ref=e64]: Cliente Teste
+              - generic [ref=e65]: Pessoa Física
+            - cell "Gustavo" [ref=e66]
+            - cell "camiseta babylook" [ref=e67]
+            - cell "20" [ref=e68]
+            - cell "15/06/2026" [ref=e69]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e70]:
+              - generic "Etapa 1 de 4" [ref=e71]:
+                - generic "Dados" [ref=e72]
+                - generic "Tam." [ref=e73]
+                - generic "Arq." [ref=e74]
+                - generic "Pag." [ref=e75]
+                - generic "OK" [ref=e76]
+            - cell "1. Dados" [ref=e77]:
+              - generic [ref=e78]: 1. Dados
+            - cell "Link Arte" [ref=e79]:
+              - button "Link Arte" [ref=e81] [cursor=pointer]:
+                - img [ref=e82]
+                - text: Link Arte
+            - cell "Abrir Dup." [ref=e85]:
+              - generic [ref=e86]:
+                - link "Abrir" [ref=e87] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/AdGGQyyMh9ujkF2X3FKj/
+                  - img [ref=e88]
+                  - text: Abrir
+                - button "Dup." [ref=e92] [cursor=pointer]:
+                  - img [ref=e93]
+                  - text: Dup.
+          - row "1811 - 12/05-2026 BRAZIL PROCUREMENT OFFICE Empresa GUSTAVO polo 10 22/06/2026 Dados Tam. Arq. Pag. OK 5. Confirmação Link Tamanhos Link Arte Abrir Dup. PDF" [ref=e96]:
+            - cell "1811 - 12/05-2026" [ref=e97]
+            - cell "BRAZIL PROCUREMENT OFFICE Empresa" [ref=e98]:
+              - generic [ref=e99]: BRAZIL PROCUREMENT OFFICE
+              - generic [ref=e100]: Empresa
+            - cell "GUSTAVO" [ref=e101]
+            - cell "polo" [ref=e102]
+            - cell "10" [ref=e103]
+            - cell "22/06/2026" [ref=e104]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e105]:
+              - generic "Etapa 5 de 4" [ref=e106]:
+                - generic "Dados" [ref=e107]
+                - generic "Tam." [ref=e108]
+                - generic "Arq." [ref=e109]
+                - generic "Pag." [ref=e110]
+                - generic "OK" [ref=e111]
+            - cell "5. Confirmação" [ref=e112]:
+              - generic [ref=e113]: 5. Confirmação
+            - cell "Link Tamanhos Link Arte" [ref=e114]:
+              - generic [ref=e115]:
+                - button "Link Tamanhos" [ref=e116] [cursor=pointer]:
+                  - img [ref=e117]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e120] [cursor=pointer]:
+                  - img [ref=e121]
+                  - text: Link Arte
+            - cell "Abrir Dup. PDF" [ref=e124]:
+              - generic [ref=e125]:
+                - link "Abrir" [ref=e126] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/RHyKufuywBIFkmTOqe62/
+                  - img [ref=e127]
+                  - text: Abrir
+                - button "Dup." [ref=e131] [cursor=pointer]:
+                  - img [ref=e132]
+                  - text: Dup.
+                - link "PDF" [ref=e135] [cursor=pointer]:
+                  - /url: /formalizarpedido/confirmacao/RHyKufuywBIFkmTOqe62/
+          - row "CÓPIA-CÓPIA-3169 - 11/05 - CALÇA MOLETOM Elena Tortelli Salgado da Silva Pessoa Física GUSTAVO calca moletom 9 22/06/2026 Dados Tam. Arq. Pag. OK 5. Confirmação Link Tamanhos Link Arte Abrir Dup. PDF" [ref=e136]:
+            - cell "CÓPIA-CÓPIA-3169 - 11/05 - CALÇA MOLETOM" [ref=e137]
+            - cell "Elena Tortelli Salgado da Silva Pessoa Física" [ref=e138]:
+              - generic [ref=e139]: Elena Tortelli Salgado da Silva
+              - generic [ref=e140]: Pessoa Física
+            - cell "GUSTAVO" [ref=e141]
+            - cell "calca moletom" [ref=e142]
+            - cell "9" [ref=e143]
+            - cell "22/06/2026" [ref=e144]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e145]:
+              - generic "Etapa 5 de 4" [ref=e146]:
+                - generic "Dados" [ref=e147]
+                - generic "Tam." [ref=e148]
+                - generic "Arq." [ref=e149]
+                - generic "Pag." [ref=e150]
+                - generic "OK" [ref=e151]
+            - cell "5. Confirmação" [ref=e152]:
+              - generic [ref=e153]: 5. Confirmação
+            - cell "Link Tamanhos Link Arte" [ref=e154]:
+              - generic [ref=e155]:
+                - button "Link Tamanhos" [ref=e156] [cursor=pointer]:
+                  - img [ref=e157]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e160] [cursor=pointer]:
+                  - img [ref=e161]
+                  - text: Link Arte
+            - cell "Abrir Dup. PDF" [ref=e164]:
+              - generic [ref=e165]:
+                - link "Abrir" [ref=e166] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/peJAY4LMVhv6nA3sOQaI/
+                  - img [ref=e167]
+                  - text: Abrir
+                - button "Dup." [ref=e171] [cursor=pointer]:
+                  - img [ref=e172]
+                  - text: Dup.
+                - link "PDF" [ref=e175] [cursor=pointer]:
+                  - /url: /formalizarpedido/confirmacao/peJAY4LMVhv6nA3sOQaI/
+          - row "CÓPIA-3169 - 11/05 - CASACO DE MOLETOM 3 CABOS / COM ZIPER Elena Tortelli Salgado da Silva Pessoa Física GUSTAVO moletom canguru 10 22/06/2026 Dados Tam. Arq. Pag. OK 2. Tamanhos Link Tamanhos Link Arte Abrir Dup." [ref=e176]:
+            - cell "CÓPIA-3169 - 11/05 - CASACO DE MOLETOM 3 CABOS / COM ZIPER" [ref=e177]
+            - cell "Elena Tortelli Salgado da Silva Pessoa Física" [ref=e178]:
+              - generic [ref=e179]: Elena Tortelli Salgado da Silva
+              - generic [ref=e180]: Pessoa Física
+            - cell "GUSTAVO" [ref=e181]
+            - cell "moletom canguru" [ref=e182]
+            - cell "10" [ref=e183]
+            - cell "22/06/2026" [ref=e184]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e185]:
+              - generic "Etapa 2 de 4" [ref=e186]:
+                - generic "Dados" [ref=e187]
+                - generic "Tam." [ref=e188]
+                - generic "Arq." [ref=e189]
+                - generic "Pag." [ref=e190]
+                - generic "OK" [ref=e191]
+            - cell "2. Tamanhos" [ref=e192]:
+              - generic [ref=e193]: 2. Tamanhos
+            - cell "Link Tamanhos Link Arte" [ref=e194]:
+              - generic [ref=e195]:
+                - button "Link Tamanhos" [ref=e196] [cursor=pointer]:
+                  - img [ref=e197]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e200] [cursor=pointer]:
+                  - img [ref=e201]
+                  - text: Link Arte
+            - cell "Abrir Dup." [ref=e204]:
+              - generic [ref=e205]:
+                - link "Abrir" [ref=e206] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/ctLCJlWynNP2vDppqNus/
+                  - img [ref=e207]
+                  - text: Abrir
+                - button "Dup." [ref=e211] [cursor=pointer]:
+                  - img [ref=e212]
+                  - text: Dup.
+          - row "3169 - 11/05 - CASACO DE MOLETOM 3 CABOS Elena Tortelli Salgado da Silva Pessoa Física GUSTAVO moletom canguru 9 22/06/2026 Dados Tam. Arq. Pag. OK 3. Arquivos Link Tamanhos Link Arte Abrir Dup." [ref=e215]:
+            - cell "3169 - 11/05 - CASACO DE MOLETOM 3 CABOS" [ref=e216]
+            - cell "Elena Tortelli Salgado da Silva Pessoa Física" [ref=e217]:
+              - generic [ref=e218]: Elena Tortelli Salgado da Silva
+              - generic [ref=e219]: Pessoa Física
+            - cell "GUSTAVO" [ref=e220]
+            - cell "moletom canguru" [ref=e221]
+            - cell "9" [ref=e222]
+            - cell "22/06/2026" [ref=e223]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e224]:
+              - generic "Etapa 3 de 4" [ref=e225]:
+                - generic "Dados" [ref=e226]
+                - generic "Tam." [ref=e227]
+                - generic "Arq." [ref=e228]
+                - generic "Pag." [ref=e229]
+                - generic "OK" [ref=e230]
+            - cell "3. Arquivos" [ref=e231]:
+              - generic [ref=e232]: 3. Arquivos
+            - cell "Link Tamanhos Link Arte" [ref=e233]:
+              - generic [ref=e234]:
+                - button "Link Tamanhos" [ref=e235] [cursor=pointer]:
+                  - img [ref=e236]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e239] [cursor=pointer]:
+                  - img [ref=e240]
+                  - text: Link Arte
+            - cell "Abrir Dup." [ref=e243]:
+              - generic [ref=e244]:
+                - link "Abrir" [ref=e245] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/XpL663JePqfS86MaNB2z/
+                  - img [ref=e246]
+                  - text: Abrir
+                - button "Dup." [ref=e250] [cursor=pointer]:
+                  - img [ref=e251]
+                  - text: Dup.
+          - row "3169 - 11/05 - CAMISETAS PV Elena Tortelli Salgado da Silva Pessoa Física GUSTAVO camiseta babylook 22 22/06/2026 Dados Tam. Arq. Pag. OK 5. Confirmação Link Tamanhos Link Arte Abrir Dup. PDF" [ref=e254]:
+            - cell "3169 - 11/05 - CAMISETAS PV" [ref=e255]
+            - cell "Elena Tortelli Salgado da Silva Pessoa Física" [ref=e256]:
+              - generic [ref=e257]: Elena Tortelli Salgado da Silva
+              - generic [ref=e258]: Pessoa Física
+            - cell "GUSTAVO" [ref=e259]
+            - cell "camiseta babylook" [ref=e260]
+            - cell "22" [ref=e261]
+            - cell "22/06/2026" [ref=e262]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e263]:
+              - generic "Etapa 5 de 4" [ref=e264]:
+                - generic "Dados" [ref=e265]
+                - generic "Tam." [ref=e266]
+                - generic "Arq." [ref=e267]
+                - generic "Pag." [ref=e268]
+                - generic "OK" [ref=e269]
+            - cell "5. Confirmação" [ref=e270]:
+              - generic [ref=e271]: 5. Confirmação
+            - cell "Link Tamanhos Link Arte" [ref=e272]:
+              - generic [ref=e273]:
+                - button "Link Tamanhos" [ref=e274] [cursor=pointer]:
+                  - img [ref=e275]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e278] [cursor=pointer]:
+                  - img [ref=e279]
+                  - text: Link Arte
+            - cell "Abrir Dup. PDF" [ref=e282]:
+              - generic [ref=e283]:
+                - link "Abrir" [ref=e284] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/fyVsJVIwS2FbWswQ9fz1/
+                  - img [ref=e285]
+                  - text: Abrir
+                - button "Dup." [ref=e289] [cursor=pointer]:
+                  - img [ref=e290]
+                  - text: Dup.
+                - link "PDF" [ref=e293] [cursor=pointer]:
+                  - /url: /formalizarpedido/confirmacao/fyVsJVIwS2FbWswQ9fz1/
+          - row "7442 - 08/2026 SOFIA KOCK HACK Pessoa Física GUSTAVO camiseta basica 10 17/06/2026 Dados Tam. Arq. Pag. OK 5. Confirmação Link Tamanhos Link Arte Abrir Dup. PDF" [ref=e294]:
+            - cell "7442 - 08/2026" [ref=e295]
+            - cell "SOFIA KOCK HACK Pessoa Física" [ref=e296]:
+              - generic [ref=e297]: SOFIA KOCK HACK
+              - generic [ref=e298]: Pessoa Física
+            - cell "GUSTAVO" [ref=e299]
+            - cell "camiseta basica" [ref=e300]
+            - cell "10" [ref=e301]
+            - cell "17/06/2026" [ref=e302]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e303]:
+              - generic "Etapa 5 de 4" [ref=e304]:
+                - generic "Dados" [ref=e305]
+                - generic "Tam." [ref=e306]
+                - generic "Arq." [ref=e307]
+                - generic "Pag." [ref=e308]
+                - generic "OK" [ref=e309]
+            - cell "5. Confirmação" [ref=e310]:
+              - generic [ref=e311]: 5. Confirmação
+            - cell "Link Tamanhos Link Arte" [ref=e312]:
+              - generic [ref=e313]:
+                - button "Link Tamanhos" [ref=e314] [cursor=pointer]:
+                  - img [ref=e315]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e318] [cursor=pointer]:
+                  - img [ref=e319]
+                  - text: Link Arte
+            - cell "Abrir Dup. PDF" [ref=e322]:
+              - generic [ref=e323]:
+                - link "Abrir" [ref=e324] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/AmiuzDqgRRXUjJGPTvEk/
+                  - img [ref=e325]
+                  - text: Abrir
+                - button "Dup." [ref=e329] [cursor=pointer]:
+                  - img [ref=e330]
+                  - text: Dup.
+                - link "PDF" [ref=e333] [cursor=pointer]:
+                  - /url: /formalizarpedido/confirmacao/AmiuzDqgRRXUjJGPTvEk/
+          - row "4269 Gustavo Pessoa Física Gustavo camiseta basica 10 09/06/2026 Dados Tam. Arq. Pag. OK 5. Confirmação Link Tamanhos Link Arte Abrir Dup. PDF" [ref=e334]:
+            - cell "4269" [ref=e335]
+            - cell "Gustavo Pessoa Física" [ref=e336]:
+              - generic [ref=e337]: Gustavo
+              - generic [ref=e338]: Pessoa Física
+            - cell "Gustavo" [ref=e339]
+            - cell "camiseta basica" [ref=e340]
+            - cell "10" [ref=e341]
+            - cell "09/06/2026" [ref=e342]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e343]:
+              - generic "Etapa 5 de 4" [ref=e344]:
+                - generic "Dados" [ref=e345]
+                - generic "Tam." [ref=e346]
+                - generic "Arq." [ref=e347]
+                - generic "Pag." [ref=e348]
+                - generic "OK" [ref=e349]
+            - cell "5. Confirmação" [ref=e350]:
+              - generic [ref=e351]: 5. Confirmação
+            - cell "Link Tamanhos Link Arte" [ref=e352]:
+              - generic [ref=e353]:
+                - button "Link Tamanhos" [ref=e354] [cursor=pointer]:
+                  - img [ref=e355]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e358] [cursor=pointer]:
+                  - img [ref=e359]
+                  - text: Link Arte
+            - cell "Abrir Dup. PDF" [ref=e362]:
+              - generic [ref=e363]:
+                - link "Abrir" [ref=e364] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/cuoefkvBSwVvoNCqcECs/
+                  - img [ref=e365]
+                  - text: Abrir
+                - button "Dup." [ref=e369] [cursor=pointer]:
+                  - img [ref=e370]
+                  - text: Dup.
+                - link "PDF" [ref=e373] [cursor=pointer]:
+                  - /url: /formalizarpedido/confirmacao/cuoefkvBSwVvoNCqcECs/
+          - row "5151 hjbjhbhbj Pessoa Física njnjnj bermuda 50 29/05/2026 Dados Tam. Arq. Pag. OK 5. Confirmação Link Tamanhos Link Arte Abrir Dup. PDF" [ref=e374]:
+            - cell "5151" [ref=e375]
+            - cell "hjbjhbhbj Pessoa Física" [ref=e376]:
+              - generic [ref=e377]: hjbjhbhbj
+              - generic [ref=e378]: Pessoa Física
+            - cell "njnjnj" [ref=e379]
+            - cell "bermuda" [ref=e380]
+            - cell "50" [ref=e381]
+            - cell "29/05/2026" [ref=e382]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e383]:
+              - generic "Etapa 5 de 4" [ref=e384]:
+                - generic "Dados" [ref=e385]
+                - generic "Tam." [ref=e386]
+                - generic "Arq." [ref=e387]
+                - generic "Pag." [ref=e388]
+                - generic "OK" [ref=e389]
+            - cell "5. Confirmação" [ref=e390]:
+              - generic [ref=e391]: 5. Confirmação
+            - cell "Link Tamanhos Link Arte" [ref=e392]:
+              - generic [ref=e393]:
+                - button "Link Tamanhos" [ref=e394] [cursor=pointer]:
+                  - img [ref=e395]
+                  - text: Link Tamanhos
+                - button "Link Arte" [ref=e398] [cursor=pointer]:
+                  - img [ref=e399]
+                  - text: Link Arte
+            - cell "Abrir Dup. PDF" [ref=e402]:
+              - generic [ref=e403]:
+                - link "Abrir" [ref=e404] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/tBIE6717zFVf3zmIPPmi/
+                  - img [ref=e405]
+                  - text: Abrir
+                - button "Dup." [ref=e409] [cursor=pointer]:
+                  - img [ref=e410]
+                  - text: Dup.
+                - link "PDF" [ref=e413] [cursor=pointer]:
+                  - /url: /formalizarpedido/confirmacao/tBIE6717zFVf3zmIPPmi/
+          - row "2026-0001 SARAH ORLOV TAHA Pessoa Física Gustavo camiseta basica 15 22/05/2026 Dados Tam. Arq. Pag. OK 1. Dados Link Arte Abrir Dup." [ref=e414]:
+            - cell "2026-0001" [ref=e415]
+            - cell "SARAH ORLOV TAHA Pessoa Física" [ref=e416]:
+              - generic [ref=e417]: SARAH ORLOV TAHA
+              - generic [ref=e418]: Pessoa Física
+            - cell "Gustavo" [ref=e419]
+            - cell "camiseta basica" [ref=e420]
+            - cell "15" [ref=e421]
+            - cell "22/05/2026" [ref=e422]
+            - cell "Dados Tam. Arq. Pag. OK" [ref=e423]:
+              - generic "Etapa 1 de 4" [ref=e424]:
+                - generic "Dados" [ref=e425]
+                - generic "Tam." [ref=e426]
+                - generic "Arq." [ref=e427]
+                - generic "Pag." [ref=e428]
+                - generic "OK" [ref=e429]
+            - cell "1. Dados" [ref=e430]:
+              - generic [ref=e431]: 1. Dados
+            - cell "Link Arte" [ref=e432]:
+              - button "Link Arte" [ref=e434] [cursor=pointer]:
+                - img [ref=e435]
+                - text: Link Arte
+            - cell "Abrir Dup." [ref=e438]:
+              - generic [ref=e439]:
+                - link "Abrir" [ref=e440] [cursor=pointer]:
+                  - /url: /formalizarpedido/pedido/WEFIMuuLF3Bivqve1YZX/
+                  - img [ref=e441]
+                  - text: Abrir
+                - button "Dup." [ref=e445] [cursor=pointer]:
+                  - img [ref=e446]
+                  - text: Dup.
+      - paragraph [ref=e45]: 10 pedido(s) exibido(s)
+  - alert [ref=e46]

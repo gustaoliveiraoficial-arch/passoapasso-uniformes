@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - main [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - textbox [ref=e13]: Checkout A
+            - generic [ref=e14]:
+              - img [ref=e16] [cursor=pointer]
+              - img [ref=e19] [cursor=pointer]
+          - generic [ref=e21]:
+            - generic [ref=e23]:
+              - img [ref=e24]
+              - text: Tudo certo!
+            - button "Salvar checkout" [ref=e26] [cursor=pointer]
+            - button "Pré-visualizar" [ref=e27] [cursor=pointer]:
+              - text: Pré-visualizar
+              - img [ref=e28]
+        - generic [ref=e32]:
+          - generic [ref=e41]:
+            - img [ref=e43]
+            - generic [ref=e46]:
+              - generic [ref=e49]: 168:52:08
+              - img [ref=e50]
+              - generic [ref=e52]: 🔥 Preço de lançamento encerra em
+          - generic [ref=e63]:
+            - generic [ref=e67]:
+              - generic [ref=e210]:
+                - img [ref=e212] [cursor=pointer]
+                - img [ref=e215] [cursor=pointer]
+                - img [ref=e218] [cursor=pointer]
+              - generic [ref=e78]: Pódio de Vendas
+            - generic [ref=e84]:
+              - generic [ref=e91]:
+                - img [ref=e92]
+                - generic [ref=e94]:
+                  - generic [ref=e95]: 🏆 Ranking ao vivo na TV
+                  - generic [ref=e96]: Mostre o pódio em tempo real para toda a equipe
+              - img [ref=e102]:
+                - generic [ref=e114]: Segurança
+                - generic [ref=e115]: Garantida
+      - dialog "Linha" [ref=e220]:
+        - generic [ref=e222]:
+          - generic [ref=e224]:
+            - heading "Header" [level=2] [ref=e225]
+            - generic [ref=e226]:
+              - button [ref=e227] [cursor=pointer]:
+                - img [ref=e228]
+              - button [ref=e230] [cursor=pointer]:
+                - img [ref=e231]
+              - button "Close panel" [ref=e233] [cursor=pointer]:
+                - generic [ref=e234]: Close panel
+                - img [ref=e235]
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: Background
+              - img [ref=e244] [cursor=pointer]
+            - generic [ref=e254]:
+              - generic [ref=e255]: Imagem do produto
+              - combobox [ref=e256]:
+                - option "Usar imagem do produto" [selected]
+                - option "Fazer upload de imagem"
+                - option "Nenhuma imagem"
+            - generic [ref=e257]:
+              - generic [ref=e258]: Alinhamento da imagem
+              - generic [ref=e259]:
+                - img [ref=e261] [cursor=pointer]
+                - img [ref=e264] [cursor=pointer]
+            - generic [ref=e266]:
+              - generic [ref=e267]: Título
+              - generic [ref=e268]:
+                - generic [ref=e270]:
+                  - generic [ref=e271]: Tamanho
+                  - spinbutton "Tamanho" [ref=e272]: "24"
+                - generic [ref=e273]:
+                  - generic [ref=e274]: Cor
+                  - button [ref=e278] [cursor=pointer]
+            - generic [ref=e280]:
+              - checkbox [ref=e281] [cursor=pointer]
+              - generic [ref=e283] [cursor=pointer]: Exibir descrição
+      - generic [ref=e119]:
+        - navigation "Tabs" [ref=e122]:
+          - generic [ref=e123] [cursor=pointer]: Componentes
+          - generic [ref=e125] [cursor=pointer]: Linhas
+          - generic [ref=e127] [cursor=pointer]: Configurações
+        - generic [ref=e129]:
+          - generic [ref=e131]: Componentes
+          - generic [ref=e132]:
+            - generic [ref=e134] [cursor=pointer]:
+              - img [ref=e135]
+              - generic [ref=e137]: Texto
+            - generic [ref=e139] [cursor=pointer]:
+              - img [ref=e140]
+              - generic [ref=e142]: Imagem
+            - generic [ref=e144] [cursor=pointer]:
+              - img [ref=e145]
+              - generic [ref=e147]: Vantagens
+            - generic [ref=e149] [cursor=pointer]:
+              - img [ref=e150]
+              - generic [ref=e152]: Selo
+            - generic [ref=e154] [cursor=pointer]:
+              - img [ref=e155]
+              - generic [ref=e157]: Header
+            - generic [ref=e159] [cursor=pointer]:
+              - img [ref=e160]
+              - generic [ref=e163]: Lista
+            - generic [ref=e165] [cursor=pointer]:
+              - img [ref=e166]
+              - generic [ref=e168]: Cronômetro
+            - generic [ref=e170] [cursor=pointer]:
+              - img [ref=e171]
+              - generic [ref=e173]: Depoimento
+            - generic [ref=e175] [cursor=pointer]:
+              - img [ref=e176]
+              - generic [ref=e178]: Vídeo
+            - generic [ref=e180] [cursor=pointer]:
+              - img "Logo Facebook" [ref=e181]
+              - generic [ref=e183]: Facebook
+          - generic [ref=e184]:
+            - generic [ref=e185]: Componentes extra
+            - generic [ref=e187]:
+              - generic [ref=e188] [cursor=pointer]:
+                - generic [ref=e189]:
+                  - img [ref=e191]
+                  - generic [ref=e194]: Exit Popup
+                - checkbox [ref=e197]
+              - generic [ref=e199] [cursor=pointer]:
+                - generic [ref=e200]:
+                  - img [ref=e202]
+                  - generic [ref=e204]: Chat
+                - checkbox [ref=e207]
+  - img

@@ -22,7 +22,7 @@ export function PricingTable({ category }: { category: Category }) {
         <table className="pricing-table">
           <thead>
             <tr>
-              <th>Modelo / Tecido</th>
+              <th>Material</th>
               {allTiers.map(qty => (
                 <th key={qty} className="text-center">{qty}</th>
               ))}
