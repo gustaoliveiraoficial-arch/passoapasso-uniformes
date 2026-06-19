@@ -5,7 +5,7 @@ import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
   buscarPedido, atualizarStatus, salvarTamanhos,
-  uploadArquivo, atualizarPedido, duplicarPedido
+  uploadArquivo, atualizarPedido, duplicarPedido, atualizarModeloArquivos
 } from '@/lib/firebase'
 import type { Pedido, PieceEntry, CategoriaSize, ClienteEmpresa, ClientePF, TipoEstampa, DetalhesPeca, ModeloPedido } from '@/types/pedido'
 import {
@@ -134,6 +134,7 @@ export default function PedidoDetalhe() {
   const [pecasEditaveis, setPecasEditaveis] = useState<PieceEntry[]>([])
   const [editModal, setEditModal] = useState(false)
   const [editForm, setEditForm] = useState<Partial<Pedido>>({})
+  const [valorNegociacaoDisplay, setValorNegociacaoDisplay] = useState('')
   const [modelosEdit, setModelosEdit] = useState<ModeloFormEdit[]>([])
   const [salvandoEdit, setSalvandoEdit] = useState(false)
   const [duplicando, setDuplicando] = useState(false)
@@ -478,8 +479,18 @@ export default function PedidoDetalhe() {
   async function removerArquivo(url: string, pasta: 'layouts' | 'vetores') {
     if (!pedido) return
     const campo = pasta === 'layouts' ? 'layoutImages' : 'vetoresFiles'
-    const atual = pasta === 'layouts' ? pedido.layoutImages : pedido.vetoresFiles
-    await atualizarPedido(id, { [campo]: atual.filter(u => u !== url) })
+    if (pedido.modelos && pedido.modelos.length > 0) {
+      // Multi-modelo: top-level layoutImages reflete modelo 0 via atualizarModeloArquivos.
+      // Atualizar via atualizarModeloArquivos mantém top-level e modelos[0] em sincronia,
+      // evitando que futuras chamadas de atualizarModeloArquivos revertam a exclusão.
+      const modeloId = pedido.modelos[0].id
+      const modeloObj = pedido.modelos[0]
+      const atualModelo = pasta === 'layouts' ? (modeloObj.layoutImages ?? []) : (modeloObj.vetoresFiles ?? [])
+      await atualizarModeloArquivos(id, modeloId, { [campo]: atualModelo.filter(u => u !== url) })
+    } else {
+      const atual = pasta === 'layouts' ? pedido.layoutImages : pedido.vetoresFiles
+      await atualizarPedido(id, { [campo]: atual.filter(u => u !== url) })
+    }
     toast.success('Arquivo removido')
     await carregar()
   }
@@ -541,38 +552,78 @@ export default function PedidoDetalhe() {
       clienteEmpresa: pedido.clienteEmpresa ? { ...pedido.clienteEmpresa } : undefined,
       clientePF: pedido.clientePF ? { ...pedido.clientePF } : undefined,
     })
+    const vAbs = Math.abs(pedido.valorNegociacao ?? 0)
+    setValorNegociacaoDisplay(vAbs > 0 ? vAbs.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '')
     setEditModal(true)
   }
 
   async function salvarEdicao() {
     setSalvandoEdit(true)
     try {
-      const modelosSalvos: ModeloPedido[] = modelosEdit.map(m => ({
-        id: m.id,
-        modelo: m.modelo,
-        material: m.material,
-        cor: m.cor,
-        corPersonalizada: m.corPersonalizada,
-        fornecedor: m.fornecedor,
-        detalhes: m.detalhes,
-        tiposEstampa: m.tiposEstampa,
-        precoUnitario: Number(m.precoUnitario) || 0,
-        quantidadeTotal: Number(m.quantidadeTotal) || 0,
-        referenciaUnissex: m.referenciaUnissex,
-        referenciaBabylook: m.referenciaBabylook,
-        referenciaInfantil: m.referenciaInfantil,
-        mensagemMockup: m.mensagemMockup,
-        pecas: [],
-        layoutImages: [],
-        vetoresFiles: [],
-      }))
+      const isLegado = !pedido?.modelos || pedido.modelos.length === 0
+      const modelosSalvos: ModeloPedido[] = modelosEdit.map(m => {
+        const modeloExistente = pedido?.modelos?.find(em => em.id === m.id)
+        const novaQtd = Number(m.quantidadeTotal) || 0
+        // Para pedidos legados (sem modelos[]), usa pedido.pecas como base
+        const pecasExistentes: PieceEntry[] = modeloExistente?.pecas ?? (isLegado ? (pedido?.pecas || []) : [])
+
+        // Ajusta o array de peças automaticamente quando a quantidade muda
+        let pecasAjustadas = pecasExistentes
+        if (novaQtd !== pecasExistentes.length) {
+          if (novaQtd > pecasExistentes.length) {
+            // Aumentou: adiciona peças vazias no final
+            const catDefault: CategoriaSize = 'unissex'
+            const novas: PieceEntry[] = Array.from({ length: novaQtd - pecasExistentes.length }, () => ({
+              id: uuidv4(),
+              pessoaNome: '',
+              nomeNaCamiseta: '',
+              numeroNaCamiseta: '',
+              categoria: catDefault,
+              tamanho: '',
+              precoUnitario: 0,
+            }))
+            pecasAjustadas = [...pecasExistentes, ...novas]
+          } else {
+            // Diminuiu: mantém preenchidas primeiro, remove vazias depois
+            const preenchidas = pecasExistentes.filter(p => p.tamanho || p.nomeNaCamiseta || p.numeroNaCamiseta)
+            const vazias = pecasExistentes.filter(p => !p.tamanho && !p.nomeNaCamiseta && !p.numeroNaCamiseta)
+            if (novaQtd >= preenchidas.length) {
+              pecasAjustadas = [...preenchidas, ...vazias.slice(0, novaQtd - preenchidas.length)]
+            } else {
+              pecasAjustadas = preenchidas.slice(0, novaQtd)
+            }
+          }
+        }
+
+        return {
+          id: m.id,
+          modelo: m.modelo,
+          material: m.material,
+          cor: m.cor,
+          corPersonalizada: m.corPersonalizada,
+          fornecedor: m.fornecedor,
+          detalhes: m.detalhes,
+          tiposEstampa: m.tiposEstampa,
+          precoUnitario: Number(m.precoUnitario) || 0,
+          quantidadeTotal: novaQtd,
+          referenciaUnissex: m.referenciaUnissex,
+          referenciaBabylook: m.referenciaBabylook,
+          referenciaInfantil: m.referenciaInfantil,
+          mensagemMockup: m.mensagemMockup,
+          pecas: pecasAjustadas,
+          layoutImages: modeloExistente?.layoutImages ?? (isLegado ? (pedido?.layoutImages || []) : []),
+          vetoresFiles: modeloExistente?.vetoresFiles ?? (isLegado ? (pedido?.vetoresFiles || []) : []),
+        }
+      })
 
       const primeiro = modelosSalvos[0]
       const quantidadeTotal = modelosSalvos.reduce((s, m) => s + m.quantidadeTotal, 0)
+      const todasPecas = modelosSalvos.flatMap(m => m.pecas)
 
       await atualizarPedido(id, {
         ...editForm,
         modelos: modelosSalvos,
+        pecas: todasPecas,
         modelo: primeiro.modelo,
         material: primeiro.material,
         cor: primeiro.cor,
@@ -1933,7 +1984,7 @@ export default function PedidoDetalhe() {
                       <input className="input-base" value={editForm.clienteEmpresa?.inscricaoEstadual || ''} onChange={e => setEmpresa('inscricaoEstadual', e.target.value)} placeholder="Ex: 123.456.789" />
                     </div>
                     <div>
-                      <label className="label-base text-xs">Contato</label>
+                      <label className="label-base text-xs">Responsável pelo pedido</label>
                       <input className="input-base" value={editForm.clienteEmpresa?.contato || ''} onChange={e => setEmpresa('contato', e.target.value)} />
                     </div>
                     <div>
@@ -2049,12 +2100,23 @@ export default function PedidoDetalhe() {
                   <div>
                     <label className="label-base text-xs">Valor (R$)</label>
                     <input
-                      type="number" min={0} step={0.01}
+                      type="text" inputMode="decimal"
                       className="input-base"
                       placeholder="0,00"
-                      value={editForm.valorNegociacao !== undefined && editForm.valorNegociacao !== 0 ? Math.abs(editForm.valorNegociacao) : ''}
+                      value={valorNegociacaoDisplay}
                       onChange={e => {
-                        const val = parseFloat(e.target.value) || 0
+                        // Mantém só dígitos e vírgula
+                        let raw = e.target.value.replace(/[^\d,]/g, '')
+                        // Só uma vírgula
+                        const parts = raw.split(',')
+                        if (parts.length > 2) raw = parts[0] + ',' + parts.slice(1).join('')
+                        // Formata parte inteira com pontos de milhar
+                        const intPart = (parts[0] || '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+                        const decPart = parts.length > 1 ? ',' + parts[1] : ''
+                        setValorNegociacaoDisplay(intPart + decPart)
+                        // Valor numérico
+                        const numStr = raw.replace(/\./g, '').replace(',', '.')
+                        const val = parseFloat(numStr) || 0
                         const sign = (editForm.valorNegociacao ?? 0) <= 0 ? -1 : 1
                         setEditForm(f => ({ ...f, valorNegociacao: val === 0 ? 0 : val * sign }))
                       }}
@@ -2073,8 +2135,8 @@ export default function PedidoDetalhe() {
                 {(editForm.valorNegociacao ?? 0) !== 0 && (
                   <p className={`text-sm font-bold mt-2 ${(editForm.valorNegociacao ?? 0) > 0 ? 'text-green-700' : 'text-red-600'}`}>
                     {(editForm.valorNegociacao ?? 0) > 0
-                      ? `Acréscimo de R$ ${(editForm.valorNegociacao ?? 0).toFixed(2)}`
-                      : `Desconto de R$ ${Math.abs(editForm.valorNegociacao ?? 0).toFixed(2)}`}
+                      ? `Acréscimo de ${formatarMoeda(editForm.valorNegociacao ?? 0)}`
+                      : `Desconto de ${formatarMoeda(Math.abs(editForm.valorNegociacao ?? 0))}`}
                   </p>
                 )}
               </div>
