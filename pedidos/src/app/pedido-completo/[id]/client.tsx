@@ -40,6 +40,7 @@ export default function PedidoCompletoPage() {
   const [editandoObs, setEditandoObs] = useState(false)
   const [salvandoObs, setSalvandoObs] = useState(false)
   const [showRefs, setShowRefs] = useState(false)
+  const [imprimindo, setImprimindo] = useState(false)
 
   useEffect(() => {
     buscarPedido(id).then(p => {
@@ -51,6 +52,25 @@ export default function PedidoCompletoPage() {
       }
     })
   }, [id])
+
+  async function handleImprimir() {
+    setImprimindo(true)
+    const p = await buscarPedido(id)
+    if (p) {
+      setPedido(p)
+      if (p.observacao) {
+        setObservacao(p.observacao)
+        setShowObservacao(true)
+      }
+    }
+    // Aguarda o React re-renderizar com os dados novos antes de abrir o print
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setImprimindo(false)
+        window.print()
+      })
+    })
+  }
 
   // Auto-escala cada folha de produção para caber em 210mm sem overflow
   useEffect(() => {
@@ -88,8 +108,9 @@ export default function PedidoCompletoPage() {
     setSalvando(true)
     try {
       const num = numSistema.trim()
-      await atualizarPedido(pedido.id, { status: 'formalizado', numeroPedidoSistema: num })
-      setPedido(prev => prev ? { ...prev, status: 'formalizado', numeroPedidoSistema: num } : prev)
+      const agora = new Date().toISOString()
+      await atualizarPedido(pedido.id, { status: 'formalizado', numeroPedidoSistema: num, statusProducao: 'em_producao', dataEntradaProducao: agora })
+      setPedido(prev => prev ? { ...prev, status: 'formalizado', numeroPedidoSistema: num, statusProducao: 'em_producao', dataEntradaProducao: agora } : prev)
       setShowModalFormalizar(false)
       setNumSistema('')
     } catch {
@@ -221,10 +242,11 @@ export default function PedidoCompletoPage() {
             {showRefs ? '📋 Ocultar Referências' : '📋 Mostrar Referências'}
           </button>
           <button
-            onClick={() => window.print()}
-            className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition"
+            onClick={handleImprimir}
+            disabled={imprimindo}
+            className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition"
           >
-            <Printer size={16} /> Imprimir / Salvar PDF
+            <Printer size={16} /> {imprimindo ? 'Atualizando...' : 'Imprimir / Salvar PDF'}
           </button>
         </div>
       </div>
@@ -315,6 +337,9 @@ export default function PedidoCompletoPage() {
                         {isEmpresa ? 'Nome da Empresa' : 'Nome do Cliente'}
                       </div>
                       <div style={{ fontSize: 16, fontWeight: 900, color: '#1a1a1a', lineHeight: 1.1 }}>{nomeCliente}</div>
+                      {isEmpresa && empresa?.contato && (
+                        <div style={{ fontSize: 11, fontWeight: 600, color: '#374151', marginTop: 1 }}>Responsável pelo pedido: {empresa.contato}</div>
+                      )}
                       {telefone && <div style={{ fontSize: 10, color: '#555', marginTop: 2 }}>Tel: {telefone}</div>}
                     </div>
 
@@ -602,6 +627,12 @@ export default function PedidoCompletoPage() {
                   <InfoRow label="Vendedor" value={pedido.nomeVendedor} />
                   <InfoRow label="Qtd. de Peças" value={`${totalPecas} peças`} />
                   <InfoRow label="Total" value={formatarMoeda(totalPedido)} bold orange />
+                  {pedido.valorNegociacao ? (
+                    <InfoRow label="Valor Final da Negociação" value={formatarMoeda(pedido.valorNegociacao)} bold orange span2 />
+                  ) : null}
+                  {pedido.descricaoNegociacao ? (
+                    <InfoRow label="Obs. Negociação" value={pedido.descricaoNegociacao} span2 />
+                  ) : null}
                 </InfoGrid>
 
                 {/* Produto(s) */}

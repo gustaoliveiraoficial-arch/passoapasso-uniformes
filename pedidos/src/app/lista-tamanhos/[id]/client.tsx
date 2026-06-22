@@ -320,8 +320,8 @@ export default function ListaTamanhosPage() {
               <p className="text-xs font-bold text-blue-700 uppercase tracking-wide mb-1">Negociação / Ajuste Geral</p>
               <p className="text-sm text-blue-900 font-bold">
                 {(pedido.valorNegociacao ?? 0) > 0
-                  ? `Acréscimo: +R$ ${(pedido.valorNegociacao ?? 0).toFixed(2)}`
-                  : `Desconto: -R$ ${Math.abs(pedido.valorNegociacao ?? 0).toFixed(2)}`}
+                  ? `Acréscimo: +${formatarMoeda(pedido.valorNegociacao ?? 0)}`
+                  : `Desconto: -${formatarMoeda(Math.abs(pedido.valorNegociacao ?? 0))}`}
               </p>
               {pedido.descricaoNegociacao && (
                 <p className="text-xs text-blue-700 mt-1">{pedido.descricaoNegociacao}</p>

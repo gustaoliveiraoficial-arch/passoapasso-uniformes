@@ -749,7 +749,7 @@ export default function NovoPedido() {
                   <input className="input-base" value={telefoneEmpresa} onChange={e => setTelefoneEmpresa(e.target.value)} />
                 </div>
                 <div>
-                  <label className="label-base">Nome do Contato</label>
+                  <label className="label-base">Responsável pelo pedido</label>
                   <input className="input-base" value={contatoEmpresa} onChange={e => setContatoEmpresa(e.target.value)} />
                 </div>
                 <div>

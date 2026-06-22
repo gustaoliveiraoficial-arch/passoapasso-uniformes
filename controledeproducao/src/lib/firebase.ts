@@ -3,12 +3,17 @@ import {
   getFirestore,
   collection,
   doc,
+  getDoc,
   updateDoc,
+  deleteField,
   getDocs,
+  setDoc,
   query,
   orderBy,
-} from 'firebase/firestore/lite'
-import type { Pedido, StatusProducao } from '@/types/pedido'
+  onSnapshot,
+  arrayUnion,
+} from 'firebase/firestore'
+import type { Pedido, StatusProducao, MensagemMarcia } from '@/types/pedido'
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -28,10 +33,16 @@ export async function listarPedidosProducao(): Promise<Pedido[]> {
   const q = query(collection(db, 'pedidos'), orderBy('createdAt', 'desc'))
   const snap = await getDocs(q)
   const todos = snap.docs.map(d => ({ id: d.id, ...d.data() } as Pedido))
-  return todos.filter(p =>
-    (p.statusProducao === 'em_producao' || p.statusProducao === 'em_atraso' || p.statusProducao === 'pronto')
-    && p.status !== 'retirada'
-  )
+  return todos.filter(p => {
+    // Pedido já retirado pelo cliente → sai do kanban
+    if (p.dataRetirada && p.statusProducao !== 'em_conserto') return false
+    return (
+      p.statusProducao === 'em_producao' ||
+      p.statusProducao === 'em_atraso' ||
+      p.statusProducao === 'pronto' ||
+      p.statusProducao === 'em_conserto'
+    )
+  })
 }
 
 export async function atualizarProducao(id: string, dados: Partial<Pedido>): Promise<void> {
@@ -69,6 +80,18 @@ export async function moverParaPronto(id: string): Promise<void> {
   await atualizarProducao(id, { statusProducao: 'pronto' })
 }
 
+export async function moverConsertoParaPronto(id: string): Promise<void> {
+  // Remove statusProducao e dataRetirada para:
+  // 1. Sumir do controledeproducao
+  // 2. Voltar ao formalizarpedido com botão "Registrar Retirada"
+  const docRef = doc(db, 'pedidos', id)
+  await updateDoc(docRef, {
+    statusProducao: deleteField(),
+    dataRetirada: deleteField(),
+    updatedAt: new Date().toISOString(),
+  })
+}
+
 export async function moverParaEmProducao(id: string): Promise<void> {
   await atualizarProducao(id, {
     statusProducao: 'em_producao',
@@ -84,5 +107,60 @@ export async function enviarParaEntrega(id: string): Promise<void> {
     statusProducao: undefined,
     dataEntregaNovaProducao: undefined,
     motivoAtraso: undefined,
+  })
+}
+
+export async function enviarMensagemMarcia(pedidoId: string, mensagem: MensagemMarcia): Promise<void> {
+  const docRef = doc(db, 'pedidos', pedidoId)
+  await updateDoc(docRef, {
+    mensagensMarcia: arrayUnion(mensagem),
+    updatedAt: new Date().toISOString(),
+  })
+}
+
+export async function responderMensagemMarcia(
+  pedidoId: string,
+  mensagemId: string,
+  resposta: string,
+  mensagensAtuais: MensagemMarcia[]
+): Promise<void> {
+  const docRef = doc(db, 'pedidos', pedidoId)
+  const mensagensAtualizadas = mensagensAtuais.map(m =>
+    m.id === mensagemId
+      ? { ...m, resposta, respondidoEm: new Date().toISOString() }
+      : m
+  )
+  await updateDoc(docRef, {
+    mensagensMarcia: mensagensAtualizadas,
+    updatedAt: new Date().toISOString(),
+  })
+}
+
+// ── Listener em tempo real (onSnapshot) ──
+export function criarListenerPedidos(callback: (pedidos: Pedido[]) => void): () => void {
+  const q = query(collection(db, 'pedidos'), orderBy('createdAt', 'desc'))
+  return onSnapshot(q, snap => {
+    const todos = snap.docs.map(d => ({ id: d.id, ...d.data() } as Pedido))
+    const filtrados = todos.filter(p => {
+      if (p.dataRetirada && p.statusProducao !== 'em_conserto') return false
+      return (
+        p.statusProducao === 'em_producao' ||
+        p.statusProducao === 'em_atraso' ||
+        p.statusProducao === 'pronto' ||
+        p.statusProducao === 'em_conserto'
+      )
+    })
+    callback(filtrados)
+  })
+}
+
+// ── Salvar assinatura Web Push no Firestore ──
+export async function savePushSubscription(
+  deviceId: string,
+  subscription: Record<string, unknown>
+): Promise<void> {
+  await setDoc(doc(db, 'push_subscriptions', deviceId), {
+    ...subscription,
+    updatedAt: new Date().toISOString(),
   })
 }

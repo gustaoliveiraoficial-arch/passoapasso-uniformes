@@ -3,7 +3,7 @@ const UPLOAD_PRESET = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET
 
 export async function uploadParaCloudinary(
   file: File,
-  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada',
+  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada' | 'conserto',
   pedidoId: string
 ): Promise<string> {
   if (!CLOUD_NAME || !UPLOAD_PRESET) {

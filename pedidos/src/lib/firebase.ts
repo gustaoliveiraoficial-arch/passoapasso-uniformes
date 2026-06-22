@@ -6,6 +6,7 @@ import {
   addDoc,
   updateDoc,
   deleteDoc,
+  deleteField,
   getDoc,
   getDocs,
   query,
@@ -33,7 +34,7 @@ export { db }
 // Upload via Cloudinary (Firebase Storage não está ativo no plano atual)
 export async function uploadParaStorage(
   file: File,
-  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada',
+  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada' | 'conserto',
   pedidoId: string
 ): Promise<string> {
   return uploadParaCloudinary(file, pasta, pedidoId)
@@ -104,7 +105,7 @@ export async function salvarTamanhos(id: string, pecas: PieceEntry[]): Promise<v
 export async function uploadArquivo(
   pedidoId: string,
   file: File,
-  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada'
+  pasta: 'layouts' | 'vetores' | 'artes-cliente' | 'rascunho-vendedor' | 'recibo-pagamento' | 'comprovante-retirada' | 'conserto'
 ): Promise<string> {
   return uploadParaStorage(file, pasta, pedidoId)
 }
@@ -147,6 +148,10 @@ export async function atualizarModeloArquivos(
 
 export async function deletarPedido(id: string): Promise<void> {
   await deleteDoc(doc(db, 'pedidos', id))
+}
+
+export async function limparStatusProducao(id: string): Promise<void> {
+  await updateDoc(doc(db, 'pedidos', id), { statusProducao: deleteField() })
 }
 
 export async function duplicarPedido(idOriginal: string): Promise<string> {

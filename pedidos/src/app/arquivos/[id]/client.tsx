@@ -49,9 +49,13 @@ export default function ArquivosArteFinalista() {
     setPedido(p)
     // Inicializa modelo ativo para multi-modelo
     if (p?.modelos && p.modelos.length > 0) {
-      setModeloAtivo(prev => prev || p.modelos![0].id)
+      // Valida o modeloAtivo contra os IDs reais — evita ID stale após edição do pedido
+      setModeloAtivo(prev => {
+        if (prev && p.modelos!.some(m => m.id === prev)) return prev
+        return p.modelos![0].id
+      })
       // Carrega quadros do modelo ativo (ou do primeiro modelo)
-      const mId = modeloAtivo || p.modelos[0].id
+      const mId = modeloAtivo && p.modelos.some(m => m.id === modeloAtivo) ? modeloAtivo : p.modelos[0].id
       const modeloAtual = p.modelos.find(m => m.id === mId) ?? p.modelos[0]
       if (modeloAtual.estampaQuadros?.length) setQuadros(modeloAtual.estampaQuadros)
       else setQuadros([])
@@ -111,7 +115,13 @@ export default function ArquivosArteFinalista() {
     const campo = pasta === 'layouts' ? 'layoutImages' : 'vetoresFiles'
     if (pedido.modelos && pedido.modelos.length > 0 && modeloAtivo) {
       const modeloAtualObj = pedido.modelos.find(m => m.id === modeloAtivo)
-      const atualModelo = pasta === 'layouts' ? (modeloAtualObj?.layoutImages ?? []) : (modeloAtualObj?.vetoresFiles ?? [])
+      if (!modeloAtualObj) {
+        // ID do modelo ficou desatualizado (pedido foi editado em outra sessão)
+        toast.error('Modelo não encontrado — recarregando página...')
+        await carregar()
+        return
+      }
+      const atualModelo = pasta === 'layouts' ? (modeloAtualObj.layoutImages ?? []) : (modeloAtualObj.vetoresFiles ?? [])
       await atualizarModeloArquivos(id, modeloAtivo, { [campo]: atualModelo.filter(u => u !== url) })
     } else {
       const atual = pasta === 'layouts' ? (pedido.layoutImages ?? []) : (pedido.vetoresFiles ?? [])
@@ -187,7 +197,11 @@ export default function ArquivosArteFinalista() {
 
   async function confirmarArquivos() {
     if (!pedido) return
-    if (!pedido.layoutImages?.length) { toast.error('Envie ao menos uma imagem de layout antes de confirmar.'); return }
+    const modeloAtivoObj = (pedido.modelos && pedido.modelos.length > 0 && modeloAtivo)
+      ? pedido.modelos.find(m => m.id === modeloAtivo) ?? pedido.modelos[0]
+      : null
+    const layoutsAtivos = modeloAtivoObj ? (modeloAtivoObj.layoutImages ?? []) : (pedido.layoutImages ?? [])
+    if (!layoutsAtivos.length) { toast.error('Envie ao menos uma imagem de layout antes de confirmar.'); return }
     await atualizarStatus(id, 'confirmacao')
     setConfirmado(true)
     toast.success('Arquivos confirmados!')
@@ -756,7 +770,7 @@ export default function ArquivosArteFinalista() {
               disabled={uploadandoLayouts} onChange={e => { if (e.target.files) { handleUpload(e.target.files, 'layouts'); e.target.value = '' } }} />
             {temLayouts && (
               <div className="space-y-2">
-                {pedido.layoutImages!.map((url, i) => (
+                {layoutImagesAtivos.map((url, i) => (
                   <div key={i} className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl border border-gray-200">
                     <img src={url} alt={`Layout ${i + 1}`} className="w-14 h-14 object-cover rounded-lg border border-gray-200 flex-shrink-0" />
                     <p className="text-sm font-semibold text-gray-800 flex-1">Layout {i + 1}</p>
@@ -779,7 +793,7 @@ export default function ArquivosArteFinalista() {
               <h2 className="font-bold text-gray-900">Arquivos Vetorizados</h2>
               <p className="text-xs text-gray-500">Arte para produção (PDF ou CorelDraw .cdr)</p>
             </div>
-            {temVetores && <span className="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-bold rounded-full">{pedido.vetoresFiles!.length}</span>}
+            {temVetores && <span className="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-bold rounded-full">{vetoresFilesAtivos.length}</span>}
           </div>
           <div className="p-5 space-y-4">
             <div className="bg-purple-50 rounded-xl p-3 flex items-start gap-2">
@@ -798,7 +812,7 @@ export default function ArquivosArteFinalista() {
               disabled={uploadandoVetores} onChange={e => { if (e.target.files) { handleUpload(e.target.files, 'vetores'); e.target.value = '' } }} />
             {temVetores && (
               <div className="space-y-2">
-                {pedido.vetoresFiles!.map((url, i) => {
+                {vetoresFilesAtivos.map((url, i) => {
                   const nome = decodeURIComponent(url.split('/').pop()?.split('?')[0] || `Arquivo ${i + 1}`)
                   const ext = nome.split('.').pop()?.toUpperCase() || 'ARQ'
                   return (

@@ -4,7 +4,7 @@ const nextConfig = {
   distDir: '../../../../../../temp/pedidos-build',
   basePath: '/formalizarpedido',
   trailingSlash: true,
-  images: {
+images: {
     unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'firebasestorage.googleapis.com' },

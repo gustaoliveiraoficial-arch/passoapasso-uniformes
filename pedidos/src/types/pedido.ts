@@ -2,7 +2,14 @@ export type ClienteType = 'empresa' | 'pessoa_fisica'
 
 export type StatusPedido = 'dados' | 'tamanhos' | 'arquivos' | 'pagamento' | 'confirmacao' | 'formalizado' | 'retirada'
 
-export type StatusProducao = 'em_producao' | 'em_atraso' | 'pronto'
+export type StatusProducao = 'em_producao' | 'em_atraso' | 'pronto' | 'em_conserto'
+
+export interface Conserto {
+  descricao: string
+  responsavel: 'nos' | 'cliente'
+  foto?: string
+  dataEnvio: string
+}
 
 export type CategoriaSize = 'unissex' | 'babylook' | 'feminino' | 'masculino' | 'infantil'
 
@@ -171,6 +178,7 @@ export interface Pedido {
   dataRetirada?: string
   comprovanteRetirada?: string[]
   observacaoRetirada?: string
+  statusPagamentoFinal?: 'pago' | 'falta_pagamento'
 
   // Observação interna do pedido
   observacao?: string
@@ -180,6 +188,7 @@ export interface Pedido {
   dataEntradaProducao?: string  // ISO — quando entrou em "em_producao", nunca muda
   dataEntregaNovaProducao?: string // nova data prevista quando em atraso
   motivoAtraso?: string
+  conserto?: Conserto
 
   createdAt: string
   updatedAt: string

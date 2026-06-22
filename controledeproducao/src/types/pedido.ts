@@ -1,6 +1,13 @@
 export type StatusPedido = 'dados' | 'tamanhos' | 'arquivos' | 'pagamento' | 'confirmacao' | 'formalizado' | 'retirada'
 
-export type StatusProducao = 'em_producao' | 'em_atraso' | 'pronto'
+export type StatusProducao = 'em_producao' | 'em_atraso' | 'pronto' | 'em_conserto'
+
+export interface Conserto {
+  descricao: string
+  responsavel: 'nos' | 'cliente'
+  foto?: string
+  dataEnvio: string
+}
 
 export interface PieceEntry {
   id: string
@@ -70,12 +77,28 @@ export interface Pedido {
   valorNegociacao?: number
   descricaoNegociacao?: string
 
+  // Retirada
+  dataRetirada?: string
+
   // Controle de Produção
   statusProducao?: StatusProducao
   dataEntradaProducao?: string  // ISO — quando entrou em "em_producao", nunca muda
   dataEntregaNovaProducao?: string
   motivoAtraso?: string
+  conserto?: Conserto
+
+  // Mensagens para Márcia
+  mensagensMarcia?: MensagemMarcia[]
 
   createdAt: string
   updatedAt: string
+}
+
+export interface MensagemMarcia {
+  id: string
+  texto: string
+  novaDataSolicitada?: string
+  criadoEm: string
+  respondidoEm?: string
+  resposta?: string
 }

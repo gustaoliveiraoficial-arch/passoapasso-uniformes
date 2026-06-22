@@ -2,12 +2,12 @@
 
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
-import { listarPedidos, atualizarPedido, deletarPedido, uploadArquivo } from '@/lib/firebase'
+import { listarPedidos, atualizarPedido, deletarPedido, uploadArquivo, limparStatusProducao } from '@/lib/firebase'
 import type { Pedido } from '@/types/pedido'
 import { formatarData, gerarLinkCliente, gerarLinkArteFinalista, LOGO_URL } from '@/lib/utils'
 import {
   PlusCircle, RefreshCw, ExternalLink, Printer, ChevronRight, ChevronLeft,
-  Copy, Search, Trash2, Pencil, Bell, Upload, X, Package, Calendar,
+  Copy, Search, Trash2, Pencil, Bell, Upload, X, Package, Calendar, Wrench,
 } from 'lucide-react'
 import toast from 'react-hot-toast'
 
@@ -37,9 +37,23 @@ const NEXT_STATUS: Partial<Record<KanbanStatus, KanbanStatus>> = {
   formalizado: 'retirada',
 }
 
+const CACHE_KEY = 'pap-pedidos-cache'
+
+function lerCache(): Pedido[] {
+  if (typeof window === 'undefined') return []
+  try {
+    const raw = sessionStorage.getItem(CACHE_KEY)
+    return raw ? JSON.parse(raw) : []
+  } catch { return [] }
+}
+
+function salvarCache(dados: Pedido[]) {
+  try { sessionStorage.setItem(CACHE_KEY, JSON.stringify(dados)) } catch {}
+}
+
 export default function Dashboard() {
-  const [pedidos, setPedidos] = useState<Pedido[]>([])
-  const [loading, setLoading] = useState(true)
+  const [pedidos, setPedidos] = useState<Pedido[]>(() => lerCache())
+  const [loading, setLoading] = useState(() => lerCache().length === 0)
   const [busca, setBusca] = useState('')
   const [dataInicio, setDataInicio] = useState('')
   const [dataFim, setDataFim] = useState('')
@@ -62,9 +76,19 @@ export default function Dashboard() {
   const [retiradaId, setRetiradaId] = useState<string | null>(null)
   const [retiradaObs, setRetiradaObs] = useState('')
   const [retiradaImagens, setRetiradaImagens] = useState<string[]>([])
+  const [retiradaStatusPagamento, setRetiradaStatusPagamento] = useState<'pago' | 'falta_pagamento' | null>(null)
   const [uploadandoRetirada, setUploadandoRetirada] = useState(false)
   const [salvandoRetirada, setSalvandoRetirada] = useState(false)
   const retiradaFileRef = useRef<HTMLInputElement>(null)
+
+  // Modal conserto
+  const [consertoId, setConsertoId] = useState<string | null>(null)
+  const [consertoDescricao, setConsertoDescricao] = useState('')
+  const [consertoResponsavel, setConsertoResponsavel] = useState<'nos' | 'cliente'>('nos')
+  const [consertoFoto, setConsertoFoto] = useState<string | null>(null)
+  const [uploadandoConsertoFoto, setUploadandoConsertoFoto] = useState(false)
+  const [salvandoConserto, setSalvandoConserto] = useState(false)
+  const consertoFotoRef = useRef<HTMLInputElement>(null)
 
   // Notificações
   const [mostrarNotificacoes, setMostrarNotificacoes] = useState(false)
@@ -138,18 +162,27 @@ export default function Dashboard() {
     }
   }, [pedidos])
 
-  async function carregar() {
-    setLoading(true)
+  async function carregar(mostrarLoading = false) {
+    if (mostrarLoading || pedidos.length === 0) setLoading(true)
     try {
-      setPedidos(await listarPedidos())
+      const timeout = new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('timeout')), 12000)
+      )
+      const dados = await Promise.race([listarPedidos(), timeout])
+      setPedidos(dados)
+      salvarCache(dados)
     } catch {
-      toast.error('Erro ao carregar pedidos.')
+      toast.error('Erro ao carregar pedidos. Verifique a conexão.')
     } finally {
       setLoading(false)
     }
   }
 
-  useEffect(() => { carregar() }, [])
+  useEffect(() => {
+    carregar()
+    const iv = setInterval(() => carregar(), 60000)
+    return () => clearInterval(iv)
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const nomeCliente = (p: Pedido) =>
     p.clienteType === 'empresa'
@@ -195,9 +228,9 @@ export default function Dashboard() {
   async function voltarConfirmacao(p: Pedido) {
     setAvancandoId(p.id)
     try {
-      await atualizarPedido(p.id, { status: 'confirmacao', numeroPedidoSistema: undefined })
+      await atualizarPedido(p.id, { status: 'confirmacao', numeroPedidoSistema: undefined, statusProducao: undefined })
       setPedidos(prev => prev.map(x =>
-        x.id === p.id ? { ...x, status: 'confirmacao', numeroPedidoSistema: undefined } : x
+        x.id === p.id ? { ...x, status: 'confirmacao', numeroPedidoSistema: undefined, statusProducao: undefined } : x
       ))
       toast.success('Pedido voltou para Confirmação')
     } catch {
@@ -270,6 +303,7 @@ export default function Dashboard() {
     setRetiradaId(p.id)
     setRetiradaObs(p.observacaoRetirada || '')
     setRetiradaImagens(p.comprovanteRetirada || [])
+    setRetiradaStatusPagamento(p.statusPagamentoFinal ?? null)
   }
 
   async function handleUploadRetirada(file: File) {
@@ -299,15 +333,18 @@ export default function Dashboard() {
     if (!retiradaId) return
     setSalvandoRetirada(true)
     try {
-      const dataRetirada = new Date().toISOString()
-      await atualizarPedido(retiradaId, {
+      const dataRetirada = pedidoRetirada?.dataRetirada || new Date().toISOString()
+      const update: Partial<import('@/types/pedido').Pedido> = {
         dataRetirada,
         comprovanteRetirada: retiradaImagens,
         observacaoRetirada: retiradaObs,
-      })
+      }
+      if (retiradaStatusPagamento) update.statusPagamentoFinal = retiradaStatusPagamento
+      await atualizarPedido(retiradaId, update)
+      await limparStatusProducao(retiradaId)
       setPedidos(prev => prev.map(x =>
         x.id === retiradaId
-          ? { ...x, dataRetirada, comprovanteRetirada: retiradaImagens, observacaoRetirada: retiradaObs }
+          ? { ...x, ...update }
           : x
       ))
       toast.success('Retirada registrada! 📦')
@@ -319,13 +356,52 @@ export default function Dashboard() {
     }
   }
 
+  async function handleUploadConsertoFoto(file: File) {
+    if (!consertoId) return
+    setUploadandoConsertoFoto(true)
+    try {
+      const url = await uploadArquivo(consertoId, file, 'conserto')
+      setConsertoFoto(url)
+      toast.success('Foto adicionada!')
+    } catch {
+      toast.error('Erro ao fazer upload da foto')
+    } finally {
+      setUploadandoConsertoFoto(false)
+    }
+  }
+
+  async function confirmarConserto() {
+    if (!consertoId || !consertoDescricao.trim()) return
+    setSalvandoConserto(true)
+    try {
+      const conserto = {
+        descricao: consertoDescricao.trim(),
+        responsavel: consertoResponsavel,
+        foto: consertoFoto || undefined,
+        dataEnvio: new Date().toISOString(),
+      }
+      await atualizarPedido(consertoId, { statusProducao: 'em_conserto', conserto })
+      setPedidos(prev => prev.map(x => x.id === consertoId ? { ...x, statusProducao: 'em_conserto', conserto } : x))
+      toast.success('Pedido enviado para conserto! 🔧')
+      setConsertoId(null)
+      setConsertoDescricao('')
+      setConsertoResponsavel('nos')
+      setConsertoFoto(null)
+    } catch {
+      toast.error('Erro ao enviar para conserto')
+    } finally {
+      setSalvandoConserto(false)
+    }
+  }
+
   const filtered = pedidos.filter(p => {
     if (busca) {
       const q = busca.toLowerCase()
       const match =
         nomeCliente(p).toLowerCase().includes(q) ||
         p.numeroPedido.toLowerCase().includes(q) ||
-        p.nomeVendedor.toLowerCase().includes(q)
+        p.nomeVendedor.toLowerCase().includes(q) ||
+        (p.numeroPedidoSistema?.toLowerCase().includes(q) ?? false)
       if (!match) return false
     }
     if (dataInicio) {
@@ -496,14 +572,14 @@ export default function Dashboard() {
               <Search size={13} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
-                placeholder="Buscar cliente ou pedido..."
+                placeholder="Buscar cliente, pedido ou Nº sistema..."
                 value={busca}
                 onChange={e => setBusca(e.target.value)}
                 className="pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 w-52"
               />
             </div>
             <button
-              onClick={carregar}
+              onClick={() => carregar(true)}
               className="flex items-center gap-1.5 px-3 py-1.5 border border-gray-300 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition"
             >
               <RefreshCw size={13} className={loading ? 'animate-spin' : ''} />
@@ -560,14 +636,19 @@ export default function Dashboard() {
                     ) : (
                       cards.map(p => {
                         const numModelos = p.modelos?.length ?? 0
+                        const isEntregue = col.key === 'retirada' && !!p.dataRetirada && p.statusProducao !== 'em_conserto'
                         return (
                           <div
                             key={p.id}
-                            className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm hover:shadow transition"
+                            className={`border rounded-lg p-3 shadow-sm hover:shadow transition ${
+                              isEntregue
+                                ? 'bg-blue-500 border-blue-400'
+                                : 'bg-white border-gray-200'
+                            }`}
                           >
                             {/* Número + badges de status + lixeira */}
                             <div className="flex items-start justify-between mb-1.5 gap-1">
-                              <span className="font-mono font-bold text-gray-800 text-xs">{p.numeroPedido}</span>
+                              <span className={`font-mono font-bold text-xs ${isEntregue ? 'text-white' : 'text-gray-800'}`}>{p.numeroPedido}</span>
                               <div className="flex items-center gap-1 flex-shrink-0">
                                 {/* Badge contador de dias para formalizar */}
                                 {col.key !== 'formalizado' && col.key !== 'retirada' && (() => {
@@ -593,14 +674,19 @@ export default function Dashboard() {
                                     #{p.numeroPedidoSistema}
                                   </span>
                                 )}
-                                {col.key === 'retirada' && p.dataRetirada && (
+                                {col.key === 'retirada' && p.statusProducao === 'em_conserto' && (
+                                  <span className="bg-orange-500 text-white text-xs px-1.5 py-0.5 rounded font-bold">
+                                    🔧 Em Conserto
+                                  </span>
+                                )}
+                                {col.key === 'retirada' && p.dataRetirada && p.statusProducao !== 'em_conserto' && (
                                   <span className="bg-indigo-500 text-white text-xs px-1.5 py-0.5 rounded font-bold">
                                     ✓ Retirado
                                   </span>
                                 )}
                                 <button
                                   onClick={() => setDeletandoId(p.id)}
-                                  className="text-gray-300 hover:text-red-500 transition p-0.5 rounded"
+                                  className={`transition p-0.5 rounded ${isEntregue ? 'text-white/60 hover:text-red-300' : 'text-gray-300 hover:text-red-500'}`}
                                   title="Excluir pedido"
                                 >
                                   <Trash2 size={11} />
@@ -609,12 +695,12 @@ export default function Dashboard() {
                             </div>
 
                             {/* Cliente */}
-                            <div className="font-semibold text-gray-900 text-xs mb-0.5 truncate" title={nomeCliente(p)}>
+                            <div className={`font-semibold text-xs mb-0.5 truncate ${isEntregue ? 'text-white' : 'text-gray-900'}`} title={nomeCliente(p)}>
                               {nomeCliente(p)}
                             </div>
 
                             {/* Vendedor + modelo */}
-                            <div className="text-gray-500 text-xs mb-0.5 truncate">
+                            <div className={`text-xs mb-0.5 truncate ${isEntregue ? 'text-blue-100' : 'text-gray-500'}`}>
                               {p.nomeVendedor} · {numModelos > 0
                                 ? `${numModelos} modelo${numModelos > 1 ? 's' : ''}`
                                 : (p.modelo || '').replace(/_/g, ' ')}
@@ -622,10 +708,10 @@ export default function Dashboard() {
 
                             {/* Peças + data */}
                             <div className="flex items-center justify-between text-xs mb-2.5">
-                              <span className="text-gray-600">
-                                <b className="text-gray-800">{p.quantidadeTotal}</b> peças
+                              <span className={isEntregue ? 'text-blue-100' : 'text-gray-600'}>
+                                <b className={isEntregue ? 'text-white' : 'text-gray-800'}>{p.quantidadeTotal}</b> peças
                               </span>
-                              <span className="text-red-600 font-semibold">
+                              <span className={`font-semibold ${isEntregue ? 'text-blue-100' : 'text-red-600'}`}>
                                 {formatarData(p.dataEntregaPrevista)}
                               </span>
                             </div>
@@ -633,28 +719,38 @@ export default function Dashboard() {
                             {/* Badges */}
                             <div className="flex flex-wrap gap-1 mb-2">
                               {numModelos > 1 && (
-                                <span className="flex items-center gap-1 text-xs bg-orange-100 text-orange-700 border border-orange-200 px-2 py-0.5 rounded-full font-semibold">
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-orange-100 text-orange-700 border border-orange-200'}`}>
                                   📋 {numModelos} modelos
                                 </span>
                               )}
                               {(p.layoutImages?.length ?? 0) > 0 && (
-                                <span className="flex items-center gap-1 text-xs bg-purple-100 text-purple-700 border border-purple-200 px-2 py-0.5 rounded-full font-semibold">
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-purple-100 text-purple-700 border border-purple-200'}`}>
                                   🎨 Layout ({p.layoutImages!.length})
                                 </span>
                               )}
                               {p.observacao && (
-                                <span className="flex items-center gap-1 text-xs bg-amber-100 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full font-semibold" title={p.observacao}>
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-amber-100 text-amber-700 border border-amber-200'}`} title={p.observacao}>
                                   📋 Obs.
                                 </span>
                               )}
                               {p.valorNegociacao ? (
-                                <span className="flex items-center gap-1 text-xs bg-green-100 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-semibold">
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-green-100 text-green-700 border border-green-200'}`}>
                                   💰 R$ {p.valorNegociacao.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                                 </span>
                               ) : null}
                               {col.key === 'retirada' && p.dataRetirada && (
-                                <span className="flex items-center gap-1 text-xs bg-indigo-100 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full font-semibold">
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-indigo-100 text-indigo-700 border border-indigo-200'}`}>
                                   📅 {new Date(p.dataRetirada).toLocaleDateString('pt-BR')}
+                                </span>
+                              )}
+                              {col.key === 'retirada' && p.statusPagamentoFinal === 'pago' && (
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-green-100 text-green-700 border border-green-200'}`}>
+                                  ✓ Pago
+                                </span>
+                              )}
+                              {col.key === 'retirada' && p.statusPagamentoFinal === 'falta_pagamento' && (
+                                <span className={`flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold ${isEntregue ? 'bg-white/20 text-white border border-white/30' : 'bg-red-100 text-red-700 border border-red-200'}`}>
+                                  ⚠ Falta Pgto
                                 </span>
                               )}
                             </div>
@@ -736,17 +832,27 @@ export default function Dashboard() {
                               )}
 
                               {col.key === 'retirada' && (
-                                <button
-                                  onClick={() => abrirRetirada(p)}
-                                  className={`flex items-center gap-0.5 text-xs px-2 py-1 rounded font-bold transition ml-auto ${
-                                    p.dataRetirada
-                                      ? 'bg-gray-100 hover:bg-gray-200 text-gray-700'
-                                      : 'bg-indigo-500 hover:bg-indigo-600 text-white'
-                                  }`}
-                                >
-                                  <Package size={10} />
-                                  {p.dataRetirada ? 'Ver / Editar' : 'Registrar Retirada'}
-                                </button>
+                                <div className="flex gap-1 ml-auto">
+                                  <button
+                                    onClick={() => abrirRetirada(p)}
+                                    className={`flex items-center gap-0.5 text-xs px-2 py-1 rounded font-bold transition ${
+                                      p.dataRetirada
+                                        ? 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                                        : 'bg-indigo-500 hover:bg-indigo-600 text-white'
+                                    }`}
+                                  >
+                                    <Package size={10} />
+                                    {p.dataRetirada ? 'Ver / Editar' : 'Registrar Retirada'}
+                                  </button>
+                                  {p.dataRetirada && (
+                                    <button
+                                      onClick={() => { setConsertoId(p.id); setConsertoDescricao(p.conserto?.descricao || ''); setConsertoResponsavel(p.conserto?.responsavel || 'nos'); setConsertoFoto(p.conserto?.foto || null) }}
+                                      className="flex items-center gap-0.5 text-xs px-2 py-1 rounded font-bold transition bg-orange-100 hover:bg-orange-200 text-orange-700"
+                                    >
+                                      <Wrench size={10} /> Conserto
+                                    </button>
+                                  )}
+                                </div>
                               )}
 
                               {NEXT_STATUS[col.key] && col.key !== 'confirmacao' && col.key !== 'formalizado' && col.key !== 'retirada' && (
@@ -762,7 +868,7 @@ export default function Dashboard() {
 
                             {/* Links de cópia */}
                             {col.key !== 'dados' && col.key !== 'formalizado' && col.key !== 'retirada' && (
-                              <div className="flex gap-3 mt-2 pt-1.5 border-t border-gray-100">
+                              <div className={`flex gap-3 mt-2 pt-1.5 border-t ${isEntregue ? 'border-white/20' : 'border-gray-100'}`}>
                                 <button
                                   onClick={() => copiar(gerarLinkCliente(p.clienteToken), 'Link do cliente')}
                                   className="flex items-center gap-0.5 text-xs text-blue-500 hover:text-blue-700 transition"
@@ -868,8 +974,8 @@ export default function Dashboard() {
 
       {/* ── Modal Retirada ── */}
       {retiradaId && pedidoRetirada && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md">
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 overflow-y-auto">
+          <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md my-4">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <Package size={18} className="text-indigo-600" />
@@ -883,8 +989,13 @@ export default function Dashboard() {
               </button>
             </div>
 
-            {/* Resumo do pedido */}
-            <div className="bg-indigo-50 rounded-xl p-3 mb-4 text-xs space-y-1">
+            {/* Resumo completo do pedido */}
+            <div className="bg-indigo-50 rounded-xl p-3 mb-4 text-xs space-y-1.5">
+              <p className="text-xs font-bold text-indigo-700 uppercase tracking-wide mb-1">Resumo do Pedido</p>
+              <div className="flex justify-between">
+                <span className="text-gray-500">Vendedor</span>
+                <span className="font-semibold">{pedidoRetirada.nomeVendedor}</span>
+              </div>
               <div className="flex justify-between">
                 <span className="text-gray-500">Entrega prevista</span>
                 <span className="font-semibold">{formatarData(pedidoRetirada.dataEntregaPrevista)}</span>
@@ -893,10 +1004,16 @@ export default function Dashboard() {
                 <span className="text-gray-500">Quantidade</span>
                 <span className="font-semibold">{pedidoRetirada.quantidadeTotal} peças</span>
               </div>
+              {(pedidoRetirada.modelos?.length ?? 0) > 1 && (
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Modelos</span>
+                  <span className="font-semibold">{pedidoRetirada.modelos!.map(m => m.modelo).join(', ')}</span>
+                </div>
+              )}
               {pedidoRetirada.valorNegociacao ? (
                 <div className="flex justify-between">
                   <span className="text-gray-500">Valor negociado</span>
-                  <span className="font-bold text-green-700">R$ {pedidoRetirada.valorNegociacao.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</span>
+                  <span className="font-bold text-green-700">{pedidoRetirada.valorNegociacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
                 </div>
               ) : null}
               {pedidoRetirada.numeroPedidoSistema && (
@@ -907,16 +1024,39 @@ export default function Dashboard() {
               )}
               {pedidoRetirada.dataRetirada && (
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Data de retirada</span>
+                  <span className="text-gray-500">Retirada em</span>
                   <span className="font-bold text-indigo-700">{new Date(pedidoRetirada.dataRetirada).toLocaleDateString('pt-BR')}</span>
                 </div>
               )}
             </div>
 
-            {/* Upload comprovante */}
+            {/* Situação do pagamento (recibos do pedido) */}
+            {(pedidoRetirada.recibosPagamento?.length || pedidoRetirada.descricaoPagamento) ? (
+              <div className="bg-green-50 border border-green-200 rounded-xl p-3 mb-4 text-xs space-y-2">
+                <p className="text-xs font-bold text-green-700 uppercase tracking-wide">Pagamento Registrado</p>
+                {pedidoRetirada.descricaoPagamento && (
+                  <p className="text-gray-700 whitespace-pre-wrap">{pedidoRetirada.descricaoPagamento}</p>
+                )}
+                {(pedidoRetirada.recibosPagamento?.length ?? 0) > 0 && (
+                  <div className="flex gap-2 flex-wrap">
+                    {pedidoRetirada.recibosPagamento!.map((url, i) => (
+                      <a key={i} href={url} target="_blank" rel="noopener noreferrer" title={`Ver recibo ${i + 1}`}>
+                        <img src={url} alt={`Recibo ${i + 1}`} className="w-14 h-14 object-cover rounded-lg border-2 border-green-300 hover:border-green-500 transition cursor-pointer" />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 text-xs text-amber-700 font-semibold">
+                ⚠ Nenhum recibo de pagamento registrado no pedido
+              </div>
+            )}
+
+            {/* Upload comprovante de retirada */}
             <div className="mb-4">
               <label className="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">
-                Comprovante de Pagamento da Retirada
+                Comprovante da Retirada
               </label>
               <div
                 className="border-2 border-dashed border-indigo-200 rounded-xl p-4 text-center cursor-pointer hover:border-indigo-400 transition bg-indigo-50"
@@ -942,8 +1082,10 @@ export default function Dashboard() {
               {retiradaImagens.length > 0 && (
                 <div className="flex gap-2 mt-2 flex-wrap">
                   {retiradaImagens.map((url, i) => (
-                    <div key={i} className="relative">
-                      <img src={url} alt={`Comprovante ${i + 1}`} className="w-16 h-16 object-cover rounded-lg border border-gray-200" />
+                    <div key={i} className="relative group">
+                      <a href={url} target="_blank" rel="noopener noreferrer" title="Ver em nova guia">
+                        <img src={url} alt={`Comprovante ${i + 1}`} className="w-16 h-16 object-cover rounded-lg border border-gray-200 hover:border-indigo-400 transition cursor-pointer" />
+                      </a>
                       <button
                         onClick={() => setRetiradaImagens(prev => prev.filter((_, idx) => idx !== i))}
                         className="absolute -top-1.5 -right-1.5 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs leading-none hover:bg-red-600"
@@ -956,18 +1098,49 @@ export default function Dashboard() {
               )}
             </div>
 
-            {/* Observação */}
-            <div className="mb-5">
+            {/* Observação da retirada */}
+            <div className="mb-4">
               <label className="block text-xs font-bold text-gray-700 mb-1.5 uppercase tracking-wide">
                 Observação da Retirada
               </label>
               <textarea
                 className="w-full border border-gray-300 focus:border-indigo-400 rounded-xl px-3 py-2 text-sm focus:outline-none resize-none"
-                rows={3}
+                rows={2}
                 value={retiradaObs}
                 onChange={e => setRetiradaObs(e.target.value)}
                 placeholder="Ex: Pagou saldo em dinheiro, retirou pessoalmente..."
               />
+            </div>
+
+            {/* Status de pagamento final */}
+            <div className="mb-5">
+              <label className="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">
+                Situação do Pagamento
+              </label>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setRetiradaStatusPagamento(retiradaStatusPagamento === 'pago' ? null : 'pago')}
+                  className={`flex-1 py-2.5 rounded-xl text-sm font-bold border-2 transition ${
+                    retiradaStatusPagamento === 'pago'
+                      ? 'bg-green-500 text-white border-green-500'
+                      : 'border-gray-300 text-gray-600 bg-white hover:border-green-400'
+                  }`}
+                >
+                  ✓ Pago
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setRetiradaStatusPagamento(retiradaStatusPagamento === 'falta_pagamento' ? null : 'falta_pagamento')}
+                  className={`flex-1 py-2.5 rounded-xl text-sm font-bold border-2 transition ${
+                    retiradaStatusPagamento === 'falta_pagamento'
+                      ? 'bg-red-500 text-white border-red-500'
+                      : 'border-gray-300 text-gray-600 bg-white hover:border-red-400'
+                  }`}
+                >
+                  ⚠ Falta Pagamento
+                </button>
+              </div>
             </div>
 
             <div className="flex gap-2">
@@ -988,6 +1161,131 @@ export default function Dashboard() {
           </div>
         </div>
       )}
+
+      {/* ── Modal Conserto ── */}
+      {consertoId && (() => {
+        const p = pedidos.find(x => x.id === consertoId)
+        return (
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md my-4">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Wrench size={18} className="text-orange-600" />
+                </div>
+                <div>
+                  <h2 className="text-base font-bold text-gray-900">Enviar para Conserto</h2>
+                  <p className="text-xs text-gray-500">{p?.numeroPedido} · {p ? (p.clientePF?.nomeCompleto || p.clienteEmpresa?.razaoSocial || '—') : ''}</p>
+                </div>
+                <button onClick={() => setConsertoId(null)} className="ml-auto text-gray-400 hover:text-gray-600"><X size={18} /></button>
+              </div>
+
+              {/* Descrição */}
+              <div className="mb-4">
+                <label className="block text-xs font-bold text-gray-700 mb-1.5 uppercase tracking-wide">
+                  O que precisa ser consertado? <span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  className="w-full border border-gray-300 focus:border-orange-400 rounded-xl px-3 py-2 text-sm focus:outline-none resize-none"
+                  rows={3}
+                  value={consertoDescricao}
+                  onChange={e => setConsertoDescricao(e.target.value)}
+                  placeholder="Descreva o problema e o que precisa ser feito..."
+                />
+              </div>
+
+              {/* Responsável */}
+              <div className="mb-4">
+                <label className="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">
+                  Responsável pelo erro
+                </label>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setConsertoResponsavel('nos')}
+                    className={`flex-1 py-2.5 rounded-xl text-sm font-bold border-2 transition ${
+                      consertoResponsavel === 'nos'
+                        ? 'bg-orange-500 text-white border-orange-500'
+                        : 'border-gray-300 text-gray-600 bg-white hover:border-orange-400'
+                    }`}
+                  >
+                    Nosso erro
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setConsertoResponsavel('cliente')}
+                    className={`flex-1 py-2.5 rounded-xl text-sm font-bold border-2 transition ${
+                      consertoResponsavel === 'cliente'
+                        ? 'bg-blue-500 text-white border-blue-500'
+                        : 'border-gray-300 text-gray-600 bg-white hover:border-blue-400'
+                    }`}
+                  >
+                    Erro do cliente
+                  </button>
+                </div>
+              </div>
+
+              {/* Foto (opcional) */}
+              <div className="mb-5">
+                <label className="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">
+                  Foto do erro <span className="text-gray-400 font-normal">(opcional)</span>
+                </label>
+                {consertoFoto ? (
+                  <div className="relative inline-block">
+                    <a href={consertoFoto} target="_blank" rel="noopener noreferrer">
+                      <img src={consertoFoto} alt="Foto do erro" className="w-28 h-28 object-cover rounded-xl border border-gray-200 hover:opacity-80 transition cursor-pointer" />
+                    </a>
+                    <button
+                      onClick={() => setConsertoFoto(null)}
+                      className="absolute -top-1.5 -right-1.5 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs hover:bg-red-600"
+                    >×</button>
+                  </div>
+                ) : (
+                  <div
+                    className="border-2 border-dashed border-orange-200 rounded-xl p-4 text-center cursor-pointer hover:border-orange-400 transition bg-orange-50"
+                    onClick={() => consertoFotoRef.current?.click()}
+                  >
+                    {uploadandoConsertoFoto ? (
+                      <p className="text-xs text-orange-500 font-medium">Enviando...</p>
+                    ) : (
+                      <>
+                        <Upload size={20} className="mx-auto text-orange-400 mb-1.5" />
+                        <p className="text-xs text-gray-500">Clique para adicionar foto</p>
+                      </>
+                    )}
+                  </div>
+                )}
+                <input
+                  ref={consertoFotoRef}
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={async e => {
+                    const file = e.target.files?.[0]
+                    if (file) await handleUploadConsertoFoto(file)
+                    e.target.value = ''
+                  }}
+                />
+              </div>
+
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setConsertoId(null)}
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-semibold text-gray-600 hover:bg-gray-50 transition"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={confirmarConserto}
+                  disabled={salvandoConserto || !consertoDescricao.trim()}
+                  className="flex-1 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-bold transition disabled:opacity-40"
+                >
+                  {salvandoConserto ? 'Enviando...' : '🔧 Enviar para Conserto'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )
+      })()}
 
       {/* ── Modal confirmar exclusão ── */}
       {deletandoId && (

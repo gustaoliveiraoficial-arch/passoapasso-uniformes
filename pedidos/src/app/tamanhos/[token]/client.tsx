@@ -69,6 +69,27 @@ export default function TamanhosCliente() {
   ])
   const [personalizados, setPersonalizados] = useState<PersonalizadoLinha[]>([])
 
+  function pecasParaDados(pecas: import('@/types/pedido').PieceEntry[], catDefault: CategoriaSize = 'unissex'): { geralLinhas: GeralLinha[], personalizados: PersonalizadoLinha[] } {
+    const geralMap: Record<string, GeralLinha> = {}
+    const pers: PersonalizadoLinha[] = []
+    for (const peca of pecas) {
+      if (peca.pessoaNome || peca.nomeNaCamiseta || peca.numeroNaCamiseta) {
+        pers.push({ id: peca.id, pessoaNome: peca.pessoaNome, nomeNaCamiseta: peca.nomeNaCamiseta, numeroNaCamiseta: peca.numeroNaCamiseta, categoria: peca.categoria, tamanho: peca.tamanho, infoExtra: peca.infoExtra, ajustePreco: peca.ajustePreco })
+      } else {
+        const k = `${peca.categoria}-${peca.tamanho}-${peca.infoExtra || ''}-${peca.ajustePreco ?? 0}`
+        if (geralMap[k]) {
+          geralMap[k].quantidade += 1
+        } else {
+          geralMap[k] = { id: uuidv4(), categoria: peca.categoria, tamanho: peca.tamanho, quantidade: 1, infoExtra: peca.infoExtra, ajustePreco: peca.ajustePreco }
+        }
+      }
+    }
+    return {
+      geralLinhas: Object.values(geralMap).length > 0 ? Object.values(geralMap) : [{ id: uuidv4(), categoria: catDefault, tamanho: '', quantidade: 1 }],
+      personalizados: pers,
+    }
+  }
+
   useEffect(() => {
     buscarPedidoPorToken(token).then(p => {
       setPedido(p)
@@ -77,29 +98,20 @@ export default function TamanhosCliente() {
       if (p?.modelos && p.modelos.length > 0) {
         const inicial: Record<string, { geralLinhas: GeralLinha[], personalizados: PersonalizadoLinha[] }> = {}
         for (const m of p.modelos) {
-          // Popula com pecas já existentes se houver
+          const catDefault: CategoriaSize = m.tipoReferencia === 'masculino_feminino' ? 'feminino' : 'unissex'
           if (m.pecas && m.pecas.length > 0) {
-            const geralMap: Record<string, GeralLinha> = {}
-            const pers: PersonalizadoLinha[] = []
-            for (const peca of m.pecas) {
-              if (peca.pessoaNome || peca.nomeNaCamiseta || peca.numeroNaCamiseta) {
-                pers.push({ id: peca.id, pessoaNome: peca.pessoaNome, nomeNaCamiseta: peca.nomeNaCamiseta, numeroNaCamiseta: peca.numeroNaCamiseta, categoria: peca.categoria, tamanho: peca.tamanho })
-              } else {
-                const k = `${peca.categoria}-${peca.tamanho}`
-                if (geralMap[k]) {
-                  geralMap[k].quantidade += 1
-                } else {
-                  geralMap[k] = { id: uuidv4(), categoria: peca.categoria, tamanho: peca.tamanho, quantidade: 1 }
-                }
-              }
-            }
-            inicial[m.id] = { geralLinhas: Object.values(geralMap).length > 0 ? Object.values(geralMap) : [{ id: uuidv4(), categoria: 'unissex', tamanho: '', quantidade: 1 }], personalizados: pers }
+            inicial[m.id] = pecasParaDados(m.pecas, catDefault)
           } else {
-            inicial[m.id] = { geralLinhas: [{ id: uuidv4(), categoria: 'unissex', tamanho: '', quantidade: 1 }], personalizados: [] }
+            inicial[m.id] = { geralLinhas: [{ id: uuidv4(), categoria: catDefault, tamanho: '', quantidade: 1 }], personalizados: [] }
           }
         }
         setTamanhosModelos(inicial)
         setModeloAtivo(p.modelos[0].id)
+      } else if (p?.pecas && p.pecas.length > 0) {
+        // Modo legado (single-model): pré-carrega tamanhos já salvos
+        const { geralLinhas: gl, personalizados: ps } = pecasParaDados(p.pecas)
+        setGeralLinhas(gl)
+        setPersonalizados(ps)
       }
       // Inicia tutorial apenas se não foi pulado antes
       const pulado = localStorage.getItem(`tutorial-tamanhos-${token}`)
